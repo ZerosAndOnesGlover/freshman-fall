@@ -3,8 +3,9 @@
 Turns the vault's markdown into a browsable study website.
 
 ```sh
-python3 site/build.py            # build into _site/
-python3 site/build.py --serve    # build, then serve on http://127.0.0.1:8000
+python3 site/build.py                    # build once into _site/
+python3 site/build.py --serve            # build, then serve on :8000
+python3 site/build.py --watch --serve    # serve and rebuild on every change
 ```
 
 No third-party packages. Python 3.9+ only. Takes about three seconds for the
@@ -12,6 +13,28 @@ whole vault.
 
 `_site/` is gitignored — it is regenerated from source, so there is nothing in
 it worth versioning.
+
+## Does it pick up new content by itself?
+
+**The site is generated, not live.** Every figure on the dashboard is measured
+from the vault at build time — none are hardcoded — but they are written into
+HTML when the build runs. Add a lecture and the page count, the course bars, the
+navigation tree and the search index all change, *after a rebuild*.
+
+Two ways to get one:
+
+- `--watch` polls every second and rebuilds when any `.md` changes, or when the
+  generator's own files do. Adding, editing and deleting are all picked up.
+  Leave `python3 site/build.py --watch --serve` running while you write and just
+  refresh the browser.
+- Run `python3 site/build.py` yourself whenever you want.
+
+A rebuild goes into `_site.building` and is swapped in at the end, so a reader
+never sees a half-built site — without that, `_site` is deleted at the start of
+each build and every page 404s for the three seconds it takes.
+
+The only things that update *without* a rebuild are the ones the browser owns:
+week completion and the "continue reading" list, both in `localStorage`.
 
 ## Why serve it rather than open the file
 

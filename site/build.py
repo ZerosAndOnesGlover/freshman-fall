@@ -2,8 +2,9 @@
 """
 Static site generator for the CSE degree vault.
 
-    python3 site/build.py            # build into _site/
-    python3 site/build.py --serve    # build, then serve on localhost:8000
+    python3 site/build.py                  # build once into _site/
+    python3 site/build.py --serve          # build, then serve on :8000
+    python3 site/build.py --watch --serve  # serve, rebuild on change
 
 No third-party dependencies. KaTeX is vendored under site/vendor/katex, so the
 generated site renders maths with no network access.
@@ -338,7 +339,7 @@ def natural_key(s):
     return [int(t) if t.isdigit() else t.lower() for t in re.split(r"(\d+)", s)]
 
 
-def main():
+def main(quiet=False):
     nodes, pages = walk()
     link_table = build_link_resolver(pages)
 
@@ -363,9 +364,13 @@ def main():
         p.math = body.count('class="math-')
 
     # ---- write pages -----------------------------------------------------
-    if os.path.isdir(OUT):
-        shutil.rmtree(OUT)
-    os.makedirs(OUT, exist_ok=True)
+    # Build into a staging directory and swap it in at the end. Deleting OUT
+    # first would 404 the whole site for the ~3s a rebuild takes, which the
+    # watcher would do on every keystroke-triggered save.
+    STAGE = OUT + ".building"
+    if os.path.isdir(STAGE):
+        shutil.rmtree(STAGE)
+    os.makedirs(STAGE, exist_ok=True)
 
     written = 0
     for route, node in nodes.items():
@@ -392,7 +397,7 @@ def main():
         if p.is_solution:
             body = gate(body)
         body += week_control(p)
-        out_path = os.path.join(OUT, p.route)
+        out_path = os.path.join(STAGE, p.route)
         os.makedirs(os.path.dirname(out_path), exist_ok=True)
         with open(out_path, "w", encoding="utf-8") as fh:
             fh.write(SHELL.format(
@@ -409,7 +414,7 @@ def main():
     weeks = sorted({p.week_route for p in pages if p.week_route})
     stats = dashboard.collect(nodes, pages, VAULT)
     home = dashboard.render(stats, pre="")
-    with open(os.path.join(OUT, "index.html"), "w", encoding="utf-8") as fh:
+    with open(os.path.join(STAGE, "index.html"), "w", encoding="utf-8") as fh:
         fh.write(SHELL.format(title="CSE Degree", pre="", route="index.html", week="",
                               crumbs='<span>Home</span>', body=home).replace(
             '<body data-route="index.html"', '<body class="dash" data-route="index.html"'))
@@ -433,26 +438,123 @@ def main():
                "h": [h[1] for h in p.headings][:40], "x": p.text}
               for p in pages if p.text]
 
-    os.makedirs(os.path.join(OUT, "assets"), exist_ok=True)
-    with open(os.path.join(OUT, "assets", "nav.json"), "w", encoding="utf-8") as fh:
+    os.makedirs(os.path.join(STAGE, "assets"), exist_ok=True)
+    with open(os.path.join(STAGE, "assets", "nav.json"), "w", encoding="utf-8") as fh:
         json.dump(nav, fh, ensure_ascii=False, separators=(",", ":"))
-    with open(os.path.join(OUT, "assets", "search.json"), "w", encoding="utf-8") as fh:
+    with open(os.path.join(STAGE, "assets", "search.json"), "w", encoding="utf-8") as fh:
         json.dump({"weeks": weeks, "docs": search}, fh, ensure_ascii=False, separators=(",", ":"))
 
     for asset in ("app.css", "app.js"):
-        shutil.copy(os.path.join(HERE, "assets", asset), os.path.join(OUT, "assets", asset))
-    shutil.copytree(os.path.join(HERE, "vendor"), os.path.join(OUT, "vendor"))
+        shutil.copy(os.path.join(HERE, "assets", asset), os.path.join(STAGE, "assets", asset))
+    shutil.copytree(os.path.join(HERE, "vendor"), os.path.join(STAGE, "vendor"))
 
-    print("built %d pages, %d weeks -> %s" % (written, len(weeks), OUT))
-    sz = sum(os.path.getsize(os.path.join(r, f))
-             for r, _, fs in os.walk(OUT) for f in fs)
-    print("output size: %.1f MB" % (sz / 1e6))
+    # swap: near-instant, so a reader never sees a half-built site
+    RETIRE = OUT + ".old"
+    if os.path.isdir(RETIRE):
+        shutil.rmtree(RETIRE, ignore_errors=True)
+    if os.path.isdir(OUT):
+        os.rename(OUT, RETIRE)
+    os.rename(STAGE, OUT)
+    shutil.rmtree(RETIRE, ignore_errors=True)
+
+    if not quiet:
+        print("built %d pages, %d weeks -> %s" % (written, len(weeks), OUT))
+        sz = sum(os.path.getsize(os.path.join(r, f))
+                 for r, _, fs in os.walk(OUT) for f in fs)
+        print("output size: %.1f MB" % (sz / 1e6))
     return weeks
+
+
+def snapshot():
+    """Modification times of everything a build depends on: the vault's markdown
+    and the generator itself, so editing a template rebuilds too."""
+    seen = {}
+    for root, dirs, files in os.walk(VAULT):
+        rel = os.path.relpath(root, VAULT)
+        rel = "" if rel == "." else rel
+        if any(rel == s or rel.startswith(s + os.sep) for s in SKIP_PATHS):
+            dirs[:] = []
+            continue
+        dirs[:] = [d for d in dirs if d not in SKIP_DIRS and not d.startswith(".")]
+        for f in files:
+            if f.endswith(".md"):
+                p = os.path.join(root, f)
+                try:
+                    seen[p] = os.path.getmtime(p)
+                except OSError:
+                    pass
+    for f in ("build.py", "markdown.py", "dashboard.py",
+              os.path.join("assets", "app.css"), os.path.join("assets", "app.js")):
+        p = os.path.join(HERE, f)
+        try:
+            seen[p] = os.path.getmtime(p)
+        except OSError:
+            pass
+    return seen
+
+
+def serve_background(port=8000):
+    import http.server
+    import socketserver
+    import threading
+
+    class Handler(http.server.SimpleHTTPRequestHandler):
+        def __init__(self, *a, **kw):
+            super().__init__(*a, directory=OUT, **kw)
+
+        def log_message(self, *a):
+            pass  # keep the watch output readable
+
+        def end_headers(self):
+            # never let a browser cache a page the watcher may have just rebuilt
+            self.send_header("Cache-Control", "no-store")
+            super().end_headers()
+
+    socketserver.TCPServer.allow_reuse_address = True
+    httpd = socketserver.TCPServer(("127.0.0.1", port), Handler)
+    threading.Thread(target=httpd.serve_forever, daemon=True).start()
+    return httpd
+
+
+def watch(serve=False, port=8000):
+    import time
+    if serve:
+        serve_background(port)
+        print("serving http://127.0.0.1:%d" % port, flush=True)
+    print("watching for changes — ctrl-c to stop", flush=True)
+    prev = snapshot()
+    try:
+        while True:
+            time.sleep(1.0)
+            cur = snapshot()
+            if cur == prev:
+                continue
+            added = len(set(cur) - set(prev))
+            removed = len(set(prev) - set(cur))
+            changed = sum(1 for k in set(cur) & set(prev) if cur[k] != prev[k])
+            bits = []
+            if added:
+                bits.append("%d added" % added)
+            if removed:
+                bits.append("%d removed" % removed)
+            if changed:
+                bits.append("%d changed" % changed)
+            print("[%s] %s — rebuilding…" % (time.strftime("%H:%M:%S"), ", ".join(bits)), end=" ", flush=True)
+            try:
+                main(quiet=True)
+                print("done", flush=True)
+            except Exception as e:  # a syntax slip should not kill the watcher
+                print("FAILED: %s: %s" % (type(e).__name__, e), flush=True)
+            prev = cur
+    except KeyboardInterrupt:
+        print("\nstopped")
 
 
 if __name__ == "__main__":
     main()
-    if "--serve" in sys.argv:
+    if "--watch" in sys.argv:
+        watch(serve="--serve" in sys.argv)
+    elif "--serve" in sys.argv:
         import http.server
         import socketserver
         os.chdir(OUT)
