@@ -23,6 +23,12 @@ a.out
 # extensionless ELF binary built by the PROG 101 Week 0 starter
 0. Freshman/Fall/1. PROG 101 - Programming I: Structured Programming in C/PROG101 Week0/lab/starter/hello
 
+# ─── Generated study site ────────────────────────────────────────────
+# Rebuilt from the markdown by `python3 site/build.py` in a couple of
+# seconds, so the output is not worth versioning. The generator itself,
+# and the vendored KaTeX it needs to work offline, ARE tracked.
+/_site/
+
 # ─── OS noise ────────────────────────────────────────────────────────
 .DS_Store
 Thumbs.db
