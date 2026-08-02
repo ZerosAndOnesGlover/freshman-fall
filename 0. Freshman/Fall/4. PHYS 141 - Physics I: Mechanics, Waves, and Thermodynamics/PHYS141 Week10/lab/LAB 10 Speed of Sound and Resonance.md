@@ -1,4 +1,4 @@
-# PHYS 141 — Lab 10
+# PHYS 141 · Lab 10
 ## The Speed of Sound and Resonance in Air Columns
 
 **Duration:** 3 hours | **Total: 100 points**

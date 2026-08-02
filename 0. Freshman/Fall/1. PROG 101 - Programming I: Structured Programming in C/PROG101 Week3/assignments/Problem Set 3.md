@@ -1,4 +1,4 @@
-# PROG 101 — Programming I: Structured Programming in C
+# PROG 101 · Programming I: Structured Programming in C
 ## Week 3 · Problem Set 3: Functions, the Call Stack, and Structured Programming
 
 **Released:** Friday, Week 3 · **Due:** Friday, Week 4 at 17:00

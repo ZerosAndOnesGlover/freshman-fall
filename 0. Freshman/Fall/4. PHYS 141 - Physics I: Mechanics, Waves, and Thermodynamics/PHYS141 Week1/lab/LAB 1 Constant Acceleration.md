@@ -1,4 +1,4 @@
-# PHYS 141 — Lab 1
+# PHYS 141 · Lab 1
 # Measuring Constant Acceleration — Measuring g
 
 **Duration:** 3 hours | **Partners:** Groups of 2–3

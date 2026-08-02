@@ -1,4 +1,4 @@
-# MATH 151 — Counting Decision Guide
+# MATH 151 · Counting Decision Guide
 ## Week 7: A Step-by-Step Framework for Classifying Counting Problems
 
 ---

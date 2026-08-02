@@ -1,4 +1,4 @@
-# CS 101 — Week 5: Searching and Sorting Algorithms
+# CS 101 · Week 5: Searching and Sorting Algorithms
 
 ---
 

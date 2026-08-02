@@ -1,4 +1,4 @@
-# PROG 101 — Programming I: Structured Programming in C
+# PROG 101 · Programming I: Structured Programming in C
 ## Week 12 · Problem Set 12: Software Engineering in C
 
 **Released:** Friday, Week 12 · **Due:** Friday of finals week at 17:00

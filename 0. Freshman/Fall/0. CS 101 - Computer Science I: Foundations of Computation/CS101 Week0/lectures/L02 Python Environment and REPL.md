@@ -1,4 +1,4 @@
-# CS 101 Lecture 2
+# CS 101 · Lecture 2
 ## The Python Environment & Your First Programs
 
 **Week 0 · Lecture 2 of 3**

@@ -1,4 +1,4 @@
-# MATH 141 — Calculus I
+# MATH 141 · Calculus I
 ## Lab 06 (Friday, Week 6)
 ### Visualizing Extrema, the Mean Value Theorem, and Curve Shape
 

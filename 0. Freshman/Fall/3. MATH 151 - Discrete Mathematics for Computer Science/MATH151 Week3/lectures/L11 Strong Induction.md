@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Lecture 3.3 (L11) — Strong Induction and the Well-Ordering Principle
 ### Friday, Week 3
 

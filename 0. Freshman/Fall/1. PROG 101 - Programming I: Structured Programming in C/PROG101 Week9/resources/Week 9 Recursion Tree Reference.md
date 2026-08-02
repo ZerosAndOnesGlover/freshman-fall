@@ -1,4 +1,4 @@
-# PROG 101 — Week 9 Resources
+# PROG 101 · Week 9 Resources
 ## Recursion Pattern Library · BST Reference · Complexity Cheat Sheet
 
 ---

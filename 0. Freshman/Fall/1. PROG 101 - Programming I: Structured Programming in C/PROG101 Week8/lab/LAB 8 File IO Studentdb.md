@@ -1,4 +1,4 @@
-# PROG 101 Programming I: Structured Programming in C
+# PROG 101 · Programming I: Structured Programming in C
 ## Week 8 · Lab 8: Building a Persistent Student Record Database
 
 **Graded: 20 points**

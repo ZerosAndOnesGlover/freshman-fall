@@ -1,4 +1,4 @@
-# PROG 101 — this appendix: Hash Tables
+# PROG 101 · this appendix: Hash Tables
 ## Hash Functions · Collision Resolution · The Third Great Data Structure
 
 ---

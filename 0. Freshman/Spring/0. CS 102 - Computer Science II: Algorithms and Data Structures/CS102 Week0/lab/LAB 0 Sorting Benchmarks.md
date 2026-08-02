@@ -1,4 +1,4 @@
-# CS 102 — Lab 0
+# CS 102 · Lab 0
 ## Implement and Benchmark Three Sorting Algorithms
 
 **Week 0 · 2-hour lab session · 40 points**

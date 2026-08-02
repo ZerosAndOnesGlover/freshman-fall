@@ -1,4 +1,4 @@
-# MATH 141 — Calculus I
+# MATH 141 · Calculus I
 ## Week 7 Reference Sheet
 ### L'Hôpital's Rule · Curve Sketching · Applied Optimization
 

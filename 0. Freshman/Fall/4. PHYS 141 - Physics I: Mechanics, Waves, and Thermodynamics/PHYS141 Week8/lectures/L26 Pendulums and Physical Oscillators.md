@@ -1,4 +1,4 @@
-# PHYS 141 — Physics I: Mechanics, Waves & Thermodynamics
+# PHYS 141 · Physics I: Mechanics, Waves & Thermodynamics
 ## Lecture 26 — Pendulums and Physical Oscillators
 
 ---

@@ -1,4 +1,4 @@
-# MATH 141 — Week 11 Overview
+# MATH 141 · Week 11 Overview
 ## Applications of Integration
 
 ---

@@ -1,4 +1,4 @@
-# PROG 101 — Programming I: Structured Programming in C
+# PROG 101 · Programming I: Structured Programming in C
 ## Appendix · Problem Set 7
 
 **Released:** End of this appendix Thursday

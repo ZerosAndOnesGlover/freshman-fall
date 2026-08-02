@@ -1,4 +1,4 @@
-# MATH 151: Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Week 2 — Proof Techniques: Direct Proof, Contradiction, Contrapositive
 
 ---

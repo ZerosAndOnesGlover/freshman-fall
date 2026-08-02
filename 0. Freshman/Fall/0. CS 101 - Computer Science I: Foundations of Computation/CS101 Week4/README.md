@@ -1,4 +1,4 @@
-# CS 101 Week 4 Recursion: Thinking in Self-Reference
+# CS 101 · Week 4 Recursion: Thinking in Self-Reference
 
 ---
 

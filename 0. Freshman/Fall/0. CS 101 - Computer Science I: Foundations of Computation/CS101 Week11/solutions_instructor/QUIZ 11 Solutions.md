@@ -1,4 +1,4 @@
-# CS 101 — Quiz 11 Solutions (Instructor)
+# CS 101 · Quiz 11 Solutions (Instructor)
 ## Week 11, Wednesday
 
 **Total: 10 points** · Award partial credit generously where the reasoning is right and the

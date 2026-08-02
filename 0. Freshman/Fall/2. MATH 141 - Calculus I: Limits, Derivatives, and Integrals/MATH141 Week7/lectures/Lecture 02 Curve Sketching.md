@@ -1,4 +1,4 @@
-# MATH 141 — Calculus I
+# MATH 141 · Calculus I
 ## Week 7 · Lecture 2 (Tuesday)
 ### Curve Sketching: The Complete Synthesis
 

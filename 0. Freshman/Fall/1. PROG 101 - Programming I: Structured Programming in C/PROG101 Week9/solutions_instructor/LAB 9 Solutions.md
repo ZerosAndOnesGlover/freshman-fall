@@ -1,4 +1,4 @@
-# PROG 101 — Week 9
+# PROG 101 · Week 9
 ## LAB 9 Solutions — INSTRUCTOR ONLY
 
 > **Every implementation below compiles under `gcc -Wall -Wextra -Werror -std=c11` and runs clean

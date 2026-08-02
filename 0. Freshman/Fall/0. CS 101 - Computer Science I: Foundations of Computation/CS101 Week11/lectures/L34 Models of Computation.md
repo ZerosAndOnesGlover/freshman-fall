@@ -1,4 +1,4 @@
-# CS 101: Lecture 34 (Week 11, Lecture 1)
+# CS 101 · Lecture 34 (Week 11, Lecture 1)
 ## Models of Computation: What a Computer Fundamentally Is
 
 ---

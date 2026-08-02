@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Lecture 12.1 (L36) — Divisibility and Primes
 ### Monday, Week 12
 

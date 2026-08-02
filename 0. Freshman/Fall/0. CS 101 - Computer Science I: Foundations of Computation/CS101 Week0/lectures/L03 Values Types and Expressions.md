@@ -1,4 +1,4 @@
-# CS 101 Lecture 3
+# CS 101 · Lecture 3
 ## Values, Types, and Expressions
 
 **Week 0 · Lecture 3 of 3**

@@ -1,4 +1,4 @@
-# PHYS 141 — Lab 8
+# PHYS 141 · Lab 8
 ## The Simple Pendulum and Simple Harmonic Motion
 
 **Duration:** 3 hours | **Total: 100 points**

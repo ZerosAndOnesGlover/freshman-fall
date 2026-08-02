@@ -1,4 +1,4 @@
-# CS 101 — Lecture 36 (Week 11, Lecture 3)
+# CS 101 · Lecture 36 (Week 11, Lecture 3)
 ## Reduction and the Landscape of Undecidability
 
 ---

@@ -1,4 +1,4 @@
-# CS 101: Problem Set 11
+# CS 101 · Problem Set 11
 ## Computability and Undecidability
 
 **Released:** Friday, Week 11 | **Due:** Friday, Week 12 (11:59 PM)

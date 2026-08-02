@@ -1,4 +1,4 @@
-# PHYS 141 — Lecture 20
+# PHYS 141 · Lecture 20
 # Torque & Rotational Dynamics
 
 > **Core Principle:** Torque is the rotational analog of force — it is what causes angular acceleration. Just as F = ma governs linear motion, τ = Iα governs rotational motion, where the moment of inertia I plays the role of "rotational mass," quantifying how the mass of an object is distributed relative to the rotation axis.

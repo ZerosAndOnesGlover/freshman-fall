@@ -1,4 +1,4 @@
-# MATH 151 — Counting Formulas Reference
+# MATH 151 · Counting Formulas Reference
 ## Week 7: Multiplication/Addition Rules, Permutations, Combinations, Binomial Theorem
 
 ---

@@ -1,4 +1,4 @@
-# CS 190: CS Seminar: Profession, Ethics & Culture
+# CS 190 · CS Seminar: Profession, Ethics & Culture
 ## Week 11: Student Presentations — Position Paper Topics
 
 **Format:** Three sessions this week (see `Presentation Schedule.md`). Every student presents.

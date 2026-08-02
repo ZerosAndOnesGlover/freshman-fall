@@ -1,4 +1,4 @@
-# PHYS 141 — Lab 3
+# PHYS 141 · Lab 3
 # Newton's Second Law: The Atwood Machine
 
 **Duration:** 3 hours | **Partners:** Groups of 2–3

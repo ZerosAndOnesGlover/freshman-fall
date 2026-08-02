@@ -3,8 +3,8 @@
 ### All Semesters
 ════════════════════════════════════════════════════════════════════════
 
-> Office hours require no appointment for course questions. Thesis/Project advisor meetings ARE by standing weekly appointment (see FALL/SPRING_SCHEDULE.md).
-> All locations given as building + room number. See ROOM_ASSIGNMENTS.md for the campus map.
+> Office hours require no appointment for course questions. Thesis/Project advisor meetings ARE by standing weekly appointment (see FALL/SPRING SCHEDULE.md).
+> All locations given as building + room number. See ROOM ASSIGNMENTS.md for the campus map.
 
 ---
 

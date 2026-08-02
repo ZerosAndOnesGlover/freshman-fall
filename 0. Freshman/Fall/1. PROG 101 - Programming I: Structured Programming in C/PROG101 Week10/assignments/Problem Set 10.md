@@ -1,4 +1,4 @@
-# PROG 101 — Programming I: Structured Programming in C
+# PROG 101 · Programming I: Structured Programming in C
 ## Week 10 · Problem Set 10: The Preprocessor and Macros
 
 **Released:** Friday, Week 10 · **Due:** Friday, Week 11 at 17:00

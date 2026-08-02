@@ -1,4 +1,4 @@
-# CS 101 — Lecture 29 (Week 9, Lecture 2)
+# CS 101 · Lecture 29 (Week 9, Lecture 2)
 ## String Algorithms: Searching, Tokenising, and Text Processing
 
 ---

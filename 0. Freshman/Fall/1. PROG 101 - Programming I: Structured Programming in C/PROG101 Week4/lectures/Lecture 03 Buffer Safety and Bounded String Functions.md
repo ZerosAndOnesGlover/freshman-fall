@@ -1,4 +1,4 @@
-# PROG 101 Programming I: Structured Programming in C
+# PROG 101 · Programming I: Structured Programming in C
 ## Week 4 · Lecture 3: Buffer Safety and the Bounded String Functions
 
 ---

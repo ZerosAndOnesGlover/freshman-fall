@@ -1,4 +1,4 @@
-# CS 102 — Lab 1 Solutions
+# CS 102 · Lab 1 Solutions
 ## INSTRUCTOR ONLY
 
 **Total: 40 points.** All outputs below were produced by executing the reference solution.

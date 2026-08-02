@@ -1,4 +1,4 @@
-# PHYS 141 — Problem Set 0
+# PHYS 141 · Problem Set 0
 ## Measurement, Units, Coordinate Systems & Vectors
 
 **Released:** Friday, Week 0 | **Due:** Friday, Week 1, 11:59 PM

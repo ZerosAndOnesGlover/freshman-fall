@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Quiz 12 — Trees and Traversal
 ### Administered: Monday, Week 12 (first 15 minutes of class)
 

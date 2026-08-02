@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Lab 4 — Set Workshop: Proofs, Venn Diagrams, and Computation
 ### Wednesday, Week 4 | Duration: 2 hours
 

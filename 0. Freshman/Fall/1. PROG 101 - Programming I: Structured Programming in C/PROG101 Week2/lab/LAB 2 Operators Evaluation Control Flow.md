@@ -1,4 +1,4 @@
-# PROG 101 — Programming I: Structured Programming in C
+# PROG 101 · Programming I: Structured Programming in C
 ## Week 2 · Lab 2: Operators, Evaluation Order, and Control Flow
 
 **Graded: 20 points**

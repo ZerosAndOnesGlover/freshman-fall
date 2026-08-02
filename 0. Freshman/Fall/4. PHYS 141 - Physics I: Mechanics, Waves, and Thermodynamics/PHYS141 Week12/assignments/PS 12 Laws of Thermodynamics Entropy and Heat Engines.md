@@ -1,4 +1,4 @@
-# PHYS 141 — Problem Set 12
+# PHYS 141 · Problem Set 12
 ## The Laws of Thermodynamics, Entropy, and Heat Engines
 
 **Released:** Friday EOD, Week 12 | **Due:** Wednesday of Finals Week

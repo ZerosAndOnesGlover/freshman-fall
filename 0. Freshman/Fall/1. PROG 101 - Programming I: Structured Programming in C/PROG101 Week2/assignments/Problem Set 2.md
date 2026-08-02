@@ -1,4 +1,4 @@
-# PROG 101 — Programming I: Structured Programming in C
+# PROG 101 · Programming I: Structured Programming in C
 ## Week 2 · Problem Set 2: Operators, Evaluation Order, and Control Flow
 
 **Released:** Friday, Week 2 · **Due:** Friday, Week 3 at 17:00

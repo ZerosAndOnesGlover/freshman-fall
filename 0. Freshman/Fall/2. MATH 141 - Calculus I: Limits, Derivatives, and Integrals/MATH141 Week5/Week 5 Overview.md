@@ -1,4 +1,4 @@
-# MATH 141 — Calculus I
+# MATH 141 · Calculus I
 ## Week 5 Overview and Instructor Notes
 
 **Topic:** Implicit Differentiation · Logarithmic Derivatives · Inverse Trig · Related Rates

@@ -1,4 +1,4 @@
-# CS 101 — Week 8 Reading Guide & Resources
+# CS 101 · Week 8 Reading Guide & Resources
 ## Data Structures II: Hash Tables and Sets
 
 ---

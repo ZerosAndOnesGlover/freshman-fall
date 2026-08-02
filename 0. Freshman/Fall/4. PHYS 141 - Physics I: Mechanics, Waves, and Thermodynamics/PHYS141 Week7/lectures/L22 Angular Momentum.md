@@ -1,4 +1,4 @@
-# PHYS 141 — Lecture 22
+# PHYS 141 · Lecture 22
 # Angular Momentum
 
 > **Core Principle:** Angular momentum is to rotation what linear momentum is to translation — a conserved quantity in isolated systems, arising directly from Newton's laws applied to rotational motion. Just as net external force changes linear momentum, net external torque changes angular momentum. This single relationship explains phenomena from spinning skaters to planetary orbits to gyroscopic stability.

@@ -1,4 +1,4 @@
-# CS 101 Problem Set 4
+# CS 101 · Problem Set 4
 ## Recursion: Thinking in Self-Reference
 
 **Released:** Friday, Week 4

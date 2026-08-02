@@ -1,4 +1,4 @@
-# CS 101 Lecture 9 (Week 2, Lecture 3)
+# CS 101 · Lecture 9 (Week 2, Lecture 3)
 ## Control Flow III: `for` Loops, `range`, and Tracing Execution
 
 **Week 2 · Friday**

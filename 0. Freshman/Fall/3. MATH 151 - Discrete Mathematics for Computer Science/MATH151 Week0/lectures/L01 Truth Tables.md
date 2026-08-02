@@ -1,4 +1,4 @@
-# MATH 151: Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Lecture 0.2. Truth Tables: Systematic Evaluation of Compound Propositions
 ### Thursday, Week 0
 

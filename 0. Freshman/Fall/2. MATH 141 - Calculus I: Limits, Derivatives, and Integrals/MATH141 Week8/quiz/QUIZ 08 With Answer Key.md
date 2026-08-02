@@ -1,4 +1,4 @@
-# MATH 141 — Calculus I
+# MATH 141 · Calculus I
 ## Quiz 08 (Monday, Week 8 — Start of Class)
 ### Covers: Week 7 — Shape of a Graph, Curve Sketching, Applied Optimization
 

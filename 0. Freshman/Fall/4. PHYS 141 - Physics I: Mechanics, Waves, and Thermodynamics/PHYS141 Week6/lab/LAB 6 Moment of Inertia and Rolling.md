@@ -1,4 +1,4 @@
-# PHYS 141 — Lab 6
+# PHYS 141 · Lab 6
 # Moment of Inertia and the Rolling Race
 
 **Duration:** 3 hours | **Partners:** Groups of 2–3

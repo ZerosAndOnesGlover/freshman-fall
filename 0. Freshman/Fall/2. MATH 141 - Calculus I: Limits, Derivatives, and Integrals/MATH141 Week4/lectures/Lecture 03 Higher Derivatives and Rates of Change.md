@@ -1,4 +1,4 @@
-# MATH 141 — Calculus I
+# MATH 141 · Calculus I
 ## Week 4 · Lecture 3 (Wednesday)
 ### Higher Derivatives and Rates of Change
 

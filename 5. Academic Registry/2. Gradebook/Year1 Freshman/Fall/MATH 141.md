@@ -7,7 +7,7 @@ semester: Fall
 status: in-progress
 ---
 
-# MATH 141 — Gradebook
+# MATH 141 · Gradebook
 ## Calculus I: Limits, Derivatives, and Integrals · 4 credits · Year 1 Fall
 
 > Enter a number in **Earned** only. Percentages, the course grade, the letter and the GPA points

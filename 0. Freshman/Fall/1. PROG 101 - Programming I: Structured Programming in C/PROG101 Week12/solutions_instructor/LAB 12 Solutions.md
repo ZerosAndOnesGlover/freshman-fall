@@ -1,4 +1,4 @@
-# PROG 101 Lab 12 Solutions (Instructor)
+# PROG 101 · Lab 12 Solutions (Instructor)
 ## Refactor, Test, Debug
 
 ---

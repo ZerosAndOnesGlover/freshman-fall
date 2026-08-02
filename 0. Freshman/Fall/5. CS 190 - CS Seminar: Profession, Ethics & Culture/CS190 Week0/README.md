@@ -1,4 +1,4 @@
-# CS 190: CS Seminar: Profession, Ethics & Culture
+# CS 190 · CS Seminar: Profession, Ethics & Culture
 ## Week 0: What is Computer Science? Careers in CS, Software, and Hardware Engineering
 
 **Format:** Weekly 1-hour seminar + readings

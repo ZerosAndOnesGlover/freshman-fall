@@ -1,4 +1,4 @@
-# CS 101 — Lab 11 Solutions (Instructor)
+# CS 101 · Lab 11 Solutions (Instructor)
 ## Building a Turing Machine
 
 **Reference implementation:** `tm_lab_solution.py` — verified **11/11 tests passing**.

@@ -1,4 +1,4 @@
-# MATH 141 — Calculus I
+# MATH 141 · Calculus I
 ## Quiz 05 (Monday, Week 5 — Start of Class)
 ### Covers: Week 4 — Differentiation Rules, the Chain Rule, Higher Derivatives and Rates
 *(Q1 revisits Week 3's limit definition deliberately — the rules are shortcuts for it, not replacements.)*

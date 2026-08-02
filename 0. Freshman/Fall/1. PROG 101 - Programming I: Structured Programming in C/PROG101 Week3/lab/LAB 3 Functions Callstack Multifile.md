@@ -1,4 +1,4 @@
-# PROG 101 — Programming I: Structured Programming in C
+# PROG 101 · Programming I: Structured Programming in C
 ## Week 3 · Lab 3: Functions, the Call Stack, and Multi-File Programs
 
 **Graded: 20 points**

@@ -1,4 +1,4 @@
-# CS 102 — Lab 0 Solutions
+# CS 102 · Lab 0 Solutions
 ## INSTRUCTOR ONLY
 
 **Total: 40 points.** All code below was executed; all timings are measured, not estimated.

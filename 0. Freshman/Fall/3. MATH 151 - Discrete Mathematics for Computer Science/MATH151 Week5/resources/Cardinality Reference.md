@@ -1,4 +1,4 @@
-# MATH 151 — Cardinality Reference
+# MATH 151 · Cardinality Reference
 ## Week 5: Bijections and the Sizes of Infinite Sets
 
 ---

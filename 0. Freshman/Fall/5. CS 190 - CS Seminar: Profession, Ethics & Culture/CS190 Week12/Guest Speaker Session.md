@@ -1,4 +1,4 @@
-# CS 190 — Week 12
+# CS 190 · Week 12
 ## Guest Speaker Session: A CS Professional
 
 **Format:** 60-minute seminar. Roughly 20 minutes of remarks, 40 minutes of questions.

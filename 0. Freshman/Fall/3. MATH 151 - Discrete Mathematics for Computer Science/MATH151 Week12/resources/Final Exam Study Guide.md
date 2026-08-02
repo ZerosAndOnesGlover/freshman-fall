@@ -1,4 +1,4 @@
-# MATH 151 — Final Exam Study Guide
+# MATH 151 · Final Exam Study Guide
 ## Comprehensive: Weeks 0–12
 
 ---

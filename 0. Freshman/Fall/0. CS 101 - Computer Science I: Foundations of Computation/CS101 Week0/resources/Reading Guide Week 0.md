@@ -1,4 +1,4 @@
-# CS 101 Week 0 Reading Guide & Resources
+# CS 101 · Week 0 Reading Guide & Resources
 
 **Week 0: Orientation: What is Computer Science?**
 

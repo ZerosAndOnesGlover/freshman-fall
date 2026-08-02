@@ -1,4 +1,4 @@
-# CS 190 CS Seminar: Profession, Ethics & Culture
+# CS 190 · CS Seminar: Profession, Ethics & Culture
 ## Course Overview and Syllabus
 ### Year 1 · Fall · 1 credit
 

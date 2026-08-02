@@ -1,4 +1,4 @@
-# MATH 141 — Calculus I
+# MATH 141 · Calculus I
 ## Week 7 Overview and Instructor Notes
 
 **Topic:** Shape of a Graph · Curve Sketching Synthesis · Applied Optimization

@@ -1,4 +1,4 @@
-# CS 101 — Problem Set 8
+# CS 101 · Problem Set 8
 ## Hash Tables, Dictionaries, and Sets
 
 **Released:** Friday, Week 8

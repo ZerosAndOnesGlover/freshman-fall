@@ -1,4 +1,4 @@
-# CS 101 Lecture 15 (Week 4, Lecture 3)
+# CS 101 · Lecture 15 (Week 4, Lecture 3)
 ## Recursion: Stack Depth, Tail Calls, and Design Mastery
 
 **Week 4 · Friday**

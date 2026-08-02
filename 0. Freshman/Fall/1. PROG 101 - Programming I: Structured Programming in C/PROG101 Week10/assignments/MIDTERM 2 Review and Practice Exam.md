@@ -1,4 +1,4 @@
-# PROG 101 — Midterm 2
+# PROG 101 · Midterm 2
 ## Review Guide and Practice Exam
 
 **Exam:** Week 10, Wednesday · 18:00–19:30 · VNC 100

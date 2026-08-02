@@ -1,4 +1,4 @@
-# CS 101 — Week 7 Reading Guide & Resources
+# CS 101 · Week 7 Reading Guide & Resources
 ## Data Structures I: Lists, Stacks, and Queues
 
 ---

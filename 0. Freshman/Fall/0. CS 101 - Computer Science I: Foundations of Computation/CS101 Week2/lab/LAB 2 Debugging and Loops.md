@@ -1,4 +1,4 @@
-# CS 101 Lab 2
+# CS 101 · Lab 2
 ## Debugging with Print-Tracing, PDB, and Loop Invariants
 
 **Week 2 · Tuesday Lab Section**

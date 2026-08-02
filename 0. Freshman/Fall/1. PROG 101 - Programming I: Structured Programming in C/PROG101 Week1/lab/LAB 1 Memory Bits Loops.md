@@ -1,4 +1,4 @@
-# PROG 101 — Programming I: Structured Programming in C
+# PROG 101 · Programming I: Structured Programming in C
 ## Week 1 · Lab 1: Memory Layout, Bit Manipulation, and Loop Tracing
 
 **Graded: 20 points (completion + correctness)**

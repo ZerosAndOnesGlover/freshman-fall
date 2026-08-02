@@ -1,4 +1,4 @@
-# CS 101 — Week 9 Reading Guide & Resources
+# CS 101 · Week 9 Reading Guide & Resources
 ## Strings, Text Processing, and Regular Expressions
 
 ---

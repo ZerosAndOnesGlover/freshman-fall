@@ -1,4 +1,4 @@
-# CS 101 — Quiz 9
+# CS 101 · Quiz 9
 ## Week 9, Wednesday — In-Class Assessment
 
 **Duration:** 10 minutes (first 10 minutes of Wednesday lecture)

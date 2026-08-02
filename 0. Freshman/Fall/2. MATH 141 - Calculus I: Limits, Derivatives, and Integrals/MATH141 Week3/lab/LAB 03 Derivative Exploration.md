@@ -1,4 +1,4 @@
-# MATH 141 — Calculus I
+# MATH 141 · Calculus I
 ## Lab 03 (Friday, Week 3)
 ### The Derivative: Numerical Exploration, Graphical Interpretation, and Rule Verification
 

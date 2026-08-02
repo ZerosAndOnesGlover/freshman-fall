@@ -1,4 +1,4 @@
-# CS 101 — Week 6 Reading Guide & Resources
+# CS 101 · Week 6 Reading Guide & Resources
 ## Algorithm Analysis: Big-O Notation
 
 ---

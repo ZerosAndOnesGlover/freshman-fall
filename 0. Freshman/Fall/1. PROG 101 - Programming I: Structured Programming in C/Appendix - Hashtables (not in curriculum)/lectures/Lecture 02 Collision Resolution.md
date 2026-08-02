@@ -1,4 +1,4 @@
-# PROG 101 Programming I: Structured Programming in C
+# PROG 101 · Programming I: Structured Programming in C
 ## Appendix · Lecture 2: Collision Resolution — Chaining and Open Addressing
 
 ---

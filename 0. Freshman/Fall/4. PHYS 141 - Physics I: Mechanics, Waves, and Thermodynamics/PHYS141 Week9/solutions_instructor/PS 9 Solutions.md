@@ -1,4 +1,4 @@
-# PHYS 141 — Problem Set 9 Solutions
+# PHYS 141 · Problem Set 9 Solutions
 ## INSTRUCTOR ONLY
 
 **Total: 100 points.** All values verified computationally. $v_{\text{sound}} = 340$ m/s.

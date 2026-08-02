@@ -1,4 +1,4 @@
-# PROG 101 — Week 1 Resources
+# PROG 101 · Week 1 Resources
 ## Two's Complement Worksheet + Bit Manipulation Reference
 
 ---

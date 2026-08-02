@@ -1,4 +1,4 @@
-# MATH 151 — Function Properties Reference
+# MATH 151 · Function Properties Reference
 ## Week 5: Functions, Composition, Inverses, Bijections and Cardinality
 
 ---

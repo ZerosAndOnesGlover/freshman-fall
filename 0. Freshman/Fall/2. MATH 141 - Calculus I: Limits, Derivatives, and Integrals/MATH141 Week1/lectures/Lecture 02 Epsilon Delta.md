@@ -1,4 +1,4 @@
-# MATH 141 Calculus I
+# MATH 141 · Calculus I
 ## Week 1 · Lecture 2 (Tuesday)
 ### The Formal ε-δ Definition of a Limit
 

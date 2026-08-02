@@ -1,4 +1,4 @@
-# MATH 151 Course Overview & Syllabus
+# MATH 151 · Course Overview & Syllabus
 ## Discrete Mathematics for Computer Science
 
 ---

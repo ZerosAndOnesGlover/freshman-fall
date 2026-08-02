@@ -1,4 +1,4 @@
-# MATH 141: Calculus I
+# MATH 141 · Calculus I
 ## Diagnostic Quiz 00
 ### Week 0: Placement Self-Assessment
 

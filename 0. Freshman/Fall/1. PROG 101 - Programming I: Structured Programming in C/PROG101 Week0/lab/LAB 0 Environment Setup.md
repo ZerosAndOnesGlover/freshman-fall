@@ -1,4 +1,4 @@
-# PROG 101 Programming I: Structured Programming in C
+# PROG 101 · Programming I: Structured Programming in C
 ## Week 0 · Lab 0: Environment Setup
 
 **Not graded: completion required before Problem Set 0**

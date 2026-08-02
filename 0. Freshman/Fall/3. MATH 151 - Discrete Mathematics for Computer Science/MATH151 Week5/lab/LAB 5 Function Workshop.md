@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Lab 5 — Function Workshop: Properties, Composition, Bijections
 ### Wednesday, Week 5 | Duration: 2 hours
 

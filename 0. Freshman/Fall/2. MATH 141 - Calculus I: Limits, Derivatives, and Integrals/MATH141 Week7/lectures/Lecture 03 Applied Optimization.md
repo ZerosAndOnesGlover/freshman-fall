@@ -1,4 +1,4 @@
-# MATH 141 — Calculus I
+# MATH 141 · Calculus I
 ## Week 7 · Lecture 3 (Wednesday)
 ### Applied Optimization: Maximum and Minimum Problems
 

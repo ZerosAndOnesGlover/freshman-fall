@@ -1,4 +1,4 @@
-# CS 102 — Problem Set 2: Solutions
+# CS 102 · Problem Set 2: Solutions
 ## Instructor Copy — Not for Distribution
 
 **100 points.** All code below was executed; all output shown is real.

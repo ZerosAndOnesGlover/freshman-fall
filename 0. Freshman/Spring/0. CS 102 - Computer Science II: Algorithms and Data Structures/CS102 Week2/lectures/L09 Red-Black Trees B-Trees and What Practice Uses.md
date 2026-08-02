@@ -1,4 +1,4 @@
-# CS 102 — Computer Science II
+# CS 102 · Computer Science II
 ## Lecture 09: Red-Black Trees, B-Trees, and What Practice Actually Uses
 
 ---

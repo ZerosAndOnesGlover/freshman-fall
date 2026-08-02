@@ -1,4 +1,4 @@
-# PROG 101 — Week 7 Resources
+# PROG 101 · Week 7 Resources
 ## Struct Layout Reference · Linked List Pattern Library · Common Bugs
 
 ---

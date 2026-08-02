@@ -1,4 +1,4 @@
-# MATH 141 — Calculus I
+# MATH 141 · Calculus I
 ## Lab 10 (Friday, Week 10)
 ### Substitution Pattern Recognition, Symmetry, and the Tabular Method for Integration by Parts
 

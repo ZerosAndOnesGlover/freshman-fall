@@ -1,4 +1,4 @@
-# PHYS 141 — Quiz 3
+# PHYS 141 · Quiz 3
 ## Newton's Three Laws of Motion
 
 **Time limit:** 20 minutes | **Format:** Closed book

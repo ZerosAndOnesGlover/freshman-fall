@@ -1,4 +1,4 @@
-# CS 101: Problem Set 10
+# CS 101 · Problem Set 10
 ## Files, I/O, and Error Handling
 
 **Released:** Friday, Week 10 | **Due:** Friday, Week 11 (11:59 PM)

@@ -1,4 +1,4 @@
-# MATH 141 — Problem Set 2
+# MATH 141 · Problem Set 2
 ## Continuity and the Intermediate Value Theorem
 
 **Released:** Wednesday, Week 2 · **Due:** Wednesday, Week 3 at the start of class

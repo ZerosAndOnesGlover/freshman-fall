@@ -1,4 +1,4 @@
-# CS 102 — Lab 1
+# CS 102 · Lab 1
 ## Visualising Tree Traversals
 
 **Week 1 · 2-hour lab session · 40 points**

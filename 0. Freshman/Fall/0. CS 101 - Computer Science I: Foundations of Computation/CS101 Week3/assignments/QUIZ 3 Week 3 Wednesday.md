@@ -1,4 +1,4 @@
-# CS 101 Quiz 3
+# CS 101 · Quiz 3
 ## Week 3, Wednesday: In-Class Assessment
 
 **Duration:** 10 minutes (first 10 minutes of Wednesday lecture)

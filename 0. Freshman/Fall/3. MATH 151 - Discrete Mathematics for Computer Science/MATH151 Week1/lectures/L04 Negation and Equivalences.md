@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Lecture 1.2 (L04) — Negating Quantified Statements and Logical Equivalences
 ### Thursday, Week 1
 

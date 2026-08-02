@@ -1,4 +1,4 @@
-# CS 101: Lab 9
+# CS 101 · Lab 9
 ## Text Processing: Measuring the Concatenation Trap, Search Cost, and Regex Behaviour
 
 **Duration:** 3 hours | **Graded:** TA checkoff on completion and correctness

@@ -1,4 +1,4 @@
-# MATH 141 — Calculus I
+# MATH 141 · Calculus I
 ## Week 9 · Lecture 3 (Wednesday)
 ### Accumulation and Functions Defined by Integrals
 

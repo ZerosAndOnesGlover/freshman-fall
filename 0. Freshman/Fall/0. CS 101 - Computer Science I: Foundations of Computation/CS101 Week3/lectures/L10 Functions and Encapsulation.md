@@ -1,4 +1,4 @@
-# CS 101 Lecture 10 (Week 3, Lecture 1)
+# CS 101 · Lecture 10 (Week 3, Lecture 1)
 ## Functions, Parameters, Return Values, and Encapsulation
 
 **Week 3 · Wednesday**

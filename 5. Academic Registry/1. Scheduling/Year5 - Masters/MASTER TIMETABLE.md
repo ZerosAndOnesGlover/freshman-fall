@@ -6,9 +6,9 @@
 
 ## Program Overview
 
-Two-year, 4-semester, 36-credit-hour program. Thesis Track shown as the default path below (SE 599A/B) — Project Track substitutes SE 590A/B in the same slot; Coursework Track drops the thesis/project block entirely and adds 2 more electives instead (see COURSE_POLICIES.md).
+Two-year, 4-semester, 36-credit-hour program. Thesis Track shown as the default path below (SE 599A/B) — Project Track substitutes SE 590A/B in the same slot; Coursework Track drops the thesis/project block entirely and adds 2 more electives instead (see COURSE POLICIES.md).
 
-Required Core (18 credits, 6 courses) is fixed by semester. Technical Electives (12–18 credits, 3–4+ courses) are chosen from a 12-course menu spread across all four semesters — one representative elective per semester is shown below with a real schedule; the rest of the menu exists as reference folders only (see ROOM_ASSIGNMENTS.md for the "elective slot" note).
+Required Core (18 credits, 6 courses) is fixed by semester. Technical Electives (12–18 credits, 3–4+ courses) are chosen from a 12-course menu spread across all four semesters — one representative elective per semester is shown below with a real schedule; the rest of the menu exists as reference folders only (see ROOM ASSIGNMENTS.md for the "elective slot" note).
 
 ---
 
@@ -44,7 +44,7 @@ Required Core (18 credits, 6 courses) is fixed by semester. Technical Electives 
 | **SE 599A / 590A** | M.S. Thesis Part I / M.S. Project Part I | 3 | Fri 14:00–15:50 (advisor meeting) | Proposal + progress, advisor-assessed |
 | **SE 500A** | Research Colloquium (0-credit) | 0 | Wed 17:00–17:50 | Attendance only |
 | **SE 500B** | Career Practicum (0-credit) | 0 | Thu 17:00–17:50 | Attendance only |
-| **SE 500C** | Thesis/Project Proposal Presentation (0-credit) | 0 | One-time — see ASSESSMENT_CALENDAR.md | Pass/fail presentation |
+| **SE 500C** | Thesis/Project Proposal Presentation (0-credit) | 0 | One-time — see ASSESSMENT CALENDAR.md | Pass/fail presentation |
 | | **Total Credits** | **9** | | |
 
 ### Master's II (M2) — Spring (Year 2)
@@ -55,10 +55,10 @@ Required Core (18 credits, 6 courses) is fixed by semester. Technical Electives 
 | **ELEC IV** | Technical Elective (menu of 12 — SE 540 shown) | 3 | Tue/Thu 09:00–10:15 | Varies — typically PS 30%, Project 40%, Exams 30% |
 | **SE 599B / 590B** | M.S. Thesis Part II / M.S. Project Part II | 3 | Fri 14:00–15:50 (advisor meeting) | Final defense/presentation |
 | **SE 500A** | Research Colloquium (0-credit) | 0 | Mon 17:00–17:50 | Attendance only |
-| **SE 500D** | M.S. Defense / Final Project Presentation (0-credit) | 0 | One-time — see ASSESSMENT_CALENDAR.md | Pass/fail defense |
+| **SE 500D** | M.S. Defense / Final Project Presentation (0-credit) | 0 | One-time — see ASSESSMENT CALENDAR.md | Pass/fail defense |
 | | **Total Credits** | **9** | | |
 
-> Coursework Track: drop SE 599/590 and add 2 more electives (e.g. SE 550, SE 560 — both housed in M2 Spring) instead. See COURSE_POLICIES.md.
+> Coursework Track: drop SE 599/590 and add 2 more electives (e.g. SE 550, SE 560 — both housed in M2 Spring) instead. See COURSE POLICIES.md.
 
 **Program Total: 36 credits over 4 semesters.**
 

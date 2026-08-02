@@ -1,4 +1,4 @@
-# CS 190 — Week 10 Reading Guide
+# CS 190 · Week 10 Reading Guide
 ## The Future of Work: Automation, Jobs, Universal Basic Income
 
 **Total required reading: roughly 60 pages.** Two of the three are economics papers written for a

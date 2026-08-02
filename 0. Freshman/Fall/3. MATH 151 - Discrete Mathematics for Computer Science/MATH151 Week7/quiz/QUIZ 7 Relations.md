@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Quiz 7 — Relations
 ### Administered: Monday, Week 7 (first 15 minutes of class)
 

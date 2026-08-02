@@ -1,4 +1,4 @@
-# CS 101 — Lecture 20 (Week 6, Lecture 2)
+# CS 101 · Lecture 20 (Week 6, Lecture 2)
 ## Algorithm Analysis II: Recurrence Relations and the Master Theorem
 
 **Week 6 · Thursday**

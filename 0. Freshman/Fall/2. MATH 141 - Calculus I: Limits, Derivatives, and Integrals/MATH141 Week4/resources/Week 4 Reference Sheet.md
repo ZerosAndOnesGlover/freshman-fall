@@ -1,4 +1,4 @@
-# MATH 141 — Week 4 Reference Sheet
+# MATH 141 · Week 4 Reference Sheet
 ## Differentiation Rules
 
 ---

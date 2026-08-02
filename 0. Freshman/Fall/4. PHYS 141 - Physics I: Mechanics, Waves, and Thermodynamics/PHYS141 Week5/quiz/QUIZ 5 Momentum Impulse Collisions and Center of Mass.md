@@ -1,4 +1,4 @@
-# PHYS 141 — Quiz 5
+# PHYS 141 · Quiz 5
 ## Momentum, Impulse, Collisions & Center of Mass
 
 **Time limit:** 20 minutes | **Format:** Closed book

@@ -1,4 +1,4 @@
-# MATH 141 — Week 2 Reference Sheet
+# MATH 141 · Week 2 Reference Sheet
 ## Continuity and the IVT
 
 ---

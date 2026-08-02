@@ -1,4 +1,4 @@
-# CS 190: CS Seminar: Profession, Ethics & Culture
+# CS 190 · CS Seminar: Profession, Ethics & Culture
 ## Week 6: AI and Society
 ### Autonomous Weapons, Deepfakes, and LLMs
 

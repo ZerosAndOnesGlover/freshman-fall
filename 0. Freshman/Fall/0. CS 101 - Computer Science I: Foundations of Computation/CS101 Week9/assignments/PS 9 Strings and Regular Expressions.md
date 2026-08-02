@@ -1,4 +1,4 @@
-# CS 101 — Problem Set 9
+# CS 101 · Problem Set 9
 ## Strings, Text Processing, and Regular Expressions
 
 **Released:** Friday, Week 9 | **Due:** Friday, Week 10 (11:59 PM)

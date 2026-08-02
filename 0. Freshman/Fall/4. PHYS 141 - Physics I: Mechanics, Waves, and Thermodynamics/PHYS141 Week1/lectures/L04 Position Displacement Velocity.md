@@ -1,4 +1,4 @@
-# PHYS 141 — Lecture 4
+# PHYS 141 · Lecture 4
 # Position, Displacement & Velocity
 
 > **Core Principle:** Motion is the change of position over time. To describe motion precisely, you need a reference point, a direction convention, and a clock. Everything else in kinematics follows from these three choices — and from calculus.

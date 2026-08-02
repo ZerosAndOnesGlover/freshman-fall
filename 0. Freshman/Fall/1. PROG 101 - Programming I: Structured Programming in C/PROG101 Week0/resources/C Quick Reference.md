@@ -1,4 +1,4 @@
-# PROG 101: C Quick Reference Card
+# PROG 101 · C Quick Reference Card
 ## Week 0 Edition
 
 Keep this open while coding. It grows with you each week.

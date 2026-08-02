@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Lecture 4.2 (L13) — Set Identities and Proof Techniques
 ### Thursday, Week 4
 

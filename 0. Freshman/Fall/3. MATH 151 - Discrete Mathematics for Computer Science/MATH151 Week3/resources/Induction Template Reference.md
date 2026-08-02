@@ -1,4 +1,4 @@
-# MATH 151 — Induction Template Reference
+# MATH 151 · Induction Template Reference
 ## Week 3: Weak and Strong Mathematical Induction
 
 ---

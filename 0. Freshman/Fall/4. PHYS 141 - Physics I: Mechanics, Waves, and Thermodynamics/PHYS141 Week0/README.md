@@ -1,4 +1,4 @@
-# PHYS 141 Physics I: Mechanics, Waves & Thermodynamics
+# PHYS 141 · Physics I: Mechanics, Waves & Thermodynamics
 ## Week 0: Measurement, Units, Coordinate Systems & Vectors
 
 **Semester:** Fall | **Credits:** 4 | **Lab:** Weekly 3-hr lab session

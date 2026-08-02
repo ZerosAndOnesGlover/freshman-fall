@@ -1,4 +1,4 @@
-# CS 101 Course Overview & Syllabus Excerpt
+# CS 101 · Course Overview & Syllabus Excerpt
 ## Computer Science I: Foundations of Computation
 
 ---

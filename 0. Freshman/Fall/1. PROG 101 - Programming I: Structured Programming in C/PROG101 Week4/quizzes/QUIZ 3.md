@@ -1,4 +1,4 @@
-# PROG 101 — Quiz 3
+# PROG 101 · Quiz 3
 ## Week 4, Tuesday — In-Class Assessment
 
 **Administered:** start of Week 4, Lecture 1 (Tuesday)

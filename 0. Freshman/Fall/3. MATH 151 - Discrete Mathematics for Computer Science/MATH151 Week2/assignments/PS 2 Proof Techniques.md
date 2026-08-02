@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Problem Set 2 — Proof Techniques
 ### Released: Friday, Week 2 | Due: Friday, Week 3 (11:59 PM)
 

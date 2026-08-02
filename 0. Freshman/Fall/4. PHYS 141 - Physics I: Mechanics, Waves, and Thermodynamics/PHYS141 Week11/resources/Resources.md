@@ -1,4 +1,4 @@
-# PHYS 141 — Week 11 Resources
+# PHYS 141 · Week 11 Resources
 
 ## Required Textbook Reading
 

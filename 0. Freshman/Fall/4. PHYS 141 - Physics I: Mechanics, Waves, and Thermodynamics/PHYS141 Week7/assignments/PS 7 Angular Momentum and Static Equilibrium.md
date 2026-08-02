@@ -1,4 +1,4 @@
-# PHYS 141 — Problem Set 7
+# PHYS 141 · Problem Set 7
 ## Angular Momentum & Static Equilibrium
 
 **Released:** Friday, Week 7 | **Due:** Friday, Week 8, 11:59 PM

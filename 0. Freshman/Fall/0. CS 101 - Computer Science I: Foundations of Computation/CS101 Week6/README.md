@@ -1,4 +1,4 @@
-# CS 101 — Week 6: Algorithm Analysis — Big-O Notation
+# CS 101 · Week 6: Algorithm Analysis — Big-O Notation
 
 ---
 

@@ -1,4 +1,4 @@
-# CS 101 — Lecture 27 (Week 8, Lecture 3)
+# CS 101 · Lecture 27 (Week 8, Lecture 3)
 ## Practical Dictionary and Set Mastery
 
 **Week 8 · Friday**

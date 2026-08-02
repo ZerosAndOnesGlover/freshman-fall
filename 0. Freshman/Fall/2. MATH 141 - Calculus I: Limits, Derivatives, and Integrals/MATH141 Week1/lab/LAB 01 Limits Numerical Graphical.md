@@ -1,4 +1,4 @@
-# MATH 141 Calculus I
+# MATH 141 · Calculus I
 ## Lab 01 (Friday, Week 1)
 ### Numerical and Graphical Investigation of Limits
 

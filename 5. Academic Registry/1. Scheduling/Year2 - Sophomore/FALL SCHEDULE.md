@@ -34,42 +34,13 @@
 |------|--------|---------|-----------|----------|--------|
 | **07:30** | Morning Prep | Morning Prep | Morning Prep | Morning Prep | Morning Prep |
 | **08:00** | — | — | — | — | — |
-| **08:30** | 📖 **CS201**
-08:30–09:20
-(LEC) | — | 📖 **CS201**
-08:30–09:20
-(LEC) | — | 📖 **CS201**
-08:30–09:20
-(LEC) |
-| **09:00** | — | — | — | — | — |
-| **09:30** | — | 📖 **CS211**
-09:30–10:45
-(LEC) | — | 📖 **CS211**
-09:30–10:45
-(LEC) | — |
-| **09:50** | — | — | — | — | — |
-| **10:00** | — | 📖 **PROG201**
-10:00–10:50
-(LEC) | 📖 **PROG201**
-10:00–10:50
-(LEC) | 📖 **PROG201**
-10:00–10:50
-(LEC) | — |
-| **10:50** | — | — | — | — | — |
-| **11:00** | 📖 **MATH241**
-11:00–11:50
-(LEC) | 📖 **MATH241**
-11:00–11:50
-(LEC) | — | — | 📖 **MATH241**
-11:00–11:50
-(LEC) |
-| **11:50** | — | — | — | — | — |
+| **08:30** | 📖 **CS201**<br>08:30–09:20<br>(LEC) | — | 📖 **CS201**<br>08:30–09:20<br>(LEC) | — | 📖 **CS201**<br>08:30–09:20<br>(LEC) |
+| **09:30** | — | 📖 **CS211**<br>09:30–10:45<br>(LEC) | — | 📖 **CS211**<br>09:30–10:45<br>(LEC) | — |
+| **10:00** | — | 📖 **PROG201**<br>10:00–10:50<br>(LEC) | 📖 **PROG201**<br>10:00–10:50<br>(LEC) | 📖 **PROG201**<br>10:00–10:50<br>(LEC) | — |
+| **11:00** | 📖 **MATH241**<br>11:00–11:50<br>(LEC) | 📖 **MATH241**<br>11:00–11:50<br>(LEC) | — | — | 📖 **MATH241**<br>11:00–11:50<br>(LEC) |
 | **12:00** | 🍽️ Lunch Break | 🍽️ Lunch Break | 🍽️ Lunch Break | 🍽️ Lunch Break | 🍽️ Lunch Break |
 | **13:00** | — | — | — | — | — |
-| **14:00** | — | — | — | — | 🔬 **CS211**
-14:00–15:50
-(LAB) |
-| **15:00** | 🔬 **PROG201**
+| **14:00** | — | — | — | — | 🔬 **CS211**<br>14:00–15:50<br>(LAB) |
 15:00–16:50
 (LAB) | 🔬 **CS201**
 15:00–16:50
@@ -85,7 +56,7 @@
 
 ## Daily Breakdown
 
-> Quiz days are course-specific — each course quizzes at the start of its own first lecture of the week. See ASSESSMENT_CALENDAR.md.
+> Quiz days are course-specific — each course quizzes at the start of its own first lecture of the week. See ASSESSMENT CALENDAR.md.
 
 ### Monday
 ```
@@ -166,7 +137,7 @@
 | Wednesday | 17:00 | New problem set released |
 | Friday | 14:00 | CS 211 Lab begins |
 | Friday | 17:00 | ⚠️ Problem set due |
-| Ongoing | TBD | Project milestones (see ASSESSMENT_CALENDAR.md) |
+| Ongoing | TBD | Project milestones (see ASSESSMENT CALENDAR.md) |
 
 ---
 
@@ -176,8 +147,8 @@ Midterm and final exams are held in the **evening** to avoid displacing regular 
 
 | Exam Type | Typical Time | Duration | Location |
 |-----------|-------------|---------|----------|
-| Midterm Exams | 18:00–19:15 or 18:00–19:30 | 75–90 min | Large lecture hall (see ROOM_ASSIGNMENTS.md) |
+| Midterm Exams | 18:00–19:15 or 18:00–19:30 | 75–90 min | Large lecture hall (see ROOM ASSIGNMENTS.md) |
 | Final Exams | 08:00–10:00, 09:00–11:30, or 14:00–16:30 | 120–150 min | Assigned exam room |
 
-> Check ASSESSMENT_CALENDAR.md for exact exam dates. Conflicts must be reported to your academic advisor at least 2 weeks in advance.
+> Check ASSESSMENT CALENDAR.md for exact exam dates. Conflicts must be reported to your academic advisor at least 2 weeks in advance.
 

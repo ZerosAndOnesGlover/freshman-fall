@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Lecture 8.3 (L26) — Advanced Counting: Choosing the Right Tool
 ### Friday, Week 8
 

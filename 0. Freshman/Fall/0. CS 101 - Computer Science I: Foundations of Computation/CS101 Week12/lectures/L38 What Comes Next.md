@@ -1,4 +1,4 @@
-# CS 101: Lecture 38 (Week 12, Lecture 2)
+# CS 101 · Lecture 38 (Week 12, Lecture 2)
 ## What Comes Next: The Map of the Field
 
 ---

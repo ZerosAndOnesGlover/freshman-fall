@@ -1,4 +1,4 @@
-# CS 101 — Problem Set 6
+# CS 101 · Problem Set 6
 ## Algorithm Analysis: Classifying and Proving Big-O Bounds
 
 **Released:** Friday, Week 6

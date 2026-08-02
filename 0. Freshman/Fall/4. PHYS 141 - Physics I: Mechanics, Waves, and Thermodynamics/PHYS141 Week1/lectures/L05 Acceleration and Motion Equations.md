@@ -1,4 +1,4 @@
-# PHYS 141 — Lecture 5
+# PHYS 141 · Lecture 5
 # Acceleration & The Kinematic Equations
 
 > **Core Principle:** Acceleration is the rate of change of velocity. Under constant acceleration — the most important special case — the five kinematic equations can be derived rigorously from calculus. Memorizing them without this derivation is fragile; understanding the derivation makes them unforgettable and tells you exactly when they apply.

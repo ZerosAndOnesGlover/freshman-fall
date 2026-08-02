@@ -1,4 +1,4 @@
-# PHYS 141 — Lecture 11
+# PHYS 141 · Lecture 11
 # Newton's Third Law & Free Body Diagrams
 
 > **Core Principle:** Forces never exist in isolation — they always come in pairs. Newton's Third Law says that whenever object A exerts a force on object B, object B simultaneously exerts an equal and opposite force on object A. These paired forces act on *different* objects, which is why they never cancel. The free body diagram is the tool that keeps this straight.

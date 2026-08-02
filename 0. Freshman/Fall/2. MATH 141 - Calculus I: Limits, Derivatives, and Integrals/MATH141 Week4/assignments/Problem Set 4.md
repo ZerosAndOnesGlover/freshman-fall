@@ -1,4 +1,4 @@
-# MATH 141 — Problem Set 4
+# MATH 141 · Problem Set 4
 ## Differentiation Rules
 
 **Released:** Wednesday, Week 4 · **Due:** Wednesday, Week 5 at the start of class

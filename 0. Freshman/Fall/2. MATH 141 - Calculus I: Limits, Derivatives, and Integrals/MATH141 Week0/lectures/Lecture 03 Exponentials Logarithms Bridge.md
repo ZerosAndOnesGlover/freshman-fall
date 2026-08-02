@@ -1,4 +1,4 @@
-# MATH 141 Calculus I
+# MATH 141 · Calculus I
 ## Week 0 · Lecture 3 of 4
 ### Exponentials, Logarithms & the Bridge to Calculus
 

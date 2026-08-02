@@ -1,4 +1,4 @@
-# PHYS 141 — Problem Set 1
+# PHYS 141 · Problem Set 1
 ## Kinematics in One Dimension
 
 **Released:** Friday, Week 1 | **Due:** Friday, Week 2, 11:59 PM

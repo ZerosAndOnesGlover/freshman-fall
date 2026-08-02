@@ -1,4 +1,4 @@
-# PROG 101 — Quiz 5
+# PROG 101 · Quiz 5
 ## Week 6, Tuesday — In-Class Assessment
 
 **Duration:** 10 minutes · **Format:** Written, closed book

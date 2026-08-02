@@ -1,4 +1,4 @@
-# PHYS 141 — Week 12 Resources
+# PHYS 141 · Week 12 Resources
 
 ## Required Textbook Reading
 

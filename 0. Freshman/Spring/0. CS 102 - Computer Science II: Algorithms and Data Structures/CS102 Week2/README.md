@@ -1,4 +1,4 @@
-# CS 102: Computer Science II — Algorithms and Data Structures
+# CS 102 · Computer Science II — Algorithms and Data Structures
 ## Week 2: Balanced BSTs — AVL Trees and Red-Black Trees
 
 **Assessment for this course (overall):** Problem Sets 35%, Midterms 25%, Final 20%, Projects 20%

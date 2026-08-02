@@ -1,4 +1,4 @@
-# PROG 101 — Programming I: Structured Programming in C
+# PROG 101 · Programming I: Structured Programming in C
 ## Week 4 · Problem Set 4: Arrays and Strings
 
 **Released:** Friday, Week 4 · **Due:** Friday, Week 5 at 17:00

@@ -1,4 +1,4 @@
-# PHYS 141 — Problem Set 6
+# PHYS 141 · Problem Set 6
 ## Rotational Kinematics & Dynamics
 
 **Released:** Friday, Week 6 | **Due:** Friday, Week 7, 11:59 PM

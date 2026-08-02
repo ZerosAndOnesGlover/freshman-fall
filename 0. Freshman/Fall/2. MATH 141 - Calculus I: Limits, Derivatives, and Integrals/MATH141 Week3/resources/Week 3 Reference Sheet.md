@@ -1,4 +1,4 @@
-# MATH 141 — Calculus I
+# MATH 141 · Calculus I
 ## Week 3 Reference Sheet
 ### The Derivative — Definition and Rules
 

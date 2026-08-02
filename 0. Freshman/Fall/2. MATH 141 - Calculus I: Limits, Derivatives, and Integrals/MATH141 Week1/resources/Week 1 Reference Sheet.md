@@ -1,4 +1,4 @@
-# MATH 141 Calculus I
+# MATH 141 · Calculus I
 ## Week 1 Resource Sheet
 ### Limits and Continuity — Quick Reference
 

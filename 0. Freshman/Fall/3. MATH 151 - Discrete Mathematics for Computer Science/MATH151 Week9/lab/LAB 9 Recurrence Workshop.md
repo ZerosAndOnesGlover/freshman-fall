@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Lab 9 — Recurrence Workshop: Modelling, Solving, Verifying
 ### Wednesday, Week 9 | Duration: 2 hours
 

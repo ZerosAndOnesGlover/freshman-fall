@@ -1,4 +1,4 @@
-# MATH 141 Calculus I
+# MATH 141 · Calculus I
 ## Week 1 Overview and Instructor Notes
 
 **Topic:** Limits — Intuition, the ε-δ Definition, Infinite Limits and Limits at Infinity

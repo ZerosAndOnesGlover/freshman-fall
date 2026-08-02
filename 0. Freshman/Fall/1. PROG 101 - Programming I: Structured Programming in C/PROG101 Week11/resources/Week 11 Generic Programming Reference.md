@@ -1,4 +1,4 @@
-# PROG 101 — Week 11 Reference
+# PROG 101 · Week 11 Reference
 ## Function Pointers and Generic Programming
 
 ---

@@ -1,4 +1,4 @@
-# CS 101 — Week 12
+# CS 101 · Week 12
 ## Synthesis, Review, Path Forward
 
 ---

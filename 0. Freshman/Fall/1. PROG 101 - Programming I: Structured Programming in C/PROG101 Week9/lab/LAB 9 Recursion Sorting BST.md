@@ -1,4 +1,4 @@
-# PROG 101 — Programming I: Structured Programming in C
+# PROG 101 · Programming I: Structured Programming in C
 ## Week 9 · Lab 9: Recursion, Sorting, and Binary Search Trees
 
 **Graded: 20 points**

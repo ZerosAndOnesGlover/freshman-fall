@@ -1,4 +1,4 @@
-# CS 190: CS Seminar: Profession, Ethics & Culture
+# CS 190 · CS Seminar: Profession, Ethics & Culture
 ## Week 12: Guest Speaker — CS Professional; Course Reflection
 
 **Format:** Weekly 1-hour seminar — guest remarks and questions, then a closing retrospective.

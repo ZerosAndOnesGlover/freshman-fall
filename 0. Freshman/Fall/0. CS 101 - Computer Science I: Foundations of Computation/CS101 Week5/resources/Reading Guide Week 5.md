@@ -1,4 +1,4 @@
-# CS 101: Week 5 Reading Guide & Resources
+# CS 101 · Week 5 Reading Guide & Resources
 ## Searching and Sorting Algorithms
 
 ---

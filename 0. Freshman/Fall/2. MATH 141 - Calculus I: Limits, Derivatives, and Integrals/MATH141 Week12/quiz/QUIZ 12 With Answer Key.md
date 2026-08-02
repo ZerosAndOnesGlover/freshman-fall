@@ -1,4 +1,4 @@
-# MATH 141 — Quiz 12
+# MATH 141 · Quiz 12
 ## Administered: start of Week 12, Monday
 ### Covers: Week 11 — applications of integration
 

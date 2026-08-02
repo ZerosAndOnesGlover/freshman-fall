@@ -1,4 +1,4 @@
-# PROG 101 — Lab 5 Solutions (Instructor)
+# PROG 101 · Lab 5 Solutions (Instructor)
 ## Pointer Mechanics and Write-Back
 
 All observations below were produced by running the lab's own programs on the reference machine

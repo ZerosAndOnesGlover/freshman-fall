@@ -1,4 +1,4 @@
-# PHYS 141 — Lecture 6
+# PHYS 141 · Lecture 6
 # Free Fall & Graphical Analysis of Motion
 
 > **Core Principle:** Free fall is constant-acceleration motion with a = −g, where g = 9.81 m/s² is determined by the Earth's mass and radius alone — completely independent of the mass, size, or composition of the falling object. Reading motion graphs fluently is as important as solving equations; graphs reveal structure that algebra alone can hide.

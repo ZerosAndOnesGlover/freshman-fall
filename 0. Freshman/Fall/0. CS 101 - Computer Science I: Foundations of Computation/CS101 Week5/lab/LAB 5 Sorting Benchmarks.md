@@ -1,4 +1,4 @@
-# CS 101: Lab 5
+# CS 101 · Lab 5
 ## Benchmarking Sorting Algorithms
 
 **Week 5 · Tuesday Lab Section**

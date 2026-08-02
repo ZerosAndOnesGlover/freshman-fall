@@ -1,4 +1,4 @@
-# MATH 151 — Proof Strategies Reference
+# MATH 151 · Proof Strategies Reference
 ## Week 2: Direct, Contrapositive, Contradiction
 
 ---

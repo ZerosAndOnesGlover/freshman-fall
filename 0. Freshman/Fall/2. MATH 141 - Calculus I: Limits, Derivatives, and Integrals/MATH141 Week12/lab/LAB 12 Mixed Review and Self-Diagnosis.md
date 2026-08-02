@@ -1,4 +1,4 @@
-# MATH 141 — Lab 12
+# MATH 141 · Lab 12
 ## Mixed Review and Self-Diagnosis
 
 **Duration:** 2 hours · **Ungraded — attendance only**

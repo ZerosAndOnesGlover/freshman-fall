@@ -1,4 +1,4 @@
-# MATH 151 — Problem Set 11 Solutions
+# MATH 151 · Problem Set 11 Solutions
 ## INSTRUCTOR ONLY — DO NOT DISTRIBUTE
 
 **Total: 100 points**, plus 8 bonus. All traces and values verified computationally.

@@ -1,4 +1,4 @@
-# CS 190 — Week 10 Prep Assignment
+# CS 190 · Week 10 Prep Assignment
 ## Due: Before the Week 10 seminar
 
 **Length:** Roughly 400 words total. Bring a copy; this is participation-graded and is the basis of

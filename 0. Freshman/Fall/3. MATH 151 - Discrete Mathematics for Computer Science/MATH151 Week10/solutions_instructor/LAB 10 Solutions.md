@@ -1,4 +1,4 @@
-# MATH 151 — Week 10
+# MATH 151 · Week 10
 ## LAB 10 Solutions — INSTRUCTOR ONLY
 
 All outputs below were produced by running the lab code. $G$ is $V=\{a,b,c,d,e\}$,

@@ -6,7 +6,7 @@
 
 > Office hours require no appointment. Just show up.
 > For extended or private discussions, email to schedule outside office hours.
-> All locations given as building + room number. See ROOM_ASSIGNMENTS.md for map.
+> All locations given as building + room number. See ROOM ASSIGNMENTS.md for map.
 
 ---
 

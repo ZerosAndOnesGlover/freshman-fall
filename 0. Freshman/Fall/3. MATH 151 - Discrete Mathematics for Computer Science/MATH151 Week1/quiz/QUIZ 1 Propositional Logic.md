@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Quiz 1 — Propositional Logic
 ### Administered: Monday, Week 1 (first 15 minutes of class)
 

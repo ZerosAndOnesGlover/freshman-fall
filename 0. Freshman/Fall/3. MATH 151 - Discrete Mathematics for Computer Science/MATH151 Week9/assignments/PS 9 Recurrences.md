@@ -1,4 +1,4 @@
-# MATH 151: Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Problem Set 9: Recurrence Relations and Generating Functions
 ### Released: Friday, Week 9 | Due: Friday, Week 10 (11:59 PM)
 

@@ -1,4 +1,4 @@
-# PROG 101 Programming I: Structured Programming in C
+# PROG 101 · Programming I: Structured Programming in C
 ## Appendix · Lecture 3: Building a Complete Hash Table and Its Applications
 
 ---

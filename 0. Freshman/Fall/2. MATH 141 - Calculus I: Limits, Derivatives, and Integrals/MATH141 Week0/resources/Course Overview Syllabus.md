@@ -1,4 +1,4 @@
-# MATH 141 Calculus I
+# MATH 141 · Calculus I
 ## Course Overview & Week-by-Week Road-map
 
 ---
@@ -32,7 +32,7 @@ When your CS 331 (AI) course tells you to "take the gradient of the loss functio
 
 | Component | Weight | Notes |
 |-----------|--------|-------|
-| Weekly Problem Sets (12) | **30%** | PS 0–11, released Wednesday, due the following Wednesday at the start of class. Lowest 1 dropped. Week 12's Problem Set 12 is an **ungraded** self-diagnostic and carries no weight. |
+| Weekly Problem Sets (12) | **30%** | PS 0–11, released Wednesday, due the following Wednesday at the start of class. Lowest 1 dropped. **Exception: PS 0** is released Monday of Week 0 and due **Friday of Week 0, 11:59 PM** — Week 0 is compressed so the course can begin Week 1 on schedule. Week 12's Problem Set 12 is an **ungraded** self-diagnostic and carries no weight. |
 | Midterm Exam 1 (Week 6) | **15%** | 75 minutes. Covers Weeks 0–5. 1 cheat sheet (handwritten, 1 side). |
 | Midterm Exam 2 (Week 10) | **15%** | 75 minutes. Covers Weeks 6–9. Same rules. |
 | Final Exam (Week 12) | **20%** | 150 minutes. Comprehensive. 2-page cheat sheet. |

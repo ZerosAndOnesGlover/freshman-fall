@@ -1,4 +1,4 @@
-# MATH 141 Calculus I
+# MATH 141 · Calculus I
 ## Week 0 · Lecture 0 of 4
 ### The Language of Mathematics: Sets, Notation & Logic
 

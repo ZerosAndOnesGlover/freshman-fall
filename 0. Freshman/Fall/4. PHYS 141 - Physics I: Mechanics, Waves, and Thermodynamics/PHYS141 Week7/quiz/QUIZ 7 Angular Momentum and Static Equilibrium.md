@@ -1,4 +1,4 @@
-# PHYS 141 — Quiz 7
+# PHYS 141 · Quiz 7
 ## Angular Momentum & Static Equilibrium
 
 **Time limit:** 20 minutes | **Format:** Closed book

@@ -1,4 +1,4 @@
-# CS 101 — Quiz 6
+# CS 101 · Quiz 6
 ## Week 6, Wednesday — In-Class Assessment
 
 **Duration:** 10 minutes (first 10 minutes of Wednesday lecture)

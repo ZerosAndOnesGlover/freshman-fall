@@ -1,4 +1,4 @@
-# CS 101: Midterm 2 Review & Practice Exam
+# CS 101 · Midterm 2 Review & Practice Exam
 ## Covers Weeks 6–9: Complexity Through Regular Expressions
 
 **Midterm 2 Format:** 75 minutes, written, closed book. One handwritten cheat sheet (1 side of 8.5×11) allowed.

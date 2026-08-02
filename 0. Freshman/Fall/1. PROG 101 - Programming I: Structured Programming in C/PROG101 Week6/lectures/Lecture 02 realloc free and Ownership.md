@@ -1,4 +1,4 @@
-# PROG 101 Programming I: Structured Programming in C
+# PROG 101 · Programming I: Structured Programming in C
 ## Week 6 · Lecture 2: `realloc`, `free`, and Ownership
 
 ---

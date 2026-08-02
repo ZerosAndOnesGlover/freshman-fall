@@ -1,4 +1,4 @@
-# CS 102 — Problem Set 1
+# CS 102 · Problem Set 1
 ## Binary Trees and Binary Search Trees
 **Released:** Friday, Week 1 | **Due:** Friday, Week 2 (start of class)
 

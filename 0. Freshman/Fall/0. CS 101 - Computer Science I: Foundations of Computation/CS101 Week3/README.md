@@ -1,4 +1,4 @@
-# CS 101 Week 3: Functions, Scope, and the Call Stack
+# CS 101 · Week 3: Functions, Scope, and the Call Stack
 
 ---
 

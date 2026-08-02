@@ -1,4 +1,4 @@
-# MATH 151 — Week 11
+# MATH 151 · Week 11
 ## LAB 11 Solutions — INSTRUCTOR ONLY
 
 All outputs produced by running the lab code. $T = (\{a..g\},\ \{ab,ac,bd,be,cf,cg\})$.

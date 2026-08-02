@@ -1,4 +1,4 @@
-# CS 102 — Quiz 1
+# CS 102 · Quiz 1
 ## Administered: Monday, Week 1 (first 15 minutes of lecture)
 
 **Name:** _________________________________ **Section:** ___________ **Date:** ___________

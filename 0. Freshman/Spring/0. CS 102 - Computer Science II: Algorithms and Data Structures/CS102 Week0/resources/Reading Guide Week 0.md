@@ -1,4 +1,4 @@
-# CS 102 — Week 0 Reading Guide
+# CS 102 · Week 0 Reading Guide
 ## Review and Course Overview
 
 **Assigned:** CLRS Chapters 1–4 (review). Roughly 90 pages, most of which you have seen.

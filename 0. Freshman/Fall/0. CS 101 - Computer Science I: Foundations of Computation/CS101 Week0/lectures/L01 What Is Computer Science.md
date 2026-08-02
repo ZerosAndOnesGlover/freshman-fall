@@ -1,4 +1,4 @@
-# CS 101 Lecture 1
+# CS 101 · Lecture 1
 ## What Is Computer Science?
 
 **Week 0 · Lecture 1 of 3**

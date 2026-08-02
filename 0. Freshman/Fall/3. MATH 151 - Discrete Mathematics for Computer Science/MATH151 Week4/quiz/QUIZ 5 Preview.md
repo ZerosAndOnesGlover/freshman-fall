@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Quiz 5 — Scope Preview
 ### Quiz administered: Monday, Week 5 (first 15 minutes of lecture)
 

@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Lab 6 — Relations Workshop: Properties, Equivalence Classes, and Hasse Diagrams
 ### Wednesday, Week 6 | Duration: 2 hours
 

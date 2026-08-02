@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Lecture 3.2 (L10) — Induction Applications: Inequalities, Divisibility, and Recursion
 ### Thursday, Week 3
 

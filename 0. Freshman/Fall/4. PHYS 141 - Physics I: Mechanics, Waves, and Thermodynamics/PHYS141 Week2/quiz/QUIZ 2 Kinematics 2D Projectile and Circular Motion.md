@@ -1,4 +1,4 @@
-# PHYS 141 — Quiz 2
+# PHYS 141 · Quiz 2
 ## 2D Kinematics, Projectile Motion & Circular Motion
 
 **Time limit:** 20 minutes | **Format:** Closed book

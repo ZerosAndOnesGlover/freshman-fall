@@ -1,4 +1,4 @@
-# MATH 141 — Calculus I
+# MATH 141 · Calculus I
 ## Week 8 · Lecture 1 (Monday)
 ### Areas, Distances, and Riemann Sums
 

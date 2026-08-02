@@ -1,4 +1,4 @@
-# PHYS 141 — Physics I: Mechanics, Waves & Thermodynamics
+# PHYS 141 · Physics I: Mechanics, Waves & Thermodynamics
 ## Week 2: Kinematics in 2D — Projectile Motion & Circular Motion
 
 **Semester:** Fall | **Credits:** 4 | **Lab:** Weekly 3-hr lab session

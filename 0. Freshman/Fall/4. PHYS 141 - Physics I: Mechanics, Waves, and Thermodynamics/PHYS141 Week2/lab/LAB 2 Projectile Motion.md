@@ -1,4 +1,4 @@
-# PHYS 141 — Lab 2
+# PHYS 141 · Lab 2
 # Projectile Motion: Measuring Range vs. Launch Angle
 
 **Duration:** 3 hours | **Partners:** Groups of 2–3

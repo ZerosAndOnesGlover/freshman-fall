@@ -1,4 +1,4 @@
-# CS 101 — Lab 11
+# CS 101 · Lab 11
 ## Building a Turing Machine
 
 **Duration:** 3 hours · **Starter:** `tm_lab_starter.py` · **Submit:** your completed file + `answers.md`

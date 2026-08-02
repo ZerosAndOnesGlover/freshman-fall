@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Lab 10 — Graph Workshop: Representations, Invariants, Traversal
 ### Wednesday, Week 10 | Duration: 2 hours
 

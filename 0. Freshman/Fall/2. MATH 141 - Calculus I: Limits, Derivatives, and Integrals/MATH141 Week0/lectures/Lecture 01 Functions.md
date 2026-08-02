@@ -1,4 +1,4 @@
-# MATH 141 Calculus I
+# MATH 141 · Calculus I
 ## Week 0 · Lecture 1 of 4
 ### Functions: The Engine of Mathematics
 

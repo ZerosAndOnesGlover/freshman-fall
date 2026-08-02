@@ -1,4 +1,4 @@
-# MATH 141 — Lab 04 Solutions (Instructor)
+# MATH 141 · Lab 04 Solutions (Instructor)
 ## Rules, Chains, and Motion
 
 All figures below were produced by running the computation. Students' values should match to the

@@ -1,4 +1,4 @@
-# MATH 151 — Week 12
+# MATH 151 · Week 12
 ## LAB 12 Solutions — INSTRUCTOR ONLY
 
 All outputs produced by running the lab code.

@@ -1,4 +1,4 @@
-# PHYS 141 — Lab 11 Solutions
+# PHYS 141 · Lab 11 Solutions
 ## Specific Heat Capacity, Latent Heat, and Thermal Expansion
 ## INSTRUCTOR ONLY
 

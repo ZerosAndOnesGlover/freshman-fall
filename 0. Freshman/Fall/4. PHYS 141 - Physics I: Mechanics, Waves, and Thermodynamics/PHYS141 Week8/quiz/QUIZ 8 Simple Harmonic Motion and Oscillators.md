@@ -1,4 +1,4 @@
-# PHYS 141 — Quiz 8
+# PHYS 141 · Quiz 8
 ## Simple Harmonic Motion and Oscillators
 
 **Time limit:** 20 minutes | **Format:** Closed book

@@ -1,4 +1,4 @@
-# MATH 141 — Week 8
+# MATH 141 · Week 8
 ## LAB 08 Solutions — INSTRUCTOR ONLY
 
 **Total: 100 points.** Every figure below was produced by running the lab.

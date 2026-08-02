@@ -1,4 +1,4 @@
-# CS 101: Week 10 Reading Guide & Resources
+# CS 101 · Week 10 Reading Guide & Resources
 ## Files, I/O, and Error Handling
 
 ---

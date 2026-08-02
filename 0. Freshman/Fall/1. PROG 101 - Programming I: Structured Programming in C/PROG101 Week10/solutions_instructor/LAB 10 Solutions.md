@@ -1,4 +1,4 @@
-# PROG 101 — Lab 10 Solutions (Instructor)
+# PROG 101 · Lab 10 Solutions (Instructor)
 ## Seeing the Preprocessor
 
 All figures verified on the reference machine (x86-64, GCC 13, glibc 2.39). Exact counts vary with

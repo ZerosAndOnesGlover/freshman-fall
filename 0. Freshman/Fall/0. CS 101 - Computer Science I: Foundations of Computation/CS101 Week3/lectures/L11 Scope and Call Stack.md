@@ -1,4 +1,4 @@
-# CS 101 Lecture 11 (Week 3, Lecture 2)
+# CS 101 · Lecture 11 (Week 3, Lecture 2)
 ## Scope, Namespaces, and the Call Stack
 
 **Week 3 · Thursday**

@@ -1,4 +1,4 @@
-# PHYS 141 — Quiz 6
+# PHYS 141 · Quiz 6
 ## Rotational Kinematics & Dynamics
 
 **Time limit:** 20 minutes | **Format:** Closed book

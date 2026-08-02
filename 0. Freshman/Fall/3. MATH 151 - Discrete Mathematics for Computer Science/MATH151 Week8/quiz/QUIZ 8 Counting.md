@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Quiz 8 — Counting
 ### Administered: Monday, Week 8 (first 15 minutes of class)
 

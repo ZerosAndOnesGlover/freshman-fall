@@ -1,4 +1,4 @@
-# MATH 141 — Problem Set 8 Solutions
+# MATH 141 · Problem Set 8 Solutions
 ## INSTRUCTOR ONLY — DO NOT DISTRIBUTE
 
 **Total: 100 points.** All numerical figures below were verified by computation.

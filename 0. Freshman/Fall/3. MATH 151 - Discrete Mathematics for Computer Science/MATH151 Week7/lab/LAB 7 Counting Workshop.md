@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Lab 7 — Counting Workshop: Classification and Computation
 ### Wednesday, Week 7 | Duration: 2 hours
 

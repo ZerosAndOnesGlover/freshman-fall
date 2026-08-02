@@ -1,4 +1,4 @@
-# CS 102 — Lab and Quiz Record
+# CS 102 · Lab and Quiz Record
 ## Not part of the course grade
 
 > **This file is deliberately outside the gradebook's weighted components.** Both labs and quizzes

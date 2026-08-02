@@ -1,4 +1,4 @@
-# PROG 101 — Week 2
+# PROG 101 · Week 2
 ## Operators, Expressions, and Control Flow
 
 ---

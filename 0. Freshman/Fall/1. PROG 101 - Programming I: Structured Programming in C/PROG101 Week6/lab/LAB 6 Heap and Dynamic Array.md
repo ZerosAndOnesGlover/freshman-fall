@@ -1,4 +1,4 @@
-# PROG 101 — Programming I: Structured Programming in C
+# PROG 101 · Programming I: Structured Programming in C
 ## Week 6 · Lab 6: The Heap and a Dynamic Array
 
 **Duration:** 2 hours · **Points:** 20 · **Room:** BH 215

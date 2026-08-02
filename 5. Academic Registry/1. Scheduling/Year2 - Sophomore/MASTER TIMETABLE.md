@@ -36,11 +36,11 @@ Every week of the academic year follows this rhythm (course-specific variations 
 
 | Day | Standard Events |
 |-----|----------------|
-| **Monday** | CS 201, MATH 241 lectures. PROG 201 Lab (afternoon). Quiz held at start of each course's own first lecture of the week — check ASSESSMENT_CALENDAR.md per course. |
+| **Monday** | CS 201, MATH 241 lectures. PROG 201 Lab (afternoon). Quiz held at start of each course's own first lecture of the week — check ASSESSMENT CALENDAR.md per course. |
 | **Tuesday** | PROG 201, CS 211, MATH 241 lectures. CS 201 Lab (afternoon). |
 | **Wednesday** | CS 201, PROG 201 lectures. Problem sets released at 17:00. |
 | **Thursday** | PROG 201, CS 211 lectures. MATH 241 Recitation (afternoon). |
-| **Friday** | CS 201, MATH 241 lectures. CS 211 Lab (afternoon). No lectures cluster on any single day — see FALL_SCHEDULE.md grid. |
+| **Friday** | CS 201, MATH 241 lectures. CS 211 Lab (afternoon). No lectures cluster on any single day — see FALL SCHEDULE.md grid. |
 | **Saturday** | Study / project work. Department study rooms open 09:00–22:00. |
 | **Sunday** | Study / project work. No office hours except pre-exam special sessions. |
 

@@ -1,4 +1,4 @@
-# CS 101: Problem Set 11 Solutions (Instructor)
+# CS 101 · Problem Set 11 Solutions (Instructor)
 ## Computability and Undecidability
 
 **Reference code:** `ps11_solution.py` — verified **11/11 tests passing**.

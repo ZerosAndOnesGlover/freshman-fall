@@ -1,4 +1,4 @@
-# MATH 141 — Calculus I
+# MATH 141 · Calculus I
 ## Problem Set 3
 ### Topic: The Derivative — Definition, Rules, and Applications
 **Released:** Wednesday, Week 3 | **Due:** Wednesday, Week 3 (start of class)

@@ -1,4 +1,4 @@
-# MATH 141 — Calculus I
+# MATH 141 · Calculus I
 ## Week 8 Reference Sheet
 ### Riemann Sums · The Definite Integral · Its Properties
 

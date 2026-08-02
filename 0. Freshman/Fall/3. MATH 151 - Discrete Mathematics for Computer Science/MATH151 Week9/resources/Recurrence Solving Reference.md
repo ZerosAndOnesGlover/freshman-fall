@@ -1,4 +1,4 @@
-# MATH 151 — Recurrence Solving Reference
+# MATH 151 · Recurrence Solving Reference
 ## Week 9: Recurrence Relations
 
 ---

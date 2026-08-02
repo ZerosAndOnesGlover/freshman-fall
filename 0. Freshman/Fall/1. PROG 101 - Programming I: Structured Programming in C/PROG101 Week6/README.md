@@ -1,4 +1,4 @@
-# PROG 101 — Week 6
+# PROG 101 · Week 6
 ## Pointers II: Dynamic Memory
 
 ---

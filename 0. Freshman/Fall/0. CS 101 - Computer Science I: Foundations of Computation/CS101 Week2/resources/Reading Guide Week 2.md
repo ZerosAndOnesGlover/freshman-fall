@@ -1,4 +1,4 @@
-# CS 101 Week 2 Reading Guide & Resources
+# CS 101 · Week 2 Reading Guide & Resources
 ## Control Flow: Conditionals and Iteration
 
 ---

@@ -1,4 +1,4 @@
-# CS 101: Project 2 Instructor Guide
+# CS 101 · Project 2 Instructor Guide
 ## Algorithm Visualizer
 
 **Reference core:** `project2_reference.py` — verified **15/15** self-tests passing.

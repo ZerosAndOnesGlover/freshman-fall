@@ -1,4 +1,4 @@
-# MATH 141 — Calculus I
+# MATH 141 · Calculus I
 ## Week 6 Overview and Instructor Notes
 
 **Topic:** Extrema · Rolle's Theorem · The Mean Value Theorem · L'Hôpital's Rule

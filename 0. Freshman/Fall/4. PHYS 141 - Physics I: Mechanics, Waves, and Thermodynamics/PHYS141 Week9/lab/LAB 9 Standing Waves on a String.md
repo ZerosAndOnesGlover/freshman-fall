@@ -1,4 +1,4 @@
-# PHYS 141 — Lab 9
+# PHYS 141 · Lab 9
 ## Standing Waves on a String
 
 **Duration:** 3 hours | **Total: 100 points**

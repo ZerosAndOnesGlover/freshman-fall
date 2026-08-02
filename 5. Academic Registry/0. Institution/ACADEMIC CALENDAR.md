@@ -161,7 +161,7 @@
 ─────────────────────────────────────────────────────────────
 
 
-> **REVISION 2**: Year 4 adds five required Applications & Enterprise Engineering courses (CS 435, 434, 431, 432, 433, 436) and reduces the elective load to "pick 1 of 6." Dates below reflect the revised curriculum — see Year4 - Senior/ASSESSMENT_CALENDAR.md for full detail.
+> **REVISION 2**: Year 4 adds five required Applications & Enterprise Engineering courses (CS 435, 434, 431, 432, 433, 436) and reduces the elective load to "pick 1 of 6." Dates below reflect the revised curriculum — see Year4 - Senior/ASSESSMENT CALENDAR.md for full detail.
 
 ### Fall Semester, Year 4
 
@@ -227,7 +227,7 @@
 ## YEAR 5: M.S. SOFTWARE ENGINEERING
 ─────────────────────────────────────────────────────────────
 
-> New section — no Year 5 calendar existed before the M.S.S.E. curriculum was added. Dates assume enrollment begins the fall immediately after Year 4 Spring ends. See Year5 - Masters/ASSESSMENT_CALENDAR.md for full week-by-week detail.
+> New section — no Year 5 calendar existed before the M.S.S.E. curriculum was added. Dates assume enrollment begins the fall immediately after Year 4 Spring ends. See Year5 - Masters/ASSESSMENT CALENDAR.md for full week-by-week detail.
 
 ### Master's I (M1): Fall
 

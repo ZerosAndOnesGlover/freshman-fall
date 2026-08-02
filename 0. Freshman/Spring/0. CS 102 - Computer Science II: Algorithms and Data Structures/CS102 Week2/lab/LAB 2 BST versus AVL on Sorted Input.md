@@ -1,4 +1,4 @@
-# CS 102 — Lab 2
+# CS 102 · Lab 2
 ## BST versus AVL on Sorted Input
 
 **Week 2 · 2-hour lab session · 40 points**

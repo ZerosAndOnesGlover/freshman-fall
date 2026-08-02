@@ -1,4 +1,4 @@
-# MATH 141 — Calculus I
+# MATH 141 · Calculus I
 ## Lab 05 (Friday, Week 5)
 ### Implicit Curves, Logarithmic Derivatives, and Related Rates Simulation
 

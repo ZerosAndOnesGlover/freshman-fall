@@ -1,4 +1,4 @@
-# MATH 141 — Calculus I
+# MATH 141 · Calculus I
 ## Quiz 06 (Monday, Week 6 — Start of Class)
 ### Covers: Week 5 — Implicit Differentiation, Logs, Inverse Trig, Related Rates
 

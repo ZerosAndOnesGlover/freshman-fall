@@ -1,4 +1,4 @@
-# MATH 141 — Calculus I
+# MATH 141 · Calculus I
 ## Week 3 Overview and Instructor Notes
 
 **Topic:** The Derivative — Definition, the Derivative as a Function, and Differentiability

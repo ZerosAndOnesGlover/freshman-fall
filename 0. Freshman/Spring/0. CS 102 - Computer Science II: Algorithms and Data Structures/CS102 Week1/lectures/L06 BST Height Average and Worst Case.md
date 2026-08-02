@@ -1,4 +1,4 @@
-# CS 102 — Computer Science II
+# CS 102 · Computer Science II
 ## Lecture 06: BST Height — Average and Worst Case
 
 ---

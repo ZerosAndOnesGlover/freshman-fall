@@ -1,4 +1,4 @@
-# CS 101: Lecture 39 (Week 12, Lecture 3)
+# CS 101 · Lecture 39 (Week 12, Lecture 3)
 ## Reading Code, and the Practice of Programming
 
 ---

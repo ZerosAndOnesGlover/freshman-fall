@@ -1,4 +1,4 @@
-# MATH 151 — Week 8
+# MATH 151 · Week 8
 ## LAB 8 Solutions — INSTRUCTOR ONLY
 
 All numeric results verified by computation.

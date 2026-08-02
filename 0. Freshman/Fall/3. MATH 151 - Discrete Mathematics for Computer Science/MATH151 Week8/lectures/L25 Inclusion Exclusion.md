@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Lecture 8.2 (L25) — The Principle of Inclusion–Exclusion
 ### Wednesday, Week 8
 

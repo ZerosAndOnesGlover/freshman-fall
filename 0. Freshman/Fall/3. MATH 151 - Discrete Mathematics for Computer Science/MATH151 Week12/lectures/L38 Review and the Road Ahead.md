@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Lecture 12.3 (L38) — Review and the Road Ahead
 ### Friday, Week 12
 

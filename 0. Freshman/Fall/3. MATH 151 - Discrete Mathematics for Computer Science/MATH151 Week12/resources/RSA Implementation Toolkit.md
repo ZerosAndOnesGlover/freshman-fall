@@ -1,4 +1,4 @@
-# MATH 151 — RSA Implementation Toolkit
+# MATH 151 · RSA Implementation Toolkit
 ## Week 12
 
 Everything below is written from scratch. Compare against Python's built-ins only *after* your own

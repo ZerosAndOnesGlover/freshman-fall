@@ -1,4 +1,4 @@
-# CS 101 Problem Set 3
+# CS 101 · Problem Set 3
 ## Functions, Scope, and the Call Stack
 
 **Released:** Friday, Week 3

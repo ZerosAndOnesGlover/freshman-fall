@@ -1,4 +1,4 @@
-# CS 101: Lecture 37 (Week 12, Lecture 1)
+# CS 101 · Lecture 37 (Week 12, Lecture 1)
 ## Synthesis: The Whole Stack
 
 ---

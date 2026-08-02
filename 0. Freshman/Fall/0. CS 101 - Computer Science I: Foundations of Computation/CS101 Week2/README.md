@@ -1,4 +1,4 @@
-# CS 101 Week 2 Control Flow: Conditionals and Iteration
+# CS 101 · Week 2 Control Flow: Conditionals and Iteration
 
 ---
 

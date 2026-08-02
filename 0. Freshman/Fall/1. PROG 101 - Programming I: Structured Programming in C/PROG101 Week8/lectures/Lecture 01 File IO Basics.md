@@ -1,4 +1,4 @@
-# PROG 101 Programming I: Structured Programming in C
+# PROG 101 · Programming I: Structured Programming in C
 ## Week 8 · Lecture 1: File I/O Basics (`fopen`, `fread`, `fwrite`, and Text Processing)
 
 ---

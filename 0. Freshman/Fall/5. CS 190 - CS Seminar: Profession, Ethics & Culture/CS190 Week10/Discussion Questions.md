@@ -1,4 +1,4 @@
-# CS 190 — Week 10 Discussion Questions
+# CS 190 · Week 10 Discussion Questions
 ## The Future of Work: Automation, Jobs, Universal Basic Income
 
 **Format:** 60-minute seminar. Come having done the prep assignment; the discussion assumes it.

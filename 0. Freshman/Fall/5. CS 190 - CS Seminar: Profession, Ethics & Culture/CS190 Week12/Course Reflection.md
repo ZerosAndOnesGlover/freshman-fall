@@ -1,4 +1,4 @@
-# CS 190 — Week 12
+# CS 190 · Week 12
 ## Course Reflection
 
 **Due:** End of Week 12. **The final deliverable of the course.**

@@ -1,4 +1,4 @@
-# MATH 151 — Week 5
+# MATH 151 · Week 5
 ## LAB5 Solutions — INSTRUCTOR ONLY
 
 ---

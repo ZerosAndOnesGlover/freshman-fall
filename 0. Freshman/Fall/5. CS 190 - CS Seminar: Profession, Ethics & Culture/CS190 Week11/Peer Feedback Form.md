@@ -1,4 +1,4 @@
-# CS 190 — Week 11
+# CS 190 · Week 11
 ## Peer Feedback Form
 
 **Complete one form for each presentation you attend.** Forms are collected at the end of each

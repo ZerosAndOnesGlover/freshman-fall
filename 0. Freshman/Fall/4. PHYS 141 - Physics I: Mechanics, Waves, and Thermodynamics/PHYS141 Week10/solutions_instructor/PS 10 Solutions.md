@@ -1,4 +1,4 @@
-# PHYS 141 — Problem Set 10 Solutions
+# PHYS 141 · Problem Set 10 Solutions
 ## INSTRUCTOR ONLY
 
 **Total: 100 points.** All values verified computationally. $v = 343$ m/s, $I_0 = 10^{-12}$ W/m².

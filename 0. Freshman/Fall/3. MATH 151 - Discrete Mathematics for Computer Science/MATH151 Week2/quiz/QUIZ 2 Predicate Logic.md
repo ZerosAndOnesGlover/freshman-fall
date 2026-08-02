@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Quiz 2 — Predicate Logic and Quantifiers
 ### Administered: Monday, Week 2 (first 15 minutes of class)
 

@@ -1,4 +1,4 @@
-# PROG 101 Programming I: Structured Programming in C
+# PROG 101 · Programming I: Structured Programming in C
 ## Week 6 · Lecture 1: The Process Memory Map and `malloc`
 
 ---

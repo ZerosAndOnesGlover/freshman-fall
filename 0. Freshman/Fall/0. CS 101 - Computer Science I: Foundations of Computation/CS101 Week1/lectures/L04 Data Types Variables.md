@@ -1,4 +1,4 @@
-# CS 101 Lecture 4 (Week 1, Lecture 1)
+# CS 101 · Lecture 4 (Week 1, Lecture 1)
 ## Data, Types, and Variables (The Full Picture)
 
 **Week 1 · Wednesday**

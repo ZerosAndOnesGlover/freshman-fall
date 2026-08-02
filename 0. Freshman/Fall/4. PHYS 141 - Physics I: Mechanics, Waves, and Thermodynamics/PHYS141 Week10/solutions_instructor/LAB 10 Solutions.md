@@ -1,4 +1,4 @@
-# PHYS 141 — Lab 10 Solutions
+# PHYS 141 · Lab 10 Solutions
 ## The Speed of Sound and Resonance in Air Columns
 ## INSTRUCTOR ONLY
 

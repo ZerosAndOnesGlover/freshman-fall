@@ -1,4 +1,4 @@
-# PHYS 141 — Lab 8 Solutions
+# PHYS 141 · Lab 8 Solutions
 ## The Simple Pendulum and Simple Harmonic Motion
 ## INSTRUCTOR ONLY
 

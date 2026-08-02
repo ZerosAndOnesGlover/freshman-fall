@@ -1,4 +1,4 @@
-# PHYS 141 — Lecture 15
+# PHYS 141 · Lecture 15
 # Conservation of Energy & Power
 
 > **Core Principle:** Total mechanical energy — kinetic plus potential — is conserved when only conservative forces do work. When non-conservative forces (friction, drag) are present, mechanical energy is not conserved, but it is not lost either — it is transformed into other forms (primarily heat). The universal law of conservation of energy, of which mechanical energy conservation is a special case, is one of the deepest principles in all of physics.

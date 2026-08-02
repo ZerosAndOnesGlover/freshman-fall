@@ -1,4 +1,4 @@
-# MATH 141 — Week 12 Overview
+# MATH 141 · Week 12 Overview
 ## Review, Final Preparation, and Taylor Polynomials
 
 ---

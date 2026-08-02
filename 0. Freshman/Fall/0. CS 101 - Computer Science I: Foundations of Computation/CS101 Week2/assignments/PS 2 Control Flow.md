@@ -1,4 +1,4 @@
-# CS 101 Problem Set 2
+# CS 101 · Problem Set 2
 ## Control Flow: Conditionals and Iteration
 
 **Released:** Friday, Week 2

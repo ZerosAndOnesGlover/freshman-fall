@@ -1,4 +1,4 @@
-# PROG 101 — Programming I: Structured Programming in C
+# PROG 101 · Programming I: Structured Programming in C
 ## Week 7 · Problem Set 7
 
 **Released:** End of Week 7 Thursday

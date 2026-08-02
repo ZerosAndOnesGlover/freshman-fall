@@ -1,4 +1,4 @@
-# PROG 101 Programming I: Structured Programming in C
+# PROG 101 · Programming I: Structured Programming in C
 ## Week 5 · Lecture 3: NULL, `const`, and the Classic Pointer Errors
 
 ---

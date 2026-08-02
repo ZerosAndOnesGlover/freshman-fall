@@ -1,4 +1,4 @@
-# MATH 151 — Generating Functions Reference
+# MATH 151 · Generating Functions Reference
 ## Week 9: Generating Functions
 
 ---

@@ -1,4 +1,4 @@
-# CS 101 — Problem Set 7
+# CS 101 · Problem Set 7
 ## Stacks, Queues, and Linked Structures
 
 **Released:** Friday, Week 7

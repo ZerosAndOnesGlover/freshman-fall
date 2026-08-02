@@ -1,4 +1,4 @@
-# MATH 141 — Lab 09
+# MATH 141 · Lab 09
 ## Accumulation Functions and the FTC Numerically
 
 **Duration:** 2 hours · **20 points**

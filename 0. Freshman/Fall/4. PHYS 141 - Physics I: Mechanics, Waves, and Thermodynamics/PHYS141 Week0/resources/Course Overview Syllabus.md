@@ -1,4 +1,4 @@
-# PHYS 141 Course Overview & Syllabus
+# PHYS 141 · Course Overview & Syllabus
 ## Physics I: Mechanics, Waves & Thermodynamics
 
 ---

@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Quiz 10 — Recurrences and Generating Functions
 ### Administered: Monday, Week 10 (first 15 minutes of class)
 

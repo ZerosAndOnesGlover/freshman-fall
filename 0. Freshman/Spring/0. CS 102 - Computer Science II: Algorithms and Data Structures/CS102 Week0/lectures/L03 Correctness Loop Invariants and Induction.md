@@ -1,4 +1,4 @@
-# CS 102 — Computer Science II
+# CS 102 · Computer Science II
 ## Lecture 03: Correctness — Loop Invariants and Induction
 
 ---

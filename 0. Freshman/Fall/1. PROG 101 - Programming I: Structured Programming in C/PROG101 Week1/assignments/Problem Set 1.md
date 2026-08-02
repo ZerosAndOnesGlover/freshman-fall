@@ -1,4 +1,4 @@
-# PROG 101 — Programming I: Structured Programming in C
+# PROG 101 · Programming I: Structured Programming in C
 ## Week 1 · Problem Set 1
 
 **Released:** End of Week 1 Thursday Lecture

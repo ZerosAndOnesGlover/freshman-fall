@@ -1,4 +1,4 @@
-# CS 101 — Lecture 19 (Week 6, Lecture 1)
+# CS 101 · Lecture 19 (Week 6, Lecture 1)
 ## Algorithm Analysis I: Big-O, Big-Ω, and Big-Θ — Formal Definitions
 
 **Week 6 · Wednesday**

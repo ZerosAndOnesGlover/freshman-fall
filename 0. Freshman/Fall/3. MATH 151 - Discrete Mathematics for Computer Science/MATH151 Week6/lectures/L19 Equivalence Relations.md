@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Lecture 6.2 (L19) — Equivalence Relations and Equivalence Classes
 ### Thursday, Week 6
 

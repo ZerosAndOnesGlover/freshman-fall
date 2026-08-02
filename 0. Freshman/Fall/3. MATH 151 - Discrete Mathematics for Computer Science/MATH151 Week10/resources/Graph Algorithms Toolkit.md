@@ -1,4 +1,4 @@
-# MATH 151 — Graph Algorithms Toolkit
+# MATH 151 · Graph Algorithms Toolkit
 ## Week 10: Working With Graphs in Python
 
 ---

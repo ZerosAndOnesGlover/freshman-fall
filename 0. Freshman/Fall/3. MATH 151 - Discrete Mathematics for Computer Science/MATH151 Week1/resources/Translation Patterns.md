@@ -1,4 +1,4 @@
-# MATH 151 Translation Patterns Reference
+# MATH 151 · Translation Patterns Reference
 ## English ↔ Predicate Logic: Week 1
 
 ---

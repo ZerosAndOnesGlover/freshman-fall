@@ -1,4 +1,4 @@
-# CS 101 Lecture 12 (Week 3, Lecture 3)
+# CS 101 · Lecture 12 (Week 3, Lecture 3)
 ## Function Design, Decomposition, and Recursion Preview
 
 **Week 3 · Friday**

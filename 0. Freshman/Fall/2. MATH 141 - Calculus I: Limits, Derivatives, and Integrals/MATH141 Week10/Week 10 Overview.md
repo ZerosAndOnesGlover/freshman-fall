@@ -1,4 +1,4 @@
-# MATH 141 — Calculus I
+# MATH 141 · Calculus I
 ## Week 10 Overview and Instructor Notes
 
 **Topic:** Indefinite Integrals and the Net Change Theorem · The Substitution Rule · Definite Substitution and Symmetry · Integration by Parts

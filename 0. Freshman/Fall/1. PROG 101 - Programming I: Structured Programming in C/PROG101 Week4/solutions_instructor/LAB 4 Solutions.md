@@ -1,4 +1,4 @@
-# PROG 101 — Lab 4 Solutions (Instructor)
+# PROG 101 · Lab 4 Solutions (Instructor)
 ## Arrays, Strings, and a String Library
 
 **Reference implementation verified:** all functions match the standard library across the test

@@ -1,4 +1,4 @@
-# CS 101 Problem Set 1
+# CS 101 · Problem Set 1
 ## Data, Types, Expressions, and Variables
 
 **Released:** Friday, Week 1

@@ -1,4 +1,4 @@
-# PROG 101 — Lab 6 Solutions (Instructor)
+# PROG 101 · Lab 6 Solutions (Instructor)
 ## The Heap and a Dynamic Array
 
 All figures verified by execution on the reference machine (x86-64, GCC 13, glibc 2.39).

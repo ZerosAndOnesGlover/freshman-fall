@@ -1,4 +1,4 @@
-# MATH 151: Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Problem Set 12: Number Theory
 ### Released: Friday, Week 12 | Due: Wednesday of Finals Week (11:59 PM)
 

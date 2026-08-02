@@ -1,4 +1,4 @@
-# MATH 151 — Week 2
+# MATH 151 · Week 2
 ## PS2 Solutions — INSTRUCTOR ONLY
 
 ---

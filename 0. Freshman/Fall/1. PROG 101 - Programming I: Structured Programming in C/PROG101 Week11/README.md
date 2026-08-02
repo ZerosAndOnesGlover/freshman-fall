@@ -1,4 +1,4 @@
-# PROG 101 — Week 11
+# PROG 101 · Week 11
 ## The C Standard Library and System Programming Preview
 
 ---

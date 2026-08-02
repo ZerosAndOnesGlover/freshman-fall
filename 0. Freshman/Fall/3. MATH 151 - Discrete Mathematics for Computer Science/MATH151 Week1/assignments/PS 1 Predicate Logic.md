@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Problem Set 1 — Predicate Logic and Quantifiers
 ### Released: Friday, Week 1 | Due: Friday, Week 2 (11:59 PM)
 

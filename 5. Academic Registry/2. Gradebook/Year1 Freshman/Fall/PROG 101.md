@@ -7,7 +7,7 @@ semester: Fall
 status: in-progress
 ---
 
-# PROG 101 — Gradebook
+# PROG 101 · Gradebook
 ## Programming I: Structured Programming in C · 4 credits · Year 1 Fall
 
 > Enter a number in **Earned** only. Percentages, the course grade, the letter and the GPA points

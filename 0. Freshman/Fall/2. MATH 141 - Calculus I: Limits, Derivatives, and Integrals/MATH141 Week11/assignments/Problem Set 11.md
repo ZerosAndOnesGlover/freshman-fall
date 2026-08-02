@@ -1,4 +1,4 @@
-# MATH 141 — Problem Set 11
+# MATH 141 · Problem Set 11
 ## Applications of Integration
 
 **Released:** Wednesday, Week 11 · **Due:** Wednesday, Week 12 at the start of class

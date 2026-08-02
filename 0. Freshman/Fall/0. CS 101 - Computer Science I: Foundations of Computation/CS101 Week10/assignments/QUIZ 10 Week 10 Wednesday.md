@@ -1,4 +1,4 @@
-# CS 101 — Quiz 10
+# CS 101 · Quiz 10
 ## Week 10, Wednesday — In-Class Assessment
 
 **Duration:** 10 minutes (first 10 minutes of Wednesday lecture)

@@ -39,11 +39,11 @@ Every week of the academic year follows this rhythm (course-specific variations 
 
 | Day | Standard Events |
 |-----|----------------|
-| **Monday** | ELEC I / CS 431, CS 435 / CS 433 lectures. Quiz held at start of each course's own first lecture of the week — check ASSESSMENT_CALENDAR.md per course. |
+| **Monday** | ELEC I / CS 431, CS 435 / CS 433 lectures. Quiz held at start of each course's own first lecture of the week — check ASSESSMENT CALENDAR.md per course. |
 | **Tuesday** | CS 434 / CS 432, CS 435 / CS 433, CS 436 lectures. Labs (afternoon). CS 490 workshop (Fall). |
 | **Wednesday** | ELEC I / CS 431, CS 434 / CS 432, CS 436 lectures. CS 401/402 Capstone session (15:00). Problem sets released at 17:00. |
 | **Thursday** | CS 434 / CS 432, CS 433 lectures. Labs (varies by course). |
-| **Friday** | ELEC I / CS 431, CS 435 / CS 436 lectures. CS 401/402 Capstone + CS 491 Senior Seminar (Spring). No single day carries every course — see FALL/SPRING_SCHEDULE.md grid. |
+| **Friday** | ELEC I / CS 431, CS 435 / CS 436 lectures. CS 401/402 Capstone + CS 491 Senior Seminar (Spring). No single day carries every course — see FALL/SPRING SCHEDULE.md grid. |
 | **Saturday** | Study / project work. Department study rooms open 09:00–22:00. |
 | **Sunday** | Study / project work. No office hours except pre-exam special sessions. |
 

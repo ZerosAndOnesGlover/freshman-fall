@@ -1,4 +1,4 @@
-# PHYS 141 — Lecture 21
+# PHYS 141 · Lecture 21
 # Rotational Kinetic Energy & Rolling Motion
 
 > **Core Principle:** A rotating object stores kinetic energy in its rotation, exactly analogous to translational kinetic energy but with moment of inertia replacing mass and angular velocity replacing linear velocity. An object that both rotates AND translates (like a rolling ball) carries both forms of kinetic energy simultaneously — and the split between them, governed by the rolling-without-slipping condition, determines everything about how such objects accelerate down inclines.

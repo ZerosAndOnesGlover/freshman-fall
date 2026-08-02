@@ -1,4 +1,4 @@
-# MATH 141 — Quiz 09
+# MATH 141 · Quiz 09
 ## Administered: start of Week 9, Monday
 ### Covers: Week 8 — Riemann sums, the definite integral, and its properties
 

@@ -36,58 +36,27 @@
 | **07:30** | Morning Prep | Morning Prep | Morning Prep | Morning Prep | Morning Prep |
 | **08:00** | — | — | — | — | — |
 | **08:30** | — | — | — | — | — |
-| **09:00** | 📖 **CS410**
-09:00–09:50
-(LEC) | — | 📖 **CS410**
-09:00–09:50
-(LEC) | — | 📖 **CS410**
-09:00–09:50
-(LEC) |
-| **09:50** | — | — | — | — | — |
-| **10:00** | — | 📖 **CS434**
-10:00–10:50
-(LEC) | 📖 **CS434**
-10:00–10:50
-(LEC) | 📖 **CS434**
-10:00–10:50
-(LEC) | — |
-| **10:50** | — | — | — | — | — |
-| **11:00** | 📖 **CS435**
-11:00–11:50
-(LEC) | 📖 **CS435**
-11:00–11:50
-(LEC) | — | — | 📖 **CS435**
-11:00–11:50
-(LEC) |
-| **11:50** | — | — | — | — | — |
+| **09:00** | 📖 **CS410**<br>09:00–09:50<br>(LEC) | — | 📖 **CS410**<br>09:00–09:50<br>(LEC) | — | 📖 **CS410**<br>09:00–09:50<br>(LEC) |
+| **10:00** | — | 📖 **CS434**<br>10:00–10:50<br>(LEC) | 📖 **CS434**<br>10:00–10:50<br>(LEC) | 📖 **CS434**<br>10:00–10:50<br>(LEC) | — |
+| **11:00** | 📖 **CS435**<br>11:00–11:50<br>(LEC) | 📖 **CS435**<br>11:00–11:50<br>(LEC) | — | — | 📖 **CS435**<br>11:00–11:50<br>(LEC) |
 | **12:00** | 🍽️ Lunch Break | 🍽️ Lunch Break | 🍽️ Lunch Break | 🍽️ Lunch Break | 🍽️ Lunch Break |
 | **13:00** | — | — | — | — | — |
-| **14:00** | — | 🔬 **CS435**
-14:00–15:50
-(LAB) | — | 🔬 **CS410**
-14:00–15:50
-(LAB) | 🔬 **CS434**
-14:00–15:50
-(LAB) |
-| **15:00** | — | — | 🏗️ **CS401**
+| **14:00** | — | 🔬 **CS435**<br>14:00–15:50<br>(LAB) | — | 🔬 **CS410**<br>14:00–15:50<br>(LAB) | 🔬 **CS434**<br>14:00–15:50<br>(LAB) |
 15:00–16:50
 (CAP) | — | 🏗️ **CS401**
 15:00–15:50
 (CAP) |
-| **16:00** | — | ✏️ **CS490**
-16:00–17:50
-(WRK) | — | — | — |
-| **17:00** | — | — | — | — | — |
+| **16:00** | — | ✏️ **CS490**<br>16:00–17:50<br>(WRK) | — | — | — |
 | **18:00** | 📚 Evening Study | 📚 Evening Study | 📚 Evening Study | 📚 Evening Study | 📚 Evening Study |
 
-> Grid shows CS 410 as the elective slot — you only take 1 of the 6 technical electives now, not 3. Substitute the actual code/room/time if you pick a different one (see ROOM_ASSIGNMENTS.md).
+> Grid shows CS 410 as the elective slot — you only take 1 of the 6 technical electives now, not 3. Substitute the actual code/room/time if you pick a different one (see ROOM ASSIGNMENTS.md).
 
 
 ---
 
 ## Daily Breakdown
 
-> Quiz days are course-specific — each course quizzes at the start of its own first lecture of the week. See ASSESSMENT_CALENDAR.md.
+> Quiz days are course-specific — each course quizzes at the start of its own first lecture of the week. See ASSESSMENT CALENDAR.md.
 
 ### Monday
 ```
@@ -168,7 +137,7 @@
 | Friday | 14:00 | CS 434 Lab begins |
 | Friday | 15:00 | CS 401 Capstone session |
 | Friday | 17:00 | ⚠️ Problem set due |
-| Ongoing | TBD | Project milestones (see ASSESSMENT_CALENDAR.md) |
+| Ongoing | TBD | Project milestones (see ASSESSMENT CALENDAR.md) |
 
 ---
 
@@ -178,8 +147,8 @@ Midterm and final exams are held in the **evening** to avoid displacing regular 
 
 | Exam Type | Typical Time | Duration | Location |
 |-----------|-------------|---------|----------|
-| Midterm Exams | 18:00–19:15 or 18:00–19:30 | 75–90 min | Large lecture hall (see ROOM_ASSIGNMENTS.md) |
+| Midterm Exams | 18:00–19:15 or 18:00–19:30 | 75–90 min | Large lecture hall (see ROOM ASSIGNMENTS.md) |
 | Final Exams | 08:00–10:00, 09:00–11:30, or 14:00–16:30 | 120–150 min | Assigned exam room |
 
-> Check ASSESSMENT_CALENDAR.md for exact exam dates. Conflicts must be reported to your academic advisor at least 2 weeks in advance.
+> Check ASSESSMENT CALENDAR.md for exact exam dates. Conflicts must be reported to your academic advisor at least 2 weeks in advance.
 

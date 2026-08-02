@@ -1,4 +1,4 @@
-# MATH 151 — Quiz 10 Solutions
+# MATH 151 · Quiz 10 Solutions
 ## INSTRUCTOR ONLY — DO NOT DISTRIBUTE
 
 **Total: 20 points.** All closed forms verified against iteration.

@@ -1,4 +1,4 @@
-# MATH 151: Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Problem Set 10: Graphs
 ### Released: Friday, Week 10 | Due: Friday, Week 11 (11:59 PM)
 

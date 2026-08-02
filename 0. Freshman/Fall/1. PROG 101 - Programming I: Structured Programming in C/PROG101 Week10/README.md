@@ -1,4 +1,4 @@
-# PROG 101 — Week 10
+# PROG 101 · Week 10
 ## The C Preprocessor and Macros
 
 ---

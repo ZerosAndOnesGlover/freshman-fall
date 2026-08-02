@@ -1,4 +1,4 @@
-# PHYS 141 — Lecture 3
+# PHYS 141 · Lecture 3
 # Vectors: Algebra, Dot Product, Cross Product
 
 > **Core Principle:** A vector is a quantity with both magnitude and direction, obeying specific addition rules (the parallelogram rule). Scalars (mass, temperature, energy) have magnitude only. The distinction is not pedantic — it determines what operations are physically meaningful.

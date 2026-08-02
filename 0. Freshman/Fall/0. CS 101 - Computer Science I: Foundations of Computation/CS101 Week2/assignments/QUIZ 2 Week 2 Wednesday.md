@@ -1,4 +1,4 @@
-# CS 101 Quiz 2
+# CS 101 · Quiz 2
 ## Week 2, Wednesday: In-Class Assessment
 
 **Duration:** 10 minutes (first 10 minutes of Wednesday lecture)

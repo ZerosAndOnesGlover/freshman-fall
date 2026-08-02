@@ -1,4 +1,4 @@
-# PROG 101 Programming I: Structured Programming in C
+# PROG 101 · Programming I: Structured Programming in C
 ## Week 6 · Lecture 3: Valgrind and Building a Dynamic Array
 
 ---

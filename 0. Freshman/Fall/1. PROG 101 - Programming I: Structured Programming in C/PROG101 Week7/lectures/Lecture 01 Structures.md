@@ -1,4 +1,4 @@
-# PROG 101 Programming I: Structured Programming in C
+# PROG 101 · Programming I: Structured Programming in C
 ## Week 7 · Lecture 1: Structures Composite Types and Memory Layout
 
 ---

@@ -1,4 +1,4 @@
-# MATH 141 — Problem Set 12
+# MATH 141 · Problem Set 12
 ## Comprehensive Revision (Optional, Ungraded)
 
 **Released:** Week 12 · **Not submitted** — full solutions below

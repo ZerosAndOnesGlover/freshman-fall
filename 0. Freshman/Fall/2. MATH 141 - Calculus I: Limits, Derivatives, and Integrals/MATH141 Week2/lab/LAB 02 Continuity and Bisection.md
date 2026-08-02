@@ -1,4 +1,4 @@
-# MATH 141 — Lab 02
+# MATH 141 · Lab 02
 ## Continuity, Discontinuity, and Bisection
 
 **Duration:** 2 hours · **20 points**

@@ -1,4 +1,4 @@
-# CS 101: Lab 10
+# CS 101 · Lab 10
 ## Robust File Handling: Truncation, Encoding, Exceptions, and Atomic Writes
 
 **Duration:** 3 hours | **Graded:** TA checkoff on completion and correctness

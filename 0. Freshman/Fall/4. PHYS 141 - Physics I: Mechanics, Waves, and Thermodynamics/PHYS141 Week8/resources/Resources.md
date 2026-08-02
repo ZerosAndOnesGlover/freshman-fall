@@ -1,4 +1,4 @@
-# PHYS 141 — Week 8 Resources
+# PHYS 141 · Week 8 Resources
 
 ## Required Textbook Reading
 

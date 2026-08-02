@@ -1,4 +1,4 @@
-# MATH 141 — Calculus I
+# MATH 141 · Calculus I
 ## Week 10 · Lecture 3 (Wednesday)
 ### Integration by Parts
 

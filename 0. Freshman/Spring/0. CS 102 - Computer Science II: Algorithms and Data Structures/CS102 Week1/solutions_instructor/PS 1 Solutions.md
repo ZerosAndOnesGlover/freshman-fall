@@ -1,4 +1,4 @@
-# CS 102 — Problem Set 1 Solutions
+# CS 102 · Problem Set 1 Solutions
 ## INSTRUCTOR ONLY
 
 **Total: 100 points.** All computed answers verified by execution.

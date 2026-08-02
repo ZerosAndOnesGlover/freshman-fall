@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Lecture 9.1 (L27) — Recurrence Relations: Modelling and Iteration
 ### Monday, Week 9
 

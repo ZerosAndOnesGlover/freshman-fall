@@ -1,4 +1,4 @@
-# MATH 141 Calculus I
+# MATH 141 · Calculus I
 ## Problem Set 1 — Complete Instructor Solutions
 ### DO NOT DISTRIBUTE TO STUDENTS
 

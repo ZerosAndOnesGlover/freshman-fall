@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Lab 3 — Induction Workshop: Writing, Debugging, and Verifying Proofs
 ### Wednesday, Week 3 | Duration: 2 hours
 

@@ -1,4 +1,4 @@
-# MATH 141: Calculus I
+# MATH 141 · Calculus I
 ## Lab 00: Graphical Exploration of Functions
 ### Week 0 Lab Session
 

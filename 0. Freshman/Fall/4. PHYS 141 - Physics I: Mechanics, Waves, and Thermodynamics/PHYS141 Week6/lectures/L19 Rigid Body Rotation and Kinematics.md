@@ -1,4 +1,4 @@
-# PHYS 141 — Lecture 19
+# PHYS 141 · Lecture 19
 # Rigid Body Rotation & Rotational Kinematics
 
 > **Core Principle:** A rigid body is an idealized object whose particles maintain fixed distances from one another — it can translate and rotate, but not deform. Every particle in a rotating rigid body shares the same angular velocity and angular acceleration, even though different particles have different linear speeds. This shared angular description is what makes rotational mechanics tractable.

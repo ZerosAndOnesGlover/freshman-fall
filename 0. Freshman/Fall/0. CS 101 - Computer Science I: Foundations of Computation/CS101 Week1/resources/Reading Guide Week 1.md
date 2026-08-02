@@ -1,4 +1,4 @@
-# CS 101 Week 1 Reading Guide & Resources
+# CS 101 · Week 1 Reading Guide & Resources
 ## Data, Types, Variables, and Expressions
 
 ---

@@ -1,4 +1,4 @@
-# MATH 151 — Week 7
+# MATH 151 · Week 7
 ## Quiz 7 Solutions — INSTRUCTOR ONLY
 
 ---

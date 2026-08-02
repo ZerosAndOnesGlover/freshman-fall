@@ -1,4 +1,4 @@
-# CS 101 — Midterm 1 Review & Practice Exam
+# CS 101 · Midterm 1 Review & Practice Exam
 ## Covers Weeks 0–5: Foundations Through Sorting Algorithms
 
 **Midterm 1 Format:** 75 minutes, written, closed book. One handwritten cheat sheet (1 side of 8.5×11) allowed.

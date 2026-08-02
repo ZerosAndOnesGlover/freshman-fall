@@ -1,4 +1,4 @@
-# CS 101 Lab 0
+# CS 101 · Lab 0
 ## Environment Setup & First Programs
 
 **Week 0 · Tuesday Lab Section**

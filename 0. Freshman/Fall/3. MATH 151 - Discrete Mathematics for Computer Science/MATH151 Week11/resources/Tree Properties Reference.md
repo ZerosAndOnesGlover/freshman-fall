@@ -1,4 +1,4 @@
-# MATH 151 — Tree Properties Reference
+# MATH 151 · Tree Properties Reference
 ## Week 11: Trees
 
 ---

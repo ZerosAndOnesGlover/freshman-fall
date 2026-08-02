@@ -1,4 +1,4 @@
-# PROG 101 — this appendix Resources
+# PROG 101 · this appendix Resources
 ## Hash Table Quick Reference · Hash Function Library · Common Bugs
 
 ---

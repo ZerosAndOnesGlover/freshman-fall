@@ -1,4 +1,4 @@
-# CS 101 Lecture 6 (Week 1, Lecture 3)
+# CS 101 · Lecture 6 (Week 1, Lecture 3)
 ## Python's Type System, Conversions, and the REPL as a Thinking Tool
 
 **Week 1 · Friday**

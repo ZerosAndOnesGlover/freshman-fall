@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Lecture 7.3 (L23) — The Binomial Theorem and Pascal's Triangle
 ### Friday, Week 7
 

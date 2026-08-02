@@ -1,4 +1,4 @@
-# PROG 101 — Week 3 Reference
+# PROG 101 · Week 3 Reference
 ## Functions · The Call Stack · Scope, Linkage, and Multi-File Programs
 
 ---

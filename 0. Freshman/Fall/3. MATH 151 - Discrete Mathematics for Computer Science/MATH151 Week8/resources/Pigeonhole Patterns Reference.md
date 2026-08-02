@@ -1,4 +1,4 @@
-# MATH 151 — Pigeonhole Patterns Reference
+# MATH 151 · Pigeonhole Patterns Reference
 ## Week 8: Advanced Counting — Pigeonhole Patterns
 
 ---

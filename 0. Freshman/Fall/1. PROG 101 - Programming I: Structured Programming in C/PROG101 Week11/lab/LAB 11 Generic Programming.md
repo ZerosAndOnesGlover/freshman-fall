@@ -1,4 +1,4 @@
-# PROG 101 — Programming I: Structured Programming in C
+# PROG 101 · Programming I: Structured Programming in C
 ## Week 11 · Lab 11: Generic Programming in C
 
 **Duration:** 2 hours · **Points:** 20 · **Room:** BH 215

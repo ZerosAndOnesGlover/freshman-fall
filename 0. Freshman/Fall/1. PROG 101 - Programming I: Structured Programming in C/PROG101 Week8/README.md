@@ -1,4 +1,4 @@
-# PROG 101 — Week 8: File I/O and the UNIX File Model
+# PROG 101 · Week 8: File I/O and the UNIX File Model
 ## Persisting Data · Text and Binary Files · Building a Real Database
 
 ---

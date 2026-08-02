@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Problem Set 3 — Mathematical Induction
 ### Released: Friday, Week 3 | Due: Friday, Week 4 (11:59 PM)
 

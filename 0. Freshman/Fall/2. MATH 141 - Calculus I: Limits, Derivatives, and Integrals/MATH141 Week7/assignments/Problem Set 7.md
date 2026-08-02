@@ -1,4 +1,4 @@
-# MATH 141 — Calculus I
+# MATH 141 · Calculus I
 ## Problem Set 7
 ### Topic: L'Hôpital's Rule, Curve Sketching, Applied Optimization
 **Released:** Wednesday, Week 7 | **Due:** Wednesday, Week 6 (start of class)

@@ -1,4 +1,4 @@
-# MATH 151: Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Lecture 0.3. Tautologies, Contradictions, Logical Equivalence, and the Laws of Logic
 ### Friday, Week 0
 

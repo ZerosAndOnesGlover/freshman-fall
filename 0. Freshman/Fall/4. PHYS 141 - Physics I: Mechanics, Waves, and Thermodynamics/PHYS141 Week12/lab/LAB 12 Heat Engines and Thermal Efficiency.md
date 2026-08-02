@@ -1,4 +1,4 @@
-# PHYS 141 — Lab 12
+# PHYS 141 · Lab 12
 ## Heat Engines, the Gas Laws, and Thermal Efficiency
 
 **Duration:** 3 hours | **Total: 100 points**

@@ -1,4 +1,4 @@
-# CS 101 — Week 9: Strings and Regular Expressions
+# CS 101 · Week 9: Strings and Regular Expressions
 
 ---
 

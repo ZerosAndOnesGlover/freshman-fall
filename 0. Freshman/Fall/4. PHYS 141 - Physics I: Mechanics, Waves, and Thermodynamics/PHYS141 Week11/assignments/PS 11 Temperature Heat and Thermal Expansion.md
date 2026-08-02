@@ -1,4 +1,4 @@
-# PHYS 141 — Problem Set 11
+# PHYS 141 · Problem Set 11
 ## Temperature, Heat, and Thermal Expansion
 
 **Released:** Friday EOD, Week 11 | **Due:** Friday, Week 12, start of class

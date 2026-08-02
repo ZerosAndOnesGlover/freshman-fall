@@ -1,4 +1,4 @@
-# MATH 141 — Calculus I
+# MATH 141 · Calculus I
 ## Week 5 Reference Sheet
 ### Implicit Differentiation · Logarithms · Inverse Trig · Related Rates
 

@@ -1,4 +1,4 @@
-# PHYS 141 — Problem Set 8 Solutions
+# PHYS 141 · Problem Set 8 Solutions
 ## INSTRUCTOR ONLY
 
 **Total: 100 points.** All values verified computationally. $g = 9.81$ m/s².

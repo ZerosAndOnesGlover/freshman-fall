@@ -1,4 +1,4 @@
-# MATH 141 Calculus I
+# MATH 141 · Calculus I
 ## Week 1 · Lecture 1 (Monday)
 ### Limits: Intuition, Informal Definition, and the One-Sided Limit
 

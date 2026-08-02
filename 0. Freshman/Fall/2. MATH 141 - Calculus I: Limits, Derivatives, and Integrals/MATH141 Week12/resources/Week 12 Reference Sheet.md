@@ -1,4 +1,4 @@
-# MATH 141 — Week 12 Reference Sheet
+# MATH 141 · Week 12 Reference Sheet
 ## Course Summary and Final Exam Aid
 
 ---

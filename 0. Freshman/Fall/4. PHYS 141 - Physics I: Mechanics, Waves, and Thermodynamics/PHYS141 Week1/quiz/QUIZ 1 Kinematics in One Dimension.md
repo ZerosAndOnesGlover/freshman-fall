@@ -1,4 +1,4 @@
-# PHYS 141 — Quiz 1
+# PHYS 141 · Quiz 1
 ## Kinematics in One Dimension
 
 **Time limit:** 20 minutes | **Format:** Closed book, formula sheet provided (kinematic equations only)

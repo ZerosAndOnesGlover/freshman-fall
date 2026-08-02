@@ -1,4 +1,4 @@
-# PROG 101 — Week 2 Reference
+# PROG 101 · Week 2 Reference
 ## Operator Precedence · Evaluation Order · Control Flow
 
 ---

@@ -1,4 +1,4 @@
-# MATH 141 — Calculus I
+# MATH 141 · Calculus I
 ## Week 6 · Lecture 2 (Tuesday)
 ### Rolle's Theorem and the Mean Value Theorem
 

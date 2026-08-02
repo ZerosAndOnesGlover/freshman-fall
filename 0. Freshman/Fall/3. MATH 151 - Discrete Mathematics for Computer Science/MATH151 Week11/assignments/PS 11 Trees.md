@@ -1,4 +1,4 @@
-# MATH 151: Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Problem Set 11: Trees, Spanning Trees, and Traversal
 ### Released: Friday, Week 11 | Due: Friday, Week 12 (11:59 PM)
 

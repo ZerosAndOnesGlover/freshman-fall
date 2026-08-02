@@ -1,4 +1,4 @@
-# MATH 141 — Problem Set 9
+# MATH 141 · Problem Set 9
 ## The Fundamental Theorem of Calculus
 
 **Released:** Wednesday, Week 9 · **Due:** Wednesday, Week 10 at the start of class

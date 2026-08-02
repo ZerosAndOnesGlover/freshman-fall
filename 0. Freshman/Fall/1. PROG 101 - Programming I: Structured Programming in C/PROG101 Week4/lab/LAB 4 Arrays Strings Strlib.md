@@ -1,4 +1,4 @@
-# PROG 101 — Programming I: Structured Programming in C
+# PROG 101 · Programming I: Structured Programming in C
 ## Week 4 · Lab 4: Arrays, Strings, and a String Library
 
 **Duration:** 2 hours · **Points:** 20 · **Room:** BH 215

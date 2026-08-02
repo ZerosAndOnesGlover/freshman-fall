@@ -1,4 +1,4 @@
-# PROG 101 — Programming I: Structured Programming in C
+# PROG 101 · Programming I: Structured Programming in C
 ## Week 5 · Problem Set 5: Pointers I
 
 **Released:** Friday, Week 5 · **Due:** Friday, Week 6 at 17:00

@@ -1,4 +1,4 @@
-# PROG 101 — Programming I: Structured Programming in C
+# PROG 101 · Programming I: Structured Programming in C
 ## Week 11 · Problem Set 11: The C Standard Library and Generic Programming
 
 **Released:** Friday, Week 11 · **Due:** Friday, Week 12 at 17:00

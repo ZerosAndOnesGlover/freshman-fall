@@ -1,4 +1,4 @@
-# PHYS 141 — Problem Set 0 — INSTRUCTOR SOLUTIONS
+# PHYS 141 · Problem Set 0 — INSTRUCTOR SOLUTIONS
 
 **Do not distribute to students before the due date.**
 

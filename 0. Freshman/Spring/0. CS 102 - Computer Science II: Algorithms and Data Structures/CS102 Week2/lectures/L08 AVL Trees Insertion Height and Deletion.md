@@ -1,4 +1,4 @@
-# CS 102 — Computer Science II
+# CS 102 · Computer Science II
 ## Lecture 08: AVL Trees — Insertion, the Height Bound, and Deletion
 
 ---

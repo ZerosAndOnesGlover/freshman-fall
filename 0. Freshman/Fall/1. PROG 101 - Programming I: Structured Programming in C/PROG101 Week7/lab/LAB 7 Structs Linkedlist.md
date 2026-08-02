@@ -1,4 +1,4 @@
-# PROG 101 — Programming I: Structured Programming in C
+# PROG 101 · Programming I: Structured Programming in C
 ## Week 7 · Lab 7: Structs, Unions, and a Complete Linked List Library
 
 **Graded: 20 points**

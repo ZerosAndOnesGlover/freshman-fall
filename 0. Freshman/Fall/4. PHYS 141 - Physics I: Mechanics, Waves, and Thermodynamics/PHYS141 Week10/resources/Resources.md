@@ -1,4 +1,4 @@
-# PHYS 141 — Week 10 Resources
+# PHYS 141 · Week 10 Resources
 
 ## Required Textbook Reading
 

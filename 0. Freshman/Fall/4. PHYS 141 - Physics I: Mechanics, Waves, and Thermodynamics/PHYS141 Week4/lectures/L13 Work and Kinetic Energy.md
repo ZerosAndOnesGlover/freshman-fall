@@ -1,4 +1,4 @@
-# PHYS 141 — Lecture 13
+# PHYS 141 · Lecture 13
 # Work and Kinetic Energy
 
 > **Core Principle:** Work is the mechanism by which force transfers energy to or from an object. The work-energy theorem — derivable directly from Newton's second law — states that the net work done on an object equals its change in kinetic energy. This single theorem lets us solve many problems without ever computing acceleration or time explicitly.

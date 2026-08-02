@@ -1,4 +1,4 @@
-# CS 101: Lecture 35 (Week 11, Lecture 2)
+# CS 101 · Lecture 35 (Week 11, Lecture 2)
 ## Decidability and the Halting Problem
 
 ---

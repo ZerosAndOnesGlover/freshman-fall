@@ -1,4 +1,4 @@
-# MATH 141 — Calculus I
+# MATH 141 · Calculus I
 ## Quiz 07 (Monday, Week 7 — Start of Class)
 ### Covers: Week 6 — Extrema, Rolle's Theorem, the MVT, L'Hôpital's Rule
 

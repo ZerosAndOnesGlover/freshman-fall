@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Lecture 2.3 (L08) — Proof by Contradiction
 ### Friday, Week 2
 

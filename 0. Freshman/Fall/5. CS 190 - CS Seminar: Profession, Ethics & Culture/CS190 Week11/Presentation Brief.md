@@ -1,4 +1,4 @@
-# CS 190 — Week 11
+# CS 190 · Week 11
 ## Presentation Brief: Position Paper Topics
 
 **Format:** 60-minute seminar. Every student presents.

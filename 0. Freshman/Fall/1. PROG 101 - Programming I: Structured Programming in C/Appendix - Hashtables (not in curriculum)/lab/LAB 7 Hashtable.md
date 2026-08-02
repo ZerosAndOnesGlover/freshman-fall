@@ -1,4 +1,4 @@
-# PROG 101 — Programming I: Structured Programming in C
+# PROG 101 · Programming I: Structured Programming in C
 ## Appendix · Lab 7: Building a Complete, Generic Hash Table Library
 
 **Graded: 20 points**

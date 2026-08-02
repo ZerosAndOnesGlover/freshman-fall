@@ -1,4 +1,4 @@
-# MATH 141 Calculus I
+# MATH 141 · Calculus I
 ## Week 1 · Lecture 3 (Wednesday)
 ### Infinite Limits and Limits at Infinity
 

@@ -1,4 +1,4 @@
-# PHYS 141 — Lecture 1
+# PHYS 141 · Lecture 1
 # Measurement, Units & Dimensional Analysis
 
 > **Core Principle:** Physics is an experimental science. Every quantity we discuss must be measurable — and the measurement must be reported with its units and its uncertainty. A number without units is not a physical quantity; it is a mathematical abstraction.

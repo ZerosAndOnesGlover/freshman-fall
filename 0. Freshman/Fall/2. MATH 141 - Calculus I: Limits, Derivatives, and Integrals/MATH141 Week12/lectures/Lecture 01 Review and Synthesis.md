@@ -1,4 +1,4 @@
-# MATH 141 — Calculus I
+# MATH 141 · Calculus I
 ## Week 12 · Lecture 1 (Monday)
 ### Review and Synthesis
 

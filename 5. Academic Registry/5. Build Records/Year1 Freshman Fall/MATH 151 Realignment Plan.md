@@ -1,4 +1,4 @@
-# MATH 151 — Alignment Audit and Build Plan
+# MATH 151 · Alignment Audit and Build Plan
 ### Authority: `5. Academic Registry/1. Scheduling/Year1 - Freshman/CSE_Year1_Freshman_Curriculum.docx`
 
 *Written before any files were changed. Same procedure as the PROG 101 and MATH 141 realignments.*

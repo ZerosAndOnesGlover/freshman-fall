@@ -1,4 +1,4 @@
-# PHYS 141 — Lab 9 Solutions
+# PHYS 141 · Lab 9 Solutions
 ## Standing Waves on a String
 ## INSTRUCTOR ONLY
 

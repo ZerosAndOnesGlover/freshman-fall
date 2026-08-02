@@ -1,4 +1,4 @@
-# MATH 151 — Week 6
+# MATH 151 · Week 6
 ## LAB6 Solutions — INSTRUCTOR ONLY
 
 ---

@@ -1,4 +1,4 @@
-# PHYS 141 — Problem Set 4
+# PHYS 141 · Problem Set 4
 ## Work, Energy & Conservation of Energy
 
 **Released:** Friday, Week 4 | **Due:** Friday, Week 5, 11:59 PM

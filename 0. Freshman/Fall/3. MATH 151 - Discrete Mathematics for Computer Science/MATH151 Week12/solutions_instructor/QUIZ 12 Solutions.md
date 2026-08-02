@@ -1,4 +1,4 @@
-# MATH 151 — Quiz 12 Solutions
+# MATH 151 · Quiz 12 Solutions
 ## INSTRUCTOR ONLY — DO NOT DISTRIBUTE
 
 **Total: 20 points.** All values verified.

@@ -1,4 +1,4 @@
-# MATH 151 — Week 9
+# MATH 151 · Week 9
 ## LAB 9 Solutions — INSTRUCTOR ONLY
 
 All numeric results below were produced by running the lab code.

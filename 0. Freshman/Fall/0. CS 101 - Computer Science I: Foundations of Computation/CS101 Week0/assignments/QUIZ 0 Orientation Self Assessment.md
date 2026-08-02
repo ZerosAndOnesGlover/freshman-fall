@@ -1,4 +1,4 @@
-# CS 101 Week 0 Orientation Quiz
+# CS 101 · Week 0 Orientation Quiz
 ## (Ungraded: Self-Assessment)
 
 **Purpose:** This quiz helps you check your understanding of Week 0 concepts.

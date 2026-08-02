@@ -1,4 +1,4 @@
-# PHYS 141 — Week 9 Resources
+# PHYS 141 · Week 9 Resources
 
 ## Required Textbook Reading
 

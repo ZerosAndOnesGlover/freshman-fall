@@ -1,4 +1,4 @@
-# MATH 141 — Lab 11 Solutions (Instructor)
+# MATH 141 · Lab 11 Solutions (Instructor)
 ## Areas, Volumes, and Numerical Checks
 
 All values verified by Simpson's rule at $n=40\,000$.

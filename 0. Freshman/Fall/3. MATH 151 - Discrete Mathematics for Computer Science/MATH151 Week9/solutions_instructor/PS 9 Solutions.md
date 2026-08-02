@@ -1,4 +1,4 @@
-# MATH 151 — Problem Set 9 Solutions
+# MATH 151 · Problem Set 9 Solutions
 ## INSTRUCTOR ONLY — DO NOT DISTRIBUTE
 
 **Total: 100 points**, plus 8 bonus. Every closed form below was verified against iteration.

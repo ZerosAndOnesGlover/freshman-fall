@@ -1,4 +1,4 @@
-# CS 102: Computer Science II — Algorithms and Data Structures
+# CS 102 · Computer Science II — Algorithms and Data Structures
 ## Week 0: Review and Course Overview
 
 **Credits:** 4 (3 lecture + 1 lab) · **Prerequisites:** CS 101, MATH 151

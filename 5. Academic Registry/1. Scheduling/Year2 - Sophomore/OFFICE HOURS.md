@@ -1,72 +1,64 @@
 ════════════════════════════════════════════════════════════════════════
-# YEAR 3 OFFICE HOURS — FALL
-### Junior · All Courses
+# YEAR 2 OFFICE HOURS — FALL
+### Sophomore · All Courses
 ════════════════════════════════════════════════════════════════════════
 
 
 > Office hours require no appointment. Just show up.
 > For extended or private discussions, email to schedule outside office hours.
-> All locations given as building + room number. See ROOM_ASSIGNMENTS.md for map.
+> All locations given as building + room number. See ROOM ASSIGNMENTS.md for map.
 
 ---
 
 ## Instructor Office Hours
 
-### Prof. Amara Diallo — CS 301
-- **Office**: TH 430
-- **Email**: a.diallo@ist.edu
+### Prof. Emmanuel Obi — CS 201
+- **Office**: TH 420
+- **Email**: e.obi@ist.edu
 - **Office Hours**:
-  - Monday 13:00–15:00 · TH 430
-  - Thursday 13:00–14:00 · TH 430
+  - Monday 13:00–15:00 · TH 420
+  - Wednesday 11:00–12:00 · TH 420
 
-### Prof. Marcus Osei — CS 302
-- **Office**: TH 432
-- **Email**: m.osei@ist.edu
+### Prof. Nadia Petrov — PROG 201
+- **Office**: TH 418
+- **Email**: n.petrov@ist.edu
 - **Office Hours**:
-  - Tuesday 14:00–16:00 · TH 432
-  - Friday 10:30–11:30 · TH 432
+  - Tuesday 13:00–15:00 · TH 418
+  - Thursday 15:00–16:30 · TH 418
 
-### Prof. Yuki Tanaka — CS 311
-- **Office**: BH 305
-- **Email**: y.tanaka@ist.edu
+### Prof. Chen Wei — CS 211
+- **Office**: TH 422
+- **Email**: c.wei@ist.edu
 - **Office Hours**:
-  - Monday 14:00–16:00 · BH 305
-  - Wednesday 14:00–15:00 · BH 305
+  - Monday 14:00–16:00 · TH 422
+  - Friday 11:00–12:00 · TH 422
 
-### Prof. Elena Sorokin — MATH 341
-- **Office**: SSB 315
-- **Email**: e.sorokin@ist.edu
+### Prof. Ruth Abara — MATH 241
+- **Office**: SSB 310
+- **Email**: r.abara@ist.edu
 - **Office Hours**:
-  - Tuesday 11:00–13:00 · SSB 315
-  - Thursday 11:00–12:00 · SSB 315
+  - Monday 13:00–15:00 · SSB 310 (after lecture)
+  - Thursday 10:00–11:00 · SSB 310
 
 
 ---
 
 ## Teaching Assistant Office Hours
 
-### David Kofi — CS 301 TA
-- **Email**: dkofi@ist.edu
+### Felix Oduya — CS 201 TA
+- **Email**: foduya@ist.edu
 - **Office Hours**:
-  - Wednesday 15:00–17:00 · BH 120
-  - Thursday 15:00–17:00 · BH 120
-  - Friday 15:00–16:00 · BH 120
+  - Monday 16:00–18:00 · BH 120
+  - Tuesday 17:00–18:00 · BH 210 (right after Lab, which ends 16:50)
+  - Friday 15:00–17:00 · BH 120
 - **Help Room**: Engineering Help Desk, Babbage Hall 120 (drop-in, no appointment)
 
-### Priya Sharma — CS 302 TA
-- **Email**: psharma@ist.edu
+### Aisha Mohammed — PROG 201 TA
+- **Email**: amohammed@ist.edu
 - **Office Hours**:
-  - Monday 17:00–19:00 · BH 120 (right after CS 302 Lab, which ends 16:50)
-  - Wednesday 15:00–17:00 · BH 215
-  - Friday 16:00–17:30 · BH 120
-- **Help Room**: Engineering Help Desk, Babbage Hall 120 (drop-in, no appointment)
-
-### Omar Hassan — CS 311 TA
-- **Email**: ohassan@ist.edu
-- **Office Hours**:
-  - Tuesday 13:00–15:00 · BH 220
-  - Friday 16:00–18:00 · BH 220 (right after CS 311 Lab)
-  - Saturday 14:00–16:00 · BH 120
+  - Monday 17:00–18:00 · BH 215 (right after Lab, which ends 16:50)
+  - Thursday 11:00–13:00 · BH 215
+  - Friday 16:00–18:00 · BH 120
 - **Help Room**: Engineering Help Desk, Babbage Hall 120 (drop-in, no appointment)
 
 

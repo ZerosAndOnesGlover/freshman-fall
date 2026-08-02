@@ -68,7 +68,7 @@ Track changes after M2 Fall begins require Program Office approval and may exten
 ## Course & Research Project Policies
 
 - **Team projects** (SE 502 System Project, SE 504 Team Project): peer evaluation adjusts individual grades ±10%, same as undergraduate policy.
-- **Thesis/Project (SE 599/590)**: advisor sets milestone deadlines individually within the Fall Y2 (proposal) → Spring Y2 (defense) timeline in ASSESSMENT_CALENDAR.md. Missed advisor meetings without notice count against your progress evaluation.
+- **Thesis/Project (SE 599/590)**: advisor sets milestone deadlines individually within the Fall Y2 (proposal) → Spring Y2 (defense) timeline in ASSESSMENT CALENDAR.md. Missed advisor meetings without notice count against your progress evaluation.
 - **AI-generated code/text**: must be disclosed in any submission (problem set, project, thesis chapter). You must be able to explain and defend every part of your own work — this is tested directly at thesis/project defense.
 
 ---
@@ -95,7 +95,7 @@ Track changes after M2 Fall begins require Program Office approval and may exten
 | SE 506 | None — case-study and portfolio based |
 | SE 510 | Same as SE 501 |
 | SE 520 | Incident management tooling (PagerDuty free tier or equivalent), SLO dashboard |
-| SE 530 | Python, PyTorch or TensorFlow, MLflow (shared GPU lab access, see ROOM_ASSIGNMENTS.md) |
+| SE 530 | Python, PyTorch or TensorFlow, MLflow (shared GPU lab access, see ROOM ASSIGNMENTS.md) |
 | SE 540 | Z3 or CVC5, Dafny or Frama-C |
 | SE 542 | C, FreeRTOS, ARM toolchain (shared with CS 434, Year 4) |
 | SE 599/590 | Project-specific, agreed with advisor |

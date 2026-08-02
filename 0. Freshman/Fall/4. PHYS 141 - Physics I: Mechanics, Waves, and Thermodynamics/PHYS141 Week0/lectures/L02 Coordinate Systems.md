@@ -1,4 +1,4 @@
-# PHYS 141 — Lecture 2
+# PHYS 141 · Lecture 2
 # Coordinate Systems
 
 > **Core Principle:** A coordinate system is a labeling scheme for points in space — a human convention, not a physical truth. Physics must be independent of which coordinate system you choose. Choosing the *right* coordinate system for a problem's symmetry is one of the most powerful problem-solving techniques in physics.

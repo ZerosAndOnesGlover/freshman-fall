@@ -1,4 +1,4 @@
-# PHYS 141 — Physics I: Mechanics, Waves & Thermodynamics
+# PHYS 141 · Physics I: Mechanics, Waves & Thermodynamics
 ## Week 7: Angular Momentum & Static Equilibrium
 
 **Semester:** Fall | **Credits:** 4 | **Lab:** Weekly 3-hr lab session

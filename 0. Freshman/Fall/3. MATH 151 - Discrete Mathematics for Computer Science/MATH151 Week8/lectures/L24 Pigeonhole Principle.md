@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Lecture 8.1 (L24) — The Pigeonhole Principle
 ### Monday, Week 8
 

@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Quiz 4 — Mathematical Induction
 ### Administered: Monday, Week 4 (first 15 minutes of class)
 

@@ -1,4 +1,4 @@
-# MATH 151: Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Problem Set 0: Propositional Logic
 ### Released: Friday, Week 0 | Due: Friday, Week 1 (11:59 PM)
 

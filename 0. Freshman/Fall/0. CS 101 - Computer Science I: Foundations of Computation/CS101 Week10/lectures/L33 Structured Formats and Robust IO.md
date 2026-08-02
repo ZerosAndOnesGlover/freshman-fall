@@ -1,4 +1,4 @@
-# CS 101 — Lecture 33 (Week 10, Lecture 3)
+# CS 101 · Lecture 33 (Week 10, Lecture 3)
 ## Structured Formats and Robust I/O
 
 ---

@@ -1,4 +1,4 @@
-# MATH 141: Calculus I
+# MATH 141 · Calculus I
 ## Week 0: Review of Functions, Algebra & Trigonometry
 ### Package README
 
@@ -16,7 +16,7 @@ MATH141_Week0/
 │   └── Lecture 03 Exponentials Logarithms Bridge.md  (Lecture 3 of 4)
 │
 ├── assignments/
-│   └── Problem Set 0.md              (100 pts + bonus — due Wednesday Week 0)
+│   └── Problem Set 0.md              (100 pts + bonus — due Friday Week 0)
 │
 ├── lab/
 │   └── LAB 00 Graphical Exploration.md           (2-hr Saturday lab)
@@ -43,7 +43,7 @@ MATH141_Week0/
 | Lecture 2: Algebra Review        | Read before Tue        | —               | Equations, inequalities, coordinate geometry          |
 | Lecture 3: Exponentials & Bridge | Read before Wed        | —               | Exp/log, growth models, preview of calculus           |
 | Diagnostic Quiz                  | Complete by Tue        | 0 (ungraded)    | Brutal honesty, find your gaps NOW                    |
-| Problem Set 0                    | Due Wednesday 11:59 PM | 100             | First real graded assignment                          |
+| Problem Set 0                    | Due Friday 11:59 PM    | 100             | First real graded assignment                          |
 | Lab 00                           | Saturday session       | 0 (orientation) | Not graded, but do it anyway                          |
 
 ---
@@ -100,10 +100,10 @@ By the end of this week, you will be able to:
 | Tuesday           | Read Lecture 2 §1–6 (algebra); Stewart §1.3–1.4                 | 90 min |
 | Tuesday evening   | Attempt Problems 4–6 of PS0                                     | 60 min |
 | Wednesday         | Read Lecture 2 §7 (trigonometry deep dive)                      | 90 min |
-| Wednesday         | Complete PS0 — trigonometry section (Problems 10–12)            | 60 min |
-| Wednesday         | Final review, polish, submit PS0 by 11:59 PM                    | 45 min |
+| Wednesday evening | Complete PS0 — trigonometry section (Problems 10–12)            | 60 min |
 | Thursday          | Read Lecture 3; Stewart §1.5–1.6                                | 90 min |
 | Thursday evening  | Attempt Problems 7–9 of PS0                                     | 60 min |
+| Friday            | Final review, polish, submit PS0 by 11:59 PM                    | 45 min |
 | Saturday          | Lab 00 session — graphical exploration                          | 2 hr   |
 
 **Total: ≈ 12.5 hours.** Budget accordingly — this is a full week of work, not a warm-up.
@@ -111,7 +111,8 @@ By the end of this week, you will be able to:
 Two notes on the schedule:
 
 - **Lecture 2 is split across two days on purpose.** It is by far the densest item in the package (intervals, absolute value, five equation types, four inequality types, coordinate geometry, four calculus-specific manipulation techniques, *and* a full trigonometry review). Ninety minutes was never realistic for all of it. §1–6 is the algebra; §7 is trigonometry and stands alone.
-- ⚠️ **Unresolved conflict:** PS0 is due **Wednesday 11:59 PM**, but Problems 7–9 cover Lecture 3 material (exponentials and logarithms), which is not read until Thursday. This conflict exists in the current package and is not introduced by the schedule above. Either move the PS0 deadline to **Friday 11:59 PM**, or move Problems 7–9 to PS1. The deadline is stated in two places (the tree above and the *At a Glance* table) and has not been changed pending that decision.
+- **Every problem set section now follows its lecture.** PS0 was previously due Wednesday, which put Problems 7–9 (exponentials and logarithms, Lecture 3 material) ahead of the lecture that teaches them. The deadline is now **Friday 11:59 PM**, so the order is: read the lecture, then attempt the problems, then do a final pass. Nothing on the sheet is answerable before it has been taught.
+- **PS0 is a documented exception to the standard cadence.** Every other problem set is released Wednesday and due the *following* Wednesday — a full seven days (see the syllabus). PS0 is released Monday of Week 0 and due that Friday, which is five. Week 0 is compressed by design so the course can start Week 1 on schedule.
 
 ---
 

@@ -1,4 +1,4 @@
-# PROG 101 Week 0: The C Compilation Model
+# PROG 101 · Week 0: The C Compilation Model
 ## Orientation & Tool-chain Setup
 
 ---

@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Lecture 1.3 (L05) — Nested Quantifiers
 ### Friday, Week 1
 

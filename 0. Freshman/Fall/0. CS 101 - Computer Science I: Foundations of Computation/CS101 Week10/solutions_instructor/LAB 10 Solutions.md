@@ -1,4 +1,4 @@
-# CS 101: Week 10
+# CS 101 · Week 10
 ## LAB 10 Solutions: INSTRUCTOR ONLY
 
 > **All code below was executed and all stated outputs are real.** Timings are machine-specific —

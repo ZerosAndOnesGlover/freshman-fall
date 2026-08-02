@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Lecture 7.2 (L22) — Permutations and Combinations
 ### Thursday, Week 7
 

@@ -125,4 +125,4 @@ If two exams or presentations fall in the same evening:
 
 ## Re-grade Requests
 
-Submit in writing to the course instructor within **7 calendar days** of grade release, following the same process as undergraduate courses (see Year 4's COURSE_POLICIES.md for the template). Thesis/project milestone feedback is handled directly with your advisor, not through the re-grade process.
+Submit in writing to the course instructor within **7 calendar days** of grade release, following the same process as undergraduate courses (see Year 4's COURSE POLICIES.md for the template). Thesis/project milestone feedback is handled directly with your advisor, not through the re-grade process.

@@ -1,4 +1,4 @@
-# CS 190 — Week 11
+# CS 190 · Week 11
 ## Presentation Rubric
 
 **Total: 20 points.** Marked into the **Participation** component (40% of the course grade). Marks

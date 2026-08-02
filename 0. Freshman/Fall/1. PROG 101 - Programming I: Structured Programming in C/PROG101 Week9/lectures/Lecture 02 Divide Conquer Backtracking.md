@@ -1,4 +1,4 @@
-# PROG 101 Programming I: Structured Programming in C
+# PROG 101 · Programming I: Structured Programming in C
 ## Week 9 · Lecture 2: Recursive Algorithms — Divide-and-Conquer and Backtracking
 
 ---

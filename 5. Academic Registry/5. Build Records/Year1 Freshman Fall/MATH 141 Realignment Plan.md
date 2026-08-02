@@ -1,4 +1,4 @@
-# MATH 141 — Curriculum Realignment Plan
+# MATH 141 · Curriculum Realignment Plan
 
 **Decision:** the Year 1 curriculum document (`CSE_Year1_Freshman_Curriculum.docx`) is authoritative.
 Built content is redistributed to match its week numbering, and the two genuinely missing weeks are

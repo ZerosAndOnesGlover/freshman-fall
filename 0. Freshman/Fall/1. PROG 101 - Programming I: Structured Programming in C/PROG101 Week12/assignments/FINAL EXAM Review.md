@@ -1,4 +1,4 @@
-# PROG 101 — Final Exam
+# PROG 101 · Final Exam
 ## Review Guide
 
 **Exam:** Finals week · **Duration:** 120 minutes

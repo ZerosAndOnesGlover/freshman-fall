@@ -1,4 +1,4 @@
-# CS 101 Lab 3
+# CS 101 · Lab 3
 ## Stack Frame Visualization and Function Design
 
 **Week 3 · Tuesday Lab Section**

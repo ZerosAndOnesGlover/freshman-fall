@@ -1,4 +1,4 @@
-# PHYS 141 — Quiz 12
+# PHYS 141 · Quiz 12
 ## The Laws of Thermodynamics, Entropy, and Heat Engines
 
 **Time limit:** 20 minutes | **Format:** Closed book

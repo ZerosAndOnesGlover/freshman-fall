@@ -1,4 +1,4 @@
-# MATH 141 — Calculus I
+# MATH 141 · Calculus I
 ## Lab 08 (Friday, Week 8)
 ### Riemann Sums, Convergence, and Sample-Point Independence
 

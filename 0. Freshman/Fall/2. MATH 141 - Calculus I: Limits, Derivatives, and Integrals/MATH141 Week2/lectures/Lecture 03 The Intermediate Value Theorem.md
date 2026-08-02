@@ -1,4 +1,4 @@
-# MATH 141 — Calculus I
+# MATH 141 · Calculus I
 ## Week 2 · Lecture 3 (Wednesday)
 ### The Intermediate Value Theorem
 

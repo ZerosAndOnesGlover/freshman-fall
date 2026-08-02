@@ -1,4 +1,4 @@
-# CS 102 — Computer Science II: Algorithms and Data Structures
+# CS 102 · Computer Science II: Algorithms and Data Structures
 ## Course Overview and Syllabus
 ### Year 1 · Spring · 4 credits
 

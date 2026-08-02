@@ -1,4 +1,4 @@
-# PHYS 141 — Quiz 4
+# PHYS 141 · Quiz 4
 ## Work, Energy & Conservation of Energy
 
 **Time limit:** 20 minutes | **Format:** Closed book

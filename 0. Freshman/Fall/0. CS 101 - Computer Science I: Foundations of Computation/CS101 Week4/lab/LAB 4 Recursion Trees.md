@@ -1,4 +1,4 @@
-# CS 101 Lab 4
+# CS 101 · Lab 4
 ## Recursion Tree Drawing and Implementation
 
 **Week 4 · Tuesday Lab Section**

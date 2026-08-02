@@ -1,4 +1,4 @@
-# PROG 101 Programming I: Structured Programming in C
+# PROG 101 · Programming I: Structured Programming in C
 ## Appendix Quiz (Hash Tables)
 
 > **⚠ Off-syllabus.** Hash tables are **not** in the PROG 101 curriculum — they are CS 101's

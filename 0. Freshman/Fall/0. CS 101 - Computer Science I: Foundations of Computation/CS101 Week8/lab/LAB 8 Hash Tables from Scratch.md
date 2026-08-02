@@ -1,4 +1,4 @@
-# CS 101 — Lab 8
+# CS 101 · Lab 8
 ## Building a Hash Table From Scratch
 
 **Week 8 · Tuesday Lab Section**

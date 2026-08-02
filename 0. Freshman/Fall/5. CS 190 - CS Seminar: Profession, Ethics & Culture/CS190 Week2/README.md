@@ -1,4 +1,4 @@
-# CS 190: CS Seminar: Profession, Ethics & Culture
+# CS 190 · CS Seminar: Profession, Ethics & Culture
 ## Week 2: How Software Gets Built
 ### Agile, Open Source, and Research Labs
 

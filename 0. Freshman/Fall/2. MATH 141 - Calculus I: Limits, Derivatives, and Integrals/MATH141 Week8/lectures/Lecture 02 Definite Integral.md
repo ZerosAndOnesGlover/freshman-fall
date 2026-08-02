@@ -1,4 +1,4 @@
-# MATH 141 — Calculus I
+# MATH 141 · Calculus I
 ## Week 8 · Lecture 2 (Tuesday)
 ### The Definite Integral: Formal Definition, Notation, and Properties
 

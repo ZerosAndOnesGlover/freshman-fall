@@ -1,4 +1,4 @@
-# PHYS 141 — Quiz 11
+# PHYS 141 · Quiz 11
 ## Temperature, Heat, and Thermal Expansion
 
 **Time limit:** 20 minutes | **Format:** Closed book

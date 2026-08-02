@@ -1,4 +1,4 @@
-# MATH 141 — Calculus I
+# MATH 141 · Calculus I
 ## Week 3 · Lecture 1 (Monday)
 ### The Derivative: Definition, Geometric Meaning, and the Difference Quotient
 

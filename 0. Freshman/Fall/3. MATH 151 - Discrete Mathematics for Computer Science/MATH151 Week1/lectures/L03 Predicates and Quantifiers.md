@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Lecture 1.1 (L03) — Predicates, Domains, and Quantifiers
 ### Monday, Week 1
 

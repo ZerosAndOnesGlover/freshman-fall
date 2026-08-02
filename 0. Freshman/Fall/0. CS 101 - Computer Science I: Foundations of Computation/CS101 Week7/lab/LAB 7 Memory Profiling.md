@@ -1,4 +1,4 @@
-# CS 101 — Lab 7
+# CS 101 · Lab 7
 ## Memory Profiling: List vs. Linked List
 
 **Week 7 · Tuesday Lab Section**

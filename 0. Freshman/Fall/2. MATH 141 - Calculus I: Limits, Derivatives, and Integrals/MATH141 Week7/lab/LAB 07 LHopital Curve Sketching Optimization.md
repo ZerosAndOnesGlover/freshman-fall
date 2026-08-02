@@ -1,4 +1,4 @@
-# MATH 141 — Calculus I
+# MATH 141 · Calculus I
 ## Lab 07 (Friday, Week 7)
 ### L'Hôpital's Rule Verification, Curve Sketching Practice, and Optimization Design
 

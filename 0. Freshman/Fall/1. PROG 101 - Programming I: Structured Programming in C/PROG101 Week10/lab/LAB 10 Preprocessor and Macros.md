@@ -1,4 +1,4 @@
-# PROG 101 — Programming I: Structured Programming in C
+# PROG 101 · Programming I: Structured Programming in C
 ## Week 10 · Lab 10: Seeing the Preprocessor
 
 **Duration:** 2 hours · **Points:** 20 · **Room:** BH 215

@@ -1,4 +1,4 @@
-# CS 101: Lecture 16 (Week 5, Lecture 1)
+# CS 101 · Lecture 16 (Week 5, Lecture 1)
 ## Searching Algorithms: Linear and Binary Search
 
 **Week 5 · Wednesday**

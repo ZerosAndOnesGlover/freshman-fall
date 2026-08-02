@@ -1,4 +1,4 @@
-# PROG 101 — Programming I: Structured Programming in C
+# PROG 101 · Programming I: Structured Programming in C
 ## Week 9 · Lecture 3: Recursive Data Structures — Binary Trees
 
 ---

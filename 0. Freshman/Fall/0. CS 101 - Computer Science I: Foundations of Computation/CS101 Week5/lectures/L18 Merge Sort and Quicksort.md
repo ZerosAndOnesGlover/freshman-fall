@@ -1,4 +1,4 @@
-# CS 101 — Lecture 18 (Week 5, Lecture 3)
+# CS 101 · Lecture 18 (Week 5, Lecture 3)
 ## Efficient Sorting: Merge Sort, Quicksort, and the Sorting Landscape
 
 **Week 5 · Friday**

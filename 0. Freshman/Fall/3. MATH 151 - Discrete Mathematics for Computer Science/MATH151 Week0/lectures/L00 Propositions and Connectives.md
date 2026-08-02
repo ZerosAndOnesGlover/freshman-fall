@@ -1,4 +1,4 @@
-# MATH 151 Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Lecture 0.1. Propositions and Logical Connectives
 ### Monday, Week 0
 

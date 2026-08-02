@@ -1,4 +1,4 @@
-# MATH 141 — Week 3
+# MATH 141 · Week 3
 ## LAB 03 Solutions — INSTRUCTOR ONLY
 
 > **Every numerical value below was computed, not estimated.** Students working in Desmos rather

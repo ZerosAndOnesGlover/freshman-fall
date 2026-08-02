@@ -1,4 +1,4 @@
-# MATH 151: Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Week 4 — Sets: Operations, Power Sets, Cartesian Products
 
 ---

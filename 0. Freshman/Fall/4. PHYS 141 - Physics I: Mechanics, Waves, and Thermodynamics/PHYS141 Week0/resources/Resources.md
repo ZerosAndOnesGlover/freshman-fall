@@ -1,4 +1,4 @@
-# PHYS 141: Week 0 Resources
+# PHYS 141 · Week 0 Resources
 
 ## Required Textbook Reading
 

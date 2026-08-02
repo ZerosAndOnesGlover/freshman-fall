@@ -1,4 +1,4 @@
-# PROG 101 Course Overview & Syllabus
+# PROG 101 · Course Overview & Syllabus
 ## Programming I: Structured Programming in C
 
 ---

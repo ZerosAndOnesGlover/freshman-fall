@@ -1,4 +1,4 @@
-# MATH 141 — Calculus I
+# MATH 141 · Calculus I
 ## Week 6 Reference Sheet
 ### Extrema · Rolle's Theorem · MVT · Shape of a Graph
 

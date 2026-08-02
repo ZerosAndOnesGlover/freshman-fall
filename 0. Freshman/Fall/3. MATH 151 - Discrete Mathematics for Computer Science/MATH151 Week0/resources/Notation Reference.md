@@ -1,4 +1,4 @@
-# MATH 151 — Notation Reference
+# MATH 151 · Notation Reference
 ## Propositional Logic — Week 0
 
 ---

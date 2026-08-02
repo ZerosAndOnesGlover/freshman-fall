@@ -1,4 +1,4 @@
-# CS 101 — Lecture 23 (Week 7, Lecture 2)
+# CS 101 · Lecture 23 (Week 7, Lecture 2)
 ## Linked Lists: Singly and Doubly Linked
 
 **Week 7 · Thursday**

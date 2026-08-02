@@ -1,4 +1,4 @@
-# CS 101 — Lecture 21 (Week 6, Lecture 3)
+# CS 101 · Lecture 21 (Week 6, Lecture 3)
 ## Algorithm Analysis III: Complexity Classes in Depth, and Theory Meets Practice
 
 **Week 6 · Friday**

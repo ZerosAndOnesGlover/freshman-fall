@@ -1,4 +1,4 @@
-# CS 101 Lecture 13 (Week 4, Lecture 1)
+# CS 101 · Lecture 13 (Week 4, Lecture 1)
 ## Recursion: Thinking in Self-Reference
 
 **Week 4 · Wednesday**

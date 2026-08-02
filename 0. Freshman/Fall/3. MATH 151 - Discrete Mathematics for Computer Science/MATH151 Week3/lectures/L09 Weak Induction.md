@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Lecture 3.1 (L09) — Mathematical Induction: The Principle and Basic Applications
 ### Monday, Week 3
 

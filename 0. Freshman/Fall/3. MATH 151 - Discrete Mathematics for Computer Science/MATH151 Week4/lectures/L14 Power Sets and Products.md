@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Lecture 4.3 (L14) — Power Sets, Cartesian Products, and Inclusion-Exclusion
 ### Friday, Week 4
 

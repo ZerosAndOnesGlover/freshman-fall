@@ -1,4 +1,4 @@
-# CS 101 — Lecture 25 (Week 8, Lecture 1)
+# CS 101 · Lecture 25 (Week 8, Lecture 1)
 ## Hash Tables Fundamentals: The Idea Behind O(1) Lookup
 
 **Week 8 · Wednesday**

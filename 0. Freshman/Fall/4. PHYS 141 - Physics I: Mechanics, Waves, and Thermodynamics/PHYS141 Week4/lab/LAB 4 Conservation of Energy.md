@@ -1,4 +1,4 @@
-# PHYS 141 — Lab 4
+# PHYS 141 · Lab 4
 # Conservation of Energy on a Track
 
 **Duration:** 3 hours | **Partners:** Groups of 2–3

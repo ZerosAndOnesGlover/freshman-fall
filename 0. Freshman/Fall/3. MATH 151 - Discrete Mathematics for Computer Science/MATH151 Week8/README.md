@@ -1,4 +1,4 @@
-# MATH 151: Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Week 8 — Advanced Counting: Pigeonhole Principle, Inclusion–Exclusion
 
 ---

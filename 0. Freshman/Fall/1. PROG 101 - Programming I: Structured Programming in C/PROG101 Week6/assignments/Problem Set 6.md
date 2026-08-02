@@ -1,4 +1,4 @@
-# PROG 101 — Programming I: Structured Programming in C
+# PROG 101 · Programming I: Structured Programming in C
 ## Week 6 · Problem Set 6: Pointers II — Dynamic Memory
 
 **Released:** Friday, Week 6 · **Due:** Friday, Week 7 at 17:00

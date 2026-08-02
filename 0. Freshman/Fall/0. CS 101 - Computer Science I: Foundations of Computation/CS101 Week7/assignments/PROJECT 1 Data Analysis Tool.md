@@ -1,4 +1,4 @@
-# CS 101 — Project 1
+# CS 101 · Project 1
 ## Data Analysis Tool
 
 **Assigned:** Friday, Week 7

@@ -1,4 +1,4 @@
-# MATH 151: Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Lab 0 Truth Table Explorer: Logic by Hand and by Machine
 ### Wednesday, Week 0 | Duration: 2 hours
 

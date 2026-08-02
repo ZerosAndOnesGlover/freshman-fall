@@ -1,4 +1,4 @@
-# CS 101 — Week 9
+# CS 101 · Week 9
 ## LAB 9 Solutions — INSTRUCTOR ONLY
 
 > **All code below was executed and all stated outputs are real.** Absolute timings are

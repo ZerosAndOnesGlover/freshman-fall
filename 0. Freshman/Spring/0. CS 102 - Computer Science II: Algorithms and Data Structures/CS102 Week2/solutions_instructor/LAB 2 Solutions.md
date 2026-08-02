@@ -1,4 +1,4 @@
-# CS 102 — Lab 2: Solutions and Checkoff Guide
+# CS 102 · Lab 2: Solutions and Checkoff Guide
 ## Instructor Copy — Not for Distribution
 
 **40 points.** Reference machine: Python 3.14.2, x86-64 Linux. All timings **best of 3 runs**.

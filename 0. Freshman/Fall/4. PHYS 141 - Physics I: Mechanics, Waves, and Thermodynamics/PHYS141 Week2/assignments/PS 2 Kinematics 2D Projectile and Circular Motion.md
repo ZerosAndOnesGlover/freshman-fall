@@ -1,4 +1,4 @@
-# PHYS 141 — Problem Set 2
+# PHYS 141 · Problem Set 2
 ## Kinematics in 2D: Projectile Motion & Circular Motion
 
 **Released:** Friday, Week 2 | **Due:** Friday, Week 3, 11:59 PM

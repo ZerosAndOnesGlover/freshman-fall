@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Problem Set 6 — Relations
 ### Released: Friday, Week 6 | Due: Friday, Week 7 (11:59 PM)
 

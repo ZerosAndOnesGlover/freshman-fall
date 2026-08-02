@@ -1,4 +1,4 @@
-# CS 102 — Week 1 Reading Guide
+# CS 102 · Week 1 Reading Guide
 ## Binary Trees and Binary Search Trees
 
 **Assigned:** CLRS Chapter 12 (Binary Search Trees), §12.1–12.3. Roughly 20 pages.

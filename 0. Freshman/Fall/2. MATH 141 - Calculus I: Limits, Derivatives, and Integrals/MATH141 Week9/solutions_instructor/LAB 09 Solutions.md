@@ -1,4 +1,4 @@
-# MATH 141 — Lab 09 Solutions (Instructor)
+# MATH 141 · Lab 09 Solutions (Instructor)
 ## Accumulation Functions and the FTC Numerically
 
 All figures below were produced by running the lab. Simpson's rule with $n=10^5$ unless stated.

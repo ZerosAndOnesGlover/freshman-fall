@@ -1,4 +1,4 @@
-# PROG 101 Programming I: Structured Programming in C
+# PROG 101 · Programming I: Structured Programming in C
 ## Appendix · Lecture 1: Hash Functions and the Hashing Problem
 
 ---

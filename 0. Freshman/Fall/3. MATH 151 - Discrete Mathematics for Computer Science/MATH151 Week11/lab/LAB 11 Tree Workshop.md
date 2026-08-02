@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Lab 11 — Tree Workshop: Spanning Trees, MSTs, and Traversal
 ### Wednesday, Week 11 | Duration: 2 hours
 

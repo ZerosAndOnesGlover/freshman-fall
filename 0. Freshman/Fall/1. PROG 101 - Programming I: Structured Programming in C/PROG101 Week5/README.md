@@ -1,4 +1,4 @@
-# PROG 101 — Week 5
+# PROG 101 · Week 5
 ## Pointers I: The Fundamental Abstraction
 
 ---

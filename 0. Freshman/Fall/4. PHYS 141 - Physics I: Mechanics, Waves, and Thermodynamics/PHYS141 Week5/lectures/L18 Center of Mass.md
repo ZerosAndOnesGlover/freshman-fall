@@ -1,4 +1,4 @@
-# PHYS 141 — Lecture 18
+# PHYS 141 · Lecture 18
 # Center of Mass
 
 > **Core Principle:** Every extended object or system of particles has a single point — the center of mass — that behaves, for the purposes of translational motion, exactly like a single point particle carrying the system's entire mass. This is why we can treat complicated, extended, even rotating or exploding objects as point masses when analyzing their overall trajectory.

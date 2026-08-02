@@ -1,4 +1,4 @@
-# PROG 101 — Week 4
+# PROG 101 · Week 4
 ## Arrays and Strings
 
 ---

@@ -1,4 +1,4 @@
-# CS 101: Lecture 17 (Week 5, Lecture 2)
+# CS 101 · Lecture 17 (Week 5, Lecture 2)
 ## Elementary Sorting: Selection, Insertion, and Bubble Sort
 
 **Week 5 · Thursday**

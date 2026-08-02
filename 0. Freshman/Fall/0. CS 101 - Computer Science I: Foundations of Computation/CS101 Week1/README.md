@@ -1,4 +1,4 @@
-# CS 101 Week 1 Data, Types, Variables, and Expressions
+# CS 101 · Week 1 Data, Types, Variables, and Expressions
 
 ---
 

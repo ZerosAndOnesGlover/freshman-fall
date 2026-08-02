@@ -1,4 +1,4 @@
-# PHYS 141 — Week 3 Resources
+# PHYS 141 · Week 3 Resources
 
 ## Required Textbook Reading
 

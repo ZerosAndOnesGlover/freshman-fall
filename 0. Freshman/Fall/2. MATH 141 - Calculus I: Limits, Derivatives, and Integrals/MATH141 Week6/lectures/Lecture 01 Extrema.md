@@ -1,4 +1,4 @@
-# MATH 141 — Calculus I
+# MATH 141 · Calculus I
 ## Week 6 · Lecture 1 (Monday)
 ### Maximum and Minimum Values: Extrema, Critical Points, and the Extreme Value Theorem
 

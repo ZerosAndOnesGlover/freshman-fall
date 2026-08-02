@@ -1,4 +1,4 @@
-# MATH 141 — Problem Set 10 Solutions
+# MATH 141 · Problem Set 10 Solutions
 ## INSTRUCTOR ONLY — DO NOT DISTRIBUTE
 
 ---

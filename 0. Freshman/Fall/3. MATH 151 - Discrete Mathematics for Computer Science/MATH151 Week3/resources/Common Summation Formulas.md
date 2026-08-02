@@ -1,4 +1,4 @@
-# MATH 151 — Common Summation Formulas
+# MATH 151 · Common Summation Formulas
 ## Week 3 Reference Sheet
 
 ---

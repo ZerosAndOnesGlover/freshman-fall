@@ -1,4 +1,4 @@
-# PROG 101 Programming I: Structured Programming in C
+# PROG 101 · Programming I: Structured Programming in C
 ## Week 0 · Lecture 1: What Is a Compiler? The C Compilation Model
 
 ---

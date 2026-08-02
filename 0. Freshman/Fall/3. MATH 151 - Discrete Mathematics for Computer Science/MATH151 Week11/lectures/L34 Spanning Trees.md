@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Lecture 11.2 (L34) — Spanning Trees and Minimum Spanning Trees
 ### Wednesday, Week 11
 

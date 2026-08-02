@@ -1,4 +1,4 @@
-# CS 101 — Week 11
+# CS 101 · Week 11
 ## Computability: What Cannot Be Computed
 
 ---

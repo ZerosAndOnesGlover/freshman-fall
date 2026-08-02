@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Lecture 12.2 (L37) — Modular Arithmetic, the GCD, and RSA
 ### Wednesday, Week 12
 

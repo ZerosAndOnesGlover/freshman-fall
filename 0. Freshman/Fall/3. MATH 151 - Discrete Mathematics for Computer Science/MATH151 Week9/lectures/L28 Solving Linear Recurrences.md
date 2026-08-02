@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Lecture 9.2 (L28) — Solving Linear Recurrences: The Characteristic Equation
 ### Wednesday, Week 9
 

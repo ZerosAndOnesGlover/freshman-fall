@@ -1,4 +1,4 @@
-# PHYS 141 — Problem Set 5 — INSTRUCTOR SOLUTIONS
+# PHYS 141 · Problem Set 5 — INSTRUCTOR SOLUTIONS
 **Do not distribute before the due date.**
 
 ---

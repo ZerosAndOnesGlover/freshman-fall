@@ -1,11 +1,11 @@
-# MATH 141 Calculus I
+# MATH 141 · Calculus I
 ## Problem Set 0
 ### Week 0: Functions, Algebra, Exponentials & Logarithms
 
 ---
 
 **Released:** Monday, Week 0  
-**Due:** Wednesday, Week 0 (by 11:59 PM — submit via course portal)  
+**Due:** Friday, Week 0 (by 11:59 PM — submit via course portal)  
 **Total Points:** 100  
 **Policy:** Show all work. Correct answers without work receive no credit. You may discuss approaches with classmates, but all written solutions must be your own.  
 **Collaboration:** Allowed for conceptual discussion. Written solutions must be independently written.

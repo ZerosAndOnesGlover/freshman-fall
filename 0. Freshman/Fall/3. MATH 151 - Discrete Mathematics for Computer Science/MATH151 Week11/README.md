@@ -1,4 +1,4 @@
-# MATH 151: Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Week 11 — Trees, Spanning Trees, and Graph Algorithms
 
 ---

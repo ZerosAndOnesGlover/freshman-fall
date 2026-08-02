@@ -1,4 +1,4 @@
-# PROG 101 — Quiz 8
+# PROG 101 · Quiz 8
 ## Week 9, Tuesday — In-Class Assessment
 
 **Administered:** start of Week 9, Lecture 1 (Tuesday)

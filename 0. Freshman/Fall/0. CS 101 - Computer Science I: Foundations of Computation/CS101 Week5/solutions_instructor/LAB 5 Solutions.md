@@ -1,4 +1,4 @@
-# CS 101 — Week 5
+# CS 101 · Week 5
 ## LAB 5 Solutions — INSTRUCTOR ONLY
 
 > **All code below was executed and all stated outputs are real.** Where a benchmark appears,

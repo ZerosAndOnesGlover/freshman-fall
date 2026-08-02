@@ -1,4 +1,4 @@
-# CS 102 — Reading Guide, Week 2
+# CS 102 · Reading Guide, Week 2
 ## Balanced Binary Search Trees
 
 ---

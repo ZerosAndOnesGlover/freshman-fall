@@ -1,4 +1,4 @@
-# PHYS 141 — Lecture 14
+# PHYS 141 · Lecture 14
 # Potential Energy & Conservative Forces
 
 > **Core Principle:** Some forces allow energy to be perfectly recovered — stored as "potential" energy and later converted back into kinetic energy without loss. These are conservative forces. Others (friction, air resistance) irreversibly convert mechanical energy into heat. The distinction between these two categories is not a labeling convenience — it reflects a deep property of the force itself: path-independence of work.

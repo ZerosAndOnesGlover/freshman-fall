@@ -1,4 +1,4 @@
-# CS 101 — Lecture 32 (Week 10, Lecture 2)
+# CS 101 · Lecture 32 (Week 10, Lecture 2)
 ## Exceptions: Error Handling as Control Flow
 
 ---

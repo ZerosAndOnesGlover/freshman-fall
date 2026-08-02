@@ -1,4 +1,4 @@
-# PHYS 141 — Physics I: Mechanics, Waves & Thermodynamics
+# PHYS 141 · Physics I: Mechanics, Waves & Thermodynamics
 ## Lecture 28 — Wave Properties and the Wave Equation
 
 ---

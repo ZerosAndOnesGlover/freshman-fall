@@ -1,4 +1,4 @@
-# PHYS 141 — Problem Set 10
+# PHYS 141 · Problem Set 10
 ## Sound: Doppler Effect, Resonance, and Decibels
 
 **Released:** Friday EOD, Week 10 | **Due:** Friday, Week 11, start of class

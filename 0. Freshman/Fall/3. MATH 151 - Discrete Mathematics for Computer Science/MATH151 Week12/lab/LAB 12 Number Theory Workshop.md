@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Lab 12 — Number Theory Workshop: Euclid to RSA
 ### Wednesday, Week 12 | Duration: 2 hours
 

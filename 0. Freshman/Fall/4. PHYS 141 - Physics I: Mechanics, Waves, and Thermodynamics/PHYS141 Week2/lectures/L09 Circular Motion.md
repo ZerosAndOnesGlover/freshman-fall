@@ -1,4 +1,4 @@
-# PHYS 141 — Lecture 9
+# PHYS 141 · Lecture 9
 # Circular Motion: Uniform and Non-Uniform
 
 > **Core Principle:** An object moving in a circle at constant speed is still accelerating — because its velocity direction is changing. This centripetal acceleration always points toward the center of the circle. It requires a centripetal force (Week 3) and is the reason planets orbit, cars corner, and electrons (classically) circle nuclei.

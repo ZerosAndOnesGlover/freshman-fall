@@ -1,4 +1,4 @@
-# CS 190 — Week 12
+# CS 190 · Week 12
 ## Question Preparation
 
 **Due:** Before the Week 12 seminar. Submit on the course page.

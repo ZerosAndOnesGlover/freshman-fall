@@ -1,4 +1,4 @@
-# CS 101 — Quiz 7
+# CS 101 · Quiz 7
 ## Week 7, Wednesday — In-Class Assessment
 
 **Duration:** 10 minutes (first 10 minutes of Wednesday lecture)

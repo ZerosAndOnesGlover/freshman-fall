@@ -1,4 +1,4 @@
-# PHYS 141 — Lab 11
+# PHYS 141 · Lab 11
 ## Specific Heat Capacity, Latent Heat, and Thermal Expansion
 
 **Duration:** 3 hours | **Total: 100 points**

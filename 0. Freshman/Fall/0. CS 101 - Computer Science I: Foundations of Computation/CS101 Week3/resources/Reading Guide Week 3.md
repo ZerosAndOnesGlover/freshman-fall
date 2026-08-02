@@ -1,4 +1,4 @@
-# CS 101 Week 3 Reading Guide & Resources
+# CS 101 · Week 3 Reading Guide & Resources
 ## Functions, Scope, and the Call Stack
 
 ---

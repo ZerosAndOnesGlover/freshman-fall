@@ -1,4 +1,4 @@
-# MATH 141 — Quiz 04
+# MATH 141 · Quiz 04
 ## Administered: start of Week 4, Monday
 ### Covers: Week 3 — the derivative, its definition, and differentiability
 

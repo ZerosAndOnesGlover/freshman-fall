@@ -1,4 +1,4 @@
-# PROG 101 — Lab 11 Solutions (Instructor)
+# PROG 101 · Lab 11 Solutions (Instructor)
 ## Generic Programming in C
 
 Reference implementations verified: comparator behaviour on `{INT_MAX, -2}`, the generic vector on

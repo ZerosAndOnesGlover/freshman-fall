@@ -1,4 +1,4 @@
-# MATH 151 — Graph Terminology Reference
+# MATH 151 · Graph Terminology Reference
 ## Week 10: Graphs
 
 ---

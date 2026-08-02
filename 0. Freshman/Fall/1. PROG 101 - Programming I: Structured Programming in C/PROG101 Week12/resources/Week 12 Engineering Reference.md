@@ -1,4 +1,4 @@
-# PROG 101 Week 12 Reference
+# PROG 101 · Week 12 Reference
 ## Style, Testing, Debugging
 
 ---

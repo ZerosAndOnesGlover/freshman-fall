@@ -1,4 +1,4 @@
-# PROG 101 — Week 2
+# PROG 101 · Week 2
 ## LAB 2 Solutions — INSTRUCTOR ONLY
 
 **Total: 20 points.** Every output below was produced by compiling and running the code with

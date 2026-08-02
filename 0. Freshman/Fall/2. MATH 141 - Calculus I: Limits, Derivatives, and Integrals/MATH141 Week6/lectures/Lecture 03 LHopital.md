@@ -1,4 +1,4 @@
-# MATH 141 — Calculus I
+# MATH 141 · Calculus I
 ## Week 6 · Lecture 3 (Monday)
 ### L'Hôpital's Rule: Resolving Indeterminate Forms
 

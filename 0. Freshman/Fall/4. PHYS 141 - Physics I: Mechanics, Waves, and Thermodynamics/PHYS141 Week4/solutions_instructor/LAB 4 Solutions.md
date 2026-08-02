@@ -1,4 +1,4 @@
-# PHYS 141 — Week 4
+# PHYS 141 · Week 4
 ## LAB 4 Solutions — INSTRUCTOR ONLY
 
 > **Representative data.** The numbers below are one realistic dataset, generated and checked

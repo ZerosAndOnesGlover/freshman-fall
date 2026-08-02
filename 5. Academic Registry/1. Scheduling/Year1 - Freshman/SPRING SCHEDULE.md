@@ -35,47 +35,14 @@
 | **07:30** | Morning Prep | Morning Prep | Morning Prep | Morning Prep | Morning Prep |
 | **08:00** | — | — | — | — | — |
 | **08:30** | — | — | — | — | — |
-| **09:00** | 📖 **CS102**
-09:00–09:50
-(LEC) | — | 📖 **CS102**
-09:00–09:50
-(LEC) | — | 📖 **CS102**
-09:00–09:50
-(LEC) |
-| **09:50** | — | — | — | — | — |
-| **10:00** | — | 📖 **PROG102**
-10:00–10:50
-(LEC) | 📖 **PROG102**
-10:00–10:50
-(LEC) | 📖 **PROG102**
-10:00–10:50
-(LEC) | — |
-| **10:50** | — | — | — | — | — |
-| **11:00** | 📖 **MATH142**
-11:00–11:50
-(LEC) | 📖 **MATH142**
-11:00–11:50
-(LEC) | — | — | 📖 **MATH142**
-11:00–11:50
-(LEC) |
-| **11:50** | — | — | — | — | — |
+| **09:00** | 📖 **CS102**<br>09:00–09:50<br>(LEC) | — | 📖 **CS102**<br>09:00–09:50<br>(LEC) | — | 📖 **CS102**<br>09:00–09:50<br>(LEC) |
+| **10:00** | — | 📖 **PROG102**<br>10:00–10:50<br>(LEC) | 📖 **PROG102**<br>10:00–10:50<br>(LEC) | 📖 **PROG102**<br>10:00–10:50<br>(LEC) | — |
+| **11:00** | 📖 **MATH142**<br>11:00–11:50<br>(LEC) | 📖 **MATH142**<br>11:00–11:50<br>(LEC) | — | — | 📖 **MATH142**<br>11:00–11:50<br>(LEC) |
 | **12:00** | 🍽️ Lunch Break | 🍽️ Lunch Break | 🍽️ Lunch Break | 🍽️ Lunch Break | 🍽️ Lunch Break |
-| **13:00** | — | — | 📖 **ECE110**
-13:00–14:15
-(LEC) | 📖 **ECE110**
-13:00–14:15
-(LEC) | — |
-| **14:00** | — | — | — | — | 🔬 **ECE110**
+| **13:00** | — | — | 📖 **ECE110**<br>13:00–14:15<br>(LEC) | 📖 **ECE110**<br>13:00–14:15<br>(LEC) | — |
 14:00–15:50
 (LAB) |
-| **15:00** | 🔬 **PROG102**
-15:00–16:50
-(LAB) | 🔬 **CS102**
-15:00–16:50
-(LAB) | — | 💬 **MATH142**
-15:00–15:50
-(REC) | — |
-| **16:00** | — | — | — | — | — |
+| **15:00** | 🔬 **PROG102**<br>15:00–16:50<br>(LAB) | 🔬 **CS102**<br>15:00–16:50<br>(LAB) | — | 💬 **MATH142**<br>15:00–15:50<br>(REC) | — |
 | **17:00** | — | — | — | — | — |
 | **18:00** | 📚 Evening Study | 📚 Evening Study | 📚 Evening Study | 📚 Evening Study | 📚 Evening Study |
 
@@ -84,7 +51,7 @@
 
 ## Daily Breakdown
 
-> Quiz days are course-specific — each course quizzes at the start of its own first lecture of the week. See ASSESSMENT_CALENDAR.md.
+> Quiz days are course-specific — each course quizzes at the start of its own first lecture of the week. See ASSESSMENT CALENDAR.md.
 
 ### Monday
 ```
@@ -102,7 +69,7 @@
 10:00 – 10:50   📖 PROG 102 Lecture — ⚠️ QUIZ DAY for PROG 102 (Weeks 2–14)
 11:00 – 11:50   📖 MATH 142 Lecture
 12:00 – 13:00   Lunch
-13:00 – 14:00   Office hours (check OFFICE_HOURS.md for schedule)
+13:00 – 14:00   Office hours (check OFFICE HOURS.md for schedule)
 15:00 – 16:50   🔬 CS 102 LAB SECTION (mandatory)
                     Lab reports checked off by TA during or after lab.
 18:00 – 21:00   Evening study block
@@ -166,7 +133,7 @@
 | Friday | Start of lecture | ⚠️ MATH 142 Quiz (Weeks 2–14) |
 | Friday | 14:00 | ECE 110 Lab begins |
 | Friday | 17:00 | ⚠️ Problem set due |
-| Ongoing | TBD | Project milestones (see ASSESSMENT_CALENDAR.md) |
+| Ongoing | TBD | Project milestones (see ASSESSMENT CALENDAR.md) |
 
 ---
 
@@ -176,8 +143,8 @@ Midterm and final exams are held in the **evening** to avoid displacing regular 
 
 | Exam Type | Typical Time | Duration | Location |
 |-----------|-------------|---------|----------|
-| Midterm Exams | 18:00–19:15 or 18:00–19:30 | 75–90 min | Large lecture hall (see ROOM_ASSIGNMENTS.md) |
+| Midterm Exams | 18:00–19:15 or 18:00–19:30 | 75–90 min | Large lecture hall (see ROOM ASSIGNMENTS.md) |
 | Final Exams | 08:00–10:00, 09:00–11:30, or 14:00–16:30 | 120–150 min | Assigned exam room |
 
-> Check ASSESSMENT_CALENDAR.md for exact exam dates. Conflicts must be reported to your academic advisor at least 2 weeks in advance.
+> Check ASSESSMENT CALENDAR.md for exact exam dates. Conflicts must be reported to your academic advisor at least 2 weeks in advance.
 

@@ -1,4 +1,4 @@
-# MATH 141 — Calculus I
+# MATH 141 · Calculus I
 ## Quiz 03 (Monday, Week 3 — Start of Class)
 ### Covers: Week 2 — Continuity, Types of Discontinuity, and the IVT
 

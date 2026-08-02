@@ -1,4 +1,4 @@
-# CS 190 — Week 11
+# CS 190 · Week 11
 ## Presentation Schedule
 
 **Every student presents this week.** Five minutes presenting, three minutes questions, eight minutes

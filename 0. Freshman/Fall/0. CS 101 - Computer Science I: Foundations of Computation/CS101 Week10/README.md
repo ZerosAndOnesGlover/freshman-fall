@@ -1,4 +1,4 @@
-# CS 101 — Week 10: Files, I/O, and Error Handling
+# CS 101 · Week 10: Files, I/O, and Error Handling
 
 ---
 

@@ -1,4 +1,4 @@
-# CS 101 — Lecture 26 (Week 8, Lecture 2)
+# CS 101 · Lecture 26 (Week 8, Lecture 2)
 ## Collision Resolution, Load Factor, and Building a Hash Table From Scratch
 
 **Week 8 · Thursday**

@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Lecture 2.2 (L07) — Proof by Contrapositive
 ### Thursday, Week 2
 

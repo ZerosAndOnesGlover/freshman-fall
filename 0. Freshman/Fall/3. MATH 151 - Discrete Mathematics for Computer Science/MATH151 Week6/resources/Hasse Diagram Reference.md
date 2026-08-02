@@ -1,4 +1,4 @@
-# MATH 151 — Hasse Diagram Reference
+# MATH 151 · Hasse Diagram Reference
 ## Week 6: Partial Orders and Diagram Construction
 
 ---

@@ -1,4 +1,4 @@
-# CS 101 — Lecture 22 (Week 7, Lecture 1)
+# CS 101 · Lecture 22 (Week 7, Lecture 1)
 ## Abstract Data Types and Python Lists as Dynamic Arrays
 
 **Week 7 · Wednesday**

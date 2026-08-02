@@ -1,4 +1,4 @@
-# PHYS 141 — Lab 12 Solutions
+# PHYS 141 · Lab 12 Solutions
 ## Heat Engines, the Gas Laws, and Thermal Efficiency
 ## INSTRUCTOR ONLY
 

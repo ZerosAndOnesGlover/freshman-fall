@@ -1,4 +1,4 @@
-# MATH 141 Calculus I
+# MATH 141 · Calculus I
 ## Quiz 01 (Monday, Week 1 — Start of Class)
 ### Covers: Week 0 Material (Functions, Algebra, Trigonometry, Exponentials/Logarithms)
 
@@ -95,7 +95,7 @@ Check your answer for extraneous solutions.
 ---
 ---
 
-# MATH 141 — Quiz 01 (ANSWER KEY — INSTRUCTOR ONLY)
+# MATH 141 · Quiz 01 (ANSWER KEY — INSTRUCTOR ONLY)
 ## DO NOT DISTRIBUTE TO STUDENTS
 
 ---

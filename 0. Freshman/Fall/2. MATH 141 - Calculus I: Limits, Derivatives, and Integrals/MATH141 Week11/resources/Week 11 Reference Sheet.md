@@ -1,4 +1,4 @@
-# MATH 141 — Week 11 Reference Sheet
+# MATH 141 · Week 11 Reference Sheet
 ## Applications of Integration
 
 ---

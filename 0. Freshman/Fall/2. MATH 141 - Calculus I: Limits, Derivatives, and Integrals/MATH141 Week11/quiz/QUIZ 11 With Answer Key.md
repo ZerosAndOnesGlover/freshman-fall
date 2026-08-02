@@ -1,4 +1,4 @@
-# MATH 141 — Quiz 11
+# MATH 141 · Quiz 11
 ## Administered: start of Week 11, Monday
 ### Covers: Week 10 — integration techniques
 

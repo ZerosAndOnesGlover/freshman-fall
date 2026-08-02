@@ -1,4 +1,4 @@
-# MATH 151 — Traversal Algorithms Toolkit
+# MATH 151 · Traversal Algorithms Toolkit
 ## Week 11: Trees, MSTs, and Search
 
 ---

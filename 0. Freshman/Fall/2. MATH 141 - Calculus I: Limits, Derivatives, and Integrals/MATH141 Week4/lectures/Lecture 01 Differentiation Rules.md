@@ -1,4 +1,4 @@
-# MATH 141 Calculus I
+# MATH 141 · Calculus I
 ## Week 4 · Lecture 1 (Tuesday)
 ### Differentiation Rules: Power, Sum, Product, Quotient
 

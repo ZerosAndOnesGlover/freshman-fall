@@ -1,4 +1,4 @@
-# PROG 101 — Week 3
+# PROG 101 · Week 3
 ## Functions and Structured Programming
 
 ---

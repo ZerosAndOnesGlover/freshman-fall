@@ -1,4 +1,4 @@
-# CS 101: Final Exam
+# CS 101 · Final Exam
 ## Review Guide and Practice Exam
 
 **Exam:** Week 12, during the scheduled examination period

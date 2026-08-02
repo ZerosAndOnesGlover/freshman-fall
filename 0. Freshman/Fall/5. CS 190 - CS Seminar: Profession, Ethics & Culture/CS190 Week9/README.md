@@ -1,4 +1,4 @@
-# CS 190: CS Seminar: Profession, Ethics & Culture
+# CS 190 · CS Seminar: Profession, Ethics & Culture
 ## Week 9: Tech Industry Culture — Diversity, Work Culture, Mental Health
 
 **Format:** Weekly 1-hour seminar + readings

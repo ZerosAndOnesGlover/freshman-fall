@@ -1,4 +1,4 @@
-# MATH 141 — Lab 02 Solutions (Instructor)
+# MATH 141 · Lab 02 Solutions (Instructor)
 ## Continuity, Discontinuity, and Bisection
 
 All figures verified by computation.

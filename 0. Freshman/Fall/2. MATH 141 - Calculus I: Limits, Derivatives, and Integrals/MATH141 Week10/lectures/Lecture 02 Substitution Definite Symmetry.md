@@ -1,4 +1,4 @@
-# MATH 141 — Calculus I
+# MATH 141 · Calculus I
 ## Week 10 · Lecture 2 (Tuesday)
 ### The Substitution Rule for Definite Integrals, and Symmetry
 

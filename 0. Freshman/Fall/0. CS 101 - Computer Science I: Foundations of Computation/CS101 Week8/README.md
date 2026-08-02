@@ -1,4 +1,4 @@
-# CS 101 — Week 8: Data Structures II — Hash Tables and Sets
+# CS 101 · Week 8: Data Structures II — Hash Tables and Sets
 
 ---
 

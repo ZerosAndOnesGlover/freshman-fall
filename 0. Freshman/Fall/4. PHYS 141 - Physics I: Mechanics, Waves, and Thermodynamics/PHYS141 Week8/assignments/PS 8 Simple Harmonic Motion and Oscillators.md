@@ -1,4 +1,4 @@
-# PHYS 141 — Problem Set 8
+# PHYS 141 · Problem Set 8
 ## Simple Harmonic Motion and Oscillators
 
 **Released:** Friday EOD, Week 8 | **Due:** Friday, Week 9, start of class

@@ -36,7 +36,7 @@ Every week of the academic year follows this rhythm (course-specific variations 
 
 | Day | Standard Events |
 |-----|----------------|
-| **Monday** | MATH 141, MATH 151, PHYS 141 lectures. PROG 101 Lab (afternoon). Quiz held at start of each course's own first lecture of the week (Weeks 2–14), not just Monday — check ASSESSMENT_CALENDAR.md per course. |
+| **Monday** | MATH 141, MATH 151, PHYS 141 lectures. PROG 101 Lab (afternoon). Quiz held at start of each course's own first lecture of the week (Weeks 2–14), not just Monday — check ASSESSMENT CALENDAR.md per course. |
 | **Tuesday** | PROG 101, MATH 141, PHYS 141 lectures. CS 101 Lab (afternoon). |
 | **Wednesday** | CS 101, PROG 101, MATH 141 lectures. CS 190 Seminar (early afternoon). MATH 151 Lab (afternoon). Problem sets released at 17:00 (due Friday 17:00 for MWF-anchored courses — varies by course). |
 | **Thursday** | CS 101, PROG 101, MATH 151 lectures. PHYS 141 Lab (afternoon, 3 hrs) — the heaviest lab day. |

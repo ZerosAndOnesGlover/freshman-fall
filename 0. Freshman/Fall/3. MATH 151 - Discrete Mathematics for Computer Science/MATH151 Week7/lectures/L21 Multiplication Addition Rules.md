@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Lecture 7.1 (L21) — The Multiplication Rule and Addition Rule
 ### Monday, Week 7
 

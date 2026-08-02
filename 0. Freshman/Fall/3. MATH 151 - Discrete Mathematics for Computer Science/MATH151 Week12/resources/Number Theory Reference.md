@@ -1,4 +1,4 @@
-# MATH 151 — Number Theory Reference
+# MATH 151 · Number Theory Reference
 ## Week 12
 
 ---

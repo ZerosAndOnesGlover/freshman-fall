@@ -1,4 +1,4 @@
-# MATH 141 Calculus I
+# MATH 141 · Calculus I
 ## Week 0 · Lecture 2 of 4
 ### Algebra Review: Equations, Inequalities & the Coordinate Plane
 

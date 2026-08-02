@@ -1,4 +1,4 @@
-# MATH 151 — Week 3
+# MATH 151 · Week 3
 ## PS3 Solutions — INSTRUCTOR ONLY
 
 ---

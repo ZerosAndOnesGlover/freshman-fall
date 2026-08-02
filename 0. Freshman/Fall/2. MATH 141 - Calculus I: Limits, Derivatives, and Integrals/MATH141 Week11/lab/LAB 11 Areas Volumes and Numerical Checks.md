@@ -1,4 +1,4 @@
-# MATH 141 — Lab 11
+# MATH 141 · Lab 11
 ## Areas, Volumes, and Numerical Checks
 
 **Duration:** 2 hours · **20 points**

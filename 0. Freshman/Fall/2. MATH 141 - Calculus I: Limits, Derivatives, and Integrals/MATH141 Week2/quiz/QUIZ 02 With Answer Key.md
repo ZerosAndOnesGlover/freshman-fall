@@ -1,4 +1,4 @@
-# MATH 141 — Quiz 02
+# MATH 141 · Quiz 02
 ## Administered: start of Week 2, Monday
 ### Covers: Week 1 — limits, ε-δ, infinite limits and limits at infinity
 

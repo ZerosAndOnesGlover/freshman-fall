@@ -1,4 +1,4 @@
-# PROG 101 — Week 1: Types, Variables, and the Memory Model
+# PROG 101 · Week 1: Types, Variables, and the Memory Model
 ## Data Representation · Operators · Control Flow
 
 ---

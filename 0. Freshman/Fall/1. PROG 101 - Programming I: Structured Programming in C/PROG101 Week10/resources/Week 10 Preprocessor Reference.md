@@ -1,4 +1,4 @@
-# PROG 101 — Week 10 Reference
+# PROG 101 · Week 10 Reference
 ## The Preprocessor and Macros
 
 ---

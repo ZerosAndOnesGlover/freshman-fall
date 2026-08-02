@@ -1,4 +1,4 @@
-# MATH 141 — Week 2 Overview
+# MATH 141 · Week 2 Overview
 ## Continuity and the Intermediate Value Theorem
 
 ---

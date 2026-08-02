@@ -1,4 +1,4 @@
-# PHYS 141 — Problem Set 11 Solutions
+# PHYS 141 · Problem Set 11 Solutions
 ## INSTRUCTOR ONLY
 
 **Total: 100 points.** All values verified computationally.

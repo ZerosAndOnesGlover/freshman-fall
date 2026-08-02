@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Lab 2 — Proof Workshop: Writing, Critiquing, and Fixing Proofs
 ### Wednesday, Week 2 | Duration: 2 hours
 

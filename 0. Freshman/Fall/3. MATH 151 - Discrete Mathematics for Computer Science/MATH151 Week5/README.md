@@ -1,4 +1,4 @@
-# MATH 151: Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Week 5 — Functions: Injective, Surjective, Bijective; Composition, Inverse
 
 ---

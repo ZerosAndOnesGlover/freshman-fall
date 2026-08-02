@@ -1,4 +1,4 @@
-# MATH 151 — Set Notation Reference
+# MATH 151 · Set Notation Reference
 ## Week 4: Sets, Operations, Power Sets, Products
 
 ---

@@ -1,4 +1,4 @@
-# CS 101 Lecture 7 (Week 2, Lecture 1)
+# CS 101 · Lecture 7 (Week 2, Lecture 1)
 ## Control Flow I: Conditionals and Boolean Decision Trees
 
 **Week 2 · Wednesday**

@@ -1,4 +1,4 @@
-# MATH 141 — Week 9 Reference Sheet
+# MATH 141 · Week 9 Reference Sheet
 ## The Fundamental Theorem of Calculus
 
 ---

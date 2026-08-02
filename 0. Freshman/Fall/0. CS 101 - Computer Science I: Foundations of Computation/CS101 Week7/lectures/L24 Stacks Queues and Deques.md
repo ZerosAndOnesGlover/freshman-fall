@@ -1,4 +1,4 @@
-# CS 101 — Lecture 24 (Week 7, Lecture 3)
+# CS 101 · Lecture 24 (Week 7, Lecture 3)
 ## Stack and Queue ADTs, Deques, and Choosing the Right Structure
 
 **Week 7 · Friday**

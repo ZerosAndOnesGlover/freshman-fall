@@ -1,4 +1,4 @@
-# MATH 141 — Calculus I
+# MATH 141 · Calculus I
 ## Week 11 · Lecture 1 (Monday)
 ### Area Between Curves
 

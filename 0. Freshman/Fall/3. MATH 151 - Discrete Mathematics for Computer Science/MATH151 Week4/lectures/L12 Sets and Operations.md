@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Lecture 4.1 (L12) — Sets and Set Operations
 ### Monday, Week 4
 

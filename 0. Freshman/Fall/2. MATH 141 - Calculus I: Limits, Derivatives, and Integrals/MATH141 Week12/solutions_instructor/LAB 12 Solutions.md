@@ -1,4 +1,4 @@
-# MATH 141 — Lab 12 Notes (Instructor)
+# MATH 141 · Lab 12 Notes (Instructor)
 ## Mixed Review and Self-Diagnosis
 
 **This lab is ungraded and diagnostic.** There is nothing to mark. These notes are for running the

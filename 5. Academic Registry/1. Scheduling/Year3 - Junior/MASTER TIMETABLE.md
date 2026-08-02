@@ -36,11 +36,11 @@ Every week of the academic year follows this rhythm (course-specific variations 
 
 | Day | Standard Events |
 |-----|----------------|
-| **Monday** | CS 301/CS 321, MATH 341/ECE 311 lectures. Lab (afternoon, course-dependent). Quiz held at start of each course's own first lecture of the week — check ASSESSMENT_CALENDAR.md per course. |
+| **Monday** | CS 301/CS 321, MATH 341/ECE 311 lectures. Lab (afternoon, course-dependent). Quiz held at start of each course's own first lecture of the week — check ASSESSMENT CALENDAR.md per course. |
 | **Tuesday** | CS 302/CS 331, CS 311/CS 341, MATH 341 lectures. Lab (afternoon). |
 | **Wednesday** | CS 301/CS 321, CS 302/CS 331 lectures. CS 395 (Spring only). Problem sets released at 17:00. |
 | **Thursday** | CS 302/CS 331, CS 311/CS 341 lectures. CS 390 seminar (Fall only, evening). |
-| **Friday** | CS 301/CS 321, MATH 341/ECE 311 lectures. Lab (afternoon). No single day carries every course — see FALL/SPRING_SCHEDULE.md grid. |
+| **Friday** | CS 301/CS 321, MATH 341/ECE 311 lectures. Lab (afternoon). No single day carries every course — see FALL/SPRING SCHEDULE.md grid. |
 | **Saturday** | Study / project work. Department study rooms open 09:00–22:00. |
 | **Sunday** | Study / project work. No office hours except pre-exam special sessions. |
 

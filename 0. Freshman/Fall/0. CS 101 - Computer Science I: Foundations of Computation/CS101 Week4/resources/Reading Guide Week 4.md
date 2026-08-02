@@ -1,4 +1,4 @@
-# CS 101 Week 4 Reading Guide & Resources
+# CS 101 · Week 4 Reading Guide & Resources
 ## Recursion: Thinking in Self-Reference
 
 ---

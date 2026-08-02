@@ -1,4 +1,4 @@
-# MATH 141 — Calculus I
+# MATH 141 · Calculus I
 ## Week 10 Reference Sheet
 ### Substitution Rule · Symmetry · Integration by Parts
 

@@ -1,4 +1,4 @@
-# MATH 141 — Calculus I
+# MATH 141 · Calculus I
 ## Week 10 · Lecture 1 (Monday)
 ### Indefinite Integrals, the Net Change Theorem, and the Substitution Rule
 

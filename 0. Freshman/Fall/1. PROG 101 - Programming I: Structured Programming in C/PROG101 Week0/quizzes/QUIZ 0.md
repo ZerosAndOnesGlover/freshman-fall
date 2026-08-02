@@ -1,4 +1,4 @@
-# PROG 101: Programming I: Structured Programming in C
+# PROG 101 · Programming I: Structured Programming in C
 ## Week 0 · Quiz 0
 
 **Format:** Administered at the start of Week 1, Lecture 1 (Tuesday)

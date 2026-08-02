@@ -1,4 +1,4 @@
-# CS 101 — Lecture 31 (Week 10, Lecture 1)
+# CS 101 · Lecture 31 (Week 10, Lecture 1)
 ## Files and the I/O Boundary
 
 ---

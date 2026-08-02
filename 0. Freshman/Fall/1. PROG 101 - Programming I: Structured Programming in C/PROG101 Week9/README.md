@@ -1,4 +1,4 @@
-# PROG 101 — Week 9: Recursion, Divide-and-Conquer, and Binary Trees
+# PROG 101 · Week 9: Recursion, Divide-and-Conquer, and Binary Trees
 ## Mathematical Induction in Code · Sorting · Recursive Data Structures
 
 ---

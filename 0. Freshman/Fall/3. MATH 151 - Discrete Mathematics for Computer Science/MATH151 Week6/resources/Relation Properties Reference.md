@@ -1,4 +1,4 @@
-# MATH 151 — Relation Properties Reference
+# MATH 151 · Relation Properties Reference
 ## Week 6: Relations, Equivalence Relations, Partial Orders
 
 ---

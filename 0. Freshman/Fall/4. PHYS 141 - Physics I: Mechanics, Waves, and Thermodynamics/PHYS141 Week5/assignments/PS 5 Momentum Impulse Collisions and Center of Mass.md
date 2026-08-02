@@ -1,4 +1,4 @@
-# PHYS 141 — Problem Set 5
+# PHYS 141 · Problem Set 5
 ## Momentum, Impulse, Collisions & Center of Mass
 
 **Released:** Friday, Week 5 | **Due:** Friday, Week 6, 11:59 PM

@@ -1,4 +1,4 @@
-# PROG 101 — Quiz 10
+# PROG 101 · Quiz 10
 ## Week 11, Tuesday — In-Class Assessment
 
 **Duration:** 10 minutes · **Format:** Written, closed book

@@ -1,4 +1,4 @@
-# MATH 141 — Calculus I
+# MATH 141 · Calculus I
 ## Week 11 · Lecture 2 (Tuesday)
 ### Volumes by Slicing: Disks and Washers
 

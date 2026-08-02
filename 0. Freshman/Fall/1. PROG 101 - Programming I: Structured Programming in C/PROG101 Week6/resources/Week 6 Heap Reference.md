@@ -1,4 +1,4 @@
-# PROG 101 — Week 6 Reference
+# PROG 101 · Week 6 Reference
 ## Dynamic Memory
 
 ---

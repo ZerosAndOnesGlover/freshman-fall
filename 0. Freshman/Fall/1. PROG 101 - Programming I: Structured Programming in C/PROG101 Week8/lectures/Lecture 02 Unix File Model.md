@@ -1,4 +1,4 @@
-# PROG 101 Programming I: Structured Programming in C
+# PROG 101 · Programming I: Structured Programming in C
 ## Week 8 · Lecture 2: The UNIX File Model — File Descriptors and Low-Level I/O
 
 ---

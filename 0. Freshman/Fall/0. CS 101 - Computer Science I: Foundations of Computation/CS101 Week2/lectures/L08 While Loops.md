@@ -1,4 +1,4 @@
-# CS 101 Lecture 8 (Week 2, Lecture 2)
+# CS 101 · Lecture 8 (Week 2, Lecture 2)
 ## Control Flow II: `while` Loops and Loop Invariants
 
 **Week 2 · Thursday**

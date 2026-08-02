@@ -1,4 +1,4 @@
-# CS 101 — Problem Set 5
+# CS 101 · Problem Set 5
 ## Searching and Sorting Algorithms
 
 **Released:** Friday, Week 5

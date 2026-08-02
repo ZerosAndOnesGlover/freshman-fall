@@ -1,4 +1,4 @@
-# CS 101 — Lab 6
+# CS 101 · Lab 6
 ## Plotting Empirical Runtime vs. Theoretical Complexity
 
 **Week 6 · Tuesday Lab Section**

@@ -1,4 +1,4 @@
-# PROG 101 — Programming I: Structured Programming in C
+# PROG 101 · Programming I: Structured Programming in C
 ## Week 2 · Lecture 2: Evaluation Order and Undefined Behaviour
 
 ---

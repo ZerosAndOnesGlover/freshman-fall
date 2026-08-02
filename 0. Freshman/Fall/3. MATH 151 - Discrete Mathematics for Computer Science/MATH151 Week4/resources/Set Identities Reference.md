@@ -1,4 +1,4 @@
-# MATH 151 — Set Identities Reference
+# MATH 151 · Set Identities Reference
 ## Week 4: Proof Examples and Technique Bank
 
 ---

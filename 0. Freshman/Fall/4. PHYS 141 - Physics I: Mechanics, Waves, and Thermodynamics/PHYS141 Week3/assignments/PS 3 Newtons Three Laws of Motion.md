@@ -1,4 +1,4 @@
-# PHYS 141 — Problem Set 3
+# PHYS 141 · Problem Set 3
 ## Newton's Three Laws of Motion
 
 **Released:** Friday, Week 3 | **Due:** Friday, Week 4, 11:59 PM

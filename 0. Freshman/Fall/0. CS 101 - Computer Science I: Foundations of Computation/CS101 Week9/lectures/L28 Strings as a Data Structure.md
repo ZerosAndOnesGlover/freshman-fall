@@ -1,4 +1,4 @@
-# CS 101 — Lecture 28 (Week 9, Lecture 1)
+# CS 101 · Lecture 28 (Week 9, Lecture 1)
 ## Strings as a Data Structure: Immutability, Encoding, and Cost
 
 ---

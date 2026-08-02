@@ -1,4 +1,4 @@
-# PROG 101 — Week 7: Structures, Unions, and Linked Lists
+# PROG 101 · Week 7: Structures, Unions, and Linked Lists
 ## Composite Types · Tagged Unions · Building Real Data Structures
 
 ---

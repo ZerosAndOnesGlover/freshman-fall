@@ -1,4 +1,4 @@
-# MATH 151 — Inclusion–Exclusion Reference
+# MATH 151 · Inclusion–Exclusion Reference
 ## Week 8: Advanced Counting
 
 ---

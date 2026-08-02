@@ -1,4 +1,4 @@
-# PHYS 141 — Week 7 Resources
+# PHYS 141 · Week 7 Resources
 
 ## Required Textbook Reading
 

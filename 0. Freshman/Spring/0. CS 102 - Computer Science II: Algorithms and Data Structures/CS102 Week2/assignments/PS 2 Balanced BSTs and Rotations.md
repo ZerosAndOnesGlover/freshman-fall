@@ -1,4 +1,4 @@
-# CS 102 — Problem Set 2
+# CS 102 · Problem Set 2
 ## Balanced BSTs: AVL Insertion, Rotations, and the Height Bound
 
 **Released:** Friday of Week 2 · **Due:** Friday of Week 3, start of lecture

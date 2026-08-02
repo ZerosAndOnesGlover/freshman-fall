@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Lecture 5.2 (L16) — Composition of Functions and Inverse Functions
 ### Thursday, Week 5
 

@@ -1,4 +1,4 @@
-# MATH 141 Calculus I
+# MATH 141 · Calculus I
 ## Week 0 Formula Sheet & Study Reference
 ### Everything You Must Know Before Calculus Begins
 

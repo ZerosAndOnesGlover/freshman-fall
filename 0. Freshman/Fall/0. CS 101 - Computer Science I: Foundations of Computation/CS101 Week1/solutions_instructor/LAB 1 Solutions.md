@@ -1,4 +1,4 @@
-# CS 101 Week 1
+# CS 101 · Week 1
 ## LAB 1 Solutions: INSTRUCTOR ONLY
 
 > **All code below was executed and all stated outputs are real.** Where a benchmark appears,

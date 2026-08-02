@@ -1,4 +1,4 @@
-# MATH 141 — Calculus I
+# MATH 141 · Calculus I
 ## Problem Set 10
 ### Topic: Indefinite Integrals, the Substitution Rule, Integration by Parts
 **Released:** Wednesday, Week 10 | **Due:** Wednesday, Week 8 (start of class)

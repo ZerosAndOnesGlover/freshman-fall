@@ -1,4 +1,4 @@
-# PROG 101 Week 12
+# PROG 101 · Week 12
 ## Software Engineering in C: Style, Testing, Debugging
 
 ---

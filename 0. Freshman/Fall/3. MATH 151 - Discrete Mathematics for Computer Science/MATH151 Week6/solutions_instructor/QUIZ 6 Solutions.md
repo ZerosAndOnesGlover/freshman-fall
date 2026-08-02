@@ -1,4 +1,4 @@
-# MATH 151 — Week 6
+# MATH 151 · Week 6
 ## Quiz 6 Solutions — INSTRUCTOR ONLY
 
 ---

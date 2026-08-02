@@ -1,4 +1,4 @@
-# PHYS 141 — Week 6 Resources
+# PHYS 141 · Week 6 Resources
 
 ## Required Textbook Reading
 

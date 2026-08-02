@@ -1,4 +1,4 @@
-# MATH 151 Quantifier Rules Reference
+# MATH 151 · Quantifier Rules Reference
 ## Week 1: Predicate Logic and Quantifiers
 
 ---

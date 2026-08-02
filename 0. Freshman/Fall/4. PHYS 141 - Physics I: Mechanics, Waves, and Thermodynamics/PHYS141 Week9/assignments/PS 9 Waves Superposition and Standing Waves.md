@@ -1,4 +1,4 @@
-# PHYS 141 — Problem Set 9
+# PHYS 141 · Problem Set 9
 ## Waves, Superposition, and Standing Waves
 
 **Released:** Friday EOD, Week 9 | **Due:** Friday, Week 10, start of class

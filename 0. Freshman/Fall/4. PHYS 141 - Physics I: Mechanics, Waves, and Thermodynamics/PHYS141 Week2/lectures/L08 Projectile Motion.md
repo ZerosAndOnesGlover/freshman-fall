@@ -1,4 +1,4 @@
-# PHYS 141 — Lecture 8
+# PHYS 141 · Lecture 8
 # Projectile Motion
 
 > **Core Principle:** A projectile is any object moving only under the influence of gravity (no air resistance, no thrust). Its horizontal motion is uniform (constant velocity); its vertical motion is free fall (constant downward acceleration g). These two motions are completely independent and share only one variable: time.

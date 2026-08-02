@@ -1,4 +1,4 @@
-# MATH 151 — Logic Laws Reference
+# MATH 151 · Logic Laws Reference
 ## All Standard Propositional Equivalences — Week 0
 
 ---

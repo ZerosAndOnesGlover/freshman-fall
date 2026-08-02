@@ -1,4 +1,4 @@
-# CS 101 Python Quick Reference
+# CS 101 · Python Quick Reference
 ## Week 0: Types, Expressions, and the Basics
 
 *Keep this handy. Update it as you learn new things.*

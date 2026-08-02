@@ -1,4 +1,4 @@
-# CS 101 — Lecture 30 (Week 9, Lecture 3)
+# CS 101 · Lecture 30 (Week 9, Lecture 3)
 ## Regular Expressions: A Language for Patterns
 
 ---

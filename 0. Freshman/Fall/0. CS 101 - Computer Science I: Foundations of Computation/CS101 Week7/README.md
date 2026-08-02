@@ -1,4 +1,4 @@
-# CS 101 — Week 7: Data Structures I — Lists, Stacks, and Queues
+# CS 101 · Week 7: Data Structures I — Lists, Stacks, and Queues
 
 ---
 

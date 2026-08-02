@@ -1,4 +1,4 @@
-# MATH 151: Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Problem Set 8: Advanced Counting
 ### Released: Friday, Week 8 | Due: Friday, Week 9 (11:59 PM)
 

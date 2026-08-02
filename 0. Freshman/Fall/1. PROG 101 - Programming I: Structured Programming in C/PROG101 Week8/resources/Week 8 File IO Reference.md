@@ -1,4 +1,4 @@
-# PROG 101 — Week 8 Resources
+# PROG 101 · Week 8 Resources
 ## File I/O Quick Reference · Binary Record Patterns · Common Bugs
 
 ---

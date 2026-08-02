@@ -34,54 +34,27 @@
 | Time | Monday | Tuesday | Wednesday | Thursday | Friday |
 |------|--------|---------|-----------|----------|--------|
 | **07:30** | Morning Prep | Morning Prep | Morning Prep | Morning Prep | Morning Prep |
-| **08:00** | 📖 **MATH341**
-08:00–08:50
-(LEC) | 📖 **MATH341**
-08:00–08:50
-(LEC) | — | — | 📖 **MATH341**
-08:00–08:50
-(LEC) |
-| **08:30** | — | — | — | — | — |
-| **09:00** | 📖 **CS301**
-09:00–09:50
-(LEC) | — | 📖 **CS301**
-09:00–09:50
-(LEC) | — | 📖 **CS301**
-09:00–09:50
-(LEC) |
-| **09:30** | — | 📖 **CS311**
+| **08:00** | 📖 **MATH341**<br>08:00–08:50<br>(LEC) | 📖 **MATH341**<br>08:00–08:50<br>(LEC) | — | — | 📖 **MATH341**<br>08:00–08:50<br>(LEC) |
+| **09:00** | 📖 **CS301**<br>09:00–09:50<br>(LEC) | — | 📖 **CS301**<br>09:00–09:50<br>(LEC) | — | 📖 **CS301**<br>09:00–09:50<br>(LEC) |
 09:30–10:45
 (LEC) | — | 📖 **CS311**
 09:30–10:45
 (LEC) | — |
 | **09:50** | — | — | — | — | — |
 | **10:00** | — | — | — | — | — |
-| **10:30** | — | 📖 **CS302**
-10:30–11:20
-(LEC) | 📖 **CS302**
-10:30–11:20
-(LEC) | 📖 **CS302**
-10:30–11:20
-(LEC) | — |
-| **10:50** | — | — | — | — | — |
+| **10:30** | — | 📖 **CS302**<br>10:30–11:20<br>(LEC) | 📖 **CS302**<br>10:30–11:20<br>(LEC) | 📖 **CS302**<br>10:30–11:20<br>(LEC) | — |
 | **11:00** | — | — | — | — | — |
 | **11:50** | — | — | — | — | — |
 | **12:00** | 🍽️ Lunch Break | 🍽️ Lunch Break | 🍽️ Lunch Break | 🍽️ Lunch Break | 🍽️ Lunch Break |
 | **13:00** | — | — | — | — | — |
-| **14:00** | — | — | — | — | 🔬 **CS311**
-14:00–15:50
-(LAB) |
-| **15:00** | 🔬 **CS302**
+| **14:00** | — | — | — | — | 🔬 **CS311**<br>14:00–15:50<br>(LAB) |
 15:00–16:50
 (LAB) | 🔬 **CS301**
 15:00–16:50
 (LAB) | 💬 **MATH341**
 15:00–15:50
 (REC) | — | — |
-| **16:00** | — | — | — | 🎤 **CS390**
-16:00–16:50
-(SEM) | — |
-| **17:00** | — | — | — | — | — |
+| **16:00** | — | — | — | 🎤 **CS390**<br>16:00–16:50<br>(SEM) | — |
 | **18:00** | 📚 Evening Study | 📚 Evening Study | 📚 Evening Study | 📚 Evening Study | 📚 Evening Study |
 
 
@@ -89,7 +62,7 @@
 
 ## Daily Breakdown
 
-> Quiz days are course-specific — each course quizzes at the start of its own first lecture of the week. See ASSESSMENT_CALENDAR.md.
+> Quiz days are course-specific — each course quizzes at the start of its own first lecture of the week. See ASSESSMENT CALENDAR.md.
 
 ### Monday
 ```
@@ -170,7 +143,7 @@
 | Thursday | 16:00 | CS 390 Seminar |
 | Friday | 14:00 | CS 311 Lab begins |
 | Friday | 17:00 | ⚠️ Problem set due |
-| Ongoing | TBD | Project milestones (see ASSESSMENT_CALENDAR.md) |
+| Ongoing | TBD | Project milestones (see ASSESSMENT CALENDAR.md) |
 
 ---
 
@@ -180,8 +153,8 @@ Midterm and final exams are held in the **evening** to avoid displacing regular 
 
 | Exam Type | Typical Time | Duration | Location |
 |-----------|-------------|---------|----------|
-| Midterm Exams | 18:00–19:15 or 18:00–19:30 | 75–90 min | Large lecture hall (see ROOM_ASSIGNMENTS.md) |
+| Midterm Exams | 18:00–19:15 or 18:00–19:30 | 75–90 min | Large lecture hall (see ROOM ASSIGNMENTS.md) |
 | Final Exams | 08:00–10:00, 09:00–11:30, or 14:00–16:30 | 120–150 min | Assigned exam room |
 
-> Check ASSESSMENT_CALENDAR.md for exact exam dates. Conflicts must be reported to your academic advisor at least 2 weeks in advance.
+> Check ASSESSMENT CALENDAR.md for exact exam dates. Conflicts must be reported to your academic advisor at least 2 weeks in advance.
 

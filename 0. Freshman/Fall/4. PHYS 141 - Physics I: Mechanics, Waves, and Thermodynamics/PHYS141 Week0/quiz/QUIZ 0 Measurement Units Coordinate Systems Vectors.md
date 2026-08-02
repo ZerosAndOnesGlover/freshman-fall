@@ -1,4 +1,4 @@
-# PHYS 141 — Quiz 0
+# PHYS 141 · Quiz 0
 ## Measurement, Units, Coordinate Systems & Vectors
 
 **Time limit:** 20 minutes | **Format:** Closed book, no calculator except for basic arithmetic

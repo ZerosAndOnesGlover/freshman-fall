@@ -1,4 +1,4 @@
-# PHYS 141 — Lab 0
+# PHYS 141 · Lab 0
 # Measurement and Uncertainty
 
 **Duration:** 3 hours | **Grading:** Completion + correctness (not graded on "right answer" — graded on correct methodology)

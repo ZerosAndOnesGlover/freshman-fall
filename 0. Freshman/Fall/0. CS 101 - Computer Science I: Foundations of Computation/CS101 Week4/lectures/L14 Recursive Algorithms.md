@@ -1,4 +1,4 @@
-# CS 101 Lecture 14 (Week 4, Lecture 2)
+# CS 101 · Lecture 14 (Week 4, Lecture 2)
 ## Recursive Algorithms: Trees, Patterns, and Iteration Conversion
 
 **Week 4 · Thursday**

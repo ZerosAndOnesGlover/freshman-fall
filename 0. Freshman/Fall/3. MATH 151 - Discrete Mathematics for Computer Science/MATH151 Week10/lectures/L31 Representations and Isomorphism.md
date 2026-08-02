@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Lecture 10.2 (L31) — Representations and Isomorphism
 ### Wednesday, Week 10
 

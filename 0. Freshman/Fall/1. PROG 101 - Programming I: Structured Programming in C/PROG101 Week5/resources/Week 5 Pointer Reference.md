@@ -1,4 +1,4 @@
-# PROG 101 — Week 5 Reference
+# PROG 101 · Week 5 Reference
 ## Pointers I
 
 ---

@@ -1,4 +1,4 @@
-# MATH 151 — Week 2
+# MATH 151 · Week 2
 ## Quiz 2 Solutions — INSTRUCTOR ONLY
 
 ---

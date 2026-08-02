@@ -1,4 +1,4 @@
-# CS 101 Lecture 5 (Week 1, Lecture 2)
+# CS 101 · Lecture 5 (Week 1, Lecture 2)
 ## Expressions, Operators, and Python's Evaluation Model
 
 **Week 1 · Thursday**

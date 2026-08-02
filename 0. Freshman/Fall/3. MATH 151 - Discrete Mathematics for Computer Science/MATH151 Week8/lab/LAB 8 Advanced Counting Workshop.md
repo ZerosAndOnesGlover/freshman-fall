@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Lab 8 — Advanced Counting Workshop: Pigeonhole and Inclusion–Exclusion
 ### Wednesday, Week 8 | Duration: 2 hours
 

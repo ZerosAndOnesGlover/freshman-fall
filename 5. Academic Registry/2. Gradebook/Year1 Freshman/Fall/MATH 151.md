@@ -7,7 +7,7 @@ semester: Fall
 status: in-progress
 ---
 
-# MATH 151 — Gradebook
+# MATH 151 · Gradebook
 ## Discrete Mathematics for Computer Science · 3 credits · Year 1 Fall
 
 > Enter a number in **Earned** only. Percentages, the course grade, the letter and the GPA points

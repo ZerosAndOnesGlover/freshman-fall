@@ -1,4 +1,4 @@
-# MATH 141 — Week 9 Overview
+# MATH 141 · Week 9 Overview
 ## The Fundamental Theorem of Calculus
 
 ---

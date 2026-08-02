@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Lecture 11.1 (L33) — Trees and Their Properties
 ### Monday, Week 11
 

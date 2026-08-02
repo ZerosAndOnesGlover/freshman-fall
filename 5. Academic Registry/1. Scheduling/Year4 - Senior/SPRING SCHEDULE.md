@@ -37,53 +37,16 @@
 | **07:30** | Morning Prep | Morning Prep | Morning Prep | Morning Prep | Morning Prep |
 | **08:00** | — | — | — | — | — |
 | **08:30** | — | — | — | — | — |
-| **09:00** | 📖 **CS431**
-09:00–09:50
-(LEC) | 🔬 **CS431**
-09:00–10:50
-(LAB) | 📖 **CS431**
-09:00–09:50
-(LEC) | 🔬 **CS433**
-09:00–10:50
-(LAB) | 📖 **CS431**
-09:00–09:50
-(LEC) |
-| **09:50** | — | — | — | — | — |
-| **10:00** | — | 📖 **CS432**
-10:00–10:50
-(LEC) | 📖 **CS432**
-10:00–10:50
-(LEC) | 📖 **CS432**
-10:00–10:50
-(LEC) | — |
-| **10:50** | — | — | — | — | — |
-| **11:00** | 📖 **CS433**
-11:00–11:50
-(LEC) | 📖 **CS433**
-11:00–11:50
-(LEC) | — | 📖 **CS433**
-11:00–11:50
-(LEC) | — |
-| **11:50** | — | — | — | — | — |
+| **09:00** | 📖 **CS431**<br>09:00–09:50<br>(LEC) | 🔬 **CS431**<br>09:00–10:50<br>(LAB) | 📖 **CS431**<br>09:00–09:50<br>(LEC) | 🔬 **CS433**<br>09:00–10:50<br>(LAB) | 📖 **CS431**<br>09:00–09:50<br>(LEC) |
+| **10:00** | — | 📖 **CS432**<br>10:00–10:50<br>(LEC) | 📖 **CS432**<br>10:00–10:50<br>(LEC) | 📖 **CS432**<br>10:00–10:50<br>(LEC) | — |
+| **11:00** | 📖 **CS433**<br>11:00–11:50<br>(LEC) | 📖 **CS433**<br>11:00–11:50<br>(LEC) | — | 📖 **CS433**<br>11:00–11:50<br>(LEC) | — |
 | **12:00** | 🍽️ Lunch Break | 🍽️ Lunch Break | 🍽️ Lunch Break | 🍽️ Lunch Break | 🍽️ Lunch Break |
-| **13:00** | — | 📖 **CS436**
-13:00–13:50
-(LEC) | 📖 **CS436**
-13:00–13:50
-(LEC) | — | 📖 **CS436**
-13:00–13:50
-(LEC) |
-| **14:00** | — | 🔬 **CS432**
+| **13:00** | — | 📖 **CS436**<br>13:00–13:50<br>(LEC) | 📖 **CS436**<br>13:00–13:50<br>(LEC) | — | 📖 **CS436**<br>13:00–13:50<br>(LEC) |
 14:00–15:50
 (LAB) | — | 🔬 **CS436**
 14:00–15:50
 (LAB) | — |
-| **15:00** | — | — | 🏗️ **CS402**
-15:00–16:50
-(CAP) | — | 🏗️ **CS402**
-15:00–15:50
-(CAP) |
-| **16:00** | — | — | — | — | 🎤 **CS491**
+| **15:00** | — | — | 🏗️ **CS402**<br>15:00–16:50<br>(CAP) | — | 🏗️ **CS402**<br>15:00–15:50<br>(CAP) |
 16:00–16:50
 (SEM) |
 | **17:00** | — | — | — | — | — |
@@ -94,7 +57,7 @@
 
 ## Daily Breakdown
 
-> Quiz days are course-specific — each course quizzes at the start of its own first lecture of the week. See ASSESSMENT_CALENDAR.md.
+> Quiz days are course-specific — each course quizzes at the start of its own first lecture of the week. See ASSESSMENT CALENDAR.md.
 
 ### Monday
 ```
@@ -178,7 +141,7 @@
 | Thursday | 09:00 / 14:00 | CS 433 / CS 436 Labs begin |
 | Friday | 15:00 | CS 402 Capstone session |
 | Friday | 17:00 | ⚠️ Problem set due |
-| Ongoing | TBD | Project milestones (see ASSESSMENT_CALENDAR.md) |
+| Ongoing | TBD | Project milestones (see ASSESSMENT CALENDAR.md) |
 
 ---
 
@@ -188,8 +151,8 @@ Midterm and final exams are held in the **evening** to avoid displacing regular 
 
 | Exam Type | Typical Time | Duration | Location |
 |-----------|-------------|---------|----------|
-| Midterm Exams | 18:00–19:15 or 18:00–19:30 | 75–90 min | Large lecture hall (see ROOM_ASSIGNMENTS.md) |
+| Midterm Exams | 18:00–19:15 or 18:00–19:30 | 75–90 min | Large lecture hall (see ROOM ASSIGNMENTS.md) |
 | Final Exams | 08:00–10:00, 09:00–11:30, or 14:00–16:30 | 120–150 min | Assigned exam room |
 
-> Check ASSESSMENT_CALENDAR.md for exact exam dates. Conflicts must be reported to your academic advisor at least 2 weeks in advance.
+> Check ASSESSMENT CALENDAR.md for exact exam dates. Conflicts must be reported to your academic advisor at least 2 weeks in advance.
 

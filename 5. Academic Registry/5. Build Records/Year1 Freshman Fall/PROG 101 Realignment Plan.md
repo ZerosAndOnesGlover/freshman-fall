@@ -1,4 +1,4 @@
-# PROG 101 — Curriculum Realignment Plan
+# PROG 101 · Curriculum Realignment Plan
 
 **Decision:** the Year 1 curriculum document (`CSE_Year1_Freshman_Curriculum.docx`) is authoritative.
 Built content is redistributed to match its week numbering.

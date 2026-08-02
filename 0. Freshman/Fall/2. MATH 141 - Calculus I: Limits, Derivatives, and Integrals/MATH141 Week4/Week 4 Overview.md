@@ -1,4 +1,4 @@
-# MATH 141 — Week 4 Overview
+# MATH 141 · Week 4 Overview
 ## Differentiation Rules
 
 ---

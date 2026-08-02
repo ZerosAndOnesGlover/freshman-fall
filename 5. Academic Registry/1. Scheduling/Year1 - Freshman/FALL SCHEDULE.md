@@ -37,61 +37,13 @@
 | **07:30** | Morning Prep | Morning Prep | Morning Prep | Morning Prep | Morning Prep |
 | **08:00** | — | — | — | — | — |
 | **08:30** | — | — | — | — | — |
-| **09:00** | — | — | 📖 **CS101**
-09:00–09:50
-(LEC) | 📖 **CS101**
-09:00–09:50
-(LEC) | 📖 **CS101**
-09:00–09:50
-(LEC) |
-| **09:50** | — | — | — | — | — |
-| **10:00** | — | 📖 **PROG101**
-10:00–10:50
-(LEC) | 📖 **PROG101**
-10:00–10:50
-(LEC) | 📖 **PROG101**
-10:00–10:50
-(LEC) | — |
-| **10:50** | — | — | — | — | — |
-| **11:00** | 📖 **MATH141**
-11:00–11:50
-(LEC) | 📖 **MATH141**
-11:00–11:50
-(LEC) | 📖 **MATH141**
-11:00–11:50
-(LEC) | — | 💬 **MATH141**
-11:00–11:50
-(DIS) |
-| **11:50** | — | — | — | — | — |
+| **09:00** | — | — | 📖 **CS101**<br>09:00–09:50<br>(LEC) | 📖 **CS101**<br>09:00–09:50<br>(LEC) | 📖 **CS101**<br>09:00–09:50<br>(LEC) |
+| **10:00** | — | 📖 **PROG101**<br>10:00–10:50<br>(LEC) | 📖 **PROG101**<br>10:00–10:50<br>(LEC) | 📖 **PROG101**<br>10:00–10:50<br>(LEC) | — |
+| **11:00** | 📖 **MATH141**<br>11:00–11:50<br>(LEC) | 📖 **MATH141**<br>11:00–11:50<br>(LEC) | 📖 **MATH141**<br>11:00–11:50<br>(LEC) | — | 💬 **MATH141**<br>11:00–11:50<br>(DIS) |
 | **12:00** | 🍽️ Lunch Break | 🍽️ Lunch Break | 🍽️ Lunch Break | 🍽️ Lunch Break | 🍽️ Lunch Break |
-| **13:00** | 📖 **MATH151**
-13:00–13:50
-(LEC) | — | 🎤 **CS190**
-13:00–13:50
-(SEM) | 📖 **MATH151**
-13:00–13:50
-(LEC) | 📖 **MATH151**
-13:00–13:50
-(LEC) |
-| **13:50** | — | — | — | — | — |
-| **14:00** | 📖 **PHYS141**
-14:00–14:50
-(LEC) | 📖 **PHYS141**
-14:00–14:50
-(LEC) | — | 🔬 **PHYS141**
-14:00–17:00
-(LAB) | 📖 **PHYS141**
-14:00–14:50
-(LEC) |
-| **14:50** | — | — | — | — | — |
-| **15:00** | 🔬 **PROG101**
-15:00–16:50
-(LAB) | 🔬 **CS101**
-15:00–16:50
-(LAB) | 🔬 **MATH151**
-15:00–16:50
-(LAB) | — | — |
-| **16:00** | — | — | — | — | — |
+| **13:00** | 📖 **MATH151**<br>13:00–13:50<br>(LEC) | — | 🎤 **CS190**<br>13:00–13:50<br>(SEM) | 📖 **MATH151**<br>13:00–13:50<br>(LEC) | 📖 **MATH151**<br>13:00–13:50<br>(LEC) |
+| **14:00** | 📖 **PHYS141**<br>14:00–14:50<br>(LEC) | 📖 **PHYS141**<br>14:00–14:50<br>(LEC) | — | 🔬 **PHYS141**<br>14:00–17:00<br>(LAB) | 📖 **PHYS141**<br>14:00–14:50<br>(LEC) |
+| **15:00** | 🔬 **PROG101**<br>15:00–16:50<br>(LAB) | 🔬 **CS101**<br>15:00–16:50<br>(LAB) | 🔬 **MATH151**<br>15:00–16:50<br>(LAB) | — | — |
 | **17:00** | — | — | — | — | — |
 | **18:00** | 📚 Evening Study | 📚 Evening Study | 📚 Evening Study | 📚 Evening Study | 📚 Evening Study |
 
@@ -100,7 +52,7 @@
 
 ## Daily Breakdown
 
-> Quiz days are now course-specific — each course quizzes at the start of its own first lecture of the week, not uniformly on Monday. See ASSESSMENT_CALENDAR.md for exact per-course quiz days.
+> Quiz days are now course-specific — each course quizzes at the start of its own first lecture of the week, not uniformly on Monday. See ASSESSMENT CALENDAR.md for exact per-course quiz days.
 
 ### Monday
 ```
@@ -124,7 +76,7 @@
 15:00 – 16:50   🔬 CS 101 LAB SECTION (mandatory)
                     Arrive with pre-lab reading done.
                     Lab reports checked off by TA during or after lab.
-[Evening]       Office hours (check OFFICE_HOURS.md for schedule)
+[Evening]       Office hours (check OFFICE HOURS.md for schedule)
 18:00 – 21:00   Evening study block
 ```
 
@@ -189,7 +141,7 @@
 | Thursday | Start of lecture | ⚠️ PROG 101 Quiz (Weeks 2–14) |
 | Thursday | 14:00 | PHYS 141 Lab begins (3 hrs) |
 | Tuesday | 15:00 | CS 101 Lab begins |
-| Ongoing | TBD | Project milestones (see ASSESSMENT_CALENDAR.md) |
+| Ongoing | TBD | Project milestones (see ASSESSMENT CALENDAR.md) |
 
 ---
 
@@ -199,8 +151,8 @@ Midterm and final exams are held in the **evening** to avoid displacing regular 
 
 | Exam Type | Typical Time | Duration | Location |
 |-----------|-------------|---------|----------|
-| Midterm Exams | 18:00–19:15 or 18:00–19:30 | 75–90 min | Large lecture hall (see ROOM_ASSIGNMENTS.md) |
+| Midterm Exams | 18:00–19:15 or 18:00–19:30 | 75–90 min | Large lecture hall (see ROOM ASSIGNMENTS.md) |
 | Final Exams | 08:00–10:00, 09:00–11:30, or 14:00–16:30 | 120–150 min | Assigned exam room |
 
-> Check ASSESSMENT_CALENDAR.md for exact exam dates. Conflicts must be reported to your academic advisor at least 2 weeks in advance.
+> Check ASSESSMENT CALENDAR.md for exact exam dates. Conflicts must be reported to your academic advisor at least 2 weeks in advance.
 

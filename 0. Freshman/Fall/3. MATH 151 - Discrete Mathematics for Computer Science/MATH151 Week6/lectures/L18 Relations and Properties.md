@@ -1,4 +1,4 @@
-# MATH 151 Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Lecture 6.1 (L18) Relations and Their Fundamental Properties
 ### Monday, Week 6
 

@@ -1,4 +1,4 @@
-# MATH 151 — Discrete Mathematics for Computer Science
+# MATH 151 · Discrete Mathematics for Computer Science
 ## Lecture 10.3 (L32) — Paths, Connectivity, Euler and Hamilton
 ### Friday, Week 10
 

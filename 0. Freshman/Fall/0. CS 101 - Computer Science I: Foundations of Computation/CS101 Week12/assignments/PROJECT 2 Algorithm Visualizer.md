@@ -1,4 +1,4 @@
-# CS 101: Project 2
+# CS 101 · Project 2
 ## Algorithm Visualizer
 
 **Assigned:** Friday, Week 10

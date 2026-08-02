@@ -1,4 +1,4 @@
-# CS 101 — Reading Guide, Week 12
+# CS 101 · Reading Guide, Week 12
 ## Synthesis, Review, and the Path Forward
 
 ---

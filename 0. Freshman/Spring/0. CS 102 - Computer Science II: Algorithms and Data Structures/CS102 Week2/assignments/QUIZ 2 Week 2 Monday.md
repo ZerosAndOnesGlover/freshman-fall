@@ -1,4 +1,4 @@
-# CS 102 — Quiz 2
+# CS 102 · Quiz 2
 
 **Week 2, Monday, first 15 minutes of lecture · 20 points**
 **Covers Week 1** — binary trees, traversals, and binary search trees. **Not** this week's material.

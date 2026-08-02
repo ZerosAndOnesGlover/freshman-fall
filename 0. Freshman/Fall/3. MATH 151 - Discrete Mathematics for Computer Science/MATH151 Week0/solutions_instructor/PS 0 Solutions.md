@@ -1,4 +1,4 @@
-# MATH 151: Week 0
+# MATH 151 · Week 0
 ## PS 0 Solutions: INSTRUCTOR ONLY
 ### Do not distribute to students
 

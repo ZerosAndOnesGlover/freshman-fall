@@ -1,4 +1,4 @@
-# MATH 141 — Lab 04
+# MATH 141 · Lab 04
 ## Rules, Chains, and Motion
 
 **Duration:** 2 hours · **20 points**

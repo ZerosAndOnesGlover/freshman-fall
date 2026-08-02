@@ -1,4 +1,4 @@
-# MATH 151 — Proof Writing Guide
+# MATH 151 · Proof Writing Guide
 ## How to Write a Mathematical Proof: Week 2
 
 ---

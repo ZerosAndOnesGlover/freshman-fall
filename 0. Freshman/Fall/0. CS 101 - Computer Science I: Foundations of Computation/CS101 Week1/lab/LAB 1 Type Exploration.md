@@ -1,4 +1,4 @@
-# CS 101 Lab 1
+# CS 101 · Lab 1
 ## Type Exploration, Expressions, and Python Tutor
 
 **Week 1 · Tuesday Lab Section**
