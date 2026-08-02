@@ -40,30 +40,57 @@
     return n;
   }
 
+  function toggle(li) {
+    li.classList.toggle("open");
+    var tw = li.querySelector(":scope > .row > .tw");
+    if (tw) tw.setAttribute("aria-expanded", li.classList.contains("open"));
+  }
+
   function buildTree(node, container, depth) {
     var ul = el("ul");
     (node.c || []).forEach(function (kid) {
       var li = el("li");
-      var row = el("div", "row");
-      var tw = el("button", "tw", "▸");
-      var a = el("a", null, kid.t);
-      a.href = PRE + kid.r;
-      row.appendChild(tw);
-      row.appendChild(a);
-      li.appendChild(row);
-
       var hasKids = (kid.c && kid.c.length) || (kid.p && kid.p.length);
+      var row = el("div", hasKids ? "row branch" : "row");
+      var tw = el("button", "tw", "▸");
+      tw.type = "button";
+      tw.setAttribute("aria-label", "Expand " + kid.t);
+      tw.setAttribute("aria-expanded", "false");
+
+      // A folder row is a toggle, not a link. Its own page is reachable via the
+      // "Overview" entry below, so there is no hidden click target.
+      var label = hasKids ? el("span", "label", kid.t) : el("a", "label", kid.t);
+      if (!hasKids) label.href = PRE + kid.r;
+
       if (!hasKids) tw.classList.add("leaf");
       if (kid.w && done[kid.w]) li.classList.add("done");
       li.dataset.route = kid.r;
       if (kid.w) li.dataset.week = kid.w;
 
+      row.appendChild(tw);
+      row.appendChild(label);
+      li.appendChild(row);
+
       if (hasKids) {
         var sub = buildTree(kid, li, depth + 1);
-        tw.addEventListener("click", function (e) {
+        var ov = el("li");
+        var ovRow = el("div", "row");
+        var ovTw = el("button", "tw leaf", "");
+        ovTw.type = "button";
+        var ovA = el("a", "label ov", "Overview");
+        ovA.href = PRE + kid.r;
+        ov.dataset.route = kid.r;
+        ovRow.appendChild(ovTw);
+        ovRow.appendChild(ovA);
+        ov.appendChild(ovRow);
+        sub.insertBefore(ov, sub.firstChild);
+
+        // Clicking anywhere on the row toggles -- a much larger target than
+        // the chevron alone.
+        row.addEventListener("click", function (e) {
+          if (e.target.closest("a")) return;
           e.preventDefault();
-          li.classList.toggle("open");
-          tw.textContent = li.classList.contains("open") ? "▾" : "▸";
+          toggle(li);
         });
       }
       ul.appendChild(li);
@@ -72,7 +99,8 @@
       var li = el("li");
       var row = el("div", "row");
       var tw = el("button", "tw leaf", "");
-      var a = el("a", p.s ? "sol" : null, p.t);
+      tw.type = "button";
+      var a = el("a", "label" + (p.s ? " sol" : ""), p.t);
       a.href = PRE + p.r;
       li.dataset.route = p.r;
       row.appendChild(tw);
@@ -84,8 +112,26 @@
     return ul;
   }
 
+  function expandAncestors(node) {
+    var n = node;
+    while (n && n.id !== "nav") {
+      if (n.tagName === "LI" && !n.classList.contains("open")) {
+        n.classList.add("open");
+        var tw = n.querySelector(":scope > .row > .tw");
+        if (tw && !tw.classList.contains("leaf")) tw.setAttribute("aria-expanded", "true");
+      }
+      n = n.parentNode;
+    }
+  }
+
   function openToCurrent() {
-    var target = document.querySelector('#nav li[data-route="' + CSS.escape(ROUTE) + '"]');
+    // Match on the actual link, so an "Overview" entry wins over the folder row
+    // that shares its route.
+    var links = document.querySelectorAll("#nav a.label[href]");
+    var target = null;
+    for (var i = 0; i < links.length; i++) {
+      if (links[i].getAttribute("href") === PRE + ROUTE) { target = links[i].closest("li"); break; }
+    }
     if (!target) {
       // a page inside a folder: fall back to the nearest ancestor index
       var parts = ROUTE.split("/");
@@ -97,16 +143,8 @@
     }
     if (!target) return;
     target.classList.add("cur");
-    var n = target;
-    while (n && n.id !== "nav") {
-      if (n.tagName === "LI") {
-        n.classList.add("open");
-        var tw = n.querySelector(":scope > .row > .tw");
-        if (tw && !tw.classList.contains("leaf")) tw.textContent = "▾";
-      }
-      n = n.parentNode;
-    }
-    var a = target.querySelector(":scope > .row > a");
+    expandAncestors(target);
+    var a = target.querySelector(":scope > .row > .label");
     if (a) setTimeout(function () { a.scrollIntoView({ block: "center" }); }, 0);
   }
 
@@ -149,7 +187,13 @@
     toc.appendChild(el("div", "toc-h", "On this page"));
     var links = [];
     hs.forEach(function (h) {
-      var a = el("a", h.tagName === "H3" ? "lv3" : null, h.textContent.trim());
+      // skip the injected "#" anchor so it does not land in the label
+      var label = "";
+      h.childNodes.forEach(function (n) {
+        if (n.nodeType === 1 && n.classList && n.classList.contains("anchor")) return;
+        label += n.textContent;
+      });
+      var a = el("a", h.tagName === "H3" ? "lv3" : null, label.trim());
       a.href = "#" + h.id;
       toc.appendChild(a);
       links.push({ a: a, h: h });
@@ -259,11 +303,136 @@
   }
 
   // ---------- boot ----------
-  document.getElementById("navToggle").addEventListener("click", function () {
-    body.classList.toggle("nav-open");
-  });
+  // ---------- visit history (for "Continue reading") ----------
+  var VISITS = "cse.visits.v1";
+  function recordVisit() {
+    if (ROUTE === "index.html") return;
+    var title = document.querySelector("#content h1");
+    var crumbs = document.querySelectorAll(".crumbs a, .crumbs span");
+    var trail = [];
+    crumbs.forEach(function (c, i) {
+      if (i > 0 && i < crumbs.length - 1) trail.push(c.textContent.trim());
+    });
+    try {
+      var list = JSON.parse(localStorage.getItem(VISITS)) || [];
+      list = list.filter(function (v) { return v.r !== ROUTE; });
+      list.unshift({
+        r: ROUTE,
+        t: (title ? title.textContent : document.title).replace(/^#/, "").trim(),
+        b: trail.join(" › "),
+        d: Date.now()
+      });
+      localStorage.setItem(VISITS, JSON.stringify(list.slice(0, 12)));
+    } catch (e) { /* ignore */ }
+  }
+
+  function paintDashboard(weeks) {
+    var box = document.getElementById("dashProgress");
+    if (box) {
+      var total = weeks.length;
+      var n = weeks.filter(function (w) { return done[w]; }).length;
+      var pct = total ? Math.round(100 * n / total) : 0;
+      box.innerHTML = "";
+      var big = el("div", "big", n + " / " + total);
+      big.appendChild(el("small", null, "weeks complete · " + pct + "%"));
+      box.appendChild(big);
+      var track = el("div", "track");
+      var fill = el("i");
+      track.appendChild(fill);
+      box.appendChild(track);
+      requestAnimationFrame(function () { fill.style.width = pct + "%"; });
+
+      // per-course rollup, so the number is actionable rather than decorative
+      var byCourse = {};
+      weeks.forEach(function (w) {
+        var course = w.split("/").slice(0, 3).join("/");
+        byCourse[course] = byCourse[course] || { t: 0, n: 0 };
+        byCourse[course].t++;
+        if (done[w]) byCourse[course].n++;
+      });
+      var keys = Object.keys(byCourse).sort();
+      if (keys.length) {
+        var wrap = el("div", "bars");
+        keys.forEach(function (k) {
+          var c = byCourse[k];
+          var row = el("div", "brow");
+          row.title = k + ": " + c.n + " of " + c.t + " weeks";
+          var name = k.split("/").pop().toUpperCase().replace(/-/g, " ");
+          row.appendChild(el("div", "blab", name));
+          var tr = el("div", "btrack");
+          var f = el("div", "bfill");
+          f.style.background = "var(--green)";
+          f.style.width = (100 * c.n / c.t) + "%";
+          tr.appendChild(f);
+          row.appendChild(tr);
+          var v = el("div", "bval", String(c.n));
+          v.appendChild(el("span", null, "of " + c.t));
+          row.appendChild(v);
+          wrap.appendChild(row);
+        });
+        box.appendChild(wrap);
+      }
+    }
+
+    var rec = document.getElementById("dashRecent");
+    if (rec) {
+      var list = [];
+      try { list = JSON.parse(localStorage.getItem(VISITS)) || []; } catch (e) { list = []; }
+      if (!list.length) return;
+      rec.innerHTML = "";
+      var ul = el("ul", "feed");
+      list.slice(0, 8).forEach(function (v) {
+        var li = el("li");
+        var a = el("a", null, v.t);
+        a.href = PRE + v.r;
+        li.appendChild(a);
+        if (v.b) li.appendChild(el("span", null, v.b));
+        ul.appendChild(li);
+      });
+      rec.appendChild(ul);
+    }
+  }
+
+  // ---------- sidebar collapse ----------
+  var RAIL = "cse.rail.v1";
+  try {
+    if (localStorage.getItem(RAIL) === "1") body.classList.add("rail-collapsed");
+  } catch (e) { /* ignore */ }
+
+  function setRail(collapsed) {
+    body.classList.toggle("rail-collapsed", collapsed);
+    try { localStorage.setItem(RAIL, collapsed ? "1" : "0"); } catch (e) { /* ignore */ }
+  }
+  function toggleRail() {
+    if (window.matchMedia("(max-width: 900px)").matches) {
+      body.classList.toggle("nav-open");
+    } else {
+      setRail(!body.classList.contains("rail-collapsed"));
+    }
+  }
+  var railBtn = document.getElementById("railToggle");
+  if (railBtn) railBtn.addEventListener("click", toggleRail);
+  document.getElementById("navToggle").addEventListener("click", toggleRail);
   var scrim = document.getElementById("scrim");
   if (scrim) scrim.addEventListener("click", function () { body.classList.remove("nav-open"); });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "\\" && !/^(INPUT|TEXTAREA)$/.test(document.activeElement.tagName)) {
+      e.preventDefault();
+      toggleRail();
+    }
+  });
+
+  // ---------- heading anchors ----------
+  (function () {
+    var c = document.getElementById("content");
+    if (!c) return;
+    c.querySelectorAll("h2[id], h3[id], h4[id]").forEach(function (h) {
+      var a = el("a", "anchor", "#");
+      a.href = "#" + h.id;
+      a.setAttribute("aria-label", "Link to this section");
+      h.insertBefore(a, h.firstChild);
+    });
+  })();
 
   typeset();
   buildToc();
@@ -276,10 +445,13 @@
     document.getElementById("nav").textContent = "Navigation unavailable (serve over http).";
   });
 
+  recordVisit();
+
   fetch(PRE + "assets/search.json").then(function (r) { return r.json(); }).then(function (data) {
     setupSearch(data.docs);
     paintProgress(data.weeks);
     setupWeek(data.weeks);
+    paintDashboard(data.weeks);
   }).catch(function () { /* search unavailable on file:// */ });
 
   setupGate();

@@ -124,17 +124,43 @@ a:hover { text-decoration-color: currentColor; }
   font-variant-numeric: normal;
 }
 
+.rail-top {
+  display: flex; align-items: center; justify-content: space-between; gap: .5rem;
+  padding: 1.15rem 1rem .9rem 1.5rem;
+}
 .brand {
   display: block;
-  padding: 1.4rem 1.5rem 1rem;
   font-size: .78rem;
   font-weight: 600;
   letter-spacing: .13em;
   text-transform: uppercase;
   color: var(--ink-2);
   text-decoration: none;
+  white-space: nowrap;
 }
 .brand:hover { color: var(--ink); }
+
+#railToggle {
+  flex: 0 0 26px; width: 26px; height: 26px;
+  display: grid; place-items: center;
+  border: 1px solid transparent; border-radius: 7px;
+  background: none; color: var(--ink-3);
+  font-size: 1.05rem; line-height: 1; cursor: pointer;
+  transition: background .13s, color .13s, border-color .13s;
+}
+#railToggle:hover {
+  background: var(--surface); border-color: var(--rule-2); color: var(--ink);
+}
+
+/* ---------- collapsed rail ---------- */
+#sidebar { transition: margin-left .24s cubic-bezier(.4, 0, .2, 1); }
+body.rail-collapsed #sidebar {
+  margin-left: calc(var(--rail) * -1);
+  pointer-events: none;
+}
+body.rail-collapsed #sidebar > * { opacity: 0; transition: opacity .1s; }
+body.rail-collapsed #navToggle { display: block; }
+@media (prefers-reduced-motion: reduce) { #sidebar { transition: none; } }
 
 .search { padding: 0 1.15rem 0; position: relative; }
 .search input {
@@ -223,38 +249,53 @@ a:hover { text-decoration-color: currentColor; }
 #nav ul ul { border-left: 1px solid var(--rule); margin-left: .42rem; }
 
 #nav .row {
-  display: flex; align-items: center; gap: .1rem;
+  display: flex; align-items: center; gap: .15rem;
   border-radius: 7px;
   transition: background .12s;
 }
-#nav .row:hover { background: color-mix(in srgb, var(--ink) 5%, transparent); }
+/* The whole row is the toggle for a folder, so it needs to look pressable. */
+#nav .row.branch { cursor: pointer; }
+#nav .row:hover { background: color-mix(in srgb, var(--ink) 6%, transparent); }
+#nav .row.branch:hover .tw { color: var(--accent); }
+
 #nav .tw {
-  flex: 0 0 18px; width: 18px; height: 22px;
+  flex: 0 0 22px; width: 22px; height: 26px;
   border: 0; padding: 0; background: none; cursor: pointer;
-  color: var(--ink-3); font-size: .58rem; line-height: 1;
+  color: var(--ink-3); font-size: .68rem; line-height: 1;
   display: grid; place-items: center;
-  transition: transform .16s ease, color .12s;
+  transition: transform .18s cubic-bezier(.4, 0, .2, 1), color .12s;
 }
-#nav .tw:hover { color: var(--ink); }
 #nav .tw.leaf { visibility: hidden; }
 #nav li.open > .row > .tw { transform: rotate(90deg); }
-#nav a {
+
+#nav .label {
   flex: 1 1 auto; min-width: 0;
-  display: block; padding: .27rem .35rem;
-  font-size: .845rem; line-height: 1.35;
-  color: var(--ink-2); text-decoration: none;
+  padding: .34rem .35rem;
+  font-size: .855rem; line-height: 1.35;
+  color: var(--ink-2);
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  user-select: none;
 }
-#nav a:hover { color: var(--ink); }
-#nav > ul > li > .row > a { font-weight: 600; color: var(--ink); font-size: .875rem; }
+#nav .row.branch:hover .label { color: var(--ink); }
+#nav a.label { text-decoration: none; }
+#nav a.label:hover { color: var(--ink); }
+#nav > ul > li > .row > .label { font-weight: 600; color: var(--ink); font-size: .885rem; }
+
+/* Every folder's own page is reachable as an explicit first child, so the row
+   itself can be a pure toggle rather than hiding navigation behind a chevron. */
+#nav a.ov {
+  color: var(--ink-3); font-style: italic;
+}
+#nav a.ov::before { content: "▸ "; font-style: normal; opacity: .5; }
 
 #nav .cur > .row { background: var(--accent-wash); }
-#nav .cur > .row > a { color: var(--accent); font-weight: 600; }
-#nav li.done > .row > a::after {
+#nav .cur > .row > .label { color: var(--accent); font-weight: 600; }
+#nav li.done > .row > .label::after {
   content: "✓"; margin-left: .4rem; color: var(--green); font-size: .78em;
 }
 #nav a.sol { color: var(--amber); }
 #nav a.sol::before { content: "▪ "; opacity: .55; }
+
 #nav li > ul { display: none; }
 #nav li.open > ul { display: block; }
 
@@ -335,24 +376,58 @@ body.no-toc .wrap { grid-template-columns: minmax(0, 1fr); max-width: calc(var(-
   text-wrap: balance;
   scroll-margin-top: 1.5rem;
 }
+/* Headings step down a single accent ramp rather than picking new hues, so the
+   colour reads as hierarchy instead of decoration. */
 #content h1 {
   font-size: clamp(2rem, 1.5rem + 1.6vw, 2.7rem);
   margin: 0 0 1.5rem;
+  padding-bottom: .7rem;
   letter-spacing: -.021em;
+  color: var(--ink);
+  position: relative;
+}
+#content h1::after {
+  content: "";
+  position: absolute; left: 0; bottom: 0;
+  width: 3.2rem; height: 3px; border-radius: 2px;
+  background: var(--accent);
 }
 #content h2 {
   font-size: 1.56rem;
   margin: 3.1rem 0 .85rem;
   padding-bottom: .42rem;
-  border-bottom: 1px solid var(--rule);
+  color: var(--accent);
+  border-bottom: 1px solid color-mix(in srgb, var(--accent) 26%, transparent);
 }
-#content h3 { font-size: 1.235rem; margin: 2.3rem 0 .6rem; }
-#content h4 { font-size: 1.06rem; margin: 1.8rem 0 .45rem; }
+#content h3 {
+  font-size: 1.235rem;
+  margin: 2.3rem 0 .6rem;
+  color: color-mix(in srgb, var(--accent) 74%, var(--ink));
+}
+#content h4 {
+  font-size: 1.06rem;
+  margin: 1.8rem 0 .45rem;
+  color: color-mix(in srgb, var(--accent) 52%, var(--ink));
+}
 #content h5, #content h6 {
   font-family: var(--sans); font-size: .78rem; font-weight: 650;
-  letter-spacing: .085em; text-transform: uppercase; color: var(--ink-2);
+  letter-spacing: .085em; text-transform: uppercase;
+  color: color-mix(in srgb, var(--accent) 70%, var(--ink-2));
   margin: 1.7rem 0 .45rem;
 }
+
+/* Quiet anchor affordance — headings already carry ids. */
+#content :is(h2, h3, h4) { position: relative; }
+#content :is(h2, h3, h4) .anchor {
+  position: absolute; left: -1.15rem; top: 0;
+  width: 1.15rem; text-align: left;
+  opacity: 0; text-decoration: none;
+  color: color-mix(in srgb, var(--accent) 55%, transparent);
+  font-weight: 400;
+  transition: opacity .12s;
+}
+#content :is(h2, h3, h4):hover .anchor { opacity: 1; }
+@media (max-width: 700px) { #content .anchor { display: none; } }
 
 #content p { margin: 0 0 var(--step); }
 #content ul, #content ol { margin: 0 0 var(--step); padding-left: 1.45rem; }
@@ -521,6 +596,136 @@ td .math-inline, th .math-inline { font-size: .96em; }
   text-decoration: none; white-space: nowrap;
 }
 .muted { color: var(--ink-3); font-family: var(--sans); font-size: .74rem; font-weight: 500; }
+
+/* ==========================================================================
+   Dashboard
+   Every bar encodes one measure across entities, so length carries the meaning
+   and colour carries none — a single hue throughout. Green and amber stay
+   reserved for status and never appear as a series beside the accent.
+   ========================================================================== */
+body.dash #content { max-width: none; }
+body.dash .wrap { max-width: 1220px; }
+
+.tiles {
+  display: grid; gap: .8rem; margin: 0 0 1.9rem;
+  grid-template-columns: repeat(auto-fit, minmax(148px, 1fr));
+}
+.tile {
+  background: var(--surface); border: 1px solid var(--rule);
+  border-radius: 12px; padding: .95rem 1.05rem;
+}
+.tile .tv {
+  font-size: 1.72rem; font-weight: 600; line-height: 1.1;
+  letter-spacing: -.02em; color: var(--ink);
+  font-variant-numeric: lining-nums tabular-nums;
+}
+.tile .tl {
+  margin-top: .28rem; font-family: var(--sans); font-size: .74rem;
+  font-weight: 550; letter-spacing: .05em; text-transform: uppercase;
+  color: var(--ink-2);
+}
+.tile .ts {
+  margin-top: .16rem; font-family: var(--sans); font-size: .74rem;
+  color: var(--ink-3);
+}
+
+.grid2 { display: grid; gap: 1.1rem; grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); }
+
+.panel {
+  background: var(--surface); border: 1px solid var(--rule);
+  border-radius: 12px; padding: 1.1rem 1.25rem 1.25rem;
+  margin: 0 0 1.1rem;
+}
+.panel h2 {
+  margin: 0 0 .2rem; padding: 0; border: 0;
+  font-family: var(--sans); font-size: .76rem; font-weight: 650;
+  letter-spacing: .1em; text-transform: uppercase; color: var(--ink-2);
+}
+.panel .pnote {
+  margin: .35rem 0 1rem; font-family: var(--sans); font-size: .8rem;
+  line-height: 1.5; color: var(--ink-3); max-width: 62ch;
+}
+.panel .pnote code { font-size: .92em; }
+.panel h3 {
+  margin: 1rem 0 .35rem; font-family: var(--sans); font-size: .72rem;
+  font-weight: 650; letter-spacing: .07em; text-transform: uppercase;
+  color: var(--ink-3);
+}
+.panel h3:first-of-type { margin-top: 0; }
+
+/* ---------- bars ---------- */
+.bars { display: flex; flex-direction: column; gap: 2px; }
+.brow {
+  display: grid; grid-template-columns: minmax(0, 15rem) 1fr auto;
+  align-items: center; gap: .85rem;
+  padding: .28rem 0;
+  font-family: var(--sans);
+}
+.brow .blab {
+  font-size: .8rem; color: var(--ink-2);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.brow .btrack {
+  height: 9px; border-radius: 5px;
+  background: color-mix(in srgb, var(--ink) 7%, transparent);
+  overflow: hidden; min-width: 40px;
+}
+.brow .bfill {
+  height: 100%; border-radius: 4px;
+  background: var(--accent);
+  transition: width .4s cubic-bezier(.4, 0, .2, 1);
+}
+.brow .bval {
+  font-size: .8rem; font-weight: 600; color: var(--ink);
+  font-variant-numeric: lining-nums tabular-nums;
+  text-align: right; white-space: nowrap;
+}
+.brow .bval span {
+  display: block; font-weight: 400; font-size: .715rem; color: var(--ink-3);
+}
+.brow:hover .blab { color: var(--ink); }
+
+/* ---------- feeds ---------- */
+.feed { list-style: none; margin: 0; padding: 0; font-family: var(--sans); }
+.feed li {
+  display: flex; flex-direction: column; gap: .1rem;
+  padding: .42rem 0; border-bottom: 1px solid var(--rule);
+}
+.feed li:last-child { border-bottom: 0; }
+.feed li a { font-size: .87rem; color: var(--ink); text-decoration: none; }
+.feed li a:hover { color: var(--accent); }
+.feed li span { font-size: .73rem; color: var(--ink-3); }
+.feed.dates li { flex-direction: row; gap: .8rem; align-items: baseline; }
+.feed.dates b {
+  flex: 0 0 6.2rem; font-size: .77rem; font-weight: 600; color: var(--ink-2);
+  font-variant-numeric: lining-nums tabular-nums;
+}
+.feed.dates span { font-size: .82rem; color: var(--ink-2); }
+
+.empty { font-family: var(--sans); font-size: .82rem; color: var(--ink-3); margin: 0; }
+
+/* ---------- progress panel ---------- */
+.dash-progress .big {
+  font-size: 1.72rem; font-weight: 600; letter-spacing: -.02em;
+  font-variant-numeric: lining-nums tabular-nums;
+}
+.dash-progress .big small {
+  font-size: .82rem; font-weight: 400; color: var(--ink-3); margin-left: .35rem;
+  font-family: var(--sans);
+}
+.dash-progress .track {
+  height: 9px; border-radius: 5px; margin: .55rem 0 1rem;
+  background: color-mix(in srgb, var(--ink) 7%, transparent); overflow: hidden;
+}
+.dash-progress .track i {
+  display: block; height: 100%; width: 0; border-radius: 4px;
+  background: var(--green); transition: width .45s cubic-bezier(.4, 0, .2, 1);
+}
+
+@media (max-width: 620px) {
+  .brow { grid-template-columns: 1fr auto; }
+  .brow .btrack { grid-column: 1 / -1; order: 3; }
+}
 
 /* ==========================================================================
    Solution gate

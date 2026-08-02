@@ -25,6 +25,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import markdown as md  # noqa: E402
+import dashboard  # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 VAULT = os.path.dirname(HERE)
@@ -48,6 +49,54 @@ SECTION_ORDER = ["lectures", "lab", "labs", "assignments", "quiz", "quizzes",
                  "resources", "solutions_instructor"]
 
 SOLUTION_MARKERS = re.compile(r"NOT FOR STUDENTS|INSTRUCTOR ONLY", re.I)
+# Word-bounded: without \b, "solution" matches inside "Collision Resolution"
+# and gates two perfectly ordinary hash-table lectures.
+SOLUTION_NAME = re.compile(
+    r"\b(solutions?|answer\s+key|instructor\s+only|marking\s+scheme)\b", re.I)
+
+
+def strip_fences(text):
+    """Drop fenced blocks. A week README that merely *lists*
+    `solutions_instructor/ ... NOT FOR STUDENTS` inside its directory tree is
+    describing the folder, not being one."""
+    out, infence = [], False
+    for ln in text.split("\n"):
+        if ln.lstrip().startswith(("```", "~~~")):
+            infence = not infence
+            continue
+        if not infence:
+            out.append(ln)
+    return "\n".join(out)
+
+
+def looks_like_solutions(src, parts, stem):
+    """Is this page *itself* solutions, as opposed to a page that mentions them?
+
+    Week READMEs describe their own folder -- in a directory-tree fence, or in a
+    contents table row like `| solutions_instructor/ | ... instructor only |`.
+    Those are references, not declarations, so a bare content search gates the
+    week overview and makes the whole week look locked.
+    """
+    if "solutions_instructor" in parts:
+        return True
+    if SOLUTION_NAME.search(stem):
+        return True
+    try:
+        text = strip_fences(open(src, encoding="utf-8").read())
+    except OSError:
+        return False
+    seen = 0
+    for ln in text.split("\n"):
+        s = ln.strip()
+        if not s or s.startswith("|"):
+            continue  # table rows point at other files
+        seen += 1
+        if seen > 15:
+            break
+        # A page-level declaration sits near the top, in a heading or a callout.
+        if SOLUTION_MARKERS.search(s):
+            return True
+    return False
 ORDINAL_RE = re.compile(r"^\d+\.\s*")
 COURSE_RE = re.compile(r"^(?:\d+\.\s*)?([A-Z]{2,5}\s?\d{2,3})\s*[-–—:]\s*(.*)$")
 WEEK_RE = re.compile(r"^[A-Z]*\s?\d*\s*Week\s*(\d+)$", re.I)
@@ -93,6 +142,8 @@ class Page:
         self.html = ""
         self.headings = []
         self.text = ""
+        self.words = 0
+        self.math = 0
 
 
 def walk():
@@ -141,13 +192,7 @@ def walk():
             stem = fn[:-3]
             crumbs = nodes[dirroute].get("crumbs", []) if dirroute else []
             wr = nodes[dirroute].get("week_route") if dirroute else None
-            is_sol = "solutions_instructor" in root.split(os.sep)
-            if not is_sol:
-                try:
-                    head = open(src, encoding="utf-8").read(4000)
-                    is_sol = bool(SOLUTION_MARKERS.search(head))
-                except OSError:
-                    pass
+            is_sol = looks_like_solutions(src, root.split(os.sep), stem)
             if stem.upper() == "README":
                 route = (dirroute + "/index.html") if dirroute else "index.html"
                 title = nodes[dirroute]["title"] if dirroute else "CSE Degree"
@@ -198,10 +243,15 @@ SHELL = """<!doctype html>
 <link rel="stylesheet" href="{pre}assets/app.css">
 </head>
 <body data-route="{route}" data-week="{week}" data-prefix="{pre}">
-<button id="navToggle" aria-label="Toggle navigation">&#9776;</button>
+<button id="navToggle" aria-label="Show navigation" title="Show navigation (\\)">&#9776;</button>
 <div id="scrim"></div>
 <aside id="sidebar">
-  <a class="brand" href="{pre}index.html">CSE Degree</a>
+  <div class="rail-top">
+    <a class="brand" href="{pre}index.html">CSE Degree</a>
+    <button id="railToggle" aria-label="Collapse sidebar" title="Collapse sidebar (\\)">
+      <span aria-hidden="true">&#8249;</span>
+    </button>
+  </div>
   <div class="search">
     <input id="q" type="search" placeholder="Search" aria-label="Search" autocomplete="off" spellcheck="false">
     <div id="results"></div>
@@ -307,7 +357,10 @@ def main():
             continue
         body, headings = md.render(raw, resolve_link=resolve)
         p.html, p.headings = body, headings
-        p.text = strip_html(body)[:1500]
+        plain = strip_html(body)
+        p.text = plain[:1500]
+        p.words = len(plain.split())
+        p.math = body.count('class="math-')
 
     # ---- write pages -----------------------------------------------------
     if os.path.isdir(OUT):
@@ -352,25 +405,14 @@ def main():
             ))
         written += 1
 
-    # ---- home page -------------------------------------------------------
+    # ---- home dashboard --------------------------------------------------
     weeks = sorted({p.week_route for p in pages if p.week_route})
-    top = [nodes[c] for c in nodes[""]["children"]]
-    cards = []
-    for node in sorted(top, key=lambda n: natural_key(n["route"])):
-        courses = [nodes[c] for c in node["children"]]
-        sub = []
-        for sem in sorted(courses, key=lambda n: natural_key(n["title"])):
-            names = [nodes[c]["title"] for c in sem["children"]]
-            sub.append("<li><a href=\"%s/index.html\">%s</a> <span class=\"muted\">%d</span></li>"
-                       % (sem["route"], html.escape(sem["title"]), len(names)))
-        cards.append('<section class="card"><h2><a href="%s/index.html">%s</a></h2><ul>%s</ul></section>'
-                     % (node["route"], html.escape(node["title"]), "".join(sub)))
-    home = ('<h1>CSE Degree</h1>'
-            '<p class="lede">%d pages across %d weeks. Progress is stored in this browser.</p>'
-            '<div class="cards">%s</div>' % (written, len(weeks), "".join(cards)))
+    stats = dashboard.collect(nodes, pages, VAULT)
+    home = dashboard.render(stats, pre="")
     with open(os.path.join(OUT, "index.html"), "w", encoding="utf-8") as fh:
         fh.write(SHELL.format(title="CSE Degree", pre="", route="index.html", week="",
-                              crumbs='<span>Home</span>', body=home))
+                              crumbs='<span>Home</span>', body=home).replace(
+            '<body data-route="index.html"', '<body class="dash" data-route="index.html"'))
     written += 1
 
     # ---- nav + search indexes -------------------------------------------
