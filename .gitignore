@@ -1,0 +1,36 @@
+# ─── Obsidian ────────────────────────────────────────────────────────
+# Volatile UI state: rewritten every time a pane moves, so it would add
+# noise to every commit. appearance.json, app.json and core-plugins.json
+# are deliberately NOT ignored — those keep the vault reproducible.
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.trash/
+
+# ─── Claude Code ─────────────────────────────────────────────────────
+# Machine-local settings plus the temp files written during saves.
+.claude/
+
+# ─── Python ──────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+
+# ─── Compiled C artifacts from lab starters ──────────────────────────
+*.o
+*.out
+*.exe
+a.out
+# extensionless ELF binary built by the PROG 101 Week 0 starter
+0. Freshman/Fall/1. PROG 101 - Programming I: Structured Programming in C/PROG101 Week0/lab/starter/hello
+
+# ─── OS noise ────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ─── Submissions ─────────────────────────────────────────────────────
+# Each course under here gets its own git repo with its own remote
+# (e.g. CS 101 -> ZerosAndOnesGlover/cs101). Tracking them from the
+# vault repo would leave stray gitlinks pointing at commits this repo
+# does not contain. Commit and push each course from inside its own
+# directory instead.
+/5. Academic Registry/4. Submissions/
