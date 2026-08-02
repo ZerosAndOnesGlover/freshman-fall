@@ -116,12 +116,58 @@
     var box = document.getElementById("progress");
     if (!box) return;
     box.innerHTML = "";
-    box.appendChild(el("span", null, n + " / " + total + " weeks complete"));
+    var lbl = el("div", "lbl");
+    lbl.appendChild(el("span", null, "Progress"));
+    var b = el("b", null, n + " / " + total);
+    lbl.appendChild(b);
+    box.appendChild(lbl);
     var bar = el("div", "bar");
     var fill = el("i");
-    fill.style.width = total ? (100 * n / total) + "%" : "0";
     bar.appendChild(fill);
     box.appendChild(bar);
+    // set width after insertion so the transition runs
+    requestAnimationFrame(function () {
+      fill.style.width = total ? (100 * n / total) + "%" : "0";
+    });
+  }
+
+  // ---------- table of contents ----------
+  function buildToc() {
+    var toc = document.getElementById("toc");
+    var content = document.getElementById("content");
+    if (!toc || !content) return;
+    // On a gated page the headings exist but are hidden; wait for the reveal
+    // so the rail never lists sections the reader cannot see or scroll to.
+    if (document.querySelector(".gate")) { body.classList.add("no-toc"); return; }
+
+    var hs = content.querySelectorAll("h2[id], h3[id]");
+    // A rail is only worth the space when there is something to navigate.
+    if (hs.length < 3) { body.classList.add("no-toc"); return; }
+
+    toc.textContent = "";
+    body.classList.remove("no-toc");
+    toc.appendChild(el("div", "toc-h", "On this page"));
+    var links = [];
+    hs.forEach(function (h) {
+      var a = el("a", h.tagName === "H3" ? "lv3" : null, h.textContent.trim());
+      a.href = "#" + h.id;
+      toc.appendChild(a);
+      links.push({ a: a, h: h });
+    });
+
+    if (!("IntersectionObserver" in window)) return;
+    var seen = new Map();
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { seen.set(e.target, e); });
+      var best = null;
+      seen.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        if (!best || e.target.offsetTop < best.target.offsetTop) best = e;
+      });
+      if (!best) return;
+      links.forEach(function (l) { l.a.classList.toggle("on", l.h === best.target); });
+    }, { rootMargin: "0px 0px -72% 0px", threshold: 0 });
+    links.forEach(function (l) { io.observe(l.h); });
   }
 
   // ---------- search ----------
@@ -186,6 +232,7 @@
       panel.hidden = false;
       btn.closest(".gate").remove();
       typeset();
+      buildToc();
     });
   }
 
@@ -215,8 +262,11 @@
   document.getElementById("navToggle").addEventListener("click", function () {
     body.classList.toggle("nav-open");
   });
+  var scrim = document.getElementById("scrim");
+  if (scrim) scrim.addEventListener("click", function () { body.classList.remove("nav-open"); });
 
   typeset();
+  buildToc();
 
   fetch(PRE + "assets/nav.json").then(function (r) { return r.json(); }).then(function (nav) {
     var host = document.getElementById("nav");

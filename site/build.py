@@ -190,20 +190,31 @@ SHELL = """<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title}</title>
+<link rel="preload" as="font" type="font/woff2" crossorigin
+      href="{pre}vendor/fonts/source-serif-4-latin-wght-normal.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin
+      href="{pre}vendor/fonts/inter-latin-wght-normal.woff2">
 <link rel="stylesheet" href="{pre}vendor/katex/katex.min.css">
 <link rel="stylesheet" href="{pre}assets/app.css">
 </head>
 <body data-route="{route}" data-week="{week}" data-prefix="{pre}">
 <button id="navToggle" aria-label="Toggle navigation">&#9776;</button>
+<div id="scrim"></div>
 <aside id="sidebar">
   <a class="brand" href="{pre}index.html">CSE Degree</a>
-  <div class="search"><input id="q" type="search" placeholder="Search&hellip;" autocomplete="off"><div id="results"></div></div>
+  <div class="search">
+    <input id="q" type="search" placeholder="Search" aria-label="Search" autocomplete="off" spellcheck="false">
+    <div id="results"></div>
+  </div>
   <div id="progress" class="progress"></div>
-  <nav id="nav"></nav>
+  <nav id="nav" aria-label="Course navigation"></nav>
 </aside>
 <main>
-  <nav class="crumbs">{crumbs}</nav>
-  <article id="content">{body}</article>
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb">{crumbs}</nav>
+    <article id="content">{body}</article>
+    <aside id="toc" aria-label="On this page"></aside>
+  </div>
 </main>
 <script src="{pre}vendor/katex/katex.min.js"></script>
 <script src="{pre}vendor/katex/auto-render.min.js"></script>
@@ -233,8 +244,10 @@ def week_control(page):
 def gate(body, count_hint=""):
     return (
         '<div class="gate">'
+        '<span class="lock" aria-hidden="true">&#9788;</span>'
         '<button class="reveal" type="button">Reveal solutions%s</button>'
-        '<p class="gate-note">Hidden so you can attempt the problems first.</p>'
+        '<p class="gate-note">Hidden by default so you can attempt the problems '
+        'first. Nothing is recorded either way.</p>'
         '</div><div class="gated" hidden>%s</div>' % (count_hint, body)
     )
 

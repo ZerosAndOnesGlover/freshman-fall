@@ -25,9 +25,10 @@ the HTML directly; the sidebar tree and the search box will not. Use `--serve`.
 |------|------------|
 | `build.py` | Walks the vault, renders each file, writes `_site/` |
 | `markdown.py` | Dependency-free Markdown → HTML renderer |
-| `assets/app.css` | Styling, light and dark |
-| `assets/app.js` | Nav tree, search, progress, solution gating |
+| `assets/app.css` | Design system, light and dark |
+| `assets/app.js` | Nav tree, search, TOC, progress, solution gating |
 | `vendor/katex/` | KaTeX, trimmed to woff2 fonts, so maths works offline |
+| `vendor/fonts/` | Source Serif 4 + Inter, variable woff2, latin subset (208K) |
 
 ## What the site does
 
@@ -47,6 +48,35 @@ top.
 **Solutions are hidden by default.** Anything under `solutions_instructor/`, or
 containing "NOT FOR STUDENTS" / "INSTRUCTOR ONLY", renders behind a reveal
 button so you can attempt the problems first.
+
+## Design
+
+The site is a reading environment before it is an app, so the type does the
+work:
+
+- **Source Serif 4** for prose, at 68 characters and 1.72 line height. It was
+  drawn for screen reading and sits comfortably beside KaTeX's Computer Modern.
+- **Inter** for chrome only — sidebar, breadcrumbs, tables, buttons. Keeping the
+  interface in a different voice from the material stops the two competing.
+- Both are variable woff2, latin subset, 208K for all four faces, vendored so
+  the site stays fully offline.
+
+Colour is deliberately narrow: warm paper rather than flat white, near-black
+ink, one teal accent, and amber reserved exclusively for solutions so hidden
+material is recognisable at a glance. Dark mode is a genuine repaint, not an
+inversion.
+
+Other details worth knowing:
+
+- **Tables use lining tabular figures**, so the timetable columns align.
+  Headers stick while you scroll a wide grid.
+- **Prose uses old-style figures**, which sit better in running text.
+- A **table of contents rail** appears on pages with three or more headings and
+  highlights the section you are in. On gated pages it waits for the reveal, so
+  it never lists sections you cannot scroll to.
+- Print styles drop the navigation and **expand hidden solutions**, so a page
+  prints as a clean document.
+- Respects `prefers-reduced-motion` and `prefers-color-scheme`.
 
 ## Renderer notes
 
