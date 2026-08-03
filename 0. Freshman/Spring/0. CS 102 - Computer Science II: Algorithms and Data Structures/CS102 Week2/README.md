@@ -89,3 +89,7 @@ that idea arriving three days early. **Week 5** uses a heap-backed priority queu
 **Week 8**'s optimal BSTs return to this week's structures and ask a different question: not how to
 keep a tree balanced, but how to shape it around a known access distribution — for which balance
 turns out to be the *wrong* objective.
+
+---
+
+*CS 102 · Week 2 · © CSE Department*

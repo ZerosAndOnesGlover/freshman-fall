@@ -106,3 +106,7 @@ about 40,000 years. That is the difference Week 12 is about.
 
 **There is no problem set this week.** PS 1 is released in Week 1. Use the slack; it is the last of
 it until the midterm.
+
+---
+
+*CS 102 · Week 0 · Reading Guide · © CSE Department*

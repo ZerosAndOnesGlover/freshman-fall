@@ -73,3 +73,7 @@ Lab 1 Part D asks you about exactly this.
 
 **Week 2 adds a second invariant on top of the BST invariant.** Everything from this week carries
 over unchanged, so gaps here will not close by themselves.
+
+---
+
+*CS 102 · Week 1 · Reading Guide · © CSE Department*

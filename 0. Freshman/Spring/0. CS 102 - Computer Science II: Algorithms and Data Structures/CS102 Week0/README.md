@@ -71,3 +71,7 @@ without re-teaching.
 **Forward:** Lecture 03's invariants are used in every single week that follows. Lecture 02's
 amortised analysis is what makes union-find work in Week 6. The complexity table in Lecture 01 §4 is
 the setup for Week 12's question about what happens when no polynomial algorithm exists at all.
+
+---
+
+*CS 102 · Week 0 · © CSE Department*

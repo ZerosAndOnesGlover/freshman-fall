@@ -68,3 +68,7 @@ assumed throughout Part E of the problem set.
 gaps here will not close by themselves. **Week 3**'s heap is a different tree invariant answering a
 different question. **Week 4**'s BFS is the level-order traversal of this week, generalised from
 trees to graphs.
+
+---
+
+*CS 102 · Week 1 · © CSE Department*

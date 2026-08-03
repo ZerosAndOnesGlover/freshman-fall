@@ -3,7 +3,7 @@
 
 **Name:** _________________________________ **Section:** ___________ **Date:** ___________
 
-**Covers: Week 0** — the algorithm design process, complexity analysis, loop invariants and induction.
+**Covers Week 0** — the algorithm design process, complexity analysis, loop invariants and induction.
 
 **Instructions:** Closed notes. 15 minutes. **Total: 20 points.**
 
@@ -12,7 +12,7 @@
 
 ---
 
-**Q1. (3 pts)** State the six steps of the algorithm design process in order.
+**Q1.** *(3)* State the six steps of the algorithm design process in order.
 
 &nbsp;
 
@@ -20,7 +20,7 @@
 
 ---
 
-**Q2. (3 pts)** Both statements below are true. Explain why one is nearly useless, and state which.
+**Q2.** *(3)* Both statements below are true. Explain why one is nearly useless, and state which.
 
 - (a) Merge sort runs in $O(n^2)$ time.
 - (b) Merge sort runs in $\Theta(n\log n)$ time.
@@ -31,7 +31,7 @@
 
 ---
 
-**Q3. (4 pts)** A loop invariant proof has three parts. Name them, and state in one sentence what
+**Q3.** *(4)* A loop invariant proof has three parts. Name them, and state in one sentence what
 each establishes. **Which one do students most often omit, and what goes wrong without it?**
 
 &nbsp;
@@ -40,7 +40,7 @@ each establishes. **Which one do students most often omit, and what goes wrong w
 
 ---
 
-**Q4. (4 pts)** Solve using the master theorem, stating $c_{\text{crit}} = \log_b a$ and the case:
+**Q4.** *(4)* Solve using the master theorem, stating $c_{\text{crit}} = \log_b a$ and the case:
 
 - (a) $T(n) = 2T(n/2) + \Theta(n)$
 - (b) $T(n) = 4T(n/2) + \Theta(n)$
@@ -51,7 +51,7 @@ each establishes. **Which one do students most often omit, and what goes wrong w
 
 ---
 
-**Q5. (3 pts)** Give a recurrence the master theorem **cannot** solve, and say why it does not apply.
+**Q5.** *(3)* Give a recurrence the master theorem **cannot** solve, and say why it does not apply.
 
 &nbsp;
 
@@ -59,7 +59,7 @@ each establishes. **Which one do students most often omit, and what goes wrong w
 
 ---
 
-**Q6. (3 pts)** "Amortised $\Theta(1)$" and "average-case $\Theta(1)$" are different claims. State
+**Q6.** *(3)* "Amortised $\Theta(1)$" and "average-case $\Theta(1)$" are different claims. State
 the difference, and say which one makes no probabilistic assumption.
 
 &nbsp;
