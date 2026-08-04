@@ -18,6 +18,7 @@ before anyone starts Part B. Twenty minutes here saves a bad Week 10.
 
 | Symptom | Cause | Fix |
 | --- | --- | --- |
+| **TSan builds, then dies at startup** with `FATAL: ThreadSanitizer: unexpected memory mapping` | ASLR entropy on some Linux kernels | **`setarch $(uname -m) -R ./prog`**. Verified: TSan is fully functional under it — it detects a real race and correctly reports none on a thread-safe magic static. **This is the most likely failure in A1** and it is invisible if you only check the build. |
 | `perf` refuses to run | `kernel.perf_event_paranoid` | Lab machines are configured; on personal Linux, `sudo sysctl kernel.perf_event_paranoid=1`. **Week 12 only** — do not let it block today. |
 | ASan and TSan both fail | Sanitizer runtime not installed | Package is usually `libasan`/`libtsan` alongside gcc |
 | macOS: no ThreadSanitizer | Apple clang ships it; `-fsanitize=thread` works | Accept clang for this course; note the version |

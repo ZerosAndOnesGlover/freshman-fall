@@ -32,12 +32,30 @@ than you expect at runtime, and one thing that matters enormously in maintenance
 | g++ | `g++ --version` | Week 0 |
 | gdb | `gdb --version` | Week 4 |
 | valgrind | `valgrind --version` | Week 5 |
-| AddressSanitizer | build with `-fsanitize=address` | Week 5 |
-| ThreadSanitizer | build with `-fsanitize=thread` | Week 10 |
+| AddressSanitizer | build **and run** with `-fsanitize=address` | Week 5 |
+| ThreadSanitizer | build **and run** with `-fsanitize=thread -pthread` | Week 10 |
 | perf | `perf --version` | Week 12 |
 
 Paste the transcript into `RESULTS.md`. **If any tool is missing, say so explicitly** and raise it with
 your TA in this session — that is what the session is for.
+
+> **Build *and run* both sanitizers — do not stop at a successful compile.** ThreadSanitizer in
+> particular can build perfectly and then fail at startup with
+>
+> ```
+> FATAL: ThreadSanitizer: unexpected memory mapping
+> ```
+>
+> This is an address-space-layout problem on some Linux kernels, not a broken install. The fix is to
+> disable ASLR for that process:
+>
+> ```
+> setarch $(uname -m) -R ./your_program
+> ```
+>
+> **Confirm now that a threaded program runs under both sanitizers**, and record the command that
+> worked. Week 10 is a midterm week and is built entirely on ThreadSanitizer; finding this out then is
+> the expensive way.
 
 **A2.** *(2)* Confirm your compiler is in C++17 mode by printing `__cplusplus`:
 
