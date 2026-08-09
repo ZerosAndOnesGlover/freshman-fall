@@ -71,7 +71,7 @@
 | W10 | Apr 14 | **MATH 251** | 📘 Midterm 2 | 20% | 18:00–19:15 |
 | W12 | May 01 | **CS 212** | 🎤 Final Team Project Due | 30% | Demo + report |
 | W12 | May 01 | **CS 202** | 📋 Project 2 Due | 15% | Complete OS Kernel |
-| Finals | May 04 | **ECE 211** | 📕 Final Exam | 25% | 08:00–10:00 |
+| Finals | May 04 | **ECE 210** | 📕 Final Exam | 25% | 08:00–10:00 |
 | Finals | May 05 | **MATH 251** | 📕 Final Exam | 25% | 09:00–11:30 |
 | Finals | May 06 | **CS 202** | 📕 Final Exam | 15% | 09:00–11:30 |
 | Finals | May 07 | **PROG 202** | 📕 Final Exam | 15% | 14:00–16:30 |

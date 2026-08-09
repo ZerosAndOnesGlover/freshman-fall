@@ -116,7 +116,7 @@ At $n=320$ steps, RK4's error is $2.15\times10^{-12}$ against Euler's $4.24\time
 
 ## Looking Ahead
 
-**Week 12 closes the course:** systems of equations, a preview of the numerical methods you will meet properly in later courses, and the final review.
+**Week 12 closes the course:** systems of equations, a preview of the numerical methods you will meet properly in MATH 341, and the final review.
 
 **The final exam is comprehensive**, covering Weeks 0–12.
 

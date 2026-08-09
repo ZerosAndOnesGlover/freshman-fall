@@ -10,7 +10,7 @@
 - **CS 212**: Software Engineering
 - **PROG 202**: Functional & Logic Programming
 - **MATH 251**: Probability & Statistics for CS
-- **ECE 211**: Signals and Systems
+- **ECE 210**: Signals and Systems
 - **CS 290**: Ethics & Society II
 
 ---
@@ -60,7 +60,7 @@
 08:00 – 08:50   📖 MATH 251 Lecture — ⚠️ QUIZ DAY for MATH 251 (Weeks 2–14)
 09:00 – 09:50   📖 CS 202 Lecture — ⚠️ QUIZ DAY for CS 202 (Weeks 2–14)
 12:00 – 13:00   Lunch Break (protected — schedule this, do not skip it)
-13:00 – 14:15   📖 ECE 211 Lecture — ⚠️ QUIZ DAY for ECE 211 (Weeks 2–14)
+13:00 – 14:15   📖 ECE 210 Lecture — ⚠️ QUIZ DAY for ECE 210 (Weeks 2–14)
 17:00           Problem set DUE from previous week (submitted via course portal)
 18:00 – 21:00   Evening study block — Problem set + lecture review
 ```
@@ -98,7 +98,7 @@
 ```
 09:00 – 09:50   📖 CS 202 Lecture
 12:00 – 13:00   Lunch
-13:00 – 14:15   📖 ECE 211 Lecture
+13:00 – 14:15   📖 ECE 210 Lecture
 14:00 – 15:50   🔬 PROG 202 LAB SECTION (mandatory)
 15:00 – 15:50   🎤 CS 290 Seminar
 17:00           ⚠️  PROBLEM SET DUE — submit before 17:00 via portal.
@@ -124,7 +124,7 @@
 
 | Day | Time | Event |
 |-----|------|-------|
-| Monday | Start of lecture | ⚠️ MATH 251 + CS 202 + ECE 211 Quizzes (Weeks 2–14) |
+| Monday | Start of lecture | ⚠️ MATH 251 + CS 202 + ECE 210 Quizzes (Weeks 2–14) |
 | Tuesday | Start of lecture | ⚠️ CS 212 + PROG 202 Quizzes (Weeks 2–14) |
 | Tuesday | 15:00 | CS 202 Lab begins |
 | Wednesday | 15:00 | MATH 251 Recitation |

@@ -176,7 +176,7 @@ $$\int_0^Te^{-x^2}dx=\sum_{k\ge0}\frac{(-1)^kT^{2k+1}}{k!(2k+1)} \qquad (R=\inft
 | Systems, phase plane, eigenvalues $\pm i$ | **MATH 241** — Linear Algebra |
 | Floating point | **CS 201** — Computer Organization |
 | Convergence proofs | real analysis |
-| Quadrature, RK4, orders | numerical analysis |
+| Quadrature, RK4, orders | **MATH 341** — Numerical Methods & Analysis |
 
 ---
 

@@ -130,9 +130,9 @@ $$\textbf{Relative error: }\ \mathbf{25\%.}$$
 $$x = \frac{2}{b+\sqrt{b^2-4}} \qquad\text{which returns}\qquad 1.0000000000000000\times10^{-8}$$
 
 > **The same formula, rearranged, moves from two correct digits to sixteen.** Nothing about the
-> mathematics changed — only the order of operations. **This is the subject of numerical analysis,
-> and it is invisible to everything in this course**, because every theorem you proved assumed exact
-> arithmetic.
+> mathematics changed — only the order of operations. **This is the subject of MATH 341 — Numerical
+> Methods & Analysis — and it is invisible to everything in this course**, because every theorem you
+> proved assumed exact arithmetic.
 
 **You saw one shadow of it in Week 7**, when `mpmath.nsum` returned $0.9367$ for a series whose true value is $0.9375$ — a library, at high precision, returning four wrong digits with no warning. **You caught it because a partial sum of positive terms exceeded the reported total.**
 
@@ -152,11 +152,11 @@ $$x = \frac{2}{b+\sqrt{b^2-4}} \qquad\text{which returns}\qquad 1.00000000000000
 
 | Thread | Continues in |
 |---|---|
-| Quadrature, root-finding, stability | numerical analysis |
+| Quadrature, root-finding, stability | **MATH 341** — Numerical Methods & Analysis |
 | ODE integrators, systems | differential equations, dynamics, simulation |
 | Series, convergence, uniform convergence | real analysis |
-| Fourier orthogonality *(Week 1)* | signals, PDEs |
-| Floating point, error propagation | computer architecture, scientific computing |
+| Fourier orthogonality *(Week 1)* | **ECE 210** — Signals and Systems |
+| Floating point, error propagation | **CS 201** — Computer Organization & Architecture |
 
 **Tomorrow's lecture follows each thread by name.**
 

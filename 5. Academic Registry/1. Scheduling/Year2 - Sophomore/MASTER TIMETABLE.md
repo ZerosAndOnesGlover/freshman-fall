@@ -24,7 +24,7 @@
 | **CS 212** | Software Engineering | 3 | Tue/Wed/Thu 10:00 | Team Project 40%, Assignments 30%, Midterm 15%, Final 15% |
 | **PROG 202** | Functional & Logic Programming | 3 | Tue/Thu 11:00 + Fri Lab 14:00 | PS 40%, Projects 30%, Midterm 15%, Final 15% |
 | **MATH 251** | Probability & Statistics for CS | 4 | Mon/Tue/Thu 08:00 + Wed Rec 15:00 | PS 35%, Midterms 40%, Final 25% |
-| **ECE 211** | Signals and Systems | 3 | Mon/Fri 13:00 | PS 40%, Midterms 35%, Final 25% |
+| **ECE 210** | Signals and Systems | 3 | Mon/Fri 13:00 | PS 40%, Midterms 35%, Final 25% |
 | **CS 290** | Ethics & Society II | 1 | Fri 15:00 | Papers 60%, Participation 40% |
 | | **Total Spring Credits** | **18** | | |
 

@@ -165,7 +165,7 @@ $$y(1) = 0.350231844\ldots$$
 
 ## Looking Ahead
 
-**Week 12 closes the course.** Systems of equations, a proper preview of the numerical methods you will meet in later courses, and the final review.
+**Week 12 closes the course.** Systems of equations, a proper preview of the numerical methods you will meet in MATH 341, and the final review.
 
 **The final exam is comprehensive.** Everything from Week 0's Riemann sums to this week's Runge–Kutta.
 

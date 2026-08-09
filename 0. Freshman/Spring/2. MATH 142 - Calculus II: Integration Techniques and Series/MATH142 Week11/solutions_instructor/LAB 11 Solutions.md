@@ -206,7 +206,7 @@ Then the point:
 
 Then close:
 
-> Next week we finish: systems, a look at the numerical methods you will meet properly in later courses, and the final review. **The final is comprehensive — Week 0's Riemann sums to today's
+> Next week we finish: systems, a look at the numerical methods you will meet properly in MATH 341, and the final review. **The final is comprehensive — Week 0's Riemann sums to today's
 > Runge–Kutta.**
 
 ---

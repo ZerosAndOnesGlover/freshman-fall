@@ -109,7 +109,7 @@ $$e^{it}=\cos t+i\sin t$$
 > representation, rounding modes, and why $0.1+0.2\ne0.3$ are facts about the machine, not about
 > $\mathbb R$.
 
-**And the algorithms themselves** — quadrature, root-finding, ODE integrators, the order-of-convergence analysis you performed eleven times — **are the content of numerical analysis**, which you will meet properly in later courses. **You have already done the measurements; what you have not seen is the proofs of the orders you measured, or the stability theory that decides whether the measurement means anything.**
+**And the algorithms themselves** — quadrature, root-finding, ODE integrators, the order-of-convergence analysis you performed eleven times — **are the content of MATH 341 — Numerical Methods & Analysis** *(Year 3, Fall)*. **You have already done the measurements; what you have not seen is the proofs of the orders you measured, or the stability theory that decides whether the measurement means anything.**
 
 ---
 
@@ -122,7 +122,7 @@ $$e^{it}=\cos t+i\sin t$$
 | Systems, phase plane, eigenvalues | **MATH 241** — Linear Algebra |
 | Floating point, error propagation | **CS 201** — Computer Organization |
 | Sequences, series, convergence proofs | real analysis |
-| Quadrature, RK4, order of convergence | numerical analysis |
+| Quadrature, RK4, order of convergence | **MATH 341** — Numerical Methods & Analysis |
 | Volumes, arc length, the $\sqrt\pi$ | multivariable calculus |
 
 ---

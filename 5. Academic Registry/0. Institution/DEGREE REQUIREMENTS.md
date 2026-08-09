@@ -61,7 +61,7 @@
 | ✓ | Code | Course | Cr | Year | Sem | Grade |
 |---|------|--------|----|------|-----|-------|
 | ☐ | ECE 110 | Digital Logic & Circuit Design | 3 | 1 | Spring | |
-| ☐ | ECE 211 | Signals and Systems | 3 | 2 | Spring | |
+| ☐ | ECE 210 | Signals and Systems | 3 | 2 | Spring | |
 | ☐ | ECE 311 | Computer Architecture II | 3 | 3 | Spring | |
 | **Total** | | | **9** | | | |
 
