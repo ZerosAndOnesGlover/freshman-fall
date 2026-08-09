@@ -6,12 +6,12 @@
 
 ## Courses This Semester
 
-- **CS 101** - Computer Science I: Foundations of Computation
-- **PROG 101** - Programming I: Structured Programming in C
-- **MATH 141** - Calculus I: Limits, Derivatives, and Integrals
+- **CS 101** - Computer Science I · Foundations of Computation
+- **PROG 101** - Programming I · Structured Programming in C
+- **MATH 141** - Calculus I · Limits, Derivatives, and Integrals
 - **MATH 151** - Discrete Mathematics for Computer Science
-- **PHYS 141** - Physics I: Mechanics, Waves, and Thermodynamics
-- **CS 190** - CS Seminar: Ethics & Culture
+- **PHYS 141** - Physics I · Mechanics, Waves & Thermodynamics
+- **CS 190** - CS Seminar · Profession, Ethics & Culture
 
 ---
 
@@ -32,20 +32,20 @@
 
 ## Weekly Timetable Grid
 
-| Time | Monday | Tuesday | Wednesday | Thursday | Friday |
-|------|--------|---------|-----------|----------|--------|
-| **07:30** | Morning Prep | Morning Prep | Morning Prep | Morning Prep | Morning Prep |
-| **08:00** | — | — | — | — | — |
-| **08:30** | — | — | — | — | — |
-| **09:00** | — | — | 📖 **CS101**<br>09:00–09:50<br>(LEC) | 📖 **CS101**<br>09:00–09:50<br>(LEC) | 📖 **CS101**<br>09:00–09:50<br>(LEC) |
-| **10:00** | — | 📖 **PROG101**<br>10:00–10:50<br>(LEC) | 📖 **PROG101**<br>10:00–10:50<br>(LEC) | 📖 **PROG101**<br>10:00–10:50<br>(LEC) | — |
-| **11:00** | 📖 **MATH141**<br>11:00–11:50<br>(LEC) | 📖 **MATH141**<br>11:00–11:50<br>(LEC) | 📖 **MATH141**<br>11:00–11:50<br>(LEC) | — | 💬 **MATH141**<br>11:00–11:50<br>(DIS) |
-| **12:00** | 🍽️ Lunch Break | 🍽️ Lunch Break | 🍽️ Lunch Break | 🍽️ Lunch Break | 🍽️ Lunch Break |
-| **13:00** | 📖 **MATH151**<br>13:00–13:50<br>(LEC) | — | 🎤 **CS190**<br>13:00–13:50<br>(SEM) | 📖 **MATH151**<br>13:00–13:50<br>(LEC) | 📖 **MATH151**<br>13:00–13:50<br>(LEC) |
-| **14:00** | 📖 **PHYS141**<br>14:00–14:50<br>(LEC) | 📖 **PHYS141**<br>14:00–14:50<br>(LEC) | — | 🔬 **PHYS141**<br>14:00–17:00<br>(LAB) | 📖 **PHYS141**<br>14:00–14:50<br>(LEC) |
-| **15:00** | 🔬 **PROG101**<br>15:00–16:50<br>(LAB) | 🔬 **CS101**<br>15:00–16:50<br>(LAB) | 🔬 **MATH151**<br>15:00–16:50<br>(LAB) | — | — |
-| **17:00** | — | — | — | — | — |
-| **18:00** | 📚 Evening Study | 📚 Evening Study | 📚 Evening Study | 📚 Evening Study | 📚 Evening Study |
+| Time      | Monday                                 | Tuesday                                | Wednesday                              | Thursday                               | Friday                                 |
+| --------- | -------------------------------------- | -------------------------------------- | -------------------------------------- | -------------------------------------- | -------------------------------------- |
+| **07:30** | Morning Prep                           | Morning Prep                           | Morning Prep                           | Morning Prep                           | Morning Prep                           |
+| **08:00** | —                                      | —                                      | —                                      | —                                      | —                                      |
+| **08:30** | —                                      | —                                      | —                                      | —                                      | —                                      |
+| **09:00** | —                                      | —                                      | 📖 **CS101**<br>09:00–09:50<br>(LEC)   | 📖 **CS101**<br>09:00–09:50<br>(LEC)   | 📖 **CS101**<br>09:00–09:50<br>(LEC)   |
+| **10:00** | —                                      | 📖 **PROG101**<br>10:00–10:50<br>(LEC) | 📖 **PROG101**<br>10:00–10:50<br>(LEC) | 📖 **PROG101**<br>10:00–10:50<br>(LEC) | —                                      |
+| **11:00** | 📖 **MATH141**<br>11:00–11:50<br>(LEC) | 📖 **MATH141**<br>11:00–11:50<br>(LEC) | 📖 **MATH141**<br>11:00–11:50<br>(LEC) | —                                      | 💬 **MATH141**<br>11:00–11:50<br>(DIS) |
+| **12:00** | 🍽️ Lunch Break                        | 🍽️ Lunch Break                        | 🍽️ Lunch Break                        | 🍽️ Lunch Break                        | 🍽️ Lunch Break                        |
+| **13:00** | 📖 **MATH151**<br>13:00–13:50<br>(LEC) | —                                      | 🎤 **CS190**<br>13:00–13:50<br>(SEM)   | 📖 **MATH151**<br>13:00–13:50<br>(LEC) | 📖 **MATH151**<br>13:00–13:50<br>(LEC) |
+| **14:00** | 📖 **PHYS141**<br>14:00–14:50<br>(LEC) | 📖 **PHYS141**<br>14:00–14:50<br>(LEC) | —                                      | 🔬 **PHYS141**<br>14:00–17:00<br>(LAB) | 📖 **PHYS141**<br>14:00–14:50<br>(LEC) |
+| **15:00** | 🔬 **PROG101**<br>15:00–16:50<br>(LAB) | 🔬 **CS101**<br>15:00–16:50<br>(LAB)   | 🔬 **MATH151**<br>15:00–16:50<br>(LAB) | —                                      | —                                      |
+| **17:00** | —                                      | —                                      | —                                      | —                                      | —                                      |
+| **18:00** | 📚 Evening Study                       | 📚 Evening Study                       | 📚 Evening Study                       | 📚 Evening Study                       | 📚 Evening Study                       |
 
 
 ---
