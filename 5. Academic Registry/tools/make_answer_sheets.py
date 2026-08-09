@@ -134,18 +134,38 @@ PATTERNS = [
     re.compile(r"^###\s+(Part\s+[A-Z])[:.]?\s*(.*?)\s*[—–-]\s*(\d+)\s*(?:points?|pts?)\s*$", re.M),
     # **Q1. (18 points)** Evaluate:                        -- MATH 142 sample papers
     re.compile(r"^\*\*(Q\d+)\.?\s*\((\d+)\s*(?:points?|pts?)\)\*\*\s*(.*?)$", re.M),
+    # **Q1 (14 pts) — Number systems.** Evaluate:  -- ECE 110 / MATH 142 sample papers
+    # The question may or may not be followed by text on the same line, so the
+    # title runs to the closing "**" rather than to the end of the line. The
+    # answer key repeats these as "**Q1 (14).**", with no unit, so requiring
+    # "pts" here is what keeps every question from being counted twice.
+    re.compile(r"^\*\*(Q\d+)\s*\((\d+)\s*(?:points?|pts?)\)\s*[—–-]\s*([^*]*?)\.?\*\*", re.M),
 ]
 
-# "| A — short answer | 20 | 8-10 questions ... |" -- the CS 102 / PROG 102
-# revision guides state the paper's shape as a table instead of as headings.
-FORMAT_ROW = re.compile(
-    r"^\|\s*\*{0,2}([A-D])\s*[—–-]\s*([^|*]+?)\*{0,2}\s*\|\s*\*{0,2}(\d+)\*{0,2}\s*\|", re.M)
+# A table stating the paper's shape rather than listing its questions.
+#   CS 102 / PROG 102 revision guides:  "| section | marks | content |"
+#                                       "| A — short answer | 25 | 12-15 ... |"
+#   ECE 110 Marking Summaries:          "| Part | Problems | Points |"
+#                                       "| A — Registers | 4 × 5 | 20 |"
+# The header's first column names what a row is (a Section or a Part), and a
+# row's marks are its first bare-number cell — which is what tells a mark (20)
+# apart from a question count ("4 × 5").
+SHAPE_HEAD = re.compile(r"^\|\s*(section|part)\s*\|", re.I | re.M)
+SHAPE_ROW = re.compile(r"^\|\s*\*{0,2}([A-D])\s*[—–-]\s*([^|*]+?)\*{0,2}\s*\|(.*)$", re.M)
 
 
 def extract_format_table(text: str):
-    """Sections from a revision guide's 'shape of the paper' table."""
-    return [(f"Section {m.group(1)}", m.group(2).strip(), int(m.group(3)))
-            for m in FORMAT_ROW.finditer(text)]
+    """Sections from a document that states the paper's shape as a table."""
+    h = SHAPE_HEAD.search(text)
+    kind = h.group(1).capitalize() if h else "Section"
+    out = []
+    for m in SHAPE_ROW.finditer(text):
+        for cell in m.group(3).split("|"):
+            c = cell.strip().strip("*").strip()
+            if re.fullmatch(r"\d+", c):
+                out.append((f"{kind} {m.group(1)}", m.group(2).strip(), int(c)))
+                break
+    return out
 
 
 def extract_parts(text: str):
@@ -159,7 +179,9 @@ def extract_parts(text: str):
                 label, title, pts = g[0], (g[2] or "").strip(), int(g[1])
             else:
                 label, title, pts = g[0], (g[1] or "").strip(), int(g[2])
-            found.setdefault(m.start(), (label.strip(), title, pts))
+            # ECE 110 separates a part from its title with a dash rather than a
+            # colon ("## Part A — Registers"), which the capture keeps.
+            found.setdefault(m.start(), (label.strip(), title.lstrip("—–-").strip(), pts))
     return [found[k] for k in sorted(found)]
 
 
@@ -251,7 +273,9 @@ def record_items(course: str, year: str, sem: str):
     return out
 
 
-ITEM = re.compile(r"^(PS|Lab|Quiz|Project|Midterm|Prep)\s+(\d+)$")
+# Case-insensitive: most gradebooks label a lab "Lab 3", ECE 110 labels it "LAB 3".
+ITEM = re.compile(r"^(PS|Lab|Quiz|Project|Midterm|Prep)\s+(\d+)$", re.I)
+KINDS = {k.lower(): v for k, v in KIND_ALIASES.items()}
 
 
 def find_source(course: str, root: Path, item: str):
@@ -268,8 +292,8 @@ def find_source(course: str, root: Path, item: str):
     if item == "Final Exam":
         stems, num = ("FINAL EXAM", "FINAL"), None
     elif m:
-        stems, num = KIND_ALIASES[m.group(1)], int(m.group(2))
-    elif item == "Midterm":                      # PHYS 141 has a single midterm
+        stems, num = KINDS[m.group(1).lower()], int(m.group(2))
+    elif item.startswith("Midterm"):             # "Midterm" (PHYS 141), "Midterm Exam" (ECE 110)
         stems, num = ("MIDTERM",), None
     else:
         return None
@@ -452,9 +476,19 @@ def build_course(course: str, year: str, sem: str, force: bool):
         return 0, 0, 0
 
     dest = course_folder(root, REG / "4. Submissions" / year / sem, course)
-    made = skipped = nosrc = 0
+    made = skipped = nosrc = pending = 0
     for item, comp, possible, topic, ungraded in work:
         src = find_source(course, root, item)
+        is_exam = item.startswith(("Midterm", "Final"))
+        # Weekly work with no document has not been set yet — a course still
+        # being built week by week must not be pre-filled with empty sheets,
+        # because a sheet that exists is skipped on the next run and would never
+        # pick up the paper's own structure. Exams are the exception: the
+        # gradebook is authoritative that one is sat, whether or not a paper has
+        # been written for it to be sat from.
+        if src is None and not is_exam:
+            pending += 1
+            continue
         fname = f"{item}.md"
         target = week_folder(dest, week_of(item, src, root, topic)) / fname
         existing = [p for p in dest.rglob(fname) if p.is_file()]
@@ -473,7 +507,8 @@ def build_course(course: str, year: str, sem: str, force: bool):
             nosrc += 1
             print(f"     no source document for {item}")
     print(f"  {course:<9} created {made}, skipped {skipped}"
-          + (f", {nosrc} without a source document" if nosrc else ""))
+          + (f", {nosrc} without a source document" if nosrc else "")
+          + (f", {pending} awaiting material" if pending else ""))
     return made, skipped, nosrc
 
 
