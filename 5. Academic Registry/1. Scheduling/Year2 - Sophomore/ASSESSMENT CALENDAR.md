@@ -24,32 +24,132 @@
 
 ---
 
+## What Counts, and What Does Not
+
+Two kinds of work in Year 2 are **required but unweighted**, and they are marked here so that you
+know to do them and know not to look for them in your grade:
+
+- **🧪 Labs.** Every Year 2 course's stated components sum to 100% without a laboratory line —
+  CS 201 is Problem Sets 35 + Midterms 25 + Final 20 + Projects 20, and the rest are the same shape.
+  Labs are checked off by the TA in the session. They are enforced by the attendance rule in
+  `COURSE POLICIES.md`, not by a mark. *(CS 102 in Year 1 works the same way.)*
+- **📊 Quizzes.** Ten minutes at the start of each course's first lecture of the week, Weeks 1–11.
+  **Quiz *N* covers Week *N−1*.** The answer key is printed in the paper.
+
+Both are recorded per course in `2. Gradebook/Year2 Sophomore/<term>/_<COURSE> Lab and Quiz Record.md`,
+whose leading underscore keeps `tools/gpa.py` from scanning them as courses.
+
+---
+
+## Week-to-Date Map
+
+Derived from `0. Institution/ACADEMIC CALENDAR.md`. **Quote week numbers, not dates, when writing
+course material** — the material is keyed to weeks and only this table converts them.
+
+| | Fall | Spring |
+|---|---|---|
+| **Week 0** | Aug 25 *(classes begin Wed Aug 27)* | Jan 12 |
+| **Week 1** | Sep 1 *(Labor Day Mon — no classes)* | Jan 19 |
+| **Week 2** | Sep 8 | Jan 26 |
+| **Week 3** | Sep 15 | Feb 2 |
+| **Week 4** | Sep 22 | Feb 9 |
+| **Week 5** | Sep 29 | Feb 16 |
+| **Week 6** | Oct 6 | Feb 23 |
+| **Week 7** | Oct 13 *(Fall Break Mon — no classes)* | Mar 2 |
+| **Week 8** | Oct 20 | Mar 9 |
+| — | — | *Spring Break, Mar 16 — no classes* |
+| **Week 9** | Oct 27 | Mar 23 |
+| **Week 10** | Nov 3 | Mar 30 |
+| **Week 11** | Nov 10 | Apr 6 |
+| **Week 12** | Nov 17 | Apr 13 |
+| **Completion period** | Nov 24 *(Thanksgiving recess)*, Dec 1, Dec 8 | Apr 20, Apr 27 |
+| **Finals** | Dec 15–18 | May 4–8 |
+
+> **On the completion period.** Thirteen teaching weeks from an Aug 27 start end on Nov 21, but the
+> institutional calendar names Dec 8 as the last week of instruction. The intervening weeks are
+> Thanksgiving recess plus the project-completion and demo period — which is where Project 2 and the
+> Week 12 demo days actually land. Spring has the same shape at a smaller scale.
+
+---
+
+## Where the Midterms Sit
+
+The curriculum docx assigns each midterm to a **specific week, with stated coverage**, inside that
+week's own assignment list. This calendar previously stacked all four Fall midterms into Week 6 and
+all of the second midterms into Week 10, with wider coverage than the docx claims. The docx wins —
+it is authoritative for its own year — so the exams have moved to the weeks it names, and
+`0. Institution/ACADEMIC CALENDAR.md` has been brought into line.
+
+A side effect worth having: no week now carries four evening exams.
+
+| Course | Midterm 1 | Midterm 2 |
+|---|---|---|
+| **CS 201** | Week 5 · Weeks 0–4 | Week 10 · Weeks 5–9 |
+| **PROG 201** | Week 4 · Weeks 0–3 | Week 8 · Weeks 4–7 |
+| **CS 211** | Week 4 · Weeks 0–3 | Week 8 · Weeks 4–7 |
+| **MATH 241** | Week 6 · Weeks 0–5 | Week 10 · Weeks 6–9 |
+| **CS 202** | Week 4 · Weeks 0–3 | Week 8 · Weeks 4–7 |
+| **MATH 251** | Week 6 · Weeks 0–5 | Week 10 · Weeks 6–9 |
+| **ECE 211** | Week 6 · Weeks 0–5 | Week 10 · Weeks 6–9 |
+| **CS 212** | Week 6 · Weeks 0–5 | *(none — one midterm only)* |
+| **PROG 202** | Week 6 · Weeks 0–5 | *(none — one midterm only)* |
+
+*The docx states the week and coverage for CS 201, PROG 201, CS 211 and CS 202. It is silent on
+MATH 241, MATH 251, ECE 211, CS 212 and PROG 202, which keep the registry's Week 6 / Week 10
+exam weeks.*
+
+---
+
 
 ────────────────────────────────────────────────────────────────────────
 ## FALL SEMESTER ASSESSMENTS
 ────────────────────────────────────────────────────────────────────────
 
+**Weights.** CS 201 — PS 35, Midterms 25, Final 20, Projects 20.
+PROG 201 — PS 35, Projects 25, Midterms 25, Final 15.
+CS 211 — PS 30, Projects 25, Midterms 25, Final 20.
+MATH 241 — PS 35, Midterms 40, Final 25.
 
 | Week | Date | Course | Assessment | Weight | Notes |
 |------|------|--------|------------|--------|-------|
-| W1 | Sep 08 | **ALL** | 📝 Problem Set 1 due (Fri) | ≈3% |  |
-| W2 | Sep 15 | **CS 201** | 📊 Quiz 1 | ≈0.8% | Monday lecture start |
-| W2 | Sep 16 | **PROG 201** | 📊 Quiz 1 | ≈0.8% | Tuesday lecture start |
-| W6 | Oct 06 | **CS 201** | 📘 Midterm 1 | 12% | 18:00–19:15 · VNC 100 · Weeks 0–5 |
-| W6 | Oct 07 | **PROG 201** | 📘 Midterm 1 | 12% | 18:00–19:30 · Weeks 0–5 |
-| W6 | Oct 07 | **CS 211** | 📘 Midterm 1 | 12% | 20:00–21:15 · Weeks 0–5 |
-| W6 | Oct 08 | **MATH 241** | 📘 Midterm 1 | 20% | 18:00–19:15 · SSB 110 |
-| W9 | Oct 31 | **CS 201** | 📋 Project 1 Due | 10% | Mini-CPU Simulator · 17:00 |
-| W10 | Nov 03 | **CS 201** | 📘 Midterm 2 | 12% | 18:00–19:15 · Weeks 6–9 |
-| W10 | Nov 04 | **PROG 201** | 📘 Midterm 2 | 12% | 18:00–19:30 · Weeks 6–9 |
-| W10 | Nov 04 | **CS 211** | 📘 Midterm 2 | 12% | 20:00–21:15 · Weeks 6–9 |
-| W10 | Nov 05 | **MATH 241** | 📘 Midterm 2 | 20% | 18:00–19:15 |
-| W11 | Nov 14 | **PROG 201** | 📋 Project 1 Due | 12% | Unix Shell · 17:00 |
-| W12 | Dec 01 | **CS 201** | 📋 Project 2 Due | 10% | Full Pipelined CPU Simulator |
-| Finals | Dec 15 | **MATH 241** | 📕 Final Exam | 25% | 09:00–11:30 |
-| Finals | Dec 16 | **CS 211** | 📕 Final Exam | 20% | 09:00–11:30 |
-| Finals | Dec 17 | **CS 201** | 📕 Final Exam | 20% | 09:00–11:30 |
-| Finals | Dec 18 | **PROG 201** | 📕 Final Exam | 15% | 14:00–16:30 |
+| W0 | Aug 29 | **ALL** | 📝 Problem Set 0 due (Fri) | — | Counts within each course's PS component |
+| W1 | Sep 5 | **ALL** | 📝 Problem Set 1 due (Fri) | — | 📊 Quiz 1 in each course this week, covering Week 0 |
+| W2 | Sep 12 | **ALL** | 📝 Problem Set 2 due (Fri) | — | |
+| W3 | Sep 19 | **ALL** | 📝 Problem Set 3 due (Fri) | — | CS 211 Midterm 1 announced |
+| W4 | Sep 22 | **PROG 201** | 📘 Midterm 1 | 12.5% | 18:00–19:30 · Weeks 0–3 |
+| W4 | Sep 23 | **CS 211** | 📘 Midterm 1 | 12.5% | 20:00–21:15 · Weeks 0–3 |
+| W4 | Sep 26 | **ALL** | 📝 Problem Set 4 due (Fri) | — | CS 201 Midterm 1 announced |
+| W5 | Sep 29 | **CS 201** | 📘 Midterm 1 | 12.5% | 18:00–19:15 · VNC 100 · Weeks 0–4 |
+| W5 | Oct 3 | **ALL** | 📝 Problem Set 5 due (Fri) | — | |
+| W6 | Oct 8 | **MATH 241** | 📘 Midterm 1 | 20% | 18:00–19:15 · SSB 110 · Weeks 0–5 |
+| W6 | Oct 10 | **ALL** | 📝 Problem Set 6 due (Fri) | — | |
+| W7 | Oct 13 | **PROG 201** | 📋 Project 1 assigned | — | Unix shell (tsh) · due W9 |
+| W7 | Oct 13 | **CS 211** | 📋 Project 1 assigned | — | Mini-compiler · due W11 |
+| W7 | Oct 17 | **ALL** | 📝 Problem Set 7 due (Fri) | — | Fall Break Mon Oct 13 |
+| W7 | Oct 17 | **CS 201** | 📋 Project 1 assigned | — | Mini-CPU simulator · due W9 |
+| W8 | Oct 20 | **PROG 201** | 📘 Midterm 2 | 12.5% | 18:00–19:30 · Weeks 4–7 |
+| W8 | Oct 21 | **CS 211** | 📘 Midterm 2 | 12.5% | 20:00–21:15 · Weeks 4–7 |
+| W8 | Oct 24 | **ALL** | 📝 Problem Set 8 due (Fri) | — | |
+| W9 | Oct 31 | **CS 201** | 📋 Project 1 due | 10% | Mini-CPU simulator · 17:00 |
+| W9 | Oct 31 | **PROG 201** | 📋 Project 1 due | 12.5% | Unix shell (tsh) · 17:00 |
+| W9 | Oct 31 | **ALL** | 📝 Problem Set 9 due (Fri) | — | |
+| W10 | Nov 3 | **CS 201** | 📘 Midterm 2 | 12.5% | 18:00–19:15 · VNC 100 · Weeks 5–9 |
+| W10 | Nov 5 | **MATH 241** | 📘 Midterm 2 | 20% | 18:00–19:15 · SSB 110 · Weeks 6–9 |
+| W10 | Nov 7 | **ALL** | 📝 Problem Set 10 due (Fri) | — | |
+| W11 | Nov 14 | **CS 211** | 📋 Project 1 due | 12.5% | Mini-compiler · 17:00 |
+| W11 | Nov 14 | **ALL** | 📝 Problem Set 11 due (Fri) | — | Last quiz (Quiz 11) this week |
+| W12 | Nov 21 | **ALL** | 📝 Problem Set 12 due (Fri) | — | Last teaching week |
+| Completion | Dec 1 | **CS 201** | 📋 Project 2 due | 10% | Full pipelined CPU simulator |
+| Completion | Dec 1 | **PROG 201** | 📋 Project 2 due | 12.5% | Networked multi-threaded server |
+| Completion | Dec 1 | **CS 211** | 📋 Project 2 due | 12.5% | Full compiler with optimization |
+| Completion | Dec 8–12 | **ALL** | 🎤 Demo day / lightning talks | — | Assessed inside each Project 2 |
+| Finals | Dec 15 | **MATH 241** | 📕 Final Exam | 25% | 09:00–11:30 · comprehensive |
+| Finals | Dec 16 | **CS 211** | 📕 Final Exam | 20% | 09:00–11:30 · comprehensive |
+| Finals | Dec 17 | **CS 201** | 📕 Final Exam | 20% | 09:00–11:30 · comprehensive |
+| Finals | Dec 18 | **PROG 201** | 📕 Final Exam | 15% | 14:00–16:30 · comprehensive |
+
+**Unweighted but required, every Fall week:** 🧪 Lab 0–12 in CS 201, PROG 201 and CS 211 (MATH 241
+holds a Thursday recitation instead), and 📊 Quiz 1–11 in all four courses.
 
 
 ---
@@ -59,22 +159,55 @@
 ## SPRING SEMESTER ASSESSMENTS
 ────────────────────────────────────────────────────────────────────────
 
+**Weights.** CS 202 — PS 30, Projects 30, Midterms 25, Final 15.
+CS 212 — Team Project 40, Individual Assignments 30, Midterm 15, Final 15.
+PROG 202 — PS 40, Projects 30, Midterm 15, Final 15.
+MATH 251 — PS 35, Midterms 40, Final 25.
+ECE 211 — PS 40, Midterms 35, Final 25.
+CS 290 — Position Papers 60, Participation 40.
 
 | Week | Date | Course | Assessment | Weight | Notes |
 |------|------|--------|------------|--------|-------|
-| W1 | Jan 27 | **ALL** | 📝 Problem Set 1 due (Fri) | ≈3% |  |
-| W6 | Mar 02 | **CS 202** | 📘 Midterm 1 | 12% | 18:00–19:15 · Weeks 0–5 |
-| W6 | Mar 03 | **MATH 251** | 📘 Midterm 1 | 20% | 18:00–19:15 |
-| W6 | Mar 04 | **CS 212** | 🎤 Team Phase 1 Presentation | 10% | In-class demo, 10 min per team |
-| W9 | Apr 03 | **CS 202** | 📋 Project 1 Due | 15% | OS Kernel Features · 17:00 |
-| W10 | Apr 13 | **CS 202** | 📘 Midterm 2 | 12% | 18:00–19:15 · Weeks 6–9 |
-| W10 | Apr 14 | **MATH 251** | 📘 Midterm 2 | 20% | 18:00–19:15 |
-| W12 | May 01 | **CS 212** | 🎤 Final Team Project Due | 30% | Demo + report |
-| W12 | May 01 | **CS 202** | 📋 Project 2 Due | 15% | Complete OS Kernel |
-| Finals | May 04 | **ECE 211** | 📕 Final Exam | 25% | 08:00–10:00 |
-| Finals | May 05 | **MATH 251** | 📕 Final Exam | 25% | 09:00–11:30 |
-| Finals | May 06 | **CS 202** | 📕 Final Exam | 15% | 09:00–11:30 |
-| Finals | May 07 | **PROG 202** | 📕 Final Exam | 15% | 14:00–16:30 |
+| W0 | Jan 16 | **ALL** | 📝 Problem Set 0 due (Fri) | — | CS 212 runs assignments, not problem sets |
+| W1 | Jan 23 | **ALL** | 📝 Problem Set 1 due (Fri) | — | 📊 Quiz 1 in each course, covering Week 0 |
+| W2 | Jan 30 | **ALL** | 📝 Problem Set 2 due (Fri) | — | |
+| W3 | Feb 6 | **ALL** | 📝 Problem Set 3 due (Fri) | — | CS 202 Midterm 1 announced |
+| W3 | Feb 6 | **CS 290** | 📝 Position Paper 1 due | 20% | Algorithmic accountability |
+| W4 | Feb 9 | **CS 202** | 📘 Midterm 1 | 12.5% | 18:00–19:15 · VNC 100 · Weeks 0–3 |
+| W4 | Feb 13 | **ALL** | 📝 Problem Set 4 due (Fri) | — | |
+| W5 | Feb 20 | **ALL** | 📝 Problem Set 5 due (Fri) | — | |
+| W6 | Feb 24 | **CS 212** | 🎤 Team Phase 1 presentation | 10% | In-class demo, 10 min per team |
+| W6 | Feb 24 | **MATH 251** | 📘 Midterm 1 | 20% | 18:00–19:15 · SSB 110 · Weeks 0–5 |
+| W6 | Feb 25 | **CS 212** | 📘 Midterm | 15% | 18:00–19:15 · Weeks 0–5 |
+| W6 | Feb 25 | **ECE 211** | 📘 Midterm 1 | 17.5% | 20:00–21:15 · MEC 101 · Weeks 0–5 |
+| W6 | Feb 26 | **PROG 202** | 📘 Midterm | 15% | 18:00–19:15 · Weeks 0–5 |
+| W6 | Feb 27 | **ALL** | 📝 Problem Set 6 due (Fri) | — | |
+| W7 | Mar 2 | **CS 202** | 📋 Project 1 assigned | — | xv6 kernel features · due W11 |
+| W7 | Mar 6 | **ALL** | 📝 Problem Set 7 due (Fri) | — | |
+| W7 | Mar 6 | **PROG 202** | 📋 Project 1 due | 15% | Haskell interpreter · 17:00 |
+| W8 | Mar 9 | **CS 202** | 📘 Midterm 2 | 12.5% | 18:00–19:15 · VNC 100 · Weeks 4–7 |
+| W8 | Mar 13 | **ALL** | 📝 Problem Set 8 due (Fri) | — | Spring Break follows (Mar 16) |
+| W9 | Mar 27 | **ALL** | 📝 Problem Set 9 due (Fri) | — | |
+| W10 | Mar 30 | **MATH 251** | 📘 Midterm 2 | 20% | 18:00–19:15 · SSB 110 · Weeks 6–9 |
+| W10 | Mar 31 | **ECE 211** | 📘 Midterm 2 | 17.5% | 20:00–21:15 · MEC 101 · Weeks 6–9 |
+| W10 | Apr 3 | **ALL** | 📝 Problem Set 10 due (Fri) | — | |
+| W11 | Apr 10 | **CS 202** | 📋 Project 1 due | 15% | xv6 kernel features · 17:00 |
+| W11 | Apr 10 | **ALL** | 📝 Problem Set 11 due (Fri) | — | Last quiz (Quiz 11) this week |
+| W11 | Apr 10 | **CS 290** | 📝 Position Paper 2 due | 20% | AI safety and governance |
+| W12 | Apr 17 | **ALL** | 📝 Problem Set 12 due (Fri) | — | Last teaching week |
+| W12 | Apr 17 | **CS 290** | 📝 Position Paper 3 due | 20% | Debate position, assigned side |
+| Completion | May 1 | **CS 212** | 🎤 Final team project due | 30% | Demo + report |
+| Completion | May 1 | **CS 202** | 📋 Project 2 due | 15% | Complete OS kernel |
+| Completion | May 1 | **PROG 202** | 📋 Project 2 due | 15% | Prolog/QuickCheck final project |
+| Finals | May 4 | **ECE 211** | 📕 Final Exam | 25% | 08:00–10:00 · comprehensive |
+| Finals | May 5 | **MATH 251** | 📕 Final Exam | 25% | 09:00–11:30 · comprehensive |
+| Finals | May 6 | **CS 202** | 📕 Final Exam | 15% | 09:00–11:30 · comprehensive |
+| Finals | May 7 | **PROG 202** | 📕 Final Exam | 15% | 14:00–16:30 · comprehensive |
+| Finals | May 8 | **CS 212** | 📕 Final Exam | 15% | 09:00–11:30 · comprehensive |
+
+**Unweighted but required, every Spring week:** 🧪 Lab 0–12 in CS 202 and PROG 202, and
+📊 Quiz 1–11 in CS 202, CS 212, PROG 202, MATH 251 and ECE 211. CS 290 is a seminar — its 40%
+participation mark is the attendance-and-contribution record, not a quiz.
 
 
 ---
@@ -91,9 +224,9 @@ If two exams fall on the same evening:
 
 | Assessment Type | Grade Released By |
 |----------------|-------------------|
-| Weekly Quiz | Next Wednesday |
+| Weekly Quiz | Not marked — key is in the paper |
 | Problem Set | 10 days after due date |
-| Lab Report | 1 week after lab session |
+| Lab Report | Not marked — checked off in the session |
 | Midterm Exam | 2 weeks after exam |
 | Project / Report | 3 weeks after due date |
 | Final Exam | As per registrar (end of finals week) |
@@ -108,3 +241,6 @@ Submit in writing to the course instructor within **7 calendar days** of grade r
 
 Note: The **entire** submission is re-evaluated. Grades may go up or down.
 
+---
+
+*CSE B.Sc · Academic Registry · Year 2 Sophomore*

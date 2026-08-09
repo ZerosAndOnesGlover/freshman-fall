@@ -94,15 +94,22 @@
 |------|-------|
 | Mon Aug 25 | Sophomore orientation + advising |
 | Wed Aug 27 | Classes begin (Week 0) |
-| Mon Sep 1  | Labor Day — NO CLASSES |
-| Mon Oct 6  | CS 201 Midterm 1 + CS 211 Midterm 1 |
-| Tue Oct 7  | PROG 201 Midterm 1 + MATH 241 Midterm 1 |
-| Mon Oct 13 | Fall Break — NO CLASSES |
-| Fri Oct 31 | CS 201 Project 1 due (Mini CPU Simulator) |
-| Mon Nov 3  | CS 201 Midterm 2 + CS 211 Midterm 2 |
-| Tue Nov 4  | PROG 201 Midterm 2 + MATH 241 Midterm 2 |
-| Fri Nov 14 | PROG 201 Project 1 due (Shell) |
-| Mon Dec 8  | Last week of instruction |
+| Mon Sep 1  | Labor Day — NO CLASSES (Week 1) |
+| Mon Sep 22 | PROG 201 Midterm 1 (Weeks 0–3) |
+| Tue Sep 23 | CS 211 Midterm 1 (Weeks 0–3) |
+| Mon Sep 29 | CS 201 Midterm 1 (Weeks 0–4) |
+| Wed Oct 8  | MATH 241 Midterm 1 (Weeks 0–5) |
+| Mon Oct 13 | Fall Break — NO CLASSES (Week 7) |
+| Mon Oct 20 | PROG 201 Midterm 2 (Weeks 4–7) |
+| Tue Oct 21 | CS 211 Midterm 2 (Weeks 4–7) |
+| Fri Oct 31 | CS 201 + PROG 201 Project 1 due (Mini CPU Simulator; Shell) |
+| Mon Nov 3  | CS 201 Midterm 2 (Weeks 5–9) |
+| Wed Nov 5  | MATH 241 Midterm 2 (Weeks 6–9) |
+| Fri Nov 14 | CS 211 Project 1 due (Mini-compiler) |
+| Fri Nov 21 | Last teaching week ends (Week 12) |
+| Mon Nov 24 | Thanksgiving recess — NO CLASSES |
+| Mon Dec 1  | Project 2 due, all Fall courses |
+| Mon Dec 8  | Last week of instruction — demo days and presentations |
 | Mon Dec 15 | FINALS WEEK |
 | Mon Dec 15 | MATH 241 Final (150 min) |
 | Tue Dec 16 | CS 211 Final (150 min) |
@@ -114,13 +121,19 @@
 
 | Date | Event |
 |------|-------|
-| Mon Jan 12 | Spring semester begins |
-| Mon Mar 2  | CS 202 Midterm 1 + MATH 251 Midterm 1 |
-| Tue Mar 3  | CS 212 Team Project Phase 1 presentation |
-| Mon Mar 16 | Spring Break |
-| Fri Apr 3  | CS 202 Project 1 due (OS Kernel) |
-| Mon Apr 13 | CS 202 Midterm 2 + MATH 251 Midterm 2 |
-| Fri May 1  | CS 212 Team Project final due |
+| Mon Jan 12 | Spring semester begins (Week 0) |
+| Mon Feb 9  | CS 202 Midterm 1 (Weeks 0–3) |
+| Tue Feb 24 | CS 212 Team Project Phase 1 presentation + MATH 251 Midterm 1 |
+| Wed Feb 25 | CS 212 Midterm + ECE 211 Midterm 1 |
+| Thu Feb 26 | PROG 202 Midterm |
+| Fri Mar 6  | PROG 202 Project 1 due (Haskell interpreter) |
+| Mon Mar 9  | CS 202 Midterm 2 (Weeks 4–7) |
+| Mon Mar 16 | Spring Break — NO CLASSES |
+| Mon Mar 30 | MATH 251 Midterm 2 (Weeks 6–9) |
+| Tue Mar 31 | ECE 211 Midterm 2 (Weeks 6–9) |
+| Fri Apr 10 | CS 202 Project 1 due (xv6 kernel features) |
+| Fri Apr 17 | Last teaching week ends (Week 12) |
+| Fri May 1  | CS 212 Team Project final due; CS 202 + PROG 202 Project 2 due |
 | Mon May 4  | FINALS WEEK |
 
 

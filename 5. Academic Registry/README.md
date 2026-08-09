@@ -22,7 +22,10 @@ it holds.)*
 ├── 1. Scheduling/       Timetables, room assignments, office hours, per year
 │   ├── Year1 - Freshman/ … Year5 - Masters/
 ├── 2. Gradebook/        Score ledgers. One file per course.
-│   └── Year1 Freshman/Fall/CS 101.md, MATH 141.md, …
+│   ├── Year1 Freshman/Fall/CS 101.md, MATH 141.md, …
+│   └── Year2 Sophomore/Fall/CS 201.md, …
+│       plus _<COURSE> Lab and Quiz Record.md for the unweighted work
+│       (leading underscore = not a course; gpa.py skips it)
 ├── 3. Transcript/       Derived records
 │   └── TRANSCRIPT.md
 ├── 4. Submissions/      YOUR ANSWERS -- one sheet per assessment
@@ -84,20 +87,26 @@ partial-term behaviour, and GPA aggregation against hand-computed fixtures.
 
 ## Current State
 
-| Course | Cr | Gradebook | Weights source |
-|---|---|---|---|
-| CS 101 | 4 | complete — all 11 PS, 12 labs, 2 midterms, final, 2 projects, 12 quizzes | its syllabus ✅ |
-| MATH 141 | 4 | complete — mirrors syllabus (content built through Week 7) | its syllabus ✅ |
-| PROG 101 | 4 | **stub** | ⚠ no syllabus in vault |
-| MATH 151 | 3 | **stub** | ⚠ no syllabus in vault |
-| PHYS 141 | 4 | **stub** | ⚠ no syllabus in vault |
-| CS 190 | 1 | **stub** | ⚠ no syllabus in vault |
+Every gradebook below is real — no stubs remain. All twenty parse, and every one's weighted
+components sum to 100%; `python3 tools/gpa.py` warns on stderr if that ever stops being true.
 
-The four stubs carry a single placeholder component so they stay parseable and visible, but they
-contribute nothing to GPA until real weights are entered. They are marked
-`status: awaiting-syllabus` in their frontmatter.
+| Year | Term | Courses | Cr | Content built |
+|---|---|---|---|---|
+| 1 Freshman | Fall | CS 101, PROG 101, MATH 141, MATH 151, PHYS 141, CS 190 | 20 | ✅ all six, Weeks 0–12 |
+| 1 Freshman | Spring | CS 102, PROG 102, MATH 142, ECE 110 | 15 | ✅ all four, Weeks 0–12 |
+| 2 Sophomore | Fall | CS 201, CS 211, PROG 201, MATH 241 | 16 | 🔨 CS 201 in progress |
+| 2 Sophomore | Spring | CS 202, CS 212, PROG 202, MATH 251, ECE 211, CS 290 | 18 | ⬜ not started |
 
-**Fall total: 20 credits.**
+**Where Year 2's weights come from.** The curriculum docx states a complete 100% for CS 201,
+CS 211, PROG 201, CS 202, CS 212 and PROG 202. It is silent on MATH 241, MATH 251 and ECE 211, so
+those three take `1. Scheduling/Year2 - Sophomore/MASTER TIMETABLE.md`, which is the only other
+complete statement — the same precedent ECE 110 set in Year 1.
+
+**Unweighted work.** No Year 2 course's stated components leave room for labs or quizzes; every
+split already reaches 100% without them. Labs are checked off in the session and quizzes are
+self-marked against a key printed in the paper. Both are recorded per course in
+`_<COURSE> Lab and Quiz Record.md`, whose leading underscore keeps `collect()` in `gpa.py` from
+scanning them as courses. Do not rename those files without reading that function.
 
 ---
 

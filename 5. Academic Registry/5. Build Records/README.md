@@ -22,6 +22,17 @@ directory a student browses.
 
 ---
 
+## Year 2 Sophomore
+
+| File | What it records |
+| --- | --- |
+| `Registry Reconciliation.md` | The state of the Year 2 scheduling files before any course content was written: two broken timetable grids, two real lecture clashes hiding inside them, two wrong course titles, midterms sitting in the wrong weeks, and a week-to-date mapping that contradicted itself. Records what was changed and what was deliberately left alone. |
+
+**The authority** is
+`5. Academic Registry/1. Scheduling/Year2 - Sophomore/CSE_Year2_Sophomore_Curriculum.docx`.
+
+---
+
 ## Where Deviations Are Recorded
 
 Realignment plans describe work that was *done*. Deviations that **remain** are documented in the

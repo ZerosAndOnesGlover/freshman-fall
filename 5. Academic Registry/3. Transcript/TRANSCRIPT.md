@@ -32,6 +32,32 @@
 
 ---
 
+## Year 2: Sophomore
+
+### Fall
+
+| Course | Title | Cr | Grade | Pts |
+|---|---|---|---|---|
+| CS 201 | Computer Organization & Architecture | 4 | — | — |
+| CS 211 | Programming Languages & Compilers I | 4 | — | — |
+| PROG 201 | Systems Programming in C | 4 | — | — |
+| MATH 241 | Linear Algebra | 4 | — | — |
+| | **Semester total** | **16** | | |
+
+### Spring
+
+| Course | Title | Cr | Grade | Pts |
+|---|---|---|---|---|
+| CS 202 | Operating Systems | 4 | — | — |
+| CS 212 | Software Engineering | 3 | — | — |
+| PROG 202 | Functional & Logic Programming | 3 | — | — |
+| MATH 251 | Probability & Statistics for Computer Science | 4 | — | — |
+| ECE 211 | Signals and Systems | 3 | — | — |
+| CS 290 | Ethics & Society II · AI, Law, and Accountability | 1 | — | — |
+| | **Semester total** | **18** | | |
+
+---
+
 ## Summary
 
 | | |
