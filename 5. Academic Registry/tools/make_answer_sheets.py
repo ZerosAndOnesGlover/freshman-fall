@@ -26,6 +26,7 @@ REG = Path(__file__).resolve().parent.parent
 VAULT = REG.parent
 
 FRESH = VAULT / "0. Freshman"
+SOPH = VAULT / "1. Sophomore"
 
 # Where each course's material lives.
 COURSE_ROOTS = {
@@ -39,6 +40,17 @@ COURSE_ROOTS = {
     "PROG 102": FRESH / "Spring" / "1. PROG 102 - Programming II: Object-Oriented Design and Data Structures in C++",
     "MATH 142": FRESH / "Spring" / "2. MATH 142 - Calculus II: Integration Techniques and Series",
     "ECE 110":  FRESH / "Spring" / "3. ECE 110 - Digital Logic & Circuit Design",
+
+    "CS 201":   SOPH / "Fall" / "0. CS 201 - Computer Organization & Architecture",
+    "CS 211":   SOPH / "Fall" / "1. CS 211 - Programming Languages & Compilers I",
+    "PROG 201": SOPH / "Fall" / "2. PROG 201 - Systems Programming in C",
+    "MATH 241": SOPH / "Fall" / "3. MATH 241 - Linear Algebra",
+    "CS 202":   SOPH / "Spring" / "0. CS 202 - Operating Systems",
+    "CS 212":   SOPH / "Spring" / "1. CS 212 - Software Engineering",
+    "PROG 202": SOPH / "Spring" / "2. PROG 202 - Functional & Logic Programming",
+    "MATH 251": SOPH / "Spring" / "3. MATH 251 - Probability & Statistics for Computer Science",
+    "ECE 211":  SOPH / "Spring" / "4. ECE 211 - Signals and Systems",
+    "CS 290":   SOPH / "Spring" / "5. CS 290 - Ethics & Society II: AI, Law, and Accountability",
 }
 
 # Which gradebook year/semester folder each course is filed under, so a whole
@@ -49,6 +61,12 @@ COURSE_TERMS = {
     "PHYS 141": ("Year1 Freshman", "Fall"), "CS 190": ("Year1 Freshman", "Fall"),
     "CS 102": ("Year1 Freshman", "Spring"), "PROG 102": ("Year1 Freshman", "Spring"),
     "MATH 142": ("Year1 Freshman", "Spring"), "ECE 110": ("Year1 Freshman", "Spring"),
+
+    "CS 201": ("Year2 Sophomore", "Fall"),   "CS 211": ("Year2 Sophomore", "Fall"),
+    "PROG 201": ("Year2 Sophomore", "Fall"), "MATH 241": ("Year2 Sophomore", "Fall"),
+    "CS 202": ("Year2 Sophomore", "Spring"), "CS 212": ("Year2 Sophomore", "Spring"),
+    "PROG 202": ("Year2 Sophomore", "Spring"), "MATH 251": ("Year2 Sophomore", "Spring"),
+    "ECE 211": ("Year2 Sophomore", "Spring"), "CS 290": ("Year2 Sophomore", "Spring"),
 }
 
 # A gradebook Item label parses into (kind, number); each kind is written a
