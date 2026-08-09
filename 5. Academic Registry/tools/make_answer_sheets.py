@@ -399,6 +399,21 @@ def week_of(item: str, src, root: Path, topic: str = "") -> str:
     return f"week{int(m.group(2))}" if m and not is_exam else ""
 
 
+def course_folder(root: Path, term: Path, course: str) -> Path:
+    """Submissions mirror the vault's course ordering: "0. CS 101", "1. PROG 101".
+
+    The number is the one the course's own folder carries in "0. Freshman/",
+    so the two trees stay in step without a second list to maintain. An
+    existing folder wins whatever it is called, so a course that was filed
+    before the numbering is not duplicated under a new name.
+    """
+    for p in (term.iterdir() if term.is_dir() else []):
+        if p.is_dir() and re.sub(r"^\d+\.\s*", "", p.name) == course:
+            return p
+    m = re.match(r"(\d+)\.", root.name)
+    return term / (f"{m.group(1)}. {course}" if m else course)
+
+
 def week_folder(dest: Path, name: str) -> Path:
     """Reuse a week folder that already exists under another capitalisation.
 
@@ -436,7 +451,7 @@ def build_course(course: str, year: str, sem: str, force: bool):
               f"({len(work)} gradebook items)")
         return 0, 0, 0
 
-    dest = REG / "4. Submissions" / year / sem / course
+    dest = course_folder(root, REG / "4. Submissions" / year / sem, course)
     made = skipped = nosrc = 0
     for item, comp, possible, topic, ungraded in work:
         src = find_source(course, root, item)
