@@ -1,6 +1,6 @@
-# ECE 110 · Digital Logic & Circuit Design
-## Course Overview and Syllabus
-### Year 1 · Spring · 3 credits (2 lecture + 1 lab)
+# ECE 110 · Digital Logic
+## Course Overview & Week-by-Week Road-map
+### Digital Logic & Circuit Design · Year 1 · Spring · 3 credits (2 lecture + 1 lab)
 
 ---
 
