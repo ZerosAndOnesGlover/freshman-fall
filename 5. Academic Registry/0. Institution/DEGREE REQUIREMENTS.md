@@ -15,13 +15,13 @@
 
 | ✓         | Code     | Course                                            | Cr     | Year | Sem    | Grade |
 | --------- | -------- | ------------------------------------------------- | ------ | ---- | ------ | ----- |
-| ☐         | CS 101   | Computer Science I: Foundations                   | 4      | 1    | Fall   |       |
-| ☐         | CS 102   | Computer Science II: Algorithms & Data Structures | 4      | 1    | Spring |       |
-| ☐         | PROG 101 | Programming I: Structured Programming in C        | 4      | 1    | Fall   |       |
-| ☐         | PROG 102 | Programming II: OOP & Data Structures in C++      | 4      | 1    | Spring |       |
+| ☐         | CS 101   | Computer Science I · Foundations of Computation                   | 4      | 1    | Fall   |       |
+| ☐         | CS 102   | Computer Science II · Algorithms and Data Structures | 4      | 1    | Spring |       |
+| ☐         | PROG 101 | Programming I · Structured Programming in C        | 4      | 1    | Fall   |       |
+| ☐         | PROG 102 | Programming II · Object-Oriented Design & Data Structures in C++      | 4      | 1    | Spring |       |
 | ☐         | CS 201   | Computer Organization & Architecture              | 4      | 2    | Fall   |       |
 | ☐         | CS 202   | Operating Systems                                 | 4      | 2    | Spring |       |
-| ☐         | CS 211   | Programming Languages & Compilers I               | 4      | 2    | Fall   |       |
+| ☐         | CS 211   | Programming Languages Theory               | 4      | 2    | Fall   |       |
 | ☐         | CS 212   | Software Engineering                              | 3      | 2    | Spring |       |
 | ☐         | PROG 201 | Systems Programming in C                          | 4      | 2    | Fall   |       |
 | ☐         | PROG 202 | Functional & Logic Programming                    | 3      | 2    | Spring |       |
@@ -43,13 +43,13 @@
 
 | ✓ | Code | Course | Cr | Year | Sem | Grade |
 |---|------|--------|----|------|-----|-------|
-| ☐ | MATH 141 | Calculus I | 4 | 1 | Fall | |
-| ☐ | MATH 142 | Calculus II | 4 | 1 | Spring | |
-| ☐ | MATH 151 | Discrete Mathematics for CS | 3 | 1 | Fall | |
+| ☐ | MATH 141 | Calculus I · Limits, Derivatives, and Integrals | 4 | 1 | Fall | |
+| ☐ | MATH 142 | Calculus II · Integration Techniques and Series | 4 | 1 | Spring | |
+| ☐ | MATH 151 | Discrete Mathematics for Computer Science | 3 | 1 | Fall | |
 | ☐ | MATH 241 | Linear Algebra | 4 | 2 | Fall | |
-| ☐ | MATH 251 | Probability & Statistics for CS | 4 | 2 | Spring | |
+| ☐ | MATH 251 | Probability & Statistics | 4 | 2 | Spring | |
 | ☐ | MATH 341 | Numerical Methods & Analysis | 4 | 3 | Fall | |
-| ☐ | PHYS 141 | Physics I: Mechanics & Thermodynamics | 4 | 1 | Fall | |
+| ☐ | PHYS 141 | Physics I · Mechanics, Waves & Thermodynamics | 4 | 1 | Fall | |
 | **Total** | | | **27** | | | |
 
 
@@ -73,7 +73,7 @@
 
 | ✓ | Code | Course | Cr | Year | Sem | Grade |
 |---|------|--------|----|------|-----|-------|
-| ☐ | CS 190 | CS Seminar: Profession, Ethics & Culture | 1 | 1 | Fall | |
+| ☐ | CS 190 | CS Seminar · Profession, Ethics & Culture | 1 | 1 | Fall | |
 | ☐ | CS 290 | Ethics & Society II: AI and Law | 1 | 2 | Spring | |
 | ☐ | CS 390 | Ethics III: Technology, Power & Society | 1 | 3 | Fall | |
 | ☐ | CS 395 | Technical Communication for Engineers | 2 | 3 | Spring | |

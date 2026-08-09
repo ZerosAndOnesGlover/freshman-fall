@@ -1,6 +1,6 @@
 ---
 course: MATH 142
-title: "Calculus II: Integration Techniques and Series"
+title: "Calculus II · Integration Techniques and Series"
 credits: 4
 year: 1
 semester: Spring
@@ -8,7 +8,7 @@ status: in-progress
 ---
 
 # MATH 142 · Gradebook
-## Calculus II: Integration Techniques and Series · 4 credits · Year 1 Spring
+## Calculus II · Integration Techniques and Series · 4 credits · Year 1 Spring
 
 > Enter a number in **Earned** only. Percentages, the course grade, the letter and the GPA points
 > are computed by `tools/gpa.py`. Blank = not yet marked (excluded, not zero). `EX` = excused.

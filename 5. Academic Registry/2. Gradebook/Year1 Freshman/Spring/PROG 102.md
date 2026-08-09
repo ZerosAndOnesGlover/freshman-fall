@@ -1,6 +1,6 @@
 ---
 course: PROG 102
-title: "Programming II: Object-Oriented Design and Data Structures in C++"
+title: "Programming II · Object-Oriented Design & Data Structures in C++"
 credits: 4
 year: 1
 semester: Spring
@@ -8,7 +8,7 @@ status: in-progress
 ---
 
 # PROG 102 · Gradebook
-## Programming II: Object-Oriented Design and Data Structures in C++ · 4 credits · Year 1 Spring
+## Programming II · Object-Oriented Design & Data Structures in C++ · 4 credits · Year 1 Spring
 
 > Enter a number in **Earned** only. Percentages, the course grade, the letter and the GPA points
 > are computed by `tools/gpa.py`. Blank = not yet marked (excluded, not zero). `EX` = excused.

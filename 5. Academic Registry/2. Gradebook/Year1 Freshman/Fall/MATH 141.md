@@ -1,6 +1,6 @@
 ---
 course: MATH 141
-title: "Calculus I: Limits, Derivatives, and Integrals"
+title: "Calculus I · Limits, Derivatives, and Integrals"
 credits: 4
 year: 1
 semester: Fall
@@ -8,7 +8,7 @@ status: in-progress
 ---
 
 # MATH 141 · Gradebook
-## Calculus I: Limits, Derivatives, and Integrals · 4 credits · Year 1 Fall
+## Calculus I · Limits, Derivatives, and Integrals · 4 credits · Year 1 Fall
 
 > Enter a number in **Earned** only. Percentages, the course grade, the letter and the GPA points
 > are computed by `tools/gpa.py`. Blank = not yet marked (excluded, not zero). `EX` = excused.

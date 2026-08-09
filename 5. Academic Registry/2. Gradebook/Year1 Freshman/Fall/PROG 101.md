@@ -1,6 +1,6 @@
 ---
 course: PROG 101
-title: "Programming I: Structured Programming in C"
+title: "Programming I · Structured Programming in C"
 credits: 4
 year: 1
 semester: Fall
@@ -8,7 +8,7 @@ status: in-progress
 ---
 
 # PROG 101 · Gradebook
-## Programming I: Structured Programming in C · 4 credits · Year 1 Fall
+## Programming I · Structured Programming in C · 4 credits · Year 1 Fall
 
 > Enter a number in **Earned** only. Percentages, the course grade, the letter and the GPA points
 > are computed by `tools/gpa.py`. Blank = not yet marked (excluded, not zero). `EX` = excused.

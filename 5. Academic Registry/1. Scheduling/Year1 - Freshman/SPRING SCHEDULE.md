@@ -6,9 +6,9 @@
 
 ## Courses This Semester
 
-- **CS 102**: Computer Science II: Algorithms
-- **PROG 102**: Programming II: OOP in C++
-- **MATH 142**: Calculus II
+- **CS 102**: Computer Science II · Algorithms and Data Structures
+- **PROG 102**: Programming II · Object-Oriented Design & Data Structures in C++
+- **MATH 142**: Calculus II · Integration Techniques and Series
 - **ECE 110**: Digital Logic & Circuit Design
 
 ---

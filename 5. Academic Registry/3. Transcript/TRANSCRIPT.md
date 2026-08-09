@@ -12,21 +12,21 @@
 
 | Course | Title | Cr | Grade | Pts |
 |---|---|---|---|---|
-| CS 101 | Computer Science I: Foundations of Computation | 4 | — | — |
-| PROG 101 | Programming I: Structured Programming in C | 4 | — | — |
-| MATH 141 | Calculus I | 4 | — | — |
-| MATH 151 | Discrete Mathematics for CS | 3 | — | — |
-| PHYS 141 | Physics I: Mechanics & Thermodynamics | 4 | — | — |
-| CS 190 | CS Seminar: Profession, Ethics & Culture | 1 | — | — |
+| CS 101 | Computer Science I · Foundations of Computation | 4 | — | — |
+| PROG 101 | Programming I · Structured Programming in C | 4 | — | — |
+| MATH 141 | Calculus I · Limits, Derivatives, and Integrals | 4 | — | — |
+| MATH 151 | Discrete Mathematics for Computer Science | 3 | — | — |
+| PHYS 141 | Physics I · Mechanics, Waves & Thermodynamics | 4 | — | — |
+| CS 190 | CS Seminar · Profession, Ethics & Culture | 1 | — | — |
 | | **Semester total** | **20** | | |
 
 ### Spring
 
 | Course | Title | Cr | Grade | Pts |
 |---|---|---|---|---|
-| CS 102 | Computer Science II: Algorithms & Data Structures | 4 | — | — |
-| PROG 102 | Programming II: OOP & Data Structures in C++ | 4 | — | — |
-| MATH 142 | Calculus II | 4 | — | — |
+| CS 102 | Computer Science II · Algorithms and Data Structures | 4 | — | — |
+| PROG 102 | Programming II · Object-Oriented Design & Data Structures in C++ | 4 | — | — |
+| MATH 142 | Calculus II · Integration Techniques and Series | 4 | — | — |
 | ECE 110 | Digital Logic & Circuit Design | 3 | — | — |
 | | **Semester total** | **15** | | |
 

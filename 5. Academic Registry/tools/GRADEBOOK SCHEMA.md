@@ -9,7 +9,7 @@ The format `tools/gpa.py` expects. Deviating breaks parsing, usually silently, s
 ```yaml
 ---
 course: CS 101
-title: "Computer Science I: Foundations of Computation"
+title: "Computer Science I · Foundations of Computation"
 credits: 4
 year: 1
 semester: Fall
@@ -34,7 +34,7 @@ Each weighted component is an `##` heading carrying its weight:
 - The separator may be an em dash, en dash, hyphen, **or colon**.
   The vault's markdown linter rewrites `Heading — text` to `Heading: text`, so the parser accepts
   both. A qualifier must contain a `%`, which is what stops an ordinary colon-bearing title such as
-  `## Computer Science I: Foundations of Computation` from being read as a component.
+  `## Computer Science I · Foundations of Computation` from being read as a component.
 - The weight is the first `NN%` in the qualifier.
 - `lowest N dropped` anywhere in the qualifier enables drop-lowest.
 - **Weight 0 marks a component formative**: recorded and reported, excluded from the grade.

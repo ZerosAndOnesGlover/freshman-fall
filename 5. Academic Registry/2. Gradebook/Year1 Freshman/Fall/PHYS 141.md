@@ -1,6 +1,6 @@
 ---
 course: PHYS 141
-title: "Physics I: Mechanics, Waves, and Thermodynamics"
+title: "Physics I · Mechanics, Waves & Thermodynamics"
 credits: 4
 year: 1
 semester: Fall
@@ -8,7 +8,7 @@ status: in-progress
 ---
 
 # PHYS 141 · Gradebook
-## Physics I: Mechanics, Waves, and Thermodynamics · 4 credits · Year 1 Fall
+## Physics I · Mechanics, Waves & Thermodynamics · 4 credits · Year 1 Fall
 
 > Enter a number in **Earned** only. Percentages, the course grade, the letter and the GPA points
 > are computed by `tools/gpa.py`. Blank = not yet marked (excluded, not zero). `EX` = excused.
