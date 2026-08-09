@@ -96,6 +96,9 @@ RECORDS = {
     "CS 102": [("_CS 102 Lab and Quiz Record.md", "Labs", "Lab", 0, None),
                ("_CS 102 Lab and Quiz Record.md", "Quizzes", "Quiz", 0, 3)],
     "PROG 102": [("_PROG 102 Quiz Record.md", "Quizzes", "Quiz", 0, 4)],
+    # ECE 110's quizzes are never marked, so its "Out of" column reads "—" and
+    # the sheets come out as "___ / —" rather than claiming a total.
+    "ECE 110": [("_ECE 110 Quiz Record.md", "Quizzes", "Quiz", 0, 4)],
 }
 
 # Never treat these as an assessment the student writes on. Note "answer key"
@@ -136,10 +139,11 @@ PATTERNS = [
     re.compile(r"^\*\*(Q\d+)\.?\s*\((\d+)\s*(?:points?|pts?)\)\*\*\s*(.*?)$", re.M),
     # **Q1 (14 pts) — Number systems.** Evaluate:  -- ECE 110 / MATH 142 sample papers
     # The question may or may not be followed by text on the same line, so the
-    # title runs to the closing "**" rather than to the end of the line. The
-    # answer key repeats these as "**Q1 (14).**", with no unit, so requiring
-    # "pts" here is what keeps every question from being counted twice.
-    re.compile(r"^\*\*(Q\d+)\s*\((\d+)\s*(?:points?|pts?)\)\s*[—–-]\s*([^*]*?)\.?\*\*", re.M),
+    # title runs to the closing "**" rather than to the end of the line. The unit
+    # is optional because ECE 110's final drops it ("**Q1 (12) — Numbers.**"); it
+    # is the dash and title that keep the answer key, which repeats each question
+    # as a bare "**Q1 (12).**", from being counted a second time.
+    re.compile(r"^\*\*(Q\d+)\s*\((\d+)\s*(?:points?|pts?)?\)\s*[—–-]\s*([^*]*?)\.?\*\*", re.M),
 ]
 
 # A table stating the paper's shape rather than listing its questions.
@@ -185,13 +189,14 @@ def extract_parts(text: str):
     return [found[k] for k in sorted(found)]
 
 
-def total_points(text: str, parts):
+def total_points(text: str, parts, default: float = 100):
     """Authoritative point total, in decreasing order of trust.
 
     1. An explicit "**Total:** N points" line.
     2. A rubric table's "| **Total** | **N** |" row.
     3. The sum of Part-level headings, else the sum of question headings.
-    4. 100, for holistically graded work (labs, projects) that states no total.
+    4. `default` — what the registry says the work is worth, falling back to 100
+       for holistically graded work (labs, projects) that states no total.
 
     Order matters: PS 1's part headings sum to 72 but its rubric table says 92,
     because not every scored item carries a parenthesised point value.
@@ -223,7 +228,7 @@ def total_points(text: str, parts):
     if q_heads:
         return sum(q_heads)
 
-    return 100
+    return default
 
 
 # --- the gradebook is authoritative for what is assessed -------------------
@@ -266,7 +271,11 @@ def record_items(course: str, year: str, sem: str):
                 continue
             if not re.match(rf"^{want}\s+\d+$", cells[label_col]):
                 continue
-            pts = 100.0
+            # A record with no marks column is work marked holistically, so fall
+            # back to 100. A record that has the column but writes something
+            # other than a number in it ("—") is saying the work is not marked at
+            # all, and 0 carries that through to a "___ / —" line on the sheet.
+            pts = 100.0 if pts_col is None else 0.0
             if pts_col is not None and re.fullmatch(r"[0-9.]+", cells[pts_col]):
                 pts = float(cells[pts_col])
             out.append((cells[label_col], comp, pts))
@@ -327,6 +336,7 @@ def sheet_for(src, label: str, component: str, course: str, possible: float,
     `ungraded` is the reason the work is not marked; when set, `possible` is
     zeroed and the status becomes `ungraded`, which `gpa.py --sync` passes over.
     """
+    stated = possible          # what the registry says it is worth, before zeroing
     if ungraded:
         possible, status = 0, "ungraded"
     text = src.read_text(encoding="utf-8") if src else ""
@@ -338,8 +348,12 @@ def sheet_for(src, label: str, component: str, course: str, possible: float,
 
     poss = f"{possible:g}"
     # An ungraded sheet still shows the paper's own marks, so the self-assessment
-    # is answerable; only the gradebook-facing `possible` is zeroed.
-    marks = f"{total_points(text, parts):g}" if ungraded else poss
+    # is answerable; only the gradebook-facing `possible` is zeroed. Where the
+    # paper states no total, the registry's own figure stands in — and where the
+    # registry says there is none either, the sheet says so rather than inventing
+    # one, because some ungraded work is genuinely never given a mark.
+    tot = total_points(text, parts, stated) if ungraded else possible
+    marks = f"{tot:g}" if tot else "—"
     out = [
         "---",
         f"assessment: {label}",
