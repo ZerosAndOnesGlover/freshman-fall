@@ -528,4 +528,4 @@ Before Lab 0:
 
 ---
 
-*Next: Lab 0 — [[LAB 0 Environment Setup]]*
+*Next: Lab 0 — [[0. Freshman/Fall/1. PROG 101 - Programming I: Structured Programming in C/PROG101 Week0/lab/LAB 0 Environment Setup|LAB 0 Environment Setup]]*

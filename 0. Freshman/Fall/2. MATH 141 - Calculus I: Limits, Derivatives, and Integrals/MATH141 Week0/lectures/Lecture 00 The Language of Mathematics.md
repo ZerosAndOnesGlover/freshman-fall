@@ -17,7 +17,7 @@ Every other lecture in this course will hand you sentences like this one:
 
 $$\text{Domain} = \{x \in \mathbb{R} : x \neq 3\} = (-\infty, 3) \cup (3, \infty)$$
 
-That sentence contains no calculus. It contains no algebra. It is entirely *notation* — and if you cannot read it aloud, fluently, without stopping, then every subsequent lecture will cost you twice what it should. You will be decoding symbols with half your attention and trying to learn limits with the other half.
+That sentence contains no calculus. It contains no algebra. It is entirely *notation*, and if you cannot read it aloud, fluently, without stopping, then every subsequent lecture will cost you twice what it should. You will be decoding symbols with half your attention and trying to learn limits with the other half.
 
 This is the single most common reason capable students struggle in a first calculus course. Not the calculus. The **language the calculus is written in**, which is assumed rather than taught.
 
@@ -48,7 +48,8 @@ So with $A = \{1,2,3\}$ above:
 
 $$2 \in A \qquad 7 \notin A$$
 
-> **Aloud:** "2 is in *A*." — "7 is not in *A*."
+> **Aloud:** "2 is in *A*."  
+> "7 is not in *A*."
 
 The slash through a symbol always means **not**. This is universal: $\neq$ is "not equal", $\notin$ is "not in", $\nsubseteq$ is "not a subset of". Learn the base symbol and you get the negation free.
 
@@ -68,7 +69,9 @@ The set with no elements at all is the **empty set**, written $\emptyset$ or $\{
 
 It shows up constantly as an answer: "this equation has no real solutions" is written "the solution set is $\emptyset$."
 
-> ⚠️ **Do not write $\{\emptyset\}$ when you mean $\emptyset$.** $\emptyset$ is a box with nothing in it. $\{\emptyset\}$ is a box with an empty box inside it — it has one element. This distinction is invisible now and important in CS 250 (Discrete Mathematics).
+> ⚠️ **Do not write $\{\emptyset\}$ when you mean $\emptyset$.** 
+> $\emptyset$ is a box with nothing in it. $\{\emptyset\}$ is a box with an empty box inside it — it has one element.
+> This distinction is invisible now and important in CS 250 (Discrete Mathematics).
 
 ### 1.3 Subsets
 
@@ -102,13 +105,13 @@ Each sits inside the next:
 
 $$\mathbb{N} \subseteq \mathbb{Z} \subseteq \mathbb{Q} \subseteq \mathbb{R} \subseteq \mathbb{C}$$
 
-**Why $\mathbb{Z}$ for integers?** From German *Zahlen*, "numbers." **Why $\mathbb{Q}$ for rationals?** From *quotient*. The notation is historical, not logical — don't look for a pattern.
+**Why $\mathbb{Z}$ for integers?** From German *`Zahlen`*, "numbers." **Why $\mathbb{Q}$ for rationals?** From *`quotient`*. The notation is historical, not logical — don't look for a pattern.
 
 ### 2.1 Why the $\mathbb{Q}$ / $\mathbb{R}$ Distinction Matters
 
 $\sqrt{2}$ is a real number but not a rational one — it cannot be written as a ratio of integers. Neither can $\pi$ or $e$. Numbers in $\mathbb{R}$ but not $\mathbb{Q}$ are called **irrational**.
 
-This is not trivia. The rationals have *gaps*: there is a hole in $\mathbb{Q}$ exactly where $\sqrt{2}$ should be. The reals have no gaps — and that gaplessness (the technical term is **completeness**) is precisely what makes limits work. Every theorem in Weeks 1–12 quietly depends on it. When Week 5 tells you a continuous function on $[a,b]$ must attain a maximum, the reason is completeness.
+This is not trivia. The rationals have *gaps*: there is a hole in $\mathbb{Q}$ exactly where $\sqrt{2}$ should be. The reals have no gaps — and that `gaplessness` (the technical term is **completeness**) is precisely what makes limits work. Every theorem in Weeks 1–12 quietly depends on it. When Week 5 tells you a continuous function on $[a,b]$ must attain a maximum, the reason is completeness.
 
 **This entire course lives in $\mathbb{R}$.** Unless a problem says otherwise, "number" means "real number", and "no solution" means "no *real* solution" — $x^2 = -1$ has no solution in this course, even though it has two in $\mathbb{C}$.
 
@@ -147,7 +150,7 @@ That last row is worth pausing on: it is the definition of *range* from Lecture 
 
 ## 4. Interval Notation
 
-Set-builder is fully general but wordy. For the most common case — an unbroken stretch of the number line — we use **interval notation**, which is faster to write and read.
+Set-builder is fully general but wordy. For the most common case, an unbroken stretch of the number line, we use **interval notation**, which is faster to write and read.
 
 The single rule that governs all of it:
 
@@ -279,7 +282,7 @@ $P \Rightarrow Q$ and $Q \Rightarrow P$ are **not** the same statement. The seco
 - **True:** $x = 2 \Rightarrow x^2 = 4$
 - **False:** $x^2 = 4 \Rightarrow x = 2$  — because $x$ could be $-2$
 
-That $-2$ is a **counterexample**: a single case where the hypothesis holds and the conclusion fails. One counterexample destroys a general claim permanently. You do not need two.
+That $-2$ is a **counterexample**: a single case where the hypothesis holds and the conclusion fails. One `counterexample` destroys a general claim permanently. You do not need two.
 
 This is not a logic-class technicality. It is the entire reason `Lecture 02` §2.4 tells you to check for extraneous solutions after squaring both sides. Squaring is a $\Rightarrow$ step that isn't reversible, so it can manufacture solutions that don't satisfy the original equation. The notation is warning you, if you can read it.
 
@@ -365,30 +368,30 @@ And the order is doing real work: $\delta$ comes *after* $\varepsilon$, so $\del
 
 Everything above, plus the remaining symbols you'll meet in Weeks 0–12. Keep this page.
 
-| Symbol | Aloud | Meaning |
-|--------|-------|---------|
-| $\in$ / $\notin$ | "is in" / "is not in" | set membership |
-| $\subseteq$ | "is a subset of" | containment |
-| $\emptyset$ | "the empty set" | set with no elements |
-| $\cup$ / $\cap$ | "union" / "intersect" | or / and |
-| $\setminus$ | "minus" | set difference |
-| $\mathbb{N},\mathbb{Z},\mathbb{Q},\mathbb{R},\mathbb{C}$ | "naturals, integers, rationals, reals, complexes" | number systems |
-| $:$ or $\mid$ | "such that" | separator in set-builder |
-| $\Rightarrow$, $\implies$ | "implies" / "and therefore" | implication |
-| $\iff$ | "if and only if" | equivalence |
-| $\forall$ / $\exists$ | "for all" / "there exists" | quantifiers |
-| $\approx$ | "is approximately" | approximate equality |
-| $\pm$ / $\mp$ | "plus or minus" | both signs, paired |
-| $\mid$ | "divides" | $p \mid a$: $p$ divides $a$ evenly |
-| $\lceil x \rceil$ | "ceiling of *x*" | round up to nearest integer |
-| $\lfloor x \rfloor$ | "floor of *x*" | round down to nearest integer |
-| $\sum$ / $\prod$ | "sum" / "product" | repeated addition / multiplication |
-| $\Delta$ | "delta" / "change in" | $\Delta y = y_2 - y_1$ |
-| $\to$ | "approaches" / "tends to" | $x \to 3$, $n \to \infty$ |
-| $\therefore$ | "therefore" | conclusion marker |
-| $\blacksquare$ | "QED" | end of proof |
+| Symbol                                                   | Aloud                                             | Meaning                            |
+| -------------------------------------------------------- | ------------------------------------------------- | ---------------------------------- |
+| $\in$ / $\notin$                                         | "is in" / "is not in"                             | set membership                     |
+| $\subseteq$                                              | "is a subset of"                                  | containment                        |
+| $\emptyset$                                              | "the empty set"                                   | set with no elements               |
+| $\cup$ / $\cap$                                          | "union" / "intersect"                             | or / and                           |
+| $\setminus$                                              | "minus"                                           | set difference                     |
+| $\mathbb{N},\mathbb{Z},\mathbb{Q},\mathbb{R},\mathbb{C}$ | "naturals, integers, rationals, reals, complexes" | number systems                     |
+| $:$ or $\mid$                                            | "such that"                                       | separator in set-builder           |
+| $\Rightarrow$, $\implies$                                | "implies" / "and therefore"                       | implication                        |
+| $\iff$                                                   | "if and only if"                                  | equivalence                        |
+| $\forall$ / $\exists$                                    | "for all" / "there exists"                        | quantifiers                        |
+| $\approx$                                                | "is approximately"                                | approximate equality               |
+| $\pm$ / $\mp$                                            | "plus or minus"                                   | both signs, paired                 |
+| $\mid$                                                   | "divides"                                         | $p \mid a$: $p$ divides $a$ evenly |
+| $\lceil x \rceil$                                        | "ceiling of *x*"                                  | round up to nearest integer        |
+| $\lfloor x \rfloor$                                      | "floor of *x*"                                    | round down to nearest integer      |
+| $\sum$ / $\prod$                                         | "sum" / "product"                                 | repeated addition / multiplication |
+| $\Delta$                                                 | "delta" / "change in"                             | $\Delta y = y_2 - y_1$             |
+| $\to$                                                    | "approaches" / "tends to"                         | $x \to 3$, $n \to \infty$          |
+| $\therefore$                                             | "therefore"                                       | conclusion marker                  |
+| $\blacksquare$                                           | "QED"                                             | end of proof                       |
 
-> **Note on the overloaded bar.** $\mid$ means three different things depending on context: "such that" in set-builder, "divides" in number theory, and absolute value when it comes in a pair, $|x|$. Context always disambiguates, but the collision is worth knowing about the first time you meet $p \mid a_0$ in the Rational Root Theorem (`Lecture 02` §2.3) and read it as "such that."
+> **Note on the overloaded bar.** $\mid$ means three different things depending on context: "such that" in set-builder, "divides" in number theory, and absolute value when it comes in a pair, $|x|$. Context always `disambiguates`, but the collision is worth knowing about the first time you meet $p \mid a_0$ in the Rational Root Theorem (`Lecture 02` §2.3) and read it as "such that."
 
 ---
 

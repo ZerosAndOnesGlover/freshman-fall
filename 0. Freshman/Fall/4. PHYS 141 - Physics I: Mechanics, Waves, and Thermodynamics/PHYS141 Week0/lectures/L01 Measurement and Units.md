@@ -93,11 +93,11 @@ A **dimension** is the physical nature of a quantity — independent of the unit
 - [Temperature] = Θ
 - [Electric current] = I
 
-The SI unit for length is the meter; the CGS unit is the centimeter; the imperial unit is the foot. These are all *units* for the same *dimension* L.
+The SI unit for length is the meter; the `CGS` unit is the centimeter; the imperial unit is the foot. These are all *units* for the same *dimension* L.
 
 ### 4.2 The Fundamental Rule
 
-**Every physically meaningful equation must be dimensionally homogeneous:** the dimensions on the left side must equal the dimensions on the right side.
+**Every physically meaningful equation must be `dimensionally` homogeneous:** the dimensions on the left side must equal the dimensions on the right side.
 
 This is one of the most powerful tools in physics — it lets you:
 1. **Check equations** for errors

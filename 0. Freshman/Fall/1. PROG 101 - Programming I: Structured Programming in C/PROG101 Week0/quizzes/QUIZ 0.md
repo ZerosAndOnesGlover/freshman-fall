@@ -99,7 +99,7 @@ Input: Object file(s) (`.o`)       Output: Executable file (e.g., `a.out`)
 ```
 Declaration: Declaration: A statement that introduces the name and type of a variable or function to the compiler without necessarily allocating storage or providing an implementation.
 
-Example: extern int count;
+Example: int count;
 
 Definition: A statement that creates the variable or function by allocating storage (for variables) or providing the function body (for functions).
 

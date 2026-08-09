@@ -209,7 +209,7 @@ int main(void) {
 - `void` parameter: explicitly no parameters (as opposed to `int argc, char *argv[]`)
 - `{` opens the function body
 
-**Line 4: `printflibc("Hello, world!\n");`**
+**Line 4: `printf("Hello, world!\n");`**
 - `printf`, "print formatted", outputs text to stdout
 - `"Hello, world!\n"`: a string literal stored in the program's read-only data section
 - `\n`: escape sequence for newline (ASCII 10)

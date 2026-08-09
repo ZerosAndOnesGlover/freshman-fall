@@ -43,7 +43,7 @@ The truth value of a proposition is either **T** (true) or **F** (false). (Some 
 | "x + 1 = 5"                                                  | ✗ No (depends on x, a *predicate*, not yet a proposition) | —                                      |
 | "This statement is false."                                   | ✗ No (paradox, the Liar's Paradox)                        | —                                      |
 
-> **Important:** A proposition must have a definite truth value, even if *we* don't know it. Goldbach's Conjecture is a proposition; "x + 1 = 5" is not (it becomes a proposition when x is specified).
+> **Important:** A proposition must have a definite truth value, even if *we* don't know it. `Goldbach's Conjecture` is a proposition; "x + 1 = 5" is not (it becomes a proposition when x is specified).
 
 ---
 
@@ -84,10 +84,10 @@ Given propositions p and q, we build **compound propositions** using **logical c
 - p = "It is raining." → ¬p = "It is **not** raining."
 - p = "7 is even." → ¬p = "7 is **not** even." (equivalently, "7 is odd.")
 
-**In code:** `!p` in C/Java/Python, `not p` in Python, `~p` in boolean contexts.
+**In code:** `!p` in C and Java, `not p` in Python, `~p` in boolean contexts.
 
 **Deep Note:** Double negation: ¬(¬p) ≡ p. Negating twice returns to the original. This seems obvious, but it fails in *constructive* (intuitionistic) logic, which matters in formal verification and some functional programming type theories. For this course, we work in classical logic where ¬(¬p) ≡ p always holds.
-
+Python
 ---
 
 ### 3.2 Conjunction ("AND" ∧)
