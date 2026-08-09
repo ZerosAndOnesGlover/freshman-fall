@@ -54,13 +54,14 @@ The docx wins. Exams moved to the weeks it names, and both calendars were rewrit
 
 | Course | Was | Now |
 | --- | --- | --- |
-| PROG 201 Midterm 1 | W6, Oct 7 | **W4**, Sep 22 · Weeks 0–3 |
-| CS 211 Midterm 1 | W6, Oct 7 | **W4**, Sep 23 · Weeks 0–3 |
-| CS 201 Midterm 1 | W6, Oct 6 · Weeks 0–5 | **W5**, Sep 29 · Weeks 0–4 |
-| PROG 201 Midterm 2 | W10, Nov 4 | **W8**, Oct 20 · Weeks 4–7 |
-| CS 211 Midterm 2 | W10, Nov 4 | **W8**, Oct 21 · Weeks 4–7 |
-| CS 202 Midterm 1 | W6, Mar 2 · Weeks 0–5 | **W4**, Feb 9 · Weeks 0–3 |
-| CS 202 Midterm 2 | W10, Apr 13 | **W8**, Mar 9 · Weeks 4–7 |
+| PROG 201 Midterm 1 | W6, Oct 7 | **W4**, Sep 29 · Weeks 0–3 |
+| CS 211 Midterm 1 | W6, Oct 7 | **W4**, Sep 30 · Weeks 0–3 |
+| CS 201 Midterm 1 | W6, Oct 6 · Weeks 0–5 | **W5**, Oct 6 · Weeks 0–4 *(same date, correct week)* |
+| PROG 201 Midterm 2 | W10, Nov 4 | **W8**, Oct 27 · Weeks 4–7 |
+| CS 211 Midterm 2 | W10, Nov 4 | **W8**, Oct 28 · Weeks 4–7 |
+| CS 201 Midterm 2 | W10, Nov 3 | **W10**, Nov 10 · Weeks 5–9 |
+| CS 202 Midterm 1 | W6, Mar 2 · Weeks 0–5 | **W4**, Feb 16 · Weeks 0–3 |
+| CS 202 Midterm 2 | W10, Apr 13 | **W8**, Mar 23 · Weeks 4–7 |
 
 MATH 241, MATH 251, ECE 211, CS 212 and PROG 202 keep the registry's Week 6 / Week 10 exam weeks —
 the docx says nothing about them, and silence is not conflict.
@@ -69,16 +70,29 @@ A side effect worth having: no week now carries four evening exams.
 
 ## 5. The week-to-date mapping did not exist, and the two calendars disagreed
 
-`ASSESSMENT CALENDAR.md` was internally inconsistent — it placed Week 1 at Sep 8 and Week 6 at
-Oct 6, which are four weeks apart, not five. A **Week-to-Date Map** has been added at the top of
-that file, derived from the institutional calendar's fixed anchors (classes begin Wed Aug 27; Labor
-Day Sep 1; Fall Break Oct 13; Spring Break Mar 16) and checked against the project due dates that
-both files already agreed on (Oct 31 = W9 Friday, Nov 14 = W11 Friday).
+`ASSESSMENT CALENDAR.md` had no week-to-date map, and the dates it did carry could not all be true
+at once — it placed Week 1 at Sep 8 and Week 6 at Oct 6, four weeks apart rather than five. A
+**Week-to-Date Map** has been added at the top of that file.
 
-Thirteen teaching weeks from Aug 27 end on Nov 21, while the institutional calendar names Dec 8 as
-the last week of instruction. The intervening weeks are Thanksgiving recess plus a
-**project-completion and demo period**, which is where Project 2 and the Week 12 demo days actually
-land. This is now stated rather than left as a gap.
+**The thing that resolves it is that Week 0 is ten days long, not five.** Year 1's calendar makes
+this explicit: classes begin Wed Aug 28, Week 0 labs run Fri Sep 6, and "Week 1 begins — all graded
+work begins" on Mon Sep 9. Week 0 absorbs orientation, add/drop and Labor Day. That is also why
+every Year 1 Week 0 folder carries a full three lectures rather than the two a Wednesday start
+would allow.
+
+Reading Year 2 the same way — Week 0 spanning Aug 27 to Sep 5, Week 1 opening Sep 8 — makes the
+institutional calendar's own dates land where it says they do, and three independent anchors fall
+out correct without adjustment:
+
+- **Sep 8 is Week 1**, which is what `ASSESSMENT CALENDAR.md` said all along.
+- **Oct 6 is Week 5** — precisely the week the docx assigns CS 201's Midterm 1. The date did not
+  need to move at all; only the week label attached to it was wrong.
+- **Dec 1 opens Week 12**, where Project 2 is due, leaving Dec 8 as the last week of instruction.
+
+*(A first pass at this map assumed a five-day Week 0 and put Week 1 at Sep 1. That is recorded here
+because the symptom — every date one week early, and CS 201's midterm falling in a week the docx
+does not use — is the signature of getting Week 0's length wrong, and is worth recognising quickly
+if it recurs in Year 3.)*
 
 **Course material should quote week numbers, never dates.** The map is the only place the
 conversion lives.
