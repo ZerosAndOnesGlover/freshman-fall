@@ -80,7 +80,7 @@
 09:00 – 09:50   📖 CS 102 Lecture
 10:00 – 10:50   📖 PROG 102 Lecture
 12:00 – 13:00   Lunch
-13:00 – 14:15   📖 ECE 110 Lecture — ⚠️ QUIZ DAY for ECE 110 (Weeks 2–14)
+13:00 – 14:15   📖 ECE 110 Lecture — ⚠️ QUIZ DAY for ECE 110 (Weeks 2–12, ungraded)
 17:00           ⚠️  NEW PROBLEM SET RELEASED — download immediately, skim the questions.
 18:00 – 21:00   Evening study — begin problem set
 ```
@@ -128,7 +128,7 @@
 | Monday | 15:00 | PROG 102 Lab begins |
 | Tuesday | Start of lecture | ⚠️ PROG 102 Quiz (Weeks 2–14) |
 | Tuesday | 15:00 | CS 102 Lab begins |
-| Wednesday | Start of lecture | ⚠️ ECE 110 Quiz (Weeks 2–14) |
+| Wednesday | Start of lecture | ⚠️ ECE 110 Quiz (Weeks 2–12, ungraded) |
 | Wednesday | 17:00 | New problem set released |
 | Friday | Start of lecture | ⚠️ MATH 142 Quiz (Weeks 2–14) |
 | Friday | 14:00 | ECE 110 Lab begins |

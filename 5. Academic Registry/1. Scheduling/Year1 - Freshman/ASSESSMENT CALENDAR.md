@@ -124,7 +124,7 @@
 | W12 |  | **CS 102** | 📊 Quiz 11 | ≈0.8% | 10 min, Monday lecture |
 | W12 | May 02 | **CS 102** | 📋 Project 2 Due | 10% | Algorithm Implementation Suite |
 | W12 | May 02 | **PROG 102** | 📋 Project 2 Due | 10% | Complete Data Structure Library |
-| Finals | May 05 | **ECE 110** | 📕 Final Exam | 30% | 08:00–10:00 |
+| Finals | May 05 | **ECE 110** | 📕 Final Exam | 15% | 08:00–10:00 |
 | Finals | May 06 | **MATH 142** | 📕 Final Exam | 40% | 09:00–11:30 |
 | Finals | May 07 | **CS 102** | 📕 Final Exam | 20% | 09:00–11:30 |
 | Finals | May 08 | **PROG 102** | 📕 Final Exam | 15% | 14:00–16:30 |
