@@ -106,7 +106,7 @@
 | W6 | Mar 03 | **CS 102** | 📘 Midterm 1 | 15% | 18:00–19:15 · Weeks 0–5 |
 | W6 | Mar 04 | **PROG 102** | 📘 Midterm 1 | 12% | 18:00–19:30 · Weeks 0–5 |
 | W6 | Mar 05 | **MATH 142** | 📘 Midterm 1 | 20% | 18:00–19:15 · Weeks 0–5 |
-| W6 | Mar 06 | **ECE 110** | 📘 Midterm 1 | 25% | 18:00–19:15 · Weeks 0–5 |
+| W6 | Mar 06 | **ECE 110** | 📘 Midterm | 25% | 18:00–19:15 · Weeks 0–5 |
 | W7 |  | **CS 102 / PROG 102** | 📝 Problem Set 7 (due Fri) | ≈3% |  |
 | W7 |  | **CS 102** | 📊 Quiz 6 | ≈0.8% | 10 min, Monday lecture |
 | W8 |  | **CS 102 / PROG 102** | 📝 Problem Set 8 (due Fri) | ≈3% |  |
