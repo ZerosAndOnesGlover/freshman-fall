@@ -102,7 +102,7 @@ status: in-progress
 
 | Item | Topic | Possible | Earned |
 |---|---|---|---|
-| Final Exam | Comprehensive, Weeks 0–12 | 100 | |
+| Final Exam | Comprehensive, Weeks 0–12 | 180 | |
 
 ---
 

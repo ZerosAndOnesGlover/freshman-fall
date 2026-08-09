@@ -109,14 +109,14 @@ carries no course weight.*
 | Quiz 1 | Week 1 — types and the memory model | 20 | |
 | Quiz 2 | Week 2 — operators and control flow | 20 | |
 | Quiz 3 | Week 3 — functions and the call stack | 20 | |
-| Quiz 4 | Week 4 — arrays, strings, buffer safety | 20 | |
-| Quiz 5 | Week 5 — pointers, arithmetic, const, NULL | 20 | |
+| Quiz 4 | Week 4 — arrays, strings, buffer safety | 10 | |
+| Quiz 5 | Week 5 — pointers, arithmetic, const, NULL | 10 | |
 | Quiz 6 | Week 6 — dynamic memory, ownership, Valgrind | 20 | |
 | Quiz 7 | Week 7 — structs, unions, enums | 20 | |
 | Quiz 8 | Week 8 — file I/O | 20 | |
 | Quiz 9 | Week 9 — recursion and stack mechanics | 20 | |
-| Quiz 10 | Week 10 — the preprocessor and macros | 20 | |
-| Quiz 11 | Week 11 — function pointers and generics | 20 | |
+| Quiz 10 | Week 10 — the preprocessor and macros | 10 | |
+| Quiz 11 | Week 11 — function pointers and generics | 10 | |
 
 ---
 

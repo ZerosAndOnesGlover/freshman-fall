@@ -40,7 +40,7 @@ status: in-progress
 
 | Item | Topic | Possible | Earned |
 |---|---|---|---|
-| PS 0 | Functions, algebra, trigonometry review | 56 | |
+| PS 0 | Functions, algebra, trigonometry review | 100 | |
 | PS 1 | Limits, ε-δ, limits at infinity | 65 | |
 | PS 2 | Continuity, discontinuity, the IVT | 100 | |
 | PS 3 | The derivative and differentiability | 115 | |
