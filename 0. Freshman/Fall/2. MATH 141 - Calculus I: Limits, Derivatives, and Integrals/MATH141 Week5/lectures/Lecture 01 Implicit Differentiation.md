@@ -5,7 +5,7 @@
 ---
 
 **Reading:** Stewart §3.5 | Spivak Ch. 10 §10.4
-**Quiz 05** — this Monday, covers Week 2 (derivative definition and rules)
+**Quiz 05** — this Monday, covers Week 4 (differentiation rules, the chain rule, higher derivatives and rates)
 
 ---
 

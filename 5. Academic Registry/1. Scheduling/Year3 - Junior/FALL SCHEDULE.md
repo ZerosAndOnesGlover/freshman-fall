@@ -8,9 +8,9 @@
 
 - **CS 301**: Theory of Computation
 - **CS 302**: Computer Networks
-- **CS 311**: Compilers II: Optimizing Back-End
+- **CS 311**: Compilers II · Optimizing Back-End
 - **MATH 341**: Numerical Methods & Analysis
-- **CS 390**: Ethics III: Technology, Power & Society
+- **CS 390**: Ethics III · Technology, Power, and Society
 
 ---
 

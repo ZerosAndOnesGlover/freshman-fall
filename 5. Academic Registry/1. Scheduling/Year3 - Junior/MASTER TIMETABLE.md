@@ -14,7 +14,7 @@
 | **CS 302** | Computer Networks | 4 | Tue/Wed/Thu 10:30 + Mon Lab 15:00 | PS 35%, Midterms 25%, Final 20%, Projects 20% |
 | **CS 311** | Compilers II: Optimizing Back-End | 4 | Tue/Thu 09:30 + Fri Lab 14:00 | PS 30%, Projects 35%, Midterms 20%, Final 15% |
 | **MATH 341** | Numerical Methods & Analysis | 4 | Mon/Tue/Fri 08:00 + Wed Rec 15:00 | PS 40%, Midterms 30%, Final 20%, Project 10% |
-| **CS 390** | Ethics III: Technology, Power & Society | 1 | Thu 16:00 | Papers 60%, Participation 40% |
+| **CS 390** | Ethics III · Technology, Power, and Society | 1 | Thu 16:00 | Papers 60%, Participation 40% |
 | | **Total Fall Credits** | **17** | | |
 
 ### Spring Semester

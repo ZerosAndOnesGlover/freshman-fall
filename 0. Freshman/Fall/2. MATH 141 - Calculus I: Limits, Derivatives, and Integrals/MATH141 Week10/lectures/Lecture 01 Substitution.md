@@ -5,7 +5,7 @@
 ---
 
 **Reading:** Stewart §5.4–5.5 | Spivak Ch. 13 (§13.3)
-**Quiz 10** — this Monday, covers Week 6 (Riemann sums, definite integrals, FTC)
+**Quiz 10** — this Monday, covers Week 9 (the Fundamental Theorem of Calculus, accumulation functions)
 
 ---
 

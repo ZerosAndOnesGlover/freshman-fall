@@ -1,5 +1,5 @@
 # MATH 141 · Calculus I
-## Week 2 · Lecture 1 (Wednesday)
+## Week 2 · Lecture 1 (Monday)
 ### Continuity: Definition, Types of Discontinuity, and the Intermediate Value Theorem
 
 ---

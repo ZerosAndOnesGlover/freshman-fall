@@ -155,7 +155,7 @@ $$x = \frac{2}{b+\sqrt{b^2-4}} \qquad\text{which returns}\qquad 1.00000000000000
 | Quadrature, root-finding, stability | **MATH 341** — Numerical Methods & Analysis |
 | ODE integrators, systems | differential equations, dynamics, simulation |
 | Series, convergence, uniform convergence | real analysis |
-| Fourier orthogonality *(Week 1)* | **ECE 210** — Signals and Systems |
+| Fourier orthogonality *(Week 1)* | **ECE 211** — Signals and Systems |
 | Floating point, error propagation | **CS 201** — Computer Organization & Architecture |
 
 **Tomorrow's lecture follows each thread by name.**

@@ -5,7 +5,7 @@
 ---
 
 **Reading:** Stewart §4.1 | Spivak Ch. 11 (§11.1)
-**Quiz 06** — this Monday, covers Week 3 (implicit differentiation, logs, inverse trig, related rates)
+**Quiz 06** — this Monday, covers Week 5 (implicit differentiation, logs, inverse trig, related rates)
 
 ---
 

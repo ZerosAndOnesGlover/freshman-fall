@@ -1,5 +1,5 @@
 # MATH 141 · Calculus I
-## Week 7 · Lecture 1 (Wednesday)
+## Week 7 · Lecture 1 (Monday)
 ### Derivatives and the Shape of a Graph: Increasing/Decreasing, Concavity, and the First & Second Derivative Tests
 
 ---

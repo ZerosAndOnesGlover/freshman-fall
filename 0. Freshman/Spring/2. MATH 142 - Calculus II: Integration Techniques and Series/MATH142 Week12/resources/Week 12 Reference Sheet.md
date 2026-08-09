@@ -172,7 +172,7 @@ $$\int_0^Te^{-x^2}dx=\sum_{k\ge0}\frac{(-1)^kT^{2k+1}}{k!(2k+1)} \qquad (R=\inft
 | This course | Next |
 |---|---|
 | Improper integrals, $\int_0^\infty e^{-x^2}dx=\frac{\sqrt\pi}2$ | **MATH 251** — Probability & Statistics |
-| Orthogonality of $\sin nx$ *(Week 1)* | **ECE 210** — Signals and Systems |
+| Orthogonality of $\sin nx$ *(Week 1)* | **ECE 211** — Signals and Systems |
 | Systems, phase plane, eigenvalues $\pm i$ | **MATH 241** — Linear Algebra |
 | Floating point | **CS 201** — Computer Organization |
 | Convergence proofs | real analysis |

@@ -5,7 +5,7 @@
 ---
 
 **Reading:** Stewart §2.6–2.7 | Spivak Ch. 9 (Derivatives)
-**Quiz 03** — this Monday, covers Week 1 (limits and continuity)
+**Quiz 03** — this Monday, covers Week 2 (continuity, types of discontinuity, the IVT)
 
 ---
 

@@ -1,5 +1,5 @@
 # MATH 141 · Calculus I
-## Week 4 · Lecture 2 (Wednesday)
+## Week 4 · Lecture 2 (Tuesday)
 ### The Chain Rule: Differentiating Composite Functions
 
 ---

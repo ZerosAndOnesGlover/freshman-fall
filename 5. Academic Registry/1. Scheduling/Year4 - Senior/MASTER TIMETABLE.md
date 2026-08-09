@@ -12,8 +12,8 @@
 
 | Code | Course Title | Credits | Schedule | Assessment |
 |------|-------------|---------|----------|-----------|
-| **CS 401** | Senior Capstone Project I | 4 | Wed 15:00 + Fri 15:00 + Advisor meetings | Proposal 15%, Architecture 20%, Implementation 40%, Presentation 25% |
-| **CS 490** | Professional Development | 2 | Tue 16:00–18:00 (workshop) | Mock Interviews 40%, Resume 20%, Portfolio 20%, Participation 20% |
+| **CS 401** | Senior Capstone Project I · Fall Semester | 4 | Wed 15:00 + Fri 15:00 + Advisor meetings | Proposal 15%, Architecture 20%, Implementation 40%, Presentation 25% |
+| **CS 490** | Professional Development for Engineers | 2 | Tue 16:00–18:00 (workshop) | Mock Interviews 40%, Resume 20%, Portfolio 20%, Participation 20% |
 | **CS 435** | Human-Computer Interaction | 4 | Mon/Tue/Fri 11:00 + Tue Lab 14:00 | PS 25%, Design Project 40%, Midterm 15%, Final 20% |
 | **CS 434** | Embedded Systems Engineering | 4 | Tue/Wed/Thu 10:00 + Fri Lab 14:00 | PS 25%, Lab 25%, Project 25%, Final 25% |
 | **ELEC I** | Technical Elective (choose 1 of 6 — CS 410 shown) | 4 | Mon/Wed/Fri 09:00 + Thu Lab 14:00 | e.g. CS 410: PS 30%, Projects 30%, Midterms 25%, Final 15% |
@@ -23,8 +23,8 @@
 
 | Code | Course Title | Credits | Schedule | Assessment |
 |------|-------------|---------|----------|-----------|
-| **CS 402** | Senior Capstone Project II | 4 | Wed 15:00 + Fri 15:00 + Advisor meetings | Report 25%, Benchmarks 20%, Implementation 30%, Presentation 25% |
-| **CS 491** | Senior Seminar | 1 | Fri 16:00 | Reflection Papers 50%, Presentations 50% |
+| **CS 402** | Senior Capstone Project II · Spring Semester | 4 | Wed 15:00 + Fri 15:00 + Advisor meetings | Report 25%, Benchmarks 20%, Implementation 30%, Presentation 25% |
+| **CS 491** | Senior Seminar · Engineering in the World | 1 | Fri 16:00 | Reflection Papers 50%, Presentations 50% |
 | **CS 431** | Web Engineering | 4 | Mon/Wed/Fri 09:00 + Tue Lab 09:00 | PS 25%, Projects 35%, Midterm 15%, Final 25% |
 | **CS 432** | Mobile Engineering | 4 | Tue/Wed/Thu 10:00 + Tue Lab 14:00 | PS 20%, Projects 40%, Midterm 15%, Final 25% |
 | **CS 433** | Desktop Application Engineering | 4 | Mon/Tue/Thu 11:00 + Thu Lab 09:00 | PS 25%, Projects 35%, Midterm 15%, Final 25% |

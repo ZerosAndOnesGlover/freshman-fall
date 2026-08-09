@@ -91,7 +91,7 @@
 | W10 | Apr 17 | **CS 432** | 📋 Mobile Project Due | 40% | TestFlight / Play Console internal track |
 | W10 | Apr 18 | **CS 402** | 📋 Final Documentation + Repository Due | — | Open-source ready · 17:00 |
 | W11 | Apr 24 | **CS 433** | 📋 Desktop Project Due | 35% | Installed on ≥ 2 platforms |
-| W11 | Apr 25 | **CS 491** | 🎤 Senior Seminar Student Presentations | 50% | 10 min talk on capstone |
+| W11 | Apr 25 | **CS 491** | 🎤 Senior Seminar · Engineering in the World Student Presentations | 50% | 10 min talk on capstone |
 | W12 | May 01 | **CS 402** | 🎤 CAPSTONE II FINAL PRESENTATION | 25% | 40 min · Public · Alumni + Faculty panel |
 | W12 | May 02 | **CS 402** | 📋 Final Technical Report Submitted | 25% | Camera-ready · 23:59 |
 | Finals | May 05 | **CS 431** | 📕 Final Exam | 25% | 09:00–11:00 |

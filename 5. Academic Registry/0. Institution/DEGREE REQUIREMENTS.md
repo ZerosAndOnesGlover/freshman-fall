@@ -21,13 +21,13 @@
 | ☐         | PROG 102 | Programming II · Object-Oriented Design & Data Structures in C++      | 4      | 1    | Spring |       |
 | ☐         | CS 201   | Computer Organization & Architecture              | 4      | 2    | Fall   |       |
 | ☐         | CS 202   | Operating Systems                                 | 4      | 2    | Spring |       |
-| ☐         | CS 211   | Programming Languages Theory               | 4      | 2    | Fall   |       |
+| ☐         | CS 211   | Programming Languages & Compilers I               | 4      | 2    | Fall   |       |
 | ☐         | CS 212   | Software Engineering                              | 3      | 2    | Spring |       |
 | ☐         | PROG 201 | Systems Programming in C                          | 4      | 2    | Fall   |       |
 | ☐         | PROG 202 | Functional & Logic Programming                    | 3      | 2    | Spring |       |
 | ☐         | CS 301   | Theory of Computation                             | 4      | 3    | Fall   |       |
 | ☐         | CS 302   | Computer Networks                                 | 4      | 3    | Fall   |       |
-| ☐         | CS 311   | Compilers II: Optimizing Back-End                 | 4      | 3    | Fall   |       |
+| ☐         | CS 311   | Compilers II · Optimizing Back-End                 | 4      | 3    | Fall   |       |
 | ☐         | CS 321   | Database Systems                                  | 4      | 3    | Spring |       |
 | ☐         | CS 331   | Artificial Intelligence                           | 4      | 3    | Spring |       |
 | ☐         | CS 341   | Computer Security                                 | 4      | 3    | Spring |       |
@@ -47,7 +47,7 @@
 | ☐ | MATH 142 | Calculus II · Integration Techniques and Series | 4 | 1 | Spring | |
 | ☐ | MATH 151 | Discrete Mathematics for Computer Science | 3 | 1 | Fall | |
 | ☐ | MATH 241 | Linear Algebra | 4 | 2 | Fall | |
-| ☐ | MATH 251 | Probability & Statistics | 4 | 2 | Spring | |
+| ☐ | MATH 251 | Probability & Statistics for Computer Science | 4 | 2 | Spring | |
 | ☐ | MATH 341 | Numerical Methods & Analysis | 4 | 3 | Fall | |
 | ☐ | PHYS 141 | Physics I · Mechanics, Waves & Thermodynamics | 4 | 1 | Fall | |
 | **Total** | | | **27** | | | |
@@ -61,7 +61,7 @@
 | ✓ | Code | Course | Cr | Year | Sem | Grade |
 |---|------|--------|----|------|-----|-------|
 | ☐ | ECE 110 | Digital Logic & Circuit Design | 3 | 1 | Spring | |
-| ☐ | ECE 210 | Signals and Systems | 3 | 2 | Spring | |
+| ☐ | ECE 211 | Signals and Systems | 3 | 2 | Spring | |
 | ☐ | ECE 311 | Computer Architecture II | 3 | 3 | Spring | |
 | **Total** | | | **9** | | | |
 
@@ -74,11 +74,11 @@
 | ✓ | Code | Course | Cr | Year | Sem | Grade |
 |---|------|--------|----|------|-----|-------|
 | ☐ | CS 190 | CS Seminar · Profession, Ethics & Culture | 1 | 1 | Fall | |
-| ☐ | CS 290 | Ethics & Society II: AI and Law | 1 | 2 | Spring | |
-| ☐ | CS 390 | Ethics III: Technology, Power & Society | 1 | 3 | Fall | |
+| ☐ | CS 290 | Ethics & Society II · AI, Law, and Accountability | 1 | 2 | Spring | |
+| ☐ | CS 390 | Ethics III · Technology, Power, and Society | 1 | 3 | Fall | |
 | ☐ | CS 395 | Technical Communication for Engineers | 2 | 3 | Spring | |
-| ☐ | CS 490 | Professional Development | 2 | 4 | Fall | |
-| ☐ | CS 491 | Senior Seminar | 1 | 4 | Spring | |
+| ☐ | CS 490 | Professional Development for Engineers | 2 | 4 | Fall | |
+| ☐ | CS 491 | Senior Seminar · Engineering in the World | 1 | 4 | Spring | |
 | **Total** | | | **8** | | | |
 
 
@@ -89,8 +89,8 @@
 
 | ✓ | Code | Course | Cr | Year | Sem | Grade |
 |---|------|--------|----|------|-----|-------|
-| ☐ | CS 401 | Senior Capstone Project I | 4 | 4 | Fall | |
-| ☐ | CS 402 | Senior Capstone Project II | 4 | 4 | Spring | |
+| ☐ | CS 401 | Senior Capstone Project I · Fall Semester | 4 | 4 | Fall | |
+| ☐ | CS 402 | Senior Capstone Project II · Spring Semester | 4 | 4 | Spring | |
 | **Total** | | | **8** | | | |
 
 

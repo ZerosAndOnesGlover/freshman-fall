@@ -1,5 +1,5 @@
 # MATH 141 · Calculus I
-## Week 9 · Lecture 1 (Wednesday)
+## Week 9 · Lecture 1 (Monday)
 ### The Fundamental Theorem of Calculus
 
 ---

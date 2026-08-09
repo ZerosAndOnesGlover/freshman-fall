@@ -1,7 +1,7 @@
 # MATH 141 · Calculus I
 ## Problem Set 8
 ### Topic: Riemann Sums, the Definite Integral, and Its Properties
-**Released:** Wednesday, Week 8 | **Due:** Wednesday, Week 9 (start of class)
+**Released:** Wednesday, Week 8 · **Due:** Wednesday, Week 9 (start of class)
 
 **Total:** 100 points
 

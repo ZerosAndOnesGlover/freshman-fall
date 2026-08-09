@@ -55,7 +55,7 @@ $$f(x)=\sum_{n\ge1}b_n\sin(nx), \qquad b_n=\frac1\pi\int_{-\pi}^{\pi}f(x)\sin(nx
 
 **This is the Fourier series**, and it is how every audio file, image codec, radio, and MRI machine works.
 
-> **Continues in: ECE 210 — Signals and Systems** *(Year 2, Spring)* — *"Fourier analysis, filtering,
+> **Continues in: ECE 211 — Signals and Systems** *(Year 2, Spring)* — *"Fourier analysis, filtering,
 > the mathematical bridge between physics and digital processing."* **You already own the integral it
 > is built on.**
 
@@ -118,7 +118,7 @@ $$e^{it}=\cos t+i\sin t$$
 | This course | Continues in |
 |---|---|
 | Improper integrals, the Gaussian | **MATH 251** — Probability & Statistics |
-| Orthogonality, Fourier *(Week 1)* | **ECE 210** — Signals and Systems |
+| Orthogonality, Fourier *(Week 1)* | **ECE 211** — Signals and Systems |
 | Systems, phase plane, eigenvalues | **MATH 241** — Linear Algebra |
 | Floating point, error propagation | **CS 201** — Computer Organization |
 | Sequences, series, convergence proofs | real analysis |

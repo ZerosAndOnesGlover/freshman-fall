@@ -30,7 +30,7 @@
 | **CS 212** | TH 200 | 80 | Projector, Whiteboard | Tue/Wed/Thu 10:00 (Spring) |
 | **PROG 202** | TH 205 | 80 | Projector, Whiteboard | Tue/Thu 11:00 (Spring) |
 | **MATH 251** | SSB 110 | 100 | Projector, Whiteboard | Mon/Tue/Thu 08:00 (Spring) |
-| **ECE 210** | MEC 101 | 70 | Projector, Whiteboard | Mon/Fri 13:00 (Spring) |
+| **ECE 211** | MEC 101 | 70 | Projector, Whiteboard | Mon/Fri 13:00 (Spring) |
 | **CS 290** | TH 105 | 30 | Projector, Whiteboard | Fri 15:00 · Seminar (Spring) |
 
 ---

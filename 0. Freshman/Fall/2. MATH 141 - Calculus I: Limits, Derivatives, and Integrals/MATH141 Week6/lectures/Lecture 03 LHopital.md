@@ -1,11 +1,10 @@
 # MATH 141 · Calculus I
-## Week 6 · Lecture 3 (Monday)
+## Week 6 · Lecture 3 (Wednesday)
 ### L'Hôpital's Rule: Resolving Indeterminate Forms
 
 ---
 
 **Reading:** Stewart §4.4 | Spivak Ch. 11 (§11.4, via MVT extensions)
-**Quiz 5** — this Monday, covers Week 6 (extrema, Rolle's Theorem, MVT, shape of a graph)
 
 ---
 

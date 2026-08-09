@@ -1,7 +1,7 @@
 # MATH 141 · Calculus I
 ## Problem Set 1
 ### Topic: Limits and Continuity
-**Released:** Wednesday, Week 1 | **Due:** Wednesday, Week 2 (start of class)
+**Released:** Wednesday, Week 1 · **Due:** Wednesday, Week 2 (start of class)
 
 ---
 

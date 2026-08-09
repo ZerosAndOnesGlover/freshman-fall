@@ -1,7 +1,7 @@
 # MATH 141 · Calculus I
 ## Problem Set 5
 ### Topic: Implicit Differentiation, Logarithms, Inverse Trig, Related Rates
-**Released:** Wednesday, Week 5 | **Due:** Wednesday, Week 4 (start of class)
+**Released:** Wednesday, Week 5 · **Due:** Wednesday, Week 6 (start of class)
 
 ---
 

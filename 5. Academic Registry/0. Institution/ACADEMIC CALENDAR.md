@@ -214,7 +214,7 @@
 | Fri Apr 17 | CS 432 Mobile Project due (TestFlight / Play Console) |
 | Sat Apr 18 | CS 402 Final documentation + open-source repository due |
 | Fri Apr 24 | CS 433 Desktop Project due (installed on ≥ 2 platforms) |
-| Sat Apr 25 | CS 491 Senior Seminar — Student Presentations |
+| Sat Apr 25 | CS 491 Senior Seminar · Engineering in the World — Student Presentations |
 | Fri May 1  | CS 402 CAPSTONE II FINAL PRESENTATION (public) |
 | Mon May 4  | FINALS WEEK |
 | Tue May 5  | CS 431 + CS 436 Final Exams |

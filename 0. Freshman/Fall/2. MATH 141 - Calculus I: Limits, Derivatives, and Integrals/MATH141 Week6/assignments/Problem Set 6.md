@@ -1,7 +1,7 @@
 # MATH 141 · Calculus I
 ## Problem Set 6
 ### Topic: Extrema, Rolle's Theorem, Mean Value Theorem, Shape of a Graph
-**Released:** Wednesday, Week 6 | **Due:** Wednesday, Week 5 (start of class)
+**Released:** Wednesday, Week 6 · **Due:** Wednesday, Week 7 (start of class)
 
 ---
 

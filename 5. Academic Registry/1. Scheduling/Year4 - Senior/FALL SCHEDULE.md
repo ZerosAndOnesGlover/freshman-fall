@@ -6,8 +6,8 @@
 
 ## Courses This Semester
 
-- **CS 401**: Senior Capstone Project I
-- **CS 490**: Professional Development
+- **CS 401**: Senior Capstone Project I · Fall Semester
+- **CS 490**: Professional Development for Engineers
 - **CS 435**: Human-Computer Interaction
 - **CS 434**: Embedded Systems Engineering
 - **CS 410**: Advanced Machine Learning Systems (Technical Elective — choose 1 of 6; CS 410 shown here, substitute your actual pick)

@@ -6,8 +6,8 @@
 
 ## Courses This Semester
 
-- **CS 402**: Senior Capstone Project II
-- **CS 491**: Senior Seminar
+- **CS 402**: Senior Capstone Project II · Spring Semester
+- **CS 491**: Senior Seminar · Engineering in the World
 - **CS 431**: Web Engineering
 - **CS 432**: Mobile Engineering
 - **CS 433**: Desktop Application Engineering
@@ -109,7 +109,7 @@
 12:00 – 13:00   Lunch
 13:00 – 13:50   📖 CS 436 Lecture
 15:00 – 15:50   🏗️ CS 402 Capstone session
-16:00 – 16:50   🎤 CS 491 Senior Seminar
+16:00 – 16:50   🎤 CS 491 Senior Seminar · Engineering in the World
 17:00           ⚠️  PROBLEM SET DUE — submit before 17:00 via portal.
                     Late penalty begins at 17:01.
 17:00 – 20:00   Weekend start — plan the weekend's study time now.

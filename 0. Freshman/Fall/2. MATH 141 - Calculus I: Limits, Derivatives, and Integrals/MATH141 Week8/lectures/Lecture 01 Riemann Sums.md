@@ -5,7 +5,7 @@
 ---
 
 **Reading:** Stewart §5.1 | Spivak Ch. 13 (Integration)
-**Quiz 08** — this Monday, covers Week 5 (L'Hôpital's Rule, curve sketching, applied optimization)
+**Quiz 08** — this Monday, covers Week 7 (the shape of a graph, curve sketching, applied optimization)
 
 ---
 
