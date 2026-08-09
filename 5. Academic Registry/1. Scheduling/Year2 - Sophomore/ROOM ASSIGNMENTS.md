@@ -24,7 +24,7 @@
 |--------|------|----------|-----|-------|
 | **CS 201** | VNC 101 | 120 | Projector, Whiteboard | Mon/Wed/Fri 08:30 |
 | **PROG 201** | TH 200 | 80 | Projector, Whiteboard | Tue/Wed/Thu 10:00 |
-| **CS 211** | TH 205 | 80 | Projector, Whiteboard | Tue/Thu 09:30 |
+| **CS 211** | TH 205 | 80 | Projector, Whiteboard | Tue/Thu 08:30 |
 | **MATH 241** | SSB 110 | 100 | Projector, Whiteboard | Mon/Tue/Fri 11:00 |
 | **CS 202** | VNC 101 | 120 | Projector, Whiteboard | Mon/Wed/Fri 09:00 (Spring) |
 | **CS 212** | TH 200 | 80 | Projector, Whiteboard | Tue/Wed/Thu 10:00 (Spring) |
@@ -44,7 +44,7 @@
 | **CS 211 Lab** | BH 220 | 24 | Linux + LLVM toolchain | Fri 14:00–15:50 |
 | **MATH 241 Recitation** | SSB 108 | 40 | Whiteboard | Thu 15:00–15:50 |
 | **CS 202 Lab** | BH 210 | 30 | Linux, kernel dev toolchain | Tue 15:00–16:50 (Spring) |
-| **PROG 202 Lab** | BH 215 | 24 | SWI-Prolog, Haskell/GHC | Fri 14:00–15:50 (Spring) |
+| **PROG 202 Lab** | BH 215 | 24 | SWI-Prolog, Haskell/GHC | Wed 13:00–14:50 (Spring) |
 | **MATH 251 Recitation** | SSB 108 | 40 | Whiteboard | Wed 15:00–15:50 (Spring) |
 
 ---

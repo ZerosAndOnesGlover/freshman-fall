@@ -12,7 +12,7 @@
 |------|-------------|---------|----------|-----------|
 | **CS 201** | Computer Organization & Architecture | 4 | Mon/Wed/Fri 08:30 + Tue Lab 15:00 | PS 35%, Midterms 25%, Final 20%, Projects 20% |
 | **PROG 201** | Systems Programming in C | 4 | Tue/Wed/Thu 10:00 + Mon Lab 15:00 | PS 35%, Projects 25%, Midterms 25%, Final 15% |
-| **CS 211** | Programming Languages Theory | 4 | Tue/Thu 09:30 + Fri Lab 14:00 | PS 30%, Projects 25%, Midterms 25%, Final 20% |
+| **CS 211** | Programming Languages & Compilers I | 4 | Tue/Thu 08:30 + Fri Lab 14:00 | PS 30%, Projects 25%, Midterms 25%, Final 20% |
 | **MATH 241** | Linear Algebra | 4 | Mon/Tue/Fri 11:00 + Thu Rec 15:00 | PS 35%, Midterms 40%, Final 25% |
 | | **Total Fall Credits** | **16** | | |
 
@@ -22,8 +22,8 @@
 |------|-------------|---------|----------|-----------|
 | **CS 202** | Operating Systems | 4 | Mon/Wed/Fri 09:00 + Tue Lab 15:00 | PS 30%, Projects 30%, Midterms 25%, Final 15% |
 | **CS 212** | Software Engineering | 3 | Tue/Wed/Thu 10:00 | Team Project 40%, Assignments 30%, Midterm 15%, Final 15% |
-| **PROG 202** | Functional & Logic Programming | 3 | Tue/Thu 11:00 + Fri Lab 14:00 | PS 40%, Projects 30%, Midterm 15%, Final 15% |
-| **MATH 251** | Probability & Statistics | 4 | Mon/Tue/Thu 08:00 + Wed Rec 15:00 | PS 35%, Midterms 40%, Final 25% |
+| **PROG 202** | Functional & Logic Programming | 3 | Tue/Thu 11:00 + Wed Lab 13:00 | PS 40%, Projects 30%, Midterm 15%, Final 15% |
+| **MATH 251** | Probability & Statistics for Computer Science | 4 | Mon/Tue/Thu 08:00 + Wed Rec 15:00 | PS 35%, Midterms 40%, Final 25% |
 | **ECE 211** | Signals and Systems | 3 | Mon/Fri 13:00 | PS 40%, Midterms 35%, Final 25% |
 | **CS 290** | Ethics & Society II | 1 | Fri 15:00 | Papers 60%, Participation 40% |
 | | **Total Spring Credits** | **18** | | |
@@ -37,9 +37,9 @@ Every week of the academic year follows this rhythm (course-specific variations 
 | Day | Standard Events |
 |-----|----------------|
 | **Monday** | CS 201, MATH 241 lectures. PROG 201 Lab (afternoon). Quiz held at start of each course's own first lecture of the week — check ASSESSMENT CALENDAR.md per course. |
-| **Tuesday** | PROG 201, CS 211, MATH 241 lectures. CS 201 Lab (afternoon). |
+| **Tuesday** | CS 211 (08:30), PROG 201, MATH 241 lectures. CS 201 Lab (afternoon). |
 | **Wednesday** | CS 201, PROG 201 lectures. Problem sets released at 17:00. |
-| **Thursday** | PROG 201, CS 211 lectures. MATH 241 Recitation (afternoon). |
+| **Thursday** | CS 211 (08:30), PROG 201 lectures. MATH 241 Recitation (afternoon). |
 | **Friday** | CS 201, MATH 241 lectures. CS 211 Lab (afternoon). No lectures cluster on any single day — see FALL SCHEDULE.md grid. |
 | **Saturday** | Study / project work. Department study rooms open 09:00–22:00. |
 | **Sunday** | Study / project work. No office hours except pre-exam special sessions. |
@@ -50,13 +50,21 @@ Every week of the academic year follows this rhythm (course-specific variations 
 
 | Type | Frequency | Weight | Notes |
 |------|-----------|--------|-------|
-| **Weekly Quizzes** | Every Monday (Weeks 2–14) | 5–10% | 10 min, start of lecture. Lowest 2 dropped. |
+| **Weekly Quizzes** | Weeks 1–11, start of each course's first lecture | **0%** | 10 min, formative. Quiz *N* covers Week *N−1*. Not part of any course grade — see note below. |
 | **Problem Sets** | Weekly (released Wed, due Fri) | 25–40% | Individual write-up. Collaboration on concepts OK. |
 | **Lab Reports** | Weekly (Thu lab) | 10–20% | Checked off by TA during lab or submitted next day. |
 | **Midterm Exam 1** | Week 5–6 | 10–15% | 75–90 min evening exam. 1 handwritten cheat sheet. |
 | **Midterm Exam 2** | Week 9–10 | 10–15% | Same format as Midterm 1. |
 | **Projects** | 1–2 per semester | 10–20% | Multi-week engineering projects. Team or individual. |
 | **Final Exam** | Finals Week | 20–25% | 120–150 min. 2-page handwritten cheat sheet. |
+
+> **Why the quizzes carry no weight.** Every Year 2 course's stated components already sum to 100%
+> without them — CS 201 is PS 35 + Midterms 25 + Final 20 + Projects 20, and the other nine are the
+> same shape. There is no percentage left to give a quiz, so rather than invent one, Year 2 follows
+> the ECE 110 precedent: the quizzes are written, sat, and answered against a key in the same file,
+> and they stay out of the gradebook. They are recorded per course in
+> `2. Gradebook/Year2 Sophomore/<term>/_<COURSE> Quiz Record.md`, whose leading underscore keeps
+> `tools/gpa.py` from scanning them as a course.
 
 ---
 

@@ -21,7 +21,7 @@
 |--------|---------|
 | 📖 LEC | Lecture |
 | 🔬 LAB | Laboratory section |
-| 💬 DIS | Discussion / Recitation section |
+| 💬 DIS / REC | Discussion / Recitation section |
 | 🎤 SEM | Seminar |
 | ✏️ WRK | Workshop |
 | 🏗️ CAP | Capstone session |
@@ -40,9 +40,7 @@
 | **10:00** | — | 📖 **CS212**<br>10:00–10:50<br>(LEC) | 📖 **CS212**<br>10:00–10:50<br>(LEC) | 📖 **CS212**<br>10:00–10:50<br>(LEC) | — |
 | **11:00** | — | 📖 **PROG202**<br>11:00–12:15<br>(LEC) | — | 📖 **PROG202**<br>11:00–12:15<br>(LEC) | — |
 | **12:00** | 🍽️ Lunch Break | 🍽️ Lunch Break | 🍽️ Lunch Break | 🍽️ Lunch Break | 🍽️ Lunch Break |
-| **13:00** | 📖 **ECE211**<br>13:00–14:15<br>(LEC) | — | — | — | 📖 **ECE211**<br>13:00–14:15<br>(LEC) |
-14:00–15:50
-(LAB) |
+| **13:00** | 📖 **ECE211**<br>13:00–14:15<br>(LEC) | — | 🔬 **PROG202**<br>13:00–14:50<br>(LAB) | — | 📖 **ECE211**<br>13:00–14:15<br>(LEC) |
 | **15:00** | — | 🔬 **CS202**<br>15:00–16:50<br>(LAB) | 💬 **MATH251**<br>15:00–15:50<br>(REC) | — | 🎤 **CS290**<br>15:00–15:50<br>(SEM) |
 | **17:00** | — | — | — | — | — |
 | **18:00** | 📚 Evening Study | 📚 Evening Study | 📚 Evening Study | 📚 Evening Study | 📚 Evening Study |
@@ -57,10 +55,10 @@
 ### Monday
 ```
 07:30 – 08:00   Morning prep / commute / review notes from last week
-08:00 – 08:50   📖 MATH 251 Lecture — ⚠️ QUIZ DAY for MATH 251 (Weeks 2–14)
-09:00 – 09:50   📖 CS 202 Lecture — ⚠️ QUIZ DAY for CS 202 (Weeks 2–14)
+08:00 – 08:50   📖 MATH 251 Lecture — ⚠️ QUIZ DAY for MATH 251 (Weeks 1–11)
+09:00 – 09:50   📖 CS 202 Lecture — ⚠️ QUIZ DAY for CS 202 (Weeks 1–11)
 12:00 – 13:00   Lunch Break (protected — schedule this, do not skip it)
-13:00 – 14:15   📖 ECE 211 Lecture — ⚠️ QUIZ DAY for ECE 211 (Weeks 2–14)
+13:00 – 14:15   📖 ECE 211 Lecture — ⚠️ QUIZ DAY for ECE 211 (Weeks 1–11)
 17:00           Problem set DUE from previous week (submitted via course portal)
 18:00 – 21:00   Evening study block — Problem set + lecture review
 ```
@@ -68,8 +66,8 @@
 ### Tuesday
 ```
 08:00 – 08:50   📖 MATH 251 Lecture
-10:00 – 10:50   📖 CS 212 Lecture — ⚠️ QUIZ DAY for CS 212 (Weeks 2–14)
-11:00 – 12:15   📖 PROG 202 Lecture — ⚠️ QUIZ DAY for PROG 202 (Weeks 2–14)
+10:00 – 10:50   📖 CS 212 Lecture — ⚠️ QUIZ DAY for CS 212 (Weeks 1–11)
+11:00 – 12:15   📖 PROG 202 Lecture — ⚠️ QUIZ DAY for PROG 202 (Weeks 1–11)
 12:00 – 13:00   Lunch
 15:00 – 16:50   🔬 CS 202 LAB SECTION (mandatory)
 18:00 – 21:00   Evening study block
@@ -80,6 +78,8 @@
 09:00 – 09:50   📖 CS 202 Lecture
 10:00 – 10:50   📖 CS 212 Lecture
 12:00 – 13:00   Lunch
+13:00 – 14:50   🔬 PROG 202 LAB SECTION (mandatory)
+                    GHCi and SWI-Prolog. Arrive with pre-lab reading done.
 15:00 – 15:50   💬 MATH 251 Recitation
 17:00           ⚠️  NEW PROBLEM SET RELEASED — download immediately, skim the questions.
 18:00 – 21:00   Evening study — begin problem set
@@ -99,7 +99,6 @@
 09:00 – 09:50   📖 CS 202 Lecture
 12:00 – 13:00   Lunch
 13:00 – 14:15   📖 ECE 211 Lecture
-14:00 – 15:50   🔬 PROG 202 LAB SECTION (mandatory)
 15:00 – 15:50   🎤 CS 290 Seminar
 17:00           ⚠️  PROBLEM SET DUE — submit before 17:00 via portal.
                     Late penalty begins at 17:01.
@@ -124,12 +123,12 @@
 
 | Day | Time | Event |
 |-----|------|-------|
-| Monday | Start of lecture | ⚠️ MATH 251 + CS 202 + ECE 211 Quizzes (Weeks 2–14) |
-| Tuesday | Start of lecture | ⚠️ CS 212 + PROG 202 Quizzes (Weeks 2–14) |
+| Monday | Start of lecture | ⚠️ MATH 251 + CS 202 + ECE 211 Quizzes (Weeks 1–11) |
+| Tuesday | Start of lecture | ⚠️ CS 212 + PROG 202 Quizzes (Weeks 1–11) |
 | Tuesday | 15:00 | CS 202 Lab begins |
+| Wednesday | 13:00 | PROG 202 Lab begins |
 | Wednesday | 15:00 | MATH 251 Recitation |
 | Wednesday | 17:00 | New problem set released |
-| Friday | 14:00 | PROG 202 Lab begins |
 | Friday | 17:00 | ⚠️ Problem set due |
 | Ongoing | TBD | Project milestones (see ASSESSMENT CALENDAR.md) |
 

@@ -58,11 +58,16 @@
 
 ## Quiz Policies
 
-- Quizzes held at the **start of Monday lecture**, Weeks 2–14 (12 quizzes).
+- Quizzes are held at the **start of each course's own first lecture of the week**, in Weeks 1–11
+  (11 quizzes). Which weekday that is depends on the course — see FALL SCHEDULE.md / SPRING
+  SCHEDULE.md.
 - Duration: 10 minutes. Begin exactly at lecture start. No extensions for late arrivals.
-- Material: previous week's lectures + assigned readings.
-- **Lowest 2 quiz scores dropped** from final calculation.
-- No make-up quizzes except for documented excused absences (Dean's excuse or equivalent).
+- Material: **Quiz *N* covers Week *N−1*** — the previous week's lectures and assigned readings.
+- **Quizzes carry no weight in any Year 2 course.** Every course's stated components already sum to
+  100% without them. Nothing is dropped because nothing is counted; the answer key is printed in the
+  quiz paper itself so the feedback closes in the same ten minutes.
+- Because they are unmarked there are no make-ups, but a missed quiz is still worth sitting on your
+  own — that is the whole point of it.
 - Quizzes are closed-book, closed-notes, no calculator (unless specified).
 
 ---

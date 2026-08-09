@@ -19,7 +19,7 @@
 |--------|---------|
 | 📖 LEC | Lecture |
 | 🔬 LAB | Laboratory section |
-| 💬 DIS | Discussion / Recitation section |
+| 💬 DIS / REC | Discussion / Recitation section |
 | 🎤 SEM | Seminar |
 | ✏️ WRK | Workshop |
 | 🏗️ CAP | Capstone session |
@@ -34,19 +34,13 @@
 |------|--------|---------|-----------|----------|--------|
 | **07:30** | Morning Prep | Morning Prep | Morning Prep | Morning Prep | Morning Prep |
 | **08:00** | — | — | — | — | — |
-| **08:30** | 📖 **CS201**<br>08:30–09:20<br>(LEC) | — | 📖 **CS201**<br>08:30–09:20<br>(LEC) | — | 📖 **CS201**<br>08:30–09:20<br>(LEC) |
-| **09:30** | — | 📖 **CS211**<br>09:30–10:45<br>(LEC) | — | 📖 **CS211**<br>09:30–10:45<br>(LEC) | — |
+| **08:30** | 📖 **CS201**<br>08:30–09:20<br>(LEC) | 📖 **CS211**<br>08:30–09:45<br>(LEC) | 📖 **CS201**<br>08:30–09:20<br>(LEC) | 📖 **CS211**<br>08:30–09:45<br>(LEC) | 📖 **CS201**<br>08:30–09:20<br>(LEC) |
 | **10:00** | — | 📖 **PROG201**<br>10:00–10:50<br>(LEC) | 📖 **PROG201**<br>10:00–10:50<br>(LEC) | 📖 **PROG201**<br>10:00–10:50<br>(LEC) | — |
 | **11:00** | 📖 **MATH241**<br>11:00–11:50<br>(LEC) | 📖 **MATH241**<br>11:00–11:50<br>(LEC) | — | — | 📖 **MATH241**<br>11:00–11:50<br>(LEC) |
 | **12:00** | 🍽️ Lunch Break | 🍽️ Lunch Break | 🍽️ Lunch Break | 🍽️ Lunch Break | 🍽️ Lunch Break |
 | **13:00** | — | — | — | — | — |
 | **14:00** | — | — | — | — | 🔬 **CS211**<br>14:00–15:50<br>(LAB) |
-15:00–16:50
-(LAB) | 🔬 **CS201**
-15:00–16:50
-(LAB) | — | 💬 **MATH241**
-15:00–15:50
-(REC) | — |
+| **15:00** | 🔬 **PROG201**<br>15:00–16:50<br>(LAB) | 🔬 **CS201**<br>15:00–16:50<br>(LAB) | — | 💬 **MATH241**<br>15:00–15:50<br>(REC) | — |
 | **16:00** | — | — | — | — | — |
 | **17:00** | — | — | — | — | — |
 | **18:00** | 📚 Evening Study | 📚 Evening Study | 📚 Evening Study | 📚 Evening Study | 📚 Evening Study |
@@ -61,8 +55,8 @@
 ### Monday
 ```
 07:30 – 08:00   Morning prep / commute / review notes from last week
-08:30 – 09:20   📖 CS 201 Lecture — ⚠️ QUIZ DAY for CS 201 (Weeks 2–14)
-11:00 – 11:50   📖 MATH 241 Lecture — ⚠️ QUIZ DAY for MATH 241 (Weeks 2–14)
+08:30 – 09:20   📖 CS 201 Lecture — ⚠️ QUIZ DAY for CS 201 (Weeks 1–11)
+11:00 – 11:50   📖 MATH 241 Lecture — ⚠️ QUIZ DAY for MATH 241 (Weeks 1–11)
 12:00 – 13:00   Lunch Break (protected — schedule this, do not skip it)
 15:00 – 16:50   🔬 PROG 201 LAB SECTION (mandatory)
 17:00           Problem set DUE from previous week (submitted via course portal)
@@ -71,8 +65,8 @@
 
 ### Tuesday
 ```
-09:30 – 10:45   📖 CS 211 Lecture — ⚠️ QUIZ DAY for CS 211 (Weeks 2–14)
-10:00 – 10:50   📖 PROG 201 Lecture — ⚠️ QUIZ DAY for PROG 201 (Weeks 2–14)
+08:30 – 09:45   📖 CS 211 Lecture — ⚠️ QUIZ DAY for CS 211 (Weeks 1–11)
+10:00 – 10:50   📖 PROG 201 Lecture — ⚠️ QUIZ DAY for PROG 201 (Weeks 1–11)
 11:00 – 11:50   📖 MATH 241 Lecture
 12:00 – 13:00   Lunch
 15:00 – 16:50   🔬 CS 201 LAB SECTION (mandatory)
@@ -92,7 +86,7 @@
 
 ### Thursday
 ```
-09:30 – 10:45   📖 CS 211 Lecture
+08:30 – 09:45   📖 CS 211 Lecture
 10:00 – 10:50   📖 PROG 201 Lecture
 12:00 – 13:00   Lunch
 15:00 – 15:50   💬 MATH 241 Recitation
@@ -130,9 +124,9 @@
 
 | Day | Time | Event |
 |-----|------|-------|
-| Monday | Start of lecture | ⚠️ CS 201 + MATH 241 Quizzes (Weeks 2–14) |
+| Monday | Start of lecture | ⚠️ CS 201 + MATH 241 Quizzes (Weeks 1–11) |
 | Monday | 15:00 | PROG 201 Lab begins |
-| Tuesday | Start of lecture | ⚠️ CS 211 + PROG 201 Quizzes (Weeks 2–14) |
+| Tuesday | Start of lecture | ⚠️ CS 211 (08:30) + PROG 201 (10:00) Quizzes (Weeks 1–11) |
 | Tuesday | 15:00 | CS 201 Lab begins |
 | Wednesday | 17:00 | New problem set released |
 | Friday | 14:00 | CS 211 Lab begins |
