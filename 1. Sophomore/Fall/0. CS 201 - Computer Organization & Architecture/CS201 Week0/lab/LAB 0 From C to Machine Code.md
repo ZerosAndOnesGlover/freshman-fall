@@ -3,7 +3,8 @@
 
 ---
 
-**When:** Tuesday 15:00–16:50, BH 210 · **Bring:** nothing; the machines are set up except for one package
+**When:** **Friday of Week 0** (the Friday that closes the ten-day Week 0), 15:00–16:50, BH 210
+**Covers:** Week 0 · **Bring:** nothing; the machines are set up except for one package
 **Assessment:** unmarked, but **checked off by the TA before you leave.** See the syllabus.
 
 ---

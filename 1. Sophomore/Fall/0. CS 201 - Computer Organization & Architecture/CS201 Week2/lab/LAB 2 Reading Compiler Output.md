@@ -3,7 +3,8 @@
 
 ---
 
-**When:** Tuesday 15:00–16:50, BH 210 · **Assessment:** unmarked, checked off by the TA
+**When:** **Tuesday of Week 3**, 15:00–16:50, BH 210 — *after* Week 2's three lectures
+**Covers:** Week 2 · **Assessment:** unmarked, checked off by the TA
 **You need:** `gcc`, `objdump`, `nasm`, `gdb` — all from Lab 0.
 
 ---

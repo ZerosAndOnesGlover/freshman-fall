@@ -33,6 +33,13 @@ know to do them and know not to look for them in your grade:
   CS 201 is Problem Sets 35 + Midterms 25 + Final 20 + Projects 20, and the rest are the same shape.
   Labs are checked off by the TA in the session. They are enforced by the attendance rule in
   `COURSE POLICIES.md`, not by a mark. *(CS 102 in Year 1 works the same way.)*
+
+  **A lab is filed under the week whose material it covers, which is usually not the week it is
+  sat.** Where a course's lab day falls before that week's lectures have finished, **Lab *N* is sat
+  in Week *N+1*** — true of CS 201, whose lectures are Mon/Wed/Fri and whose lab is Tuesday. **Week 0
+  labs are the exception everywhere**: they are setup sessions and sit on the Friday that closes the
+  ten-day Week 0. Each course's syllabus states its own mapping, and every lab file carries its
+  sitting week in the header.
 - **📊 Quizzes.** Ten minutes at the start of each course's first lecture of the week, Weeks 1–11.
   **Quiz *N* covers Week *N−1*.** The answer key is printed in the paper.
 

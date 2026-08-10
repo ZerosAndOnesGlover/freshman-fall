@@ -3,7 +3,8 @@
 
 ---
 
-**When:** Tuesday 15:00–16:50, BH 210 · **Assessment:** unmarked, checked off by the TA
+**When:** **Tuesday of Week 5**, 15:00–16:50, BH 210 — *after* Week 4's three lectures
+**Covers:** Week 4 · **Assessment:** unmarked, checked off by the TA
 **You need:** `gcc`, `valgrind`, `lscpu`. **`perf` is optional — see the note below.**
 
 ---

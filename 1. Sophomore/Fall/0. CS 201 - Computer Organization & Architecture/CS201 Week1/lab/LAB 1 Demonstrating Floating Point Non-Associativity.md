@@ -3,7 +3,8 @@
 
 ---
 
-**When:** Tuesday 15:00–16:50, BH 210 · **Assessment:** unmarked, checked off by the TA
+**When:** **Tuesday of Week 2**, 15:00–16:50, BH 210 — *after* Week 1's three lectures
+**Covers:** Week 1 · **Assessment:** unmarked, checked off by the TA
 **Prerequisite:** Lab 0's toolchain. You will need `gcc`, `objdump` and `python3`.
 
 ---

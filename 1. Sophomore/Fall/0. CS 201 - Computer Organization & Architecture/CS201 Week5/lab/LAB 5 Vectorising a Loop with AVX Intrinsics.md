@@ -3,7 +3,8 @@
 
 ---
 
-**When:** Tuesday 15:00–16:50, BH 210 · **Assessment:** unmarked, checked off by the TA
+**When:** **Tuesday of Week 6**, 15:00–16:50, BH 210 — *after* Week 5's three lectures
+**Covers:** Week 5 · **Assessment:** unmarked, checked off by the TA
 **You need:** `gcc` with `-mavx2`, `objdump`. Check first:
 
 ```bash

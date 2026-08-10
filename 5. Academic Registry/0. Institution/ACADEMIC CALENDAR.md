@@ -95,7 +95,7 @@
 | Mon Aug 25 | Sophomore orientation + advising |
 | Wed Aug 27 | Classes begin (Week 0) |
 | Mon Sep 1  | Labor Day — NO CLASSES (still Week 0) |
-| Fri Sep 5  | Add/Drop deadline; Week 0 ends |
+| Fri Sep 5  | Week 0 labs (setup/orientation, ungraded); Add/Drop deadline; Week 0 ends |
 | Mon Sep 8  | Week 1 begins — all graded work begins |
 | Mon Sep 29 | PROG 201 Midterm 1 (Week 4, covers Weeks 0–3) |
 | Tue Sep 30 | CS 211 Midterm 1 (Week 4, covers Weeks 0–3) |

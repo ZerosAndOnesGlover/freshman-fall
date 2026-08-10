@@ -61,6 +61,24 @@ Both are recorded in `5. Academic Registry/2. Gradebook/Year2 Sophomore/Fall/_CS
 | **Lab** | Tuesday 15:00–16:50 *(mandatory)* | BH 210 |
 | **Office hours** | Monday 13:00–15:00, Wednesday 11:00–12:00 | TH 420 |
 
+### The lab runs one week behind the lectures — deliberately
+
+**Lab *N* covers Week *N* but is sat on the Tuesday of Week *N+1*.**
+
+Lectures are Monday, Wednesday and Friday; the lab is Tuesday. A Tuesday lab in the same week would have had only Monday's lecture, and every lab in this course needs all three — Lab 4 uses Friday's blocking material, Lab 5 uses Friday's SIMD material. **So the lab deliberately lags by a week.**
+
+| Lab | Covers | Sat on |
+|---|---|---|
+| **Lab 0** | Week 0 | **Friday of Week 0** — the Friday that closes the ten-day Week 0. Setup only, so it needs no lead time |
+| Lab 1 | Week 1 | Tuesday of Week 2 |
+| Lab *N* | Week *N* | Tuesday of Week *N+1* |
+| Lab 11 | Week 11 | Tuesday of Week 12 |
+| **Lab 12** | Week 12 | **Demo day**, in the completion period (Dec 8–12) |
+
+**There is no lab session in Week 1** — Lab 0 was sat the Friday before, and Lab 1 waits for Week 1's lectures to finish.
+
+**Quizzes do not lag.** Quiz *N* is sat at the start of **Monday's lecture in Week *N*** and covers **Week *N−1***, which is the same convention CS 102 used in Year 1. Every quiz and lab file states both its day and its week in the header; if you are ever unsure, the file itself is authoritative.
+
 **Instructor:** Prof. Emmanuel Obi · e.obi@ist.edu · TH 420
 **TA:** Felix Oduya · foduya@ist.edu · Mon 16:00–18:00 and Fri 15:00–17:00, BH 120
 

@@ -3,7 +3,8 @@
 
 ---
 
-**When:** Tuesday 15:00–16:50, BH 210 · **Assessment:** unmarked, checked off by the TA
+**When:** **Tuesday of Week 4**, 15:00–16:50, BH 210 — *after* Week 3's three lectures
+**Covers:** Week 3 · **Assessment:** unmarked, checked off by the TA
 **You need:** `gcc`, `gdb`, `nasm`, `objdump`, and `set disassembly-flavor intel` in your `~/.gdbinit`.
 
 ---
