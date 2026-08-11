@@ -1,0 +1,7 @@
+# CS 201 · Week 11 · Summary
+
+**Topic —** Performance engineering: profiling, the roofline model, and honest benchmarking — the course's method made explicit.
+**Lectures —** L34 Measure First — Profiling and Amdahl in Practice; L35 The Roofline Model — Diagnosing the Bottleneck; L36 Benchmarking Honestly.
+**Work —** PS 11 (100, an optimisation report, due Week 12), Lab 11 (unmarked, sat Tuesday of Week 12), Quiz 11 Monday covering Week 10 (unmarked, key in the paper — the last quiz).
+**Takeaway —** Measure, diagnose, bound — in that order. A profile showed `expensive` at 94% of runtime and `cheap` at 0% despite twice the calls, correcting intuition; Amdahl then capped the payoff of deleting `expensive` at 16.7×. The roofline diagnosed a 1024² matrix multiply as memory-bound, and a loop reorder that changed no arithmetic dropped its last-level miss rate from 50% to 8% for a 7.45× speedup — on top of the 5.7× the compiler flags gave for free, turning a 16.1 s `-O0` baseline into 0.58 s, a 28× total, every step a measurement. L36 collected the course's "measured nothing" failures — Week 0's loop folded to a constant, Week 1's denormal benchmark running on zeros, Week 7's page cache mistaken for the device, Week 6's DRAM-bound huge-page test — into a checklist whose most-skipped item is "does it match theory?". Tools: gprof and callgrind/cachegrind, since perf needs privileges the machine lacks.
+**Next —** Week 12 — architecture frontiers, Project 2, the final exam guide, and the road ahead.
