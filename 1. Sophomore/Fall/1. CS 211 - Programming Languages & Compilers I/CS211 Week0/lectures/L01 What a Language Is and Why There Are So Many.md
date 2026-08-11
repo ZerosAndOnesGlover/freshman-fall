@@ -112,7 +112,9 @@ older_than(N, X) :- person(N, A), A > X.
 ?- older_than(N, 30).
 ```
 
-All four produce `Ada, Grace`. *(Python 3.14.2 and SQLite 3.45.1 measured; you run all four yourself, Prolog included, in Lab 0 Part 1.)*
+All four select the same two people. *(Measured: Python 3.14.2, SQLite 3.45.1, SWI-Prolog 9.0.4.)*
+
+**Three of them print `Ada, Grace`. Prolog prints `ada, grace`** — and that is not a formatting quirk, it is the first syntax rule of the language showing through. **In Prolog an identifier beginning with a capital is a *variable*.** Writing `person(Ada, 36)` would not record a fact about someone called Ada; it would assert that `person(X, 36)` holds for *every* `X`. The lowercase is forced, and you meet it the moment you type the program.
 
 **Read down that list and one thing is monotonically decreasing: how much you had to say.** Read it the other way and something else is decreasing: how much you get to control. The SQL query does not tell you whether the database scanned the table or used an index — and on ten rows you do not care, and on ten billion rows it is the only thing you care about.
 

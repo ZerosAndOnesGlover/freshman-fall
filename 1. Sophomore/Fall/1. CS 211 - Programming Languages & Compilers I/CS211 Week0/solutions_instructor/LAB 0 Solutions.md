@@ -30,7 +30,9 @@ Every one of `python3 gcc flex bison ghc clang opt lli swipl java` must print a 
 
 ### Q1 — Ranking the four paradigms
 
-All four print `Ada, Grace`. *(Python 3.14.2 and SQLite 3.45.1 confirmed on the reference machine; the Prolog goal is the one line to re-check the first time a lab machine is reimaged.)*
+All four select the same two people. *(Verified: Python 3.14.2, SQLite 3.45.1, SWI-Prolog 9.0.4.)*
+
+**Prolog prints `ada` and `grace` in lower case**, where the other three print `Ada` and `Grace`. **Expect at least one student to report this as a broken program.** It is not: a Prolog identifier starting with a capital is a *variable*, so `person(Ada, 36)` asserts that `person(X, 36)` holds for all `X`. Worth thirty seconds at the bench — it is the cleanest example in the lab of a syntax rule that is invisible until you cross a language boundary.
 
 **Expected ranking, most method supplied to least:**
 
