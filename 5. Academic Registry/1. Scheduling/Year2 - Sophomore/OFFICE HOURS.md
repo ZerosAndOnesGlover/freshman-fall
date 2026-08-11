@@ -53,6 +53,14 @@
   - Friday 15:00–17:00 · BH 120
 - **Help Room**: Engineering Help Desk, Babbage Hall 120 (drop-in, no appointment)
 
+### Ngozi Eze — CS 211 TA
+- **Email**: neze@ist.edu
+- **Office Hours**:
+  - Monday 10:00–12:00 · BH 120
+  - Wednesday 14:00–16:00 · BH 220
+  - Friday 16:00–17:00 · BH 220 (right after Lab, which ends 15:50)
+- **Help Room**: Engineering Help Desk, Babbage Hall 120 (drop-in, no appointment)
+
 ### Aisha Mohammed — PROG 201 TA
 - **Email**: amohammed@ist.edu
 - **Office Hours**:
