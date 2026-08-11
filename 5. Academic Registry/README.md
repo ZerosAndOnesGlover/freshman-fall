@@ -94,7 +94,7 @@ components sum to 100%; `python3 tools/gpa.py` warns on stderr if that ever stop
 |---|---|---|---|---|
 | 1 Freshman | Fall | CS 101, PROG 101, MATH 141, MATH 151, PHYS 141, CS 190 | 20 | ✅ all six, Weeks 0–12 |
 | 1 Freshman | Spring | CS 102, PROG 102, MATH 142, ECE 110 | 15 | ✅ all four, Weeks 0–12 |
-| 2 Sophomore | Fall | CS 201, CS 211, PROG 201, MATH 241 | 16 | 🔨 CS 201 in progress |
+| 2 Sophomore | Fall | CS 201, CS 211, PROG 201, MATH 241 | 16 | ✅ CS 201, Weeks 0–12 |
 | 2 Sophomore | Spring | CS 202, CS 212, PROG 202, MATH 251, ECE 211, CS 290 | 18 | ⬜ not started |
 
 **Where Year 2's weights come from.** The curriculum docx states a complete 100% for CS 201,
