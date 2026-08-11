@@ -1,6 +1,7 @@
 # PHYS 141 · Quiz 7
 ## Angular Momentum & Static Equilibrium
 
+**Administered:** Monday of Week 8, the Monday after this material is covered — covers Week 7.
 **Time limit:** 20 minutes | **Format:** Closed book
 **Formula sheet:** L=mvr sinφ (particle); L=Iω (rigid body); τ_net=dL/dt; conservation: I_iω_i=I_fω_f; equilibrium: ΣF=0, Στ=0
 

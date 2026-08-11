@@ -5,6 +5,7 @@
 ---
 
 **Duration:** 2 hours  
+**Lab session:** Friday of Week 0
 **Format:** Individual or pairs (pairs must submit separate lab reports)  
 **Graded on:** Completion + correctness of written responses (not graded during Week 0: this is the orientation lab)  
 **Tools Required:** Python 3 with `matplotlib` and `numpy` (instructions below), or [Desmos](https://www.desmos.com) (free, browser-based)

@@ -1,7 +1,7 @@
 # CS 101 · Lab 0
 ## Environment Setup & First Programs
 
-**Week 0 · Tuesday Lab Section**
+**Friday of Week 0 · Lab Section** — the Week 0 orientation lab slot; from Lab 1 onward the lab meets Tuesday.
 *Duration: 2 hours · Not graded (completion only)*
 
 ---
@@ -9,13 +9,13 @@
 ## Objectives
 
 By the end of this lab, you will have:
-- [ ] Python 3.10+ installed and working
-- [ ] VS Code installed with the Python extension
-- [ ] Git installed and configured
-- [ ] A GitHub account connected to your repository
-- [ ] Your first Python program committed and pushed
-- [ ] Successfully experimented with the REPL
-- [ ] Completed 3 warm-up exercises
+- [x] Python 3.10+ installed and working
+- [x] VS Code installed with the Python extension
+- [x] Git installed and configured
+- [x] A GitHub account connected to your repository
+- [x] Your first Python program committed and pushed
+- [x] Successfully experimented with the REPL
+- [x] Completed 3 warm-up exercises
 
 If you get stuck on any step, raise your hand. The TA will help. Everyone hits installation problems, it is normal and expected.
 
@@ -214,14 +214,14 @@ bool([1, 2, 3]) # True
 
 **REPL Observations Log** (fill this out):
 
-| Expression         | Result              | Why (your explanation)                                 |
-| ------------------ | ------------------- | ------------------------------------------------------ |
-| `0.1 + 0.2`        | 0.30000000000000004 |                                                        |
-| `0.1 + 0.2 == 0.3` | False               | They're not the same                                   |
-| `-10 % 3`          | 2                   |                                                        |
-| `int(3.9)`         | 3                   | Python truncates the floating point to get the integer |
-| `int("3.9")`       | ValueError          | Python types won't convert twice                       |
-| `bool([])`         | False               | An empty array is False                                |
+| Expression         | Result              | Why (your explanation)                                                                                                                                                                                                                         |
+| ------------------ | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `0.1 + 0.2`        | 0.30000000000000004 | Neither 0.1 nor 0.2 is exactly representable in binary.                                                                                                                                                                                        |
+| `0.1 + 0.2 == 0.3` | False               | They're not the same because of the binary approximation due to infinite decimal numbers in their binary representation of all three numbers.                                                                                                  |
+| `-10 % 3`          | 2                   | Python uses integer division so it floors the division of -10/3 to get -4 instead of -3.333...<br>Now it takes that -4 to multiply 3 to get -12, then check for the remainder i.e -12-10, that gives 2, which is the classic modulo operation. |
+| `int(3.9)`         | 3                   | Python truncates the floating point to get the integer 3                                                                                                                                                                                       |
+| `int("3.9")`       | ValueError          | Python types won't convert twice, so 3.9(float) can only be converted to 3(int). But then, we still have a string to deal with, so there is an error - `ValueError`                                                                            |
+| `bool([])`         | False               | An empty array is False in Python.                                                                                                                                                                                                             |
 
 ### Exercise 3.3: Temperature Converter
 

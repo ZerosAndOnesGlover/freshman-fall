@@ -29,7 +29,8 @@ MATH141_Week0/
 │   └── Course Overview Syllabus.md   (Full course roadmap, grading, policies)
 │
 └── solutions_instructor/
-    └── Problem Set 0 Solutions Instructor Only.md  ⚠️ NOT FOR STUDENTS
+    ├── Problem Set 0 Solutions Instructor Only.md  ⚠️ NOT FOR STUDENTS
+    └── LAB 00 Solutions.md                        ⚠️ NOT FOR STUDENTS
 ```
 
 ---

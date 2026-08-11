@@ -2,6 +2,7 @@
 ## Building a Turing Machine
 
 **Duration:** 3 hours · **Starter:** `tm_lab_starter.py` · **Submit:** your completed file + `answers.md`
+**Thursday of Week 11 · Lab Section** — Week 11 runs Tue/Wed/Fri lectures with a Thursday lab, so this one is sat mid-week, after L34 and L35.
 
 ---
 

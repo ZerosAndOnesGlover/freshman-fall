@@ -16,14 +16,14 @@ Week 9 introduces recursion as a fundamental problem-solving tool — not a curi
 | Tuesday | Lecture 1 | Recursion Fundamentals | 50 min |
 | Wednesday | Lecture 2 | Divide-and-Conquer and Backtracking | 50 min |
 | Thursday | Lecture 3 | Recursive Data Structures: Binary Trees | 50 min |
-| Monday | **Lab 9** | Recursion + Sorting + Complete BST Library | 2 hours |
+| Monday (Week 10) | **Lab 9** | Recursion + Sorting + Complete BST Library | 2 hours |
 
 ---
 
 ## Files in This Package
 
 ```
-PROG101_Week6/
+PROG101 Week9/
 ├── README.md
 ├── lectures/
 │   ├── Lecture 01 Recursion Fundamentals.md         ← Base/recursive case, tracing, recursion vs iteration, tail recursion
@@ -34,9 +34,11 @@ PROG101_Week6/
 ├── assignments/
 │   └── Problem Set 9.md                              ← 5 problems: fast power/recursion basics, merge sort variants, quicksort engineering, backtracking, BST applications
 ├── quizzes/
-│   └── QUIZ 6.md                                     ← 10 questions + full answer key
-└── resources/
-    └── Week 9 Recursion Tree Reference.md             ← Design checklist, pattern library, BST reference, complexity cheat sheet, common bugs
+│   └── QUIZ 8.md                                     ← 10 questions + full answer key (sat Tuesday, covers Week 8)
+├── resources/
+│   └── Week 9 Recursion Tree Reference.md             ← Design checklist, pattern library, BST reference, complexity cheat sheet, common bugs
+└── solutions_instructor/
+    └── LAB 9 Solutions.md                            ← Instructor only
 ```
 
 ---

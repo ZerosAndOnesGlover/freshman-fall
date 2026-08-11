@@ -2,6 +2,7 @@
 ## Continuity, Discontinuity, and Bisection
 
 **Duration:** 2 hours · **20 points**
+**Lab session:** Friday of Week 2
 
 ---
 

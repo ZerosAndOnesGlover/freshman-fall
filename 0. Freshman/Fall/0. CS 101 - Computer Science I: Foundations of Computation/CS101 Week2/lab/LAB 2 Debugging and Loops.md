@@ -1,7 +1,7 @@
 # CS 101 · Lab 2
 ## Debugging with Print-Tracing, PDB, and Loop Invariants
 
-**Week 2 · Tuesday Lab Section**
+**Tuesday of Week 3 · Lab Section** — sat after this week's Wed–Fri lectures, and covers Week 2.
 *Duration: 2 hours · Graded on completion (TA checkoff)*
 
 ---

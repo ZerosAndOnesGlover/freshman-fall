@@ -2,7 +2,7 @@
 ## Lab 01 (Friday, Week 1)
 ### Numerical and Graphical Investigation of Limits
 
-**Duration:** 2 hours | **Submission:** End of lab session + written report due Monday  
+**Duration:** 2 hours | **Submission:** End of lab session + written report due Monday, Week 2  
 **Tools:** Desmos (desmos.com), Python (optional), pen and paper for proofs
 
 ---

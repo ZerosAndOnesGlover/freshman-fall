@@ -2,6 +2,7 @@
 ## Week 5 · Lab 5: Pointer Mechanics and Write-Back
 
 **Duration:** 2 hours · **Points:** 20 · **Room:** BH 215
+**Lab session:** Monday of Week 6 — sat after this week's Tue–Thu lectures, and covers Week 5.
 
 **Build with:** `gcc -Wall -Wextra -Werror -pedantic -std=c11 -g`
 **Check with:** `valgrind --leak-check=full --error-exitcode=1`

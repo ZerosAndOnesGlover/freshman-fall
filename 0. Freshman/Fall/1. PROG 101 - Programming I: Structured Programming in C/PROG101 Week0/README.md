@@ -18,14 +18,14 @@ The goal: get your environment working, understand the compilation pipeline deep
 | Tuesday   | Lecture 1: The C Compilation Model | Main Hall 101 | 50 min   |
 | Wednesday | Lecture 2: Toolchain, Make, GDB    | Main Hall 101 | 50 min   |
 | Thursday  | Lecture 3: Hello World Deep Dive   | Main Hall 101 | 50 min   |
-| Monday    | **Lab 0: Environment Setup**       | Lab 204       | 2 hours  |
+| Friday (Week 0) | **Lab 0: Environment Setup**       | Lab 204       | 2 hours  |
 
 ---
 
 ## Files in This Package
 
 ```
-PROG101_Week0/
+PROG101 Week0/
 ├── README.md                          ← You are here
 │
 ├── lectures/
@@ -47,8 +47,12 @@ PROG101_Week0/
 ├── quizzes/
 │   └── QUIZ 0.md                          ← Quiz administered Week 1 Tuesday
 │
-└── resources/
-    └── c_quick_reference.md               ← Keep this open always
+├── resources/
+│   ├── Course Overview Syllabus.md        ← Grading, policies, the full 12-week map
+│   └── C Quick Reference.md               ← Keep this open always
+│
+└── solutions_instructor/
+    └── LAB 0 Solutions.md                 ← Instructor only
 ```
 
 ---

@@ -59,8 +59,8 @@ MATH151_Week5/
 │   └── QUIZ 6 Preview.md
 │
 ├── resources/
-│   ├── function_properties_reference.md
-│   └── Function Properties Reference.md
+│   ├── Function Properties Reference.md
+│   └── Cardinality Reference.md
 │
 └── solutions_instructor/
     ├── QUIZ 5 Solutions.md

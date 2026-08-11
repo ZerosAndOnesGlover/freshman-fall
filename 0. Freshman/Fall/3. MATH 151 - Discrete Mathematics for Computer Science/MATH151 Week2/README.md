@@ -60,8 +60,8 @@ MATH151_Week2/
 │   └── QUIZ 3 Preview.md
 │
 ├── resources/
-│   ├── proof_writing_guide.md
-│   └── proof_strategies_reference.md
+│   ├── Proof Writing Guide.md
+│   └── Proof Strategies Reference.md
 │
 └── solutions_instructor/
     ├── QUIZ 2 Solutions.md

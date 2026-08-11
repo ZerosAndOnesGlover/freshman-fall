@@ -2,6 +2,7 @@
 ## The Speed of Sound and Resonance in Air Columns
 
 **Duration:** 3 hours | **Total: 100 points**
+**Lab session:** Thursday of Week 10 — the lab meets Thursday, after that week's Mon/Tue lectures.
 
 ---
 

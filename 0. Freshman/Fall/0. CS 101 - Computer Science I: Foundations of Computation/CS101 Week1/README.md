@@ -18,7 +18,7 @@ CS101_Week1/
 │                                                  conversions, math module, REPL workflow
 │
 ├── lab/
-│   ├── LAB 1 Type Exploration.md              ← Tue: Python Tutor, type experiments,
+│   ├── LAB 1 Type Exploration.md              ← Tue of W2: Python Tutor, type experiments,
 │   │                                              string challenges, unit converter
 │   ├── starter_unit_converter.py             ← Lab starter — implement 3 TODOs
 │   └── [type_experiments.py, string_challenges.py, etc. — you create these]
@@ -28,8 +28,11 @@ CS101_Week1/
 │   ├── PS 1 Data Types and Expressions.md     ← Problem Set 1 (due Friday Week 2)
 │   └── ps1_starter.py                        ← PS1 starter code with TODOs
 │
-└── resources/
-    └── Reading Guide Week 1.md                ← Reading, REPL sessions, videos, mistakes
+├── resources/
+│   └── Reading Guide Week 1.md                ← Reading, REPL sessions, videos, mistakes
+│
+└── solutions_instructor/
+    └── LAB 1 Solutions.md                     ← Expected answers and marking notes
 ```
 
 ---
@@ -43,7 +46,7 @@ CS101_Week1/
 | Wed | Lecture 4 + Quiz 1 | Python object model, types deep dive, mutable vs immutable |
 | Thu | Lecture 5 | Expressions, evaluation model, operator precedence, bitwise |
 | Fri | Lecture 6 + PS1 released | Type system, conversions, `math`, REPL as thinking tool |
-| Tue | Lab 1 (graded) | Python Tutor visualization, type experiments, unit converter |
+| Tue (W2) | Lab 1 (graded) | Python Tutor visualization, type experiments, unit converter |
 
 ---
 
@@ -66,7 +69,7 @@ CS101_Week1/
 - [ ] Take notes during L05
 - [ ] Try the REPL Session B (short-circuit evaluation)
 
-### Tuesday Lab (Required)
+### Tuesday Lab, Week 2 (Required)
 - [ ] Complete all parts of LAB1
 - [ ] Implement `convert_linear()` and `convert_temperature()` in unit_converter.py
 - [ ] Get TA checkoff

@@ -24,7 +24,7 @@ never runs. Learning to recognise that category — and to reach for `-Wall` and
 | Tuesday | **Quiz 1** + Lecture 1 | Operators, expressions, and bit manipulation | 50 min |
 | Wednesday | Lecture 2 | Evaluation order and undefined behaviour | 50 min |
 | Thursday | Lecture 3 | Control flow — `if`, `switch`, `while`, `for` | 50 min |
-| Monday | **Lab 2** | Operators, evaluation order, and control flow | 2 hours |
+| Monday (Week 3) | **Lab 2** | Operators, evaluation order, and control flow | 2 hours |
 
 **Problem Set 2** released Friday, due Friday of Week 3.
 

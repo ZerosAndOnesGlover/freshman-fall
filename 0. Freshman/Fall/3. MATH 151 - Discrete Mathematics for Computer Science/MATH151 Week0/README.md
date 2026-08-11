@@ -49,8 +49,9 @@ MATH151_Week0/
 │   └── QUIZ 1 Preview.md                        ← Preview of Quiz 1 scope (held Week 1 Monday)
 │
 ├── resources/
-│   ├── notation_reference.md                   ← Symbol cheat sheet
-│   └── logic_laws_reference.md                 ← All standard equivalences in one place
+│   ├── Course Overview Syllabus.md             ← Grading, policies, the full 12-week map
+│   ├── Notation Reference.md                   ← Symbol cheat sheet
+│   └── Logic Laws Reference.md                 ← All standard equivalences in one place
 │
 └── solutions_instructor/
     ├── PS 0 Solutions.md                         ← Full worked solutions (instructor only)

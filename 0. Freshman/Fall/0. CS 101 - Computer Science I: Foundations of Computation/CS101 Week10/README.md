@@ -21,7 +21,7 @@ CS101_Week10/
 │                                                     writes, defensive reading of real files
 │
 ├── lab/
-│   ├── LAB 10 Robust File Handling.md           ← Tue: reproduce the truncation hazard and defeat
+│   ├── LAB 10 Robust File Handling.md           ← Tue of W11: reproduce the truncation hazard and defeat
 │   │                                                 it, measure encoding damage, establish
 │   │                                                 exception ordering, benchmark EAFP vs LBYL,
 │   │                                                 build a defensive CSV loader
@@ -54,7 +54,7 @@ persisting data without losing it, and failing in ways that can be diagnosed.
 | Wed | Lecture 31 + Quiz 10 | Files, modes, context managers, encoding, streaming |
 | Thu | Lecture 32 | Exceptions, the hierarchy, EAFP vs LBYL, raising well |
 | Fri | Lecture 33 + PS10 released | csv/json, pathlib, atomic writes, defensive parsing |
-| Tue | Lab 10 (graded) | Measure every failure mode above yourself |
+| Tue (W11) | Lab 10 (graded) | Measure every failure mode above yourself |
 | — | **Midterm 2** | Covers Weeks 6–9 |
 
 **📌 Midterm 2 does not cover Week 10.** This week's material appears on the final.
@@ -84,7 +84,7 @@ persisting data without losing it, and failing in ways that can be diagnosed.
 - [ ] Notes for L33
 - [ ] PS10 released — read it completely
 
-### Tuesday Lab (Required, Graded)
+### Tuesday Lab, Week 11 (Required, Graded)
 - [ ] Mode table; truncation reproduced; `atomic_write` proven to protect the original
 - [ ] Encoding damage measured and explained
 - [ ] Both exception orderings recorded; `BaseException` point made

@@ -2,6 +2,7 @@
 ## Mixed Review and Self-Diagnosis
 
 **Duration:** 2 hours · **Ungraded — attendance only**
+**Lab session:** Friday of Week 12
 
 ---
 

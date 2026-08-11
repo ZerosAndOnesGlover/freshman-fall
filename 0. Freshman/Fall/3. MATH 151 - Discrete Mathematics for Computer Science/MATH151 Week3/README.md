@@ -58,8 +58,8 @@ MATH151_Week3/
 │   └── QUIZ 4 Preview.md
 │
 ├── resources/
-│   ├── induction_template_reference.md
-│   └── common_summation_formulas.md
+│   ├── Induction Template Reference.md
+│   └── Common Summation Formulas.md
 │
 └── solutions_instructor/
     ├── QUIZ 3 Solutions.md

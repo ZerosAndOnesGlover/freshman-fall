@@ -3,7 +3,7 @@
 ### The Derivative: Numerical Exploration, Graphical Interpretation, and Rule Verification
 
 **Duration:** 2 hours | **Tools:** Desmos, Python (optional)
-**Submission:** Written report due Monday, Week 3
+**Submission:** Written report due Monday, Week 4
 
 ---
 

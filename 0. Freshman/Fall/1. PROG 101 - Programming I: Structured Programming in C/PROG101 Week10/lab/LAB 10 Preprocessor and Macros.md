@@ -2,6 +2,7 @@
 ## Week 10 · Lab 10: Seeing the Preprocessor
 
 **Duration:** 2 hours · **Points:** 20 · **Room:** BH 215
+**Lab session:** Monday of Week 11 — sat after this week's Tue–Thu lectures, and covers Week 10.
 
 **Build with:** `gcc -Wall -Wextra -Werror -pedantic -std=c11`
 

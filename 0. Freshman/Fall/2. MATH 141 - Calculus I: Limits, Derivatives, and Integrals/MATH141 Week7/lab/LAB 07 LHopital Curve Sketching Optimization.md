@@ -3,7 +3,7 @@
 ### L'Hôpital's Rule Verification, Curve Sketching Practice, and Optimization Design
 
 **Duration:** 2 hours | **Tools:** Desmos, Python (optional)
-**Submission:** Written report due Monday, Week 6
+**Submission:** Written report due Monday, Week 8
 
 ---
 

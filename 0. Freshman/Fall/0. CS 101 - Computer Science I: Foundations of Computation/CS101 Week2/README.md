@@ -18,7 +18,7 @@ CS101_Week2/
 │                                                   zip, Sieve of Eratosthenes
 │
 ├── lab/
-│   ├── LAB 2 Debugging and Loops.md            ← Tue: print debugging, PDB,
+│   ├── LAB 2 Debugging and Loops.md            ← Tue of W3: print debugging, PDB,
 │   │                                               Collatz, Sieve, Caesar cipher
 │   └── loops_starter.py                       ← Lab starter code with TODOs + test suite
 │
@@ -27,9 +27,12 @@ CS101_Week2/
 │   ├── PS 2 Control Flow.md                    ← Problem Set 2 (due Friday Week 3)
 │   └── ps2_starter.py                         ← PS2 starter code with full test suite
 │
-└── resources/
-    └── Reading Guide Week 2.md                 ← Reading, REPL sessions, common mistakes,
-                                                   loop invariant deep dive
+├── resources/
+│   └── Reading Guide Week 2.md                 ← Reading, REPL sessions, common mistakes,
+│                                                  loop invariant deep dive
+│
+└── solutions_instructor/
+    └── LAB 2 Solutions.md                      ← Expected answers and marking notes
 ```
 
 ---
@@ -43,7 +46,7 @@ CS101_Week2/
 | Wed | Lecture 7 + Quiz 2 | Conditionals: `if/elif/else`, decision trees, guard clauses |
 | Thu | Lecture 8 | `while` loops, loop invariants, accumulator/search/reduction patterns |
 | Fri | Lecture 9 + PS2 released | `for` loops, `range`, `enumerate`, `zip`, Sieve of Eratosthenes |
-| Tue | Lab 2 (graded) | Debugging with print + PDB, Collatz, Caesar cipher |
+| Tue (W3) | Lab 2 (graded) | Debugging with print + PDB, Collatz, Caesar cipher |
 
 ---
 
@@ -65,7 +68,7 @@ CS101_Week2/
 - [ ] Notes for L08
 - [ ] REPL Session B (while loop tracing)
 
-### Tuesday Lab (Required, Graded)
+### Tuesday Lab, Week 3 (Required, Graded)
 - [ ] Complete all 5 buggy functions in `debug_exercise.py`
 - [ ] Implement all 5 functions in `loops_starter.py` (all tests pass)
 - [ ] Write loop invariants for 3 functions

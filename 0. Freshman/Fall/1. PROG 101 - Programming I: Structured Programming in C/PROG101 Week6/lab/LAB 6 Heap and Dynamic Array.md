@@ -2,6 +2,7 @@
 ## Week 6 · Lab 6: The Heap and a Dynamic Array
 
 **Duration:** 2 hours · **Points:** 20 · **Room:** BH 215
+**Lab session:** Monday of Week 7 — sat after this week's Tue–Thu lectures, and covers Week 6.
 
 **Build with:** `gcc -Wall -Wextra -Werror -pedantic -std=c11 -g`
 **Check with:** `valgrind --leak-check=full --show-leak-kinds=all --error-exitcode=1`

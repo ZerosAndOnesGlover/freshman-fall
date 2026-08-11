@@ -54,8 +54,8 @@ MATH151_Week4/
 │   └── QUIZ 5 Preview.md
 │
 ├── resources/
-│   ├── set_notation_reference.md
-│   └── set_identities_reference.md
+│   ├── Set Notation Reference.md
+│   └── Set Identities Reference.md
 │
 └── solutions_instructor/
     ├── QUIZ 4 Solutions.md

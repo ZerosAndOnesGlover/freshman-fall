@@ -14,7 +14,7 @@ type, and understood exactly what you gave up to get it.
 | Tue | Lecture 1 | Function Pointers — Code as Data |
 | Wed | Lecture 2 | Generic Programming with `void *` |
 | Thu | Lecture 3 | Callbacks and Generic Containers |
-| Mon | Lab 11 | Generic Programming in C (2 hrs, BH 215) |
+| Mon (Week 12) | Lab 11 | Generic Programming in C (2 hrs, BH 215) |
 
 **Quiz 10** at the start of Tuesday's lecture, covering **Week 10**.
 **Problem Set 11** released Friday, due Friday of Week 12.

@@ -15,7 +15,7 @@ conditional compilation, and the small number of jobs a function cannot do.
 | Tue | Lecture 1 | The Preprocessor |
 | Wed | Lecture 2 | Macros and Their Traps |
 | Thu | Lecture 3 | Conditional Compilation and Macro Idioms |
-| Mon | Lab 10 | Seeing the Preprocessor (2 hrs, BH 215) |
+| Mon (Week 11) | Lab 10 | Seeing the Preprocessor (2 hrs, BH 215) |
 
 **Quiz 9** at the start of Tuesday's lecture, covering **Week 9**.
 **Midterm 2** Wednesday 18:00–19:30, VNC 100 — covers **Weeks 6–9**, worth **12%**.

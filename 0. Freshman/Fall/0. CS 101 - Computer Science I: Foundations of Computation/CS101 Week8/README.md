@@ -21,7 +21,7 @@ CS101_Week8/
 │                                                     list vs set vs dict decision framework
 │
 ├── lab/
-│   ├── LAB 8 Hash Tables from Scratch.md         ← Tue: build both hash table variants,
+│   ├── LAB 8 Hash Tables from Scratch.md         ← Tue of W9: build both hash table variants,
 │   │                                                 load-factor experiments, amortized
 │   │                                                 insertion verification, dict vs list
 │   │                                                 benchmark, hash/eq contract investigation
@@ -35,10 +35,13 @@ CS101_Week8/
 │                                                     6 refactored algorithms, two-sum family,
 │                                                     memoization decorators, set theory
 │
-└── resources/
-    └── Reading Guide Week 8.md                   ← 3 experimentation sessions, complexity
-                                                       reference card, self-test, Project 1 +
-                                                       Week 9 reminder
+├── resources/
+│   └── Reading Guide Week 8.md                   ← 3 experimentation sessions, complexity
+│                                                      reference card, self-test, Project 1 +
+│                                                      Week 9 reminder
+│
+└── solutions_instructor/
+    └── LAB 8 Solutions.md                        ← Expected answers and marking notes
 ```
 
 ---
@@ -52,7 +55,7 @@ CS101_Week8/
 | Wed | Lecture 25 + Quiz 8 | The hashing idea; Python dict/set; hashable vs unhashable; hash/eq contract |
 | Thu | Lecture 26 | Collision resolution: chaining vs open addressing; load factor; resizing |
 | Fri | Lecture 27 + PS8 released | Practical patterns: counting, grouping, complement search, memoization |
-| Tue | Lab 8 (graded) | Build both hash table variants from scratch; empirical load-factor/speedup analysis |
+| Tue (W9) | Lab 8 (graded) | Build both hash table variants from scratch; empirical load-factor/speedup analysis |
 
 **📌 Project 1 is due this Friday (end of Week 9)** — if you haven't started, begin immediately. See Week 7's `PROJECT 1 Data Analysis Tool.md`.
 
@@ -76,7 +79,7 @@ CS101_Week8/
 - [ ] Notes for L26
 - [ ] Read CLRS Ch. 11.4 (open addressing)
 
-### Tuesday Lab (Required, Graded)
+### Tuesday Lab, Week 9 (Required, Graded)
 - [ ] Build both `ChainedHashTable` and `OpenAddressingHashTable` — full test suite passes
 - [ ] Run load-factor experiments and record analysis
 - [ ] Verify amortized O(1) insertion empirically

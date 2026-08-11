@@ -54,8 +54,8 @@ MATH151_Week7/
 │   └── QUIZ 8 Preview.md
 │
 ├── resources/
-│   ├── counting_formulas_reference.md
-│   └── counting_decision_guide.md
+│   ├── Counting Formulas Reference.md
+│   └── Counting Decision Guide.md
 │
 └── solutions_instructor/
     ├── QUIZ 7 Solutions.md

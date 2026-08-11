@@ -1,7 +1,7 @@
 # CS 101 · Lab 7
 ## Memory Profiling: List vs. Linked List
 
-**Week 7 · Tuesday Lab Section**
+**Tuesday of Week 8 · Lab Section** — sat after this week's Wed–Fri lectures, and covers Week 7.
 *Duration: 2 hours · Graded on completion (TA checkoff)*
 
 ---

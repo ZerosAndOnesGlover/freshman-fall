@@ -3,6 +3,7 @@
 
 **Graded: 20 points**
 **Duration:** 2 hours
+**Lab session:** Monday of Week 9 — sat after this week's Tue–Thu lectures, and covers Week 8.
 **Submission:** Push to Git, show TA before leaving
 
 ---

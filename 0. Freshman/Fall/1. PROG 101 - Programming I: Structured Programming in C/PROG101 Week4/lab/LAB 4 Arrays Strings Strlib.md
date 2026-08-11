@@ -2,6 +2,7 @@
 ## Week 4 · Lab 4: Arrays, Strings, and a String Library
 
 **Duration:** 2 hours · **Points:** 20 · **Room:** BH 215
+**Lab session:** Monday of Week 5 — sat after this week's Tue–Thu lectures, and covers Week 4.
 
 **Build with:** `gcc -Wall -Wextra -Werror -pedantic -std=c11`
 **Check with:** `valgrind --leak-check=full --error-exitcode=1`

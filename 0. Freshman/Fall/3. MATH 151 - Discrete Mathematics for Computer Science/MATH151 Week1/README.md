@@ -57,8 +57,8 @@ MATH151_Week1/
 │   └── QUIZ 2 Preview.md
 │
 ├── resources/
-│   ├── quantifier_rules_reference.md
-│   └── translation_patterns.md
+│   ├── Quantifier Rules Reference.md
+│   └── Translation Patterns.md
 │
 └── solutions_instructor/
     ├── QUIZ 1 Solutions.md

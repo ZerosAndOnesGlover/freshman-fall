@@ -2,6 +2,7 @@
 ## Week 12 · Lab 12: Refactor, Test, Debug
 
 **Duration:** 2 hours · **Points:** 20 · **Room:** BH 215
+**Lab session:** Monday of Week 13 — sat after this week's Tue–Thu lectures, and covers Week 12.
 
 **Build with:** `gcc -Wall -Wextra -Werror -pedantic -std=c11 -g`
 

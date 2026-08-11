@@ -1,6 +1,7 @@
 # PHYS 141 · Quiz 10
 ## Sound: Doppler Effect, Resonance, and Decibels
 
+**Administered:** Monday of Week 11, the Monday after this material is covered — covers Week 10.
 **Time limit:** 20 minutes | **Format:** Closed book
 **Formula sheet:** $v \approx 331+0.6T_C$; $I = P/4\pi r^2$; $\beta = 10\log_{10}(I/I_0)$,
 $I_0 = 10^{-12}$ W/m²; open–open $f_n = nv/2L$; closed–open $f_n = nv/4L$ ($n$ odd);

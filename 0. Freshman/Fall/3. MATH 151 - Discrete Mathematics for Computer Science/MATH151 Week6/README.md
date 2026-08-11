@@ -58,8 +58,8 @@ MATH151_Week6/
 │   └── QUIZ 7 Preview.md
 │
 ├── resources/
-│   ├── relation_properties_reference.md
-│   └── hasse_diagram_reference.md
+│   ├── Relation Properties Reference.md
+│   └── Hasse Diagram Reference.md
 │
 └── solutions_instructor/
     ├── QUIZ 6 Solutions.md

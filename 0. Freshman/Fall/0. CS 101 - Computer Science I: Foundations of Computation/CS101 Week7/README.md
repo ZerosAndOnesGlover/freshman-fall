@@ -24,7 +24,7 @@ CS101_Week7/
 │                                                     bracket matching, round-robin scheduling
 │
 ├── lab/
-│   ├── LAB 7 Memory Profiling.md                 ← Tue: sys.getsizeof deep dive, build all
+│   ├── LAB 7 Memory Profiling.md                 ← Tue of W8: sys.getsizeof deep dive, build all
 │   │                                                 4 structures, empirical memory + speed
 │   │                                                 comparison, bracket matcher, undo/redo
 │   └── data_structures_starter.py               ← Lab starter — Node/LinkedList/DLL/Stack/
@@ -39,12 +39,15 @@ CS101_Week7/
 │   └── PROJECT 1 Data Analysis Tool.md           ← Project 1 (assigned this week,
 │                                                     due Week 9) — full spec + rubric
 │
-└── resources/
-    ├── weather_data.csv                         ← Messy sample dataset for Project 1
-    │                                                 (missing values, malformed rows,
-    │                                                 duplicates, implausible values)
-    └── Reading Guide Week 7.md                   ← 3 experimentation sessions, full
-                                                       complexity reference card, self-test
+├── resources/
+│   ├── weather_data.csv                         ← Messy sample dataset for Project 1
+│   │                                                (missing values, malformed rows,
+│   │                                                duplicates, implausible values)
+│   └── Reading Guide Week 7.md                   ← 3 experimentation sessions, full
+│                                                      complexity reference card, self-test
+│
+└── solutions_instructor/
+    └── LAB 7 Solutions.md                        ← Expected answers and marking notes
 ```
 
 ---
@@ -58,7 +61,7 @@ CS101_Week7/
 | Wed | Lecture 22 + Quiz 7 | ADTs vs implementations; Python lists as dynamic arrays; O(1) vs O(n) operations |
 | Thu | Lecture 23 | Linked lists from scratch: singly linked, tail-pointer optimization, doubly linked |
 | Fri | Lecture 24 + PS7 released | Stack and Queue ADTs; array vs linked implementations; deques; real applications |
-| Tue | Lab 7 (graded) | Build every structure; profile memory; benchmark operations; build applications |
+| Tue (W8) | Lab 7 (graded) | Build every structure; profile memory; benchmark operations; build applications |
 
 **📌 Project 1 was assigned this week** (due Week 9) — see `assignments/PROJECT 1 Data Analysis Tool.md`. Start early; it requires synthesizing nearly everything from Weeks 0–7.
 
@@ -82,7 +85,7 @@ CS101_Week7/
 - [ ] Notes for L23
 - [ ] REPL Session C (nested-tuple linked list intuition)
 
-### Tuesday Lab (Required, Graded)
+### Tuesday Lab, Week 8 (Required, Graded)
 - [ ] Complete memory profiling exercises (Part 1)
 - [ ] Implement all 4 structures in `data_structures.py` — full test suite passes
 - [ ] Run empirical memory and speed comparisons

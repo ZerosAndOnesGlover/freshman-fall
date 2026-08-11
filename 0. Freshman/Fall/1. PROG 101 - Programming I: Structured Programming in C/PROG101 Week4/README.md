@@ -15,7 +15,7 @@ cases, actively dangerous.
 | Tue | Lecture 1 | Arrays — The First Data Structure |
 | Wed | Lecture 2 | Strings in Depth — Processing, Searching, Building |
 | Thu | Lecture 3 | Buffer Safety and the Bounded String Functions |
-| Mon | Lab 4 | Arrays, Strings, and a String Library (2 hrs, BH 215) |
+| Mon (Week 5) | Lab 4 | Arrays, Strings, and a String Library (2 hrs, BH 215) |
 
 **Quiz 3** at the start of Tuesday's lecture, covering **Week 3**.
 **Problem Set 4** released Friday, due Friday of Week 5.

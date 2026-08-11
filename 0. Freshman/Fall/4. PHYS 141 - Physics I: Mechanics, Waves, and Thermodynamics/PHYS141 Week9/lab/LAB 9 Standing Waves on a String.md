@@ -2,6 +2,7 @@
 ## Standing Waves on a String
 
 **Duration:** 3 hours | **Total: 100 points**
+**Lab session:** Thursday of Week 9 — the lab meets Thursday, after that week's Mon/Tue lectures.
 
 ---
 

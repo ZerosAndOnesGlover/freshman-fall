@@ -1,7 +1,7 @@
 # CS 101 · Lab 4
 ## Recursion Tree Drawing and Implementation
 
-**Week 4 · Tuesday Lab Section**
+**Tuesday of Week 5 · Lab Section** — sat after this week's Wed–Fri lectures, and covers Week 4.
 *Duration: 2 hours · Graded on completion (TA checkoff)*
 
 ---

@@ -1,6 +1,7 @@
 # PHYS 141 · Quiz 6
 ## Rotational Kinematics & Dynamics
 
+**Administered:** Monday of Week 7, the Monday after this material is covered — covers Week 6.
 **Time limit:** 20 minutes | **Format:** Closed book
 **Formula sheet:** ω=ω₀+αt; Δθ=ω₀t+½αt²; ω²=ω₀²+2αΔθ; τ=Iα; τ=Fd; I_disk=½MR²; I_hoop=MR²; I_sphere=(2/5)MR²; KE_rot=½Iω²; v_cm=Rω (rolling); a=g sinθ/(1+β)
 

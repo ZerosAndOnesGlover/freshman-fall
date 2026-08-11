@@ -3,7 +3,7 @@
 
 **Not graded: completion required before Problem Set 0**
 **Duration:** 2 hours
-**Lab Section:** Monday
+**Lab session:** Friday of Week 0 — the Week 0 orientation lab slot. From Lab 1 onward labs meet Monday.
 
 ---
 
@@ -312,6 +312,16 @@ Fix the bug (change `6` to `5`), recompile, and verify.
 
 **Checkpoint question:**
 > What was the value of `arr[5]`? Is it consistent between runs? What does this tell you about uninitialized memory?
+> Yes, 5 was consistent between runs, it was a garbage value:
+
+``` gdb
+(gdb) print arr[5]
+$8 = 32767
+(gdb) print arr[5]
+$9 = 32767
+(gdb) print arr[5]
+$10 = 32767
+```
 
 ---
 
@@ -344,7 +354,7 @@ EOF
 
 # Add and commit
 git add .
-git commit -m "Week 0: initial setgit commit -m "Week 0: initial setup — hello world, temperature, buggy"up — hello world, temperature, buggy"
+git commit -m "Week 0: initial setup — hello world, temperature, buggy"
 git log --oneline
 ```
 

@@ -2,6 +2,7 @@
 ## Heat Engines, the Gas Laws, and Thermal Efficiency
 
 **Duration:** 3 hours | **Total: 100 points**
+**Lab session:** Thursday of Week 12 — the lab meets Thursday, after that week's Mon/Tue lectures.
 
 ---
 

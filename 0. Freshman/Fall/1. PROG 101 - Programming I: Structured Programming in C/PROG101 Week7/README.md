@@ -5,7 +5,7 @@
 
 ## Week Overview
 
-Week 7 is where C stops being about individual values and starts being about **data structures**. Structs let you group related fields. Unions let you represent "one of several possibilities." Combined with the pointers and heap allocation from Week 3, you can now build the linked list — the first genuine data structure of your career, and the gateway to trees, graphs, and every dynamic structure that follows.
+Week 7 is where C stops being about individual values and starts being about **data structures**. Structs let you group related fields. Unions let you represent "one of several possibilities." Combined with the pointers from Week 5 and heap allocation from Week 6, you can now build the linked list — the first genuine data structure of your career, and the gateway to trees, graphs, and every dynamic structure that follows.
 
 ---
 
@@ -16,14 +16,14 @@ Week 7 is where C stops being about individual values and starts being about **d
 | Tuesday | Lecture 1 | Structures: Composite Types and Memory Layout | 50 min |
 | Wednesday | Lecture 2 | Unions, Enumerations, and Bit Fields | 50 min |
 | Thursday | Lecture 3 | Linked Lists: Structs and Pointers Combined | 50 min |
-| Monday | **Lab 7** | Struct Layout + Tagged Unions + Linked List Library | 2 hours |
+| Monday (Week 8) | **Lab 7** | Struct Layout + Tagged Unions + Linked List Library | 2 hours |
 
 ---
 
 ## Files in This Package
 
 ```
-PROG101_Week4/
+PROG101 Week7/
 ├── README.md
 ├── lectures/
 │   ├── Lecture 01 Structures.md                    ← Structs, padding, ->, nested structs, typedef
@@ -34,9 +34,11 @@ PROG101_Week4/
 ├── assignments/
 │   └── Problem Set 7.md                             ← 5 problems: layout, tagged unions, doubly linked list, student system, state machine
 ├── quizzes/
-│   └── QUIZ 4.md                                    ← 10 questions + full answer key
-└── resources/
-    └── Week 7 Struct Union Linkedlist Reference.md   ← Layout rules, syntax cheat sheet, pattern library, common bugs
+│   └── QUIZ 6.md                                    ← 10 questions + full answer key (sat Tuesday, covers Week 6)
+├── resources/
+│   └── Week 7 Struct Union Linkedlist Reference.md   ← Layout rules, syntax cheat sheet, pattern library, common bugs
+└── solutions_instructor/
+    └── LAB 7 Solutions.md                           ← Instructor only
 ```
 
 ---

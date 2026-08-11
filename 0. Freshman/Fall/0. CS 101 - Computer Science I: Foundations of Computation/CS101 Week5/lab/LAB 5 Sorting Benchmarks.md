@@ -1,7 +1,7 @@
 # CS 101 · Lab 5
 ## Benchmarking Sorting Algorithms
 
-**Week 5 · Tuesday Lab Section**
+**Tuesday of Week 6 · Lab Section** — sat after this week's Wed–Fri lectures, and covers Week 5.
 *Duration: 2 hours · Graded on completion (TA checkoff)*
 
 ---

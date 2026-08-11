@@ -16,7 +16,7 @@ CS101_Week0/
 │   └── L03 Values Types and Expressions.md ← Fri: Python types, operators, expressions
 │
 ├── lab/
-│   ├── LAB 0 Environment Setup.md          ← Tue lab instructions (2 hours)
+│   ├── LAB 0 Environment Setup.md          ← Fri of W0 lab instructions (2 hours)
 │   ├── starter_hello.py                   ← Lab starter code — hello world
 │   ├── starter_temperature.py             ← Lab starter code — temperature converter
 │   ├── starter_calculator.py              ← Lab starter code — calculator
@@ -25,10 +25,13 @@ CS101_Week0/
 ├── assignments/
 │   └── QUIZ 0 Orientation Self Assessment.md ← Ungraded self-check quiz
 │
-└── resources/
-    ├── Course Overview Syllabus.md         ← Full course info, grading, policies
-    ├── Reading Guide Week 0.md              ← What to read, where to find it
-    └── Python Quick Reference.md           ← Cheat sheet: types, operators, Git, terminal
+├── resources/
+│   ├── Course Overview Syllabus.md         ← Full course info, grading, policies
+│   ├── Reading Guide Week 0.md              ← What to read, where to find it
+│   └── Python Quick Reference.md           ← Cheat sheet: types, operators, Git, terminal
+│
+└── solutions_instructor/
+    └── LAB 0 Solutions.md                  ← Expected answers and marking notes
 ```
 
 ---
@@ -42,7 +45,7 @@ CS101_Week0/
 | Wed | Lecture 1 | What is CS? Algorithms, Turing, history, Von Neumann |     |
 | Thu | Lecture 2 | Python, tools, terminal, REPL, Git setup             |     |
 | Fri | Lecture 3 | Values, types, expressions, operators                |     |
-| Tue | Lab 0     | Environment setup, first programs, Git repo          |     |
+| Fri (W0) | Lab 0     | Environment setup, first programs, Git repo          |     |
 
 **No Problem Set this week.** (PS1 releases Friday of Week 1.)
 **No Quiz this week.** (Quiz 1 is Wednesday of Week 2.)
@@ -65,7 +68,7 @@ CS101_Week0/
 - [ ] Complete at least the Python and Git installation steps
 - [ ] Try the terminal commands in L02
 
-### Tuesday Lab (Required)
+### Friday Lab, Week 0 (Required)
 - [ ] Bring laptop with Python, VS Code, Git installed (or ask for help)
 - [ ] Complete all of LAB 0 Environment Setup.md
 - [ ] Get checked off by TA before leaving

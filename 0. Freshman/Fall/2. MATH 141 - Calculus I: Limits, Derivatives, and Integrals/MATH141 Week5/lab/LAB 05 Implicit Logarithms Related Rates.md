@@ -3,7 +3,7 @@
 ### Implicit Curves, Logarithmic Derivatives, and Related Rates Simulation
 
 **Duration:** 2 hours | **Tools:** Desmos, Python (optional)
-**Submission:** Written report due Monday, Week 4
+**Submission:** Written report due Monday, Week 6
 
 ---
 

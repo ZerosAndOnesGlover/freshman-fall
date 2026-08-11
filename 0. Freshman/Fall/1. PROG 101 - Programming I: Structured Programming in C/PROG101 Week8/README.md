@@ -16,14 +16,14 @@ Week 8 takes everything you've built — structs, arrays, linked lists — and g
 | Tuesday | Lecture 1 | File I/O Basics: fopen, fread, fwrite | 50 min |
 | Wednesday | Lecture 2 | The UNIX File Model: File Descriptors | 50 min |
 | Thursday | Lecture 3 | Binary Files and Struct Serialization | 50 min |
-| Monday | **Lab 8** | Persistent Student Record Database | 2 hours |
+| Monday (Week 9) | **Lab 8** | Persistent Student Record Database | 2 hours |
 
 ---
 
 ## Files in This Package
 
 ```
-PROG101_Week5/
+PROG101 Week8/
 ├── README.md
 ├── lectures/
 │   ├── Lecture 01 File IO Basics.md              ← FILE*, fopen modes, fgets/fscanf, stdin/stdout/stderr, buffering
@@ -34,9 +34,11 @@ PROG101_Week5/
 ├── assignments/
 │   └── Problem Set 8.md                           ← 5 problems: text utilities, config parser, log analyzer, binary inventory, key-value store
 ├── quizzes/
-│   └── QUIZ 5.md                                  ← 10 questions + full answer key
-└── resources/
-    └── Week 8 File IO Reference.md                 ← Mode cheat sheet, idiom library, error checklist, common bugs, text-vs-binary guide
+│   └── QUIZ 7.md                                  ← 10 questions + full answer key (sat Tuesday, covers Week 7)
+├── resources/
+│   └── Week 8 File IO Reference.md                 ← Mode cheat sheet, idiom library, error checklist, common bugs, text-vs-binary guide
+└── solutions_instructor/
+    └── LAB 8 Solutions.md                         ← Instructor only
 ```
 
 ---

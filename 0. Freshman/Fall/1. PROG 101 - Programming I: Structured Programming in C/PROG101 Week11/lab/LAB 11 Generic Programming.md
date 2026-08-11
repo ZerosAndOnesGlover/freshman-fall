@@ -2,6 +2,7 @@
 ## Week 11 · Lab 11: Generic Programming in C
 
 **Duration:** 2 hours · **Points:** 20 · **Room:** BH 215
+**Lab session:** Monday of Week 12 — sat after this week's Tue–Thu lectures, and covers Week 11.
 
 **Build with:** `gcc -Wall -Wextra -Werror -pedantic -std=c11 -g`
 **Check with:** `valgrind --leak-check=full --error-exitcode=1`

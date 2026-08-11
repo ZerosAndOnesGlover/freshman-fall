@@ -3,6 +3,7 @@
 
 **Graded: 20 points**
 **Duration:** 2 hours
+**Lab session:** Monday of Week 3 — sat after this week's Tue–Thu lectures, and covers Week 2.
 **Submission:** Push to Git, show TA before leaving
 
 **Build with:** `gcc -Wall -Wextra -Werror -pedantic -std=c11 -g`

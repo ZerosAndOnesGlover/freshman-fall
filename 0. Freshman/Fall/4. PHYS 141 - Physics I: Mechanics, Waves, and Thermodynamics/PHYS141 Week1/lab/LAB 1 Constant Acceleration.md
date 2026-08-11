@@ -2,6 +2,7 @@
 # Measuring Constant Acceleration — Measuring g
 
 **Duration:** 3 hours | **Partners:** Groups of 2–3
+**Lab session:** Thursday of Week 1 — the lab meets Thursday, after that week's Mon/Tue lectures.
 
 ---
 

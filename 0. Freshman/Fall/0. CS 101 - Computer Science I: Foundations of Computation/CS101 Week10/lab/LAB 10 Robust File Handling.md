@@ -2,6 +2,7 @@
 ## Robust File Handling: Truncation, Encoding, Exceptions, and Atomic Writes
 
 **Duration:** 3 hours | **Graded:** TA checkoff on completion and correctness
+**Tuesday of Week 11 · Lab Section** — sat after this week's Wed–Fri lectures, and covers Week 10.
 
 ---
 

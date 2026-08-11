@@ -14,7 +14,7 @@ array traversal, and every data structure from Week 7 onward.
 | Tue | Lecture 1 | What a Pointer Is |
 | Wed | Lecture 2 | Pass-by-Pointer and Pointer Arithmetic |
 | Thu | Lecture 3 | NULL, `const`, and the Classic Pointer Errors |
-| Mon | Lab 5 | Pointer Mechanics and Write-Back (2 hrs, BH 215) |
+| Mon (Week 6) | Lab 5 | Pointer Mechanics and Write-Back (2 hrs, BH 215) |
 
 **Quiz 4** at the start of Tuesday's lecture, covering **Week 4**.
 **Problem Set 5** released Friday, due Friday of Week 6.

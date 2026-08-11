@@ -3,7 +3,7 @@
 ### Visualizing Extrema, the Mean Value Theorem, and Curve Shape
 
 **Duration:** 2 hours | **Tools:** Desmos, Python (optional)
-**Submission:** Written report due Monday, Week 5
+**Submission:** Written report due Monday, Week 7
 
 ---
 

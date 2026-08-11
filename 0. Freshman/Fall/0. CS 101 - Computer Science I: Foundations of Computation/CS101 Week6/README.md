@@ -21,7 +21,7 @@ CS101_Week6/
 │                                                          case, limits of Big-O, course synthesis
 │
 ├── lab/
-│   ├── LAB 6 Empirical vs Theoretical Complexity.md  ← Tue: analyze 8 functions by hand FIRST,
+│   ├── LAB 6 Empirical vs Theoretical Complexity.md  ← Tue of W7: analyze 8 functions by hand FIRST,
 │   │                                                     then benchmark, fit curves, plot,
 │   │                                                     formal proof practice
 │   └── analyze_growth_starter.py                    ← Lab starter — regression-based estimator
@@ -34,9 +34,12 @@ CS101_Week6/
 │   └── MIDTERM 1 Review and Practice Exam.md         ← Full practice exam + complete answer key
 │                                                          (Weeks 0–5)
 │
-└── resources/
-    └── Reading Guide Week 6.md                       ← 3 practice sessions, formula reference
-                                                           card, 5 mistakes, self-test
+├── resources/
+│   └── Reading Guide Week 6.md                       ← 3 practice sessions, formula reference
+│                                                          card, 5 mistakes, self-test
+│
+└── solutions_instructor/
+    └── LAB 6 Solutions.md                            ← Expected answers and marking notes
 ```
 
 ---
@@ -50,7 +53,7 @@ CS101_Week6/
 | Wed | Lecture 19 + Quiz 6 | Formal O/Ω/Θ definitions, worked proofs, loop analysis rules |
 | Thu | Lecture 20 | Recurrence relations: recursion tree, substitution, Master Theorem |
 | Fri | Lecture 21 + PS6 released | Complexity classes in depth, log-log math, limits of Big-O |
-| Tue | Lab 6 (graded) | Theoretical analysis → empirical benchmark → curve fitting → formal proofs |
+| Tue (W7) | Lab 6 (graded) | Theoretical analysis → empirical benchmark → curve fitting → formal proofs |
 
 **⚠️ Midterm 1 this week** — covers Weeks 0 through 5. A full practice exam with answer key is included in `assignments/MIDTERM 1 Review and Practice Exam.md`.
 
@@ -74,7 +77,7 @@ CS101_Week6/
 - [ ] Notes for L20
 - [ ] Practice Session B (recurrence practice — all 4 recurrences)
 
-### Tuesday Lab (Required, Graded)
+### Tuesday Lab, Week 7 (Required, Graded)
 - [ ] Complete Part 1 (theoretical analysis) BEFORE writing any code
 - [ ] Run the full benchmark and curve-fitting pipeline
 - [ ] Generate both comparison plots

@@ -3,7 +3,7 @@
 ### Substitution Pattern Recognition, Symmetry, and the Tabular Method for Integration by Parts
 
 **Duration:** 2 hours | **Tools:** Desmos, Python (optional)
-**Submission:** Written report due Monday, Week 8
+**Submission:** Written report due Monday, Week 11
 
 ---
 

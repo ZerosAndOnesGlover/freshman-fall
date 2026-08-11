@@ -2,6 +2,7 @@
 ## Text Processing: Measuring the Concatenation Trap, Search Cost, and Regex Behaviour
 
 **Duration:** 3 hours | **Graded:** TA checkoff on completion and correctness
+**Tuesday of Week 10 · Lab Section** — sat after this week's Wed–Fri lectures, and covers Week 9.
 
 ---
 

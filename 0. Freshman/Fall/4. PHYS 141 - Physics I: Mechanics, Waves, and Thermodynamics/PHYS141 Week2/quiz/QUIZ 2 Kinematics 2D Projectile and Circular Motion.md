@@ -1,6 +1,7 @@
 # PHYS 141 · Quiz 2
 ## 2D Kinematics, Projectile Motion & Circular Motion
 
+**Administered:** Monday of Week 3, the Monday after this material is covered — covers Week 2.
 **Time limit:** 20 minutes | **Format:** Closed book
 **Formula sheet provided:** kinematic equations, g = 9.81 m/s², trig identities sin2θ = 2sinθcosθ
 

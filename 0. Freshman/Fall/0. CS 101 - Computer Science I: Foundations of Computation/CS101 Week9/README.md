@@ -21,7 +21,7 @@ CS101_Week9/
 │                                                     regular-vs-context-free boundary
 │
 ├── lab/
-│   ├── LAB 9 Text Processing and Regex.md       ← Tue: measure the concat trap and defeat the
+│   ├── LAB 9 Text Processing and Regex.md       ← Tue of W10: measure the concat trap and defeat the
 │   │                                                 refcount optimisation, instrument naive
 │   │                                                 search, build a log parser, demonstrate ReDoS
 │   └── text_lab_starter.py                      ← Lab starter — benchmarks + ReDoS harness ready
@@ -53,7 +53,7 @@ declarative pattern language — plus a clear account of where each stops workin
 | Wed | Lecture 28 + Quiz 9 | Immutability, the concatenation trap, encoding and normalisation |
 | Thu | Lecture 29 | Substring search cost, tokenising, transformation patterns |
 | Fri | Lecture 30 + PS9 released | Regular expressions, greedy vs lazy, ReDoS, the regex boundary |
-| Tue | Lab 9 (graded) | Measure everything above yourself |
+| Tue (W10) | Lab 9 (graded) | Measure everything above yourself |
 
 **📌 Project 1 (Data Analysis Tool) is due this Friday.** See Week 7's `PROJECT 1` file.
 
@@ -84,7 +84,7 @@ declarative pattern language — plus a clear account of where each stops workin
 - [ ] **Submit Project 1**
 - [ ] PS9 released — read it completely
 
-### Tuesday Lab (Required, Graded)
+### Tuesday Lab, Week 10 (Required, Graded)
 - [ ] Both concatenation benchmarks; identify the quadratic ratio
 - [ ] `naive_search` agreeing with `str.find`; confirm the (n−k)(k+1) formula
 - [ ] Log parser with named groups that skips malformed lines

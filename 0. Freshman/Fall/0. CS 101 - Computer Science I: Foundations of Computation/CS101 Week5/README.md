@@ -21,7 +21,7 @@ CS101_Week5/
 │                                                      Ω(n log n) decision-tree lower bound
 │
 ├── lab/
-│   ├── LAB 5 Sorting Benchmarks.md               ← Tue: implement + instrument all 5 sorts,
+│   ├── LAB 5 Sorting Benchmarks.md               ← Tue of W6: implement + instrument all 5 sorts,
 │   │                                                 benchmark 10→100,000, plot log-log,
 │   │                                                 verify best-case & stability empirically
 │   └── sorting_algorithms_starter.py            ← Lab starter — 5 algorithms + verify_all()
@@ -32,10 +32,13 @@ CS101_Week5/
 │   └── ps5_starter.py                           ← Full scaffold: 4 sections, search + sort +
 │                                                      empirical analysis + event scheduling
 │
-└── resources/
-    └── Reading Guide Week 5.md                   ← 3 experimentation sessions, algorithm
-                                                      summary table, 5 mistakes, self-test,
-                                                      Midterm 1 prep notes
+├── resources/
+│   └── Reading Guide Week 5.md                   ← 3 experimentation sessions, algorithm
+│                                                     summary table, 5 mistakes, self-test,
+│                                                     Midterm 1 prep notes
+│
+└── solutions_instructor/
+    └── LAB 5 Solutions.md                        ← Expected answers and marking notes
 ```
 
 ---
@@ -49,7 +52,7 @@ CS101_Week5/
 | Wed | Lecture 16 + Quiz 5 | Linear vs binary search; invariant proofs; binary search on the answer |
 | Thu | Lecture 17 | Selection, insertion, bubble sort; stability; O(n²) at scale |
 | Fri | Lecture 18 + PS5 released | Merge sort, quicksort, Timsort; Ω(n log n) lower bound |
-| Tue | Lab 5 (graded) | Implement, instrument, benchmark, and plot all 5 sorting algorithms |
+| Tue (W6) | Lab 5 (graded) | Implement, instrument, benchmark, and plot all 5 sorting algorithms |
 
 **⚠️ Midterm 1 is next week** (Week 6), covering everything from Week 0 through Week 5.
 
@@ -73,7 +76,7 @@ CS101_Week5/
 - [ ] Notes for L17
 - [ ] REPL Session B (watch selection sort degrade vs merge sort)
 
-### Tuesday Lab (Required, Graded)
+### Tuesday Lab, Week 6 (Required, Graded)
 - [ ] Implement all 5 instrumented sorting algorithms
 - [ ] Run the full benchmark (n=10 to 100,000) and generate all 3 plots
 - [ ] Verify best-case behavior and stability empirically

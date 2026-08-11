@@ -3,6 +3,7 @@
 
 **Graded: 20 points (completion + correctness)**
 **Duration:** 2 hours
+**Lab session:** Monday of Week 2 — sat after this week's Tue–Thu lectures, and covers Week 1.
 **Submission:** Push to Git, show TA before leaving
 
 ---

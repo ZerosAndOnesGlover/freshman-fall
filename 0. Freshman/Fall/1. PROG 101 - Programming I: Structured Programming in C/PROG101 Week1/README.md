@@ -1,11 +1,11 @@
 # PROG 101 · Week 1: Types, Variables, and the Memory Model
-## Data Representation · Operators · Control Flow
+## Data Representation · Integers · Floating Point
 
 ---
 
 ## Week Overview
 
-Week 1 goes deep into C's type system and memory model — the foundation everything else rests on. You will understand *why* integers overflow, *why* floating-point arithmetic is approximate, and *how* the compiler stores your variables in memory. By Thursday you will be manipulating bits, tracing loops by hand, and thinking at the machine level.
+Week 1 goes deep into C's type system and memory model — the foundation everything else rests on. You will understand *why* integers overflow, *why* floating-point arithmetic is approximate, and *how* the compiler stores your variables in memory. By Monday's lab you will be manipulating bits, tracing loops by hand, and thinking at the machine level.
 
 ---
 
@@ -13,39 +13,43 @@ Week 1 goes deep into C's type system and memory model — the foundation everyt
 
 | Day | Event | Topic | Duration |
 |-----|-------|-------|----------|
-| Tuesday | Lecture 1 | Types, Variables, and the Memory Model | 50 min |
-| Wednesday | Lecture 2 | Operators, Expressions, and Bit Manipulation | 50 min |
-| Thursday | Lecture 3 | Control Flow: if, switch, while, for | 50 min |
-| Monday | **Lab 1** | Memory Layout, Bitlib, Loop Tracing | 2 hours |
+| Tuesday | **Quiz 0** + Lecture 1 | Types, Variables, and the Memory Model | 50 min |
+| Wednesday | Lecture 2 | Integer Representation | 50 min |
+| Thursday | Lecture 3 | Floating-Point and Type Conversions | 50 min |
+| Monday (Week 2) | **Lab 1** | Memory Layout, Bitlib, Loop Tracing | 2 hours |
+
+**Problem Set 1** released after Thursday's lecture, due before Week 2 Lecture 1 (Tuesday). Quiz 0 covers Week 0 material; **Quiz 1 is administered in Week 2** and covers this week.
 
 ---
 
 ## Files in This Package
 
 ```
-PROG101_Week1/
+PROG101 Week1/
 ├── README.md
 │
 ├── lectures/
-│   ├── Lecture 01 Types Variables Memory.md   ← Types, sizeof, two's complement
-│   ├── Lecture 02 Operators Expressions Bits.md ← Operators, precedence, bitwise ops
-│   └── Lecture 03 Control Flow.md              ← if/switch/while/for, loop invariants
+│   ├── Lecture 01 Types Variables Memory.md        ← Types, sizeof, stack vs static
+│   ├── Lecture 02 Integer Representation.md        ← Two's complement, overflow, signed/unsigned
+│   └── Lecture 03 Floating Point and Conversions.md ← IEEE 754, NaN, conversion rules
 │
 ├── lab/
-│   ├── LAB 1 Memory Bits Loops.md              ← Lab instructions
+│   ├── LAB 1 Memory Bits Loops.md                  ← Lab instructions (20 pts, 2 hrs)
 │   └── starter/
-│       ├── bitlib.h                            ← Header (complete)
-│       └── bitlib.c                            ← Implementation skeleton (fill in)
+│       ├── bitlib.h                                ← Header (complete)
+│       └── bitlib.c                                ← Implementation skeleton (fill in)
 │
 ├── assignments/
-│   └── Problem Set 1.md                       ← PS1: 6 problems, 100 pts
+│   └── Problem Set 1.md                            ← PS1: 6 problems, 100 pts
 │
-├── quizzes/
-│   └── QUIZ 1.md                              ← Quiz (Week 2 Tuesday) + answer key
+├── resources/
+│   └── Week 1 Reference and Worksheet.md           ← Two's complement worksheet + bit ref
 │
-└── resources/
-    └── Week 1 Reference and Worksheet.md       ← Two's complement worksheet + bit ref
+└── solutions_instructor/
+    └── LAB 1 Solutions.md                          ← Instructor only
 ```
+
+There is no quiz packaged with this week. Quiz 0 (in `PROG101 Week0/quizzes/`) is sat on Tuesday of this week; Quiz 1 (in `PROG101 Week2/quizzes/`) covers Week 1 and is sat in Week 2.
 
 ---
 
@@ -53,15 +57,22 @@ PROG101_Week1/
 
 After Week 1, you will be able to:
 
+From the lectures:
+
 - [ ] State the size (bytes) and range of every fundamental C type
 - [ ] Explain two's complement representation from first principles
-- [ ] Predict the result of integer overflow for signed and unsigned types
-- [ ] Explain why `0.1 + 0.2 != 0.3` in floating-point
+- [ ] Predict the result of integer overflow — and say why signed and unsigned differ *fundamentally*
+- [ ] Recognise the signed/unsigned comparison trap before it costs you a day
+- [ ] Explain why `0.1 + 0.2 != 0.3` in floating-point, and predict which values *are* exact
+- [ ] Handle infinity, NaN, and negative zero without being surprised
+- [ ] Apply C's implicit conversion and promotion rules deliberately
 - [ ] Use `sizeof` correctly, including on arrays and pointers
-- [ ] Apply all C operators with correct precedence
-- [ ] Rely on short-circuit evaluation to write safe pointer/index guards
+- [ ] Describe where a variable lives — stack or static — and for how long
+
+From the lab and reference card:
+
+- [ ] Inspect a variable's bytes in memory with GDB and read them back as a value
 - [ ] Set, clear, toggle, and test individual bits using masks and shifts
-- [ ] Write correct `if/else if/else`, `switch`, `while`, `do-while`, and `for` loops
 - [ ] Trace any loop by hand using a variable table
 - [ ] State and apply the loop invariant of a simple loop
 
@@ -72,8 +83,10 @@ After Week 1, you will be able to:
 | Lecture | K&R | King |
 |---------|-----|------|
 | Lecture 1 | Ch. 2 (Types, Operators, Expressions) §2.1–2.4 | Ch. 7 (Basic Types) |
-| Lecture 2 | Ch. 2 §2.5–2.10 | Ch. 4 (Expressions) |
-| Lecture 3 | Ch. 3 (Control Flow) — full chapter | Ch. 5 (Selection), Ch. 6 (Loops) |
+| Lecture 2 | §2.2, §2.9 (data types, bitwise operators) | Ch. 7 §7.1–7.2 |
+| Lecture 3 | §2.7 (type conversions) | Ch. 7 §7.3–7.4 |
+
+Each lecture closes with its own reading list — `<limits.h>` and `<float.h>` on your own system, the relevant C11 clauses, Goldberg on floating-point. Those are the ones that matter.
 
 Also read: **CS:APP §2.1–2.3** (Information Storage, Integer Representations, Integer Arithmetic) — this covers two's complement and overflow at a depth that no other source matches. These 50 pages will transform how you think about data.
 

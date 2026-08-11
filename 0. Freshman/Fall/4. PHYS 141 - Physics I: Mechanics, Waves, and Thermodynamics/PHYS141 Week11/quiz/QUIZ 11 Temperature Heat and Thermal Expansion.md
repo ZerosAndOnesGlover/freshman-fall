@@ -1,6 +1,7 @@
 # PHYS 141 · Quiz 11
 ## Temperature, Heat, and Thermal Expansion
 
+**Administered:** Monday of Week 12, the Monday after this material is covered — covers Week 11.
 **Time limit:** 20 minutes | **Format:** Closed book
 **Formula sheet:** $T_K = T_C+273.15$; $\Delta L = \alpha L_0\Delta T$; $\beta = 3\alpha$;
 $Q = mc\Delta T$; $Q = mL$; $P = kA\Delta T/L$; $P = e\sigma AT^4$; $PV = nRT$;

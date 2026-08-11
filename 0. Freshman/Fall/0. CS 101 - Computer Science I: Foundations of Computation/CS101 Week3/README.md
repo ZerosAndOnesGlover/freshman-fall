@@ -22,7 +22,7 @@ CS101_Week3/
 │                                                      keyword args, mortgage refactor
 │
 ├── lab/
-│   ├── LAB 3 Stack Frames and Functions.md       ← Tue: Python Tutor visualization,
+│   ├── LAB 3 Stack Frames and Functions.md       ← Tue of W4: Python Tutor visualization,
 │   │                                                 scope bug hunt, text analysis library,
 │   │                                                 recursion intro
 │   └── starter_text_statistics.py               ← Lab starter with TODOs + full test suite
@@ -32,9 +32,12 @@ CS101_Week3/
 │   ├── PS 3 Functions and Scope.md               ← Problem Set 3 (due Friday Week 4)
 │   └── ps3_starter.py                           ← Full scaffold with assertions throughout
 │
-└── resources/
-    └── Reading Guide Week 3.md                   ← 3 REPL sessions, concept map,
-                                                      mistake list, self-test, Week 4 preview
+├── resources/
+│   └── Reading Guide Week 3.md                   ← 3 REPL sessions, concept map,
+│                                                     mistake list, self-test, Week 4 preview
+│
+└── solutions_instructor/
+    └── LAB 3 Solutions.md                        ← Expected answers and marking notes
 ```
 
 ---
@@ -48,7 +51,7 @@ CS101_Week3/
 | Wed | Lecture 10 + Quiz 3 | Why functions; anatomy; return vs print; composition; specifications |
 | Thu | Lecture 11 | Namespaces; LEGB; call stack; frames; global; mutable default trap; `*args`/`**kwargs` |
 | Fri | Lecture 12 + PS3 released | Function design; SRP; pure functions; testing; recursion preview |
-| Tue | Lab 3 (graded) | Python Tutor visualization; scope bugs; text analysis library; recursive functions |
+| Tue (W4) | Lab 3 (graded) | Python Tutor visualization; scope bugs; text analysis library; recursive functions |
 
 ---
 
@@ -72,7 +75,7 @@ CS101_Week3/
 - [ ] Notes for L11
 - [ ] REPL Session B (scope edge cases)
 
-### Tuesday Lab (Required, Graded)
+### Tuesday Lab, Week 4 (Required, Graded)
 - [ ] Python Tutor exercises 1.1–1.5 with written answers
 - [ ] All 5 scope bugs found, explained, fixed
 - [ ] `text_statistics.py` — all functions implemented, all tests passing

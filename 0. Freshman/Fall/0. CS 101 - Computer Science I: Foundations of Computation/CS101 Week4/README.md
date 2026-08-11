@@ -23,7 +23,7 @@ CS101_Week4/
 │                                                      power set walkthrough, anti-patterns
 │
 ├── lab/
-│   ├── LAB 4 Recursion Trees.md                  ← Tue: hand-drawn recursion trees,
+│   ├── LAB 4 Recursion Trees.md                  ← Tue of W5: hand-drawn recursion trees,
 │   │                                                 6 recursive implementations,
 │   │                                                 slicing anti-pattern fix, N-Queens
 │   └── recursion_lab_starter.py                 ← Lab starter with TODOs + full test suite
@@ -33,9 +33,12 @@ CS101_Week4/
 │   ├── PS 4 Recursion.md                         ← Problem Set 4 (due Friday Week 5)
 │   └── ps4_starter.py                           ← Full scaffold: 6 sections, 30+ functions
 │
-└── resources/
-    └── Reading Guide Week 4.md                   ← 3 REPL sessions, algorithm comparison
-                                                      tables, 6 mistakes, 10-question self-test
+├── resources/
+│   └── Reading Guide Week 4.md                   ← 3 REPL sessions, algorithm comparison
+│                                                     tables, 6 mistakes, 10-question self-test
+│
+└── solutions_instructor/
+    └── LAB 4 Solutions.md                        ← Expected answers and marking notes
 ```
 
 ---
@@ -49,7 +52,7 @@ CS101_Week4/
 | Wed | Lecture 13 + Quiz 4 | Three laws; induction; recursion trees; Fibonacci; Hanoi; binary search |
 | Thu | Lecture 14 | Counting calls; merge sort; recursive descent parsing; trees; iteration conversion |
 | Fri | Lecture 15 + PS4 released | Stack depth; tail recursion; 5 design patterns; power set; anti-patterns |
-| Tue | Lab 4 (graded) | Recursion tree drawing; 6 implementations; slicing fix; N-Queens backtracking |
+| Tue (W5) | Lab 4 (graded) | Recursion tree drawing; 6 implementations; slicing fix; N-Queens backtracking |
 
 ---
 
@@ -71,7 +74,7 @@ CS101_Week4/
 - [ ] Notes for L14
 - [ ] REPL Session B (memoization transformation — measure the speedup yourself)
 
-### Tuesday Lab (Required, Graded)
+### Tuesday Lab, Week 5 (Required, Graded)
 - [ ] Draw all 4 recursion trees by hand (Part 1)
 - [ ] Implement all 6 functions in `recursion_lab.py` with correctness comments
 - [ ] Fix the slicing anti-pattern (`slicing_fix.py`)
