@@ -98,6 +98,18 @@ $ python3 parser.py program.cy       # prints the AST
 5. **Assignment targets are checked.** `3 = 4;` must be rejected. You may do this in the grammar or as a shape check on the parsed expression — **state which you chose in your PDF and why.**
 6. **Errors carry a line and column**, taken from the token. `expected ';', found '}'` with no position earns no marks for error quality.
 
+7. **Every AST node carries a line and column too**, taken from the token that *started* that construct.
+
+> **Requirement 7 is not for this problem set.** Nothing in Q4 reads those fields, and you could
+> pass every test here without them. **Week 3 cannot.** The type checker reports errors on
+> *expressions* — `'+' needs int operands, found int and bool` — and the only place a line number
+> for that `+` can come from is the node the parser built.
+>
+> **Positions on tokens are not enough**, which is the part that surprises people: by the time the
+> type checker runs, the token list is gone and only the tree remains. Week 1's README warned that
+> retrofitting positions across a finished compiler is miserable; **this is the same warning, one
+> level up, and it is cheaper to obey now than in Week 4.**
+
 #### Verification
 
 Your parser must produce these exact shapes. *(Written as s-expressions for brevity; your dump format may differ.)*
