@@ -2,6 +2,8 @@
 ## Lecture 3.2 (L10) — Induction Applications: Inequalities, Divisibility, and Recursion
 ### Thursday, Week 3
 
+**Date:** Thursday 10 September 2026 · 13:00–13:50 · Week 3
+
 ---
 
 > **Core Question:** How does induction extend beyond summation formulas to inequalities, recursive definitions, and algorithm correctness?

@@ -1,8 +1,10 @@
 # PROG 102 · Lecture 30
 ## `noexcept`, Assertions, and Contracts
 
-**Week 9 · Friday · 50 minutes**
+**Week 9 · Thursday · 50 minutes**
 **Reading:** Meyers, *Effective Modern C++* Item 14 · **Assumes:** L28, L29
+
+**Date:** Thursday 18 March 2027 · 10:00–10:50 · Week 9
 
 ---
 

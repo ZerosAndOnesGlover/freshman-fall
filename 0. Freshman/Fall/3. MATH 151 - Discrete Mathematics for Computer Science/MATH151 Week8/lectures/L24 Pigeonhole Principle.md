@@ -2,6 +2,8 @@
 ## Lecture 8.1 (L24) — The Pigeonhole Principle
 ### Monday, Week 8
 
+**Date:** Monday 12 October 2026 · 13:00–13:50 · Week 8
+
 ---
 
 > **Core Question:** What can we conclude, with certainty, just from counting — without knowing anything else about the objects involved?

@@ -2,6 +2,8 @@
 ## Week 9 · Lecture 2 (Tuesday)
 ### Endpoints, and the Interval of Convergence
 
+**Date:** Tuesday 16 March 2027 · 11:00–11:50 · Week 9
+
 ---
 
 **Reading:** Stewart §11.8 (continued) | Apostol Ch. 11 §11.4

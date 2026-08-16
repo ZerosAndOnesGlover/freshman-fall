@@ -2,6 +2,8 @@
 ## Week 10 · Lecture 3 (Wednesday)
 ### Integration by Parts
 
+**Date:** Wednesday 28 October 2026 · 11:00–11:50 · Week 10
+
 ---
 
 **Reading:** Stewart §7.1 | Spivak Ch. 19 (Integration Techniques)

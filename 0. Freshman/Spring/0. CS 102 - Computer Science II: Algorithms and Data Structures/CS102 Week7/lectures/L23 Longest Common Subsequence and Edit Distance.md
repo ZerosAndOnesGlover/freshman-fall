@@ -1,6 +1,8 @@
 # CS 102 · Computer Science II
 ## Lecture 23: Longest Common Subsequence and Edit Distance
 
+**Date:** Wednesday 3 March 2027 · 09:00–09:50 · Week 7
+
 ---
 
 ## 1. Two Strings, One Table

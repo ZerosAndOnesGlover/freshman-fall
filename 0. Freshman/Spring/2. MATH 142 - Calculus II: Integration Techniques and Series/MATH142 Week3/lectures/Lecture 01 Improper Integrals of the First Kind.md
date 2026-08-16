@@ -2,6 +2,8 @@
 ## Week 3 · Lecture 1 (Monday)
 ### Improper Integrals of the First Kind — Infinite Intervals
 
+**Date:** Monday 1 February 2027 · 11:00–11:50 · Week 3
+
 ---
 
 **Reading:** Stewart §7.8 | Apostol Ch. 10 §10.7

@@ -2,6 +2,8 @@
 ## Week 2 · Lecture 2 (Tuesday)
 ### Completing the Square, and Making an Integral Fit a Pattern
 
+**Date:** Tuesday 26 January 2027 · 11:00–11:50 · Week 2
+
 ---
 
 **Reading:** Stewart §7.3 (continued), §7.4 opening | Apostol Ch. 6 §6.14

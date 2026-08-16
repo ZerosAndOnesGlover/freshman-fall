@@ -5,6 +5,8 @@
 **Reading:** *C++ Primer* §15.3, §15.5 · **Reference:** Stroustrup §20.3
 **Assumes:** L13, and L01 (`this`)
 
+**Date:** Wednesday 10 February 2027 · 10:00–10:50 · Week 4
+
 ---
 
 ## 1. Without `virtual`, the Pointer Decides

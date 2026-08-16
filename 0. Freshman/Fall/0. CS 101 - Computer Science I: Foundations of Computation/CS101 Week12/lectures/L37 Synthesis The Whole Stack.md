@@ -1,6 +1,8 @@
 # CS 101 · Lecture 37 (Week 12, Lecture 1)
 ## Synthesis: The Whole Stack
 
+**Date:** Wednesday 11 November 2026 · 09:00–09:50 · Week 12
+
 ---
 
 ## 0. What You Actually Learned

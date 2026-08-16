@@ -1,6 +1,8 @@
 # MATH 142 · Calculus II
-## Week 3 · Lecture 3 (Wednesday)
+## Week 3 · Lecture 3 (Friday)
 ### Comparison Tests — Answering Without Evaluating
+
+**Date:** Friday 5 February 2027 · 11:00–11:50 · Week 3
 
 ---
 

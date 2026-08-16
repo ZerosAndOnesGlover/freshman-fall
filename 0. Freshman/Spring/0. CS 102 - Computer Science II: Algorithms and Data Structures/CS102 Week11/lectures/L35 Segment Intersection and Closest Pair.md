@@ -1,6 +1,8 @@
 # CS 102 · Computer Science II
 ## Lecture 35: Segment Intersection and the Closest Pair
 
+**Date:** Wednesday 31 March 2027 · 09:00–09:50 · Week 11
+
 ---
 
 ## 1. Do Two Segments Cross?

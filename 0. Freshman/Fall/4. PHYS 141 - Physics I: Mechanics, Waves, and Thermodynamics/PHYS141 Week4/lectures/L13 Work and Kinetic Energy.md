@@ -3,6 +3,8 @@
 
 > **Core Principle:** Work is the mechanism by which force transfers energy to or from an object. The work-energy theorem — derivable directly from Newton's second law — states that the net work done on an object equals its change in kinetic energy. This single theorem lets us solve many problems without ever computing acceleration or time explicitly.
 
+**Date:** Monday 14 September 2026 · 14:00–14:50 · Week 4
+
 ---
 
 

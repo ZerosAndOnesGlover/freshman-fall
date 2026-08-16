@@ -1,5 +1,5 @@
 # PROG 102 · Quiz 1
-## Week 1 · Monday, start of lecture · 15 minutes · 20 points
+## Week 1 · Tuesday, start of lecture · 15 minutes · 20 points
 
 **Covers Week 0** — Lectures 00–03: C++ syntax, classes and `this`, constructors and destructors,
 encapsulation, `const`, `inline`, namespaces.

@@ -1,6 +1,8 @@
 # MATH 142 · Calculus II
-## Week 2 · Lecture 3 (Wednesday)
+## Week 2 · Lecture 3 (Friday)
 ### Partial Fractions, and a Theorem About Which Integrals Can Be Done
+
+**Date:** Friday 29 January 2027 · 11:00–11:50 · Week 2
 
 ---
 

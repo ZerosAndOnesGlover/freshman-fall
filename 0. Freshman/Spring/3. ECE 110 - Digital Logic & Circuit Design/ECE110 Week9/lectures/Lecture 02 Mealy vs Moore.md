@@ -2,6 +2,8 @@
 ## Week 9 · Lecture 2 (Thursday)
 ### Mealy vs Moore
 
+**Date:** Thursday 18 March 2027 · 13:00–14:15 · Week 9
+
 ---
 
 **Reading:** Harris & Harris §3.4.3 | Mano & Ciletti §5.6–5.7

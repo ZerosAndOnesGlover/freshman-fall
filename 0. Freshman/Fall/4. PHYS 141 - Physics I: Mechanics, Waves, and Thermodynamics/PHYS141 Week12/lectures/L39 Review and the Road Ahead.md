@@ -1,6 +1,8 @@
 # PHYS 141 · Physics I: Mechanics, Waves & Thermodynamics
 ## Lecture 39 — Review and the Road Ahead
 
+**Date:** Friday 13 November 2026 · 14:00–14:50 · Week 12
+
 ---
 
 ## 1. What the Course Was Actually About

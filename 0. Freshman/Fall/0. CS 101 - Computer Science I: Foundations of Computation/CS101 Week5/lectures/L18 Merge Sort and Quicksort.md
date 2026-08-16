@@ -4,6 +4,8 @@
 **Week 5 · Friday**
 *"The asymptotic class of an algorithm is not an academic abstraction; it is often the difference between a system that works and one that does not." — CS 101*
 
+**Date:** Friday 25 September 2026 · 09:00–09:50 · Week 5
+
 ---
 
 ## 0. From O(n²) to O(n log n)

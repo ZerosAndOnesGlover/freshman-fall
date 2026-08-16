@@ -2,6 +2,8 @@
 ## Week 9 · Lecture 2 (Tuesday)
 ### The Fundamental Theorem, Part 2 — Evaluation
 
+**Date:** Tuesday 20 October 2026 · 11:00–11:50 · Week 9
+
 ---
 
 **Reading:** Stewart §5.3 | Spivak Ch. 14

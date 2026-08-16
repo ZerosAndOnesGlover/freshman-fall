@@ -1,9 +1,11 @@
 # PROG 102 · Lecture 13
 ## Inheritance
 
-**Week 4 · Monday · 50 minutes**
+**Week 4 · Tuesday · 50 minutes**
 **Reading:** *C++ Primer* §15.1–15.3 · **Reference:** Stroustrup Ch. 20
 **Assumes:** Week 0 (classes, access control, construction order)
+
+**Date:** Tuesday 9 February 2027 · 10:00–10:50 · Week 4
 
 ---
 

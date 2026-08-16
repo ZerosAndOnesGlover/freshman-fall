@@ -2,6 +2,8 @@
 ## Week 2 · Lecture 1 (Monday)
 ### Trigonometric Substitution
 
+**Date:** Monday 25 January 2027 · 11:00–11:50 · Week 2
+
 ---
 
 **Reading:** Stewart §7.3 | Apostol Ch. 6 §6.13

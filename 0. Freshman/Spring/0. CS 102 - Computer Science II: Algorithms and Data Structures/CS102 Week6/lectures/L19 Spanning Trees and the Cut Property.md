@@ -1,6 +1,8 @@
 # CS 102 · Computer Science II
 ## Lecture 19: Spanning Trees and the Cut Property
 
+**Date:** Monday 22 February 2027 · 09:00–09:50 · Week 6
+
 ---
 
 ## 1. A Different Question

@@ -2,6 +2,8 @@
 ## Week 9 · Lecture 3 (Wednesday)
 ### Accumulation and Functions Defined by Integrals
 
+**Date:** Wednesday 21 October 2026 · 11:00–11:50 · Week 9
+
 ---
 
 **Reading:** Stewart §5.3–5.4 | Spivak Ch. 14

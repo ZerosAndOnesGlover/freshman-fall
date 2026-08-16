@@ -1,6 +1,8 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 2 · Lecture 1: Operators, Expressions, and Bit Manipulation
 
+**Date:** Tuesday 1 September 2026 · 10:00–10:50 · Week 2
+
 ---
 
 ## Lecture Goals

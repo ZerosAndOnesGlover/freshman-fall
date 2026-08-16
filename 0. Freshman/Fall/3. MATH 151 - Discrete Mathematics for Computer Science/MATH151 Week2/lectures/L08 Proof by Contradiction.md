@@ -2,6 +2,8 @@
 ## Lecture 2.3 (L08) — Proof by Contradiction
 ### Friday, Week 2
 
+**Date:** Friday 4 September 2026 · 13:00–13:50 · Week 2
+
 ---
 
 > **Core Question:** How do we prove something is true by showing that assuming it is false leads to an impossible situation?

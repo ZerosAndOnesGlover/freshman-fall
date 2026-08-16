@@ -4,6 +4,8 @@
 **Week 1 · Wednesday**
 *"A type is not just a label — it specifies what operations are legal on a value and how the bits representing it should be interpreted." — Barbara Liskov*
 
+**Date:** Wednesday 26 August 2026 · 09:00–09:50 · Week 1
+
 ---
 
 ## 0. Where We Are

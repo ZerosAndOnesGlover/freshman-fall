@@ -1,6 +1,8 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 7 · Lecture 1: Structures Composite Types and Memory Layout
 
+**Date:** Tuesday 6 October 2026 · 10:00–10:50 · Week 7
+
 ---
 
 ## Lecture Goals

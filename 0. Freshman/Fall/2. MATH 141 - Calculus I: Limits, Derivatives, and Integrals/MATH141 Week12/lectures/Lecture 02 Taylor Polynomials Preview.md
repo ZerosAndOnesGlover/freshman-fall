@@ -2,6 +2,8 @@
 ## Week 12 · Lecture 2 (Tuesday)
 ### Taylor Polynomials: A Preview
 
+**Date:** Tuesday 10 November 2026 · 11:00–11:50 · Week 12
+
 ---
 
 **Reading:** Stewart §11.10 (skim) | Spivak Ch. 20

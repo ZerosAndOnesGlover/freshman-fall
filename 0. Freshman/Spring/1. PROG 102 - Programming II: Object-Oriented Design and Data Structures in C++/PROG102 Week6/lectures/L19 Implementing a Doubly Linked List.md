@@ -1,9 +1,11 @@
 # PROG 102 · Lecture 19
 ## Implementing a Doubly Linked List
 
-**Week 6 · Monday · 50 minutes**
+**Week 6 · Tuesday · 50 minutes**
 **Reading:** *C++ Primer* §9.2 (revisit), Ch. 13 · **Reference:** Stroustrup §31.4
 **Assumes:** Weeks 1, 2 and 5 — Rule of Five, templates, `unique_ptr`
+
+**Date:** Tuesday 23 February 2027 · 10:00–10:50 · Week 6
 
 ---
 

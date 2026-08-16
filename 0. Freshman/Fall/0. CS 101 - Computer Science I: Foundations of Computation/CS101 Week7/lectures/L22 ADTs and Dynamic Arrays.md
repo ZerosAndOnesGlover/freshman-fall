@@ -4,6 +4,8 @@
 **Week 7 · Wednesday**
 *"An Abstract Data Type is a mathematical specification of a data structure — it defines what operations are possible and what they mean, without specifying how they are implemented." — CS 101*
 
+**Date:** Wednesday 7 October 2026 · 09:00–09:50 · Week 7
+
 ---
 
 ## 0. The Second Half of the Course Begins

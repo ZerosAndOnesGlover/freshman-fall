@@ -1,10 +1,12 @@
 # PROG 102 · Lecture 01
 ## From C to C++: The Class as a Struct With Functions
 
-**Week 0 · Monday · 50 minutes**
+**Week 0 · Wednesday · 50 minutes**
 **Reading:** *C++ Primer* Ch. 1, §7.1–7.2 · **Reference:** Stroustrup Ch. 16.2
 **Assumes:** **Lecture 00** — this lecture uses `::`, `std::`, `explicit`, references and
 `new`/`delete` without explaining them.
+
+**Date:** Wednesday 13 January 2027 · 10:00–10:50 · Week 0
 
 ---
 

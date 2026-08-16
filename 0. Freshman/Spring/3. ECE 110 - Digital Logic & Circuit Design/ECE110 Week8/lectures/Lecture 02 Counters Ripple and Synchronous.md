@@ -2,6 +2,8 @@
 ## Week 8 · Lecture 2 (Thursday)
 ### Counters — Ripple and Synchronous
 
+**Date:** Thursday 11 March 2027 · 13:00–14:15 · Week 8
+
 ---
 
 **Reading:** Harris & Harris §5.4.2 | Mano & Ciletti §6.3–6.4

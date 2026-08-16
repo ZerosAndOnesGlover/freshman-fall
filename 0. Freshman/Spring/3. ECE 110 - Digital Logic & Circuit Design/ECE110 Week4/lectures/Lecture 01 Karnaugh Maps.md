@@ -2,6 +2,8 @@
 ## Week 4 · Lecture 1 (Wednesday)
 ### Karnaugh Maps
 
+**Date:** Wednesday 10 February 2027 · 13:00–14:15 · Week 4
+
 ---
 
 **Reading:** Harris & Harris §2.7 | Mano & Ciletti §3.1–3.2

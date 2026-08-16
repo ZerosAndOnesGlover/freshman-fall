@@ -2,6 +2,8 @@
 ## Lecture 2.2 (L07) — Proof by Contrapositive
 ### Thursday, Week 2
 
+**Date:** Thursday 3 September 2026 · 13:00–13:50 · Week 2
+
 ---
 
 > **Core Question:** When is it easier to prove ¬Q → ¬P than P → Q, and why are they the same statement?

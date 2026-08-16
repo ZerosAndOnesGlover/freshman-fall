@@ -2,6 +2,8 @@
 ## Lecture 4.1 (L12) — Sets and Set Operations
 ### Monday, Week 4
 
+**Date:** Monday 14 September 2026 · 13:00–13:50 · Week 4
+
 ---
 
 > **Core Question:** What is a set, precisely, and how do we combine sets to build new ones?

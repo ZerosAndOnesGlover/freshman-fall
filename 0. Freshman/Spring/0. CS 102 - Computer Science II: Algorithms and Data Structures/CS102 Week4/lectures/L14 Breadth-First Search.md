@@ -1,6 +1,8 @@
 # CS 102 · Computer Science II
 ## Lecture 14: Breadth-First Search
 
+**Date:** Wednesday 10 February 2027 · 09:00–09:50 · Week 4
+
 ---
 
 ## 1. The Algorithm

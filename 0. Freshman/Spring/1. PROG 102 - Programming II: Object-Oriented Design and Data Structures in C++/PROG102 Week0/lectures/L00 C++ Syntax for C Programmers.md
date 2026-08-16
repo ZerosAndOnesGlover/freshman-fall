@@ -4,6 +4,8 @@
 **Week 0 · Orientation session · 50 minutes**
 **Reading:** *C++ Primer* Ch. 1, §2.3, §2.5, §6.2 · **Reference:** [cppreference.com](https://en.cppreference.com)
 
+**Date:** Tuesday 12 January 2027 · 10:00–10:50 · Week 0
+
 ---
 
 ## 0. What This Lecture Is

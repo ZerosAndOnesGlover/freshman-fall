@@ -2,6 +2,8 @@
 ## Lecture 0.1. Propositions and Logical Connectives
 ### Monday, Week 0
 
+**Date:** Monday 17 August 2026 · 13:00–13:50 · Week 0
+
 ---
 
 > **Core Question:** What is a *precise* statement, and how do we build complex precise statements from simple ones?

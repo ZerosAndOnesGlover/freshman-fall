@@ -1,6 +1,8 @@
 # MATH 142 · Calculus II
-## Week 5 · Lecture 3 (Wednesday)
+## Week 5 · Lecture 3 (Friday)
 ### Polar Coordinates
+
+**Date:** Friday 19 February 2027 · 11:00–11:50 · Week 5
 
 ---
 

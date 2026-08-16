@@ -2,6 +2,8 @@
 ## Lecture 0.2. Truth Tables: Systematic Evaluation of Compound Propositions
 ### Thursday, Week 0
 
+**Date:** Thursday 20 August 2026 · 13:00–13:50 · Week 0
+
 ---
 
 > **Core Question:** Given a compound proposition of arbitrary complexity, how do we *mechanically* determine its truth under every possible assignment of truth values?

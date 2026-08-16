@@ -1,5 +1,5 @@
 # PROG 102 · Quiz 7
-## Week 7 · Monday, start of lecture · 15 minutes · 20 points
+## Week 7 · Tuesday, start of lecture · 15 minutes · 20 points
 
 **Covers Week 6** — Lectures 19–21: implementing a linked list, iterators, and a BST.
 

@@ -1,6 +1,8 @@
 # CS 102 · Computer Science II
 ## Lecture 11: Building a Heap in Linear Time, and Heap Sort
 
+**Date:** Wednesday 3 February 2027 · 09:00–09:50 · Week 3
+
 ---
 
 ## 1. The Question

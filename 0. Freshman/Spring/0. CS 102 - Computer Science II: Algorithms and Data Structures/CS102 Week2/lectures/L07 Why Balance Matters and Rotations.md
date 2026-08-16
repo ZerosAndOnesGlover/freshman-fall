@@ -1,6 +1,8 @@
 # CS 102 · Computer Science II
 ## Lecture 07: Why Balance Matters, and the Rotation
 
+**Date:** Monday 25 January 2027 · 09:00–09:50 · Week 2
+
 ---
 
 ## 1. Where Week 1 Left Us

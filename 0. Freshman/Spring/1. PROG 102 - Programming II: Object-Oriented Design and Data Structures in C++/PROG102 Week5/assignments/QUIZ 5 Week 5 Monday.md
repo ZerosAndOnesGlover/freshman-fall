@@ -1,5 +1,5 @@
 # PROG 102 · Quiz 5
-## Week 5 · Monday, start of lecture · 15 minutes · 20 points
+## Week 5 · Tuesday, start of lecture · 15 minutes · 20 points
 
 **Covers Week 4** — Lectures 13–15: inheritance, virtual functions and the vtable, abstract classes,
 virtual destructors, slicing and casting.

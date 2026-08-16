@@ -1,6 +1,8 @@
 # CS 101 · Lecture 39 (Week 12, Lecture 3)
 ## Reading Code, and the Practice of Programming
 
+**Date:** Friday 13 November 2026 · 09:00–09:50 · Week 12
+
 ---
 
 ## 0. The Last Lecture

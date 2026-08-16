@@ -2,6 +2,8 @@
 ## Week 5 · Lecture 3 (Wednesday)
 ### Related Rates
 
+**Date:** Wednesday 23 September 2026 · 11:00–11:50 · Week 5
+
 ---
 
 **Reading:** Stewart §3.9 | Spivak Ch. 11 (applications of differentiation)

@@ -4,6 +4,8 @@
 **Week 5 · Wednesday**
 *"Why does binary search work on sorted arrays? Because sorting imposes order — a global structure — on data, and binary search exploits that structure to eliminate half the search space with each comparison." — CS 101*
 
+**Date:** Wednesday 23 September 2026 · 09:00–09:50 · Week 5
+
 ---
 
 ## 0. From Recursion to Algorithms

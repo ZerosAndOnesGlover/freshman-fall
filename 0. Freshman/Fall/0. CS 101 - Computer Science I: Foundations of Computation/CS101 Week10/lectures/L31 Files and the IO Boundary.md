@@ -1,6 +1,8 @@
 # CS 101 · Lecture 31 (Week 10, Lecture 1)
 ## Files and the I/O Boundary
 
+**Date:** Wednesday 28 October 2026 · 09:00–09:50 · Week 10
+
 ---
 
 ## 0. Where Programs Meet the World

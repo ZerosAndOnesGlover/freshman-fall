@@ -1,5 +1,5 @@
 # PROG 102 · Quiz 9
-## Week 9 · Monday, start of lecture · 15 minutes · 20 points
+## Week 9 · Tuesday, start of lecture · 15 minutes · 20 points
 
 **Covers Week 8** — Lectures 25–27: Observer, Strategy, Command, Template Method, State, and what
 C++11 obsoleted.

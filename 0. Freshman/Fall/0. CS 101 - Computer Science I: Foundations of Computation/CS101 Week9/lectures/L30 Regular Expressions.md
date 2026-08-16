@@ -1,6 +1,8 @@
 # CS 101 · Lecture 30 (Week 9, Lecture 3)
 ## Regular Expressions: A Language for Patterns
 
+**Date:** Friday 23 October 2026 · 09:00–09:50 · Week 9
+
 ---
 
 ## 0. Why a Second Language Inside Python

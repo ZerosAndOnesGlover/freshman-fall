@@ -1,6 +1,8 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 5 · Lecture 2: Pass-by-Pointer and Pointer Arithmetic
 
+**Date:** Wednesday 23 September 2026 · 10:00–10:50 · Week 5
+
 ---
 
 ## Lecture Goals

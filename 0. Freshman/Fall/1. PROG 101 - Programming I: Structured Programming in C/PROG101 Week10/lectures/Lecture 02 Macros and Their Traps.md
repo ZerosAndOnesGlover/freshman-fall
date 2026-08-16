@@ -1,6 +1,8 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 10 · Lecture 2: Macros and Their Traps
 
+**Date:** Wednesday 28 October 2026 · 10:00–10:50 · Week 10
+
 ---
 
 ## Lecture Goals

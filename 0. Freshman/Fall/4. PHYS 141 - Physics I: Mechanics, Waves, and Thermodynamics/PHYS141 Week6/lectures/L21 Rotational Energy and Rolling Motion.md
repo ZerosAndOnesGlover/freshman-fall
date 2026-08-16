@@ -3,6 +3,8 @@
 
 > **Core Principle:** A rotating object stores kinetic energy in its rotation, exactly analogous to translational kinetic energy but with moment of inertia replacing mass and angular velocity replacing linear velocity. An object that both rotates AND translates (like a rolling ball) carries both forms of kinetic energy simultaneously — and the split between them, governed by the rolling-without-slipping condition, determines everything about how such objects accelerate down inclines.
 
+**Date:** Friday 2 October 2026 · 14:00–14:50 · Week 6
+
 ---
 
 

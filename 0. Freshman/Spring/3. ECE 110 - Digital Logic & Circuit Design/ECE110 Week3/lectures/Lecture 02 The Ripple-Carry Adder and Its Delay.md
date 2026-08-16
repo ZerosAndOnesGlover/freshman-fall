@@ -2,6 +2,8 @@
 ## Week 3 · Lecture 2 (Thursday)
 ### The Ripple-Carry Adder and Its Delay
 
+**Date:** Thursday 4 February 2027 · 13:00–14:15 · Week 3
+
 ---
 
 **Reading:** Harris & Harris §5.2.1 | Mano & Ciletti §4.5

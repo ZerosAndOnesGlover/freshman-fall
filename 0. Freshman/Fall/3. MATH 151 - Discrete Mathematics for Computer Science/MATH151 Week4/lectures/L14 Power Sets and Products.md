@@ -2,6 +2,8 @@
 ## Lecture 4.3 (L14) — Power Sets, Cartesian Products, and Inclusion-Exclusion
 ### Friday, Week 4
 
+**Date:** Friday 18 September 2026 · 13:00–13:50 · Week 4
+
 ---
 
 > **Core Question:** How do we build the set of all subsets of a set, and how do we combine two sets into ordered pairs?

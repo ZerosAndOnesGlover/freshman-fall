@@ -1,6 +1,8 @@
 # CS 102 · Computer Science II
 ## Lecture 12: Priority Queues, `heapq`, and What Heaps Are For
 
+**Date:** Friday 5 February 2027 · 09:00–09:50 · Week 3
+
 ---
 
 ## 1. The ADT, Separately From the Heap

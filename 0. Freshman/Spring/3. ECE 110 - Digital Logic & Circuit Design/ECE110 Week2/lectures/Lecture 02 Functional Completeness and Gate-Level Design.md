@@ -2,6 +2,8 @@
 ## Week 2 · Lecture 2 (Thursday)
 ### Functional Completeness and Gate-Level Design
 
+**Date:** Thursday 28 January 2027 · 13:00–14:15 · Week 2
+
 ---
 
 **Reading:** Harris & Harris §2.5 | Mano & Ciletti §3.5

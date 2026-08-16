@@ -2,6 +2,8 @@
 ## Week 12 · Lecture 2 (Tuesday)
 ### Numerical Methods, Named
 
+**Date:** Tuesday 6 April 2027 · 11:00–11:50 · Week 12
+
 ---
 
 **Reading:** none — this lecture is a retrospective

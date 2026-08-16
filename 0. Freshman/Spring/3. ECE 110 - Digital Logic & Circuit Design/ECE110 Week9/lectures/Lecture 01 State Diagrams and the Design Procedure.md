@@ -2,6 +2,8 @@
 ## Week 9 · Lecture 1 (Wednesday)
 ### State Diagrams and the Design Procedure
 
+**Date:** Wednesday 17 March 2027 · 13:00–14:15 · Week 9
+
 ---
 
 **Reading:** Harris & Harris §3.4.1–3.4.2 | Mano & Ciletti §5.4–5.5

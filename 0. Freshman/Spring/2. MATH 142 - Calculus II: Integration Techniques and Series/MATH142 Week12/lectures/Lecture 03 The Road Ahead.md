@@ -1,6 +1,8 @@
 # MATH 142 · Calculus II
-## Week 12 · Lecture 3 (Wednesday)
+## Week 12 · Lecture 3 (Friday)
 ### The Road Ahead
+
+**Date:** Friday 9 April 2027 · 11:00–11:50 · Week 12
 
 ---
 

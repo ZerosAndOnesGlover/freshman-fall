@@ -2,6 +2,8 @@
 ## Week 4 · Lecture 2 (Tuesday)
 ### Cylindrical Shells, and Choosing a Method
 
+**Date:** Tuesday 9 February 2027 · 11:00–11:50 · Week 4
+
 ---
 
 **Reading:** Stewart §6.3 | Apostol Ch. 2 §2.12

@@ -1,6 +1,8 @@
 # CS 102 · Computer Science II
 ## Lecture 37: P, NP, and Verification
 
+**Date:** Monday 5 April 2027 · 09:00–09:50 · Week 12
+
 ---
 
 ## 1. A Different Kind of Question

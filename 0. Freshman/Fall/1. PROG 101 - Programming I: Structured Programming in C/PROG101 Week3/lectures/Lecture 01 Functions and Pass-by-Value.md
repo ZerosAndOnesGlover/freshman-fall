@@ -1,6 +1,8 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 3 · Lecture 1: Functions and Pass-by-Value
 
+**Date:** Tuesday 8 September 2026 · 10:00–10:50 · Week 3
+
 ---
 
 ## Lecture Goals

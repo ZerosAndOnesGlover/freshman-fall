@@ -3,6 +3,8 @@
 
 > **Core Principle:** Momentum is a measure of "quantity of motion" — mass in motion. The impulse-momentum theorem, derived directly from Newton's second law, tells us that a force applied over time changes momentum by exactly the integral of that force. This is the time-integrated counterpart to the work-energy theorem's position-integrated relationship.
 
+**Date:** Monday 21 September 2026 · 14:00–14:50 · Week 5
+
 ---
 
 

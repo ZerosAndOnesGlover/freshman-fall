@@ -2,6 +2,8 @@
 ## Lecture 9.3 (L29) — Generating Functions
 ### Friday, Week 9
 
+**Date:** Friday 23 October 2026 · 13:00–13:50 · Week 9
+
 ---
 
 ## 1. A Sequence as a Single Object

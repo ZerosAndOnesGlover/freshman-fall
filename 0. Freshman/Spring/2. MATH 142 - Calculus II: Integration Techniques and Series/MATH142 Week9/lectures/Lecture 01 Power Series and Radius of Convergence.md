@@ -2,6 +2,8 @@
 ## Week 9 · Lecture 1 (Monday)
 ### Power Series and the Radius of Convergence
 
+**Date:** Monday 15 March 2027 · 11:00–11:50 · Week 9
+
 ---
 
 **Reading:** Stewart §11.8 | Apostol Ch. 11 §11.1–11.3

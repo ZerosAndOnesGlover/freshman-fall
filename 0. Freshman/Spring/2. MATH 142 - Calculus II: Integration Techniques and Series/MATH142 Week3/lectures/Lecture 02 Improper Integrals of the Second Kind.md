@@ -2,6 +2,8 @@
 ## Week 3 · Lecture 2 (Tuesday)
 ### Improper Integrals of the Second Kind — and Singularities That Hide
 
+**Date:** Tuesday 2 February 2027 · 11:00–11:50 · Week 3
+
 ---
 
 **Reading:** Stewart §7.8 (continued) | Apostol Ch. 10 §10.8

@@ -2,6 +2,8 @@
 ## Lecture 9.1 (L27) — Recurrence Relations: Modelling and Iteration
 ### Monday, Week 9
 
+**Date:** Monday 19 October 2026 · 13:00–13:50 · Week 9
+
 ---
 
 ## 1. Definition by Self-Reference

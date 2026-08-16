@@ -2,6 +2,8 @@
 ## Week 0 · Lecture 2 of 4
 ### Algebra Review: Equations, Inequalities & the Coordinate Plane
 
+**Date:** Wednesday 19 August 2026 · 11:00–11:50 · Week 0
+
 ---
 
 **Course:** MATH 141: Calculus I  

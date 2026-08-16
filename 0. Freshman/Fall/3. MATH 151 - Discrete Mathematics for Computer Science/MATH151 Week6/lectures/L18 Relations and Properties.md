@@ -2,6 +2,8 @@
 ## Lecture 6.1 (L18) Relations and Their Fundamental Properties
 ### Monday, Week 6
 
+**Date:** Monday 28 September 2026 · 13:00–13:50 · Week 6
+
 ---
 
 > **Core Question:** What is a relation, in full generality, and what structural properties can it possess?

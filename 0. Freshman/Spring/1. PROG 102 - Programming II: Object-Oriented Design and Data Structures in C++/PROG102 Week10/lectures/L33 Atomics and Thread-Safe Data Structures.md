@@ -1,8 +1,10 @@
 # PROG 102 · Lecture 33
 ## Atomics and Thread-Safe Data Structures
 
-**Week 10 · Friday · 50 minutes**
+**Week 10 · Thursday · 50 minutes**
 **Reading:** Williams Ch. 5, Ch. 6.1–6.2 · **Assumes:** L31, L32, Week 5
+
+**Date:** Thursday 25 March 2027 · 10:00–10:50 · Week 10
 
 ---
 

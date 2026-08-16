@@ -1,8 +1,10 @@
 # PROG 102 · Lecture 39
 ## Cache-Aware Programming and Systems Design
 
-**Week 12 · Friday · 50 minutes · The last lecture**
+**Week 12 · Thursday · 50 minutes · The last lecture**
 **Reading:** Drepper, *What Every Programmer Should Know About Memory* · **Assumes:** Weeks 3, 6, 10, 11
+
+**Date:** Thursday 8 April 2027 · 10:00–10:50 · Week 12
 
 ---
 

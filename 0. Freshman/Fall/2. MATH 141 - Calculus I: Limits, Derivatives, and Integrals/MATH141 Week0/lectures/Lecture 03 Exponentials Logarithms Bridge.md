@@ -2,6 +2,8 @@
 ## Week 0 · Lecture 3 of 4
 ### Exponentials, Logarithms & the Bridge to Calculus
 
+**Date:** Thursday 20 August 2026 · 11:00–11:50 · Week 0  <!-- 4th lecture in a 3-day week; see Calendar Reconciliation -->
+
 ---
 
 **Course:** MATH 141: Calculus I  

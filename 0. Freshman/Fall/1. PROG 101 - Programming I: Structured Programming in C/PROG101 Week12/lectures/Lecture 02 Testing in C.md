@@ -1,6 +1,8 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 12 · Lecture 2: Testing in C
 
+**Date:** Wednesday 11 November 2026 · 10:00–10:50 · Week 12
+
 ---
 
 ## Lecture Goals

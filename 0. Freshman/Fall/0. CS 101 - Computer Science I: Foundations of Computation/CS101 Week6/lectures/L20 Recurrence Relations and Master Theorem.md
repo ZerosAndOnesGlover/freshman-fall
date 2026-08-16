@@ -4,6 +4,8 @@
 **Week 6 · Thursday**
 *"A recurrence relation is a mathematical sentence describing an algorithm's own structure — solve the sentence, and you know the algorithm's complexity." — CS 101*
 
+**Date:** Thursday 1 October 2026 · 09:00–09:50 · Week 6
+
 ---
 
 ## 0. Why Recursive Algorithms Need Different Tools

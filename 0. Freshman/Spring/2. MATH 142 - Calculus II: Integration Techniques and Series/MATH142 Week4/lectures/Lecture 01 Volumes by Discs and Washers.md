@@ -2,6 +2,8 @@
 ## Week 4 · Lecture 1 (Monday)
 ### Volumes by Discs and Washers
 
+**Date:** Monday 8 February 2027 · 11:00–11:50 · Week 4
+
 ---
 
 **Reading:** Stewart §6.2 | Apostol Ch. 2 §2.11

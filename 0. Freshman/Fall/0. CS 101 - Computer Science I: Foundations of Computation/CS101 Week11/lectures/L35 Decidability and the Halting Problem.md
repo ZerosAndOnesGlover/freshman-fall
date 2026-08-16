@@ -1,11 +1,13 @@
 # CS 101 · Lecture 35 (Week 11, Lecture 2)
 ## Decidability and the Halting Problem
 
+**Date:** Thursday 5 November 2026 · 09:00–09:50 · Week 11
+
 ---
 
 ## 0. Where This Is Going
 
-Tuesday built the model: a Turing machine, and the Church–Turing thesis that says proving something
+Wednesday built the model: a Turing machine, and the Church–Turing thesis that says proving something
 impossible *for that model* proves it impossible for **every program in every language forever**.
 
 Today we use it. We prove that a specific, precisely stated, obviously useful problem has **no

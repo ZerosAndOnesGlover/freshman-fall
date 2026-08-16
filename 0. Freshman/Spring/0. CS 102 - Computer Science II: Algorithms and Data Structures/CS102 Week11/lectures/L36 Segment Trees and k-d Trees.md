@@ -1,6 +1,8 @@
 # CS 102 · Computer Science II
 ## Lecture 36: Segment Trees and k-d Trees
 
+**Date:** Friday 2 April 2027 · 09:00–09:50 · Week 11
+
 ---
 
 ## 1. Two Structures for Range Queries

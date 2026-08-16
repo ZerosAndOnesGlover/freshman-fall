@@ -1,6 +1,8 @@
 # CS 102 · Computer Science II
 ## Lecture 32: Rabin–Karp and Boyer–Moore
 
+**Date:** Wednesday 24 March 2027 · 09:00–09:50 · Week 10
+
 ---
 
 ## 1. Two Different Ideas

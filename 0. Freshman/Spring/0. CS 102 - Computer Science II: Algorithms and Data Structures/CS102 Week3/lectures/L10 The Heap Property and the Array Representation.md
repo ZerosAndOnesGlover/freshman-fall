@@ -1,6 +1,8 @@
 # CS 102 · Computer Science II
 ## Lecture 10: The Heap Property and the Array Representation
 
+**Date:** Monday 1 February 2027 · 09:00–09:50 · Week 3
+
 ---
 
 ## 1. Throwing an Invariant Away

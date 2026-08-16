@@ -2,6 +2,8 @@
 ## Week 7 · Lecture 2 (Thursday)
 ### Flip-Flops and Timing
 
+**Date:** Thursday 4 March 2027 · 13:00–14:15 · Week 7
+
 ---
 
 **Reading:** Harris & Harris §3.2.3–3.2.5, §3.5 | Mano & Ciletti §5.3

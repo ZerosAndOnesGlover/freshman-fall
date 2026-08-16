@@ -2,6 +2,8 @@
 ## Lecture 12.3 (L38) — Review and the Road Ahead
 ### Friday, Week 12
 
+**Date:** Friday 13 November 2026 · 13:00–13:50 · Week 12
+
 ---
 
 ## 1. What This Course Was Actually About

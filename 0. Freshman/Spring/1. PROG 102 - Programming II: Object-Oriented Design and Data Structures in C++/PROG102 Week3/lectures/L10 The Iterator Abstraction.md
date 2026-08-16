@@ -1,9 +1,11 @@
 # PROG 102 · Lecture 10
 ## The Iterator Abstraction
 
-**Week 3 · Monday · 50 minutes**
+**Week 3 · Tuesday · 50 minutes**
 **Reading:** *C++ Primer* §3.4, §9.2.1, Ch. 10 intro · **Reference:** Stroustrup Ch. 33
 **Assumes:** Week 2 entire — templates are the mechanism this lecture is built on
+
+**Date:** Tuesday 2 February 2027 · 10:00–10:50 · Week 3
 
 ---
 

@@ -1,5 +1,5 @@
 # PROG 102 · Quiz 6
-## Week 6 · Monday, start of lecture · 15 minutes · 20 points
+## Week 6 · Tuesday, start of lecture · 15 minutes · 20 points
 
 **Covers Week 5** — Lectures 16–18: RAII, `unique_ptr`, `shared_ptr`, `weak_ptr`, move semantics.
 

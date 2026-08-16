@@ -1,6 +1,8 @@
 # MATH 142 · Calculus II
-## Week 9 · Lecture 3 (Wednesday)
+## Week 9 · Lecture 3 (Friday)
 ### Functions as Power Series
+
+**Date:** Friday 19 March 2027 · 11:00–11:50 · Week 9
 
 ---
 

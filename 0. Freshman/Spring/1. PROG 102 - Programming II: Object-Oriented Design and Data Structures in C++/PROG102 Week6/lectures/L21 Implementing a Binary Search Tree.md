@@ -1,9 +1,11 @@
 # PROG 102 · Lecture 21
 ## Implementing a Binary Search Tree
 
-**Week 6 · Friday · 50 minutes**
+**Week 6 · Thursday · 50 minutes**
 **Reading:** *C++ Primer* Ch. 12 (revisit) · **Cross-course:** CS 102 Weeks 1–2
 **Assumes:** L19, L20, Week 5 (`unique_ptr`)
+
+**Date:** Thursday 25 February 2027 · 10:00–10:50 · Week 6
 
 ---
 

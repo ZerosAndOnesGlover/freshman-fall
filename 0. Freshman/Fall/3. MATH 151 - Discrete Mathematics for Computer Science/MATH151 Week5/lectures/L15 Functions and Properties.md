@@ -2,6 +2,8 @@
 ## Lecture 5.1 (L15) — Functions: Definitions and Fundamental Properties
 ### Monday, Week 5
 
+**Date:** Monday 21 September 2026 · 13:00–13:50 · Week 5
+
 ---
 
 > **Core Question:** What is a function, precisely, and what does it mean for a function to be one-to-one or onto?

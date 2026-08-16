@@ -2,6 +2,8 @@
 ## Week 5 · Lecture 1 (Monday)
 ### Parametric Curves — A Curve Is a Path, Not a Graph
 
+**Date:** Monday 15 February 2027 · 11:00–11:50 · Week 5
+
 ---
 
 **Reading:** Stewart §10.1 | Apostol Ch. 2 §2.14

@@ -2,6 +2,8 @@
 ## Week 5 · Lecture 2 (Thursday)
 ### Multiplexers and Demultiplexers
 
+**Date:** Thursday 18 February 2027 · 13:00–14:15 · Week 5
+
 ---
 
 **Reading:** Harris & Harris §2.8.1, §5.2.5 | Mano & Ciletti §4.11

@@ -2,6 +2,8 @@
 ## Week 1 · Lecture 3 (Wednesday)
 ### Infinite Limits and Limits at Infinity
 
+**Date:** Wednesday 26 August 2026 · 11:00–11:50 · Week 1
+
 ---
 
 **Reading:** Stewart §2.2 (infinite limits), §2.6 (limits at infinity) | Spivak Ch. 5

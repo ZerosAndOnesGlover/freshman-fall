@@ -1,5 +1,5 @@
 # PROG 102 · Quiz 10
-## Week 10 · Monday, start of lecture · 15 minutes · 20 points
+## Week 10 · Tuesday, start of lecture · 15 minutes · 20 points
 
 **Covers Week 9** — Lectures 28–30: exceptions, stack unwinding, the three guarantees, `noexcept`,
 assertions and contracts.

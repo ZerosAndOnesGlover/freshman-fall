@@ -2,6 +2,8 @@
 ## Week 8 · Lecture 2 (Tuesday)
 ### Absolute Convergence, and a Theorem That Should Disturb You
 
+**Date:** Tuesday 9 March 2027 · 11:00–11:50 · Week 8
+
 ---
 
 **Reading:** Stewart §11.6 | Apostol Ch. 10 §10.18–10.20

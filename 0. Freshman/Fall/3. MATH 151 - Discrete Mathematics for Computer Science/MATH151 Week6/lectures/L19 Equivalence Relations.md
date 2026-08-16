@@ -2,6 +2,8 @@
 ## Lecture 6.2 (L19) — Equivalence Relations and Equivalence Classes
 ### Thursday, Week 6
 
+**Date:** Thursday 1 October 2026 · 13:00–13:50 · Week 6
+
 ---
 
 > **Core Question:** What does it mean for a relation to capture a genuine notion of "sameness," and what structure does this impose on a set?

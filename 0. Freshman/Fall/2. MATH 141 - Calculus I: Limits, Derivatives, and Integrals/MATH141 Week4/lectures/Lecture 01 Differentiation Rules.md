@@ -2,6 +2,8 @@
 ## Week 4 · Lecture 1 (Monday)
 ### Differentiation Rules: Power, Sum, Product, Quotient
 
+**Date:** Monday 14 September 2026 · 11:00–11:50 · Week 4
+
 ---
 
 **Reading:** Stewart §3.1–3.2 | Spivak Ch. 10

@@ -2,6 +2,8 @@
 ## Lecture 4.2 (L13) — Set Identities and Proof Techniques
 ### Thursday, Week 4
 
+**Date:** Thursday 17 September 2026 · 13:00–13:50 · Week 4
+
 ---
 
 > **Core Question:** How do we rigorously prove that two set expressions are always equal, for every possible choice of underlying sets?

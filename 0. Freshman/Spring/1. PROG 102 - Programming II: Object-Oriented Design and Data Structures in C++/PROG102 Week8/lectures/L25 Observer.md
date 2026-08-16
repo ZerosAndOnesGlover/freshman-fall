@@ -1,8 +1,10 @@
 # PROG 102 · Lecture 25
 ## Observer
 
-**Week 8 · Monday · 50 minutes**
+**Week 8 · Tuesday · 50 minutes**
 **Reading:** Gang of Four Ch. 5, *Observer* · **Assumes:** Week 4, Week 5 (`weak_ptr`), Week 7
+
+**Date:** Tuesday 9 March 2027 · 10:00–10:50 · Week 8
 
 ---
 

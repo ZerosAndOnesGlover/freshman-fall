@@ -1,6 +1,8 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 8 · Lecture 2: The UNIX File Model — File Descriptors and Low-Level I/O
 
+**Date:** Wednesday 14 October 2026 · 10:00–10:50 · Week 8
+
 ---
 
 ## Lecture Goals

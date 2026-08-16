@@ -2,6 +2,8 @@
 ## Week 12 · Lecture 2 (Thursday)
 ### Review and the Road Ahead
 
+**Date:** Thursday 8 April 2027 · 13:00–14:15 · Week 12
+
 ---
 
 **Reading:** none — this lecture is a retrospective

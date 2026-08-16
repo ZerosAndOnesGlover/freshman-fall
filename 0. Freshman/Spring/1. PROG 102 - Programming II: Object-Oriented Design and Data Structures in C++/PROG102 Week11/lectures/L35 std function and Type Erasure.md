@@ -4,6 +4,8 @@
 **Week 11 · Wednesday · 50 minutes**
 **Reading:** Meyers Item 34; cppreference `std::function` · **Assumes:** L34, Week 8
 
+**Date:** Wednesday 31 March 2027 · 10:00–10:50 · Week 11
+
 ---
 
 ## 1. The Problem

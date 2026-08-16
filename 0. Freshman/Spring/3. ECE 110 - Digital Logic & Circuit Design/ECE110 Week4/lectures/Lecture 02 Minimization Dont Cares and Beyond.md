@@ -2,6 +2,8 @@
 ## Week 4 · Lecture 2 (Thursday)
 ### Minimization, Don't-Cares, and Beyond
 
+**Date:** Thursday 11 February 2027 · 13:00–14:15 · Week 4
+
 ---
 
 **Reading:** Harris & Harris §2.7.3 | Mano & Ciletti §3.3–3.4

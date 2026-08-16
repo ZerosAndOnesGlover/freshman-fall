@@ -2,6 +2,8 @@
 ## Week 6 · Lecture 1 (Monday)
 ### Sequences and Their Limits
 
+**Date:** Monday 22 February 2027 · 11:00–11:50 · Week 6
+
 ---
 
 **Reading:** Stewart §11.1 | Apostol Ch. 10 §10.1–10.3

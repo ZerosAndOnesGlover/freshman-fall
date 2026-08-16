@@ -1,6 +1,8 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 11 · Lecture 3: Callbacks and Generic Containers
 
+**Date:** Thursday 5 November 2026 · 10:00–10:50 · Week 11
+
 ---
 
 ## Lecture Goals

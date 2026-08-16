@@ -1,6 +1,8 @@
 # CS 102 · Computer Science II
 ## Lecture 20: Prim's and Kruskal's Algorithms
 
+**Date:** Wednesday 24 February 2027 · 09:00–09:50 · Week 6
+
 ---
 
 ## 1. Two Ways to Apply One Theorem

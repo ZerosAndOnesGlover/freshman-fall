@@ -2,6 +2,8 @@
 ## Week 6 · Lecture 2 (Tuesday)
 ### Rolle's Theorem and the Mean Value Theorem
 
+**Date:** Tuesday 29 September 2026 · 11:00–11:50 · Week 6
+
 ---
 
 **Reading:** Stewart §4.2 | Spivak Ch. 11 (§11.2)

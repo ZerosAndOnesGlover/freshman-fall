@@ -4,6 +4,8 @@
 **Week 2 · Friday**
 *"The for loop is not syntactic sugar — it is a contract between the programmer and the data structure." — David Beazley*
 
+**Date:** Friday 4 September 2026 · 09:00–09:50 · Week 2
+
 ---
 
 ## 0. Two Flavors of Iteration

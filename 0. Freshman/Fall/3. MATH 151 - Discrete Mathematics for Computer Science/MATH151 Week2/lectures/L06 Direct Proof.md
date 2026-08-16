@@ -2,6 +2,8 @@
 ## Lecture 2.1 (L06) — Direct Proof
 ### Monday, Week 2
 
+**Date:** Monday 31 August 2026 · 13:00–13:50 · Week 2
+
 ---
 
 > **Core Question:** How do we establish that a mathematical claim is true with absolute certainty, and what does a valid proof actually look like?

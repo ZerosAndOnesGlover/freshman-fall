@@ -2,6 +2,8 @@
 ## Week 11 · Lecture 1 (Wednesday)
 ### SRAM and DRAM
 
+**Date:** Wednesday 31 March 2027 · 13:00–14:15 · Week 11
+
 ---
 
 **Reading:** Harris & Harris §5.5.1–5.5.2 | Mano & Ciletti §7.1–7.3

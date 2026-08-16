@@ -1,5 +1,5 @@
 # PROG 102 · Quiz 4
-## Week 4 · Monday, start of lecture · 15 minutes · 20 points
+## Week 4 · Tuesday, start of lecture · 15 minutes · 20 points
 
 **Covers Week 3** — Lectures 10–12: iterators, containers, algorithms.
 

@@ -4,6 +4,8 @@
 **Week 0 · Lecture 1 of 3**
 *"The question of whether a machine can think is no more interesting than the question of whether a submarine can swim." — Edsger Dijkstra*
 
+**Date:** Wednesday 19 August 2026 · 09:00–09:50 · Week 0
+
 ---
 
 ## 0. Before We Begin

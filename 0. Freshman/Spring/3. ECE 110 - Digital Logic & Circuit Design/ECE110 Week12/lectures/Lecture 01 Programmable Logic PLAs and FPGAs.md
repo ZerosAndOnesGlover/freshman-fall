@@ -2,6 +2,8 @@
 ## Week 12 · Lecture 1 (Wednesday)
 ### Programmable Logic — PLAs, PALs and FPGAs
 
+**Date:** Wednesday 7 April 2027 · 13:00–14:15 · Week 12
+
 ---
 
 **Reading:** Harris & Harris §5.6 | Mano & Ciletti §7.6–7.8

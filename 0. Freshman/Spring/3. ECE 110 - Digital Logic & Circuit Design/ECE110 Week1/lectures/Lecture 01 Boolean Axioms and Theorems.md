@@ -2,6 +2,8 @@
 ## Week 1 · Lecture 1 (Wednesday)
 ### Boolean Axioms and Theorems
 
+**Date:** Wednesday 20 January 2027 · 13:00–14:15 · Week 1
+
 ---
 
 **Reading:** Harris & Harris §2.1–2.3 | Mano & Ciletti §2.1–2.4

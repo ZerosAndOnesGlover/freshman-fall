@@ -4,6 +4,8 @@
 **Week 0 · Lecture 2 of 3**
 *"The best way to learn to program is to write programs." — Brian Kernighan*
 
+**Date:** Thursday 20 August 2026 · 09:00–09:50 · Week 0
+
 ---
 
 ## 0. The Setup Has Meaning

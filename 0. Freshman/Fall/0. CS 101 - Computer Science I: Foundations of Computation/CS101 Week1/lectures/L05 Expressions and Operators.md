@@ -4,6 +4,8 @@
 **Week 1 · Thursday**
 *"An expression is a phrase of a programming language that describes a computation and evaluates to a value." — SICP*
 
+**Date:** Thursday 27 August 2026 · 09:00–09:50 · Week 1
+
 ---
 
 ## 0. The Core Question

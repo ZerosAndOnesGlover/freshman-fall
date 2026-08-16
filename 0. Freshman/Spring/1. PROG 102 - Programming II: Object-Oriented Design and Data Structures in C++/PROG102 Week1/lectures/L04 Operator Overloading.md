@@ -1,9 +1,11 @@
 # PROG 102 · Lecture 04
 ## Operator Overloading
 
-**Week 1 · Monday · 50 minutes**
+**Week 1 · Tuesday · 50 minutes**
 **Reading:** *C++ Primer* Ch. 14 · **Reference:** Stroustrup Ch. 18
 **Assumes:** Week 0 entire — especially L01 (`this`), L03 (`const` member functions)
+
+**Date:** Tuesday 19 January 2027 · 10:00–10:50 · Week 1
 
 ---
 

@@ -2,6 +2,8 @@
 ## Week 0 · Lecture 1 (Wednesday)
 ### Number Systems and Conversions
 
+**Date:** Wednesday 13 January 2027 · 13:00–14:15 · Week 0
+
 ---
 
 **Reading:** Harris & Harris §1.4 | Mano & Ciletti §1.1–1.3

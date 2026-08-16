@@ -2,6 +2,8 @@
 ## Lecture 7.1 (L21) — The Multiplication Rule and Addition Rule
 ### Monday, Week 7
 
+**Date:** Monday 5 October 2026 · 13:00–13:50 · Week 7
+
 ---
 
 > **Core Question:** How do we systematically count the number of ways to perform a sequence of choices, or the number of outcomes in an "either/or" scenario?

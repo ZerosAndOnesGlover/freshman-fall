@@ -2,6 +2,8 @@
 ## Lecture 3.3 (L11) — Strong Induction and the Well-Ordering Principle
 ### Friday, Week 3
 
+**Date:** Friday 11 September 2026 · 13:00–13:50 · Week 3
+
 ---
 
 > **Core Question:** When is the ordinary induction hypothesis P(k) not enough, and how do we harness all of P(1), P(2), …, P(k) simultaneously?

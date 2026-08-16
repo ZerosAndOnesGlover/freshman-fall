@@ -1,6 +1,8 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 2 · Lecture 3: Control Flow — if, switch, while, for
 
+**Date:** Thursday 3 September 2026 · 10:00–10:50 · Week 2
+
 ---
 
 ## Lecture Goals

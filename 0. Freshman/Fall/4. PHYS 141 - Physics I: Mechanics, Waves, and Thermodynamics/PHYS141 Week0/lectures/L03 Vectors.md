@@ -3,6 +3,8 @@
 
 > **Core Principle:** A vector is a quantity with both magnitude and direction, obeying specific addition rules (the parallelogram rule). Scalars (mass, temperature, energy) have magnitude only. The distinction is not pedantic — it determines what operations are physically meaningful.
 
+**Date:** Friday 21 August 2026 · 14:00–14:50 · Week 0
+
 ---
 
 

@@ -2,6 +2,8 @@
 ## Week 0 · Lecture 1 (Monday)
 ### The Definite Integral and the Fundamental Theorem
 
+**Date:** Monday 11 January 2027 · 11:00–11:50 · Week 0
+
 ---
 
 **Reading:** Stewart §5.1–5.3 | Apostol Ch. 1 §1.1–1.17 (the definition done properly)

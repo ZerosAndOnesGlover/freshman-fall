@@ -2,6 +2,8 @@
 ## Week 8 · Lecture 1 (Wednesday)
 ### Registers and Shift Registers
 
+**Date:** Wednesday 10 March 2027 · 13:00–14:15 · Week 8
+
 ---
 
 **Reading:** Harris & Harris §3.3, §5.4.1 | Mano & Ciletti §6.1–6.2

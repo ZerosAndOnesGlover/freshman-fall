@@ -2,6 +2,8 @@
 ## Week 3 · Lecture 3 (Wednesday)
 ### Differentiability and Continuity
 
+**Date:** Wednesday 9 September 2026 · 11:00–11:50 · Week 3
+
 ---
 
 **Reading:** Stewart §2.8 | Spivak Ch. 9

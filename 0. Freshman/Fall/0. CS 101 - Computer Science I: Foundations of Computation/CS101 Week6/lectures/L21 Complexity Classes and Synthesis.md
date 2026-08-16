@@ -4,6 +4,8 @@
 **Week 6 · Friday**
 *"An O(n²) algorithm on n = 1,000,000 inputs would require 10¹² operations — roughly 11 days at 10⁹ operations/second. An O(n log n) algorithm needs only 20,000,000 operations — under a second." — CS 101*
 
+**Date:** Friday 2 October 2026 · 09:00–09:50 · Week 6
+
 ---
 
 ## 0. Synthesizing Weeks 0–6

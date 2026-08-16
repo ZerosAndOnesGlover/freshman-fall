@@ -2,6 +2,8 @@
 ## Week 5 · Lecture 1 (Wednesday)
 ### Decoders and Encoders
 
+**Date:** Wednesday 17 February 2027 · 13:00–14:15 · Week 5
+
 ---
 
 **Reading:** Harris & Harris §2.8 | Mano & Ciletti §4.9–4.10

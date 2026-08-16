@@ -2,6 +2,8 @@
 ## Week 2 · Lecture 1 (Monday)
 ### Continuity: Definition, Types of Discontinuity, and the Intermediate Value Theorem
 
+**Date:** Monday 31 August 2026 · 11:00–11:50 · Week 2
+
 ---
 
 **Reading:** Stewart §2.5 | Spivak Ch. 6 (Continuous Functions)

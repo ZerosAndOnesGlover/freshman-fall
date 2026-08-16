@@ -2,6 +2,8 @@
 ## Week 4 · Lecture 3 (Wednesday)
 ### Higher Derivatives and Rates of Change
 
+**Date:** Wednesday 16 September 2026 · 11:00–11:50 · Week 4
+
 ---
 
 **Reading:** Stewart §2.7, §3.7 | Spivak Ch. 10

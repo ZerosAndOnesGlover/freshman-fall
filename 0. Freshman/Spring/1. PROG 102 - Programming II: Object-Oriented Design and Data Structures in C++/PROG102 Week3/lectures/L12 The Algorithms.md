@@ -1,9 +1,11 @@
 # PROG 102 · Lecture 12
 ## The Algorithms
 
-**Week 3 · Friday · 50 minutes**
+**Week 3 · Thursday · 50 minutes**
 **Reading:** *C++ Primer* Ch. 10, §10.3 · **Reference:** Stroustrup Ch. 32
 **Assumes:** L10, L11
+
+**Date:** Thursday 4 February 2027 · 10:00–10:50 · Week 3
 
 ---
 

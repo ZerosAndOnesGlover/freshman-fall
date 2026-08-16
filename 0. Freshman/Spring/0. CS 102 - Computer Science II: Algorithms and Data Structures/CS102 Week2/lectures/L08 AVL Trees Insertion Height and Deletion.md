@@ -1,6 +1,8 @@
 # CS 102 · Computer Science II
 ## Lecture 08: AVL Trees — Insertion, the Height Bound, and Deletion
 
+**Date:** Wednesday 27 January 2027 · 09:00–09:50 · Week 2
+
 ---
 
 ## 1. The Invariant

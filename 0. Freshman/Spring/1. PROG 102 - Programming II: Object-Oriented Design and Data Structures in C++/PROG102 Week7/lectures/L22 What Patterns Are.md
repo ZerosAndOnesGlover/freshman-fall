@@ -1,9 +1,11 @@
 # PROG 102 · Lecture 22
 ## What Patterns Are
 
-**Week 7 · Monday · 50 minutes**
+**Week 7 · Tuesday · 50 minutes**
 **Reading:** Gang of Four, Ch. 1 · **Reference:** Meyers Items 32–36 (inheritance design)
 **Assumes:** Week 4 (inheritance, abstract classes), Week 6 (you have implemented one already)
+
+**Date:** Tuesday 2 March 2027 · 10:00–10:50 · Week 7
 
 ---
 

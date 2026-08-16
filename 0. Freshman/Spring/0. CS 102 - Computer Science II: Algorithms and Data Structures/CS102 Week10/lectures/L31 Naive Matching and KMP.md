@@ -1,6 +1,8 @@
 # CS 102 · Computer Science II
 ## Lecture 31: Naive Matching and the Knuth–Morris–Pratt Algorithm
 
+**Date:** Monday 22 March 2027 · 09:00–09:50 · Week 10
+
 ---
 
 ## 1. The Problem

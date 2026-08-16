@@ -2,6 +2,8 @@
 ## Week 7 · Lecture 2 (Tuesday)
 ### Curve Sketching: The Complete Synthesis
 
+**Date:** Tuesday 6 October 2026 · 11:00–11:50 · Week 7
+
 ---
 
 **Reading:** Stewart §4.5 | Spivak Ch. 11 (§11.3, applications)

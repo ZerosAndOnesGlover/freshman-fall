@@ -2,6 +2,8 @@
 ## Week 10 · Lecture 2 (Thursday)
 ### Sequential Verilog and the Classic Traps
 
+**Date:** Thursday 25 March 2027 · 13:00–14:15 · Week 10
+
 ---
 
 **Reading:** Harris & Harris §4.4–4.6 | Mano & Ciletti §5.8

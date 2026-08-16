@@ -2,6 +2,8 @@
 ## Week 6 · Lecture 1 (Wednesday)
 ### Building an ALU
 
+**Date:** Wednesday 24 February 2027 · 13:00–14:15 · Week 6
+
 ---
 
 **Reading:** Harris & Harris §5.2.4 | Mano & Ciletti §4.12

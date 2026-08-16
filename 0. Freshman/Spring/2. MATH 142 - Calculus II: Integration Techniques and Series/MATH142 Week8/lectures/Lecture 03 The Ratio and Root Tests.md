@@ -1,6 +1,8 @@
 # MATH 142 · Calculus II
-## Week 8 · Lecture 3 (Wednesday)
+## Week 8 · Lecture 3 (Friday)
 ### The Ratio and Root Tests
+
+**Date:** Friday 12 March 2027 · 11:00–11:50 · Week 8
 
 ---
 

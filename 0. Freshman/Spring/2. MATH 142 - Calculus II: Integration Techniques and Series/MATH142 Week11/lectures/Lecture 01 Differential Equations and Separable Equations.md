@@ -2,6 +2,8 @@
 ## Week 11 · Lecture 1 (Monday)
 ### Differential Equations and Separable Equations
 
+**Date:** Monday 29 March 2027 · 11:00–11:50 · Week 11
+
 ---
 
 **Reading:** Stewart §9.1, §9.3 | Apostol Ch. 8 §8.1–8.4

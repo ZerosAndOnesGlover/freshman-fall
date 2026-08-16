@@ -1,6 +1,8 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 6 · Lecture 3: Valgrind and Building a Dynamic Array
 
+**Date:** Thursday 1 October 2026 · 10:00–10:50 · Week 6
+
 ---
 
 ## Lecture Goals

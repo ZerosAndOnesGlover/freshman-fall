@@ -2,6 +2,8 @@
 ## Week 3 · Lecture 1 (Wednesday)
 ### Half and Full Adders
 
+**Date:** Wednesday 3 February 2027 · 13:00–14:15 · Week 3
+
 ---
 
 **Reading:** Harris & Harris §5.2.1 | Mano & Ciletti §4.3–4.4

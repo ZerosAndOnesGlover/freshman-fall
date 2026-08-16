@@ -2,6 +2,8 @@
 ## Week 11 · Lecture 2 (Tuesday)
 ### First-Order Linear Equations
 
+**Date:** Tuesday 30 March 2027 · 11:00–11:50 · Week 11
+
 ---
 
 **Reading:** Stewart §9.5 | Apostol Ch. 8 §8.5–8.6

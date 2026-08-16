@@ -4,6 +4,8 @@
 **Week 3 · Thursday**
 *"The call stack is one of the most important data structures you will ever understand." — CS 101*
 
+**Date:** Thursday 10 September 2026 · 09:00–09:50 · Week 3
+
 ---
 
 ## 0. The Question This Lecture Answers

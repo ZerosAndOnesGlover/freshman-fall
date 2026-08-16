@@ -2,6 +2,8 @@
 ## Week 1 · Lecture 2 (Tuesday)
 ### Repeated Parts, Reduction Formulas, and the Integral That Comes Back
 
+**Date:** Tuesday 19 January 2027 · 11:00–11:50 · Week 1
+
 ---
 
 **Reading:** Stewart §7.1 (continued) | Apostol Ch. 5 §5.9

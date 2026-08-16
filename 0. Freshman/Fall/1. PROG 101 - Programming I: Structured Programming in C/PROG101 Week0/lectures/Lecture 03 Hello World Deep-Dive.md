@@ -1,6 +1,8 @@
 # PROG 101 · Programming I - Structured Programming in C
 ## Week 0 · Lecture 3: Hello World Deep Dive & Your First C Program
 
+**Date:** Thursday 20 August 2026 · 10:00–10:50 · Week 0
+
 ---
 
 ## Lecture Goals

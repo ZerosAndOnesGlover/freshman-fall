@@ -1,6 +1,8 @@
 # CS 102 · Computer Science II
 ## Lecture 05: Binary Search Trees
 
+**Date:** Wednesday 20 January 2027 · 09:00–09:50 · Week 1
+
 ---
 
 ## 1. The BST Invariant

@@ -1,9 +1,11 @@
 # PROG 102 · Lecture 24
 ## Structural Patterns
 
-**Week 7 · Friday · 50 minutes**
+**Week 7 · Thursday · 50 minutes**
 **Reading:** Gang of Four Ch. 4 (Adapter, Composite, Decorator, Facade)
 **Assumes:** L22, L23, Week 5 (`unique_ptr`)
+
+**Date:** Thursday 4 March 2027 · 10:00–10:50 · Week 7
 
 ---
 

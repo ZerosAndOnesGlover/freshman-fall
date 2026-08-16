@@ -2,6 +2,8 @@
 ## Lecture 7.2 (L22) — Permutations and Combinations
 ### Thursday, Week 7
 
+**Date:** Thursday 8 October 2026 · 13:00–13:50 · Week 7
+
 ---
 
 > **Core Question:** Does order matter, and can items repeat? These two questions determine which of four counting formulas applies.

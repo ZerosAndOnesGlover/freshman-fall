@@ -2,6 +2,8 @@
 ## Lecture 12.1 (L36) — Divisibility and Primes
 ### Monday, Week 12
 
+**Date:** Monday 9 November 2026 · 13:00–13:50 · Week 12
+
 ---
 
 ## 1. Divisibility

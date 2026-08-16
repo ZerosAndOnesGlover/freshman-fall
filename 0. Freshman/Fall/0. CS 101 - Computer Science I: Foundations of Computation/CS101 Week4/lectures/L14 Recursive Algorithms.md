@@ -4,6 +4,8 @@
 **Week 4 · Thursday**
 *"The art of recursion is knowing when to stop." — anonymous*
 
+**Date:** Thursday 17 September 2026 · 09:00–09:50 · Week 4
+
 ---
 
 ## 0. From Concept to Algorithm

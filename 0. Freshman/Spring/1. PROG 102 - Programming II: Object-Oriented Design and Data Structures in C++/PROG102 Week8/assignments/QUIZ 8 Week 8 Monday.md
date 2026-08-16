@@ -1,5 +1,5 @@
 # PROG 102 · Quiz 8
-## Week 8 · Monday, start of lecture · 15 minutes · 20 points
+## Week 8 · Tuesday, start of lecture · 15 minutes · 20 points
 
 **Covers Week 7** — Lectures 22–24: what patterns are, creational patterns, structural patterns.
 

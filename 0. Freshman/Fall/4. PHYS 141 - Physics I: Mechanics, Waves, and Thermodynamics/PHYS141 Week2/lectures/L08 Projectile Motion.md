@@ -3,6 +3,8 @@
 
 > **Core Principle:** A projectile is any object moving only under the influence of gravity (no air resistance, no thrust). Its horizontal motion is uniform (constant velocity); its vertical motion is free fall (constant downward acceleration g). These two motions are completely independent and share only one variable: time.
 
+**Date:** Tuesday 1 September 2026 · 14:00–14:50 · Week 2
+
 ---
 
 

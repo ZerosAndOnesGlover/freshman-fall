@@ -2,6 +2,8 @@
 ## Lecture 11.1 (L33) — Trees and Their Properties
 ### Monday, Week 11
 
+**Date:** Monday 2 November 2026 · 13:00–13:50 · Week 11
+
 ---
 
 ## 1. The Definition, and Why It Is Restrictive

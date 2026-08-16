@@ -1,6 +1,8 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Lecture 8.2 (L25) — The Principle of Inclusion–Exclusion
-### Wednesday, Week 8
+### Thursday, Week 8
+
+**Date:** Thursday 15 October 2026 · 13:00–13:50 · Week 8
 
 ---
 

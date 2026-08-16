@@ -2,6 +2,8 @@
 ## Week 2 · Lecture 1 (Wednesday)
 ### Logic Gates and CMOS Reality
 
+**Date:** Wednesday 27 January 2027 · 13:00–14:15 · Week 2
+
 ---
 
 **Reading:** Harris & Harris §1.5–1.6 | Mano & Ciletti §2.7–2.8

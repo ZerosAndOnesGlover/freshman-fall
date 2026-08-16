@@ -1,5 +1,5 @@
 # PROG 102 · Quiz 11
-## Week 11 · Monday, start of lecture · 15 minutes · 20 points
+## Week 11 · Tuesday, start of lecture · 15 minutes · 20 points
 
 **Covers Week 10** — Lectures 31–33: threads, races, mutexes, deadlock, condition variables, atomics.
 

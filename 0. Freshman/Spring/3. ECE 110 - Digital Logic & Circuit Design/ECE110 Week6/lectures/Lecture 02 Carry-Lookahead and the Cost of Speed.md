@@ -2,6 +2,8 @@
 ## Week 6 · Lecture 2 (Thursday)
 ### Carry-Lookahead and the Cost of Speed
 
+**Date:** Thursday 25 February 2027 · 13:00–14:15 · Week 6
+
 ---
 
 **Reading:** Harris & Harris §5.2.1 | Mano & Ciletti §4.5

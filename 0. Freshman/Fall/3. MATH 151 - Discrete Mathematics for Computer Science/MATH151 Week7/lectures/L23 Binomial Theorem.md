@@ -2,6 +2,8 @@
 ## Lecture 7.3 (L23) — The Binomial Theorem and Pascal's Triangle
 ### Friday, Week 7
 
+**Date:** Friday 9 October 2026 · 13:00–13:50 · Week 7
+
 ---
 
 > **Core Question:** What is the algebraic expansion of $(x+y)^n$, and what does it reveal about the deep structure connecting algebra and counting?

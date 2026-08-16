@@ -3,6 +3,8 @@
 
 > **Core Principle:** Force is not what keeps objects moving — it is what changes their motion. Newton's first law destroys the ancient Aristotelian notion that sustained force is needed to sustain motion. Newton's second law makes this quantitative: the net force on an object equals its mass times its acceleration. These two laws, together with the third, form the complete foundation of classical mechanics.
 
+**Date:** Monday 7 September 2026 · 14:00–14:50 · Week 3
+
 ---
 
 

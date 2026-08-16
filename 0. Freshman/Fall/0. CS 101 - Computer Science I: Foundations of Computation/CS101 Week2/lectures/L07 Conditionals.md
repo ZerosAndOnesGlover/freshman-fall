@@ -4,6 +4,8 @@
 **Week 2 · Wednesday**
 *"The most important control structure in any programming language is the conditional — it is where the program makes a decision." — Donald Knuth*
 
+**Date:** Wednesday 2 September 2026 · 09:00–09:50 · Week 2
+
 ---
 
 ## 0. Why Control Flow?

@@ -2,6 +2,8 @@
 ## Week 12 · Lecture 1 (Monday)
 ### Review and Synthesis
 
+**Date:** Monday 9 November 2026 · 11:00–11:50 · Week 12
+
 ---
 
 ## The Course in One Diagram

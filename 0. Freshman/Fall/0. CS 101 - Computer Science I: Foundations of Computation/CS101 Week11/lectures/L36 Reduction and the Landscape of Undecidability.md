@@ -1,6 +1,8 @@
 # CS 101 · Lecture 36 (Week 11, Lecture 3)
 ## Reduction and the Landscape of Undecidability
 
+**Date:** Friday 6 November 2026 · 09:00–09:50 · Week 11
+
 ---
 
 ## 0. One Theorem Is Not Enough

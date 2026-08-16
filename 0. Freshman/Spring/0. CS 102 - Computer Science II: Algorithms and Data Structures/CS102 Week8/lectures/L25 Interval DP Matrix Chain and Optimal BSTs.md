@@ -1,6 +1,8 @@
 # CS 102 · Computer Science II
 ## Lecture 25: Interval DP — Matrix Chain Multiplication and Optimal BSTs
 
+**Date:** Monday 8 March 2027 · 09:00–09:50 · Week 8
+
 ---
 
 ## 1. A New Shape of State

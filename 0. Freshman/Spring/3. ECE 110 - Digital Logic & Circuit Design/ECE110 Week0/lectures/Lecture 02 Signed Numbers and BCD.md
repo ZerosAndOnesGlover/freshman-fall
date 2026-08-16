@@ -2,6 +2,8 @@
 ## Week 0 · Lecture 2 (Thursday)
 ### Signed Numbers and BCD
 
+**Date:** Thursday 14 January 2027 · 13:00–14:15 · Week 0
+
 ---
 
 **Reading:** Harris & Harris §1.4.6 | Mano & Ciletti §1.5–1.7

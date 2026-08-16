@@ -1,6 +1,8 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Lecture 12.2 (L37) — Modular Arithmetic, the GCD, and RSA
-### Wednesday, Week 12
+### Thursday, Week 12
+
+**Date:** Thursday 12 November 2026 · 13:00–13:50 · Week 12
 
 ---
 

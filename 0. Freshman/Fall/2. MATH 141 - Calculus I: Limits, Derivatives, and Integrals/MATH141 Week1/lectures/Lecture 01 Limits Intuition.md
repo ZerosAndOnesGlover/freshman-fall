@@ -2,6 +2,8 @@
 ## Week 1 · Lecture 1 (Monday)
 ### Limits: Intuition, Informal Definition, and the One-Sided Limit
 
+**Date:** Monday 24 August 2026 · 11:00–11:50 · Week 1
+
 ---
 
 **Reading:** Stewart §2.1–2.2 | Spivak Ch. 5 (Limits)  

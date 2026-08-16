@@ -1,6 +1,8 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Lecture 10.2 (L31) — Representations and Isomorphism
-### Wednesday, Week 10
+### Thursday, Week 10
+
+**Date:** Thursday 29 October 2026 · 13:00–13:50 · Week 10
 
 ---
 

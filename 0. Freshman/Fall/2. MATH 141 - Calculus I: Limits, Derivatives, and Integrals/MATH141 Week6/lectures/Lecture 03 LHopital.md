@@ -2,6 +2,8 @@
 ## Week 6 · Lecture 3 (Wednesday)
 ### L'Hôpital's Rule: Resolving Indeterminate Forms
 
+**Date:** Wednesday 30 September 2026 · 11:00–11:50 · Week 6
+
 ---
 
 **Reading:** Stewart §4.4 | Spivak Ch. 11 (§11.4, via MVT extensions)

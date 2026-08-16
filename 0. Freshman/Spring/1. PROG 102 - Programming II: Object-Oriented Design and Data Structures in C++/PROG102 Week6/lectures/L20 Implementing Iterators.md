@@ -5,6 +5,8 @@
 **Reading:** *C++ Primer* §9.2.1, §10.5 · **Reference:** cppreference, *iterator_traits*
 **Assumes:** L10 (iterator categories), L19, Week 2 (templates)
 
+**Date:** Wednesday 24 February 2027 · 10:00–10:50 · Week 6
+
 ---
 
 ## 1. What Makes a Container a Container

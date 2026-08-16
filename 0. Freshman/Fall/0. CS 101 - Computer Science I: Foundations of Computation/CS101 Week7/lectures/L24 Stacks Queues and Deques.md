@@ -4,6 +4,8 @@
 **Week 7 · Friday**
 *"A stack is defined by two operations: push and pop, with LIFO semantics. This is the ADT. You can implement it with an array or a linked list — both satisfy the specification." — CS 101*
 
+**Date:** Friday 9 October 2026 · 09:00–09:50 · Week 7
+
 ---
 
 ## 0. From Building Blocks to Abstractions

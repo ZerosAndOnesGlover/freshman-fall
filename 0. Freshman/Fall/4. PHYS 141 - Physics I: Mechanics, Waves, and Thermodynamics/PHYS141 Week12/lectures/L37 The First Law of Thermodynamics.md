@@ -1,6 +1,8 @@
 # PHYS 141 · Physics I: Mechanics, Waves & Thermodynamics
 ## Lecture 37 — The First Law of Thermodynamics
 
+**Date:** Monday 9 November 2026 · 14:00–14:50 · Week 12
+
 ---
 
 ## Where This Fits

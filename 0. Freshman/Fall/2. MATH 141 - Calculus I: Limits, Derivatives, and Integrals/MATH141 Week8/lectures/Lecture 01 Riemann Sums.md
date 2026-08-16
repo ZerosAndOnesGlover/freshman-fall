@@ -2,6 +2,8 @@
 ## Week 8 · Lecture 1 (Monday)
 ### Areas, Distances, and Riemann Sums
 
+**Date:** Monday 12 October 2026 · 11:00–11:50 · Week 8
+
 ---
 
 **Reading:** Stewart §5.1 | Spivak Ch. 13 (Integration)

@@ -1,6 +1,8 @@
 # PHYS 141 · Physics I: Mechanics, Waves & Thermodynamics
 ## Lecture 32 — Standing Waves in Air Columns and Resonance
 
+**Date:** Tuesday 27 October 2026 · 14:00–14:50 · Week 10
+
 ---
 
 ## Where This Fits

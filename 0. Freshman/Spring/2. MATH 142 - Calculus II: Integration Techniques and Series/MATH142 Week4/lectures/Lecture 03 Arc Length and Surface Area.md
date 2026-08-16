@@ -1,6 +1,8 @@
 # MATH 142 · Calculus II
-## Week 4 · Lecture 3 (Wednesday)
+## Week 4 · Lecture 3 (Friday)
 ### Arc Length and Surface Area — Where Closed Forms Run Out
+
+**Date:** Friday 12 February 2027 · 11:00–11:50 · Week 4
 
 ---
 

@@ -4,6 +4,8 @@
 **Week 8 · Wednesday**
 *"A hash table doesn't search for your data — it computes where your data must be." — CS 101*
 
+**Date:** Wednesday 14 October 2026 · 09:00–09:50 · Week 8
+
 ---
 
 ## 0. The Question That Ends the Course's First Data Structure Story

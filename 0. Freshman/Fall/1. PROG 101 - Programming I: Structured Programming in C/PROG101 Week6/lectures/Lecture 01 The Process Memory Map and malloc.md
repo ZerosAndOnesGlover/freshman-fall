@@ -1,6 +1,8 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 6 · Lecture 1: The Process Memory Map and `malloc`
 
+**Date:** Tuesday 29 September 2026 · 10:00–10:50 · Week 6
+
 ---
 
 ## Lecture Goals

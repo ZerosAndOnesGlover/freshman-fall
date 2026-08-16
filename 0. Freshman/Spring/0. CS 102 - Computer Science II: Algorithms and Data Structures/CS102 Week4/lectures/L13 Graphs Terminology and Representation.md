@@ -1,6 +1,8 @@
 # CS 102 · Computer Science II
 ## Lecture 13: Graphs — Terminology and Representation
 
+**Date:** Monday 8 February 2027 · 09:00–09:50 · Week 4
+
 ---
 
 ## 1. Why Graphs Are Different

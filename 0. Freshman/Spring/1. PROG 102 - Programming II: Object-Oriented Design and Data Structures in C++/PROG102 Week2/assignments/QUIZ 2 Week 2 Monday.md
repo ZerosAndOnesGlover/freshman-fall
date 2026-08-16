@@ -1,5 +1,5 @@
 # PROG 102 · Quiz 2
-## Week 2 · Monday, start of lecture · 15 minutes · 20 points
+## Week 2 · Tuesday, start of lecture · 15 minutes · 20 points
 
 **Covers Week 1** — Lectures 04–06: operator overloading, copy semantics, the Rule of Three,
 copy-swap, and copy counting.

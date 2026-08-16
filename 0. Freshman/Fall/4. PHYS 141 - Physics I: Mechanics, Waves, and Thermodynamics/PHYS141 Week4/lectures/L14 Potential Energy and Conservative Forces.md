@@ -3,6 +3,8 @@
 
 > **Core Principle:** Some forces allow energy to be perfectly recovered — stored as "potential" energy and later converted back into kinetic energy without loss. These are conservative forces. Others (friction, air resistance) irreversibly convert mechanical energy into heat. The distinction between these two categories is not a labeling convenience — it reflects a deep property of the force itself: path-independence of work.
 
+**Date:** Tuesday 15 September 2026 · 14:00–14:50 · Week 4
+
 ---
 
 

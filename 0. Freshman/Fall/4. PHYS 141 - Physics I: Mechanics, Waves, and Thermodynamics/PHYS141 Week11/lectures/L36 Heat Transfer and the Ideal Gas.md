@@ -1,6 +1,8 @@
 # PHYS 141 · Physics I: Mechanics, Waves & Thermodynamics
 ## Lecture 36 — Heat Transfer and the Ideal Gas
 
+**Date:** Friday 6 November 2026 · 14:00–14:50 · Week 11
+
 ---
 
 ## Where This Fits

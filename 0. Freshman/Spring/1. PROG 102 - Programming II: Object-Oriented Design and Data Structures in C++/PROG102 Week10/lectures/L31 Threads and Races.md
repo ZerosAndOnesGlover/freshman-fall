@@ -1,8 +1,10 @@
 # PROG 102 · Lecture 31
 ## Threads and Races
 
-**Week 10 · Monday · 50 minutes**
+**Week 10 · Tuesday · 50 minutes**
 **Reading:** Williams, *C++ Concurrency in Action*, Ch. 1–2 · **Assumes:** Week 5, Week 9
+
+**Date:** Tuesday 23 March 2027 · 10:00–10:50 · Week 10
 
 ---
 

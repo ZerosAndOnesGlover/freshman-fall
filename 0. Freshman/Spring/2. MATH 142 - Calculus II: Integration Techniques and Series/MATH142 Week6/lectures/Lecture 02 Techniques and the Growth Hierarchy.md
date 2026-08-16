@@ -2,6 +2,8 @@
 ## Week 6 · Lecture 2 (Tuesday)
 ### Techniques, and the Growth Hierarchy
 
+**Date:** Tuesday 23 February 2027 · 11:00–11:50 · Week 6
+
 ---
 
 **Reading:** Stewart §11.1 (continued) | Apostol Ch. 10 §10.4

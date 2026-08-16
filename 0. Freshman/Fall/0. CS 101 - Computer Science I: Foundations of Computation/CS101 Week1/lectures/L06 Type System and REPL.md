@@ -4,6 +4,8 @@
 **Week 1 · Friday**
 *"Strong typing: the language enforces type contracts. Dynamic typing: types are checked at runtime, not compile time. Python is both." — Guido van Rossum*
 
+**Date:** Friday 28 August 2026 · 09:00–09:50 · Week 1
+
 ---
 
 ## 0. The Goal of This Lecture

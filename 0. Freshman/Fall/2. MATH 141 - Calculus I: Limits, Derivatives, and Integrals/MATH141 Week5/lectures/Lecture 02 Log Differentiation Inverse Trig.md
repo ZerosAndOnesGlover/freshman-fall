@@ -2,6 +2,8 @@
 ## Week 5 · Lecture 2 (Tuesday)
 ### Derivatives of Logarithms, Logarithmic Differentiation, and Inverse Trig Functions
 
+**Date:** Tuesday 22 September 2026 · 11:00–11:50 · Week 5
+
 ---
 
 **Reading:** Stewart §3.6, §3.5 (inverse trig) | Spivak Ch. 15 (logarithm and exponential)

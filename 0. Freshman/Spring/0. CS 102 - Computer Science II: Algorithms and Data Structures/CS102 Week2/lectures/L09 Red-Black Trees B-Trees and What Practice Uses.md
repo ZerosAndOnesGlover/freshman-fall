@@ -1,6 +1,8 @@
 # CS 102 · Computer Science II
 ## Lecture 09: Red-Black Trees, B-Trees, and What Practice Actually Uses
 
+**Date:** Friday 29 January 2027 · 09:00–09:50 · Week 2
+
 ---
 
 ## 1. A Second Way to Balance

@@ -1,6 +1,8 @@
 # MATH 142 · Calculus II
-## Week 7 · Lecture 3 (Wednesday)
+## Week 7 · Lecture 3 (Friday)
 ### Comparison Tests for Series
+
+**Date:** Friday 5 March 2027 · 11:00–11:50 · Week 7
 
 ---
 

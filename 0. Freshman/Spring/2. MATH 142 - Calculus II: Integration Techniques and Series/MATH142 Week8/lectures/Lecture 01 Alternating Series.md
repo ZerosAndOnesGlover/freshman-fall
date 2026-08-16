@@ -2,6 +2,8 @@
 ## Week 8 · Lecture 1 (Monday)
 ### Alternating Series
 
+**Date:** Monday 8 March 2027 · 11:00–11:50 · Week 8
+
 ---
 
 **Reading:** Stewart §11.5 | Apostol Ch. 10 §10.17

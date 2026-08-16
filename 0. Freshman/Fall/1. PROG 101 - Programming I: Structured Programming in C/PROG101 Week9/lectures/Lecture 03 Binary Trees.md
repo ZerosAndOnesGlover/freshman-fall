@@ -1,6 +1,8 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 9 · Lecture 3: Recursive Data Structures — Binary Trees
 
+**Date:** Thursday 22 October 2026 · 10:00–10:50 · Week 9
+
 ---
 
 ## Lecture Goals

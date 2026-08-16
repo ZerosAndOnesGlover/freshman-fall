@@ -2,6 +2,8 @@
 ## Week 11 · Lecture 2 (Tuesday)
 ### Volumes by Slicing: Disks and Washers
 
+**Date:** Tuesday 3 November 2026 · 11:00–11:50 · Week 11
+
 ---
 
 **Reading:** Stewart §6.2 | Spivak Ch. 13

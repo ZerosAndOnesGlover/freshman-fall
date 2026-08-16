@@ -1,9 +1,11 @@
 # PROG 102 · Lecture 06
 ## The Copy-Swap Idiom, and Counting Copies
 
-**Week 1 · Friday · 50 minutes**
+**Week 1 · Thursday · 50 minutes**
 **Reading:** *C++ Primer* §13.3 · **Reference:** Meyers, *Effective C++* Item 11
 **Assumes:** L05 (Rule of Three, self-assignment)
+
+**Date:** Thursday 21 January 2027 · 10:00–10:50 · Week 1
 
 ---
 

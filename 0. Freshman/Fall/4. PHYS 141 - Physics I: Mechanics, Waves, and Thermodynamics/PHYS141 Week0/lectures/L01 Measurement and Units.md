@@ -3,6 +3,8 @@
 
 > **Core Principle:** Physics is an experimental science. Every quantity we discuss must be measurable — and the measurement must be reported with its units and its uncertainty. A number without units is not a physical quantity; it is a mathematical abstraction.
 
+**Date:** Monday 17 August 2026 · 14:00–14:50 · Week 0
+
 ---
 
 

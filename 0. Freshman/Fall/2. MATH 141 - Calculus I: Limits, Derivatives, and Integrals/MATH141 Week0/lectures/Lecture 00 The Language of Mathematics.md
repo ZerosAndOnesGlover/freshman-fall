@@ -2,6 +2,8 @@
 ## Week 0 · Lecture 0 of 4
 ### The Language of Mathematics: Sets, Notation & Logic
 
+**Date:** Monday 17 August 2026 · 11:00–11:50 · Week 0
+
 ---
 
 **Course:** MATH 141: Calculus I: Limits, Derivatives, and Integrals

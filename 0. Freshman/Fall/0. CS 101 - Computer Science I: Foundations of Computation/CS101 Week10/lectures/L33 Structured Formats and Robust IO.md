@@ -1,6 +1,8 @@
 # CS 101 · Lecture 33 (Week 10, Lecture 3)
 ## Structured Formats and Robust I/O
 
+**Date:** Friday 30 October 2026 · 09:00–09:50 · Week 10
+
 ---
 
 ## 0. From Bytes to Records

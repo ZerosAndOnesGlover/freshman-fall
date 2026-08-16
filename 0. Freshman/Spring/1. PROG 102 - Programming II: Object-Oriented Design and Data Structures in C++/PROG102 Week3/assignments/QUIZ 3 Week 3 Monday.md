@@ -1,5 +1,5 @@
 # PROG 102 · Quiz 3
-## Week 3 · Monday, start of lecture · 15 minutes · 20 points
+## Week 3 · Tuesday, start of lecture · 15 minutes · 20 points
 
 **Covers Week 2** — Lectures 07–09: function and class templates, deduction, instantiation,
 specialization, and what templates cost.

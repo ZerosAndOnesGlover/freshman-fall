@@ -2,6 +2,8 @@
 ## Week 5 · Lecture 2 (Tuesday)
 ### Calculus with Parametric Curves
 
+**Date:** Tuesday 16 February 2027 · 11:00–11:50 · Week 5
+
 ---
 
 **Reading:** Stewart §10.2 | Apostol Ch. 2 §2.14

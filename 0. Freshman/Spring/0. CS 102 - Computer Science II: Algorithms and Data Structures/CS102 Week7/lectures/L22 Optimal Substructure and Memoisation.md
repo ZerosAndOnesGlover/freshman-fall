@@ -1,6 +1,8 @@
 # CS 102 · Computer Science II
 ## Lecture 22: Optimal Substructure, Overlapping Subproblems, and Memoisation
 
+**Date:** Monday 1 March 2027 · 09:00–09:50 · Week 7
+
 ---
 
 ## 1. You Have Already Written One

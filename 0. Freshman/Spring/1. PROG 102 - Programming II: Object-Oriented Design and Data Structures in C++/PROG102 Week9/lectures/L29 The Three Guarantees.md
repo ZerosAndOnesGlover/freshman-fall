@@ -5,6 +5,8 @@
 **Reading:** Meyers, *Effective C++* Item 29 · **Reference:** Sutter, *Exceptional C++*
 **Assumes:** L28, Week 1 (copy-and-swap), Week 5 (RAII)
 
+**Date:** Wednesday 17 March 2027 · 10:00–10:50 · Week 9
+
 ---
 
 ## 1. The Question

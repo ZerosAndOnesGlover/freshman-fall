@@ -2,6 +2,8 @@
 ## Lecture 1.3 (L05) — Nested Quantifiers
 ### Friday, Week 1
 
+**Date:** Friday 28 August 2026 · 13:00–13:50 · Week 1
+
 ---
 
 > **Core Question:** What happens when we quantify over multiple variables simultaneously, and why does the *order* of quantifiers fundamentally change the meaning of a statement?

@@ -5,6 +5,8 @@
 *"To iterate is human, to recurse divine." — L. Peter Deutsch*
 *(We'll cover recursion in Week 4. For now, let's be human.)*
 
+**Date:** Thursday 3 September 2026 · 09:00–09:50 · Week 2
+
 ---
 
 ## 0. The Problem with No Loops

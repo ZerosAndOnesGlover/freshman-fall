@@ -5,6 +5,8 @@
 **Reading:** *C++ Primer* §12.1.1, §12.1.4–12.1.6 · **Reference:** Meyers Items 19–21
 **Assumes:** L16
 
+**Date:** Wednesday 17 February 2027 · 10:00–10:50 · Week 5
+
 ---
 
 ## 1. When One Owner Is Not Enough

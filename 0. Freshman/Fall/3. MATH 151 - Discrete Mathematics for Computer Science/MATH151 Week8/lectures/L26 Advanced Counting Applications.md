@@ -2,6 +2,8 @@
 ## Lecture 8.3 (L26) — Advanced Counting: Choosing the Right Tool
 ### Friday, Week 8
 
+**Date:** Friday 16 October 2026 · 13:00–13:50 · Week 8
+
 ---
 
 ## 1. Two Tools, Opposite Jobs

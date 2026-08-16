@@ -3,6 +3,8 @@
 
 > **Core Principle:** An object is in static equilibrium when it has zero linear acceleration AND zero angular acceleration — both the net force and the net torque must vanish. These are two genuinely independent conditions: a system can have zero net force but still spin up (if torques don't balance), or zero net torque but still accelerate linearly (if forces don't balance). Solving equilibrium problems requires satisfying both simultaneously.
 
+**Date:** Friday 9 October 2026 · 14:00–14:50 · Week 7
+
 ---
 
 

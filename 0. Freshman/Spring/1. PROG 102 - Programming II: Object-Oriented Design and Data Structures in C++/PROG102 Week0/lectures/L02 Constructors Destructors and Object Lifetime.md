@@ -1,9 +1,11 @@
 # PROG 102 · Lecture 02
 ## Constructors, Destructors, and Object Lifetime
 
-**Week 0 · Wednesday · 50 minutes**
+**Week 0 · Thursday · 50 minutes**
 **Reading:** *C++ Primer* §7.1.4, §7.5 · **Reference:** Stroustrup Ch. 17
 **Assumes:** **Lecture 00** §5 (references), §8 (`new`/`delete`), §14 (`= default`)
+
+**Date:** Thursday 14 January 2027 · 10:00–10:50 · Week 0
 
 ---
 

@@ -2,6 +2,8 @@
 ## Week 6 · Lecture 1 (Monday)
 ### Maximum and Minimum Values: Extrema, Critical Points, and the Extreme Value Theorem
 
+**Date:** Monday 28 September 2026 · 11:00–11:50 · Week 6
+
 ---
 
 **Reading:** Stewart §4.1 | Spivak Ch. 11 (§11.1)

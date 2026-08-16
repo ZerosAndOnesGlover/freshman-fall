@@ -2,6 +2,8 @@
 ## Lecture 0.3. Tautologies, Contradictions, Logical Equivalence, and the Laws of Logic
 ### Friday, Week 0
 
+**Date:** Friday 21 August 2026 · 13:00–13:50 · Week 0
+
 ---
 
 > **Core Question:** How do we classify propositions by their truth behavior, and how do we prove equivalences *without* resorting to truth tables every time?

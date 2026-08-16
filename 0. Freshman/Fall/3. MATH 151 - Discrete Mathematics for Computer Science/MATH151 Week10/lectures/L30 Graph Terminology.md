@@ -2,6 +2,8 @@
 ## Lecture 10.1 (L30) — Graphs: Terminology and Basic Results
 ### Monday, Week 10
 
+**Date:** Monday 26 October 2026 · 13:00–13:50 · Week 10
+
 ---
 
 ## 1. What a Graph Is

@@ -5,6 +5,8 @@
 **Reading:** Gang of Four Ch. 3 (Singleton, Factory Method, Abstract Factory, Builder)
 **Assumes:** L22, Week 4 (abstract classes), Week 5 (`unique_ptr`)
 
+**Date:** Wednesday 3 March 2027 · 10:00–10:50 · Week 7
+
 ---
 
 ## 1. The Problem They Share

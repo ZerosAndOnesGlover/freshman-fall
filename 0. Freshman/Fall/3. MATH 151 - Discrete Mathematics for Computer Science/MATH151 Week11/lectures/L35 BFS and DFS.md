@@ -2,6 +2,8 @@
 ## Lecture 11.3 (L35) — Breadth-First and Depth-First Search
 ### Friday, Week 11
 
+**Date:** Friday 6 November 2026 · 13:00–13:50 · Week 11
+
 ---
 
 ## 1. One Algorithm, Two Data Structures

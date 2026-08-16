@@ -1,6 +1,8 @@
 # MATH 142 · Calculus II
-## Week 10 · Lecture 3 (Wednesday)
+## Week 10 · Lecture 3 (Friday)
 ### Applications — and Week 0's Debt
+
+**Date:** Friday 26 March 2027 · 11:00–11:50 · Week 10
 
 ---
 

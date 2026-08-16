@@ -1,6 +1,8 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Lecture 11.2 (L34) — Spanning Trees and Minimum Spanning Trees
-### Wednesday, Week 11
+### Thursday, Week 11
+
+**Date:** Thursday 5 November 2026 · 13:00–13:50 · Week 11
 
 ---
 

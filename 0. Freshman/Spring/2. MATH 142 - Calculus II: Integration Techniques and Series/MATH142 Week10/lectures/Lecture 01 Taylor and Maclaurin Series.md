@@ -2,6 +2,8 @@
 ## Week 10 · Lecture 1 (Monday)
 ### Taylor and Maclaurin Series
 
+**Date:** Monday 22 March 2027 · 11:00–11:50 · Week 10
+
 ---
 
 **Reading:** Stewart §11.10 | Apostol Ch. 11 §11.6–11.8
