@@ -94,7 +94,7 @@ Your output must look *exactly* like this (with your own information):
 
 Requirements:
 - Use `#define` for at least your name, ID, and year
-- The box must be exactly 40 characters wide (including the border characters)
+- The box must be exactly 52 characters wide (including the border characters)
 - Each field must be left-aligned within the box
 - Compile clean with `-Wall -Wextra -Werror`
 
@@ -311,14 +311,14 @@ Submit on the course portal:
 
 ### ⚠️ Errata — CORRECTED in the text above
 
-Three defects, all verified against `gcc 13.3.0` / GNU `nm` on x86-64 Linux. The first two **have
-now been fixed in this document**; the third is a live inconsistency flagged for the author.
+Three defects, all verified against `gcc 13.3.0` / GNU `nm` on x86-64 Linux. All three **have now
+been fixed in this document**.
 
 | Location | Was (wrong) | Now |
 |---|---|---|
 | P3 expected output, Kelvin column | `273.2`, `278.2` … `373.2`. The claim was restated in the spot-check line below the reference solution: "273.15 displays as 273.2 at one decimal". Both are wrong. `273.15` is not representable in binary — the stored double is `273.14999999999997726`, so `%.1f` correctly rounds **down**. The answer key's own reference solution prints `273.1`; it was never run against its own expected output. | Corrected to `273.1` … `373.1` for the six rows shown, matching what the reference solution actually prints. |
 | P6 reference answer 6 | "after which the symbol remains `U` in the executable". It does not. After `gcc -Wl,--unresolved-symbols=ignore-all symbols.o -o symbols_ignored`, `nm symbols_ignored \| grep undefined_function` returns **nothing** — the symbol is dropped, not retained. | Reworded to state the symbol does not appear in the linked executable's symbol table, and that calling it still crashes at runtime. |
-| P2 box width (**unresolved**) | The prose requirement says the box "must be exactly 40 characters wide", but the sample art in the same problem is **52** characters on every line, and the note formerly here asserted it was 40. The art was later widened to fit the full course title without the prose being updated. | Not auto-corrected — the author must choose. The art is self-consistent at 52; only the prose sentence and the deleted note disagreed. Accept either width until resolved, and grade alignment and `#define` usage rather than the constant. |
+| P2 box width | The prose requirement said the box "must be exactly 40 characters wide", but the sample art in the same problem is **52** characters on every line, and the note formerly here asserted it was 40. The art was widened to fit the full course title without the prose being updated. | Resolved in favour of the art: prose now requires **52**, and the grading note's field width is corrected from `%-27s` to `%-38s` to match. |
 
 Students holding a pre-correction copy must not be penalised for a `273.2` Kelvin column or for a
 40-character box.
@@ -357,9 +357,9 @@ echo "=== Complete pipeline: OK ==="
 
 ### Problem 2 — Info Printer (15 pts)
 
-*Grading: 5 pts `#define` used for name/ID/year (a `const char *` or literal in the `printf` earns 0 for this item — the requirement is the preprocessor), 6 pts exact 40-character box with correct alignment, 4 pts clean compile under `-Wall -Wextra -Werror`.*
-*Alignment is best done with width specifiers, e.g. `printf("║  Name:    %-27s ║\n", NAME);`. Students who pad by hand with spaces get the right output for their own name but break for any other — mention it, deduct only if the output is actually misaligned.*
-*Note: the box characters are multi-byte UTF-8. `strlen` on these lines returns **more** than 40 (bytes, not characters); a student who "verifies" width with `strlen` and panics is not wrong about the count — explain the distinction. This is worth a bonus mark if raised unprompted.*
+*Grading: 5 pts `#define` used for name/ID/year (a `const char *` or literal in the `printf` earns 0 for this item — the requirement is the preprocessor), 6 pts exact 52-character box with correct alignment, 4 pts clean compile under `-Wall -Wextra -Werror`.*
+*Alignment is best done with width specifiers, e.g. `printf("║  Name:    %-38s ║\n", NAME);` — verified to reproduce the sample art exactly. The 11-character label prefix (`║` plus two spaces plus a padded field name), the explicit trailing space and the closing border leave exactly **38** columns for the value; note the space before `║` in the format string is not part of the field, so `%-39s` overshoots to 53. The longest value, the 38-character course title, fills the field exactly. Students who pad by hand with spaces get the right output for their own name but break for any other — mention it, deduct only if the output is actually misaligned.*
+*Note: the box characters are multi-byte UTF-8, so `strlen` counts **bytes, not characters** and returns far more than 52 — verified, a border line is **156** bytes (52 box-drawing characters at 3 bytes each) and a content line is **56** (two `║` at 3 bytes plus 50 ASCII). A student who "verifies" width with `strlen` and panics is not wrong about the count — explain the distinction. This is worth a bonus mark if raised unprompted.*
 
 ### Problem 3 — Temperature Table (20 pts)
 
