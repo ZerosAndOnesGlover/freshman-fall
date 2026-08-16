@@ -51,6 +51,17 @@ $$\vec{J} = \int_{t_i}^{t_f} \vec{F}\,dt$$
 For a **constant force**:
 $$\vec{J} = \vec{F}\Delta t$$
 
+> **Scoped preview — the definite integral.** MATH 141 does not reach the definite integral until
+> **Week 8**; you need it here in Week 5. The rule was given in **Lecture 4 §7.1** and used again in
+> **Lecture 13**, and it is all you need:
+>
+> $$\int_a^b t^{n}\,dt = \left[\frac{t^{\,n+1}}{n+1}\right]_a^b \qquad (n \neq -1)$$
+>
+> So a force ramping as $F(t) = ct$ over $[0,T]$ delivers $J = \int_0^T ct\,dt = c\left[\tfrac{t^2}{2}\right]_0^T = \tfrac{1}{2}cT^2$.
+> **Geometrically, impulse is the area under the F–t curve** — exactly as work is the area under
+> F–x. When a problem hands you a force–time *graph* rather than a formula, read off the area;
+> no integration required.
+
 **SI unit:** N·s (which is dimensionally identical to kg·m/s — the same units as momentum, as we're about to show).
 
 ---

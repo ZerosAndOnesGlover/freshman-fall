@@ -217,6 +217,21 @@ by_grade_desc = sorted(students, key=lambda s: s[1], reverse=True)
 
 **Claim:** Any comparison-based sorting algorithm requires Ω(n log n) comparisons in the worst case. No comparison sort can do better.
 
+> **Scoped preview — two facts borrowed from elsewhere.** This proof leans on a counting fact and
+> an approximation, neither of which you have met yet.
+>
+> **1. There are `n!` orderings of `n` distinct items.** Pick any of `n` items first, then any of
+> the remaining `n−1`, then `n−2`, and so on: `n × (n−1) × … × 1 = n!`. That product is a
+> **permutation count**, and MATH 151 develops permutations and combinations properly in
+> **Week 7** — two weeks after you need it here. The one-line argument above is the whole of what
+> this proof requires.
+>
+> **2. `log₂(n!) = Θ(n log n)`.** This follows from **Stirling's approximation**, which is taught
+> in **neither** MATH 151 nor MATH 141 — take it as given. If you want a cheap sanity check that
+> needs no Stirling: at least half the factors in `n!` are ≥ `n/2`, so `n! ≥ (n/2)^(n/2)`, hence
+> `log₂(n!) ≥ (n/2)·log₂(n/2)`, which is already `Ω(n log n)`. That bound alone is enough to
+> finish the proof below.
+
 **Proof sketch (decision tree argument):**
 - Any comparison-based sort can be modeled as a binary decision tree: each internal node is a comparison, each leaf is a final sorted arrangement.
 - There are n! possible orderings of n elements — the tree must have at least n! leaves.

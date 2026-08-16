@@ -213,5 +213,63 @@ Not prerequisite issues, but they surfaced during the sweep and should be fixed.
 
 ---
 
-*Audit covers Freshman Fall only. Freshman Spring and Sophomore Year are unaudited;
-the Week 0 framing problem in §6(a) is likely to recur wherever a Week 0 exists.*
+## 9 · Weeks 3–12 (added 2026-08-16)
+
+Second pass, extending the audit to the rest of Fall. **Weeks 3–12 are far cleaner than Weeks 0–2.**
+Four cross-course gaps, no same-course gaps at all, and every one of the four has been resolved
+in place with a scoped preview rather than by re-sequencing — the courses stay in lockstep.
+
+### Findings, all resolved
+
+| # | Lecture needing it | Needs | Delivered | Gap | Preview added |
+|---|---|---|---|---|---|
+| 16 | PHYS 141 W4 · `L13 Work and Kinetic Energy` | definite integral; substitution | MATH 141 **W8**, **W10** | 4–6 wk | §3 and §4 |
+| 17 | PHYS 141 W5 · `L16 Momentum and Impulse` | definite integral (`J = ∫F dt`) | MATH 141 **W8** | 3 wk | §3 |
+| 18 | PHYS 141 W6 · `L20 Torque and Rotational Dynamics` | definite integral (`I = ∫r² dm`) | MATH 141 **W8** | 2 wk | §4 |
+| 19 | CS 101 W5 · `L18 Merge Sort and Quicksort` | permutations (`n!`); Stirling | MATH 151 **W7**; Stirling **never** | 2 wk; ∞ | §, lower-bound proof |
+
+**PHYS 141 is the whole story.** Findings 16–18 are one dependency seen three times: mechanics
+needs the definite integral from Week 4 onward, and MATH 141 does not reach it until Week 8. The
+Week 1 preview added earlier (`L04` §7.1) already supplied the reverse power rule and
+`[F(x)]ᵃᵇ` evaluation, so findings 17 and 18 needed only a short pointer back to it plus one
+worked case. Only finding 16 needed genuinely new material — the change of variables in the
+work–energy derivation is *substitution*, MATH 141 Week 10.
+
+**Finding 19 is the only gap with no home.** Stirling's approximation appears in neither MATH 141
+nor MATH 151 at any point in Year 1, so it cannot be previewed "from" anywhere. The preview
+therefore gives an elementary substitute — at least half the factors of `n!` exceed `n/2`, so
+`n! ≥ (n/2)^(n/2)` and `log₂(n!) = Ω(n log n)` — which is enough to close the proof without
+Stirling at all.
+
+### Verified clean — worth recording
+
+Several predicted gaps turned out not to exist. Recording them stops the next audit re-deriving them.
+
+- ✅ **CS 101 W6 does not depend on MATH 151.** `L20 Recurrence Relations and Master Theorem`
+  looked like a 3-week forward reference to MATH 151 W9, but CS 101 **defines and solves
+  recurrences itself**, by unrolling and recursion trees. It never reaches for MATH 151's
+  characteristic-equation method. No gap.
+- ✅ **CS 101 W8 teaches its own pigeonhole principle** in `L26 Collision Resolution and Resizing`,
+  the same week MATH 151 covers it. Simultaneous, not dependent.
+- ✅ **CS 101 W7 PS 7 flags its own forward reference.** The LRU-cache problem needs `dict` from
+  Week 8 and says so in the question — *"dictionaries are covered in Week 8, so you may need to
+  preview `dict` basics, or wait and revisit this after Week 8."* This is the pattern the whole
+  audit is arguing for, already in use.
+- ✅ **PROG 101 Weeks 3–12 are clean.** Its `O(n log n)` usage in W7 and W9 follows CS 101's
+  Big-O delivery at W6. Its W9 Fibonacci-recurrence reference follows both CS 101 W6 and
+  MATH 151 W9.
+- ✅ **MATH 141 Weeks 3–12 ask for no induction or formal proof.** Finding #7 (PS 0) was isolated.
+- ✅ **PHYS 141 W12 thermodynamics** uses integrals, but MATH 141 has delivered them by Week 8–9.
+- ✅ **MATH 151 Weeks 3–12 and CS 190** carry no external dependency.
+
+### Method note
+
+Findings 16–19 were reached by building a taught-index for all six courses across all 13 weeks,
+then testing each course's assessments and lectures against *every other course's* delivery week.
+Predictions were checked, not assumed: two of the four predicted gaps (CS 101 W6, CS 101 W8)
+dissolved on inspection, and two gaps that were not predicted (PHYS 141 W5, W6) turned up.
+
+---
+
+*Audit now covers Freshman Fall, Weeks 0–12, all six courses. Freshman Spring and Sophomore Year
+remain unaudited; the Week 0 framing problem in §6(a) is likely to recur wherever a Week 0 exists.*

@@ -59,6 +59,17 @@ $$W = \int_{x_i}^{x_f} F(x)\, dx \quad \text{(1D case)}$$
 
 For a constant force, this integral reduces to $W = F\Delta x$, consistent with the simple formula above.
 
+> **Scoped preview — the definite integral.** MATH 141 reaches Riemann sums and the definite
+> integral in **Week 8** and the Fundamental Theorem in **Week 9**. You need it here, in Week 4.
+> Everything required was already given in **Lecture 4 §7.1**; this is the whole of it:
+>
+> $$\int_a^b t^{n}\,dt = \left[\frac{t^{\,n+1}}{n+1}\right]_a^b = \frac{b^{\,n+1}-a^{\,n+1}}{n+1} \qquad (n \neq -1)$$
+>
+> Antidifferentiate term by term, evaluate at the top limit, subtract the value at the bottom.
+> For a spring, $F(x) = -kx$, so $W = \int_0^{d}(-kx)\,dx = -k\left[\tfrac{x^2}{2}\right]_0^{d} = -\tfrac{1}{2}kd^2$ —
+> which is exactly the spring result quoted later in this lecture. You will not be assessed on the
+> theory of integration in this course, only on using it.
+
 ### 3D General Definition
 
 $$W = \int_{\vec{r}_i}^{\vec{r}_f} \vec{F}\cdot d\vec{r}$$
@@ -83,6 +94,14 @@ $$W = \int_{x_i}^{x_f} F\,dx = \int_{x_i}^{x_f} m\frac{dv}{dt}\,dx$$
 **Key calculus trick — change of variable using the chain rule:**
 
 $$\frac{dv}{dt} = \frac{dv}{dx}\cdot\frac{dx}{dt} = v\frac{dv}{dx}$$
+
+> **Scoped preview — substitution.** This step is *integration by substitution*, which MATH 141
+> formalises in **Week 10**, built on the chain rule it proves in **Week 4**. You are not expected
+> to reproduce the general method here. What matters is the pattern: when the variable of
+> integration changes from $x$ to $v$, **the limits change with it** — $x_i \to v_i$ and
+> $x_f \to v_f$ — which is why the final integral runs over velocities rather than positions.
+> Forgetting to change the limits is the single most common error when you meet this properly
+> in Week 10.
 
 Substituting:
 
