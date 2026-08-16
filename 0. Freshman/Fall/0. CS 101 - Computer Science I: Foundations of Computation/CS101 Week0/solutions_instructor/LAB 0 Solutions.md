@@ -5,6 +5,23 @@
 > the absolute timings are machine-specific — grade the *ratios* and the conclusions, never the
 > raw milliseconds.
 
+### ⚠️ Errata — CORRECTED in the handout
+
+One defect, **now fixed**. Recorded here for the change log.
+
+| Location | Was (wrong) | Now |
+|---|---|---|
+| `LAB 0 Environment Setup.md`, subtitle line | "*Duration: 2 hours · Not graded (completion only)*". This contradicted three other sources: the syllabus bills **Lab 0–11 as twelve graded labs worth 10%**, "graded on completion and correctness"; the gradebook carries a Lab 0 row worth 100 points inside the weighted Labs component; and this file sets out a Method-60 / Result-40 marking scheme, which is meaningless for an ungraded lab. Left as-is, a student would reasonably skip the written work. | "*Duration: 2 hours · Graded — 100 points via in-lab TA checkoff, part of the Labs component (10%)*". `CS101 Week0/summary.md` updated to match. |
+
+**Note the contrast with PROG 101.** That course's Lab 0 genuinely *is* ungraded — its handout says
+"Not graded: completion required before Problem Set 0", and its gradebook explicitly excludes Lab 0
+from the Labs table as completion-only with no weight. The two courses made different choices, and
+CS 101's handout appears to have inherited PROG 101's wording. Do not "fix" the PROG 101 one to
+match; it is correct as it stands.
+
+Students who skipped the written portions on the strength of the old subtitle should not be
+penalised for it.
+
 ---
 
 ## Part 1–2 — Setup and Git

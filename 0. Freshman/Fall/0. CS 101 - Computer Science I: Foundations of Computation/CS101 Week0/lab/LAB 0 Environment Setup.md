@@ -2,7 +2,7 @@
 ## Environment Setup & First Programs
 
 **Friday of Week 0 · Lab Section** — the Week 0 orientation lab slot; from Lab 1 onward the lab meets Tuesday.
-*Duration: 2 hours · Not graded (completion only)*
+*Duration: 2 hours · Graded — 100 points via in-lab TA checkoff, part of the Labs component (10%)*
 
 ---
 
