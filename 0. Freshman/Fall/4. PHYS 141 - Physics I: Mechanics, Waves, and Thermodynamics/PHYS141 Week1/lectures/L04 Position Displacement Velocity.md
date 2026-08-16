@@ -3,6 +3,8 @@
 
 > **Core Principle:** Motion is the change of position over time. To describe motion precisely, you need a reference point, a direction convention, and a clock. Everything else in kinematics follows from these three choices — and from calculus.
 
+**Date:** Monday 24 August 2026 · 14:00–14:50 · Week 1
+
 ---
 
 
@@ -113,6 +115,41 @@ This is the fundamental geometric meaning of the derivative.
 
 ---
 
+### 5.1 The One Rule You Need — borrowed from MATH 141
+
+> **Scoped forward reference.** The table above lists *results*. Every polynomial entry in it comes
+> from a single rule, and the problem sets reach beyond the table — into cubics — so you need the
+> rule itself rather than the five cases. **MATH 141 defines the derivative in Week 3 and proves
+> this rule in Week 4.** You are not expected to prove it here, and you will not be assessed on the
+> proof. Take it as a tool now; MATH 141 will justify it shortly.
+
+**The power rule.** For any constant power *n*:
+
+$$\frac{d}{dt}\,t^{n} = n\,t^{\,n-1}$$
+
+Two companions, which are all you need alongside it:
+
+- **Constants differentiate to zero:** d/dt (c) = 0 — a constant position means no velocity.
+- **Term by term:** the derivative of a sum is the sum of the derivatives, and a constant
+  multiplier comes along unchanged: d/dt (c · f) = c · df/dt.
+
+**Worked, at the level the problem sets use:**
+
+$$x(t) = 2t^{3} + 5t^{2} - 7t + 1 \;\;\Longrightarrow\;\; v(t) = \frac{dx}{dt} = 6t^{2} + 10t - 7$$
+
+Term by term: `2t³ → 2·3t² = 6t²`; `5t² → 5·2t = 10t`; `−7t → −7`; the constant `1 → 0`.
+
+Check it against the table: for `x = x₀ + v₀t + ½at²`, the rule gives `v = v₀ + at` ✓. The table
+was never a special case — it was this rule, applied five times.
+
+**Why this is safe to hand you early.** The power rule is a *computational* fact. What MATH 141
+supplies in Weeks 3–4 is the *reason* — the limit of the difference quotient that produces the
+exponent-drop. Using the rule without that reason is exactly what §4 warned against doing
+permanently, but it is the right trade for two weeks. When MATH 141 derives it, come back to §4
+and watch Zeno's paradox resolve into this formula.
+
+---
+
 ## 6. Velocity as the Slope of x(t) — Reading Graphs
 
 This is a skill you must develop until it's automatic.
@@ -143,6 +180,36 @@ $$x(t) = x_0 + \int_{0}^{t} v(t')\, dt'$$
 **Geometric meaning:** The displacement from t=0 to t=T equals the **area under the v(t) curve** between 0 and T.
 
 This is the **Fundamental Theorem of Calculus** in action: integration and differentiation are inverses of each other, and both have direct physical meaning in kinematics.
+
+### 7.1 Running the Power Rule Backwards
+
+> **Scoped forward reference.** MATH 141 reaches the definite integral in **Week 8** and the
+> Fundamental Theorem in **Week 9** — well after you need them here. As in §5.1, take the rule now
+> and collect the justification later. You will not be assessed on the theory of integration in
+> this course.
+
+Since differentiating drops the exponent by one, antidifferentiating must raise it by one:
+
+$$\int t^{n}\,dt = \frac{t^{\,n+1}}{n+1} + C \qquad (n \neq -1)$$
+
+The `+ C` is not decoration — in kinematics it *is* the initial position. That is precisely why
+`x(t) = x₀ + ∫v dt` carries an `x₀`: integration recovers the shape of the motion but cannot know
+where it started. You must be told.
+
+**Worked, at the level the problem sets use.** Given `v(t) = 9t² − 2t` with the object at
+`x = 5 m` when `t = 0`:
+
+$$x(t) = \int (9t^{2} - 2t)\,dt = \frac{9t^{3}}{3} - \frac{2t^{2}}{2} + C = 3t^{3} - t^{2} + C$$
+
+Applying `x(0) = 5` gives `C = 5`, so `x(t) = 3t³ − t² + 5`.
+
+**For a displacement between two times**, evaluate the antiderivative at each endpoint and
+subtract — the `C` cancels, which is why displacement never depends on where you set the origin:
+
+$$\Delta x = \int_{0}^{2} v\,dt = \big[3t^{3} - t^{2}\big]_{0}^{2} = (24 - 4) - 0 = 20 \text{ m}$$
+
+Cross-check against `x(t)`: `x(2) − x(0) = 25 − 5 = 20 m` ✓. Getting the same number two ways is
+the FTC doing its job, and it is worth doing on every problem until the equivalence feels obvious.
 
 ---
 

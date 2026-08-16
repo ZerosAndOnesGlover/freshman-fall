@@ -9,6 +9,25 @@
 
 ---
 
+> **Revision note (2026-08-16).** Problems 1, 3, 4 and 5 were rebuilt to draw only on Week 0
+> material. The previous versions required loops (Week 2), arrays (Week 4), pointers (Week 5),
+> `malloc`/`free` (Week 6), recursion (Week 9) and macro-expansion semantics (Week 10) — 65 of
+> 100 points tested content from later in the course. See `PREREQUISITE AUDIT.md`.
+> The removed problems were good problems in the wrong week; they are preserved with their
+> verified answer keys in `_RELOCATED Problems.md` for re-filing under Weeks 6, 9 and 10.
+> **Problems 2 and 6 are unchanged**, as are their answer keys and the errata table below.
+
+**Scope of this set.** Everything here is answerable from Lecture 01 (Compilation Model),
+Lecture 02 (Toolchain, Make, GDB), Lecture 03 (Hello World Deep-Dive) and Lab 0.
+
+**One forward reference, deliberately scoped.** Problems 5 and 6 ask you to write short
+multi-file programs, so you will define a function or two. Use them exactly as Lecture 02 does
+in its `main.c` / `utils.c` / `utils.h` example — a return type, a name, parameters, a body.
+Calling conventions, pass-by-value semantics and prototypes are **Week 3**; you do not need them
+here and will not be assessed on them.
+
+---
+
 ## Setup
 
 All your work this week goes in `~/prog101/week0/ps0/`.
@@ -18,58 +37,31 @@ mkdir -p ~/prog101/week0/ps0
 cd ~/prog101/week0/ps0
 ```
 
-Each problem should be in its own `.c` file. Submit a `Makefile` that builds all of them.
+Each problem should be in its own file. Submit a `Makefile` that builds all of them.
 
 ---
 
-## Problem 1: The Compilation Pipeline Inspector (10 pts)
+## Problem 1: Preprocessor Investigation (10 pts)
 
-Write a shell script `pipeline.sh` that automates the full manual pipeline from Lab 0:
+Start from the `hello.c` you built in Lab 0. Run **only** the preprocessor:
 
 ```bash
-#!/bin/bash
-# pipeline.sh — run all four stages of C compilation and report sizes
-
-# Usage: ./pipeline.sh <source.c>
+gcc -E hello.c -o hello.i
 ```
 
-Your script should:
-1. Accept a `.c` filename as its first argument
-2. Run each of the four compilation stages separately
-3. Print the file size (in bytes) of the output of each stage
-4. Print the number of lines of the output of each stage (where applicable)
-5. Finally, run the complete compilation with `gcc -Wall -g -std=c11`
+Answer the following in `preprocessor_report.md`. Every answer must cite evidence from *your*
+`hello.i` — line numbers or pasted excerpts, not recollection.
 
-Sample output:
-```
-=== C Compilation Pipeline: hello.c ===
-
-Stage 1 — Preprocessing:
-  Output: hello.i
-  Lines:  847
-  Size:   22,341 bytes
-
-Stage 2 — Compilation (C → Assembly):
-  Output: hello.s
-  Lines:  45
-  Size:   1,023 bytes
-
-Stage 3 — Assembly (Assembly → Object):
-  Output: hello.o
-  Size:   2,864 bytes
-
-Stage 4 — Linking (Object → Executable):
-  Output: hello
-  Size:   16,128 bytes
-
-=== Complete pipeline: OK ===
-```
-
-**Hints:**
-- `wc -l file` counts lines; `wc -c file` counts bytes
-- Use `$1` to access the first command-line argument in a shell script
-- Use `${1%.c}` to strip the `.c` extension from the filename
-- Make the script executable: `chmod +x pipeline.sh`
+1. *(2 pts)* How many lines are in `hello.c`? How many in `hello.i`? State the ratio.
+2. *(2 pts)* Find the declaration of `printf` in `hello.i`. Paste it exactly, with its line number.
+   Which header did it ultimately come from?
+3. *(2 pts)* `hello.i` is full of lines beginning `# 1 "..."`. These are **linemarkers**. Explain
+   what they are for. What would break in your `gcc` error messages if they were absent?
+4. *(2 pts)* Add `#define GREETING "Hello, world"` to `hello.c` and use it in your `printf`.
+   Re-run the preprocessor. Search `hello.i` for the string `GREETING`. What do you find, and what
+   does that tell you about when `#define` is resolved?
+5. *(2 pts)* `hello.i` contains printf's **declaration** but not its **code**. Explain why, and name
+   the pipeline stage at which printf's actual machine code joins your program.
 
 ---
 
@@ -103,98 +95,87 @@ Requirements:
 
 ---
 
-## Problem 3: Temperature Conversion Table (20 pts)
+## Problem 3: The Remaining Three Stages, By Hand (20 pts)
 
-Write `temptable.c` — a program that prints a conversion table for temperatures.
-
-The program should:
-1. Accept two command-line arguments: start temperature and end temperature (in Celsius)
-2. Print a formatted table with columns: Celsius | Fahrenheit | Kelvin
-3. Increment by 5°C each row
-4. Handle invalid input gracefully
+Problem 1 stopped after preprocessing. Now drive the other three stages yourself, one command at a
+time — no all-in-one `gcc hello.c -o hello` until the very end.
 
 ```bash
-./temptable 0 100
+gcc -S hello.i -o hello.s      # compile:  C  → assembly
+gcc -c hello.s -o hello.o      # assemble: asm → object
+gcc    hello.o -o hello        # link:     object → executable
 ```
 
-Expected output:
-```
-╔═══════════╦═══════════╦═══════════╗
-║  Celsius  ║  Fahrenh  ║  Kelvin   ║
-╠═══════════╬═══════════╬═══════════╣
-║      0.0  ║     32.0  ║   273.1   ║
-║      5.0  ║     41.0  ║   278.1   ║
-║     10.0  ║     50.0  ║   283.1   ║
-║     15.0  ║     59.0  ║   288.1   ║
-║     20.0  ║     68.0  ║   293.1   ║
-║     ...   ║     ...   ║   ...     ║
-║    100.0  ║    212.0  ║   373.1   ║
-╚═══════════╩═══════════╩═══════════╝
-```
+Record your findings in `stages_report.md`.
 
-Requirements:
-- Use `argc` and `argv` to read command-line arguments
-- Use `atof()` or `strtod()` to convert string arguments to doubles
-- Print an error and exit with code 1 if wrong number of arguments or invalid values
-- Formulas: F = (C × 9/5) + 32 ; K = C + 273.15
+**3.1** *(4 pts)* Tabulate all four artefacts — `hello.i`, `hello.s`, `hello.o`, `hello` — with the
+byte size of each (`wc -c`). Which stage causes the largest *increase* in size, and why?
 
-**Hints:**
-- `int main(int argc, char *argv[])` gives you access to command-line arguments
-- `argc` is the argument count (program name counts as argument 0)
-- `argv[1]` is the first argument (as a string), `argv[2]` is the second
-- `atof(argv[1])` converts a string to double
+**3.2** *(5 pts)* Open `hello.s`. Find and paste:
+- the instruction that calls `printf`
+- the line where your string literal is stored, and the section directive above it
+
+Explain what that section is for and why the string is not stored alongside the instructions.
+
+**3.3** *(4 pts)* Run `nm hello.o`. What letter is `printf` given, and what does it mean? Now run
+`nm hello`. What has changed about `printf`, and which stage changed it?
+
+**3.4** *(4 pts)* `hello` is far larger than `hello.o`. Account for the difference concretely —
+name at least two categories of content present in the executable but absent from the object file.
+
+**3.5** *(3 pts)* Try to link with `ld hello.o -o hello_bad` instead of `gcc`. Paste the error.
+Explain what `gcc` supplies at the link step that a bare `ld` invocation does not.
 
 ---
 
 ## Problem 4: The Compilation Error Hunt (15 pts)
 
-The file `broken.c` (provided below) contains **10 deliberate errors** — a mix of preprocessor, compilation, and linker issues.
+The file `broken.c` below contains **10 deliberate errors**. Every one is diagnosable with Week 0
+knowledge: they are preprocessor faults, syntax faults, format-string faults, and linker faults.
 
 Copy this exactly into `broken.c` (do not fix anything yet):
 
 ```c
 #include <stdio.h
-#include <stdlib.h>
+#include "helpers.h"
 
-#define MAX_SIZE 10
-#define SQUARE(x) x * x
+#define VERSION 2
 
-int compute_sum(int arr, int n);
+int describe(int code);
 
-int main(void) {
-    int numbers[MAX_SIZE] = {1, 2, 3, 4, 5};
-    int total = compute_sum(numbers, 5)
-    double pi = 3.14159;
-    
-    printf("Sum: %d\n" total);
-    printf("Pi: %d\n", pi);
-    printf("Square of 3+1: %d\n", SQUARE(3+1));
-    
-    int *ptr = malloc(sizeof(int) * 5);
-    free(ptr);
-    free(ptr);
-    
-    return;
+void main(void) {
+    int status = 3
+    double ratio = 0.75;
+
+    printf("Version: %d\n" VERSION);
+    printf("Ratio: %d\n", ratio);
+    printf("Status: %s\n", status);
+
+    describe(status);
+    summarise(status);
+
+    return 1;
 }
 
-int compute_sum(int *arr, int n) {
-    int sum = 0
-    for (int i = 0; i <= n; i++) {
-        sum += arr[i];
+int describe(int code) {
+    printf("Code %d\n", code)
+    if (code = 3) {
+        printf("Status is three\n");
     }
-    return sum;
 }
 ```
 
 Your task:
-1. Create `error_log.md`, document each error:
-   - Error number (1-10)
+1. Create `error_log.md` documenting each error:
+   - Error number (1–10)
    - The line and what is wrong
-   - What category it is (preprocessor / compiler / linker / logic / undefined behavior)
+   - What category it is (preprocessor / compiler / linker / undefined behavior)
    - What the fix is
-1. Create `fixed.c`: the fully corrected version
+2. Create `fixed.c`: the fully corrected version, compiling clean under
+   `gcc -Wall -Wextra -Werror -std=c11`
 
 Format your `error_log.md` like this:
+
 ```markdown
 ## Error 1
 - **Location:** Line 1
@@ -203,25 +184,36 @@ Format your `error_log.md` like this:
 - **Fix:** Change to `#include <stdio.h>`
 ```
 
+**Note.** One of the ten cannot be found by the compiler at all — it only appears when you try to
+link. Say which, and explain why the compiler let it through.
+
 ---
 
-## Problem 5: GDB Investigation (20 pts)
+## Problem 5: Make and the Incremental Rebuild (20 pts)
 
-Write `gdb_lab.c` — a program with these three functions:
+Build a three-file project:
 
-```c
-int factorial(int n);           // Returns n! recursively
-int fibonacci(int n);           // Returns nth Fibonacci number recursively  
-void print_powers(int base, int limit);  // Prints base^0, base^1, ... up to limit
-```
+- `greet.h` — declares one function
+- `greet.c` — defines it; it prints a greeting
+- `main.c` — includes `greet.h` and calls it
 
-Then, in `gdb_session.md`, document a GDB session in which you:
+**5.1** *(6 pts)* Write a `Makefile` that builds `greet` from `main.o` and `greet.o`, using the
+automatic variables `$@`, `$<` and `$^` — at least one of each. Include `.PHONY` and a `clean`
+target. Use `-Wall -Wextra -Werror -g -std=c11`.
 
-1. Set a breakpoint at `factorial` and trace a call to `factorial(5)` step by step, printing the value of `n` at each recursive call
-2. Set a breakpoint at `fibonacci` and use `backtrace` after reaching the base case for `fibonacci(6)` — paste the complete backtrace
-3. Inspect what happens when you call `factorial(-1)` — does it terminate? Use GDB to figure out what happens.
+**5.2** *(5 pts)* Demonstrate the timestamp model. Run `make`, then in `make_report.md` record what
+rebuilds after each of these, and why:
+- `touch main.c`
+- `touch greet.c`
+- `touch greet.h`
+- `make` twice in a row with no edits
 
-Your `gdb_session.md` should show the actual GDB input/output for each investigation. Use code blocks.
+**5.3** *(5 pts)* Now deliberately **omit** `greet.h` from the prerequisite lists. Change the
+declaration in `greet.h` (add a parameter), rebuild, and describe exactly what goes wrong. Why is
+this failure mode worse than a compile error? Restore the prerequisite afterwards.
+
+**5.4** *(4 pts)* Introduce a `Makefile` whose recipe line is indented with **spaces** rather than a
+tab. Paste the exact error. Explain why this error is so common and what makes it hard to see.
 
 ---
 
@@ -248,8 +240,8 @@ Then use `nm` to inspect the symbol table and answer these questions in `symbols
 
 ## Makefile Requirement
 
-Your `Makefile` must:
-- Build all programs: `info`, `temptable`, `fixed`, `gdb_lab`, `symbols`
+Your top-level `Makefile` must:
+- Build all programs: `info`, `hello`, `fixed`, `greet`, `symbols`
 - Include a `clean` target
 - Use `-Wall -Wextra -Werror -g -std=c11` flags
 - Have a `test` target that runs quick sanity checks
@@ -257,18 +249,17 @@ Your `Makefile` must:
 ```makefile
 .PHONY: all clean test
 
-all: info temptable fixed gdb_lab symbols
+all: info hello fixed greet symbols
 
 test: all
-	@echo "Testing temptable..."
-	@echo "Running: ./temptable 0 20"
-	./temptable 0 20
 	@echo "Testing info..."
 	./info
+	@echo "Testing greet..."
+	./greet
 	@echo "All tests passed."
 
 clean:
-	rm -f info temptable fixed gdb_lab symbols *.o
+	rm -f info hello fixed greet symbols *.o *.i *.s
 ```
 
 ---
@@ -292,11 +283,11 @@ Submit on the course portal:
 
 | Problem | Points | Key Criteria |
 |---------|--------|-------------|
-| P1: Pipeline Script | 10 | Correct output for any `.c` file |
+| P1: Preprocessor Investigation | 10 | Evidence cited from own `hello.i`, not recollection |
 | P2: Info Printer | 15 | Exact formatting, `#define` used |
-| P3: Temp Table | 20 | Correct formulas, argument parsing, error handling |
-| P4: Error Hunt | 15 | All 10 errors found, categories correct, clear explanations |
-| P5: GDB Investigation | 20 | Accurate GDB session, correct observations |
+| P3: Three Stages By Hand | 20 | Each stage driven separately, assembly read correctly |
+| P4: Error Hunt | 15 | All 10 errors found, categories correct, linker case identified |
+| P5: Make and Incremental Rebuild | 20 | Automatic variables used, stale-header hazard demonstrated |
 | P6: Symbols Inspector | 20 | All 6 questions answered with evidence |
 | **Total** | **100** | |
 
@@ -311,49 +302,42 @@ Submit on the course portal:
 
 ### ⚠️ Errata — CORRECTED in the text above
 
-Three defects, all verified against `gcc 13.3.0` / GNU `nm` on x86-64 Linux. All three **have now
-been fixed in this document**.
+Two defects from the original P2/P6 material, verified against `gcc 13.3.0` / GNU `nm` on
+x86-64 Linux. Both **have now been fixed in this document**. (A third erratum concerned the
+Kelvin column of the retired temperature-table problem; it moved with that problem to
+`_RELOCATED Problems.md`.)
 
 | Location | Was (wrong) | Now |
 |---|---|---|
-| P3 expected output, Kelvin column | `273.2`, `278.2` … `373.2`. The claim was restated in the spot-check line below the reference solution: "273.15 displays as 273.2 at one decimal". Both are wrong. `273.15` is not representable in binary — the stored double is `273.14999999999997726`, so `%.1f` correctly rounds **down**. The answer key's own reference solution prints `273.1`; it was never run against its own expected output. | Corrected to `273.1` … `373.1` for the six rows shown, matching what the reference solution actually prints. |
 | P6 reference answer 6 | "after which the symbol remains `U` in the executable". It does not. After `gcc -Wl,--unresolved-symbols=ignore-all symbols.o -o symbols_ignored`, `nm symbols_ignored \| grep undefined_function` returns **nothing** — the symbol is dropped, not retained. | Reworded to state the symbol does not appear in the linked executable's symbol table, and that calling it still crashes at runtime. |
 | P2 box width | The prose requirement said the box "must be exactly 40 characters wide", but the sample art in the same problem is **52** characters on every line, and the note formerly here asserted it was 40. The art was widened to fit the full course title without the prose being updated. | Resolved in favour of the art: prose now requires **52**, and the grading note's field width is corrected from `%-27s` to `%-38s` to match. |
 
-Students holding a pre-correction copy must not be penalised for a `273.2` Kelvin column or for a
-40-character box.
+Students holding a pre-correction copy must not be penalised for a 40-character box.
 
 ---
 
-### Problem 1 — Pipeline Script (10 pts)
+### Problem 1 — Preprocessor Investigation (10 pts)
 
-```bash
-#!/bin/bash
-# pipeline.sh — run all four stages of C compilation and report sizes
-set -e
-if [ $# -ne 1 ]; then echo "Usage: $0 <source.c>" >&2; exit 1; fi
-src="$1"; base="${1%.c}"
-[ -f "$src" ] || { echo "No such file: $src" >&2; exit 1; }
+1. *(2 pts)* Typical `hello.c` is 5–7 lines; `hello.i` on glibc is **roughly 700–900 lines** for a
+   bare `#include <stdio.h>`. Accept any figure of that order — it varies by libc version and by
+   which headers `stdio.h` pulls in. Award the marks for *stating both numbers and the ratio*, not
+   for hitting a target. A student reporting 30,000 lines has probably included more than `stdio.h`;
+   ask, do not deduct.
+2. *(2 pts)* The declaration is `extern int printf (const char *__restrict __format, ...);`,
+   reached via `/usr/include/stdio.h`. Require the pasted line **and** a line number.
+3. *(2 pts)* Linemarkers record the original file and line of the text that follows, so diagnostics
+   can point at `hello.c:4` rather than `hello.i:812`. Without them every error message would cite
+   a position in the expanded file, which the student never sees. Accept any answer that reaches
+   "error messages would reference the wrong file/line".
+4. *(2 pts)* `GREETING` does not appear in `hello.i` — the *string* `"Hello, world"` appears in its
+   place. `#define` is resolved by the preprocessor, before the compiler runs; the compiler never
+   sees the macro name at all. This is the point of the problem.
+5. *(2 pts)* Headers declare, libraries define. `stdio.h` tells the compiler printf's *type* so
+   calls can be type-checked; the machine code lives in libc and is attached at the **link** stage.
+   Full marks require naming linking.
 
-echo "=== C Compilation Pipeline: $src ==="; echo
-gcc -E "$src" -o "$base.i"
-printf "Stage 1 — Preprocessing:\n  Output: %s.i\n  Lines:  %s\n  Size:   %s bytes\n\n" \
-       "$base" "$(wc -l < "$base.i")" "$(wc -c < "$base.i")"
-gcc -S "$base.i" -o "$base.s"
-printf "Stage 2 — Compilation (C → Assembly):\n  Output: %s.s\n  Lines:  %s\n  Size:   %s bytes\n\n" \
-       "$base" "$(wc -l < "$base.s")" "$(wc -c < "$base.s")"
-gcc -c "$base.s" -o "$base.o"
-printf "Stage 3 — Assembly (Assembly → Object):\n  Output: %s.o\n  Size:   %s bytes\n\n" \
-       "$base" "$(wc -c < "$base.o")"
-gcc "$base.o" -o "$base"
-printf "Stage 4 — Linking (Object → Executable):\n  Output: %s\n  Size:   %s bytes\n\n" \
-       "$base" "$(wc -c < "$base")"
-gcc -Wall -g -std=c11 "$src" -o "$base"
-echo "=== Complete pipeline: OK ==="
-```
-
-*Grading: 2 pts argument handling (count + file exists), 6 pts all four stages invoked **separately** with correct flags (`-E`, `-S`, `-c`, link), 2 pts sizes/line counts reported.*
-*Accept any exact byte counts — they vary by gcc version, libc, and architecture. The sample numbers in the prompt are illustrative, not targets. Do **not** mark down a student whose `hello.i` is 800 or 30,000 lines.*
+*Common failure: answering from Lecture 01 rather than from a file. Every item says "cite evidence".
+An answer with no pasted excerpt or line number earns half, however correct.*
 
 ### Problem 2 — Info Printer (15 pts)
 
@@ -361,84 +345,159 @@ echo "=== Complete pipeline: OK ==="
 *Alignment is best done with width specifiers, e.g. `printf("║  Name:    %-38s ║\n", NAME);` — verified to reproduce the sample art exactly. The 11-character label prefix (`║` plus two spaces plus a padded field name), the explicit trailing space and the closing border leave exactly **38** columns for the value; note the space before `║` in the format string is not part of the field, so `%-39s` overshoots to 53. The longest value, the 38-character course title, fills the field exactly. Students who pad by hand with spaces get the right output for their own name but break for any other — mention it, deduct only if the output is actually misaligned.*
 *Note: the box characters are multi-byte UTF-8, so `strlen` counts **bytes, not characters** and returns far more than 52 — verified, a border line is **156** bytes (52 box-drawing characters at 3 bytes each) and a content line is **56** (two `║` at 3 bytes plus 50 ASCII). A student who "verifies" width with `strlen` and panics is not wrong about the count — explain the distinction. This is worth a bonus mark if raised unprompted.*
 
-### Problem 3 — Temperature Table (20 pts)
+### Problem 3 — The Remaining Three Stages, By Hand (20 pts)
 
-```c
-#include <stdio.h>
-#include <stdlib.h>
+**3.1** *(4 pts)* Representative figures on x86-64 / gcc 13.3.0 — **accept any values of this
+shape**, they vary by toolchain:
 
-int main(int argc, char *argv[]) {
-    if (argc != 3) {
-        fprintf(stderr, "Usage: %s <start_C> <end_C>\n", argv[0]);
-        return 1;
-    }
-    char *end1, *end2;
-    double start = strtod(argv[1], &end1);      /* strtod, not atof: detects junk */
-    double stop  = strtod(argv[2], &end2);
-    if (*end1 != '\0' || *end2 != '\0' || end1 == argv[1] || end2 == argv[2]) {
-        fprintf(stderr, "Error: arguments must be numeric\n");
-        return 1;
-    }
-    if (start > stop) { fprintf(stderr, "Error: start must not exceed end\n"); return 1; }
+| Artefact | Size | Note |
+|---|---|---|
+| `hello.i` | ~22 KB | preprocessing is the largest *relative* jump: a 100-byte source becomes tens of KB |
+| `hello.s` | ~1 KB | assembly discards every declaration that generated no code |
+| `hello.o` | ~1.5 KB | binary encoding of the same instructions, plus a symbol table |
+| `hello` | ~16 KB | linking attaches startup files and dynamic-linking machinery |
 
-    printf("╔═══════════╦═══════════╦═══════════╗\n");
-    printf("║  Celsius  ║  Fahrenh  ║  Kelvin   ║\n");
-    printf("╠═══════════╬═══════════╬═══════════╣\n");
-    for (double c = start; c <= stop; c += 5.0)
-        printf("║ %8.1f  ║ %8.1f  ║ %8.1f  ║\n", c, c * 9.0 / 5.0 + 32.0, c + 273.15);
-    printf("╚═══════════╩═══════════╩═══════════╝\n");
-    return 0;
-}
-```
+Two defensible answers to "largest increase": **preprocessing** in relative terms (×200), **linking**
+in absolute bytes from `.o`. Award full marks for either *with* a reason. The instructive point is
+that `.s` is *smaller* than `.i` — most of a header is declarations, which emit no code.
 
-Spot-check against the prompt's table: 0 °C → 32.0 °F / **273.1** K ✓; 100 °C → 212.0 °F / **373.1** K ✓.
+**3.2** *(5 pts)* The call is `call printf@PLT` (or `call puts@PLT` — see below). The literal sits
+under `.section .rodata` as `.string "Hello, world"`. `.rodata` is read-only data: mapped without
+write permission, so a stray write to a string literal faults instead of corrupting memory. It is
+separated from `.text` because the two get different page permissions.
 
-*Do not expect `273.2` here.* `273.15` has no exact binary representation — the stored double is
-`273.14999999999997726`, marginally **below** the midpoint, so `%.1f` rounds down to `273.1`. This
-is the correct and only output on any IEEE-754 platform, and the reference solution above produces
-it. See the errata table. A student reporting `273.1` is right; a student who reports `273.2` has
-almost certainly not run their program.
+> **Expect `puts`, not `printf`.** At `-O0` gcc still rewrites `printf("...\n")` with no format
+> specifiers into `puts("...")`. A student who finds `call puts@PLT` and reports it has read their
+> own file correctly — award full marks, and treat noticing the substitution as a bonus. Students
+> who "find" `call printf@PLT` when their assembly says `puts` are reciting the prompt.
 
-*Grading: 4 pts argc/argv handling, 4 pts conversion via `atof`/`strtod`, 4 pts both formulas correct, 4 pts error handling with non-zero exit, 4 pts table formatting.*
-*`atof` is explicitly permitted by the prompt, but it **cannot** report failure — `atof("abc")` silently returns 0.0. A student using `strtod` with `endptr` validation has done strictly better; award the error-handling points fully and note it as good practice. A student using `atof` and claiming they validate input has not — deduct 2 unless they check separately.*
-*Floating-point loop counters accumulate error; `c += 5.0` over a wide range can make the final row land at 99.99999. Accept it, but an integer loop counter with `c = start + 5.0*i` is the more robust answer and deserves a style bonus.*
+**3.3** *(4 pts)* In `hello.o`, printf (or puts) is **`U`** — undefined, referenced but not
+supplied. In the linked `hello` it is either resolved to an address or appears as a PLT stub
+entry; the **link** stage changed it.
+
+**3.4** *(4 pts)* Two categories suffice. Accept from: the C runtime startup objects
+(`crt1.o`, `crti.o`, `crtn.o`) that call `main`; the dynamic-linker path and `PT_INTERP` segment;
+the PLT/GOT relocation machinery; ELF program headers absent from a relocatable object; symbol
+and debug sections from the startup files.
+
+**3.5** *(3 pts)* Bare `ld hello.o -o hello_bad` fails with `undefined reference to '_start'`
+(and usually cannot find libc at all). `gcc` at link time supplies the startup objects that define
+`_start`, the default library search paths, `-lc`, and the dynamic-linker setting. The lesson:
+`gcc` is a *driver*, not a compiler — it orchestrates cpp, cc1, as and ld.
 
 ### Problem 4 — The Compilation Error Hunt (15 pts)
 
-The ten planted defects, verified against `gcc 13.3.0`:
+The ten planted defects:
 
 | # | Line | Problem | Category | Fix |
 |---|---|---|---|---|
 | 1 | 1 | `#include <stdio.h` — missing `>` | Preprocessor | `#include <stdio.h>` |
-| 2 | 5 | `#define SQUARE(x) x * x` — unparenthesised | Preprocessor / logic | `#define SQUARE(x) ((x) * (x))` |
-| 3 | 7 | Prototype says `int arr`; definition uses `int *arr` | Compiler (conflicting types) | Declare `int compute_sum(const int *arr, int n);` |
-| 4 | 11 | Missing `;` after the `compute_sum(...)` call | Compiler (syntax) | Add `;` |
-| 5 | 14 | `printf("Sum: %d\n" total)` — missing comma | Compiler (syntax) | `printf("Sum: %d\n", total);` |
-| 6 | 15 | `%d` used to print a `double` | Undefined behavior | `printf("Pi: %f\n", pi);` |
-| 7 | 19–20 | `free(ptr)` called twice | Undefined behavior | Free once; set `ptr = NULL` after |
-| 8 | 22 | `return;` inside `int main(void)` | Compiler | `return 0;` |
-| 9 | 26 | `int sum = 0` — missing `;` | Compiler (syntax) | Add `;` |
-| 10 | 27 | `for (i = 0; i <= n; i++)` — off-by-one | Logic / UB | `i < n` |
+| 2 | 2 | `#include "helpers.h"` — file does not exist | Preprocessor | Remove it, or create the header |
+| 3 | 8 | `void main(void)` — `main` must return `int` | Compiler | `int main(void)` |
+| 4 | 9 | `int status = 3` — missing `;` | Compiler (syntax) | Add `;` |
+| 5 | 12 | `printf("Version: %d\n" VERSION)` — missing comma; the two literals concatenate | Compiler | `printf("Version: %d\n", VERSION);` |
+| 6 | 13 | `%d` used to print a `double` | Undefined behavior | `printf("Ratio: %f\n", ratio);` |
+| 7 | 14 | `%s` used to print an `int` | Undefined behavior | `printf("Status: %d\n", status);` |
+| 8 | 17 | `summarise` never declared or defined | Linker | Define it, or remove the call |
+| 9 | 19 | `return 1;` inside a function declared `void` | Compiler | Make `main` return `int` (see #3) and `return 0;` |
+| 10 | 23 / 25 | Missing `;` after `printf("Code %d\n", code)`, and `if (code = 3)` — assignment, not comparison | Compiler (syntax) / logic | Add `;`; use `code == 3` |
 
-**gcc's actual first diagnostics** (parsing stops early, so students must fix iteratively — mention this in the debrief):
+**Verified diagnostics** (`gcc 13.3.0`, `-Wall -Wextra -std=c11`). Errors surface in waves — the two
+preprocessor faults are *fatal* and mask everything else, so students must fix and re-run
+iteratively. Say so in the debrief; a student who reports "only two errors" has run the compiler
+exactly once.
 
-```
-broken.c:1:18: error: missing terminating > character
-broken.c:11:29: warning: passing argument 1 of 'compute_sum' makes integer from pointer without a cast
-broken.c:12:5:  error: expected ',' or ';' before 'double'
-broken.c:14:23: error: expected ')' before 'total'
-```
+| Wave | What gcc says |
+|---|---|
+| 1 (as issued) | `error: missing terminating > character` · `fatal error: helpers.h: No such file or directory` |
+| 2 (after #1, #2) | `warning: return type of 'main' is not 'int' [-Wmain]` · `error: expected ',' or ';' before 'double'` · `error: expected ')' before numeric constant` · `warning: format '%s' expects argument of type 'char *' [-Wformat=]` · `warning: implicit declaration of function 'summarise'` |
+| 3 (after #4, #5) | `warning: format '%d' expects argument of type 'int', but argument 2 has type 'double'` · `warning: 'return' with a value, in function returning void [-Wreturn-type]` · `warning: suggest parentheses around assignment used as truth value [-Wparentheses]` · `warning: control reaches end of non-void function [-Wreturn-type]` |
+| 4 (link) | `/usr/bin/ld: undefined reference to 'summarise'` · `collect2: error: ld returned 1 exit status` |
+
+Note that `%d`-for-`double` (#6) is *invisible* in wave 2: the missing semicolon on line 9 means
+`ratio` is never declared, so gcc reports `'ratio' undeclared` instead. The format error only
+appears once #4 is fixed. This cascade is the point of the exercise.
+
+**Which one only the linker catches:** #8, `summarise`. C lets you *call* a function the compiler
+has never seen — under C99/C11 this is a constraint violation that gcc reports as
+`implicit declaration of function 'summarise'` (a **warning** by default, an error under
+`-Werror`), but with only `-std=c11` and no `-Werror` it compiles to an object file carrying a `U`
+symbol. The failure surfaces at link: `undefined reference to 'summarise'`. This is the same lesson
+as Problem 6 approached from the other side.
 
 **Two subtleties worth raising in class:**
-- **Error 2 is observable:** `SQUARE(3+1)` expands to `3+1*3+1` = **7**, not 16. Verified by compiling both forms. This is why macro parameters *and* the whole body need parentheses.
-- **Error 10 is masked here.** `numbers[MAX_SIZE]` declares **10** ints but initialises only 5, so the remainder are zero-filled; reading `arr[5]` returns 0 and the sum is **15 either way**. Verified. Against a tightly-sized `int tight[5]`, the same loop reads past the end — genuine UB. A student who reports "the off-by-one doesn't change the answer" is *right about this program* and should get full credit plus a bonus for noticing; the bug is still real.
+- **#5 is silent.** Adjacent string literals concatenate in C, so `"Version: %d\n" VERSION` is not a
+  syntax error if `VERSION` were a *string* macro. Here `VERSION` is `2`, so it fails — but change
+  it to `#define VERSION "2"` and the code compiles and prints garbage for `%d`. Worth demonstrating.
+- **#10's `if (code = 3)`** assigns and then tests 3, which is always true. `-Wall` catches it with
+  `suggest parentheses around assignment used as truth value`. This is the single most valuable
+  warning in the set — it is the reason `-Wall` is not optional.
 
-*Grading: 1.5 pts per error (location + category + fix). Accept "logic error" or "undefined behavior" interchangeably for #10. A student finding the unchecked `malloc` as an 11th issue deserves bonus credit — it is a genuine defect the prompt did not count.*
+*Grading: 1.5 pts per error (location + category + fix). A student who counts the missing `;` and
+the `=`/`==` on lines 23/25 as two separate errors and therefore reports 11 has found the same set —
+accept it. Award bonus credit for noticing that `describe` has no `return` statement despite being
+declared `int` (a genuine 11th defect the prompt did not count).*
 
-### Problem 5 — GDB Investigation (20 pts)
+### Problem 5 — Make and the Incremental Rebuild (20 pts)
 
-*Grading: 7 pts breakpoint + step trace of `factorial(5)` showing `n` = 5,4,3,2,1,0 at successive frames; 7 pts a genuine `backtrace` for `fibonacci(6)` at the base case (should show a chain of `fibonacci` frames beneath `main`); 6 pts the `factorial(-1)` investigation.*
-*Expected finding for `factorial(-1)`: with a base case of `if (n == 0) return 1;` the argument decrements away from zero forever, so it **does not terminate** — it recurses until the stack is exhausted and the program dies with `SIGSEGV` (stack overflow). In GDB this shows as a segfault with an enormous backtrace. The instructive fix is `if (n <= 0) return 1;` or rejecting negative input outright. Accept either "infinite recursion" or "stack overflow / segfault" as the observation, but require **evidence** from an actual session, not a prediction.*
+**5.1** *(6 pts)* Reference `Makefile`:
+
+```makefile
+CC      = gcc
+CFLAGS  = -Wall -Wextra -Werror -g -std=c11
+OBJS    = main.o greet.o
+
+.PHONY: all clean
+
+all: greet
+
+greet: $(OBJS)
+	$(CC) $(CFLAGS) $^ -o $@
+
+%.o: %.c greet.h
+	$(CC) $(CFLAGS) -c $< -o $@
+
+clean:
+	rm -f greet $(OBJS)
+```
+
+*2 pts `$^` in the link rule, 2 pts `$<` in the compile rule, 1 pt `$@`, 1 pt `.PHONY` + `clean`.*
+
+**5.2** *(5 pts)* Verified behaviour:
+
+| Action | Rebuilds | Why |
+|---|---|---|
+| `touch main.c` | `main.o`, then relink | only that object is out of date |
+| `touch greet.c` | `greet.o`, then relink | same |
+| `touch greet.h` | **both** objects, then relink | both list `greet.h` as a prerequisite |
+| `make` twice | `make: Nothing to be done for 'all'.` | no prerequisite is newer than its target |
+
+**5.3** *(5 pts)* Verified. With `greet.h` dropped from the prerequisites and the declaration
+changed from `void greet(void)` to `void greet(int times)`, `make` rebuilds **only `greet.o`** —
+its own source changed — and leaves `main.o` stale, still compiled against the old declaration.
+It then **links without a single diagnostic** and runs:
+
+```
+gcc -Wall -Wextra -Werror -g -std=c11 -c greet.c -o greet.o
+gcc -Wall -Wextra -Werror -g -std=c11 main.o greet.o -o greet
+$ ./greet
+Hello 0
+exit=0
+```
+
+The caller passes no argument; the callee reads whatever happens to be in the argument register.
+Here that was 1, so the loop ran once. **The value is not deterministic** — students will report
+different output, including no output or a very long loop, and all of those are correct
+observations. Do not grade against a specific number.
+
+Why this is worse than a compile error: there is no error. `-Wall -Wextra -Werror` is powerless,
+because each translation unit is individually consistent — the disagreement exists only *between*
+them, and nothing in the build is looking there. Full marks require that contrast, not just
+"it breaks".
+
+**5.4** *(4 pts)* `Makefile:5: *** missing separator.  Stop.` Recipe lines must begin with a real
+tab. It is common because many editors expand tabs to spaces silently, and hard to see because tabs
+and spaces are visually identical. Accept mention of `cat -A` or `.RECIPEPREFIX` as a diagnostic.
 
 ### Problem 6 — Symbols Inspector (20 pts)
 
@@ -457,7 +516,7 @@ Reference answers (`nm` letters are case-significant: **uppercase = global/exter
 
 ### Makefile
 
-*Grading is folded into the per-problem marks; a submission whose `Makefile` does not build all five targets loses 2 points overall. Require `.PHONY` on `clean`/`test`/`all`, and the exact flag set `-Wall -Wextra -Werror -g -std=c11`.*
+*Grading is folded into the per-problem marks; a submission whose top-level `Makefile` does not build all five targets loses 2 points overall. Require `.PHONY` on `clean`/`test`/`all`, and the exact flag set `-Wall -Wextra -Werror -g -std=c11`.*
 
 ---
 

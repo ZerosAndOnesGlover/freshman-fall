@@ -2,7 +2,13 @@
 ## Week 1 · Problem Set 1
 
 **Released:** End of Week 1 Thursday Lecture
-**Due:** Before Week 2 Lecture 1 (Tuesday)
+**Due:** Friday, Week 2, 17:00
+
+> **Re-dated 2026-08-16.** This set was previously due before Week 2 Lecture 1 (Tuesday). Problem 3
+> is a *Bitwise Calculator* and Week 2 Lecture 1 is *Operators, Expressions, and Bit Manipulation* —
+> the set was collected in the hour before the lecture that teaches it. Problems 4 and 5 need loops,
+> taught in Week 2 Lecture 3 (Thursday). The Friday 17:00 deadline follows both.
+> See `PREREQUISITE AUDIT.md`, findings #11 and #12.
 **Submission:** Push to Git, submit commit hash on course portal
 **Directory:** `~/prog101/week1/ps1/`
 
