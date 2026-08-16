@@ -97,19 +97,6 @@ $$\boxed{\tau_{net} = I\alpha}$$
 
 Computing I from the integral $\int r^2\,dm$ requires calculus for each shape. The results for common uniform objects (rotating about an axis through the center of mass, unless noted) are:
 
-> **Scoped preview — how these are actually computed.** MATH 141 reaches the definite integral in
-> **Week 8**, two weeks after you need it. You are **not** expected to derive the table below —
-> memorise or look up the standard results. But one derivation is worth seeing, because it uses
-> only the rule from **Lecture 4 §7.1**. For a thin rod of length $L$ and linear density
-> $\lambda = M/L$, rotating about its centre, take $dm = \lambda\,dx$ with $x$ running from
-> $-L/2$ to $L/2$:
->
-> $$I = \int_{-L/2}^{L/2} x^{2}\lambda\,dx = \lambda\left[\frac{x^{3}}{3}\right]_{-L/2}^{L/2} = \frac{\lambda L^{3}}{12} = \frac{1}{12}ML^{2}$$
->
-> That is the rod entry in the table, and the only new idea is writing $dm$ in terms of $dx$.
-> The $r^2$ weighting is what makes the integral necessary at all — a plain mass sum would not
-> need calculus.
-
 | Shape | Axis | Moment of Inertia |
 |-------|------|---------------------|
 | Point mass at radius r | — | $I = mr^2$ |

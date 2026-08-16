@@ -9,7 +9,8 @@
 > problem sets do not honour that declaration. The largest single gap is
 > **ten weeks** — PROG 101 PS 0 tests macro expansion semantics taught in Week 10.
 
-**Audited:** 2026-08-16 · **Scope:** Freshman Fall, Weeks 0–2, 194 files (1.6 MB)
+**Audited:** 2026-08-16 · **Scope:** Freshman Fall + Spring, Weeks 0–12, all ten courses
+**Status:** 27 findings raised · 7 retracted · 3 downgraded · **17 upheld** (see §12)
 **Method:** every assignment, lab and quiz in Weeks 0–2 read against the
 week-by-week lecture map of the full 13-week term, per course and across courses.
 A concept counts as *taught* only where a lecture develops it — a passing mention,
@@ -70,7 +71,7 @@ pairing it demonstrably does not.
 | 12 | PROG 101 PS 1 · P4,P5 | loops | W2 L03 (Thu) | after due date | 35 | 🟡 |
 | 13 | MATH 141 PS 1 · Part D | Intermediate Value Theorem | W2 L03 (Wed) | same lecture | 12 | 🟡 |
 | 14 | MATH 141 PS 0 · P1(d),P10(e) | reference-triangle evaluation | table only | technique absent | 4 | 🟠 |
-| 15 | CS 101 PS 1 · B7 | iteration (12-month schedule) | W2 L08 (Thu) | ~36 hrs | 16 | 🔵 |
+| 15 | CS 101 PS 1 · B7 | iteration (12-month schedule) | W2 L08 (Thu) | ~~36 hrs~~ **see §12** | 16 | ✅ |
 
 ---
 
@@ -225,8 +226,8 @@ in place with a scoped preview rather than by re-sequencing — the courses stay
 |---|---|---|---|---|---|
 | 16 | PHYS 141 W4 · `L13 Work and Kinetic Energy` | definite integral; substitution | MATH 141 **W8**, **W10** | 4–6 wk | §3 and §4 |
 | 17 | PHYS 141 W5 · `L16 Momentum and Impulse` | definite integral (`J = ∫F dt`) | MATH 141 **W8** | 3 wk | §3 |
-| 18 | PHYS 141 W6 · `L20 Torque and Rotational Dynamics` | definite integral (`I = ∫r² dm`) | MATH 141 **W8** | 2 wk | §4 |
-| 19 | CS 101 W5 · `L18 Merge Sort and Quicksort` | permutations (`n!`); Stirling | MATH 151 **W7**; Stirling **never** | 2 wk; ∞ | §, lower-bound proof |
+| ~~18~~ | ~~PHYS 141 W6 · `L20`~~ | ~~definite integral~~ | — | — | **RETRACTED — see §12** |
+| 19 | CS 101 W5 · `L18 Merge Sort and Quicksort` | permutations (`n!`); Stirling | MATH 151 **W7**; Stirling **never** | 2 wk; ∞ | **downgraded — see §12** |
 
 **PHYS 141 is the whole story.** Findings 16–18 are one dependency seen three times: mechanics
 needs the definite integral from Week 4 onward, and MATH 141 does not reach it until Week 8. The
@@ -342,6 +343,57 @@ The cost of getting this wrong is not neutral. Seven unnecessary previews were a
 that already covered the material, which is exactly the redundancy that makes course notes
 unreadable. Retracted findings are kept above rather than deleted, so the next pass does not
 rediscover them.
+
+---
+
+## 12 · Fall re-checked at lecture level (2026-08-16)
+
+§11's test was written after the Spring failure, so the Fall findings predated it. They have now
+all been re-checked the same way: **grep the lecture body, not the topic index.** Fall held up far
+better than Spring — but not perfectly.
+
+### One retraction
+
+**Finding 18 (PHYS 141 W6, moment of inertia) is withdrawn.** `L20 §4` states plainly that
+*"the results for common uniform objects … are:"* and gives the table, and it **already contains a
+worked "Sample Derivation: Thin Rod About Its Center"** — the same `λ[x³/3] → ML²/12` computation
+the preview duplicated. **PS 6 contains no integration ask at all.** The preview was not merely
+unnecessary, it was a second copy of a derivation already on the page. Removed.
+
+### Two downgrades
+
+**Finding 19 (CS 101 `L18`)** is real but weaker than recorded. The proof sketch *states* both
+borrowed facts — "there are n! possible orderings" and "log₂(n!) ≈ n log₂n − n log₂e (by Stirling's
+approximation)". What it never does is justify them, and **Stirling is taught nowhere in Year 1**.
+The preview was trimmed to supply only the missing justification, and now says so explicitly rather
+than claiming the facts are absent.
+
+**Finding 15 (CS 101 PS 1 · B7)** was recorded as "taught with under 48 hours of margin". Wrong:
+CS 101's **Week 1** lectures already demonstrate loops — `for i in range(10)` in `L05`, and
+`while True` twice in `L06`. Students meet iteration a full week before the pset is due. Reclassified
+as ✅.
+
+### What held up
+
+Findings **1–14, 16 and 17** survive the lecture-level test unchanged.
+
+- **1, 2, 4, 5, 6, 9, 10** — PROG 101 Week 0's lectures were grepped directly when first recorded;
+  `for (` appears nowhere in them, and recursion appears only as `cp -r`.
+- **3, 8** — PHYS 141 `L04`'s body gives a *results table* and the FTC as a statement, no
+  computational rule; `L05` adds only the notation chain `x → v → a`. **PS 1 asks explicitly for
+  "(integrate)" and "by taking the derivative".**
+- **7** — MATH 141 Week 0's lectures never mention induction, in any form.
+- **13** — MATH 141 Week 1 never previews the IVT; the finding is a due-date collision regardless.
+- **16, 17** — `L13` performs a symbolic definite integral (`m[v²/2]`) in its own derivation, and
+  **PS 4 and PS 5 both say "(integrate)" outright**. `L16`'s force–time-graph area method is an
+  alternative route, not a substitute for what the pset asks.
+
+### Standing score
+
+Across all three passes: **27 findings raised, 7 retracted, 3 downgraded, 17 upheld.** Every
+retraction came from the same root cause — trusting a topic index over a lecture body — and all of
+them were in material added *after* §11's test was written down, or before it existed. The test
+works; it just has to be applied first rather than last.
 
 ---
 
