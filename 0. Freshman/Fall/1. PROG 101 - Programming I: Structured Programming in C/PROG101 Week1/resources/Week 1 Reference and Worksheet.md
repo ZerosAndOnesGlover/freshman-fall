@@ -12,11 +12,11 @@ Complete this worksheet by hand before checking with a program.
 For each 8-bit pattern, compute the signed (two's complement) decimal value.
 
 ```
-1. 00000000  = ____    (Hint: all zeros)
-2. 00000001  = ____
-3. 01111111  = ____    (Hint: maximum positive 8-bit value)
-4. 10000000  = ____    (Hint: most negative 8-bit value)
-5. 10000001  = ____
+1. 00000000  = 00000000    (Hint: all zeros)
+2. 00000001  = 11111111
+3. 01111111  = 10000001    (Hint: maximum positive 8-bit value)
+4. 10000000  = 10000000    (Hint: most negative 8-bit value)
+5. 10000001  = 11111110
 6. 11111111  = ____    (Hint: what is -1 in two's complement?)
 7. 11111110  = ____
 8. 11110000  = ____    (Hint: -128 + 64 + 32 + 16)

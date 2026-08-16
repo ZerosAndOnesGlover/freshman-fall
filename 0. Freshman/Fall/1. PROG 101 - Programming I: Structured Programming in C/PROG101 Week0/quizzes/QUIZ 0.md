@@ -39,7 +39,7 @@ Which stage produced this error?
 **3.** What GCC flag produces an assembly language file (`.s`) from a C source file, running only the preprocessor and compiler?
 
 - (A) `-E`
-- (B) `-S`
+- (B) `-S` ✅
 - (C) `-c`
 - (D) `-o`
 
@@ -48,7 +48,7 @@ Which stage produced this error?
 **4.** What does the `U` symbol type mean in the output of `nm hello.o`?
 
 - (A) The symbol is defined in the current object file
-- (B) The symbol is undefined — it is referenced here but defined elsewhere
+- (B) The symbol is undefined — it is referenced here but defined elsewhere ✅
 - (C) The symbol is uninitialized
 - (D) The symbol is a Unix system call
 
@@ -117,7 +117,7 @@ printf("%5.2f", 3.14159);
 
 Output: ` 3.14`
 
-Explanation: `Five character-minimum print due to the 5 in the float format specifier. The 2 after the decimal indicate the number of approximation to be done on the part after the decimal point. But since `3.14 is four characters and we need 5 minimum a space is printed in front of 3 to fulfill the rule.`
+Explanation: `Five character-minimum print due to the 5 in the float format specifier. The 2 after the decimal indicate the number of approximation to be done on the part after the decimal point. But since 3.14 is four characters and we need 5 minimum a space is printed in front of 3 to fulfill the rule.`
 
 ---
 

@@ -56,8 +56,7 @@ int64_t  big;  /* exactly 64 bits, signed      */
 size_t   n;    /* big enough for any object size */
 ```
 
-Use these whenever the width matters — file formats, network protocols, hardware registers. Use
-plain `int` for loop counters and ordinary arithmetic, where the natural machine word is what you
+Use these whenever the width matters — file formats, network protocols, hardware registers. Use plain `int` for loop counters and ordinary arithmetic, where the natural machine word is what you
 want.
 
 `size_t` deserves special mention: it is **unsigned**, it is the type of `sizeof`, and it is what
@@ -69,20 +68,19 @@ every standard library length function returns. That it is unsigned is the sourc
 
 How does a fixed pattern of bits represent a negative number?
 
-C11 permitted three encodings; **C23 mandates two's complement**, and every machine you will meet
-uses it. Here is the rule:
+C11 permitted three encodings; **C23 mandates two's complement**, and every machine you will meet uses it. Here is the rule:
 
 > To negate a number: **invert every bit, then add 1.**
 
 Verified bit patterns for `int8_t`:
 
-| Value | Hex | Binary |
-|---|---|---|
-| 0 | `0x00` | `00000000` |
-| 1 | `0x01` | `00000001` |
-| 127 | `0x7F` | `01111111` |
-| −1 | `0xFF` | `11111111` |
-| −128 | `0x80` | `10000000` |
+| Value | Hex    | Binary     |
+| ----- | ------ | ---------- |
+| 0     | `0x00` | `00000000` |
+| 1     | `0x01` | `00000001` |
+| 127   | `0x7F` | `01111111` |
+| −1    | `0xFF` | `11111111` |
+| −128  | `0x80` | `10000000` |
 
 Two things to notice, both consequences of the rule:
 
@@ -101,9 +99,7 @@ Check `11111111`: −128+64+32+16+8+4+2+1 = **−1**. ✓
 ### Why hardware designers chose it
 
 **One circuit does both addition and subtraction.** In two's complement, `a − b` is exactly
-`a + (−b)` computed with the *same* adder, with no special case. The alternatives (sign-magnitude,
-ones' complement) need separate subtraction logic and — worse — have **two representations of
-zero**, so an equality test needs a special case.
+`a + (−b)` computed with the *same* adder, with no special case. The alternatives (sign-magnitude, ones' complement) need separate subtraction logic and — worse — have **two representations of zero**, so an equality test needs a special case.
 
 Two's complement has exactly one zero, and comparison for equality is a plain bit comparison.
 
@@ -164,9 +160,7 @@ That last clause is what surprises people. Consider:
 if (x + 1 < x) { /* overflow check */ }
 ```
 
-Since signed overflow cannot happen in a valid program, the compiler may reason that `x + 1 < x` is
-always false and **delete the check entirely**. This is not hypothetical; GCC and Clang both do it at
-`-O2`. The "safety check" vanishes, and the bug it was guarding against ships.
+Since signed overflow cannot happen in a valid program, the compiler may reason that `x + 1 < x` is always false and **delete the check entirely**. This is not hypothetical; GCC and Clang both do it at `-O2`. The "safety check" vanishes, and the bug it was guarding against ships.
 
 **Correct overflow checks test *before* overflowing:**
 
@@ -183,7 +177,7 @@ if (__builtin_add_overflow(a, b, &result)) { /* handle overflow */ }
 
 > **Catch it while learning.** Build with `-fsanitize=undefined`. UBSan reports signed overflow at
 > the exact line:
->
+
 > ```
 > runtime error: signed integer overflow: 2147483647 - -2 cannot be represented in type 'int'
 > ```
@@ -200,8 +194,7 @@ printf("%d\n", a + b);        /* 200 -- NOT overflow */
 printf("%zu\n", sizeof(a+b)); /* 4 -- the result is an int */
 ```
 
-`char` and `short` operands are converted to `int` before the operation. So `a + b` is computed as
-`int` arithmetic and 200 fits comfortably. The result only truncates if you **store it back**:
+`char` and `short` operands are converted to `int` before the operation. So `a + b` is computed as `int` arithmetic and 200 fits comfortably. The result only truncates if you **store it back**:
 
 ```c
 char c = a + b;    /* NOW it truncates: 200 doesn't fit in a signed char */
@@ -233,8 +226,7 @@ for (size_t i = n - 1; i >= 0; i--)   /* INFINITE LOOP */
 ```
 
 `size_t` is unsigned, so `i >= 0` is **always true**. When `i` is 0 and decrements, it wraps to
-`SIZE_MAX` and the loop reads far out of bounds. Worse, if `n` is 0 then `n - 1` is `SIZE_MAX` before
-the loop even starts.
+`SIZE_MAX` and the loop reads far out of bounds. Worse, if `n` is 0 then `n - 1` is `SIZE_MAX` before the loop even starts.
 
 Correct downward loops over an unsigned index:
 
@@ -248,7 +240,7 @@ This reads oddly at first. `i-- > 0` tests the current value then decrements, so
 
 > **The compiler will tell you.** GCC's `-Wsign-compare` (included in `-Wall -Wextra`) flags exactly
 > this:
->
+
 > ```
 > warning: comparison of integer expressions of different signedness: 'int' and 'unsigned int'
 > ```
@@ -279,8 +271,7 @@ Verified for `a = -7, b = 2`: `(-3)·2 + (-1) = -7`. ✓
 the sign follows the *divisor*. Both languages preserve the same identity; they just pick different
 rounding. When you port code between them, every `%` on possibly-negative values needs checking.
 
-The practical consequence: **`x % 2 == 1` is not a valid odd-number test in C**, because for negative
-odd `x` the result is `−1`. Use `x % 2 != 0`.
+The practical consequence: **`x % 2 == 1` is not a valid odd-number test in C**, because for negative odd `x` the result is `−1`. Use `x % 2 != 0`.
 
 ---
 

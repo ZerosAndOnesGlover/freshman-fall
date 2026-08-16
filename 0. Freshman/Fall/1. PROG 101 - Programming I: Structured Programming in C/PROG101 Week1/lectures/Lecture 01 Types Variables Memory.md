@@ -353,4 +353,4 @@ and the guard `if (len - 1 >= 0)`, which is always true for unsigned `len` and i
 
 ---
 
-*Next: Lecture 2 — Integer Representation*
+*Next: [[Lecture 02 Integer Representation]]*

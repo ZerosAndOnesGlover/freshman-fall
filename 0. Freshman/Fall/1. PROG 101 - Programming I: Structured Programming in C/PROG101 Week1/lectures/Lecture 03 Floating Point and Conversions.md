@@ -112,8 +112,7 @@ Consequences you will meet:
 - Summing an array in a different order gives a different total
 - Parallel reductions are non-deterministic unless the order is fixed
 - The compiler may **not** reorder float arithmetic under `-O2`, because doing so would change
-  results. (`-ffast-math` permits it, and thereby breaks exactly this guarantee — which is why you
-  should not enable it casually.)
+  results. (`-ffast-math` permits it, and thereby breaks exactly this guarantee — which is why you  should not enable it casually.)
 
 **Summing small values into a large accumulator loses them.** If you need accuracy over a long
 array, sort by magnitude or use compensated summation (Kahan's algorithm).
@@ -171,10 +170,7 @@ if (isnan(x)) { /* clearer */ }
 ```
 
 The consequence that bites: **NaN poisons comparisons.** Every one of `<`, `>`, `<=`, `>=`, `==`
-returns false when an operand is NaN. So `if (x < 0) … else …` takes the `else` branch for NaN, which
-is usually not what the author meant. A NaN entering a sort comparator produces an inconsistent
-ordering and can drive the sort out of bounds — the same hazard as the bad comparator you will meet
-in Week 11.
+returns false when an operand is `NaN`. So `if (x < 0) … else …` takes the `else` branch for `NaN`, which is usually not what the author meant. A `NaN` entering a sort comparator produces an inconsistent ordering and can drive the sort out of bounds — the same hazard as the bad comparator you will meet in Week 11.
 
 ### Negative zero
 
