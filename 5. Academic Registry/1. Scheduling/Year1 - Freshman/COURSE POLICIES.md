@@ -58,7 +58,7 @@
 
 ## Quiz Policies
 
-- Quizzes held at the **start of Monday lecture**, Weeks 2–14 (12 quizzes).
+- Quizzes held at the **start of each course's own first lecture of the week**, Weeks 2–12 (11 quizzes). The day differs per course — MATH 141, MATH 151 and PHYS 141 on Monday, PROG 101 on Tuesday, CS 101 on Wednesday. See `ASSESSMENT CALENDAR.md`.
 - Duration: 10 minutes. Begin exactly at lecture start. No extensions for late arrivals.
 - Material: previous week's lectures + assigned readings.
 - **Lowest 2 quiz scores dropped** from final calculation.

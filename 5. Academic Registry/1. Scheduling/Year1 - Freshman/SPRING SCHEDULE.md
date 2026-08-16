@@ -56,8 +56,8 @@
 ### Monday
 ```
 07:30 – 08:00   Morning prep / commute / review notes from last week
-09:00 – 09:50   📖 CS 102 Lecture — ⚠️ QUIZ DAY for CS 102 (Weeks 2–14)
-11:00 – 11:50   📖 MATH 142 Lecture
+09:00 – 09:50   📖 CS 102 Lecture — ⚠️ QUIZ DAY for CS 102 (Weeks 1–11)
+11:00 – 11:50   📖 MATH 142 Lecture — ⚠️ QUIZ DAY for MATH 142 (Weeks 1–12)
 12:00 – 13:00   Lunch Break (protected — schedule this, do not skip it)
 15:00 – 16:50   🔬 PROG 102 LAB SECTION (mandatory)
 17:00           Problem set DUE from previous week (submitted via course portal)
@@ -66,7 +66,7 @@
 
 ### Tuesday
 ```
-10:00 – 10:50   📖 PROG 102 Lecture — ⚠️ QUIZ DAY for PROG 102 (Weeks 2–14)
+10:00 – 10:50   📖 PROG 102 Lecture — ⚠️ QUIZ DAY for PROG 102 (Weeks 1–11)
 11:00 – 11:50   📖 MATH 142 Lecture
 12:00 – 13:00   Lunch
 13:00 – 14:00   Office hours (check OFFICE HOURS.md for schedule)
@@ -97,7 +97,7 @@
 ### Friday
 ```
 09:00 – 09:50   📖 CS 102 Lecture
-11:00 – 11:50   📖 MATH 142 Lecture — ⚠️ QUIZ DAY for MATH 142 (Weeks 2–14)
+11:00 – 11:50   📖 MATH 142 Lecture
 12:00 – 13:00   Lunch
 14:00 – 15:50   🔬 ECE 110 LAB SECTION (mandatory)
                     Arrive with pre-lab reading done.
@@ -124,13 +124,13 @@
 
 | Day | Time | Event |
 |-----|------|-------|
-| Monday | Start of lecture | ⚠️ CS 102 Quiz (Weeks 2–14) |
+| Monday | Start of lecture | ⚠️ CS 102 Quiz (Weeks 1–11) |
 | Monday | 15:00 | PROG 102 Lab begins |
-| Tuesday | Start of lecture | ⚠️ PROG 102 Quiz (Weeks 2–14) |
+| Tuesday | Start of lecture | ⚠️ PROG 102 Quiz (Weeks 1–11) |
 | Tuesday | 15:00 | CS 102 Lab begins |
 | Wednesday | Start of lecture | ⚠️ ECE 110 Quiz (Weeks 2–12, ungraded) |
 | Wednesday | 17:00 | New problem set released |
-| Friday | Start of lecture | ⚠️ MATH 142 Quiz (Weeks 2–14) |
+| Monday | Start of lecture | ⚠️ MATH 142 Quiz (Weeks 1–12) |
 | Friday | 14:00 | ECE 110 Lab begins |
 | Friday | 17:00 | ⚠️ Problem set due |
 | Ongoing | TBD | Project milestones (see ASSESSMENT CALENDAR.md) |

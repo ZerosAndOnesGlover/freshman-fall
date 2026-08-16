@@ -36,7 +36,7 @@ Every week of the academic year follows this rhythm (course-specific variations 
 
 | Day | Standard Events |
 |-----|----------------|
-| **Monday** | MATH 141, MATH 151, PHYS 141 lectures. PROG 101 Lab (afternoon). Quiz held at start of each course's own first lecture of the week (Weeks 2–14), not just Monday — check ASSESSMENT CALENDAR.md per course. |
+| **Monday** | MATH 141, MATH 151, PHYS 141 lectures. PROG 101 Lab (afternoon). Quiz held at start of each course's own first lecture of the week (Weeks 2–12), not just Monday — check ASSESSMENT CALENDAR.md per course. |
 | **Tuesday** | PROG 101, MATH 141, PHYS 141 lectures. CS 101 Lab (afternoon). |
 | **Wednesday** | CS 101, PROG 101, MATH 141 lectures. CS 190 Seminar (early afternoon). MATH 151 Lab (afternoon). Problem sets released at 17:00 (due Friday 17:00 for MWF-anchored courses — varies by course). |
 | **Thursday** | CS 101, PROG 101, MATH 151 lectures. PHYS 141 Lab (afternoon, 3 hrs) — the heaviest lab day. |
@@ -50,7 +50,7 @@ Every week of the academic year follows this rhythm (course-specific variations 
 
 | Type | Frequency | Weight | Notes |
 |------|-----------|--------|-------|
-| **Weekly Quizzes** | Every Monday (Weeks 2–14) | 5–10% | 10 min, start of lecture. Lowest 2 dropped. |
+| **Weekly Quizzes** | Weeks 2–12, on each course's own first lecture day | 5–10% | 10 min, start of lecture. Lowest 2 dropped. |
 | **Problem Sets** | Weekly (released Wed, due Fri) | 25–40% | Individual write-up. Collaboration on concepts OK. |
 | **Lab Reports** | Weekly (Thu lab) | 10–20% | Checked off by TA during lab or submitted next day. |
 | **Midterm Exam 1** | Week 5–6 | 10–15% | 75–90 min evening exam. 1 handwritten cheat sheet. |

@@ -58,10 +58,10 @@
 ```
 07:30 – 08:00   Morning prep / commute / review notes from last week
 08:00 – 11:00   Pre-class review before MATH 141 (first lecture of the week for MATH 141/151/PHYS 141)
-11:00 – 11:50   📖 MATH 141 Lecture — ⚠️ QUIZ DAY for MATH 141 (Weeks 2–14)
+11:00 – 11:50   📖 MATH 141 Lecture — ⚠️ QUIZ DAY for MATH 141 (Weeks 2–12)
 12:00 – 13:00   Lunch Break (protected — schedule this, do not skip it)
-13:00 – 13:50   📖 MATH 151 Lecture — ⚠️ QUIZ DAY for MATH 151 (Weeks 2–14)
-14:00 – 14:50   📖 PHYS 141 Lecture — ⚠️ QUIZ DAY for PHYS 141 (Weeks 2–14)
+13:00 – 13:50   📖 MATH 151 Lecture — ⚠️ QUIZ DAY for MATH 151 (Weeks 2–12)
+14:00 – 14:50   📖 PHYS 141 Lecture — ⚠️ QUIZ DAY for PHYS 141 (Weeks 2–12)
 15:00 – 16:50   🔬 PROG 101 LAB SECTION (mandatory)
                     Arrive with pre-lab reading done.
 18:00 – 21:00   Evening study block — lecture review
@@ -69,7 +69,7 @@
 
 ### Tuesday
 ```
-10:00 – 10:50   📖 PROG 101 Lecture
+10:00 – 10:50   📖 PROG 101 Lecture — ⚠️ QUIZ DAY for PROG 101 (Weeks 2–12)
 11:00 – 11:50   📖 MATH 141 Lecture
 12:00 – 13:00   Lunch
 14:00 – 14:50   📖 PHYS 141 Lecture
@@ -82,7 +82,7 @@
 
 ### Wednesday
 ```
-09:00 – 09:50   📖 CS 101 Lecture — ⚠️ QUIZ DAY for CS 101 (Weeks 2–14)
+09:00 – 09:50   📖 CS 101 Lecture — ⚠️ QUIZ DAY for CS 101 (Weeks 2–12)
 10:00 – 10:50   📖 PROG 101 Lecture
 11:00 – 11:50   📖 MATH 141 Lecture
 12:00 – 13:00   Lunch
@@ -95,7 +95,7 @@
 ### Thursday
 ```
 09:00 – 09:50   📖 CS 101 Lecture
-10:00 – 10:50   📖 PROG 101 Lecture — ⚠️ QUIZ DAY for PROG 101 (Weeks 2–14)
+10:00 – 10:50   📖 PROG 101 Lecture
 12:00 – 13:00   Lunch
 13:00 – 13:50   📖 MATH 151 Lecture
 14:00 – 17:00   🔬 PHYS 141 LAB SECTION (mandatory, 3 hrs) — the heaviest single block of the week.
@@ -134,11 +134,11 @@
 
 | Day | Time | Event |
 |-----|------|-------|
-| Monday | Start of lecture | ⚠️ MATH 141 Quiz (Weeks 2–14) |
+| Monday | Start of lecture | ⚠️ MATH 141 Quiz (Weeks 2–12) |
 | Monday | 15:00 | PROG 101 Lab begins |
-| Wednesday | Start of lecture | ⚠️ CS 101 Quiz (Weeks 2–14) |
+| Wednesday | Start of lecture | ⚠️ CS 101 Quiz (Weeks 2–12) |
 | Wednesday | 15:00 | MATH 151 Lab begins |
-| Thursday | Start of lecture | ⚠️ PROG 101 Quiz (Weeks 2–14) |
+| Tuesday | Start of lecture | ⚠️ PROG 101 Quiz (Weeks 2–12) |
 | Thursday | 14:00 | PHYS 141 Lab begins (3 hrs) |
 | Tuesday | 15:00 | CS 101 Lab begins |
 | Ongoing | TBD | Project milestones (see ASSESSMENT CALENDAR.md) |

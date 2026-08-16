@@ -14,73 +14,97 @@
 
 ### Fall Semester, Year 1
 
+> **Dated for 2026.** Term opens **Monday 17 August 2026**. Week 0 is an ordinary five-day week;
+> thirteen teaching weeks (W0–W12) run continuously with no break weeks, ending Friday 13 November.
+> Week↔date conversion lives in `1. Scheduling/Year1 - Freshman/ASSESSMENT CALENDAR.md`.
+
 | Date | Event |
 |------|-------|
-| Mon Aug 26 | Freshman Orientation begins |
-| Wed Aug 28 | Classes begin (Week 0) |
-| Mon Sep 2  | Labor Day — NO CLASSES |
-| Fri Sep 6  | Add/Drop deadline |
-| Fri Sep 6  | Week 0 labs (setup/orientation, ungraded) |
-| Mon Sep 9  | Week 1 begins — all graded work begins |
-| Fri Sep 13 | Problem Set 1 due (all courses), ~17:00 |
-| Mon Sep 16 | Quiz 1 — CS 101 + PROG 101 (start of lecture) |
-| Fri Oct 4  | Problem Set 3 due |
-| Mon Oct 7  | MIDTERM EXAM WEEK begins |
-| Mon Oct 7  | CS 101 Midterm 1 (75 min, 18:00–19:15) |
-| Wed Oct 9  | PROG 101 Midterm 1 (90 min, 18:00–19:30) |
-| Thu Oct 10 | MATH 141 Midterm 1 (75 min, 18:00–19:15) |
-| Fri Oct 11 | MATH 151 Midterm 1 (75 min, 18:00–19:15) |
-| Mon Oct 14 | Fall Break — NO CLASSES (Mon–Tue) |
-| Wed Oct 16 | Classes resume |
-| Fri Nov 1  | CS 101 Project 1 due (Data Analysis Tool) |
-| Mon Nov 4  | MIDTERM EXAM 2 WEEK begins |
-| Mon Nov 4  | CS 101 Midterm 2 (75 min, 18:00–19:15) |
-| Wed Nov 6  | PROG 101 Midterm 2 (90 min, 18:00–19:30) |
-| Thu Nov 7  | MATH 141 Midterm 2 (75 min, 18:00–19:15) |
-| Wed Nov 27 | Thanksgiving Break begins (Wed noon) |
-| Mon Dec 2  | Classes resume |
-| Fri Dec 6  | Last Problem Set due (all courses) |
-| Mon Dec 9  | Last week of instruction (Week 14) |
-| Fri Dec 13 | READING DAY — no classes |
-| Mon Dec 16 | FINALS WEEK begins |
-| Mon Dec 16 | MATH 151 Final Exam (120 min, 08:00–10:00) |
-| Tue Dec 17 | CS 101 Final Exam (150 min, 09:00–11:30) |
-| Wed Dec 18 | MATH 141 Final Exam (150 min, 09:00–11:30) |
-| Thu Dec 19 | PROG 101 Final Exam (150 min, 14:00–16:30) |
-| Fri Dec 20 | CS 190 Seminar final paper due (23:59) |
-| Mon Dec 23 | Winter Break begins |
+| Thu Aug 13 | Freshman Orientation begins |
+| Mon Aug 17 | **Classes begin — Week 0** |
+| Fri Aug 21 | Week 0 labs (setup/orientation, ungraded) |
+| Fri Aug 21 | Add/Drop deadline |
+| Mon Aug 24 | **Week 1 begins — all graded work begins** |
+| Fri Aug 28 | Problem Set 1 due — CS 101, MATH 151, PHYS 141 (17:00) |
+| Tue Sep 01 | Quizzes begin — PROG 101 Quiz 1 (start of Tuesday lecture) |
+| Wed Sep 02 | CS 101 Quiz 1 (start of Wednesday lecture) |
+| Fri Sep 04 | Problem Set 1 due — MATH 141, PROG 101 (re-dated; see PREREQUISITE AUDIT) |
+| Mon Sep 07 | Labor Day — ⚠️ classes currently scheduled to run (see note below) |
+| Mon Sep 28 | **MIDTERM 1 WEEK begins (Week 6)** |
+| Mon Sep 28 | CS 101 Midterm 1 (75 min, 18:00–19:15) |
+| Wed Sep 30 | PROG 101 Midterm 1 (90 min, 18:00–19:30) |
+| Thu Oct 01 | MATH 141 Midterm 1 (75 min, 18:00–19:15) |
+| Fri Oct 02 | MATH 151 Midterm 1 (75 min, 18:00–19:15) |
+| Fri Oct 23 | CS 101 Project 1 due — Data Analysis Tool (17:00) |
+| Mon Oct 26 | **MIDTERM 2 WEEK begins (Week 10)** |
+| Mon Oct 26 | CS 101 Midterm 2 (75 min, 18:00–19:15) |
+| Tue Oct 27 | PROG 101 Midterm 2 (90 min, 18:00–19:30) |
+| Wed Oct 28 | MATH 141 Midterm 2 (75 min, 18:00–19:15) |
+| Mon Nov 09 | **Last week of instruction (Week 12)** |
+| Wed Nov 11 | Veterans Day — ⚠️ classes currently scheduled to run (see note below) |
+| Fri Nov 13 | Last Problem Set due, all courses (17:00) |
+| Fri Nov 13 | CS 101 Project 2 due — Algorithm Visualizer (17:00) |
+| Fri Nov 13 | **Last day of instruction** |
+| Mon Nov 16 | **FINALS WEEK begins** |
+| Mon Nov 16 | MATH 151 Final Exam (120 min, 08:00–10:00) |
+| Tue Nov 17 | CS 101 Final Exam (150 min, 09:00–11:30) |
+| Wed Nov 18 | MATH 141 Final Exam (150 min, 09:00–11:30) |
+| Thu Nov 19 | PROG 101 Final Exam (150 min, 14:00–16:30) |
+| Fri Nov 20 | CS 190 Seminar final paper due (23:59) |
+| Fri Nov 20 | **Fall semester ends** |
+
+> **⚠️ Two open decisions on this calendar.**
+> 1. **Public holidays.** Labor Day (Mon Sep 07) and Veterans Day (Wed Nov 11) fall inside teaching
+>    weeks. The pre-2026 calendar observed Labor Day as NO CLASSES. This calendar currently runs
+>    classes on both, because the term was specified as thirteen continuous weeks. Cancelling
+>    Mon Sep 07 would cost W3's Monday lectures for MATH 141, MATH 151 and PHYS 141 plus their
+>    quizzes and the PROG 101 lab; cancelling Wed Nov 11 would cost W12's CS 101 quiz and lecture.
+> 2. **No reading day.** Instruction ends Fri Nov 13 and finals open Mon Nov 16, so there is no
+>    reading day. The pre-2026 calendar allowed one. Adding it pushes finals to Tue Nov 17.
 
 ### Spring Semester, Year 1
 
-| Date | Event |
-|------|-------|
-| Mon Jan 13 | Spring semester begins (Week 0) |
-| Mon Jan 20 | Martin Luther King Day — NO CLASSES |
-| Fri Jan 24 | Add/Drop deadline |
-| Mon Jan 27 | Week 1 — graded work begins |
-| Mon Feb 10 | CS 102 Project 1 announced |
-| Mon Mar 3  | MIDTERM EXAM 1 WEEK |
-| Mon Mar 3  | CS 102 Midterm 1 (75 min, 18:00–19:15) |
-| Tue Mar 4  | PROG 102 Midterm 1 (90 min, 18:00–19:30) |
-| Wed Mar 5  | MATH 142 Midterm 1 (75 min, 18:00–19:15) |
-| Thu Mar 6  | ECE 110 Midterm 1 (75 min, 18:00–19:15) |
-| Mon Mar 17 | Spring Break — NO CLASSES (Mon–Fri) |
-| Mon Mar 24 | Classes resume |
-| Fri Apr 4  | CS 102 Project 1 due |
-| Mon Apr 14 | MIDTERM EXAM 2 WEEK |
-| Mon Apr 14 | CS 102 Midterm 2 (75 min, 18:00–19:15) |
-| Tue Apr 15 | PROG 102 Midterm 2 (90 min, 18:00–19:30) |
-| Fri May 2  | Last week of classes begins |
-| Fri May 2  | CS 102 Project 2 due |
-| Fri May 2  | PROG 102 Project 2 due (Data Structure Library) |
-| Sat May 3  | Reading Day |
-| Mon May 5  | FINALS WEEK begins |
-| Mon May 5  | ECE 110 Final (120 min, 08:00–10:00) |
-| Tue May 6  | MATH 142 Final (150 min, 09:00–11:30) |
-| Wed May 7  | CS 102 Final (150 min, 09:00–11:30) |
-| Thu May 8  | PROG 102 Final (150 min, 14:00–16:30) |
-| Fri May 9  | Grade submission deadline |
-| Mon May 12 | Summer break begins |
+> **Dated for 2027.** Term opens **Monday 11 January 2027**. Week 0 is an ordinary five-day week;
+> thirteen teaching weeks (W0–W12) run continuously with **no break weeks** — the Spring Break week
+> in the pre-2027 calendar was dropped by decision. Instruction ends Friday 9 April.
+> Week↔date conversion lives in `1. Scheduling/Year1 - Freshman/ASSESSMENT CALENDAR.md`.
+
+| Date       | Event                                                                           |
+| ---------- | ------------------------------------------------------------------------------- |
+| Mon Jan 11 | **Spring semester begins — Week 0**                                             |
+| Fri Jan 15 | Add/Drop deadline                                                               |
+| Mon Jan 18 | **Week 1 begins — graded work begins**                                          |
+| Mon Jan 18 | Martin Luther King Day — ⚠️ classes currently scheduled to run (see note below) |
+| Mon Feb 15 | Presidents Day — ⚠️ classes currently scheduled to run (see note below)         |
+| Mon Feb 22 | **MIDTERM 1 WEEK begins (Week 6)**                                              |
+| Mon Feb 22 | CS 102 Midterm 1 (75 min, 18:00–19:15)                                          |
+| Tue Feb 23 | PROG 102 Midterm 1 (90 min, 18:00–19:30)                                        |
+| Wed Feb 24 | MATH 142 Midterm 1 (75 min, 18:00–19:15)                                        |
+| Thu Feb 25 | ECE 110 Midterm (75 min, 18:00–19:15) — ECE 110's only midterm                  |
+| Fri Mar 19 | CS 102 Project 1 due — Search/Sort Visualizer (17:00)                           |
+| Mon Mar 22 | **MIDTERM 2 WEEK begins (Week 10)**                                             |
+| Mon Mar 22 | CS 102 Midterm 2 (75 min, 18:00–19:15)                                          |
+| Tue Mar 23 | PROG 102 Midterm 2 (90 min, 18:00–19:30)                                        |
+| Mon Apr 05 | **Last week of instruction (Week 12)**                                          |
+| Fri Apr 09 | Last Problem Set due, all courses (17:00)                                       |
+| Fri Apr 09 | CS 102 Project 2 due — Algorithm Implementation Suite (17:00)                   |
+| Fri Apr 09 | PROG 102 Project 2 due — Complete Data Structure Library (17:00)                |
+| Fri Apr 09 | **Last day of instruction**                                                     |
+| Mon Apr 12 | **FINALS WEEK begins**                                                          |
+| Mon Apr 12 | ECE 110 Final Exam (120 min, 08:00–10:00)                                       |
+| Tue Apr 13 | MATH 142 Final Exam (150 min, 09:00–11:30)                                      |
+| Wed Apr 14 | CS 102 Final Exam (150 min, 09:00–11:30)                                        |
+| Thu Apr 15 | PROG 102 Final Exam (150 min, 14:00–16:30)                                      |
+| Fri Apr 16 | **Spring semester ends** · grade submission deadline                            |
+| Mon Apr 19 | Summer break begins                                                             |
+
+> **⚠️ Same two open decisions as Fall.**
+> 1. **Public holidays.** MLK Day (**Mon Jan 18**, in W1) and Presidents Day (**Mon Feb 15**, in W5)
+>    fall inside teaching weeks. The pre-2027 calendar observed MLK as NO CLASSES. Classes currently
+>    run on both. Cancelling Mon Jan 18 would displace the CS 102 and MATH 142 Quiz 1 sittings on
+>    the very first day of graded work.
+> 2. **No reading day.** Instruction ends Fri Apr 09 and finals open Mon Apr 12. The pre-2027
+>    calendar allowed a Saturday reading day.
 
 
 ─────────────────────────────────────────────────────────────
