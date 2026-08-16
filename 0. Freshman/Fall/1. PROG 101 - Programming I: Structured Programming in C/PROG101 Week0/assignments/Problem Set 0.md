@@ -82,14 +82,14 @@ Write `info.c` — a program that:
 Your output must look *exactly* like this (with your own information):
 
 ```
-╔══════════════════════════════════════╗
-║       PROG 101 Student Profile       ║
-╠══════════════════════════════════════╣
-║  Name:    Adebayo Glover             ║
-║  ID:      20260001                   ║
-║  Year:    2026                       ║
-║  Course:  PROG 101 - Structured C    ║
-╚══════════════════════════════════════╝
+╔══════════════════════════════════════════════════╗
+║             PROG 101 Student Profile             ║
+╠══════════════════════════════════════════════════╣
+║  Name:    Adebayo Glover                         ║
+║  ID:      20260001                               ║
+║  Year:    2026                                   ║
+║  Course:  PROG 101 - Structured Programming in C ║
+╚══════════════════════════════════════════════════╝
 ```
 
 Requirements:
@@ -122,13 +122,13 @@ Expected output:
 ╔═══════════╦═══════════╦═══════════╗
 ║  Celsius  ║  Fahrenh  ║  Kelvin   ║
 ╠═══════════╬═══════════╬═══════════╣
-║      0.0  ║     32.0  ║   273.2   ║
-║      5.0  ║     41.0  ║   278.2   ║
-║     10.0  ║     50.0  ║   283.2   ║
-║     15.0  ║     59.0  ║   288.2   ║
-║     20.0  ║     68.0  ║   293.2   ║
+║      0.0  ║     32.0  ║   273.1   ║
+║      5.0  ║     41.0  ║   278.1   ║
+║     10.0  ║     50.0  ║   283.1   ║
+║     15.0  ║     59.0  ║   288.1   ║
+║     20.0  ║     68.0  ║   293.1   ║
 ║     ...   ║     ...   ║   ...     ║
-║    100.0  ║    212.0  ║   373.2   ║
+║    100.0  ║    212.0  ║   373.1   ║
 ╚═══════════╩═══════════╩═══════════╝
 ```
 
@@ -307,8 +307,21 @@ Submit on the course portal:
 ## Answer Key (Instructor Copy)
 
 > **Do not distribute to students.** Totals follow the Grading Rubric above (100 points).
-> No errata found. The Problem 2 box art was checked: every line is exactly 40 characters, consistent with the stated requirement.
 > All C below was compiled with `gcc 13.3.0 -Wall -Wextra -Werror -std=c11` and executed.
+
+### ⚠️ Errata — CORRECTED in the text above
+
+Three defects, all verified against `gcc 13.3.0` / GNU `nm` on x86-64 Linux. The first two **have
+now been fixed in this document**; the third is a live inconsistency flagged for the author.
+
+| Location | Was (wrong) | Now |
+|---|---|---|
+| P3 expected output, Kelvin column | `273.2`, `278.2` … `373.2`. The claim was restated in the spot-check line below the reference solution: "273.15 displays as 273.2 at one decimal". Both are wrong. `273.15` is not representable in binary — the stored double is `273.14999999999997726`, so `%.1f` correctly rounds **down**. The answer key's own reference solution prints `273.1`; it was never run against its own expected output. | Corrected to `273.1` … `373.1` for the six rows shown, matching what the reference solution actually prints. |
+| P6 reference answer 6 | "after which the symbol remains `U` in the executable". It does not. After `gcc -Wl,--unresolved-symbols=ignore-all symbols.o -o symbols_ignored`, `nm symbols_ignored \| grep undefined_function` returns **nothing** — the symbol is dropped, not retained. | Reworded to state the symbol does not appear in the linked executable's symbol table, and that calling it still crashes at runtime. |
+| P2 box width (**unresolved**) | The prose requirement says the box "must be exactly 40 characters wide", but the sample art in the same problem is **52** characters on every line, and the note formerly here asserted it was 40. The art was later widened to fit the full course title without the prose being updated. | Not auto-corrected — the author must choose. The art is self-consistent at 52; only the prose sentence and the deleted note disagreed. Accept either width until resolved, and grade alignment and `#define` usage rather than the constant. |
+
+Students holding a pre-correction copy must not be penalised for a `273.2` Kelvin column or for a
+40-character box.
 
 ---
 
@@ -378,7 +391,13 @@ int main(int argc, char *argv[]) {
 }
 ```
 
-Spot-check against the prompt's table: 0 °C → 32.0 °F / 273.2 K ✓; 100 °C → 212.0 °F / 373.2 K ✓ (273.15 displays as 273.2 at one decimal).
+Spot-check against the prompt's table: 0 °C → 32.0 °F / **273.1** K ✓; 100 °C → 212.0 °F / **373.1** K ✓.
+
+*Do not expect `273.2` here.* `273.15` has no exact binary representation — the stored double is
+`273.14999999999997726`, marginally **below** the midpoint, so `%.1f` rounds down to `273.1`. This
+is the correct and only output on any IEEE-754 platform, and the reference solution above produces
+it. See the errata table. A student reporting `273.1` is right; a student who reports `273.2` has
+almost certainly not run their program.
 
 *Grading: 4 pts argc/argv handling, 4 pts conversion via `atof`/`strtod`, 4 pts both formulas correct, 4 pts error handling with non-zero exit, 4 pts table formatting.*
 *`atof` is explicitly permitted by the prompt, but it **cannot** report failure — `atof("abc")` silently returns 0.0. A student using `strtod` with `endptr` validation has done strictly better; award the error-handling points fully and note it as good practice. A student using `atof` and claiming they validate input has not — deduct 2 unless they check separately.*
@@ -431,7 +450,7 @@ Reference answers (`nm` letters are case-significant: **uppercase = global/exter
 4. Linking fails at the **linker** stage, not the compiler — the exact wording on GNU ld is along the lines of:
    `undefined reference to 'never_defined'` followed by `collect2: error: ld returned 1 exit status`.
 5. In `nm symbols.o` the never-defined function appears with type **`U`** and no address — the object file records the dependency without resolving it.
-6. `nm symbols.o` lists only this translation unit's symbols, with `U` entries still outstanding. `nm symbols` (the linked executable) shows those symbols **resolved to addresses**, plus everything pulled in from libc and the startup files — a much longer listing. Linking despite the missing symbol requires `-Wl,--unresolved-symbols=ignore-all`, after which the symbol remains `U` in the executable and calling it crashes at runtime.
+6. `nm symbols.o` lists only this translation unit's symbols, with `U` entries still outstanding. `nm symbols` (the linked executable) shows those symbols **resolved to addresses**, plus everything pulled in from libc and the startup files — a much longer listing (verified: 9 symbols in the object file against 36 in the executable). Linking despite the missing symbol requires `-Wl,--unresolved-symbols=ignore-all`. Note that the unresolved symbol is then **absent from the executable's symbol table altogether** — `nm symbols_ignored | grep undefined_function` returns nothing, it does *not* survive as a `U` entry — and the call site is left aimed at an unrelocated PLT stub, so invoking it dies with `SIGSEGV` (verified: exit status 139).
 
 *Grading: 3 pts each for Q1–Q3 and Q5–Q6, 2 pts Q4 — **pasted evidence is required** for Q1, Q2, and Q4; an answer stating the letter without the `nm` line earns half.*
 *The key insight to look for across the whole problem: the compiler is happy to emit an object file full of `U` symbols. Only the **linker** demands they all resolve. This is why "undefined reference" errors look and read so differently from compiler errors.*

@@ -20,8 +20,9 @@ __pycache__/
 *.out
 *.exe
 a.out
-# extensionless ELF binary built by the PROG 101 Week 0 starter
+# extensionless ELF binaries built by the PROG 101 Week 0 starter and PS 0
 0. Freshman/Fall/1. PROG 101 - Programming I: Structured Programming in C/PROG101 Week0/lab/starter/hello
+0. Freshman/Fall/1. PROG 101 - Programming I: Structured Programming in C/PROG101 Week0/assignments/fixed
 
 # ─── Generated study site ────────────────────────────────────────────
 # Rebuilt from the markdown by `python3 site/build.py` in a couple of
