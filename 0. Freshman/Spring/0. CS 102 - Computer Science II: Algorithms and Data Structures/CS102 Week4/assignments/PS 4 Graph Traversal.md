@@ -111,7 +111,17 @@ reports a cycle in a **tree**, and give the smallest tree on which this happens.
 because it misses a 2-cycle formed by parallel edges."
 
 **Test this claim.** Search exhaustively over all multigraphs on $V \le 4$ with up to 3 edges —
-self-loops and parallel edges included — comparing against a union-find ground truth. Then:
+self-loops and parallel edges included — comparing against an independent ground truth. Then:
+
+> **Building the ground truth.** Use the edge-count characterisation, which needs nothing beyond
+> this week's traversals: a graph is **acyclic (a forest) if and only if** $|E| = |V| - c$, where
+> $c$ is its number of connected components. Count $c$ with the BFS or DFS you wrote in Part B,
+> then compare. Count parallel edges separately and count a self-loop as one edge — getting those
+> two conventions right is half the problem.
+>
+> *(You may recognise this as a job for a disjoint-set structure. It is — union–find arrives in
+> Week 6 and is the tool you would reach for in practice. The edge-count identity gives the same
+> answer using only what you have now.)*
 
 - **(a)** *(3)* Is the claim true? Report your disagreement count and explain the result.
 - **(b)** *(3)* Repeat with adjacency built from `set` instead of `list`. Report the count, give the

@@ -1,6 +1,6 @@
 ═════════════════════════════════════════════════════════════
 # YEAR 1 PREREQUISITE AUDIT
-### Freshman · Fall · Weeks 0–2 · All Six Courses
+### Freshman · Fall + Spring · Weeks 0–12 · All Ten Courses
 ═════════════════════════════════════════════════════════════
 
 
@@ -271,5 +271,81 @@ dissolved on inspection, and two gaps that were not predicted (PHYS 141 W5, W6) 
 
 ---
 
-*Audit now covers Freshman Fall, Weeks 0–12, all six courses. Freshman Spring and Sophomore Year
-remain unaudited; the Week 0 framing problem in §6(a) is likely to recur wherever a Week 0 exists.*
+## 10 · Freshman Spring, Weeks 0–12 (added 2026-08-16, **corrected same day**)
+
+> ⚠️ **This section was substantially wrong on first pass and has been rewritten.** The first sweep
+> reported eight Spring findings. **Six were not real**, one was real but belonged in the pset, and
+> only one was a genuine lecture gap. The method error is recorded in §11 because it is more useful
+> than the findings were.
+
+### What Spring actually looks like
+
+Spring has all of Fall complete behind it, and cross-course dependency largely vanishes: MATH 151's
+logic underwrites ECE 110's Boolean algebra, its graphs and recurrences underwrite CS 102, MATH 141
+underwrites MATH 142 — each a full semester early. **Spring is in good shape.** Its courses also
+handle their own forward references well, mostly by the self-flagging pattern this audit recommends.
+
+### The two real findings
+
+| # | Where | Problem | Fix |
+|---|---|---|---|
+| 20 | CS 102 W4 · `PS 4 Graph Traversal` D4 | Requires building a **union–find ground truth**; union–find is **Week 6**. The lecture never mentions it, so this is purely a pset reaching forward. | **Pset changed.** D4 now specifies the edge-count characterisation — a graph is a forest iff `\|E\| = \|V\| − c` — which needs only the BFS/DFS from Part B. Verified against six cases including self-loops and parallel edges. Union–find is named as the tool you would reach for in practice, with its Week 6 pointer. |
+| 21 | CS 102 W8 · `L25 Interval DP` | Minimises the **expected** number of comparisons, weighting keys by search probability. Expected value is defined **nowhere in Year 1** — probability is MATH 251, **Year 2 Spring**. | **Preview added to `L25`**, the only Spring preview retained. Supplies `E = Σpᵢvᵢ`, ties it to depth+1, and works the lecture's own `[0.7, 0.1, 0.1, 0.1]` example to show where its quoted 33% figure comes from. |
+
+Finding 21 remains **the most serious in the whole audit**: a forward reference into the *next
+academic year*, in a lecture that used the concept without defining it.
+
+### The six retracted findings
+
+Each was raised because a pset mentioned a topic listed against a later week in the course's
+topic index. In every case the **lecture had already handled it** — either by teaching the needed
+slice outright, or by self-flagging with an explicit week pointer.
+
+| Retracted | Why it was not a gap |
+|---|---|
+| PROG 102 W1 · exception guarantees | `L06` **teaches** it: *"This is the **strong exception guarantee**"*, and verifies it against a thrown `bad_alloc`. |
+| PROG 102 W3 · lambdas | `L12` demonstrates lambda syntax from line 20 onward, repeatedly, in its own worked examples. |
+| CS 102 W7 · NP-completeness | `L24` already states *"0/1 knapsack is **NP-complete** (Week 12)"* and already uses the term **pseudo-polynomial**. |
+| PROG 102 W7 · threads | `L23` **teaches** the thread-safe Singleton, including a verified sixteen-thread experiment with ThreadSanitizer — precisely what PS 7 asks for. |
+| CS 102 W3 · Dijkstra `decrease_key` | `L12` has an entire §3, *"`decrease_key`, and Why It Is Awkward"*, opening *"Dijkstra's algorithm (Week 5) needs to…"*. |
+| PROG 102 W4 · `unique_ptr` | `L15` already says *"Store `std::vector<std::unique_ptr<Base>>` **(Week 5)**"* and explains why. |
+
+The seven previews written for these were **removed**.
+
+### Verified clean
+
+- ✅ **MATH 142** — no forward references at all across Weeks 0–12.
+- ✅ **ECE 110** — likewise. Its Boolean algebra, De Morgan's Laws and functional completeness are
+  delivered by MATH 151 **Week 0** of Fall, a full semester of margin.
+- ✅ **PROG 102 Weeks 0–1** — the many "heap" references are to *heap memory*, not the data
+  structure. False positive; a keyword sweep will raise it again.
+- ✅ **CS 102 W7 PROJECT 1's "suffix"** — the English word in "trim common prefixes and suffixes",
+  not suffix arrays. False positive.
+
+---
+
+## 11 · Method note — why the first Spring pass failed
+
+The Fall passes tested each candidate against **where the concept is first taught, at lecture
+level**. The first Spring pass tested against the **course topic index** instead — "exceptions are
+Week 9", therefore a Week 1 pset mentioning exceptions is a gap. That inference is invalid: a topic
+index says where a subject is *developed*, not where it is first *usable*, and a well-written
+lecture routinely introduces the slice it needs.
+
+Six of eight findings did not survive the correct test. The check that should have been applied to
+every candidate, and now must be:
+
+> **Before recording a gap, grep the lecture body — not the topic index — for the concept. If the
+> lecture teaches it, or names it with an explicit forward pointer, there is no gap.**
+
+The cost of getting this wrong is not neutral. Seven unnecessary previews were added to lectures
+that already covered the material, which is exactly the redundancy that makes course notes
+unreadable. Retracted findings are kept above rather than deleted, so the next pass does not
+rediscover them.
+
+---
+
+*Audit covers all of Freshman Year 1 — Fall and Spring, Weeks 0–12, all ten courses.
+21 findings, all resolved; six retracted. Sophomore Year remains unaudited; based on finding 21,
+check Year 2 Fall against MATH 251 (Year 2 Spring) first, and apply §11's lecture-level test from
+the outset. The Week 0 framing problem in §6(a) is likely to recur wherever a Week 0 exists.*

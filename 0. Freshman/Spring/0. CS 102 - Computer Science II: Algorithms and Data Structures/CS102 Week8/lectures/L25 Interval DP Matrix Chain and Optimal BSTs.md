@@ -207,4 +207,31 @@ balloon burst in the interval makes the two sides independent, and the problem b
 
 ---
 
+
+---
+
+## Scoped preview — expected value
+
+> **Why here.** §3 above minimises the *expected* number of comparisons, weighting each key by its
+> search probability. Probability is **MATH 251, Year 2 Spring** — the only place in this degree that
+> teaches it, and it is a year away. This section is all you need.
+
+Given outcomes with values `v₁ … vₙ` occurring with probabilities `p₁ … pₙ` (each `pᵢ ≥ 0`, and
+`Σpᵢ = 1`), the **expected value** is the probability-weighted average:
+
+$$E = \sum_{i=1}^{n} p_i\,v_i$$
+
+It is the long-run average value if you repeated the experiment many times. Nothing subtler is used
+in this lecture.
+
+For an optimal BST, the "value" of key `i` is the number of comparisons a search for it costs, which
+is its **depth + 1**. So:
+
+$$E[\text{comparisons}] = \sum_i p_i\,(\text{depth}(k_i) + 1)$$
+
+Check the table in §3 with this. For `p = [0.7, 0.1, 0.1, 0.1]`, a balanced tree puts the
+0.7-probability key at depth 1, costing `0.7×2 = 1.4` on its own — whereas rooting the tree at that
+key costs `0.7×1 = 0.7`. That single term is where the 33% difference comes from, and it is why
+balance is the wrong objective when the access distribution is skewed.
+
 *CS 102 · Week 8 · Lecture 25 · © CSE Department*
