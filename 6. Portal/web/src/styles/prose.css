@@ -1,0 +1,185 @@
+/* ─────────────────────────────────────────────────────────────────────
+   Lecture typography.
+
+   Lecture notes in this vault run to twenty thousand characters of prose,
+   tables, code and mathematics. They are read start to finish, so this is
+   set like a textbook: one column at a comfortable measure, generous
+   leading, and a clear hierarchy that survives a dozen heading levels.
+   ───────────────────────────────────────────────────────────────────── */
+
+.prose {
+  font-family: var(--serif);
+  font-size: var(--t-md);
+  line-height: 1.72;
+  color: var(--ink-900);
+  max-width: var(--measure);
+}
+.prose-wide { max-width: none; }
+
+.prose > *:first-child { margin-top: 0; }
+
+.prose h1, .prose h2, .prose h3, .prose h4, .prose h5 {
+  margin: var(--s-7) 0 var(--s-3);
+  scroll-margin-top: calc(var(--header-h) + var(--s-4));
+}
+.prose h1 { font-size: var(--t-2xl); }
+.prose h2 {
+  font-size: var(--t-xl);
+  padding-bottom: var(--s-2);
+  border-bottom: 1px solid var(--rule);
+}
+.prose h3 { font-size: var(--t-lg); }
+.prose h4 { font-size: var(--t-md); color: var(--navy-700); }
+.prose h5 {
+  font-family: var(--sans); font-size: var(--t-xs); font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold-700);
+}
+
+.prose p { margin: 0 0 var(--s-4); }
+
+.prose ul, .prose ol { margin: 0 0 var(--s-4); padding-left: var(--s-5); }
+.prose li { margin-bottom: var(--s-2); }
+.prose li > ul, .prose li > ol { margin-top: var(--s-2); }
+.prose li::marker { color: var(--gold-600); }
+
+.prose strong { font-weight: 700; color: var(--navy-900); }
+.prose em { font-style: italic; }
+
+.prose blockquote {
+  margin: var(--s-5) 0;
+  padding: var(--s-1) var(--s-5);
+  border-left: 3px solid var(--gold-500);
+  background: var(--gold-050);
+  color: var(--ink-700);
+  font-style: italic;
+}
+.prose blockquote p:last-child { margin-bottom: 0; }
+
+.prose hr {
+  margin: var(--s-7) 0;
+  border-top: 1px solid var(--rule);
+}
+
+/* Inline code sits inside serif prose, so it needs to be visually quieter. */
+.prose :not(pre) > code {
+  font-family: var(--mono);
+  font-size: 0.855em;
+  padding: 0.1em 0.32em;
+  background: var(--navy-050);
+  color: var(--navy-800);
+  border-radius: 2px;
+  word-break: break-word;
+}
+
+.prose pre {
+  margin: var(--s-5) 0;
+  padding: var(--s-4) var(--s-5);
+  background: var(--navy-900);
+  color: #e6e9ef;
+  border-radius: var(--radius);
+  overflow-x: auto;
+  font-size: var(--t-sm);
+  line-height: 1.62;
+  tab-size: 4;
+}
+.prose pre code { background: none; padding: 0; color: inherit; font-size: inherit; }
+
+.prose table {
+  width: 100%;
+  margin: var(--s-5) 0;
+  border-collapse: collapse;
+  font-family: var(--sans);
+  font-size: var(--t-sm);
+  line-height: 1.5;
+}
+.prose th {
+  text-align: left;
+  padding: var(--s-2) var(--s-3);
+  background: var(--navy-900);
+  color: #fff;
+  font-weight: 600;
+  font-size: var(--t-xs);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.prose td { padding: var(--s-2) var(--s-3); border-bottom: 1px solid var(--rule-soft); vertical-align: top; }
+.prose tbody tr:nth-child(even) { background: var(--paper-alt); }
+
+/* Wide tables and code must scroll inside their own box, never the page. */
+.prose .scroll-x { overflow-x: auto; margin: var(--s-5) 0; }
+.prose .scroll-x > table { margin: 0; }
+
+.prose img { margin: var(--s-5) auto; border-radius: var(--radius); }
+
+.prose a { color: var(--navy-600); text-decoration: underline; text-decoration-color: var(--navy-100); }
+.prose a:hover { color: var(--gold-700); text-decoration-color: var(--gold-400); }
+
+/* KaTeX */
+.prose .katex { font-size: 1.04em; }
+.prose .katex-display {
+  margin: var(--s-5) 0;
+  padding: var(--s-2) 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+/* Task lists, which the vault's checklists use. */
+.prose input[type="checkbox"] { margin-right: var(--s-2); accent-color: var(--navy-600); }
+.prose li:has(> input[type="checkbox"]) { list-style: none; margin-left: -1.1rem; }
+
+/* ─── Syntax highlighting — a restrained palette on navy ────────────── */
+
+.hljs-comment, .hljs-quote { color: #7d8ba3; font-style: italic; }
+.hljs-keyword, .hljs-selector-tag, .hljs-literal, .hljs-section, .hljs-doctag,
+.hljs-type, .hljs-name, .hljs-strong { color: var(--gold-400); }
+.hljs-string, .hljs-title, .hljs-selector-id, .hljs-selector-class,
+.hljs-attribute, .hljs-symbol, .hljs-bullet, .hljs-addition { color: #9fd3a8; }
+.hljs-number, .hljs-meta, .hljs-built_in, .hljs-builtin-name,
+.hljs-variable, .hljs-template-variable, .hljs-link { color: #93b8e8; }
+.hljs-deletion { color: #e59b93; }
+.hljs-emphasis { font-style: italic; }
+
+/* ─── Reader chrome ─────────────────────────────────────────────────── */
+
+.reader { display: grid; grid-template-columns: minmax(0, 1fr) 15rem; gap: var(--s-8); align-items: start; }
+@media (max-width: 1080px) { .reader { grid-template-columns: minmax(0, 1fr); } }
+
+.toc {
+  position: sticky; top: calc(var(--header-h) + var(--s-5));
+  max-height: calc(100vh - var(--header-h) - var(--s-8));
+  overflow-y: auto;
+  font-size: var(--t-sm);
+  border-left: 1px solid var(--rule);
+  padding-left: var(--s-4);
+}
+.toc h4 {
+  font-family: var(--sans); font-size: var(--t-xs); font-weight: 600;
+  letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-400);
+  margin-bottom: var(--s-3);
+}
+.toc a {
+  display: block; padding: var(--s-1) 0;
+  color: var(--ink-500); text-decoration: none; line-height: 1.4;
+}
+.toc a:hover { color: var(--navy-700); }
+.toc a.lvl-3 { padding-left: var(--s-3); font-size: var(--t-xs); }
+@media (max-width: 1080px) { .toc { display: none; } }
+
+.reader-nav {
+  display: flex; justify-content: space-between; gap: var(--s-4);
+  margin-top: var(--s-8); padding-top: var(--s-5);
+  border-top: 1px solid var(--rule);
+}
+.reader-nav a {
+  flex: 1; max-width: 22rem; padding: var(--s-4);
+  border: 1px solid var(--rule); border-radius: var(--radius);
+  text-decoration: none; color: inherit; background: #fff;
+  transition: border-color 0.14s, box-shadow 0.14s;
+}
+.reader-nav a:hover { border-color: var(--navy-300); box-shadow: var(--shadow-sm); }
+.reader-nav .dir {
+  font-size: var(--t-xs); letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--gold-700); font-weight: 600;
+}
+.reader-nav .ttl { font-family: var(--serif); margin-top: var(--s-1); line-height: 1.3; }
+.reader-nav .next { text-align: right; margin-left: auto; }

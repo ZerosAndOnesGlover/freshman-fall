@@ -1,0 +1,82 @@
+/* ─────────────────────────────────────────────────────────────────────
+   Institute of Science & Technology — design tokens
+
+   Deep navy and antique gold, set in a serif display face. The palette is
+   deliberately narrow: two brand colours, a warm paper neutral, and a small
+   set of semantic accents. Everything else is a tint of those.
+   ───────────────────────────────────────────────────────────────────── */
+
+:root {
+  /* Brand */
+  --navy-900: #0a1730;
+  --navy-800: #10213f;
+  --navy-700: #162c52;
+  --navy-600: #1d3a68;
+  --navy-500: #2a4d84;
+  --navy-300: #6b86ad;
+  --navy-100: #d6dfec;
+  --navy-050: #eef2f8;
+
+  --gold-700: #8a6a1f;
+  --gold-600: #a8842e;
+  --gold-500: #c19a3e;
+  --gold-400: #d4b45f;
+  --gold-200: #ecdcae;
+  --gold-050: #faf4e4;
+
+  /* Paper neutrals — warm, never pure grey */
+  --paper:     #fbfaf7;
+  --paper-alt: #f4f2ec;
+  --rule:      #e3ded3;
+  --rule-soft: #ece8de;
+
+  --ink-900: #1a1a17;
+  --ink-700: #3d3c37;
+  --ink-500: #6b6960;
+  --ink-400: #8d8a80;
+  --ink-300: #b3afa3;
+
+  /* Semantic */
+  --green-600: #2f6b46;
+  --green-050: #e8f2ea;
+  --red-600:   #99392f;
+  --red-050:   #f8ebe8;
+  --amber-600: #9a6d16;
+  --amber-050: #fbf1dc;
+  --blue-600:  #2a4d84;
+  --blue-050:  #e9eef7;
+
+  /* Type */
+  --serif: 'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua',
+           Georgia, 'Times New Roman', serif;
+  --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Roboto,
+          'Helvetica Neue', Arial, sans-serif;
+  --mono: 'SF Mono', 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace;
+
+  /* A modular scale at 1.25 */
+  --t-xs:   0.75rem;
+  --t-sm:   0.8125rem;
+  --t-base: 0.9375rem;
+  --t-md:   1.0625rem;
+  --t-lg:   1.375rem;
+  --t-xl:   1.75rem;
+  --t-2xl:  2.25rem;
+  --t-3xl:  3rem;
+  --t-4xl:  3.75rem;
+
+  /* Space — a 4px grid */
+  --s-1: 0.25rem;  --s-2: 0.5rem;   --s-3: 0.75rem;  --s-4: 1rem;
+  --s-5: 1.5rem;   --s-6: 2rem;     --s-7: 2.5rem;   --s-8: 3.5rem;
+  --s-9: 5rem;     --s-10: 7rem;
+
+  --radius:    3px;
+  --radius-lg: 5px;
+
+  /* Shadows: barely there. Printed matter, not floating glass. */
+  --shadow-sm: 0 1px 2px rgba(10, 23, 48, 0.06);
+  --shadow:    0 1px 3px rgba(10, 23, 48, 0.08), 0 6px 16px -8px rgba(10, 23, 48, 0.12);
+  --shadow-lg: 0 2px 6px rgba(10, 23, 48, 0.08), 0 24px 48px -20px rgba(10, 23, 48, 0.24);
+
+  --header-h: 3.75rem;
+  --measure: 68ch;
+}

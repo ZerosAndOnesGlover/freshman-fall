@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Local database — rebuilt from the vault with `npm run import`
+server/data/*.db
+server/data/*.db-journal
+server/data/*.db-wal
+server/data/*.db-shm
+
+# Uploaded submission files — student work, not vault content
+server/uploads/*
+!server/uploads/.gitkeep
+
+# Build output
+web/dist/
+.vite/
+
+# Local secrets
+.env

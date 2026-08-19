@@ -1,0 +1,194 @@
+/* ─── Home hero ─────────────────────────────────────────────────────── */
+
+.hero {
+  background: var(--navy-900);
+  color: #fff;
+  padding: var(--s-10) 0 var(--s-9);
+  position: relative;
+  overflow: hidden;
+  border-bottom: 3px solid var(--gold-500);
+}
+/* A faint engraved grid, the way a university crest sits on watermarked paper. */
+.hero::before {
+  content: ''; position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.028) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.028) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(ellipse 90% 70% at 70% 0%, #000 20%, transparent 75%);
+}
+.hero::after {
+  content: ''; position: absolute; right: -8%; top: -30%;
+  width: 46rem; height: 46rem; border-radius: 50%;
+  background: radial-gradient(circle, rgba(193,154,62,0.14), transparent 62%);
+  pointer-events: none;
+}
+.hero .wrap { position: relative; z-index: 1; }
+.hero h1 {
+  color: #fff;
+  font-size: clamp(2.5rem, 5.6vw, var(--t-4xl));
+  max-width: 18ch;
+  margin-top: var(--s-4);
+}
+.hero .lede { color: rgba(255,255,255,0.76); max-width: 54ch; margin-top: var(--s-5); font-size: var(--t-md); }
+.hero-actions { display: flex; gap: var(--s-3); flex-wrap: wrap; margin-top: var(--s-6); }
+
+.hero-figures {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--s-5);
+  margin-top: var(--s-8); padding-top: var(--s-6);
+  border-top: 1px solid rgba(255,255,255,0.14);
+}
+.hero-figures .n {
+  font-family: var(--serif); font-size: var(--t-xl); color: var(--gold-400);
+  font-variant-numeric: tabular-nums;
+}
+.hero-figures .l {
+  font-size: var(--t-xs); letter-spacing: 0.1em; text-transform: uppercase;
+  color: rgba(255,255,255,0.55); margin-top: var(--s-1);
+}
+@media (max-width: 700px) { .hero-figures { grid-template-columns: repeat(2, 1fr); } }
+
+/* ─── Login ─────────────────────────────────────────────────────────── */
+
+.login-split { display: grid; grid-template-columns: 1fr 1fr; min-height: 100vh; }
+@media (max-width: 900px) { .login-split { grid-template-columns: 1fr; } }
+
+.login-aside {
+  background: var(--navy-900); color: #fff;
+  padding: var(--s-9) var(--s-8);
+  display: flex; flex-direction: column; justify-content: space-between;
+  position: relative; overflow: hidden;
+}
+.login-aside::after {
+  content: ''; position: absolute; left: -20%; bottom: -30%;
+  width: 34rem; height: 34rem; border-radius: 50%;
+  background: radial-gradient(circle, rgba(193,154,62,0.16), transparent 62%);
+}
+.login-aside > * { position: relative; z-index: 1; }
+.login-aside a { color: inherit; text-decoration: none; }
+.login-aside h2 { color: #fff; font-size: var(--t-2xl); max-width: 16ch; }
+@media (max-width: 900px) { .login-aside { padding: var(--s-6) var(--s-5); } }
+
+.login-main { display: grid; place-items: center; padding: var(--s-8) var(--s-5); }
+.login-form { width: 100%; max-width: 22rem; }
+
+.cred-card {
+  margin-top: var(--s-6); padding: var(--s-4);
+  background: var(--paper-alt); border: 1px dashed var(--rule);
+  border-radius: var(--radius); font-size: var(--t-xs);
+}
+.cred-card button {
+  background: none; border: 0; padding: 0; cursor: pointer;
+  color: var(--navy-600); font-family: var(--mono); font-size: var(--t-xs);
+  text-decoration: underline; text-underline-offset: 2px;
+}
+
+/* ─── Catalogue ─────────────────────────────────────────────────────── */
+
+.term-band {
+  display: flex; align-items: baseline; gap: var(--s-3);
+  margin-bottom: var(--s-4); padding-bottom: var(--s-3);
+  border-bottom: 2px solid var(--navy-900);
+}
+.term-band h2 { font-size: var(--t-lg); }
+
+/* ─── Calendar ──────────────────────────────────────────────────────── */
+
+.cal-month { margin-bottom: var(--s-7); }
+.cal-month > h3 {
+  font-size: var(--t-md); padding-bottom: var(--s-2);
+  border-bottom: 1px solid var(--rule); margin-bottom: var(--s-3);
+}
+.cal-row {
+  display: grid; grid-template-columns: 5.5rem 1fr auto; gap: var(--s-4);
+  padding: var(--s-3) var(--s-2); border-bottom: 1px solid var(--rule-soft);
+  align-items: baseline;
+}
+.cal-row:hover { background: var(--paper-alt); }
+.cal-date { font-family: var(--mono); font-size: var(--t-sm); color: var(--gold-700); font-weight: 600; }
+.cal-row.today { background: var(--gold-050); box-shadow: inset 3px 0 0 var(--gold-500); }
+
+/* ─── Week accordion on a course page ───────────────────────────────── */
+
+.week-item { border-bottom: 1px solid var(--rule-soft); }
+.week-item:last-child { border-bottom: 0; }
+.week-btn {
+  width: 100%; display: flex; align-items: center; gap: var(--s-4);
+  padding: var(--s-4) var(--s-5); background: none; border: 0;
+  text-align: left; cursor: pointer; transition: background 0.12s;
+}
+.week-btn:hover { background: var(--paper-alt); }
+.week-num {
+  width: 2.5rem; height: 2.5rem; flex-shrink: 0; border-radius: 50%;
+  display: grid; place-items: center;
+  background: var(--navy-050); color: var(--navy-700);
+  font-family: var(--serif); font-size: var(--t-sm); font-weight: 600;
+}
+.week-btn[aria-expanded="true"] .week-num { background: var(--navy-900); color: var(--gold-400); }
+.week-body { padding: 0 var(--s-5) var(--s-5) calc(var(--s-5) + 3.5rem); }
+.week-body h5 {
+  font-family: var(--sans); font-size: var(--t-xs); font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-400);
+  margin: var(--s-4) 0 var(--s-2);
+}
+
+.file-list { list-style: none; padding: 0; margin: 0; }
+.file-list li { border-bottom: 1px solid var(--rule-soft); }
+.file-list li:last-child { border-bottom: 0; }
+.file-list a {
+  display: flex; align-items: center; gap: var(--s-3);
+  padding: var(--s-2) 0; text-decoration: none; color: var(--ink-900);
+  font-size: var(--t-sm);
+}
+.file-list a:hover { color: var(--navy-600); }
+.file-ext {
+  font-family: var(--mono); font-size: 0.625rem; font-weight: 700;
+  letter-spacing: 0.04em; text-transform: uppercase;
+  padding: 0.15rem 0.35rem; border-radius: 2px;
+  background: var(--paper-alt); color: var(--ink-500); flex-shrink: 0;
+  min-width: 2.4rem; text-align: center;
+}
+
+/* ─── Submission panel ──────────────────────────────────────────────── */
+
+.dropzone {
+  border: 2px dashed var(--rule); border-radius: var(--radius-lg);
+  padding: var(--s-6); text-align: center; background: var(--paper-alt);
+  transition: border-color 0.14s, background 0.14s;
+  cursor: pointer;
+}
+.dropzone:hover, .dropzone.over { border-color: var(--gold-500); background: var(--gold-050); }
+.dropzone input { display: none; }
+
+.upload-row {
+  display: flex; align-items: center; gap: var(--s-3);
+  padding: var(--s-3); border: 1px solid var(--rule); border-radius: var(--radius);
+  background: #fff; font-size: var(--t-sm);
+}
+.upload-row + .upload-row { margin-top: var(--s-2); }
+
+/* ─── Gradebook ─────────────────────────────────────────────────────── */
+
+.component-head {
+  display: flex; align-items: baseline; justify-content: space-between;
+  gap: var(--s-4); padding: var(--s-4) var(--s-5);
+  background: var(--paper-alt); border-bottom: 1px solid var(--rule);
+}
+.component-head h4 { font-size: var(--t-base); font-family: var(--sans); font-weight: 700; }
+
+.transcript-term {
+  border: 1px solid var(--rule); border-radius: var(--radius);
+  background: #fff; margin-bottom: var(--s-5);
+}
+.transcript-term > header {
+  padding: var(--s-4) var(--s-5); background: var(--navy-900); color: #fff;
+  display: flex; justify-content: space-between; align-items: baseline; gap: var(--s-4);
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+.transcript-term > header h3 { color: #fff; font-size: var(--t-md); }
+
+@media print {
+  .masthead, .subnav, .footer, .no-print { display: none !important; }
+  body { background: #fff; }
+  .card { box-shadow: none; border-color: #ccc; }
+}
