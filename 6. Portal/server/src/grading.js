@@ -115,7 +115,7 @@ export function transcript(userId) {
       JOIN courses c ON c.id = e.course_id
       LEFT JOIN terms t ON t.id = c.term_id
      WHERE e.user_id = ? AND e.status = 'enrolled'
-     ORDER BY t.year_num, t.semester DESC, c.code
+     ORDER BY t.year_num, CASE t.semester WHEN 'Fall' THEN 0 ELSE 1 END, c.code
   `).all(userId);
 
   const rows = courses.map((c) => {

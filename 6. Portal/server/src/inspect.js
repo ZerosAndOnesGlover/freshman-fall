@@ -18,7 +18,7 @@ rule('Courses by term');
 table(db.prepare(`
   SELECT t.label AS term, COUNT(c.id) AS courses, SUM(c.credits) AS credits
   FROM terms t LEFT JOIN courses c ON c.term_id = t.id
-  GROUP BY t.id ORDER BY t.year_num, t.semester DESC
+  GROUP BY t.id ORDER BY t.year_num, CASE t.semester WHEN 'Fall' THEN 0 ELSE 1 END
 `).all());
 
 rule('Assessment coverage');

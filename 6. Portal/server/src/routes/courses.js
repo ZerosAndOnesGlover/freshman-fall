@@ -23,7 +23,7 @@ router.get('/mine', requireAuth, (req, res) => {
       LEFT JOIN enrollments e ON e.course_id = c.id AND e.user_id = ? AND e.status = 'enrolled'
       LEFT JOIN course_staff cs ON cs.course_id = c.id AND cs.user_id = ?
      WHERE e.id IS NOT NULL OR cs.id IS NOT NULL
-     ORDER BY t.is_current DESC, t.year_num DESC, t.semester DESC, c.code
+     ORDER BY t.is_current DESC, t.year_num DESC, CASE t.semester WHEN 'Spring' THEN 0 ELSE 1 END, c.code
   `).all(req.user.id, req.user.id);
   res.json(rows);
 });

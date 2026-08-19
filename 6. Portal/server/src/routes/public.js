@@ -5,7 +5,9 @@ import { db } from '../db.js';
 const router = express.Router();
 
 router.get('/institution', (_req, res) => {
-  const terms = db.prepare('SELECT * FROM terms ORDER BY year_num, semester DESC').all();
+  const terms = db.prepare(
+    "SELECT * FROM terms ORDER BY year_num, CASE semester WHEN 'Fall' THEN 0 ELSE 1 END"
+  ).all();
   const stats = {
     courses: db.prepare('SELECT COUNT(*) AS n FROM courses').get().n,
     lectures: db.prepare('SELECT COUNT(*) AS n FROM lectures').get().n,
@@ -41,7 +43,7 @@ router.get('/catalog', (_req, res) => {
            (SELECT COUNT(*) FROM weeks w WHERE w.course_id = c.id) AS week_count,
            (SELECT COUNT(*) FROM lectures l WHERE l.course_id = c.id) AS lecture_count
       FROM courses c LEFT JOIN terms t ON t.id = c.term_id
-     ORDER BY t.year_num, t.semester DESC, c.code
+     ORDER BY t.year_num, CASE t.semester WHEN 'Fall' THEN 0 ELSE 1 END, c.code
   `).all();
 
   const terms = [];
