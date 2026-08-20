@@ -17,6 +17,7 @@ import Course from './pages/portal/Course.jsx';
 import Lecture from './pages/portal/Lecture.jsx';
 import Material from './pages/portal/Material.jsx';
 import Coursework from './pages/portal/Coursework.jsx';
+import Timetable from './pages/portal/Timetable.jsx';
 import Assessment from './pages/portal/Assessment.jsx';
 import Grades from './pages/portal/Grades.jsx';
 import Transcript from './pages/portal/Transcript.jsx';
@@ -92,6 +93,7 @@ export default function App() {
             <Route path="courses/:id" element={<Course />} />
             <Route path="lectures/:id" element={<Lecture />} />
             <Route path="materials/:id" element={<Material />} />
+            <Route path="timetable" element={<Timetable />} />
             <Route path="work" element={<Coursework />} />
             <Route path="work/:id" element={<Assessment />} />
             <Route path="grades" element={<Grades />} />

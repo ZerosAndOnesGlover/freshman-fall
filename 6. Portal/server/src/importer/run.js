@@ -19,7 +19,7 @@ import { hashPassword } from '../auth.js';
 import {
   parseGradebook, parseAssessmentCalendar, parseMasterTimetable, parseOfficeHours,
   parseLecture, parseWeekSummary, parseAcademicCalendar, parseFrontmatter,
-  classifyAssessment, stripMarkup, parseGradeScale,
+  classifyAssessment, stripMarkup, parseGradeScale, parseTimeRange,
 } from './parsers.js';
 import {
   YEAR_DIRS, rel, readIfExists, listDirs, listFiles,
@@ -222,12 +222,15 @@ const upsertWeek = db.prepare(`
 `);
 
 const upsertLecture = db.prepare(`
-  INSERT INTO lectures (course_id, week_id, seq, code, title, subtitle, date_text, date_iso, path)
-  VALUES (@courseId, @weekId, @seq, @code, @title, @subtitle, @dateText, @dateIso, @path)
+  INSERT INTO lectures (course_id, week_id, seq, code, title, subtitle, date_text, date_iso,
+                        start_time, end_time, path)
+  VALUES (@courseId, @weekId, @seq, @code, @title, @subtitle, @dateText, @dateIso,
+          @startTime, @endTime, @path)
   ON CONFLICT (course_id, path) DO UPDATE SET
     week_id = excluded.week_id, seq = excluded.seq, code = excluded.code,
     title = excluded.title, subtitle = excluded.subtitle,
-    date_text = excluded.date_text, date_iso = excluded.date_iso
+    date_text = excluded.date_text, date_iso = excluded.date_iso,
+    start_time = excluded.start_time, end_time = excluded.end_time
 `);
 
 const upsertMaterial = db.prepare(`
@@ -302,10 +305,12 @@ for (const y of YEAR_DIRS) {
 
             if (kind === 'lecture' && ext === 'md') {
               const parsed = parseLecture(readIfExists(full) || '', file);
+              const time = parseTimeRange(parsed.dateText);
               upsertLecture.run({
                 courseId: cid, weekId, seq: parsed.seq ?? 0, code: parsed.code,
                 title: parsed.title, subtitle: parsed.subtitle,
-                dateText: parsed.dateText, dateIso: parsed.dateIso, path: relPath,
+                dateText: parsed.dateText, dateIso: parsed.dateIso,
+                startTime: time.start, endTime: time.end, path: relPath,
               });
               const lid = db.prepare('SELECT id FROM lectures WHERE course_id = ? AND path = ?')
                 .get(cid, relPath).id;

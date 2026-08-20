@@ -198,3 +198,73 @@
   body { background: #fff; }
   .card { box-shadow: none; border-color: #ccc; }
 }
+
+/* ─── Timetable ─────────────────────────────────────────────────────── */
+
+.week-strip {
+  display: flex; align-items: center; gap: var(--s-2);
+  background: #fff; border: 1px solid var(--rule); border-radius: var(--radius);
+  padding: var(--s-2);
+}
+.week-days { display: grid; grid-template-columns: repeat(7, 1fr); gap: var(--s-1); flex: 1; min-width: 0; }
+
+.week-day {
+  display: flex; flex-direction: column; align-items: center; gap: 2px;
+  padding: var(--s-2) var(--s-1);
+  border: 1px solid transparent; border-radius: var(--radius);
+  background: none; cursor: pointer;
+  transition: background 0.12s, border-color 0.12s;
+}
+.week-day:hover { background: var(--paper-alt); }
+.week-day .wd {
+  font-size: var(--t-xs); letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--ink-400); font-weight: 600;
+}
+.week-day .dd { font-family: var(--serif); font-size: var(--t-md); color: var(--navy-900); }
+.week-day.is-today .dd { color: var(--gold-700); font-weight: 700; }
+.week-day.is-selected { background: var(--navy-900); border-color: var(--navy-900); }
+.week-day.is-selected .wd { color: var(--gold-400); }
+.week-day.is-selected .dd { color: #fff; }
+
+.week-day .dots { display: flex; gap: 3px; height: 5px; margin-top: 2px; }
+.dot { width: 5px; height: 5px; border-radius: 50%; display: block; }
+.dot-lecture { background: var(--navy-500); }
+.dot-due { background: var(--gold-500); }
+.week-day.is-selected .dot-lecture { background: var(--navy-100); }
+
+/* The day's lectures, as a timeline. */
+.day-list { list-style: none; margin: 0; padding: 0; }
+.day-item {
+  display: grid; grid-template-columns: 4.5rem 1fr; gap: var(--s-4);
+  padding: var(--s-4) 0;
+  border-top: 1px solid var(--rule-soft);
+  position: relative;
+}
+.day-item:first-child { border-top: 0; }
+.day-time { text-align: right; display: flex; flex-direction: column; gap: 2px; }
+.day-time .mono { font-size: var(--t-sm); font-weight: 600; color: var(--navy-800); }
+.day-body { min-width: 0; }
+
+.day-item.is-past { opacity: 0.55; }
+.day-item.is-now {
+  background: var(--gold-050);
+  box-shadow: inset 3px 0 0 var(--gold-500);
+  border-radius: var(--radius);
+  padding-left: var(--s-4);
+  margin-left: calc(var(--s-4) * -1);
+}
+
+@media (max-width: 560px) {
+  .day-item { grid-template-columns: 3.5rem 1fr; gap: var(--s-3); }
+  .week-day .wd { font-size: 0.625rem; }
+}
+
+/* Today's lectures, as shown on the dashboard. */
+.today-row {
+  display: grid; grid-template-columns: 3.5rem 1fr; gap: var(--s-3);
+  padding: var(--s-3) 0; border-bottom: 1px solid var(--rule-soft);
+  align-items: baseline;
+}
+.today-row:last-child { border-bottom: 0; }
+.today-row.is-now { background: var(--gold-050); box-shadow: inset 3px 0 0 var(--gold-500); }
+.today-row.is-past { opacity: 0.5; }

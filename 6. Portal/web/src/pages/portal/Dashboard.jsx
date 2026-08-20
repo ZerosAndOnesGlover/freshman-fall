@@ -4,7 +4,8 @@ import { useApi } from '../../useApi.js';
 import { useAuth } from '../../auth.jsx';
 import { Loading, ErrorNote } from '../../components/Chrome.jsx';
 import { StatTile, DueDate, StatusBadge, KindBadge, GradeDial } from '../../components/Bits.jsx';
-import { gpa, pct, formatDate, formatDateShort, daysUntil } from '../../format.js';
+import { gpa, pct, formatDate, formatDateShort, daysUntil, todayIso, weekdayName, minutesOf } from '../../format.js';
+import { useState, useEffect } from 'react';
 
 export default function Dashboard() {
   const { user } = useAuth();
@@ -24,7 +25,7 @@ export default function Dashboard() {
       <div className="page-head">
         <div className="wrap row-between row-wrap">
           <div>
-            <span className="eyebrow">{data.term?.label} · {formatDate(new Date().toISOString(), { weekday: true })}</span>
+            <span className="eyebrow">{data.term?.label} · {weekdayName(todayIso())} {formatDate(todayIso())}</span>
             <h1 style={{ marginTop: '0.5rem' }}>{greeting}, {first}.</h1>
           </div>
           <div className="small muted" style={{ textAlign: 'right' }}>
@@ -49,6 +50,8 @@ export default function Dashboard() {
 
         <div className="grid grid-sidebar">
           <div className="stack-lg">
+            <TodayPanel />
+
             <section className="card">
               <div className="card-head">
                 <h3>Coming up</h3>
@@ -198,5 +201,72 @@ function StaffDashboard({ data, user }) {
         )}
       </div>
     </>
+  );
+}
+
+
+/**
+ * Today's lectures, from the browser's own clock.
+ *
+ * The date is taken from the student's device rather than the server so that
+ * "today" means today where they are, and the panel marks which lecture is
+ * running right now.
+ */
+function TodayPanel() {
+  const [date, setDate] = useState(() => todayIso());
+  const [now, setNow] = useState(() => new Date());
+
+  useEffect(() => {
+    const tick = setInterval(() => {
+      setNow(new Date());
+      const t = todayIso();
+      setDate((prev) => (prev === t ? prev : t));   // survive midnight
+    }, 60_000);
+    return () => clearInterval(tick);
+  }, []);
+
+  const { data, loading } = useApi(() => api.timetable.day(date), [date]);
+  const minutesNow = now.getHours() * 60 + now.getMinutes();
+
+  return (
+    <section className="card">
+      <div className="card-head">
+        <h3>{weekdayName(date)}&rsquo;s lectures</h3>
+        <Link to="/portal/timetable" className="small">Full timetable →</Link>
+      </div>
+      {loading && <Loading />}
+      {data && (data.lectures.length ? (
+        <div style={{ padding: '0.25rem 1.5rem 1rem' }}>
+          {data.lectures.map((l) => {
+            const start = minutesOf(l.start_time);
+            const end = minutesOf(l.end_time) ?? (start !== null ? start + 50 : null);
+            const state = start === null ? ''
+              : minutesNow >= start && minutesNow <= end ? ' is-now'
+              : minutesNow > end ? ' is-past' : '';
+            return (
+              <div key={l.id} className={`today-row${state}`}>
+                <span className="mono small" style={{ fontWeight: 600 }}>{l.start_time || '—'}</span>
+                <div>
+                  <div className="row" style={{ gap: '0.5rem' }}>
+                    <span className="mono tiny" style={{ color: 'var(--gold-700)', fontWeight: 600 }}>
+                      {l.course_code}
+                    </span>
+                    {state === ' is-now' && <span className="badge badge-gold">On now</span>}
+                  </div>
+                  <Link to={`/portal/lectures/${l.id}`}
+                    style={{ display: 'block', textDecoration: 'none', color: 'inherit', marginTop: '0.15rem' }}>
+                    {l.title}
+                  </Link>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      ) : (
+        <div className="empty" style={{ padding: '2rem 1.5rem' }}>
+          No lectures scheduled for today.
+        </div>
+      ))}
+    </section>
   );
 }

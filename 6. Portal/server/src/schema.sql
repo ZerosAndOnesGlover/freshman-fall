@@ -105,6 +105,8 @@ CREATE TABLE IF NOT EXISTS lectures (
   subtitle   TEXT,
   date_text  TEXT,                          -- "Wednesday 26 August 2026 · 09:00-09:50"
   date_iso   TEXT,
+  start_time TEXT,                         -- "09:00", parsed out of date_text
+  end_time   TEXT,                         -- "09:50"
   path       TEXT NOT NULL,                 -- vault-relative
   UNIQUE (course_id, path)
 );

@@ -18,6 +18,7 @@ import assessmentRoutes from './routes/assessments.js';
 import gradeRoutes from './routes/grades.js';
 import instructorRoutes from './routes/instructor.js';
 import dashboardRoutes from './routes/dashboard.js';
+import timetableRoutes from './routes/timetable.js';
 
 const PORT = Number(process.env.PORT) || 4000;
 const app = express();
@@ -39,6 +40,7 @@ app.get('/api/health', (_req, res) => {
 app.use('/api/auth', authRoutes);
 app.use('/api/public', publicRoutes);
 app.use('/api/dashboard', dashboardRoutes);
+app.use('/api/timetable', timetableRoutes);
 app.use('/api/courses', courseRoutes);
 app.use('/api/lectures', lectureRouter);
 app.use('/api/materials', materialRouter);

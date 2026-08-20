@@ -84,3 +84,46 @@ export const KIND_LABEL = {
 };
 
 export const kindLabel = (k) => KIND_LABEL[k] || 'Assessment';
+
+/**
+ * The local calendar date as YYYY-MM-DD.
+ *
+ * Deliberately not `toISOString().slice(0,10)`: that converts to UTC first, so
+ * anyone west of Greenwich would see "today" flip a day early in the evening.
+ * The timetable is driven by the student's own clock, so it must use local
+ * date parts.
+ */
+export function todayIso(date = new Date()) {
+  const p = (n) => String(n).padStart(2, '0');
+  return `${date.getFullYear()}-${p(date.getMonth() + 1)}-${p(date.getDate())}`;
+}
+
+export function addDays(iso, days) {
+  const [y, m, d] = iso.split('-').map(Number);
+  const dt = new Date(y, m - 1, d);
+  dt.setDate(dt.getDate() + days);
+  return todayIso(dt);
+}
+
+/** Monday of the week containing `iso`. */
+export function startOfWeek(iso) {
+  const [y, m, d] = iso.split('-').map(Number);
+  const dt = new Date(y, m - 1, d);
+  const shift = (dt.getDay() + 6) % 7;   // Sunday = 0 -> 6
+  dt.setDate(dt.getDate() - shift);
+  return todayIso(dt);
+}
+
+export function weekdayName(iso, short = false) {
+  const [y, m, d] = iso.split('-').map(Number);
+  const names = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  const n = names[new Date(y, m - 1, d).getDay()];
+  return short ? n.slice(0, 3) : n;
+}
+
+/** "09:00" -> minutes since midnight, for ordering and "now" comparisons. */
+export function minutesOf(hhmm) {
+  if (!hhmm) return null;
+  const [h, m] = hhmm.split(':').map(Number);
+  return h * 60 + m;
+}

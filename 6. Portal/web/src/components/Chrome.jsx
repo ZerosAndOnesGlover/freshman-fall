@@ -29,6 +29,7 @@ const PUBLIC_NAV = [
 
 const PORTAL_NAV = [
   { to: '/portal', label: 'Dashboard', end: true },
+  { to: '/portal/timetable', label: 'Timetable' },
   { to: '/portal/courses', label: 'My Courses' },
   { to: '/portal/work', label: 'Coursework' },
   { to: '/portal/grades', label: 'Grades' },
@@ -36,6 +37,7 @@ const PORTAL_NAV = [
 
 const STAFF_NAV = [
   { to: '/portal', label: 'Dashboard', end: true },
+  { to: '/portal/timetable', label: 'Timetable' },
   { to: '/portal/teaching', label: 'Teaching' },
   { to: '/portal/marking', label: 'Marking' },
 ];

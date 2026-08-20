@@ -539,6 +539,18 @@ export function parseAcademicCalendar(text) {
  *   | A- | 3.7 | 90-92% | Excellent |      (hyphen, en dash or minus accepted)
  *   | F  | 0.0 | < 60%  | Failing   |
  */
+/**
+ * "Wednesday 26 August 2026 · 09:00–09:50 · Week 1" -> { start: "09:00", end: "09:50" }
+ * The dash may be an en dash, an em dash or a hyphen.
+ */
+export function parseTimeRange(dateText) {
+  if (!dateText) return { start: null, end: null };
+  const m = /(\d{1,2}:\d{2})\s*[\u2013\u2014-]\s*(\d{1,2}:\d{2})/.exec(dateText);
+  if (m) return { start: m[1].padStart(5, '0'), end: m[2].padStart(5, '0') };
+  const single = /(\d{1,2}:\d{2})/.exec(dateText);
+  return { start: single ? single[1].padStart(5, '0') : null, end: null };
+}
+
 export function parseGradeScale(text) {
   const re = /^\|\s*([A-F][+\u2212\u2013-]?)\s*\|\s*([0-9.]+)\s*\|\s*(?:(\d+)\s*[\u2013\u2212-]\s*(\d+)|<\s*(\d+))\s*%?\s*\|\s*([^|]*)\|/gm;
   const rows = [];

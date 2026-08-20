@@ -52,6 +52,13 @@ export const api = {
 
   dashboard: () => get('/dashboard'),
 
+  timetable: {
+    day: (date) => get(`/timetable/day${date ? `?date=${date}` : ''}`),
+    range: (from, to) => get(`/timetable/range?from=${from}&to=${to}`),
+    next: (from) => get(`/timetable/next?from=${from}`),
+    pattern: () => get('/timetable/pattern'),
+  },
+
   courses: {
     mine: () => get('/courses/mine'),
     one: (id) => get(`/courses/${id}`),
