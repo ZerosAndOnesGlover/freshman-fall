@@ -48,7 +48,7 @@ export default function Assessment() {
         <div className="grid grid-sidebar">
           <div>
             {data.brief_md
-              ? <Markdown source={data.brief_md} dropFirstHeading />
+              ? <Markdown source={data.brief_md} dropFirstHeading links={data.brief_links} />
               : (
                 <div className="card">
                   <div className="empty">

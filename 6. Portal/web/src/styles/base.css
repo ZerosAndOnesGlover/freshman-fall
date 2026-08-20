@@ -81,6 +81,8 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: var(--s-6) 0; }
 .wrap { width: 100%; max-width: 1160px; margin: 0 auto; padding: 0 var(--s-5); }
 .wrap-narrow { max-width: 820px; }
 .wrap-wide { max-width: 1360px; }
+/* Sized so the measure plus a table of contents fills it with no dead gutter. */
+.wrap-reader { max-width: 1060px; }
 
 .stack > * + * { margin-top: var(--s-4); }
 .stack-lg > * + * { margin-top: var(--s-6); }
@@ -95,8 +97,16 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: var(--s-6) 0; }
 .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-.grid-sidebar { grid-template-columns: minmax(0, 1fr) 20rem; align-items: start; }
-.grid-sidebar-left { grid-template-columns: 16rem minmax(0, 1fr); align-items: start; }
+.grid-sidebar { grid-template-columns: minmax(0, 1fr) minmax(0, 20rem); align-items: start; }
+.grid-sidebar-left { grid-template-columns: minmax(0, 16rem) minmax(0, 1fr); align-items: start; }
+
+/*
+ * A grid track will not shrink below the intrinsic width of its contents
+ * unless it is told it may. Without this, one wide table or one long line of
+ * code inside a card pushes the whole column — and then the page — sideways.
+ * Everything that scrolls (tables, <pre>) does so inside its own box.
+ */
+.grid > * { min-width: 0; }
 
 @media (max-width: 1000px) {
   .grid-sidebar, .grid-sidebar-left, .grid-4 { grid-template-columns: minmax(0, 1fr); }
@@ -106,8 +116,14 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: var(--s-6) 0; }
   .grid-2, .grid-3 { grid-template-columns: minmax(0, 1fr); }
 }
 
-.section { padding: var(--s-8) 0; }
-.section-tight { padding: var(--s-6) 0; }
+/*
+ * `padding-block`, not the `padding` shorthand: these classes are combined
+ * with `.wrap` ("wrap section"), and a shorthand would reset the wrap's
+ * horizontal padding to 0, letting text run into the edge of the screen on
+ * narrow viewports.
+ */
+.section { padding-block: var(--s-8); }
+.section-tight { padding-block: var(--s-6); }
 
 /* ─── Type utilities ────────────────────────────────────────────────── */
 

@@ -13,8 +13,13 @@
   line-height: 1.72;
   color: var(--ink-900);
   max-width: var(--measure);
+  /* Lecture notes cite bare URLs, which are a single unbreakable token and
+     will push a phone-width page sideways on their own. */
+  overflow-wrap: break-word;
 }
+.prose a { overflow-wrap: anywhere; }
 .prose-wide { max-width: none; }
+.grid-sidebar .prose { max-width: none; }
 
 .prose > *:first-child { margin-top: 0; }
 
@@ -141,8 +146,30 @@
 
 /* ─── Reader chrome ─────────────────────────────────────────────────── */
 
-.reader { display: grid; grid-template-columns: minmax(0, 1fr) 15rem; gap: var(--s-8); align-items: start; }
-@media (max-width: 1080px) { .reader { grid-template-columns: minmax(0, 1fr); } }
+/*
+ * Reading layout.
+ *
+ * The gutter is closed by narrowing the *container* (`.wrap-reader`) rather
+ * than by capping the article. Previously the wrap was 1160px wide, the grid
+ * gave the article an 880px track, and `.prose` capped itself at 68ch inside
+ * that — stranding ~200px of empty space between the text and the contents
+ * list. Now the wrap is sized so that measure + contents fills it exactly,
+ * and the article fills its track.
+ */
+.reader {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 15rem;
+  gap: var(--s-7);
+  align-items: start;
+}
+.reader > * { min-width: 0; }
+/* The grid column owns the measure here, so the article fills its track. */
+.reader .prose { max-width: none; }
+
+@media (max-width: 1080px) {
+  .reader { grid-template-columns: minmax(0, 1fr); }
+  .reader .prose { max-width: var(--measure); }
+}
 
 .toc {
   position: sticky; top: calc(var(--header-h) + var(--s-5));

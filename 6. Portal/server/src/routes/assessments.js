@@ -7,6 +7,7 @@ import multer from 'multer';
 import { db } from '../db.js';
 import { requireAuth, teaches, isEnrolled } from '../auth.js';
 import { readVaultFile } from '../vault.js';
+import { resolveWikilinks } from '../links.js';
 import { UPLOAD_DIR } from '../paths.js';
 
 const router = express.Router();
@@ -97,6 +98,7 @@ router.get('/:id', requireAuth, (req, res) => {
   if (a.doc_path) {
     const file = readVaultFile(a.doc_path);
     a.brief_md = file ? file.text : null;
+    a.brief_links = file ? resolveWikilinks(file.text, a.course_id) : {};
   }
 
   a.submission = db.prepare(

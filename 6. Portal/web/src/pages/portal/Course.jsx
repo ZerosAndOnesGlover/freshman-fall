@@ -164,7 +164,7 @@ function WeekBody({ courseId, weekNum, takeaway }) {
             Week overview
           </summary>
           <div style={{ marginTop: '1rem' }}>
-            <Markdown source={data.readme} className="prose prose-wide" />
+            <Markdown source={data.readme} className="prose prose-wide" links={data.readme_links} />
           </div>
         </details>
       )}

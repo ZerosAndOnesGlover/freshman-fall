@@ -85,7 +85,7 @@ export function Masthead() {
             <NavLink to="/portal/transcript" className={({ isActive }) => (isActive ? 'active' : undefined)}>
               Transcript
             </NavLink>
-            <NavLink to="/" className="grow" style={{ textAlign: 'right' }}>
+            <NavLink to="/" style={{ marginLeft: 'auto', whiteSpace: 'nowrap' }}>
               Public site ↗
             </NavLink>
           </div>

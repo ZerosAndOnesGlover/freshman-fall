@@ -1,6 +1,7 @@
 /** Everything the public site shows — no sign-in required. */
 import express from 'express';
 import { db } from '../db.js';
+import { resolveWikilinks } from '../links.js';
 
 const router = express.Router();
 
@@ -30,7 +31,7 @@ router.get('/pages', (_req, res) => {
 router.get('/pages/:slug', (req, res) => {
   const page = db.prepare('SELECT * FROM pages WHERE slug = ?').get(req.params.slug);
   if (!page) return res.status(404).json({ error: 'No such page' });
-  res.json(page);
+  res.json({ ...page, links: resolveWikilinks(page.body_md) });
 });
 
 /** The full four-year catalogue, grouped by term. */

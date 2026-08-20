@@ -6,7 +6,8 @@
  * highlight.js the code. Math is extracted BEFORE marked runs, because marked
  * would otherwise mangle backslashes and underscores inside a formula.
  */
-import { useMemo, useEffect, useRef } from 'react';
+import { useMemo, useEffect, useRef, useCallback } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { marked } from 'marked';
 import katex from 'katex';
 import hljs from 'highlight.js/lib/common';
@@ -68,6 +69,41 @@ export function slug(text) {
     .replace(/^-|-$/g, '');
 }
 
+/** Where a resolved wikilink target should point. */
+function linkHref(hit) {
+  if (hit.kind === 'lecture') return `/portal/lectures/${hit.id}`;
+  if (hit.kind === 'material') return `/portal/materials/${hit.id}`;
+  if (hit.kind === 'assessment') return `/portal/work/${hit.id}`;
+  return null;
+}
+
+/**
+ * Rewrites `[[Target]]` and `[[path/to/Target|Alias]]` into ordinary markdown
+ * links, using the map the server resolved.
+ *
+ * Only targets present in that map are rewritten. The notes also contain
+ * `[[lst[0]]` and similar array syntax that merely looks like a wikilink;
+ * those resolve to nothing and are left exactly as the author wrote them.
+ * Fenced code is skipped entirely.
+ */
+function applyWikilinks(src, links) {
+  if (!links || !Object.keys(links).length || !src.includes('[[')) return src;
+
+  let inFence = false;
+  return src.split('\n').map((line) => {
+    if (/^\s*(```|~~~)/.test(line)) { inFence = !inFence; return line; }
+    if (inFence) return line;
+    return line.replace(/\[\[([^\]\n|]+)(?:\|([^\]\n]+))?\]\]/g, (whole, target, alias) => {
+      const hit = links[target.trim()];
+      if (!hit) return whole;
+      const href = linkHref(hit);
+      if (!href) return whole;
+      const label = (alias || hit.title || target).trim();
+      return `[${label}](${href})`;
+    });
+  }).join('\n');
+}
+
 /**
  * Pull $$…$$ and $…$ out of the source, render them with KaTeX, and leave an
  * opaque placeholder behind for marked to carry through untouched.
@@ -119,10 +155,10 @@ function renderMath(tex, display) {
   }
 }
 
-export function renderMarkdown(source) {
+export function renderMarkdown(source, links = null) {
   if (!source) return { html: '', headings: [] };
 
-  const { text, store } = extractMath(source);
+  const { text, store } = extractMath(applyWikilinks(source, links));
   let html = marked.parse(text);
   html = html.replace(/%%KTX(\d+)%%/g, (_m, n) => store[Number(n)] ?? '');
 
@@ -145,9 +181,9 @@ export function renderMarkdown(source) {
  * page header — the vault puts the display title in the h2, because the h1
  * carries the lecture's position ("CS 101 · Lecture 5 (Week 1, Lecture 2)").
  */
-export function Markdown({ source, className = 'prose', dropFirstHeading = false, dropTitle = null }) {
+export function Markdown({ source, className = 'prose', dropFirstHeading = false, dropTitle = null, links = null }) {
   const { html } = useMemo(() => {
-    const r = renderMarkdown(source);
+    const r = renderMarkdown(source, links);
     if (!dropFirstHeading) return r;
     let out = r.html.replace(/^\s*<h1[^>]*>[\s\S]*?<\/h1>\s*/, '');
     if (dropTitle) {
@@ -156,9 +192,10 @@ export function Markdown({ source, className = 'prose', dropFirstHeading = false
         (norm(inner) === norm(dropTitle) ? '' : m));
     }
     return { ...r, html: out };
-  }, [source, dropFirstHeading, dropTitle]);
+  }, [source, dropFirstHeading, dropTitle, links]);
 
   const ref = useRef(null);
+  const navigate = useNavigate();
 
   // External links open in a new tab; in-page anchors keep their default.
   useEffect(() => {
@@ -170,7 +207,25 @@ export function Markdown({ source, className = 'prose', dropFirstHeading = false
     }
   }, [html]);
 
-  return <div ref={ref} className={className} dangerouslySetInnerHTML={{ __html: html }} />;
+  /*
+   * Resolved wikilinks become ordinary <a href="/portal/…"> in the rendered
+   * HTML, so they would otherwise reload the whole application. Catch them on
+   * the way out and hand them to the router instead.
+   */
+  const onClick = useCallback((event) => {
+    const a = event.target.closest?.('a');
+    if (!a) return;
+    const href = a.getAttribute('href');
+    if (!href || !href.startsWith('/')) return;
+    if (event.metaKey || event.ctrlKey || event.shiftKey || event.button !== 0) return;
+    event.preventDefault();
+    navigate(href);
+  }, [navigate]);
+
+  return (
+    <div ref={ref} className={className} onClick={onClick}
+      dangerouslySetInnerHTML={{ __html: html }} />
+  );
 }
 
 export function useHeadings(source, dropTitle = null) {

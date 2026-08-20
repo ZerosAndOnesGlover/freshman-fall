@@ -3,6 +3,7 @@ import express from 'express';
 import { db } from '../db.js';
 import { requireAuth, teaches, isEnrolled } from '../auth.js';
 import { readVaultFile, isTextFile } from '../vault.js';
+import { resolveWikilinks } from '../links.js';
 import { resolveVaultPath } from '../paths.js';
 
 const router = express.Router();
@@ -83,6 +84,7 @@ router.get('/:id/weeks/:num', (req, res) => {
   if (week.readme_path) {
     const file = readVaultFile(week.readme_path);
     week.readme = file ? file.text : null;
+    week.readme_links = file ? resolveWikilinks(file.text, courseId) : {};
   }
   res.json(week);
 });
@@ -118,6 +120,7 @@ lectureRouter.get('/:id', (req, res) => {
   res.json({
     ...lecture,
     body_md: file.text,
+    links: resolveWikilinks(file.text, lecture.course_id),
     mtime: file.mtime,
     prev: i > 0 ? siblings[i - 1] : null,
     next: i >= 0 && i < siblings.length - 1 ? siblings[i + 1] : null,
@@ -140,5 +143,5 @@ materialRouter.get('/:id', (req, res) => {
 
   const file = readVaultFile(m.path);
   if (!file) return res.status(410).json({ error: 'The source file is no longer in the vault' });
-  res.json({ ...m, body_md: file.text, mtime: file.mtime });
+  res.json({ ...m, body_md: file.text, links: resolveWikilinks(file.text, m.course_id), mtime: file.mtime });
 });

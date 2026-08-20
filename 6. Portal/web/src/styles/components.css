@@ -57,13 +57,45 @@
   border: 1px solid rgba(255, 255, 255, 0.14);
 }
 
+/*
+ * Small screens: the brand and the account sit on one row, and the navigation
+ * moves to a second row that scrolls sideways on its own. Keeping the single
+ * no-wrap row here pushed roughly 90px of the header off the side of a phone
+ * and took the whole page with it.
+ */
+@media (max-width: 820px) {
+  .masthead-inner {
+    flex-wrap: wrap;
+    height: auto;
+    padding-block: var(--s-3);
+    gap: var(--s-2) var(--s-4);
+  }
+  .masthead-user { order: 2; }
+  .nav {
+    order: 3;
+    width: 100%;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  .nav::-webkit-scrollbar { display: none; }
+  .nav a { padding-inline: var(--s-2); }
+  /* The active underline is drawn with a negative margin that only works in
+     the taller single-row header. */
+  .nav a.active::after { margin-bottom: -4px; }
+}
+
 /* ─── Sub-navigation, breadcrumbs ───────────────────────────────────── */
 
 .subnav {
   background: var(--navy-800);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
-.subnav .wrap { display: flex; gap: var(--s-1); overflow-x: auto; }
+.subnav .wrap {
+  display: flex; gap: var(--s-1);
+  overflow-x: auto; scrollbar-width: none;
+}
+.subnav .wrap::-webkit-scrollbar { display: none; }
 .subnav a {
   padding: var(--s-3) var(--s-3);
   font-size: var(--t-sm); color: rgba(255, 255, 255, 0.7);

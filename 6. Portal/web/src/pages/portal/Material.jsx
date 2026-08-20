@@ -21,7 +21,7 @@ export default function Material() {
   return (
     <>
       <div className="page-head">
-        <div className="wrap">
+        <div className="wrap wrap-reader">
           <Crumbs items={[
             { label: 'Portal', to: '/portal' },
             { label: data.course_code, to: `/portal/courses/${data.course_id}` },
@@ -40,10 +40,10 @@ export default function Material() {
         </div>
       </div>
 
-      <div className="wrap section">
+      <div className="wrap wrap-reader section">
         <div className="reader">
           <article>
-            <Markdown source={source} dropFirstHeading={!isCode} />
+            <Markdown source={source} dropFirstHeading={!isCode} links={data.links} />
           </article>
           {headings.length > 0 && (
             <aside className="toc">

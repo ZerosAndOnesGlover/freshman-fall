@@ -15,7 +15,7 @@ export default function Lecture() {
   return (
     <>
       <div className="page-head">
-        <div className="wrap">
+        <div className="wrap wrap-reader">
           <Crumbs items={[
             { label: 'Portal', to: '/portal' },
             { label: data.course_code, to: `/portal/courses/${data.course_id}` },
@@ -30,10 +30,10 @@ export default function Lecture() {
         </div>
       </div>
 
-      <div className="wrap section">
+      <div className="wrap wrap-reader section">
         <div className="reader">
           <article>
-            <Markdown source={data.body_md} dropFirstHeading dropTitle={data.title} />
+            <Markdown source={data.body_md} dropFirstHeading dropTitle={data.title} links={data.links} />
 
             <nav className="reader-nav">
               {data.prev ? (

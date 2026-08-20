@@ -19,17 +19,17 @@ export default function DocPage({ slug: fixedSlug }) {
   return (
     <>
       <div className="page-head">
-        <div className="wrap">
+        <div className="wrap wrap-reader">
           <Crumbs items={[{ label: 'Home', to: '/' }, { label: data.title }]} />
           <h1>{data.title}</h1>
           {data.summary && <p className="lede">{data.summary}</p>}
         </div>
       </div>
 
-      <div className="wrap section">
+      <div className="wrap wrap-reader section">
         <div className="reader">
           <article>
-            <Markdown source={data.body_md} dropFirstHeading />
+            <Markdown source={data.body_md} dropFirstHeading links={data.links} />
           </article>
           <aside className="toc">
             {headings.length > 0 && (

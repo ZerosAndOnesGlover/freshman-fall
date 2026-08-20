@@ -46,6 +46,7 @@ export default function Transcript() {
                 {t.gpa === null ? 'In progress' : `Term GPA ${gpa(t.gpa)}`}
               </span>
             </header>
+            <div className="table-wrap">
             <table className="table">
               <thead>
                 <tr>
@@ -69,6 +70,7 @@ export default function Transcript() {
                 ))}
               </tbody>
             </table>
+            </div>
             <div className="card-foot muted">
               {t.credits_completed} of {t.credits_enrolled} credits completed
             </div>
@@ -90,7 +92,8 @@ export default function Transcript() {
 
         <details style={{ marginTop: '2rem' }} className="no-print">
           <summary className="small" style={{ cursor: 'pointer', color: 'var(--navy-600)' }}>Grading scale</summary>
-          <table className="table" style={{ marginTop: '1rem' }}>
+          <div className="table-wrap" style={{ marginTop: '1rem' }}>
+          <table className="table">
             <thead><tr><th>Letter</th><th className="num">Points</th><th>Range</th><th>Descriptor</th></tr></thead>
             <tbody>
               {data.scale.map((b) => (
@@ -103,6 +106,7 @@ export default function Transcript() {
               ))}
             </tbody>
           </table>
+          </div>
         </details>
 
         <p className="tiny muted" style={{ marginTop: '2rem' }}>

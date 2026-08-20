@@ -108,6 +108,12 @@
 .cal-date { font-family: var(--mono); font-size: var(--t-sm); color: var(--gold-700); font-weight: 600; }
 .cal-row.today { background: var(--gold-050); box-shadow: inset 3px 0 0 var(--gold-500); }
 
+/* The three-column row cannot hold a date, a title and two badges on a phone. */
+@media (max-width: 680px) {
+  .cal-row { grid-template-columns: 1fr; gap: var(--s-1); }
+  .cal-row > :last-child { justify-self: start; }
+}
+
 /* ─── Week accordion on a course page ───────────────────────────────── */
 
 .week-item { border-bottom: 1px solid var(--rule-soft); }
