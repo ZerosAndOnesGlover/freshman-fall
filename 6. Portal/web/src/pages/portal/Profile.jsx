@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { useAuth } from '../../auth.jsx';
 import { api } from '../../api.js';
 import { useApi } from '../../useApi.js';
@@ -30,10 +30,13 @@ export default function Profile() {
           {data && (<><dt className="muted">Credits earned</dt><dd style={{ margin: 0 }}>{data.credits_earned} of 142</dd></>)}
         </dl>
 
-        <button className="btn btn-ghost" style={{ marginTop: '2rem' }}
-          onClick={async () => { await logout(); nav('/'); }}>
-          Sign out
-        </button>
+        <div className="row" style={{ marginTop: '2rem', gap: '0.5rem' }}>
+          <Link to="/portal/password" className="btn btn-ghost">Change password</Link>
+          <button className="btn btn-quiet"
+            onClick={async () => { await logout(); nav('/'); }}>
+            Sign out
+          </button>
+        </div>
       </div>
     </div>
   );

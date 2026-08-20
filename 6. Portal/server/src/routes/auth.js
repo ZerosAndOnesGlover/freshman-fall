@@ -1,7 +1,7 @@
 import express from 'express';
 import { db } from '../db.js';
 import {
-  SESSION_COOKIE, verifyPassword, createSession, destroySession, requireAuth,
+  SESSION_COOKIE, verifyPassword, hashPassword, createSession, destroySession, requireAuth,
 } from '../auth.js';
 
 const router = express.Router();
@@ -48,6 +48,34 @@ router.get('/me/profile', requireAuth, (req, res) => {
      WHERE cs.user_id = ?
   `).all(req.user.id);
   res.json({ user: req.user, staff });
+});
+
+/**
+ * Change your own password.
+ *
+ * Students admitted by the registrar start with a temporary password and are
+ * flagged to change it. Every other signed-in session for that account is
+ * ended, so a shared temporary password stops working everywhere at once.
+ */
+router.post('/password', requireAuth, (req, res) => {
+  const { current_password: current, new_password: next } = req.body || {};
+  if (!next || String(next).length < 8) {
+    return res.status(400).json({ error: 'Choose a password of at least 8 characters' });
+  }
+
+  const row = db.prepare('SELECT * FROM users WHERE id = ?').get(req.user.id);
+  if (!verifyPassword(current || '', row.password_hash)) {
+    return res.status(401).json({ error: 'That is not your current password' });
+  }
+
+  const keep = req.cookies?.[SESSION_COOKIE];
+  db.transaction(() => {
+    db.prepare('UPDATE users SET password_hash = ?, must_change_password = 0 WHERE id = ?')
+      .run(hashPassword(next), row.id);
+    db.prepare('DELETE FROM sessions WHERE user_id = ? AND token <> ?').run(row.id, keep || '');
+  })();
+
+  res.json({ ok: true });
 });
 
 function publicUser(row) {

@@ -42,11 +42,14 @@ export function destroySession(token) {
 export function userForToken(token) {
   if (!token) return null;
   const row = db.prepare(`
-    SELECT u.id, u.email, u.role, u.full_name, u.student_id, u.title, u.programme, u.year_level
+    SELECT u.id, u.email, u.role, u.full_name, u.student_id, u.title, u.programme,
+           u.year_level, u.cohort_id, u.status, u.must_change_password
       FROM sessions s JOIN users u ON u.id = s.user_id
      WHERE s.token = ? AND s.expires_at > datetime('now')
   `).get(token);
-  return row || null;
+  if (!row) return null;
+  if (row.status && row.status !== 'active') return null;
+  return row;
 }
 
 export function purgeExpiredSessions() {

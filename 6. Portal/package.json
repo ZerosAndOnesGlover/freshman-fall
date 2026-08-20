@@ -12,6 +12,7 @@
     "start": "npm --prefix server start",
     "setup": "npm run install:all && npm run import",
     "import:reset": "npm --prefix server run import:reset",
-    "inspect": "npm --prefix server run inspect"
+    "inspect": "npm --prefix server run inspect",
+    "watch": "npm --prefix server run watch"
   }
 }

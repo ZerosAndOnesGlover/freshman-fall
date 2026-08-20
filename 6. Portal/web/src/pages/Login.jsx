@@ -10,6 +10,7 @@ import { Wordmark } from '../components/Chrome.jsx';
 const DEMO = [
   { role: 'Student', email: 'adebayo.glover@ist.edu', password: 'student2026' },
   { role: 'Instructor', email: 'david.malan@ist.edu', password: 'teach2026' },
+  { role: 'Registry (admin)', email: 'registrar@ist.edu', password: 'teach2026' },
 ];
 
 export default function Login() {

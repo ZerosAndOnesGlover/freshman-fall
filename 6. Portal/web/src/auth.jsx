@@ -20,13 +20,23 @@ export function AuthProvider({ children }) {
     return d.user;
   }, []);
 
+  const refresh = useCallback(async () => {
+    const d = await api.auth.me().catch(() => ({ user: null }));
+    setUser(d.user);
+    return d.user;
+  }, []);
+
   const logout = useCallback(async () => {
     await api.auth.logout().catch(() => {});
     setUser(null);
   }, []);
 
   return (
-    <AuthContext.Provider value={{ user, ready, login, logout, isStaff: user?.role === 'instructor' || user?.role === 'admin' }}>
+    <AuthContext.Provider value={{
+      user, ready, login, logout, refresh,
+      isStaff: user?.role === 'instructor' || user?.role === 'admin',
+      isAdmin: user?.role === 'admin',
+    }}>
       {children}
     </AuthContext.Provider>
   );

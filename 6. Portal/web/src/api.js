@@ -37,6 +37,8 @@ export const api = {
     me: () => get('/auth/me'),
     login: (email, password) => post('/auth/login', { email, password }),
     logout: () => post('/auth/logout'),
+    changePassword: (current_password, new_password) =>
+      post('/auth/password', { current_password, new_password }),
   },
 
   public: {
@@ -91,6 +93,21 @@ export const api = {
     transcript: () => get('/grades/transcript'),
     course: (courseId, studentId) =>
       get(`/grades/course/${courseId}${studentId ? `?student=${studentId}` : ''}`),
+  },
+
+  admin: {
+    overview: () => get('/admin/overview'),
+    sessions: () => get('/admin/sessions'),
+    createSession: (body) => post('/admin/sessions', body),
+    updateSession: (id, body) => request(`/admin/sessions/${id}`, { method: 'PATCH', body: JSON.stringify(body) }),
+    deleteSession: (id) => del(`/admin/sessions/${id}`),
+    students: (q = '') => get(`/admin/students${q}`),
+    admitStudent: (body) => post('/admin/students', body),
+    updateStudent: (id, body) => request(`/admin/students/${id}`, { method: 'PATCH', body: JSON.stringify(body) }),
+    resetPassword: (id) => post(`/admin/students/${id}/reset-password`),
+    enrol: (id, body) => post(`/admin/students/${id}/enrol`, body),
+    unenrol: (id, yearNum) => del(`/admin/students/${id}/enrolments?year_num=${yearNum}`),
+    yearCourses: (yearNum) => get(`/admin/year-courses/${yearNum}`),
   },
 
   instructor: {

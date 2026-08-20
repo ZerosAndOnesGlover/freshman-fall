@@ -42,11 +42,19 @@ const STAFF_NAV = [
   { to: '/portal/marking', label: 'Marking' },
 ];
 
+const ADMIN_NAV = [
+  { to: '/portal', label: 'Dashboard', end: true },
+  { to: '/portal/registry', label: 'Registry' },
+  { to: '/portal/teaching', label: 'Courses' },
+  { to: '/portal/marking', label: 'Marking' },
+];
+
 export function Masthead() {
-  const { user, isStaff } = useAuth();
+  const { user, isStaff, isAdmin } = useAuth();
   const { pathname } = useLocation();
   const inPortal = pathname.startsWith('/portal');
-  const nav = inPortal ? (isStaff ? STAFF_NAV : PORTAL_NAV) : PUBLIC_NAV;
+  const portalNav = isAdmin ? ADMIN_NAV : isStaff ? STAFF_NAV : PORTAL_NAV;
+  const nav = inPortal ? portalNav : PUBLIC_NAV;
 
   return (
     <>
@@ -78,7 +86,7 @@ export function Masthead() {
       {inPortal && user && (
         <div className="subnav">
           <div className="wrap">
-            {(isStaff ? STAFF_NAV : PORTAL_NAV).map((n) => (
+            {portalNav.map((n) => (
               <NavLink key={n.to} to={n.to} end={n.end}
                 className={({ isActive }) => (isActive ? 'active' : undefined)}>
                 {n.label}

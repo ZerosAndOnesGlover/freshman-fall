@@ -17,6 +17,7 @@ import courseRoutes, { lectureRouter, materialRouter } from './routes/courses.js
 import assessmentRoutes from './routes/assessments.js';
 import gradeRoutes from './routes/grades.js';
 import instructorRoutes from './routes/instructor.js';
+import adminRoutes from './routes/admin.js';
 import dashboardRoutes from './routes/dashboard.js';
 import timetableRoutes from './routes/timetable.js';
 
@@ -47,6 +48,7 @@ app.use('/api/materials', materialRouter);
 app.use('/api/assessments', assessmentRoutes);
 app.use('/api/grades', gradeRoutes);
 app.use('/api/instructor', instructorRoutes);
+app.use('/api/admin', adminRoutes);
 
 app.use('/api', (_req, res) => res.status(404).json({ error: 'No such endpoint' }));
 

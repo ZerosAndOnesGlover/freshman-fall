@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate, useLocation, Outlet } from 'react-router-dom';
+import { Routes, Route, Navigate, useLocation, Outlet, Link } from 'react-router-dom';
 import { AuthProvider, useAuth } from './auth.jsx';
 import { Masthead, Footer, Loading } from './components/Chrome.jsx';
 
@@ -22,6 +22,8 @@ import Assessment from './pages/portal/Assessment.jsx';
 import Grades from './pages/portal/Grades.jsx';
 import Transcript from './pages/portal/Transcript.jsx';
 import Profile from './pages/portal/Profile.jsx';
+import ChangePassword from './pages/portal/ChangePassword.jsx';
+import Registry from './pages/admin/Registry.jsx';
 
 import Teaching from './pages/instructor/Teaching.jsx';
 import Marking from './pages/instructor/Marking.jsx';
@@ -44,13 +46,40 @@ function StaffOnly() {
   return <Outlet />;
 }
 
+function AdminOnly() {
+  const { user, ready } = useAuth();
+  if (!ready) return <Loading />;
+  if (!user) return <Navigate to="/login" replace />;
+  if (user.role !== 'admin') return <Navigate to="/portal" replace />;
+  return <Outlet />;
+}
+
 function SiteLayout() {
   return (
     <div className="shell">
       <a href="#main" className="skip-link">Skip to content</a>
       <Masthead />
+      <TemporaryPasswordBanner />
       <main id="main"><Outlet /></main>
       <Footer />
+    </div>
+  );
+}
+
+/** Shown until a student admitted by the registry sets their own password. */
+function TemporaryPasswordBanner() {
+  const { user } = useAuth();
+  const loc = useLocation();
+  if (!user?.must_change_password) return null;
+  if (loc.pathname === '/portal/password') return null;
+  return (
+    <div style={{ background: 'var(--amber-050)', borderBottom: '1px solid var(--rule)' }}>
+      <div className="wrap row-between row-wrap" style={{ padding: '0.75rem 1.5rem' }}>
+        <span className="small">
+          You are signed in with a temporary password from the registry.
+        </span>
+        <Link to="/portal/password" className="btn btn-sm">Choose your own</Link>
+      </div>
     </div>
   );
 }
@@ -99,11 +128,16 @@ export default function App() {
             <Route path="grades" element={<Grades />} />
             <Route path="transcript" element={<Transcript />} />
             <Route path="profile" element={<Profile />} />
+            <Route path="password" element={<ChangePassword />} />
 
             <Route element={<StaffOnly />}>
               <Route path="teaching" element={<Teaching />} />
               <Route path="marking" element={<Marking />} />
               <Route path="marking/:id" element={<MarkAssessment />} />
+            </Route>
+
+            <Route element={<AdminOnly />}>
+              <Route path="registry" element={<Registry />} />
             </Route>
           </Route>
 

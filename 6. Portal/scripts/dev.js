@@ -12,7 +12,7 @@ import { fileURLToPath } from 'node:url';
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const npm = process.platform === 'win32' ? 'npm.cmd' : 'npm';
 
-const COLOURS = { api: '\x1b[36m', web: '\x1b[35m' };
+const COLOURS = { api: '\x1b[36m', web: '\x1b[35m', vault: '\x1b[33m' };
 const RESET = '\x1b[0m';
 
 const children = [];
@@ -55,3 +55,6 @@ for (const signal of ['SIGINT', 'SIGTERM']) {
 
 run('api', 'server', ['run', 'dev']);
 run('web', 'web', ['run', 'dev']);
+// Watches the vault so new lectures, weeks and courses are indexed as they
+// are written, without anyone having to remember to re-import.
+run('vault', 'server', ['run', 'watch']);

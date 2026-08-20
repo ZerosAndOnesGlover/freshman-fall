@@ -263,3 +263,24 @@ CREATE TABLE IF NOT EXISTS grade_scale (
   high    REAL NOT NULL,
   descriptor TEXT
 );
+
+-- ─── Academic sessions and cohorts ───────────────────────────────────
+--
+-- A *session* is a calendar academic year: "2026/2027". A *cohort* is the
+-- session a student was admitted in, which is what makes it possible to run
+-- several intakes at once — the 2026/2027 intake sits in Year 2 while the
+-- 2027/2028 intake sits in Year 1, against the same course structure.
+--
+-- Terms stay degree-relative ("Year 1 Fall"); a cohort maps them onto real
+-- calendar years.
+CREATE TABLE IF NOT EXISTS academic_sessions (
+  id         INTEGER PRIMARY KEY,
+  label      TEXT NOT NULL UNIQUE,        -- "2026/2027"
+  start_year INTEGER NOT NULL UNIQUE,     -- 2026
+  end_year   INTEGER NOT NULL,            -- 2027
+  starts_on  TEXT,                        -- ISO, first day of the Fall term
+  ends_on    TEXT,
+  is_current INTEGER NOT NULL DEFAULT 0,
+  note       TEXT,
+  created_at TEXT NOT NULL DEFAULT (datetime('now'))
+);

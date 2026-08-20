@@ -577,6 +577,30 @@ for (const gb of gradebooks) {
 }
 log(`· ${stats.components} components · ${stats.assessments} assessments · ${stats.grades} registry marks`);
 
+// The session the vault itself describes. Year 1 Fall starts in the calendar
+// year of its own week map, so the opening session is derived rather than
+// hardcoded. Further intakes are created by the registrar in the portal.
+const fallTerm = db.prepare("SELECT start_date FROM terms WHERE year_num = 1 AND semester = 'Fall'").get();
+const openingYear = Number((fallTerm?.start_date || '').slice(0, 4)) || new Date().getFullYear();
+
+db.prepare(`
+  INSERT INTO academic_sessions (label, start_year, end_year, starts_on, is_current, note)
+  VALUES (?, ?, ?, ?, 1, ?)
+  ON CONFLICT (start_year) DO UPDATE SET
+    label = excluded.label, end_year = excluded.end_year,
+    starts_on = COALESCE(excluded.starts_on, academic_sessions.starts_on)
+`).run(`${openingYear}/${openingYear + 1}`, openingYear, openingYear + 1,
+       fallTerm?.start_date ?? null, 'The founding intake, taken from the vault calendar.');
+
+const openingSession = db.prepare('SELECT id FROM academic_sessions WHERE start_year = ?').get(openingYear);
+if (openingSession) {
+  // Only set a cohort where one is missing: the registrar may have moved
+  // people since, and an import must not undo that.
+  db.prepare('UPDATE users SET cohort_id = ? WHERE role = ? AND cohort_id IS NULL')
+    .run(openingSession.id, 'student');
+  log(`\u00b7 session ${openingYear}/${openingYear + 1} is current`);
+}
+
 // ─── 7. Institution documents ──────────────────────────────────────────
 
 const INSTITUTION_PAGES = [
