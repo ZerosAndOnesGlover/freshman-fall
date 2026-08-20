@@ -1,9 +1,10 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { api } from '../../api.js';
 import { useApi } from '../../useApi.js';
 import { Loading, ErrorNote } from '../../components/Chrome.jsx';
 import { DueDate, KindBadge, StatusBadge } from '../../components/Bits.jsx';
+import { DatePicker } from '../../components/DatePicker.jsx';
 import {
   todayIso, addDays, startOfWeek, weekdayName, minutesOf, formatDate,
 } from '../../format.js';
@@ -36,6 +37,13 @@ export default function Timetable() {
     [week[0], week[6]],
   );
 
+  const [monthMarks, setMonthMarks] = useState({});
+  const loadMonth = useCallback((from, to) => {
+    api.timetable.range(from, to)
+      .then((r) => setMonthMarks(r.days || {}))
+      .catch(() => setMonthMarks({}));
+  }, []);
+
   const isToday = date === today;
   const minutesNow = isToday ? now.getHours() * 60 + now.getMinutes() : null;
 
@@ -51,9 +59,14 @@ export default function Timetable() {
             </h1>
           </div>
           <div className="row row-wrap" style={{ gap: '0.5rem' }}>
-            <input type="date" className="input" style={{ width: 'auto' }}
-              value={date} onChange={(e) => e.target.value && setDate(e.target.value)}
-              aria-label="Show a different date" />
+            <DatePicker
+              value={date}
+              onChange={setDate}
+              marks={monthMarks}
+              onMonthChange={loadMonth}
+              align="right"
+              label="Show a different date"
+            />
             {!isToday && (
               <button className="btn btn-ghost btn-sm" onClick={() => setDate(today)}>Today</button>
             )}

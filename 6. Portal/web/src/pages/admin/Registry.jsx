@@ -3,6 +3,7 @@ import { api } from '../../api.js';
 import { useApi } from '../../useApi.js';
 import { Loading, ErrorNote } from '../../components/Chrome.jsx';
 import { StatTile } from '../../components/Bits.jsx';
+import { DatePicker } from '../../components/DatePicker.jsx';
 import { formatDate } from '../../format.js';
 
 /**
@@ -162,9 +163,9 @@ function Sessions({ state, onChange }) {
               <p className="hint">This will be the {year}/{Number(year) + 1} session.</p>
             </div>
             <div className="field">
-              <label htmlFor="starts">First day of term</label>
-              <input id="starts" className="input" type="date"
-                value={startsOn} onChange={(e) => setStartsOn(e.target.value)} />
+              <span className="label">First day of term</span>
+              <DatePicker value={startsOn} onChange={setStartsOn} clearable
+                placeholder="Not set" label="First day of term" />
             </div>
             <div className="field">
               <label htmlFor="note">Note</label>

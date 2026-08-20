@@ -352,3 +352,131 @@
 }
 @keyframes spin { to { transform: rotate(360deg); } }
 .loading { padding: var(--s-9) 0; text-align: center; color: var(--ink-400); }
+
+/* ─── Date picker ───────────────────────────────────────────────────── */
+
+.datepicker { position: relative; display: inline-block; }
+
+.datepicker-trigger {
+  display: inline-flex; align-items: center; gap: var(--s-2);
+  padding: var(--s-3);
+  background: #fff;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-size: var(--t-sm);
+  color: var(--ink-900);
+  transition: border-color 0.13s, box-shadow 0.13s;
+  white-space: nowrap;
+}
+.datepicker-trigger:hover { border-color: var(--navy-300); }
+.datepicker-trigger.is-open,
+.datepicker-trigger:focus-visible {
+  border-color: var(--navy-500);
+  box-shadow: 0 0 0 3px var(--navy-050);
+  outline: none;
+}
+.datepicker-trigger svg { color: var(--gold-700); flex-shrink: 0; }
+.datepicker-caret { color: var(--ink-400); font-size: 0.6rem; }
+
+.datepicker-panel {
+  position: absolute; z-index: 60; top: calc(100% + 6px);
+  width: 17.5rem;
+  padding: var(--s-3);
+  background: #fff;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+.datepicker-panel.align-left { left: 0; }
+.datepicker-panel.align-right { right: 0; }
+
+.datepicker-head {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: var(--s-2); margin-bottom: var(--s-3);
+}
+.datepicker-head strong {
+  font-family: var(--serif); font-size: var(--t-base);
+  color: var(--navy-900); letter-spacing: -0.01em;
+}
+.datepicker-nav {
+  width: 1.75rem; height: 1.75rem;
+  display: grid; place-items: center;
+  border: 1px solid transparent; border-radius: var(--radius);
+  background: none; cursor: pointer;
+  color: var(--ink-500); font-size: var(--t-md); line-height: 1;
+}
+.datepicker-nav:hover { background: var(--paper-alt); color: var(--navy-800); }
+
+.datepicker-weekdays,
+.datepicker-grid {
+  display: grid; grid-template-columns: repeat(7, 1fr); gap: 2px;
+}
+.datepicker-weekdays {
+  margin-bottom: var(--s-1);
+}
+.datepicker-weekdays span {
+  text-align: center;
+  font-size: 0.625rem; font-weight: 700; letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--ink-400);
+  padding-bottom: var(--s-1);
+}
+
+.datepicker-day {
+  position: relative;
+  aspect-ratio: 1;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 1px;
+  border: 1px solid transparent; border-radius: var(--radius);
+  background: none; cursor: pointer;
+  font-size: var(--t-sm); font-variant-numeric: tabular-nums;
+  color: var(--ink-900);
+  transition: background 0.1s, color 0.1s;
+}
+.datepicker-day:hover:not(:disabled) { background: var(--navy-050); }
+.datepicker-day.is-outside { color: var(--ink-300); }
+.datepicker-day.is-today { font-weight: 700; color: var(--gold-700); }
+.datepicker-day.is-today::after {
+  content: ''; position: absolute; inset-inline: 30%; bottom: 3px;
+  height: 2px; background: var(--gold-500); border-radius: 1px;
+}
+.datepicker-day.is-selected {
+  background: var(--navy-900); color: #fff; border-color: var(--navy-900);
+}
+.datepicker-day.is-selected.is-today { color: var(--gold-400); }
+.datepicker-day.is-selected.is-today::after { background: var(--gold-400); }
+.datepicker-day.is-blocked { opacity: 0.3; cursor: not-allowed; }
+.datepicker-day:focus-visible {
+  outline: 2px solid var(--gold-500); outline-offset: -2px;
+}
+
+.datepicker-dots { display: flex; gap: 2px; height: 4px; }
+.datepicker-dots .dot { width: 4px; height: 4px; }
+.datepicker-day.is-selected .dot-lecture { background: var(--navy-100); }
+.datepicker-day.is-selected .dot-due { background: var(--gold-400); }
+
+.datepicker-foot {
+  display: flex; gap: var(--s-2); justify-content: flex-end;
+  margin-top: var(--s-2); padding-top: var(--s-2);
+  border-top: 1px solid var(--rule-soft);
+}
+
+/*
+ * On a phone there is no anchor position that keeps the panel on screen: the
+ * trigger can sit at either edge, and aligning to it pushes the panel off the
+ * opposite side. Below this width it becomes a centred sheet instead, which
+ * is always fully visible wherever the trigger happens to be.
+ */
+@media (max-width: 420px) {
+  .datepicker-panel,
+  .datepicker-panel.align-left,
+  .datepicker-panel.align-right {
+    position: fixed;
+    left: 50%;
+    right: auto;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: min(20rem, calc(100vw - 2rem));
+  }
+  .datepicker-day { font-size: var(--t-base); }
+}
