@@ -41,3 +41,11 @@ Thumbs.db
 # does not contain. Commit and push each course from inside its own
 # directory instead.
 /5. Academic Registry/4. Submissions/
+
+# ─── Portal ──────────────────────────────────────────────────────────
+# The student portal is its own project with its own git repo and its
+# own remote (ZerosAndOnesGlover/portal). It reads the vault at runtime
+# but is not vault content, and tracking it from here would leave a
+# stray gitlink pointing at commits this repo does not contain. Commit
+# and push it from inside "6. Portal" instead.
+/6. Portal/
