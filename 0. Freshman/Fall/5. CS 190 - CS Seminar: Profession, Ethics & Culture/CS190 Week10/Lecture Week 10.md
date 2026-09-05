@@ -1,5 +1,7 @@
 # CS 190 · CS Seminar: Profession, Ethics & Culture
-## Lecture, Week 10: The Future of Work — Automation, Jobs, and Universal Basic Income
+## Lecture · Week 10: The Future of Work — Automation, Jobs, and Universal Basic Income
+
+**Date:** Wednesday 28 October 2026 · 13:00–13:50 · Week 10
 
 ---
 

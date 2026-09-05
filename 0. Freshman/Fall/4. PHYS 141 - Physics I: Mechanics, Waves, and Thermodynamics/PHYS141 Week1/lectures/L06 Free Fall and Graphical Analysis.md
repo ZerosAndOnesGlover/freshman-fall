@@ -14,7 +14,7 @@
 
 ---
 
-## 1. Free Fall — The Fundamental Case of Constant Acceleration
+## 1. Free Fall: The Fundamental Case of Constant Acceleration
 
 ### 1.1 What is Free Fall?
 

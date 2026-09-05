@@ -1,5 +1,8 @@
-# Lecture — Week 6: AI and Society
+# CS 190 · CS Seminar: Profession, Ethics & Culture
+## Lecture · Week 6: AI and Society
 ### Autonomous Weapons, Deepfakes, and LLMs
+
+**Date:** Wednesday 30 September 2026 · 13:00–13:50 · Week 6
 
 ---
 

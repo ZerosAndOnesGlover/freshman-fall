@@ -38,8 +38,7 @@ bracket **includes** its endpoint, and why can $\infty$ never take one?
 | $(-\infty, \infty)$ | All reals $\mathbb{R}$ | — |
 
 From here on, every solution set in this course is written this way. If the table above
-was not immediate, reread [[Lecture 00 The Language of Mathematics]] §4–5 before continuing — the sign-chart
-work in §3 below is unreadable without it.
+was not immediate, reread [[Lecture 00 The Language of Mathematics]] §4–5 before continuing — the sign-chart work in §3 below is unreadable without it.
 
 ### Absolute Value
 

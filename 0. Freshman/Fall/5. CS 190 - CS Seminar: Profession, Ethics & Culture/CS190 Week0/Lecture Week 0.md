@@ -1,5 +1,8 @@
-# Lecture Week 0: What is Computer Science?
+# CS 190 · CS Seminar: Profession, Ethics & Culture
+## Lecture · Week 0: What is Computer Science?
 ### Careers in CS, Software, and Hardware Engineering
+
+**Date:** Wednesday 19 August 2026 · 13:00–13:50 · Week 0
 
 ---
 

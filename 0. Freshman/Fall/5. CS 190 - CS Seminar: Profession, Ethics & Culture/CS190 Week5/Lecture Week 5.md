@@ -1,5 +1,8 @@
-# Lecture — Week 5: Privacy and Surveillance
+# CS 190 · CS Seminar: Profession, Ethics & Culture
+## Lecture · Week 5: Privacy and Surveillance
 ### Data Collection, GDPR, and the Fourth Amendment
+
+**Date:** Wednesday 23 September 2026 · 13:00–13:50 · Week 5
 
 ---
 

@@ -8,6 +8,7 @@
 
 > **Core Question:** Given a compound proposition of arbitrary complexity, how do we *mechanically* determine its truth under every possible assignment of truth values?
 
+
 ---
 
 ## 1. The Truth Table Method

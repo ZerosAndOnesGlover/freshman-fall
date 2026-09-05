@@ -1,5 +1,8 @@
-# Lecture — Week 1: The History of Computing
+# CS 190 · CS Seminar: Profession, Ethics & Culture
+## Lecture · Week 1: The History of Computing
 ### From Babbage to Turing to Silicon Valley
+
+**Date:** Wednesday 26 August 2026 · 13:00–13:50 · Week 1
 
 ---
 

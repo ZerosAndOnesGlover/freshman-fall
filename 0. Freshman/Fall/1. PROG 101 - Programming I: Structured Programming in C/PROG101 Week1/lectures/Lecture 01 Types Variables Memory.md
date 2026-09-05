@@ -73,9 +73,9 @@ At runtime, there are no variable names. There are only addresses and bytes.
 ---
 
 > **Where the integer and floating-point detail went.** How integers are *represented* —
-> two's complement, the fixed ranges, and what happens on overflow — is Lecture 2. How real
-> numbers are approximated, and the rules for converting between types, is Lecture 3. This
-> lecture establishes what a type *is* and how variables occupy memory.
+> two's complement, the fixed ranges, and what happens on overflow — is Lecture 2.
+> How real numbers are approximated, and the rules for converting between types, is Lecture 3.
+> This lecture establishes what a type *is* and how variables occupy memory.
 
 ## 3. The `sizeof` Operator
 

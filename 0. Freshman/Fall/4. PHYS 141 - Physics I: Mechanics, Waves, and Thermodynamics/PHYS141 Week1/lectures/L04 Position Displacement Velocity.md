@@ -81,7 +81,7 @@ A car travels 60 km north in 1 hour, then 40 km south in 0.5 hours.
 
 ---
 
-## 4. Instantaneous Velocity — The Derivative
+## 4. Instantaneous Velocity: The Derivative
 
 Average velocity over a finite time interval tells you about the *net* motion. But what is the velocity **at a single instant**?
 

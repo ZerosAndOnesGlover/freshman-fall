@@ -21,7 +21,7 @@ These two statements look similar but have drastically different meanings — on
 
 ---
 
-## 2. Nested Quantifiers — Definition
+## 2. Nested Quantifiers: Definition
 
 A **nested quantifier** expression has two or more quantifiers, each binding a different variable.
 
@@ -40,7 +40,7 @@ The key phrase: "possibly depending on x." The witness y in ∃y may be chosen *
 
 ---
 
-## 3. The Four Combinations — ℤ as Domain
+## 3. The Four Combinations: ℤ as Domain
 
 Let the domain be ℤ throughout. Let P(x, y) = "x < y" for illustration.
 
@@ -253,7 +253,7 @@ Every uniformly continuous function is continuous, but not vice versa. The logic
 
 ---
 
-## 9. Translation Workshop — Complex Statements
+## 9. Translation Workshop: Complex Statements
 
 **Statement 1:** "Every sorting algorithm that is comparison-based requires Ω(n log n) comparisons in the worst case."
 

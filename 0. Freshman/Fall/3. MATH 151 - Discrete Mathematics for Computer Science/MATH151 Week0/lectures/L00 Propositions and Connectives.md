@@ -89,8 +89,6 @@ Given propositions p and q, we build **compound propositions** using **logical c
 **In code:** `!p` in C and Java, `not p` in Python, `~p` in boolean contexts.
 
 **Deep Note:** Double negation: ¬(¬p) ≡ p. Negating twice returns to the original. This seems obvious, but it fails in *constructive* (intuitionistic) logic, which matters in formal verification and some functional programming type theories. For this course, we work in classical logic where ¬(¬p) ≡ p always holds.
-Python
----
 
 ### 3.2 Conjunction ("AND" ∧)
 
@@ -98,12 +96,12 @@ Python
 
 **Truth Table:**
 
-| p | q | p ∧ q |
-|---|---|---|
-| T | T | **T** |
-| T | F | F |
-| F | T | F |
-| F | F | F |
+| p   | q   | p ∧ q |
+| --- | --- | ----- |
+| T   | T   | **T** |
+| T   | F   | F     |
+| F   | T   | F     |
+| F   | F   | F     |
 
 **Examples:**
 - "It is raining **and** I carry an umbrella." → True only when both are true.

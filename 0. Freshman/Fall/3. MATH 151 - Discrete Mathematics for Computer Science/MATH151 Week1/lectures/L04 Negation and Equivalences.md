@@ -174,7 +174,7 @@ any(P(x) for x in [])   # False — failed existential
 
 ---
 
-## 5. Counterexamples and Witnesses — Formal Proof Obligations
+## 5. Counterexamples and Witnesses: Formal Proof Obligations
 
 | Claim Type | To Prove TRUE | To Prove FALSE |
 |---|---|---|
@@ -248,7 +248,7 @@ These arise constantly in specifications. "A function maps each input to exactly
 
 ---
 
-## 9. Worked Translation Examples — CS Specifications
+## 9. Worked Translation Examples: CS Specifications
 
 **Example 1:** Precondition of binary search.
 

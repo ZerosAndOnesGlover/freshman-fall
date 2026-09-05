@@ -18,7 +18,7 @@ Once you can build a truth table, you can classify any compound proposition into
 
 **Definition.** A proposition is a *tautology* if it is **true under every possible truth-value assignment**.
 
-A tautology is necessarily true — true regardless of what the world is like.
+A tautology is necessarily true, and true regardless of what the world is like.
 
 **Examples:**
 - p ∨ ¬p — "Either p or not p" (Law of Excluded Middle)

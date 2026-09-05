@@ -1,6 +1,8 @@
 # CS 190 · Week 12
 ## Guest Speaker Session: A CS Professional
 
+**Date:** Wednesday 11 November 2026 · 13:00–13:50 · Week 12
+
 **Format:** 60-minute seminar. Roughly 20 minutes of remarks, 40 minutes of questions.
 **Assessment:** Participation. **Preparation is required** — see `Question Preparation.md`.
 

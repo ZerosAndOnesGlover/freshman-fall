@@ -160,12 +160,12 @@ The single rule that governs all of it:
 
 That is the entire system. Everything below is that rule applied.
 
-| Interval | Set-builder | Aloud | Endpoints |
-|----------|-------------|-------|-----------|
-| $[2, 5]$ | $\{x : 2 \leq x \leq 5\}$ | "closed interval 2 to 5" | both included |
-| $(2, 5)$ | $\{x : 2 < x < 5\}$ | "open interval 2 to 5" | both excluded |
-| $[2, 5)$ | $\{x : 2 \leq x < 5\}$ | "2 inclusive to 5 exclusive" | left only |
-| $(2, 5]$ | $\{x : 2 < x \leq 5\}$ | "2 exclusive to 5 inclusive" | right only |
+| Interval | Set-builder               | Aloud                        | Endpoints     |
+| -------- | ------------------------- | ---------------------------- | ------------- |
+| $[2, 5]$ | $\{x : 2 \leq x \leq 5\}$ | "closed interval 2 to 5"     | both included |
+| $(2, 5)$ | $\{x : 2 < x < 5\}$       | "open interval 2 to 5"       | both excluded |
+| $[2, 5)$ | $\{x : 2 \leq x < 5\}$    | "2 inclusive to 5 exclusive" | left only     |
+| $(2, 5]$ | $\{x : 2 < x \leq 5\}$    | "2 exclusive to 5 inclusive" | right only    |
 
 **The two ends are chosen independently.** $[2,5)$ is not a typo — the bracket and the parenthesis are each reporting on their own endpoint. This is the single most common misreading of the notation, and it is why $[2,5)$ looks wrong the first fifty times you see it.
 
@@ -443,6 +443,7 @@ Fluency is the goal, and fluency comes from reading aloud. Do that.
 ## Lecture 0 Exercises
 
 1. Write in interval notation: (a) $\{x \in \mathbb{R} : -1 < x \leq 6\}$  (b) $\{x \in \mathbb{R}: x \geq 0\}$  (c) $\{x \in \mathbb{R} : x \neq 0\}$
+		*Solution:*          a. (-1, 6]         b. $[0, \infty)$           c. $(-\infty, 0) \cup (0, \infty)$
 
 2. Write in set-builder notation: (a) $[4, 9)$  (b) $(-\infty, -2) \cup (2, \infty)$
 

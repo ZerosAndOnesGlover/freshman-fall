@@ -1,5 +1,8 @@
-# Lecture — Week 8: Cybersecurity Ethics
+# CS 190 · CS Seminar: Profession, Ethics & Culture
+## Lecture · Week 8: Cybersecurity Ethics
 ### Responsible Disclosure, Hacktivism, and the Law That Governs Both
+
+**Date:** Wednesday 14 October 2026 · 13:00–13:50 · Week 8
 
 ---
 

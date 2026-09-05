@@ -18,8 +18,7 @@ By the end of this lecture you can:
 
 ## 1. The Fundamental Integer Types
 
-Lecture 1 established that a type tells the compiler how many bytes an object occupies and how to
-interpret them. For integers, C specifies **minimum** ranges, not exact sizes.
+Lecture 1 established that a type tells the compiler how many bytes an object occupies and how to interpret them. For integers, C specifies **minimum** ranges, not exact sizes.
 
 Measured on this machine:
 
@@ -38,12 +37,9 @@ Measured on this machine:
 sizeof(char) == 1  ≤  sizeof(short)  ≤  sizeof(int)  ≤  sizeof(long)  ≤  sizeof(long long)
 ```
 
-with minimum ranges of ±32,767 for `int` and ±2,147,483,647 for `long`. A 16-bit embedded compiler
-where `int` is 2 bytes is fully conforming. Code that assumes `int` is 32 bits is not portable, and
-that assumption is the single most common portability bug in C.
+with minimum ranges of ±32,767 for `int` and ±2,147,483,647 for `long`. A 16-bit embedded compiler where `int` is 2 bytes is fully conforming. Code that assumes `int` is 32 bits is not portable, and that assumption is the single most common portability bug in C.
 
-> **`char` is a third integer type.** It is neither `signed char` nor `unsigned char` — it is its own
-> type whose signedness is **implementation-defined**. It is signed here (verified:
+> **`char` is a third integer type.** It is neither `signed char` nor `unsigned char` — it is its own type whose signedness is **implementation-defined**. It is signed here (verified:
 > `CHAR_MIN == -128`), but unsigned on ARM by default. When you need a byte, write `unsigned char`.
 > When you need a small number, write `signed char`. Bare `char` is for characters.
 
@@ -58,8 +54,7 @@ int64_t  big;  /* exactly 64 bits, signed      */
 size_t   n;    /* big enough for any object size */
 ```
 
-Use these whenever the width matters — file formats, network protocols, hardware registers. Use plain `int` for loop counters and ordinary arithmetic, where the natural machine word is what you
-want.
+Use these whenever the width matters — file formats, network protocols, hardware registers. Use plain `int` for loop counters and ordinary arithmetic, where the natural machine word is what you want.
 
 `size_t` deserves special mention: it is **unsigned**, it is the type of `sizeof`, and it is what
 every standard library length function returns. That it is unsigned is the source of §5's trap.
@@ -126,7 +121,7 @@ int z = abs(x);    /* same problem -- abs(INT_MIN) is UB */
 ```
 
 `-INT_MIN` cannot be represented. Any code that negates or takes the absolute value of a
-possibly-`INT_MIN` value has a latent bug, and it is a real one — it has caused security
+possibly-`INT_MIN` value has a latent bug, and it is a real one that has caused security
 vulnerabilities in parsers that negate an attacker-supplied integer.
 
 ---
