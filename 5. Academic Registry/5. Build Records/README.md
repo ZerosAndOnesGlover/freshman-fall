@@ -27,6 +27,7 @@ directory a student browses.
 | File | What it records |
 | --- | --- |
 | `Registry Reconciliation.md` | The state of the Year 2 scheduling files before any course content was written: two broken timetable grids, two real lecture clashes hiding inside them, two wrong course titles, midterms sitting in the wrong weeks, and a week-to-date mapping that contradicted itself. Records what was changed and what was deliberately left alone. |
+| `PROG 201 Scheduling Notes.md` | What had to be settled before PROG 201 could be written: a Monday lab that forces a full-week lag, thirteen labs against twelve usable Monday slots once Fall Break is removed, a Week 0 Friday on which three courses already hold labs, and the reference machine every Week 0 measurement was taken on. Also records — without fixing — an overlap between CS 201's and CS 211's own Week 0 lab sessions. |
 
 **The authority** is
 `5. Academic Registry/1. Scheduling/Year2 - Sophomore/CSE_Year2_Sophomore_Curriculum.docx`.
