@@ -131,6 +131,83 @@ Created:
 
 ---
 
+## 8. Every problem-set due date in the calendar was one week early
+
+*Found while building CS 211 Week 6, not during the original pass.*
+
+`ASSESSMENT CALENDAR.md` listed **Problem Set N due (Fri)** on the Friday of Week N, for all
+thirteen sets, in both semesters. **Every problem-set paper in the vault disagrees**, and they all
+agree with each other:
+
+| Course | PS 1 | PS 5 | PS 9 | PS 12 |
+|---|---|---|---|---|
+| **CS 201** | released W1 Wed, due **W2 Fri** | released W5 Wed, due **W6 Fri** | released W9 Wed, due **W10 Fri** | released W12 Wed, due **W12 Fri** |
+| **CS 211** | released W1 Wed, due **W2 Fri** | released W5 Wed, due **W6 Fri** | *(not yet written)* | *(not yet written)* |
+
+The convention is uniform from PS 1 onward: **released Wednesday of its own week, due Friday of the
+following week.** The calendar was reading the *release* week as the due week.
+
+Two edge cases fall out of it, and both are in the papers rather than invented here:
+
+- **CS 201's PS 0 is due Friday of Week 0**, because CS 201's Week 0 is ten days long. CS 211's PS 0
+  is due Friday of Week 1. This is the one place the courses differ, and both papers say so
+  explicitly.
+- **PS 11 and PS 12 are both due Friday of Week 12.** PS 11 follows the normal rule; PS 12 is
+  released and due in the same week because Week 12 is the last teaching week and there is no
+  Week 13 to be due in. CS 201's PS 12 annotates this itself.
+
+**Fixed:** all twenty-six rows, Fall and Spring, shifted by one week, with the Week 12 row now
+naming both sets and the Week 0 row naming the release plus CS 201's exception.
+
+**The Spring rows were shifted too, on the same rule, although no Spring course material exists
+yet.** That is a forward commitment rather than a correction, and it is recorded as such: if a
+Spring paper is later written to a different schedule, the paper wins, as everywhere else in this
+document.
+
+*The calendar's midterm, project and exam rows were checked against the same papers and are
+correct; only the problem-set rows were affected.*
+
+---
+
+## 9. CS 211 Lab 9 specifies hardware the department does not have
+
+*Found while building CS 211 Week 9.*
+
+The Year 2 curriculum docx sets Lab 9 as **"Demonstrate memory ordering bugs on a weakly-ordered
+processor"**, and `_CS 211 Lab and Quiz Record.md` carries that wording. **Every machine in BH 220,
+and every machine in this build, is x86-64** — which is strongly ordered (TSO).
+
+The four reordering categories, and who permits what:
+
+| | LoadLoad | LoadStore | StoreStore | StoreLoad |
+|---|---|---|---|---|
+| **x86-TSO** | no | no | no | **yes** |
+| **ARM, POWER, RISC-V** | **yes** | **yes** | **yes** | **yes** |
+
+So three of the four cannot be demonstrated on the available hardware at all — not rarely, not
+with effort, but never, because the processor does not perform them.
+
+**Not changed:** the registry row still quotes the docx, which remains authoritative for what the
+course is *supposed* to cover.
+
+**How the lab handles it.** Lab 9 is titled "Memory Ordering Bugs You Can Reproduce" and:
+
+- demonstrates the **one** reordering x86 does permit — StoreLoad — which is enough to break
+  Dekker's algorithm, measured at roughly 1 in 3,000 to 1 in 18,000 iterations;
+- demonstrates **compiler** reordering, which is architecture-independent and in practice more
+  aggressive than the hardware's;
+- makes the missing three an explicit exercise (Part D), on the grounds that *"this bug is real,
+  is untestable on x86, and appears on the first ARM build"* is the lesson those reorderings
+  actually carry;
+- points at `herd7`/`litmus7` for simulating the ARM model without ARM hardware.
+
+**Worth a decision at department level**, and recorded here rather than resolved: either a single
+ARM machine (a Raspberry Pi is sufficient for every experiment in the lab) is added to BH 220, or
+the docx wording is amended to match what can be taught. **The lab works either way**; the current
+state is that the registry promises something the estate cannot deliver.
+
+---
+
 ## Not Done
 
 - **Years 1, 3 and 4 carry the same "Weeks 2–14" template text**, and Year 3's schedule grids have

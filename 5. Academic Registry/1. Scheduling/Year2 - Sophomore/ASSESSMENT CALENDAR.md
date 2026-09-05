@@ -126,35 +126,35 @@ MATH 241 — PS 35, Midterms 40, Final 25.
 
 | Week | Date | Course | Assessment | Weight | Notes |
 |------|------|--------|------------|--------|-------|
-| W0 | Sep 5 | **ALL** | 📝 Problem Set 0 due (Fri) | — | Counts within each course's PS component. Add/drop closes this week |
-| W1 | Sep 12 | **ALL** | 📝 Problem Set 1 due (Fri) | — | 📊 Quiz 1 in each course this week, covering Week 0 |
-| W2 | Sep 19 | **ALL** | 📝 Problem Set 2 due (Fri) | — | |
+| W0 | Sep 5 | **ALL** | 📝 Problem Set 0 released (Wed) | — | Add/drop closes this week. **CS 201's PS 0 is due this Friday** — its Week 0 is ten days long. Every other problem set is released Wednesday of its own week and due the Friday of the week after |
+| W1 | Sep 12 | **ALL** | 📝 Problem Set 0 due (Fri) | — | 📊 Quiz 1 in each course this week, covering Week 0 |
+| W2 | Sep 19 | **ALL** | 📝 Problem Set 1 due (Fri) | — | |
 | W3 | Sep 22 | **ALL** | — | — | CS 211 and PROG 201 Midterm 1 announced |
-| W3 | Sep 26 | **ALL** | 📝 Problem Set 3 due (Fri) | — | |
+| W3 | Sep 26 | **ALL** | 📝 Problem Set 2 due (Fri) | — | |
 | W4 | Sep 29 | **PROG 201** | 📘 Midterm 1 | 12.5% | 18:00–19:30 · Weeks 0–3 |
 | W4 | Sep 30 | **CS 211** | 📘 Midterm 1 | 12.5% | 20:00–21:15 · Weeks 0–3 |
-| W4 | Oct 3 | **ALL** | 📝 Problem Set 4 due (Fri) | — | CS 201 Midterm 1 announced |
+| W4 | Oct 3 | **ALL** | 📝 Problem Set 3 due (Fri) | — | CS 201 Midterm 1 announced |
 | W5 | Oct 6 | **CS 201** | 📘 Midterm 1 | 12.5% | 18:00–19:15 · VNC 100 · Weeks 0–4 |
-| W5 | Oct 10 | **ALL** | 📝 Problem Set 5 due (Fri) | — | |
+| W5 | Oct 10 | **ALL** | 📝 Problem Set 4 due (Fri) | — | |
 | W6 | Oct 15 | **MATH 241** | 📘 Midterm 1 | 20% | 18:00–19:15 · SSB 110 · Weeks 0–5 · Wed, Fall Break is Mon Oct 13 |
-| W6 | Oct 17 | **ALL** | 📝 Problem Set 6 due (Fri) | — | |
+| W6 | Oct 17 | **ALL** | 📝 Problem Set 5 due (Fri) | — | |
 | W6 | Oct 17 | **PROG 201** | 📋 Project 1 assigned | — | Unix shell (tsh) · due W9 |
 | W6 | Oct 17 | **CS 211** | 📋 Project 1 assigned | — | Mini-compiler · due W11 |
-| W7 | Oct 24 | **ALL** | 📝 Problem Set 7 due (Fri) | — | |
+| W7 | Oct 24 | **ALL** | 📝 Problem Set 6 due (Fri) | — | |
 | W7 | Oct 24 | **CS 201** | 📋 Project 1 assigned | — | Mini-CPU simulator · due W9 |
 | W8 | Oct 27 | **PROG 201** | 📘 Midterm 2 | 12.5% | 18:00–19:30 · Weeks 4–7 |
 | W8 | Oct 28 | **CS 211** | 📘 Midterm 2 | 12.5% | 20:00–21:15 · Weeks 4–7 |
-| W8 | Oct 31 | **ALL** | 📝 Problem Set 8 due (Fri) | — | |
+| W8 | Oct 31 | **ALL** | 📝 Problem Set 7 due (Fri) | — | |
 | W9 | Nov 7 | **CS 201** | 📋 Project 1 due | 10% | Mini-CPU simulator · 17:00 |
 | W9 | Nov 7 | **PROG 201** | 📋 Project 1 due | 12.5% | Unix shell (tsh) · 17:00 |
-| W9 | Nov 7 | **ALL** | 📝 Problem Set 9 due (Fri) | — | |
+| W9 | Nov 7 | **ALL** | 📝 Problem Set 8 due (Fri) | — | |
 | W10 | Nov 10 | **CS 201** | 📘 Midterm 2 | 12.5% | 18:00–19:15 · VNC 100 · Weeks 5–9 |
 | W10 | Nov 12 | **MATH 241** | 📘 Midterm 2 | 20% | 18:00–19:15 · SSB 110 · Weeks 6–9 |
-| W10 | Nov 14 | **ALL** | 📝 Problem Set 10 due (Fri) | — | |
+| W10 | Nov 14 | **ALL** | 📝 Problem Set 9 due (Fri) | — | |
 | W11 | Nov 21 | **CS 211** | 📋 Project 1 due | 12.5% | Mini-compiler · 17:00 |
-| W11 | Nov 21 | **ALL** | 📝 Problem Set 11 due (Fri) | — | Last quiz (Quiz 11) was Monday of this week |
+| W11 | Nov 21 | **ALL** | 📝 Problem Set 10 due (Fri) | — | Last quiz (Quiz 11) was Monday of this week |
 | — | Nov 24 | — | *Thanksgiving recess* | — | No classes |
-| W12 | Dec 5 | **ALL** | 📝 Problem Set 12 due (Fri) | — | Last teaching week |
+| W12 | Dec 5 | **ALL** | 📝 Problem Sets 11 **and** 12 due (Fri) | — | Last teaching week |
 | W12 | Dec 5 | **CS 201** | 📋 Project 2 due | 10% | Full pipelined CPU simulator |
 | W12 | Dec 5 | **PROG 201** | 📋 Project 2 due | 12.5% | Networked multi-threaded server |
 | W12 | Dec 5 | **CS 211** | 📋 Project 2 due | 12.5% | Full compiler with optimization |
@@ -184,34 +184,34 @@ CS 290 — Position Papers 60, Participation 40.
 
 | Week | Date | Course | Assessment | Weight | Notes |
 |------|------|--------|------------|--------|-------|
-| W0 | Jan 23 | **ALL** | 📝 Problem Set 0 due (Fri) | — | CS 212 runs assignments, not problem sets |
-| W1 | Jan 30 | **ALL** | 📝 Problem Set 1 due (Fri) | — | 📊 Quiz 1 in each course, covering Week 0 |
-| W2 | Feb 6 | **ALL** | 📝 Problem Set 2 due (Fri) | — | |
+| W0 | Jan 23 | **ALL** | 📝 Problem Set 0 released (Wed) | — | CS 212 runs assignments, not problem sets. Problem sets are released Wednesday of their own week and due the Friday of the week after |
+| W1 | Jan 30 | **ALL** | 📝 Problem Set 0 due (Fri) | — | 📊 Quiz 1 in each course, covering Week 0 |
+| W2 | Feb 6 | **ALL** | 📝 Problem Set 1 due (Fri) | — | |
 | W3 | Feb 9 | **ALL** | — | — | CS 202 Midterm 1 announced |
-| W3 | Feb 13 | **ALL** | 📝 Problem Set 3 due (Fri) | — | |
+| W3 | Feb 13 | **ALL** | 📝 Problem Set 2 due (Fri) | — | |
 | W3 | Feb 13 | **CS 290** | 📝 Position Paper 1 due | 20% | Algorithmic accountability |
 | W4 | Feb 16 | **CS 202** | 📘 Midterm 1 | 12.5% | 18:00–19:15 · VNC 100 · Weeks 0–3 |
-| W4 | Feb 20 | **ALL** | 📝 Problem Set 4 due (Fri) | — | |
-| W5 | Feb 27 | **ALL** | 📝 Problem Set 5 due (Fri) | — | |
+| W4 | Feb 20 | **ALL** | 📝 Problem Set 3 due (Fri) | — | |
+| W5 | Feb 27 | **ALL** | 📝 Problem Set 4 due (Fri) | — | |
 | W6 | Mar 2 | **MATH 251** | 📘 Midterm 1 | 20% | 18:00–19:15 · SSB 110 · Weeks 0–5 |
 | W6 | Mar 3 | **CS 212** | 🎤 Team Phase 1 presentation | 10% | In-class demo, 10 min per team |
 | W6 | Mar 4 | **CS 212** | 📘 Midterm | 15% | 18:00–19:15 · Weeks 0–5 |
 | W6 | Mar 4 | **ECE 211** | 📘 Midterm 1 | 17.5% | 20:00–21:15 · MEC 101 · Weeks 0–5 |
 | W6 | Mar 5 | **PROG 202** | 📘 Midterm | 15% | 18:00–19:15 · Weeks 0–5 |
-| W6 | Mar 6 | **ALL** | 📝 Problem Set 6 due (Fri) | — | |
+| W6 | Mar 6 | **ALL** | 📝 Problem Set 5 due (Fri) | — | |
 | W7 | Mar 9 | **CS 202** | 📋 Project 1 assigned | — | xv6 kernel features · due W11 |
-| W7 | Mar 13 | **ALL** | 📝 Problem Set 7 due (Fri) | — | Spring Break follows (Mar 16) |
+| W7 | Mar 13 | **ALL** | 📝 Problem Set 6 due (Fri) | — | Spring Break follows (Mar 16) |
 | W7 | Mar 13 | **PROG 202** | 📋 Project 1 due | 15% | Haskell interpreter · 17:00 |
 | W8 | Mar 23 | **CS 202** | 📘 Midterm 2 | 12.5% | 18:00–19:15 · VNC 100 · Weeks 4–7 |
-| W8 | Mar 27 | **ALL** | 📝 Problem Set 8 due (Fri) | — | |
-| W9 | Apr 3 | **ALL** | 📝 Problem Set 9 due (Fri) | — | |
+| W8 | Mar 27 | **ALL** | 📝 Problem Set 7 due (Fri) | — | |
+| W9 | Apr 3 | **ALL** | 📝 Problem Set 8 due (Fri) | — | |
 | W10 | Apr 6 | **MATH 251** | 📘 Midterm 2 | 20% | 18:00–19:15 · SSB 110 · Weeks 6–9 |
 | W10 | Apr 7 | **ECE 211** | 📘 Midterm 2 | 17.5% | 20:00–21:15 · MEC 101 · Weeks 6–9 |
-| W10 | Apr 10 | **ALL** | 📝 Problem Set 10 due (Fri) | — | |
+| W10 | Apr 10 | **ALL** | 📝 Problem Set 9 due (Fri) | — | |
 | W11 | Apr 17 | **CS 202** | 📋 Project 1 due | 15% | xv6 kernel features · 17:00 |
-| W11 | Apr 17 | **ALL** | 📝 Problem Set 11 due (Fri) | — | Last quiz (Quiz 11) was Monday of this week |
+| W11 | Apr 17 | **ALL** | 📝 Problem Set 10 due (Fri) | — | Last quiz (Quiz 11) was Monday of this week |
 | W11 | Apr 17 | **CS 290** | 📝 Position Paper 2 due | 20% | AI safety and governance |
-| W12 | Apr 24 | **ALL** | 📝 Problem Set 12 due (Fri) | — | Last teaching week |
+| W12 | Apr 24 | **ALL** | 📝 Problem Sets 11 **and** 12 due (Fri) | — | Last teaching week |
 | W12 | Apr 24 | **CS 290** | 📝 Position Paper 3 due | 20% | Debate position, assigned side |
 | Completion | May 1 | **CS 212** | 🎤 Final team project due | 30% | Demo + report |
 | Completion | May 1 | **CS 202** | 📋 Project 2 due | 15% | Complete OS kernel |
