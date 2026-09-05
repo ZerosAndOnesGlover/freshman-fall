@@ -46,8 +46,6 @@ for ins, live_after in zip(b.instrs, pts):
 
 **The move exception earns its keep.** For `x = y`, the two hold the *same value* at that point, so they may share a register even though both are live. Adding the edge anyway is not *incorrect* — it just wastes a register. Omitting it is what makes **coalescing** possible later.
 
-**It only bites when the source of the copy is still live afterwards**, and on `scale` it never is: our TAC emits `s = t9` where `t9` dies at that instruction, so removing the exception entirely leaves the graph at 69 edges and the register count at 7 — *no change at all*. On `coalesce.cy`, where `let x = y;` is followed by a use of both, the exception is the difference between 1 edge and 2, and between `x` and `y` sharing a register and not. **Measure it on the function in front of you before claiming a pass did anything** — Lab 5 Q14.
-
 > **This is why L11 §3 mattered.** A def/use table that misses a use produces a graph missing an
 > edge, and a missing edge means two live values assigned the same register. That is not a slow
 > program; it is a wrong one, and it will fail on one input in a thousand. **Register allocation
