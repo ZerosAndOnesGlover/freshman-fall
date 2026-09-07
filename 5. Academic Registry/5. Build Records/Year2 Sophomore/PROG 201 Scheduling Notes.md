@@ -126,4 +126,63 @@ reference solution shut down by SIGKILLing a child that should have died on SIGT
 
 ---
 
+## 7. Every number in Week 2 was measured too, and three of them contradict the curriculum
+
+Same machine as §6. Week 2's programs, and what each one settled:
+
+| Claim | Program | Result |
+|---|---|---|
+| A pipe holds sixteen *slots*, not 65,536 bytes | `capshape.c` | 4,096-byte writes fill it 100%; **4,097-byte writes fill it to 68.8%** (45,066 bytes in 11 writes) |
+| `F_SETPIPE_SZ` moves the ceiling | `capacity.c` | 1 MiB granted; capped by `/proc/sys/fs/pipe-max-size` |
+| `PIPE_BUF` bounds the request, not the pipe | `atomic.c` | 4 writers, 800 records: **0 torn at 4,096 B, 679 torn at 4,097 B** with a slow reader |
+| Above `PIPE_BUF` a fast reader hides the bug | `atomic.c`, `pcbig.c` | 8 KB records: **0 torn of 8,000** with a fast reader, **1,192 torn of 1,200** with a dribbling one |
+| FIFO `open` is a rendezvous, and asymmetric | `fifo.c` | `O_WRONLY\|O_NONBLOCK` → `ENXIO`; `O_RDONLY\|O_NONBLOCK` → a descriptor that reads EOF |
+| A FIFO server needs a held write end | `fifoeof.c` | 1 of 5 requests without it, 5 of 5 with it |
+| FIFO EOF is not sticky | `reopen.c` | the same read descriptor revives when a new writer opens |
+| Message queues have edges and priorities | `mq.c` | `urgent(9) now(9) routine(1) whenever(0)` — priority first, FIFO within |
+| The receive buffer must be ≥ `mq_msgsize` | `mq.c` | 2-byte message into a 2-byte buffer → `EMSGSIZE` |
+| **Unprivileged mq limits are 10 × 8,192** | `mqlimit.c` | maxmsg 11 → `EINVAL`; msgsize 8,193 → `EINVAL` |
+| IPC objects outlive the process | `mq.c` | `/dev/mqueue/prog201` still held `QSIZE:11` after exit |
+| `MAP_SHARED` vs `MAP_PRIVATE` | `maps.c` | child writes 42: shared reads 42, private reads 0 |
+| Mapping past the end gives `SIGBUS` | `gotcha.c` | no `ftruncate` → child killed by **Bus error**, not a segfault |
+| An unguarded shared counter | `shm.c` | **282,666 of 800,000** increments survived (64.7% lost); with `sem_wait`, 800,000 |
+| Uncontended semaphores are not system calls | `maps.c` | **19.3 ns** per `sem_wait`+`sem_post` pair |
+| Reference costs for the arithmetic | `maps.c` | `getpid()` **574.2 ns**; `memcpy` of 4,096 B **117.8 ns** |
+| The benchmark | `bench.c` (Lab 2) | pipe 3,680 MiB/s, FIFO 2,924, mq 2,786, **shm one slot 574** |
+| Ring depth is the fix | `bench.c` | 1 slot 557 MiB/s → 4 slots 3,979 → flat at ~4,600 from 8 |
+| The crossover is message size | `bench.c` | shm/pipe **0.11× at 64 B, 0.57× at 16 KB, 2.27× at 64 KB, 5.75× at 256 KB** |
+| Shared memory makes no fewer system calls | `strace -c -f` | pipe **131,114**; one-slot ring **131,817**, nearly all `futex` |
+| Ordering B is not always a deadlock | `dead.c` | completes with an independent consumer; **hangs the moment the consumer takes the mutex** |
+
+### The three that contradict something
+
+1. **"Shared memory is the fastest IPC mechanism."** The curriculum's own Week 2 Core Concept says
+   so, and the syllabus repeats it. Measured, a one-slot shared-memory ring is **six times slower
+   than a pipe** at 4 KB and the same number of system calls. L09 §5–§6 keeps the claim, states it,
+   and then takes it apart; the syllabus's deviations table records that the lecture disagrees with
+   the curriculum text. **The claim is true above ~64 KB per message and false below it**, and that
+   is the form the course teaches.
+
+2. **"`SA_RESTART` does not restart `sem_wait`."** Widely repeated. On glibc 2.39 it plainly does —
+   `gotcha.c` returns `EINTR` with `sa_flags = 0` and **hangs forever** with `SA_RESTART`. L09 §3
+   reports both and still requires the retry loop, because the loop is correct either way.
+
+3. **"Ordering B deadlocks."** Every textbook says a producer that takes the mutex before waiting
+   for a slot deadlocks. With a consumer that touches only `tail`, it does not — four
+   configurations, all completed. It deadlocks as soon as the consumer needs the mutex too. PS 2 Q4
+   was rewritten around the measurement, and the lesson is better than the one it replaced: **the
+   bad ordering is not reliably fatal, which is why it ships.**
+
+### One gap, recorded rather than fixed
+
+**Week 1 has no table here.** Its figures are stated in L04–L06 with their outputs quoted, and two
+of its programs are named in the lectures (`offsets.c` in L04, `bufsize.c` in L05), but the others —
+the `O_APPEND` race that lost 4,396 of 80,000 lines, the `writev` comparison, the `FD_CLOEXEC`
+demonstration — were not written down with their program names when Week 1 was built. Anyone
+reproducing Week 1 will have to rewrite them from the lecture text, which is possible but is work
+that should not have been necessary. **Weeks 3 onward get their table in this file as they are
+built.**
+
+---
+
 *Academic Registry · Build Records · Year 2 Sophomore · © CSE Department*
