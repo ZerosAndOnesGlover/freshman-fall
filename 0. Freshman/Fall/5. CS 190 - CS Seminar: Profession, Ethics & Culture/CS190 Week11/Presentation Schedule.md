@@ -18,7 +18,7 @@ of twenty-four students therefore requires **two additional sessions** beyond th
 | **Session C** | Week 11, additional session (see course page) | 16–24 |
 
 **Attendance at all three sessions is required, not only the one in which you present.** Audience
-participation is assessed — see `Peer Feedback Form.md` — and a presenter speaking to an empty room
+participation is assessed — see [[Peer Feedback Form]] — and a presenter speaking to an empty room
 has been denied the thing that makes the exercise worth doing.
 
 ---

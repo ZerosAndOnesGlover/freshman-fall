@@ -56,7 +56,7 @@ CS101_Week0/
 ## Your To-Do List for Week 0
 
 ### Before Wednesday's Lecture
-- [ ] Read the Course Overview (`resources/Course Overview Syllabus.md`)
+- [ ] Read the Course Overview ([[CS101 Week0/resources/Course Overview Syllabus|Course Overview Syllabus]])
 - [ ] Attempt to install Python 3, VS Code, and Git
 
 ### After Wednesday's Lecture
@@ -75,12 +75,12 @@ CS101_Week0/
 
 ### After Friday's Lecture
 - [ ] Read L03 notes
-- [ ] Complete the self-assessment quiz (`assignments/QUIZ 0 Orientation Self Assessment.md`)
+- [ ] Complete the self-assessment quiz ([[QUIZ 0 Orientation Self Assessment]])
 - [ ] Read Guttag Chapter 1
 - [ ] Spend 30 minutes in the Python REPL experimenting
 
 ### Weekend
-- [ ] Read `resources/Reading Guide Week 0.md` and follow the links
+- [ ] Read [[CS101 Week0/resources/Reading Guide Week 0|Reading Guide Week 0]] and follow the links
 - [ ] Try `turing_machine_simulator.py` (bonus — highly recommended)
 - [ ] Make sure your Git repo has all your lab files committed
 

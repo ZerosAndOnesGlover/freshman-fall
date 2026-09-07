@@ -39,16 +39,16 @@ By the end of Week 11, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L34 Lambdas and Closures.md` | What a lambda is, captures, and the dangling bug |
-| `lectures/L35 std function and Type Erasure.md` | The mechanism, the hidden allocation, and when to use it |
-| `lectures/L36 constexpr and Modern Features.md` | `constexpr`, `if constexpr`, structured bindings, ranges preview |
-| `assignments/PS 11 Imperative to Functional.md` | Due Friday of Week 12 |
-| `assignments/QUIZ 11 Week 11 Monday.md` | 15 minutes, covers Week 10 |
-| `assignments/PROJECT 2 A Data Structure Library.md` | **Assigned this week, due Week 12** |
-| `lab/LAB 11 Profiling Lambda Overhead.md` | Measure the three ways to hold a callable |
-| `resources/Reading Guide Week 11.md` | Meyers Items 31–34, and every command |
-| `solutions_instructor/PS 11 Solutions.md` | Instructor only |
-| `solutions_instructor/LAB 11 Solutions.md` | Instructor only |
+| [[L34 Lambdas and Closures]] | What a lambda is, captures, and the dangling bug |
+| [[L35 std function and Type Erasure]] | The mechanism, the hidden allocation, and when to use it |
+| [[L36 constexpr and Modern Features]] | `constexpr`, `if constexpr`, structured bindings, ranges preview |
+| [[PS 11 Imperative to Functional]] | Due Friday of Week 12 |
+| [[PROG102 Week11/assignments/QUIZ 11 Week 11 Monday\|QUIZ 11 Week 11 Monday]] | 15 minutes, covers Week 10 |
+| [[PROJECT 2 A Data Structure Library]] | **Assigned this week, due Week 12** |
+| [[LAB 11 Profiling Lambda Overhead]] | Measure the three ways to hold a callable |
+| [[PROG102 Week11/resources/Reading Guide Week 11\|Reading Guide Week 11]] | Meyers Items 31–34, and every command |
+| [[PROG102 Week11/solutions_instructor/PS 11 Solutions\|PS 11 Solutions]] | Instructor only |
+| [[PROG102 Week11/solutions_instructor/LAB 11 Solutions\|LAB 11 Solutions]] | Instructor only |
 
 ### The One Thing to Take From This Week
 

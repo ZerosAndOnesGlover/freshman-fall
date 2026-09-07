@@ -343,7 +343,7 @@ clean:
 ## Submission
 
 ```bash
-cd ~/prog101/week2/ps2
+cd "$PROG101/week4/ps4"
 git add .
 git commit -m "PS2 complete: functions, arrays, strings, matrix, calculator"
 ```

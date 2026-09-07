@@ -40,12 +40,12 @@ By the end of Week 6, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L13 The Instruction Nothing Frees.md` | Stack vs heap, manual `free`, reference counting **measured as the smallest-footprint collector here**, lifetimes, the cycle, **and the discovery that Cyan cannot express one** |
-| `lectures/L14 Roots Generations and the Cost of a Write Barrier.md` | Roots from liveness, **Week 4's bug as a use-after-free**, conservative vs precise, generations, barriers, **the promotion hole**, four JVM collectors, **and a log that lies** |
-| `assignments/PS 6 Mark-and-Sweep Reachability and the Root Set.md` | Mark bits, a **copying collector**, refcount leak detection, and a **heap-growth policy** |
-| `assignments/QUIZ 6 Week 6 Tuesday.md` | **Covers Week 5.** Six questions, key printed below them |
-| `assignments/PROJECT 1 A Language Feature End to End.md` | **Assigned this week, due Week 11.** One feature, all eight phases |
-| `lab/LAB 6 Profiling Garbage Collection Pauses.md` | Four collectors, four root policies, and the measurement that inverts the ranking |
+| [[L13 The Instruction Nothing Frees]] | Stack vs heap, manual `free`, reference counting **measured as the smallest-footprint collector here**, lifetimes, the cycle, **and the discovery that Cyan cannot express one** |
+| [[L14 Roots Generations and the Cost of a Write Barrier]] | Roots from liveness, **Week 4's bug as a use-after-free**, conservative vs precise, generations, barriers, **the promotion hole**, four JVM collectors, **and a log that lies** |
+| [[PS 6 Mark-and-Sweep Reachability and the Root Set]] | Mark bits, a **copying collector**, refcount leak detection, and a **heap-growth policy** |
+| [[QUIZ 6 Week 6 Tuesday]] | **Covers Week 5.** Six questions, key printed below them |
+| [[PROJECT 1 A Language Feature End to End]] | **Assigned this week, due Week 11.** One feature, all eight phases |
+| [[LAB 6 Profiling Garbage Collection Pauses]] | Four collectors, four root policies, and the measurement that inverts the ranking |
 | `lab/heap.py` | Pointers, objects, and every counter this week reads. **Read its docstring** — it explains why it is not the top of `runtime.py` |
 | `lab/runtime.py` | The interpreter. Executes TAC, keeps a heap, and answers "what can this program still reach?" three different ways |
 | `lab/collect.py` | `RefCount`, `MarkSweep`, `Generational` — and `Collector`, which is `--gc=none`, which is what you have been shipping |
@@ -56,7 +56,7 @@ By the end of Week 6, you should be able to:
 | `lab/cycle.cy` · `cyc_direct.cy` · `cyc_empty.cy` · `cyc_array.cy` | The cycle, and the three rules that used to prevent it |
 | `lab/lexer.py` · `parser.py` · `tac.py` · `live.py` · `loops.py` · `opt.py` · `regalloc.py` | The pipeline so far, carried forward from Week 5, unchanged |
 | `lab/typecheck.py` | **Changed this week.** `check_expr` takes an expected type — eleven lines, and reference counting stops being complete |
-| `resources/Reading Guide Week 6.md` | Dragon §7.4–7.8 · Appel ch. 13 · GC Handbook ch. 5, 9, 11 · Ungar 1984 |
+| [[CS211 Week6/resources/Reading Guide Week 6\|Reading Guide Week 6]] | Dragon §7.4–7.8 · Appel ch. 13 · GC Handbook ch. 5, 9, 11 · Ungar 1984 |
 | `solutions_instructor/` | Instructor only |
 
 ---
@@ -91,9 +91,9 @@ An imprecise analysis makes a slow program. **An unsound one makes an exploitabl
 
 **Labs and quizzes carry no weight**, and both are required. **Quiz 6 is sat Tuesday and covers Week 5. Lab 6 is Friday and covers this week** — both of the week's lectures have already happened by then.
 
-Both are tracked in `5. Academic Registry/2. Gradebook/Year2 Sophomore/Fall/_CS 211 Lab and Quiz Record.md`. **PS 6 is a weighted component** and goes in `CS 211.md`, as does **Project 1**, which is assigned this week and due Week 11.
+Both are tracked in [[_CS 211 Lab and Quiz Record]]. **PS 6 is a weighted component** and goes in [[CS 211]], as does **Project 1**, which is assigned this week and due Week 11.
 
-**PS 6 is released Wednesday and due Friday of Week 7**, as every problem set in this course has been. *(The registry's `ASSESSMENT CALENDAR.md` lists problem sets one week earlier than the papers do; the papers are correct and the calendar has been corrected — see `5. Build Records/Year2 Sophomore/Registry Reconciliation.md` §8.)*
+**PS 6 is released Wednesday and due Friday of Week 7**, as every problem set in this course has been. *(The registry's [[Year2 - Sophomore/ASSESSMENT CALENDAR|ASSESSMENT CALENDAR]] lists problem sets one week earlier than the papers do; the papers are correct and the calendar has been corrected — see [[Registry Reconciliation]] §8.)*
 
 ---
 

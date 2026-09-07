@@ -13,7 +13,7 @@
 > first slot that clears both. It happens once; every other lab in this course is a Monday
 > afternoon.
 >
-> **Nothing here is marked.** The TA checks your work off in the session. `COURSE POLICIES.md`
+> **Nothing here is marked.** The TA checks your work off in the session. [[Year2 - Sophomore/COURSE POLICIES|COURSE POLICIES]]
 > costs you a letter grade after a second unexcused absence, which is the only enforcement there is
 > and the only one needed.
 
@@ -35,13 +35,37 @@ strace true 2>&1 | tail -3     # if this fails: sudo apt install strace
 
 **`manpages-dev` is the one people are missing.** Without it `man 2 fork` shows you the shell builtin's page or nothing at all, and section 2 is half of this course.
 
-Get the files:
+**Where you work.** Not your home directory — your coursework for this course goes in the Academic
+Registry, alongside its answer sheets, at
+`5. Academic Registry/4. Submissions/Year2 Sophomore/Fall/2. PROG 201/`. Name that path once, in
+`~/.bashrc` (the registry's [[4. Submissions/README|README]] has the block for every course):
 
 ```bash
-cd ~/prog201/lab0
+export ACADEMICS=~/"Documents/1. Academics/0. Computer Science and Engineering (B.Sc)"
+export PROG201="$ACADEMICS/5. Academic Registry/4. Submissions/Year2 Sophomore/Fall/2. PROG 201"
+```
+
+Create the directory and, like every other course, make it a repository of its own — it is kept out
+of the vault's git repo deliberately, so you commit PROG 201 from inside `$PROG201`:
+
+```bash
+mkdir -p "$PROG201"
+cd "$PROG201"
+git init
+```
+
+Now get this lab's files. The skeletons ship with the course material; copy them across and build:
+
+```bash
+mkdir -p "$PROG201/week0/lab0"
+cd "$PROG201/week0/lab0"
+cp "$ACADEMICS/1. Sophomore/Fall/2. PROG 201 - Systems Programming in C/PROG201 Week0/lab/"{flaky.c,supervisor.c,Makefile} .
+
 make                           # builds supervisor and flaky
 ./flaky test ok                # should print a line and sit for 30 seconds
 ```
+
+**Quote every `"$PROG201"`.** The path contains spaces; unquoted it splits into five arguments.
 
 ---
 

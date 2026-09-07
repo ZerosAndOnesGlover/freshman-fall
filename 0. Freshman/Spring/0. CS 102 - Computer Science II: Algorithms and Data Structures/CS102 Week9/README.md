@@ -47,13 +47,13 @@ By the end of Week 9, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L28 The Greedy Paradigm and Exchange Arguments.md` | The paradigm, the template, activity selection, and three rules that fail |
-| `lectures/L29 Scheduling and Fractional Knapsack.md` | Three exchange arguments, and where divisibility is load-bearing |
-| `lectures/L30 Huffman Coding.md` | The algorithm, the two-part proof, entropy, and real measurements |
-| `assignments/PS 9 Greedy Algorithms and Huffman.md` | 100 points, due Friday of Week 10 |
-| `assignments/QUIZ 9 Week 9 Monday.md` | 20 points, formative — **covers Week 8** |
-| `lab/LAB 9 Compressing a File with Huffman.md` | A real codec, and three results the theory does not predict |
-| `resources/Reading Guide Week 9.md` | CLRS §15.1–15.3, with §15.2 flagged as the section that matters |
+| [[L28 The Greedy Paradigm and Exchange Arguments]] | The paradigm, the template, activity selection, and three rules that fail |
+| [[L29 Scheduling and Fractional Knapsack]] | Three exchange arguments, and where divisibility is load-bearing |
+| [[L30 Huffman Coding]] | The algorithm, the two-part proof, entropy, and real measurements |
+| [[PS 9 Greedy Algorithms and Huffman]] | 100 points, due Friday of Week 10 |
+| [[CS102 Week9/assignments/QUIZ 9 Week 9 Monday\|QUIZ 9 Week 9 Monday]] | 20 points, formative — **covers Week 8** |
+| [[LAB 9 Compressing a File with Huffman]] | A real codec, and three results the theory does not predict |
+| [[CS102 Week9/resources/Reading Guide Week 9\|Reading Guide Week 9]] | CLRS §15.1–15.3, with §15.2 flagged as the section that matters |
 | `solutions_instructor/` | PS 9 and Lab 9 solutions — instructor only |
 
 ### The Three Ideas Most Likely to Be Missed

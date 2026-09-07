@@ -4,8 +4,8 @@
 ---
 
 **Week 0 · Friday 14:00–15:50 · BH 220** — the Friday that closes the ten-day Week 0.
-**Unmarked.** The TA checks your work off in the session. `COURSE POLICIES.md` costs you a letter grade after a second unexcused absence.
-**Bring:** the Week 0 lectures, and `resources/The Cyan Language Reference.md`.
+**Unmarked.** The TA checks your work off in the session. [[Year2 - Sophomore/COURSE POLICIES|COURSE POLICIES]] costs you a letter grade after a second unexcused absence.
+**Bring:** the Week 0 lectures, and [[The Cyan Language Reference]].
 
 > **CS 211's lab does not lag.** Lab *N* covers Week *N* and is sat on the **Friday of Week *N***,
 > after both of that week's lectures. CS 201's lab, in the same term, works the other way. Do not

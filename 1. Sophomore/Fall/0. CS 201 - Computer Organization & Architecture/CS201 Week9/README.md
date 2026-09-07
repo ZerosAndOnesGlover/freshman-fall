@@ -6,7 +6,7 @@
 **This week's deliverables:** PS 9 (due Week 10 Friday), Lab 9 *(sat Tuesday of Week 10)*, and **Quiz 9 on Monday, covering Week 8**.
 
 > **Project 1 (mini-CPU simulator, 10%) was due last Friday.** If you have not submitted, it is now
-> late — see the late policy in `COURSE POLICIES.md`.
+> late — see the late policy in [[Year2 - Sophomore/COURSE POLICIES|COURSE POLICIES]].
 
 ---
 
@@ -50,13 +50,13 @@ By the end of Week 9, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L28 The Stack Under Attack.md` | The overflow, the canary, NX and ASLR — each measured, and how to write the bug out |
-| `lectures/L29 Return-Oriented Programming and Control-Flow Integrity.md` | Gadgets, ROP, ret2libc, and CET — with the "compiled in ≠ enforced" caution |
-| `lectures/L30 Integer Overflows Format Strings and the Security Mindset.md` | The bugs that are not on the stack, and the habit of thought behind all of them |
-| `assignments/PS 9 Memory Safety and Its Defenses.md` | The defenses, the arms race, and **four vulnerable functions to fix and prove** |
-| `assignments/QUIZ 9 Week 9 Monday.md` | Ten minutes on Week 8. **Unmarked — key in the paper** |
-| `lab/LAB 9 Defenses at Work.md` | See the canary, watch an overwrite in GDB, and **find bugs with the sanitizer** |
-| `resources/Reading Guide Week 9.md` | CS:APP §3.10, §2.3 revisited, and what the book predates |
+| [[L28 The Stack Under Attack]] | The overflow, the canary, NX and ASLR — each measured, and how to write the bug out |
+| [[L29 Return-Oriented Programming and Control-Flow Integrity]] | Gadgets, ROP, ret2libc, and CET — with the "compiled in ≠ enforced" caution |
+| [[L30 Integer Overflows Format Strings and the Security Mindset]] | The bugs that are not on the stack, and the habit of thought behind all of them |
+| [[PS 9 Memory Safety and Its Defenses]] | The defenses, the arms race, and **four vulnerable functions to fix and prove** |
+| [[CS201 Week9/assignments/QUIZ 9 Week 9 Monday\|QUIZ 9 Week 9 Monday]] | Ten minutes on Week 8. **Unmarked — key in the paper** |
+| [[LAB 9 Defenses at Work]] | See the canary, watch an overwrite in GDB, and **find bugs with the sanitizer** |
+| [[CS201 Week9/resources/Reading Guide Week 9\|Reading Guide Week 9]] | CS:APP §3.10, §2.3 revisited, and what the book predates |
 | `solutions_instructor/` | Instructor only |
 
 ---

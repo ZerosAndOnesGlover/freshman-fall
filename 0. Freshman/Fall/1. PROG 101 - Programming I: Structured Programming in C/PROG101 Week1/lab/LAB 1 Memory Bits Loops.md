@@ -398,7 +398,7 @@ week1/lab1/
 ```
 
 ```bash
-cd ~/prog101/week1/lab1
+cd "$PROG101/week1/lab1"
 git add .
 git commit -m "Week 1 Lab 1: memory, bitlib, loops"
 ```

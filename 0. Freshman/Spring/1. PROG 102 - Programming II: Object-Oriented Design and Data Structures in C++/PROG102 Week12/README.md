@@ -69,14 +69,14 @@ By the end of Week 12, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L37 Testing and Test-Driven Development.md` | Unit tests, TDD, what coverage does and does not tell you |
-| `lectures/L38 Profiling.md` | `perf`, sampling vs instrumentation, and finding the real hot spot |
-| `lectures/L39 Cache-Aware Programming and Systems Design.md` | **The memory hierarchy, measured** — and how to arrange a system |
-| `lab/LAB 12 Project Demo and Code Review.md` | Present Project 2; review someone else's |
-| `resources/FINAL EXAM Revision Guide.md` | **Comprehensive, Weeks 0–12** |
-| `resources/Course Retrospective.md` | What this course argued, and what to read next |
-| `resources/Reading Guide Week 12.md` | And every command to reproduce this week |
-| `solutions_instructor/LAB 12 Solutions.md` | Instructor only |
+| [[L37 Testing and Test-Driven Development]] | Unit tests, TDD, what coverage does and does not tell you |
+| [[L38 Profiling]] | `perf`, sampling vs instrumentation, and finding the real hot spot |
+| [[L39 Cache-Aware Programming and Systems Design]] | **The memory hierarchy, measured** — and how to arrange a system |
+| [[LAB 12 Project Demo and Code Review]] | Present Project 2; review someone else's |
+| [[PROG102 Week12/resources/FINAL EXAM Revision Guide\|FINAL EXAM Revision Guide]] | **Comprehensive, Weeks 0–12** |
+| [[PROG102 Week12/resources/Course Retrospective\|Course Retrospective]] | What this course argued, and what to read next |
+| [[PROG102 Week12/resources/Reading Guide Week 12\|Reading Guide Week 12]] | And every command to reproduce this week |
+| [[PROG102 Week12/solutions_instructor/LAB 12 Solutions\|LAB 12 Solutions]] | Instructor only |
 
 ### A Note on `perf`
 

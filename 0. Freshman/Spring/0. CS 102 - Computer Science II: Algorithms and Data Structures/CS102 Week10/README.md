@@ -4,7 +4,7 @@
 **Assessment for this course (overall):** Problem Sets 35%, Midterms 25%, Final 20%, Projects 20%
 **This week's deliverables:** **PS 10** (released Friday, due Friday of Week 11), Lab 10, **Quiz 10 —
 which covers Week 9**.
-**MIDTERM 2 is this week**, 75 minutes, covering Weeks 5–9. See `resources/MIDTERM 2 Revision Guide.md`.
+**MIDTERM 2 is this week**, 75 minutes, covering Weeks 5–9. See [[CS102 Week10/resources/MIDTERM 2 Revision Guide|MIDTERM 2 Revision Guide]].
 **PROJECT 2 is assigned this week** and due Friday of Week 12 — **10% of the course**.
 
 ---
@@ -47,15 +47,15 @@ By the end of Week 10, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L31 Naive Matching and KMP.md` | Borders, the failure function, and the amortised proof |
-| `lectures/L32 Rabin-Karp and Boyer-Moore.md` | Hashing and skipping, and what each depends on |
-| `lectures/L33 Suffix Arrays and Applications.md` | Preprocessing the text; LCP arrays and what they buy |
-| `assignments/PS 10 String Matching.md` | 100 points, due Friday of Week 11 |
-| `assignments/QUIZ 10 Week 10 Monday.md` | 20 points, formative — **covers Week 9** |
-| `assignments/PROJECT 2 A Search Engine.md` | **10% of the course**, due Friday of Week 12 |
-| `lab/LAB 10 Building a Plagiarism Detector.md` | Fingerprinting, and why the parameter is the system |
-| `resources/Reading Guide Week 10.md` | CLRS §32.1–32.4, plus Sedgewick for what CLRS omits |
-| `resources/MIDTERM 2 Revision Guide.md` | Format, examinable material, fifteen reproducible proofs |
+| [[L31 Naive Matching and KMP]] | Borders, the failure function, and the amortised proof |
+| [[L32 Rabin-Karp and Boyer-Moore]] | Hashing and skipping, and what each depends on |
+| [[L33 Suffix Arrays and Applications]] | Preprocessing the text; LCP arrays and what they buy |
+| [[PS 10 String Matching]] | 100 points, due Friday of Week 11 |
+| [[CS102 Week10/assignments/QUIZ 10 Week 10 Monday\|QUIZ 10 Week 10 Monday]] | 20 points, formative — **covers Week 9** |
+| [[PROJECT 2 A Search Engine]] | **10% of the course**, due Friday of Week 12 |
+| [[LAB 10 Building a Plagiarism Detector]] | Fingerprinting, and why the parameter is the system |
+| [[CS102 Week10/resources/Reading Guide Week 10\|Reading Guide Week 10]] | CLRS §32.1–32.4, plus Sedgewick for what CLRS omits |
+| [[CS102 Week10/resources/MIDTERM 2 Revision Guide\|MIDTERM 2 Revision Guide]] | Format, examinable material, fifteen reproducible proofs |
 | `solutions_instructor/` | PS 10 and Lab 10 solutions — instructor only |
 
 ### The Three Ideas Most Likely to Be Missed

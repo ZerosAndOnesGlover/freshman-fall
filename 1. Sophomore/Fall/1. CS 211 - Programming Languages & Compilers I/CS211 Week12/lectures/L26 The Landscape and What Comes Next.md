@@ -129,7 +129,7 @@ source → tokens → AST → typed AST → TAC → CFG → optimised → livene
 9. **Every week contained a silent failure**, and the instrument agreed with the bug more often than not.
 10. **You have written a compiler.** The gap to a real one is a list, and you can now read it.
 
-**The final exam is comprehensive and covers Weeks 0–12.** `resources/FINAL EXAM Revision Guide.md` says what is on it and in what proportion.
+**The final exam is comprehensive and covers Weeks 0–12.** [[CS211 Week12/resources/FINAL EXAM Revision Guide|FINAL EXAM Revision Guide]] says what is on it and in what proportion.
 
 ---
 

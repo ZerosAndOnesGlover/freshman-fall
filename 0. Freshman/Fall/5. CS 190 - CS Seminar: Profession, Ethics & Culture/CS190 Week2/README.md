@@ -25,17 +25,17 @@ By the end of Week 2, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `Lecture Week 2.md` | Core seminar content: agile, Open Source, and Research Labs |
-| `Reading Guide.md` | Annotated guide to this week's readings, with guiding questions |
-| `Discussion Questions.md` | Questions the seminar will work through live — come with notes |
-| `Prep Assignment.md` | Your participation-graded prep work, due before seminar |
-| `Glossary Week 2.md` | Terms introduced this week, defined precisely |
+| [[Lecture Week 2]] | Core seminar content: agile, Open Source, and Research Labs |
+| [[CS190 Week2/Reading Guide\|Reading Guide]] | Annotated guide to this week's readings, with guiding questions |
+| [[CS190 Week2/Discussion Questions\|Discussion Questions]] | Questions the seminar will work through live — come with notes |
+| [[CS190 Week2/Prep Assignment\|Prep Assignment]] | Your participation-graded prep work, due before seminar |
+| [[Glossary Week 2]] | Terms introduced this week, defined precisely |
 
 ### Before Seminar
 
-- [ ] Work through `Reading Guide.md` and the assigned readings
-- [ ] Complete `Prep Assignment.md` (one page, credit/no-credit on evident engagement)
-- [ ] Read `Discussion Questions.md` and bring notes on at least two you have a view on
+- [ ] Work through [[CS190 Week2/Reading Guide|Reading Guide]] and the assigned readings
+- [ ] Complete [[CS190 Week2/Prep Assignment|Prep Assignment]] (one page, credit/no-credit on evident engagement)
+- [ ] Read [[CS190 Week2/Discussion Questions|Discussion Questions]] and bring notes on at least two you have a view on
 
 ### How This Course Is Graded (Reminder)
 

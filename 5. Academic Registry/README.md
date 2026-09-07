@@ -41,7 +41,7 @@ it holds.)*
 
 ## How Grading Works Here
 
-**One scale, one place.** `0. Institution/UNIVERSITY POLICIES.md` defines the 13-band letter scale
+**One scale, one place.** [[UNIVERSITY POLICIES]] defines the 13-band letter scale
 (A+ 4.0 … F 0.0). `tools/gpa.py` **parses that file at runtime** rather than hard-coding the scale,
 so the policy document is genuinely the single source of truth. Change it there and every computed
 grade follows.
@@ -77,7 +77,7 @@ You write answers in `4. Submissions/`, not in the gradebook. The loop is:
 4. **Run** `python3 tools/gpa.py --sync --write`
 
 A sheet reaches the gradebook only when it is both `graded` and has a numeric score, so unfinished
-work never leaks into your GPA. See `4. Submissions/README.md`.
+work never leaks into your GPA. See [[4. Submissions/README|README]].
 
 Run `--self-test` after editing `gpa.py`. It checks the scale parse, every band boundary,
 drop-lowest, excused and blank handling, unequal point maxima, heading-separator tolerance,
@@ -99,7 +99,7 @@ components sum to 100%; `python3 tools/gpa.py` warns on stderr if that ever stop
 
 **Where Year 2's weights come from.** The curriculum docx states a complete 100% for CS 201,
 CS 211, PROG 201, CS 202, CS 212 and PROG 202. It is silent on MATH 241, MATH 251 and ECE 211, so
-those three take `1. Scheduling/Year2 - Sophomore/MASTER TIMETABLE.md`, which is the only other
+those three take [[Year2 - Sophomore/MASTER TIMETABLE|MASTER TIMETABLE]], which is the only other
 complete statement — the same precedent ECE 110 set in Year 1.
 
 **Unweighted work.** No Year 2 course's stated components leave room for labs or quizzes; every
@@ -112,7 +112,7 @@ scanning them as courses. Do not rename those files without reading that functio
 
 ## Adding a Course
 
-1. Copy an existing gradebook as a template and read `tools/GRADEBOOK SCHEMA.md`
+1. Copy an existing gradebook as a template and read [[GRADEBOOK SCHEMA]]
 2. Set the frontmatter (`course`, `title`, `credits`, `year`, `semester`)
 3. Give each component a `## Name — NN%` heading; weights must sum to 100
 4. Run `python3 tools/gpa.py` — it warns if they do not

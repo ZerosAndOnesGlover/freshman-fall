@@ -60,7 +60,7 @@ The question is *what did you believe in Week 0 that you no longer believe*. Com
 ## Housekeeping
 
 - **Final exam: Tuesday 16 December, 09:00–11:30, VNC 100.** Comprehensive, 150 marks, one A4 sheet **both sides**.
-- Point them at `resources/FINAL EXAM Revision Guide.md` and, more importantly, at **the eleven quiz answer keys**, which are the best revision material in the course and already written.
+- Point them at [[CS211 Week12/resources/FINAL EXAM Revision Guide|FINAL EXAM Revision Guide]] and, more importantly, at **the eleven quiz answer keys**, which are the best revision material in the course and already written.
 - **PS 11 and PS 12 are both due today**, and the lowest problem set is dropped.
 
 ---

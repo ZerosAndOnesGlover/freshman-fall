@@ -46,16 +46,16 @@ By the end of Week 10, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L21 Code as Data and the Macro That Is If.md` | Macros against functions **measured**, homoiconicity, `while` as library code, expansion, **capture and `gensym`** |
-| `lectures/L22 Little Languages and What They Cost.md` | Internal against external DSLs, parser combinators, **left recursion inherited**, **the error-message trade**, macro systems compared, code generation |
-| `assignments/PS 10 A Circuit DSL and Its Simulator.md` | Macros, the circuit DSL both ways, **sequential logic**, circuit optimisation, better combinator errors |
-| `assignments/QUIZ 10 Week 10 Tuesday.md` | **Covers Week 9.** Six questions, key printed below them |
-| `lab/LAB 10 A Parser Combinator Library.md` | Macros in a REPL, then combinators, then the DSL |
+| [[L21 Code as Data and the Macro That Is If]] | Macros against functions **measured**, homoiconicity, `while` as library code, expansion, **capture and `gensym`** |
+| [[L22 Little Languages and What They Cost]] | Internal against external DSLs, parser combinators, **left recursion inherited**, **the error-message trade**, macro systems compared, code generation |
+| [[PS 10 A Circuit DSL and Its Simulator]] | Macros, the circuit DSL both ways, **sequential logic**, circuit optimisation, better combinator errors |
+| [[QUIZ 10 Week 10 Tuesday]] | **Covers Week 9.** Six questions, key printed below them |
+| [[LAB 10 A Parser Combinator Library]] | Macros in a REPL, then combinators, then the DSL |
 | `lab/lisp.py` | A Lisp, in order to have macros. **The whole front end is thirty lines** |
 | `lab/demo.py` | The five demonstrations, including the capture bug and its fix |
 | `lab/combinators.py` | The grammar as a value — **4 lines** — and the two things it does not fix |
 | `lab/circuit.py` | The same circuit language internal and external, with a simulator |
-| `resources/Reading Guide Week 10.md` | SICP §4.1 · *On Lisp* ch. 7–8 · Fowler ch. 1–4 · Bentley 1986 |
+| [[CS211 Week10/resources/Reading Guide Week 10\|Reading Guide Week 10]] | SICP §4.1 · *On Lisp* ch. 7–8 · Fowler ch. 1–4 · Bentley 1986 |
 | `solutions_instructor/` | Instructor only |
 
 ---
@@ -82,7 +82,7 @@ That is the shape of nearly every abstraction in this week. **Macros**: the core
 
 **Labs and quizzes carry no weight**, and both are required. **Quiz 10 is sat Tuesday and covers Week 9. Lab 10 is Friday and covers this week.**
 
-Both are tracked in `5. Academic Registry/2. Gradebook/Year2 Sophomore/Fall/_CS 211 Lab and Quiz Record.md`. **PS 10 is a weighted component** and goes in `CS 211.md` — **and so does Project 1, due the same day.**
+Both are tracked in [[_CS 211 Lab and Quiz Record]]. **PS 10 is a weighted component** and goes in [[CS 211]] — **and so does Project 1, due the same day.**
 
 ---
 

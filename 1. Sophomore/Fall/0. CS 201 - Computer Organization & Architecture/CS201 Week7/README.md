@@ -44,14 +44,14 @@ By the end of Week 7, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L22 The I O Path Controllers Interrupts and DMA.md` | The cost ladder's bottom, the device as a computer, DMA, and the page cache at 63× |
-| `lectures/L23 Disks and SSDs.md` | The mechanical model, flash and the FTL, and this machine's measured curve |
-| `lectures/L24 Storage Performance and Scheduling.md` | IOPS vs throughput, Little's Law, tail latency, the schedulers, and why Linux uses none |
-| `assignments/PROJECT 1 Mini-CPU Simulator.md` | **10%, due Week 9.** Build the machine you have spent seven weeks observing |
-| `assignments/PS 7 Disk Scheduling and Storage Performance.md` | The mechanical model, flash, a scheduler simulator, and your own device |
-| `assignments/QUIZ 7 Week 7 Monday.md` | Ten minutes on Week 6. **Unmarked — key in the paper** |
-| `lab/LAB 7 Benchmarking Storage.md` | `O_DIRECT`, sequential vs random, the page cache, and what durability costs |
-| `resources/Reading Guide Week 7.md` | CS:APP §6.1 and §10, and which of its numbers to distrust |
+| [[L22 The I O Path Controllers Interrupts and DMA]] | The cost ladder's bottom, the device as a computer, DMA, and the page cache at 63× |
+| [[L23 Disks and SSDs]] | The mechanical model, flash and the FTL, and this machine's measured curve |
+| [[L24 Storage Performance and Scheduling]] | IOPS vs throughput, Little's Law, tail latency, the schedulers, and why Linux uses none |
+| [[PROJECT 1 Mini-CPU Simulator]] | **10%, due Week 9.** Build the machine you have spent seven weeks observing |
+| [[PS 7 Disk Scheduling and Storage Performance]] | The mechanical model, flash, a scheduler simulator, and your own device |
+| [[CS201 Week7/assignments/QUIZ 7 Week 7 Monday\|QUIZ 7 Week 7 Monday]] | Ten minutes on Week 6. **Unmarked — key in the paper** |
+| [[LAB 7 Benchmarking Storage]] | `O_DIRECT`, sequential vs random, the page cache, and what durability costs |
+| [[CS201 Week7/resources/Reading Guide Week 7\|Reading Guide Week 7]] | CS:APP §6.1 and §10, and which of its numbers to distrust |
 | `solutions_instructor/` | Instructor only |
 
 ---

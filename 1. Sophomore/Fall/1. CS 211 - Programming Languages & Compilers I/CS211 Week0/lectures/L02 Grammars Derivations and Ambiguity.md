@@ -290,7 +290,7 @@ primary  ::= INT | STRING | "true" | "false" | IDENT | "(" expr ")"
 
 **Seven precedence levels, lowest to highest.** Read it top to bottom and it is the precedence table of every C-family language you have used, written as structure instead of as a chart you memorise.
 
-**It is verified unambiguous** — 33 well-formed expressions each parse to exactly one tree, 11 malformed ones to zero, checked mechanically by the same counter that found 58,786 trees in §4. The full listing is in `resources/The Cyan Language Reference.md`, along with the statement and declaration grammar.
+**It is verified unambiguous** — 33 well-formed expressions each parse to exactly one tree, 11 malformed ones to zero, checked mechanically by the same counter that found 58,786 trees in §4. The full listing is in [[The Cyan Language Reference]], along with the statement and declaration grammar.
 
 ---
 

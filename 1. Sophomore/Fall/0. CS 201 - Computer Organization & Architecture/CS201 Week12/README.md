@@ -6,7 +6,7 @@
 **This week's deliverables:** **PROJECT 2 due Friday (10%)**, PS 12 (due Friday), Lab 12 *(demo day, this week's lab)*. **No quiz — Quiz 11 in Week 11 was the last.**
 
 > **This is the last teaching week.** The final exam (Weeks 0–12, comprehensive, 20%) follows in finals
-> week — see `resources/FINAL EXAM Revision Guide.md`. Project 2 is demoed in Lab 12 and submitted Friday.
+> week — see [[CS201 Week12/resources/FINAL EXAM Revision Guide|FINAL EXAM Revision Guide]]. Project 2 is demoed in Lab 12 and submitted Friday.
 
 ---
 
@@ -40,15 +40,15 @@ By the end of Week 12, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L37 Architecture Frontiers.md` | RISC-V, TPUs, FPGAs, quantum, neuromorphic — the generality-efficiency axis |
-| `lectures/L38 The Whole Machine — Synthesis.md` | One function, every week; the layers; the latency ladder; the recurring ideas |
-| `lectures/L39 The Road Ahead.md` | Where CS 201 holds up the degree, and what to keep |
-| `assignments/PROJECT 2 Pipelined CPU Simulator with a Cache.md` | **10%, due Friday.** The capstone — extend Project 1 with a pipeline and cache |
-| `assignments/PS 12 Synthesis.md` | RISC-V, domain-specific chips, and the whole machine in one program |
-| `lab/LAB 12 Demo Day.md` | Demo Project 2, watch others, look back |
-| `resources/FINAL EXAM Revision Guide.md` | Weeks 0–12, the two pages, the plan |
-| `resources/CS 201 Reference Sheet.md` | The whole course on one page — the artefact to keep |
-| `resources/Course Retrospective.md` | **Read after the final, not before** |
+| [[L37 Architecture Frontiers]] | RISC-V, TPUs, FPGAs, quantum, neuromorphic — the generality-efficiency axis |
+| [[L38 The Whole Machine — Synthesis]] | One function, every week; the layers; the latency ladder; the recurring ideas |
+| [[L39 The Road Ahead]] | Where CS 201 holds up the degree, and what to keep |
+| [[PROJECT 2 Pipelined CPU Simulator with a Cache]] | **10%, due Friday.** The capstone — extend Project 1 with a pipeline and cache |
+| [[CS201 Week12/assignments/PS 12 Synthesis\|PS 12 Synthesis]] | RISC-V, domain-specific chips, and the whole machine in one program |
+| [[LAB 12 Demo Day]] | Demo Project 2, watch others, look back |
+| [[CS201 Week12/resources/FINAL EXAM Revision Guide\|FINAL EXAM Revision Guide]] | Weeks 0–12, the two pages, the plan |
+| [[CS 201 Reference Sheet]] | The whole course on one page — the artefact to keep |
+| [[CS201 Week12/resources/Course Retrospective\|Course Retrospective]] | **Read after the final, not before** |
 | `solutions_instructor/` | Instructor only |
 
 ---

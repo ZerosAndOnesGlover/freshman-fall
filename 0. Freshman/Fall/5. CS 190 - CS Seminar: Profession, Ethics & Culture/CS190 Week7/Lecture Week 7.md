@@ -134,4 +134,4 @@ A closely related and currently very active policy area: § 1201's anti-circumve
 
 ## Key Terms Introduced This Week
 
-See `Glossary Week 7.md`. New terms: *idea/expression dichotomy*, *fair use (four-factor test)*, *Google v. Oracle*, *patent eligibility*, *Alice/Mayo framework*, *patent troll*, *patent thicket*, *trade secret*, *misappropriation*, *DMCA safe harbor*, *notice-and-takedown*, *anti-circumvention (§ 1201)*, *right to repair*.
+See [[Glossary Week 7]]. New terms: *idea/expression dichotomy*, *fair use (four-factor test)*, *Google v. Oracle*, *patent eligibility*, *Alice/Mayo framework*, *patent troll*, *patent thicket*, *trade secret*, *misappropriation*, *DMCA safe harbor*, *notice-and-takedown*, *anti-circumvention (§ 1201)*, *right to repair*.

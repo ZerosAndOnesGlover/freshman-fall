@@ -22,7 +22,7 @@ Track changes after M2 Fall begins require Program Office approval and may exten
 
 ### Submission
 - Submitted via the course portal before **17:00** on the due date specified per course.
-- **Format**: PDF (write-ups) or `.zip` with `README.md` (code submissions), same convention as undergraduate courses.
+- **Format**: PDF (write-ups) or `.zip` with [[5. Academic Registry/README|README]] (code submissions), same convention as undergraduate courses.
 - **Naming convention**: `PS{N}_{LastName}_{StudentID}.pdf`
 
 ### Late Policy

@@ -39,7 +39,7 @@ practice at it the course provides.
 **Eight minutes.** Not a presentation — a demonstration.
 
 **A1.** *(4)* **Build and run it from a clean checkout**, with the single command from your
-`README.md`. It must build with no warnings and the test suite must pass.
+[[PROG102 Week12/README|README]]. It must build with no warnings and the test suite must pass.
 
 *(If it does not build, say so immediately and demo what you have. An honest "Part 4 is incomplete"
 costs far less than a demo that pretends.)*
@@ -65,7 +65,7 @@ choice we would have made.
 
 Written, and given to them. **Be useful and be kind — those are the same thing here.**
 
-**B1.** *(4)* **Build it yourself** from their `README.md`. Report whether it built, whether the tests
+**B1.** *(4)* **Build it yourself** from their [[PROG102 Week12/README|README]]. Report whether it built, whether the tests
 passed, and any warnings.
 
 **B2.** *(6)* **Find three specific things**, with file and line:

@@ -3,7 +3,7 @@
 
 **Released:** End of this appendix Thursday
 **Due:** Before Week 8 Lecture 1
-**Directory:** `~/prog101/week7/ps7/`
+**Directory:** `$PROG101/week7/ps7/`
 **Total:** 100 points
 
 ---
@@ -256,7 +256,7 @@ clean:
 ## Submission
 
 ```bash
-cd ~/prog101/week7/ps7
+cd "$PROG101/week7/ps7"
 git add .
 git commit -m "PS7 complete: open addressing, phone book, anagrams, hash algorithms, db table"
 ```

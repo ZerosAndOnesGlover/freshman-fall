@@ -38,10 +38,10 @@ By the end of Week 12, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `Guest Speaker Session.md` | Format, what the speaker is asked to address, how to weigh what you hear |
-| `Question Preparation.md` | Two questions plus a course connection — required before the seminar |
-| `Course Reflection.md` | The final assignment: four sections, 600–800 words, and the retrospective questions |
-| `Glossary Week 12.md` | The twelve concepts that recurred across the course, in their final form |
+| [[Guest Speaker Session]] | Format, what the speaker is asked to address, how to weigh what you hear |
+| [[Question Preparation]] | Two questions plus a course connection — required before the seminar |
+| [[Course Reflection]] | The final assignment: four sections, 600–800 words, and the retrospective questions |
+| [[Glossary Week 12]] | The twelve concepts that recurred across the course, in their final form |
 
 **There is no lecture this week.** The hour belongs to the guest and then to the room.
 
@@ -71,7 +71,7 @@ people who never agreed to be affected. Noticing that is the beginning of being 
 
 ### Connections
 
-**Back:** everything. `Glossary Week 12.md` is a course-wide review rather than a set of new terms,
+**Back:** everything. [[Glossary Week 12]] is a course-wide review rather than a set of new terms,
 and states the twelve recurring concepts in the form the course finally arrived at — most of them
 correctives to a comfortable idea rather than the idea itself.
 

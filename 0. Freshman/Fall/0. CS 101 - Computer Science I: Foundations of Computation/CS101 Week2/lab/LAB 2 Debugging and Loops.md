@@ -21,8 +21,8 @@ By the end of this lab, you will:
 ## Setup
 
 ```bash
-cd ~/cs101
-mkdir week2 && cd week2
+cd "$CS101"        # set in ~/.bashrc -- see Lab 0
+mkdir -p week2 && cd week2
 ```
 
 ---
@@ -554,7 +554,7 @@ This is not just an academic exercise — this is how professional code is docum
 ## Part 5: Commit and Reflection (15 minutes)
 
 ```bash
-cd ~/cs101/week2
+cd "$CS101/week2"
 git add .
 git commit -m "Week 2 Lab: debugging, loop invariants, Collatz, Sieve, Caesar cipher"
 git push

@@ -117,7 +117,7 @@ Plot or tabulate lines-lost against *N*, and explain the shape. **Why is the los
 | 5 | A descriptor is a capability | 14 |
 | | **Total** | **100** |
 
-**Late work:** `COURSE POLICIES.md` applies. The lowest problem set of the term is dropped.
+**Late work:** [[Year2 - Sophomore/COURSE POLICIES|COURSE POLICIES]] applies. The lowest problem set of the term is dropped.
 
 ---
 

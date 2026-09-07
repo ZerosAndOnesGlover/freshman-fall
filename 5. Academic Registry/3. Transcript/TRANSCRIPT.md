@@ -82,7 +82,7 @@
 - [ ] Cumulative GPA ≥ 2.0
 - [ ] CS Core GPA ≥ 2.0 (all CS/PROG courses)
 
-See `0. Institution/DEGREE REQUIREMENTS.md` for the full category breakdown.
+See [[DEGREE REQUIREMENTS]] for the full category breakdown.
 
 ---
 

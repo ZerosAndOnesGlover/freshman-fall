@@ -49,17 +49,17 @@ By the end of Week 7, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L15 Three Constructs and the One That Is Hard.md` | Syntax, currying, beta/alpha/eta, **substitution and what capture costs**, normal forms, undecidability, two strategies that disagree |
-| `lectures/L16 Encodings Recursion and Why Y Hangs in Python.md` | Church encodings, **the seven collisions**, `Y`, **the three-way strategy comparison**, `Z`, thunked `if`, de Bruijn, Turing equivalence |
-| `assignments/PS 7 A Lambda Calculus Interpreter.md` | Capture, **call-by-need with sharing**, tree encodings, **mutual recursion** |
-| `assignments/QUIZ 7 Week 7 Tuesday.md` | **Covers Week 6.** Six questions, key printed below them |
-| `lab/LAB 7 Encoding Data in Pure Lambda Calculus.md` | Reduce by hand, build the data, then break `Y` three times |
+| [[L15 Three Constructs and the One That Is Hard]] | Syntax, currying, beta/alpha/eta, **substitution and what capture costs**, normal forms, undecidability, two strategies that disagree |
+| [[L16 Encodings Recursion and Why Y Hangs in Python]] | Church encodings, **the seven collisions**, `Y`, **the three-way strategy comparison**, `Z`, thunked `if`, de Bruijn, Turing equivalence |
+| [[PS 7 A Lambda Calculus Interpreter]] | Capture, **call-by-need with sharing**, tree encodings, **mutual recursion** |
+| [[QUIZ 7 Week 7 Tuesday]] | **Covers Week 6.** Six questions, key printed below them |
+| [[LAB 7 Encoding Data in Pure Lambda Calculus]] | Reduce by hand, build the data, then break `Y` three times |
 | `lab/lam.py` | Terms, capture-avoiding substitution (with a `--naive` switch), four strategies, eta |
 | `lab/church.py` | Encodings, decoding, and a self-test that **asserts the collision** rather than hiding it |
 | `lab/prelude.lam` | Fifty-five definitions, in three constructs |
 | `lab/debruijn.py` | The same calculus with the names taken out, and what that costs |
 | `lab/strict.py` | All of it in Python — **no import of `lam.py`**, which is the point |
-| `resources/Reading Guide Week 7.md` | TAPL ch. 5 · SICP §1.3, §3.5 · Barendregt ch. 2 · Church 1936 |
+| [[CS211 Week7/resources/Reading Guide Week 7\|Reading Guide Week 7]] | TAPL ch. 5 · SICP §1.3, §3.5 · Barendregt ch. 2 · Church 1936 |
 | `solutions_instructor/` | Instructor only |
 
 ---
@@ -94,7 +94,7 @@ Compare all fifty-five definitions and there are **seven** such pairs — but th
 
 **Labs and quizzes carry no weight**, and both are required. **Quiz 7 is sat Tuesday and covers Week 6. Lab 7 is Friday and covers this week.**
 
-Both are tracked in `5. Academic Registry/2. Gradebook/Year2 Sophomore/Fall/_CS 211 Lab and Quiz Record.md`. **PS 7 is a weighted component** and goes in `CS 211.md`.
+Both are tracked in [[_CS 211 Lab and Quiz Record]]. **PS 7 is a weighted component** and goes in [[CS 211]].
 
 **PS 7 is released Wednesday and due Friday of Week 8**, as every problem set in this course has been.
 

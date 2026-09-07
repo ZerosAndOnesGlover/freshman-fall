@@ -21,8 +21,8 @@ By the end of this lab, you will:
 ## Setup
 
 ```bash
-cd ~/cs101
-mkdir week7 && cd week7
+cd "$CS101"        # set in ~/.bashrc -- see Lab 0
+mkdir -p week7 && cd week7
 ```
 
 ---
@@ -593,7 +593,7 @@ print("\n🎉 All application tests passed!")
 ## Part 6: Commit and Reflection (10 minutes)
 
 ```bash
-cd ~/cs101/week7
+cd "$CS101/week7"
 git add .
 git commit -m "Week 7 Lab: memory profiling, linked lists, stacks, queues, applications"
 git push

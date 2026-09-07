@@ -49,13 +49,13 @@ By the end of Week 8, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L25 Interval DP Matrix Chain and Optimal BSTs.md` | The interval family, and why balance is the wrong objective here |
-| `lectures/L26 Sequences Trees and Bitmasks.md` | LIS, coin change, tree DP, bitmask TSP |
-| `lectures/L27 Floyd-Warshall and All-Pairs Shortest Paths.md` | The state, the loop order, negative cycles, and semirings |
-| `assignments/PS 8 Dynamic Programming II.md` | 100 points, due Friday of Week 9 |
-| `assignments/QUIZ 8 Week 8 Monday.md` | 20 points, formative — **covers Week 7** |
-| `lab/LAB 8 Implementing Floyd-Warshall.md` | Five lines, and four ways to get them wrong |
-| `resources/Reading Guide Week 8.md` | CLRS §14.2, §15.5, §23.1–23.2 |
+| [[L25 Interval DP Matrix Chain and Optimal BSTs]] | The interval family, and why balance is the wrong objective here |
+| [[L26 Sequences Trees and Bitmasks]] | LIS, coin change, tree DP, bitmask TSP |
+| [[L27 Floyd-Warshall and All-Pairs Shortest Paths]] | The state, the loop order, negative cycles, and semirings |
+| [[PS 8 Dynamic Programming II]] | 100 points, due Friday of Week 9 |
+| [[CS102 Week8/assignments/QUIZ 8 Week 8 Monday\|QUIZ 8 Week 8 Monday]] | 20 points, formative — **covers Week 7** |
+| [[LAB 8 Implementing Floyd-Warshall]] | Five lines, and four ways to get them wrong |
+| [[CS102 Week8/resources/Reading Guide Week 8\|Reading Guide Week 8]] | CLRS §14.2, §15.5, §23.1–23.2 |
 | `solutions_instructor/` | PS 8 and Lab 8 solutions — instructor only |
 
 ### The Three Ideas Most Likely to Be Missed

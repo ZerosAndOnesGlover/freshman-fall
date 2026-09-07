@@ -148,7 +148,7 @@ Argue in one paragraph whether that is achievable with a single `spawn`-style ca
 | 5 | What the split costs and buys | 18 |
 | | **Total** | **100** |
 
-**Late work:** `COURSE POLICIES.md` applies. **The lowest problem set of the term is dropped**, which is there for the week you are ill, not for the week you forgot.
+**Late work:** [[Year2 - Sophomore/COURSE POLICIES|COURSE POLICIES]] applies. **The lowest problem set of the term is dropped**, which is there for the week you are ill, not for the week you forgot.
 
 ---
 

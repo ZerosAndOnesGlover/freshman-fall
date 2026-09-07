@@ -43,13 +43,13 @@ By the end of Week 6, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L19 Spanning Trees and the Cut Property.md` | The two properties, uniqueness, why greedy is safe, and what an MST is *not* |
-| `lectures/L20 Prim and Kruskal.md` | Both algorithms, both proofs, and where the time actually goes |
-| `lectures/L21 Union-Find and MST Applications.md` | Union-find measured, $\alpha(n)$, clustering, bottleneck |
-| `assignments/PS 6 Minimum Spanning Trees.md` | 100 points, due Friday of Week 7 |
-| `assignments/QUIZ 6 Week 6 Monday.md` | 20 points, formative — **covers Week 5** |
-| `lab/LAB 6 Network Cable Layout.md` | Campus fibre, the bottleneck, clustering, and breaking it |
-| `resources/Reading Guide Week 6.md` | CLRS Ch. 21 and §19.1–19.3 |
+| [[L19 Spanning Trees and the Cut Property]] | The two properties, uniqueness, why greedy is safe, and what an MST is *not* |
+| [[L20 Prim and Kruskal]] | Both algorithms, both proofs, and where the time actually goes |
+| [[L21 Union-Find and MST Applications]] | Union-find measured, $\alpha(n)$, clustering, bottleneck |
+| [[PS 6 Minimum Spanning Trees]] | 100 points, due Friday of Week 7 |
+| [[CS102 Week6/assignments/QUIZ 6 Week 6 Monday\|QUIZ 6 Week 6 Monday]] | 20 points, formative — **covers Week 5** |
+| [[LAB 6 Network Cable Layout]] | Campus fibre, the bottleneck, clustering, and breaking it |
+| [[CS102 Week6/resources/Reading Guide Week 6\|Reading Guide Week 6]] | CLRS Ch. 21 and §19.1–19.3 |
 | `solutions_instructor/` | PS 6 and Lab 6 solutions — instructor only |
 
 ### The Three Ideas Most Likely to Be Missed

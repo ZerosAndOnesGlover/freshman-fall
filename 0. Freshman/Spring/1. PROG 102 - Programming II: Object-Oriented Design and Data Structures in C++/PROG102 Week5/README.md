@@ -43,15 +43,15 @@ By the end of Week 5, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L16 RAII and unique_ptr.md` | The idiom, exclusive ownership, and what it costs |
-| `lectures/L17 shared_ptr weak_ptr and the Cost of Sharing.md` | Reference counting, the cycle leak, and the atomic |
-| `lectures/L18 Move Semantics.md` | Rvalue references, `std::move`, Rule of Five, Rule of Zero |
-| `assignments/PS 5 From Raw Pointers to Smart Pointers.md` | Due Friday of Week 6 |
-| `assignments/QUIZ 5 Week 5 Monday.md` | 15 minutes, covers Week 4 |
-| `lab/LAB 5 Leak Detection with AddressSanitizer.md` | Find five leaks, fix them with ownership types |
-| `resources/Reading Guide Week 5.md` | *C++ Primer* Ch. 12–13, Meyers Items 18–22, and every command |
-| `solutions_instructor/PS 5 Solutions.md` | Instructor only |
-| `solutions_instructor/LAB 5 Solutions.md` | Instructor only |
+| [[L16 RAII and unique_ptr]] | The idiom, exclusive ownership, and what it costs |
+| [[L17 shared_ptr weak_ptr and the Cost of Sharing]] | Reference counting, the cycle leak, and the atomic |
+| [[L18 Move Semantics]] | Rvalue references, `std::move`, Rule of Five, Rule of Zero |
+| [[PS 5 From Raw Pointers to Smart Pointers]] | Due Friday of Week 6 |
+| [[PROG102 Week5/assignments/QUIZ 5 Week 5 Monday\|QUIZ 5 Week 5 Monday]] | 15 minutes, covers Week 4 |
+| [[LAB 5 Leak Detection with AddressSanitizer]] | Find five leaks, fix them with ownership types |
+| [[PROG102 Week5/resources/Reading Guide Week 5\|Reading Guide Week 5]] | *C++ Primer* Ch. 12–13, Meyers Items 18–22, and every command |
+| [[PROG102 Week5/solutions_instructor/PS 5 Solutions\|PS 5 Solutions]] | Instructor only |
+| [[PROG102 Week5/solutions_instructor/LAB 5 Solutions\|LAB 5 Solutions]] | Instructor only |
 
 ### The One Thing to Take From This Week
 

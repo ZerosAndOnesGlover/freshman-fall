@@ -152,7 +152,7 @@ tests.cpp       bench.cpp       DESIGN.md            README.md (how to build and
 ```
 
 **A single command must build and run your tests.** A `Makefile` or a one-line script is fine; state it
-in `README.md`.
+in [[PROG102 Week6/README|README]].
 
 ---
 
@@ -174,7 +174,7 @@ in `README.md`.
 Projects are stricter than problem sets: **10% per day, and nothing accepted after 3 days.**
 
 **Partial credit is generous.** A submission with Parts 1, 3 and 5 complete and Part 2 missing scores
-far better than four half-finished parts. **Finish what you start**, and say in `README.md` what is not
+far better than four half-finished parts. **Finish what you start**, and say in [[PROG102 Week6/README|README]] what is not
 done — an accurate statement of scope costs you nothing and an inaccurate one costs a great deal.
 
 ---

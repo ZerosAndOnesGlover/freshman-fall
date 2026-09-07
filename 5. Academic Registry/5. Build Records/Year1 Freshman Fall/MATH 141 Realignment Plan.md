@@ -72,7 +72,7 @@ Weeks that split need their assets re-scoped, because each currently spans two d
 ## Local conventions to preserve
 
 MATH 141 uses `quiz/` (singular) and `Week N Overview.md` rather than CS 101 and PROG 101's
-`quizzes/` and `README.md`. **These are kept**, so the course stays internally consistent; the
+`quizzes/` and [[5. Build Records/README|README]]. **These are kept**, so the course stays internally consistent; the
 difference is noted here so it is not mistaken for an error.
 
 Quiz files embed their own answer keys (`QUIZ 0N With Answer Key.md`), and problem-set solutions live

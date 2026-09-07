@@ -20,7 +20,7 @@ status: in-progress
 >
 > **Note the difference from CS 102: labs are weighted here.** They are a graded component at 20%,
 > not a completion gate, so they live in this file rather than in a separate record. **Quizzes** carry
-> no weight and are tracked in `_PROG 102 Quiz Record.md`.
+> no weight and are tracked in [[_PROG 102 Quiz Record]].
 
 ---
 
@@ -124,7 +124,7 @@ status: in-progress
 
 ---
 
-> **Quizzes are tracked separately** in `_PROG 102 Quiz Record.md`, deliberately kept out of this
+> **Quizzes are tracked separately** in [[_PROG 102 Quiz Record]], deliberately kept out of this
 > file. They carry no weight, so including them here would add rows beneath the last weighted
 > component that the parser reads as belonging to it — the failure mode documented in CS 102's
 > record. The leading underscore keeps that file out of `tools/gpa.py`'s course scan.

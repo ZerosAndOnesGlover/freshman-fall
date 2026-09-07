@@ -2,7 +2,7 @@
 
 **Sat:** Tuesday of **Week 6**, first 10 minutes of lecture · TH 205
 **Covers:** **Week 5** — liveness, dominators and natural loops, loop-invariant code motion, register allocation, instruction selection, the pipeline
-**Unmarked.** Recorded in `5. Academic Registry/2. Gradebook/Year2 Sophomore/Fall/_CS 211 Lab and Quiz Record.md`.
+**Unmarked.** Recorded in [[_CS 211 Lab and Quiz Record]].
 
 **The answer key is printed below the questions.** Do not look at it until you have written something for all six. The point of this quiz is to tell *you* what you do not know, twenty minutes before Week 6 starts building a garbage collector on top of it.
 

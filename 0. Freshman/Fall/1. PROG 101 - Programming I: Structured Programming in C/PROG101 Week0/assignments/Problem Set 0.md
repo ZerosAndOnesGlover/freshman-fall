@@ -12,9 +12,9 @@
 > **Revision note (2026-08-16).** Problems 1, 3, 4 and 5 were rebuilt to draw only on Week 0
 > material. The previous versions required loops (Week 2), arrays (Week 4), pointers (Week 5),
 > `malloc`/`free` (Week 6), recursion (Week 9) and macro-expansion semantics (Week 10) — 65 of
-> 100 points tested content from later in the course. See `PREREQUISITE AUDIT.md`.
+> 100 points tested content from later in the course. See [[Year1 - Freshman/PREREQUISITE AUDIT|PREREQUISITE AUDIT]].
 > The removed problems were good problems in the wrong week; they are preserved with their
-> verified answer keys in `_RELOCATED Problems.md` for re-filing under Weeks 6, 9 and 10.
+> verified answer keys in [[_RELOCATED Problems]] for re-filing under Weeks 6, 9 and 10.
 > **Problems 2 and 6 are unchanged**, as are their answer keys and the errata table below.
 
 **Scope of this set.** Everything here is answerable from Lecture 01 (Compilation Model),
@@ -30,11 +30,11 @@ here and will not be assessed on them.
 
 ## Setup
 
-All your work this week goes in `~/prog101/week0/ps0/`.
+All your work this week goes in `$PROG101/week0/ps0/`.
 
 ```bash
-mkdir -p ~/prog101/week0/ps0
-cd ~/prog101/week0/ps0
+mkdir -p "$PROG101/week0/ps0"
+cd "$PROG101/week0/ps0"
 ```
 
 Each problem should be in its own file. Submit a `Makefile` that builds all of them.
@@ -166,7 +166,7 @@ int describe(int code) {
 ```
 
 Your task:
-1. Create `error_log.md` documenting each error:
+1. Create [[assignments/error_log|error_log]] documenting each error:
    - Error number (1–10)
    - The line and what is wrong
    - What category it is (preprocessor / compiler / linker / undefined behavior)
@@ -174,7 +174,7 @@ Your task:
 2. Create `fixed.c`: the fully corrected version, compiling clean under
    `gcc -Wall -Wextra -Werror -std=c11`
 
-Format your `error_log.md` like this:
+Format your [[assignments/error_log|error_log]] like this:
 
 ```markdown
 ## Error 1
@@ -267,7 +267,7 @@ clean:
 ## Submission
 
 ```bash
-cd ~/prog101/week0/ps0
+cd "$PROG101/week0/ps0"
 git add .
 git commit -m "PS0: complete — all 6 problems"
 git log --oneline -1    # Copy this commit hash for submission
@@ -305,7 +305,7 @@ Submit on the course portal:
 Two defects from the original P2/P6 material, verified against `gcc 13.3.0` / GNU `nm` on
 x86-64 Linux. Both **have now been fixed in this document**. (A third erratum concerned the
 Kelvin column of the retired temperature-table problem; it moved with that problem to
-`_RELOCATED Problems.md`.)
+[[_RELOCATED Problems]].)
 
 | Location | Was (wrong) | Now |
 |---|---|---|

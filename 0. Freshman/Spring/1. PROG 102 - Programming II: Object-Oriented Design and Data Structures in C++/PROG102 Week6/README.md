@@ -51,16 +51,16 @@ By the end of Week 6, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L19 Implementing a Doubly Linked List.md` | Sentinel, Rule of Five, insert and erase |
-| `lectures/L20 Implementing Iterators.md` | `iterator_traits`, `const_iterator`, and the category contract |
-| `lectures/L21 Implementing a Binary Search Tree.md` | `unique_ptr` children, the destructor trap, and the STL comparison |
-| `assignments/PS 6 A Templated Doubly Linked List.md` | Due Friday of Week 7 |
-| `assignments/QUIZ 6 Week 6 Monday.md` | 15 minutes, covers Week 5 |
-| `assignments/PROJECT 1 A Container Library.md` | **Assigned this week, due Week 9** |
-| `lab/LAB 6 Benchmarking Against std list.md` | Measure your list against `std::list` |
-| `resources/Reading Guide Week 6.md` | *C++ Primer* §9.2, Ch. 16 revisited, and every command |
-| `solutions_instructor/PS 6 Solutions.md` | Instructor only |
-| `solutions_instructor/LAB 6 Solutions.md` | Instructor only |
+| [[L19 Implementing a Doubly Linked List]] | Sentinel, Rule of Five, insert and erase |
+| [[L20 Implementing Iterators]] | `iterator_traits`, `const_iterator`, and the category contract |
+| [[L21 Implementing a Binary Search Tree]] | `unique_ptr` children, the destructor trap, and the STL comparison |
+| [[PS 6 A Templated Doubly Linked List]] | Due Friday of Week 7 |
+| [[PROG102 Week6/assignments/QUIZ 6 Week 6 Monday\|QUIZ 6 Week 6 Monday]] | 15 minutes, covers Week 5 |
+| [[PROJECT 1 A Container Library]] | **Assigned this week, due Week 9** |
+| [[LAB 6 Benchmarking Against std list]] | Measure your list against `std::list` |
+| [[PROG102 Week6/resources/Reading Guide Week 6\|Reading Guide Week 6]] | *C++ Primer* §9.2, Ch. 16 revisited, and every command |
+| [[PROG102 Week6/solutions_instructor/PS 6 Solutions\|PS 6 Solutions]] | Instructor only |
+| [[PROG102 Week6/solutions_instructor/LAB 6 Solutions\|LAB 6 Solutions]] | Instructor only |
 
 ### The One Thing to Take From This Week
 

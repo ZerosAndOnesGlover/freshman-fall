@@ -22,8 +22,8 @@ By the end of this lab, you will:
 ## Setup
 
 ```bash
-cd ~/cs101
-mkdir week4 && cd week4
+cd "$CS101"        # set in ~/.bashrc -- see Lab 0
+mkdir -p week4 && cd week4
 ```
 
 ---
@@ -653,7 +653,7 @@ print("✓ n_queens solution counts verified")
 ## Part 5: Commit and Reflection (10 minutes)
 
 ```bash
-cd ~/cs101/week4
+cd "$CS101/week4"
 git add .
 git commit -m "Week 4 Lab: recursion trees, merge sort, binary search, Hanoi, N-Queens"
 git push

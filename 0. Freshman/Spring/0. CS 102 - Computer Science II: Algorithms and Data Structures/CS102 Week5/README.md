@@ -53,13 +53,13 @@ By the end of Week 5, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L16 Weighted Shortest Paths Relaxation and DAGs.md` | Relaxation, optimal substructure, topological order, DAG paths, SCC |
-| `lectures/L17 Dijkstras Algorithm.md` | The algorithm, the proof, and exactly how it fails |
-| `lectures/L18 Bellman-Ford Negative Cycles and Choosing an Algorithm.md` | Bellman–Ford as a DP, negative cycles, and the selection table |
-| `assignments/PS 5 Shortest Paths.md` | 100 points, due Friday of Week 6 |
-| `assignments/QUIZ 5 Week 5 Monday.md` | 20 points, formative — **covers Week 4** |
-| `lab/LAB 5 Route Planning on a Road Network.md` | Dijkstra, A\*, and the cost-model change that breaks it |
-| `resources/Reading Guide Week 5.md` | CLRS §20.4–20.5, §22.1–22.4 |
+| [[L16 Weighted Shortest Paths Relaxation and DAGs]] | Relaxation, optimal substructure, topological order, DAG paths, SCC |
+| [[L17 Dijkstras Algorithm]] | The algorithm, the proof, and exactly how it fails |
+| [[L18 Bellman-Ford Negative Cycles and Choosing an Algorithm]] | Bellman–Ford as a DP, negative cycles, and the selection table |
+| [[PS 5 Shortest Paths]] | 100 points, due Friday of Week 6 |
+| [[CS102 Week5/assignments/QUIZ 5 Week 5 Monday\|QUIZ 5 Week 5 Monday]] | 20 points, formative — **covers Week 4** |
+| [[LAB 5 Route Planning on a Road Network]] | Dijkstra, A\*, and the cost-model change that breaks it |
+| [[CS102 Week5/resources/Reading Guide Week 5\|Reading Guide Week 5]] | CLRS §20.4–20.5, §22.1–22.4 |
 | `solutions_instructor/` | PS 5 and Lab 5 solutions — instructor only |
 
 ### The Three Ideas Most Likely to Be Missed

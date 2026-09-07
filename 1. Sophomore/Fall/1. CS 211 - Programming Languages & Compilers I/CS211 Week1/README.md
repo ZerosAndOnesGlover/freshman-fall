@@ -40,15 +40,15 @@ By the end of Week 1, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L03 Tokens Regular Expressions and Maximal Munch.md` | Tokens, the formal four operators, maximal munch measured on six inputs, what the lexer discards |
-| `lectures/L04 Finite Automata and the Subset Construction.md` | NFA/DFA, Thompson, the subset construction, **58 NFA states → 512 minimal DFA states**, minimisation, and why parsing needs a stack |
-| `lab/LAB 1 Two Lexers and Where They Disagree.md` | Build the `flex` lexer, diff it against the hand-written one, then find the three inputs where they part |
+| [[L03 Tokens Regular Expressions and Maximal Munch]] | Tokens, the formal four operators, maximal munch measured on six inputs, what the lexer discards |
+| [[L04 Finite Automata and the Subset Construction]] | NFA/DFA, Thompson, the subset construction, **58 NFA states → 512 minimal DFA states**, minimisation, and why parsing needs a stack |
+| [[LAB 1 Two Lexers and Where They Disagree]] | Build the `flex` lexer, diff it against the hand-written one, then find the three inputs where they part |
 | `lab/lexer.py` | The reference hand-written lexer — read it in Part 1, replace it in PS 1 |
 | `lab/sample.cy` · `lab/expected_tokens.txt` | The 109-token test input and its expected output |
 | `lab/compare.sh` | Builds the flex lexer and diffs both token streams |
-| `assignments/PS 1 A Lexer From a Hand-Built DFA.md` | Regular expressions formally, the constructions by hand, and your own lexer |
-| `assignments/QUIZ 1 Week 1 Tuesday.md` | **Covers Week 0.** Ten minutes, self-marked against the printed key |
-| `resources/Reading Guide Week 1.md` | Dragon Ch. 3 in full — the longest single reading of the term |
+| [[PS 1 A Lexer From a Hand-Built DFA]] | Regular expressions formally, the constructions by hand, and your own lexer |
+| [[CS211 Week1/assignments/QUIZ 1 Week 1 Tuesday\|QUIZ 1 Week 1 Tuesday]] | **Covers Week 0.** Ten minutes, self-marked against the printed key |
+| [[CS211 Week1/resources/Reading Guide Week 1\|Reading Guide Week 1]] | Dragon Ch. 3 in full — the longest single reading of the term |
 | `solutions_instructor/` | Instructor only |
 
 ---
@@ -70,7 +70,7 @@ $(a\mid b)^*a(a\mid b)^n$ has an NFA that grows by six states per increment and 
 > **Lab *N* covers Week *N* and is sat on the Friday of Week *N*.** CS 201's lab lags by a week and
 > CS 211's does not — see the Week 0 syllabus. Every lab and quiz file states its day *and* its week.
 
-Both are tracked in `5. Academic Registry/2. Gradebook/Year2 Sophomore/Fall/_CS 211 Lab and Quiz Record.md`.
+Both are tracked in [[_CS 211 Lab and Quiz Record]].
 
 ---
 

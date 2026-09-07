@@ -4,7 +4,7 @@
 **Date:** Wednesday 11 November 2026 · 13:00–13:50 · Week 12
 
 **Format:** 60-minute seminar. Roughly 20 minutes of remarks, 40 minutes of questions.
-**Assessment:** Participation. **Preparation is required** — see `Question Preparation.md`.
+**Assessment:** Participation. **Preparation is required** — see [[Question Preparation]].
 
 ---
 
@@ -49,7 +49,7 @@ should expect **substantive questions rather than career-advice questions.**
 ## 3. Your Obligations
 
 **Come with two prepared questions.** Written down, submitted beforehand via
-`Question Preparation.md`. This is participation-graded.
+[[Question Preparation]]. This is participation-graded.
 
 Prepared questions exist for a specific reason. Q&A sessions default to a handful of confident
 students asking what it takes to get hired. That is a legitimate question and it is not what forty
@@ -107,7 +107,7 @@ And a question the course has earned the right to ask:
 ## 6. Afterwards
 
 The final 10 minutes of the session are the **course retrospective**, run without the guest present —
-see `Course Reflection.md`. Your written reflection is due at the end of Week 12 and is the last
+see [[Course Reflection]]. Your written reflection is due at the end of Week 12 and is the last
 deliverable of the course.
 
 ---

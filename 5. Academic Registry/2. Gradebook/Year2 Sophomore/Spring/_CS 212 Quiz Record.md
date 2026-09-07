@@ -3,7 +3,7 @@
 
 > **This file is deliberately outside the gradebook's weighted components.** CS 212's
 > quizzes carry **no weight** — Team Project 40, Individual Assignments 30, Midterm 15 and Final 15 already sum to 100% without them,
-> and `CS 212.md` says so.
+> and [[CS 212]] says so.
 >
 > The leading underscore in the filename keeps this file out of `tools/gpa.py`'s course scan. Do not
 > rename it without checking `collect()` in that script.

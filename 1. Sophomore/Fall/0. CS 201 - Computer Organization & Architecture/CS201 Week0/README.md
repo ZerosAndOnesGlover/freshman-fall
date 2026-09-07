@@ -42,13 +42,13 @@ By the end of Week 0, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L01 The Abstraction Hierarchy.md` | The layer stack; the ISA as contract; Python vs C measured at 46× |
-| `lectures/L02 Von Neumann and the Fetch-Decode-Execute Cycle.md` | Stored programs, the five stages, a real function decoded by hand |
-| `lectures/L03 Moores Law and the Shape of x86-64.md` | Dennard scaling and the power wall; registers, flags, CISC-over-RISC |
-| `lab/LAB 0 From C to Machine Code.md` | The toolchain, and the compiler deleting a loop in front of you |
-| `assignments/Problem Set 0.md` | Layers, hand-decoding, a full cycle trace, cache geometry |
-| `resources/Course Overview Syllabus.md` | **Read this in full in Week 0** — assessment, the unweighted-lab rule, deviations |
-| `resources/Reading Guide Week 0.md` | CS:APP Ch. 1 with guiding questions, and two numbers to check against your own machine |
+| [[L01 The Abstraction Hierarchy]] | The layer stack; the ISA as contract; Python vs C measured at 46× |
+| [[L02 Von Neumann and the Fetch-Decode-Execute Cycle]] | Stored programs, the five stages, a real function decoded by hand |
+| [[L03 Moores Law and the Shape of x86-64]] | Dennard scaling and the power wall; registers, flags, CISC-over-RISC |
+| [[LAB 0 From C to Machine Code]] | The toolchain, and the compiler deleting a loop in front of you |
+| [[CS201 Week0/assignments/Problem Set 0\|Problem Set 0]] | Layers, hand-decoding, a full cycle trace, cache geometry |
+| [[CS201 Week0/resources/Course Overview Syllabus\|Course Overview Syllabus]] | **Read this in full in Week 0** — assessment, the unweighted-lab rule, deviations |
+| [[CS201 Week0/resources/Reading Guide Week 0\|Reading Guide Week 0]] | CS:APP Ch. 1 with guiding questions, and two numbers to check against your own machine |
 | `solutions_instructor/` | Instructor only |
 
 ---
@@ -69,7 +69,7 @@ It runs whatever the compiler decided was equivalent, executing on hardware that
 
 They are still required. **The lab is checked off by the TA in the session**, and a second unexcused absence costs a letter grade — because a lab you can skip for a 2% penalty is a lab you will skip in the week you are busiest, which is reliably the week the material is hardest. **Quiz *N* covers Week *N−1***, runs ten minutes at the start of Monday's lecture in Weeks 1–11, and prints its own answer key.
 
-Both are tracked in `5. Academic Registry/2. Gradebook/Year2 Sophomore/Fall/_CS 201 Lab and Quiz Record.md`.
+Both are tracked in [[_CS 201 Lab and Quiz Record]].
 
 ---
 

@@ -5,7 +5,7 @@
 **This week's deliverables:** **PS 4** (released Friday, due Friday of Week 5), Lab 4, **Quiz 4 —
 which covers Week 3**.
 **MIDTERM 1 is announced this week** and sits in Week 5, covering Weeks 0–4. See
-`resources/MIDTERM 1 Revision Guide.md`.
+[[CS102 Week4/resources/MIDTERM 1 Revision Guide|MIDTERM 1 Revision Guide]].
 
 ---
 
@@ -56,14 +56,14 @@ By the end of Week 4, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L13 Graphs Terminology and Representation.md` | Terminology, both representations measured, the traversal skeleton |
-| `lectures/L14 Breadth-First Search.md` | BFS, the shortest-path proof, components, bipartiteness |
-| `lectures/L15 Depth-First Search Timestamps and Edge Classification.md` | DFS, timestamps, parenthesis theorem, edge types, cycles |
-| `assignments/PS 4 Graph Traversal.md` | 100 points, due Friday of Week 5 |
-| `assignments/QUIZ 4 Week 4 Monday.md` | 20 points, formative — **covers Week 3** |
-| `lab/LAB 4 BFS and DFS on a Social Network.md` | Degrees of separation, and a heuristic that gets it wrong |
-| `resources/Reading Guide Week 4.md` | CLRS §20.1–20.3, with the misreadings to avoid |
-| `resources/MIDTERM 1 Revision Guide.md` | Format, examinable material, the eight reproducible proofs |
+| [[L13 Graphs Terminology and Representation]] | Terminology, both representations measured, the traversal skeleton |
+| [[L14 Breadth-First Search]] | BFS, the shortest-path proof, components, bipartiteness |
+| [[L15 Depth-First Search Timestamps and Edge Classification]] | DFS, timestamps, parenthesis theorem, edge types, cycles |
+| [[PS 4 Graph Traversal]] | 100 points, due Friday of Week 5 |
+| [[CS102 Week4/assignments/QUIZ 4 Week 4 Monday\|QUIZ 4 Week 4 Monday]] | 20 points, formative — **covers Week 3** |
+| [[LAB 4 BFS and DFS on a Social Network]] | Degrees of separation, and a heuristic that gets it wrong |
+| [[CS102 Week4/resources/Reading Guide Week 4\|Reading Guide Week 4]] | CLRS §20.1–20.3, with the misreadings to avoid |
+| [[CS102 Week4/resources/MIDTERM 1 Revision Guide\|MIDTERM 1 Revision Guide]] | Format, examinable material, the eight reproducible proofs |
 | `solutions_instructor/` | PS 4 and Lab 4 solutions — instructor only |
 
 ### The Three Ideas Most Likely to Be Missed

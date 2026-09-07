@@ -79,11 +79,26 @@ git config --global user.email "your.email@university.edu"
 
 ### 2.1 Create Your Course Repository
 
+Your coursework does not live in your home directory. It lives in the Academic Registry, next to
+the answer sheets for this course:
+
+```
+5. Academic Registry/4. Submissions/Year1 Freshman/Fall/0. CS 101/
+```
+
+That is a long path with spaces in it, so give it a name once. Add this to `~/.bashrc` (the
+registry's [[4. Submissions/README|README]] has the full block, for every course):
+
 ```bash
-# Navigate to where you want to store your coursework
-cd ~
-mkdir cs101
-cd cs101
+export ACADEMICS=~/"Documents/1. Academics/0. Computer Science and Engineering (B.Sc)"
+export CS101="$ACADEMICS/5. Academic Registry/4. Submissions/Year1 Freshman/Fall/0. CS 101"
+```
+
+Then open a new terminal, create the directory, and make it a repository:
+
+```bash
+mkdir -p "$CS101"
+cd "$CS101"
 
 # Initialize a Git repository
 git init
@@ -92,9 +107,16 @@ git init
 ls -la   # You should see a .git folder
 ```
 
+**Quote `"$CS101"` every time.** The path contains spaces; unquoted, `cd` gets five arguments and
+fails.
+
+This directory is its own repository with its own remote, deliberately kept out of the vault's git
+repo — so you commit CS 101 from inside `$CS101`, not from the vault root. Every course you take
+gets its own repo the same way.
+
 ### 2.2 Create a README
 
-Create a file called `README.md` with this content:
+Create a file called [[CS101 Week0/README|README]] with this content:
 
 ```markdown
 # CS 101 — Computer Science I: Foundations of Computation
@@ -141,7 +163,8 @@ git push -u origin main
 
 Create a folder for this week's work:
 ```bash
-mkdir week0
+cd "$CS101"
+mkdir -p week0
 cd week0
 ```
 
@@ -313,7 +336,7 @@ print(f"  Power:        {a} ** {b} = {a ** b}")
 ## Part 4: Commit Everything (10 minutes)
 
 ```bash
-# From the cs101/week0 directory
+# From the $CS101/week0 directory
 git add .
 git status    # Make sure all files are staged
 git commit -m "Week 0 Lab: Complete environment setup and exercises"

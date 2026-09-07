@@ -3,7 +3,7 @@
 
 **Released:** End of Week 9 Thursday
 **Due:** Before Hashtables appendix Lecture 1
-**Directory:** `~/prog101/week6/ps6/`
+**Directory:** `$PROG101/week9/ps9/`
 **Total:** 100 points
 
 ---
@@ -269,7 +269,7 @@ clean:
 ## Submission
 
 ```bash
-cd ~/prog101/week6/ps6
+cd "$PROG101/week9/ps9"
 git add .
 git commit -m "PS6 complete: recursion, sorting, backtracking, BST applications"
 ```

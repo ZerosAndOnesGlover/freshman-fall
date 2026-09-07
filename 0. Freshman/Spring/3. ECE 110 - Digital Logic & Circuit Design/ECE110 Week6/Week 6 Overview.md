@@ -109,7 +109,7 @@
 1. **Quiz 5** — Wednesday, covers Week 5. **Ungraded.**
 2. **Lab 6** — build a 4-bit ALU and test all 2048 cases.
 3. **PS 6** — ALU design, flags, carry-lookahead.
-4. **THE MIDTERM.** See `resources/MIDTERM Revision Guide.md`.
+4. **THE MIDTERM.** See [[MIDTERM Revision Guide]].
 
 ---
 

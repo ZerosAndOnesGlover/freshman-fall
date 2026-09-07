@@ -5,7 +5,7 @@
 **This week's deliverables:** **PS 7** (released Friday, due Friday of Week 8), Lab 7, **Quiz 7 —
 which covers Week 6**.
 **PROJECT 1 is assigned this week** and due Friday of Week 9. **10% of the course** — the largest
-single piece of work this term. See `assignments/PROJECT 1 A Working Diff.md`.
+single piece of work this term. See [[PROJECT 1 A Working Diff]].
 
 ---
 
@@ -50,14 +50,14 @@ By the end of Week 7, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L22 Optimal Substructure and Memoisation.md` | The two conditions, Fibonacci, memoisation vs tabulation measured |
-| `lectures/L23 Longest Common Subsequence and Edit Distance.md` | Both recurrences, traceback, space, and how they relate |
-| `lectures/L24 Knapsack and Choosing the State.md` | Knapsack, pseudo-polynomiality, and a checklist for state design |
-| `assignments/PS 7 Dynamic Programming.md` | 100 points, due Friday of Week 8 |
-| `assignments/QUIZ 7 Week 7 Monday.md` | 20 points, formative — **covers Week 6** |
-| `assignments/PROJECT 1 A Working Diff.md` | **10% of the course**, due Friday of Week 9 |
-| `lab/LAB 7 Visualising DP Tables.md` | Print the tables, trace them, and measure the two techniques |
-| `resources/Reading Guide Week 7.md` | CLRS §14.1–14.4, with §14.3 flagged as the section that matters |
+| [[L22 Optimal Substructure and Memoisation]] | The two conditions, Fibonacci, memoisation vs tabulation measured |
+| [[L23 Longest Common Subsequence and Edit Distance]] | Both recurrences, traceback, space, and how they relate |
+| [[L24 Knapsack and Choosing the State]] | Knapsack, pseudo-polynomiality, and a checklist for state design |
+| [[PS 7 Dynamic Programming]] | 100 points, due Friday of Week 8 |
+| [[CS102 Week7/assignments/QUIZ 7 Week 7 Monday\|QUIZ 7 Week 7 Monday]] | 20 points, formative — **covers Week 6** |
+| [[PROJECT 1 A Working Diff]] | **10% of the course**, due Friday of Week 9 |
+| [[LAB 7 Visualising DP Tables]] | Print the tables, trace them, and measure the two techniques |
+| [[CS102 Week7/resources/Reading Guide Week 7\|Reading Guide Week 7]] | CLRS §14.1–14.4, with §14.3 flagged as the section that matters |
 | `solutions_instructor/` | PS 7 and Lab 7 solutions — instructor only |
 
 ### The Three Ideas Most Likely to Be Missed

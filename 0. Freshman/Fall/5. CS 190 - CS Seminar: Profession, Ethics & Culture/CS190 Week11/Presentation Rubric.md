@@ -91,7 +91,7 @@ delivery of a real argument scores well above a fluent delivery of a topic summa
 ## Automatic Considerations
 
 - **Not presenting** scores 0 and, per the brief, means the participation component cannot be passed.
-  Contact the instructor **before** the session if you cannot present; see `Presentation Schedule.md`.
+  Contact the instructor **before** the session if you cannot present; see [[Presentation Schedule]].
 - **Overrunning** is handled by the timing rule, not by a separate penalty. You are stopped at 5:00
   and marked on what was delivered.
 - **Presenting a position you have since abandoned** is fine and costs nothing, provided you say so.

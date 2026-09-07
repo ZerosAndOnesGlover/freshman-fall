@@ -120,4 +120,4 @@ Re-audit each course as it is built, and apply §11's test from the first pass r
 ---
 
 *Audit covers Year 2 Sophomore. CS 201 fully; CS 211 Weeks 0–4; the remaining eight courses do not
-yet exist. See `Year1 - Freshman/PREREQUISITE AUDIT.md` for the Year 1 audit and for §11's method.*
+yet exist. See [[Year1 - Freshman/PREREQUISITE AUDIT|PREREQUISITE AUDIT]] for the Year 1 audit and for §11's method.*

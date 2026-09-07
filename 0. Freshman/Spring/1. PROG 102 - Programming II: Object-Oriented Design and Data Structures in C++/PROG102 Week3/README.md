@@ -41,15 +41,15 @@ By the end of Week 3, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L10 The Iterator Abstraction.md` | Why algorithms and containers are separate, and what makes that possible |
-| `lectures/L11 The Containers.md` | Sequence, associative, adaptors — and how to choose |
-| `lectures/L12 The Algorithms.md` | `sort`, `find`, `transform`, `accumulate`, and `vector<bool>` |
-| `assignments/PS 3 Ten Problems With the STL.md` | Due Friday of Week 4 |
-| `assignments/QUIZ 3 Week 3 Monday.md` | 15 minutes, covers Week 2 |
-| `lab/LAB 3 Profiling STL Containers.md` | Measure the containers and find where the complexity table lies |
-| `resources/Reading Guide Week 3.md` | *C++ Primer* Ch. 9–11, and every command to reproduce this week |
-| `solutions_instructor/PS 3 Solutions.md` | Instructor only |
-| `solutions_instructor/LAB 3 Solutions.md` | Instructor only |
+| [[L10 The Iterator Abstraction]] | Why algorithms and containers are separate, and what makes that possible |
+| [[L11 The Containers]] | Sequence, associative, adaptors — and how to choose |
+| [[L12 The Algorithms]] | `sort`, `find`, `transform`, `accumulate`, and `vector<bool>` |
+| [[PS 3 Ten Problems With the STL]] | Due Friday of Week 4 |
+| [[PROG102 Week3/assignments/QUIZ 3 Week 3 Monday\|QUIZ 3 Week 3 Monday]] | 15 minutes, covers Week 2 |
+| [[LAB 3 Profiling STL Containers]] | Measure the containers and find where the complexity table lies |
+| [[PROG102 Week3/resources/Reading Guide Week 3\|Reading Guide Week 3]] | *C++ Primer* Ch. 9–11, and every command to reproduce this week |
+| [[PROG102 Week3/solutions_instructor/PS 3 Solutions\|PS 3 Solutions]] | Instructor only |
+| [[PROG102 Week3/solutions_instructor/LAB 3 Solutions\|LAB 3 Solutions]] | Instructor only |
 
 ### The One Thing to Take From This Week
 

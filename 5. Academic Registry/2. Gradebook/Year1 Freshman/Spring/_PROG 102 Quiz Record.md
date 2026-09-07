@@ -31,7 +31,7 @@ removes a failure mode is better than one that depends on remembering to write `
 In CS 102, **both** labs and quizzes were unweighted and lived in a record like this one, with labs
 under a 10-of-13 completion gate.
 
-**PROG 102 weights labs at 20%.** They are a graded component and they are in `PROG 102.md` with
+**PROG 102 weights labs at 20%.** They are a graded component and they are in [[PROG 102]] with
 everything else. Only quizzes are here. There is no lab gate in this course — a missed lab costs you
 marks directly, which is a sharper instrument than a gate and needs no separate rule.
 

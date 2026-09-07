@@ -41,16 +41,16 @@ By the end of Week 4, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L09 Three-Address Code and the Control-Flow Graph.md` | TAC, short-circuit lowering, basic blocks, our CFG against LLVM's, constant folding, fixed-point iteration |
-| `lectures/L10 SSA Phi Functions and Dataflow Analysis.md` | SSA, φ, **mem2reg measured at 23→11 instructions**, dataflow as one algorithm, dominance frontiers |
-| `assignments/MIDTERM 1.md` | **The paper.** 75 marks, Weeks 0–3 |
-| `assignments/PS 4 TAC Generation and Constant Folding.md` | Lowering by hand, SSA by hand, and the IR generator |
-| `assignments/QUIZ 4 Week 4 Tuesday.md` | **Covers Week 3.** Last calibration before the midterm |
-| `lab/LAB 4 Building and Reading a CFG.md` | Match our CFG to LLVM's, run mem2reg, then break the folder in the way that matters |
+| [[L09 Three-Address Code and the Control-Flow Graph]] | TAC, short-circuit lowering, basic blocks, our CFG against LLVM's, constant folding, fixed-point iteration |
+| [[L10 SSA Phi Functions and Dataflow Analysis]] | SSA, φ, **mem2reg measured at 23→11 instructions**, dataflow as one algorithm, dominance frontiers |
+| [[CS211 Week4/assignments/MIDTERM 1\|MIDTERM 1]] | **The paper.** 75 marks, Weeks 0–3 |
+| [[PS 4 TAC Generation and Constant Folding]] | Lowering by hand, SSA by hand, and the IR generator |
+| [[QUIZ 4 Week 4 Tuesday]] | **Covers Week 3.** Last calibration before the midterm |
+| [[LAB 4 Building and Reading a CFG]] | Match our CFG to LLVM's, run mem2reg, then break the folder in the way that matters |
 | `lab/tac.py` · `lab/opt.py` | The IR generator and the folder |
 | `lab/gcd.cy` · `lab/gcd.c` · `lab/fold.cy` | The worked examples, in both languages |
-| `resources/MIDTERM 1 Revision Guide.md` | What to put on your one sheet, and twelve self-test questions |
-| `resources/Reading Guide Week 4.md` | Dragon Ch. 6, §8.4, §9.2–9.3, and the LLVM Language Reference |
+| [[CS211 Week4/resources/MIDTERM 1 Revision Guide\|MIDTERM 1 Revision Guide]] | What to put on your one sheet, and twelve self-test questions |
+| [[CS211 Week4/resources/Reading Guide Week 4\|Reading Guide Week 4]] | Dragon Ch. 6, §8.4, §9.2–9.3, and the LLVM Language Reference |
 | `solutions_instructor/` | Instructor only |
 
 ---
@@ -71,7 +71,7 @@ This is the failure mode that makes back ends hard. **A crash tells you immediat
 
 **Labs and quizzes carry no weight**, and both are required. **Quiz 4 is sat Tuesday and covers Week 3. Midterm 1 is Wednesday evening.** **Lab 4 is Friday**, after the midterm, and is not examined on it.
 
-Both the lab and the quiz are tracked in `5. Academic Registry/2. Gradebook/Year2 Sophomore/Fall/_CS 211 Lab and Quiz Record.md`. **The midterm is a weighted component** and goes in `CS 211.md`.
+Both the lab and the quiz are tracked in [[_CS 211 Lab and Quiz Record]]. **The midterm is a weighted component** and goes in [[CS 211]].
 
 ---
 

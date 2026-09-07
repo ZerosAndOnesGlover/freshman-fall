@@ -118,10 +118,10 @@ Carry this frame into next week's discussion of intellectual property (Week 7), 
 
 ## Position Paper #2
 
-Assigned this week — see `Position Paper 2.md` for the full prompt. Due before the Week 7 seminar.
+Assigned this week — see [[CS190 Week6/Position Paper 2|Position Paper 2]] for the full prompt. Due before the Week 7 seminar.
 
 ---
 
 ## Key Terms Introduced This Week
 
-See `Glossary Week 6.md`. New terms: *LAWS (Lethal Autonomous Weapons Systems)*, *human-in/on/out-of-the-loop*, *accountability gap*, *distinction and proportionality (IHL)*, *deepfake*, *NCII*, *liar's dividend*, *C2PA / content provenance*, *hallucination (LLM)*, *task automation vs. job elimination*, *existential risk (AI)*.
+See [[Glossary Week 6]]. New terms: *LAWS (Lethal Autonomous Weapons Systems)*, *human-in/on/out-of-the-loop*, *accountability gap*, *distinction and proportionality (IHL)*, *deepfake*, *NCII*, *liar's dividend*, *C2PA / content provenance*, *hallucination (LLM)*, *task automation vs. job elimination*, *existential risk (AI)*.

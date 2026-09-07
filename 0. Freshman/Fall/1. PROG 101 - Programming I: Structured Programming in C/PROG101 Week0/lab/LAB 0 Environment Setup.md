@@ -76,12 +76,30 @@ This exercise makes the compilation stages concrete. You will run each stage sep
 
 ### Step 1: Write the source
 
-Create a directory for Week 0 and write the program:
+Your coursework does not live in your home directory. It lives in the Academic Registry, next to
+this course's answer sheets:
+
+```
+5. Academic Registry/4. Submissions/Year1 Freshman/Fall/1. PROG 101/
+```
+
+That path has spaces in it, so name it once. Add this to `~/.bashrc` — the registry's
+[[4. Submissions/README|README]] carries the full block, covering every course:
 
 ```bash
-mkdir -p ~/prog101/week0
-cd ~/prog101/week0
+export ACADEMICS=~/"Documents/1. Academics/0. Computer Science and Engineering (B.Sc)"
+export PROG101="$ACADEMICS/5. Academic Registry/4. Submissions/Year1 Freshman/Fall/1. PROG 101"
 ```
+
+Open a new terminal, make a directory for Week 0, and write the program:
+
+```bash
+mkdir -p "$PROG101/week0"
+cd "$PROG101/week0"
+```
+
+**Quote `"$PROG101"` every time** — unquoted, the spaces in it split into five arguments and the
+command fails.
 
 Create `hello.c` with this exact content:
 
@@ -176,7 +194,7 @@ diff hello_O0.s hello_O2.s    # Compare them
 
 ## Part 4: Your First Makefile
 
-Create `Makefile` in `~/prog101/week0/` (remember: TAB indentation, not spaces):
+Create `Makefile` in `$PROG101/week0/` (remember: TAB indentation, not spaces):
 
 ```makefile
 CC = gcc
@@ -327,8 +345,12 @@ $10 = 32767
 
 ## Part 7: Set Up Git Repository
 
+`$PROG101` is its own repository with its own remote, kept deliberately out of the vault's git repo
+— so PROG 101 gets committed from inside `$PROG101`, never from the vault root. Every course you
+take gets its own repo the same way.
+
 ```bash
-cd ~/prog101
+cd "$PROG101"
 git init
 git config user.name "Your Name"
 git config user.email "your.email@university.edu"

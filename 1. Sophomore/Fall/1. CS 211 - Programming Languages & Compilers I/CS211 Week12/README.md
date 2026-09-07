@@ -48,16 +48,16 @@ By the end of Week 12, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L25 Language Design Is a Study in Constraints.md` | The safety, performance and expressiveness axes **measured**; what each language made impossible; Rust; three design principles and their critics |
-| `lectures/L26 The Landscape and What Comes Next.md` | The multiparadigm convergence, **WebAssembly**, where compilers are going, and what this course was |
-| `assignments/FINAL EXAM.md` | **The paper.** 150 marks, Weeks 0–12 |
-| `assignments/PROJECT 2 A Compiler With Optimisation.md` | **Due Friday, 12.5%.** Extends Project 1; demoed in Lab 12 |
-| `assignments/PS 11 …` *(Week 11)* · `assignments/PS 12 Synthesis.md` | Both due Friday. PS 12 is short and is Q7 preparation |
-| `lab/LAB 12 Lightning Talks.md` | Project 2 demos, then five minutes on a language of your choice |
+| [[L25 Language Design Is a Study in Constraints]] | The safety, performance and expressiveness axes **measured**; what each language made impossible; Rust; three design principles and their critics |
+| [[L26 The Landscape and What Comes Next]] | The multiparadigm convergence, **WebAssembly**, where compilers are going, and what this course was |
+| [[FINAL EXAM]] | **The paper.** 150 marks, Weeks 0–12 |
+| [[PROJECT 2 A Compiler With Optimisation]] | **Due Friday, 12.5%.** Extends Project 1; demoed in Lab 12 |
+| `assignments/PS 11 …` *(Week 11)* · [[CS211 Week12/assignments/PS 12 Synthesis\|PS 12 Synthesis]] | Both due Friday. PS 12 is short and is Q7 preparation |
+| [[LAB 12 Lightning Talks]] | Project 2 demos, then five minutes on a language of your choice |
 | `lab/bounds.c` · `Bounds.java` · `bounds.py` · `bounds.js` | **One question, four answers** |
 | `lab/bench.c` · `Bench.java` · `bench.py` · `bench.js` | The same algorithm, four languages, two input sizes |
-| `resources/FINAL EXAM Revision Guide.md` | What is on it, in what proportion, and a three-evening plan |
-| `resources/Reading Guide Week 12.md` | Hoare 1980 · Gabriel 1991 · Haas et al. 2017 · Steele 1998 |
+| [[CS211 Week12/resources/FINAL EXAM Revision Guide\|FINAL EXAM Revision Guide]] | What is on it, in what proportion, and a three-evening plan |
+| [[CS211 Week12/resources/Reading Guide Week 12\|Reading Guide Week 12]] | Hoare 1980 · Gabriel 1991 · Haas et al. 2017 · Steele 1998 |
 | `solutions_instructor/` | Instructor only — including the exam mark scheme |
 
 ---
@@ -93,7 +93,7 @@ C is unsafe: the bug corrupts memory. **JavaScript is memory-safe and *diagnosti
 
 **No quiz this week.** Labs remain required; **Lab 12 is demo day and your Project 2 demo happens there.**
 
-**Project 2 (12.5%) is due Friday 17:00** and is recorded in `CS 211.md`. **PS 11 and PS 12 are both due Friday**, and the Problem Sets component drops your lowest mark.
+**Project 2 (12.5%) is due Friday 17:00** and is recorded in [[CS 211]]. **PS 11 and PS 12 are both due Friday**, and the Problem Sets component drops your lowest mark.
 
 **The final exam is Tuesday 16 December, 09:00–11:30, VNC 100** — comprehensive, 150 marks, 20% of the course. One handwritten A4 sheet, **both sides**, permitted.
 

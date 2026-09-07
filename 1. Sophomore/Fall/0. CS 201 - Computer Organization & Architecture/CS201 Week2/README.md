@@ -39,13 +39,13 @@ By the end of Week 2, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L07 Registers Operands and the Two Syntaxes.md` | The register file, the two syntaxes, every addressing mode, `lea` |
-| `lectures/L08 Arithmetic and What the Compiler Does Instead of Dividing.md` | `imul`/`idiv`/`cdq`, magic numbers, `x/8` vs `x>>3`, `setcc` and `cmov` |
-| `lectures/L09 Flags Conditionals and Control Flow.md` | The flags, signed vs unsigned jumps, range checks, four ways to compile a `switch` |
-| `assignments/PS 2 Writing x86-64 Assembly.md` | Five functions in NASM, a magic-number derivation, a `switch` investigation |
-| `assignments/QUIZ 2 Week 2 Monday.md` | Ten minutes on Week 1. **Unmarked — key in the paper** |
-| `lab/LAB 2 Reading Compiler Output.md` | Addressing modes, division, four switches, and your first hand-written assembly |
-| `resources/Reading Guide Week 2.md` | CS:APP Ch. 3 §3.1–3.6, and how to look things up in the Intel SDM |
+| [[L07 Registers Operands and the Two Syntaxes]] | The register file, the two syntaxes, every addressing mode, `lea` |
+| [[L08 Arithmetic and What the Compiler Does Instead of Dividing]] | `imul`/`idiv`/`cdq`, magic numbers, `x/8` vs `x>>3`, `setcc` and `cmov` |
+| [[L09 Flags Conditionals and Control Flow]] | The flags, signed vs unsigned jumps, range checks, four ways to compile a `switch` |
+| [[PS 2 Writing x86-64 Assembly]] | Five functions in NASM, a magic-number derivation, a `switch` investigation |
+| [[CS201 Week2/assignments/QUIZ 2 Week 2 Monday\|QUIZ 2 Week 2 Monday]] | Ten minutes on Week 1. **Unmarked — key in the paper** |
+| [[LAB 2 Reading Compiler Output]] | Addressing modes, division, four switches, and your first hand-written assembly |
+| [[CS201 Week2/resources/Reading Guide Week 2\|Reading Guide Week 2]] | CS:APP Ch. 3 §3.1–3.6, and how to look things up in the Intel SDM |
 | `solutions_instructor/` | Instructor only |
 
 ---

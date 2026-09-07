@@ -12,7 +12,7 @@
 
 ## Why This Is a Separate File
 
-An earlier draft put these tables at the bottom of `CS 102.md`, under an unweighted subheading. The
+An earlier draft put these tables at the bottom of [[CS 102]], under an unweighted subheading. The
 gradebook parser reads a component's items from its heading until the **next `##` heading that
 contains a percentage** — and an unweighted subheading has none. The eleven quiz rows were therefore
 silently absorbed into **Project 2**, which reported 12 items instead of 1.

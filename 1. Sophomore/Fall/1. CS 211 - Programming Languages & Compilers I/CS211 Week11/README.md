@@ -53,17 +53,17 @@ By the end of Week 11, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L23 The Whole Compiler in One Command.md` | Nine phases, the `alloca` trick, **our optimiser against LLVM's**, where compile time really goes, and 11-of-11 differential agreement |
-| `lectures/L24 LLVM and the Compiler You Did Not Write.md` | **Eight targets from one IR**, LLVM as libraries, pass pipelines, JIT against AOT, and what our compiler still cannot do |
-| `assignments/PS 11 Finish the Compiler.md` | Typed IR, multiple functions, your own peephole pass, and **arrays, structs and the stack map** |
-| `assignments/QUIZ 11 Week 11 Tuesday.md` | **Covers Week 10.** The last quiz of the term |
-| `lab/LAB 11 A JIT for Your Own Compiler.md` | Run the whole thing, watch `mem2reg` work, then target eight machines |
+| [[L23 The Whole Compiler in One Command]] | Nine phases, the `alloca` trick, **our optimiser against LLVM's**, where compile time really goes, and 11-of-11 differential agreement |
+| [[L24 LLVM and the Compiler You Did Not Write]] | **Eight targets from one IR**, LLVM as libraries, pass pipelines, JIT against AOT, and what our compiler still cannot do |
+| [[PS 11 Finish the Compiler]] | Typed IR, multiple functions, your own peephole pass, and **arrays, structs and the stack map** |
+| [[QUIZ 11 Week 11 Tuesday]] | **Covers Week 10.** The last quiz of the term |
+| [[LAB 11 A JIT for Your Own Compiler]] | Run the whole thing, watch `mem2reg` work, then target eight machines |
 | `lab/cyanc.py` | **The driver.** Nine phases, `--emit`, `--run`, `-o`, `--times` |
 | `lab/llvmgen.py` | Phase 9: TAC → LLVM IR. Read the docstring on `alloca` |
 | `lab/lexer.py` … `regalloc.py` | Weeks 0–6, carried forward unchanged |
 | `lab/runtime.py` · `collect.py` · `heap.py` | Week 6's interpreter — **the independent implementation the JIT is checked against** |
 | `lab/gcd.cy` · `cls.cy` · `fold.cy` · `sc.cy` · `scale.cy` · `div.cy` | The test programs, from Weeks 4–5 |
-| `resources/Reading Guide Week 11.md` | Lattner & Adve 2004 · AOSA ch. 11 · Kaleidoscope · the LLVM Language Reference |
+| [[CS211 Week11/resources/Reading Guide Week 11\|Reading Guide Week 11]] | Lattner & Adve 2004 · AOSA ch. 11 · Kaleidoscope · the LLVM Language Reference |
 | `solutions_instructor/` | Instructor only |
 
 ---
@@ -101,12 +101,12 @@ $ llc -march=TARGET gcd.ll
 
 **Labs and quizzes carry no weight**, and both are required. **Quiz 11 is Tuesday and covers Week 10 — it is the last quiz of the term.** Lab 11 is Friday.
 
-**Project 1 is due Friday 17:00 and is 12.5% of the course**, recorded in `CS 211.md`. **PS 10 is due the same day.**
+**Project 1 is due Friday 17:00 and is 12.5% of the course**, recorded in [[CS 211]]. **PS 10 is due the same day.**
 
 **PS 11 is released Wednesday and due Friday of Week 12** — with Thanksgiving recess in between, and **PS 12 due that same Friday**.
 
 **Project 2 is also assigned this week** and is due Week 12, Friday — the spec is
-`CS211 Week12/assignments/PROJECT 2 A Compiler With Optimisation.md`. **It extends Project 1
+[[PROJECT 2 A Compiler With Optimisation]]. **It extends Project 1
 rather than replacing it**, which is what makes two weeks feasible; if Project 1 does not run,
 its Part A is where to start.
 

@@ -9,15 +9,15 @@
 
 | File | Description |
 |------|-------------|
-| `lectures/L37 The First Law of Thermodynamics.md` | Internal energy; $\Delta U = Q-W$; the four standard processes; cycles; why perpetual motion is impossible |
-| `lectures/L38 The Second Law Entropy and Heat Engines.md` | Clausius and Kelvin–Planck; engine efficiency; the Carnot limit; refrigerators and heat pumps; entropy |
-| `lectures/L39 Review and the Road Ahead.md` | Course synthesis: the structural analogies, the five ideas worth keeping, exam preparation |
-| `lab/LAB 12 Heat Engines and Thermal Efficiency.md` | Gas laws and absolute zero by extrapolation; work from a $PV$ cycle; engine efficiency vs Carnot; heat-pump COP and entropy |
-| `assignments/PS 12 Laws of Thermodynamics Entropy and Heat Engines.md` | 22 problems on the First and Second Laws, engines, and entropy |
-| `quiz/QUIZ 12 Laws of Thermodynamics Entropy and Heat Engines.md` | 10-question quiz (administered Monday of Finals Week) |
-| `resources/Resources.md` | Textbook references, simulations, deeper reading, final-exam guidance |
-| `solutions_instructor/PS 12 Solutions.md` | Full worked solutions (instructor only) |
-| `solutions_instructor/LAB 12 Solutions.md` | Expected data, analysis answers, systematic errors to look for |
+| [[L37 The First Law of Thermodynamics]] | Internal energy; $\Delta U = Q-W$; the four standard processes; cycles; why perpetual motion is impossible |
+| [[L38 The Second Law Entropy and Heat Engines]] | Clausius and Kelvin–Planck; engine efficiency; the Carnot limit; refrigerators and heat pumps; entropy |
+| [[L39 Review and the Road Ahead]] | Course synthesis: the structural analogies, the five ideas worth keeping, exam preparation |
+| [[LAB 12 Heat Engines and Thermal Efficiency]] | Gas laws and absolute zero by extrapolation; work from a $PV$ cycle; engine efficiency vs Carnot; heat-pump COP and entropy |
+| [[PS 12 Laws of Thermodynamics Entropy and Heat Engines]] | 22 problems on the First and Second Laws, engines, and entropy |
+| [[QUIZ 12 Laws of Thermodynamics Entropy and Heat Engines]] | 10-question quiz (administered Monday of Finals Week) |
+| [[PHYS141 Week12/resources/Resources\|Resources]] | Textbook references, simulations, deeper reading, final-exam guidance |
+| [[PHYS141 Week12/solutions_instructor/PS 12 Solutions\|PS 12 Solutions]] | Full worked solutions (instructor only) |
+| [[PHYS141 Week12/solutions_instructor/LAB 12 Solutions\|LAB 12 Solutions]] | Expected data, analysis answers, systematic errors to look for |
 
 ---
 

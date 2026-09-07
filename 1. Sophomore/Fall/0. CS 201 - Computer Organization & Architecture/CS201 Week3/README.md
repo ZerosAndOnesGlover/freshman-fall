@@ -42,13 +42,13 @@ By the end of Week 3, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L10 Call Ret and the Stack Frame.md` | The mechanism; a real 48-byte frame accounted for; five recursive frames in GDB |
-| `lectures/L11 The System V Calling Convention.md` | Argument registers, the stack beyond six, caller vs callee-saved, leaf functions |
-| `lectures/L12 Alignment the Red Zone and Recursion.md` | The 16-byte rule and what breaks without it; the red zone; recursion by hand |
-| `assignments/PS 3 Recursive Fibonacci in Assembly.md` | Frame reading, the convention, recursive fib in NASM, and two deliberate breakages |
-| `assignments/QUIZ 3 Week 3 Monday.md` | Ten minutes on Week 2. **Unmarked — key in the paper** |
-| `lab/LAB 3 Walking the Stack in GDB.md` | Read a live frame, watch it build, then overwrite a return address |
-| `resources/Reading Guide Week 3.md` | CS:APP §3.7 and §3.10.3–4, plus the actual ABI document |
+| [[L10 Call Ret and the Stack Frame]] | The mechanism; a real 48-byte frame accounted for; five recursive frames in GDB |
+| [[L11 The System V Calling Convention]] | Argument registers, the stack beyond six, caller vs callee-saved, leaf functions |
+| [[L12 Alignment the Red Zone and Recursion]] | The 16-byte rule and what breaks without it; the red zone; recursion by hand |
+| [[PS 3 Recursive Fibonacci in Assembly]] | Frame reading, the convention, recursive fib in NASM, and two deliberate breakages |
+| [[CS201 Week3/assignments/QUIZ 3 Week 3 Monday\|QUIZ 3 Week 3 Monday]] | Ten minutes on Week 2. **Unmarked — key in the paper** |
+| [[LAB 3 Walking the Stack in GDB]] | Read a live frame, watch it build, then overwrite a return address |
+| [[CS201 Week3/resources/Reading Guide Week 3\|Reading Guide Week 3]] | CS:APP §3.7 and §3.10.3–4, plus the actual ABI document |
 | `solutions_instructor/` | Instructor only |
 
 ---

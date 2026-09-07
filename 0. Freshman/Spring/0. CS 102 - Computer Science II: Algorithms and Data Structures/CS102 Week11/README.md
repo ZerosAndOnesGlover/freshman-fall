@@ -42,13 +42,13 @@ By the end of Week 11, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L34 Geometric Primitives and Convex Hull.md` | The cross product, monotone chain, degeneracies, and float robustness |
-| `lectures/L35 Segment Intersection and Closest Pair.md` | Four orientation tests, the sweep line, and the packing argument |
-| `lectures/L36 Segment Trees and k-d Trees.md` | Range queries, and the curse of dimensionality measured |
-| `assignments/PS 11 Computational Geometry.md` | 100 points, due Friday of Week 12 — the last problem set |
-| `assignments/QUIZ 11 Week 11 Monday.md` | 20 points, formative — **covers Week 10** |
-| `lab/LAB 11 A 2D Nearest-Neighbour Searcher.md` | Build it, measure it, and find where it stops paying |
-| `resources/Reading Guide Week 11.md` | CLRS Ch. 33, plus what CLRS omits |
+| [[L34 Geometric Primitives and Convex Hull]] | The cross product, monotone chain, degeneracies, and float robustness |
+| [[L35 Segment Intersection and Closest Pair]] | Four orientation tests, the sweep line, and the packing argument |
+| [[L36 Segment Trees and k-d Trees]] | Range queries, and the curse of dimensionality measured |
+| [[PS 11 Computational Geometry]] | 100 points, due Friday of Week 12 — the last problem set |
+| [[CS102 Week11/assignments/QUIZ 11 Week 11 Monday\|QUIZ 11 Week 11 Monday]] | 20 points, formative — **covers Week 10** |
+| [[LAB 11 A 2D Nearest-Neighbour Searcher]] | Build it, measure it, and find where it stops paying |
+| [[CS102 Week11/resources/Reading Guide Week 11\|Reading Guide Week 11]] | CLRS Ch. 33, plus what CLRS omits |
 | `solutions_instructor/` | PS 11 and Lab 11 solutions — instructor only |
 
 ### The Three Ideas Most Likely to Be Missed

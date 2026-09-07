@@ -40,11 +40,11 @@ By the end of Week 10, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `Lecture Week 10.md` | Two centuries of the argument, the contested evidence, UBI, and the obligation question |
-| `Reading Guide.md` | Autor (JEP 2015), Frey & Osborne (2017), the Kela final report; optional Arntz et al., Keynes, Acemoglu & Restrepo, Van Parijs |
-| `Discussion Questions.md` | Twelve questions across evidence, UBI, and personal obligation |
-| `Prep Assignment.md` | State a finding as its authors stated it; decompose your own intended job; commit to a position with a falsifier |
-| `Glossary Week 10.md` | Terms introduced this week, defined precisely |
+| [[Lecture Week 10]] | Two centuries of the argument, the contested evidence, UBI, and the obligation question |
+| [[CS190 Week10/Reading Guide\|Reading Guide]] | Autor (JEP 2015), Frey & Osborne (2017), the Kela final report; optional Arntz et al., Keynes, Acemoglu & Restrepo, Van Parijs |
+| [[CS190 Week10/Discussion Questions\|Discussion Questions]] | Twelve questions across evidence, UBI, and personal obligation |
+| [[CS190 Week10/Prep Assignment\|Prep Assignment]] | State a finding as its authors stated it; decompose your own intended job; commit to a position with a falsifier |
+| [[Glossary Week 10]] | Terms introduced this week, defined precisely |
 
 ### The Central Skill This Week
 

@@ -49,11 +49,11 @@ The habit this course drills: read the RETURN VALUE and ERRORS sections of the m
 
 **Labs and quizzes carry no weight.** The curriculum's assessment line — *Problem Sets 35%, Projects 25%, Midterms 25%, Final 15%* — sums to 100% without them, and no percentage has been invented to fill the gap. This is the same rule every Year 2 course follows, and the ECE 110 and CS 102 precedent from Year 1.
 
-**They are still required.** The lab is checked off by the TA in the session, and `COURSE POLICIES.md` costs you a letter grade after a second unexcused absence.
+**They are still required.** The lab is checked off by the TA in the session, and [[Year2 - Sophomore/COURSE POLICIES|COURSE POLICIES]] costs you a letter grade after a second unexcused absence.
 
 **Quizzes** run ten minutes at the start of **Tuesday's** lecture — this course's first lecture of the week — in **Weeks 1–11**. **Quiz *N* covers Week *N−1*.** The answer key is printed in the paper, below the questions.
 
-Both are recorded in `5. Academic Registry/2. Gradebook/Year2 Sophomore/Fall/_PROG 201 Lab and Quiz Record.md`.
+Both are recorded in [[_PROG 201 Lab and Quiz Record]].
 
 ---
 

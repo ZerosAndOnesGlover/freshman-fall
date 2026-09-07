@@ -9,15 +9,15 @@
 
 | File | Description |
 |------|-------------|
-| `lectures/L31 Sound Waves and Intensity.md` | Longitudinal pressure waves; speed vs temperature; intensity, inverse-square law, and the decibel scale |
-| `lectures/L32 Air Columns and Resonance.md` | Boundary conditions in pipes; open–open and closed–open harmonics; end correction; the resonance tube |
-| `lectures/L33 The Doppler Effect.md` | Moving sources and observers; why they differ; shock waves and the Mach cone |
-| `lab/LAB 10 Speed of Sound and Resonance.md` | $v$ from a resonance tube; end correction; inverse-square law with a level meter; Doppler from a swung speaker |
-| `assignments/PS 10 Sound Doppler Resonance and Decibels.md` | 22 problems on intensity, decibels, air columns, and Doppler |
-| `quiz/QUIZ 10 Sound Doppler Resonance and Decibels.md` | 10-question quiz (administered Monday, Week 11) |
-| `resources/Resources.md` | Textbook references, simulations, deeper reading |
-| `solutions_instructor/PS 10 Solutions.md` | Full worked solutions (instructor only) |
-| `solutions_instructor/LAB 10 Solutions.md` | Expected data, analysis answers, systematic errors to look for |
+| [[L31 Sound Waves and Intensity]] | Longitudinal pressure waves; speed vs temperature; intensity, inverse-square law, and the decibel scale |
+| [[L32 Air Columns and Resonance]] | Boundary conditions in pipes; open–open and closed–open harmonics; end correction; the resonance tube |
+| [[L33 The Doppler Effect]] | Moving sources and observers; why they differ; shock waves and the Mach cone |
+| [[LAB 10 Speed of Sound and Resonance]] | $v$ from a resonance tube; end correction; inverse-square law with a level meter; Doppler from a swung speaker |
+| [[PS 10 Sound Doppler Resonance and Decibels]] | 22 problems on intensity, decibels, air columns, and Doppler |
+| [[QUIZ 10 Sound Doppler Resonance and Decibels]] | 10-question quiz (administered Monday, Week 11) |
+| [[PHYS141 Week10/resources/Resources\|Resources]] | Textbook references, simulations, deeper reading |
+| [[PHYS141 Week10/solutions_instructor/PS 10 Solutions\|PS 10 Solutions]] | Full worked solutions (instructor only) |
+| [[PHYS141 Week10/solutions_instructor/LAB 10 Solutions\|LAB 10 Solutions]] | Expected data, analysis answers, systematic errors to look for |
 
 ---
 

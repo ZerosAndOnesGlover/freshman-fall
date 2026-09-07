@@ -57,7 +57,7 @@ CS101_Week8/
 | Fri | Lecture 27 + PS8 released | Practical patterns: counting, grouping, complement search, memoization |
 | Tue (W9) | Lab 8 (graded) | Build both hash table variants from scratch; empirical load-factor/speedup analysis |
 
-**📌 Project 1 is due this Friday (end of Week 9)** — if you haven't started, begin immediately. See Week 7's `PROJECT 1 Data Analysis Tool.md`.
+**📌 Project 1 is due this Friday (end of Week 9)** — if you haven't started, begin immediately. See Week 7's [[PROJECT 1 Data Analysis Tool]].
 
 ---
 

@@ -2,7 +2,7 @@
 ## Optimised and Unoptimised Assembly
 
 **Friday of Week 5 · 14:00–15:50 · BH 220 · covers Week 5**
-**Unmarked and mandatory.** The TA checks you off in the session. `COURSE POLICIES.md` costs you a letter grade after a second unexcused absence.
+**Unmarked and mandatory.** The TA checks you off in the session. [[Year2 - Sophomore/COURSE POLICIES|COURSE POLICIES]] costs you a letter grade after a second unexcused absence.
 
 **Bring:** a terminal. Everything is in this folder.
 

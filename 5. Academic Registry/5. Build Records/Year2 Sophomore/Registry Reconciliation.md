@@ -11,7 +11,7 @@ except where noted below.
 
 ## 1. Two timetable grids were structurally broken
 
-`FALL SCHEDULE.md` and `SPRING SCHEDULE.md` each had one row that had lost its leading `| **HH:MM** |`
+[[Year2 - Sophomore/FALL SCHEDULE|FALL SCHEDULE]] and [[Year2 - Sophomore/SPRING SCHEDULE|SPRING SCHEDULE]] each had one row that had lost its leading `| **HH:MM** |`
 cell and had its `<br>` separators replaced by real newlines, so the lab row rendered as loose text
 under the table rather than inside it.
 
@@ -24,10 +24,10 @@ Not cosmetic — in both cases a student could not attend both sessions.
 | Clash | Resolution |
 | --- | --- |
 | CS 211 lectures Tue/Thu 09:30–10:45 against PROG 201 Tue/Thu 10:00–10:50 (45 min, twice weekly) | CS 211 moved to **Tue/Thu 08:30–09:45**. Tue/Thu 08:30 was empty — CS 201 holds that slot Mon/Wed/Fri only — so nothing else had to move, and CS 211 keeps its 2 × 75-minute format. |
-| Spring Friday afternoon stacked ECE 211 lecture 13:00–14:15, PROG 202 lab 14:00–15:50 and CS 290 seminar 15:00–15:50 | PROG 202 lab moved to **Wed 13:00–14:50**, free until the MATH 251 recitation at 15:00. Friday clears completely, and ECE 211 and CS 290 stay where `ROOM ASSIGNMENTS.md` already put them. |
+| Spring Friday afternoon stacked ECE 211 lecture 13:00–14:15, PROG 202 lab 14:00–15:50 and CS 290 seminar 15:00–15:50 | PROG 202 lab moved to **Wed 13:00–14:50**, free until the MATH 251 recitation at 15:00. Friday clears completely, and ECE 211 and CS 290 stay where [[Year2 - Sophomore/ROOM ASSIGNMENTS\|ROOM ASSIGNMENTS]] already put them. |
 
-Both moves were propagated to `MASTER TIMETABLE.md`, `ROOM ASSIGNMENTS.md` and the Daily Breakdown
-and weekly-deadline tables. `OFFICE HOURS.md` needed no change — no instructor's hours touch either
+Both moves were propagated to [[Year2 - Sophomore/MASTER TIMETABLE|MASTER TIMETABLE]], [[Year2 - Sophomore/ROOM ASSIGNMENTS|ROOM ASSIGNMENTS]] and the Daily Breakdown
+and weekly-deadline tables. [[Year2 - Sophomore/OFFICE HOURS|OFFICE HOURS]] needed no change — no instructor's hours touch either
 slot.
 
 A residual overlap is **left in place**: PROG 202 lectures run Tue/Thu 11:00–12:15, fifteen minutes
@@ -36,17 +36,17 @@ encroachment twice a week is not a scheduling failure in the way a 45-minute lec
 
 ## 3. Two course titles were wrong
 
-`MASTER TIMETABLE.md` called CS 211 *"Programming Languages Theory"* and MATH 251
+[[Year2 - Sophomore/MASTER TIMETABLE|MASTER TIMETABLE]] called CS 211 *"Programming Languages Theory"* and MATH 251
 *"Probability & Statistics"*. Both are the Year 1 docx's **Year 2 preview table** wording, and both
 are wrong. The Year 2 docx — authoritative for its own year — says *Programming Languages &
 Compilers I* and *Probability & Statistics for Computer Science*.
 
-`DEGREE REQUIREMENTS.md` already had both correct and needed no change.
+[[DEGREE REQUIREMENTS]] already had both correct and needed no change.
 
 ## 4. The midterms sat in the wrong weeks
 
 The docx assigns each midterm to a specific week **inside that week's own assignment list**, with
-stated coverage. `ASSESSMENT CALENDAR.md` and `0. Institution/ACADEMIC CALENDAR.md` instead stacked
+stated coverage. [[Year2 - Sophomore/ASSESSMENT CALENDAR|ASSESSMENT CALENDAR]] and [[ACADEMIC CALENDAR]] instead stacked
 all four Fall midterms into Week 6 and all the second midterms into Week 10, with wider coverage
 than the docx claims.
 
@@ -70,7 +70,7 @@ A side effect worth having: no week now carries four evening exams.
 
 ## 5. The week-to-date mapping did not exist, and the two calendars disagreed
 
-`ASSESSMENT CALENDAR.md` had no week-to-date map, and the dates it did carry could not all be true
+[[Year2 - Sophomore/ASSESSMENT CALENDAR|ASSESSMENT CALENDAR]] had no week-to-date map, and the dates it did carry could not all be true
 at once — it placed Week 1 at Sep 8 and Week 6 at Oct 6, four weeks apart rather than five. A
 **Week-to-Date Map** has been added at the top of that file.
 
@@ -84,7 +84,7 @@ Reading Year 2 the same way — Week 0 spanning Aug 27 to Sep 5, Week 1 opening 
 institutional calendar's own dates land where it says they do, and three independent anchors fall
 out correct without adjustment:
 
-- **Sep 8 is Week 1**, which is what `ASSESSMENT CALENDAR.md` said all along.
+- **Sep 8 is Week 1**, which is what [[Year2 - Sophomore/ASSESSMENT CALENDAR|ASSESSMENT CALENDAR]] said all along.
 - **Oct 6 is Week 5** — precisely the week the docx assigns CS 201's Midterm 1. The date did not
   need to move at all; only the week label attached to it was wrong.
 - **Dec 1 opens Week 12**, where Project 2 is due, leaving Dec 8 as the last week of instruction.
@@ -99,7 +99,7 @@ conversion lives.
 
 ## 6. Quizzes were described as weighted; they cannot be
 
-`MASTER TIMETABLE.md` gave weekly quizzes 5–10% with "lowest 2 dropped", and `COURSE POLICIES.md`
+[[Year2 - Sophomore/MASTER TIMETABLE|MASTER TIMETABLE]] gave weekly quizzes 5–10% with "lowest 2 dropped", and [[Year2 - Sophomore/COURSE POLICIES|COURSE POLICIES]]
 repeated the drop rule. But every Year 2 course's stated components already reach 100% without a
 quiz line — CS 201 is Problem Sets 35 + Midterms 25 + Final 20 + Projects 20, and the other nine are
 the same shape. There is no weight available to give.
@@ -108,7 +108,7 @@ Year 2 therefore follows the **ECE 110 precedent**: quizzes are written, sat, an
 against a key printed in the paper, and they stay out of the gradebook.
 
 The same argument applies to **labs**, which no Year 2 course's split makes room for either. They
-are checked off by the TA in the session and enforced by the attendance rule in `COURSE POLICIES.md`
+are checked off by the TA in the session and enforced by the attendance rule in [[Year2 - Sophomore/COURSE POLICIES|COURSE POLICIES]]
 — a second unexcused absence costs a letter grade. CS 102 in Year 1 already works this way.
 
 Both are recorded in `2. Gradebook/Year2 Sophomore/<term>/_<COURSE> Lab and Quiz Record.md`.
@@ -124,7 +124,7 @@ Created:
 - Nine lab-and-quiz records alongside them. CS 290 has none — it is a one-credit seminar whose
   participation mark *is* weighted, at 40%.
 - Ten course folders under `4. Submissions/Year2 Sophomore/`, numbered to match the vault.
-- Year 2 Fall and Spring sections in `3. Transcript/TRANSCRIPT.md`.
+- Year 2 Fall and Spring sections in [[TRANSCRIPT]].
 
 `python3 tools/gpa.py` reports Fall 16 credits and Spring 18, matching the docx's stated 34, and
 `--self-test` still passes 38/38.
@@ -135,7 +135,7 @@ Created:
 
 *Found while building CS 211 Week 6, not during the original pass.*
 
-`ASSESSMENT CALENDAR.md` listed **Problem Set N due (Fri)** on the Friday of Week N, for all
+[[Year2 - Sophomore/ASSESSMENT CALENDAR|ASSESSMENT CALENDAR]] listed **Problem Set N due (Fri)** on the Friday of Week N, for all
 thirteen sets, in both semesters. **Every problem-set paper in the vault disagrees**, and they all
 agree with each other:
 
@@ -174,7 +174,7 @@ correct; only the problem-set rows were affected.*
 *Found while building CS 211 Week 9.*
 
 The Year 2 curriculum docx sets Lab 9 as **"Demonstrate memory ordering bugs on a weakly-ordered
-processor"**, and `_CS 211 Lab and Quiz Record.md` carries that wording. **Every machine in BH 220,
+processor"**, and [[_CS 211 Lab and Quiz Record]] carries that wording. **Every machine in BH 220,
 and every machine in this build, is x86-64** — which is strongly ordered (TSO).
 
 The four reordering categories, and who permits what:
@@ -215,6 +215,6 @@ state is that the registry promises something the estate cannot deliver.
   differs per course — CS 102 and MATH 142 use Quiz *N* → Week *N−1*, PHYS 141 uses Quiz *N* →
   Week *N*, and ECE 110 numbers after the material — so a blanket edit there would introduce errors
   rather than remove them.
-- **`ECE 110.md` has no `<!-- BEGIN COMPUTED -->` markers**, so `gpa.py --write` silently skips its
+- **[[ECE 110]] has no `<!-- BEGIN COMPUTED -->` markers**, so `gpa.py --write` silently skips its
   Computed block. Every other gradebook has them. Not fixed here because it is a Year 1 defect and
   unrelated to this pass.

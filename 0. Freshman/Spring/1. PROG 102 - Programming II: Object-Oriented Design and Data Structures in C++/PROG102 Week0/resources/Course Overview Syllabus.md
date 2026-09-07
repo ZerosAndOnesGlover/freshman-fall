@@ -232,7 +232,7 @@ current than any book, including these. Learning to read its notation is a genui
 
 ## Grading Scale
 
-This course uses the **university-wide 13-band scale** defined in `UNIVERSITY POLICIES.md` (Academic
+This course uses the **university-wide 13-band scale** defined in [[UNIVERSITY POLICIES]] (Academic
 Registry) — A+ 97–100, A 93–96, A− 90–92, B+ 87–89, B 83–86, B− 80–82, C+ 77–79, C 73–76, C− 70–72,
 D+ 67–69, D 63–66, D− 60–62, F below 60. The registry copy governs if the two ever differ.
 

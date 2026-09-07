@@ -187,4 +187,4 @@ Understanding *where* decisions are made — in a sprint planning meeting, a res
 
 ## 8. Key Terms Introduced This Week
 
-See `Glossary Week 2.md`. New terms: *waterfall model*, *Agile Manifesto*, *Scrum*, *Kanban*, *sprint*, *backlog*, *WIP limit*, *open source*, *copyleft*, *permissive license*, *Goodhart's Law*, *dual-use research*, *publish-or-perish*.
+See [[Glossary Week 2]]. New terms: *waterfall model*, *Agile Manifesto*, *Scrum*, *Kanban*, *sprint*, *backlog*, *WIP limit*, *open source*, *copyleft*, *permissive license*, *Goodhart's Law*, *dual-use research*, *publish-or-perish*.

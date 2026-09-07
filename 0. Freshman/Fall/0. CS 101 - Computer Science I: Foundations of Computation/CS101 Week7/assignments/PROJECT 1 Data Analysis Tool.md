@@ -4,7 +4,7 @@
 **Assigned:** Friday, Week 7
 **Due:** Friday, Week 9 at 11:59 PM
 **Weight:** 5% of final grade (half of the 10% Projects grade)
-**Submission:** A zip file containing all source code, a `README.md`, and a written report (`report.md`)
+**Submission:** A zip file containing all source code, a [[CS101 Week7/README|README]], and a written report (`report.md`)
 **Collaboration:** Individual project — no partners, no code sharing
 
 ---
@@ -143,7 +143,7 @@ Your report (1,000–1,500 words) must include:
 ## Submission Checklist
 
 - [ ] All source code (`.py` files), organized into logical modules
-- [ ] `README.md` — brief instructions on how to run your tool
+- [ ] [[CS101 Week7/README|README]] — brief instructions on how to run your tool
 - [ ] `report.md` — the full written report (1,000–1,500 words)
 - [ ] `analysis_report.txt` — a sample output of your generated report, checked in for grading convenience
 - [ ] Test file(s) demonstrating your validation logic against the messy dataset

@@ -76,7 +76,7 @@ mercy to the presenter.
 - "That's a good objection and I'd need to think about it" is acceptable **once**.
 - If a question misunderstands your claim, restate the claim rather than answering the wrong question.
 
-**As audience:** you are required to ask questions across the session — see `Peer Feedback Form.md`.
+**As audience:** you are required to ask questions across the session — see [[Peer Feedback Form]].
 A good question is short, is about the argument rather than the topic, and is not a speech with a
 question mark at the end.
 
@@ -101,7 +101,7 @@ better presentation than being cut off at 5:00 mid-objection.**
 
 ## 6. What Is Being Assessed
 
-See `Presentation Rubric.md` for the marking scheme. In brief, the weight is on **whether an argument
+See [[Presentation Rubric]] for the marking scheme. In brief, the weight is on **whether an argument
 was made**, not on polish. A nervous, halting delivery of a real argument scores well above a fluent
 delivery of a topic summary.
 
@@ -109,7 +109,7 @@ delivery of a topic summary.
 
 ## 7. Order and Logistics
 
-The running order is in `Presentation Schedule.md`, along with the two seminar sessions this week and
+The running order is in [[Presentation Schedule]], along with the two seminar sessions this week and
 the arrangement for anyone who cannot present at their slot.
 
 ---

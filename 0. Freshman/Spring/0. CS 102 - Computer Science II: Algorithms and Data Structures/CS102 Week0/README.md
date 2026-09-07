@@ -37,13 +37,13 @@ By the end of Week 0, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L01 The Algorithm Design Process.md` | The six steps, why order matters, the roadmap, and what "efficient" means |
-| `lectures/L02 Complexity Analysis Reviewed.md` | $O/\Omega/\Theta$, the three cases, loops, recurrences, space, and what the model hides |
-| `lectures/L03 Correctness Loop Invariants and Induction.md` | Why testing is not proof; worked invariants; induction; five exercises |
-| `lab/LAB 0 Sorting Benchmarks.md` | Implement three sorts, verify them, measure the gap yourself |
-| `resources/Course Overview Syllabus.md` | **Read this in full in Week 0** — assessment, policies, the lab gate |
-| `resources/Reading Guide Week 0.md` | CLRS 1–4 with guiding questions, plus a script to check Lecture 01's numbers |
-| `solutions_instructor/LAB 0 Solutions.md` | Instructor only |
+| [[L01 The Algorithm Design Process]] | The six steps, why order matters, the roadmap, and what "efficient" means |
+| [[L02 Complexity Analysis Reviewed]] | $O/\Omega/\Theta$, the three cases, loops, recurrences, space, and what the model hides |
+| [[L03 Correctness Loop Invariants and Induction]] | Why testing is not proof; worked invariants; induction; five exercises |
+| [[LAB 0 Sorting Benchmarks]] | Implement three sorts, verify them, measure the gap yourself |
+| [[CS102 Week0/resources/Course Overview Syllabus\|Course Overview Syllabus]] | **Read this in full in Week 0** — assessment, policies, the lab gate |
+| [[CS102 Week0/resources/Reading Guide Week 0\|Reading Guide Week 0]] | CLRS 1–4 with guiding questions, plus a script to check Lecture 01's numbers |
+| [[CS102 Week0/solutions_instructor/LAB 0 Solutions\|LAB 0 Solutions]] | Instructor only |
 
 ### The One Thing to Take From This Week
 

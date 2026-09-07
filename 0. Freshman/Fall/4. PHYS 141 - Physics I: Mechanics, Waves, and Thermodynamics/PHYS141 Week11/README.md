@@ -9,15 +9,15 @@
 
 | File | Description |
 |------|-------------|
-| `lectures/L34 Temperature and Thermal Expansion.md` | The Zeroth Law and why thermometers work; temperature scales; linear, area and volume expansion; water's anomaly |
-| `lectures/L35 Heat and Calorimetry.md` | Heat as energy in transit; specific heat capacity; latent heat and the heating curve; calorimetry with phase changes |
-| `lectures/L36 Heat Transfer and the Ideal Gas.md` | Conduction, convection, radiation; $PV=nRT$; kinetic theory and what temperature *is* |
-| `lab/LAB 11 Specific Heat and Thermal Expansion.md` | Specific heat of three metals by calorimetry; latent heat of fusion; linear expansion; cooling curve |
-| `assignments/PS 11 Temperature Heat and Thermal Expansion.md` | 22 problems on expansion, calorimetry, heat transfer, and the ideal gas |
-| `quiz/QUIZ 11 Temperature Heat and Thermal Expansion.md` | 10-question quiz (administered Monday, Week 12) |
-| `resources/Resources.md` | Textbook references, simulations, deeper reading |
-| `solutions_instructor/PS 11 Solutions.md` | Full worked solutions (instructor only) |
-| `solutions_instructor/LAB 11 Solutions.md` | Expected data, analysis answers, systematic errors to look for |
+| [[L34 Temperature and Thermal Expansion]] | The Zeroth Law and why thermometers work; temperature scales; linear, area and volume expansion; water's anomaly |
+| [[L35 Heat and Calorimetry]] | Heat as energy in transit; specific heat capacity; latent heat and the heating curve; calorimetry with phase changes |
+| [[L36 Heat Transfer and the Ideal Gas]] | Conduction, convection, radiation; $PV=nRT$; kinetic theory and what temperature *is* |
+| [[LAB 11 Specific Heat and Thermal Expansion]] | Specific heat of three metals by calorimetry; latent heat of fusion; linear expansion; cooling curve |
+| [[PS 11 Temperature Heat and Thermal Expansion]] | 22 problems on expansion, calorimetry, heat transfer, and the ideal gas |
+| [[QUIZ 11 Temperature Heat and Thermal Expansion]] | 10-question quiz (administered Monday, Week 12) |
+| [[PHYS141 Week11/resources/Resources\|Resources]] | Textbook references, simulations, deeper reading |
+| [[PHYS141 Week11/solutions_instructor/PS 11 Solutions\|PS 11 Solutions]] | Full worked solutions (instructor only) |
+| [[PHYS141 Week11/solutions_instructor/LAB 11 Solutions\|LAB 11 Solutions]] | Expected data, analysis answers, systematic errors to look for |
 
 ---
 

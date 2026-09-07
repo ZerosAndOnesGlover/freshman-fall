@@ -183,7 +183,7 @@ lecture:
 > **Every algorithm in this course is correct under an assumption. Knowing what yours guarantees, and
 > what it assumed in order to guarantee it, is what the subject consists of.**
 
-The retrospective in `resources/Course Retrospective.md` develops this and is worth pointing students
+The retrospective in [[CS102 Week12/resources/Course Retrospective|Course Retrospective]] develops this and is worth pointing students
 at once the exam is behind them.
 
 ---

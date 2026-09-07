@@ -32,7 +32,7 @@ know to do them and know not to look for them in your grade:
 - **🧪 Labs.** Every Year 2 course's stated components sum to 100% without a laboratory line —
   CS 201 is Problem Sets 35 + Midterms 25 + Final 20 + Projects 20, and the rest are the same shape.
   Labs are checked off by the TA in the session. They are enforced by the attendance rule in
-  `COURSE POLICIES.md`, not by a mark. *(CS 102 in Year 1 works the same way.)*
+  [[Year2 - Sophomore/COURSE POLICIES|COURSE POLICIES]], not by a mark. *(CS 102 in Year 1 works the same way.)*
 
   **A lab is filed under the week whose material it covers, which is usually not the week it is
   sat.** Where a course's lab day falls before that week's lectures have finished, **Lab *N* is sat
@@ -50,7 +50,7 @@ whose leading underscore keeps `tools/gpa.py` from scanning them as courses.
 
 ## Week-to-Date Map
 
-Derived from `0. Institution/ACADEMIC CALENDAR.md`. **Quote week numbers, not dates, when writing
+Derived from [[ACADEMIC CALENDAR]]. **Quote week numbers, not dates, when writing
 course material** — the material is keyed to weeks and only this table converts them.
 
 | | Fall | Spring |
@@ -92,7 +92,7 @@ The curriculum docx assigns each midterm to a **specific week, with stated cover
 week's own assignment list. This calendar previously stacked all four Fall midterms into Week 6 and
 all of the second midterms into Week 10, with wider coverage than the docx claims. The docx wins —
 it is authoritative for its own year — so the exams have moved to the weeks it names, and
-`0. Institution/ACADEMIC CALENDAR.md` has been brought into line.
+[[ACADEMIC CALENDAR]] has been brought into line.
 
 A side effect worth having: no week now carries four evening exams.
 

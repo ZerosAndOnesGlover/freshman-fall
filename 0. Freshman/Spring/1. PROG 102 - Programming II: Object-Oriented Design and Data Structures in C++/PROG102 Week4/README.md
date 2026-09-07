@@ -46,16 +46,16 @@ By the end of Week 4, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L13 Inheritance.md` | Base and derived, is-a vs has-a, access specifiers, `override` |
-| `lectures/L14 Virtual Functions and the vtable.md` | The mechanism, the cost measured, and speculative devirtualization |
-| `lectures/L15 Abstract Classes Destructors and Casting.md` | Pure virtual, the destructor rule, slicing, `dynamic_cast` |
-| `assignments/PS 4 A Shape Hierarchy.md` | Due Friday of Week 5 |
-| `assignments/QUIZ 4 Week 4 Monday.md` | 15 minutes, covers Week 3 |
-| `lab/LAB 4 Reading the vtable in GDB.md` | Find the vptr, walk the vtable, watch it change |
-| `resources/MIDTERM 1 Revision Guide.md` | **Weeks 0–4, sat in Week 5.** Start now |
-| `resources/Reading Guide Week 4.md` | *C++ Primer* Ch. 15, and every command to reproduce this week |
-| `solutions_instructor/PS 4 Solutions.md` | Instructor only |
-| `solutions_instructor/LAB 4 Solutions.md` | Instructor only |
+| [[L13 Inheritance]] | Base and derived, is-a vs has-a, access specifiers, `override` |
+| [[L14 Virtual Functions and the vtable]] | The mechanism, the cost measured, and speculative devirtualization |
+| [[L15 Abstract Classes Destructors and Casting]] | Pure virtual, the destructor rule, slicing, `dynamic_cast` |
+| [[PS 4 A Shape Hierarchy]] | Due Friday of Week 5 |
+| [[PROG102 Week4/assignments/QUIZ 4 Week 4 Monday\|QUIZ 4 Week 4 Monday]] | 15 minutes, covers Week 3 |
+| [[LAB 4 Reading the vtable in GDB]] | Find the vptr, walk the vtable, watch it change |
+| [[PROG102 Week4/resources/MIDTERM 1 Revision Guide\|MIDTERM 1 Revision Guide]] | **Weeks 0–4, sat in Week 5.** Start now |
+| [[PROG102 Week4/resources/Reading Guide Week 4\|Reading Guide Week 4]] | *C++ Primer* Ch. 15, and every command to reproduce this week |
+| [[PROG102 Week4/solutions_instructor/PS 4 Solutions\|PS 4 Solutions]] | Instructor only |
+| [[PROG102 Week4/solutions_instructor/LAB 4 Solutions\|LAB 4 Solutions]] | Instructor only |
 
 ### The One Thing to Take From This Week
 

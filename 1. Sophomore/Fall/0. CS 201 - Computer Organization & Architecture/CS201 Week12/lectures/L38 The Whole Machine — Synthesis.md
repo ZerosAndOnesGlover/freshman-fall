@@ -4,7 +4,7 @@
 
 ---
 
-**Reading:** none — re-read your own `summary.md` files · **Previous:** L37, frontiers
+**Reading:** none — re-read your own [[CS201 Week12/summary|summary]] files · **Previous:** L37, frontiers
 
 ---
 

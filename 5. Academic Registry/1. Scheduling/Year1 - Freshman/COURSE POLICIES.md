@@ -10,7 +10,7 @@
 - All problem sets submitted via the course portal before **17:00 on Friday**.
 - Submissions are timestamped automatically. The portal clock is authoritative.
 - **Format**: PDF only (unless code submission, see below). Handwritten solutions must be scanned clearly.
-- **Code submissions**: Submit a `.zip` containing all source files + a `README.md` with compilation and run instructions.
+- **Code submissions**: Submit a `.zip` containing all source files + a [[5. Academic Registry/README|README]] with compilation and run instructions.
 - **Naming convention**: `PS{N}_{LastName}_{StudentID}.pdf`
 
 ### Late Policy
@@ -58,7 +58,7 @@
 
 ## Quiz Policies
 
-- Quizzes held at the **start of each course's own first lecture of the week**, Weeks 2–12 (11 quizzes). The day differs per course — MATH 141, MATH 151 and PHYS 141 on Monday, PROG 101 on Tuesday, CS 101 on Wednesday. See `ASSESSMENT CALENDAR.md`.
+- Quizzes held at the **start of each course's own first lecture of the week**, Weeks 2–12 (11 quizzes). The day differs per course — MATH 141, MATH 151 and PHYS 141 on Monday, PROG 101 on Tuesday, CS 101 on Wednesday. See [[Year1 - Freshman/ASSESSMENT CALENDAR|ASSESSMENT CALENDAR]].
 - Duration: 10 minutes. Begin exactly at lecture start. No extensions for late arrivals.
 - Material: previous week's lectures + assigned readings.
 - **Lowest 2 quiz scores dropped** from final calculation.

@@ -19,7 +19,7 @@
 ## Setup
 
 ```bash
-mkdir -p cs101/week9 && cd cs101/week9
+mkdir -p "$CS101/week9" && cd "$CS101/week9"        # set in ~/.bashrc -- see Lab 0
 # copy text_lab_starter.py here
 python3 --version      # 3.10+
 ```

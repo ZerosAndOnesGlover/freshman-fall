@@ -9,14 +9,14 @@
 
 | File | Description |
 |------|-------------|
-| `lectures/L13 Work and Kinetic Energy.md` | Work as a dot product; the work-energy theorem derived from Newton's second law |
-| `lectures/L14 Potential Energy and Conservative Forces.md` | Conservative vs. non-conservative forces; gravitational and spring potential energy |
-| `lectures/L15 Conservation of Energy.md` | The full conservation law; power; energy diagrams |
-| `lab/LAB 4 Conservation of Energy.md` | Verifying energy conservation on a track with varying friction |
-| `assignments/PS 4 Work Energy and Conservation of Energy.md` | 20 problems on work, energy, and conservation |
-| `quiz/QUIZ 4 Work Energy and Conservation of Energy.md` | 10-question quiz (administered Monday, Week 5) |
-| `resources/Resources.md` | Textbook references, deeper reading |
-| `solutions_instructor/PS 4 Solutions.md` | Full worked solutions (instructor only) |
+| [[L13 Work and Kinetic Energy]] | Work as a dot product; the work-energy theorem derived from Newton's second law |
+| [[L14 Potential Energy and Conservative Forces]] | Conservative vs. non-conservative forces; gravitational and spring potential energy |
+| [[L15 Conservation of Energy]] | The full conservation law; power; energy diagrams |
+| [[LAB 4 Conservation of Energy]] | Verifying energy conservation on a track with varying friction |
+| [[PS 4 Work Energy and Conservation of Energy]] | 20 problems on work, energy, and conservation |
+| [[QUIZ 4 Work Energy and Conservation of Energy]] | 10-question quiz (administered Monday, Week 5) |
+| [[PHYS141 Week4/resources/Resources\|Resources]] | Textbook references, deeper reading |
+| [[PHYS141 Week4/solutions_instructor/PS 4 Solutions\|PS 4 Solutions]] | Full worked solutions (instructor only) |
 
 ---
 

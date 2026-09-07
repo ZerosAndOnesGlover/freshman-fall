@@ -5,7 +5,7 @@
 **This week's deliverables:** **Lab 12** — the last lab. **There is no problem set and no quiz this
 week.**
 **PROJECT 2 and PS 11 are both due Friday.** The **FINAL EXAM** is this week and is comprehensive —
-see `resources/FINAL EXAM Revision Guide.md`.
+see [[CS102 Week12/resources/FINAL EXAM Revision Guide|FINAL EXAM Revision Guide]].
 
 ---
 
@@ -43,13 +43,13 @@ By the end of Week 12, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L37 P NP and Verification.md` | The exponential wall, decision problems, P, NP, and P vs NP |
-| `lectures/L38 Reductions and NP-Completeness.md` | Reductions, Cook–Levin, the catalogue, and what to do next |
-| `lectures/L39 Approximation Algorithms.md` | Two proofs, one heuristic, and the landscape of approximability |
-| `lab/LAB 12 A TSP Approximation.md` | The wall, the 2-approximation, breaking it, and 2-opt |
-| `resources/Reading Guide Week 12.md` | CLRS Ch. 34–35, with the misreadings that matter |
-| `resources/FINAL EXAM Revision Guide.md` | Format, 19 reproducible proofs, and the assumptions table |
-| `resources/Course Retrospective.md` | What the twelve weeks were for — not examinable |
+| [[L37 P NP and Verification]] | The exponential wall, decision problems, P, NP, and P vs NP |
+| [[L38 Reductions and NP-Completeness]] | Reductions, Cook–Levin, the catalogue, and what to do next |
+| [[L39 Approximation Algorithms]] | Two proofs, one heuristic, and the landscape of approximability |
+| [[LAB 12 A TSP Approximation]] | The wall, the 2-approximation, breaking it, and 2-opt |
+| [[CS102 Week12/resources/Reading Guide Week 12\|Reading Guide Week 12]] | CLRS Ch. 34–35, with the misreadings that matter |
+| [[CS102 Week12/resources/FINAL EXAM Revision Guide\|FINAL EXAM Revision Guide]] | Format, 19 reproducible proofs, and the assumptions table |
+| [[CS102 Week12/resources/Course Retrospective\|Course Retrospective]] | What the twelve weeks were for — not examinable |
 | `solutions_instructor/` | Lab 12 solutions — instructor only |
 
 ### The Three Ideas Most Likely to Be Missed
@@ -107,7 +107,7 @@ MST; the vertex cover bound is a **Week 9** exchange-style argument; knapsack's 
 
 **Forward:** **CS 250** does the proof techniques properly; **CS 301 Theory of Computation** is this
 week expanded into a course; **CS 401 Advanced Algorithms** takes approximation and randomisation
-further. See `resources/Course Retrospective.md`.
+further. See [[CS102 Week12/resources/Course Retrospective|Course Retrospective]].
 
 ---
 

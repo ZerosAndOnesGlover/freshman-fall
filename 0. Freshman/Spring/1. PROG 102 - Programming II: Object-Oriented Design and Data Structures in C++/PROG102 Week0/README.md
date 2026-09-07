@@ -55,16 +55,16 @@ By the end of Week 0, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L00 C++ Syntax for C Programmers.md` | **Read first.** The notation Lectures 01–03 assume — references, `::`, `new`/`delete`, `auto`, overloading |
-| `lectures/L01 From C to C++.md` | The `this` pointer proved in assembly, object size, name mangling, `extern "C"` |
-| `lectures/L02 Constructors Destructors and Object Lifetime.md` | Initializer lists, lifetime, destruction order, the road to RAII |
-| `lectures/L03 Encapsulation const and Namespaces.md` | Access control, `const` member functions, `inline`, namespaces |
-| `assignments/PS 0 Classes Constructors and const.md` | Due Friday of Week 1 |
-| `lab/LAB 0 Porting C to C++.md` | Port a working C program to C++ — and confirm your toolchain |
-| `resources/Course Overview Syllabus.md` | **Read this in full in Week 0** — assessment, the two build lines, policies |
-| `resources/Reading Guide Week 0.md` | *C++ Primer* Ch. 1–2 with guiding questions, plus the commands to reproduce every lecture measurement |
-| `solutions_instructor/PS 0 Solutions.md` | Instructor only |
-| `solutions_instructor/LAB 0 Solutions.md` | Instructor only |
+| [[L00 C++ Syntax for C Programmers]] | **Read first.** The notation Lectures 01–03 assume — references, `::`, `new`/`delete`, `auto`, overloading |
+| [[L01 From C to C++]] | The `this` pointer proved in assembly, object size, name mangling, `extern "C"` |
+| [[L02 Constructors Destructors and Object Lifetime]] | Initializer lists, lifetime, destruction order, the road to RAII |
+| [[L03 Encapsulation const and Namespaces]] | Access control, `const` member functions, `inline`, namespaces |
+| [[PS 0 Classes Constructors and const]] | Due Friday of Week 1 |
+| [[LAB 0 Porting C to C++]] | Port a working C program to C++ — and confirm your toolchain |
+| [[PROG102 Week0/resources/Course Overview Syllabus\|Course Overview Syllabus]] | **Read this in full in Week 0** — assessment, the two build lines, policies |
+| [[PROG102 Week0/resources/Reading Guide Week 0\|Reading Guide Week 0]] | *C++ Primer* Ch. 1–2 with guiding questions, plus the commands to reproduce every lecture measurement |
+| [[PROG102 Week0/solutions_instructor/PS 0 Solutions\|PS 0 Solutions]] | Instructor only |
+| [[PROG102 Week0/solutions_instructor/LAB 0 Solutions\|LAB 0 Solutions]] | Instructor only |
 
 ### The One Thing to Take From This Week
 

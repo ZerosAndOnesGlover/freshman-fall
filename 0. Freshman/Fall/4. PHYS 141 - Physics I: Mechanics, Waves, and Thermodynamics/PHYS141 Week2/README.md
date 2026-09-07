@@ -9,14 +9,14 @@
 
 | File | Description |
 |------|-------------|
-| `lectures/L07 2D Kinematics.md` | Extending kinematics to 2D; independence of perpendicular components |
-| `lectures/L08 Projectile Motion.md` | Projectile motion derived from first principles; range, height, trajectories |
-| `lectures/L09 Circular Motion.md` | Uniform circular motion; centripetal acceleration; non-uniform circular motion |
-| `lab/LAB 2 Projectile Motion.md` | Measuring projectile range vs. launch angle; comparing to theory |
-| `assignments/PS 2 Kinematics 2D Projectile and Circular Motion.md` | 20 problems on 2D kinematics, projectile motion, and circular motion |
-| `quiz/QUIZ 2 Kinematics 2D Projectile and Circular Motion.md` | 10-question quiz (administered Monday, Week 3) |
-| `resources/Resources.md` | Textbook references, simulations, supplementary reading |
-| `solutions_instructor/PS 2 Solutions.md` | Full worked solutions (instructor only) |
+| [[L07 2D Kinematics]] | Extending kinematics to 2D; independence of perpendicular components |
+| [[L08 Projectile Motion]] | Projectile motion derived from first principles; range, height, trajectories |
+| [[L09 Circular Motion]] | Uniform circular motion; centripetal acceleration; non-uniform circular motion |
+| [[LAB 2 Projectile Motion]] | Measuring projectile range vs. launch angle; comparing to theory |
+| [[PS 2 Kinematics 2D Projectile and Circular Motion]] | 20 problems on 2D kinematics, projectile motion, and circular motion |
+| [[QUIZ 2 Kinematics 2D Projectile and Circular Motion]] | 10-question quiz (administered Monday, Week 3) |
+| [[PHYS141 Week2/resources/Resources\|Resources]] | Textbook references, simulations, supplementary reading |
+| [[PHYS141 Week2/solutions_instructor/PS 2 Solutions\|PS 2 Solutions]] | Full worked solutions (instructor only) |
 
 ---
 

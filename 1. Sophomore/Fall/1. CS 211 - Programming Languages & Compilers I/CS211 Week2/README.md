@@ -38,14 +38,14 @@ By the end of Week 2, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L05 Recursive Descent and the Grammars That Fight Back.md` | One function per non-terminal; left recursion; FIRST/FOLLOW; LL(1); why left factoring cannot fix the dangling else |
-| `lectures/L06 Bottom-Up Parsing and What Bison Is Telling You.md` | Shift-reduce, items, LALR(1), reading the conflict report, **Cyan's own two conflicts**, precedence declarations |
-| `lab/LAB 2 Reading a Conflict Report.md` | The dangling else in four tools, then Cyan's conflict and its fix |
+| [[L05 Recursive Descent and the Grammars That Fight Back]] | One function per non-terminal; left recursion; FIRST/FOLLOW; LL(1); why left factoring cannot fix the dangling else |
+| [[L06 Bottom-Up Parsing and What Bison Is Telling You]] | Shift-reduce, items, LALR(1), reading the conflict report, **Cyan's own two conflicts**, precedence declarations |
+| [[LAB 2 Reading a Conflict Report]] | The dangling else in four tools, then Cyan's conflict and its fix |
 | `lab/first_follow.py` | FIRST/FOLLOW and LL(1) table builder with conflict reporting |
 | `lab/dangling.y` · `lab/cyan.y` | bison grammars — the ambiguous one, and Cyan's full grammar |
-| `assignments/PS 2 A Recursive Descent Parser for Cyan.md` | FIRST/FOLLOW by hand, conflict reports, and the parser itself |
-| `assignments/QUIZ 2 Week 2 Tuesday.md` | **Covers Week 1.** Ten minutes, self-marked against the printed key |
-| `resources/Reading Guide Week 2.md` | Dragon §4.4–4.8, with a pragmatic route through §4.6 |
+| [[PS 2 A Recursive Descent Parser for Cyan]] | FIRST/FOLLOW by hand, conflict reports, and the parser itself |
+| [[QUIZ 2 Week 2 Tuesday]] | **Covers Week 1.** Ten minutes, self-marked against the printed key |
+| [[CS211 Week2/resources/Reading Guide Week 2\|Reading Guide Week 2]] | Dragon §4.4–4.8, with a pragmatic route through §4.6 |
 | `solutions_instructor/` | Instructor only |
 
 ---
@@ -66,7 +66,7 @@ Run bison on Cyan and it reports **two reduce/reduce conflicts** on `[` and `.`.
 
 **Labs and quizzes carry no weight**, and both are required. **Quiz 2 is sat Tuesday and covers Week 1** — lexing, not parsing. **Lab 2 is sat Friday of this week**, after both lectures.
 
-Both are tracked in `5. Academic Registry/2. Gradebook/Year2 Sophomore/Fall/_CS 211 Lab and Quiz Record.md`.
+Both are tracked in [[_CS 211 Lab and Quiz Record]].
 
 ---
 

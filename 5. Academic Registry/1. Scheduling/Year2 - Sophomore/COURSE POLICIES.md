@@ -10,7 +10,7 @@
 - All problem sets submitted via the course portal before **17:00 on Friday**.
 - Submissions are timestamped automatically. The portal clock is authoritative.
 - **Format**: PDF only (unless code submission — see below). Handwritten solutions must be scanned clearly.
-- **Code submissions**: Submit a `.zip` containing all source files + a `README.md` with compilation and run instructions.
+- **Code submissions**: Submit a `.zip` containing all source files + a [[5. Academic Registry/README|README]] with compilation and run instructions.
 - **Naming convention**: `PS{N}_{LastName}_{StudentID}.pdf`
 
 ### Late Policy

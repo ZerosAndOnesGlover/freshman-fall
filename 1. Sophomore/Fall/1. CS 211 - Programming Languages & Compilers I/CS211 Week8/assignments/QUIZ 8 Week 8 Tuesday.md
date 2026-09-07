@@ -2,7 +2,7 @@
 
 **Sat:** Tuesday of **Week 8**, first 10 minutes of lecture · TH 205
 **Covers:** **Week 7** — the lambda calculus: substitution, reduction strategies, encodings, fixed points
-**Unmarked.** Recorded in `5. Academic Registry/2. Gradebook/Year2 Sophomore/Fall/_CS 211 Lab and Quiz Record.md`.
+**Unmarked.** Recorded in [[_CS 211 Lab and Quiz Record]].
 
 **The answer key is printed below the questions.** Do not look at it until you have written something for all six.
 

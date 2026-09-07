@@ -21,8 +21,8 @@ By the end of this lab, you will:
 ## Setup
 
 ```bash
-cd ~/cs101
-mkdir week1
+cd "$CS101"        # set in ~/.bashrc -- see Lab 0
+mkdir -p week1
 cd week1
 ```
 
@@ -524,7 +524,7 @@ if __name__ == "__main__":
 ### Commit all your work:
 
 ```bash
-cd ~/cs101/week1
+cd "$CS101/week1"
 git add .
 git status
 git commit -m "Week 1 Lab: type exploration, string challenges, unit converter"

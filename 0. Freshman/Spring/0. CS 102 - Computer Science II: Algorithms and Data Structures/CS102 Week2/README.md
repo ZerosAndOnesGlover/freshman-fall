@@ -43,13 +43,13 @@ By the end of Week 2, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L07 Why Balance Matters and Rotations.md` | Candidate invariants, the rotation, the four cases |
-| `lectures/L08 AVL Trees Insertion Height and Deletion.md` | Insertion, the height bound proved, the insert/delete asymmetry |
-| `lectures/L09 Red-Black Trees B-Trees and What Practice Uses.md` | Five properties, AVL vs RB measured, B-trees, `SortedList` |
-| `assignments/PS 2 Balanced BSTs and Rotations.md` | 100 points, due Friday of Week 3 |
-| `assignments/QUIZ 2 Week 2 Monday.md` | 20 points, formative — **covers Week 1** |
-| `lab/LAB 2 BST versus AVL on Sorted Input.md` | Reproduce the gap, then find where balancing stops paying |
-| `resources/Reading Guide Week 2.md` | CLRS §13.1–13.4 and §18.1, with guiding questions |
+| [[L07 Why Balance Matters and Rotations]] | Candidate invariants, the rotation, the four cases |
+| [[L08 AVL Trees Insertion Height and Deletion]] | Insertion, the height bound proved, the insert/delete asymmetry |
+| [[L09 Red-Black Trees B-Trees and What Practice Uses]] | Five properties, AVL vs RB measured, B-trees, `SortedList` |
+| [[PS 2 Balanced BSTs and Rotations]] | 100 points, due Friday of Week 3 |
+| [[CS102 Week2/assignments/QUIZ 2 Week 2 Monday\|QUIZ 2 Week 2 Monday]] | 20 points, formative — **covers Week 1** |
+| [[LAB 2 BST versus AVL on Sorted Input]] | Reproduce the gap, then find where balancing stops paying |
+| [[CS102 Week2/resources/Reading Guide Week 2\|Reading Guide Week 2]] | CLRS §13.1–13.4 and §18.1, with guiding questions |
 | `solutions_instructor/` | PS 2 and Lab 2 solutions — instructor only |
 
 ### The Three Ideas Most Likely to Be Missed

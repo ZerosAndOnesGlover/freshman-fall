@@ -83,7 +83,7 @@ Always open in a browser tab when coding.
 
 **Grading Scale:**
 
-This course uses the **university-wide scale** defined in `UNIVERSITY POLICIES.md` (Academic
+This course uses the **university-wide scale** defined in [[UNIVERSITY POLICIES]] (Academic
 Registry). It is reproduced here for convenience; the registry copy governs if the two ever differ.
 
 | Letter | GPA Points | Percentage |

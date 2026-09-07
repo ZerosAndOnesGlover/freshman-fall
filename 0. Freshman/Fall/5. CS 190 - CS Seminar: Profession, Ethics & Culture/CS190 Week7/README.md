@@ -28,23 +28,23 @@ The curriculum lists "Open Source Licenses" under this week. **The licence taxon
 
 That placement is deliberate and the coverage is not reduced by it. **Week 2 explains what the licences say; Week 7 explains why they bind.** A licence is an exercise of the copyright the author automatically holds, so the mechanics only make sense once the underlying right does — which is why §6 of this week's lecture returns to copyleft violation and classifies it, correctly, as copyright infringement rather than a breach of etiquette.
 
-If you want the licence table, it is in `CS190 Week2/Lecture Week 2.md` §5.4.
+If you want the licence table, it is in [[Lecture Week 2]] §5.4.
 
 ### This Week's Materials
 
 | File | Purpose |
 | --- | --- |
-| `Lecture Week 7.md` | Core seminar content: copyright, Patents, Trade Secrets, and the DMCA |
-| `Reading Guide.md` | Annotated guide to this week's readings, with guiding questions |
-| `Discussion Questions.md` | Questions the seminar will work through live — come with notes |
-| `Prep Assignment.md` | Your participation-graded prep work, due before seminar |
-| `Glossary Week 7.md` | Terms introduced this week, defined precisely |
+| [[Lecture Week 7]] | Core seminar content: copyright, Patents, Trade Secrets, and the DMCA |
+| [[CS190 Week7/Reading Guide\|Reading Guide]] | Annotated guide to this week's readings, with guiding questions |
+| [[CS190 Week7/Discussion Questions\|Discussion Questions]] | Questions the seminar will work through live — come with notes |
+| [[CS190 Week7/Prep Assignment\|Prep Assignment]] | Your participation-graded prep work, due before seminar |
+| [[Glossary Week 7]] | Terms introduced this week, defined precisely |
 
 ### Before Seminar
 
-- [ ] Work through `Reading Guide.md` and the assigned readings
-- [ ] Complete `Prep Assignment.md` (one page, credit/no-credit on evident engagement)
-- [ ] Read `Discussion Questions.md` and bring notes on at least two you have a view on
+- [ ] Work through [[CS190 Week7/Reading Guide|Reading Guide]] and the assigned readings
+- [ ] Complete [[CS190 Week7/Prep Assignment|Prep Assignment]] (one page, credit/no-credit on evident engagement)
+- [ ] Read [[CS190 Week7/Discussion Questions|Discussion Questions]] and bring notes on at least two you have a view on
 
 ### How This Course Is Graded (Reminder)
 

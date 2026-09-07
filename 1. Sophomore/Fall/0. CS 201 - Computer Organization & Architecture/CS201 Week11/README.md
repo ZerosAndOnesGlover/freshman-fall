@@ -42,13 +42,13 @@ By the end of Week 11, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L34 Measure First — Profiling and Amdahl in Practice.md` | The method; the surprising profile; sampling vs instrumenting; the `-O2` trap; Amdahl as a budget |
-| `lectures/L35 The Roofline Model — Diagnosing the Bottleneck.md` | Compute vs memory-bound, arithmetic intensity, and 7.45× from a loop reorder |
-| `lectures/L36 Benchmarking Honestly.md` | The course's "measured nothing" failures collected into a checklist |
-| `assignments/PS 11 A Measured 10x Speedup.md` | The method, the roofline, **a full optimisation report**, and honest benchmarking |
-| `assignments/QUIZ 11 Week 11 Monday.md` | Ten minutes on Week 10 — the last quiz. **Unmarked, key in the paper** |
-| `lab/LAB 11 Profile Diagnose Fix Remeasure.md` | The capstone lab: the full loop on one program — the Project 2 template |
-| `resources/Reading Guide Week 11.md` | CS:APP Chapter 5 in full, plus the roofline paper |
+| [[L34 Measure First — Profiling and Amdahl in Practice]] | The method; the surprising profile; sampling vs instrumenting; the `-O2` trap; Amdahl as a budget |
+| [[L35 The Roofline Model — Diagnosing the Bottleneck]] | Compute vs memory-bound, arithmetic intensity, and 7.45× from a loop reorder |
+| [[L36 Benchmarking Honestly]] | The course's "measured nothing" failures collected into a checklist |
+| [[PS 11 A Measured 10x Speedup]] | The method, the roofline, **a full optimisation report**, and honest benchmarking |
+| [[CS201 Week11/assignments/QUIZ 11 Week 11 Monday\|QUIZ 11 Week 11 Monday]] | Ten minutes on Week 10 — the last quiz. **Unmarked, key in the paper** |
+| [[LAB 11 Profile Diagnose Fix Remeasure]] | The capstone lab: the full loop on one program — the Project 2 template |
+| [[CS201 Week11/resources/Reading Guide Week 11\|Reading Guide Week 11]] | CS:APP Chapter 5 in full, plus the roofline paper |
 | `solutions_instructor/` | Instructor only |
 
 ---

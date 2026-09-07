@@ -53,7 +53,7 @@ MATH 151 numbers lectures `L00`–`L23` continuously, three per week, so Week *N
 | Action | Detail |
 |---|---|
 | Pigeonhole *content* → Week 8 | Re-homed and renumbered as **L24**, Week 8's first lecture |
-| `Pigeonhole Patterns Reference.md` → Week 8 | Moves to `MATH151 Week8/resources/` |
+| [[Pigeonhole Patterns Reference]] → Week 8 | Moves to `MATH151 Week8/resources/` |
 | Week 5's **L17 slot** is refilled | New lecture on **bijections, cardinality, and counting with functions** — squarely docx Week 5 material, and the honest home for the "no injection into a smaller set" idea that motivated the misplacement |
 
 No written work is discarded and the global numbering invariant survives.

@@ -45,14 +45,14 @@ By the end of Week 0, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L01 What a Process Is and What fork Copies.md` | `/proc` as the process; `fork`'s two returns; COW measured at 0 and 16,384 faults; **fork at 34 µs/MB and `posix_spawn` 70× faster**; the stdio buffer trap; `exec` |
-| `lectures/L02 Waiting Zombies and the Process Table.md` | The status word by hand; zombies with RSS 0; `waitpid`/`WNOHANG`; **orphans adopted by PID 257510, not 1**; `RLIMIT_NPROC` as a DoS; groups and sessions; the state machine |
-| `lectures/L03 Signals and Async-Signal-Safe Code.md` | `sigaction` against `signal`, measured; **5,000 signals delivered once**; 192 safe functions; `printf` corrupting two thirds of its own output; `EINTR`; the `pause()` race |
-| `lab/LAB 0 The Process Supervisor.md` | Build a supervisor that restarts crashed children and shuts down cleanly. **Friday of Week 0** |
+| [[L01 What a Process Is and What fork Copies]] | `/proc` as the process; `fork`'s two returns; COW measured at 0 and 16,384 faults; **fork at 34 µs/MB and `posix_spawn` 70× faster**; the stdio buffer trap; `exec` |
+| [[L02 Waiting Zombies and the Process Table]] | The status word by hand; zombies with RSS 0; `waitpid`/`WNOHANG`; **orphans adopted by PID 257510, not 1**; `RLIMIT_NPROC` as a DoS; groups and sessions; the state machine |
+| [[L03 Signals and Async-Signal-Safe Code]] | `sigaction` against `signal`, measured; **5,000 signals delivered once**; 192 safe functions; `printf` corrupting two thirds of its own output; `EINTR`; the `pause()` race |
+| [[LAB 0 The Process Supervisor]] | Build a supervisor that restarts crashed children and shuts down cleanly. **Friday of Week 0** |
 | `lab/supervisor.c`, `lab/flaky.c`, `lab/Makefile` | The skeleton, the thing to supervise, and the build |
-| `assignments/Problem Set 0.md` | Five questions, 100 points, due **Friday of Week 1** |
-| `resources/Course Overview Syllabus.md` | **Read this in full in Week 0** — assessment, the lab lag, Fall Break's effect on Lab 5, deviations |
-| `resources/Reading Guide Week 0.md` | Which of APUE 1–8 is this week, which is Week 1, and thirteen questions |
+| [[PROG201 Week0/assignments/Problem Set 0\|Problem Set 0]] | Five questions, 100 points, due **Friday of Week 1** |
+| [[PROG201 Week0/resources/Course Overview Syllabus\|Course Overview Syllabus]] | **Read this in full in Week 0** — assessment, the lab lag, Fall Break's effect on Lab 5, deviations |
+| [[PROG201 Week0/resources/Reading Guide Week 0\|Reading Guide Week 0]] | Which of APUE 1–8 is this week, which is Week 1, and thirteen questions |
 | `solutions_instructor/` | Instructor only |
 
 ---
@@ -79,7 +79,7 @@ They are still required. **The lab is checked off by the TA in the session**, an
 > after all three lectures, and after CS 201's and CS 211's Week 0 labs have vacated the afternoon. There is no lab in Week 1. **CS 201 lags too and CS 211 does not** — read each course's
 > own header rather than carrying a habit between them.
 
-Both are tracked in `5. Academic Registry/2. Gradebook/Year2 Sophomore/Fall/_PROG 201 Lab and Quiz Record.md`.
+Both are tracked in [[_PROG 201 Lab and Quiz Record]].
 
 ---
 

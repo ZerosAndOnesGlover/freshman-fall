@@ -20,7 +20,7 @@ Break and Spring Break weeks were dropped by decision.
 The vault already carried a dated Year 1 Fall calendar — W1 = Sep 09, W6 midterms Oct 07–11,
 W12 = Dec 02, finals Dec 16–20. Those dates are **internally consistent but belong to 2024**:
 
-- The old `ACADEMIC CALENDAR.md` said *"Mon Sep 9 | Week 1 begins"*. **Sep 9 2026 is a Wednesday.**
+- The old [[ACADEMIC CALENDAR]] said *"Mon Sep 9 | Week 1 begins"*. **Sep 9 2026 is a Wednesday.**
   Sep 9 **2024** was a Monday.
 - Likewise *"Wed Aug 28 | Classes begin"* — **Aug 28 2026 is a Friday.** Aug 28 **2024** was a
   Wednesday.
@@ -71,11 +71,11 @@ These were pre-existing and are unrelated to the year change.
 
 | # | Where | Defect | Resolution |
 |---|---|---|---|
-| 1 | `ASSESSMENT CALENDAR.md` | Midterm 1 rows labelled **W6** but dated Oct 07–11, which was **W5** under the old map. Both midterm blocks were dated one week earlier than their own week label. | Dates now derived from the week label. Midterm 1 sits inside W6, Midterm 2 inside W10. |
-| 2 | `ASSESSMENT CALENDAR.md` | CS 101 Project 1 labelled **W9**, dated Nov 01 — the Friday *before* W9 began. Project 2 labelled **W12**, dated Dec 09 — the week *after*. | Both now fall on the Friday of their own week: Oct 23 and Nov 13. |
-| 3 | `COURSE POLICIES.md` | *"Quizzes held at the start of Monday lecture, Weeks 2–14 (12 quizzes)."* The course only has Weeks 0–12, and quizzes are not all on Monday. | Corrected to Weeks 2–12, **11 quizzes**, on each course's own first lecture day. |
-| 4 | `FALL SCHEDULE.md`, `MASTER TIMETABLE.md` | Same stale `Weeks 2–14` range in seven places. | All changed to `Weeks 2–12`. |
-| 5 | `FALL SCHEDULE.md` | Marked **Thursday** as PROG 101's quiz day. `PROG101 Week2/quizzes/QUIZ 1.md` says *"Week 2, Tuesday — start of Week 2, Lecture 1"* and `ASSESSMENT CALENDAR.md` agrees. | Moved to **Tuesday**; the schedule was the lone dissenter. Course material outranks the schedule. |
+| 1 | [[Year1 - Freshman/ASSESSMENT CALENDAR\|ASSESSMENT CALENDAR]] | Midterm 1 rows labelled **W6** but dated Oct 07–11, which was **W5** under the old map. Both midterm blocks were dated one week earlier than their own week label. | Dates now derived from the week label. Midterm 1 sits inside W6, Midterm 2 inside W10. |
+| 2 | [[Year1 - Freshman/ASSESSMENT CALENDAR\|ASSESSMENT CALENDAR]] | CS 101 Project 1 labelled **W9**, dated Nov 01 — the Friday *before* W9 began. Project 2 labelled **W12**, dated Dec 09 — the week *after*. | Both now fall on the Friday of their own week: Oct 23 and Nov 13. |
+| 3 | [[Year1 - Freshman/COURSE POLICIES\|COURSE POLICIES]] | *"Quizzes held at the start of Monday lecture, Weeks 2–14 (12 quizzes)."* The course only has Weeks 0–12, and quizzes are not all on Monday. | Corrected to Weeks 2–12, **11 quizzes**, on each course's own first lecture day. |
+| 4 | [[Year1 - Freshman/FALL SCHEDULE\|FALL SCHEDULE]], [[Year1 - Freshman/MASTER TIMETABLE\|MASTER TIMETABLE]] | Same stale `Weeks 2–14` range in seven places. | All changed to `Weeks 2–12`. |
+| 5 | [[Year1 - Freshman/FALL SCHEDULE\|FALL SCHEDULE]] | Marked **Thursday** as PROG 101's quiz day. [[QUIZ 1]] says *"Week 2, Tuesday — start of Week 2, Lecture 1"* and [[Year1 - Freshman/ASSESSMENT CALENDAR\|ASSESSMENT CALENDAR]] agrees. | Moved to **Tuesday**; the schedule was the lone dissenter. Course material outranks the schedule. |
 
 ---
 
@@ -113,22 +113,22 @@ Neither was resolved, because both change the shape of the term rather than its 
 | W12 | Mon Apr 05 | Fri Apr 09 | last instruction |
 | Finals | Mon Apr 12 | Fri Apr 16 | no classes |
 
-The old Spring dates were **2025 dates** — `ACADEMIC CALENDAR.md` said *"Mon Jan 13 | Spring
+The old Spring dates were **2025 dates** — [[ACADEMIC CALENDAR]] said *"Mon Jan 13 | Spring
 semester begins"*, and Jan 13 was a Monday in **2025**. Same failure as Fall, a year apart.
 
 ### Defects found in Spring
 
 | # | Where | Defect | Resolution |
 |---|---|---|---|
-| 6 | `ASSESSMENT CALENDAR.md` | Spring quizzes were listed on the **Fall numbering pattern** — Quiz 1 in W2 through Quiz 11 in W12. Every CS 102, PROG 102 and MATH 142 quiz file says **Quiz *N* sits in Week *N***. The whole column was off by one. | Renumbered to Week *N*. ECE 110 genuinely does follow the Fall pattern (Quiz *N* in Week *N+1*) and was left alone. |
-| 7 | `ASSESSMENT CALENDAR.md` | Only **CS 102** quizzes were listed. PROG 102, MATH 142 and ECE 110 each have 11–13 quiz files that appeared nowhere in the calendar. | All four courses' quizzes now listed — 71 rows, up from 39. |
-| 8 | `ASSESSMENT CALENDAR.md` | Midterm 2 labelled **W10** but dated Apr 14, which was **W11** under the old map. Same class of defect as Fall #1. | Dates derived from the week label. |
-| 9 | `SPRING SCHEDULE.md` | Stale `Weeks 2–14` quiz range in four places; the real ranges differ per course. | CS 102 and PROG 102 → Weeks 1–11; MATH 142 → Weeks 1–12; ECE 110 → Weeks 2–12 (unchanged). |
-| 10 | `SPRING SCHEDULE.md` | Marked **Friday** as MATH 142's quiz day; all twelve MATH 142 quiz files say **Monday**, which is also its first lecture of the week. | Moved to Monday, consistent with how the same conflict was resolved for PROG 101 in Fall. |
+| 6 | [[Year1 - Freshman/ASSESSMENT CALENDAR\|ASSESSMENT CALENDAR]] | Spring quizzes were listed on the **Fall numbering pattern** — Quiz 1 in W2 through Quiz 11 in W12. Every CS 102, PROG 102 and MATH 142 quiz file says **Quiz *N* sits in Week *N***. The whole column was off by one. | Renumbered to Week *N*. ECE 110 genuinely does follow the Fall pattern (Quiz *N* in Week *N+1*) and was left alone. |
+| 7 | [[Year1 - Freshman/ASSESSMENT CALENDAR\|ASSESSMENT CALENDAR]] | Only **CS 102** quizzes were listed. PROG 102, MATH 142 and ECE 110 each have 11–13 quiz files that appeared nowhere in the calendar. | All four courses' quizzes now listed — 71 rows, up from 39. |
+| 8 | [[Year1 - Freshman/ASSESSMENT CALENDAR\|ASSESSMENT CALENDAR]] | Midterm 2 labelled **W10** but dated Apr 14, which was **W11** under the old map. Same class of defect as Fall #1. | Dates derived from the week label. |
+| 9 | [[Year1 - Freshman/SPRING SCHEDULE\|SPRING SCHEDULE]] | Stale `Weeks 2–14` quiz range in four places; the real ranges differ per course. | CS 102 and PROG 102 → Weeks 1–11; MATH 142 → Weeks 1–12; ECE 110 → Weeks 2–12 (unchanged). |
+| 10 | [[Year1 - Freshman/SPRING SCHEDULE\|SPRING SCHEDULE]] | Marked **Friday** as MATH 142's quiz day; all twelve MATH 142 quiz files say **Monday**, which is also its first lecture of the week. | Moved to Monday, consistent with how the same conflict was resolved for PROG 101 in Fall. |
 
 ### ⚠️ Unresolved: PROG 102's quiz day
 
-All eleven PROG 102 quiz files say *"Week N · Monday, start of lecture"*. But `SPRING SCHEDULE.md`
+All eleven PROG 102 quiz files say *"Week N · Monday, start of lecture"*. But [[Year1 - Freshman/SPRING SCHEDULE|SPRING SCHEDULE]]
 puts PROG 102's lectures on **Tue/Wed/Thu** and its **lab** on Monday. A quiz at "the start of
 lecture" on a day with no lecture cannot happen.
 
@@ -196,7 +196,7 @@ the day; if the fourth file is supplementary rather than delivered, it should ca
 ## 5 · Convention Note
 
 **Lectures carry dates; problem sets and labs do not.** The Week-to-Date Maps in
-`1. Scheduling/Year1 - Freshman/ASSESSMENT CALENDAR.md` remain the **source of truth**; the 340
+[[Year1 - Freshman/ASSESSMENT CALENDAR|ASSESSMENT CALENDAR]] remain the **source of truth**; the 340
 lecture `**Date:**` lines are derived from them (§4b), not maintained independently. If the two
 disagree, the map wins and the lecture lines get regenerated.
 
@@ -215,4 +215,4 @@ suggest are also from earlier calendar years. Check each against its own anchors
 
 ---
 
-*Year 1 Freshman Fall · Calendar Reconciliation · see also `1. Scheduling/Year1 - Freshman/PREREQUISITE AUDIT.md`*
+*Year 1 Freshman Fall · Calendar Reconciliation · see also [[Year1 - Freshman/PREREQUISITE AUDIT|PREREQUISITE AUDIT]]*

@@ -9,14 +9,14 @@
 
 | File | Description |
 |------|-------------|
-| `lectures/L10 Newtons First and Second Law.md` | Inertia, force, mass; F = ma derived and interpreted |
-| `lectures/L11 Newtons Third Law and Free Body Diagrams.md` | Action-reaction pairs; the free body diagram method |
-| `lectures/L12 Applications of Newtons Laws.md` | Tension, normal force, friction, inclined planes, connected systems |
-| `lab/LAB 3 Newtons Second Law.md` | Atwood machine; verifying F = ma with varying mass and force |
-| `assignments/PS 3 Newtons Three Laws of Motion.md` | 20 problems on Newton's laws and their applications |
-| `quiz/QUIZ 3 Newtons Three Laws of Motion.md` | 10-question quiz (administered Monday, Week 4) |
-| `resources/Resources.md` | Textbook references, deeper reading |
-| `solutions_instructor/PS 3 Solutions.md` | Full worked solutions (instructor only) |
+| [[L10 Newtons First and Second Law]] | Inertia, force, mass; F = ma derived and interpreted |
+| [[L11 Newtons Third Law and Free Body Diagrams]] | Action-reaction pairs; the free body diagram method |
+| [[L12 Applications of Newtons Laws]] | Tension, normal force, friction, inclined planes, connected systems |
+| [[LAB 3 Newtons Second Law]] | Atwood machine; verifying F = ma with varying mass and force |
+| [[PS 3 Newtons Three Laws of Motion]] | 20 problems on Newton's laws and their applications |
+| [[QUIZ 3 Newtons Three Laws of Motion]] | 10-question quiz (administered Monday, Week 4) |
+| [[PHYS141 Week3/resources/Resources\|Resources]] | Textbook references, deeper reading |
+| [[PHYS141 Week3/solutions_instructor/PS 3 Solutions\|PS 3 Solutions]] | Full worked solutions (instructor only) |
 
 ---
 

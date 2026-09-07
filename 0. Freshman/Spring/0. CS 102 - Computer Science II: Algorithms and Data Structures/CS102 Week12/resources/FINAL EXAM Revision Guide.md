@@ -165,7 +165,7 @@ worth more spent on recurrences and preconditions.
 - Lab 12 runs as normal. If you are at nine completed labs, it is compulsory.
 - Past papers are on the course page. The two most recent match this syllabus; earlier ones predate the
   geometry week.
-- The course retrospective in `resources/Course Retrospective.md` is not examinable and is worth twenty
+- The course retrospective in [[CS102 Week12/resources/Course Retrospective|Course Retrospective]] is not examinable and is worth twenty
   minutes after the exam.
 
 ---

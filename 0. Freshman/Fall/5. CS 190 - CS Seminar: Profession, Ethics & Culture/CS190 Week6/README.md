@@ -25,19 +25,19 @@ By the end of Week 6, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `Lecture Week 6.md` | Core seminar content: autonomous Weapons, Deepfakes, and LLMs |
-| `Reading Guide.md` | Annotated guide to this week's readings, with guiding questions |
-| `Discussion Questions.md` | Questions the seminar will work through live — come with notes |
-| `Prep Assignment.md` | Your participation-graded prep work, due before seminar |
-| `Position Paper 2.md` | The assigned paper prompt, requirements, and grading criteria |
-| `Glossary Week 6.md` | Terms introduced this week, defined precisely |
+| [[Lecture Week 6]] | Core seminar content: autonomous Weapons, Deepfakes, and LLMs |
+| [[CS190 Week6/Reading Guide\|Reading Guide]] | Annotated guide to this week's readings, with guiding questions |
+| [[CS190 Week6/Discussion Questions\|Discussion Questions]] | Questions the seminar will work through live — come with notes |
+| [[CS190 Week6/Prep Assignment\|Prep Assignment]] | Your participation-graded prep work, due before seminar |
+| [[CS190 Week6/Position Paper 2\|Position Paper 2]] | The assigned paper prompt, requirements, and grading criteria |
+| [[Glossary Week 6]] | Terms introduced this week, defined precisely |
 
 ### Before Seminar
 
-- [ ] Work through `Reading Guide.md` and the assigned readings
-- [ ] Complete `Prep Assignment.md` (one page, credit/no-credit on evident engagement)
-- [ ] Read `Discussion Questions.md` and bring notes on at least two you have a view on
-- [ ] Read `Position Paper 2.md` early — it is due before week 7 seminar, and the 750–1,000 word limit is enforced
+- [ ] Work through [[CS190 Week6/Reading Guide|Reading Guide]] and the assigned readings
+- [ ] Complete [[CS190 Week6/Prep Assignment|Prep Assignment]] (one page, credit/no-credit on evident engagement)
+- [ ] Read [[CS190 Week6/Discussion Questions|Discussion Questions]] and bring notes on at least two you have a view on
+- [ ] Read [[CS190 Week6/Position Paper 2|Position Paper 2]] early — it is due before week 7 seminar, and the 750–1,000 word limit is enforced
 
 ### How This Course Is Graded (Reminder)
 

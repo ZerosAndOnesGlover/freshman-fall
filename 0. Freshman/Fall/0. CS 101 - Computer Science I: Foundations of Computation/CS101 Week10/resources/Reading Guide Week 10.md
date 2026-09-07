@@ -204,7 +204,7 @@ the common case — entering a `try` is cheap, raising is not. 10. temp in the t
 ## Looking Ahead
 
 **📌 Midterm 2 is this week**, covering Weeks 6–9. Week 10 material is **not** on it — see
-`MIDTERM 2 Review and Practice Exam.md`.
+[[CS101 Week10/assignments/MIDTERM 2 Review and Practice Exam|MIDTERM 2 Review and Practice Exam]].
 
 **Week 11** turns to **computability** — which problems can be solved by *any* program at all. It
 picks up the thread L30 left hanging: regular expressions cannot parse nested structure, and that

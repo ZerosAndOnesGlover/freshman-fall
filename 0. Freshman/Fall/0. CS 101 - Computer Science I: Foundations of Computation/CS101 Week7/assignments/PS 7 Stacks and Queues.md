@@ -6,7 +6,7 @@
 **Submission:** Upload `ps7.py` and `PS 7 Stacks and Queues.md`
 **Weight:** Part of the 30% Problem Sets grade
 
-**Note:** Project 1 was assigned this week (see `PROJECT 1 Data Analysis Tool.md`) and is due Week 9. Budget your time accordingly — do not let PS7 crowd out Project 1 progress.
+**Note:** Project 1 was assigned this week (see [[PROJECT 1 Data Analysis Tool]]) and is due Week 9. Budget your time accordingly — do not let PS7 crowd out Project 1 progress.
 
 ---
 

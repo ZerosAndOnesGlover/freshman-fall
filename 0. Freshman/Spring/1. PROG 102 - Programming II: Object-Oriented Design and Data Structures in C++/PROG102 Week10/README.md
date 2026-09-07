@@ -59,16 +59,16 @@ By the end of Week 10, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L31 Threads and Races.md` | `std::thread`, the lost update, and why `-O2` hides it |
-| `lectures/L32 Mutexes Deadlock and Condition Variables.md` | Mutual exclusion, deadlock, and waiting properly |
-| `lectures/L33 Atomics and Thread-Safe Data Structures.md` | `std::atomic`, the bounded queue, and what sharing costs |
-| `assignments/PS 10 A Thread-Safe Bounded Queue.md` | Due Friday of Week 11 |
-| `assignments/QUIZ 10 Week 10 Monday.md` | 15 minutes, covers Week 9 |
-| `lab/LAB 10 Finding Races with ThreadSanitizer.md` | Five races, found and fixed |
-| `resources/MIDTERM 2 Revision Guide.md` | **Weeks 5–9, sat this week** |
-| `resources/Reading Guide Week 10.md` | Williams, the memory model, and every command |
-| `solutions_instructor/PS 10 Solutions.md` | Instructor only |
-| `solutions_instructor/LAB 10 Solutions.md` | Instructor only |
+| [[L31 Threads and Races]] | `std::thread`, the lost update, and why `-O2` hides it |
+| [[L32 Mutexes Deadlock and Condition Variables]] | Mutual exclusion, deadlock, and waiting properly |
+| [[L33 Atomics and Thread-Safe Data Structures]] | `std::atomic`, the bounded queue, and what sharing costs |
+| [[PS 10 A Thread-Safe Bounded Queue]] | Due Friday of Week 11 |
+| [[PROG102 Week10/assignments/QUIZ 10 Week 10 Monday\|QUIZ 10 Week 10 Monday]] | 15 minutes, covers Week 9 |
+| [[LAB 10 Finding Races with ThreadSanitizer]] | Five races, found and fixed |
+| [[PROG102 Week10/resources/MIDTERM 2 Revision Guide\|MIDTERM 2 Revision Guide]] | **Weeks 5–9, sat this week** |
+| [[PROG102 Week10/resources/Reading Guide Week 10\|Reading Guide Week 10]] | Williams, the memory model, and every command |
+| [[PROG102 Week10/solutions_instructor/PS 10 Solutions\|PS 10 Solutions]] | Instructor only |
+| [[PROG102 Week10/solutions_instructor/LAB 10 Solutions\|LAB 10 Solutions]] | Instructor only |
 
 ### Before You Start: Make ThreadSanitizer Run
 

@@ -119,7 +119,7 @@ Time yourself. Each should take under three minutes.
 
 | Day | Do |
 |---|---|
-| 1 | Re-read the four `summary.md` files. Write your sheet from memory, then check it |
+| 1 | Re-read the four [[CS201 Week5/summary\|summary]] files. Write your sheet from memory, then check it |
 | 2 | Redo PS 1 Q2 and PS 2 Q1–Q2 **without notes**, timed |
 | 3 | Redo PS 3 Q1 and Q4. Draw three stack frames from scratch |
 | 4 | Redo PS 4 Q1 and Q3(d). Re-derive the cache formulas |

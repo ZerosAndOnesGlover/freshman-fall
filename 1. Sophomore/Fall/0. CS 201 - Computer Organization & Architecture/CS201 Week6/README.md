@@ -49,13 +49,13 @@ By the end of Week 6, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L19 Virtual Memory and the Page Table.md` | The illusion, the four-level tree, the PTE bits, and a real address space |
-| `lectures/L20 The TLB and the Cost of Translation.md` | Reach, the 22× isolation experiment, and huge pages that did nothing |
-| `lectures/L21 Demand Paging Copy-on-Write and Replacement.md` | Faults measured at 6000 cycles, COW at one fault per page, Clock and thrashing |
-| `assignments/PS 6 A Page Table Simulator.md` | Translation by hand, a four-level simulator with TLB and Clock, and Belady's anomaly |
-| `assignments/QUIZ 6 Week 6 Monday.md` | Ten minutes on Week 5. **Unmarked — key in the paper** |
-| `lab/LAB 6 Observing Page Faults.md` | `/proc`, demand paging, COW, and isolating the TLB from the cache |
-| `resources/Reading Guide Week 6.md` | CS:APP Ch. 9, plus the man pages that are the real specification |
+| [[L19 Virtual Memory and the Page Table]] | The illusion, the four-level tree, the PTE bits, and a real address space |
+| [[L20 The TLB and the Cost of Translation]] | Reach, the 22× isolation experiment, and huge pages that did nothing |
+| [[L21 Demand Paging Copy-on-Write and Replacement]] | Faults measured at 6000 cycles, COW at one fault per page, Clock and thrashing |
+| [[PS 6 A Page Table Simulator]] | Translation by hand, a four-level simulator with TLB and Clock, and Belady's anomaly |
+| [[CS201 Week6/assignments/QUIZ 6 Week 6 Monday\|QUIZ 6 Week 6 Monday]] | Ten minutes on Week 5. **Unmarked — key in the paper** |
+| [[LAB 6 Observing Page Faults]] | `/proc`, demand paging, COW, and isolating the TLB from the cache |
+| [[CS201 Week6/resources/Reading Guide Week 6\|Reading Guide Week 6]] | CS:APP Ch. 9, plus the man pages that are the real specification |
 | `solutions_instructor/` | Instructor only |
 
 ---

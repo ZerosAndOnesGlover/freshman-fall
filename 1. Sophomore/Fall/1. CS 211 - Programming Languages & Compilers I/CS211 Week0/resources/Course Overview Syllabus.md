@@ -54,11 +54,11 @@ Every language is defined more by what it forbids than by what it allows. C refu
 
 **Labs and quizzes carry no weight.** The curriculum's assessment line — *Problem Sets 30%, Projects 25%, Midterms 25%, Final 20%* — sums to 100% without them, and no percentage has been invented to fill the gap.
 
-**They are still required.** The lab is checked off by the TA in the session, and `COURSE POLICIES.md` costs you a letter grade after a second unexcused absence. That rule, not a mark, is what makes the lab non-optional — because a lab you can skip for a 2% grade cost is a lab you will skip in the week you are busiest, which is reliably the week the material is hardest.
+**They are still required.** The lab is checked off by the TA in the session, and [[Year2 - Sophomore/COURSE POLICIES|COURSE POLICIES]] costs you a letter grade after a second unexcused absence. That rule, not a mark, is what makes the lab non-optional — because a lab you can skip for a 2% grade cost is a lab you will skip in the week you are busiest, which is reliably the week the material is hardest.
 
 **Quizzes** run ten minutes at the start of **Tuesday's** lecture in **Weeks 1–11**. **Quiz *N* covers Week *N−1*.** The answer key is printed in the paper, below the questions, so the feedback closes in the same sitting rather than three weeks later.
 
-Both are recorded in `5. Academic Registry/2. Gradebook/Year2 Sophomore/Fall/_CS 211 Lab and Quiz Record.md`.
+Both are recorded in [[_CS 211 Lab and Quiz Record]].
 
 ---
 
@@ -208,7 +208,7 @@ Recorded here so a reader meets them without needing `5. Build Records/`:
 
 | What | Why |
 |---|---|
-| **26 lectures, not 39** | The docx does not give a lecture count; `ROOM ASSIGNMENTS.md` and `FALL SCHEDULE.md` both put CS 211 in a **Tue/Thu 08:30–09:45** slot. Two 75-minute lectures a week for thirteen weeks is 26, and inventing a third weekly lecture the timetable has no room for would have been worse than renumbering. |
+| **26 lectures, not 39** | The docx does not give a lecture count; [[Year2 - Sophomore/ROOM ASSIGNMENTS\|ROOM ASSIGNMENTS]] and [[Year2 - Sophomore/FALL SCHEDULE\|FALL SCHEDULE]] both put CS 211 in a **Tue/Thu 08:30–09:45** slot. Two 75-minute lectures a week for thirteen weeks is 26, and inventing a third weekly lecture the timetable has no room for would have been worse than renumbering. |
 | **The lab is sat in Week *N*, not Week *N+1*** | CS 201's lab lags because its Tuesday session precedes its own week's Wednesday and Friday lectures. CS 211's lab is Friday, after both lectures. Same reasoning, opposite answer. |
 | **Week 9's lab uses x86-64, not a weakly-ordered processor** | The docx asks for memory-ordering bugs "on a weakly-ordered processor". BH 220 is x86-64, which is strongly ordered, and no ARM hardware is available. The lab instead uses C11 relaxed atomics to show *compiler* reordering on x86 — and then makes the architecture-dependence the lesson: the same program is correct here and broken on ARM, which is precisely why a memory *model* exists rather than a memory *rule*. |
 | **Projects 1 and 2 are one compiler, not two** | The docx calls PS 11 "complete the multi-week compiler project" and gives Project 2 as "full compiler with optimization". Read together those describe one artefact built in two halves — front end due Week 11, back end due Week 12 — rather than two independent programs. The gradebook's 12.5% + 12.5% split is unchanged. |

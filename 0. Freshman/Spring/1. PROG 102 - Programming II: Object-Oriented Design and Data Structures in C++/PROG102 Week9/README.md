@@ -43,15 +43,15 @@ By the end of Week 9, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L28 Exceptions and Stack Unwinding.md` | `throw`/`catch`, unwinding, the hierarchy, and what it costs |
-| `lectures/L29 The Three Guarantees.md` | Basic, strong, nothrow — demonstrated and tested |
-| `lectures/L30 noexcept Assertions and Contracts.md` | `noexcept`, assertions vs exceptions, preconditions |
-| `assignments/PS 9 Making a Container Exception-Safe.md` | Due Friday of Week 10 |
-| `assignments/QUIZ 9 Week 9 Monday.md` | 15 minutes, covers Week 8 |
-| `lab/LAB 9 Testing for Failure.md` | A test framework, and tests that check what happens when things break |
-| `resources/Reading Guide Week 9.md` | Meyers, the standard's guarantees, and every command |
-| `solutions_instructor/PS 9 Solutions.md` | Instructor only |
-| `solutions_instructor/LAB 9 Solutions.md` | Instructor only |
+| [[L28 Exceptions and Stack Unwinding]] | `throw`/`catch`, unwinding, the hierarchy, and what it costs |
+| [[L29 The Three Guarantees]] | Basic, strong, nothrow — demonstrated and tested |
+| [[L30 noexcept Assertions and Contracts]] | `noexcept`, assertions vs exceptions, preconditions |
+| [[PS 9 Making a Container Exception-Safe]] | Due Friday of Week 10 |
+| [[PROG102 Week9/assignments/QUIZ 9 Week 9 Monday\|QUIZ 9 Week 9 Monday]] | 15 minutes, covers Week 8 |
+| [[LAB 9 Testing for Failure]] | A test framework, and tests that check what happens when things break |
+| [[PROG102 Week9/resources/Reading Guide Week 9\|Reading Guide Week 9]] | Meyers, the standard's guarantees, and every command |
+| [[PROG102 Week9/solutions_instructor/PS 9 Solutions\|PS 9 Solutions]] | Instructor only |
+| [[PROG102 Week9/solutions_instructor/LAB 9 Solutions\|LAB 9 Solutions]] | Instructor only |
 
 ### The One Thing to Take From This Week
 

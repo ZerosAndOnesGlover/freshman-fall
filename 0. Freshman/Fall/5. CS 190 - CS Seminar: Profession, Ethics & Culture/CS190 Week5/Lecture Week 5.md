@@ -159,4 +159,4 @@ Several concrete practices, directly connecting this week's legal and philosophi
 
 ## 7. Key Terms Introduced This Week
 
-See `Glossary Week 5.md`. New terms: *Solove's taxonomy*, *aggregation (privacy)*, *chilling effect*, *surveillance capitalism*, *GDPR*, *data controller/processor*, *data minimization*, *right to be forgotten*, *privacy by design/default*, *Fourth Amendment*, *reasonable expectation of privacy*, *third-party doctrine*, *Carpenter v. United States*.
+See [[Glossary Week 5]]. New terms: *Solove's taxonomy*, *aggregation (privacy)*, *chilling effect*, *surveillance capitalism*, *GDPR*, *data controller/processor*, *data minimization*, *right to be forgotten*, *privacy by design/default*, *Fourth Amendment*, *reasonable expectation of privacy*, *third-party doctrine*, *Carpenter v. United States*.

@@ -55,7 +55,7 @@ CS101_Week6/
 | Fri | Lecture 21 + PS6 released | Complexity classes in depth, log-log math, limits of Big-O |
 | Tue (W7) | Lab 6 (graded) | Theoretical analysis → empirical benchmark → curve fitting → formal proofs |
 
-**⚠️ Midterm 1 this week** — covers Weeks 0 through 5. A full practice exam with answer key is included in `assignments/MIDTERM 1 Review and Practice Exam.md`.
+**⚠️ Midterm 1 this week** — covers Weeks 0 through 5. A full practice exam with answer key is included in [[CS101 Week6/assignments/MIDTERM 1 Review and Practice Exam|MIDTERM 1 Review and Practice Exam]].
 
 ---
 
@@ -90,7 +90,7 @@ CS101_Week6/
 - [ ] PS6 released — read completely
 
 ### **This Week — Midterm 1 Preparation**
-- [ ] **Take the full practice exam in `MIDTERM 1 Review and Practice Exam.md` under timed, closed-book conditions**
+- [ ] **Take the full practice exam in [[CS101 Week6/assignments/MIDTERM 1 Review and Practice Exam|MIDTERM 1 Review and Practice Exam]] under timed, closed-book conditions**
 - [ ] Grade yourself against the answer key
 - [ ] Reread any lecture (Weeks 0–5) corresponding to topics you missed
 - [ ] Prepare your one-sided handwritten cheat sheet

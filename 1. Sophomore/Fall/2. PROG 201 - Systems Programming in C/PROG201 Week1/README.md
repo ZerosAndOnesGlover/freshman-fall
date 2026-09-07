@@ -47,14 +47,14 @@ By the end of Week 1, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L04 File Descriptors and the Three Tables.md` | The small integer; the three tables; `dup` against a second `open`, **measured**; inheritance across `fork`; `open` flags and `umask`; why `close` can fail |
-| `lectures/L05 read write and What a System Call Costs.md` | Short transfers and `write_all`; **1 B to 1 MB, a 1000× span, flattening at one page**; pipe capacity; sparse files at 1.1 GB in 4 KB; **`O_APPEND` against a 95% data loss** |
-| `lectures/L06 dup2 Redirection and Non-Blocking IO.md` | `dup2` semantics; redirection written out; the `2>&1` ordering trap; the pipe EOF rule and `wchan`; `FD_CLOEXEC` as a capability; `EAGAIN`; **`writev` 3.2× faster** |
-| `lab/LAB 1 Building a Pipeline in C.md` | `ls \| grep \| wc` with no shell. **Monday of Week 2** |
+| [[L04 File Descriptors and the Three Tables]] | The small integer; the three tables; `dup` against a second `open`, **measured**; inheritance across `fork`; `open` flags and `umask`; why `close` can fail |
+| [[L05 read write and What a System Call Costs]] | Short transfers and `write_all`; **1 B to 1 MB, a 1000× span, flattening at one page**; pipe capacity; sparse files at 1.1 GB in 4 KB; **`O_APPEND` against a 95% data loss** |
+| [[L06 dup2 Redirection and Non-Blocking IO]] | `dup2` semantics; redirection written out; the `2>&1` ordering trap; the pipe EOF rule and `wchan`; `FD_CLOEXEC` as a capability; `EAGAIN`; **`writev` 3.2× faster** |
+| [[LAB 1 Building a Pipeline in C]] | `ls \| grep \| wc` with no shell. **Monday of Week 2** |
 | `lab/pipeline.c`, `lab/Makefile`, `lab/compare.sh` | The skeleton, the build, and eight checks against the shell as oracle |
-| `assignments/PS 1 Redirection and the Cost of a System Call.md` | Implement `<`, `>`, `>>`, `2>`, `2>&1`; the three tables; two measurements. Due **Friday of Week 2** |
-| `assignments/QUIZ 1 Week 1 Tuesday.md` | Ten minutes, covers **Week 0**, answer key printed |
-| `resources/Reading Guide Week 1.md` | APUE Ch. 3 in full, §5.4 again, and the four man pages worth reading properly |
+| [[PS 1 Redirection and the Cost of a System Call]] | Implement `<`, `>`, `>>`, `2>`, `2>&1`; the three tables; two measurements. Due **Friday of Week 2** |
+| [[PROG201 Week1/assignments/QUIZ 1 Week 1 Tuesday\|QUIZ 1 Week 1 Tuesday]] | Ten minutes, covers **Week 0**, answer key printed |
+| [[PROG201 Week1/resources/Reading Guide Week 1\|Reading Guide Week 1]] | APUE Ch. 3 in full, §5.4 again, and the four man pages worth reading properly |
 | `solutions_instructor/` | Instructor only |
 
 ---
@@ -82,7 +82,7 @@ It is in the thing between them, and that thing is created by `open` and shared 
 > week and is sat on the Monday of Week 2**, because this course's lab day comes before its
 > lectures. From here on it is every Monday.
 
-Both are tracked in `5. Academic Registry/2. Gradebook/Year2 Sophomore/Fall/_PROG 201 Lab and Quiz Record.md`.
+Both are tracked in [[_PROG 201 Lab and Quiz Record]].
 
 ---
 

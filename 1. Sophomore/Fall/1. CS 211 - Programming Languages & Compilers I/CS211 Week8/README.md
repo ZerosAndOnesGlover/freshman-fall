@@ -6,7 +6,7 @@
 **This week's deliverables:** **MIDTERM 2** (Tuesday evening), Lab 8, PS 8, and Quiz 8 (Tuesday, covers Week 7).
 
 > **MIDTERM 2 · Tuesday 28 October, 20:00–21:15 · 75 marks · 12.5% of the course grade · covers
-> Weeks 4–7.** Nothing from this week is on it. `resources/MIDTERM 2 Revision Guide.md` is the
+> Weeks 4–7.** Nothing from this week is on it. [[CS211 Week8/resources/MIDTERM 2 Revision Guide|MIDTERM 2 Revision Guide]] is the
 > place to start.
 
 ---
@@ -48,19 +48,19 @@ By the end of Week 8, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `assignments/MIDTERM 2.md` | **The paper.** 75 marks, Weeks 4–7 |
-| `resources/MIDTERM 2 Revision Guide.md` | What to revise, in priority order, and what is not on it |
-| `lectures/L17 What Types Fix and What They Do Not.md` | Inference over the prelude, the occurs check, **the collision that survives**, three polymorphisms, `let`, rank |
-| `lectures/L18 System F Dictionaries and Proofs as Programs.md` | System F, strong normalisation, parametricity, **dictionary passing**, higher kinds, **Curry-Howard** |
-| `assignments/PS 8 Type Classes in a Mini-Language.md` | Constraint collection, resolution, elaboration — and a guard whose removal is *unsound* |
-| `assignments/QUIZ 8 Week 8 Tuesday.md` | **Covers Week 7.** Sat the morning of the midterm, deliberately |
-| `lab/LAB 8 Proofs Are Programs.md` | What inference says about Week 7, then `let`, then proofs |
+| [[CS211 Week8/assignments/MIDTERM 2\|MIDTERM 2]] | **The paper.** 75 marks, Weeks 4–7 |
+| [[CS211 Week8/resources/MIDTERM 2 Revision Guide\|MIDTERM 2 Revision Guide]] | What to revise, in priority order, and what is not on it |
+| [[L17 What Types Fix and What They Do Not]] | Inference over the prelude, the occurs check, **the collision that survives**, three polymorphisms, `let`, rank |
+| [[L18 System F Dictionaries and Proofs as Programs]] | System F, strong normalisation, parametricity, **dictionary passing**, higher kinds, **Curry-Howard** |
+| [[PS 8 Type Classes in a Mini-Language]] | Constraint collection, resolution, elaboration — and a guard whose removal is *unsound* |
+| [[QUIZ 8 Week 8 Tuesday]] | **Covers Week 7.** Sat the morning of the midterm, deliberately |
+| [[LAB 8 Proofs Are Programs]] | What inference says about Week 7, then `let`, then proofs |
 | `lab/infer.py` | **Week 3's engine, new input.** Types all 55 definitions |
 | `lab/classes.py` | A class is a record; an instance is a value; a constraint is a parameter |
 | `lab/curry.py` | Dyckhoff's LJT — a **decision** procedure — printing the proofs it finds, **and type-checking them** |
 | `lab/lam.py` | Week 7's interpreter. **Changed this week:** `let` is new — sugar for evaluation, not for typing |
 | `lab/prelude.lam` · `church.py` | Carried forward from Week 7, unchanged |
-| `resources/Reading Guide Week 8.md` | TAPL ch. 9, 22, 23 · Wadler & Blott 1989 · Wadler 2015 |
+| [[CS211 Week8/resources/Reading Guide Week 8\|Reading Guide Week 8]] | TAPL ch. 9, 22, 23 · Wadler & Blott 1989 · Wadler 2015 |
 | `solutions_instructor/` | Instructor only |
 
 ---
@@ -94,7 +94,7 @@ What separates them is `data Bool = True | False` — a **nominal** distinction,
 
 **Labs and quizzes carry no weight**, and both are required. **Quiz 8 is sat Tuesday morning and covers Week 7 — the same material as a quarter of the midterm that evening.** That placement is deliberate: mark it against the key and you have a revision list with eight hours left.
 
-**Midterm 2 is Tuesday 28 October, 20:00–21:15**, and is a **weighted component** recorded in `CS 211.md`. Lab 8 is Friday and covers this week.
+**Midterm 2 is Tuesday 28 October, 20:00–21:15**, and is a **weighted component** recorded in [[CS 211]]. Lab 8 is Friday and covers this week.
 
 **PS 8 is released Wednesday and due Friday of Week 9.** **Project 1 is due Week 11** — by now you should be through the Week 8 milestone: lexer and parser done, AST dumps correct, grammar argument written.
 

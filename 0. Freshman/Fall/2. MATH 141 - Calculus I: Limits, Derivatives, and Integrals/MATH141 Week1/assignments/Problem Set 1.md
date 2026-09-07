@@ -6,8 +6,8 @@
 > **Re-dated 2026-08-16.** This set was previously due Wednesday Week 2 *at the start of class* —
 > the same class period that delivers `Lecture 03: The Intermediate Value Theorem`. Part D (12 pts)
 > is entirely IVT, so it was collected before the theorem had been taught. The Friday 17:00 deadline
-> puts it after Wednesday's lecture and matches the standard problem-set slot in `FALL SCHEDULE.md`.
-> See `PREREQUISITE AUDIT.md`, finding #13.
+> puts it after Wednesday's lecture and matches the standard problem-set slot in [[Year1 - Freshman/FALL SCHEDULE|FALL SCHEDULE]].
+> See [[Year1 - Freshman/PREREQUISITE AUDIT|PREREQUISITE AUDIT]], finding #13.
 
 ---
 

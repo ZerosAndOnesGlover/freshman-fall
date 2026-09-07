@@ -21,8 +21,8 @@ By the end of this lab, you will:
 ## Setup
 
 ```bash
-cd ~/cs101
-mkdir week6 && cd week6
+cd "$CS101"        # set in ~/.bashrc -- see Lab 0
+mkdir -p week6 && cd week6
 pip install matplotlib numpy --user   # if not already installed
 ```
 
@@ -458,7 +458,7 @@ Practice writing rigorous proofs. Work these on paper in `LAB 6 Empirical vs The
 ## Part 6: Commit and Reflection (10 minutes)
 
 ```bash
-cd ~/cs101/week6
+cd "$CS101/week6"
 git add .
 git commit -m "Week 6 Lab: empirical vs theoretical complexity analysis"
 git push

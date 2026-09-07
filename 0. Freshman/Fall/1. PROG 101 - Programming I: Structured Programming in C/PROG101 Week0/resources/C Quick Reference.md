@@ -239,10 +239,9 @@ clean:
 ## Command Line Workflow
 
 ```bash
-# Start a new project
-mkdir ~/prog101/weekN/ps
-cd ~/prog101/weekN/ps
-git init
+# Start a new project ($PROG101 is set in ~/.bashrc -- see Lab 0)
+mkdir -p "$PROG101/weekN/ps"
+cd "$PROG101/weekN/ps"
 
 # Edit-compile-test cycle
 $EDITOR program.c          # Write/edit

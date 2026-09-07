@@ -9,7 +9,7 @@ where the registry's own scheduling files settle a question, they do.
 
 ## 1. The lab has to lag a full week, and unlike CS 201 it had no choice
 
-`ROOM ASSIGNMENTS.md` puts PROG 201's lectures on **Tue/Wed/Thu 10:00** and its lab on **Mon
+[[Year2 - Sophomore/ROOM ASSIGNMENTS|ROOM ASSIGNMENTS]] puts PROG 201's lectures on **Tue/Wed/Thu 10:00** and its lab on **Mon
 15:00–16:50**. The lab is therefore before every one of that week's lectures, and a lab covering
 Week *N* cannot be sat in Week *N*.
 
@@ -30,7 +30,7 @@ Counting the sittings the term actually has:
 | Mondays of Weeks 2–12 (11 Mondays) | Labs 1–11 |
 | Monday of the completion period | Lab 12 (demo day) |
 
-That is thirteen — **except that the Monday of Week 6 is Fall Break**, and `ACADEMIC CALENDAR.md`
+That is thirteen — **except that the Monday of Week 6 is Fall Break**, and [[ACADEMIC CALENDAR]]
 says no classes. Ten usable Mondays, thirteen labs, one short. The Monday of Week 1 cannot absorb it:
 Lab 0 was sat the Friday before, and Lab 1 is still waiting for Week 1's lectures to happen.
 
@@ -47,7 +47,7 @@ The alternatives, and why not:
 | Merge Lab 5 into Lab 6 | Lab 6 is job control, which is a full session on its own, and Lab 5 needs the machines for a stress test |
 | Drop a lab | The registry lists thirteen and the curriculum assigns each of them work |
 
-**BH 215 has no other Fall booking** — `ROOM ASSIGNMENTS.md` gives it to PROG 201's Monday lab and
+**BH 215 has no other Fall booking** — [[Year2 - Sophomore/ROOM ASSIGNMENTS|ROOM ASSIGNMENTS]] gives it to PROG 201's Monday lab and
 nothing else that term — so the Friday slot is available. CS 211's lab vacates BH 220 at 15:50, and
 16:00 clears it.
 
@@ -55,7 +55,7 @@ nothing else that term — so the Friday slot is available. CS 211's lab vacates
 
 ## 3. The Week 0 lab is at 17:00, which is late, and there is nowhere earlier
 
-`ASSESSMENT CALENDAR.md` puts **every** Year 2 course's Week 0 lab on the Friday that closes the
+[[Year2 - Sophomore/ASSESSMENT CALENDAR|ASSESSMENT CALENDAR]] puts **every** Year 2 course's Week 0 lab on the Friday that closes the
 ten-day Week 0. On that one afternoon:
 
 | Course | Time | Room |
@@ -75,7 +75,7 @@ ten-day Week 0. On that one afternoon:
 
 ## 4. PS 0 is due in Week 1, not Week 0
 
-`ASSESSMENT CALENDAR.md` §"W0" makes CS 201's PS 0 the exception — due the Friday of Week 0, because
+[[Year2 - Sophomore/ASSESSMENT CALENDAR|ASSESSMENT CALENDAR]] §"W0" makes CS 201's PS 0 the exception — due the Friday of Week 0, because
 CS 201's Week 0 is ten days long — and says every other problem set is released Wednesday of its own
 week and due the Friday of the week after. **PROG 201 follows the general rule**: PS 0 released
 Wednesday of Week 0, due Friday of Week 1. The paper says so in its header.
@@ -96,7 +96,7 @@ version-dependent and are labelled in the notes where they appear**:
 - orphans are adopted by `systemd --user`, not by PID 1 (L02 §5), which is a property of the session
   manager rather than of glibc, but is equally a thing APUE does not describe.
 
-Recorded as a deviation in `PROG201 Week0/resources/Course Overview Syllabus.md` so that a reader
+Recorded as a deviation in [[PROG201 Week0/resources/Course Overview Syllabus|Course Overview Syllabus]] so that a reader
 meets it without coming here.
 
 ---

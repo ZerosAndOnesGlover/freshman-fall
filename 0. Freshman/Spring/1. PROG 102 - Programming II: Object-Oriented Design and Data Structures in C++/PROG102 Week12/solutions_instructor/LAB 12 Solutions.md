@@ -29,7 +29,7 @@ needs.
 
 ### A1 (4) — builds and runs
 
-*Marking: 4 for a clean build and a passing suite from the `README.md` command. **Deduct 1, not 4, for
+*Marking: 4 for a clean build and a passing suite from the [[PROG102 Week12/README|README]] command. **Deduct 1, not 4, for
 warnings.** Deduct 2 for a build that needed undocumented steps.*
 
 **A project that does not build:** award up to 2 if they say so immediately and demonstrate what does
@@ -113,7 +113,7 @@ neither.*
 
 ## Checkoff Checklist
 
-1. Built from `README.md`, in front of a TA.
+1. Built from [[PROG102 Week12/README|README]], in front of a TA.
 2. A2's "what went wrong" is specific.
 3. A3 states how they know the benchmark ran.
 4. The review has **file and line** references.

@@ -21,8 +21,8 @@ By the end of this lab, you will:
 ## Setup
 
 ```bash
-cd ~/cs101
-mkdir week3 && cd week3
+cd "$CS101"        # set in ~/.bashrc -- see Lab 0
+mkdir -p week3 && cd week3
 ```
 
 Open Python Tutor: **https://pythontutor.com/python-3.html**
@@ -615,7 +615,7 @@ print("  sum_digits(123) — trace how the result is assembled")
 ## Part 5: Commit (10 minutes)
 
 ```bash
-cd ~/cs101/week3
+cd "$CS101/week3"
 git add .
 git commit -m "Week 3 Lab: scope bugs, stack frames, text analysis library, recursion intro"
 git push

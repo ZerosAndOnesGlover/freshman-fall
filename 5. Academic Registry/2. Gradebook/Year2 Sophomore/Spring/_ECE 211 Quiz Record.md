@@ -3,7 +3,7 @@
 
 > **This file is deliberately outside the gradebook's weighted components.** ECE 211's
 > quizzes carry **no weight** — Problem Sets 40, Midterms 35 and Final 25 already sum to 100% without them,
-> and `ECE 211.md` says so.
+> and [[ECE 211]] says so.
 >
 > The leading underscore in the filename keeps this file out of `tools/gpa.py`'s course scan. Do not
 > rename it without checking `collect()` in that script.

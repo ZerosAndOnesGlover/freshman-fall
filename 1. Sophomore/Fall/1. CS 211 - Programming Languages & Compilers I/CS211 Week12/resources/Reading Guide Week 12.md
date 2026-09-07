@@ -56,7 +56,7 @@ The four programs are the same argument in miniature. C's `29291` is easy to imp
 
 **The most efficient revision material in this course is the eleven quiz answer keys**, and they already exist. They cover Weeks 0–10 with worked reasoning, they are written in the register the exam uses, and re-reading them is worth more per hour than any book on this page.
 
-`resources/FINAL EXAM Revision Guide.md` says what is on the paper and in what proportion. **Q7 is 30 of 150 marks and is the only part you can fully prepare in advance** — PS 12 is three-quarters of that preparation, which is why it is short.
+[[CS211 Week12/resources/FINAL EXAM Revision Guide|FINAL EXAM Revision Guide]] says what is on the paper and in what proportion. **Q7 is 30 of 150 marks and is the only part you can fully prepare in advance** — PS 12 is three-quarters of that preparation, which is why it is short.
 
 ---
 

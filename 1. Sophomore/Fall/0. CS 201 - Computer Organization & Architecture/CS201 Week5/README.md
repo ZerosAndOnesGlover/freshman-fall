@@ -12,7 +12,7 @@
 **Covers Weeks 0–4. 100 points, 12.5% of the course grade. 75 minutes.**
 **One handwritten A4 sheet, one side.** No calculator, no devices.
 
-**Read `resources/MIDTERM 1 Revision Guide.md` before anything else this week.** It lists the six errors that recurred across four weeks of problem sets, gives a worked example of a full-mark answer, and tells you what is worth putting on your sheet.
+**Read [[CS201 Week5/resources/MIDTERM 1 Revision Guide|MIDTERM 1 Revision Guide]] before anything else this week.** It lists the six errors that recurred across four weeks of problem sets, gives a worked example of a full-mark answer, and tells you what is worth putting on your sheet.
 
 The paper's largest section is **Q4, the memory hierarchy, at 24 marks** — Week 4, the most recent material. Do not let recency fool you into revising Week 0 hardest.
 
@@ -57,15 +57,15 @@ By the end of Week 5, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `resources/MIDTERM 1 Revision Guide.md` | **Read first.** Six recurring errors, a worked full-mark answer, a revision plan |
-| `assignments/MIDTERM 1.md` | The paper. Weeks 0–4, 100 points, 75 minutes |
-| `lectures/L16 The Pipeline and Its Hazards.md` | Stages, hazards, forwarding, and 4.00× from breaking a chain |
-| `lectures/L17 Branch Prediction and Out-of-Order Execution.md` | 8× from sorting — and why it took a compiler flag to see it |
-| `lectures/L18 SIMD and Amdahls Law.md` | AVX2 from 4.5× to 1.07×, and the law that caps everything |
-| `assignments/PS 5 Identifying Hazards.md` | Hazard analysis, dependency chains, prediction, Amdahl, SIMD |
-| `assignments/QUIZ 5 Week 5 Monday.md` | Ten minutes on Week 4 — deliberately drawn from the paper's biggest section |
-| `lab/LAB 5 Vectorising a Loop with AVX Intrinsics.md` | Break a chain, vectorise by hand, then watch the speedup vanish |
-| `resources/Reading Guide Week 5.md` | CS:APP §4.4–4.5 and §5.7–5.10, and what to skip in a midterm week |
+| [[CS201 Week5/resources/MIDTERM 1 Revision Guide\|MIDTERM 1 Revision Guide]] | **Read first.** Six recurring errors, a worked full-mark answer, a revision plan |
+| [[CS201 Week5/assignments/MIDTERM 1\|MIDTERM 1]] | The paper. Weeks 0–4, 100 points, 75 minutes |
+| [[L16 The Pipeline and Its Hazards]] | Stages, hazards, forwarding, and 4.00× from breaking a chain |
+| [[L17 Branch Prediction and Out-of-Order Execution]] | 8× from sorting — and why it took a compiler flag to see it |
+| [[L18 SIMD and Amdahls Law]] | AVX2 from 4.5× to 1.07×, and the law that caps everything |
+| [[PS 5 Identifying Hazards]] | Hazard analysis, dependency chains, prediction, Amdahl, SIMD |
+| [[CS201 Week5/assignments/QUIZ 5 Week 5 Monday\|QUIZ 5 Week 5 Monday]] | Ten minutes on Week 4 — deliberately drawn from the paper's biggest section |
+| [[LAB 5 Vectorising a Loop with AVX Intrinsics]] | Break a chain, vectorise by hand, then watch the speedup vanish |
+| [[CS201 Week5/resources/Reading Guide Week 5\|Reading Guide Week 5]] | CS:APP §4.4–4.5 and §5.7–5.10, and what to skip in a midterm week |
 | `solutions_instructor/` | Instructor only |
 
 ---

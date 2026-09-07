@@ -18,7 +18,7 @@ Because you have used four languages without once asking who decided what they l
 
 This week lays the two foundations everything else stands on. It establishes **the difference between syntax and semantics**, which is the distinction the entire course turns on. And it establishes **the grammar** — the finite rulebook that decides which of infinitely many strings are programs, and what tree each one gets.
 
-It also fixes Cyan. The grammar in `resources/The Cyan Language Reference.md` is the specification you will implement, and it does not change until Week 8, when you extend it yourself.
+It also fixes Cyan. The grammar in [[The Cyan Language Reference]] is the specification you will implement, and it does not change until Week 8, when you extend it yourself.
 
 ---
 
@@ -43,14 +43,14 @@ By the end of Week 0, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L01 What a Language Is and Why There Are So Many.md` | Syntax vs semantics measured on `-7 / 2`; four paradigms; the program as a tree; the eight translations |
-| `lectures/L02 Grammars Derivations and Ambiguity.md` | CFGs, BNF/EBNF, derivations; **58,786 parse trees for one expression**; stratification; the dangling else in gcc |
-| `lab/LAB 0 Grammars and the Shape of Cyan.md` | The toolchain, derivations by hand, and three grammars you fix yourself |
+| [[L01 What a Language Is and Why There Are So Many]] | Syntax vs semantics measured on `-7 / 2`; four paradigms; the program as a tree; the eight translations |
+| [[L02 Grammars Derivations and Ambiguity]] | CFGs, BNF/EBNF, derivations; **58,786 parse trees for one expression**; stratification; the dangling else in gcc |
+| [[LAB 0 Grammars and the Shape of Cyan]] | The toolchain, derivations by hand, and three grammars you fix yourself |
 | `lab/cfg_count.py` | The parse-tree counter — you will use it again in Week 2 |
-| `assignments/Problem Set 0.md` | Derivations, the Catalan recurrence, two broken grammars, and one design argument |
-| `resources/Course Overview Syllabus.md` | **Read this in full in Week 0** — assessment, the unweighted-lab rule, the lab-week difference from CS 201, deviations |
-| `resources/The Cyan Language Reference.md` | **The specification.** Fixed now, changes once in Week 8 |
-| `resources/Reading Guide Week 0.md` | Dragon §1.1–1.2, §2.2, §4.2–4.3 and SICP §1.1, with guiding questions |
+| [[CS211 Week0/assignments/Problem Set 0\|Problem Set 0]] | Derivations, the Catalan recurrence, two broken grammars, and one design argument |
+| [[CS211 Week0/resources/Course Overview Syllabus\|Course Overview Syllabus]] | **Read this in full in Week 0** — assessment, the unweighted-lab rule, the lab-week difference from CS 201, deviations |
+| [[The Cyan Language Reference]] | **The specification.** Fixed now, changes once in Week 8 |
+| [[CS211 Week0/resources/Reading Guide Week 0\|Reading Guide Week 0]] | Dragon §1.1–1.2, §2.2, §4.2–4.3 and SICP §1.1, with guiding questions |
 | `solutions_instructor/` | Instructor only |
 
 ---
@@ -76,7 +76,7 @@ They are still required. **The lab is checked off by the TA in the session**, an
 > and disagree deliberately — see the syllabus. Every lab and quiz file states its day *and* its
 > week; the file is authoritative.
 
-Both are tracked in `5. Academic Registry/2. Gradebook/Year2 Sophomore/Fall/_CS 211 Lab and Quiz Record.md`.
+Both are tracked in [[_CS 211 Lab and Quiz Record]].
 
 ---
 

@@ -20,7 +20,7 @@ status: in-progress
 
 > **Weights come from the curriculum docx** — *Problem Sets 35%, Projects 25%, Midterms 25%,
 > Final 15%* — which sums to 100% without a laboratory line. Labs are checked off in the session and
-> quizzes are unmarked; both live in `_PROG 201 Lab and Quiz Record.md`.
+> quizzes are unmarked; both live in [[_PROG 201 Lab and Quiz Record]].
 
 ---
 

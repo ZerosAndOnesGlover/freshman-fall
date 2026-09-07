@@ -41,16 +41,16 @@ By the end of Week 3, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L07 Symbol Tables Scope and the First Phase That Says No.md` | Scope chains, lexical vs dynamic, three passes, the eighteen refusals, and where positions come from |
-| `lectures/L08 Hindley-Milner and the Algorithm That Guesses Right.md` | Constraints and unification, the occurs check, principal types, let-polymorphism, and why Cyan annotates anyway |
-| `lab/LAB 3 Scope Types and Inference.md` | Break `lookup`, break positions, cross-check inference against GHC, meet the let-polymorphism trap |
+| [[L07 Symbol Tables Scope and the First Phase That Says No]] | Scope chains, lexical vs dynamic, three passes, the eighteen refusals, and where positions come from |
+| [[L08 Hindley-Milner and the Algorithm That Guesses Right]] | Constraints and unification, the occurs check, principal types, let-polymorphism, and why Cyan annotates anyway |
+| [[LAB 3 Scope Types and Inference]] | Break `lookup`, break positions, cross-check inference against GHC, meet the let-polymorphism trap |
 | `lab/typecheck.py` | The reference checker — scope chain, three passes, positioned errors |
 | `lab/hm.py` | Hindley-Milner in ~120 lines, with traces |
 | `lab/scopes.cy` | Three variables named `a` at three depths |
 | `lab/parser.py` · `lab/lexer.py` | Weeks 1–2, carried forward — **now with positions on AST nodes** |
-| `assignments/PS 3 Scope Analysis and Type Checking.md` | Scope by hand, inference by hand, and the checker |
-| `assignments/QUIZ 3 Week 3 Tuesday.md` | **Covers Week 2.** Ten minutes, self-marked |
-| `resources/Reading Guide Week 3.md` | Dragon §2.7, §5.1–5.2, §6.5 and **TAPL Ch. 22** |
+| [[PS 3 Scope Analysis and Type Checking]] | Scope by hand, inference by hand, and the checker |
+| [[QUIZ 3 Week 3 Tuesday]] | **Covers Week 2.** Ten minutes, self-marked |
+| [[CS211 Week3/resources/Reading Guide Week 3\|Reading Guide Week 3]] | Dragon §2.7, §5.1–5.2, §6.5 and **TAPL Ch. 22** |
 | `solutions_instructor/` | Instructor only |
 
 ---
@@ -71,7 +71,7 @@ The type checker reports `line 4 col 5: '+' needs int operands, found int and bo
 
 **Labs and quizzes carry no weight**, and both are required. **Quiz 3 is sat Tuesday and covers Week 2**. **Lab 3 is sat Friday of this week.**
 
-Both are tracked in `5. Academic Registry/2. Gradebook/Year2 Sophomore/Fall/_CS 211 Lab and Quiz Record.md`.
+Both are tracked in [[_CS 211 Lab and Quiz Record]].
 
 ---
 

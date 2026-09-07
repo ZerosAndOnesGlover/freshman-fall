@@ -9,13 +9,13 @@
 
 | File | Description |
 |------|-------------|
-| `lectures/L01 Measurement and Units.md` | The SI system, dimensional analysis, significant figures |
-| `lectures/L02 Coordinate Systems.md` | Cartesian, polar, cylindrical, spherical coordinates |
-| `lectures/L03 Vectors.md` | Vector algebra, dot product, cross product, unit vectors |
-| `lab/LAB 0 Measurement and Uncertainty.md` | Measuring, estimating error, propagating uncertainty |
-| `assignments/PS 0 Measurement Units Coordinate Systems Vectors.md` | 20 problems covering all Week 0 concepts |
-| `quiz/QUIZ 0 Measurement Units Coordinate Systems Vectors.md` | 10-question quiz (released Monday of Week 1) |
-| `resources/Resources.md` | Textbook references, simulations, supplementary reading |
+| [[L01 Measurement and Units]] | The SI system, dimensional analysis, significant figures |
+| [[L02 Coordinate Systems]] | Cartesian, polar, cylindrical, spherical coordinates |
+| [[L03 Vectors]] | Vector algebra, dot product, cross product, unit vectors |
+| [[LAB 0 Measurement and Uncertainty]] | Measuring, estimating error, propagating uncertainty |
+| [[PS 0 Measurement Units Coordinate Systems Vectors]] | 20 problems covering all Week 0 concepts |
+| [[QUIZ 0 Measurement Units Coordinate Systems Vectors]] | 10-question quiz (released Monday of Week 1) |
+| [[PHYS141 Week0/resources/Resources\|Resources]] | Textbook references, simulations, supplementary reading |
 | `solutions_instructor/` | Solutions folder (instructor-only) |
 
 ---

@@ -18,12 +18,12 @@ status: in-progress
 > than counted as zero, so partial-term percentages stay meaningful. Enter `0` for a genuine zero and
 > `EX` to excuse an item.
 
-> **The curriculum docx specifies no weights for MATH 241.** The `MASTER TIMETABLE.md`
+> **The curriculum docx specifies no weights for MATH 241.** The [[Year2 - Sophomore/MASTER TIMETABLE|MASTER TIMETABLE]]
 > breakdown — *Problem Sets 35%, Midterms 40%, Final 25%* — is the only complete 100% statement and
 > is adopted here, following the ECE 110 precedent from Year 1.
 >
 > MATH 241 has a Thursday recitation rather than a laboratory. Quizzes are unmarked and recorded in
-> `_MATH 241 Quiz Record.md`.
+> [[_MATH 241 Quiz Record]].
 
 ---
 

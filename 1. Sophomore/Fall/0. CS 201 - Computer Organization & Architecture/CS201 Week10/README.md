@@ -12,7 +12,7 @@
 **Covers Weeks 5–9. 100 points, 12.5% of the course grade. 75 minutes.**
 **One handwritten A4 sheet, one side.** No calculator, no devices.
 
-**Read `resources/MIDTERM 2 Revision Guide.md` first.** It gives the six ideas the paper rewards, the ten numbers worth memorising, and the traps — and it is one question per week, evenly weighted, so no single week can be skipped.
+**Read [[CS201 Week10/resources/MIDTERM 2 Revision Guide|MIDTERM 2 Revision Guide]] first.** It gives the six ideas the paper rewards, the ten numbers worth memorising, and the traps — and it is one question per week, evenly weighted, so no single week can be skipped.
 
 ---
 
@@ -48,15 +48,15 @@ By the end of Week 10, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `resources/MIDTERM 2 Revision Guide.md` | **Read first.** Six ideas, ten numbers, the traps, a plan |
-| `assignments/MIDTERM 2.md` | The paper. Weeks 5–9, 100 points, 75 minutes |
-| `lectures/L31 Cache Coherence and the MESI Protocol.md` | MESI, the negatively-scaling counter, coherence vs consistency |
-| `lectures/L32 False Sharing NUMA and Writing Code That Scales.md` | False sharing measured, NUMA, Amdahl, the scaling rules |
-| `lectures/L33 The GPU and the SIMT Model.md` | SIMT, divergence, coalescing, arithmetic intensity — conceptual, no GPU here |
-| `assignments/PS 10 Parallelism and Coherence.md` | MESI, measured scaling, false sharing, the design, the GPU |
-| `assignments/QUIZ 10 Week 10 Monday.md` | Ten minutes on Week 9 — samples the midterm's Week-9 part |
-| `lab/LAB 10 Parallel Reduction and False Sharing.md` | Scaling, contention, false sharing on the CPU; a GPU reduction to read |
-| `resources/Reading Guide Week 10.md` | Patterson & Hennessy §5.10 and §6, and what the machine cannot show |
+| [[CS201 Week10/resources/MIDTERM 2 Revision Guide\|MIDTERM 2 Revision Guide]] | **Read first.** Six ideas, ten numbers, the traps, a plan |
+| [[CS201 Week10/assignments/MIDTERM 2\|MIDTERM 2]] | The paper. Weeks 5–9, 100 points, 75 minutes |
+| [[L31 Cache Coherence and the MESI Protocol]] | MESI, the negatively-scaling counter, coherence vs consistency |
+| [[L32 False Sharing NUMA and Writing Code That Scales]] | False sharing measured, NUMA, Amdahl, the scaling rules |
+| [[L33 The GPU and the SIMT Model]] | SIMT, divergence, coalescing, arithmetic intensity — conceptual, no GPU here |
+| [[PS 10 Parallelism and Coherence]] | MESI, measured scaling, false sharing, the design, the GPU |
+| [[CS201 Week10/assignments/QUIZ 10 Week 10 Monday\|QUIZ 10 Week 10 Monday]] | Ten minutes on Week 9 — samples the midterm's Week-9 part |
+| [[LAB 10 Parallel Reduction and False Sharing]] | Scaling, contention, false sharing on the CPU; a GPU reduction to read |
+| [[CS201 Week10/resources/Reading Guide Week 10\|Reading Guide Week 10]] | Patterson & Hennessy §5.10 and §6, and what the machine cannot show |
 | `solutions_instructor/` | Instructor only |
 
 ---

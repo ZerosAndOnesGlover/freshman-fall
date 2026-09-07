@@ -25,19 +25,19 @@ By the end of Week 3, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `Lecture Week 3.md` | Core seminar content: the ACM Code of Ethics and Professional Responsibility |
-| `Reading Guide.md` | Annotated guide to this week's readings, with guiding questions |
-| `Discussion Questions.md` | Questions the seminar will work through live — come with notes |
-| `Prep Assignment.md` | Your participation-graded prep work, due before seminar |
-| `Position Paper 1.md` | The assigned paper prompt, requirements, and grading criteria |
-| `Glossary Week 3.md` | Terms introduced this week, defined precisely |
+| [[Lecture Week 3]] | Core seminar content: the ACM Code of Ethics and Professional Responsibility |
+| [[CS190 Week3/Reading Guide\|Reading Guide]] | Annotated guide to this week's readings, with guiding questions |
+| [[CS190 Week3/Discussion Questions\|Discussion Questions]] | Questions the seminar will work through live — come with notes |
+| [[CS190 Week3/Prep Assignment\|Prep Assignment]] | Your participation-graded prep work, due before seminar |
+| [[CS190 Week3/Position Paper 1\|Position Paper 1]] | The assigned paper prompt, requirements, and grading criteria |
+| [[Glossary Week 3]] | Terms introduced this week, defined precisely |
 
 ### Before Seminar
 
-- [ ] Work through `Reading Guide.md` and the assigned readings
-- [ ] Complete `Prep Assignment.md` (one page, credit/no-credit on evident engagement)
-- [ ] Read `Discussion Questions.md` and bring notes on at least two you have a view on
-- [ ] Read `Position Paper 1.md` early — it is due before week 4 seminar, and the 750–1,000 word limit is enforced
+- [ ] Work through [[CS190 Week3/Reading Guide|Reading Guide]] and the assigned readings
+- [ ] Complete [[CS190 Week3/Prep Assignment|Prep Assignment]] (one page, credit/no-credit on evident engagement)
+- [ ] Read [[CS190 Week3/Discussion Questions|Discussion Questions]] and bring notes on at least two you have a view on
+- [ ] Read [[CS190 Week3/Position Paper 1|Position Paper 1]] early — it is due before week 4 seminar, and the 750–1,000 word limit is enforced
 
 ### How This Course Is Graded (Reminder)
 

@@ -105,7 +105,7 @@ From L38 §4 — if you can state these cold, you can reason through most of the
 
 | Days | Do |
 |---|---|
-| 1–2 | Re-read all thirteen `summary.md` files. Build your two pages from memory |
+| 1–2 | Re-read all thirteen [[CS201 Week12/summary\|summary]] files. Build your two pages from memory |
 | 3–4 | Weeks 0–3: redo PS 0–3 by hand, timed. Decode, dissect, trace a frame |
 | 5–6 | Weeks 4–5, 11: the cache/roofline/profiling arc — PS 4, 5, 11 |
 | 7–8 | Weeks 6–8: translation, storage numbers, TCP — PS 6, 7, 8 |

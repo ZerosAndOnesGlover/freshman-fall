@@ -38,13 +38,13 @@ By the end of Week 1, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L04 Trees and Traversals.md` | Terminology, shapes, height bounds, four traversals, reconstruction |
-| `lectures/L05 Binary Search Trees.md` | The invariant, search/insert/delete, successor, validation |
-| `lectures/L06 BST Height Average and Worst Case.md` | Why sorted input is the worst case; average-case results; what would fix it |
-| `assignments/PS 1 Binary Trees and BSTs.md` | 100 points, due Friday of Week 2 |
-| `assignments/QUIZ 1 Week 1 Monday.md` | 20 points, formative — **covers Week 0** |
-| `lab/LAB 1 Visualising Tree Traversals.md` | Build a renderer, instrument the traversals, measure heights |
-| `resources/Reading Guide Week 1.md` | CLRS §12.1–12.3 with guiding questions |
+| [[L04 Trees and Traversals]] | Terminology, shapes, height bounds, four traversals, reconstruction |
+| [[L05 Binary Search Trees]] | The invariant, search/insert/delete, successor, validation |
+| [[L06 BST Height Average and Worst Case]] | Why sorted input is the worst case; average-case results; what would fix it |
+| [[PS 1 Binary Trees and BSTs]] | 100 points, due Friday of Week 2 |
+| [[CS102 Week1/assignments/QUIZ 1 Week 1 Monday\|QUIZ 1 Week 1 Monday]] | 20 points, formative — **covers Week 0** |
+| [[LAB 1 Visualising Tree Traversals]] | Build a renderer, instrument the traversals, measure heights |
+| [[CS102 Week1/resources/Reading Guide Week 1\|Reading Guide Week 1]] | CLRS §12.1–12.3 with guiding questions |
 | `solutions_instructor/` | PS 1 and Lab 1 solutions — instructor only |
 
 ### The Two Ideas Most Likely to Be Missed

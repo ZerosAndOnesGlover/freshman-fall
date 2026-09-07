@@ -154,4 +154,4 @@ Several concrete, actionable takeaways from this week, independent of which care
 
 ## Key Terms Introduced This Week
 
-See `Glossary Week 4.md`. New terms: *statistical bias*, *social bias*, *proxy variable*, *selection bias*, *disparate treatment*, *disparate impact*, *fairness through unawareness*, *intersectionality*, *demographic parity*, *equalized odds*, *predictive parity*, *impossibility result (fairness)*.
+See [[Glossary Week 4]]. New terms: *statistical bias*, *social bias*, *proxy variable*, *selection bias*, *disparate treatment*, *disparate impact*, *fairness through unawareness*, *intersectionality*, *demographic parity*, *equalized odds*, *predictive parity*, *impossibility result (fairness)*.

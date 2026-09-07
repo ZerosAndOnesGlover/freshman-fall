@@ -186,4 +186,4 @@ These scenarios are introduced here and will reappear in the Week 3 discussion. 
 
 ## 6. Key Terms Introduced This Week
 
-See `Glossary Week 3.md`. New terms: *code of ethics*, *licensure*, *foreseeable harm*, *public interest*, *diffusion of responsibility*, *confidentiality (professional)*, *whistleblowing*.
+See [[Glossary Week 3]]. New terms: *code of ethics*, *licensure*, *foreseeable harm*, *public interest*, *diffusion of responsibility*, *confidentiality (professional)*, *whistleblowing*.

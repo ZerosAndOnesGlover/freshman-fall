@@ -8,9 +8,9 @@
 > is a *Bitwise Calculator* and Week 2 Lecture 1 is *Operators, Expressions, and Bit Manipulation* —
 > the set was collected in the hour before the lecture that teaches it. Problems 4 and 5 need loops,
 > taught in Week 2 Lecture 3 (Thursday). The Friday 17:00 deadline follows both.
-> See `PREREQUISITE AUDIT.md`, findings #11 and #12.
+> See [[Year1 - Freshman/PREREQUISITE AUDIT|PREREQUISITE AUDIT]], findings #11 and #12.
 **Submission:** Push to Git, submit commit hash on course portal
-**Directory:** `~/prog101/week1/ps1/`
+**Directory:** `$PROG101/week1/ps1/`
 
 ---
 
@@ -486,7 +486,7 @@ clean:
 ## Submission
 
 ```bash
-cd ~/prog101/week1/ps1
+cd "$PROG101/week1/ps1"
 git add .
 git commit -m "PS1 complete: types, bits, loops, sizeof"
 ```

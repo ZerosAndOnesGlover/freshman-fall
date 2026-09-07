@@ -34,7 +34,7 @@ have to defend in Lab 12.
   except in tests that deliberately provoke a report and are marked as such.
 - **You may not use** `std::list`, `std::map`, `std::set` or `std::forward_list` in the
   implementations. Use them freely in tests as reference behaviour.
-- **One command builds and runs everything.** State it in `README.md`.
+- **One command builds and runs everything.** State it in [[PROG102 Week11/README|README]].
 - Name collaborators; state any generative-tool use.
 
 ---
@@ -157,7 +157,7 @@ tests.cpp   bench.cpp   DESIGN.md    CONTRACTS.md   README.md
 **10% per day; nothing after 3 days.** The final exam is this week and no extensions are available
 beyond that.
 
-**Partial credit is generous. Finish what you start** and state in `README.md` what is incomplete. An
+**Partial credit is generous. Finish what you start** and state in [[PROG102 Week11/README|README]] what is incomplete. An
 accurate scope statement costs nothing; an inaccurate one costs a great deal.
 
 ---

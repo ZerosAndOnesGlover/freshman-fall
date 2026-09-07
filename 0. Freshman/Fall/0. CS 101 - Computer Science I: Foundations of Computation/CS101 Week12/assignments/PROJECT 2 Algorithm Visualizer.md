@@ -4,7 +4,7 @@
 **Assigned:** Friday, Week 10
 **Due:** Friday, Week 12 at 11:59 PM
 **Weight:** 5% of final grade (half of the 10% Projects grade)
-**Submission:** A zip containing all source code, a `README.md`, and a written report (`report.md`)
+**Submission:** A zip containing all source code, a [[CS101 Week12/README|README]], and a written report (`report.md`)
 **Collaboration:** Individual project — no partners, no code sharing
 **Starter:** `project2_starter.py`
 
@@ -215,7 +215,7 @@ the same input handled by median-of-three.
 
 - [ ] `python3 project2_starter.py` (with your implementations) reports **15/15**
 - [ ] All source modules, separated per §Part 3
-- [ ] `README.md` — how to run it, with worked example commands
+- [ ] [[CS101 Week12/README|README]] — how to run it, with worked example commands
 - [ ] `report.md` — 1,000–1,500 words, all 8 sections
 - [ ] `benchmark.txt` — saved output of `--benchmark`
 - [ ] One saved trace file, and evidence that `--replay` reads it back

@@ -62,9 +62,9 @@ If there is time, the session ends with a look at the course as a whole (L38's s
 
 ## The Final, and the Retrospective
 
-**The final exam covers Weeks 0–12** and is comprehensive — see `resources/FINAL EXAM Revision Guide.md`. **Demo day is not revision;** the revision guide is where your remaining time should go.
+**The final exam covers Weeks 0–12** and is comprehensive — see [[CS201 Week12/resources/FINAL EXAM Revision Guide|FINAL EXAM Revision Guide]]. **Demo day is not revision;** the revision guide is where your remaining time should go.
 
-**And when the exam is over**, read `resources/Course Retrospective.md`. Not before — it is not revision, and it will mean more afterwards.
+**And when the exam is over**, read [[CS201 Week12/resources/Course Retrospective|Course Retrospective]]. Not before — it is not revision, and it will mean more afterwards.
 
 ---
 

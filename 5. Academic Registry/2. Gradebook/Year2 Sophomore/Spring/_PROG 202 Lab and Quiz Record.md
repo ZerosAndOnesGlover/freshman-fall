@@ -3,7 +3,7 @@
 
 > **This file is deliberately outside the gradebook's weighted components.** PROG 202's
 > labs and quizzes carry **no weight** — Problem Sets 40, Projects 30, Midterm 15 and Final 15 already sum to 100% without them,
-> and `PROG 202.md` says so.
+> and [[PROG 202]] says so.
 >
 > The leading underscore in the filename keeps this file out of `tools/gpa.py`'s course scan. Do not
 > rename it without checking `collect()` in that script.
@@ -33,7 +33,7 @@ weeks you actually did the work.
 
 **Thirteen labs, Weeks 0–12, in the scheduled session.** Mandatory. The TA checks the work off during or just after the session; nothing is marked out of anything.
 
-> **Attendance is the enforcement.** `COURSE POLICIES.md` reduces the final course grade > by one letter after a second unexcused lab absence. That rule, not a mark, is why the > lab is not optional.
+> **Attendance is the enforcement.** [[Year2 - Sophomore/COURSE POLICIES|COURSE POLICIES]] reduces the final course grade > by one letter after a second unexcused lab absence. That rule, not a mark, is why the > lab is not optional.
 
 | Lab | Week | Topic | Out of | Done |
 |---|---|---|---|---|

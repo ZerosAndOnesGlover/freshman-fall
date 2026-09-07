@@ -42,13 +42,13 @@ By the end of Week 1, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L04 Integers Overflow and Undefined Behaviour.md` | Two's complement one layer up; UB as a licence, with the disassembly |
-| `lectures/L05 IEEE 754 Anatomy of a Float.md` | The three fields, the two reserved exponents, real bit patterns, denormals at 34× |
-| `lectures/L06 Why Floating Point Addition Is Not Associative.md` | Absorption, summation order, Kahan, cancellation, and why not to use floats for money |
-| `assignments/PS 1 Bit Level Manipulation and IEEE 754.md` | Hand dissection, branch-free bit tricks, total-order keys, the summation experiment |
-| `assignments/QUIZ 1 Week 1 Monday.md` | Ten minutes on Week 0. **Unmarked — the key is in the paper** |
-| `lab/LAB 1 Demonstrating Floating Point Non-Associativity.md` | Measure all of it yourself, including the benchmark that lies |
-| `resources/Reading Guide Week 1.md` | CS:APP Ch. 2 with guiding questions and three claims to check |
+| [[L04 Integers Overflow and Undefined Behaviour]] | Two's complement one layer up; UB as a licence, with the disassembly |
+| [[L05 IEEE 754 Anatomy of a Float]] | The three fields, the two reserved exponents, real bit patterns, denormals at 34× |
+| [[L06 Why Floating Point Addition Is Not Associative]] | Absorption, summation order, Kahan, cancellation, and why not to use floats for money |
+| [[PS 1 Bit Level Manipulation and IEEE 754]] | Hand dissection, branch-free bit tricks, total-order keys, the summation experiment |
+| [[CS201 Week1/assignments/QUIZ 1 Week 1 Monday\|QUIZ 1 Week 1 Monday]] | Ten minutes on Week 0. **Unmarked — the key is in the paper** |
+| [[LAB 1 Demonstrating Floating Point Non-Associativity]] | Measure all of it yourself, including the benchmark that lies |
+| [[CS201 Week1/resources/Reading Guide Week 1\|Reading Guide Week 1]] | CS:APP Ch. 2 with guiding questions and three claims to check |
 | `solutions_instructor/` | Instructor only |
 
 ---
@@ -71,7 +71,7 @@ The skill is not memorising IEEE 754. It is knowing that a floating-point result
 
 **Quiz 1 is Monday** and covers **Week 0**. It prints its own answer key: sit it closed-book, then mark it yourself before leaving. Looking at the key first costs you the only thing the exercise is for.
 
-Both tracked in `5. Academic Registry/2. Gradebook/Year2 Sophomore/Fall/_CS 201 Lab and Quiz Record.md`.
+Both tracked in [[_CS 201 Lab and Quiz Record]].
 
 ---
 

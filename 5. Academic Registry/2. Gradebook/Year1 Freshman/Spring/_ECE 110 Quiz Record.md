@@ -3,7 +3,7 @@
 
 > **This file is deliberately outside the gradebook's weighted components.** ECE 110's quizzes carry
 > **no weight** — Laboratory 25%, Problem Sets 35%, Midterm 25% and Final 15% already sum to 100%
-> without them, and `ECE 110.md` says so in as many words.
+> without them, and [[ECE 110]] says so in as many words.
 >
 > The leading underscore in the filename keeps this file out of `tools/gpa.py`'s course scan. Do not
 > rename it without checking `collect()` in that script.
@@ -17,7 +17,7 @@ the gradebook parser reads a component's items from its heading until the **next
 containing a percentage**. An unweighted subheading has none, so its rows are silently absorbed into
 the component above it — in CS 102 that quietly attached eleven quiz rows to Project 2.
 
-`ECE 110.md` avoids that today by having no quiz table at all. This file is where the quizzes go
+[[ECE 110]] avoids that today by having no quiz table at all. This file is where the quizzes go
 instead, so that they are recorded somewhere rather than nowhere.
 
 ---

@@ -21,8 +21,8 @@ By the end of this lab, you will:
 ## Setup
 
 ```bash
-cd ~/cs101
-mkdir week5 && cd week5
+cd "$CS101"        # set in ~/.bashrc -- see Lab 0
+mkdir -p week5 && cd week5
 pip install matplotlib --user   # if not already installed
 ```
 
@@ -529,7 +529,7 @@ print("  quicksort:      NOT STABLE")
 ## Part 6: Commit and Reflection (10 minutes)
 
 ```bash
-cd ~/cs101/week5
+cd "$CS101/week5"
 git add .
 git commit -m "Week 5 Lab: sorting algorithm benchmarks, best-case analysis, stability tests"
 git push

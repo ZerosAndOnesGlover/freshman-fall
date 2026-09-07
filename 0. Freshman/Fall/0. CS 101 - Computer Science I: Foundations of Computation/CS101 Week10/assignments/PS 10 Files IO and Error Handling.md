@@ -17,7 +17,7 @@ Written answers go in this file. Code goes in `ps10.py`, scaffolded by `ps10_sta
 test suite checks all three.
 
 > **📌 Midterm 2 is this week** and covers Weeks 6–9. See
-> `MIDTERM 2 Review and Practice Exam.md`.
+> [[CS101 Week10/assignments/MIDTERM 2 Review and Practice Exam|MIDTERM 2 Review and Practice Exam]].
 
 ---
 

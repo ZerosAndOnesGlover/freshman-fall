@@ -19,7 +19,7 @@ status: in-progress
 >
 > **Weights.** The Year 1 curriculum document specifies this course's topics and textbooks but **not**
 > its assessment breakdown. The division below is the departmental one recorded in the course
-> syllabus (`MATH151 Week0/resources/Course Overview Syllabus.md`); if the curriculum document is
+> syllabus ([[MATH151 Week0/resources/Course Overview Syllabus|Course Overview Syllabus]]); if the curriculum document is
 > later revised to specify weights, that revision governs.
 
 ---

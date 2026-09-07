@@ -36,15 +36,15 @@ By the end of Week 8, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L25 Observer.md` | Publish-subscribe, the dangling observer, and `weak_ptr` |
-| `lectures/L26 Strategy Command and Template Method.md` | Three ways of parameterising behaviour |
-| `lectures/L27 State MVC and What C++11 Obsoleted.md` | State machines, MVC, and the week's argument |
-| `assignments/PS 8 Observer and Strategy.md` | Due Friday of Week 9 |
-| `assignments/QUIZ 8 Week 8 Monday.md` | 15 minutes, covers Week 7 |
-| `lab/LAB 8 Building an Event System.md` | An event system that survives its subscribers dying |
-| `resources/Reading Guide Week 8.md` | Gang of Four Ch. 5, and every command |
-| `solutions_instructor/PS 8 Solutions.md` | Instructor only |
-| `solutions_instructor/LAB 8 Solutions.md` | Instructor only |
+| [[L25 Observer]] | Publish-subscribe, the dangling observer, and `weak_ptr` |
+| [[L26 Strategy Command and Template Method]] | Three ways of parameterising behaviour |
+| [[L27 State MVC and What C++11 Obsoleted]] | State machines, MVC, and the week's argument |
+| [[PS 8 Observer and Strategy]] | Due Friday of Week 9 |
+| [[PROG102 Week8/assignments/QUIZ 8 Week 8 Monday\|QUIZ 8 Week 8 Monday]] | 15 minutes, covers Week 7 |
+| [[LAB 8 Building an Event System]] | An event system that survives its subscribers dying |
+| [[PROG102 Week8/resources/Reading Guide Week 8\|Reading Guide Week 8]] | Gang of Four Ch. 5, and every command |
+| [[PROG102 Week8/solutions_instructor/PS 8 Solutions\|PS 8 Solutions]] | Instructor only |
+| [[PROG102 Week8/solutions_instructor/LAB 8 Solutions\|LAB 8 Solutions]] | Instructor only |
 
 ### The One Thing to Take From This Week
 

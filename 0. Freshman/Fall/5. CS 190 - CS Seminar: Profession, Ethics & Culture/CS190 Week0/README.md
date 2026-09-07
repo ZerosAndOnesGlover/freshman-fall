@@ -26,12 +26,12 @@ By the end of Week 0, you should be able to:
 
 | File                         | Purpose                                                                                                 |
 | ---------------------------- | ------------------------------------------------------------------------------------------------------- |
-| `Lecture Week 0.md`          | Core seminar content: the CS/SE/CE distinction, career landscape, why ethics belongs in a CS curriculum |
-| `Reading Guide.md`           | Annotated guide to this week's readings, with guiding questions                                         |
-| `Discussion Questions.md`    | Questions the seminar will work through live — come with notes                                          |
-| `Prep Assignment.md`         | Your participation-graded prep work, due before seminar                                                 |
-| `Careers Reference Sheet.md` | A reference table of CS-adjacent careers, mapped to the courses that prepare you for them               |
-| `Glossary.md`                | Terms introduced this week, defined precisely                                                           |
+| [[Lecture Week 0]]          | Core seminar content: the CS/SE/CE distinction, career landscape, why ethics belongs in a CS curriculum |
+| [[CS190 Week0/Reading Guide\|Reading Guide]]           | Annotated guide to this week's readings, with guiding questions                                         |
+| [[CS190 Week0/Discussion Questions\|Discussion Questions]]    | Questions the seminar will work through live — come with notes                                          |
+| [[CS190 Week0/Prep Assignment\|Prep Assignment]]         | Your participation-graded prep work, due before seminar                                                 |
+| [[Careers Reference Sheet]] | A reference table of CS-adjacent careers, mapped to the courses that prepare you for them               |
+| [[Glossary]]                | Terms introduced this week, defined precisely                                                           |
 
 ### How This Course Is Graded (Reminder)
 

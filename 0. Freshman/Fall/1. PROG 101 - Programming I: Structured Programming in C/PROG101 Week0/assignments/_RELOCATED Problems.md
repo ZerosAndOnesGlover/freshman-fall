@@ -4,7 +4,7 @@
 ═════════════════════════════════════════════════════════════
 
 > **Why this file exists.** These four problems were removed from PS 0 on 2026-08-16 because they
-> tested material from Weeks 2–10 in a Week 0 set (see `PREREQUISITE AUDIT.md`, findings #1, #2,
+> tested material from Weeks 2–10 in a Week 0 set (see [[Year1 - Freshman/PREREQUISITE AUDIT|PREREQUISITE AUDIT]], findings #1, #2,
 > #4, #5, #6, #9, #10). **They are good problems.** Nothing here is deprecated — every answer key
 > below was verified against `gcc 13.3.0 -Wall -Wextra -Werror -std=c11` on x86-64 Linux and
 > should be re-filed intact into the week that teaches its content.

@@ -3,7 +3,7 @@
 
 > **This file is deliberately outside the gradebook's weighted components.** MATH 251's
 > quizzes carry **no weight** — Problem Sets 35, Midterms 40 and Final 25 already sum to 100% without them,
-> and `MATH 251.md` says so.
+> and [[MATH 251]] says so.
 >
 > The leading underscore in the filename keeps this file out of `tools/gpa.py`'s course scan. Do not
 > rename it without checking `collect()` in that script.

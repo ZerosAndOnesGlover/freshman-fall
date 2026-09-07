@@ -244,17 +244,17 @@ derived from the week numbers, never the reverse.
    **ECE 110 is the lone Spring exception** and does follow the Fall pattern: its Quiz *N* sits in
    Week *N+1*, so its eleven quizzes run W2–W12.
 2. ⚠️ **PROG 102 quiz day is unresolved.** All eleven PROG 102 quiz files say *"Week N · Monday,
-   start of lecture"*, but `SPRING SCHEDULE.md` gives PROG 102 lectures on **Tue/Wed/Thu** with
+   start of lecture"*, but [[Year1 - Freshman/SPRING SCHEDULE|SPRING SCHEDULE]] gives PROG 102 lectures on **Tue/Wed/Thu** with
    Monday as its *lab*. A quiz "at the start of lecture" on a day with no lecture is impossible,
    so this calendar uses **Tuesday** — PROG 102's first lecture of the week, and the day
-   `SPRING SCHEDULE.md` itself marks as its quiz day. The eleven quiz files most likely inherited
+   [[Year1 - Freshman/SPRING SCHEDULE|SPRING SCHEDULE]] itself marks as its quiz day. The eleven quiz files most likely inherited
    "Monday" from the CS 102 template. **Fix the quiz files or confirm Tuesday.**
 3. ⚠️ **MATH 142 quiz day conflicts too, the other way.** Its quiz files say Monday, which matches
-   its first lecture of the week; `SPRING SCHEDULE.md` marks **Friday**. This calendar follows the
+   its first lecture of the week; [[Year1 - Freshman/SPRING SCHEDULE|SPRING SCHEDULE]] marks **Friday**. This calendar follows the
    quiz files (Monday), consistent with how the same conflict was resolved for PROG 101 in Fall.
 4. **MLK Day (Mon Jan 18 2027) falls in W1** and currently carries the CS 102 and MATH 142 quizzes.
    The pre-2027 calendar observed it as NO CLASSES. Same open decision as Fall's Labor Day.
-5. **ECE 110 quizzes are ungraded** per `SPRING SCHEDULE.md`, and ECE 110 has only **one** midterm.
+5. **ECE 110 quizzes are ungraded** per [[Year1 - Freshman/SPRING SCHEDULE|SPRING SCHEDULE]], and ECE 110 has only **one** midterm.
    Both preserved from the previous calendar.
 
 ---

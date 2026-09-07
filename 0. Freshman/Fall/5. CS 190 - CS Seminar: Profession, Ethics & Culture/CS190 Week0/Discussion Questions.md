@@ -16,7 +16,7 @@ These are the questions the seminar session will work through. You are not requi
 
 ## Part 3: Careers and Self-Assessment (~10 min)
 
-5. Looking at the career landscape in `Careers Reference Sheet.md`, which path are you currently most drawn to, and which course in your Year 1/Year 2 schedule do you expect to be most diagnostic for whether that's actually a good fit?
+5. Looking at the career landscape in [[Careers Reference Sheet]], which path are you currently most drawn to, and which course in your Year 1/Year 2 schedule do you expect to be most diagnostic for whether that's actually a good fit?
 6. Is there a career path on that list you'd actively avoid? Why? (Be honest — there are no wrong answers here, but vague answers ("I don't like it") are weaker than specific ones ("I dislike X because Y").)
 
 ## Part 4: Why Ethics Belongs Here (~15 min, the core of the session)

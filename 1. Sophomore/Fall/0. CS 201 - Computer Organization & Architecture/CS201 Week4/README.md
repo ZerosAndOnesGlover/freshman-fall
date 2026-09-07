@@ -45,13 +45,13 @@ By the end of Week 4, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L13 The Memory Hierarchy Measured.md` | The staircase, the 107× ratio, the 64-byte line, and 30× from loop order |
-| `lectures/L14 Cache Organisation Lines Sets and Ways.md` | $S$/$E$/$B$, the address split, three miss types, writes — and a fix that does not work |
-| `lectures/L15 Locality as Leverage.md` | Blocking the transpose, where the speedup really comes from, and the control |
-| `assignments/PS 4 Matrix Transpose Optimisation.md` | Measure the cliffs, block the transpose, diagnose the level, test a fix that fails |
-| `assignments/QUIZ 4 Week 4 Monday.md` | Ten minutes on Week 3. **Unmarked — key in the paper.** Good midterm practice |
-| `lab/LAB 4 Measuring Cache Effects.md` | Find the cache sizes with a stopwatch; then find out why blocking works |
-| `resources/Reading Guide Week 4.md` | CS:APP Ch. 6, plus Drepper, and what cachegrind cannot see |
+| [[L13 The Memory Hierarchy Measured]] | The staircase, the 107× ratio, the 64-byte line, and 30× from loop order |
+| [[L14 Cache Organisation Lines Sets and Ways]] | $S$/$E$/$B$, the address split, three miss types, writes — and a fix that does not work |
+| [[L15 Locality as Leverage]] | Blocking the transpose, where the speedup really comes from, and the control |
+| [[PS 4 Matrix Transpose Optimisation]] | Measure the cliffs, block the transpose, diagnose the level, test a fix that fails |
+| [[CS201 Week4/assignments/QUIZ 4 Week 4 Monday\|QUIZ 4 Week 4 Monday]] | Ten minutes on Week 3. **Unmarked — key in the paper.** Good midterm practice |
+| [[LAB 4 Measuring Cache Effects]] | Find the cache sizes with a stopwatch; then find out why blocking works |
+| [[CS201 Week4/resources/Reading Guide Week 4\|Reading Guide Week 4]] | CS:APP Ch. 6, plus Drepper, and what cachegrind cannot see |
 | `solutions_instructor/` | Instructor only |
 
 ---

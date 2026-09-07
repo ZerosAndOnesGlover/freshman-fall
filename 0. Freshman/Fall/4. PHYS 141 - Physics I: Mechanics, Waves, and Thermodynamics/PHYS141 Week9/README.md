@@ -9,15 +9,15 @@
 
 | File | Description |
 |------|-------------|
-| `lectures/L28 Wave Properties.md` | Transverse and longitudinal waves; $y=A\sin(kx-\omega t)$; $v=f\lambda$; $v=\sqrt{F_T/\mu}$; power; the wave equation |
-| `lectures/L29 Superposition and Interference.md` | The superposition principle; constructive and destructive interference; path difference; beats; reflection and phase inversion |
-| `lectures/L30 Standing Waves.md` | Standing waves from opposing travelling waves; nodes and antinodes; $f_n=nf_1$; pitch, timbre, and tuning |
-| `lab/LAB 9 Standing Waves on a String.md` | Driven string resonances; $v$ two ways; $v^2$ vs $F_T$ to extract $\mu$; beats; node positions |
-| `assignments/PS 9 Waves Superposition and Standing Waves.md` | 20 problems on wave properties, interference, beats, and harmonics |
-| `quiz/QUIZ 9 Waves Superposition and Standing Waves.md` | 10-question quiz (administered Monday, Week 10) |
-| `resources/Resources.md` | Textbook references, simulations, deeper reading |
-| `solutions_instructor/PS 9 Solutions.md` | Full worked solutions (instructor only) |
-| `solutions_instructor/LAB 9 Solutions.md` | Expected data, analysis answers, systematic errors to look for |
+| [[L28 Wave Properties]] | Transverse and longitudinal waves; $y=A\sin(kx-\omega t)$; $v=f\lambda$; $v=\sqrt{F_T/\mu}$; power; the wave equation |
+| [[L29 Superposition and Interference]] | The superposition principle; constructive and destructive interference; path difference; beats; reflection and phase inversion |
+| [[L30 Standing Waves]] | Standing waves from opposing travelling waves; nodes and antinodes; $f_n=nf_1$; pitch, timbre, and tuning |
+| [[LAB 9 Standing Waves on a String]] | Driven string resonances; $v$ two ways; $v^2$ vs $F_T$ to extract $\mu$; beats; node positions |
+| [[PS 9 Waves Superposition and Standing Waves]] | 20 problems on wave properties, interference, beats, and harmonics |
+| [[QUIZ 9 Waves Superposition and Standing Waves]] | 10-question quiz (administered Monday, Week 10) |
+| [[PHYS141 Week9/resources/Resources\|Resources]] | Textbook references, simulations, deeper reading |
+| [[PHYS141 Week9/solutions_instructor/PS 9 Solutions\|PS 9 Solutions]] | Full worked solutions (instructor only) |
+| [[PHYS141 Week9/solutions_instructor/LAB 9 Solutions\|LAB 9 Solutions]] | Expected data, analysis answers, systematic errors to look for |
 
 ---
 

@@ -115,7 +115,7 @@ Some scale, to make the abstraction concrete. Assume $10^9$ elementary operation
 | $1{,}000$ | $\approx 10^4$ | $10^6$ | $10^9$ | — |
 | $10^6$ | $\approx 2\times10^7$ | $10^{12}$ | — | — |
 
-*(Computed, not estimated — see `Reading Guide Week 0.md` for the script.)*
+*(Computed, not estimated — see [[CS102 Week0/resources/Reading Guide Week 0|Reading Guide Week 0]] for the script.)*
 
 At $n = 10^6$: an $O(n \log n)$ algorithm finishes in about **0.02 seconds**; an $O(n^2)$ algorithm
 takes about **17 minutes**. At $n = 10^9$ the $O(n\log n)$ algorithm takes about **30 seconds** and

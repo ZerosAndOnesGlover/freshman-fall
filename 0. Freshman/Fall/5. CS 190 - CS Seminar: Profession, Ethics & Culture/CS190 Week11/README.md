@@ -1,7 +1,7 @@
 # CS 190 · CS Seminar: Profession, Ethics & Culture
 ## Week 11: Student Presentations — Position Paper Topics
 
-**Format:** Three sessions this week (see `Presentation Schedule.md`). Every student presents.
+**Format:** Three sessions this week (see [[Presentation Schedule]]). Every student presents.
 **Assessment for this course (overall):** Participation 40%, Position Papers 60%
 **This week's deliverables:** Your presentation (20 points, Participation) and one peer feedback form
 per presentation attended (Participation).
@@ -38,10 +38,10 @@ By the end of Week 11, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `Presentation Brief.md` | What to present, the required four-part structure, materials, timing |
-| `Presentation Rubric.md` | The 20-point marking scheme, with 14 points on the argument |
-| `Presentation Schedule.md` | Three sessions, slot allocation by lot, swaps, absence, accessibility |
-| `Peer Feedback Form.md` | The form, how it is marked, audience obligations, ground rules |
+| [[Presentation Brief]] | What to present, the required four-part structure, materials, timing |
+| [[Presentation Rubric]] | The 20-point marking scheme, with 14 points on the argument |
+| [[Presentation Schedule]] | Three sessions, slot allocation by lot, swaps, absence, accessibility |
+| [[Peer Feedback Form]] | The form, how it is marked, audience obligations, ground rules |
 
 **There is no lecture this week.** The seminar hour belongs to you.
 
@@ -74,5 +74,5 @@ is the sternest test of any account of structural obligation, and several presen
 Week 3's frameworks are what most of these arguments are built from.
 
 **Forward:** Week 12 closes the course with a visiting professional and a written reflection. The
-reflection asks what changed your mind this term — and `Peer Feedback Form.md` question 6 is where
+reflection asks what changed your mind this term — and [[Peer Feedback Form]] question 6 is where
 you will have recorded it, so keep your copies.

@@ -39,11 +39,11 @@ By the end of Week 8, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `Lecture Week 8.md` | The disclosure dilemma, the three models, the legal overlay, hacktivism, and the ACM Code applied |
-| `Reading Guide.md` | *Van Buren*, ISO/IEC 29147, and Project Zero's disclosure policy, with guiding questions |
-| `Discussion Questions.md` | Twelve questions across disclosure, law, and hacktivism |
-| `Prep Assignment.md` | Write a disclosure policy; identify the line you would not cross |
-| `Glossary Week 8.md` | Terms introduced this week, defined precisely |
+| [[Lecture Week 8]] | The disclosure dilemma, the three models, the legal overlay, hacktivism, and the ACM Code applied |
+| [[CS190 Week8/Reading Guide\|Reading Guide]] | *Van Buren*, ISO/IEC 29147, and Project Zero's disclosure policy, with guiding questions |
+| [[CS190 Week8/Discussion Questions\|Discussion Questions]] | Twelve questions across disclosure, law, and hacktivism |
+| [[CS190 Week8/Prep Assignment\|Prep Assignment]] | Write a disclosure policy; identify the line you would not cross |
+| [[Glossary Week 8]] | Terms introduced this week, defined precisely |
 
 ### Connections
 

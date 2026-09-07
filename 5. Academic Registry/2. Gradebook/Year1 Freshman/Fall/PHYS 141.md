@@ -19,7 +19,7 @@ status: in-progress
 >
 > **Weights.** The Year 1 curriculum document specifies this course's topics, textbooks, credits and
 > weekly 3-hour lab but **not** its assessment breakdown. The division below is the departmental one
-> recorded in the course syllabus (`PHYS141 Week0/resources/Course Overview Syllabus.md`); if the
+> recorded in the course syllabus ([[PHYS141 Week0/resources/Course Overview Syllabus|Course Overview Syllabus]]); if the
 > curriculum document is later revised to specify weights, that revision governs.
 
 ---

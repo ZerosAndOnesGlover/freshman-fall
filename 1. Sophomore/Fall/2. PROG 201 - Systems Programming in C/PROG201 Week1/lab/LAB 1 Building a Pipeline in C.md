@@ -22,7 +22,10 @@ By the end you will have a program that runs `ls -1 /etc : grep host : wc -l` an
 ## 0. Setup (5 minutes)
 
 ```bash
-cd ~/prog201/lab1
+mkdir -p "$PROG201/week1/lab1"        # $PROG201 is set in ~/.bashrc -- see Lab 0
+cd "$PROG201/week1/lab1"
+cp "$ACADEMICS/1. Sophomore/Fall/2. PROG 201 - Systems Programming in C/PROG201 Week1/lab/"{pipeline.c,compare.sh,Makefile} .
+
 make                      # builds ./pipeline from the skeleton
 ./pipeline echo hello : wc -l
 ```

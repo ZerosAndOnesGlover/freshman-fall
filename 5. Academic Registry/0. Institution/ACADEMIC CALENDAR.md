@@ -16,7 +16,7 @@
 
 > **Dated for 2026.** Term opens **Monday 17 August 2026**. Week 0 is an ordinary five-day week;
 > thirteen teaching weeks (W0–W12) run continuously with no break weeks, ending Friday 13 November.
-> Week↔date conversion lives in `1. Scheduling/Year1 - Freshman/ASSESSMENT CALENDAR.md`.
+> Week↔date conversion lives in [[Year1 - Freshman/ASSESSMENT CALENDAR|ASSESSMENT CALENDAR]].
 
 | Date | Event |
 |------|-------|
@@ -67,7 +67,7 @@
 > **Dated for 2027.** Term opens **Monday 11 January 2027**. Week 0 is an ordinary five-day week;
 > thirteen teaching weeks (W0–W12) run continuously with **no break weeks** — the Spring Break week
 > in the pre-2027 calendar was dropped by decision. Instruction ends Friday 9 April.
-> Week↔date conversion lives in `1. Scheduling/Year1 - Freshman/ASSESSMENT CALENDAR.md`.
+> Week↔date conversion lives in [[Year1 - Freshman/ASSESSMENT CALENDAR|ASSESSMENT CALENDAR]].
 
 | Date       | Event                                                                           |
 | ---------- | ------------------------------------------------------------------------------- |

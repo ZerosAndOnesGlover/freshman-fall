@@ -181,7 +181,7 @@ Section D of Midterm 1 is fifteen marks of exactly this.
 1. Lectures 13–15 read.
 2. *C++ Primer* §15.1–15.5 worked through; Meyers Item 7 read.
 3. **PS 4 Parts A and D started.**
-4. **`resources/MIDTERM 1 Revision Guide.md` read once, this week.** It tells you what is examinable
+4. **[[PROG102 Week4/resources/MIDTERM 1 Revision Guide|MIDTERM 1 Revision Guide]] read once, this week.** It tells you what is examinable
    and what Section D expects, and both are easier to act on with two weeks left than with two days.
 5. Week 5 is **RAII and smart pointers**, and it is the week that retires most of the manual memory
    management you have been doing since Week 0. **The midterm is the same week.**

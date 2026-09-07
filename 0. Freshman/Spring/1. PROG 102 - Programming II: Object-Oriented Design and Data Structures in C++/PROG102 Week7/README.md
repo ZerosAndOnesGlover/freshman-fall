@@ -50,15 +50,15 @@ By the end of Week 7, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L22 What Patterns Are.md` | The idea, the two principles, and when not to |
-| `lectures/L23 Creational Patterns.md` | Singleton, Factory Method, Abstract Factory, Builder |
-| `lectures/L24 Structural Patterns.md` | Adapter, Decorator, Composite, Facade |
-| `assignments/PS 7 Factory Method and Decorator.md` | Due Friday of Week 8 |
-| `assignments/QUIZ 7 Week 7 Monday.md` | 15 minutes, covers Week 6 |
-| `lab/LAB 7 Refactoring a Messy Hierarchy.md` | Take a class explosion apart with patterns |
-| `resources/Reading Guide Week 7.md` | Gang of Four, and every command to reproduce this week |
-| `solutions_instructor/PS 7 Solutions.md` | Instructor only |
-| `solutions_instructor/LAB 7 Solutions.md` | Instructor only |
+| [[L22 What Patterns Are]] | The idea, the two principles, and when not to |
+| [[L23 Creational Patterns]] | Singleton, Factory Method, Abstract Factory, Builder |
+| [[L24 Structural Patterns]] | Adapter, Decorator, Composite, Facade |
+| [[PS 7 Factory Method and Decorator]] | Due Friday of Week 8 |
+| [[PROG102 Week7/assignments/QUIZ 7 Week 7 Monday\|QUIZ 7 Week 7 Monday]] | 15 minutes, covers Week 6 |
+| [[LAB 7 Refactoring a Messy Hierarchy]] | Take a class explosion apart with patterns |
+| [[PROG102 Week7/resources/Reading Guide Week 7\|Reading Guide Week 7]] | Gang of Four, and every command to reproduce this week |
+| [[PROG102 Week7/solutions_instructor/PS 7 Solutions\|PS 7 Solutions]] | Instructor only |
+| [[PROG102 Week7/solutions_instructor/LAB 7 Solutions\|LAB 7 Solutions]] | Instructor only |
 
 ### The One Thing to Take From This Week
 

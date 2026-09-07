@@ -9,14 +9,14 @@
 
 | File | Description |
 |------|-------------|
-| `lectures/L16 Momentum and Impulse.md` | Linear momentum; the impulse-momentum theorem derived from Newton's second law |
-| `lectures/L17 Conservation of Momentum and Collisions.md` | Conservation of momentum; elastic and inelastic collisions in 1D and 2D |
-| `lectures/L18 Center of Mass.md` | Center of mass definition and calculation; motion of the center of mass |
-| `lab/LAB 5 Collisions.md` | Verifying momentum conservation in elastic and inelastic collisions on a track |
-| `assignments/PS 5 Momentum Impulse Collisions and Center of Mass.md` | 20 problems on momentum, impulse, collisions, and center of mass |
-| `quiz/QUIZ 5 Momentum Impulse Collisions and Center of Mass.md` | 10-question quiz (administered Monday, Week 6) |
-| `resources/Resources.md` | Textbook references, deeper reading |
-| `solutions_instructor/PS 5 Solutions.md` | Full worked solutions (instructor only) |
+| [[L16 Momentum and Impulse]] | Linear momentum; the impulse-momentum theorem derived from Newton's second law |
+| [[L17 Conservation of Momentum and Collisions]] | Conservation of momentum; elastic and inelastic collisions in 1D and 2D |
+| [[L18 Center of Mass]] | Center of mass definition and calculation; motion of the center of mass |
+| [[LAB 5 Collisions]] | Verifying momentum conservation in elastic and inelastic collisions on a track |
+| [[PS 5 Momentum Impulse Collisions and Center of Mass]] | 20 problems on momentum, impulse, collisions, and center of mass |
+| [[QUIZ 5 Momentum Impulse Collisions and Center of Mass]] | 10-question quiz (administered Monday, Week 6) |
+| [[PHYS141 Week5/resources/Resources\|Resources]] | Textbook references, deeper reading |
+| [[PHYS141 Week5/solutions_instructor/PS 5 Solutions\|PS 5 Solutions]] | Full worked solutions (instructor only) |
 
 ---
 

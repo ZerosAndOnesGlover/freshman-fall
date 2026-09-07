@@ -45,13 +45,13 @@ By the end of Week 8, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L25 Layers and the Latency Ladder.md` | The completed ladder, why layers exist, addressing, and where a page load goes |
-| `lectures/L26 TCP Reliability Flow and Congestion.md` | Handshake, `TIME-WAIT`, retransmission, windows, AIMD — and Nagle measured twice |
-| `lectures/L27 The Application Layer and the Cost of a Round Trip.md` | Sockets, message size, HTTP, and why every improvement removes round trips |
-| `assignments/PS 8 A TCP Echo Client and Server.md` | Framing, short reads, a UDP comparison, and the deadlock reproduced |
-| `assignments/QUIZ 8 Week 8 Monday.md` | Ten minutes on Week 7. **Unmarked — key in the paper** |
-| `lab/LAB 8 Observing TCP.md` | `strace` and `ss` instead of Wireshark, and 25 minutes making Nagle deadlock |
-| `resources/Reading Guide Week 8.md` | CS:APP Ch. 11, what it omits, and `man 7 tcp` |
+| [[L25 Layers and the Latency Ladder]] | The completed ladder, why layers exist, addressing, and where a page load goes |
+| [[L26 TCP Reliability Flow and Congestion]] | Handshake, `TIME-WAIT`, retransmission, windows, AIMD — and Nagle measured twice |
+| [[L27 The Application Layer and the Cost of a Round Trip]] | Sockets, message size, HTTP, and why every improvement removes round trips |
+| [[PS 8 A TCP Echo Client and Server]] | Framing, short reads, a UDP comparison, and the deadlock reproduced |
+| [[CS201 Week8/assignments/QUIZ 8 Week 8 Monday\|QUIZ 8 Week 8 Monday]] | Ten minutes on Week 7. **Unmarked — key in the paper** |
+| [[LAB 8 Observing TCP]] | `strace` and `ss` instead of Wireshark, and 25 minutes making Nagle deadlock |
+| [[CS201 Week8/resources/Reading Guide Week 8\|Reading Guide Week 8]] | CS:APP Ch. 11, what it omits, and `man 7 tcp` |
 | `solutions_instructor/` | Instructor only |
 
 ---

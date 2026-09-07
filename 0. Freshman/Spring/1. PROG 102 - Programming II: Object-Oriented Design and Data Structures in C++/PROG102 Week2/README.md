@@ -46,15 +46,15 @@ By the end of Week 2, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L07 Function Templates and Type Deduction.md` | Syntax, deduction, explicit arguments, overload interaction |
-| `lectures/L08 Class Templates and Generic Containers.md` | `Stack<T>`, the header rule, non-type parameters, `pair` and `tuple` |
-| `lectures/L09 Instantiation Specialization and Cost.md` | Specialization, the cost measured, error messages, vs Java and Python |
-| `assignments/PS 2 A Generic Stack.md` | Due Friday of Week 3 |
-| `assignments/QUIZ 2 Week 2 Monday.md` | 15 minutes, covers Week 1 |
-| `lab/LAB 2 What Templates Cost.md` | Measure compile time, binary size and runtime yourself |
-| `resources/Reading Guide Week 2.md` | *C++ Primer* Ch. 16, and every command to reproduce this week |
-| `solutions_instructor/PS 2 Solutions.md` | Instructor only |
-| `solutions_instructor/LAB 2 Solutions.md` | Instructor only |
+| [[L07 Function Templates and Type Deduction]] | Syntax, deduction, explicit arguments, overload interaction |
+| [[L08 Class Templates and Generic Containers]] | `Stack<T>`, the header rule, non-type parameters, `pair` and `tuple` |
+| [[L09 Instantiation Specialization and Cost]] | Specialization, the cost measured, error messages, vs Java and Python |
+| [[PS 2 A Generic Stack]] | Due Friday of Week 3 |
+| [[PROG102 Week2/assignments/QUIZ 2 Week 2 Monday\|QUIZ 2 Week 2 Monday]] | 15 minutes, covers Week 1 |
+| [[LAB 2 What Templates Cost]] | Measure compile time, binary size and runtime yourself |
+| [[PROG102 Week2/resources/Reading Guide Week 2\|Reading Guide Week 2]] | *C++ Primer* Ch. 16, and every command to reproduce this week |
+| [[PROG102 Week2/solutions_instructor/PS 2 Solutions\|PS 2 Solutions]] | Instructor only |
+| [[PROG102 Week2/solutions_instructor/LAB 2 Solutions\|LAB 2 Solutions]] | Instructor only |
 
 ### The One Thing to Take From This Week
 

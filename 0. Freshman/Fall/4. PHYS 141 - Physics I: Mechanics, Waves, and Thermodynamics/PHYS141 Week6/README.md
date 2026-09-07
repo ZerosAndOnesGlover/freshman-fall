@@ -9,14 +9,14 @@
 
 | File | Description |
 |------|-------------|
-| `lectures/L19 Rigid Body Rotation and Kinematics.md` | Rigid body model; angular variables formalized; angular kinematic equations |
-| `lectures/L20 Torque and Rotational Dynamics.md` | Torque as a cross product; moment of inertia; τ = Iα derived |
-| `lectures/L21 Rotational Energy and Rolling Motion.md` | Rotational kinetic energy; rolling without slipping; energy methods for rolling objects |
-| `lab/LAB 6 Moment of Inertia and Rolling.md` | Measuring moment of inertia via rotational dynamics; race of rolling shapes |
-| `assignments/PS 6 Rotational Kinematics and Dynamics.md` | 20 problems on rotational kinematics, torque, and rolling motion |
-| `quiz/QUIZ 6 Rotational Kinematics and Dynamics.md` | 10-question quiz (administered Monday, Week 7) |
-| `resources/Resources.md` | Textbook references, deeper reading |
-| `solutions_instructor/PS 6 Solutions.md` | Full worked solutions (instructor only) |
+| [[L19 Rigid Body Rotation and Kinematics]] | Rigid body model; angular variables formalized; angular kinematic equations |
+| [[L20 Torque and Rotational Dynamics]] | Torque as a cross product; moment of inertia; τ = Iα derived |
+| [[L21 Rotational Energy and Rolling Motion]] | Rotational kinetic energy; rolling without slipping; energy methods for rolling objects |
+| [[LAB 6 Moment of Inertia and Rolling]] | Measuring moment of inertia via rotational dynamics; race of rolling shapes |
+| [[PS 6 Rotational Kinematics and Dynamics]] | 20 problems on rotational kinematics, torque, and rolling motion |
+| [[QUIZ 6 Rotational Kinematics and Dynamics]] | 10-question quiz (administered Monday, Week 7) |
+| [[PHYS141 Week6/resources/Resources\|Resources]] | Textbook references, deeper reading |
+| [[PHYS141 Week6/solutions_instructor/PS 6 Solutions\|PS 6 Solutions]] | Full worked solutions (instructor only) |
 
 ---
 

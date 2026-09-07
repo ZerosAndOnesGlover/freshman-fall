@@ -45,11 +45,11 @@ Each layer — transistors, gates, ISA, C, Python — exists to hide the one bel
 
 **Labs and quizzes carry no weight.** The curriculum's assessment line — *Problem Sets 35%, Midterms 25%, Final 20%, Projects 20%* — sums to 100% without them, and no percentage has been invented to fill the gap.
 
-**They are still required.** The lab is checked off by the TA in the session, and `COURSE POLICIES.md` costs you a letter grade after a second unexcused absence. That rule, not a mark, is what makes the lab non-optional — because a lab you can skip for a 2% grade cost is a lab you will skip in the week you are busiest, which is reliably the week the material is hardest.
+**They are still required.** The lab is checked off by the TA in the session, and [[Year2 - Sophomore/COURSE POLICIES|COURSE POLICIES]] costs you a letter grade after a second unexcused absence. That rule, not a mark, is what makes the lab non-optional — because a lab you can skip for a 2% grade cost is a lab you will skip in the week you are busiest, which is reliably the week the material is hardest.
 
 **Quizzes** run ten minutes at the start of Monday's lecture in **Weeks 1–11**. **Quiz *N* covers Week *N−1*.** The answer key is printed in the paper, below the questions, so the feedback closes in the same sitting rather than three weeks later.
 
-Both are recorded in `5. Academic Registry/2. Gradebook/Year2 Sophomore/Fall/_CS 201 Lab and Quiz Record.md`.
+Both are recorded in [[_CS 201 Lab and Quiz Record]].
 
 ---
 

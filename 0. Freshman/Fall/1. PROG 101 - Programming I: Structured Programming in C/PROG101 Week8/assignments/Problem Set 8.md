@@ -3,7 +3,7 @@
 
 **Released:** End of Week 8 Thursday
 **Due:** Before Week 9 Lecture 1
-**Directory:** `~/prog101/week5/ps5/`
+**Directory:** `$PROG101/week8/ps8/`
 **Total:** 100 points
 
 ---
@@ -345,7 +345,7 @@ clean:
 ## Submission
 
 ```bash
-cd ~/prog101/week5/ps5
+cd "$PROG101/week8/ps8"
 git add .
 git commit -m "PS5 complete: file I/O, binary records, key-value store"
 ```

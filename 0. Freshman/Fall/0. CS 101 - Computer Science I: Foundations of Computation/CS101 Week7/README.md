@@ -63,7 +63,7 @@ CS101_Week7/
 | Fri | Lecture 24 + PS7 released | Stack and Queue ADTs; array vs linked implementations; deques; real applications |
 | Tue (W8) | Lab 7 (graded) | Build every structure; profile memory; benchmark operations; build applications |
 
-**📌 Project 1 was assigned this week** (due Week 9) — see `assignments/PROJECT 1 Data Analysis Tool.md`. Start early; it requires synthesizing nearly everything from Weeks 0–7.
+**📌 Project 1 was assigned this week** (due Week 9) — see [[PROJECT 1 Data Analysis Tool]]. Start early; it requires synthesizing nearly everything from Weeks 0–7.
 
 ---
 

@@ -2,7 +2,7 @@
 
 **Sat:** Tuesday of **Week 11**, first 10 minutes of lecture · TH 205
 **Covers:** **Week 10** — metaprogramming and domain-specific languages
-**Unmarked.** Recorded in `5. Academic Registry/2. Gradebook/Year2 Sophomore/Fall/_CS 211 Lab and Quiz Record.md`.
+**Unmarked.** Recorded in [[_CS 211 Lab and Quiz Record]].
 
 **This is the last quiz of the term.** The answer key is printed below the questions.
 

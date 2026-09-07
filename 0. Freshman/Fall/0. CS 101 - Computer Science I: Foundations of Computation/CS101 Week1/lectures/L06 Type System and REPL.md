@@ -495,7 +495,7 @@ This program uses: type conversion, f-strings, format specifiers, `math`, condit
 
 ## Problem Set 1 Released Today
 
-See `assignments/PS 1 Data Types and Expressions.md`. Due next Friday at 11:59 PM. Read it this weekend — start early.
+See [[PS 1 Data Types and Expressions]]. Due next Friday at 11:59 PM. Read it this weekend — start early.
 
 ---
 

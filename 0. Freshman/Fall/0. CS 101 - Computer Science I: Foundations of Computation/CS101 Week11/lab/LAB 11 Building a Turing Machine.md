@@ -22,7 +22,7 @@ The lecture gave you the theory. Today the theory has to run.
 ## Part 0 — Setup (5 minutes)
 
 ```bash
-cd ~/cs101/week11
+cd "$CS101/week11"        # set in ~/.bashrc -- see Lab 0
 python3 tm_lab_starter.py
 ```
 

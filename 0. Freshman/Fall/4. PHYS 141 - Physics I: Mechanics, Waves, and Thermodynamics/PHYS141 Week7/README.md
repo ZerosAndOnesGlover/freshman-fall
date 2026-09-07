@@ -9,14 +9,14 @@
 
 | File | Description |
 |------|-------------|
-| `lectures/L22 Angular Momentum.md` | Angular momentum for particles and rigid bodies; τ = dL/dt derived |
-| `lectures/L23 Conservation of Angular Momentum.md` | Conservation of angular momentum; spinning skaters, collisions, gyroscopic precession |
-| `lectures/L24 Static Equilibrium.md` | Conditions for static equilibrium; center of gravity; beam and ladder problems |
-| `lab/LAB 7 Angular Momentum Conservation.md` | Verifying angular momentum conservation with a rotating platform |
-| `assignments/PS 7 Angular Momentum and Static Equilibrium.md` | 20 problems on angular momentum and static equilibrium |
-| `quiz/QUIZ 7 Angular Momentum and Static Equilibrium.md` | 10-question quiz (administered Monday, Week 8) |
-| `resources/Resources.md` | Textbook references, deeper reading |
-| `solutions_instructor/PS 7 Solutions.md` | Full worked solutions (instructor only) |
+| [[L22 Angular Momentum]] | Angular momentum for particles and rigid bodies; τ = dL/dt derived |
+| [[L23 Conservation of Angular Momentum]] | Conservation of angular momentum; spinning skaters, collisions, gyroscopic precession |
+| [[L24 Static Equilibrium]] | Conditions for static equilibrium; center of gravity; beam and ladder problems |
+| [[LAB 7 Angular Momentum Conservation]] | Verifying angular momentum conservation with a rotating platform |
+| [[PS 7 Angular Momentum and Static Equilibrium]] | 20 problems on angular momentum and static equilibrium |
+| [[QUIZ 7 Angular Momentum and Static Equilibrium]] | 10-question quiz (administered Monday, Week 8) |
+| [[PHYS141 Week7/resources/Resources\|Resources]] | Textbook references, deeper reading |
+| [[PHYS141 Week7/solutions_instructor/PS 7 Solutions\|PS 7 Solutions]] | Full worked solutions (instructor only) |
 
 ---
 

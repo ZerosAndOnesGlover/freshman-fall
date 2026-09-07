@@ -9,14 +9,14 @@
 
 | File | Description |
 |------|-------------|
-| `lectures/L04 Position Displacement Velocity.md` | Position, displacement, average vs. instantaneous velocity; the derivative |
-| `lectures/L05 Acceleration and Motion Equations.md` | Acceleration; deriving the constant-acceleration kinematic equations from calculus |
-| `lectures/L06 Free Fall and Graphical Analysis.md` | Free fall, g, sign conventions; reading and drawing motion graphs |
-| `lab/LAB 1 Constant Acceleration.md` | Measuring g with a free-fall apparatus; graphing v(t) and extracting acceleration |
-| `assignments/PS 1 Kinematics in One Dimension.md` | 20 problems on 1D kinematics |
-| `quiz/QUIZ 1 Kinematics in One Dimension.md` | 10-question quiz (administered Monday, Week 2) |
-| `resources/Resources.md` | Textbook references, simulations, deeper reading |
-| `solutions_instructor/PS 1 Solutions.md` | Full worked solutions |
+| [[L04 Position Displacement Velocity]] | Position, displacement, average vs. instantaneous velocity; the derivative |
+| [[L05 Acceleration and Motion Equations]] | Acceleration; deriving the constant-acceleration kinematic equations from calculus |
+| [[L06 Free Fall and Graphical Analysis]] | Free fall, g, sign conventions; reading and drawing motion graphs |
+| [[LAB 1 Constant Acceleration]] | Measuring g with a free-fall apparatus; graphing v(t) and extracting acceleration |
+| [[PS 1 Kinematics in One Dimension]] | 20 problems on 1D kinematics |
+| [[QUIZ 1 Kinematics in One Dimension]] | 10-question quiz (administered Monday, Week 2) |
+| [[PHYS141 Week1/resources/Resources\|Resources]] | Textbook references, simulations, deeper reading |
+| [[PHYS141 Week1/solutions_instructor/PS 1 Solutions\|PS 1 Solutions]] | Full worked solutions |
 
 ---
 

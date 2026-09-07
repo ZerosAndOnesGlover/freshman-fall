@@ -9,15 +9,15 @@
 
 | File | Description |
 |------|-------------|
-| `lectures/L25 Simple Harmonic Motion.md` | $F=-kx$; the SHM solution, energy, and why every potential minimum oscillates harmonically |
-| `lectures/L26 Pendulums and Physical Oscillators.md` | Simple, physical, and torsional pendulums; the small-angle approximation quantified |
-| `lectures/L27 Damped and Driven Oscillations.md` | Damping regimes, quality factor, driven response, and resonance |
-| `lab/LAB 8 The Simple Pendulum and SHM.md` | Determining $g$ from $T^2$ vs $L$; amplitude and mass dependence; spring constant two ways; damping |
-| `assignments/PS 8 Simple Harmonic Motion and Oscillators.md` | 20 problems on SHM, pendulums, damping, and resonance |
-| `quiz/QUIZ 8 Simple Harmonic Motion and Oscillators.md` | 10-question quiz (administered Monday, Week 9) |
-| `resources/Resources.md` | Textbook references, simulations, deeper reading |
-| `solutions_instructor/PS 8 Solutions.md` | Full worked solutions (instructor only) |
-| `solutions_instructor/LAB 8 Solutions.md` | Expected data, analysis answers, systematic errors to look for |
+| [[L25 Simple Harmonic Motion]] | $F=-kx$; the SHM solution, energy, and why every potential minimum oscillates harmonically |
+| [[L26 Pendulums and Physical Oscillators]] | Simple, physical, and torsional pendulums; the small-angle approximation quantified |
+| [[L27 Damped and Driven Oscillations]] | Damping regimes, quality factor, driven response, and resonance |
+| [[LAB 8 The Simple Pendulum and SHM]] | Determining $g$ from $T^2$ vs $L$; amplitude and mass dependence; spring constant two ways; damping |
+| [[PS 8 Simple Harmonic Motion and Oscillators]] | 20 problems on SHM, pendulums, damping, and resonance |
+| [[QUIZ 8 Simple Harmonic Motion and Oscillators]] | 10-question quiz (administered Monday, Week 9) |
+| [[PHYS141 Week8/resources/Resources\|Resources]] | Textbook references, simulations, deeper reading |
+| [[PHYS141 Week8/solutions_instructor/PS 8 Solutions\|PS 8 Solutions]] | Full worked solutions (instructor only) |
+| [[PHYS141 Week8/solutions_instructor/LAB 8 Solutions\|LAB 8 Solutions]] | Expected data, analysis answers, systematic errors to look for |
 
 ---
 

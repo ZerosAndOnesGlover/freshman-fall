@@ -45,16 +45,16 @@ By the end of Week 9, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L19 What Concurrent Code Even Means.md` | Sequential consistency, **the impossible outcome measured**, the store buffer, x86-TSO, **the compiler's `jmp .L6`**, undefined behaviour, happens-before |
-| `lectures/L20 The Models That Take the Problem Away.md` | Memory models as contracts, C11 orders **measured**, the JMM, x86 against ARM, locks, **actors measured**, STM, async/await, TSan |
-| `assignments/PS 9 A Mini Actor System.md` | Reproduce the impossible, break the compiler's assumptions, then build request/reply, supervision and a pipeline |
-| `assignments/QUIZ 9 Week 9 Tuesday.md` | **Covers Week 8.** Six questions, key printed below them |
-| `lab/LAB 9 Memory Ordering Bugs You Can Reproduce.md` | Four parts, one of which is about the machines we do not have |
+| [[L19 What Concurrent Code Even Means]] | Sequential consistency, **the impossible outcome measured**, the store buffer, x86-TSO, **the compiler's `jmp .L6`**, undefined behaviour, happens-before |
+| [[L20 The Models That Take the Problem Away]] | Memory models as contracts, C11 orders **measured**, the JMM, x86 against ARM, locks, **actors measured**, STM, async/await, TSan |
+| [[PS 9 A Mini Actor System]] | Reproduce the impossible, break the compiler's assumptions, then build request/reply, supervision and a pipeline |
+| [[QUIZ 9 Week 9 Tuesday]] | **Covers Week 8.** Six questions, key printed below them |
+| [[LAB 9 Memory Ordering Bugs You Can Reproduce]] | Four parts, one of which is about the machines we do not have |
 | `lab/litmus.c` | The store-buffer test. **Padding and persistent threads are both load-bearing** |
 | `lab/orders.c` | Five ways to count to four million; only one is wrong, and it is the fastest |
 | `lab/hoist.c` · `Hoist.java` | The same bug in C and in a memory-safe language |
 | `lab/actors.py` | Shared state removed rather than managed — and the lock relocated, not eliminated |
-| `resources/Reading Guide Week 9.md` | Adve & Boehm 2010 · Boehm 2005 · x86-TSO · JMM · Armstrong ch. 2 |
+| [[CS211 Week9/resources/Reading Guide Week 9\|Reading Guide Week 9]] | Adve & Boehm 2010 · Boehm 2005 · x86-TSO · JMM · Armstrong ch. 2 |
 | `solutions_instructor/` | Instructor only |
 
 ---
@@ -90,7 +90,7 @@ And it was entitled to. `ready` is an ordinary `int`, nothing in the loop writes
 
 **Labs and quizzes carry no weight**, and both are required. **Quiz 9 is sat Tuesday and covers Week 8. Lab 9 is Friday and covers this week.**
 
-Both are tracked in `5. Academic Registry/2. Gradebook/Year2 Sophomore/Fall/_CS 211 Lab and Quiz Record.md`. **PS 9 is a weighted component** and goes in `CS 211.md`.
+Both are tracked in [[_CS 211 Lab and Quiz Record]]. **PS 9 is a weighted component** and goes in [[CS 211]].
 
 **PS 9 is released Wednesday and due Friday of Week 10.** **Midterm 2 results** are returned this week; the mark scheme's grade guidance is in `solutions_instructor/`.
 

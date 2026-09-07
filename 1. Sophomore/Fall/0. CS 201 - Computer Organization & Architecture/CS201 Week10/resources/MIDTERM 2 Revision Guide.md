@@ -101,7 +101,7 @@ Errors that recurred across five weeks of problem sets:
 
 | Day | Do |
 |---|---|
-| 1 | Re-read the five `summary.md` files (Weeks 5–9). Build your sheet from memory |
+| 1 | Re-read the five [[CS201 Week10/summary\|summary]] files (Weeks 5–9). Build your sheet from memory |
 | 2 | Redo PS 5 (hazards, Amdahl) and PS 6 Q1 (translation) |
 | 3 | Redo PS 7 Q4–Q5 (storage numbers) and PS 8 Q4 (Nagle) |
 | 4 | Redo PS 9 Q1–Q2 (overflow, arms race) |

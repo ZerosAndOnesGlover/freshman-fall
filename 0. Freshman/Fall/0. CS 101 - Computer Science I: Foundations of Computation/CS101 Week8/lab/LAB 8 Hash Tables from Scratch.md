@@ -22,8 +22,8 @@ By the end of this lab, you will:
 ## Setup
 
 ```bash
-cd ~/cs101
-mkdir week8 && cd week8
+cd "$CS101"        # set in ~/.bashrc -- see Lab 0
+mkdir -p week8 && cd week8
 pip install matplotlib --user   # if not already installed
 ```
 
@@ -655,7 +655,7 @@ Run it and **record in `LAB 8 Hash Tables from Scratch.md`:**
 ## Part 7: Commit and Reflection (10 minutes)
 
 ```bash
-cd ~/cs101/week8
+cd "$CS101/week8"
 git add .
 git commit -m "Week 8 Lab: hash tables from scratch, load factor experiments, dict patterns"
 git push

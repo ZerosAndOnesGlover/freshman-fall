@@ -3,7 +3,7 @@
 
 **Released:** End of Week 7 Thursday
 **Due:** Before Week 8 Lecture 1
-**Directory:** `~/prog101/week4/ps4/`
+**Directory:** `$PROG101/week7/ps7/`
 **Total:** 100 points
 
 ---
@@ -365,7 +365,7 @@ clean:
 ## Submission
 
 ```bash
-cd ~/prog101/week4/ps4
+cd "$PROG101/week7/ps7"
 git add .
 git commit -m "PS4 complete: structs, unions, linked lists, enums"
 ```

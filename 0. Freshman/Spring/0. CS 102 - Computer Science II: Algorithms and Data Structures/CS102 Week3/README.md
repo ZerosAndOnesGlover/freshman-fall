@@ -49,13 +49,13 @@ By the end of Week 3, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L10 The Heap Property and the Array Representation.md` | The two invariants, index arithmetic, sift-up and sift-down |
-| `lectures/L11 Building a Heap in Linear Time and Heap Sort.md` | The $\Theta(n)$ build proved and measured; heap sort against merge sort |
-| `lectures/L12 Priority Queues and Their Applications.md` | The ADT, `heapq`, `decrease_key`, top-$k$, Dijkstra, scheduling |
-| `assignments/PS 3 Heaps and Priority Queues.md` | 100 points, due Friday of Week 4 |
-| `assignments/QUIZ 3 Week 3 Monday.md` | 20 points, formative — **covers Week 2** |
-| `lab/LAB 3 Heap Sort versus Merge Sort.md` | Reproduce the comparison, then find what the comparison count cannot see |
-| `resources/Reading Guide Week 3.md` | CLRS Chapter 6, with the indexing warning to read first |
+| [[L10 The Heap Property and the Array Representation]] | The two invariants, index arithmetic, sift-up and sift-down |
+| [[L11 Building a Heap in Linear Time and Heap Sort]] | The $\Theta(n)$ build proved and measured; heap sort against merge sort |
+| [[L12 Priority Queues and Their Applications]] | The ADT, `heapq`, `decrease_key`, top-$k$, Dijkstra, scheduling |
+| [[PS 3 Heaps and Priority Queues]] | 100 points, due Friday of Week 4 |
+| [[CS102 Week3/assignments/QUIZ 3 Week 3 Monday\|QUIZ 3 Week 3 Monday]] | 20 points, formative — **covers Week 2** |
+| [[LAB 3 Heap Sort versus Merge Sort]] | Reproduce the comparison, then find what the comparison count cannot see |
+| [[CS102 Week3/resources/Reading Guide Week 3\|Reading Guide Week 3]] | CLRS Chapter 6, with the indexing warning to read first |
 | `solutions_instructor/` | PS 3 and Lab 3 solutions — instructor only |
 
 ### The Three Ideas Most Likely to Be Missed

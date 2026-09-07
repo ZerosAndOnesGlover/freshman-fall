@@ -49,15 +49,15 @@ By the end of Week 1, you should be able to:
 
 | File | Purpose |
 | --- | --- |
-| `lectures/L04 Operator Overloading.md` | Syntax, member vs free, symmetry, `<<`, `[]`, `()`, and when not to |
-| `lectures/L05 Copy Semantics and the Rule of Three.md` | Shallow vs deep, the generated copy constructor, self-assignment traced |
-| `lectures/L06 The Copy-Swap Idiom.md` | Copy-swap, copy elision measured, and a first look at moves |
-| `assignments/PS 1 A Vector3D Class.md` | Due Friday of Week 2 |
-| `assignments/QUIZ 1 Week 1 Monday.md` | 15 minutes, start of Monday's lecture |
-| `lab/LAB 1 Debugging Copy Semantics.md` | Instrument a class and count every copy it makes |
-| `resources/Reading Guide Week 1.md` | *C++ Primer* Ch. 13–14, and the commands to reproduce every measurement |
-| `solutions_instructor/PS 1 Solutions.md` | Instructor only |
-| `solutions_instructor/LAB 1 Solutions.md` | Instructor only |
+| [[L04 Operator Overloading]] | Syntax, member vs free, symmetry, `<<`, `[]`, `()`, and when not to |
+| [[L05 Copy Semantics and the Rule of Three]] | Shallow vs deep, the generated copy constructor, self-assignment traced |
+| [[L06 The Copy-Swap Idiom]] | Copy-swap, copy elision measured, and a first look at moves |
+| [[PS 1 A Vector3D Class]] | Due Friday of Week 2 |
+| [[PROG102 Week1/assignments/QUIZ 1 Week 1 Monday\|QUIZ 1 Week 1 Monday]] | 15 minutes, start of Monday's lecture |
+| [[LAB 1 Debugging Copy Semantics]] | Instrument a class and count every copy it makes |
+| [[PROG102 Week1/resources/Reading Guide Week 1\|Reading Guide Week 1]] | *C++ Primer* Ch. 13–14, and the commands to reproduce every measurement |
+| [[PROG102 Week1/solutions_instructor/PS 1 Solutions\|PS 1 Solutions]] | Instructor only |
+| [[PROG102 Week1/solutions_instructor/LAB 1 Solutions\|LAB 1 Solutions]] | Instructor only |
 
 ### The One Thing to Take From This Week
 

@@ -177,7 +177,7 @@ PS 10 has one.
   in Week 3.
 - **PS 10** implements KMP and the failure function, and verifies both against their definitions.
 - **Quiz 10 covers Week 9** — greedy and Huffman. Not this material.
-- **MIDTERM 2 is this week**, covering Weeks 5–9. See `resources/MIDTERM 2 Revision Guide.md`.
+- **MIDTERM 2 is this week**, covering Weeks 5–9. See [[CS102 Week10/resources/MIDTERM 2 Revision Guide|MIDTERM 2 Revision Guide]].
 - **PROJECT 2 is assigned this week** and due Friday of Week 12.
 - Next lecture: Rabin–Karp and Boyer–Moore — one algorithm that hashes and one that skips.
 
