@@ -185,4 +185,105 @@ built.**
 
 ---
 
+## 8. Week 3 could not be built as the curriculum specifies, and the reason is worth the whole lab
+
+The curriculum sets **"Lab 3: Demonstrate priority inversion and its fix (priority inheritance)."**
+The first half works and is spectacular. **The second half cannot be done on these machines**, and
+finding out why turned out to be better material than the lab that was asked for.
+
+`RLIMIT_RTPRIO` is **0, soft and hard**, so `sched_setscheduler(SCHED_FIFO)` returns `EPERM`.
+Linux implements priority inheritance in `rt_mutex`, which reorders waiters by *realtime* priority;
+a `SCHED_OTHER` thread has none, so the protocol has nothing to boost. Measured:
+
+| configuration | H waited |
+|---|---|
+| baseline, no medium threads | 0.489 / 0.495 / 0.488 s |
+| **3 burners, L at nice 19** | **100.607 s** |
+| the same, with `PTHREAD_PRIO_INHERIT` | 100.392 s — **no effect** |
+
+And nothing reports a failure: `pthread_mutexattr_setprotocol` returns 0, `pthread_mutex_init`
+returns 0, and `pthread_mutexattr_getprotocol` reads back `PRIO_INHERIT`.
+
+**The lab was rebuilt around that** rather than around a demonstration that cannot happen. Students
+run a diagnostic first (`rtcheck.c`), predict from it, apply the documented fix, watch it do
+nothing, and then apply the two fixes that do work — equal priorities and short critical sections.
+The syllabus records the deviation. *(`/etc/security/limits.d/25-pw-rlimits.conf` grants the
+`pipewire` group `rtprio 95`, so the mechanism is present and configured for somebody. Granting it
+to students was rejected: an unprivileged `SCHED_FIFO` thread that spins wedges a core, and BH 215
+is a shared room.)*
+
+### Lab 3 and Midterm 1 are on the same day
+
+[[Year2 - Sophomore/ASSESSMENT CALENDAR|ASSESSMENT CALENDAR]]'s week map puts **Week 4 at Sep 29**, and the midterm row reads
+`W4 | Sep 29 | PROG 201 | Midterm 1 | 18:00–19:30 · Weeks 0–3`. [[ACADEMIC CALENDAR]] agrees:
+"Mon Sep 29 — PROG 201 Midterm 1". PROG 201's lab is Monday 15:00–16:50 and Lab *N* is sat in
+Week *N+1*, so **Lab 3 ends at 16:50 and the paper covering its material starts seventy minutes
+later.**
+
+Not resolved here, because nothing is obviously wrong: Lab 3 is the last teaching on Weeks 0–3 and
+sitting it three hours before the paper is arguably good. **It is recorded so that whoever
+timetables Year 3 sees the pattern**, and because the same shape recurs — CS 211's Midterm 1 is the
+Tuesday of Week 4, the afternoon of CS 201's lab. Both the lab sheet and the Week 3 README say so
+plainly, so a student is not surprised by it.
+
+*(A first pass at this wrote "Midterm 1 is this Thursday" in the lab sheet, which was wrong twice
+over: the registry's model puts it on the Monday, and course material is supposed to quote week
+numbers rather than weekdays — §5's rule. Corrected.)*
+
+---
+
+## 9. Every number in Week 3 was measured on the reference machine
+
+Same machine as §6 and §7 — and this week the machine's shape matters to the results, so: **Intel
+i5-8250U, 4 physical cores, 8 hardware threads**, cgroup `pids.max` 7,671, `RLIMIT_NPROC` 25,571.
+
+| Claim | Program | Result |
+|---|---|---|
+| What threads share and what they do not | `shared.c` | one `global`, two `__thread`, **two `errno`**, one file offset, one PID, two TIDs |
+| A thread is cheaper than a process, but not by much | `cost.c` | `pthread_create`+`join` **29.21 µs** against `fork`+`wait` **163.64 µs** — 5.6× |
+| A bigger stack is address space, not memory | `cost.c` | 64 MiB stack costs 1.8× the default's 29 µs; default stack is 8,192 KiB |
+| **A smaller stack does not buy more threads** | `maxthreads.c` | **7,643** threads at 8 MiB, **7,644** at 64 KiB — the limit is the cgroup's `pids.max` of 7,671 |
+| The lost-update race, with threads | `race.c` | **70.7% of 800,000** increments lost; Week 2's processes lost 64.7% |
+| Wrong is faster than right | `race.c` | unguarded 0.0006 s, mutex 0.0529 s — **88×** |
+| What each primitive costs, uncontended | `primcost.c` | plain `++` 1.6 ns · atomic 5.4 · **mutex 8.2** · spin 8.4 · errorcheck 11.3 · rwlock rd 18.6 · sem 19.2 · rwlock wr 28.5 · `getpid()` 568.4 |
+| **Wakeups that find nothing to do are common** | `cv.c` | **7.12%** with `signal`, 6.28% with `broadcast`, 8 consumers / 200,000 items |
+| glibc's broadcast requeues rather than stampedes | `cv.c` + `strace` | broadcast: 537,988 futex calls in 0.138 s; signal: 423,342 in 0.250 s |
+| **One condition variable, two predicates, `signal`** | `onecv.c` | **wedges**; `broadcast` completes 80,000 items |
+| A reader-writer lock can be a pessimisation | `rw.c` | **0.52×** a mutex at 2 threads with an empty critical section; **4.15×** with 100 units of work |
+| Priority inversion | `inversion.c` | **0.489 s → 100.607 s**, and CFS weights predict 100.6 |
+| **`PTHREAD_PRIO_INHERIT` is inert here** | `inversion.c`, `rtcheck.c` | 100.392 s with it; every call returns success |
+| The fixes that work | `inversion.c` | nice 0: **1.946/1.947/1.941 s**. 100 chunks: 0.534/0.487/0.899 s. Both: 0.012 s |
+| A thread pool against thread-per-task | `pool.c` | **45.6×** at 0 units, 35.6× at 100, 7.3× at 10,000 |
+| Pool size follows the cores, not the tasks | `pool.c` | 1→57k, 2→92k, **4→167k**, 8→96k, 16→96k tasks/s |
+| A pool with trivial tasks is a lock benchmark | `pool.c` | 1 worker 4.10 M/s falling monotonically to 805 k/s at 8 |
+| False sharing | `falseshare.c` | **1.55×** slower below 64 bytes of stride; the step is exactly at the cache line |
+| C11 threads are present and less useful | `c11.c` | `<threads.h>` works, and **without `-pthread`** — glibc ≥ 2.34 |
+
+### The three that contradict something
+
+1. **"Reduce the thread stack size to fit more threads."** Standard advice, and it bought exactly
+   one extra thread out of 7,643. It is advice about 32-bit address space exhaustion and it is
+   thirty years out of date on this machine. The binding limit is the **cgroup**, which nobody
+   checks and which Week 11 will explain.
+
+2. **"`broadcast` causes a thundering herd, so prefer `signal`."** glibc's `pthread_cond_broadcast`
+   requeues waiters onto the mutex, so broadcast made 27% *more* futex calls and finished in 55% of
+   the wall clock. The reason to prefer `signal` is not cost; and there is a case — one condition
+   variable serving two predicates — where `signal` **deadlocks** and only `broadcast` survives.
+   L11 §5 keeps the rule and replaces its justification.
+
+3. **"Priority inheritance fixes priority inversion."** True, and inapplicable, and silently so.
+   This is §8, and it is the deviation recorded in the syllabus.
+
+### A methodological note worth keeping
+
+**`inversion.c`'s critical section had to be a fixed amount of *work*, not a fixed amount of time.**
+A first version used `while (elapsed < 0.5)`, and the inversion barely registered — 0.544 s against
+a 0.500 s baseline — because starving a thread that loops until the clock says stop changes nothing
+about when the clock says stop. With a fixed iteration count the same experiment gives 100.6 s.
+The skeleton's `work()` carries a comment saying so, because a student who "simplifies" it back to
+a sleep will measure nothing and have no way to know why.
+
+---
+
 *Academic Registry · Build Records · Year 2 Sophomore · © CSE Department*
