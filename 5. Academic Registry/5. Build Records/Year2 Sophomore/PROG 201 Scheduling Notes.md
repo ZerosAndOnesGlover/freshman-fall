@@ -456,4 +456,85 @@ reporting that it did not measure what you think.*
 
 ---
 
+## 13. PS 6 and Project 1 are the same program, so the build split them
+
+The curriculum lists, in the same week:
+
+- **"Problem Set 6: Implement a shell (tsh) with pipelines, I/O redirection, background jobs."**
+- **"Project 1 assigned"** — which [[Year2 - Sophomore/ASSESSMENT CALENDAR|ASSESSMENT CALENDAR]] names as *Unix shell (tsh)*, due W9, worth 12.5%.
+
+**That is one deliverable asked for twice**, three weeks apart, and setting both as written would have students submit the same program in Week 7 and again in Week 9.
+
+**Resolved by splitting it along the seam the material already has:**
+
+| | Scope | Due |
+|---|---|---|
+| **PS 6** | tokeniser, parser, *n*-stage pipelines, four redirections, `&`, builtins. **Job control explicitly out of scope** | Friday of Week 7 |
+| **Lab 6** | the job table, `jobs`/`fg`/`bg`, `WUNTRACED`, `tcsetpgrp` — on a provided skeleton | Monday of Week 7 |
+| **Project 1** | the complete shell: PS 6 + Lab 6 + robustness + a test suite + a write-up | Friday of Week 9 |
+
+PS 6 tells students to write it so Project 1 can build on it; Project 1 says reusing their own PS 6 and Lab 6 **in full** is expected and is what those pieces were for. The PS 6 solutions tell markers **not to award marks for job control appearing early** — a student who spent that week on `fg` has usually done the parser thinly.
+
+This preserves the curriculum's totals (PS 6 is still a problem set, Project 1 is still 12.5%) and its topics, and removes the duplication. **The alternative — making PS 6 something other than a shell — was rejected** because the curriculum's Week 6 has no second topic and the shell is what the lectures build toward.
+
+---
+
+## 14. Every number in Week 6 was measured on the reference machine
+
+Same machine as §6, §7, §9, §10 and §12. **Everything in this week needs a controlling terminal**;
+the session runs non-interactively, so the job-control experiments were driven through a
+pseudo-terminal (`script -qc`, and Python's `pty.fork()` for the scripted ones). A pty behaves
+identically to BH 215's terminals for every property this week uses.
+
+| Claim | Program | Result |
+|---|---|---|
+| `fork` inherits the group and session | `groups.c` | child pgid = sid = parent's; still foreground |
+| `setpgid(0,0)` leaves the foreground | `groups.c` | new pgid, same sid, `tcgetpgrp` is now somebody else's |
+| **`setsid()` loses the controlling terminal** | `groups.c` | new pgid **and** sid, and **`tcgetpgrp` returns −1** |
+| A pipeline is one group | `groups.c` | two stages, different pids, **pgid = stage 0's pid** |
+| **A background group may not read** | `ttyctl.c` | `read` → **stopped by `SIGTTIN`** |
+| ...may write, by default | `ttyctl.c` | `write` → **exited 0**; with `TOSTOP` set → stopped by `SIGTTOU` |
+| ...and may never change terminal settings | `ttyctl.c` | `tcsetattr` → **stopped by `SIGTTOU`, regardless of `TOSTOP`** |
+| The minus sign is the difference | `groupsig.c` | `kill(pid)` hit 1 of 3; `kill(-pgid)` hit all 3 and left another group alone |
+| **A builtin against an external command** | `tsh` | 2,000 builtins in **under 10 ms**; 2,000 `/bin/true` in **1.91 s** — 955 µs each |
+| Where the 955 µs goes | `cmdcost.c` | `fork`+`_exit`+`wait` **127.1 µs**; +`exec /bin/true` **779.2 µs**; `/bin/sh -c` **919.2 µs** |
+| **The dynamic linker's share** | `cmdcost.c` | trivial binary **dynamic 679.3 µs**, **static 532.4 µs** — 147 µs, 22% |
+| Job control, end to end | `tsh` over a pty | Ctrl-Z reports `Stopped`; `bg` resumes; a 3-stage pipeline is one job; Ctrl-C kills the job and the shell survives |
+
+### The bug the reference shell had, kept as the lab's set piece
+
+The obvious way to attribute a reaped process to a job is
+
+```c
+pid_t p = waitpid(-1, &st, ...);
+struct job *j = job_by_pgid(getpgid(p));      /* <- wrong */
+```
+
+and it **silently does not work**: `waitpid` has just reaped `p`, so `getpgid(p)` fails with
+`ESRCH`. The symptom in the reference was exact and unhelpful — `kill %1` genuinely killed the
+process and `jobs` listed it as Running for ever.
+
+The fix is to record every pid in the job and look up by pid. **Lab 6 keeps the trap**: the skeleton
+provides `job_by_pid` as the stub to implement and the lab sheet says only that it is "by PID and
+not by pgid — L21 §5 says why, or find out for yourself". It is Q4, and the solutions tell TAs to
+let students reach it rather than warning them.
+
+It is the same class as Week 1's `lseek`-then-`write` and PS 5's `stat`-then-`open`: **a question
+about a thing that changed between the asking and the using.**
+
+### Two other findings worth recording
+
+**A shell must tolerate already being a session leader.** `setpgid` fails with `EPERM` on a session
+leader, and a shell started under `script` or `pty.fork()` already is one. The reference exited with
+`setpgid: Operation not permitted` the first time it was driven over a pty; the fix is a
+`getpgrp() != shell_pgid` guard. **Project 1's marking notes make this a test**, because it is
+exactly the failure a student who only ever ran their shell by hand will have.
+
+**`WUNTRACED`'s absence is a hang, not an error.** The Lab 6 skeleton deliberately ships without it,
+and the first thing the lab does is press Ctrl-Z and watch the shell stop responding — with both
+processes behaving correctly and nothing to see in the shell's own output. `ps -o stat` showing `T`
+and `S` is the whole diagnosis, which is why the week's habit is the process table.
+
+---
+
 *Academic Registry · Build Records · Year 2 Sophomore · © CSE Department*
