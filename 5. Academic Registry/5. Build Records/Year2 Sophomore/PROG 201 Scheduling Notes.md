@@ -286,4 +286,79 @@ a sleep will measure nothing and have no way to know why.
 
 ---
 
+## 10. Every number in Week 4 was measured on the reference machine
+
+Same machine as §6, §7 and §9. Two of its properties matter to the results and are recorded here so
+a reader knows why their own numbers differ: **7 GiB of RAM with about 2 GiB free**, and
+**`/sys/kernel/mm/transparent_hugepage/enabled` set to `madvise`** rather than `always`.
+
+| Claim | Program | Result |
+|---|---|---|
+| Address space is free | `rss.c` | 4 GiB mapped: `VmSize` 4,098 MiB, **`VmRSS` 1 MiB** |
+| Reading untouched anonymous memory is free | `rss.c` | reading 1 GiB of it left RSS at **1 MiB** — the shared zero page |
+| Writing is what costs | `rss.c` | writing the same GiB took RSS to **1,025 MiB** |
+| **`MADV_DONTNEED` destroys data** | `rss.c` | RSS back to 1 MiB and the first byte reads 0 |
+| A minor fault against a store | `faultcost.c` | **1,880 ns** against **18.7 ns** — about 100× |
+| A major fault | `faultcost.c` | **563 µs**, from a random walk over a cold file |
+| **Readahead decides everything** | `faultcost.c` | same cold 256 MiB: **0.174 s sequential, 1.575 s random** |
+| File mappings fault in batches | `faultcount.c` | **132 pages per fault** file-backed; **exactly 1** anonymous |
+| `mmap` against `read` | `readvsmap.c` | 0.181 s (4 KiB reads) / 0.057 s (1 MiB reads) / **0.007 s** (mmap) / 0.001 s (`MAP_POPULATE`) |
+| `MAP_PRIVATE` writes do not reach the file | `sharedmap.c` | `read()` still returns what the `MAP_SHARED` mapping wrote |
+| Writing a file, two ways | `sharedmap.c` | `pwrite`+`fsync` **747 MiB/s**; `MAP_SHARED`+`msync` **948 MiB/s** |
+| **The `mmap` threshold is not 128 KiB** | `one.c` | largest `brk` allocation **134,472**, smallest `mmap` **134,473** |
+| `malloc` calls the kernel rarely | `where.c` + `strace` | **3 `brk` calls for 6 small allocations**; one `mmap`/`munmap` pair each for 1 MiB and 16 MiB |
+| A guard page | `protect.c` | offset 4,092 fine, 4,096 `SIGSEGV` |
+| A write barrier | `protect.c` | **7 stores to 4 pages → 4 faults**; the second store to a page is free |
+| A JIT is 17 bytes | `jit0.c` | `48 89 f8 48 69 c0 03 …`, `f(10) = 37` |
+| **W^X is not enforced here** | `jit0.c` | calling a `W` page and writing an `X` page both `SIGSEGV`; **`PROT_WRITE\|PROT_EXEC` is allowed** |
+| Huge pages | `hugepage.c` | **42.7 → 32.3 ns** per random touch, 1.32×, with only **114 MiB of 512** promoted |
+| `SIGBUS` from under a live mapping | `truncate.c` | truncate the file and the same read that worked is a **Bus error** |
+| An allocator against glibc | `mymalloc.c`, `mtest.c` | **0.88×**, **0.48×**, and **339×** on a fragmenting workload |
+| A JIT against an interpreter | Lab 4's `jit.c` | JIT 2.08–2.22 ns, C loop 2.08–2.09 ns (**a tie**), bytecode VM 11.38–11.63 ns (**5.5×**) |
+
+### The three that contradict something
+
+1. **"`malloc` switches to `mmap` at 128 KiB."** Documented, and the measured boundary is
+   **134,473** — 3,401 bytes higher — because the threshold applies to the *chunk* after the top
+   chunk has failed, and glibc had already grown the arena to 132 KiB. It also **moves at runtime**:
+   glibc raises it, up to 32 MiB, when it sees large blocks freed. L14 §4 states the documented
+   number, the measured one, and the reason they differ.
+
+2. **"Reduce the stack size / mapping size to save memory."** `rss.c` shows the mapping is not the
+   cost — 4 GiB of address space cost 1 MiB of RSS, and reading a gigabyte of it cost nothing at
+   all. This is Week 3's thread-stack finding (§9) with the mechanism made visible, and the two are
+   cross-referenced in both lectures.
+
+3. **"A JIT is faster than compiled code."** Measured, the JIT **tied** `gcc -O2` and beat the
+   bytecode VM by 5.5×. The tie is not a defect in the emitter: the coefficients are `const` at
+   file scope, so gcc had already specialised `horner` exactly as the JIT does. Lab 4 Q6 is built
+   on this, and the lab extension — coefficients from `argv` — is the case where the compiler
+   genuinely cannot know.
+
+### One thing the curriculum lists that cannot be done as written
+
+The Week 4 syllabus includes **"memory-mapped I/O for device registers"** and **"writing to and
+reading from specific virtual addresses that the hardware monitors"**. On BH 215 that needs
+`/dev/mem` (root, and disabled by `CONFIG_STRICT_DEVMEM` on this kernel) or a VFIO/UIO binding to a
+real device, neither of which is available to a student account or appropriate on a shared machine.
+
+**L15 §8 covers it as a reading rather than an exercise** — the physical-address mapping, why
+`volatile` is necessary and why it is not sufficient, and where `readl`/`writel` come in. The
+practical work in that lecture is `mprotect` and the JIT, which exercise the same API. Recorded in
+the syllabus as a deviation.
+
+### A methodological note, and it caught three programs
+
+**Every timing loop this week had to have its result printed.** Three of the measurement programs
+first reported `0.000 s` — `readvsmap.c`, `falseshare.c` in Week 3, and `faultcost.c`'s random walk
+— because the accumulator was never used afterwards and gcc deleted the loop. The first version of
+`readvsmap.c` also reported **0 minor faults for a 512 MiB mapping**, which should have been the
+tell rather than the timing.
+
+The rule the build now follows: **a benchmark that reports an impossible number is reporting that
+it did not run.** Print the checksum, and check the fault count against the page count before
+believing the seconds.
+
+---
+
 *Academic Registry · Build Records · Year 2 Sophomore · © CSE Department*
