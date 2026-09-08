@@ -537,4 +537,87 @@ and `S` is the whole diagnosis, which is why the week's habit is the process tab
 
 ---
 
+## 15. The lab/midterm collision is systematic, not accidental
+
+§8 recorded that **Lab 3 and Midterm 1** fall on the same Monday. §11 recorded that **Lab 5 and PS 5's
+deadline** fall on the same Friday. Building Week 7 produced the third:
+
+| | Lab | Midterm |
+|---|---|---|
+| Monday of Week 4 | **Lab 3**, 15:00–16:50 | **Midterm 1**, 18:00–19:30 (Weeks 0–3) |
+| Monday of Week 8 | **Lab 7**, 15:00–16:50 | **Midterm 2**, 18:00–19:30 (Weeks 4–7) |
+
+**This is not a coincidence and it will recur every year.** PROG 201's lab is on a Monday
+([[Year2 - Sophomore/ROOM ASSIGNMENTS|ROOM ASSIGNMENTS]]) and both its midterms are on Mondays ([[Year2 - Sophomore/ASSESSMENT CALENDAR|ASSESSMENT CALENDAR]]), so **every
+midterm collides with a lab**, and it is always the lab covering the last week the paper examines.
+
+Still not resolved here, for the reason §8 gave: the lab is the last teaching on the paper's
+material and sitting it three hours before is arguably good. But **it should be a timetabling
+decision rather than an accident**, and the pattern is now stated once rather than being
+rediscovered per week. Three cheap fixes, in increasing cost:
+
+| Option | Cost |
+|---|---|
+| Move both midterms to the **Tuesday** evening | CS 211's Midterm 1 is already Tuesday of Week 4; two papers in one evening |
+| Move both midterms to the **Wednesday** evening | MATH 241's Midterm 1 is Wednesday of Week 6, but not Weeks 4 or 8 — **this one is free** |
+| Move the lab in those two weeks | Breaks the "labs are Mondays" rule the whole course is built on |
+
+**The Wednesday option is available in both weeks** and costs nothing that the calendar shows.
+Recorded for whoever timetables Year 3; the Week 4, 7 and 8 material all says plainly that the two
+land together, so no student is surprised by it in the meantime.
+
+---
+
+## 16. Every number in Week 7 was measured on the reference machine
+
+Same machine as §6, §7, §9, §10, §12 and §14. Root filesystem is **ext4 on NVMe, mounted
+`noatime`**, which matters for two of these. **Nothing this week needed root**: `mke2fs`, `debugfs`,
+`dumpe2fs`, `e2fsck` and `tune2fs` all operate on an ordinary file, and only `mount(8)` does not —
+so the whole of Lab 7 runs from a student account, which is what made the lab possible at all.
+
+| Claim | Program | Result |
+|---|---|---|
+| One API over many filesystems | `vfs.c` | six `f_type`s from one `statfs`; **`proc` and `sysfs` report 0 blocks** |
+| **`st_size` is a lie on `procfs`** | `vfs.c` | `/proc/self/stat`: `st_size` 0, and `read` returns 40 bytes |
+| Two names, one inode | `links.c` | `a.txt` and `b.txt` share inode 3539906, `links 2` |
+| Removing a name is not deleting a file | `links.c` | hard link survives with `links 1`; the symlink **dangles** |
+| Blocks are freed on the **last close**, not the last unlink | `links.c` | readable through the descriptor; `/proc/self/fd/3 -> ... (deleted)` |
+| Link restrictions | `links.c` | hard link to a directory → **`EPERM`**; symlink → allowed |
+| **A short symlink lives in the inode** | `debugfs` | 14-byte target: `Blockcount: 0`, `Fast link dest`. 75-byte target: 1 block |
+| **ext2's indirect blocks** | `debugfs` on an ext2 image | 5,000,000 B: `12 direct + IND + DIND + 19 IND`; 4,883 data + **21 pointer blocks** |
+| 256 pointers per 1 KiB block | `debugfs` | each `(IND)` covers exactly 256 blocks; max file **16 GiB** at 1 KiB blocks |
+| **ext4's extents** | `debugfs` | the same file in **2 records, 0 pointer blocks**; a 200,000 B file in **one** |
+| Filesystem overhead | `dumpe2fs` | 7,451 of 65,536 blocks — **11%** on 64 MiB, mostly the inode table |
+| Backup superblocks | `dumpe2fs` | 8193, 24577, 40961, 57345 |
+| **Recovery from a backup** | `dd` + `e2fsck` | primary zeroed → "Bad magic number"; `e2fsck -fy -b 8193` → every file back |
+| **The journal is a file** | `debugfs`, `tune2fs` | inode 8, 4,194,304 B; `-O ^has_journal` reclaims exactly 4,096 blocks = **6.2%** |
+| `fsck` finds a link-count error | `e2fsck` | "Inode 13 ref count is 1, should be 2" — **pass 4**; rc=**4** with `-fn`, rc=**1** with `-fy` |
+| **`fsck` does not check data** | `dd` + `e2fsck` | 1 KiB of a file replaced with noise → **clean, rc=0** |
+| **One directory block destroys every name** | `dd` + `e2fsck` | root dir block corrupted → clean filesystem, **every file in `lost+found` as `#11`…`#17`** |
+| **Durability costs 154×** | `durable.c` | 41,980 rec/s buffered against **255** with `fsync` per record |
+| `fdatasync` only wins when the size does not change | `durable2.c` | appending: 3.67 vs 3.91 ms. **In place: 1.26 vs 4.11 ms — 3.3×** |
+| The directory `fsync` doubles a safe write | `durable2.c` | 4.17 ms → **8.05 ms** |
+
+### The two that make the lab
+
+**Corrupting 1,024 bytes of a file's data leaves `e2fsck` reporting a clean filesystem** (rc=0), because
+data integrity is not one of the invariants a filesystem check verifies — ext4 checksums its
+metadata (`metadata_csum`) and nothing else. **Corrupting 1,024 bytes of the root directory** loses
+every name in the filesystem while every file survives intact: `e2fsck -fy` salvages the directory,
+finds seven unreferenced inodes, and files them in `lost+found` as `#11` through `#17`, with
+`#15` being all 5,000,000 bytes of `huge.bin`.
+
+The pair is the lab's argument: **`fsck` restores the filesystem, not your data**, and in the second
+case the names were unrecoverable *in principle* — an inode does not contain a name, so once the
+directory block is gone there is nowhere else to look.
+
+### A note on `verify.sh`
+
+The provided checker verifies **sizes and structure, not contents**, so it passes the data-block
+corruption. That is deliberate and the solutions tell TAs to reward a student who notices — adding
+a checksum check is the extension. It is the same shape as Week 4's contaminated `ru_maxrss` and
+Week 5's "Hello, world" benchmark: **a check that passes is a fact about the check.**
+
+---
+
 *Academic Registry · Build Records · Year 2 Sophomore · © CSE Department*
