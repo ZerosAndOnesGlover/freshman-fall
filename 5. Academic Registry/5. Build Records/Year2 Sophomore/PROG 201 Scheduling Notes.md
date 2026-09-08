@@ -361,4 +361,99 @@ believing the seconds.
 
 ---
 
+## 11. Lab 5's tool is not installed, so the lab builds it
+
+The curriculum sets **"Lab 5: Stress test the HTTP server with Apache Benchmark (ab)."** `ab` ships
+in `apache2-utils`, which is **not on the BH 215 image**, and a student account cannot install it.
+`wrk` and `siege` are absent too; `curl` and `ss` are present.
+
+**Rebuilt as "write the load generator".** Students implement an event-driven benchmark client —
+non-blocking `connect` with `EINPROGRESS`, `SO_ERROR` after `EPOLLOUT`, `EAGAIN` on both sides, and
+a slot-per-connection state machine — which is precisely L18 §4, and which `ab` would have hidden.
+The server is provided complete so the lab measures rather than builds; PS 5's server is a
+different program (it parses requests and serves files).
+
+This is a better lab than the one specified, and it is worth saying why rather than only that it is
+different: **a benchmark you did not write is a benchmark whose numbers you cannot defend**, and
+three of this week's results — the two 434s, the 7,637, and the 11,261 `TIME_WAIT`s — are results
+about the *measurement* as much as about the servers.
+
+Recorded in the syllabus. If `apache2-utils` is ever added to the image, the lab does not need to
+change: comparing your generator against `ab` becomes the natural extension.
+
+### Lab 5 and PS 5 collide, and this one is worth flagging
+
+Lab 5 is the term's only Friday lab (§2 — the Monday of Week 6 is Fall Break), sat **16:00–17:50 on
+the Friday of Week 6**. [[Year2 - Sophomore/ASSESSMENT CALENDAR|ASSESSMENT CALENDAR]] puts **PS 5 due at 17:00 that Friday**, so the
+deadline falls while the students are in the lab.
+
+**Not resolved here**, on the same grounds as §8's midterm collision: nothing is obviously wrong,
+the two pieces of work are independent, and moving either has costs. Both the lab sheet and PS 5
+say plainly "submit before you come to the lab". **The cheap fix, if anyone wants one, is to move
+PS 5's deadline to 23:59 that day** — it costs nothing, since no marking begins that evening, and
+it removes the only case this term where a deadline lands inside a scheduled session.
+
+This is the second Week-*N* collision found by building the material rather than by reading the
+calendar (§8 was the first). Worth checking Weeks 6–12 for a third before Year 3 is timetabled.
+
+---
+
+## 12. Every number in Week 5 was measured on the reference machine
+
+Same machine as §6, §7, §9 and §10. **All traffic is loopback**, which removes the network as a
+variable and flatters every model equally; the orderings transfer and the absolute rates do not.
+Relevant settings: `somaxconn` 4,096, `RLIMIT_NOFILE` 1,048,576, ephemeral range 32768–60999
+(28,232 ports), `tcp_fin_timeout` 60.
+
+| Claim | Program | Result |
+|---|---|---|
+| The listen queue holds `backlog+1` | `backlog.c` | `listen(4)` → **5** immediate; `listen(16)` → **17** |
+| Past the queue, SYNs are dropped, not refused | `backlog.c` | the rest hang for 2 s and time out; no `ECONNREFUSED` |
+| `TIME_WAIT` holds the address | `reuse.c` | rebind fails `EADDRINUSE` without `SO_REUSEADDR`, succeeds with it |
+| **`TIME_WAIT` at scale** | `ss` after a run | **11,261** after 20,000 requests, against 28,232 ephemeral ports |
+| Trivial work: the architecture does not matter | `server.c`, `load.c` | iter **46,810**, fork 15,038, thread 39,186, pool 50,687, epoll 42,985 req/s |
+| **A blocking handler blocks an event loop** | same | 2 ms of work: iter **434**, thread 18,214, pool(8) 3,469, **epoll 434** |
+| CPU work wants a pool sized to cores | same | 500 µs: pool(8) **12,761**, thread 7,004, epoll 1,887 |
+| Pool size follows the work | same | 2 ms blocking: 1→437, 8→3,487, 32→14,085, 64→14,471, **128→18,667** |
+| **C10K, the event-driven side** | `hold.c` | **20,000 connections, RSS 1,416 → 1,416 kB** |
+| **C10K, the thread side** | `hold.c` | `pthread_create` failed after **7,637** with `EAGAIN`; RSS → 64,864 kB |
+| `poll` is O(watched), `epoll` is O(ready) | `readiness.c` | 16,000 fds: poll **4,827 µs**, epoll **0.89 µs**; at 10 fds epoll is 0.72 µs |
+| **`select` cannot be used above 1024** | `readiness.c` | glibc aborts: *"bit out of range 0 - FD_SETSIZE on fd_set"* |
+| Nagle plus delayed ACK | `nagle.c` | **38.963 ms** per round trip against **0.209 ms** with `TCP_NODELAY` — 186× |
+| A peer that stops reading | `slowreader.c` | **2,625,024 bytes (2.50 MiB)** absorbed, then `EAGAIN` forever |
+| Copies cost | `zerocopy.c` | `read`+`write` 2,444 MiB/s · `mmap`+`write` 3,043 · **`sendfile` 4,456** |
+| **And `sendfile` is also the smallest** | `zerocopy.c` | `ru_maxrss` 1,768 kB · **132,716 kB** · 1,640 kB |
+| Path traversal is stopped by resolving | `httpd.c` | `..`, `%2e%2e` and a symlink to `/etc/passwd` all → 404 |
+
+### The three worth arguing with
+
+1. **"Use `epoll`, it scales."** True of *waiting* and false of *working*. An event loop with a 2 ms
+   blocking call in the handler served **434 requests per second — the same as a `for` loop.**
+   L17 §5 is built on it, and it is the week's headline.
+
+2. **"Thread-per-connection does not scale."** True, and the reason is not what people say. It is
+   not memory — 3.2 kB per connection — it is the **task-count ceiling**, and this machine's is the
+   cgroup `pids.max` that Week 3 §9 already measured at 7,643. The two numbers, 7,643 and 7,637,
+   were reached three weeks apart by completely different programs.
+
+3. **"Benchmark it and pick the fastest."** With a trivial response the **iterative server came
+   second of five**. Every architectural difference in this week appears only when the handler does
+   something, and the "Hello, world" case — the one everybody publishes — is the one case where the
+   answer is "it does not matter".
+
+### A measurement that was contaminated, and how it showed
+
+`zerocopy.c` first reported `ru_maxrss` of **132,908 kB for all three methods**, including
+`sendfile`, which never brings the file into the process. `ru_maxrss` is a **high-water mark for the
+life of the process**, so running all three in one process reports the largest of them three times.
+Re-run one per process, the numbers are 1,768 / 132,716 / 1,640 kB and the point of `sendfile`
+becomes visible.
+
+**PS 5 Q4(c) now requires separate processes and says why**, and the solutions award credit to a
+student who makes the mistake, notices the number is impossible, and re-runs. It is the same
+lesson as Week 4's deleted timing loops: *a benchmark that reports an impossible number is
+reporting that it did not measure what you think.*
+
+---
+
 *Academic Registry · Build Records · Year 2 Sophomore · © CSE Department*
