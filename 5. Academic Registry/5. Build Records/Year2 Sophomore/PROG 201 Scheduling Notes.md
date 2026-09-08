@@ -620,4 +620,75 @@ Week 5's "Hello, world" benchmark: **a check that passes is a fact about the che
 
 ---
 
+## 17. Every number in Week 8 was measured on the reference machine
+
+Same machine as §6, §7, §9, §10, §12, §14 and §16. **Two properties of this system are load-bearing
+this week and would change the results elsewhere**: it is **glibc 2.39**, and Ubuntu builds
+everything with **`-Wl,-z,relro,-z,now`**.
+
+| Claim | Program | Result |
+|---|---|---|
+| Static against dynamic, size | `hello.c` | **785,232 bytes** static, **16,056** dynamic — 49× |
+| Static against dynamic, startup | `startup.c` | static 503/571/750 µs, dynamic 852/881/948 µs over three paired runs |
+| A binary names its own loader | `readelf -l` | `INTERP` → `/lib64/ld-linux-x86-64.so.2` |
+| **`linux-vdso.so.1` is not a file** | `ldd` | mapped by the kernel; no such path exists |
+| A cross-library call is an indirect jump | `objdump -d -j .plt.sec` | `greet@plt: jmp *0x2f3e(%rip)` through a GOT slot |
+| **The lazy GOT slot points at its own PLT stub** | `readelf -x .got.plt` | slots contain **`0x1030`** and **`0x1040`** — the PLT entries themselves |
+| **Lazy binding is OFF by default here** | `readelf -d` | `FLAGS: BIND_NOW`, `FLAGS_1: NOW PIE` |
+| Lazy resolves at first call | `LD_DEBUG=bindings` | `greet` binds between the first and second call; `farewell` only when called |
+| `BIND_NOW` resolves before `main` | `LD_DEBUG=bindings` | both bindings precede the program's first output |
+| **`-fPIC` costs one extra load** | `objdump -d` | PIC: `mov (%rip),%rax` then `mov (%rax),%eax`. Non-PIC: one `mov` |
+| A non-PIC object cannot be shared | `ld` | `relocation R_X86_64_PC32 ... can not be used when making a shared object` |
+| **glibc 2.34 merged the small libraries** | `ls` | no `libdl.so`, `libpthread.so` or `librt.so` at all |
+| Interposition works | `faketime.so` | `time()` returns 1000000000; `LD_DEBUG` shows the bind going to `faketime.so` |
+| **...and does nothing to `date`** | `faketime.so` | `date` prints the real time — it calls `clock_gettime` via the vDSO |
+| **`-O2` deletes the allocations** | `mtrace.so` | `-O0`: **1,012 malloc, 1,000 free**. `-O2`: **2** — and `nm -D` shows the binary does not reference `malloc` at all |
+| A real program's profile | `mtrace.so` | `python3 -c pass`: 2,285 malloc, 12 calloc, 174 realloc, 2.74 MB, 21 unfreed |
+| **`ld.so` runs no destructors for some programs** | `probe.so`, `LD_DEBUG=all` | fini runs for `true` and `python3`; **none at all for `ls` and `grep`** |
+| One libc holds several versions of a symbol | `nm -D --with-symbol-versions` | `memcpy@GLIBC_2.2.5` **and** `memcpy@@GLIBC_2.14`; 41 version definitions |
+| Constructor and destructor order | `order.c` | ctor: `b`, `a`, preload, main. dtor: exact reverse |
+| A plugin can export exactly one symbol | `nm -D` | `-fvisibility=hidden` + one `visibility("default")` → 1 line |
+| `dlopen` cost | `host.c` | 2 plugins in **0.211 ms** |
+
+### The one that contradicts the curriculum
+
+**The Week 8 Core Concept describes lazy binding as how dynamic linking works** — the PLT stub, the
+first call, the resolver patching the GOT. That mechanism is real and is in the lecture, **and it is
+not what happens on these machines**: every binary is built `-z relro -z now`, so all symbols bind
+before `main` and the GOT is then made read-only.
+
+The lecture teaches both, in that order, and says why the default changed: **a writable GOT is what
+a GOT-overwrite attack needs**, which is Week 10's subject. Lab 8 has students build the same
+program twice — once with `-z lazy -z norelro` — so they see the mechanism in the bytes and then see
+that their own binaries do not use it. Recorded in the syllabus.
+
+### Two findings that became PS 8's Q4
+
+**`-O2` deleted every allocation.** A test program with 1,000 `malloc`/`free` pairs contains **no
+reference to `malloc` at all** after optimisation — not merely no calls, but no undefined symbol.
+The profiler correctly reported almost nothing, and nothing in its output could distinguish that
+from a program that genuinely allocates nothing.
+
+**`ld.so` runs no fini functions for `ls` or `grep`.** A `LD_PRELOAD` tool reporting from
+`__attribute__((destructor))` therefore prints nothing for them, silently. **Interposing `_exit`
+does not rescue it** — tried, and it does not, because a library's internal calls do not go through
+the PLT. The remedy the solutions ask for is incremental output.
+
+Both are the term's recurring shape — *a measurement that produces nothing is a fact about the
+measurement* — and Quiz 8's closing note counts this as its fifth appearance, after Week 2's untorn
+records, Week 4's 339×, Week 5's "Hello, world" benchmark and Week 7's clean `fsck`.
+
+### And a third scheduling collision
+
+**PS 8 and Project 1 are both due at 17:00 on the Friday of Week 9.** PS 8 is released in Week 8 and
+is roughly four hours of work; Project 1 is three weeks of it. Both papers say so, and PS 8 tells
+students to do it in Week 8 and leave Week 9 for the shell.
+
+Not resolved, and unlike §15's lab/midterm pattern this one is a genuine choice rather than a
+structural consequence: the problem-set rhythm is "released Wednesday of week *N*, due Friday of
+week *N+1*", and Project 1's due date comes from the curriculum. **The cheap fix is to release PS 8
+a week earlier or make it the term's dropped problem set by design.** Recorded for Year 3.
+
+---
+
 *Academic Registry · Build Records · Year 2 Sophomore · © CSE Department*
