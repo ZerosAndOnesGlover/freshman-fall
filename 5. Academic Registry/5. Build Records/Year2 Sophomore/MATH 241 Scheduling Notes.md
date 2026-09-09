@@ -128,7 +128,7 @@ paper will carry it in its header, as PROG 201's Lab 5 does for the same break.)
 
 ---
 
-## 6. Every number in Weeks 0 and 1 was computed, and the programs ship with the notes
+## 6. Every number in Weeks 0–2 was computed, and the programs ship with the notes
 
 The reference machine is the same one PROG 201 used: **Intel i5-8250U, Ubuntu 24.04.4 LTS,
 kernel 7.0**, with **CPython 3.14.2** and IEEE 754 binary64.
@@ -142,6 +142,7 @@ results are exact rather than dependent on a BLAS.
 |---|---|
 | `MATH241 Week0/resources/elimination.py` | L01–L03: the running example and its pivots; the pivoting failure at four values of $\varepsilon$; exact $\operatorname{cond}_\infty$ of the Hilbert matrices and the float solve error at each; the operation-count table; the 299-digit pivot |
 | `MATH241 Week1/resources/matrices.py` | L04–L06: $PQ \ne QP$; the $(AB)C$ / $A(BC)$ flop count **and timing**; $A = LU$ and $A^{-1}$ of the running matrix; solve-against-invert on Hilbert systems; the tridiagonal $K$ and its dense inverse |
+| `MATH241 Week2/resources/spaces.py` | L07–L09: `rref` and the pivot/free split; the column dependencies; **the two different planes $\mathbf{C}(A)$ and $\mathbf{C}(\operatorname{rref}A)$**; the special solutions verified against $A$; the complete solution and the consistent/inconsistent pair; the subspace table |
 
 **Exact results were computed in `Fraction` and floating-point results in `float`**, and the notes
 say which is which at every table. **One figure is machine-dependent and is labelled as such:** the
@@ -163,6 +164,12 @@ adopted for its shared-memory measurement.
   $n=10$, $91\times$ at $n=12$. **This is reported as irregular rather than tidied into a trend**,
   because the irregularity is the argument — an unpredictable penalty cannot be budgeted for, and
   that is a better reason not to invert than a predictable one would be.
+- **Week 2 carries no floating point at all.** Its subject is exact — which subspace, which
+  dependency — so `spaces.py` works entirely in `Fraction` and the week states no timing. The one
+  number worth flagging is a *non*-number: **$\mathbf{C}(A)$ and $\mathbf{C}(\operatorname{rref}A)$
+  are different planes** ($5b_1-2b_2+b_3=0$ against $b_3=0$), separated by $(1,0,0)$. The script
+  prints both equations side by side, because a student who is told this and not shown it will
+  reproduce the sentence and still take the pivot columns of the rref.
 
 ---
 
