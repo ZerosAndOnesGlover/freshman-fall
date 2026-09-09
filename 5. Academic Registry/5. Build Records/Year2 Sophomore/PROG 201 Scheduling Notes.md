@@ -797,4 +797,78 @@ the course the pattern is worth naming rather than rediscovering.
 
 ---
 
+## 20. Week 10 needed four tool substitutions, and the sandbox is real
+
+Week 10 is exploitation and defence. Four of the tools the curriculum names are not on the BH 215
+image and a student account cannot add them, and one hardware feature the lecture discusses is
+absent from the CPUs. All are handled the way the rest of the course handles missing tools — build
+or substitute, and record it.
+
+| Curriculum names | On the machine | Substitute |
+|---|---|---|
+| **ROPgadget** / ropper | neither installed | a **40-line gadget finder** (`gadget.py`), byte-scan for sequences ending in `ret` |
+| **checksec** | not installed | a **10-line `checksec.sh`** reading `readelf`/`objdump` |
+| **AFL** | not installed | **libFuzzer** (`clang -fsanitize=fuzzer`), coverage-guided, same idea |
+| **Intel CET** shadow stack | **CPU has no `shstk`/`ibt`** | discussed and measured as *present-but-inert* |
+
+**The sandbox is `setarch -R` and course-supplied binaries.** `setarch -R` sets
+`ADDR_NO_RANDOMIZE` for a single process — measured, the stack sits at a fixed `0x7fffffffd340`
+every run under it and randomises without it — and **the machine-wide `randomize_va_space` (which is
+2) is never touched**. The targets are compiled with protections removed on purpose. The syllabus,
+the lab and PS 10 all state the bounds, and PS 10's last mark-bearing part is turning every defence
+back on.
+
+---
+
+## 21. Every result in Week 10 was measured on the reference machine
+
+Same machine as the earlier weeks: Intel i5-8250U, gcc 13.3.0, glibc 2.39, clang, Linux 7.0.0-30,
+`randomize_va_space` 2. **The target is non-PIE, so its addresses are deterministic** — `unlock`
+0x4011f6, `pop rdi ; ret` 0x40125a, bare `ret` 0x40125c — which is what lets the lab and PS run
+without a per-build address hunt.
+
+| Claim | How | Result |
+|---|---|---|
+| Overflow reaches the return address | marker + gdb | offset **72** (64-byte buf + 8-byte saved rbp) |
+| **The stack canary catches the exploit** | `vuln_canary` | `*** stack smashing detected ***`, **exit 134** |
+| **NX turns shellcode into a fault** | shellcode on a `RW` stack | **SIGSEGV, exit 139** |
+| shellcode would run on an exec stack | `-z execstack` | the `RW`→`RWE` bit is the only difference |
+| **A 3-gadget ROP chain spawns a shell** | `exploit.py` | `[unlock] correct key`, then `uid=1000` in the shell |
+| `system` needs 16-byte alignment | drop the align gadget | crash **inside `system` on a `movaps`** |
+| **A CET-compiled libc has almost no clean gadgets** | byte scan of static libc | **zero** `pop rdi ; ret` (`5f c3`) sites; the target ships its own |
+| **ASLR without PIE leaves the chain working** | run `vuln` with ASLR on | still `[unlock] correct key` |
+| **PIE + ASLR breaks it** | `vuln_pie` | SIGSEGV; hardcoded 0x4011f6 is not where `unlock` is |
+| ASLR is on/off per process | `setarch -R ./leak` | fixed `0x7fffffffd340`; randomises without `-R` |
+| **`%p` leaks the stack** | `./fmt '%p %p …'` | live addresses, and the input string as `0x7025207025207025` |
+| **`%n` is a write primitive** | `./fmt 'AAAAAAAA%7$n'` | SIGSEGV writing through the controlled slot |
+| **Heap bugs are silent without a sanitizer** | `heap_plain` | use-after-free **rc=5**, double-free **rc=0** — both clean |
+| ASan catches them | `-fsanitize=address` | heap-use-after-free and double-free, both sites named |
+| **CFI catches a type-confused call** | clang `-fsanitize=cfi` | *"control flow integrity check for type 'int (int, int)' failed"*, names `evil` |
+| **CET markers are present but inert** | `objdump`, `/proc/cpuinfo` | **24 `endbr64`** in `vuln`; **no `shstk`/`ibt`** — nothing enforces them |
+| **libFuzzer finds a planted bug** | `-fsanitize=fuzzer,address` | heap-buffer-overflow at **`parser.c:28`**, 13-byte reproducer, ~10 execs with a seeded corpus |
+
+### Two "present but not working" findings, and a pattern completed
+
+Two of this week's measurements are the same shape as Week 3's `PRIO_INHERIT` (accepted, inert) and
+Week 8's lazy binding (documented, switched off):
+
+- **ASLR is on and does nothing to a non-PIE binary's code** — the exploit runs with randomisation
+  fully enabled, because only the stack, heap and libraries moved and the chain uses none of them.
+- **The compiler emits CET `endbr64` markers into every binary, and the CPU cannot enforce them** —
+  so the shadow stack that would stop the ROP chain is compiled-for and absent.
+
+Both are in the README's "one thing to take from this week" table, because the course now has a
+named recurring lesson — **a mechanism being present is not the same as it working** — appearing in
+Weeks 3, 8 and 10, and it is the whole justification for the week's teach-by-watching-it-fail method.
+
+### On teaching exploitation, for the record
+
+The department teaches this because it is bounded and defensive: a binary the course wrote, a
+sandbox the student controls, and a stated purpose that PS 10 closes on by turning the mitigations
+back on. The build followed the syllabus's existing deviation (recorded in the Course Overview since
+Week 0) and added the ethics note to PS 10 itself. Nothing here is a technique against a system the
+student was not given, and the material says so in the lab, the problem set and the reading guide.
+
+---
+
 *Academic Registry · Build Records · Year 2 Sophomore · © CSE Department*
