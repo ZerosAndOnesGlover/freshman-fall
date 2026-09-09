@@ -871,4 +871,74 @@ student was not given, and the material says so in the lab, the problem set and 
 
 ---
 
+## 22. Week 11 tool substitutions and the userns-restriction deviation
+
+Week 11 (Containers and Virtualization) has the largest tool gap of the course, and it is turned
+into the subject rather than papered over.
+
+| Curriculum tool | On the machine? | Substitution / handling |
+|---|---|---|
+| `docker` | **absent** | Build the container from primitives — `clone` + namespaces in C (`minic.c`). Docker is those primitives plus cgroups plus OverlayFS; the week teaches the parts. |
+| `podman`, `runc`, `lxc` | **absent** | Same — no rootless runtime available; the C mini-container is the artifact. |
+| `newuidmap`/`newgidmap` (setuid map helpers) | **absent** | Maps are written directly to `/proc/<pid>/uid_map` from the parent (which is allowed for a single-id `"0 <uid> 1"` map without the setuid helper). This is why `unshare --map-root-user` fails but the C container works. |
+| `fuse-overlayfs` | **absent** | OverlayFS is described and measured-to-EPERM; the unprivileged overlay mount needs this helper or real root, neither present. |
+| `unshare(1)`, `nsenter`, `lsns`, `capsh`, `systemd-run --user` | **present** | Used for demonstration and for the cgroup limits (`systemd-run --user --scope -p MemoryMax/TasksMax`). |
+
+**The central deviation — `apparmor_restrict_unprivileged_userns` = 1.** On this Ubuntu 24.04
+machine the kernel is configured (via an AppArmor mediation) to permit an unprivileged user
+namespace to be *created* but to strip its capabilities, so `CAP_SYS_ADMIN`-gated operations inside
+it — `mount`, `sethostname`, `pivot_root`, an overlay mount — return **EPERM even to uid 0 in the
+namespace**. Measured directly: `cat /proc/sys/kernel/apparmor_restrict_unprivileged_userns` → `1`.
+
+The consequence is pedagogically clean and is treated as the week's headline finding rather than a
+defect: **namespace creation works and the kernel-enforced isolation is genuine** (the child is
+PID 1; its network namespace has only `lo`), **while the userspace setup that would complete the
+illusion does not** (no private `/proc`, no hostname). This is the **fifth "a mechanism present is
+not a mechanism working"** entry — joining Week 3 `PRIO_INHERIT`, Week 8 lazy binding, and Week 10's
+ASLR-without-PIE and inert CET — and is stated as *a namespace created is not a capability granted*
+in L34 §5, the README table, the Reading Guide (Q14), and Quiz 11's closing note. On a machine with
+the restriction off, run as real root, or with the setuid map helpers installed, `minic` performs
+`mount`/`sethostname` too; the material says so and PS 11 grades the EPERM as the correct result,
+not a failure. The syllabus deviations table (Course Overview) carries the matching Week 11 row.
+
+---
+
+## 23. Every result in Week 11 was measured on the reference machine
+
+Same machine as the earlier weeks: Intel i5-8250U, gcc 13.3.0 / `cc`, glibc 2.39, Linux 7.0.0-30,
+cgroup v2, `apparmor_restrict_unprivileged_userns` = 1. Startup and OOM figures vary a little run to
+run; the categorical results (PID 1, only `lo`, mount EPERM, identical kernel, exit 137) are
+invariant on this configuration. Each figure names the program that produced it, per the course rule.
+
+| Claim | How (program) | Result |
+|---|---|---|
+| A user namespace can be created unprivileged | `try_clone` (`CLONE_NEWUSER`) | **OK** |
+| Individual namespaces alone fail unprivileged | `probe` (`CLONE_NEWPID` alone, etc.) | **EPERM** for PID/NET/NS/UTS standalone |
+| **`CLONE_NEWUSER` carries the other five in one call** | `minic` (6 flags) | **OK** — the container clones |
+| **The child is PID 1** | `minic sh -c 'echo $$'` | self-PID **1**; host PID (via `pgrep`) e.g. **1251803** |
+| **The network namespace is isolated** | `netns` / `minic ip -o link show` | **only `lo`, DOWN** vs host's 3 (`lo`, `enp0s31f6`, `wlp61s0`) |
+| **The kernel is shared** | `minic uname -r` vs host | **identical**, `7.0.0-30-generic` |
+| uid 0 inside maps to real uid outside | `minic id -u` | **0** inside; files created owned by uid 1000 on host |
+| **`sethostname` is refused to namespace-root** | `minic` | **EPERM** ("Operation not permitted") |
+| **`mount` is refused to namespace-root** | `minic` (private `/proc`) | **EACCES/EPERM** ("Permission denied") |
+| the reason | `cat /proc/sys/.../apparmor_restrict_unprivileged_userns` | **1** |
+| **cgroup memory/pids are delegated to the user** | `cat .../user@1000.service/cgroup.controllers` | **`memory pids`** |
+| **A memory cap OOM-kills, cgroup-local** | `systemd-run --user --scope -p MemoryMax=100M -p MemorySwapMax=0 ./hog` | killed ~**90 MiB**, **exit 137** (128+SIGKILL); host untouched |
+| **`pids.max` stops a fork bomb** | fork loop under `-p TasksMax=20` | 21st `fork` → **EAGAIN** |
+| **Container startup is ~1 ms** | `cost` | fork **139.2 µs**, clone **119.4 µs**, clone+6ns **1001.5 µs** |
+| **seccomp narrows the syscall surface unprivileged** | `sec` | `write` allowed; `getpid` → **-1, EPERM**; no root, after `PR_SET_NO_NEW_PRIVS` |
+| overlay mount needs root/helper | `ovl` (in userns) / `mount -t overlay` | **EPERM** / "must be superuser to use mount" |
+
+### The one finding that shapes the whole week
+
+Read the PID-1 / only-`lo` rows against the `sethostname`/`mount` EPERM rows: the isolation that is a
+**property of the namespace's existence** is enforced by the kernel and works; the isolation that
+requires **performing a privileged operation** does not, because the AppArmor restriction gives the
+container a capability-less root. The mini-container is therefore a genuine, runnable artifact whose
+behaviour on *this* image (PID/net isolated, mount/hostname refused) is exactly documented — the
+honest state, measured, with the "run it elsewhere and the rest works" caveat recorded here and in
+the student materials.
+
+---
+
 *Academic Registry · Build Records · Year 2 Sophomore · © CSE Department*
