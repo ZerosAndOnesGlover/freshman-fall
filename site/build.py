@@ -209,14 +209,69 @@ def walk():
     return nodes, pages
 
 
+def slug_path(target):
+    """Slug each segment of a wikilink target, keeping the separators."""
+    return "/".join(slug(seg) for seg in target.split("/") if seg)
+
+
 def build_link_resolver(pages):
-    """Map wikilink targets (by file stem, case-insensitive) to routes."""
+    """Map wikilink targets to routes, by any trailing fragment of a page's path.
+
+    The vault writes links in two forms and both have to work:
+
+        [[Reading Guide Week 1]]
+        [[MATH241 Week1/resources/Reading Guide Week 1|Reading Guide Week 1]]
+
+    The second is not decoration. 166 filename stems are shared by two or more
+    pages -- every `summary`, all 138 `README`s, and every per-week reading
+    guide and solutions sheet -- so a bare stem names a unique page less than
+    half the time, and the path form is how the authors say which one they
+    meant. Matching on the stem alone ignored it, which left 435 of the vault's
+    1,059 rendered wikilinks broken -- 41% -- including every course's link to
+    `Year2 - Sophomore/COURSE POLICIES`.
+
+    So each page is registered under **every suffix of its own path**: a target
+    resolves as soon as it is specific enough to pick the page out. Keys hold a
+    list rather than one route, because a suffix can still be shared --
+    `resources/Reading Guide Week 1` names seven pages -- and `resolve_target`
+    settles those by proximity.
+    """
     table = {}
     for p in pages:
-        stem = os.path.basename(p.src)[:-3]
-        table.setdefault(stem.lower(), p.route)
-        table.setdefault(slug(stem), p.route)
+        rel = os.path.splitext(os.path.relpath(p.src, VAULT))[0]
+        parts = rel.split(os.sep)
+        for i in range(len(parts)):
+            frag = "/".join(parts[i:])
+            for key in {frag.lower(), slug_path(frag)}:
+                table.setdefault(key, []).append(p.route)
     return table
+
+
+def resolve_target(table, target, from_route):
+    """Route for one wikilink target, or None if nothing matches.
+
+    Where a target still names several pages, the nearest one to the page doing
+    the linking wins -- a bare `[[summary]]` in CS 201 Week 3 means that week's,
+    not CS 101's. `max` keeps the first of equal candidates, so a genuine tie
+    falls back to walk order, which is what the stem-only table did for every
+    ambiguous name.
+    """
+    target = target.strip().strip("/")
+    routes = table.get(target.lower()) or table.get(slug_path(target))
+    if not routes:
+        return None
+    if len(routes) == 1:
+        return routes[0]
+    here = from_route.split("/")
+
+    def shared(route):
+        other = route.split("/")
+        n = 0
+        while n < len(here) and n < len(other) and here[n] == other[n]:
+            n += 1
+        return n
+
+    return max(routes, key=shared)
 
 
 def rel_prefix(route):
@@ -348,8 +403,8 @@ def main(quiet=False):
     for p in pages:
         pre = rel_prefix(p.route)
 
-        def resolve(target, _pre=pre):
-            route = link_table.get(target.lower()) or link_table.get(slug(target))
+        def resolve(target, _pre=pre, _route=p.route):
+            route = resolve_target(link_table, target, _route)
             return (_pre + route) if route else None
 
         try:
@@ -551,7 +606,94 @@ def watch(serve=False, port=8000):
         print("\nstopped")
 
 
+# --------------------------------------------------------------------------
+# Self-test
+# --------------------------------------------------------------------------
+
+def self_test():
+    """Verify link resolution against the live vault.
+
+    The resolver settles ambiguous targets by proximity, which is the kind of
+    rule that keeps working while pointing somewhere subtly wrong. These check
+    the shapes the vault actually writes, and that every rendered href lands on
+    a file that exists.
+    """
+    ok = failed = 0
+
+    def check(name, got, want):
+        nonlocal ok, failed
+        good = (want in got) if (want and got) else (got == want)
+        print("  %s  %s%s" % ("PASS" if good else "FAIL", name,
+                              "" if good else "\n          got %r, want %r" % (got, want)))
+        ok, failed = ok + good, failed + (not good)
+
+    nodes, pages = walk()
+    table = build_link_resolver(pages)
+    print("Resolver built from %d pages" % len(pages))
+
+    HERE_M0 = "sophomore/fall/math-241/week-0/index.html"
+    HERE_M1 = "sophomore/fall/math-241/week-1/index.html"
+
+    # A bare stem that is unique in the vault.
+    check("bare unique stem", resolve_target(table, "ACADEMIC CALENDAR", HERE_M0),
+          "academic-registry/institution/academic-calendar.html")
+    # The registry form every Year 2 course links: a two-segment path.
+    check("registry path form", resolve_target(table, "Year2 - Sophomore/COURSE POLICIES", HERE_M0),
+          "academic-registry/scheduling/year2-sophomore/course-policies.html")
+    # A course path form, where the stem alone names seven different pages.
+    check("course path form", resolve_target(table, "MATH241 Week1/resources/Reading Guide Week 1", HERE_M1),
+          "sophomore/fall/math-241/week-1/resources/reading-guide-week-1.html")
+    # A leading ordinal segment must not defeat the match.
+    check("ordinal path segment", resolve_target(table, "5. Academic Registry/README", HERE_M0),
+          "academic-registry/index.html")
+    # An underscore-prefixed gradebook file.
+    check("underscored stem", resolve_target(table, "_MATH 241 Quiz Record", HERE_M0),
+          "academic-registry/gradebook/year2-sophomore/fall/math-241-quiz-record.html")
+
+    # Proximity: the same ambiguous suffix must resolve per linking page.
+    amb = "resources/Reading Guide Week 1"
+    check("ambiguous suffix is genuinely ambiguous",
+          str(len(table.get(amb.lower(), [])) > 1), "True")
+    check("proximity picks own course (math-241)", resolve_target(table, amb, HERE_M1),
+          "sophomore/fall/math-241/week-1/resources/reading-guide-week-1.html")
+    check("proximity picks own course (prog-201)",
+          resolve_target(table, amb, "sophomore/fall/prog-201/week-1/index.html"),
+          "sophomore/fall/prog-201/week-1/resources/reading-guide-week-1.html")
+    check("proximity picks own week for a bare stem",
+          resolve_target(table, "summary",
+                         "sophomore/fall/math-241/week-1/lectures/l04-matrix-multiplication-four-ways.html"),
+          "sophomore/fall/math-241/week-1/summary.html")
+
+    # Targets that must NOT resolve.
+    check("unknown target stays unresolved", resolve_target(table, "no such page anywhere", HERE_M0), None)
+    check("skipped tree stays unresolved", resolve_target(table, "4. Submissions/README", HERE_M0), None)
+
+    # Every href the last build wrote must land on a real file.
+    import re as _re
+    href = _re.compile(r'class="wikilink" href="([^"]+)"')
+    checked = dangling = 0
+    if os.path.isdir(OUT):
+        for root, _d, fs in os.walk(OUT):
+            for f in fs:
+                if not f.endswith(".html"):
+                    continue
+                page = os.path.join(root, f)
+                for h in href.findall(open(page, encoding="utf-8").read()):
+                    checked += 1
+                    if not os.path.isfile(os.path.normpath(os.path.join(root, h))):
+                        dangling += 1
+        check("no dangling hrefs in %d links in %s/" % (checked, os.path.basename(OUT)),
+              str(dangling), "0")
+    else:
+        print("  SKIP  href check (no %s/ -- run a build first)" % os.path.basename(OUT))
+
+    print("\n%d/%d checks passing" % (ok, ok + failed))
+    return 0 if not failed else 1
+
+
 if __name__ == "__main__":
+    if "--self-test" in sys.argv:
+        sys.exit(self_test())
     main()
     if "--watch" in sys.argv:
         watch(serve="--serve" in sys.argv)

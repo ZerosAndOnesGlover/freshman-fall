@@ -185,22 +185,63 @@ MATH 251 in Spring has a Wednesday recitation and will use the same directory na
 
 ---
 
-## 8. Not fixed here: path-qualified wikilinks do not resolve in the built site
+## 8. Path-qualified wikilinks did not resolve in the built site, and now do
 
-`build_link_resolver` in `site/build.py` indexes pages **by file stem only**. A link written
-`[[MATH241 Week0/resources/Reading Guide Week 0|Reading Guide Week 0]]` therefore renders as
-`wikilink broken`, while the same target written `[[Reading Guide Week 0]]` resolves.
+`build_link_resolver` in `site/build.py` indexed pages **by filename stem only**. A link written
+`[[MATH241 Week0/resources/Reading Guide Week 0|Reading Guide Week 0]]` therefore rendered as
+`wikilink broken`, while the bare stem resolved.
 
-**This is pre-existing and vault-wide, not introduced by MATH 241.** The same ten-odd forms break in
-PROG 201's built pages, in CS 201's, and for the registry's own
-`[[Year2 - Sophomore/COURSE POLICIES]]` — which every Year 2 course links that way. Obsidian
-resolves all of them; the static builder does not.
+**This was pre-existing and vault-wide, not introduced by MATH 241** — the same form broke in
+PROG 201's built pages, in CS 201's and CS 102's, and for the registry's own
+`[[Year2 - Sophomore/COURSE POLICIES]]`, which every Year 2 course links that way. Obsidian
+resolved all of them; the static builder did not.
 
-**MATH 241 uses the same convention as the courses around it** rather than diverging, so that the
-fix — teaching the resolver to match on a path suffix as well as a stem — fixes every course at
-once. **Left alone deliberately:** it is a change to link resolution across 2,938 pages, it can
-introduce ambiguity where two courses share a filename, and it is not MATH 241's to make while
-building two weeks of content. Recorded so that whoever does it knows the scope.
+**Measured before the change: 435 of the vault's 1,059 rendered wikilinks were broken** — 41% — and
+every one of them was path-qualified. The two genuine misses were `4. Submissions/README`, which is
+in `SKIP_PATHS` and correctly has no page, and a `minic.c` mentioned in prose.
+
+### Why the path form exists in the first place
+
+**166 of the vault's 1,100 filename stems are shared by two or more pages**: every `summary`
+(172 of them), all 138 `README`s, and every per-week reading guide, revision guide and solutions
+sheet. `Reading Guide Week 1` alone names seven pages. **So a bare stem identifies a unique page less than
+half the time, and the path form is how the vault's authors said which one they meant** — the
+builder was discarding exactly the information that disambiguates.
+
+Worse, the stem table resolved collisions with `setdefault`, so an ambiguous bare stem silently
+returned **whichever page `os.walk` reached first** — in practice CS 101's, from anywhere in the
+vault.
+
+### The change
+
+Each page is now registered under **every suffix of its own path**, so a target resolves as soon as
+it is specific enough to pick that page out. Keys hold a *list* of routes rather than one, and
+`resolve_target` settles a target that still names several by **proximity to the page doing the
+linking**: the candidate sharing the longest leading route wins, so a bare `[[summary]]` in CS 201
+Week 3 means that week's. Genuine ties fall back to walk order, which is what the old table did for
+every ambiguous name — so the new behaviour is never worse than the old.
+
+### What it did
+
+Both rows measured on the same vault — 1,955 markdown pages carrying 1,059 rendered wikilinks
+(the site writes 3,006 files; the rest are generated section indexes, which contain no prose):
+
+| | Stem-only | Path-suffix |
+|---|---:|---:|
+| Resolving | 624 | **1,054** |
+| Broken | 435 | **5** |
+
+The five remaining are correct: four links to `4. Submissions/README` (a deliberately skipped tree —
+each course there is its own git repo) and one `minic.c`, which is a source filename in prose.
+
+**Every previously-working link still points at exactly the same page.** Re-resolving all 1,059
+links under both tables gives 629 unchanged (624 resolved plus the 5 broken under both), 430 newly
+resolved, **0 lost and 0 re-pointed** — and all 1,054 emitted hrefs were checked against the
+filesystem with none dangling.
+
+`python3 site/build.py --self-test` runs 12 checks covering each link form the vault writes, the
+proximity tie-break, the two targets that must *not* resolve, and the href sweep. Reverting the
+resolver to the stem-only table fails 7 of them, including the proximity case.
 
 ---
 

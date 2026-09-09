@@ -6,6 +6,7 @@ Turns the vault's markdown into a browsable study website.
 python3 site/build.py                    # build once into _site/
 python3 site/build.py --serve            # build, then serve on :8000
 python3 site/build.py --watch --serve    # serve and rebuild on every change
+python3 site/build.py --self-test        # 12 checks on wikilink resolution
 ```
 
 No third-party packages. Python 3.9+ only. Takes about three seconds for the
@@ -122,6 +123,22 @@ The vault's content breaks naive Markdown renderers in three specific ways, and
    target is only treated as a link if it looks like one — a scheme, anchor,
    path, or a filename with an extension. Bare numbers stay as text.
 
+4. **A filename does not identify a page.** 166 stems are shared by two or more
+   pages — every `summary`, all 138 `README`s, every per-week reading guide and
+   solutions sheet — so `[[Reading Guide Week 1]]` names seven files. The vault
+   disambiguates the way Obsidian does, by writing a path:
+   `[[MATH241 Week1/resources/Reading Guide Week 1|Reading Guide Week 1]]`.
+
+   So a page is indexed under **every suffix of its own path**, and a target
+   resolves as soon as it is specific enough to pick one page out. Where it
+   still names several, the one nearest the linking page wins — a bare
+   `[[summary]]` in CS 201 Week 3 means that week's. Genuine ties fall back to
+   walk order.
+
+   *(Matching stems alone left 435 of the vault's 1,059 rendered wikilinks
+   broken — 41% — including every course's link to
+   `Year2 - Sophomore/COURSE POLICIES`.)*
+
 Emphasis also handles both joint-closing forms: `**Author, *Title***` and
 `*italic … **bold.***`.
 
@@ -129,6 +146,9 @@ Emphasis also handles both joint-closing forms: `**Author, *Title***` and
 
 The build is checked three ways, all of which currently pass clean:
 
+- `--self-test` covers wikilink resolution: each link form the vault writes,
+  the proximity tie-break, targets that must *not* resolve, and that all 1,054
+  rendered `wikilink` hrefs land on a file that exists
 - every internal `href`/`src` resolves against the filesystem (18,297 links)
 - every page parses with balanced, correctly nested tags (1,425 pages)
 - no extraction placeholders survive into the output
