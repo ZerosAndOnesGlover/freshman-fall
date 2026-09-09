@@ -691,4 +691,110 @@ a week earlier or make it the term's dropped problem set by design.** Recorded f
 
 ---
 
+## 18. `perf` does not work on these machines, and the week is better for it
+
+The curriculum's Week 9 is built on **`perf`**: "CPU profiling with perf: call graphs, hot paths",
+and the Core Concept describes a sampling profiler in terms of it. On BH 215:
+
+```
+$ perf stat -e task-clock ./prog
+perf_event_paranoid setting is 4:
+```
+
+**`kernel.perf_event_paranoid` is 4**, which refuses everything — not merely kernel profiling but a
+`task-clock` count on the caller's own process. Ubuntu ships it that way because performance
+counters are a demonstrated side channel, and lowering it needs root on a shared machine.
+
+**Three things that need no privileges were used instead**, and between them they cover the
+curriculum's topics:
+
+| | covers |
+|---|---|
+| **Callgrind** (`valgrind --tool=callgrind`) | exact call graphs and hot paths, with source annotation |
+| **Cachegrind** (`--cache-sim=yes`) | the curriculum's "cache profiling with valgrind cachegrind", unchanged |
+| **A sampling profiler the students write** | the sampling half, from the mechanism up |
+
+**The third is the improvement.** `setitimer(ITIMER_PROF)` plus a `SA_SIGINFO` handler that reads
+`REG_RIP` out of the `ucontext` is a sampling profiler in about sixty lines, and building one
+teaches what `perf` hides: why sampling is statistical (five runs of one program gave `slow` between
+**62.31% and 76.12%**), why the handler must be async-signal-safe (Week 0 L03), and why it cannot
+name a static function without `-rdynamic` — **1 dynamic symbol against 14**, measured, which is
+Week 8's visibility lecture arriving as a tooling failure.
+
+Its honest limit is recorded too: profiling the PS 9 program, the hand-written sampler attributes
+**74.88% to "libc.so.6"** where Callgrind says `__strcmp_avx2`, because glibc resolves `strcmp`
+through an IFUNC to a symbol `dladdr` cannot see. **Both profiles are in the solutions**, and
+comparing them is PS 9 Q1(c).
+
+Recorded in the syllabus. If `perf_event_paranoid` is ever lowered on the lab image, nothing needs
+to change — running `perf` alongside becomes the natural extension.
+
+---
+
+## 19. Every number in Week 9 was measured on the reference machine
+
+Same machine as §6, §7, §9, §10, §12, §14, §16 and §17: **Intel i5-8250U, 4 cores / 8 threads,
+32 KiB L1d, 256 KiB L2, 6 MiB L3**, gcc 13.3.0, Linux 7.0.0-30. The cache sizes matter to half of
+these.
+
+| Claim | Program | Result |
+|---|---|---|
+| **Flags against algorithm** | `slow.c` | every `-O` level spans **2.78 → 2.33 s (19%)**; three source changes give **2.31 → 0.03 s (77×)** |
+| Once the algorithm is right, flags stop mattering | `fast.c` | `-O0` 0.05 s, `-O3` 0.04 s |
+| **`-O3` can be slower than `-O2`** | `slow.c` | 2.38 s against 2.35 s |
+| Callgrind names the hot path exactly | `callgrind_annotate` | **61.59% `__strcmp_avx2`**, 31.32% inlined into `main` |
+| Cachegrind's miss rate is derivable | `--cache-sim=yes` | **D1 miss rate 6.2%** on a sequential `int` scan = **1/16** |
+| **A sampling profiler in sixty lines works** | `sprof.c` | 78.50% / 20.00% / 1.50% across three functions of known cost |
+| Sampling is statistical | `sprof.c` | five runs: `slow` **62.31%–76.12%**, `quick` **1.00%–7.04%** |
+| It cannot name static functions | `sprof.c` | without `-rdynamic`: **100% attributed to the executable**; 1 dynamic symbol against 14 |
+| It cannot name libc's IFUNC internals | `sprof.c` | **74.88% "libc.so.6"** where Callgrind says `__strcmp_avx2` |
+| **The hierarchy** | `cache.c` | L1 **1.49 ns**, L2 3.13, L3 11.84, DRAM **141.94** — a factor of **95**, steps on the documented sizes |
+| **The cache line, and the prefetcher** | `cache.c` | stride 1 **1.09 ns**, stride 16 (64 B) **6.33**, and **flat at 14.5 from stride 32 (128 B)** |
+| **The two ceilings** | `roof.c` | **13.71 GB/s** and **13.50 GFLOP/s**, ridge point **0.98 flops/byte** |
+| A memory-bound kernel at its roof | `roof.c` | `axpy` **99%** |
+| A compute-bound kernel far from it | `roof.c` | `poly(deg 16)` **18%** |
+| **Dependency chains, which the roofline cannot model** | `roof.c` | same AI, same flops: **2.47 against 7.14 GFLOP/s — 2.9×** |
+| **`-O2` does not vectorise; `-O3` does** | `vecbench.c` | 0 SIMD instructions against 10; **8.37 → 14.53 GB/s** (64 MiB) and **9.68 → 46.28** (16 KiB) |
+| Float reductions need permission | `gcc -S` | `-O3` 10 SIMD instructions in the float sum, `-O3 -ffast-math` **14** |
+| **PGO doing nothing, correctly** | `fast.c` | 0.0380 s with and without |
+| The timer is too coarse | `/usr/bin/time` | ten runs of a 30 ms program: `0.03 0.03 0.04 0.04 0.03 …` |
+| **The staged breakdown** | `st1/st2/st3.c` | hash table **23×**; `normalise` +10%; score bucketing **3× of what remained** |
+
+### The bug this week was written with, kept as the lab
+
+The first version of `roof.c` measured memory bandwidth as
+
+```c
+for (size_t i = 0; i < n; i++) s += a[i];
+```
+
+and reported **6.28 GB/s** — after which the kernel table showed `axpy` achieving **222% of the
+roof**, which cannot happen. A single-accumulator reduction is a **dependency chain** bounded by
+floating-point add latency, not by memory; with eight accumulators the same loop reads **13.71
+GB/s** and every kernel falls below 100%.
+
+**Lab 9 is built on it.** TODO 1 tells students to write the obvious loop first, note the number,
+and then find the row above 100%. The same mistake then appears deliberately as a kernel — `sum
+(1 acc)` at 45% — and again in L30 §3, where it turns out to be exactly what `-O2` was doing wrong
+in the vectorisation comparison. **Three appearances of one idea, and the first one was an
+accident.**
+
+### Amdahl, in the direction people forget
+
+The staged measurements show `compute_scores` as **0.055 s of 2.351 — 2.3%, correctly ignored** in
+the first profile, and then as **a third of the remaining runtime** once the hash table is in. The
+solutions ask markers to reward a student who re-profiled and noticed; most re-profile and do not
+remark on it.
+
+### And the running count
+
+Quiz 9's closing note makes this the term's **sixth** instance of *a measurement that produces
+nothing, or something impossible, is a fact about the measurement*: Week 2's untorn records, Week
+4's 339× allocator and deleted timing loops, Week 5's "Hello, world" benchmark, Week 7's clean
+`fsck` on a corrupted file, Week 8's profiler reporting two allocations, and now Week 9's 222% of a
+roofline. **The Week 9 README tabulates all five of the numeric ones**, because by this point in
+the course the pattern is worth naming rather than rediscovering.
+
+---
+
 *Academic Registry · Build Records · Year 2 Sophomore · © CSE Department*
