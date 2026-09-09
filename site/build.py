@@ -41,13 +41,14 @@ SECTION_LABELS = {
     "assignments": "Assignments",
     "lab": "Lab",
     "labs": "Labs",
+    "recitation": "Recitation",
     "quiz": "Quiz",
     "quizzes": "Quizzes",
     "resources": "Resources",
     "solutions_instructor": "Solutions",
 }
-SECTION_ORDER = ["lectures", "lab", "labs", "assignments", "quiz", "quizzes",
-                 "resources", "solutions_instructor"]
+SECTION_ORDER = ["lectures", "lab", "labs", "recitation", "assignments",
+                 "quiz", "quizzes", "resources", "solutions_instructor"]
 
 SOLUTION_MARKERS = re.compile(r"NOT FOR STUDENTS|INSTRUCTOR ONLY", re.I)
 # Word-bounded: without \b, "solution" matches inside "Collision Resolution"
