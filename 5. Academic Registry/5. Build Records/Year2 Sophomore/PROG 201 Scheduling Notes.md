@@ -941,4 +941,68 @@ the student materials.
 
 ---
 
-*Academic Registry · Build Records · Year 2 Sophomore · © CSE Department*
+## 24. Week 12 is the capstone; `ab` is substituted and one measurement was nearly wrong
+
+Week 12 (Synthesis — Building a Production Daemon) centres on **Project 2**, a production HTTP daemon
+built from the students' Week 5–6 concurrent server. It has no quiz (Weeks 11–12 are examined on the
+final) and its lab is demo day + peer code review, so the folder shape differs: `assignments/`
+carries Project 2 and a starter scaffold, `lab/harness/` carries the provided test tools, and there
+is no PS or quiz.
+
+**Tool substitution.** `apache2-utils` (`ab`) is not installed on a student account (the syllabus
+already flags it ⚠️). The course therefore ships its **own** load client, `bench` — 50 lines,
+opens C parallel connections firing R requests each, and reports throughput and **p99** latency
+(sorted, not just the mean). A companion `rudeclient` models a mid-response disconnect (FIN or RST).
+Both are provided in `lab/harness/`, build warning-clean, and are the Project 2 measurement kit. This
+is a genuine improvement over `ab` for the week's purpose: students see the percentile machinery
+rather than trusting a black box.
+
+**A near-miss worth recording, because it is the week's own lesson turned on the build.** The first
+throughput table was measured against port 8080 and showed clean 1→8-worker scaling (10.8k→20.7k
+req/s). It was **wrong**: a `java` process on the machine held `*:8080`, so `bench` was measuring
+*that* server — my daemon's `bind` had failed with `EADDRINUSE` and I had not read its stderr. Moving
+to a free high port (39117) and re-measuring gave the real numbers (below), which tell the opposite
+story (flat, not scaling). The corrected build uses a free port throughout, the harness README warns
+students to check `ss -ltn` first, and the marking notes make "measuring the wrong server" a listed
+grading pitfall. *A measurement whose provenance you have not checked is a fact about the machine,
+not about your program* — the course's discipline, caught applying to the course's own author.
+
+## 25. Every result in Week 12 was measured on the reference machine
+
+Intel i5-8250U (**8 logical CPUs**, `nproc`), Ubuntu 24.04, glibc 2.39, Linux 7.0.0-30, cgroup v2.
+All traffic over loopback. Programs: `httpd` (the reference daemon, in `solutions_instructor/`),
+`bench` and `rudeclient` (the harness), and a two-write `sigtest_server`/`sigtest_client` for the
+SIGPIPE reproduction. Throughput/latency drift run to run; the shapes are invariant.
+
+| Claim | How (program) | Result |
+|---|---|---|
+| **Graceful shutdown drains, exits clean** | `kill -TERM` mid-request | `draining` → `drained and exiting 0`, **exit 0**, in-flight completed |
+| **Unhandled SIGPIPE kills the daemon** | `sigtest_server` (default) + client close | `write1=17 ok`, then **SIGPIPE**, **exit 141** (128+13) |
+| **`SIG_IGN` turns it into a handled EPIPE** | `sigtest_server ignore` | `write1 ok`, `write2 = -1 (Broken pipe)`, **SURVIVED, exit 0** |
+| full daemon survives a rude client | `httpd` + `rudeclient` | `[worker] client gone (EPIPE), handled`; follow-up request succeeds |
+| **Trivial handler is accept-bound (flat)** | `bench P 50 200`, 1/2/4/8/16 workers | **36.2k / 35.9k / 36.4k / 33.8k / 32.5k req/s** — flat, 16 *slower* than 4 |
+| latency distribution | same, 4 workers | mean **2.33ms**, p50 1.77ms, **p99 11.06ms**, max 17.76ms |
+| **Blocking handler is worker-bound (linear)** | `bench P 10 4 /slow`, 1/2/4/8 workers | **5 / 10 / 20 / 40 req/s** (= 5×workers), wall 8.02/4.01/2.01/1.01s |
+| **No fd leak** | `/proc/<pid>/fd` across 10 000 reqs | **6 → 6, delta 0** |
+| **No memory leak** | `VmRSS` across 5×10 000 reqs | **1712 → 1728 kB, then flat** |
+| **Privileged port needs root** | `httpd 80 1` unprivileged | `bind :80: Permission denied` (**EACCES**) |
+| `/proc/self/status` group format | `grep Groups: /proc/self/status` | space-separated GIDs incl. `27` (sudo) — the read that exposes a bad drop |
+
+### The two Week 12 "present but not working" findings, completing the pattern at seven
+
+- **SIGPIPE (L37 §5):** careful `write`-return checking is present and never runs, because the signal
+  terminates the process first. Revealed by making a client hang up and reading the exit code (141 vs
+  0). Sixth entry.
+- **`setuid` without `setgroups` (L39 §2):** the privilege drop is present (`getuid()` confirms the
+  new uid) and incomplete (root's supplementary groups survive). Revealed by reading `Groups:` in
+  `/proc/self/status`, not by `getuid()`. Seventh entry — taught by reading (no root to `setuid` on
+  the lab image, handled like Week 11's `mount` EPERM).
+
+The course now has a **seven-entry table** of the same law across Weeks 3, 8, 10 (×2), 11, 12 (×2),
+and each entry's revealing measurement is recorded in that week's lecture and here. This is the spine
+the syllabus's Week-12 objective ("what separates working code from code that runs unattended")
+resolves to: the measurement taken *after* the code looked done.
+
+---
+
+*Academic Registry · Build Records · Year 2 Sophomore · © CSE Department · PROG 201 build complete*
