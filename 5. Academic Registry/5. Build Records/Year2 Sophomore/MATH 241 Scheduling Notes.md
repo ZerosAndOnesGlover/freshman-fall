@@ -128,7 +128,7 @@ paper will carry it in its header, as PROG 201's Lab 5 does for the same break.)
 
 ---
 
-## 6. Every number in Weeks 0–11 was computed, and the programs ship with the notes
+## 6. Every number in Weeks 0–12 was computed, and the programs ship with the notes
 
 The reference machine is the same one PROG 201 used: **Intel i5-8250U, Ubuntu 24.04.4 LTS,
 kernel 7.0**, with **CPython 3.14.2** and IEEE 754 binary64.
@@ -152,6 +152,8 @@ results are exact rather than dependent on a BLAS.
 | `MATH241 Week9/resources/leastsquares.py` | L27–L29: a line fit exact in `Fraction`, with the minimum verified by perturbation; **Läuchli's matrix going exactly singular in floating point**; **three least-squares methods compared, including a from-scratch Householder QR**; a parabola fit; **one outlier tripling a slope** |
 | `MATH241 Week10/resources/symmetric.py` | L30–L32: **the spectral theorem checked exactly in `Fraction`** — $Q^\mathsf{T}Q = I$ and $Q\Lambda Q^\mathsf{T} = A$ with no rounding; the five positive-definiteness tests flipping at exactly $b = \tfrac{32}{15}$; $LDL^\mathsf{T}$ as completing the square; a **Jacobi eigenvalue solver written from scratch**; **Week 0's Hilbert matrix diagnosed**; **the eigenvalue-perturbation measurement, symmetric against not** |
 | `MATH241 Week11/resources/svd.py` | L33–L35: **three SVDs checked exactly in `Fraction`** — a non-symmetric $2\times2$, a rectangular $3\times2$, a rank-2 $3\times3$; a **one-sided Jacobi SVD written from scratch**; four subspaces and the pseudoinverse with all four Penrose conditions exact; the shortest least-squares solution exact via a full-rank factorisation; **numerical rank — six pivots against a singular-value gap of $8\times10^{10}$**; Eckart–Young measured; a picture compressed; total least squares; Week 9's Läuchli table completed |
+| `MATH241 Week12/resources/applications.py` | L36–L38: **training against test error by polynomial degree**, in two bases; PCA as the SVD of centred data, and **the covariance route's negative variance**; the regression plane against the PCA plane; **PageRank on six pages exactly**, with its characteristic polynomial exact and power iteration measured against $\lvert\lambda_2\rvert^k$; the undamped failures; Fourier coefficients as projections; **the Gibbs overshoot converging to $\tfrac2\pi\operatorname{Si}(\pi)$**; the DCT's energy compaction |
+| `MATH241 Week12/solutions_instructor/final_check.py` | **Instructor only.** 81 assertions covering every number in the final examination's mark scheme. Kept out of `resources/` so that no student-facing file contains the paper's answers |
 
 **Exact results were computed in `Fraction` and floating-point results in `float`**, and the notes
 say which is which at every table. **One figure is machine-dependent and is labelled as such:** the
@@ -542,6 +544,88 @@ math element — **found two more that had shipped**: Week 1's Quiz 1 answer key
 (`$\det(10^6 I_2) $`) and Week 4's REC 4 TA notes (`$A^2 = $`). All three are fixed, and both scans
 now run as part of the gate: the source check for edge whitespace, and the rendered-page check for
 stray `$`, which catches the whole family regardless of cause.
+
+
+### The syllabus said the four applications are "the same theorem", and Week 12 checks it
+
+**Week 0's syllabus lists Week 12 as *PCA, PageRank, regression, Fourier* with the gloss *all four are
+the same theorem*.** The course's habit is to verify claims, including its own, so L38 §6 does.
+
+**The verdict is three out of four.** Regression, PCA and Fourier are orthogonal projection — Week 8's
+L25 — in three different spaces. **PageRank is not**: its matrix is non-symmetric with complex
+eigenvalues, no inner product appears in the problem, and it is well-posed only because damping
+makes every entry positive so that Perron–Frobenius applies.
+
+**The syllabus was not edited.** It is a Week 0 document and its sentence is a fair one-line summary for
+a student who has not yet met any of the four. **L38 §6 states the refinement where it can be
+understood** — *the same question, answered by the same theorem three times* — and the README and
+summary repeat it. **A future edit of the syllabus could say "the same question"**; recorded here so
+that the choice not to is visible.
+
+### The final examination: room, marks, and weighting
+
+**[[Year2 - Sophomore/ASSESSMENT CALENDAR|ASSESSMENT CALENDAR]] gives MATH 241's final as Dec 15,
+09:00–11:30, 25%, and names no room.** [[Year2 - Sophomore/ROOM ASSIGNMENTS|ROOM ASSIGNMENTS]]'s exam
+table gives *Final Exams — VNC 100 + overflow to TH 200, assignment based on course enrollment, posted
+on the course portal ≥ 1 week before*. **The paper and every Week 12 file use that**, and tell students
+to check their seat on the portal rather than asserting one.
+
+**The paper is 100 marks in 150 minutes**, because the MATH 241 gradebook's Final Exam row says
+*Possible 100*. CS 211's final is 150 marks in the same time; **the gradebook is authoritative for its
+own course**, and a 150-mark paper would have needed a gradebook edit that nothing else justified.
+
+**Weighting: Section A (Weeks 0–5) 34, Section B (Weeks 6–9) 26, Section C (Weeks 10–12) 40.** The
+two midterms examined Weeks 0–5 and 6–9 properly; **Weeks 10–12 have never been examined**, so the
+final spends its depth there. The Revision Guide states the split and the reason.
+
+**Every matrix on the paper is new** — none appears in any lecture, problem set, quiz or recitation —
+and every number is asserted by `final_check.py`. The one near-miss considered and rejected: a $2\times2$
+SVD sharing its singular vectors with REC 11's matrix, which would have rewarded memorising a
+recitation sheet. **The paper's $\begin{bmatrix}12&14\\21&12\end{bmatrix}$ has a reflection in $U$**,
+which no earlier example had.
+
+### Recitation 12 sits in the completion period and deliberately reuses a known matrix
+
+**§3 above already placed Recitation 12 on the Thursday of the completion period (Dec 11)**, and the
+syllabus's recitation table agrees. It is the final review, and **its §1 takes Week 10's matrix
+through all twelve weeks** — $LDL^\mathsf{T}$, determinant, subspaces, eigenvectors, powers, $Q$,
+positive definiteness, SVD, norms, variance explained.
+
+**This breaks the course's rule of a distinct matrix per artifact, on purpose.** A review session's
+point is that students can check themselves against the notes that night; a fresh matrix would
+remove that. **The TA notes also instruct that the session must not preview the paper**, and that an
+instructor who has seen the paper should not run it.
+
+### Week 12 has no quiz and three lectures, and ends the lecture numbering at L38
+
+**No Quiz 12**: the registry's quiz rule is Weeks 1–11, and Quiz 11's key says it is the last.
+**Three lectures** (Mon Dec 1, Tue Dec 2, Fri Dec 5), numbered **L36–L38** — so the term ends at L38,
+as §7's note on Week 6's two-lecture week predicted.
+
+### Friday Dec 5 is the heaviest deadline of the term
+
+**PS 11 and PS 12 in every Year 2 Fall course, plus Project 2 in CS 201, PROG 201 and CS 211**, all at
+17:00. MATH 241 can move none of it. **PS 12 is written to be finished in an evening**, entirely by hand,
+and its header says so; the Week 12 README names the load in its first call-out.
+
+### Errors caught in Week 12 drafts before anything used them
+
+**Three overclaims in the first run of `applications.py`**, each corrected in the script and the
+lectures:
+
+- **"The Legendre basis *cures* the conditioning."** It improves it — by about $100\times$ at degree 19 —
+  and at degree 19 the Legendre matrix still has $\operatorname{cond} = 10^{10}$. Now "improves".
+- **The covariance route "possibly" returns a negative variance.** It *did*: $-9.7\times10^{-17}$. Now
+  stated as measured.
+- **Perron–Frobenius was credited with the bound $\lvert\lambda_2\rvert \le \alpha$.** It gives
+  $\lvert\lambda_2\rvert < 1$; the $\alpha$ bound is Haveliwala and Kamvar's (2003). Both are now
+  attributed correctly in the script, L37 §5 and the README.
+
+**Two errors in the first draft of PS 12's solutions**: Q3(d)'s remark compared an **error**
+percentage from L38 §4 ($2.48\%$) with an **energy** percentage ($82.75\%$) as though they were the
+same kind of number — the correct comparison is $99.94\%$ of energy kept; and Q2(d)'s link-based
+explanation was muddled. Both rewritten, and the Q3(d) note now warns markers to watch for the same
+confusion in scripts.
 
 ---
 
