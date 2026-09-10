@@ -128,7 +128,7 @@ paper will carry it in its header, as PROG 201's Lab 5 does for the same break.)
 
 ---
 
-## 6. Every number in Weeks 0–3 was computed, and the programs ship with the notes
+## 6. Every number in Weeks 0–4 was computed, and the programs ship with the notes
 
 The reference machine is the same one PROG 201 used: **Intel i5-8250U, Ubuntu 24.04.4 LTS,
 kernel 7.0**, with **CPython 3.14.2** and IEEE 754 binary64.
@@ -144,6 +144,7 @@ results are exact rather than dependent on a BLAS.
 | `MATH241 Week1/resources/matrices.py` | L04–L06: $PQ \ne QP$; the $(AB)C$ / $A(BC)$ flop count **and timing**; $A = LU$ and $A^{-1}$ of the running matrix; solve-against-invert on Hilbert systems; the tridiagonal $K$ and its dense inverse |
 | `MATH241 Week2/resources/spaces.py` | L07–L09: `rref` and the pivot/free split; the column dependencies; **the two different planes $\mathbf{C}(A)$ and $\mathbf{C}(\operatorname{rref}A)$**; the special solutions verified against $A$; the complete solution and the consistent/inconsistent pair; the subspace table |
 | `MATH241 Week3/resources/dimension.py` | L10–L12: independence as a null-space test; **all four subspaces of one matrix** with bases, ambient spaces and dimensions; both dimension sums; **the left null space shown to be Week 2's plane coefficients**; all ten orthogonality dot products; every row rebuilt from the rref's rows |
+| `MATH241 Week4/resources/transformations.py` | L13–L15: each standard matrix built from $T(e_1)$ and $T(e_2)$; **rotations composing and commuting**; $d/dx$ on $\mathbb{P}_3$ with $D^4 = 0$; **a reflection and a projection diagonalised by change of basis**; trace, determinant and rank shown equal across each similar pair |
 
 **Exact results were computed in `Fraction` and floating-point results in `float`**, and the notes
 say which is which at every table. **One figure is machine-dependent and is labelled as such:** the
@@ -186,6 +187,34 @@ A student who has carried the same nine numbers for three weeks meets that as a 
 than as a new definition. **The problem sets and recitations use different matrices throughout** —
 three distinct ones per week, so that neither the recitation nor the lectures can be used to
 shortcut the paper.
+
+
+### Week 4 is taken out of the textbook's order, deliberately
+
+**Strang puts linear transformations in Chapter 8**, after eigenvalues and orthogonality. The
+curriculum docx puts them in **Week 4**, before determinants, and this build follows the curriculum.
+
+The reason is worth recording rather than leaving as an accident of the syllabus: **change of basis
+is the tool Weeks 7, 10 and 11 all use.** Meeting it for the first time inside a discussion of
+diagonalisation makes it look like a device specific to eigenvectors, when it is the general fact
+and eigenvectors are one application. Taking it in Week 4 means Week 6 can ask *"which vectors does
+$T$ send to multiples of themselves"* as a question the student already knows the point of.
+
+**Nothing is lost by the reordering.** Chapter 8 depends on nothing after Chapter 3 except a
+handful of eigenvalue paragraphs in §8.3, and the Week 4 reading guide tells the student to read
+around them and says why.
+
+### Week 4 is heavy for reasons outside this course
+
+[[Year2 - Sophomore/ASSESSMENT CALENDAR|ASSESSMENT CALENDAR]] puts **PROG 201's Midterm 1 on the
+Monday of Week 4** (18:00–19:30) and **CS 211's on the Tuesday** (20:00–21:15). MATH 241 has no exam
+that week — its Midterm 1 is the Wednesday of Week 6 — but a Year 2 student sits two evening papers
+in forty-eight hours while this course releases PS 4 on the Wednesday.
+
+**Nothing was moved.** MATH 241's own load that week is a problem set on its normal cycle, and
+shifting it would collide with Week 5's. **The Week 4 README says so in a callout at the top**, so
+that a student meets the clash in the course that is not causing it and can plan the front of the
+week around the two exams.
 
 ---
 
