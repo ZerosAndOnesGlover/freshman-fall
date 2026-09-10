@@ -121,8 +121,8 @@ Now join the two halves. Suppose $b \in \mathbf{C}(A)$, so at least one solution
 > $$\{\,x_p + x_n \;:\; x_n \in \mathbf{N}(A)\,\}.$$
 >
 > *Proof.* **($\supseteq$)** $A(x_p + x_n) = Ax_p + Ax_n = b + 0 = b$.
-> **($\subseteq$)** If $Ax = b$, put $x_n = x - x_p$; then $Ax_n = b - b = 0$, so $x_n \in
-> \mathbf{N}(A)$ and $x = x_p + x_n$. $\square$
+> **($\subseteq$)** If $Ax = b$, put $x_n = x - x_p$; then $Ax_n = b - b = 0$, so
+> $x_n \in \mathbf{N}(A)$ and $x = x_p + x_n$. $\square$
 
 **Both directions matter.** The first says everything of that form is a solution; the second says there is nothing else. **This is the promised structure of Week 0's L01 §5**, which proved two solutions generate a line without saying what the line was made of. It is made of $\mathbf{N}(A)$.
 

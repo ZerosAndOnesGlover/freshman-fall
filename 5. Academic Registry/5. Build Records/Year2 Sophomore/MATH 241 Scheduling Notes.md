@@ -128,7 +128,7 @@ paper will carry it in its header, as PROG 201's Lab 5 does for the same break.)
 
 ---
 
-## 6. Every number in Weeks 0–2 was computed, and the programs ship with the notes
+## 6. Every number in Weeks 0–3 was computed, and the programs ship with the notes
 
 The reference machine is the same one PROG 201 used: **Intel i5-8250U, Ubuntu 24.04.4 LTS,
 kernel 7.0**, with **CPython 3.14.2** and IEEE 754 binary64.
@@ -143,6 +143,7 @@ results are exact rather than dependent on a BLAS.
 | `MATH241 Week0/resources/elimination.py` | L01–L03: the running example and its pivots; the pivoting failure at four values of $\varepsilon$; exact $\operatorname{cond}_\infty$ of the Hilbert matrices and the float solve error at each; the operation-count table; the 299-digit pivot |
 | `MATH241 Week1/resources/matrices.py` | L04–L06: $PQ \ne QP$; the $(AB)C$ / $A(BC)$ flop count **and timing**; $A = LU$ and $A^{-1}$ of the running matrix; solve-against-invert on Hilbert systems; the tridiagonal $K$ and its dense inverse |
 | `MATH241 Week2/resources/spaces.py` | L07–L09: `rref` and the pivot/free split; the column dependencies; **the two different planes $\mathbf{C}(A)$ and $\mathbf{C}(\operatorname{rref}A)$**; the special solutions verified against $A$; the complete solution and the consistent/inconsistent pair; the subspace table |
+| `MATH241 Week3/resources/dimension.py` | L10–L12: independence as a null-space test; **all four subspaces of one matrix** with bases, ambient spaces and dimensions; both dimension sums; **the left null space shown to be Week 2's plane coefficients**; all ten orthogonality dot products; every row rebuilt from the rref's rows |
 
 **Exact results were computed in `Fraction` and floating-point results in `float`**, and the notes
 say which is which at every table. **One figure is machine-dependent and is labelled as such:** the
@@ -170,6 +171,21 @@ adopted for its shared-memory measurement.
   are different planes** ($5b_1-2b_2+b_3=0$ against $b_3=0$), separated by $(1,0,0)$. The script
   prints both equations side by side, because a student who is told this and not shown it will
   reproduce the sentence and still take the pivot columns of the rref.
+
+
+### One matrix across three weeks
+
+**Weeks 2 and 3 share a single $3\times4$ matrix**, and the continuity is deliberate rather than
+economical. Week 2 computes $\mathbf{C}(A)$ and $\mathbf{N}(A)$ and derives the plane equation
+$5b_1 - 2b_2 + b_3 = 0$ by hand, remarking without proof that the coefficient vector must be
+perpendicular to every column. **Week 3's L12 §5 then identifies $(5,-2,1)$ as a basis for
+$\mathbf{N}(A^\mathsf{T})$** and explains why there was exactly one condition: $\dim\mathbf{N}(A^\mathsf{T})
+= m - r = 1$.
+
+A student who has carried the same nine numbers for three weeks meets that as a loop closing rather
+than as a new definition. **The problem sets and recitations use different matrices throughout** —
+three distinct ones per week, so that neither the recitation nor the lectures can be used to
+shortcut the paper.
 
 ---
 
