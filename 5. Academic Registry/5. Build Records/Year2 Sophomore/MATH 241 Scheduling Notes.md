@@ -128,7 +128,7 @@ paper will carry it in its header, as PROG 201's Lab 5 does for the same break.)
 
 ---
 
-## 6. Every number in Weeks 0–9 was computed, and the programs ship with the notes
+## 6. Every number in Weeks 0–10 was computed, and the programs ship with the notes
 
 The reference machine is the same one PROG 201 used: **Intel i5-8250U, Ubuntu 24.04.4 LTS,
 kernel 7.0**, with **CPython 3.14.2** and IEEE 754 binary64.
@@ -150,6 +150,7 @@ results are exact rather than dependent on a BLAS.
 | `MATH241 Week7/resources/diagonalize.py` | L21–L23: $A = S\Lambda S^{-1}$ assembled and verified; **$A^k$ by both routes, agreeing**; the defectiveness table across four values of $\varepsilon$; **Binet's formula against exact Fibonacci numbers**; a Markov chain's convergence with $0.7^k$ as the rate; three spirals distinguished by $\lvert\lambda\rvert$ |
 | `MATH241 Week8/resources/orthogonal.py` | L24–L26: **the ten four-subspace dot products, now as a theorem**; $P = A(A^\mathsf{T}A)^{-1}A^\mathsf{T}$ with $P^2 = P$ and $P^\mathsf{T} = P$ verified; a projection splitting $b$ into $\mathbf{C}(A) \oplus \mathbf{N}(A^\mathsf{T})$; **Gram–Schmidt producing the discrete Legendre vectors**; $A = QR$ exact to machine precision; **the $\operatorname{cond}(S)$ table answering Week 7's complaint** |
 | `MATH241 Week9/resources/leastsquares.py` | L27–L29: a line fit exact in `Fraction`, with the minimum verified by perturbation; **Läuchli's matrix going exactly singular in floating point**; **three least-squares methods compared, including a from-scratch Householder QR**; a parabola fit; **one outlier tripling a slope** |
+| `MATH241 Week10/resources/symmetric.py` | L30–L32: **the spectral theorem checked exactly in `Fraction`** — $Q^\mathsf{T}Q = I$ and $Q\Lambda Q^\mathsf{T} = A$ with no rounding; the five positive-definiteness tests flipping at exactly $b = \tfrac{32}{15}$; $LDL^\mathsf{T}$ as completing the square; a **Jacobi eigenvalue solver written from scratch**; **Week 0's Hilbert matrix diagnosed**; **the eigenvalue-perturbation measurement, symmetric against not** |
 
 **Exact results were computed in `Fraction` and floating-point results in `float`**, and the notes
 say which is which at every table. **One figure is machine-dependent and is labelled as such:** the
@@ -185,8 +186,8 @@ adopted for its shared-memory measurement.
 economical. Week 2 computes $\mathbf{C}(A)$ and $\mathbf{N}(A)$ and derives the plane equation
 $5b_1 - 2b_2 + b_3 = 0$ by hand, remarking without proof that the coefficient vector must be
 perpendicular to every column. **Week 3's L12 §5 then identifies $(5,-2,1)$ as a basis for
-$\mathbf{N}(A^\mathsf{T})$** and explains why there was exactly one condition: $\dim\mathbf{N}(A^\mathsf{T})
-= m - r = 1$.
+$\mathbf{N}(A^\mathsf{T})$** and explains why there was exactly one condition:
+$\dim\mathbf{N}(A^\mathsf{T}) = m - r = 1$.
 
 A student who has carried the same nine numbers for three weeks meets that as a loop closing rather
 than as a new definition. **The problem sets and recitations use different matrices throughout** —
@@ -377,6 +378,95 @@ solutions files instruct the TA not to discuss marks or confirm answers.
 
 **This is deliberate and should not be normalised into the standard format.** Recitation 5's note
 already said so; Recitation 9 is the second instance.
+
+
+### Week 10's matrices were built backwards, and the notes say so
+
+**The three matrices used in Week 10 — one for the lectures, one for PS 10, one for REC 10 — were
+constructed from their eigenvectors, not chosen and then analysed.** All three use triples of
+integer vectors that are mutually perpendicular **and of equal length 3**:
+
+| Where | Eigenvectors | Eigenvalues | Matrix |
+|---|---|---|---|
+| L30–L32 | $(1,2,2)$, $(2,1,-2)$, $(2,-2,1)$ | $1, 7, 4$ | $\begin{bmatrix}5&0&-2\\0&3&-2\\-2&-2&4\end{bmatrix}$ |
+| PS 10 | $(2,2,1)$, $(1,-2,2)$, $(2,-1,-2)$ | $10, 7, 4$ | $\begin{bmatrix}7&2&2\\2&8&0\\2&0&6\end{bmatrix}$ |
+| REC 10 | $(1,2,2)$, $(2,1,-2)$, $(2,-2,1)$ | $1, 7, 13$ | $\begin{bmatrix}9&-4&0\\-4&7&-4\\0&-4&5\end{bmatrix}$ |
+
+**Equal length 3 is what makes $Q$ rational**, and rational $Q$ is what lets `symmetric.py` verify
+$Q^\mathsf{T}Q = I$ and $Q\Lambda Q^\mathsf{T} = A$ **exactly, in `Fraction`, with no rounding
+anywhere.** No other week's central identity has been checkable to that standard.
+
+**The catch is that this is a construction, not a theorem, and a week built on a lucky matrix must
+say that it is lucky.** REC 10 §1(c) asks the students directly — *"is that a theorem or a
+convenience?"* — and the TA notes answer it plainly, with
+$\begin{bmatrix}2&1\\1&3\end{bmatrix}$ and its eigenvalues $\tfrac{5\pm\sqrt5}{2}$ as the
+counter-case. **Without that paragraph the week would quietly teach that symmetric eigenvectors
+come out as small integers, which is false and would be discovered on the final.**
+
+**The eigenvalues differ across the three matrices on purpose** — $\{1,7,4\}$, $\{10,7,4\}$,
+$\{1,7,13\}$ — so that a student who memorises the lecture's answers cannot shortcut either the
+paper or the recitation.
+
+### Week 10 ships the first eigenvalue solver of the term
+
+`symmetric.py` implements **Jacobi's method** — repeated plane rotations, each zeroing one
+off-diagonal entry — in about forty lines of pure Python.
+
+**It is here rather than in Week 6 or 7 for a reason.** Jacobi works **only** on symmetric matrices,
+and the whole argument of Week 10 is that symmetric matrices are the ones with a well-behaved
+eigenvalue problem. **The algorithm and the theorem are the same fact.** Its rotations are also the
+L28 argument transplanted: the running product of orthogonal rotations is orthogonal by
+construction, so nothing drifts — the same reason Householder QR survived Week 9's Läuchli test.
+
+**Week 6's L20 §6 declared the characteristic polynomial numerically unusable** and named the QR
+algorithm as what real software runs. **This is the first script in the course to make good on
+that** by computing eigenvalues without ever forming a polynomial.
+
+### The noise-floor discipline reaches its sharpest instance
+
+**Week 0 reported $\operatorname{cond}_\infty(H_{12}) = 4.1\times10^{16}$ from an exact inverse
+and could not say where the badness lived.** Week 10 says: entirely in $\lambda_\min$, which
+collapses from $2.7\times10^{-3}$ at $n = 3$ to $10^{-17}$ at $n = 12$ while $\lambda_\max$
+barely moves.
+
+**But $10^{-17}$ is smaller than the rounding error in the stored entries of $H_{12}$ itself**, so
+its digits are noise. `symmetric.py` §10 says so where it prints them, and L32 §5 repeats it in a
+call-out. **PS 10 Q4(b) then pushes the student one step further, to $n = 14$, where the computed
+$\lambda_\min$ comes out $-7.4\times10^{-18}$ — negative, for a matrix that is provably positive
+definite — and the computed $\operatorname{cond}_2$ comes out negative with it.**
+
+**That is the best question on the problem set**, because it cannot be answered by recall: the
+student has to say that the sign is noise, that the legitimate conclusion is a *lower bound* of
+about $10^{17}$, and that the exactly-computed $\operatorname{cond}_\infty$ column is what
+corroborates it. **The REC 10 TA notes explicitly instruct the TA not to spoil it.**
+
+### Recitation 10 puts the post-mortem last, on purpose
+
+**Recitation 10 is the session where Midterm 2 papers are returned** (papers follow the Midterm 1
+precedent: returned the week after the paper, so Week 11, and REC 10 is the Thursday of Week 11).
+
+**The mathematics is §1–§4 and the post-mortem is §5**, with the TA notes instructing that papers
+be handed back **face down at the start of §5, not at the start of the hour.** The reason is stated
+in the notes: a room that has just seen its marks does not do linear algebra.
+
+**This is the third recitation of the term whose shape is set by an exam rather than by its
+content** — REC 5 and REC 9 sat the day *after* a midterm and the day *before* a problem set, and
+REC 10 sits the day the marks arrive. **All three are deliberate and none should be normalised into
+the standard format.**
+
+### Week 10 is the first week of the term with two midterms in it
+
+**CS 201's Midterm 2 is Monday Nov 10 evening and MATH 241's is Wednesday Nov 12 evening**, with
+PS 9 due Friday Nov 14 — three fixed deadlines in five days, none of which this course can move.
+
+**Quiz 10 is the Monday morning of that week**, hours before CS 201's paper. **It was kept there
+rather than moved**: it is unmarked, it takes ten minutes, and it covers Week 9 — the part of
+Midterm 2 the students have had least time with. **Moving it would have removed the last diagnostic
+before the paper it is diagnosing for.** The quiz sheet says so explicitly, and its closing table
+tells a student choosing between attending L30 and revising to attend.
+
+*(Compare §5: Quiz 6 **was** moved, to the Tuesday, because Fall Break removed its Monday
+altogether. That was a forced move; this would have been a discretionary one.)*
 
 ---
 
