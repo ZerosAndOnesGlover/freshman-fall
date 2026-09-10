@@ -128,7 +128,7 @@ paper will carry it in its header, as PROG 201's Lab 5 does for the same break.)
 
 ---
 
-## 6. Every number in Weeks 0–8 was computed, and the programs ship with the notes
+## 6. Every number in Weeks 0–9 was computed, and the programs ship with the notes
 
 The reference machine is the same one PROG 201 used: **Intel i5-8250U, Ubuntu 24.04.4 LTS,
 kernel 7.0**, with **CPython 3.14.2** and IEEE 754 binary64.
@@ -149,6 +149,7 @@ results are exact rather than dependent on a BLAS.
 | `MATH241 Week6/resources/eigen.py` | L19–L20: the characteristic polynomial by exact interpolation; every eigenvector verified by an explicit $Av$ product; **the trace and determinant identities checked**; six predictable transformations with **one flagged `DEFECTIVE`**; the rotation's complex pair; **algebraic against geometric multiplicity on the shear** |
 | `MATH241 Week7/resources/diagonalize.py` | L21–L23: $A = S\Lambda S^{-1}$ assembled and verified; **$A^k$ by both routes, agreeing**; the defectiveness table across four values of $\varepsilon$; **Binet's formula against exact Fibonacci numbers**; a Markov chain's convergence with $0.7^k$ as the rate; three spirals distinguished by $\lvert\lambda\rvert$ |
 | `MATH241 Week8/resources/orthogonal.py` | L24–L26: **the ten four-subspace dot products, now as a theorem**; $P = A(A^\mathsf{T}A)^{-1}A^\mathsf{T}$ with $P^2 = P$ and $P^\mathsf{T} = P$ verified; a projection splitting $b$ into $\mathbf{C}(A) \oplus \mathbf{N}(A^\mathsf{T})$; **Gram–Schmidt producing the discrete Legendre vectors**; $A = QR$ exact to machine precision; **the $\operatorname{cond}(S)$ table answering Week 7's complaint** |
+| `MATH241 Week9/resources/leastsquares.py` | L27–L29: a line fit exact in `Fraction`, with the minimum verified by perturbation; **Läuchli's matrix going exactly singular in floating point**; **three least-squares methods compared, including a from-scratch Householder QR**; a parabola fit; **one outlier tripling a slope** |
 
 **Exact results were computed in `Fraction` and floating-point results in `float`**, and the notes
 say which is which at every table. **One figure is machine-dependent and is labelled as such:** the
@@ -339,6 +340,43 @@ computation.
 
 **Weeks 10 and 11 are two more factorisations**, and both reading guides should continue naming the
 chain.
+
+
+### Week 9's comparison was rebuilt after the first version contradicted its own claim
+
+The Week 9 script was written to show that **QR beats the normal equations** on Läuchli's matrix.
+The first version used **Gram–Schmidt QR**, and the measurement came out the other way: at
+$\varepsilon = 10^{-7}$ the normal equations gave nine correct digits and Gram–Schmidt QR gave
+$0.5115$.
+
+**The measurement was right and the intended claim was wrong.** Gram–Schmidt is unstable for nearly
+dependent columns — **which is exactly what Läuchli's matrix is** — and Week 8's L26 §5 had already
+said so.
+
+**The script now implements Householder QR from scratch** and reports three methods:
+
+| $\varepsilon$ | normal equations | Gram–Schmidt QR | Householder QR |
+|---|---|---|---|
+| $10^{-7}$ | $0.500000000$ | $0.511501869$ | $0.500000000$ |
+| $10^{-8}$ | FAILED (singular) | $1.000000000$ | $0.500000000$ |
+
+**The three-way table is a better lecture than the two-way one would have been**, because the
+slogan "use QR instead of the normal equations" is shown to be inadequate rather than confirmed —
+and because it vindicates a Week 8 remark with measurement rather than assertion.
+
+**L28 §4 also records that the normal equations' good values are luck**, not robustness:
+$\operatorname{cond}(A^\mathsf{T}A) \approx 2\times10^{14}$ at $\varepsilon = 10^{-7}$, so nine
+correct digits from a two-digit problem is a coincidence of that particular symmetric $2\times2$.
+
+### Recitations 5 and 9 share an unusual shape
+
+Both fall **the day after a midterm and the day before a problem set is due**, because the recitation
+lag (§3) puts Recitation *N* in Week *N+1* and both midterms sit on a Wednesday. **Both sheets are
+built for that slot** — short drill, long two-part clinic, problem set before post-mortem — and both
+solutions files instruct the TA not to discuss marks or confirm answers.
+
+**This is deliberate and should not be normalised into the standard format.** Recitation 5's note
+already said so; Recitation 9 is the second instance.
 
 ---
 
