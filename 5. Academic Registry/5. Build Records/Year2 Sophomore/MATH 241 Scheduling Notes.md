@@ -128,7 +128,7 @@ paper will carry it in its header, as PROG 201's Lab 5 does for the same break.)
 
 ---
 
-## 6. Every number in Weeks 0–5 was computed, and the programs ship with the notes
+## 6. Every number in Weeks 0–6 was computed, and the programs ship with the notes
 
 The reference machine is the same one PROG 201 used: **Intel i5-8250U, Ubuntu 24.04.4 LTS,
 kernel 7.0**, with **CPython 3.14.2** and IEEE 754 binary64.
@@ -146,6 +146,7 @@ results are exact rather than dependent on a BLAS.
 | `MATH241 Week3/resources/dimension.py` | L10–L12: independence as a null-space test; **all four subspaces of one matrix** with bases, ambient spaces and dimensions; both dimension sums; **the left null space shown to be Week 2's plane coefficients**; all ten orthogonality dot products; every row rebuilt from the rref's rows |
 | `MATH241 Week4/resources/transformations.py` | L13–L15: each standard matrix built from $T(e_1)$ and $T(e_2)$; **rotations composing and commuting**; $d/dx$ on $\mathbb{P}_3$ with $D^4 = 0$; **a reflection and a projection diagonalised by change of basis**; trace, determinant and rank shown equal across each similar pair |
 | `MATH241 Week5/resources/determinants.py` | L16–L18: **one determinant by three routes** — pivots, cofactors, and the $n!$ formula — all agreeing on 24; the derived properties checked one by one; the $n!$ against $n^3/3$ table and **a measured 751× at $n = 8$**; the product rule; **similarity invariance, the theorem Week 4 deferred**; the area factor of seven transformations |
+| `MATH241 Week6/resources/eigen.py` | L19–L20: the characteristic polynomial by exact interpolation; every eigenvector verified by an explicit $Av$ product; **the trace and determinant identities checked**; six predictable transformations with **one flagged `DEFECTIVE`**; the rotation's complex pair; **algebraic against geometric multiplicity on the shear** |
 
 **Exact results were computed in `Fraction` and floating-point results in `float`**, and the notes
 say which is which at every table. **One figure is machine-dependent and is labelled as such:** the
@@ -237,6 +238,51 @@ with different numbers instead.
 
 This is the only session in the term with that shape, and it is recorded here so that a later editor
 does not "fix" it into the standard format.
+
+
+### Week 6 has two lectures, not three, and that is not a compression
+
+**Week 6's Monday is Fall Break** ([[ACADEMIC CALENDAR]], Mon Oct 13, no classes) and this course
+lectures **Mon/Tue/Fri**. Week 6 therefore has **two** MATH 241 lectures — Tuesday and Friday — where
+every other teaching week has three.
+
+**This is a genuine loss, unlike Week 0's.** Week 0 also fell foul of a Monday holiday (Labor Day),
+but it is a ten-day week with four available slots for three lectures, so nothing was lost and only
+the days moved (§2). **Week 6 is an ordinary five-day week and simply has one fewer lecture.**
+
+**Nothing was moved to compensate.** The alternatives were all worse:
+
+| Option | Why not |
+|---|---|
+| Push a lecture into Week 7 | Week 7 already has three, and diagonalisation needs all of them |
+| Add a session on the Wednesday | **Midterm 1 is that evening.** A lecture that morning, on material not examined that night, is the worst hour in the term |
+| Add a session on the Thursday | Recitation 5 holds Thu 15:00, and the 11:00 slot is not this course's room |
+| Merge Weeks 6 and 7 | The curriculum states them as separate topics, and Week 7 is already the densest week in the course |
+
+**So Week 6 is built as a two-lecture week** — L19 and L20 — and the curriculum's topic
+(*Eigenvalues and Eigenvectors; Characteristic Polynomial*) fits, because Week 7 takes
+diagonalisation. **The term's lecture numbering therefore runs L01–L38 rather than L01–L39**, and
+the Week 6 files say "Lecture 1 of **2**" in their headers so that a reader does not go looking for
+a third.
+
+**The load is shifted onto the reading rather than dropped**, and the Week 6 reading guide says so
+in its opening line.
+
+### Week 6 is the worst week in the term for collisions
+
+Five days, four events, none of which this course chose:
+
+| Day | |
+|---|---|
+| Monday | Fall Break — no classes |
+| **Tuesday** | **Quiz 6** — moved from Monday (§5), the only non-Monday quiz of the term |
+| **Wednesday** | **Midterm 1**, 18:00–19:15, SSB 110, Weeks 0–5 |
+| Thursday | Recitation 5 *(covering Week 5)* |
+| **Friday** | **PS 5 due** 17:00, and L20 |
+
+**The Week 5 and Week 6 READMEs both carry this as a callout**, and Recitation 5's sheet is
+restructured for its post-midterm slot (§ above). **PS 6's header tells students not to leave it
+until after the exam**, since most of it is Week 5 revision anyway.
 
 ---
 
