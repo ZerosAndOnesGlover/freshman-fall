@@ -128,7 +128,7 @@ paper will carry it in its header, as PROG 201's Lab 5 does for the same break.)
 
 ---
 
-## 6. Every number in Weeks 0–6 was computed, and the programs ship with the notes
+## 6. Every number in Weeks 0–7 was computed, and the programs ship with the notes
 
 The reference machine is the same one PROG 201 used: **Intel i5-8250U, Ubuntu 24.04.4 LTS,
 kernel 7.0**, with **CPython 3.14.2** and IEEE 754 binary64.
@@ -147,6 +147,7 @@ results are exact rather than dependent on a BLAS.
 | `MATH241 Week4/resources/transformations.py` | L13–L15: each standard matrix built from $T(e_1)$ and $T(e_2)$; **rotations composing and commuting**; $d/dx$ on $\mathbb{P}_3$ with $D^4 = 0$; **a reflection and a projection diagonalised by change of basis**; trace, determinant and rank shown equal across each similar pair |
 | `MATH241 Week5/resources/determinants.py` | L16–L18: **one determinant by three routes** — pivots, cofactors, and the $n!$ formula — all agreeing on 24; the derived properties checked one by one; the $n!$ against $n^3/3$ table and **a measured 751× at $n = 8$**; the product rule; **similarity invariance, the theorem Week 4 deferred**; the area factor of seven transformations |
 | `MATH241 Week6/resources/eigen.py` | L19–L20: the characteristic polynomial by exact interpolation; every eigenvector verified by an explicit $Av$ product; **the trace and determinant identities checked**; six predictable transformations with **one flagged `DEFECTIVE`**; the rotation's complex pair; **algebraic against geometric multiplicity on the shear** |
+| `MATH241 Week7/resources/diagonalize.py` | L21–L23: $A = S\Lambda S^{-1}$ assembled and verified; **$A^k$ by both routes, agreeing**; the defectiveness table across four values of $\varepsilon$; **Binet's formula against exact Fibonacci numbers**; a Markov chain's convergence with $0.7^k$ as the rate; three spirals distinguished by $\lvert\lambda\rvert$ |
 
 **Exact results were computed in `Fraction` and floating-point results in `float`**, and the notes
 say which is which at every table. **One figure is machine-dependent and is labelled as such:** the
@@ -283,6 +284,28 @@ Five days, four events, none of which this course chose:
 **The Week 5 and Week 6 READMEs both carry this as a callout**, and Recitation 5's sheet is
 restructured for its post-midterm slot (§ above). **PS 6's header tells students not to leave it
 until after the exam**, since most of it is Week 5 revision anyway.
+
+
+### A trap that recurs, and is recorded once
+
+**Weeks 4 and 7 contain the same trap in different clothing**, and the notes treat it as one thing
+deliberately rather than as two coincidences.
+
+| Week | The error | Why no invariant catches it |
+|---|---|---|
+| **4** | computing $MAM^{-1}$ where $M^{-1}AM$ was wanted | $MAM^{-1}$ is **similar to $A$** |
+| **7** | swapping two diagonal entries of $\Lambda$ while keeping $S$ | the result is **similar to $A$** |
+
+In both cases the wrong answer shares $A$'s trace, determinant, rank, characteristic polynomial and
+eigenvalues — **not by coincidence but because it is similar to $A$**, so every similarity invariant
+is structurally incapable of distinguishing them.
+
+**The resolution is identical in both weeks: multiply out and compare with $A$.** Week 4's REC 4
+§2(f) and Week 7's REC 7 §1(b) each demonstrate it with numbers, and **Week 7's reading guide names
+Week 4 explicitly** so that a student meets it as a recurrence rather than as a fresh surprise.
+
+**Weeks 10 and 11 are two more factorisations** and the same discipline applies, which is why it is
+worth establishing twice before then.
 
 ---
 
