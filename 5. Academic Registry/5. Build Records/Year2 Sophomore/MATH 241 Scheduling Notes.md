@@ -128,7 +128,7 @@ paper will carry it in its header, as PROG 201's Lab 5 does for the same break.)
 
 ---
 
-## 6. Every number in Weeks 0–7 was computed, and the programs ship with the notes
+## 6. Every number in Weeks 0–8 was computed, and the programs ship with the notes
 
 The reference machine is the same one PROG 201 used: **Intel i5-8250U, Ubuntu 24.04.4 LTS,
 kernel 7.0**, with **CPython 3.14.2** and IEEE 754 binary64.
@@ -148,6 +148,7 @@ results are exact rather than dependent on a BLAS.
 | `MATH241 Week5/resources/determinants.py` | L16–L18: **one determinant by three routes** — pivots, cofactors, and the $n!$ formula — all agreeing on 24; the derived properties checked one by one; the $n!$ against $n^3/3$ table and **a measured 751× at $n = 8$**; the product rule; **similarity invariance, the theorem Week 4 deferred**; the area factor of seven transformations |
 | `MATH241 Week6/resources/eigen.py` | L19–L20: the characteristic polynomial by exact interpolation; every eigenvector verified by an explicit $Av$ product; **the trace and determinant identities checked**; six predictable transformations with **one flagged `DEFECTIVE`**; the rotation's complex pair; **algebraic against geometric multiplicity on the shear** |
 | `MATH241 Week7/resources/diagonalize.py` | L21–L23: $A = S\Lambda S^{-1}$ assembled and verified; **$A^k$ by both routes, agreeing**; the defectiveness table across four values of $\varepsilon$; **Binet's formula against exact Fibonacci numbers**; a Markov chain's convergence with $0.7^k$ as the rate; three spirals distinguished by $\lvert\lambda\rvert$ |
+| `MATH241 Week8/resources/orthogonal.py` | L24–L26: **the ten four-subspace dot products, now as a theorem**; $P = A(A^\mathsf{T}A)^{-1}A^\mathsf{T}$ with $P^2 = P$ and $P^\mathsf{T} = P$ verified; a projection splitting $b$ into $\mathbf{C}(A) \oplus \mathbf{N}(A^\mathsf{T})$; **Gram–Schmidt producing the discrete Legendre vectors**; $A = QR$ exact to machine precision; **the $\operatorname{cond}(S)$ table answering Week 7's complaint** |
 
 **Exact results were computed in `Fraction` and floating-point results in `float`**, and the notes
 say which is which at every table. **One figure is machine-dependent and is labelled as such:** the
@@ -306,6 +307,38 @@ Week 4 explicitly** so that a student meets it as a recurrence rather than as a 
 
 **Weeks 10 and 11 are two more factorisations** and the same discipline applies, which is why it is
 worth establishing twice before then.
+
+
+### Two Midterm-2 weeks carry other courses' exams
+
+**Week 8 repeats Week 4's pattern**: PROG 201's Midterm 2 on the Monday (18:00–19:30) and CS 211's on
+the Tuesday (20:00–21:15), both covering their own Weeks 4–7. **MATH 241 has no exam that week** —
+its Midterm 2 is the Wednesday of Week 10, covering Weeks 6–9 — and its PS 7 is due Friday on the
+normal cycle.
+
+**Nothing was moved, and the Week 8 README carries the clash as a callout**, exactly as Week 4's
+does. The two are the only weeks in the term where a Year 2 student sits two evening papers in
+forty-eight hours, and **in both cases MATH 241 is the course not causing it**, which is why it is
+the one that can afford to say so.
+
+### The verification discipline is now stated three times
+
+Weeks 4, 7 and 8 each end with the same instruction in different clothing, and the reading guides
+name the earlier instances so that a student meets a pattern rather than three unrelated warnings.
+
+| Week | The check | What it catches that nothing else does |
+|---|---|---|
+| **4** | multiply out $M^{-1}AM$ and compare with the intended $B$ | a reversed $M$ — the wrong answer is **similar to** the right one |
+| **7** | multiply out $S\Lambda S^{-1}$ and compare with $A$ | a mis-ordered $\Lambda$ — again **similar to** $A$ |
+| **8** | dot the error with each column: $A^\mathsf{T}e = 0$ | an arithmetic slip anywhere in the normal equations |
+
+**The first two are the same phenomenon** — every similarity invariant is structurally blind, so
+trace, determinant, rank and eigenvalues all agree with the wrong answer. **The third is different
+in kind but identical in discipline**: an exact check, costing seconds, that certifies the whole
+computation.
+
+**Weeks 10 and 11 are two more factorisations**, and both reading guides should continue naming the
+chain.
 
 ---
 
