@@ -106,7 +106,7 @@
 
 ---
 
-**Q7.** **You cannot tell, and the determinant is the wrong thing to look at.** $\det(cA) = c^n\det A$, so a tiny determinant may mean nothing but small entries — $10^{-4}I_{2}$ has $\det = 10^{-8}$ and is perfectly conditioned. **Compute $\operatorname{cond}(A) = \lVert A\rVert\lVert A^{-1}\rVert$ instead**, which is scale-invariant. *(L03 §6–§7. $\det H_{10} = 2.2\times10^{-53}$ and the difficulty is real; $\det(10^6 I_2) $ is enormous and there is none.)*
+**Q7.** **You cannot tell, and the determinant is the wrong thing to look at.** $\det(cA) = c^n\det A$, so a tiny determinant may mean nothing but small entries — $10^{-4}I_{2}$ has $\det = 10^{-8}$ and is perfectly conditioned. **Compute $\operatorname{cond}(A) = \lVert A\rVert\lVert A^{-1}\rVert$ instead**, which is scale-invariant. *(L03 §6–§7. $\det H_{10} = 2.2\times10^{-53}$ and the difficulty is real; $\det(10^6 I_2)$ is enormous and there is none.)*
 
 ---
 

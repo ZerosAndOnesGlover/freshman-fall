@@ -121,8 +121,8 @@ $$H = I - 2vv^\mathsf{T}, \qquad \lVert v\rVert = 1$$
 
 **And $Q$ is never assembled.** The reflections are applied to $A$ and to $b$ as they are computed, so what you store is the $v$'s — $O(mn)$ numbers rather than $m^2$.
 
-> **This is what `numpy.linalg.lstsq`, MATLAB's backslash on a tall matrix, and LAPACK's `dgels` all
-> do.** Not because Gram–Schmidt is wrong — it is a correct algorithm — but because **correct is not
+> **This is what MATLAB's backslash on a tall matrix and LAPACK's `dgels` do.** *(`numpy.linalg.lstsq`
+> is different: it calls LAPACK's `gelsd`, which is built on the SVD — Week 11.)* Not because Gram–Schmidt is wrong — it is a correct algorithm — but because **correct is not
 > the same as usable**, which is the distinction Week 5's L18 §6 first drew about the determinant and
 > which has now appeared five times.
 
@@ -132,7 +132,7 @@ $$H = I - 2vv^\mathsf{T}, \qquad \lVert v\rVert = 1$$
 
 | Situation | Do |
 |---|---|
-| **Least squares, any size** | `numpy.linalg.lstsq`, or `scipy.linalg.lstsq`. **Householder QR underneath** |
+| **Least squares, any size** | `numpy.linalg.lstsq`, or `scipy.linalg.lstsq`. **Both default to LAPACK's SVD-based `gelsd`** (Week 11); LAPACK's `dgels` is the Householder route |
 | **You want to understand what it did** | Form $A = QR$ by hand on a small case; solve $R\hat x = Q^\mathsf{T}b$ |
 | **Normal equations** | For **hand calculation on small problems** and for derivations. **Not in code** |
 | **Columns nearly dependent** | The SVD — **Week 11** — which handles rank deficiency as well |

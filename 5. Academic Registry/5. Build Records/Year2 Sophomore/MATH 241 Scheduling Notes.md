@@ -128,7 +128,7 @@ paper will carry it in its header, as PROG 201's Lab 5 does for the same break.)
 
 ---
 
-## 6. Every number in Weeks 0–10 was computed, and the programs ship with the notes
+## 6. Every number in Weeks 0–11 was computed, and the programs ship with the notes
 
 The reference machine is the same one PROG 201 used: **Intel i5-8250U, Ubuntu 24.04.4 LTS,
 kernel 7.0**, with **CPython 3.14.2** and IEEE 754 binary64.
@@ -151,6 +151,7 @@ results are exact rather than dependent on a BLAS.
 | `MATH241 Week8/resources/orthogonal.py` | L24–L26: **the ten four-subspace dot products, now as a theorem**; $P = A(A^\mathsf{T}A)^{-1}A^\mathsf{T}$ with $P^2 = P$ and $P^\mathsf{T} = P$ verified; a projection splitting $b$ into $\mathbf{C}(A) \oplus \mathbf{N}(A^\mathsf{T})$; **Gram–Schmidt producing the discrete Legendre vectors**; $A = QR$ exact to machine precision; **the $\operatorname{cond}(S)$ table answering Week 7's complaint** |
 | `MATH241 Week9/resources/leastsquares.py` | L27–L29: a line fit exact in `Fraction`, with the minimum verified by perturbation; **Läuchli's matrix going exactly singular in floating point**; **three least-squares methods compared, including a from-scratch Householder QR**; a parabola fit; **one outlier tripling a slope** |
 | `MATH241 Week10/resources/symmetric.py` | L30–L32: **the spectral theorem checked exactly in `Fraction`** — $Q^\mathsf{T}Q = I$ and $Q\Lambda Q^\mathsf{T} = A$ with no rounding; the five positive-definiteness tests flipping at exactly $b = \tfrac{32}{15}$; $LDL^\mathsf{T}$ as completing the square; a **Jacobi eigenvalue solver written from scratch**; **Week 0's Hilbert matrix diagnosed**; **the eigenvalue-perturbation measurement, symmetric against not** |
+| `MATH241 Week11/resources/svd.py` | L33–L35: **three SVDs checked exactly in `Fraction`** — a non-symmetric $2\times2$, a rectangular $3\times2$, a rank-2 $3\times3$; a **one-sided Jacobi SVD written from scratch**; four subspaces and the pseudoinverse with all four Penrose conditions exact; the shortest least-squares solution exact via a full-rank factorisation; **numerical rank — six pivots against a singular-value gap of $8\times10^{10}$**; Eckart–Young measured; a picture compressed; total least squares; Week 9's Läuchli table completed |
 
 **Exact results were computed in `Fraction` and floating-point results in `float`**, and the notes
 say which is which at every table. **One figure is machine-dependent and is labelled as such:** the
@@ -467,6 +468,80 @@ tells a student choosing between attending L30 and revising to attend.
 
 *(Compare §5: Quiz 6 **was** moved, to the Tuesday, because Fall Break removed its Monday
 altogether. That was a forced move; this would have been a discretionary one.)*
+
+
+### Week 11's exact SVDs came from a search, and the problem set's matrix was changed once
+
+**Rational SVDs are rarer than rational eigen-decompositions**, because both $U$ and $V$ must be
+rational at once. The lecture matrices were built from $(3,4,5)$ triangles and the $(1,2,2)$
+orthogonal sets Week 10 already used; **the problem-set and recitation matrices were found by an
+exhaustive search** over sign-and-permutation variants of those sets, keeping integer results with
+small entries.
+
+**The first rank-2 candidate for PS 11 Q2 was rejected after its numbers were computed.** It had the
+same column space as L34's $M$, so its projection $PP^+$ was **entry-for-entry identical** to the
+$MM^+$ printed in L34 §3 — a student could have copied the lecture. The replacement,
+$N = \begin{bmatrix}0&2&4\\4&6&4\\2&5&6\end{bmatrix}$, has a different column space and a
+different null space, and its $NN^+$ differs.
+
+| Where | Matrix | $\sigma$ | Note |
+|---|---|---|---|
+| L33–L35 | $\begin{bmatrix}12&11\\4&12\end{bmatrix}$, $\begin{bmatrix}9&12\\12&16\\-16&12\end{bmatrix}$, $M$ | $20,5$ · $25,20$ · $18,9,0$ | built backwards; L33 §3 says so |
+| PS 11 | $\begin{bmatrix}-2&8&20\\14&19&10\end{bmatrix}$, $N$ | $30,15$ · $12,3,0$ | a **wide** matrix, done through $WW^\mathsf{T}$ |
+| REC 11 | $\begin{bmatrix}5&-12\\12&-12\end{bmatrix}$, $\begin{bmatrix}8&-6\\4&-3\\-8&6\end{bmatrix}$ | $21,4$ · $15$ | the $2\times2$ has **complex eigenvalues** — chosen for that |
+
+### Two errors in Week 9 were found and corrected while building Week 11
+
+**REC 9 said Midterm 2 papers are returned in Week 12.** Week 10's files — and Midterm 1's precedent,
+papers back the week after the paper — say Week 11, at Recitation 10. The REC 9 sheet and its TA
+notes now say Week 11.
+
+**L28 said `numpy.linalg.lstsq` uses Householder QR**, in a call-out and in §6's table. **It does
+not**: `numpy.linalg.lstsq` calls LAPACK's `gelsd`, which is SVD-based, and `scipy.linalg.lstsq`
+defaults to the same driver. LAPACK's `dgels` and MATLAB's backslash on a tall matrix are the
+Householder route, and L28 still says so. **L35 §6 now states the correct fact, which is how the
+contradiction surfaced.** The Week 9 script's own statement — *LAPACK's `dgels` uses Householder* —
+was correct and is unchanged.
+
+### Two errors in the first draft of Week 11's script were caught before anything used it
+
+**The Läuchli comparison printed $1.000000000$ for every method.** The draft used the right-hand
+side $b = (2, \varepsilon, \varepsilon)$, whose exact least-squares solution is $(1,1)$ for every
+$\varepsilon$ — a problem with nothing to get wrong. **It contradicted Week 9's table**, which uses
+$b = (1,0,0)$ and exact $x_1 = 1/(2 + \varepsilon^2)$; the script now uses Week 9's $b$, and the
+normal equations fail at $10^{-8}$ exactly as they did there.
+
+**The draft ran "Week 3's L12 §4 matrix" through the SVD and had the wrong matrix** — an invented
+one of the right shape. It now uses L12's actual
+$\begin{bmatrix}1&3&3&2\\2&6&9&7\\-1&-3&3&4\end{bmatrix}$, whose singular values are
+$14.1277$, $5.32991$ and rounding noise.
+
+### Thanksgiving splits PS 11 across a recess, and puts two problem sets on one Friday
+
+**Thanksgiving recess (Nov 24) falls between Weeks 11 and 12**, not inside either (§3 already noted
+this for the recitation slots). **PS 11 is released Wednesday Nov 19 and due Friday Dec 5**, and
+[[Year2 - Sophomore/ASSESSMENT CALENDAR|ASSESSMENT CALENDAR]] puts **PS 12 on the same Friday**.
+CS 211's Week 11 and 12 files handle the identical collision, and MATH 241 follows them: PS 11's
+header names the recess and tells students to do Q1–Q2 before the break, and **PS 12 is written to
+be short.**
+
+**Recitation 11 is therefore the first session after ten days away**, the day before both problem
+sets are due. Its TA notes open with arithmetic on the board rather than a recap, and allow §1 to
+be run twice at the expense of §2(c) and §4.
+
+
+### A second class of math-rendering bug, and the check that now catches it
+
+**Every week's quality gate has checked that inline math never spans a line break.** Week 11 found a
+different failure the check could not see: **an inline span with a space just inside a delimiter**,
+such as `$A^2 = $`. The renderer, following the usual Markdown rule, will not close a span on a `$`
+that follows whitespace, so the whole span prints as literal text with its dollar signs.
+
+**It surfaced in REC 11**, and a new scan — every rendered MATH 241 page, for any `$` left outside a
+math element — **found two more that had shipped**: Week 1's Quiz 1 answer key
+(`$\det(10^6 I_2) $`) and Week 4's REC 4 TA notes (`$A^2 = $`). All three are fixed, and both scans
+now run as part of the gate: the source check for edge whitespace, and the rendered-page check for
+stray `$`, which catches the whole family regardless of cause.
 
 ---
 

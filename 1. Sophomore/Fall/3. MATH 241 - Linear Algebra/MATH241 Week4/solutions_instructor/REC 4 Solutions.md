@@ -42,7 +42,7 @@ $$RF = \begin{bmatrix}-1&0\\0&1\end{bmatrix} \ \text{(reflect across the } y\tex
 
 **(f)**
 
-- **$A^2 = I$:** the reflections — (b) and (c). **Reflecting twice returns everything to where it started**, so the map is its own inverse. *(Rotation by $-90°$ has $A^2 = $ rotation by $180°$, not $I$; a pair that names it should be asked what $A^4$ is.)*
+- **$A^2 = I$:** the reflections — (b) and (c). **Reflecting twice returns everything to where it started**, so the map is its own inverse. *(Rotation by $-90°$ has $A^2$ equal to rotation by $180°$, not $I$; a pair that names it should be asked what $A^4$ is.)*
 - **$A^2 = A$:** the projection, (d). **Projecting something already on the $y$-axis does nothing.** L14 §2 and Week 1's L05 exercise 6: idempotent and not the identity forces non-invertibility, and here that is visible — the whole $x$-axis is crushed to $0$.
 
 ---

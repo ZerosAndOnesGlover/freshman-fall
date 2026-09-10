@@ -106,7 +106,7 @@ Here: $\tfrac16 - \tfrac13 + \tfrac16 = 0$ ✓ and $1(\tfrac16) + 2(-\tfrac13) +
 
 ### Returned papers
 
-**Week 12.** Do not discuss marks. Work methods with different numbers.
+**Week 11, at Recitation 10** — the week after the paper, as Midterm 1's were. Do not discuss marks. Work methods with different numbers.
 
 **Say clearly:** **Weeks 10 and 11 are the hardest of the course**, they assume Weeks 6–9 throughout, and **this is the last comfortable moment to close a gap.** Names to Prof. Abara this week if anyone is clearly adrift.
 

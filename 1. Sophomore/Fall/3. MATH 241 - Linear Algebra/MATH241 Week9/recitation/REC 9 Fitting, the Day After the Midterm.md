@@ -92,7 +92,7 @@ $$A = \begin{bmatrix}1&1\\ \varepsilon&0\\ 0&\varepsilon\end{bmatrix}$$
 
 > **What the TA will and will not do.** Will: work the *method* of a hard question with different
 > numbers. Will not: confirm your answer, or discuss the mark scheme. **Papers are returned in
-> Week 12.**
+> Week 11, at Recitation 10.**
 >
 > **If the whole paper was hard**, that is an office-hours conversation, not a clinic one. Prof.
 > Abara is 10:00–11:00 Thursdays in SSB 310 — **this morning** — and the Help Desk is BH 120.
