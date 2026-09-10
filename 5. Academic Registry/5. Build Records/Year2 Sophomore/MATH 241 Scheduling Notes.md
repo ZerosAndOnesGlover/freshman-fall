@@ -128,7 +128,7 @@ paper will carry it in its header, as PROG 201's Lab 5 does for the same break.)
 
 ---
 
-## 6. Every number in Weeks 0–4 was computed, and the programs ship with the notes
+## 6. Every number in Weeks 0–5 was computed, and the programs ship with the notes
 
 The reference machine is the same one PROG 201 used: **Intel i5-8250U, Ubuntu 24.04.4 LTS,
 kernel 7.0**, with **CPython 3.14.2** and IEEE 754 binary64.
@@ -145,6 +145,7 @@ results are exact rather than dependent on a BLAS.
 | `MATH241 Week2/resources/spaces.py` | L07–L09: `rref` and the pivot/free split; the column dependencies; **the two different planes $\mathbf{C}(A)$ and $\mathbf{C}(\operatorname{rref}A)$**; the special solutions verified against $A$; the complete solution and the consistent/inconsistent pair; the subspace table |
 | `MATH241 Week3/resources/dimension.py` | L10–L12: independence as a null-space test; **all four subspaces of one matrix** with bases, ambient spaces and dimensions; both dimension sums; **the left null space shown to be Week 2's plane coefficients**; all ten orthogonality dot products; every row rebuilt from the rref's rows |
 | `MATH241 Week4/resources/transformations.py` | L13–L15: each standard matrix built from $T(e_1)$ and $T(e_2)$; **rotations composing and commuting**; $d/dx$ on $\mathbb{P}_3$ with $D^4 = 0$; **a reflection and a projection diagonalised by change of basis**; trace, determinant and rank shown equal across each similar pair |
+| `MATH241 Week5/resources/determinants.py` | L16–L18: **one determinant by three routes** — pivots, cofactors, and the $n!$ formula — all agreeing on 24; the derived properties checked one by one; the $n!$ against $n^3/3$ table and **a measured 751× at $n = 8$**; the product rule; **similarity invariance, the theorem Week 4 deferred**; the area factor of seven transformations |
 
 **Exact results were computed in `Fraction` and floating-point results in `float`**, and the notes
 say which is which at every table. **One figure is machine-dependent and is labelled as such:** the
@@ -215,6 +216,27 @@ in forty-eight hours while this course releases PS 4 on the Wednesday.
 shifting it would collide with Week 5's. **The Week 4 README says so in a callout at the top**, so
 that a student meets the clash in the course that is not causing it and can plan the front of the
 week around the two exams.
+
+
+### Week 5's timing note, and Recitation 5's unusual slot
+
+**Week 5 is the last teaching week before Midterm 1**, and the exam covers Weeks 0–5 — so the
+determinant material is examined six days after it is taught. Nothing was moved to relieve that: the
+curriculum puts determinants in Week 5 and the registry puts the midterm in Week 6, and both were
+followed.
+
+**The consequence lands on Recitation 5**, which by the lag rule (§3) is sat on the **Thursday of
+Week 6** — the day *after* the midterm and the day *before* PS 5 is due. Three deadlines in three
+days, in a week whose Monday is Fall Break.
+
+**The recitation sheet is written for that slot rather than against it.** Its drill sections are
+deliberately short, and its clinic is long and explicitly two-part: PS 5 first, because it has a
+deadline, then the paper. **The solutions file instructs the TA not to discuss marks or confirm
+individual answers** — papers are returned in Week 7 — and to work the *method* of a hard question
+with different numbers instead.
+
+This is the only session in the term with that shape, and it is recorded here so that a later editor
+does not "fix" it into the standard format.
 
 ---
 
