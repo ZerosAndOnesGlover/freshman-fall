@@ -576,4 +576,99 @@ out of order will get the same symptom, and `cpushare.sh` printing the PIDs is w
 
 ---
 
+## 25. Every number in Week 3 was measured, and the programs ship with the notes
+
+Same reference machine as §9. Programs in `CS202 Week3/resources/`; the futex lock skeleton in `lab/`;
+the PS 3 skeletons in `assignments/ps3/`; references in `solutions_instructor/`.
+
+| Claim | Program | Result |
+|---|---|---|
+| A race loses updates | `race.c`, 10M per thread | 2 threads **49.9%** lost, 4: 73.9%, 8: 68.8%; on one CPU **37.4 / 64.9 / 77.9%**; 1,000 per thread: **0 lost**; 100,000: 44.1% |
+| Uncontended lock costs | `lockcost.c`, CPU 3, 50M | none 1.61; atomic 5.41; TAS 10.68; CAS 12.68; futex (three-state) 10.67; `pthread_spin` 8.36; **`pthread_mutex` 7.39**; `sem` 19.05 ns |
+| An uncontended mutex never enters the kernel | `uncont.c` under `strace -f -c` | **34 system calls for the whole program, none `futex`**, for 50M lock/unlock pairs |
+| Sharing without locks | `contend.c` | per-thread padded counters **1.5 → 0.3 ns** at 8 threads; shared atomic **7.4 → 29–32 ns** |
+| TAS against TTAS | `contend.c`, 20M | TAS 14.9 / 65.0 / 167.6 / **263.8**; TTAS 16.7 / 50.7 / 114.3 / **121.6**; `pthread_spin` 8.6 / 21.8 / 37.7 / **54.9** ns |
+| When to spin | `contend.c`, section of 2,000 iterations | 4 threads, 1 CPU: TTAS **8.25**, spin 8.06, futex 3.15, mutex 3.24 µs; 4 CPUs: TTAS **3.21**, spin 3.19, futex 3.93, mutex 4.13 µs |
+| `FUTEX_WAIT` compares first | `futexlab eagain` | expected 7 on 5 → **−1, `EAGAIN`** |
+| Always-wake against three-state | `futexlab` | uncontended **638.6 ns, 1M calls per 1M ops** against **14.8 ns, 0 calls**; 4 threads 300.2 ns and 2,000,255 calls against **100.3 ns and 7,095** |
+| A waiter count outside the lock word | `futexlab buggy2` | **hung 10 of 10**, counter stuck near 1,001,000 of 4,000,000, lock 0, waiters 0 |
+| glibc's mutex, contended | `contend mutex 4 4000000` under `strace -f -c` | 28,393–33,426 `futex` calls; 1 call with one thread (from `pthread_join`) |
+| CVs: `if` against `while` | `bbuf.c`, 300,000 items, 3 consumers | `if`: **254–372** wake-ups to an empty buffer; `while`, two CVs: **0** |
+| One CV for two conditions | `bbuf.c while1` | **deadlocked after 2, 3 and 10 items** |
+| Dining philosophers | `philo.c` | naive **10 of 10 deadlocked** after 786–1,157 meals; ordered and seats 0 of 10 |
+| Philosophers' fairness | `philo3` reference, 3 s | ordered ratio **0.56–0.64**, philosopher 4 fewest; seats and waiter **0.99–1.00** |
+| Writer starvation | `rw.c`, `rwpref` reference | glibc default **0 writer acquisitions in 4 s**; prefer-writer 389–390, median 0.19–0.20 ms; readers lose ≈3% |
+| xv6 without its allocator lock | `allocstress` in xv6, `CPUS=2` | **`CORRUPTION … found 66, wrote 65`**, two `sbrk` failures; second run **`panic: remap`**; locked kernel **1,000 iterations clean** ×4 |
+| The spin-then-yield CAS mutex | `casmutex` reference | 4 threads 1 CPU: **3.20 µs** against spin 8.11, `pthread` 3.18; 8 threads 4 CPUs: **3.18** against 5.95 and 3.97 |
+| A non-atomic lock at `-O2` | `casmutex broken` | **hangs** (timeout at 400k and 40k); disassembly shows `held` loaded once and `call sched_yield; jmp` back to the call |
+| The same lock, `volatile` or `-O0` | `casmutex` variants | no hang; counters **26,142–38,081 of 40,000** |
+
+---
+
+## 26. The allocator-lock experiment needed a program designed to show it
+
+**The first attempt ran `usertests` on an xv6 without `kmem.lock`**, next to a locked kernel, for 70 s
+each. **Both were cut off by the timeout in the middle of `usertests`**, and the window included a full
+rebuild. The locked kernel's `trap 14` lines were `usertests`' deliberate faults, not failures.
+**Nothing could be concluded.**
+
+**`allocstress.c` was written to make the failure visible if it happens and impossible to miss.** Four
+processes grow by eight pages, fill every byte with their own letter, verify, and shrink, 1,000 times.
+**The letters are `'A'`+*k*, chosen to avoid 0 (a fresh page from `allocuvm`) and 1 (the junk `kfree`
+writes)**, so a mismatch can only mean another process's data. Both kernels were built before timing
+started.
+
+**Results were unambiguous in two runs** (§25). L11 §7 reports all three outcomes — corruption, false
+out-of-memory, panic — because each is a different face of the same race.
+
+---
+
+## 27. PS 3's non-atomic lock hangs, and the compiler is why
+
+PS 3 Q2 was drafted expecting the `broken` lock — `while (m->held) sched_yield(); m->held = 1;` — to
+**print a wrong counter**. **The reference run never finished**: it timed out at 4,000,000, 400,000 and
+40,000 operations.
+
+**The disassembly of `work()` at `-O2`** shows the load of `bm` once, then `call sched_yield` and a
+`jmp` straight back to the call. **GCC hoisted the test out of the loop.** It may: a data race on a
+non-atomic object is undefined behaviour, and `bm` is `static` with an address that never escapes the
+file, so under single-threaded semantics `sched_yield` cannot change it.
+
+**Confirmed both ways**: at `-O0`, and at `-O2` with `volatile int held`, the program terminates with
+the expected wrong counter (26,142–38,081 of 40,000). **One thread, and two threads with 4,000
+operations, completed correctly** — the hang needs a thread to observe the lock held at least once.
+
+**Q2 was rewritten around the finding** — predict, observe the hang, find the loop, explain the
+compiler's licence, then make it `volatile` and find the lost-update interleaving. **It is a better
+question than the one drafted**: "a race is undefined behaviour" is usually taught as a sentence, and
+here it is a hang with a disassembly.
+
+---
+
+## 28. PS 3's fairness hint pointed at the wrong strategy
+
+Q3(c)'s draft hint asked *"what happens to philosopher 1 if philosophers 0 and 2 alternate eating?"* —
+expecting `waiter` to be the unfair strategy. **Measured, `waiter` was the fairest (0.99–1.00) and
+`ordered` the least fair (0.56–0.64)**, with philosopher 4 — whose first fork is 0, shared with
+philosopher 0 — eating fewest in every run.
+
+**The hint now asks students to list each philosopher's first fork under `ordered`.** The solutions
+still credit a student who argues `waiter` can starve in principle, provided they report that it did
+not in their measurement.
+
+---
+
+## 29. Output lost to `_exit`, for the third time
+
+`bbuf.c` and `philo.c` first reported **nothing** — every line was in stdio's buffer when `_exit` ran
+from a watchdog, with output going to a pipe. **Week 0's `tsc.c` (§10) had the same bug.** Each program
+now calls `fflush(stdout)` before `_exit`. `philo.c`'s deadlock counts survived the first run only
+because the script also checked the exit status.
+
+**Worth recording as a pattern, not three accidents**: every program in this course that measures a
+concurrency failure needs to exit from a thread that is not stuck, and `_exit` is the natural call.
+Later weeks' watchdogs should be written with the flush in from the start.
+
+---
+
 *Academic Registry · Build Records · © CSE Department*
