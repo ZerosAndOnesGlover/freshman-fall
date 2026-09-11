@@ -1,0 +1,4 @@
+# three jobs arrive together: one long, two short
+A 0 100
+B 0 10
+C 0 10

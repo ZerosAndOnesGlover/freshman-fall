@@ -1,0 +1,4 @@
+# the long job arrives first; the two short ones 10 ms later
+A 0 100
+B 10 10
+C 10 10

@@ -459,4 +459,121 @@ from running `ps`.
 
 ---
 
+## 19. Every number in Week 2 was measured or simulated, and the programs ship with the notes
+
+Same reference machine as §9. Linux measurements in `CS202 Week2/resources/`; the simulator skeleton
+and workloads in `assignments/ps2/`; the reference simulator in `solutions_instructor/`.
+
+| Claim | Program | Result |
+|---|---|---|
+| The convoy and SJF | `schedsim` on `convoy.txt` | FCFS **110.0** / SJF **50.0** ms average turnaround |
+| Non-preemptive SJF with arrivals | `late.txt` | SJF = FCFS = **103.3**; SRTF **50.0** |
+| The quantum sweep | `rr:Q` on `convoy.txt` | q = 1: 59.7 ms, response 1.0, **30 switches**; q = 10: **56.7**; q = 100: **110.0** (= FCFS) |
+| Interactive against batch | `mixed.txt` | editor wait per keystroke: FCFS **10.0**, RR10 **1.3**, RR50 **8.5**, MLFQ **0.4**, fair **0.3** ms |
+| Gaming | `gamer.txt` | naive rule: gamer **241**, honest **400**; final rule: honest **263**, gamer **415** |
+| Starvation | `starve.txt`, naive rules | no boost: long job **900** (waiting 800); boost 100: **422** |
+| xv6's quantum | `ticks.c` in xv6, timed from the host | **100.1 ticks per second** |
+| `nice` divides a CPU by the weight table | `share.c` | nice 1 **44.4%** (table 44.5), 5 **24.6** (24.7), 10 **9.5** (9.7), 19 **1.3** (1.4); `SCHED_IDLE` **0.3** (0.3); `SCHED_BATCH` 50.0 |
+| This kernel is EEVDF | reference machine's `include/linux/sched.h`; `/proc/self/sched` | `sched_entity` has `deadline`, `min_vruntime`, `vlag`, `vprot`, `slice`; `se.slice` **2,800,000 ns**; `SCHED_EXT` = 7 and `CONFIG_SCHED_CLASS_EXT=y` |
+| The slice does not shrink | `slice.c` | run length **3.00 ms** for 2, 3 and 4 hogs; time off CPU 3.00 / 6.00 / 9.00 ms; `CONFIG_HZ=1000` |
+| Autogroup inert | `share.c` with `setsid`; `/proc/self/cgroup`; `cgroup.subtree_control` walk | nice 19 in its own session **1.3%**; `cpu` enabled down to `user@1000.service`, not below `app.slice` |
+| A cgroup weight overrides `nice` | `systemd-run --user --scope -p CPUWeight=100` | `app.slice` gains `cpu` while the scope lives; **nice-19 hog 57.8–58%**; controller removed afterwards |
+| Refusals | `chrt`, `nice`, `ulimit` | `SCHED_FIFO`, `SCHED_RR`, `SCHED_DEADLINE`: `EPERM`; `RLIMIT_RTPRIO` 0; `RLIMIT_NICE` 0; nice −5 denied |
+| Real-time cap | `/proc/sys/kernel` | `sched_rt_runtime_us` 950,000 of 1,000,000; `sched_rr_timeslice_ms` 100 |
+| Rate-monotonic and EDF | `rtsim.c` | `1/4 2/6 3/12` (U 0.833 > bound 0.780): **RM no misses**; `2/5 4/7` (U 0.971): **RM misses at t = 7**, EDF none |
+| Latency | `lat.c` | busy CPU median **54 µs** → **4 µs** with slack at 1 ns; idle CPU **144 µs** → **93 µs**; `timerslack_ns` 50,000 |
+| Idle states | `/sys/devices/system/cpu/cpu7/cpuidle` | `intel_idle`, `menu` governor; exit latency C1 2 µs … C6 85 µs, C8 200 µs, C10 **890 µs** |
+
+**The latency maxima of 2–4 ms are reported and not explained.** They occur a few times in 3,000 with
+and without competition; their cause needs kernel tracing (`bpftrace`, `perf`), neither of which an
+account can run here (§8). L09 §6 says so rather than guessing.
+
+---
+
+## 20. The curriculum names CFS; this kernel runs EEVDF
+
+The Week 2 Core Concept describes CFS as always running *"the process with the least CPU time … in
+O(log n) with a red-black tree"*. **CFS's weights, `vruntime` and red-black tree are all still in the
+kernel, and L08 teaches them.** What changed in Linux 6.6 is the *selection*: eligibility by lag,
+then earliest virtual deadline.
+
+**Checked from the reference machine's own headers and `/proc`, not from memory**, for the same reason
+as §14. The evidence that matters in a lecture is the evidence a student can reproduce: one `sed` of
+`sched.h` and one `cat` of `/proc/self/sched`. **Recorded as a syllabus deviation.**
+
+**The measurement that makes it concrete is `slice.c`**: a slice that stayed at 3.00 ms with two,
+three or four hogs, where the course's own fair model — dividing a latency target — shrinks it. PS 2
+Q5 is built on the disagreement.
+
+---
+
+## 21. Autogroup is on and does nothing, and a CPU weight changes more than one group
+
+**Found by prediction.** `share.c` was written expecting autogroup to split two hogs in different
+sessions 50/50, and **measured 1.3%**. Reading `/proc/self/cgroup` and walking `cgroup.subtree_control`
+up the tree showed the `cpu` controller enabled from the root down to `user@1000.service` — so
+`app.slice` is a CPU group and every desktop process is below it. **Autogroups apply only to tasks in
+the root CPU group.**
+
+**The next measurement was initially misread.** A `systemd-run --user --scope -p CPUWeight=100` test
+gave the nice-19 hog **58%**, and a second run without the property gave **1%**. The difference is
+that **requesting a CPU weight makes systemd enable the `cpu` controller in `app.slice`** for the life
+of the scope. **Confirmed by reading `app.slice`'s `cgroup.subtree_control` before (`memory pids`),
+during (`cpu memory pids`) and after (`memory pids`)** — in two separate runs, one of them Lab 2's own
+procedure.
+
+**Lab 2 Part C teaches both halves.** Its solutions note that student paths in BH 210 may differ — an
+SSH login ends in a `session-N.scope` — and that a student whose task *is* in the root CPU group will
+see autogroup work, which is the better answer.
+
+---
+
+## 22. `schedsim` had two modelling bugs, and its own output found both
+
+**MLFQ demotion was skipped whenever a job blocked.** Step 6 checked the allotment only if the job was
+still running after its millisecond — so a job that blocked on the millisecond it exhausted its
+allotment was never demoted, and **a job blocking after every millisecond could never be demoted at
+all.** It surfaced as `starve.txt` showing the long job starving under the *final* rules, which the
+rules are designed to prevent. **The allotment is now charged before the blocking check**, and the
+student skeleton's `TODO` says why.
+
+**The fair policy had no wake-up preemption**, and on `mixed.txt` produced output **identical to
+`rr:10`**, line for line. That was the clue: with two equal weights the fair slice is exactly 10 ms,
+so without some other trigger the policies coincide. Wake-up preemption was added; the editor's wait
+fell from 1.3 to 0.3 ms. **PS 2 Q2(b) has students remove it and find the same coincidence.**
+
+**The skeleton was checked against the reference after both fixes**: FCFS, SJF, SRTF and round robin
+produce byte-identical output on `convoy`, `late` and `mixed` (compared with `md5sum`).
+
+---
+
+## 23. Two PS 2 questions were wrong until the reference was run on them
+
+**Q3(a) asked "at what allotment does the gamer start to win".** Run for *A* = 5 to 1000 under the final
+rules, **the gamer never wins**: the honest job's lead shrinks from 172 ms to 32 ms and never
+reverses. Reworded to ask whether it ever wins and why the gap narrows.
+
+**Q2(c) asked students to remove sleeper placement and explain the change on `mixed.txt`.** There is
+none: the editor never sleeps long enough to fall below the floor. A workload was designed to show the
+effect — `burst.txt`, a job computing 100 ms and sleeping 200 — where the batch job's finish moves
+from **811 to 900 ms** without the floor. The question now asks for both workloads and why one
+changes. **Its first draft named the two jobs `batch` and `burst`**, which share a first letter and
+made the timeline unreadable; the napping job is now `nap`.
+
+**Every expected-output line in PS 2** was pasted from a reference run, not typed.
+
+---
+
+## 24. The first Lab 2 reference transcript measured one process twice
+
+Running Lab 2 as a script to produce reference answers, **Part A reported the same PID on both lines**:
+the first `hog` had been started in the background before the working directory was entered, `taskset`
+failed with `No such file or directory`, and `pgrep -n` then found the second hog both times. **A slip
+in the reference run, not in the handout** — re-run correctly, the shares are 44.4 / 24.7 / 9.7 / 1.4%.
+
+**It became a common-problems row** in the Lab 2 solutions, because students running the same commands
+out of order will get the same symptom, and `cpushare.sh` printing the PIDs is what makes it visible.
+
+---
+
 *Academic Registry · Build Records · © CSE Department*
