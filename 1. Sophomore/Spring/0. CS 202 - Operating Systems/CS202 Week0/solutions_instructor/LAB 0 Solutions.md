@@ -208,7 +208,8 @@ PIDs and `eip` values will differ slightly between students; the trap number and
 | Output appears but `make run` still hangs | wrote to the wrong port, or wrote after `kmain` returned | check `DEBUG_EXIT` is `0xF4` and matches the `Makefile` |
 | Garbage characters on the serial line | passed the string pointer rather than the character to `outb` | `serial_putc(*s)`, not `serial_putc(s)` |
 | `undefined reference to 'strlen'` (or `memset`) | used a libc function; or GCC generated a call to one for a struct copy | write the loop yourself; `-ffreestanding` is already on |
-| xv6: `error: array subscript … outside array bounds` in `mp.c` | the GCC 13 patch was not applied | re-run the `sed` from Part D |
+| xv6: `error: array subscript … outside array bounds` in `mp.c` | the GCC 13 patch was not applied | re-run the first `sed` from Part D |
+| xv6 boots, but prints only `cpu0: starting 0` | the second `sed` was not applied: QEMU 8.2's `-smp 2` makes two cores in one socket, and the firmware's MP table then lists one processor. **Nothing fails; xv6 just runs on one CPU** | re-run the second `sed`; `grep -- '-smp' Makefile` must show `sockets=$(CPUS)` |
 | xv6: `Makefile:NNN: *** missing separator` after adding `_int13` | the `sed` was retyped with spaces instead of `\t` | `git checkout Makefile`, re-apply both `sed`s by copy-paste |
 | xv6 boots but `int13` is "exec int13 failed" | `_int13` not in `UPROGS`, or `fs.img` not rebuilt | `grep _int13 Makefile`; `make clean && make qemu-nox` |
 | Cannot leave xv6 | pressing Ctrl-C, which xv6 ignores | **Ctrl-A then X** |

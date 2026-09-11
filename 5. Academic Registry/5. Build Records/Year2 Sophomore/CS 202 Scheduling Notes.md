@@ -184,10 +184,46 @@ by the parsed command tree. The fix students apply:
 sed -i 's/-m32 -Werror/-m32 -Werror -Wno-error=array-bounds -Wno-error=infinite-recursion/' Makefile
 ```
 
-**Tested end to end on a fresh clone**: `git diff --stat` reports one line changed; `make qemu-nox
-CPUS=2` reaches `init: starting sh`; `ls`, `echo` and a user program added to `UPROGS` all run. The
-linker also prints `missing .note.GNU-stack` and `LOAD segment with RWX permissions` warnings for
-every user program; these are warnings from `ld`, not errors, and the lab says to ignore them.
+**Tested end to end on a fresh clone**: `make qemu-nox CPUS=2` reaches `init: starting sh`; `ls`,
+`echo` and a user program added to `UPROGS` all run. The linker also prints `missing
+.note.GNU-stack` and `LOAD segment with RWX permissions` warnings for every user program; these are
+warnings from `ld`, not errors, and the lab says to ignore them.
+
+### A second fix, found in Week 1: xv6 was running on one CPU
+
+**Week 0 shipped with only the build fix above, and every xv6 boot in it was on one CPU.** Nobody
+would have noticed: `CPUS=2` is xv6's default, the kernel boots, the shell runs. What gave it away,
+while building Week 1, was a boot log with `cpu0: starting 0` and no `cpu1` — in Week 0's own
+transcripts too, on re-reading them.
+
+**Bisected rather than guessed**, on the reference machine:
+
+| Step | Result |
+|---|---|
+| Print `ncpu` after `mpinit` — first attempt, in `mpinit` itself | printed nothing: `mpinit` runs before `consoleinit`, so `cprintf` has nowhere to go |
+| Print `ncpu` in `main` after `uartinit` | **`ncpu=1` for `CPUS` = 1, 2 and 4** |
+| Dump every entry of the MP configuration table the firmware provided | with `-smp 2`: **one `MPPROC` entry**, apicid 0, then buses, one I/O APIC, interrupts |
+| Same with `-accel kvm` | one `MPPROC` — not a TCG artefact |
+| QEMU monitor, `info hotpluggable-cpus`, plain `-smp 2` | **`socket-id 0, core-id 0` and `socket-id 0, core-id 1`** — two cores, one socket |
+| `-smp 2,sockets=2,cores=1,threads=1` | two `MPPROC` entries (apicid 0 and 1), **`ncpu=2`**, `cpu1: starting 1` |
+| `-smp 2 -machine pc-i440fx-2.12` | also two entries, `ncpu=2` — an old machine type's default topology is one socket per CPU |
+
+**So: QEMU 8.2's default machine type expands `-smp 2` into two cores of one socket, and the
+firmware's legacy MP table then lists one processor.** xv6 reads only that table. The fix asks for
+one socket per CPU:
+
+```bash
+sed -i 's/-smp $(CPUS)/-smp $(CPUS),sockets=$(CPUS),cores=1,threads=1/' Makefile
+```
+
+It changes **two** lines — `QEMUOPTS` and the `qemu-memfs` target — so with both fixes `git diff
+--stat` reports three lines. **Verified on a fresh clone**: `cpu1: starting 1` and `cpu0: starting
+0` at boot, and three `spin &` processes show **two `run` and one `runble`** under Ctrl-P.
+
+**Week 0 was corrected in the Week 1 commit**: Lab 0 Part D now carries both `sed` lines, its
+expected boot output shows `cpu1`, and it tells students to check for it; the Lab 0 solutions gain a
+common-problems row; the syllabus's *Which xv6* and deviations row describe both fixes and say the
+second was found late. **Lab 1 tells anyone who did Lab 0 before the correction to apply it.**
 
 **The book edition matters.** The current xv6 book is written against the RISC-V code. The syllabus
 and reading guide point to the **x86 revision 11**, whose listings match the tree students build.
@@ -287,6 +323,139 @@ mention it.
 **Nothing was moved.** The registry schedules classes and the exam that day, and CS 202 follows the
 registry. If the department later observes the holiday, Midterm 1, Quiz 4 and L10 all move together,
 and the Week 4 README is the place a student would need to be told.
+
+---
+
+## 12. Every number in Week 1 was measured, and the programs ship with the notes
+
+Same reference machine as §9. Week 1's programs are in `CS202 Week1/resources/`, the xv6 user
+programs in `CS202 Week1/lab/`, and PS 1's `worker.c` and `test.pm` in `assignments/ps1/`.
+
+| Claim | Program | Result |
+|---|---|---|
+| xv6's records are small | `nm -S` on an object compiled against xv6's headers with `-m32` | `struct proc` **124**, `context` **20**, `trapframe` **76**, `cpu` 176 bytes; `NPROC` 64 |
+| Linux's are not | `tsize.c`, a module **built against the 7.0.0-30 headers and never loaded** | `task_struct` **9,920**, `mm_struct` 1,728, `files_struct` 704, `cred` 184, `thread_struct` 184 bytes |
+| `/proc` per process | `ls /proc/self` | 57 entries |
+| Table limits | `/proc/sys/kernel`, `ulimit -u` | `pid_max` 4,194,304; `threads-max` **51,142**; `RLIMIT_NPROC` 25,571; `CLK_TCK` 100 |
+| Mode bits on `/proc` do not tell the whole story | `ls -l`, `head`, `cat` on `/proc/1/*` | `status` readable; **`maps` is `-r--r--r--` and still `EACCES`**; `environ` 0400 |
+| File capability, then dropped | `getcap`, `/proc/<ping>/status` at 0.7 s | `cap_net_raw=ep` on the file; **`CapPrm` and `CapEff` both 0** while running |
+| Threads are cheaper | `spawn.c` | `pthread_create`+`join` **27.6 µs**; `fork`+`_exit`+`waitpid` **154.3 µs**; 5.6× |
+| Every state, on purpose | `states.c` | R, S, T, Z, **t** under `ptrace`, **D** for a parent inside `vfork` |
+| Almost everything sleeps | `ps -eo stat=` | 261 S, 81 I, **1 R** |
+| Voluntary against involuntary | `hog.c`, 5 s on CPU 5 | hog **0 / 4,788**; sleeper **4,748 / 0** |
+| One context switch | `ctxsw.c` | baseline pair **1,438 ns**; **2.00 switches per round**; **1,622 ns per switch** on one CPU, **2,139 ns** across two |
+| FPU state size | `xsave.c` | XSAVE area **1,088 bytes**; XCR0 `0x1f`; XSAVEOPT, XSAVEC, XSAVES supported |
+| Linux's switch frame and FPU policy | the reference machine's `switch_to.h` and `fpu/sched.h` | `inactive_task_frame`: r15–r12, bx, bp, return address; `switch_fpu` **saves eagerly**, restore deferred via `TIF_NEED_FPU_LOAD` |
+| ASLR | `layout.c`, three runs and `setarch -R` | every region moves by whole pages; **`0x555555555180`** with `-R`; `randomize_va_space` 2 |
+| Address space is not memory | `rss.c` | `VmSize` **+256 MiB** at `mmap`, `VmRSS` unchanged until written, then +64 MiB per quarter |
+| xv6's table | Ctrl-P with `spin &` | one CPU: 1 `run`, 1 `runble`; two CPUs (after §7's second fix): **2 `run`, 1 `runble`** |
+| xv6 saves no FPU state | `fpu.c` in xv6 | one CPU, two runs: **39,552,364 + 447,636** and **39,786,312 + 213,688**, each pair **= 40,000,000**; two CPUs: 20,000,000 and **19,958,711** |
+| `pm` works | `./pm < test.pm` | every job listed from `/proc`, zombies once then reaped, `exited 127` for a missing program, no survivors |
+
+---
+
+## 13. The context-switch measurement, and why its first version was not reported
+
+The first `ctxsw.c` timed the ping-pong and reported **"ns per half round trip" — about 3.0 µs** —
+on the assumption that each half round trip is one switch. **Its own counters contradicted it**: the
+parent's voluntary-switch count came out at about **100,000 for 200,000 rounds**, where the
+assumption predicted 200,000.
+
+**The explanation turned out to be that switches were being counted in one process only, and only
+voluntary ones.** Counting **voluntary and involuntary, in both processes** — the child's through
+`RUSAGE_CHILDREN` — gave **exactly 2.00 switches per round** in every configuration, split about
+half and half on one CPU (the waking task preempts the writer) and all voluntary across two.
+
+**The time was then still not the switch's alone**, so a baseline — the same `write` and `read` in
+one process, where nothing blocks — is subtracted. **L05 §5 reports the result as an upper bound**
+and says why: a blocking `read` and a waking `write` do work the baseline never does. PS 1 Q3(b) asks
+students to find the assumption.
+
+`perf bench sched pipe` **runs without perf events** despite `perf_event_paranoid` = 4, and reports
+**2.81 µs per operation**. It is not quoted in the lecture, because what it calls an operation is not
+a single switch, and one number with an unclear denominator is worse than none.
+
+---
+
+## 14. The curriculum's lazy-FPU claim, checked against this kernel
+
+The Week 1 Core Concept says FPU/SSE state *"is saved lazily — only when the new process uses
+floating-point instructions, signaled by a fault."* **The reference machine's kernel headers say
+otherwise.** `arch/x86/include/asm/fpu/sched.h` documents `switch_fpu()` saving the outgoing task's
+state at every switch and setting `TIF_NEED_FPU_LOAD`, with the restore deferred to the return to
+user space and no fault anywhere.
+
+**L05 §6 teaches the current design and keeps the curriculum's as history**, with the two reasons
+it was retired: fast component-wise saving with `XSAVEOPT`, and the 2018 *LazyFP* disclosure.
+Recorded as a deviation in the syllabus.
+
+**The claim was checked from the headers rather than from memory** because the headers are on the
+machine, and because "Linux does X" in a lecture should mean *this* Linux.
+
+---
+
+## 15. xv6 does not save FPU state, and the first draft of the demonstration got its own expected value wrong
+
+`fpu.c` forks two processes that each add `0.5` twenty million times — **so each should finish at
+`x*2 = 20,000,000`**. The first draft printed `(expected 40000000)`.
+
+**On one CPU nobody could see the mistake**, because both processes were wrong anyway and their two
+answers summed to 40,000,000 — which is both correct answers combined, and which the draft lecture
+described as "the right total". **It surfaced on two CPUs**, where the child printed `final x*2 =
+20000000 (expected 40000000)`: a correct answer next to an incorrect expectation.
+
+**Corrected and re-measured, not relabelled.** The message was fixed, `fpu` was re-run twice on one
+CPU and once on two, and **every quotation of the old numbers** — in L05 §6, the README, the summary,
+Lab 1's solutions and PS 1's — was replaced with the new runs, so that each quoted line is output
+the shipped program actually produced.
+
+**The two-CPU run became part of the lesson.** One checkpoint of forty was wrong in the parent
+(19,958,711), because a process is not tied to a CPU and the two sometimes shared one across a
+switch. L05 §6 and Lab 1's new Q10 say so: **more CPUs made the bug rarer, not absent.**
+
+---
+
+## 16. `worker.c`'s memory mode allocated nothing
+
+PS 1's `worker mem 64` first did `malloc(64 MiB)` followed by `memset(p, 1, n)`, and `pm` listed its
+RSS as **1,424 kB**. **GCC at `-O2` had deleted the `memset`** — the buffer is never read, so the
+writes are a dead store, and GCC knows `malloc`'s memory is invisible to anyone else.
+
+**Fixed by touching one byte per page and reading one back through a `volatile`**, after which RSS
+is **66,952 kB**. The original is now **PS 1 Q2(d)**, which has students put the `memset` back and
+explain the RSS — L06 §3's lesson with the compiler as the cause.
+
+---
+
+## 17. PS 1 is not PROG 201's Lab 0 again
+
+The curriculum sets *"Problem Set 1: Implement a user-space process manager."* PROG 201's Lab 0 was
+a process **supervisor** — restart on crash, give up on flapping, shut down cleanly — and a student
+takes CS 202 having written it.
+
+**PS 1's `pm` is deliberately a different program**: it reads the kernel's table rather than reacting
+to signals. There is no `SIGCHLD` handler — reaping in one would make the question's zombie rule
+impossible to satisfy — and the marks are for **parsing `/proc/<pid>/stat` from the last `)`**,
+knowing a zombie has no `VmRSS`, and reporting a zombie once before reaping it. `pm` is prohibited
+from running `ps`.
+
+---
+
+## 18. Errors caught in Week 1 drafts
+
+- **The context-switch figure**, §13.
+- **`fpu.c`'s expected value**, §15.
+- **`worker.c`'s dead store**, §16.
+- **`ncpu` printed from inside `mpinit`**, before the console existed — printed nothing, and briefly
+  looked like a hang. Moved to `main`.
+- **`tsize.c` failed to compile** because `struct files_struct` is incomplete without
+  `<linux/fdtable.h>`.
+- **`layout.c` called `getpid` without `<unistd.h>`** — a warning, and in a course that says warnings
+  are bugs, a bug.
+- **The reading guide's `process-run.py` flags** gave the simulator no process that does I/O, so the
+  I/O policy flag it asked students to change did nothing. Replaced with a job list that has one.
+- **Two xv6 boots in Week 0's own transcripts** show `cpu0` and no `cpu1`, and were not noticed until
+  Week 1 — §7.
 
 ---
 

@@ -168,23 +168,31 @@ cd xv6
 git checkout eeb7b415dbcb12cc362d0783e41c3d1f44066b17
 ```
 
-**xv6 does not build with GCC 13 as it is.** Its `Makefile` passes `-Werror`, and GCC 13 raises two warnings — `array-bounds` in `mp.c` and `infinite-recursion` in `sh.c` — that older compilers did not. Keep `-Werror` for everything else and demote those two:
+**xv6 needs two one-line changes to its `Makefile` on this image**, and nothing else in it is touched.
+
+**1. It does not build with GCC 13 as it is.** The `Makefile` passes `-Werror`, and GCC 13 raises two warnings — `array-bounds` in `mp.c` and `infinite-recursion` in `sh.c` — that older compilers did not. Keep `-Werror` for everything else and demote those two.
+
+**2. It boots on one CPU however many you ask for.** QEMU 8.2 turns `-smp 2` into two *cores* in one socket, the firmware's multiprocessor table then lists a single processor, and xv6 believes it. Asking for one socket per CPU makes the table list them all.
 
 ```bash
 sed -i 's/-m32 -Werror/-m32 -Werror -Wno-error=array-bounds -Wno-error=infinite-recursion/' Makefile
-git diff --stat          # 1 file changed, 1 insertion, 1 deletion — nothing else
+sed -i 's/-smp $(CPUS)/-smp $(CPUS),sockets=$(CPUS),cores=1,threads=1/' Makefile
+git diff --stat          # 1 file changed, 3 insertions(+), 3 deletions(-) — -smp is on two lines
 make qemu-nox
 ```
 
-You should see, after some linker warnings you can ignore:
+You should see, after some compiler and linker warnings you can ignore:
 
 ```
 xv6...
+cpu1: starting 1
 cpu0: starting 0
 sb: size 1000 nblocks 941 ninodes 200 nlog 30 logstart 2 inodestart 32 bmap start 58
 init: starting sh
 $
 ```
+
+**Check that `cpu1: starting 1` is there.** If only `cpu0` starts, the second `sed` did not apply, and every lab that depends on two CPUs — starting in Week 1 — will quietly behave like a one-CPU machine.
 
 **That `$` is a shell running in ring 3 on a kernel you just compiled.** Try `ls`, `echo hi`, `cat README`. **To leave QEMU, press Ctrl-A, then X.**
 

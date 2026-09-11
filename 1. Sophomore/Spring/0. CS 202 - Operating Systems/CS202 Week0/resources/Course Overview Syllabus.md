@@ -135,11 +135,15 @@ MIT moved its own course to a RISC-V port in 2019 and no longer maintains the x8
 2. **The curriculum names x86-64 assembly as the course language**, and this course follows CS 201's x86 year. The trap entry, the page tables and the context switch you read in xv6 are x86, like everything CS 201 taught.
 3. **The ideas are the same.** Every data structure and algorithm in the RISC-V version has an x86 counterpart in this one.
 
-**One build fix is needed.** GCC 13 reports two warnings in xv6's code that older compilers did not, and xv6's `Makefile` treats every warning as an error. Lab 0 applies a one-line change that keeps `-Werror` for everything else:
+**Two one-line fixes are needed, both to the `Makefile`.** Lab 0 applies them:
 
 ```bash
 sed -i 's/-m32 -Werror/-m32 -Werror -Wno-error=array-bounds -Wno-error=infinite-recursion/' Makefile
+sed -i 's/-smp $(CPUS)/-smp $(CPUS),sockets=$(CPUS),cores=1,threads=1/' Makefile
 ```
+
+1. **GCC 13 reports two warnings** in xv6's code that older compilers did not, and xv6 treats every warning as an error. The first line demotes exactly those two and keeps `-Werror` for everything else.
+2. **QEMU 8.2 makes `-smp 2` two cores in one socket**, and the firmware's multiprocessor table then lists one processor — so **xv6 boots on one CPU however many you ask for**, and nothing reports it. The second line asks for one socket per CPU, and xv6 then finds them all. **Check for `cpu1: starting 1` at boot.**
 
 **The book to read with it is the matching x86 edition** of *xv6: a simple, Unix-like teaching operating system* (revision 11), not the current RISC-V edition. The chapter structure is similar; the code listings differ.
 
@@ -198,13 +202,15 @@ Recorded here so a reader meets them without needing `5. Build Records/`:
 
 | What | Why |
 |---|---|
-| **xv6 is the x86 version, not the RISC-V version** | The lab image has `gcc -m32` and `qemu-system-i386` and no RISC-V toolchain, and the curriculum names x86-64 assembly as the course language. See *Which xv6*. The two GCC 13 warnings xv6 fails on are demoted from errors by a one-line `Makefile` change, and nothing else in xv6 is modified. |
+| **xv6 is the x86 version, not the RISC-V version** | The lab image has `gcc -m32` and `qemu-system-i386` and no RISC-V toolchain, and the curriculum names x86-64 assembly as the course language. See *Which xv6*. Two one-line `Makefile` changes are applied and nothing else in xv6 is modified: the two GCC 13 warnings xv6 fails on are demoted from errors, and QEMU is asked for one socket per CPU, **without which xv6 silently boots on one CPU** under QEMU 8.2. The second fix was found while building Week 1, after Week 0 had shipped with only the first; Lab 0 now carries both. |
 | **Labs and quizzes are unweighted** | The curriculum's four components already reach 100%. Required, recorded, unmarked — the Year 2 rule. |
 | **Project 2 is due in the completion period, and the final is in finals week** | The curriculum lists "FINAL EXAM" and "Project 2 due" in Week 12's assignment list. The registry's [[Year2 - Sophomore/ASSESSMENT CALENDAR\|ASSESSMENT CALENDAR]] puts Project 2 on the Friday of the completion period and the final on the Wednesday of finals week, and the registry is authoritative for dates. Week 12 is an ordinary teaching week. |
 | **Project 2 is assigned in Week 9** | Neither the curriculum nor the registry says when. Week 9 is the first week in which all of Project 2's material — memory (Weeks 5–6) and filesystems (Weeks 7–8) — has been taught, and it gives five weeks to the completion-period deadline, overlapping Project 1 by two. |
 | **Lab 12 (demo day) is before Project 2's deadline** | The lab is the Tuesday of the completion period; the deadline is that Friday. Demo day shows the kernel as it stands and is checked off like any lab; the submission is marked, the demo is not. |
 | **Week 0's lectures are on the first Wednesday, first Friday and second Wednesday; Lab 0 is Friday morning** | Week 0 has six lecture slots for three lectures. Lab 0 sits on the closing Friday like every Year 2 Week 0 lab, at 10:00–11:50, which is free for every Spring Year 2 student and leaves the afternoon — ECE 211 at 13:00 and CS 290 at 15:00 — untouched. |
 | **No instructor or TA is named** | The registry lists Spring staff nowhere. The syllabus says so rather than inventing names; see *Schedule*. |
+| **Week 1 teaches that Linux saves FPU state eagerly, not lazily** | The curriculum's Week 1 Core Concept says the FPU/SSE state "is saved lazily — only when the new process uses floating-point instructions, signaled by a fault". That was true of Linux once and is not now. The reference machine's own kernel headers (`arch/x86/include/asm/fpu/sched.h`) show `switch_fpu()` **saving the outgoing task's state at every switch** and deferring only the *restore* to the return to user space, with no fault involved. L05 §6 quotes the header, gives the 1,088-byte XSAVE size, and explains why lazy switching was abandoned — including the 2018 *LazyFP* disclosure. The curriculum's description is kept as history, not deleted. |
+| **Week 1 shows that xv6 does not save FPU state at all** | Not a deviation from the curriculum so much as from every textbook's context switch: xv6's `swtch` and trap frame contain no FPU state, so two xv6 processes doing floating point share one x87 register. `fpu.c` measures it — two processes' answers **summing to exactly the right total** — in L05 §6, Lab 1 Q9 and PS 1 Q4, which asks students to design the fix. Nothing in xv6 is changed. |
 
 ---
 
