@@ -906,4 +906,98 @@ clone with Lab 0's changes and reproduced `memx`'s numbers exactly.
 
 ---
 
+## 44. Every number in Week 6 was measured, and the programs ship with the notes
+
+Kernel 7.0.0-31, reference machine of §9, **4 GiB swap file on NVMe**, `swappiness` 60, `zswap` off,
+transparent huge pages `madvise`, `systemd 255` with `systemd-oomd` active. Programs in
+`CS202 Week6/resources/`, `lab/` and `assignments/ps6/`; the simulator reference in
+`solutions_instructor/`.
+
+| Claim | Program | Result |
+|---|---|---|
+| xv6 refuses | `memhog.c` (needs Week 5's `nfree.patch`) | `allocuvm out of memory`; **sbrk refused after 56,735 pages**; `fork` −1; shell survives; pages returned |
+| Major fault cost | `thrash.c` in a scope | 224 MiB limit: 344,720 reads, 44,483 major faults in 4 s; 64 MiB: 58,160 reads, 43,836 — **≈ 90 µs either way** |
+| Pressure | `thrash.c` reading its cgroup's `memory.pressure` and `io.pressure` | memory **5.5–6.1%**, io **14.2–18.2%** |
+| Thrashing curve | `thrash.c`, 256 MiB, 4 s | unlimited **21.7M reads/s**; 256 MiB **1.23M**; 224 MiB 76,276; 192 MiB 42,178; 128 MiB 22,724; **64 MiB 14,775** |
+| Locality beats capacity | `thrash.c … hot` | at the 64 MiB limit **166,745 reads/s against 14,775 — 11×** |
+| Working set | `wss.c` | 257 MiB resident; **Referenced 65,652 kB after reading 64 MiB, 16,436 kB after writing 16 MiB** |
+| Textbook string | `pagesim` | 3 frames: **FIFO 15, LRU 12, Clock 14, OPT 9** — matches Silberschatz §10.4 |
+| Belady's anomaly | `pagesim` on `belady.txt` | FIFO **9 → 10**, **Clock 9 → 10**; LRU 10 → 8; OPT 7 → 6 |
+| Locality curve | `gentrace 1000 50 90 10 10000 1` | at 60 frames FIFO 27,747, LRU 16,518, Clock 19,906, OPT 8,933 |
+| Aging | `pagesim -t` at 60 frames | tick 1 **77,321**; 8: 52,250 / 23,150; 100: 33,205 / **14,460**; 1,000: **80,799** / 16,381; 10,000: 88,561 / 16,518 |
+| Real traces | `valgrind --tool=lackey` + `lackey2pages.c` | `sort -n` 2,000 numbers: 2,121,880 accesses → **1,031,795 references, 387 pages**; `ls /usr/bin`: 7,118,108 → 2,390,544, 302 pages |
+| Clock against LRU | `pagesim` on those traces | within **10% from 32 frames up** on both |
+| Overcommit | `overcommit.c` | single mapping **11 GiB ok, 12 GiB refused** (RAM+swap 11.5 GiB); `MAP_NORESERVE` always ok; **8,000 GiB accepted in 8 GiB pieces**, `Committed_AS` 7.8 TiB |
+| `RLIMIT_AS` | `overcommit.c limit` | 256 MiB → **252** 1 MiB allocations; 1 GiB → 1,017 |
+| Badness | `oomscore.c` | **⅔ point per point of adj; 6.7 points per 1% of RAM+swap**; adj floor **100** (`user@.service` `OOMScoreAdjust=100`) |
+| Who dies | `/proc/*/oom_score` | Chrome renderers, **adj 300, scores 875–888**; kernel threads 0 |
+| A kill | `hog` in a 64 MiB scope | killed at **48 MiB**, status **137**, `max 41 oom 1 oom_kill 1`, peak exactly 64 MiB; with 32 MiB swap, 80 MiB; with swap unlimited, 128 MiB in 0.12 s |
+| `OOMPolicy` | the same scope without `-p OOMPolicy=continue` | the scope's shell is **`SIGTERM`ed**; `systemd-run` exits 143 |
+
+---
+
+## 45. PS 6's aging policy, as first specified, was worse than FIFO
+
+The aging policy was written from the textbook rule — 8-bit counter per frame, shifted at each tick,
+**a newly loaded page's counter starting at 0** — and measured at 60 frames on the locality trace it
+took **80,799 faults at tick 1,000 against FIFO's 27,747.** The cause is in the rule: between ticks
+every newly loaded page has counter 0, so **each fault evicts a page fetched moments earlier.**
+
+**The fix is one comparison** — rank by the reference bit first, then the counter — and it brings the
+same policy to 16,381. **Both are shipped**: `aging` is the textbook rule and `aging2` the fix, and
+**PS 6 Q5 asks students to explain the collapse rather than presenting the fix as given.** The
+lecture (L20 §5) describes aging and points at Q5 instead of spoiling it.
+
+**A second measured surprise stayed in the question**: at tick 100, `aging2` beats *exact LRU*
+(14,460 against 16,518), because the trace mixes a working set with uniform noise and aging counts
+frequency as well as recency. **Q5(c) asks for that explanation.**
+
+---
+
+## 46. Week 6's experiments can kill the session, and the lab says so
+
+`systemd-oomd` is **active** and monitors `user@1000.service` at a **50% memory-pressure limit over
+20 s**; the memory controller is delegated to the user, so `systemd-run --user --scope -p MemoryMax=`
+works without root. **Every out-of-memory and thrashing experiment in Week 6 runs inside such a
+scope, and every run is seconds long.** An unconfined `hog` would have the kernel reclaim from the
+whole machine, and `oomd` would then kill the student's desktop.
+
+**Two mechanisms were found by running, not by reading**:
+
+- **systemd's default `OOMPolicy=stop` terminates the rest of the unit** after the kernel kills one
+  process in it — so the first scope experiments printed nothing but "Terminated". The lab passes
+  `-p OOMPolicy=continue` and **Q7 makes the default the lesson.**
+- **`memory.pressure` stays low while a process thrashes** (5.5–6.1%), because it counts reclaim
+  work; the waiting shows up in **`io.pressure` (14–18%)**. L19 §4 states both, rather than the
+  textbook claim that memory pressure measures thrashing.
+
+---
+
+## 47. The OOM score's scale is not explained, and the notes say so
+
+`oom_score` was measured as **⅔ × (1000 + adj + 1000 × RSS ÷ (RAM + swap))** — the two slopes are
+exact to three digits over four points each. **Why a process holding nothing scores 733 rather than
+0 was not established**, and L21 §5 says so in one sentence rather than inventing a mechanism. **What
+the killer compares is the ordering**, and the ordering is by memory held, adjusted — which is what
+the lecture and Lab 6 Q8 teach.
+
+**The curriculum's own description of badness** — "inversely proportional to niceness and runtime" —
+is Linux's **pre-2.6.36** heuristic, removed in 2010. Recorded as a syllabus deviation, with the old
+rule kept as history.
+
+---
+
+## 48. Two Week 6 mistakes worth not repeating
+
+- **A 200,000-line `sort` traced under valgrind wrote a 10.35 GB log**, and was still writing when it
+  was noticed. **`valgrind --tool=lackey` costs about 15 bytes per memory access**; PS 6 tells
+  students to trace something small, and the reference trace is `sort -n` of **2,000** numbers
+  (114 MB of log, 6.2 MB of page references). **No trace is shipped in the vault** — the converter
+  and the instructions are, because even the small one is megabytes.
+- **`pkill -f "valgrind --tool=lackey"` killed the shell that ran it**, because the pattern matched
+  that shell's own command line; the valgrind survived, kept writing to a log that had already been
+  unlinked, and was only stopped later by PID. **Match by process name, or check the PID first.**
+
+---
+
 *Academic Registry · Build Records · © CSE Department*
