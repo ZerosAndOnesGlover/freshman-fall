@@ -671,4 +671,129 @@ Later weeks' watchdogs should be written with the flush in from the start.
 
 ---
 
+## 30. Week 4 was measured twice, on two kernels, and only the second set is quoted
+
+**The build paused on 2026-09-11 with Week 4's measurements taken and no Week 4 file written.** The
+session scratchpad did not survive the pause, and **the reference machine's kernel was updated from
+7.0.0-30 to 7.0.0-31** in the meantime. **Every Week 4 measurement was retaken on 2026-09-15**, from
+programs rewritten to the same design, and **only the retaken figures appear in the course.** Week 4's
+Lab 4 solutions say which kernel; Weeks 0–3 remain on 7.0.0-30.
+
+**Two of the lost first-run figures would have been wrong had they been used**: the first `banksim`
+(§32) and a first Banker's scaling test that failed every comparison at the first resource, so that
+*m* had no effect. The retaken versions fix both.
+
+---
+
+## 31. Every number in Week 4 was measured, and the programs ship with the notes
+
+Kernel 7.0.0-31; otherwise the reference machine of §9. Programs in `CS202 Week4/lab/` and
+`resources/`; Banker, detection and simulation references in `solutions_instructor/`, because PS 4
+asks students to write them.
+
+| Claim | Program | Result |
+|---|---|---|
+| ABBA deadlocks | `abba.c`, 20 runs each | no work: **400 274 336 32 0 687 … 959**, median ≈ 378; work 1,000: **18 631 0 15 … 1**, median ≈ 9 |
+| The cycle from `/proc` | `abba.c`'s watchdog | two tasks in `S`, `wchan futex_do_wait`, **syscall 202 on `&B` and `&A`, op 0x80, value 2**; owners cross |
+| The cycle from `gdb` | `gdb -batch` with `SIGTRAP` | LWP 10822 in `one` at `abba.c:32` on `<B>`; LWP 10823 in `two` at `abba.c:46` on `<A>`; owners 10822 and 10823 |
+| No attaching | `gdb -p` | **"Could not attach to process"**; `ptrace_scope` 1 |
+| Ordering removes it | `abba` with both threads A then B | **no stall in 30 s: 199,254,198 rounds** (slowest second 5,403,919); work 1,000: 10,787,201 |
+| Mutex types | `errchk.c` | default relock `ETIMEDOUT` after 1 s; error-checking **`EDEADLK`**; robust **`EOWNERDEAD`**, then 0 after `pthread_mutex_consistent` |
+| `lockdep` absent | `/boot/config-7.0.0-31-generic` | `# CONFIG_PROVE_LOCKING is not set`; `CONFIG_DETECT_HUNG_TASK=y`, timeout 120 s |
+| Banker, textbook | `banker` reference | SAFE ⟨P1, P3, P4, P0, P2⟩; P1 (1,0,2) **GRANTED**; P4 (3,3,0) **WAIT**; P0 (0,2,0) **DENIED** |
+| Safety-check cost | `bankbench.c` | *m* = 4: 0.018 → **20.590 ms** for *n* = 100 → 3,200; *m* = 32: 0.066 → **74.690 ms** |
+| Conservativeness | `banksim` reference, 10,000 runs | `UNITS` 6: naive **42.3%** deadlocked, Banker **0**, 6.5 refusals per run; `UNITS` 4 / 9 / 12: 24.5% / 33.5% / 67.0% |
+| Detection, textbook | `detect` reference | no deadlock ⟨P0, P2, P3, P4, P1⟩; with P2 requesting one more C: **P1 P2 P3 P4** |
+| The "holding nothing" rule | `detect` with and without it | P3 holding nothing and waiting: **P0 P1** with the rule, **P0 P1 P3** without |
+| Livelock | `livelock.c` | polite **128,579/s, 32.21 failures per round** (2 CPUs), 50,322/s and 53.92 (1 CPU); back-off 1.31M/s; ordered 0.87M / 1.42M |
+| Fixed and exponential back-off | PS 4 Q5 reference | fixed 50 µs **1.29M/s, 0.01**; expo 1.28M/s on 2 CPUs, **1.41M/s on 1** |
+| xv6 double acquire | `sys_uptime` with two `acquire`s | **`lapicid 0: panic: acquire`**; `addr2line`: `acquire ← sys_uptime ← syscall ← trap ← alltraps` |
+| Midterm 1 | `midterm1_check.sh` | FCFS 15.25 / 8.75; SRTF 13.0 / 4.25; RR-4 18.25 / 4.5; RM set *U* 0.85, *R*₃ = 8, no misses; **every assertion passes** |
+
+---
+
+## 32. The first random simulation of the Banker was wrong
+
+**The first `banksim` drew one random request and, when the Banker refused it, retried a new random
+draw** — counting every retry as a refusal, sometimes retrying the same unsafe request many times, and
+bailing out after a step limit that it then counted as a deadlock. **Its figures (32.7% naive
+deadlocks, 2.1 refusals per run) were never used.**
+
+**The rewrite enumerates every grant possible at each step, filters out the unsafe ones under the
+Banker, and chooses among the rest**, so a refusal is counted once per step and a run under the Banker
+can only end by finishing. **L14 §6 quotes the rewrite.**
+
+**Its rates are not monotonic in the supply** — 24.5%, 42.3%, 33.5%, 67.0% for 4, 6, 9 and 12 units —
+because the claim range `UNITS/2` rounds down and zero claims become rarer as supply grows. **PS 4 Q3(b)
+was drafted asking students to explain why both columns "fall"**, and was rewritten to ask them to
+describe the trend and explain it from the claim distribution, before release.
+
+---
+
+## 33. PS 4's first states did not exercise what they were written to
+
+**`ps4_state.txt`'s first version** produced GRANTED, WAIT, WAIT and ERROR — **no DENIED**, the one
+outcome that distinguishes the Banker from a simple availability check. **`ps4_detect_b.txt`'s first
+version** was meant to be deadlocked and was not. Both were redesigned by hand and then confirmed with
+the reference programs: the new Banker state produces **all four outcomes** (GRANTED twice), and the
+detection pair differs in one request and is **deadlock-free and deadlocked (P0 P1)**.
+
+**The second design also gave Q2(c) its best example**: a process holding nothing, waiting on a
+deadlocked holder, reported deadlocked only by a detector that drops the "holding nothing" rule.
+
+---
+
+## 34. The "fixed" ABBA check reported a deadlock while both threads were running
+
+The first program written to show that lock ordering prevents the deadlock **printed `DEADLOCK after
+59,870,831 rounds`**, with both worker threads in state `R` and neither lock owned. **The watchdog's
+end-of-run test was wrong**, not the fix. The rewrite reports a deadlock only for a **whole second
+with zero progress**, runs for 30 seconds, and prints the slowest second's round count.
+
+**It is now a Lab 4 common-problems row**, because students rewriting the watchdog in Part D will make
+the same mistake.
+
+---
+
+## 35. A fixed back-off did not collide, and the question expected it to
+
+PS 4 Q5(b) was drafted to ask *"explain why `fixed` behaves as it does, in terms of what happens when
+both threads fail at the same moment"* — expecting a fixed 50 µs sleep to reproduce the collisions.
+**Measured, `fixed` was as good as random back-off** (1.29M rounds per second, 0.01 failures per
+round). **A 50 µs sleep is not 50 µs**: timer slack and wake-up latency — L09 §6's own measurements —
+randomise it by tens of microseconds. **The question now asks students to predict, observe, and explain
+from L09**, and to say what would make `fixed` collide.
+
+---
+
+## 36. Midterm 1: marks, content, and the script that checks it
+
+**100 marks in 75 minutes**, five questions of 20. The gradebook records *Possible 100* and *75 min*;
+MATH 241's final followed its gradebook in the same way (§6 of its notes), and CS 211's
+one-mark-per-minute convention was not adopted. Recorded as a syllabus deviation.
+
+**Every number in the mark scheme is produced by `midterm1_check.sh`**, which builds the Week 2 reference
+simulator and `rtsim` from the vault and asserts the rest. **The paper's scheduling question was chosen
+so that SRTF's preemption at *t* = 1 changes the schedule**, and its real-time set so that the
+Liu–Layland bound is inconclusive and response-time analysis decides.
+
+**No Week 4 material appears on the paper.** Q5 is a synthesis question on a new xv6 system call whose
+four parts between them draw on all of Weeks 0–3 — the timer interrupt and a lock, the user pointer,
+system-call cost, and gaming a scheduler — and do not depend on one another, so a student stuck on one
+part can still answer the others.
+
+**Presidents Day** (§11) falls on the midterm's Monday; the Week 4 README says so and that the calendar
+schedules the paper as normal.
+
+---
+
+## 37. Lab 4 cannot attach `gdb` to a running process
+
+The curriculum's *"detect it with gdb"* reads naturally as attaching to a hung program. **On the lab
+image `ptrace_scope` is 1**, measured refusing `gdb -p` on the student's own process. **Lab 4 measures the
+refusal, starts the program under `gdb` instead, and teaches diagnosis from `/proc`** — which works where
+no debugger can attach — as its central part. Recorded as a syllabus deviation.
+
+---
+
 *Academic Registry · Build Records · © CSE Department*
