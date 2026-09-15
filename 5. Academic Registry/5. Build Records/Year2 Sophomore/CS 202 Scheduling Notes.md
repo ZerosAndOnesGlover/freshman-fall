@@ -796,4 +796,114 @@ no debugger can attach — as its central part. Recorded as a syllabus deviation
 
 ---
 
+## 38. Every number in Week 5 was measured, and the programs ship with the notes
+
+Kernel 7.0.0-31; otherwise the reference machine of §9, with a 4 GiB swap file and transparent huge
+pages set to `madvise`. Programs in `CS202 Week5/resources/` and `lab/`; the PS 5 reference in
+`solutions_instructor/`. xv6 measurements use `resources/nfree.patch` — **one added system call,
+`nfree()`, counting the kernel's free list** — on the Lab 0 build.
+
+| Claim | Program | Result |
+|---|---|---|
+| ASLR | `aspace.c`, two runs | `main` at `0x56890e4a20c0` and `0x629a5e82a0c0`; stack `0x7ffd4461f8e4` → PGD 255, PUD 501, PMD 35, PTE 31, offset 2276 |
+| Top of user space | `aspace.c` | `MAP_FIXED_NOREPLACE` at 2⁴⁷ and at 2⁴⁷ − 4096 both fail; a hint at 2⁵⁶ returns `0x7089ae420000` |
+| Five levels built, four run | `/boot/config-7.0.0-31-generic`, `/proc/cpuinfo` | `CONFIG_PGTABLE_LEVELS=5`; no `la57` flag |
+| xv6's fork, every page | `memx.c` | sbrk(4096) **1**; sbrk(4 MB) **1,025**; fork **1,096** = 1,028 + 2 + 65 + 1; the patch applied to a clean tree reproduced it |
+| Kernel mapping | PS 5 `kernel.txt` | **65 frames**, matching the fork's decomposition |
+| Linux tables | `faultcost.c` | 1 GiB mapped: `VmPTE` unchanged at 44 kB; touched: **2,096 kB**; 64 pages 1 GiB apart: **+512 kB**; 2 MiB apart: **+260 kB** |
+| This CPU's TLBs | `tlbinfo.c` | leaf 2 bytes `63 03 76 ff b5 f0 c3`: 64 + 32 L1 data entries, **1,536 STLB** |
+| TLB miss cost | `tlbcost.c`, median of 3 | gap between 4 KiB and 2 MiB pages **1.6 ns at 4 MiB, 17.3 ns at 2 GiB** (50.02 against 32.69 ns); +18 ns in both at 16 MiB from L3 |
+| THP | `/proc/vmstat` | `thp_fault_alloc 961`, `thp_fault_fallback 72` since boot; 1.63–1.78 GiB of a 2 GiB request backed |
+| PCID | `switchcost.c`, three runs | threads 2,984–3,107 ns per switch; processes 3,116–3,190 ns: **1–4%** more |
+| Meltdown | `/sys/devices/system/cpu/vulnerabilities/meltdown` | `Mitigation: PTI` |
+| Shootdowns | `shootdown.c`, two runs | single 5,897 / 5,900 ns; **busy second thread 6,570 / 7,093 ns with 199,977 / 196,079 interrupts**; sleeping 6,089 / 6,598 ns with 41 / 939 |
+| First touch | `faultcost.c`, three runs | **1,833 / 1,949 / 1,935 ns per fault**; second pass 14.7 / 13.3 / 15.2 ns per page |
+| Zero page, COW, soft-dirty, pageout | `pmlab.c`, three runs each | fault columns identical every run; outputs quoted in L18 §3–§4 and Lab 5 Solutions |
+| COW cost | `forkcost.c`, two runs | fork of 1 GiB **18.9 / 20.9 ms**; child writes 775 / 780 ms, **2,957 / 2,975 ns per fault** |
+| xv6 faults | `pgfault.c` | past the end **err 6**; guard and kernel **err 7**; **a write over `main` succeeds** |
+| Buddy allocator | `buddy.c` | 512 MiB touched: order 9 **136 → 7**, order 10 **105 → 47**; after `munmap` 138 and **89** |
+| Pageout read-back | `pmlab` with majors weighted 1,000 | `faults 1`, three runs: **minor** — the swap cache |
+| Hidden frames | `pmwalk.c` | 0 nonzero frame numbers; swap type and offset 0; pid 1 `Permission denied`; `pipewire` (same user, not a descendant) readable |
+| `calloc` of 100 MiB | a Lab 5 check program | read **25,600 faults, RSS +0**; write 25,600 faults, **RSS +102,400 kB** |
+| TLB-size cliff | PS 5 reference, `TLBSIZE` 64–513 | column-order matrix **0.00% at 511, 99.80% at 512** |
+
+---
+
+## 39. Four Week 5 programs measured nothing on their first run, and one lecture was drafted before its run
+
+**Recorded together, because they are the same mistake**: a measurement written without asking
+what the compiler or the kernel would do with it.
+
+- **`pmprobe`'s "read" of an untouched page showed not present.** At `-O2` the read into an unused
+  local was deleted. **`volatile` fixed it**, and the corrected run found the zero page (L18 §3).
+- **`tlbcost` first printed `0.00 ns` for every working set**: its sum was never used, so the whole
+  read loop was deleted. **The next version printed times but a zero checksum**, because every page
+  was filled with `(char)i` for `i` a multiple of 4,096 — always 0. **Only the third version is
+  quoted.**
+- **`pgfault` first computed its "guard" address one page too low**, inside the program's own code,
+  and the write succeeded. **Its second version wrote `*p = *p`** and every case "succeeded", because
+  the compiler removed the self-assignment. **The third version writes `1`.**
+- **L18 §2's xv6 transcript was first written from what the run was expected to print, before the
+  run.** The run then disagreed in `eip` and in the guard case, and **the section was replaced with
+  the measured output**, adding the fourth case — xv6's writable text — that the correct run
+  revealed. **No lecture text is to be drafted ahead of its measurement again**; this is the rule
+  §22 already stated for questions.
+
+---
+
+## 40. `pmlab`'s fault counts were counting the wrong pages
+
+The first `pmlab` reported fault counts between steps. They included **faults on pages it was not
+watching**: the first call into a libc function whose code page this process had not yet mapped;
+printing; **after `fork`, the parent's and child's own stack and `.bss` pages, which `fork` had made
+copy-on-write**; and after `clear_refs`, **every page of the process**, since clearing soft-dirty
+write-protects them all. One step showed `faults +-151`: the child's counter starts at zero.
+
+**The fix measures each operation alone** and takes the unrelated faults — writing the `sink`
+variable — before measuring. **Lab 5 Q8 has students delete one of those lines** and explain the
+fault that appears, because the pollution is itself the best demonstration that `fork`
+write-protects everything.
+
+---
+
+## 41. PS 5's first `kernel.txt` guessed where xv6's data segment starts
+
+The trace was first written with the data segment at `0x8010b000`. **`nm kernel` on the Week 5 build
+puts `data` at `0x80108000`.** The frame count was 65 either way — the ranges are contiguous — but
+the page counts in the trace were wrong, and were corrected.
+
+**The PS 5 reference was then extended with superpages (Q5)** after the traces had been run; all
+five earlier traces were rerun against the old binary and produced **byte-identical output** before
+the new question was written.
+
+**Q3(c)'s cliff was found by running, not predicted**: the question first asked for 64, 256 and 512
+entries; the run at 511 showed that a TLB one entry smaller than a cyclic working set gets no hits
+at all, and the question now includes 511 and 513.
+
+---
+
+## 42. The xv6 patch first included the Makefile
+
+`nfree.patch` was first generated with `git diff` over the whole tree, **which included Lab 0's two
+Makefile changes and the `_memx` line**, and failed to apply to a tree where Lab 0's changes already
+existed. **The shipped patch covers only the seven kernel and library files**; `_memx` and `_pgfault`
+are added with the same `sed` as every other xv6 program in the course. It was applied to a fresh
+clone with Lab 0's changes and reproduced `memx`'s numbers exactly.
+
+---
+
+## 43. Claims the Week 5 drafts made without a measurement, and what replaced them
+
+- **"Copying the gigabyte at fork would take longer than 780 ms"** (L18 §4) was never measured; it was
+  replaced with what was: the copy is deferred, and a child that writes every page pays 780 ms.
+- **"The stack sits more than 128 TiB above zero"**: `0x7ffd…` is just below 2⁴⁷. "Nearly".
+- **L16 §5 counted the page directory twice**, once in the process's 12 KiB and once in the kernel's
+  260 KiB. Now 8 KiB and 256 KiB, with the directory separate.
+- **Lab 5 Q12 was drafted expecting a major fault** on reading back a paged-out page. Measured, it is
+  minor — the swap cache still held the frame — and the question now asks which, and why.
+- **The sleeping-thread shootdown rounds were 3–12% slower than single-threaded, with no
+  interrupts.** No explanation was verified, and L17 §6 says so rather than offering one.
+
+---
+
 *Academic Registry · Build Records · © CSE Department*

@@ -1,0 +1,7 @@
+# kernel.txt — what xv6's setupkvm maps into every process (vm.c, kmap[]).
+# In the Week 5 build `nm kernel` puts `data` at 0x80108000.
+mapr 80000000 00000000 256 w          # I/O space: KERNBASE .. KERNBASE+EXTMEM
+mapr 80100000 00100000 8 -            # kernel text and rodata, up to data
+mapr 80108000 00108000 57080 w        # kernel data and free memory, up to PHYSTOP
+mapr fe000000 fe000000 8192 w         # devices, up to 4 GiB
+stats
