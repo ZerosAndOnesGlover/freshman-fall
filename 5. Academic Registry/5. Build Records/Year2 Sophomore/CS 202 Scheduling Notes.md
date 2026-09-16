@@ -1232,4 +1232,57 @@ blocks correctly — the same driver, in the kernel the student owns. Recorded a
 
 ---
 
+## 60. Every number in Week 10 was measured, and the programs ship with the notes
+
+Reference machine of §9, kernel 7.0.0-31, `kvm` and `kvm_intel` loaded, `/dev/kvm` reachable by this
+account through an ACL. Programs in `CS202 Week10/lab/`, `assignments/ps10/` and
+`solutions_instructor/`.
+
+| Claim | Program | Result |
+|---|---|---|
+| The KVM API | `kvmprobe.c` | version **12**; `kvm_run` **12,288 bytes**; `NR_VCPUS` **8**, `MAX_VCPUS` 4096, `NR_MEMSLOTS` 32,764; `IRQCHIP` 1, `COALESCED_MMIO` 2 |
+| The hardware | `/proc/cpuinfo` | `vmx`, **`ept`**, `vpid`, **`unrestricted_guest`**; `kvm_intel` nested = **Y** |
+| A guest runs | `kvmhost hello` | prints its string in **21 I/O exits**, then halts |
+| A device is a hole | `kvmhost mmio` | **`write of 1 byte(s) at guest physical 0x80000, data 0x2a`** |
+| An exit to the hypervisor | `kvmhost exits 100000`, ×3 | **7,880 / 7,806 / 7,778 ns** |
+| An exit KVM answers itself | `kvmhost cpuid 65535`, ×3 | **1,464 / 1,422 / 1,409 ns** — **5.5× cheaper** |
+| Making a machine | `vmsplit.c`, 500 VMs, ×3 | create **152 / 493 / 316 µs**; **destroy 10,839 / 10,902 / 11,472 µs** |
+| Emulation against virtualization | xv6 boot to `init: starting sh`, ×3 | TCG **1.20 / 1.28 / 1.29 s**; KVM **1.12 / 1.17 / 0.92 s** |
+| Containers, half available | `unshare`, `systemd-run` | user namespaces **refused** (`apparmor_restrict_unprivileged_userns` 1); **cgroup controllers `cpu memory pids` delegated** |
+| Page sharing | `/sys/kernel/mm/ksm/run` | **1** — KSM is on |
+
+**Week 10 needed no syllabus deviation** — the first such week since Week 3. The curriculum asks for a
+minimal hypervisor built on KVM `ioctl`s and for booting a VM in it, and **this account can do both.**
+
+---
+
+## 61. The hypervisor was wrong four times, and each was measurable
+
+**All four produced output that looked plausible.**
+
+1. **The MMIO test reported `0 MMIO exits`** — and the guest halted normally. The memory region was
+   **1 MiB**, so the guest's write to `0x80000` was to *mapped* memory and no exit was possible.
+   Shrinking the region to 64 KiB made the exit appear. **Lab 10 Q9 has students reproduce both.**
+2. **A request for 100,000 exits produced 34,464.** The guest counted with `loop`, and **`cx` is 16
+   bits in real mode**: 100,000 mod 65,536 = 34,464. The host now counts the exits instead.
+3. **The `cpuid` loop never terminated.** `cpuid` with `eax = 0` returns the vendor string in `ebx`,
+   `edx` and **`ecx`** — which was the loop counter. `push cx` / `pop cx` around it, and a valid
+   `rsp`, fixed it. **PS 10 Q3(c) asks students to explain the hang.**
+4. **`KVM_RUN` returned `EINTR` and the hypervisor treated it as fatal.** It means only that a signal
+   arrived; the guest is fine and must be re-entered. **PS 10 Q1(c) marks this explicitly.**
+
+---
+
+## 62. What the exit measurements imply for the rest of the course
+
+**The 5.5× between an in-kernel exit and a userspace one is the week's organising number**, and the
+lectures use it three times: to explain in-kernel interrupt controllers and coalesced MMIO (L32 §4),
+to explain virtio (L32 §5), and to explain why **xv6 boots barely faster under KVM** (L33 §2) — a
+result that surprises students who expect hardware virtualization to be uniformly fast.
+
+**The xv6 boot comparison was worth the effort**: it is the only measurement in the week where the
+"obvious" answer is wrong, and it connects Week 9's device costs to Week 10's exits.
+
+---
+
 *Academic Registry · Build Records · © CSE Department*
