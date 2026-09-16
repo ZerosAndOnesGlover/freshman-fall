@@ -1337,4 +1337,168 @@ number.
 
 ---
 
+## 66. Every number in Week 12 was measured, and the machine supplied the lecture
+
+Reference machine of §9, kernel 7.0.0-31. Programs in `CS202 Week12/lab/`, `assignments/ps12/` and
+`solutions_instructor/`. **This week needed almost no invented scenarios: the machine's own security
+configuration is the material.**
+
+| Claim | Source | Result |
+|---|---|---|
+| The trusted computing base, counted | `find -perm /6000`, `getcap -r` | **18 setuid/setgid binaries of 2,049**; **4** with file capabilities; kernel 16.2 MB + 162 MB of modules |
+| Capabilities in production | `getcap` | **`ping` carries `cap_net_raw=ep`, not setuid**; `snap-confine` carries ten, including `cap_sys_admin` |
+| This account's authority | `/proc/self/status` | **all capability sets empty; bounding set `000001ffffffffff`** |
+| One bug, three builds | `smash.c` | fortify **before the copy** (`__strcpy_chk`); canary **at the return**; neither → **`SIGSEGV`, control already transferred** |
+| The frame is re-ordered too | `smash.c`, 24 bytes | **the hardened build survives what the plain build dies on** |
+| Hardening in the wild | `readelf`, 300-file sample | of 209 ELF files: **NX 209, RELRO 209, PIE 202, canary 190** |
+| Randomisation | `aslr.c`, 200 runs | **200 distinct for all five regions**; stack ≈ 2²² pages, rest ≈ 2³²; **code-to-data offset constant in all 200** |
+| Randomisation, off | `setarch -R` | **five identical addresses every run** |
+| A seccomp filter's price | `seccost.c`, median of 15 paired runs | **control −3.4 ns**; 6 instructions **+51.0**; 15 **+51.9**; 55 **+49.1**; **205 +52.7**; **5 stacked +48.9** |
+| A filter that kills | `jailed.c` | **`SIGSYS`, exit 159** |
+| The allowlist | `strace -c`, then `jail` | **`rseq` is the missing call**; with it, `-s strict /bin/echo hi` works |
+| The limits | `jail` + `victims.c` | `-t 1`: **`SIGXCPU` at 0.999 s**; `-m 64`: **`malloc` failed at 61 MiB**; `-f 32`: **29 descriptors** |
+| The limit that does not limit | `jail -p 700` | **fork failed after 0 children** — this account has **134 processes, 1,068 threads** |
+| The mechanism that does | cgroup `pids.max=20` | **exactly 19 children** |
+| A timing channel | `timing.c` | **+2.5 ns per byte, 1.25 ns noise floor**; attack recovers **byte 0 in 3 of 3 runs**, 1–2 bytes of 8 overall; constant-time **flat, 0 of 8** |
+| Week 0's claim, re-tested | `sgdt.c` | **still leaks `0xfffffe397b808000`** while `kptr_restrict` zeroes `/proc/kallsyms` |
+| The one unmitigated flaw | `/sys/.../vulnerabilities/` | **`gather_data_sampling: Vulnerable`** — every other line is `Mitigation:` or `Not affected` |
+| What this account may not do | various | `unshare -Ur` refused; `PTRACE_ATTACH` to a non-descendant refused; `perf_event_paranoid` **4**; `unprivileged_bpf_disabled` **2**; `aa-status` needs root; `/proc/sys/vm/mmap_rnd_bits` **unreadable** |
+
+**The last row is why Weeks 6, 7 and 10 deviated**, and L39 §3 turns it into the course's closing
+argument rather than a list of apologies.
+
+---
+
+## 67. Three of this week's measurements were wrong first, in three different ways
+
+**The pattern of §50 and §54 held to the last week.**
+
+**1 · The canary demonstration measured `_FORTIFY_SOURCE` twice.** The first version compiled
+`smash.c` with Ubuntu's defaults and with `-fno-stack-protector`, and **both printed
+`*** buffer overflow detected ***`** — from which the obvious conclusion is that the canary fires in
+both builds. **It fires in neither.** That message is fortify's; the canary says
+`*** stack smashing detected ***`. Ubuntu enables `-D_FORTIFY_SOURCE=3` **and**
+`-fstack-protector-strong` by default, so the naive comparison never tests the canary at all.
+**`-U_FORTIFY_SOURCE` is what makes it an experiment**, and reading the exact message is what caught
+it.
+
+**2 · The seccomp harness reported that filters make system calls faster.** 1,044 ns before the
+filter, 868 ns after — a 17% speed-up from adding work, which is impossible. **The cause was CPU
+frequency ramp**: the first timed loop on an idle laptop runs at a low clock. Warm-up, minimum of
+batches instead of mean, `taskset`, and **a control that measures the baseline twice and must return
+zero** (it returns −3.4 ns). **The control is now a rubric item in PS 12 Q3** — a submission without
+one is capped at half.
+
+**3 · `RLIMIT_CPU` reported `SIGKILL` where the lecture claimed `SIGXCPU`.** The first `jail` set
+soft and hard to the same value, so the process passed both limits in the same instant and the
+kernel's `SIGKILL` arrived. **Soft *t*, hard *t*+1** gives the program the catchable signal, and the
+distinction became Q1(b).
+
+**And one that was a genuine discovery rather than a mistake:** `jail -p 40` failing with **zero**
+children. `RLIMIT_NPROC` is per **real user ID**, not per process tree, and it counts tasks — this
+account owns 1,068 of them. **The rlimit cannot do the job at all**, and a cgroup's `pids.max`
+does it exactly. **This became Q4**, and it is the best example in the course of two mechanisms whose
+difference is scope rather than capability.
+
+---
+
+## 68. The timing attack is reported as it happened, which is one byte of eight
+
+**The textbook claim is that an early-exit comparison lets an attacker recover a secret byte by
+byte.** The measurement supports the first half and not the second.
+
+**The leak is real and clean**: the per-prefix ladder is monotone at **+2.5 ns per byte** against a
+**1.25 ns** noise floor. **The recovery is not**: across three runs the attack got 1, 1 and 2 bytes
+of 8, and **always byte 0**.
+
+**The reason is in the ladder itself** — the step from 0 to 1 correct bytes is **7.5 ns** and every
+later step is 2.5 ns, because a wrong first byte exits the loop immediately with a perfectly
+predicted branch. **Only the first step is large enough to survive the machine's drift from this
+vantage point.**
+
+**Two fixes were needed to get even that far**, and both are the same error as §67's second item:
+measuring all candidates for one letter before moving to the next compares numbers taken minutes
+apart (**interleave them**), and the first batch after the guess changes pays for branch-predictor
+retraining (**discard it**).
+
+**The decision was to ship this rather than to engineer a version that succeeds.** A cold-memory
+variant with one byte per flushed cache line raises the signal to ~22 ns per byte **and raises the
+noise to 26 ns**, so it recovers nothing — which is itself the lesson, and it is in the program as
+`-cold`. **The honest claim — the leak is real, exploitability is quantitative, and the
+constant-time version flattens it to nothing and recovers 0 of 8 — is more useful than a rigged
+success**, and Lab 12 Q14 asks the students to explain the shape of the ladder rather than admire a
+result.
+
+---
+
+## 69. The final examination, and the script that owns its arithmetic
+
+**Wednesday of finals week, 150 minutes, 100 marks, 15%, comprehensive.** Five questions of 20, one
+per cluster of weeks, **twice the time per mark of either midterm** because a comprehensive paper is
+mostly reading.
+
+**`final_check.sh` produces every figure on the paper and in the mark scheme — 29 checks, all
+passing.** It runs **Week 4's Banker reference** and **Week 6's page-replacement reference** on the
+paper's own inputs, asserts the arithmetic (system call counts, TLB reach, inode block counts,
+quorum sizes), **and re-runs the `sgdt` test that Q5(c)1 depends on**, so that a claim about this
+machine cannot silently go stale.
+
+**Two design choices worth recording:**
+
+**Q2(b)3 asks about a request that *can* be satisfied and must be refused.** Available is (2,1,2)
+and P0 asks for (2,1,0). A naive allocator grants it; the Banker's algorithm refuses, because the
+resulting state has no safe sequence. **This distinguishes students who ran the algorithm from
+students who compared two vectors**, and the mark scheme gives 1 of 3 for the right verdict with the
+wrong reason.
+
+**Q5(c) is three claims to be tested rather than facts to be recalled.** It is the only question
+that cannot be revised for by memorising, and the mark scheme says plainly that **poor marks on it
+are information, not an embarrassment.** One of its three parts is the UMIP claim from Week 0, which
+is why the check script re-runs it.
+
+**An initial slip, caught by the script:** the metadata count for a maximal Project 2 file was
+written as 129 blocks. It is **130** — one indirect, one double indirect, and 128 second-level
+indirect blocks. The check now asserts it.
+
+---
+
+## 70. The course is complete
+
+**Thirteen weeks, Weeks 0–12, one commit each, every number measured on this machine.**
+
+| | Week | Commit |
+|---|---|---|
+| 0 | The kernel boundary | `124016c` |
+| 1 | Processes and context switches | `639d461` |
+| 2 | Scheduling | `8ab1405` |
+| 3 | Locks | `1dc883f` |
+| 4 | Deadlock, and Midterm 1 | `facf5d1` |
+| 5 | Address translation and demand paging | `340199b` |
+| 6 | Page replacement and the OOM killer | `afe1b87` |
+| 7 | File systems; **Project 1 assigned** | `73687b9` |
+| 8 | Crash consistency, and Midterm 2 | `921304b` |
+| 9 | Device drivers; **Project 2 assigned** | `e4cab17` |
+| 10 | Virtualization | `9e55daf` |
+| 11 | Distributed systems | `8dceda4` |
+| 12 | Security and synthesis; **the final** | *this commit* |
+
+**What the course ships:** 39 lectures, 13 problem sets with skeletons and instructor solutions, 13
+labs, two midterms and a final — each with a mark scheme and a check script that regenerates its
+arithmetic — two projects against a pinned xv6, and **a build record of 70 sections, of which a
+substantial fraction document measurements that were wrong before they were right.**
+
+**The failures are the asset.** §50, §54, §58, §61, §67 and §68 are the sections a future
+instructor should read first: they are the ones that say what this machine does when a measurement
+is not measuring what its label claims. **The course's second habit was derived from its own build,
+not asserted.**
+
+**What is deliberately absent, and should stay absent unless the machine changes:** containers
+(unprivileged user namespaces are restricted), `perf` and `bpftrace` (paranoid and disabled), a
+loadable module that actually loads (unsigned, and this account cannot), etcd (not installed), and
+copy-on-write `fork` in xv6 (**abandoned in Week 9 after a boot panic that was not found in the time
+available** — §57). **Every one of these is a row in the syllabus's deviation table**, with what was
+lost stated in the lecture that would have used it.
+
+---
+
 *Academic Registry · Build Records · © CSE Department*
