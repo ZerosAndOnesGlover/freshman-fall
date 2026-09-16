@@ -1166,4 +1166,70 @@ to the program with a clean `fsck`.
 
 ---
 
+## 57. Every number in Week 9 was measured, and the programs ship with the notes
+
+Reference machine of §9, kernel 7.0.0-31, NVMe SSD, GCC 13.3.0, kernel headers for 7.0.0-31 and
+7.0.0-30 installed. Programs in `CS202 Week9/assignments/ps9/`, `lab/` and `solutions_instructor/`.
+
+| Claim | Program | Result |
+|---|---|---|
+| A module builds | `assignments/ps9/linux/` | **330,976-byte `.ko`**; `size`: **text 1,604**, data 1,328, bss 4 |
+| And will not load | `insmod` | **`Operation not permitted`** — `CAP_SYS_MODULE`; `lsmod`, `modinfo`, `objdump` all still work |
+| Device dispatch | `devcost.c` | `/dev/null` write **659 ns**; `/dev/zero` read 687 / 882 ns (4 B / 4 KiB); `/dev/urandom` 946 / **12,689 ns**; cached file 819 / 1,064; **`ioctl` 595 ns**; `poll` 673 ns |
+| Per-byte device work | the same | `/dev/zero` **0.05 ns/byte**; `/dev/urandom` **2.9 ns/byte** |
+| Interrupts per I/O | `dd … iflag=direct`, `/proc/interrupts` | 256 MiB in **1 MiB reads: 1,969 interrupts, 0.136 s**; in **4 KiB reads: 65,536, 1.115 s** |
+| Why 7.7 per MiB | `/sys/block/nvme0n1/queue/max_sectors_kb` | **128** — eight commands per 1 MiB request |
+| Block layer | `/sys/block/nvme0n1/queue/` | scheduler **`[none]` mq-deadline**, `nr_requests` 1023, **8 hardware queues**, rotational 0, `io_poll` 0 |
+| Merging | `/proc/diskstats` | **1,071,768 writes merged** against 337,872 issued, since boot |
+| An xv6 character device | `ring.c`, `ringtest` | blocking read confirmed: **300 bytes → last byte `n`**; **1,000 → `l`**, both matching `'a' + (n−1) % 26` |
+| FUSE as an alternative | `dpkg`, `/usr/include` | `libfuse3` present, **no development headers**, no `pkg-config` — nothing can be built against it |
+
+**Project 2's reference** (`solutions_instructor/project 2 reference … .patch`), applied to a clean
+pinned xv6 and built from clean:
+
+| Part | Result |
+|---|---|
+| **A** lazy allocation | `sbrk(4 MB)` costs **0 pages**; touching 16 pages costs **16**; an untouched page reads 0 |
+| **B** double indirect | **16,523 blocks = 8,459,776 bytes** written, then `write` returns −1; **every block read back correctly** |
+| **C** symbolic links | `symlink` → 0; `O_NOFOLLOW` opens the link (**type 4, size 2, contents "a"**); following it reads the target's 21 bytes; **a loop returns −1** |
+
+---
+
+## 58. Three Week 9 failures, and what each cost
+
+1. **A copy-on-write `fork` was written for Project 2 and abandoned.** With page reference counts, a
+   `PTE_COW` bit and a fault handler, **xv6 panicked at boot** — `init` trapping at `eip 0x1010101`,
+   then `panic: init exiting`. The cause was not found in the time available, so **Part C became
+   symbolic links**, which the reference does verify. **Project 2 asks only for what the reference
+   runs**, and the rubric says so explicitly.
+2. **Two features claimed the same system-call number.** The Project 2 tree already carried Week 5's
+   `nfree` at 22; `SYS_symlink` was given 22 as well. **`symlink()` then returned 56790** — a
+   free-page count — and no link was created. **Students merging Project 1, which uses 22 and 23,
+   will hit this**, so both the handout and the rubric warn about it.
+3. **xv6's `Makefile` does not rebuild `usys.o` when `syscall.h` changes.** After renumbering the
+   call, three build-and-test rounds still ran the **old** number: `objdump -d usys.o` showed
+   `mov $0x16` where `$0x17` was expected. **`make clean` fixed it in one round.** The handout tells
+   students to do that whenever they touch `syscall.h`.
+
+**All three produced symptoms that pointed at the wrong layer** — a panic that looked like a
+refcount bug, a syscall that looked like a file-system bug, and a file-system bug that was a build
+artefact. **The check that ends each of them is the same: look at what was actually built.**
+
+---
+
+## 59. Lab 9 runs the driver in xv6, because a module cannot be loaded
+
+The curriculum's PS 9 and Lab 9 are "write a simple Linux kernel module (character device)" and
+"load the module, write to it from user space". **The module builds and `insmod` is refused.**
+
+**FUSE was considered as the user-space alternative and rejected**: `libfuse3` is installed but its
+development headers are not, and an unprivileged student cannot install them — nothing can be
+compiled against it. **CUSE, `uinput` and loop devices are all root-only too.**
+
+**So PS 9 asks for the device twice**: in Linux, where it is built, inspected with `modinfo`/`size`/
+`objdump` and never run; and in **xv6's `devsw`**, where it is registered, opened, written to, and
+blocks correctly — the same driver, in the kernel the student owns. Recorded as a syllabus deviation.
+
+---
+
 *Academic Registry · Build Records · © CSE Department*
