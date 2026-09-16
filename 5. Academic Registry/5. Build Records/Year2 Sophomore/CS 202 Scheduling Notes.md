@@ -1082,4 +1082,88 @@ rubric does.
 
 ---
 
+## 53. Every number in Week 8 was measured, and the programs ship with the notes
+
+Reference machine of §9, kernel 7.0.0-31, ext4 on NVMe, `e2fsprogs` 1.47.0, QEMU 8.2.2. **No ZFS and
+no btrfs** (§56). Programs in `CS202 Week8/assignments/ps8/`, `lab/` and `solutions_instructor/`.
+
+| Claim | Program | Result |
+|---|---|---|
+| myfsj layout | `myfsj format 2048` | superblock 1, **log 2–32**, inodes 33–48, bitmap 49, data 50–2047; log holds 30 blocks |
+| Log slots per operation | instrumented build | `create` **2**, `mkdir` 4, `write 4096` **10**, `write 8192` **19** |
+| Writes to complete | crash sweep | `create` **3** without a journal, **7** with; `write 8192` **92** and **113** |
+| Crash sweep, no journal | `crashsweep.sh` + the PS 8 `fsck` | `create`: **2 of 2 crash points inconsistent** (orphaned inodes); `write 8192`: **34 of 91** (leaked blocks); **no crash point left the completed operation** |
+| Crash sweep, journal | same | `create`: 6 points, **0 inconsistent** (3 old, 3 new); `write 8192`: 112 points, **0 inconsistent** (92 old, 20 new) |
+| Recovery is not optional | same, `norecover` | **14 of 112** crash points leave `fsck` complaining, all in the install window |
+| The commit point | crash at 92 and 93 | 92: `logdump: n 0` → old file; **93: `n 19` → new file** — one 512-byte write |
+| One leaked block, in full | crash 30 of `write 8192` | `26 blocks marked, 25 reachable, 1 leaked` — the missed write is the inode |
+| qcow2 snapshot cost | `qemu-img`, `qemu-io` | base 64 MiB written = 65,796 KiB; **fresh overlay 196 KiB**; `snapshot -c` adds 12 KiB |
+| Copy-on-write amplification | 64 scattered 4 KiB writes | 64 KiB clusters: **+4,160 KiB for 256 KiB written (16×)**; 4 KiB clusters: **+388 KiB (1.5×)** |
+| Overlay write latency | 200 scattered 4 KiB writes | base **1.90 ms**, overlay **2.31 ms** — **+21%** |
+| Reads fall through | `qemu-io read -P 0xaa` | an untouched region of the overlay returns the backing file's bytes |
+| ext4 metadata checksum | byte flipped in the inode table | **`e2fsck: Inode checksum does not match inode`** |
+| ext4 data corruption | byte flipped in a file's data block | **`e2fsck` reports the image clean**, and the file returns `e6` where it held `19` |
+| Reflink | `cp --reflink=always` on ext4 | `Operation not supported` |
+| ext4's journal | `dumpe2fs -h` | journal **inode 8**, 4,096k, 1,024 blocks |
+
+---
+
+## 54. Midterm 2 is checked by a script, and one of its inputs was wrong at first
+
+**100 marks in 75 minutes, five questions of 20**, as Midterm 1 (§36), covering **Weeks 4–7**.
+`solutions_instructor/midterm2_check.sh` asserts **33 figures**: it builds the **Week 4 Banker
+reference** and the **Week 6 page-replacement reference**, runs them on the paper's own inputs, and
+checks the remaining arithmetic in Python. **All 33 pass.**
+
+**The Banker question was wrong when first drafted.** The reference reads **all `Max` rows before all
+`Allocation` rows**; the draft state file listed allocation first, so the run reported a safe sequence
+for a state that was not the one on the paper — and it was believed until the needs were computed by
+hand and did not match. **The state now reads ⟨P1, P2, P3, P0⟩ safe, P3's request (1,1,0) refused as
+unsafe, P1's (1,0,2) granted** — all three asserted by the script.
+
+**The lesson is §50's again**: a reference program's output is only evidence if its input is what you
+think it is. **The check script now owns the input file**, so the paper and the assertion cannot drift.
+
+---
+
+## 55. The crash-sweep harness took three attempts
+
+**The measurement that carries Week 8** — "stop the file system after every possible number of writes
+and see what is left" — was wrong twice before it was right.
+
+1. **The sweep swept nothing.** A `create` performs three block writes, and the first sweep ran crash
+   points 1 to 40: **34 of them simply ran to completion.** The range must come from the operation,
+   by increasing the budget until the program stops crashing.
+2. **The helper that measured that range always returned 1**, because it ended with `|| true`, which
+   replaced the exit status the loop was testing. **Every sweep then reported zero crash points**, and
+   the first read of the output was "the journal works perfectly" — for a run that had tested nothing.
+3. **The checker was too weak.** PS 7's `fsck` compares the bitmap with what the inodes reach, and an
+   interrupted `create` leaves **an inode in use that no directory entry names** — which that check
+   cannot see. It reported the unjournaled file system as clean at every crash point. **PS 8's `fsck`
+   adds orphaned inodes, dangling entries and link-count checks**, and the same sweep then showed
+   **36 of 93 crash points broken.**
+
+**All three failures produced a plausible, wrong, reassuring number.** PS 8 Q3(c) has students run the
+unjournaled sweep themselves, with the stronger checker, for exactly that reason.
+
+---
+
+## 56. Lab 8 measures copy-on-write in `qcow2`, because ZFS is not there
+
+The curriculum's Lab 8 is "use ZFS snapshots and measure the performance cost". **ZFS and btrfs are
+not installed and cannot be** — both need kernel modules and root — and **`cp --reflink` is refused by
+ext4**, which the lab measures. **`qemu-img`/`qemu-io` are installed**, and a `qcow2` image with a
+backing file is copy-on-write with an explicit cluster size, so **snapshot cost, write amplification
+and first-write latency are all measurable from an ordinary account.**
+
+**L27 states in its first section that its description of ZFS and btrfs comes from their papers, not
+from this machine** — the only section in the course so far that rests on literature rather than
+measurement, and it says so where a reader meets it. Recorded as a syllabus deviation.
+
+**The ext4 corruption experiment was added to fill the gap the missing ZFS leaves**: it is the
+*argument* for end-to-end checksums, measured — metadata corruption caught, data corruption returned
+to the program with a clean `fsck`.
+
+---
+
 *Academic Registry · Build Records · © CSE Department*
