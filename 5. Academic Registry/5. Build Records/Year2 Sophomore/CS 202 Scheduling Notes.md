@@ -1000,4 +1000,86 @@ rule kept as history.
 
 ---
 
+## 49. Every number in Week 7 was measured, and the programs ship with the notes
+
+Kernel 7.0.0-31, reference machine of §9, root filesystem **ext4 on NVMe, `noatime`**, `read_ahead_kb`
+128, `dirty_ratio` 20, `dirty_background_ratio` 10, `dirty_expire_centisecs` 1500. Programs in
+`CS202 Week7/lab/` and `assignments/ps7/`; references and the Project 1 patch in
+`solutions_instructor/`.
+
+| Claim | Program | Result |
+|---|---|---|
+| xv6's disk layout | `make fs.img` | `nmeta 59 (boot, super, log blocks 30 inode blocks 26, bitmap blocks 1) blocks 941 total 1000` |
+| xv6's largest file | `bigf.c` | **71,680 bytes = 140 blocks**, then `write` returns −1 |
+| myfs mirrors it | `myfs` reference | `format 2048`: inodes 2–17, bitmap 18, data 19–2047; **max file 71,680**; `write 71681` → `file too large` |
+| myfs links and fsck | `myfs` reference | link → 2 links; first `rm` leaves 1; second frees inode; **`fsck`: 21 marked, 21 reachable, 0 leaked** |
+| Page-cache residency | `pcache.c` + `mincore` | after `POSIX_FADV_DONTNEED` **0 of 131,072 pages**; after one 1-byte read **4 pages = 16 KiB** |
+| Readahead growth | `pcache.c` | pages resident after reading page 0, 1, 2 …: **4 12 12 12 12 16 16 16 …** |
+| Read costs | `pcache.c` | sequential **cold 1,583–1,921 MB/s, warm 7,910–9,091 MB/s**; random 4 KiB **cold 93.9 µs, warm 1.61 µs** |
+| Buffered writes | `durable.c` | 64 MiB in **0.015 s (4,602 MB/s)**, `Dirty` +65,536 kB, then `fsync` **0.041 s** |
+| Durability | `durable.c` | 4 KiB: buffered **2.9 µs**; `O_DIRECT` 27.9; `fsync` 3,967; `fdatasync` 3,983; `O_SYNC` 4,064; `O_DIRECT`+`fdatasync` 3,682 |
+| Write-back timing | `/proc/meminfo`, 40 s | `Dirty` 264 MB from t≈2 s **through t=15 s**, ~3.5 MB by t=20 s; `Writeback` caught at 196 kB once |
+| Safe update | `safeupdate.c`, 1 MiB | write 0.33–0.63 ms, **fsync file 3.5–5.7 ms**, rename 0.06–0.26 ms, **fsync dir 3.3–3.8 ms**; without the directory fsync, 4.8–5.3 ms total |
+| ext4 without root | `mkfs.ext4`, `debugfs`, `dumpe2fs` on an image | 600 KiB file = **one extent, `0–149 → 2067–2216`**; inode 256 B; 16,384 inodes for 16,384 blocks; hard link = same inode 14; **10 MiB sparse file, 0 blocks** |
+| Refusals | `bpftrace`, `drop_caches`, `mount` | "bpftrace currently only supports running as the root user"; `Permission denied`; `failed to setup loop device` |
+| Lottery scheduler | Project 1 reference, 1 CPU, 300 ticks | **12/32/55% and 14/31/54%** against an ideal 14.3/28.6/57.1 |
+| …on two CPUs | same program | **20/36/42%**, total selections roughly doubled |
+
+---
+
+## 50. Three Week 7 measurements were wrong the first time, all for the same reason
+
+**Each measured something other than what its label said.**
+
+- **`pcache`'s "warm" random reads were cold.** The warm pass ran straight after a
+  `POSIX_FADV_DONTNEED`, so it reported **60.8 µs against 65.7 µs** — no page-cache effect at all.
+  Reading the whole file before the pass gives the real figure: **1.61 µs, 58× faster than cold.**
+- **The lottery test measured nothing**: three children spinning 3,000,000 times finish within a few
+  timer ticks under QEMU, so each was chosen **1–3 times**. The children now spin until the parent
+  kills them, and the parent samples over a fixed 300-tick window.
+- **The write-back sample deleted its own evidence.** It ran for 7 s — shorter than the 15 s dirty
+  expiry — and then removed the file, which **discards dirty pages instead of writing them**. Over 40
+  seconds, with the file kept, the flush is visible at t≈15–20 s. **Lab 7 Q8 now says both things.**
+
+**The pattern is Week 5 §39's**, restated: *a measurement must be checked against what it claims
+before its number is used.*
+
+---
+
+## 51. Week 7 is the heaviest week, and PS 7 spans the break
+
+**PS 7 is released Wednesday of Week 7 and due Friday of Week 8**, across Spring Break, because
+**PS 8 extends the same code with a journal** and Midterm 2 sits on the Monday between them. The
+handout says so at the top; the Week 7 README repeats it; Lab 7 is sat the day after the midterm.
+
+**`myfs` was designed to be extended**: its layout leaves the block after the superblock free for
+Week 8's log, and its `bwrite` is the single choke point a journal has to intercept.
+
+**Two smaller decisions:**
+
+- **PS 7 Q3(c) asks for a file with a hole, and the provided commands cannot make one** — `write` and
+  `append` only start at 0 or at the end. This was found by trying it; **the question now expects the
+  student to say so** and describe the command that would, and the solutions say to give full marks
+  for exactly that.
+- **The `myfs` reference and skeleton both had warnings on the first build** — `strncpy` truncation
+  in `dirlink`, and unused `balloc`/`bmap` in the skeleton because the stubs do not call them. Fixed
+  with `memcpy` and `(void)` references; both now compile with no compiler output.
+
+---
+
+## 52. Project 1's reference was built and measured before the handout was written
+
+**The lottery scheduler in `solutions_instructor/lottery scheduler reference (do not distribute).patch`**
+— 117 lines across eight files — was implemented, built, run, and **verified by applying it to a clean
+clone of the pinned commit** with Lab 0's two `Makefile` changes. Only then was the handout written,
+which is why Part D can ask for a comparison against the ideal shares: the reference shows what a
+correct implementation looks like (within about two points on one CPU), **and shows the two-CPU result
+that the question asks students to explain** — a 4-ticket process capped near half the selections
+because only one process can occupy a CPU at a time.
+
+**The handout does not quote those numbers**, so that a student cannot work backwards from them; the
+rubric does.
+
+---
+
 *Academic Registry · Build Records · © CSE Department*
