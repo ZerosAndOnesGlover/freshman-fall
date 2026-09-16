@@ -1285,4 +1285,56 @@ result that surprises students who expect hardware virtualization to be uniforml
 
 ---
 
+## 63. Every number in Week 11 was measured, and the programs ship with the notes
+
+Reference machine of §9, kernel 7.0.0-31, Wi-Fi to the campus network, NTP active. Programs in
+`CS202 Week11/lab/`, `assignments/ps11/` and `solutions_instructor/`.
+
+| Claim | Program | Result |
+|---|---|---|
+| The latency ladder | `netlat.c` | function call **0.0018 µs**; system call **0.84 µs**; pipe **8.5–10.5 µs**; loopback UDP **19.1–20.3 µs**; loopback TCP **21.4–22.5 µs** |
+| Another machine | `ping 8.8.8.8` | **22.6–24.5 ms** — about **13,000,000×** a function call |
+| Sent is not delivered | `delivered.c` | `write()` accepted **2,643,968 bytes** for a stopped reader, then refused with the connection open |
+| The clocks | `clocks.c`, `timedatectl` | all report 1 ns resolution; **`BOOTTIME` 29,645 s ahead of `MONOTONIC`** — the machine's suspend time; NTP synchronised |
+| A quiet election | `raftsim -n 5 -seed 1` | stands at **t=158**, wins at **t=170** with 3 of 5; **17.0%** of ticks leaderless (all of it start-up) |
+| A crashed leader | `raftsim -seed 4 -crash 500:4` | leaderless **t=500 → t=732 = 232 ticks**, of which **219 were waiting** for a timeout |
+| A partition | `raftsim -seed 3 -partition 300:3 -heal 1200` | two leaders (terms 1 and 2) for **756 ticks**; the old leader **stepped down 47 ticks after the heal** |
+| Loss sweep, 5 seeds × 5,000 ticks | `raftsim -loss` | 0%: 1.2 elections, **3.9%** leaderless · 20%: 4.0, 4.8% · **40%: 19.8, 22.9%** · 60%: 54.8, 60.3% · **80%: 85.6 elections, 0.4 leaders, 97.7% leaderless** |
+| Safety | 200 runs across seeds, losses and partitions | **no term ever had two leaders** |
+| The tools the curriculum names | `which etcd etcdctl zookeeper-server consul` | **none installed** |
+
+---
+
+## 64. Lab 11 observes Raft in a simulator, because etcd is not installed
+
+The curriculum's Lab 11 is "use etcd to observe Raft in action". **etcd, etcdctl, ZooKeeper and Consul
+are all absent**, and installing a service is not something a student account can do. **`raftsim`
+replaces it**, and the substitution is a gain for teaching in three ways:
+
+- **It is seeded**, so every figure in the handout is reproducible on the marker's machine and the
+  student's.
+- **It can be broken on command** — `-loss`, `-partition`, `-crash` — which no one would do to a
+  production etcd cluster, and which is where the week's lessons are.
+- **It checks its own safety property**: two leaders in one term aborts the run with a message, so a
+  student whose vote rule is wrong finds out immediately rather than from a mark.
+
+**What is lost is honestly stated in L36 §4 and Lab 11 Q13**: a real cluster's log replication,
+revisions and client sessions, none of which the election-only simulator has. Recorded as a syllabus
+deviation.
+
+---
+
+## 65. Week 11's build was uneventful, and one thing is worth recording
+
+**The only build fix was a missing `<stdarg.h>`** in the simulator's `event()` — caught by the
+compiler, not by a wrong number.
+
+**The design decision worth keeping** is putting the safety check *inside* the simulator. Every other
+problem set in this course is graded on output; **PS 11 is graded on an invariant**, and the program
+enforces it. The effect on the handout is that Q1 and Q2 can be close to binary while Q3–Q5 carry the
+explanations — which is the right shape for an algorithm whose whole point is a property, not a
+number.
+
+---
+
 *Academic Registry · Build Records · © CSE Department*
