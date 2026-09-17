@@ -1,0 +1,112 @@
+# CS 212 Week 8 -- reference gate workflow for slot
+#
+# .github/workflows/ci.yml
+#
+# This is THE GATE (L25 section 5): fast, deterministic, and it blocks.
+# Everything slow, probabilistic, or dependent on the outside world belongs
+# in the nightly sweep -- see ci-sweep.yml.
+#
+# Target: under 3 minutes total. Measure yours before optimising (A 8 Q1).
+
+name: gate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:                      # cancel superseded runs on the same branch;
+  group: ${{ github.workflow }}-${{ github.ref }}    # saves a lot of minutes
+  cancel-in-progress: true
+
+jobs:
+  # ---------------------------------------------------------------------
+  # Lint and types run in parallel with tests. They have no dependency on
+  # each other, so making them sequential is free time thrown away.
+  # ---------------------------------------------------------------------
+  static:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12.3"
+          cache: pip                          # keyed on the lockfile
+          cache-dependency-path: uv.lock
+
+      - run: pip install uv && uv sync --frozen
+      - run: uv run ruff format --check .
+      - run: uv run ruff check .
+      - run: uv run mypy src/slot/domain      # strict here; ordinary elsewhere
+
+  tests:
+    runs-on: ubuntu-latest
+    services:
+      # A service container, not testcontainers: on CI it is already there,
+      # so conftest.py reads TEST_DATABASE_URL and does not start a second one.
+      postgres:
+        image: postgres:16.3-alpine
+        env:
+          POSTGRES_PASSWORD: ci
+          POSTGRES_DB: slot_test
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 2s
+          --health-timeout 2s
+          --health-retries 15
+        ports: ["5432:5432"]
+
+    env:
+      TEST_DATABASE_URL: postgresql://postgres:ci@localhost:5432/slot_test
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12.3"
+          cache: pip
+          cache-dependency-path: uv.lock
+
+      - run: pip install uv && uv sync --frozen
+      - run: uv run alembic upgrade head
+
+      # The architecture test from A 3. Cheap, and it is the only check that
+      # knows the domain package must not import sqlalchemy (W3 L11 section 1).
+      - run: uv run pytest tests/test_architecture.py -q
+
+      - run: uv run pytest tests/unit tests/integration -q --durations=10
+
+      # Coverage is reported, NOT gated (W6 L19 section 4). The number is a
+      # diagnostic; a target is Goodhart's law.
+      - run: |
+          uv run coverage run -m pytest tests/unit tests/integration -q
+          uv run coverage report --precision=1 >> $GITHUB_STEP_SUMMARY
+
+  # ---------------------------------------------------------------------
+  # Build the image ONCE and push it tagged with the commit SHA. Later
+  # stages promote THIS tag; nothing is ever rebuilt (L26 section 6).
+  # ---------------------------------------------------------------------
+  image:
+    needs: [static, tests]
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/setup-buildx-action@v3
+      - uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: docker/build-push-action@v5
+        with:
+          push: true
+          platforms: linux/amd64            # pin it; an arm64 laptop build differs
+          tags: ghcr.io/${{ github.repository }}:${{ github.sha }}
+          build-args: GIT_SHA=${{ github.sha }}   # baked in, reported by /health
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
