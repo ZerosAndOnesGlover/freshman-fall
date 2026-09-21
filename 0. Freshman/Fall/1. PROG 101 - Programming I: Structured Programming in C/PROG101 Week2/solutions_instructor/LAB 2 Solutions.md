@@ -215,12 +215,13 @@ Reference implementation:
 ```c
 #include <stdio.h>
 
-enum state { OUT_OF_WORD, IN_WORD };
+#define OUT_OF_WORD 0
+#define IN_WORD     1
 
 static int is_space(int c) { return c == ' ' || c == '\t' || c == '\n'; }
 
 int main(void) {
-    enum state st = OUT_OF_WORD;
+    int st = OUT_OF_WORD;
     long words = 0, chars = 0, lines = 0;
     int c;
 

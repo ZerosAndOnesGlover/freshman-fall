@@ -3,7 +3,9 @@
 
 **Not graded: completion required before Problem Set 0**
 **Duration:** 2 hours
-**Lab session:** Friday of Week 0 — the Week 0 orientation lab slot. From Lab 1 onward labs meet Monday.
+**Date:** Monday 28 September 2026 · 15:00–16:50 · Lab Section (Week 1) — covers Week 0 (Lectures 01–03).
+Lab *N* always sits on the Monday after Week *N*; this is Lab 0's Monday. Problem Set 0 is due the next
+morning, so finish this lab first.
 
 ---
 
@@ -88,7 +90,8 @@ That path has spaces in it, so name it once. Add this to `~/.bashrc` — the reg
 
 ```bash
 export ACADEMICS=~/"Documents/1. Academics/0. Computer Science and Engineering (B.Sc)"
-export PROG101="$ACADEMICS/5. Academic Registry/4. Submissions/Year1 Freshman/Fall/1. PROG 101"
+export FALL1="$ACADEMICS/5. Academic Registry/4. Submissions/Year1 Freshman/Fall"
+export PROG101="$FALL1/1. PROG 101"
 ```
 
 Open a new terminal, make a directory for Week 0, and write the program:
@@ -118,14 +121,14 @@ int main(void) {
 
 ```bash
 gcc -E hello.c -o hello.i
-wc -l hello.c           # How many lines is your source? - 8 lines
-wc -l hello.i           # How many lines after preprocessing? - 821 lines
+wc -l hello.c           # How many lines is your source?
+wc -l hello.i           # How many lines after preprocessing?
 ```
 
 Open `hello.i` and scan through it. You'll see the contents of `stdio.h` at the top. Scroll to the end: your actual code is there.
 
 **Checkpoint question (answer in your lab notebook):**
-> What is the first line of YOUR code in `hello.i`? What line number is it at?    Line - 817
+> What is the first line of YOUR code in `hello.i`? What line number is it at?
 
 ### Step 3: Run the compiler
 
@@ -269,89 +272,75 @@ echo "-40" | ./temperature     # Should print -40.0°C = -40.0°F
 
 ## Part 6: Your First GDB Session
 
-We will intentionally introduce a bug and debug it with GDB.
+We will debug a program with one planted bug: a variable read before it is given a value — the
+"uninitialised variable" of Lecture 03 §11, and Quiz 0's question 5.
 
-Create `buggy.c`:
+Copy `buggy.c` from this lab's `starter/` folder into `"$PROG101/week0"`. Its core is:
 
 ```c
-/* buggy.c — intentionally buggy program */
-#include <stdio.h>
-
-int sum_array(int arr[], int n);
-
 int main(void) {
-    int numbers[] = {10, 20, 30, 40, 50};
-    int total;
+    int total;                 /* BUG IS HERE */
+    int a = 10;
+    int b = 20;
+    int c = 30;
 
-    /* BUG: n should be 5, not 6 — off by one */
-    total = sum_array(numbers, 6);
+    total = total + add_three(a, b, c);
 
-    printf("Sum: %d\n", total);
+    printf("Total:    %d\n", total);
+    printf("Expected: %d\n", 10 + 20 + 30);
     return 0;
 }
-
-int sum_array(int arr[], int n) {
-    int sum = 0;
-    for (int i = 0; i < n; i++) {
-        sum += arr[i];
-    }
-    return sum;
-}
 ```
 
-Compile with debug symbols and AddressSanitizer:
+**First, let the compiler find it:**
+
 ```bash
-gcc -Wall -g -fsanitize=address -std=c11 -o buggy buggy.c
-./buggy
+gcc -Wall -g -std=c11 -o buggy buggy.c
 ```
 
-AddressSanitizer will detect the out-of-bounds read and print an error report.
+Read the warning. Which line, which variable, and what does "used uninitialized" mean? Run `./buggy`
+three times. Does `Total` come out the same each time?
 
-Now debug with GDB:
+**Now watch it happen in GDB:**
+
 ```bash
-gcc -Wall -g -std=c11 -o buggy buggy.c     # Without sanitizer for GDB
 gdb ./buggy
 ```
 
-In GDB:
 ```
-(gdb) break main
+(gdb) break 24                # the line  total = total + add_three(a, b, c);
 (gdb) run
-(gdb) next                    # Step to sum_array call
-(gdb) step                    # Step into sum_array
-(gdb) print n                 # What is n?
-(gdb) print arr[4]            # Last valid element
-(gdb) print arr[5]            # Out-of-bounds read — what do you see?
+(gdb) print total             # before the line runs — what is in it?
+(gdb) print a
+(gdb) next                    # run line 24
+(gdb) print total             # after
 (gdb) continue
 (gdb) quit
 ```
 
-Fix the bug (change `6` to `5`), recompile, and verify.
+Fix the bug (initialise `total` to `0`), recompile with `-Wall`, confirm the warning is gone and the
+output is `60`.
 
 **Checkpoint question:**
-> What was the value of `arr[5]`? Is it consistent between runs? What does this tell you about uninitialized memory?
-> Yes, 5 was consistent between runs, it was a garbage value:
-
-``` gdb
-(gdb) print arr[5]
-$8 = 32767
-(gdb) print arr[5]
-$9 = 32767
-(gdb) print arr[5]
-$10 = 32767
-```
+> What value did `total` hold before line 24 ran? Was it the same on every run? What does that tell you
+> about a local variable that is never given a value?
 
 ---
 
 ## Part 7: Set Up Git Repository
 
-`$PROG101` is its own repository with its own remote, kept deliberately out of the vault's git repo
-— so PROG 101 gets committed from inside `$PROG101`, never from the vault root. Every course you
-take gets its own repo the same way.
+**All six Freshman Fall courses share one repository**, rooted at the Fall submissions folder; PROG 101 is
+the `1. PROG 101/` folder inside it. It is deliberately kept out of the vault's git repo. Add these to
+`~/.bashrc` if Lab 0 of CS 101 has not already done it:
 
 ```bash
-cd "$PROG101"
-git init
+export FALL1="$ACADEMICS/5. Academic Registry/4. Submissions/Year1 Freshman/Fall"
+export PROG101="$FALL1/1. PROG 101"
+```
+
+```bash
+cd "$FALL1"
+git init            # skip if the repository already exists
 git config user.name "Your Name"
 git config user.email "your.email@university.edu"
 
@@ -388,10 +377,11 @@ These are optional but highly recommended. They deepen your understanding.
 
 **Challenge 1:** What happens when you try to compile a C++ file with the C compiler?
 ```bash
-# Create test.cpp with a C++ specific feature (like 'class')
+# A C++-only feature ('class'), saved twice under two names
 echo 'class Foo {}; int main() { return 0; }' > test.cpp
-gcc test.cpp       # What error do you get?
-g++ test.cpp       # Try the C++ compiler
+cp test.cpp test.c
+gcc test.c         # What happens?
+gcc test.cpp       # And now? Why is it different? (Hint: Lecture 02 §3 — gcc is a *driver*.)
 ```
 
 **Challenge 2:** Inspect a compiled binary:
@@ -416,13 +406,13 @@ nm /usr/lib/libc.dylib | grep printf
 
 By end of lab, you should have:
 
-- [x] All tools installed and verified (`gcc`, `gdb`, `make`, `git`)
-- [x] `hello.c` compiles and runs correctly
-- [x] `temperature.c` passes all three test cases
-- [x] `buggy.c` bug found, fixed, and documented with a comment
-- [x] `Makefile` working (builds and cleans)
-- [x] Git repository initialized with first commit
-- [x] Answers to all Checkpoint Questions in your lab notebook
+- [ ] All tools installed and verified (`gcc`, `gdb`, `make`, `git`)
+- [ ] `hello.c` compiles and runs correctly
+- [ ] `temperature.c` passes all three test cases
+- [ ] `buggy.c` bug found, fixed, and documented with a comment
+- [ ] `Makefile` working (builds and cleans)
+- [ ] Git repository initialized with first commit
+- [ ] Answers to all Checkpoint Questions in your lab notebook
 
 **Show your TA:** Run `make clean && make && ./hello && ./temperature <<< "100"` and show the output.
 
@@ -437,4 +427,4 @@ Write your answers to checkpoint questions here (or in a separate `LAB 0 Environ
 3. Meaning of `U` before `printf` in `nm` output: ___
 4. Two differences between `-O0` and `-O2` assembly: ___
 5. What Make prints on second run (and why): ___
-6. Value of `arr[5]` in GDB, and what it means: ___
+6. Value of `total` before line 24 in GDB, and what it means: ___

@@ -3,7 +3,7 @@
 
 **Graded: 20 points**
 **Duration:** 2 hours
-**Lab session:** Monday of Week 3 — sat after this week's Tue–Thu lectures, and covers Week 2.
+**Date:** Monday 12 October 2026 · 15:00–16:50 · Lab Section (Week 3) — covers Week 2 (Lectures 01–03)
 **Submission:** Push to Git, show TA before leaving
 
 **Build with:** `gcc -Wall -Wextra -Werror -pedantic -std=c11 -g`
@@ -112,7 +112,7 @@ lab that can find it. *(1 pt)*
 ### 3A: Fallthrough, Deliberate and Accidental
 
 ```c
-static void demo(int n) {
+for (int n = 1; n <= 5; n++) {
     printf("n=%d: ", n);
     switch (n) {
         case 1: printf("one ");
@@ -124,6 +124,8 @@ static void demo(int n) {
     printf("\n");
 }
 ```
+
+Put this loop in `main` in `fallthrough.c`.
 
 1. Predict the output for `n = 1..5`, then verify. *(1 pt)*
 2. Build with `-Wall -Wextra -Werror`. **It will not compile.** Record the error. *(1 pt)*
@@ -159,10 +161,11 @@ A word is any maximal run of non-whitespace characters. Whitespace is space, tab
 ```c
 #include <stdio.h>
 
-enum state { OUT_OF_WORD, IN_WORD };
+#define OUT_OF_WORD 0
+#define IN_WORD     1
 
 int main(void) {
-    enum state st = OUT_OF_WORD;
+    int st = OUT_OF_WORD;
     long words = 0, chars = 0, lines = 0;
     int c;
 

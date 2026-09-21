@@ -5,7 +5,7 @@
 
 ## Week Overview
 
-Week 0 is orientation week. There are no graded assignments due *this* week — but Lab 0 must be completed, and Problem Set 0 is released at the end of the week (due before Week 1 Lecture 1).
+Week 0 is orientation week. There are no graded assignments due *this* week — but Lab 0 must be completed, and Problem Set 0 is released Friday 25 September (due Tuesday 29 September, 10:00, before Week 1 Lecture 1). Lab 0 is Monday 28 September.
 
 The goal: get your environment working, understand the compilation pipeline deeply, and write your first C programs.
 
@@ -15,10 +15,10 @@ The goal: get your environment working, understand the compilation pipeline deep
 
 | Day       | Event                              | Location      | Duration |
 | --------- | ---------------------------------- | ------------- | -------- |
-| Tuesday   | Lecture 1: The C Compilation Model | Main Hall 101 | 50 min   |
-| Wednesday | Lecture 2: Toolchain, Make, GDB    | Main Hall 101 | 50 min   |
-| Thursday  | Lecture 3: Hello World Deep Dive   | Main Hall 101 | 50 min   |
-| Friday (Week 0) | **Lab 0: Environment Setup**       | Lab 204       | 2 hours  |
+| Tue 22 Sep | Lecture 1: The C Compilation Model | Main Hall 101 | 50 min   |
+| Wed 23 Sep | Lecture 2: Toolchain, Make, GDB    | Main Hall 101 | 50 min   |
+| Thu 24 Sep | Lecture 3: Hello World Deep Dive   | Main Hall 101 | 50 min   |
+| Mon 28 Sep, 15:00 (Week 1) | **Lab 0: Environment Setup** | Lab 204 | 2 hours |
 
 ---
 
@@ -40,7 +40,7 @@ PROG101 Week0/
 │       └── buggy.c                        ← Starter: Buggy program for GDB
 │
 ├── assignments/
-│   ├── Problem Set 0.md                   ← PS0 (due Week 1 Tuesday)
+│   ├── Problem Set 0.md                   ← PS0 (due Tue 29 Sep, 10:00)
 │   └── starter/
 │       └── broken.c                       ← Starter: broken.c for PS0 P4
 │

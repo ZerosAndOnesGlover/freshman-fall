@@ -1,7 +1,7 @@
 # PROG 101 · Quiz 1
 ## Week 2, Tuesday — In-Class Assessment
 
-**Administered:** start of Week 2, Lecture 1 (Tuesday)
+**Date:** Tuesday 6 October 2026 · 10:00–10:10 (start of Week 2, Lecture 1)
 **Covers:** Week 1 material
 **Duration:** 10 minutes
 **Closed book, closed notes**
@@ -46,73 +46,63 @@ printf("%u\n", x);
 
 **4.** Which of the following is **undefined behavior** in C?
 
-- (A) `unsigned int x = UINT_MAX; x++;`
-- (B) `int x = INT_MAX; x++;`
-- (C) `unsigned int x = 0; x--;`
+- (A) `unsigned int x = UINT_MAX; x = x + 1;`
+- (B) `int x = INT_MAX; x = x + 1;`
+- (C) `unsigned int x = 0; x = x - 1;`
 - (D) Both A and C
 
 ---
 
-**5.** What does `(x & (x - 1))` compute when `x` is a power of 2?
+**5.** What do `(int)3.9` and `(int)-3.9` evaluate to?
 
-- (A) x doubled
-- (B) x halved
-- (C) 0
-- (D) x - 1
+- (A) `4` and `-4`
+- (B) `3` and `-4`
+- (C) `3` and `-3`
+- (D) `4` and `-3`
 
 ---
 
 ## Section B — Short Answer (2 pts each)
 
-**6.** Write a single C expression (no loops, no if) that tests whether bit 5 of an `unsigned int x` is set. The expression should evaluate to 1 if the bit is set, 0 if not.
+**6.** What does each print?
 
 ```c
-int result = __________________________________;
+printf("%d %d\n", -7 / 2, -7 % 2);
+```
+
+Output: `______`   Rule for the sign of `%`: `_________________________________________`
+
+---
+
+**7.** What does this print, and why?
+
+```c
+int a = -1;
+unsigned int b = 1;
+printf("%d\n", a < b);
+```
+
+Output: `______`   Why: `______________________________________________________`
+
+---
+
+**8.** `0.1 + 0.2 == 0.3` evaluates to `0`. Give the reason in one sentence, and write the comparison you
+should use instead.
+
+```
+Reason: ___________________________________________________________________
+Instead: __________________________________________________________________
 ```
 
 ---
 
-**7.** What is the output of this program? Trace it step by step.
-
-```c
-int x = 10;
-int result = 0;
-while (x > 0) {
-    result += x % 2;
-    x /= 2;
-}
-printf("%d\n", result);
-```
-
-Output: `______`
-
-What does this loop compute? (one sentence): `_________________________________________________`
-
----
-
-**8.** Explain what **short-circuit evaluation** means for the `&&` operator. Write one example where it prevents a runtime error:
+**9.** Give each value, and say which conversion the C standard defines exactly and which is
+implementation-defined.
 
 ```
-Short-circuit: ___________________________________________________________
-
-Example: _________________________________________________________________
-```
-
----
-
-**9.** What is the difference between these two loop conditions, given `int arr[5]`?
-
-```c
-for (int i = 0; i < 5; i++)   /* Loop A */
-for (int i = 0; i <= 5; i++)  /* Loop B */
-```
-
-```
-Loop A: ___________________________________________________________________
-
-Loop B: ___________________________________________________________________
-
-Which is correct for iterating over arr? Why? ______________________________
+(unsigned char)300  = ______
+(signed char)200    = ______   (on gcc, x86-64)
+Defined exactly: __________   Implementation-defined: __________
 ```
 
 ---
@@ -142,17 +132,19 @@ Line 3: _______  Reason: _______________________________________________
 
 **3. (C) 4294967295** — Unsigned arithmetic wraps. `0 - 1` for `unsigned int` wraps to `UINT_MAX = 2^32 - 1 = 4294967295`. This is well-defined behavior (modular arithmetic) for unsigned types — not UB.
 
-**4. (B) `int x = INT_MAX; x++;`** — Signed integer overflow is undefined behavior. Unsigned overflow (A and C) is defined as modular arithmetic. Note: A says UINT_MAX++, which wraps to 0 — defined. C says unsigned 0--, which wraps to UINT_MAX — defined.
+**4. (B) `int x = INT_MAX; x = x + 1;`** — Signed integer overflow is undefined behavior. Unsigned overflow (A and C) is defined as modular arithmetic. Note: A says UINT_MAX++, which wraps to 0 — defined. C says unsigned 0--, which wraps to UINT_MAX — defined.
 
-**5. (C) 0** — A power of 2 has exactly one bit set. Subtracting 1 clears that bit and sets all lower bits. AND-ing them together gives 0. Example: x=8=1000b, x-1=7=0111b, 1000 & 0111 = 0000 = 0. This is the classic power-of-2 test.
+**5. (C) `3` and `-3`** — conversion from floating to integer truncates toward zero.
 
-**6.** `int result = (x >> 5) & 1;` — Right-shift bit 5 into position 0, mask with 1. Alternative: `!!(x & (1u << 5))` — but the `!!` is needed to guarantee 0 or 1 (not just non-zero).
+**6.** `-3 -1`. Division truncates toward zero, so `%` takes the sign of the dividend: `(-3)*2 + (-1) == -7`.
 
-**7.** Output: `2`. The loop extracts the binary digits of x from LSB to MSB and sums them. `10` in binary is `1010` — two 1-bits. So `result = 2`. This is the **popcount** (count of set bits) algorithm, also called Hamming weight.
+**7.** `0`. The signed `-1` is converted to `unsigned` (4294967295) before the comparison, which is not less than 1.
 
-**8.** Short-circuit: `&&` stops evaluating (skips the right operand) as soon as the left operand is false, since the result must be false regardless. Example: `if (ptr != NULL && *ptr > 0)` — if `ptr` is NULL, `*ptr` is never evaluated, preventing a null pointer dereference crash.
+**8.** Neither 0.1 nor 0.2 has an exact binary representation, so the rounded sum differs from the double
+nearest 0.3. Use a tolerance: `fabs((0.1 + 0.2) - 0.3) < 1e-9`.
 
-**9.** Loop A (`i < 5`): iterates with i = 0, 1, 2, 3, 4 — exactly the valid indices of `arr[5]`. Loop B (`i <= 5`): iterates with i = 0, 1, 2, 3, 4, **5** — index 5 is out of bounds for a 5-element array (valid indices are 0-4). Loop A is correct. Loop B causes undefined behavior on the last iteration (out-of-bounds access).
+**9.** `44` (300 − 256) and `-56`. Conversion **to an unsigned** type is defined (reduce modulo 256);
+conversion of an out-of-range value **to a signed** type is implementation-defined.
 
 **10.**
 - Line 1: `1` — Integer division: 5/3 = 1 (truncates toward zero).

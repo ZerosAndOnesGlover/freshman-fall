@@ -80,38 +80,26 @@ Any correct conversion is acceptable. Two things to insist on:
 
 ---
 
-## Part 6 — GDB Session
+## Part 6 — GDB Session (revised 2026-09-21: uninitialised variable, not an array)
 
-The commands students must demonstrate, and what each shows:
+`gcc -Wall -g` prints `warning: 'total' is used uninitialized [-Wuninitialized]` at line 24 (gcc 13.3).
+In GDB, `break 24`, `run`, `print total` shows garbage — **32767** in one measured run — and after
+`next` the total is garbage + 60 (32827). The value can differ between runs and machines: it is
+whatever was left in that stack slot. Fix: `int total = 0;` → prints `60`, no warning.
 
-| Command | Purpose |
-|---|---|
-| `break main` | Stop at entry |
-| `run` | Start execution |
-| `next` / `step` | Over vs. **into** a call — the distinction is the point |
-| `print var` | Inspect a value; `print/x var` for hex |
-| `info locals` | All locals in the frame |
-| `backtrace` | The call chain — **always run this first on a crash** |
-| `continue` | Resume |
-
-Compile with **`-g`** or the session shows addresses instead of source lines. A student who says
-"GDB didn't show my variables" has forgotten `-g`, and that is the whole lesson.
+Commands students must demonstrate: `break`, `run`, `print`, `next`, `continue`. Compile with **`-g`**
+or GDB shows addresses instead of source lines.
 
 ---
 
-## Part 8 — Exploration Challenges
+## Part 8 — Exploration Challenges (measured, gcc 13.3, x86-64 Linux)
 
-Expected answers on this platform (x86-64 Linux, gcc 13):
-
-```
-char=1  short=2  int=4  long=8  long long=8
-float=4  double=8  void*=8
-INT_MAX=2147483647  INT_MIN=-2147483648  UINT_MAX=4294967295
-CHAR_MIN=-128   (plain char is SIGNED here; it is unsigned on ARM)
-```
-
-Only `sizeof(char) == 1` is guaranteed by the standard. Everything else is platform-specific, and a
-student who states that has answered better than one who memorised the table.
+1. `gcc test.c` → `error: unknown type name 'class'`. `gcc test.cpp` **compiles without error**: the
+   `gcc` driver chooses the language from the file extension and runs the C++ compiler for `.cpp`.
+   (A program that used the C++ library would then fail to link without `g++`.)
+2. `file` reports `ELF 64-bit LSB pie executable, x86-64`; `strings` finds `Hello, world!`.
+3. `nm -D /lib/x86_64-linux-gnu/libc.so.6 | grep -w printf` → `0000000000060100 T printf@@GLIBC_2.2.5`
+   — defined (`T`) in the shared library: the definition the linker resolved `U printf` against.
 
 ---
 

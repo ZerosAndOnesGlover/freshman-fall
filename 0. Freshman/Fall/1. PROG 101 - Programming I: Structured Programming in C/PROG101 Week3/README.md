@@ -23,12 +23,12 @@ things, and finding out which stage rejected you is a skill.
 
 | Day | Session | Topic | Duration |
 |-----|---------|-------|----------|
-| Tuesday | **Quiz 2** + Lecture 1 | Functions and pass-by-value | 50 min |
-| Wednesday | Lecture 2 | The call stack and scope | 50 min |
-| Thursday | Lecture 3 | Structured programming and multi-file discipline | 50 min |
-| Monday (Week 4) | **Lab 3** | Functions, the call stack, and multi-file programs | 2 hours |
+| Tue 13 Oct | **Quiz 2** + Lecture 1 | Functions and pass-by-value | 50 min |
+| Wed 14 Oct | Lecture 2 | The call stack and scope | 50 min |
+| Thu 15 Oct | Lecture 3 | Structured programming and multi-file discipline | 50 min |
+| Mon 19 Oct, 15:00 (Week 4) | **Lab 3** | Functions, the call stack, and multi-file programs | 2 hours |
 
-**Problem Set 3** released Friday, due Friday of Week 4.
+**Problem Set 3** released Friday 16 October, due Friday 23 October, 17:00.
 
 ---
 

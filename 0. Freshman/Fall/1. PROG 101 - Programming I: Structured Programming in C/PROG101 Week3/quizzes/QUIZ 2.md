@@ -1,214 +1,155 @@
 # PROG 101 · Quiz 2
 ## Week 3, Tuesday — In-Class Assessment
 
-**Administered:** start of Week 3, Lecture 1 (Tuesday)
-**Covers:** Week 2 material
+**Date:** Tuesday 13 October 2026 · 10:00–10:10 (start of Week 3, Lecture 1)
+**Covers:** Week 2 material — operators, bit manipulation, evaluation order and undefined behaviour, control flow
 **Duration:** 10 minutes · Closed book · 20 points
+
+> Rewritten 2026-09-21. The previous version tested functions, the call stack, arrays and strings
+> (Weeks 3–4) at the start of Week 3's first lecture — before any of them had been taught.
 
 ---
 
 ## Section A — Multiple Choice (2 pts each)
 
-**1.** A function receives a `char buffer[64]` as a parameter. Inside the function, what does `sizeof(buffer)` return?
+**1.** With `int a = 5, b = 3;`, what is `a > 3 && b > 3 || a == 5`?
 
-- (A) 64
-- (B) 1 (size of one char)
-- (C) 8 (size of a pointer on 64-bit systems)
-- (D) The actual length of the string stored in the buffer
-
----
-
-**2.** What is the output of this code?
-
-```c
-void modify(int x) { x = 999; }
-int main(void) {
-    int a = 42;
-    modify(a);
-    printf("%d\n", a);
-    return 0;
-}
-```
-
-- (A) 999
-- (B) 42
-- (C) Undefined behavior
-- (D) 0
-
----
-
-**3.** What does `strlen("Hello\0World")` return?
-
-- (A) 11
-- (B) 10
+- (A) 0
+- (B) 1
 - (C) 5
-- (D) 6
+- (D) It depends on evaluation order
 
 ---
 
-**4.** Which statement correctly declares a function that takes a 2D array with 4 columns and returns nothing?
+**2.** What is the value of `1 << 3 + 1`?
 
-- (A) `void fn(int matrix[][], int rows);`
-- (B) `void fn(int matrix[4][], int rows);`
-- (C) `void fn(int matrix[][4], int rows);`
-- (D) `void fn(int **matrix, int rows, int cols);`
+- (A) 9
+- (B) 16
+- (C) 8
+- (D) 2
 
 ---
 
-**5.** A `static` local variable inside a function:
+**3.** Which of these is **undefined behaviour**?
 
-- (A) Is allocated on the stack and destroyed when the function returns
-- (B) Is allocated in the data segment, initialized once, and persists between calls
-- (C) Is the same as a `const` local variable
-- (D) Cannot be read by the function on the second call
+- (A) `unsigned u = 0; u = u - 1;`
+- (B) `int i = 5; i = i++;`
+- (C) `int r = 7 % -2;`
+- (D) `int x = (1 > 0) ? 10 : 20;`
+
+---
+
+**4.** After `int i = 3; int j = i++ * 2;`, what are `i` and `j`?
+
+- (A) `i = 3, j = 6`
+- (B) `i = 4, j = 8`
+- (C) `i = 4, j = 6`
+- (D) `i = 3, j = 8`
+
+---
+
+**5.** With `int k = 0;`, the expression `(k != 0) && (10 / k > 1)`:
+
+- (A) crashes with a division by zero
+- (B) evaluates to `0` without dividing
+- (C) is undefined behaviour
+- (D) evaluates to `1`
 
 ---
 
 ## Section B — Short Answer (2 pts each)
 
-**6.** What is the exact content (every byte) stored in memory for this declaration?
-
-```c
-char s[] = "Hi!";
-```
-
-Write each character and its ASCII value in order:
+**6.** With `unsigned x = 0x5A;` (binary `0101 1010`), give each value in decimal:
 
 ```
-Byte 0: char='__', ASCII=__
-Byte 1: char='__', ASCII=__
-Byte 2: char='__', ASCII=__
-Byte 3: char='__', ASCII=__
-Total bytes: __
+x & 0x0F = ______    x | 0x0F = ______    x ^ 0xFF = ______    x >> 4 = ______
 ```
 
 ---
 
-**7.** This code has a bug. Identify it and explain the consequence:
+**7.** What does this print? How many times does the body run, and why?
 
 ```c
-void fill(int arr[], int n, int value) {
-    for (int i = 0; i <= n; i++) {
-        arr[i] = value;
-    }
+int n = 0;
+do { n++; } while (n < 0);
+printf("%d\n", n);
+```
+
+```
+Output: ______   Why: __________________________________________________
+```
+
+---
+
+**8.** What is `total` after this loop?
+
+```c
+int total = 0;
+for (int t = 0; t < 10; t++) {
+    if (t % 2) continue;
+    if (t > 6) break;
+    total += t;
 }
+```
 
-int main(void) {
-    int data[5];
-    fill(data, 5, 0);
-    return 0;
+```
+total = ______
+```
+
+---
+
+**9.** What is `out`? Name the behaviour that produces it.
+
+```c
+int c = 2, out = 0;
+switch (c) {
+    case 1: out += 1;
+    case 2: out += 10;
+    case 3: out += 100; break;
+    default: out += 1000;
 }
 ```
 
-Bug: `_____________________________________________________`
-
-Consequence: `________________________________________________`
-
-Fix: `_______________________________________________________`
-
----
-
-**8.** What does `strcmp("apple", "banana")` return — positive, negative, or zero? Why?
-
 ```
-Return value: ______ (positive / negative / zero)
-Why: ___________________________________________________________
+out = ______   Behaviour: _____________________
 ```
 
 ---
 
-**9.** Draw the call stack (frames from top to bottom, newest first) at the moment execution is inside `leaf()`:
-
-```c
-void leaf(void)     { /* HERE */ }
-void middle(void)   { leaf(); }
-void root(void)     { middle(); }
-int main(void)      { root(); return 0; }
-```
+**10.** Starting from `unsigned f = 0;`, write one expression each to **set** bit 2, **set** bit 0, then
+**clear** bit 2. What is `f` at the end?
 
 ```
-Stack (top = most recent):
-┌──────────────────┐
-│                  │  ← newest frame
-├──────────────────┤
-│                  │
-├──────────────────┤
-│                  │
-├──────────────────┤
-│                  │  ← oldest frame
-└──────────────────┘
-```
-
----
-
-**10.** What is wrong with this approach to copying a string into a buffer, and what is the safe alternative?
-
-```c
-char src[] = "This is a very long string that might overflow the buffer";
-char dest[10];
-strcpy(dest, src);
-```
-
-Problem: `__________________________________________________`
-
-Safe alternative (write the corrected code): 
-```c
-
-
-
+set bit 2:   ________________________
+set bit 0:   ________________________
+clear bit 2: ________________________
+final f = ______
 ```
 
 ---
 
 ## Answer Key (Instructor Copy)
 
-**1. (C) 8** — When an array is passed to a function, it decays to a pointer. The parameter `char buffer[64]` is actually `char *buffer` — a pointer, 8 bytes on 64-bit. `sizeof` gives the size of the pointer, not the array. This is one of C's most notorious gotchas.
+All values checked by compiling and running the snippets (gcc 13.3).
 
-**2. (B) 42** — Pass by value: `modify` receives a copy of `a`. Modifying `x` inside `modify` has no effect on `a` in `main`. The copy lives on `modify`'s stack frame and is discarded when the function returns.
+**1. (B) 1** — `&&` binds tighter than `||`: `(5 > 3 && 3 > 3) || 5 == 5` = `0 || 1`.
 
-**3. (C) 5** — `strlen` counts bytes until the first `'\0'`. The string `"Hello\0World"` has `'\0'` at position 5. `strlen` stops there and returns 5. The `"World"` part is in memory but invisible to `strlen`.
+**2. (B) 16** — `+` binds tighter than `<<`: `1 << 4`. (GCC `-Wall` warns: `-Wparentheses`.)
 
-**4. (C) `void fn(int matrix[][4], int rows)`** — The first dimension can be omitted (it's passed separately as `rows`), but all subsequent dimensions must be specified so the compiler can compute element addresses. `matrix[i][j]` = `*(matrix + i*4 + j)`, which requires knowing 4 at compile time.
+**3. (B)** — two unsequenced modifications of `i` (`-Wsequence-point`). (A) is defined unsigned wrap, (C) is
+`1`, (D) is `10`.
 
-**5. (B) Data segment, initialized once, persists** — Static locals are like globals in storage duration but with local scope. They live in the data segment (not the stack), initialized exactly once (at program startup, to 0 if not explicitly initialized), and retain their value across calls. The function can read and modify them normally.
+**4. (C) `i = 4, j = 6`** — post-increment yields the old value (3) and then increments.
 
-**6.**
-```
-Byte 0: char='H', ASCII=72
-Byte 1: char='i', ASCII=105
-Byte 2: char='!', ASCII=33
-Byte 3: char='\0', ASCII=0
-Total bytes: 4
-```
-The null terminator is always allocated and stored. `sizeof("Hi!")` = 4, `strlen("Hi!")` = 3.
+**5. (B)** — `&&` short-circuits: the left side is false, so the division never happens.
 
-**7.** Bug: loop condition is `i <= n` — should be `i < n`. With `n=5` and an array of size 5 (valid indices 0-4), the loop writes to `arr[5]` on the last iteration — one element past the end of the array. Consequence: undefined behavior — writes to memory just past the array, potentially corrupting an adjacent variable or the return address. Fix: change `i <= n` to `i < n`.
+**6.** `10`, `95`, `165`, `5`.
 
-**8.** Negative. `strcmp` compares character by character. The first characters are `'a'` (97) and `'b'` (98). Since `'a'` < `'b'`, `strcmp` returns a negative value (specifically `'a' - 'b'` = `-1` in the implementation we studied, though the standard only guarantees the sign). "apple" comes before "banana" alphabetically.
+**7.** `1` — a `do-while` tests *after* the body, so the body runs once even though `n < 0` is false.
 
-**9.**
-```
-Stack (top = most recent):
-┌──────────────────┐
-│  leaf()          │  ← newest frame (currently executing)
-├──────────────────┤
-│  middle()        │
-├──────────────────┤
-│  root()          │
-├──────────────────┤
-│  main()          │  ← oldest frame
-└──────────────────┘
-```
+**8.** `12` — even `t` only: `0 + 2 + 4 + 6`; at `t = 8` the `break` fires.
 
-**10.** Problem: `strcpy` has no length limit. It copies all bytes of `src` (57 characters + null = 58 bytes) into `dest` (10 bytes), overflowing the buffer by 48 bytes. This overwrites adjacent memory — undefined behavior, likely a crash or security vulnerability.
+**9.** `110` — **fall-through**: execution enters at `case 2` and runs on into `case 3` until the `break`.
 
-Safe alternative:
-```c
-char src[] = "This is a very long string that might overflow the buffer";
-char dest[10];
-snprintf(dest, sizeof(dest), "%s", src);
-/* Or: */
-strncpy(dest, src, sizeof(dest) - 1);
-dest[sizeof(dest) - 1] = '\0';   /* strncpy doesn't guarantee null-termination */
-```
-`snprintf` is preferred — it always null-terminates and is harder to misuse.
+**10.** `f |= 1u << 2;` `f |= 1u << 0;` `f &= ~(1u << 2);` → **`f = 1`**. Accept `1 << n` for `n < 31`, but
+`1u` is the habit Lecture 1 teaches.

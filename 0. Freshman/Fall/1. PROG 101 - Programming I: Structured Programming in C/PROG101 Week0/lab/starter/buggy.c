@@ -1,8 +1,9 @@
 /* buggy.c — Intentionally Buggy Program for GDB Lab
  * PROG 101: Programming I — Structured Programming in C
  *
- * This program has an intentional bug.
- * Your job: find it using GDB.
+ * This program has one intentional bug: a variable is read before it is
+ * given a value (Lecture 03, "Common Beginner Errors").
+ * Your job: find it with the compiler's warnings and with GDB.
  *
  * Compile with:
  *   gcc -Wall -g -std=c11 -o buggy buggy.c
@@ -12,24 +13,21 @@
 
 #include <stdio.h>
 
-/* Function prototype */
-int sum_array(int arr[], int n);
+int add_three(int a, int b, int c);
 
 int main(void) {
-    int numbers[] = {10, 20, 30, 40, 50};
+    int total;                 /* BUG IS HERE — can you find it with GDB before looking? */
+    int a = 10;
+    int b = 20;
+    int c = 30;
 
-    /* BUG IS HERE — can you find it with GDB before looking? */
-    int total = sum_array(numbers, 6);
+    total = total + add_three(a, b, c);
 
-    printf("Sum of array: %d\n", total);
-    printf("Expected sum: %d\n", 10 + 20 + 30 + 40 + 50);
+    printf("Total:    %d\n", total);
+    printf("Expected: %d\n", 10 + 20 + 30);
     return 0;
 }
 
-int sum_array(int arr[], int n) {
-    int sum = 0;
-    for (int i = 0; i < n; i++) {
-        sum += arr[i];
-    }
-    return sum;
+int add_three(int a, int b, int c) {
+    return a + b + c;
 }

@@ -5,7 +5,7 @@
 
 ## Week Overview
 
-Week 1 goes deep into C's type system and memory model — the foundation everything else rests on. You will understand *why* integers overflow, *why* floating-point arithmetic is approximate, and *how* the compiler stores your variables in memory. By Monday's lab you will be manipulating bits, tracing loops by hand, and thinking at the machine level.
+Week 1 goes deep into C's type system and memory model — the foundation everything else rests on. You will understand *why* integers overflow, *why* floating-point arithmetic is approximate, and *how* the compiler stores your variables in memory. By Monday's lab you will be reading your variables' bytes in GDB and thinking at the machine level.
 
 ---
 
@@ -13,12 +13,12 @@ Week 1 goes deep into C's type system and memory model — the foundation everyt
 
 | Day | Event | Topic | Duration |
 |-----|-------|-------|----------|
-| Tuesday | **Quiz 0** + Lecture 1 | Types, Variables, and the Memory Model | 50 min |
-| Wednesday | Lecture 2 | Integer Representation | 50 min |
-| Thursday | Lecture 3 | Floating-Point and Type Conversions | 50 min |
-| Monday (Week 2) | **Lab 1** | Memory Layout, Bitlib, Loop Tracing | 2 hours |
+| Tue 29 Sep | **Quiz 0** + Lecture 1 | Types, Variables, and the Memory Model | 50 min |
+| Wed 30 Sep | Lecture 2 | Integer Representation | 50 min |
+| Thu 1 Oct | Lecture 3 | Floating-Point and Type Conversions | 50 min |
+| Mon 5 Oct, 15:00 (Week 2) | **Lab 1** | Memory and representation, seen through GDB | 2 hours |
 
-**Problem Set 1** released after Thursday's lecture, due before Week 2 Lecture 1 (Tuesday). Quiz 0 covers Week 0 material; **Quiz 1 is administered in Week 2** and covers this week.
+**Problem Set 1** released Thursday 1 October, 11:00, due Friday 9 October, 17:00. Quiz 0 covers Week 0 material; **Quiz 1 is administered in Week 2** and covers this week.
 
 ---
 
@@ -34,13 +34,12 @@ PROG101 Week1/
 │   └── Lecture 03 Floating Point and Conversions.md ← IEEE 754, NaN, conversion rules
 │
 ├── lab/
-│   ├── LAB 1 Memory Bits Loops.md                  ← Lab instructions (20 pts, 2 hrs)
+│   ├── LAB 1 Memory and Representation.md          ← Lab instructions (20 pts, 2 hrs)
 │   └── starter/
-│       ├── bitlib.h                                ← Header (complete)
-│       └── bitlib.c                                ← Implementation skeleton (fill in)
+│       └── explore.c                               ← Variables to inspect in GDB
 │
 ├── assignments/
-│   └── Problem Set 1.md                            ← PS1: 6 problems, 100 pts
+│   └── Problem Set 1.md                            ← PS1: 5 problems, 100 pts
 │
 ├── resources/
 │   └── Week 1 Reference and Worksheet.md           ← Two's complement worksheet + bit ref
@@ -72,9 +71,7 @@ From the lectures:
 From the lab and reference card:
 
 - [ ] Inspect a variable's bytes in memory with GDB and read them back as a value
-- [ ] Set, clear, toggle, and test individual bits using masks and shifts
-- [ ] Trace any loop by hand using a variable table
-- [ ] State and apply the loop invariant of a simple loop
+- [ ] Read two's-complement and IEEE 754 bit patterns straight out of memory
 
 ---
 
@@ -113,32 +110,26 @@ This is the mental model you are building this week. Once you have it, low-level
 
 ## The Most Common Week 1 Mistakes
 
-**1. Off-by-one in loops**
-```c
-for (int i = 0; i <= n; i++)    // Accesses arr[n] — out of bounds!
-for (int i = 0; i < n;  i++)    // Correct: accesses arr[0..n-1]
-```
-
-**2. Mixing signed and unsigned in comparisons**
+**1. Mixing signed and unsigned in comparisons**
 ```c
 int len = strlen(s);            // WRONG: strlen returns size_t (unsigned)
 if (len - 1 >= 0) ...          // Always true! (unsigned can't be < 0)
 size_t len = strlen(s);        // CORRECT type for sizes
 ```
 
-**3. Forgetting & in scanf**
+**2. Forgetting & in scanf**
 ```c
 scanf("%d", x);    // WRONG: passes value, not address
 scanf("%d", &x);   // CORRECT
 ```
 
-**4. Integer division when you want float division**
+**3. Integer division when you want float division**
 ```c
 double avg = total / count;         // Integer division!
 double avg = (double)total / count; // Correct
 ```
 
-**5. Using wrong format specifier**
+**4. Using wrong format specifier**
 ```c
 double x = 3.14;
 printf("%d", x);   // WRONG: %d reads 4 bytes as int; double is 8 bytes → garbage
@@ -147,14 +138,6 @@ printf("%f", x);   // CORRECT
 
 ---
 
-## Challenge Problems (Optional, No Credit)
+---
 
-These are for students who want to go deeper:
-
-1. **The Gray Code:** Write a function `int to_gray(int n)` that converts a binary integer to its Gray code (each consecutive pair of values differs by exactly one bit). Then write `int from_gray(int g)` that converts back. Use only bit operations.
-
-2. **Integer Square Root:** Write `int isqrt(unsigned int n)` that returns the integer square root of n (floor of √n) using only integer arithmetic — no `<math.h>`, no floating point. Hint: binary search, or Newton's method with integers.
-
-3. **Rotate Bits:** Write `uint32_t rotate_left(uint32_t x, int n)` that rotates the bits of x left by n positions (bits shifted off the left end wrap around to the right). Do this without any branching. Warning: a naive shift-based approach has undefined behavior — think carefully.
-
-4. **Collatz Conjecture:** For any positive integer n: if n is even, divide by 2; if odd, multiply by 3 and add 1. Repeat. The conjecture is that this always eventually reaches 1. Write a program that: (a) computes the Collatz sequence for a given n, (b) finds the number under 1,000,000 with the longest Collatz sequence, (c) uses only `int` arithmetic and detects if overflow would occur.
+*PROG 101 · Week 1*

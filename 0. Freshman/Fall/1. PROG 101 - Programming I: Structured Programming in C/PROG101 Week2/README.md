@@ -21,12 +21,12 @@ never runs. Learning to recognise that category — and to reach for `-Wall` and
 
 | Day | Session | Topic | Duration |
 |-----|---------|-------|----------|
-| Tuesday | **Quiz 1** + Lecture 1 | Operators, expressions, and bit manipulation | 50 min |
-| Wednesday | Lecture 2 | Evaluation order and undefined behaviour | 50 min |
-| Thursday | Lecture 3 | Control flow — `if`, `switch`, `while`, `for` | 50 min |
-| Monday (Week 3) | **Lab 2** | Operators, evaluation order, and control flow | 2 hours |
+| Tue 6 Oct | **Quiz 1** + Lecture 1 | Operators, expressions, and bit manipulation | 50 min |
+| Wed 7 Oct | Lecture 2 | Evaluation order and undefined behaviour | 50 min |
+| Thu 8 Oct | Lecture 3 | Control flow — `if`, `switch`, `while`, `for` | 50 min |
+| Mon 12 Oct, 15:00 (Week 3) | **Lab 2** | Operators, evaluation order, and control flow | 2 hours |
 
-**Problem Set 2** released Friday, due Friday of Week 3.
+**Problem Set 2** released Friday 9 October, due Friday 16 October, 17:00.
 
 ---
 

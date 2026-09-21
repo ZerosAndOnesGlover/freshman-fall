@@ -2,7 +2,10 @@
 ## Week 4 · Lab 4: Arrays, Strings, and a String Library
 
 **Duration:** 2 hours · **Points:** 20 · **Room:** BH 215
-**Lab session:** Monday of Week 5 — sat after this week's Tue–Thu lectures, and covers Week 4.
+**Date:** Monday 26 October 2026 · 15:00–16:50 · Lab Section (Week 5) — covers Week 4 (Lectures 01–03)
+
+**Tools used:** Weeks 0–4 — arrays, strings with Lecture 02's `const char *s` parameters, `<ctype.h>`,
+bounded copying. Not pointer arithmetic (Week 5), macros beyond `#define` constants (Week 10), or `memmove`.
 
 **Build with:** `gcc -Wall -Wextra -Werror -pedantic -std=c11`
 **Check with:** `valgrind --leak-check=full --error-exitcode=1`
@@ -41,10 +44,6 @@ int main(void)
     printf("  elements:        %zu\n", sizeof a / sizeof a[0]);
     by_param(a);
 
-    printf("  &a    = %p\n", (void *)&a);
-    printf("  &a[0] = %p\n", (void *)&a[0]);
-    printf("  a+1   = %p  (+%td bytes)\n", (void *)(a+1),  (char *)(a+1)  - (char *)a);
-    printf("  &a+1  = %p  (+%td bytes)\n", (void *)(&a+1), (char *)(&a+1) - (char *)a);
     return 0;
 }
 ```
@@ -52,8 +51,7 @@ int main(void)
 **Record in `answers.md`:**
 
 1. The two `sizeof` values, and why they differ. Name the mechanism.
-2. `&a` and `&a[0]` print the same address. Why do `a+1` and `&a+1` then differ, and by how much?
-3. Compile with `-Wsizeof-array-argument`. What does GCC say about `by_param`?
+2. Compile with `-Wsizeof-array-argument`. What does GCC say about `by_param`?
 
 ### 1B: Off-by-one, seen
 
@@ -67,115 +65,48 @@ Write a loop that writes `a[i] = i` for `i` from 0 to 10 **inclusive** — delib
 
 ## Part 2: String Processing Library (10 pts)
 
-Build `strlib.h` and `strlib.c` — a complete string utility library.
+Build `strlib.h` and `strlib.c` — fifteen string functions written from scratch. Every "find" returns an
+**index** (or `-1`), not a pointer: pointers into strings are Week 5.
 
 ### `strlib.h`
 
 ```c
-/* strlib.h — String Processing Library
- * PROG 101, Week 2 Lab
- */
+/* strlib.h — Lab 4: a small string library, written from scratch */
 #ifndef STRLIB_H
 #define STRLIB_H
 
 #include <stddef.h>
-#include <stdbool.h>
 
-/* === LENGTH AND COPY === */
-
-/* Return the length of s (not counting '\0'). */
 size_t str_len(const char *s);
+int    str_copy(char *dest, size_t dest_size, const char *src);     /* 0, or -1 if it did not fit (dest still terminated) */
+int    str_append(char *dest, size_t dest_size, const char *src);   /* same contract */
+int    str_compare(const char *s1, const char *s2);                 /* <0, 0, >0 like strcmp */
+int    str_compare_nocase(const char *s1, const char *s2);
+int    str_find_char(const char *s, char c);                        /* index of first c, or -1 */
+int    str_find(const char *haystack, const char *needle);          /* index of first match, or -1; "" matches at 0 */
+int    str_starts_with(const char *s, const char *prefix);          /* 1 or 0 */
+int    str_ends_with(const char *s, const char *suffix);            /* 1 or 0 */
+void   str_to_upper(char *s);
+void   str_reverse(char *s);
+void   str_trim(char *s);                                           /* leading and trailing whitespace, in place */
+int    str_count_char(const char *s, char c);
+int    str_word_count(const char *s);
+int    str_is_palindrome(const char *s);                            /* exact characters */
 
-/* Copy src into dest (dest must have room for strlen(src)+1 bytes).
- * Returns dest. Guarantees null-termination. */
-char *str_copy(char *dest, size_t dest_size, const char *src);
-
-/* Append src to the end of dest.
- * dest_size is the total size of the dest buffer.
- * Guarantees null-termination and no overflow. Returns dest. */
-char *str_append(char *dest, size_t dest_size, const char *src);
-
-/* === COMPARISON AND SEARCH === */
-
-/* Compare s1 and s2 lexicographically.
- * Returns 0 if equal, negative if s1 < s2, positive if s1 > s2. */
-int str_compare(const char *s1, const char *s2);
-
-/* Case-insensitive comparison. */
-int str_compare_nocase(const char *s1, const char *s2);
-
-/* Return pointer to first occurrence of c in s, or NULL. */
-char *str_find_char(const char *s, char c);
-
-/* Return pointer to last occurrence of c in s, or NULL. */
-char *str_find_char_last(const char *s, char c);
-
-/* Return pointer to first occurrence of needle in haystack, or NULL. */
-char *str_find(const char *haystack, const char *needle);
-
-/* Return 1 if s starts with prefix, 0 otherwise. */
-int str_starts_with(const char *s, const char *prefix);
-
-/* Return 1 if s ends with suffix, 0 otherwise. */
-int str_ends_with(const char *s, const char *suffix);
-
-/* === TRANSFORMATION === */
-
-/* Convert s to uppercase in-place. Returns s. */
-char *str_to_upper(char *s);
-
-/* Convert s to lowercase in-place. Returns s. */
-char *str_to_lower(char *s);
-
-/* Reverse s in-place. Returns s. */
-char *str_reverse(char *s);
-
-/* Remove leading whitespace from s in-place. Returns s. */
-char *str_trim_left(char *s);
-
-/* Remove trailing whitespace from s in-place. Returns s. */
-char *str_trim_right(char *s);
-
-/* Remove both leading and trailing whitespace. Returns s. */
-char *str_trim(char *s);
-
-/* Replace all occurrences of old_char with new_char in s in-place.
- * Returns the number of replacements made. */
-int str_replace_char(char *s, char old_char, char new_char);
-
-/* === ANALYSIS === */
-
-/* Return the number of occurrences of c in s. */
-int str_count_char(const char *s, char c);
-
-/* Return the number of words in s (separated by whitespace). */
-int str_word_count(const char *s);
-
-/* Return 1 if s is a palindrome (same forwards and backwards), 0 otherwise.
- * Case-sensitive. */
-int str_is_palindrome(const char *s);
-
-/* Return 1 if s contains only digit characters ('0'-'9'), 0 otherwise.
- * Empty string returns 0. */
-int str_is_numeric(const char *s);
-
-/* Return 1 if s contains only alphabetic characters, 0 otherwise.
- * Empty string returns 0. */
-int str_is_alpha(const char *s);
-
-#endif /* STRLIB_H */
+#endif
 ```
 
 ### `strlib.c` — Implementation Requirements
 
-- **No standard string functions** (`strlen`, `strcpy`, `strcmp`, etc.) — implement everything from scratch using only character comparisons and `<ctype.h>`
-- Exception: you may use `memmove` in `str_trim_left`
-- Document every function with a brief comment explaining the approach
-- Handle edge cases: NULL is never passed (you may assume valid pointers), but empty strings `""` must work correctly
+- **No `<string.h>` at all** — only character comparisons and `<ctype.h>`. Pass `char` values to
+  `<ctype.h>` functions as `(unsigned char)` (Lecture 02 §5).
+- `str_copy` and `str_append` follow the bounded contract of Lecture 03: never write past
+  `dest[dest_size - 1]`, always leave `dest` terminated, return `-1` when the text would not fit.
+- Empty strings `""` must work in every function. You may assume no argument is `NULL`.
 
 ### `test_strlib.c` — Test Suite
 
-Write thorough tests. Use this structure:
+Use two small test functions (not macros — function-like macros and their traps are Week 10):
 
 ```c
 #include <stdio.h>
@@ -184,69 +115,34 @@ Write thorough tests. Use this structure:
 
 static int passed = 0, failed = 0;
 
-#define CHECK_INT(desc, expected, actual) do { \
-    if ((int)(expected) == (int)(actual)) { \
-        printf("  PASS: %s\n", desc); passed++; \
-    } else { \
-        printf("  FAIL: %s → expected %d, got %d\n", desc, (int)(expected), (int)(actual)); \
-        failed++; \
-    } \
-} while(0)
-
-#define CHECK_STR(desc, expected, actual) do { \
-    if (strcmp((expected), (actual)) == 0) { \
-        printf("  PASS: %s\n", desc); passed++; \
-    } else { \
-        printf("  FAIL: %s → expected \"%s\", got \"%s\"\n", desc, (expected), (actual)); \
-        failed++; \
-    } \
-} while(0)
-
-#define CHECK_NULL(desc, actual) do { \
-    if ((actual) == NULL) { \
-        printf("  PASS: %s\n", desc); passed++; \
-    } else { \
-        printf("  FAIL: %s → expected NULL\n", desc); failed++; \
-    } \
-} while(0)
-
-void test_str_len(void) {
-    printf("=== str_len ===\n");
-    CHECK_INT("empty string",   0, str_len(""));
-    CHECK_INT("single char",    1, str_len("a"));
-    CHECK_INT("hello",          5, str_len("hello"));
-    CHECK_INT("with spaces",    9, str_len("hello bob"));
-    CHECK_INT("null bytes won't appear, but newline", 6, str_len("a\nb\nc\n"));
+static void check_int(const char *desc, int expected, int actual) {
+    if (expected == actual) {
+        printf("  PASS: %s\n", desc);
+        passed++;
+    } else {
+        printf("  FAIL: %s -> expected %d, got %d\n", desc, expected, actual);
+        failed++;
+    }
 }
 
-void test_str_compare(void) {
-    printf("=== str_compare ===\n");
-    CHECK_INT("equal strings",     0,  str_compare("hello", "hello"));
-    CHECK_INT("empty equals empty",0,  str_compare("", ""));
-    CHECK_INT("a < b",            -1,  str_compare("a", "b") < 0 ? -1 : 1);
-    CHECK_INT("b > a",             1,  str_compare("b", "a") > 0 ? 1 : -1);
-    CHECK_INT("prefix < full",    -1,  str_compare("hell", "hello") < 0 ? -1 : 1);
+static void check_str(const char *desc, const char *expected, const char *actual) {
+    if (strcmp(expected, actual) == 0) {
+        printf("  PASS: %s\n", desc);
+        passed++;
+    } else {
+        printf("  FAIL: %s -> expected \"%s\", got \"%s\"\n", desc, expected, actual);
+        failed++;
+    }
 }
-
-/* TODO: Write test functions for EVERY function in strlib.h */
-/* At minimum 4 test cases per function, covering:
- *   - Normal case
- *   - Empty string
- *   - Edge case (single char, not found, etc.)
- *   - A case you would have missed if you only tested the happy path
- */
 
 int main(void) {
-    test_str_len();
-    test_str_compare();
-    /* TODO: call all test functions */
-
+    check_int("len empty", 0, (int)str_len(""));
+    check_int("len hello", 5, (int)str_len("hello"));
+    /* TODO: at least two checks per function, including one edge case each */
     printf("\n=== Results: %d passed, %d failed ===\n", passed, failed);
-    return failed > 0 ? 1 : 0;
+    return failed > 0;
 }
 ```
-
----
 
 ---
 
@@ -258,72 +154,30 @@ Create `word_stats.c` — a program that reads text from stdin and prints statis
 
 ```
 $ echo "The quick brown fox jumps over the lazy dog" | ./word_stats
-
 === Text Statistics ===
-Characters (total):    44
+Characters (total):     44
 Characters (no spaces): 35
 Words:                  9
 Lines:                  1
-Longest word:           'jumps' (5 chars)
-Shortest word:          'The' (3 chars)
+Longest word:           'quick' (5 chars)
 Vowels:                 11
-Consonants:             24
 Digits:                 0
-Uppercase letters:      1
-Lowercase letters:      34
-Most frequent char:     'o' (4 times)
 ```
+
+(The total is 44 because `echo` adds a newline. On a tie for longest, keep the **first** word.)
 
 ### Decomposition Requirements
 
-You **must** decompose this into separate functions. Each function must:
-- Do exactly one thing
-- Have a clear, descriptive name
-- Be no longer than 20 lines
-- Be individually testable
-
-Required function signatures (implement all):
+One job per function, each short enough to read at a glance:
 
 ```c
-/* Count total characters (excluding EOF) */
 int count_chars(const char *text);
-
-/* Count non-whitespace characters */
 int count_non_space(const char *text);
-
-/* Count words (whitespace-delimited) */
 int count_words(const char *text);
-
-/* Count lines ('\n' characters, or 1 if no '\n' but text is non-empty) */
-int count_lines(const char *text);
-
-/* Find the longest word; copy it into result (result_size bytes max).
- * Returns the length of the longest word. */
-int find_longest_word(const char *text, char *result, size_t result_size);
-
-/* Find the shortest word; copy it into result.
- * Returns the length of the shortest word. */
-int find_shortest_word(const char *text, char *result, size_t result_size);
-
-/* Count vowels (a,e,i,o,u — case insensitive) */
+int count_lines(const char *text);      /* '\n' count, plus 1 if the text ends without one */
+int find_longest_word(const char *text, char *result, size_t result_size);  /* copies the word; returns its length */
 int count_vowels(const char *text);
-
-/* Count consonants (alphabetic, non-vowel) */
-int count_consonants(const char *text);
-
-/* Count digit characters */
 int count_digits(const char *text);
-
-/* Count uppercase letters */
-int count_uppercase(const char *text);
-
-/* Count lowercase letters */
-int count_lowercase(const char *text);
-
-/* Find the most frequent character (any character, including space).
- * On ties, return the one with the lower ASCII value.
- * Stores the frequency in *freq. Returns the character. */
-char most_frequent_char(const char *text, int *freq);
 ```
 
 ### Reading All of Stdin
@@ -369,4 +223,4 @@ Submit a single archive containing:
 
 ---
 
-*PROG 101 · Week 4 · Lab 4 · © CSE Department*
+*PROG 101 · Week 4 · Lab 4 · Monday 26 October 2026 · © CSE Department*

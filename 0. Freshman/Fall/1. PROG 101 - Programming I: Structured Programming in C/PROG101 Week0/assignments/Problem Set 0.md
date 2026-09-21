@@ -1,9 +1,9 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 0 · Problem Set 0
 
-**Released:** End of Week 0
-**Due:** Before Week 1 Lecture 1 (start of next week)
-**Submission:** Push to your Git repository; submit the commit hash on the course portal.
+**Released:** Friday 25 September 2026, 17:00 · Week 0
+**Due:** Tuesday 29 September 2026, 10:00 (start of Week 1, Lecture 1) — Lab 0 on Monday 28 September comes first
+**Submission:** Commit to the Freshman Fall repo under `"$PROG101/week0/ps0"`; submit the commit hash on the course portal.
 **Collaboration policy:** Discussion of concepts allowed; code must be written independently.
 **Grading:** Each problem is graded on correctness (70%), code quality (20%), and documentation (10%).
 
@@ -166,7 +166,7 @@ int describe(int code) {
 ```
 
 Your task:
-1. Create [[assignments/error_log|error_log]] documenting each error:
+1. Create `error_log.md` documenting each error:
    - Error number (1–10)
    - The line and what is wrong
    - What category it is (preprocessor / compiler / linker / undefined behavior)
@@ -174,7 +174,7 @@ Your task:
 2. Create `fixed.c`: the fully corrected version, compiling clean under
    `gcc -Wall -Wextra -Werror -std=c11`
 
-Format your [[assignments/error_log|error_log]] like this:
+Format your `error_log.md` like this:
 
 ```markdown
 ## Error 1

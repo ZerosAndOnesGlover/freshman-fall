@@ -378,14 +378,14 @@ calculator
 
 By end of Lab 0, you should have:
 
-- [x] A Linux terminal (native Linux, WSL2 on Windows, or macOS Terminal)
-- [x] GCC installed and working: `gcc --version`
-- [x] GDB installed: `gdb --version`
-- [x] Make installed: `make --version`
-- [x] Valgrind installed (Linux only): `valgrind --version`
-- [x] VS Code or your preferred editor with C syntax highlighting
-- [x] Git configured with your name and email
-- [x] A Git repository for this course created and cloned
+- [ ] A Linux terminal (native Linux, WSL2 on Windows, or macOS Terminal)
+- [ ] GCC installed and working: `gcc --version`
+- [ ] GDB installed: `gdb --version`
+- [ ] Make installed: `make --version`
+- [ ] Valgrind installed (Linux only): `valgrind --version`
+- [ ] VS Code or your preferred editor with C syntax highlighting
+- [ ] Git configured with your name and email
+- [ ] A Git repository for this course created and cloned
 
 ---
 

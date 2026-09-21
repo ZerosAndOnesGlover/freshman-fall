@@ -3,7 +3,7 @@
 
 **Graded: 20 points**
 **Duration:** 2 hours
-**Lab session:** Monday of Week 4 — sat after this week's Tue–Thu lectures, and covers Week 3.
+**Date:** Monday 19 October 2026 · 15:00–16:50 · Lab Section (Week 4) — covers Week 3 (Lectures 01–03)
 **Submission:** Push to Git, show TA before leaving
 
 **Build with:** `gcc -Wall -Wextra -Werror -pedantic -std=c11 -g`

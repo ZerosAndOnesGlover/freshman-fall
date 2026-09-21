@@ -1,6 +1,7 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 0 · Quiz 0
 
+**Date:** Tuesday 29 September 2026 · 10:00–10:10 (start of Week 1, Lecture 1)
 **Format:** Administered at the start of Week 1, Lecture 1 (Tuesday)
 **Duration:** 10 minutes
 **Closed book, closed notes**
@@ -18,7 +19,7 @@
 
 - (A) Compiler
 - (B) Assembler
-- (C) Preprocessor ✅
+- (C) Preprocessor
 - (D) Linker
 
 ---
@@ -32,14 +33,14 @@ Which stage produced this error?
 - (A) Preprocessor
 - (B) Compiler  
 - (C) Assembler
-- (D) Linker ✅
+- (D) Linker
 
 ---
 
 **3.** What GCC flag produces an assembly language file (`.s`) from a C source file, running only the preprocessor and compiler?
 
 - (A) `-E`
-- (B) `-S` ✅
+- (B) `-S`
 - (C) `-c`
 - (D) `-o`
 
@@ -48,7 +49,7 @@ Which stage produced this error?
 **4.** What does the `U` symbol type mean in the output of `nm hello.o`?
 
 - (A) The symbol is defined in the current object file
-- (B) The symbol is undefined — it is referenced here but defined elsewhere ✅
+- (B) The symbol is undefined — it is referenced here but defined elsewhere
 - (C) The symbol is uninitialized
 - (D) The symbol is a Unix system call
 
@@ -65,7 +66,7 @@ int main(void) {
 ```
 
 - (A) `printf` requires `#include <stdlib.h>`, not `#include <stdio.h>`
-- (B) `x` is read before being initialized; undefined behavior ✅
+- (B) `x` is read before being initialized; undefined behavior
 - (C) `int main(void)` is invalid; it must be `int main()`
 - (D) `return 0` is not a valid exit code
 
@@ -76,20 +77,13 @@ int main(void) {
 **6.** List the four stages of C compilation in order. For each, state what its input and output file types are.
 
 ```
-Stage 1: Preprocessing
-Input: C source file (.c)          Output: Preprocessed source (`.i`)
+Stage 1: ____________   Input: ______   Output: ______
 
+Stage 2: ____________   Input: ______   Output: ______
 
-Stage 2: Compiling
-Input: Preprocessed source (`.i`)  Output: Assembly code (`.s`)
+Stage 3: ____________   Input: ______   Output: ______
 
-
-Stage 3: Assembling
-Input: Assembly code (`.s`)        Output: Object file (`.o`)
-
-
-Stage 4: Linking
-Input: Object file(s) (`.o`)       Output: Executable file (e.g., `a.out`)
+Stage 4: ____________   Input: ______   Output: ______
 ```
 
 ---
@@ -97,14 +91,13 @@ Input: Object file(s) (`.o`)       Output: Executable file (e.g., `a.out`)
 **7.** What is the difference between a **declaration** and a **definition** in C? Give one example of each.
 
 ```
-Declaration: Declaration: A statement that introduces the name and type of a variable or function to the compiler without necessarily allocating storage or providing an implementation.
+Declaration: _____________________________________________________________
 
-Example: int count;
+Example: _________________________________________________________________
 
-Definition: A statement that creates the variable or function by allocating storage (for variables) or providing the function body (for functions).
+Definition: ______________________________________________________________
 
-Example: int count = 0;
-
+Example: _________________________________________________________________
 ```
 
 ---
@@ -115,9 +108,11 @@ Example: int count = 0;
 printf("%5.2f", 3.14159);
 ```
 
-Output: ` 3.14`
+```
+Output: __________________________________________________________________
 
-Explanation: `Five character-minimum print due to the 5 in the float format specifier. The 2 after the decimal indicate the number of approximation to be done on the part after the decimal point. But since 3.14 is four characters and we need 5 minimum a space is printed in front of 3 to fulfill the rule.`
+Explanation: _____________________________________________________________
+```
 
 ---
 
