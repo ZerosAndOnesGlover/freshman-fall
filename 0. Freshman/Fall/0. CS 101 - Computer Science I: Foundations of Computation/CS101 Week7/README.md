@@ -24,7 +24,7 @@ CS101_Week7/
 │                                                     bracket matching, round-robin scheduling
 │
 ├── lab/
-│   ├── LAB 7 Memory Profiling.md                 ← Tue of W8: sys.getsizeof deep dive, build all
+│   ├── LAB 7 Memory Profiling.md                 ← Tue 17 Nov (W8): sys.getsizeof deep dive, build all
 │   │                                                 4 structures, empirical memory + speed
 │   │                                                 comparison, bracket matcher, undo/redo
 │   └── data_structures_starter.py               ← Lab starter — Node/LinkedList/DLL/Stack/
@@ -32,15 +32,16 @@ CS101_Week7/
 │
 ├── assignments/
 │   ├── QUIZ 7 Week 7 Wednesday.md                    ← In-class quiz (covers Week 6)
-│   ├── PS 7 Stacks and Queues.md                 ← Problem Set 7 (due Friday Week 8)
-│   ├── ps7_starter.py                           ← Full scaffold: array/linked stack+queue,
-│   │                                                 extended LL ops, benchmark, 2-stack
+│   ├── PS 7 Stacks and Queues.md                 ← Problem Set 7 (due Fri 20 Nov, 17:00)
+│   ├── ps7_starter.py                           ← Scaffold: list/linked stack+queue,
+│   │                                                 LinkedList reverse/dedupe, timing, 2-stack
 │   │                                                 expression evaluator
-│   └── PROJECT 1 Data Analysis Tool.md           ← Project 1 (assigned this week,
-│                                                     due Week 9) — full spec + rubric
+│   ├── PROJECT 1 Data Analysis Tool.md           ← Project 1 (assigned Fri 13 Nov,
+│   │                                                 due Fri 27 Nov, 17:00) — spec + rubric
+│   └── project1_starter.py                      ← Project 1 starter: the data as ROWS + stubs
 │
 ├── resources/
-│   ├── weather_data.csv                         ← Messy sample dataset for Project 1
+│   ├── weather_data.csv                         ← The Project 1 data as a CSV (same rows as ROWS)
 │   │                                                (missing values, malformed rows,
 │   │                                                duplicates, implausible values)
 │   └── Reading Guide Week 7.md                   ← 3 experimentation sessions, full
@@ -58,12 +59,12 @@ CS101_Week7/
 
 | Day | Event | Topic |
 |-----|-------|-------|
-| Wed | Lecture 22 + Quiz 7 | ADTs vs implementations; Python lists as dynamic arrays; O(1) vs O(n) operations |
-| Thu | Lecture 23 | Linked lists from scratch: singly linked, tail-pointer optimization, doubly linked |
-| Fri | Lecture 24 + PS7 released | Stack and Queue ADTs; array vs linked implementations; deques; real applications |
-| Tue (W8) | Lab 7 (graded) | Build every structure; profile memory; benchmark operations; build applications |
+| Wed 11 Nov | Lecture 22 + Quiz 7 | ADTs vs implementations; Python lists as dynamic arrays; O(1) vs O(n) operations |
+| Thu 12 Nov | Lecture 23 | Linked lists from scratch: singly linked, tail-pointer optimization, doubly linked |
+| Fri 13 Nov | Lecture 24 + PS7 released | Stack and Queue ADTs; array vs linked implementations; deques; real applications |
+| Tue 17 Nov (W8) | Lab 7 (graded) | Memory with getsizeof, list vs linked list, stacks and queues, timing with timeit |
 
-**📌 Project 1 was assigned this week** (due Week 9) — see [[PROJECT 1 Data Analysis Tool]]. Start early; it requires synthesizing nearly everything from Weeks 0–7.
+**📌 Project 1 was assigned this week** (due Friday 27 November, 17:00) — see [[PROJECT 1 Data Analysis Tool]]. Start early; it requires synthesizing nearly everything from Weeks 0–7.
 
 ---
 
@@ -85,7 +86,7 @@ CS101_Week7/
 - [ ] Notes for L23
 - [ ] REPL Session C (nested-tuple linked list intuition)
 
-### Tuesday Lab, Week 8 (Required, Graded)
+### Tuesday 17 November Lab, Week 8 (Required, Graded)
 - [ ] Complete memory profiling exercises (Part 1)
 - [ ] Implement all 4 structures in `data_structures.py` — full test suite passes
 - [ ] Run empirical memory and speed comparisons
@@ -98,7 +99,7 @@ CS101_Week7/
 
 ### Weekend
 - [ ] Start PS7 — at minimum A1–A2 (written) and B1–B2 (array/linked stack+queue)
-- [ ] **Start Project 1** — at minimum, write `load_data` and `validate_record` against the provided `weather_data.csv`
+- [ ] **Start Project 1** — at minimum, write `parse_row` and print the data-quality summary
 
 ---
 

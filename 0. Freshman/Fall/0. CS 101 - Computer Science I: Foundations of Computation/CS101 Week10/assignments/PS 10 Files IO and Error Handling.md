@@ -1,8 +1,10 @@
 # CS 101 · Problem Set 10
 ## Files, I/O, and Error Handling
 
-**Released:** Friday, Week 10 | **Due:** Friday, Week 11 (11:59 PM)
-**Total:** 100 points + 8 bonus
+**Released:** Friday 4 December 2026, 10:00 (after L33) · Week 10
+**Due:** Friday 11 December 2026, 17:00 · Week 11 — late penalty from 17:01
+**Submission:** `ps10.py` and your answer sheet in `"$CS101/week10"`, committed to the Freshman Fall repo.
+**Total:** 100 points · **Expected time:** about 4 hours
 
 ---
 
@@ -155,18 +157,6 @@ Requirements:
 
 ---
 
-## Part D: Challenge (8 bonus points)
-
-**D1 (4 pts).** Extend `load_records` to accept a `strict=False` parameter. When `strict=True`, the
-first malformed row raises `SourceMalformed` naming the line number instead of being collected.
-Explain in two sentences when a caller should want each mode.
-
-**D2 (4 pts).** Demonstrate the truncation hazard empirically. Write a file, attempt an update that
-raises partway through using plain `open(path, "w")`, and show the file is now empty. Repeat using
-your `atomic_write` and show the original survives. Include both transcripts.
-
----
-
 ## Grading Rubric
 
 | Part | Points | Focus |
@@ -177,7 +167,6 @@ your `atomic_write` and show the original survives. Include both transcripts.
 | B4–B5 | 24 | Defensive parsing, atomic output, edge cases |
 | C | 12 | End-to-end pipeline |
 | **Total** | **100** | |
-| D (bonus) | +8 | strict mode, empirical truncation demo |
 
 **Automatic deductions:** any `except:` without an exception type; any re-raise losing its cause;
 `open()` without an explicit `encoding`; a function that crashes on an empty file; building a path

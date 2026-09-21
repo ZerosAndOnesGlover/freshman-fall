@@ -17,7 +17,7 @@ There is no new technical material and no problem set. Week 12 carries three thi
 | | |
 |---|---|
 | **The Final Exam** | Covers Weeks 1–11, 25% of your grade |
-| **Project 2 due** | Friday, 11:59 PM |
+| **Project 2 due** | Friday 18 December, 17:00 |
 | **Three lectures** | Synthesis (L37), the map of the field (L38), the practice of programming (L39) |
 
 The lectures are not examinable. Attend them anyway — L37 is the most efficient revision session of

@@ -21,7 +21,7 @@ CS101_Week9/
 │                                                     regular-vs-context-free boundary
 │
 ├── lab/
-│   ├── LAB 9 Text Processing and Regex.md       ← Tue of W10: measure the concat trap and defeat the
+│   ├── LAB 9 Text Processing and Regex.md       ← Tue 1 Dec (W10): measure the concat trap and defeat the
 │   │                                                 refcount optimisation, instrument naive
 │   │                                                 search, build a log parser, demonstrate ReDoS
 │   └── text_lab_starter.py                      ← Lab starter — benchmarks + ReDoS harness ready
@@ -29,7 +29,7 @@ CS101_Week9/
 │
 ├── assignments/
 │   ├── QUIZ 9 Week 9 Wednesday.md               ← In-class quiz (covers Week 8)
-│   ├── PS 9 Strings and Regular Expressions.md  ← Problem Set 9 (due Friday Week 10)
+│   ├── PS 9 Strings and Regular Expressions.md  ← Problem Set 9 (due Fri 4 Dec, 17:00)
 │   └── ps9_starter.py                           ← Scaffold with a 16-test self-check suite
 │
 ├── resources/
@@ -50,12 +50,12 @@ declarative pattern language — plus a clear account of where each stops workin
 
 | Day | Event | Topic |
 |-----|-------|-------|
-| Wed | Lecture 28 + Quiz 9 | Immutability, the concatenation trap, encoding and normalisation |
-| Thu | Lecture 29 | Substring search cost, tokenising, transformation patterns |
-| Fri | Lecture 30 + PS9 released | Regular expressions, greedy vs lazy, ReDoS, the regex boundary |
-| Tue (W10) | Lab 9 (graded) | Measure everything above yourself |
+| Wed 25 Nov | Lecture 28 + Quiz 9 | Immutability, the concatenation trap, encoding and normalisation |
+| Thu 26 Nov | Lecture 29 | Substring search cost, tokenising, transformation patterns |
+| Fri 27 Nov | Lecture 30 + PS9 released | Regular expressions, greedy vs lazy, ReDoS, the regex boundary |
+| Tue 1 Dec (W10) | Lab 9 (graded) | Concatenation trap, naive search cost, regex, ReDoS, where regex stops |
 
-**📌 Project 1 (Data Analysis Tool) is due this Friday.** See Week 7's `PROJECT 1` file.
+**📌 Project 1 (Data Analysis Tool) is due this Friday, 27 November, 17:00.** See Week 7's `PROJECT 1` file.
 
 ---
 
@@ -84,7 +84,7 @@ declarative pattern language — plus a clear account of where each stops workin
 - [ ] **Submit Project 1**
 - [ ] PS9 released — read it completely
 
-### Tuesday Lab, Week 10 (Required, Graded)
+### Tuesday 1 December Lab, Week 10 (Required, Graded)
 - [ ] Both concatenation benchmarks; identify the quadratic ratio
 - [ ] `naive_search` agreeing with `str.find`; confirm the (n−k)(k+1) formula
 - [ ] Log parser with named groups that skips malformed lines

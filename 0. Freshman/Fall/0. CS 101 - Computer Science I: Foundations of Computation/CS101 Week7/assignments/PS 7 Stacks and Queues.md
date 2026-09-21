@@ -1,322 +1,487 @@
 # CS 101 · Problem Set 7
 ## Stacks, Queues, and Linked Structures
 
-**Released:** Friday, Week 7
-**Due:** Friday, Week 8 at 11:59 PM
-**Submission:** Upload `ps7.py` and `PS 7 Stacks and Queues.md`
-**Weight:** Part of the 30% Problem Sets grade
-
-**Note:** Project 1 was assigned this week (see [[PROJECT 1 Data Analysis Tool]]) and is due Week 9. Budget your time accordingly — do not let PS7 crowd out Project 1 progress.
-
----
-
-## Overview
-
-This problem set covers:
-- Implementing the Stack and Queue ADTs using BOTH array-based and linked-list-based backing
-- Analyzing and justifying the complexity of every operation in each implementation
-- Applying stacks and queues to solve real algorithmic problems
-- Comparing implementation tradeoffs empirically and in writing
-- Extending linked list operations beyond what was covered in lecture
-
-**Every implementation must have:**
-- A complete docstring stating time complexity for every method
-- At least 3 `assert` tests including edge cases (empty structure, single element)
+**Released:** Friday 13 November 2026, 10:00 (after L24) · Week 7
+**Due:** Friday 20 November 2026, 17:00 · Week 8 — late penalty from 17:01
+**Submission:** `ps7.py` (Part B) and your answer sheet (Part A) in `"$CS101/week7"`, committed to the Freshman Fall repo.
+**Points:** 100 · Part of the 30% Problem Sets grade (lowest one dropped)
+**Expected time:** about 4 hours
+**Note:** Project 1 is also running (due Friday 27 November). Do this set first, in the first half of the week.
 
 ---
 
-## Part A: Written Questions (`PS 7 Stacks and Queues.md`)
+## What this problem set uses
 
-### A1: ADT vs. Implementation (6 points)
+Weeks 0–7, above all this week's: ADTs vs implementations and the list memory model (L22), linked
+nodes, `reverse`, the tail pointer (L23), stacks, queues and `collections.deque`, balanced brackets,
+and timing with `timeit` as in L22/L24's exercises (L24). Classes are used the way L23–L24 use them:
+`__init__`, `__len__`, and `raise IndexError` on an empty structure.
 
-**(a)** Explain, in your own words, the difference between an Abstract Data Type and a concrete implementation. Use the Stack ADT as your example, describing at least two different implementations that satisfy it.
+**Not needed and not expected:** slow/fast pointers or cycle detection, merging linked lists, BFS,
+dictionaries (Week 8).
 
-**(b)** A classmate implements a Stack using a Python list, but chooses to `insert(0, x)` for push and `pop(0)` for pop (using the FRONT of the list as the "top"). Explain precisely why this is a valid implementation of the Stack ADT (it still obeys LIFO) but a poor engineering choice. State the complexity of each operation in this version.
+Every method's docstring or comment states its cost. Test each class with `assert`s, including the
+empty structure and a single element.
 
-### A2: Complexity Justification (8 points)
+---
 
-For each operation, state its time complexity for BOTH the array-based and linked-list-based implementation, and briefly justify each answer (referencing the underlying memory model).
+## Part A: Written (24 points)
 
-| Operation | Array-based | Linked-list-based | Justification |
-|-----------|-------------|---------------------|----------------|
+### A1: ADT vs. Implementation (8 points)
+
+**(a)** Explain the difference between an abstract data type and an implementation, using the Stack ADT
+and two implementations that satisfy it.
+**(b)** A classmate implements a stack on a Python list with `insert(0, x)` to push and `pop(0)` to pop.
+Why is it still a correct stack? Why is it a poor one (L22 §5)?
+
+### A2: Costs (10 points)
+
+Give each operation's cost for a list-based and a linked implementation, with a one-line reason from the
+memory model:
+
+| Operation | List / deque based | Singly linked | Reason |
+|---|---|---|---|
 | Stack push | | | |
 | Stack pop | | | |
-| Queue enqueue (at back) | | | |
-| Queue dequeue (from front, SINGLY linked, no tail pointer optimization for removal) | | | |
+| Queue enqueue at the back | | | |
+| Queue dequeue from the front — raw list vs linked **with** a tail pointer | | | |
+| Reading the k-th element | | | |
 
-### A3: Application Design (6 points)
+### A3: A Stack to Reverse a Queue (6 points)
 
-**(a)** Describe (in words, no code) how you would use a Stack to reverse the order of elements in a Queue, without using any other data structure besides the Queue and one Stack. What is the time complexity of your approach?
-
-**(b)** Explain how a Queue is used in Breadth-First Search (BFS) — you don't need to know BFS formally yet (that's CS 102), but based on what you know about FIFO order, explain intuitively why a Queue (not a Stack) is the right structure for exploring a graph or tree "layer by layer."
-
----
-
-## Part B: Python Implementation (`ps7.py`)
-
-### B1: Array-Based Stack and Queue (10 points)
-
-**(a)** `ArrayStack` — implement using a Python list. Methods: `push`, `pop`, `peek`, `is_empty`, `size`. Choose the end of the list as the top (justify this choice in a comment).
-
-**(b)** `ArrayQueue` — implement using a Python list, but this time use `collections.deque` internally (NOT a raw list with `pop(0)`, which would be O(n)). Methods: `enqueue`, `dequeue`, `peek`, `is_empty`, `size`.
-
-**(c)** `NaiveArrayQueue` — implement using ONLY a raw Python list (no deque), with `enqueue` appending to the end and `dequeue` using `pop(0)`. This is intentionally the "wrong" way — you will benchmark it against (b) in B4.
+Describe in words (no code) how to reverse the order of a queue using only that queue and one stack.
+What does it cost?
 
 ---
 
-### B2: Linked-List-Based Stack and Queue (10 points)
+## Part B: Python (`ps7.py`) (76 points)
 
-**(a)** `LinkedStack` — implement using your own singly linked node structure (define a private `_Node` class inside, or reuse the `Node` class from lab). Top = head of the list.
+### B1: List-Based Stack and Queues (12 points)
 
-**(b)** `LinkedQueue` — implement using your own singly linked node structure WITH a tail pointer. Enqueue at tail, dequeue from head (justify why this choice, not the reverse, in a comment).
+**(a)** `ArrayStack` on a list: `push`, `pop`, `peek`, `is_empty`, `__len__`. Say in a comment which end
+is the top and why.
+**(b)** `ArrayQueue` on `collections.deque`: `enqueue`, `dequeue`, `is_empty`, `__len__`.
+**(c)** `NaiveArrayQueue` on a raw list with `dequeue` as `pop(0)` — deliberately slow, for B4.
 
----
+`pop`, `peek` and `dequeue` raise `IndexError` when empty.
 
-### B3: Extended Linked List Operations (16 points)
+### B2: Linked Stack and Queue (14 points)
 
-Extend the `LinkedList` class (from lab, reproduce/import it) with these additional methods. Each must state its time complexity in the docstring.
+Use a small `_Node` class (`data`, `next`) as in L23.
 
-**(a)** `reverse()` — reverse the linked list IN PLACE (don't create new nodes; just re-point the existing `next` pointers). Update `head` and `tail` accordingly.
-- Time: O(n)
+**(a)** `LinkedStack` — the top is the head.
+**(b)** `LinkedQueue` — keep `head` and `tail`; enqueue at the tail, dequeue at the head. Explain in a
+comment why not the other way round. Watch the case where the last item is dequeued.
 
-**(b)** `middle()` — return the data at the middle node. For even-length lists, return the second of the two middle elements. Use the "slow and fast pointer" technique: advance one pointer by 1 step and another by 2 steps each iteration; when the fast pointer reaches the end, the slow pointer is at the middle. Do NOT use `len()` and index into the middle — this must be a single O(n) pass, not O(n) to count plus O(n) to traverse again.
-- Time: O(n), single pass
+### B3: More Linked-List Operations (16 points)
 
-**(c)** `has_cycle()` — return True if the linked list contains a cycle (a node's `next` eventually points back to an earlier node, so traversal would loop forever). Use Floyd's Cycle Detection algorithm (the "tortoise and hare"): one pointer advances 1 step at a time, another advances 2 steps at a time; if they ever meet, there's a cycle; if the fast pointer reaches `None`, there isn't.
-- Time: O(n)
-- **Test note:** you'll need to manually construct a cyclic structure for testing (e.g., set the last node's `.next` to point back to an earlier node) — be careful not to call `to_list()` or any method that would infinite-loop on such a structure!
+Write a `LinkedList` with `head`, `tail`, `size`, `append(x)` and `to_list()` (as in L23), then add:
 
-**(d)** `remove_duplicates()` — remove duplicate values from the list, keeping only the first occurrence of each value, preserving order. Do this WITHOUT using a Python `set` or `dict` (practice the pattern using only list/linked-list operations) — though you may discuss in a comment how a set would make this O(n) instead of O(n²).
-- Time: O(n²) without a set, O(n) with one (implement the O(n²) version; mention the O(n) alternative in a comment)
+**(a)** `count(x)` — how many nodes hold `x`.
+**(b)** `reverse()` — in place, re-pointing `next` (L23); update `head` **and** `tail`. After reversing
+`[1, 2, 3, 4]`, `to_list()` is `[4, 3, 2, 1]` and `append(9)` must still work.
+**(c)** `remove_duplicates()` — keep the first of each value, in order, **without** a `set` or `dict`
+(O(n²)). `[3, 1, 3, 2, 1, 3]` → `[3, 1, 2]`, with `size` and `tail` still correct.
 
-**(e)** `merge_sorted(other)` — given `self` and `other` are both ALREADY SORTED linked lists, merge them into a single new sorted `LinkedList`, without converting to Python lists. This is the linked-list analog of the `merge()` function from Week 4/5's merge sort.
-- Time: O(n + m) where n, m are the lengths of the two lists
+### B4: Timing Two Queues (12 points)
 
----
+With `timeit` as in L24's exercise, time `n` enqueues followed by `n` dequeues on `ArrayQueue` and on
+`NaiveArrayQueue`, for `n` = 1,000, 5,000, 20,000, 50,000, and print both times and their ratio. In a
+comment, explain why the ratio **grows** with `n` instead of staying fixed (L22 §5, L24 §4).
 
-### B4: Empirical Comparison (12 points)
+### B5: Evaluating Expressions with Two Stacks (22 points)
 
-**(a)** Benchmark `ArrayQueue` (using `deque`) vs. `NaiveArrayQueue` (using raw list `pop(0)`) for a sequence of n `enqueue` followed by n `dequeue` operations, at n = 1000, 5000, 20000, 50000. Print a table of timings.
+**(a)** `tokenize(expression)` — numbers (several digits, decimals), operators and parentheses; spaces
+ignored. `"(3 + 4) * 2"` → `['(', '3', '+', '4', ')', '*', '2']`; `"(1.5 + 2.25)"` → `['(', '1.5', '+', '2.25', ')']`.
 
-**(b)** Benchmark `ArrayStack` vs. `LinkedStack` for a sequence of n `push` followed by n `pop` operations, at the same sizes. Print a table of timings. (You should find these are roughly comparable — both are O(1) per operation — unlike the queue comparison in (a).)
+**(b)** `evaluate(expression)` for **fully parenthesised** expressions, using one stack of operands and
+one of operators (your `ArrayStack`):
 
-**(c)** In `PS 7 Stacks and Queues.md`, write a short paragraph (4-6 sentences) interpreting your results from (a) and (b): why does the queue implementation choice matter dramatically, while the stack implementation choice matters much less?
-
----
-
-### B5: Application — Expression Evaluation (14 points)
-
-Build a calculator that evaluates fully-parenthesized arithmetic expressions using TWO stacks (one for operators, one for operands) — the classic "two-stack" algorithm (a simplified form of Dijkstra's shunting-yard algorithm).
-
-**(a)** `tokenize(expression)` — split an expression string into a list of tokens (numbers, operators, parentheses). Handle multi-digit numbers and decimals.
-- `tokenize("(3 + 4) * 2")` → `['(', '3', '+', '4', ')', '*', '2']`
-- `tokenize("(1.5 + 2.25)")` → `['(', '1.5', '+', '2.25', ')']`
-
-**(b)** `evaluate(expression)` — evaluate a fully-parenthesized expression using the two-stack algorithm:
 ```
-For each token:
-    If it's a number: push onto the OPERAND stack
-    If it's an operator (+, -, *, /): push onto the OPERATOR stack
-    If it's '(' : ignore (or push, depending on your variant — document your choice)
-    If it's ')' : pop an operator and the top two operands, apply the operator,
-                  push the result back onto the operand stack
-At the end: the operand stack has exactly one value — the result
+number     -> push float(number) onto the operand stack
+operator   -> push onto the operator stack
+'('        -> ignore
+')'        -> pop one operator and two operands (right first!), apply, push the result
+at the end -> exactly one operand is left: the answer
 ```
-- `evaluate("(3 + 4)")` → `7.0`
-- `evaluate("((3 + 4) * 2)")` → `14.0`
-- `evaluate("((10 - 4) / (1 + 2))")` → `2.0`
 
-**(c)** Extend `evaluate` to handle unary negation, e.g. `evaluate("(0 - 5)")` → `-5.0` (this should already work with your basic operators — verify and add a specific test).
+`"(3 + 4)"` → `7.0`; `"((3 + 4) * 2)"` → `14.0`; `"((10 - 4) / (1 + 2))"` → `2.0`; `"(0 - 5)"` → `-5.0`.
 
-**(d)** Write a test suite with at least 8 test expressions of varying complexity (nested parentheses, all four operators, decimals).
+**(c)** Test at least eight expressions: nesting, all four operators, decimals.
 
 ---
 
 ## Grading Rubric
 
-| Problem | Points | Key Criteria |
-|---------|--------|--------------|
-| A1 ADT vs implementation | 6 | Clear distinction; valid but poor example explained |
-| A2 Complexity table | 8 | All 8 cells correct with justification |
-| A3 Application design | 6 | Valid stack-reversal approach; valid BFS/queue intuition |
-| B1 Array-based | 10 | All 3 classes correct, correct end-choice justified |
-| B2 Linked-based | 10 | Both classes correct, correct design choices justified |
-| B3 Extended operations | 16 | All 5 methods correct and within stated complexity |
-| B4 Empirical comparison | 12 | Correct benchmarks; valid interpretive paragraph |
-| B5 Expression evaluator | 14 | Tokenizer + evaluator correct on 8+ test cases |
-| **Total** | **82** | |
-| Docstring/complexity rigor | up to 5 bonus | |
-
----
-
-## Part C: Challenge Problems (Ungraded)
-
-**C1: LRU Cache**
-Implement an `LRUCache` (Least Recently Used cache) with O(1) `get` and `put` operations, using a combination of a doubly linked list (to track usage order) and a dictionary (to map keys to nodes for O(1) lookup — dictionaries are covered in Week 8, so you may need to preview `dict` basics, or wait and revisit this after Week 8). This is one of the most common technical interview questions in the industry.
-
-**C2: Min-Stack**
-Implement a `MinStack` that supports `push`, `pop`, `peek`, AND `get_min()` — all in O(1). The trick: maintain a second, auxiliary stack that tracks the minimum value at each point in the main stack's history.
-
-**C3: Sliding Window Maximum**
-Given an array and a window size k, find the maximum value in each sliding window of size k as it slides across the array, in O(n) total time (not O(nk)). Use a `deque` that maintains indices in a clever monotonic order. This is a genuinely difficult but beautiful application of deques.
+| Problem | Points |
+|---------|--------|
+| A1 ADT vs implementation | 8 |
+| A2 Costs | 10 |
+| A3 Reversing a queue | 6 |
+| B1 List-based | 12 |
+| B2 Linked | 14 |
+| B3 Linked-list operations | 16 |
+| B4 Timing | 12 |
+| B5 Expressions | 22 |
+| **Total** | **100** |
 
 ---
 
 ## Answer Key (Instructor Copy)
 
-> **Do not distribute to students.** Totals follow the Grading Rubric above (82 + up to 5 bonus).
-> No errata found — all stated example values verified.
+> **Do not distribute to students.** The reference `ps7.py` below was run: every assert passes. The
+> timing table is one real run; students' absolute times will differ — grade the trend.
 
----
+### A1 (8)
 
-### Part A — Written (20 points)
+(a) An ADT is the promised behaviour (push, pop, peek, LIFO, errors on empty); an implementation is the
+data layout that delivers it — e.g. a list with the end as the top, or linked nodes with the head as the
+top. *(4)* (b) The behaviour is still LIFO, so it is a correct stack; but `insert(0)`/`pop(0)` shift every
+element, Θ(n) per operation instead of O(1). *(4)*
 
-**A1 ADT vs. Implementation (6 pts).**
+### A2 (10, 2 per row)
 
-**(a)** An **ADT** specifies *what* operations exist and what they mean (their contract), independent of representation. The **Stack ADT** is: `push`, `pop`, `peek`, `is_empty`, `size`, with the LIFO guarantee that `pop` returns the most recently pushed item not yet popped. Two conforming implementations: (i) a dynamic array with the top at the **end** of the array; (ii) a singly linked list with the top at the **head**. Both satisfy the identical contract; callers cannot tell them apart through the interface alone. That substitutability is the point of an ADT.
-
-**(b)** Using `insert(0, x)` / `pop(0)` **is valid** — the last item inserted at the front is the first removed from the front, so LIFO holds and every ADT guarantee is met. But it is a poor engineering choice: a Python list is a contiguous array, so inserting or removing at index 0 must shift **every** remaining element one slot.
-
-| Operation | This version | Standard (end-of-list) |
-|---|---|---|
-| push | **O(n)** | O(1) amortized |
-| pop | **O(n)** | O(1) |
-| peek | O(1) | O(1) |
-
-n pushes therefore cost Θ(n²) instead of Θ(n). *This is the same defect measured empirically in B4(a).*
-
-*Grading: 3 pts (a) — must name two distinct implementations. 3 pts (b) — 1 for "valid, LIFO still holds", 2 for the complexity table plus the memory-shifting reason. A student who says it is *invalid* loses all 3: it satisfies the contract, and distinguishing correctness from efficiency is the entire lesson.*
-
-**A2 Complexity Table (8 pts).** 1 pt per cell.
-
-| Operation | Array-based | Linked-list | Justification |
+| Operation | List / deque | Singly linked | Reason |
 |---|---|---|---|
-| Stack push | **O(1)** amortized | **O(1)** | Array: append at the end, no shifting; occasional O(n) resize amortizes to O(1). Linked: allocate a node, re-point head. |
-| Stack pop | **O(1)** | **O(1)** | Array: remove from the end, nothing shifts. Linked: advance head, drop the old node. |
-| Queue enqueue (back) | **O(1)** amortized | **O(1)** *with tail pointer* | Array: append. Linked: without a tail pointer this degrades to O(n) — the pointer is what buys O(1). |
-| Queue dequeue (front) | **O(n)** with a raw list | **O(1)** | Array: `pop(0)` shifts all n−1 remaining elements. Linked: just advance head — no shifting, since nodes are independently allocated. |
+| push | O(1) amortised (append) | O(1) (new head) | end of array / head pointer |
+| pop | O(1) | O(1) | same |
+| enqueue | O(1) amortised | O(1) with tail | append / tail pointer |
+| dequeue | raw list Θ(n) (`pop(0)` shifts), deque O(1) | O(1) at head | shift vs re-point head |
+| k-th element | O(1) | Θ(k) | address arithmetic vs walking `next` |
 
-*The recurring theme to look for: arrays pay for **contiguity** (cheap at the end, expensive at the front); linked lists pay for **indirection** (cheap at any held pointer, but no random access).*
+### A3 (6)
 
-**A3 Application Design (6 pts).** 3 pts each.
+Dequeue every item and push it on the stack; then pop every item and enqueue it. Θ(n): each item moves twice.
 
-**(a)** Dequeue every element from the queue, pushing each onto the stack, until the queue is empty (n dequeues + n pushes). Then pop every element off the stack, enqueuing each back into the queue (n pops + n enqueues). The stack's LIFO order inverts the queue's FIFO order, so the queue ends up reversed. **Θ(n) time, Θ(n) auxiliary space.**
-
-**(b)** BFS must finish exploring everything at distance *d* before touching anything at distance *d+1*. A queue's FIFO discipline delivers exactly that: nodes discovered earlier (nearer) are dequeued before nodes discovered later (further), so the frontier expands outward one whole layer at a time. A stack would do the opposite — the most recently discovered node is explored first, plunging down one branch before its siblings, which is depth-first, not layer-by-layer.
-
----
-
-### Part B — Coding (62 points)
-
-**B1 Array-Based (10 pts).** 3/4/3 for (a)/(b)/(c).
-*(a) The end of the list must be the top — justified by A1(b). (b) must use `collections.deque` with `popleft()`. (c) is deliberately the slow version; it is only "wrong" as a queue, and must still be **correct** — verify FIFO order, not just that it is slow.*
-
-**B2 Linked-Based (10 pts).** 5 each.
-*(b) The tail pointer must serve **enqueue**, and dequeue must come from the head. The reverse (enqueue at head, dequeue at tail) is O(n) per dequeue on a singly linked list, because removing the tail requires walking the list to find the new second-to-last node — there is no back-pointer. Require this in the justification comment; it is the single most instructive design point in B2.*
-
-**B3 Extended Operations (16 pts).** ~3 pts each.
+### Part B — reference `ps7.py`
 
 ```python
-def reverse(self):                       # O(n) time, O(1) extra space
-    prev, cur = None, self.head
-    self.tail = self.head
-    while cur:
-        cur.next, prev, cur = prev, cur, cur.next   # re-point, then advance
-    self.head = prev
+from collections import deque
+import timeit
 
-def middle(self):                        # O(n), single pass
-    slow = fast = self.head
-    while fast and fast.next:
-        slow, fast = slow.next, fast.next.next
-    return slow.data
 
-def has_cycle(self):                     # Floyd — O(n) time, O(1) space
-    slow = fast = self.head
-    while fast and fast.next:
-        slow, fast = slow.next, fast.next.next
-        if slow is fast: return True     # identity, not equality
-    return False
-```
+# --- B1: Array-based ---
+class ArrayStack:
+    """Stack on a Python list; the END of the list is the top, so push/pop are O(1) amortised."""
+    def __init__(self):
+        self._items = []
 
-Verified: `middle` on `[1,2,3,4]` → **3** (the *second* middle, as the spec requires); on `[1,2]` → 2; on `[1,2,3,4,5]` → 3. `has_cycle` correct on acyclic, mid-list cycle, and single-node self-loop.
+    def push(self, x):          # O(1) amortised
+        self._items.append(x)
 
-*Grading notes: (a) must be in-place — creating new nodes earns 1 of 3 — and must update **both** `head` and `tail`; forgetting `tail` is the most common defect and leaves the structure corrupt for later appends. (b) reject any two-pass `len()`-then-index solution, the spec forbids it explicitly. (c) `slow is fast` must use identity; `==` compares node **data** and gives false positives on lists with duplicate values — test with `[1,1,1]` acyclic, which must return `False`. (d) must be the O(n²) version per the spec, with the set-based alternative noted in a comment. (e) must build a new list by re-linking, not by round-tripping through Python lists.*
+    def pop(self):              # O(1)
+        if not self._items:
+            raise IndexError("pop from empty stack")
+        return self._items.pop()
 
-**B4 Empirical Comparison (12 pts).** 4/4/4. Measured reference (n enqueues then n dequeues):
+    def peek(self):             # O(1)
+        if not self._items:
+            raise IndexError("peek at empty stack")
+        return self._items[-1]
 
-| n | `deque` | raw list `pop(0)` | slowdown |
-|---|---|---|---|
-| 1,000 | 0.23 ms | 0.24 ms | 1.0× |
-| 5,000 | 1.04 ms | 2.46 ms | 2.4× |
-| 20,000 | 3.90 ms | 33.0 ms | 8.5× |
-| 50,000 | 9.39 ms | 228 ms | **24.3×** |
+    def is_empty(self):         # O(1)
+        return len(self._items) == 0
 
-The slowdown factor itself grows with n — the signature of Θ(n²) versus Θ(n). Stack timings should be broadly comparable between array and linked versions (both O(1) per op), with the array version usually modestly faster from cache locality and no per-node allocation.
+    def __len__(self):          # O(1)
+        return len(self._items)
 
-*(c) A full-credit paragraph explains: the queue's problem is that a raw list forces removal from the **front**, and contiguous storage makes that O(n) — so the total becomes quadratic. A stack only ever touches **one end**, which is O(1) in both representations, so the choice is a constant-factor matter rather than a complexity-class matter. Award 2 of 4 if the student reports the numbers correctly but attributes the difference to "deque is optimised" without identifying front-removal/shifting as the mechanism.*
 
-**B5 Expression Evaluation (14 pts).** 4/6/2/2. All verified:
+class ArrayQueue:
+    """Queue on collections.deque: append at the right, popleft at the left, both O(1)."""
+    def __init__(self):
+        self._items = deque()
 
-| Expression | Result |
-|---|---|
-| `(3 + 4)` | `7.0` |
-| `((3 + 4) * 2)` | `14.0` |
-| `((10 - 4) / (1 + 2))` | `2.0` |
-| `(0 - 5)` | `-5.0` |
-| `((1.5 + 2.25) * 2)` | `7.5` |
-| `(((2 + 3) * (4 - 1)) / 5)` | `3.0` |
+    def enqueue(self, x):
+        self._items.append(x)
 
-```python
+    def dequeue(self):
+        if not self._items:
+            raise IndexError("dequeue from empty queue")
+        return self._items.popleft()
+
+    def is_empty(self):
+        return len(self._items) == 0
+
+    def __len__(self):
+        return len(self._items)
+
+
+class NaiveArrayQueue:
+    """Queue on a raw list: dequeue is pop(0), which shifts every remaining item -- O(n)."""
+    def __init__(self):
+        self._items = []
+
+    def enqueue(self, x):
+        self._items.append(x)
+
+    def dequeue(self):
+        if not self._items:
+            raise IndexError("dequeue from empty queue")
+        return self._items.pop(0)
+
+    def is_empty(self):
+        return len(self._items) == 0
+
+    def __len__(self):
+        return len(self._items)
+
+
+# --- B2: Linked ---
+class _Node:
+    def __init__(self, data, next=None):
+        self.data = data
+        self.next = next
+
+
+class LinkedStack:
+    """Top = head: push and pop touch only the head, O(1)."""
+    def __init__(self):
+        self._head = None
+        self._size = 0
+
+    def push(self, x):
+        self._head = _Node(x, self._head)
+        self._size += 1
+
+    def pop(self):
+        if self._head is None:
+            raise IndexError("pop from empty stack")
+        x = self._head.data
+        self._head = self._head.next
+        self._size -= 1
+        return x
+
+    def peek(self):
+        if self._head is None:
+            raise IndexError("peek at empty stack")
+        return self._head.data
+
+    def is_empty(self):
+        return self._head is None
+
+    def __len__(self):
+        return self._size
+
+
+class LinkedQueue:
+    """Enqueue at the tail, dequeue at the head: both O(1). The reverse would need the node before
+    the tail to dequeue, and a singly linked list can only reach it by walking from the head -- O(n)."""
+    def __init__(self):
+        self._head = None
+        self._tail = None
+        self._size = 0
+
+    def enqueue(self, x):
+        node = _Node(x)
+        if self._tail is None:
+            self._head = self._tail = node
+        else:
+            self._tail.next = node
+            self._tail = node
+        self._size += 1
+
+    def dequeue(self):
+        if self._head is None:
+            raise IndexError("dequeue from empty queue")
+        x = self._head.data
+        self._head = self._head.next
+        if self._head is None:
+            self._tail = None
+        self._size -= 1
+        return x
+
+    def is_empty(self):
+        return self._head is None
+
+    def __len__(self):
+        return self._size
+
+
+# --- B3: More linked-list operations ---
+class LinkedList:
+    def __init__(self, items=()):
+        self.head = None
+        self.tail = None
+        self.size = 0
+        for x in items:
+            self.append(x)
+
+    def append(self, x):                    # O(1) with the tail pointer
+        node = _Node(x)
+        if self.tail is None:
+            self.head = self.tail = node
+        else:
+            self.tail.next = node
+            self.tail = node
+        self.size += 1
+
+    def to_list(self):                      # O(n)
+        out = []
+        cur = self.head
+        while cur is not None:
+            out.append(cur.data)
+            cur = cur.next
+        return out
+
+    def count(self, x):                     # O(n)
+        n = 0
+        cur = self.head
+        while cur is not None:
+            if cur.data == x:
+                n += 1
+            cur = cur.next
+        return n
+
+    def reverse(self):                      # O(n), in place (L23)
+        prev = None
+        cur = self.head
+        self.tail = self.head
+        while cur is not None:
+            nxt = cur.next
+            cur.next = prev
+            prev = cur
+            cur = nxt
+        self.head = prev
+
+    def remove_duplicates(self):            # O(n^2): for each node, scan the rest
+        cur = self.head
+        while cur is not None:
+            runner = cur
+            while runner.next is not None:
+                if runner.next.data == cur.data:
+                    runner.next = runner.next.next
+                    self.size -= 1
+                else:
+                    runner = runner.next
+            cur = cur.next
+        # the tail may have been removed: find it again
+        self.tail = None
+        cur = self.head
+        while cur is not None:
+            self.tail = cur
+            cur = cur.next
+
+
+# --- B5: Two-stack evaluation ---
 def tokenize(expression):
-    toks, i = [], 0
-    while i < len(expression):
-        c = expression[i]
-        if c.isspace(): i += 1
-        elif c in "()+-*/": toks.append(c); i += 1
-        else:                                        # multi-digit / decimal
-            j = i
-            while j < len(expression) and (expression[j].isdigit() or expression[j] == "."):
-                j += 1
-            toks.append(expression[i:j]); i = j
-    return toks
+    """Split into numbers, operators and parentheses; handles multi-digit numbers and decimals."""
+    tokens = []
+    number = ""
+    for ch in expression:
+        if ch.isdigit() or ch == ".":
+            number += ch
+        else:
+            if number:
+                tokens.append(number)
+                number = ""
+            if ch in "+-*/()":
+                tokens.append(ch)
+    if number:
+        tokens.append(number)
+    return tokens
+
 
 def evaluate(expression):
-    ops, vals = [], []
-    for t in tokenize(expression):
-        if   t == "(":       pass                    # documented choice: ignore
-        elif t in "+-*/":    ops.append(t)
-        elif t == ")":
-            op, b, a = ops.pop(), vals.pop(), vals.pop()   # NOTE: b pops first
-            if   op == "+": result = a + b
-            elif op == "-": result = a - b
-            elif op == "*": result = a * b
+    """Evaluate a fully parenthesised expression with an operand stack and an operator stack."""
+    operands = ArrayStack()
+    operators = ArrayStack()
+    for tok in tokenize(expression):
+        if tok == "(":
+            continue
+        elif tok in "+-*/":
+            operators.push(tok)
+        elif tok == ")":
+            op = operators.pop()
+            right = operands.pop()
+            left = operands.pop()
+            if op == "+":
+                operands.push(left + right)
+            elif op == "-":
+                operands.push(left - right)
+            elif op == "*":
+                operands.push(left * right)
             else:
-                if b == 0: raise ZeroDivisionError("division by zero in expression")
-                result = a / b
-            vals.append(result)
-        else:                vals.append(float(t))
-    return vals[-1]
+                operands.push(left / right)
+        else:
+            operands.push(float(tok))
+    result = operands.pop()
+    assert operands.is_empty() and operators.is_empty(), "not fully parenthesised"
+    return result
+
+
+if __name__ == "__main__":
+    for S in (ArrayStack, LinkedStack):
+        s = S()
+        assert s.is_empty() and len(s) == 0
+        for x in [1, 2, 3]:
+            s.push(x)
+        assert s.peek() == 3 and s.pop() == 3 and s.pop() == 2 and len(s) == 1
+        try:
+            S().pop()
+            assert False
+        except IndexError:
+            pass
+    for Q in (ArrayQueue, NaiveArrayQueue, LinkedQueue):
+        q = Q()
+        for x in [1, 2, 3]:
+            q.enqueue(x)
+        assert q.dequeue() == 1 and q.dequeue() == 2 and len(q) == 1
+        q.enqueue(4)
+        assert q.dequeue() == 3 and q.dequeue() == 4 and q.is_empty()
+        q.enqueue(5)
+        assert q.dequeue() == 5
+
+    ll = LinkedList([1, 2, 3, 4])
+    ll.reverse()
+    assert ll.to_list() == [4, 3, 2, 1] and ll.head.data == 4 and ll.tail.data == 1
+    ll.append(9)
+    assert ll.to_list() == [4, 3, 2, 1, 9]
+    e = LinkedList(); e.reverse(); assert e.to_list() == []
+    d = LinkedList([3, 1, 3, 2, 1, 3])
+    d.remove_duplicates()
+    assert d.to_list() == [3, 1, 2] and d.size == 3 and d.tail.data == 2
+    d.append(7); assert d.to_list() == [3, 1, 2, 7]
+    assert LinkedList([1, 2, 1, 1]).count(1) == 3
+
+    assert tokenize("(3 + 4) * 2") == ["(", "3", "+", "4", ")", "*", "2"]
+    assert tokenize("(1.5 + 2.25)") == ["(", "1.5", "+", "2.25", ")"]
+    cases = [("(3 + 4)", 7.0), ("((3 + 4) * 2)", 14.0), ("((10 - 4) / (1 + 2))", 2.0), ("(0 - 5)", -5.0),
+             ("(1.5 + 2.25)", 3.75), ("((2 * 3) - (8 / 4))", 4.0), ("(((1 + 2) * (3 + 4)) - 20)", 1.0),
+             ("(100 / (5 * (2 + 2)))", 5.0)]
+    for text, expected in cases:
+        assert evaluate(text) == expected, (text, evaluate(text))
+    print("all asserts passed")
+
+    print(f"\n{'n':>6} {'deque queue':>12} {'list pop(0)':>12} {'ratio':>7}")
+    for n in [1000, 5000, 20000, 50000]:
+        def run(q):
+            for i in range(n):
+                q.enqueue(i)
+            for i in range(n):
+                q.dequeue()
+        t1 = timeit.timeit(lambda: run(ArrayQueue()), number=3) / 3
+        t2 = timeit.timeit(lambda: run(NaiveArrayQueue()), number=3) / 3
+        print(f"{n:>6} {t1 * 1000:>10.2f}ms {t2 * 1000:>10.2f}ms {t2 / t1:>7.1f}")
 ```
 
-> **Do not** compress the four cases into a dict literal such as
-> `{"+": a+b, "-": a-b, "*": a*b, "/": a/b}[op]`. Python builds the whole dict
-> before indexing it, so **every** branch is evaluated — including `a / b`.
-> That makes `evaluate("(5 - 0)")` raise `ZeroDivisionError` even though no
-> division was requested. If a student submits the dict form, this is a real
-> latent bug: probe it with `(5 - 0)`.
+One run of B4:
 
-*Critical grading point: **operand order**. The stack pops the right operand first, so it must be `b = pop(); a = pop()` and then `a − b`. Reversing this passes both commutative tests (`(3 + 4)` → 7.0 and `((3 + 4) * 2)` → 14.0 are **identical** either way) and silently fails on `−` and `/`: verified, `((10 - 4) / (1 + 2))` yields `-0.5` instead of `2.0`. A submission can therefore look correct on half the sample cases — always run a non-commutative test.*
-*Note the tokenizer example `"(3 + 4) * 2"` in the prompt is **not** fully parenthesized. Tokenizing it is fine (that is all (a) asks), but feeding it to `evaluate` returns `7.0`, not 14.0 — the trailing `* 2` is never consumed because no `)` triggers it. This is correct behaviour for the stated algorithm, not a bug; mention it if a student reports it as one.*
-*(c) Unary negation genuinely needs no new code — `(0 - 5)` is just binary subtraction. Award the 2 points for a student who verifies this and says so; a student who adds special-case unary handling has over-engineered but should not lose marks if it still works.*
+```
+     n  deque queue  list pop(0)   ratio
+  1000       0.16ms       0.20ms     1.2
+  5000       0.87ms       2.10ms     2.4
+ 20000       3.18ms      29.26ms     9.2
+ 50000       8.34ms     229.94ms    27.6
+```
+
+`pop(0)` shifts every remaining item, so n dequeues cost about n²/2 shifts; the deque's cost is linear.
+The ratio therefore grows roughly in proportion to `n` — a fixed ratio would mean only overhead was measured.
+
+**Marking.** B1 4 each. B2 7 each (LinkedQueue must reset `tail` when it empties). B3: 4 / 6 / 6 —
+`reverse` must update `tail` (the `append(9)` test catches it); `remove_duplicates` must keep `size` and
+`tail` right. B4: 8 table, 4 explanation. B5: 6 tokenizer, 12 evaluator (right operand popped first —
+`"(10 - 4)"` giving `-6` is the classic slip), 4 tests.
 
 ---
 
-### Part C — Challenge (ungraded)
-
-- **C1 LRU Cache** — dict for O(1) lookup + doubly linked list for O(1) reordering; the dict maps key → node so a node can be unlinked without traversal. (`collections.OrderedDict` or Python 3.7+ `dict` ordering makes this much shorter, but the point is building it.)
-- **C2 Min-Stack** — push the running minimum onto an auxiliary stack in lockstep, so `get_min` is a peek. Space is O(n); the optimisation of only pushing on new minima requires care on pop.
-- **C3 Sliding Window Maximum** — a deque holding *indices* in decreasing-value order; pop from the back while the incoming value is larger, pop from the front once it falls outside the window. Each index enters and leaves at most once → O(n).
-
----
-
-*CS 101 · Week 7 · Problem Set 7 · Due Friday Week 8 · © CSE Department*
+*CS 101 · Week 7 · Problem Set 7 · Due Friday 20 November 2026, 17:00 · © CSE Department*

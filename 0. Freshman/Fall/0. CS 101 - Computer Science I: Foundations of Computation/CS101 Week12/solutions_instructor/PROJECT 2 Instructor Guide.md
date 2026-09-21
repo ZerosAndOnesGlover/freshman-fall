@@ -120,7 +120,7 @@ arbitrary frame (you must replay from the start, or checkpoint periodically).
 | Selection sort count varies by input | Early exit added "to optimise" | The optimisation is wrong for this algorithm; discuss rather than heavily penalise |
 | Bubble is Θ(n²) on sorted input | Missing the `swapped` early-exit flag | Fails Claim 3; a genuine correctness gap against the spec |
 | `print` inside an algorithm | Architecture violation | Costs the separation mark; flag it explicitly, it recurs in later courses |
-| Renderer imports algorithms module | Coupling in the wrong direction | Half the separation mark |
+| Renderer calls an algorithm directly | Coupling in the wrong direction | Half the separation mark |
 | Report §6 says "nothing surprised me" | Did not measure enough | The spec warns about this. Award minimal credit for §6 |
 
 ---

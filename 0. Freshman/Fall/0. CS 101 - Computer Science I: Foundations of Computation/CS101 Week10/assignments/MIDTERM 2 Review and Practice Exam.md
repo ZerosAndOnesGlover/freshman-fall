@@ -3,7 +3,7 @@
 
 **Midterm 2 Format:** 75 minutes, written, closed book. One handwritten cheat sheet (1 side of 8.5×11) allowed.
 **Weight:** 15% of final grade
-**Administered:** Week 10
+**Administered:** Monday 30 November 2026 · 18:00–19:15 · VNC 100 (Week 10, before L31)
 
 ---
 

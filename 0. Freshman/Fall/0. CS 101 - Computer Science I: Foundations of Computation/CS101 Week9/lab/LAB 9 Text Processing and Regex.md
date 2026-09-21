@@ -1,8 +1,8 @@
 # CS 101 · Lab 9
 ## Text Processing: Measuring the Concatenation Trap, Search Cost, and Regex Behaviour
 
-**Duration:** 3 hours | **Graded:** TA checkoff on completion and correctness
-**Tuesday of Week 10 · Lab Section** — sat after this week's Wed–Fri lectures, and covers Week 9.
+**Date:** Tuesday 1 December 2026 · 15:00–16:50 · Lab Section (Week 10) — covers Week 9 (L28–L30)
+*Duration: 2 hours · 100 points via TA checkoff, part of the Labs component (10%)*
 
 ---
 
@@ -26,7 +26,7 @@ python3 --version      # 3.10+
 
 ---
 
-## Part 1: The Concatenation Trap (35 minutes)
+## Part 1: The Concatenation Trap (20 minutes)
 
 ### Exercise 1.1 — The misleading benchmark
 
@@ -66,7 +66,7 @@ for c in src:
 
 ---
 
-## Part 2: Substring Search (40 minutes)
+## Part 2: Substring Search (25 minutes)
 
 ### Exercise 2.1 — Implement and instrument
 
@@ -130,7 +130,7 @@ algorithm discards, and name one algorithm that exploits it.
 
 ---
 
-## Part 3: Regular Expressions (50 minutes)
+## Part 3: Regular Expressions (30 minutes)
 
 ### Exercise 3.1 — Core behaviour
 
@@ -167,7 +167,7 @@ the `search` version wrongly accepts. **Record that input** — it is the point 
 
 ---
 
-## Part 4: Catastrophic Backtracking (30 minutes)
+## Part 4: Catastrophic Backtracking (20 minutes)
 
 ```python
 import re, time
@@ -193,7 +193,7 @@ print(f"  safe pattern on 100000 a's: {(time.perf_counter()-t0)*1000:.3f} ms")
 
 ---
 
-## Part 5: Where Regex Stops Working (15 minutes)
+## Part 5: Where Regex Stops Working (10 minutes)
 
 ```python
 re.sub(r"<.*?>", "", '<a href="x">link</a>')        # observe
@@ -205,80 +205,7 @@ in terms of language classes. Name the correct tool for HTML.
 
 ---
 
-## Part 6: Building a Concordance (30 minutes)
-
-A **concordance** maps each word to the lines on which it appears — the core of every search index,
-and a direct application of L27's grouping pattern to text.
-
-### Exercise 6.1 — Build it
-
-```python
-import re, unicodedata
-from collections import defaultdict, Counter
-
-def normalise(w):
-    return unicodedata.normalize("NFC", w).casefold()
-
-def concordance(text):
-    """Map each normalised word -> sorted list of line numbers where it appears."""
-    index = defaultdict(list)
-    for lineno, line in enumerate(text.splitlines(), start=1):
-        for word in re.findall(r"[\w']+", line):
-            index[normalise(word)].append(lineno)
-    return index
-```
-
-Test on:
-
-```python
-text = """The quick brown fox jumps over the lazy dog.
-The dog barks; the fox runs. A quick fox!"""
-```
-
-Expected — words appearing on more than one line:
-
-| Word | Lines | Occurrences |
-|---|---|---|
-| `the` | 1, 2 | 4 |
-| `fox` | 1, 2 | 3 |
-| `quick` | 1, 2 | 2 |
-| `dog` | 1, 2 | 2 |
-
-Note `The`, `the`, and `the` all collapse to one entry — that is the normalisation doing its job.
-
-### Exercise 6.2 — n-grams
-
-```python
-def ngrams(text, n):
-    """Counter of every contiguous n-word sequence."""
-    words = [normalise(w) for w in re.findall(r"[\w']+", text)]
-    return Counter(tuple(words[i:i+n]) for i in range(len(words) - n + 1))
-```
-
-On the sample text: **18 words yield 17 bigrams**. Confirm that, and state the general relationship
-between word count and n-gram count. What is the complexity of `ngrams` in terms of the word count?
-
-### Exercise 6.3 — One more regex limit
-
-Splitting text into sentences looks like a regex job:
-
-```python
-re.split(r"(?<=[.!?])\s+", "A dog. A cat.")
-# ['A dog.', 'A cat.']                    <- correct
-
-re.split(r"(?<=[.!?])\s+", "Dr. Smith went home. He slept.")
-# ['Dr.', 'Smith went home.', 'He slept.'] <- WRONG: three sentences, should be two
-```
-
-**Record:** why the second fails, and why patching it with a list of abbreviations is not a general
-fix. What would you use instead for real text?
-
-*(The `(?<=...)` construct is a **lookbehind** — it asserts what precedes the match position
-without consuming it, so the punctuation stays attached to the sentence.)*
-
----
-
-## Part 7: Commit and Reflection (10 minutes)
+## Part 6: Commit and Reflection (5 minutes)
 
 ```bash
 git add . && git commit -m "Week 9 Lab: text processing, search cost, regex, ReDoS"
@@ -296,21 +223,15 @@ git add . && git commit -m "Week 9 Lab: text processing, search cost, regex, ReD
 
 ## TA Checkoff Criteria
 
-- [ ] Part 1: both benchmarks run; the quadratic ratio identified from 1.2
-- [ ] Part 2: `naive_search` agrees with `str.find` on all four cases; formula confirmed
-- [ ] Part 3: log parser works and skips malformed lines; the `search`-accepts-garbage input found
-- [ ] Part 4: four timings recorded; exponential growth explained; attack named
-- [ ] Part 5: the HTML failure reproduced and explained in terms of language classes
-- [ ] Part 6: concordance built and verified; bigram count confirmed; sentence-split limit explained
-- [ ] Reflection complete
+| Part | Points | Show your TA |
+|---|---|---|
+| 1 | 20 | Both benchmarks run; the quadratic ratio identified from 1.2 |
+| 2 | 20 | `naive_search` agrees with `str.find` on all four cases; formula confirmed |
+| 3 | 25 | Log parser works and skips malformed lines; the `search`-accepts-garbage input found |
+| 4 | 20 | Four timings recorded; exponential growth explained; attack named |
+| 5 | 15 | The HTML failure reproduced and explained in terms of language classes |
+| **Total** | **100** | Reflection answered and work committed (required) |
 
 ---
 
-## Bonus Challenges
-
-1. Implement **Boyer–Moore–Horspool** search and compare its comparison count against naive on the
-   adversarial input. When is it *worse* than naive?
-2. Write a regex that validates an IPv4 address — all four octets in 0–255, no leading zeros. This
-   is harder than it looks; state how many characters your pattern needs.
-3. Time `re.compile`d patterns against inline `re.search` in a loop of 100,000 iterations. Is the
-   difference what you expected? Investigate `re`'s internal cache.
+*CS 101 · Week 9 · Lab 9 · Tuesday 1 December 2026 · © CSE Department*

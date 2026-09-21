@@ -1,204 +1,140 @@
 # CS 101 · Problem Set 8
 ## Hash Tables, Dictionaries, and Sets
 
-**Released:** Friday, Week 8
-**Due:** Friday, Week 9 at 11:59 PM
-**Submission:** Upload `ps8.py` and `PS 8 Hash Tables and Dictionaries.md`
-**Weight:** Part of the 30% Problem Sets grade
-
-**Note:** Project 1 is also due Friday of Week 9. Plan your time across both this week — do not leave either to the last two days.
-
----
-
-## Overview
-
-This problem set covers:
-- Hash table internals: chaining, open addressing, load factor, resizing
-- The `__hash__`/`__eq__` contract for custom classes
-- Practical dict/set patterns: counting, grouping, membership, complement search
-- Refactoring earlier algorithms (Weeks 2–7) to use dict/set for dramatic complexity improvements
-- Choosing between list, set, and dict with justified reasoning
+**Released:** Friday 20 November 2026, 10:00 (after L27) · Week 8
+**Due:** Friday 27 November 2026, 17:00 · Week 9 — late penalty from 17:01
+**Submission:** `ps8.py` (Part B) and your answer sheet (Part A) in `"$CS101/week8"`, committed to the Freshman Fall repo.
+**Points:** 100 · Part of the 30% Problem Sets grade (lowest one dropped)
+**Expected time:** about 3–4 hours
+**Note:** Project 1 is due the same day. Finish Project 1's core by Tuesday 24 November, then do this set.
 
 ---
 
-## Part A: Written Questions (`PS 8 Hash Tables and Dictionaries.md`)
+## What this problem set uses
 
-### A1: Hash Table Mechanics (8 points)
+Weeks 0–8, above all this week's: hash functions, buckets, `dict` and `set`, the `__hash__`/`__eq__`
+contract (L25), chaining, open addressing and tombstones, load factor and resizing, and L26's
+`ChainedHashTable` (L26), and the counting, grouping, membership, two-sum and memoisation patterns,
+`defaultdict`, and set operators `& | - ^` (L25 §5, L27).
 
-**(a)** Explain, precisely, why `hash([1, 2, 3])` raises a `TypeError`, while `hash((1, 2, 3))` succeeds. Your answer must reference mutability and the reason dictionaries require stable hash values.
+**Not needed and not expected:** decorators, dunder methods beyond `__init__`/`__len__`/`__hash__`/`__eq__`,
+the two-pointer technique, `functools`.
 
-**(b)** A hash table has 10 buckets and currently stores 8 elements using chaining. What is its load factor? Would this trigger a resize under the 0.75 threshold used in lecture?
+---
 
-**(c)** Explain the purpose of a "tombstone" marker in open-addressing hash tables. Construct a small concrete example (with specific keys and a specific table size) showing what goes wrong if you use a plain `None`/empty marker instead of a tombstone after a deletion.
+## Part A: Written (36 points)
 
-**(d)** Why does Python's open-addressing implementation use a LOWER maximum load factor threshold than a typical chaining implementation? Reference the performance curves you measured in Lab 8.
+### A1: Hash Table Mechanics (12 points)
 
-### A2: The `__hash__`/`__eq__` Contract (6 points)
+**(a)** Why does `hash([1, 2, 3])` raise `TypeError` while `hash((1, 2, 3))` works? Refer to mutability and
+to why a dict needs a key's hash to stay fixed.
+**(b)** A chained table has 10 buckets and 8 entries. What is its load factor? Does it trigger a resize at
+L26's 0.75 threshold?
+**(c)** What is a tombstone in open addressing? Give a small example (table size, keys, which slots they
+land in) showing what goes wrong if deletion writes a plain empty marker instead.
+**(d)** Why does an open-addressing table resize at a lower load factor than a chained one? (L26 §3, §5.)
 
-**(a)** State the contract precisely: what MUST be true about `hash(a)` and `hash(b)` if `a == b`? Is the converse required?
+### A2: The `__hash__`/`__eq__` Contract (10 points)
 
-**(b)** Consider this class:
+**(a)** State the contract: if `a == b`, what must be true of `hash(a)` and `hash(b)`? Is the converse required?
+**(b)** Why does this class break the contract? Give two instances `a`, `b` with `a == b` but different hashes,
+and a bug this causes in a dict or set.
+
 ```python
 class BadCache:
     def __init__(self, key, value):
         self.key = key
         self.value = value
-
     def __eq__(self, other):
-        return self.key == other.key   # equality based on key ONLY
-
+        return self.key == other.key            # equality uses key only
     def __hash__(self):
-        return hash((self.key, self.value))   # hash based on key AND value!
-```
-Explain precisely why this class VIOLATES the hash/eq contract. Construct two specific instances `a` and `b` where `a == b` is True but `hash(a) == hash(b)` is False, and explain what bug this could cause if instances of `BadCache` were used as dictionary keys or set members.
-
-### A3: Complexity Analysis (6 points)
-
-For each of the following, state the time complexity (in terms of n = size of input) and briefly justify:
-
-**(a)** Checking if two lists of the same length contain the exact same set of elements (ignoring order and duplicates), using a set-based approach.
-
-**(b)** Finding all duplicate values in a list of n elements, using a dict to count occurrences.
-
-**(c)** Given two lists A (size n) and B (size m), finding all elements present in BOTH lists, using a set built from the smaller list.
-
-### A4: Design Justification (5 points)
-
-For each scenario, state whether you would use a `list`, `set`, or `dict`, and justify in 1-2 sentences:
-
-**(a)** Storing a shopping cart where items can be added multiple times (e.g., "2x apples") and the order items were added matters for display.
-
-**(b)** Storing the set of all usernames currently logged into a system, where you frequently need to check "is user X logged in?"
-
-**(c)** Storing a translation table mapping English words to their French equivalents.
-
-**(d)** Storing the roll call of students in a class in the order they appear on the official roster (fixed, never reordered, occasionally checked for containment).
-
----
-
-## Part B: Python Implementation (`ps8.py`)
-
-### B1: Custom Hash Table Extensions (12 points)
-
-Extend the `ChainedHashTable` from lab with these additional methods:
-
-**(a)** `keys()` — return a list of all keys currently stored, in no particular guaranteed order. O(n).
-
-**(b)** `values()` — return a list of all values currently stored. O(n).
-
-**(c)** `items()` — return a list of (key, value) tuples for all entries. O(n).
-
-**(d)** `update(other_dict)` — insert all key-value pairs from a Python `dict` into this hash table (overwriting existing keys). O(k) where k = len(other_dict), assuming O(1) average per insertion.
-
-**(e)** `__contains__(self, key)` — implement so that `key in my_hash_table` works using Python's `in` operator directly (this is a "dunder" method — research how Python's `in` operator invokes `__contains__` if you haven't seen this yet).
-
----
-
-### B2: Refactoring Earlier Algorithms With Dict/Set (16 points)
-
-For each, implement the O(n) or O(n log n) version using dict/set, AND keep (or reference) the original slower version for comparison. State the complexity improvement in a comment.
-
-**(a)** `has_duplicate_pair_fast(lst)` — from Week 2/PS2's number theory section spirit: O(n) using a set (compare to an O(n²) nested-loop version).
-
-**(b)** `word_frequency_fast(text)` — from Week 3's lab: O(n) using a dict (the original was explicitly O(n²), forbidding dicts at the time).
-
-**(c)** `is_anagram_fast(s1, s2)` — from Week 2's challenge: O(n) using frequency dicts (the original explicitly forbade dicts/sets/sorting).
-
-**(d)** `find_missing_number(nums)` — given a list containing n distinct numbers from 0 to n (one number is missing), find the missing number in O(n) using a set. (Bonus insight to mention in a comment: this can also be solved in O(n) with NO extra space using the sum formula `n*(n+1)//2` — mention this alternative even though you should implement the set-based version as the primary solution.)
-
-**(e)** `longest_consecutive_sequence(nums)` — given an unsorted list of integers, find the length of the longest run of consecutive integers (they don't need to be consecutive IN THE LIST, just consecutive in VALUE). O(n) using a set.
-- `longest_consecutive_sequence([100, 4, 200, 1, 3, 2])` → `4` (the sequence 1,2,3,4)
-
-**(f)** `group_by_first_letter(words)` — group a list of words by their first letter, using `defaultdict`. Return a regular dict (convert from defaultdict before returning) mapping letter → list of words, preserving first-appearance order within each group.
-
----
-
-### B3: Two-Sum Family of Problems (12 points)
-
-**(a)** `two_sum(nums, target)` — from lecture; return indices of two numbers summing to target, O(n).
-
-**(b)** `three_sum_zero(nums)` — return ALL unique triplets (as sorted tuples) that sum to zero. This is harder than two-sum; a common approach: sort first (O(n log n)), then for each element, use two-pointer technique (like PS6's `all_triples_sum_to_zero_fast`) OR use a set-based approach for the inner search. Handle duplicate triplets correctly (return each unique triplet only once).
-- `three_sum_zero([-1, 0, 1, 2, -1, -4])` → `[(-1, -1, 2), (-1, 0, 1)]` (order of triplets/tuples may vary, but each unique triplet appears exactly once)
-
-**(c)** `two_sum_all_pairs(nums, target)` — return ALL pairs of INDICES (not just the first found) that sum to target. Handle the case where the same value appears multiple times correctly (e.g., `nums=[3,3,3], target=6` should find multiple valid index pairs).
-
-**(d)** `four_sum_count(A, B, C, D)` — given four lists of equal length n, count how many tuples `(i,j,k,l)` exist such that `A[i]+B[j]+C[k]+D[l] == 0`. Naive approach is O(n⁴); using a dict to precompute all pairwise sums from A and B first, you can achieve O(n²).
-- This is a genuinely important pattern: precompute a lookup table of partial sums, then probe it, rather than generating all n⁴ combinations directly.
-
----
-
-### B4: A Simple LRU-Style Cache (10 points)
-
-Implement a simplified caching decorator using a dict, without `functools.lru_cache`.
-
-**(a)** `memoize(func)` — a decorator (you saw the concept in Week 3/8 lecture) that wraps `func`, caching results in a dict keyed by the arguments. Support only functions with a SINGLE hashable positional argument for simplicity.
-```python
-@memoize
-def slow_square(x):
-    import time; time.sleep(0.01)
-    return x * x
+        return hash((self.key, self.value))     # hash uses key AND value
 ```
 
-**(b)** `memoize_with_stats(func)` — like `memoize`, but the wrapped function also exposes `.cache_hits` and `.cache_misses` counters (accessible as attributes on the wrapped function) so you can verify the cache is actually being used.
+### A3: Costs (6 points)
 
-**(c)** Demonstrate `memoize_with_stats` on a recursive Fibonacci function, and print the resulting hit/miss counts for `fib(20)`. Verify the number of misses equals the number of UNIQUE subproblems (should be 21: fib(0) through fib(20)).
+State and justify the cost, in terms of the input sizes:
+**(a)** Deciding whether two lists contain the same set of values, using sets.
+**(b)** Finding every value that occurs more than once in a list of `n`, using a counting dict.
+**(c)** Finding the values in both list A (size `n`) and list B (size `m`), using a set of the smaller one.
+
+### A4: Choosing a Structure (8 points)
+
+`list`, `set` or `dict` — and why, in one or two sentences:
+**(a)** a shopping cart where the same item can be added twice and the order added is shown;
+**(b)** the usernames currently logged in, checked constantly; **(c)** an English → French word table;
+**(d)** a class roster in official order, occasionally checked for a name.
 
 ---
 
-### B5: Set Theory Applications (10 points)
+## Part B: Python (`ps8.py`) (64 points)
 
-**(a)** `jaccard_similarity(set_a, set_b)` — return the Jaccard similarity coefficient: `|A ∩ B| / |A ∪ B|`. This is a standard measure of set similarity used in recommendation systems, plagiarism detection, and more.
-- `jaccard_similarity({1,2,3}, {2,3,4})` → `0.5` (intersection={2,3}, size 2; union={1,2,3,4}, size 4)
+State each function's cost in its docstring and give it at least two `assert` tests.
 
-**(b)** `find_common_words(text1, text2)` — return the set of words appearing in BOTH texts (case-insensitive), using set intersection.
+### B1: Extending L26's Hash Table (12 points)
 
-**(c)** `symmetric_difference_report(set_a, set_b, name_a="A", name_b="B")` — print a formatted report showing: elements only in A, elements only in B, elements in both. Use set operations, not manual loops.
+Copy `ChainedHashTable` from L26 into `ps8.py` and add:
+**(a)** `keys()`, **(b)** `values()`, **(c)** `items()` — lists of the stored keys, values, `(key, value)` pairs;
+**(d)** `update(other)` — `put` every pair of a Python dict `other`, overwriting existing keys.
 
-**(d)** `are_disjoint(set_a, set_b)` — return True if the sets share no elements. Do this in O(min(len(a), len(b))) — do NOT compute the full intersection if you can avoid it (hint: Python's `set.isdisjoint()` already does this efficiently — you may use it here, but explain in a comment why it can be faster than computing `len(a & b) == 0`).
+### B2: Faster With a Dict or Set (18 points)
+
+Each of these was quadratic, or impossible, with only lists:
+**(a)** `has_duplicate(lst)` — Θ(n) with a set.
+**(b)** `word_frequency(text)` — dict of lower-cased word → count. `"the cat the hat THE"` → `{"the": 3, "cat": 1, "hat": 1}`.
+**(c)** `is_anagram(s1, s2)` — same letters with the same counts, ignoring case and spaces. `("dormitory", "dirty room")` → `True`.
+**(d)** `longest_consecutive(nums)` — the longest run of consecutive **values** (not positions) in Θ(n): put
+the numbers in a set, and only start counting at an `x` whose `x − 1` is absent. `[100, 4, 200, 1, 3, 2]` → `4`.
+**(e)** `group_by_first_letter(words)` — with `defaultdict(list)` (L27 §3), returning a plain `dict`.
+
+### B3: The Two-Sum Family (16 points)
+
+**(a)** `two_sum(nums, target)` — L27 §5's Θ(n) version, returning `(i, j)` or `None`.
+**(b)** `two_sum_all_pairs(nums, target)` — **every** `(i, j)` with `i < j`; keep a dict from value to the
+list of indices seen so far. `([3, 3, 3], 6)` → `[(0, 1), (0, 2), (1, 2)]`.
+**(c)** `four_sum_count(A, B, C, D)` — how many `(i, j, k, l)` give `A[i] + B[j] + C[k] + D[l] == 0`, in Θ(n²):
+count every `a + b` in a dict, then look up `−(c + d)` for every `c, d`.
+`([1, 2], [-2, -1], [-1, 2], [0, 2])` → `2`.
+
+### B4: Memoisation, Counted (10 points)
+
+Write `fib_memo(n, cache, stats)` in the style of L27 §7, where `stats` is a list `[hits, misses]` that the
+function updates. Run `fib_memo(20, {}, stats)` and print the counts. Explain in a comment why the misses
+equal the number of distinct sub-problems, and how many naive calls the cache saved (Lab 4 measured them).
+
+### B5: Set Operations (8 points)
+
+**(a)** `jaccard(a, b)` — `|a & b| / |a | b|`, and `1.0` for two empty sets. `({1, 2, 3}, {2, 3, 4})` → `0.5`.
+**(b)** `common_words(text1, text2)` — lower-cased words in both, with `&`.
+**(c)** `difference_report(a, b, name_a="A", name_b="B")` — print what is only in each, in both, and in exactly one,
+using `-`, `&` and `^` (sorted for display).
 
 ---
 
 ## Grading Rubric
 
-| Problem | Points | Key Criteria |
-|---------|--------|--------------|
-| A1 Hash table mechanics | 8 | All 4 parts correct and precise |
-| A2 Hash/eq contract | 6 | Correct contract statement; valid violating example |
-| A3 Complexity analysis | 6 | Correct complexity + justification for all 3 |
-| A4 Design justification | 5 | Correct choice + reasoning for all 4 |
-| B1 Hash table extensions | 12 | All 5 methods correct |
-| B2 Refactoring | 16 | All 6 functions correct with complexity comments |
-| B3 Two-sum family | 12 | All 4 correct, including duplicate handling in (b)/(c) |
-| B4 Memoization | 10 | Both decorators work; stats correctly tracked |
-| B5 Set theory | 10 | All 4 correct, using genuine set operations |
-| **Total** | **85** | |
-| Style/complexity rigor | up to 5 bonus | |
-
----
-
-## Part C: Challenge Problems (Ungraded)
-
-**C1: Consistent Hashing**
-Research "consistent hashing" — a technique used in distributed systems (databases, CDNs) to minimize data movement when the number of servers (buckets) changes. Explain, in 300 words, how it differs from the simple `hash(key) % num_buckets` approach used in this week's lectures, and why that difference matters at scale.
-
-**C2: Bloom Filters**
-Research Bloom filters — a probabilistic data structure that can tell you "definitely not in the set" or "probably in the set" using far less memory than a real set, at the cost of allowing false positives (but never false negatives). Implement a simple Bloom filter using multiple hash functions and a bit array, and empirically measure its false-positive rate at various fill levels.
-
-**C3: Perfect Hashing**
-Research "perfect hash functions" — for a FIXED, known set of keys, it's possible to construct a hash function with ZERO collisions. Explain why this doesn't contradict the pigeonhole principle from Thursday's lecture (hint: the pigeonhole argument applies when the function must work for ANY possible key, not a fixed known set).
+| Problem | Points |
+|---------|--------|
+| A1 Mechanics | 12 |
+| A2 Contract | 10 |
+| A3 Costs | 6 |
+| A4 Choosing a structure | 8 |
+| B1 Hash table | 12 |
+| B2 Dict/set versions | 18 |
+| B3 Two-sum family | 16 |
+| B4 Memoisation | 10 |
+| B5 Set operations | 8 |
+| **Total** | **100** |
 
 ---
 
 ## Answer Key (Instructor Copy)
 
-> **Do not distribute to students.** Totals follow the Grading Rubric above.
-> No errata found — all stated example values verified, including the 21-miss prediction in B4(c).
+> **Do not distribute to students.** The reference `ps8.py` below was run; every assert passes.
 
----
+### Part A (36 points)
 
-### Part A — Written (25 points)
-
-**A1 Hash Table Mechanics (8 pts).** 2 pts each.
+**A1 Hash Table Mechanics (12 pts).** 3 pts each.
 
 **(a)** `hash([1,2,3])` raises `TypeError` because `list` is **mutable** and deliberately defines `__hash__ = None`. A hash table places an entry in a bucket determined by `hash(key)` *at insertion time*. If a key's contents could change afterwards, its hash would change, and the entry would sit in a bucket that no longer matches — permanently unreachable, since lookup probes the *new* hash's bucket. Tuples are immutable, so their hash is stable for life, making them safe keys. (A tuple containing a list is still unhashable — hashability is recursive.)
 
@@ -214,7 +150,7 @@ A **tombstone** marks slot 2 as "deleted, but the probe chain continues here", s
 
 **(d)** Open addressing degrades much more sharply near a full table: with all entries in the array itself, clustering makes the expected probe count blow up roughly as `1/(1−α)`, diverging as `α → 1`. Chaining degrades gracefully — at `α = 2` the average chain is just 2 links, still O(1) expected. So open addressing must resize earlier (Python uses ≈ 2/3) while chaining tolerates ≈ 0.75–1.0+.
 
-**A2 The `__hash__`/`__eq__` Contract (6 pts).**
+**A2 The `__hash__`/`__eq__` Contract (10 pts).**
 
 **(a)** **If `a == b` then `hash(a) == hash(b)`.** The converse is **not** required — unequal objects may share a hash (that is a collision, which hash tables handle). Equal objects with different hashes is the fatal case, because the table would look in the wrong bucket.
 
@@ -229,99 +165,282 @@ hash(a) == hash(b)     # False   <- contract broken
 
 Consequences, both reproduced: `d = {a: "first"}` then `d[b]` raises **`KeyError`** even though `b == a` — the lookup hashes to a different bucket. And `len({a, b}) == 2`: the set stores two elements that compare equal, so `in`-tests become unreliable and duplicates silently accumulate. The fix is to hash on exactly the fields used for equality: `def __hash__(self): return hash(self.key)`.
 
-*Grading: 2 pts (a) — must state the converse is not required. 4 pts (b) — 2 for identifying the mismatch of fields, 2 for concrete instances **plus** a named consequence (KeyError or duplicate set members).*
+*Grading: 4 pts (a) — must state the converse is not required. 6 pts (b) — 2 for the mismatched fields, 2 for concrete instances, 2 for a named consequence (KeyError or duplicate set members).*
 
 **A3 Complexity (6 pts).** 2 pts each.
 - **(a) O(n)** — building a set from each list is O(n), and set equality compares sizes then membership, O(n) expected. (The naive nested-loop comparison would be O(n²).)
 - **(b) O(n)** — one pass to count into a dict (O(1) expected per insert), one pass over the dict to collect counts > 1.
 - **(c) O(n + m)** — build a set from the smaller list, then scan the larger testing membership at O(1) expected each. Building from the *smaller* list minimises auxiliary space; the time bound is the same either way.
 
-**A4 Design Justification (5 pts).**
+**A4 Design Justification (8 pts).** 2 pts each.
 - **(a) `list`** — duplicates are meaningful ("2× apples") and insertion order matters for display; sets and dict keys both discard duplicates.
 - **(b) `set`** — membership testing is the only operation, and it is O(1) expected; no values needed, no order needed.
 - **(c) `dict`** — an explicit key→value mapping (English → French) is exactly what a dict models.
 - **(d) `list`** — a fixed ordered roster. *(Accept a well-argued `dict`/`set` **companion** for fast containment, but the primary structure must preserve roster order; a bare `set` loses it and earns 0.)*
 
----
-
-### Part B — Coding
-
-**B1 Hash Table Extensions (12 pts).** ~2.4 pts each.
-*(e) `__contains__` must return a **bool** and be reachable via the `in` operator. Verify with `key in table`, not just `table.__contains__(key)`. Note for graders: if a class defines `__iter__` but not `__contains__`, `in` silently falls back to linear iteration — correct results, wrong complexity. Probe whether `__contains__` is actually defined.*
-*(d) `update` must **overwrite** existing keys, not skip or duplicate them.*
-
-**B2 Refactoring With Dict/Set (16 pts).**
+### Part B — reference `ps8.py` (64 points)
 
 ```python
-def longest_consecutive_sequence(nums):          # O(n) — NOT O(n log n)
-    s, best = set(nums), 0
-    for x in s:
-        if x - 1 not in s:                       # only expand from a run's start
-            y = x
-            while y + 1 in s: y += 1
-            best = max(best, y - x + 1)
+from collections import defaultdict
+
+
+# --- B1: ChainedHashTable from L26, extended ---
+class ChainedHashTable:
+    """
+    A hash table using separate chaining for collision resolution.
+    Each bucket is a list of (key, value) pairs.
+    """
+
+    def __init__(self, initial_size=8):
+        self._size = initial_size
+        self._buckets = [[] for _ in range(self._size)]
+        self._count = 0
+
+    def _index(self, key):
+        return hash(key) % self._size
+
+    def put(self, key, value):
+        """
+        Insert or update key -> value.
+
+        Must check the ENTIRE chain at the target bucket, in case the
+        key already exists (update) vs. is new (append).
+        """
+        idx = self._index(key)
+        chain = self._buckets[idx]
+
+        for i, (existing_key, existing_value) in enumerate(chain):
+            if existing_key == key:
+                chain[i] = (key, value)    # update existing
+                return
+
+        chain.append((key, value))         # new key
+        self._count += 1
+
+    def get(self, key):
+        """Retrieve the value for key, or raise KeyError."""
+        idx = self._index(key)
+        chain = self._buckets[idx]
+
+        for existing_key, existing_value in chain:
+            if existing_key == key:
+                return existing_value
+
+        raise KeyError(key)
+
+    def contains(self, key):
+        idx = self._index(key)
+        chain = self._buckets[idx]
+        return any(existing_key == key for existing_key, _ in chain)
+
+    def remove(self, key):
+        idx = self._index(key)
+        chain = self._buckets[idx]
+
+        for i, (existing_key, existing_value) in enumerate(chain):
+            if existing_key == key:
+                del chain[i]
+                self._count -= 1
+                return
+
+        raise KeyError(key)
+
+    def __len__(self):
+        return self._count
+
+    def keys(self):
+        """All keys, in bucket order. Theta(n + buckets)."""
+        out = []
+        for chain in self._buckets:
+            for k, _ in chain:
+                out.append(k)
+        return out
+
+    def values(self):
+        """All values. Theta(n + buckets)."""
+        out = []
+        for chain in self._buckets:
+            for _, v in chain:
+                out.append(v)
+        return out
+
+    def items(self):
+        """All (key, value) pairs. Theta(n + buckets)."""
+        out = []
+        for chain in self._buckets:
+            for pair in chain:
+                out.append(pair)
+        return out
+
+    def update(self, other):
+        """put every pair of the dict `other`. O(k) average for k pairs."""
+        for k, v in other.items():
+            self.put(k, v)
+
+
+t = ChainedHashTable()
+t.update({"a": 1, "b": 2, "c": 3})
+t.put("b", 20)
+assert len(t) == 3 and sorted(t.keys()) == ["a", "b", "c"] and sorted(t.values()) == [1, 3, 20]
+assert sorted(t.items()) == [("a", 1), ("b", 20), ("c", 3)]
+assert ChainedHashTable().keys() == [] and t.contains("a") and not t.contains("z")
+
+
+# --- B2: Faster versions with dict/set ---
+def has_duplicate(lst):
+    """True if any value repeats. Theta(n) with a set (vs Theta(n^2) comparing pairs)."""
+    seen = set()
+    for x in lst:
+        if x in seen:
+            return True
+        seen.add(x)
+    return False
+
+def word_frequency(text):
+    """dict word -> count, lower-cased. Theta(n)."""
+    counts = {}
+    for w in text.lower().split():
+        counts[w] = counts.get(w, 0) + 1
+    return counts
+
+def is_anagram(s1, s2):
+    """Same letters with the same counts, ignoring case and spaces. Theta(n)."""
+    def counts(s):
+        c = {}
+        for ch in s.lower():
+            if ch != " ":
+                c[ch] = c.get(ch, 0) + 1
+        return c
+    return counts(s1) == counts(s2)
+
+def longest_consecutive(nums):
+    """Length of the longest run of consecutive integer values. Theta(n): each run is walked from its start only."""
+    values = set(nums)
+    best = 0
+    for x in values:
+        if x - 1 not in values:           # x starts a run
+            length = 1
+            while x + length in values:
+                length += 1
+            if length > best:
+                best = length
     return best
+
+def group_by_first_letter(words):
+    """dict letter -> words in first-appearance order, built with defaultdict(list)."""
+    groups = defaultdict(list)
+    for w in words:
+        groups[w[0]].append(w)
+    return dict(groups)
+
+assert has_duplicate([1, 2, 3, 2]) and not has_duplicate([1, 2, 3]) and not has_duplicate([])
+assert word_frequency("the cat the hat THE") == {"the": 3, "cat": 1, "hat": 1}
+assert is_anagram("Listen", "Silent") and is_anagram("dormitory", "dirty room") and not is_anagram("abc", "abd")
+assert longest_consecutive([100, 4, 200, 1, 3, 2]) == 4 and longest_consecutive([]) == 0 and longest_consecutive([5, 5, 6]) == 2
+assert group_by_first_letter(["apple", "bat", "avocado", "cat", "bird"]) == {"a": ["apple", "avocado"], "b": ["bat", "bird"], "c": ["cat"]}
+
+
+# --- B3: Two-sum family ---
+def two_sum(nums, target):
+    """(i, j), i < j, with nums[i] + nums[j] == target, or None. Theta(n) (L27)."""
+    seen = {}
+    for j, x in enumerate(nums):
+        if target - x in seen:
+            return (seen[target - x], j)
+        seen[x] = j
+    return None
+
+def two_sum_all_pairs(nums, target):
+    """Every (i, j), i < j, summing to target, sorted. Keeps a list of indices per value."""
+    where = {}
+    pairs = []
+    for j, x in enumerate(nums):
+        for i in where.get(target - x, []):
+            pairs.append((i, j))
+        if x not in where:
+            where[x] = []
+        where[x].append(j)
+    pairs.sort()
+    return pairs
+
+def four_sum_count(A, B, C, D):
+    """How many (i, j, k, l) have A[i] + B[j] + C[k] + D[l] == 0. Theta(n^2): count all a + b sums first."""
+    sums = {}
+    for a in A:
+        for b in B:
+            sums[a + b] = sums.get(a + b, 0) + 1
+    count = 0
+    for c in C:
+        for d in D:
+            count += sums.get(-(c + d), 0)
+    return count
+
+assert two_sum([2, 7, 11, 15], 9) == (0, 1) and two_sum([3, 2, 4], 6) == (1, 2) and two_sum([1, 2], 7) is None
+assert two_sum_all_pairs([3, 3, 3], 6) == [(0, 1), (0, 2), (1, 2)]
+assert two_sum_all_pairs([1, 5, 2, 4, 3], 6) == [(0, 1), (2, 3)]
+assert four_sum_count([1, 2], [-2, -1], [-1, 2], [0, 2]) == 2
+
+
+# --- B4: Memoisation with a cache dict (L27 §7) ---
+def fib_memo(n, cache, stats):
+    """fib(n) with a cache dict; stats = [hits, misses]."""
+    if n in cache:
+        stats[0] += 1
+        return cache[n]
+    stats[1] += 1
+    if n < 2:
+        result = n
+    else:
+        result = fib_memo(n - 1, cache, stats) + fib_memo(n - 2, cache, stats)
+    cache[n] = result
+    return result
+
+stats = [0, 0]
+assert fib_memo(20, {}, stats) == 6765
+print("fib(20): hits", stats[0], "misses", stats[1])
+assert stats == [18, 21]
+
+
+# --- B5: Set operations ---
+def jaccard(a, b):
+    """|a & b| / |a | b|; 1.0 for two empty sets."""
+    if not a and not b:
+        return 1.0
+    return len(a & b) / len(a | b)
+
+def common_words(text1, text2):
+    return set(text1.lower().split()) & set(text2.lower().split())
+
+def difference_report(a, b, name_a="A", name_b="B"):
+    print(f"Only in {name_a}: {sorted(a - b)}")
+    print(f"Only in {name_b}: {sorted(b - a)}")
+    print(f"In both:   {sorted(a & b)}")
+    print(f"In exactly one: {sorted(a ^ b)}")
+
+assert jaccard({1, 2, 3}, {2, 3, 4}) == 0.5 and jaccard(set(), set()) == 1.0
+assert common_words("The cat sat", "the dog sat down") == {"the", "sat"}
+difference_report({1, 2, 3, 4}, {3, 4, 5})
+print("all asserts passed")
 ```
 
-Verified: `[100,4,200,1,3,2]` → **4**; `[]` → 0; `[1,1,1]` → 1.
+Output:
 
-*(e) is the discriminating item. The `if x - 1 not in s` guard is what makes it O(n): without it, every element re-walks its whole run, giving O(n²) on input like `[1..n]`. A submission that sorts first is O(n log n) and earns partial credit only — the spec asks for O(n) using a set.*
-*(d) Both approaches deserve mention: the set version is O(n) time / O(n) space; the sum formula `n(n+1)//2 − sum(nums)` is O(n) time / **O(1)** space. The comment is required by the spec.*
-*(f) must return a plain `dict`, not the `defaultdict` — test `type(result) is dict`. Order within each group must follow first appearance.*
-
-**B3 Two-Sum Family (12 pts).** 3 pts each. All verified.
-
-```python
-def three_sum_zero(nums):                        # O(n^2) after sorting
-    a, out = sorted(nums), set()
-    for i in range(len(a) - 2):
-        if i > 0 and a[i] == a[i-1]: continue    # skip duplicate anchors
-        lo, hi = i + 1, len(a) - 1
-        while lo < hi:
-            t = a[i] + a[lo] + a[hi]
-            if t == 0:  out.add((a[i], a[lo], a[hi])); lo += 1; hi -= 1
-            elif t < 0: lo += 1
-            else:       hi -= 1
-    return sorted(out)
-
-def four_sum_count(A, B, C, D):                  # O(n^2), not O(n^4)
-    ab = defaultdict(int)
-    for x in A:
-        for y in B: ab[x + y] += 1               # precompute all A+B sums
-    return sum(ab[-(z + w)] for z in C for w in D)
+```
+fib(20): hits 18 misses 21
+Only in A: [1, 2]
+Only in B: [5]
+In both:   [3, 4]
+In exactly one: [1, 2, 5]
+all asserts passed
 ```
 
-Verified: `three_sum_zero([-1,0,1,2,-1,-4])` → `[(-1,-1,2), (-1,0,1)]`, matching the spec exactly. `two_sum_all_pairs([3,3,3], 6)` → `[(0,1), (0,2), (1,2)]` — all three index pairs. `four_sum_count([1,2],[-2,-1],[-1,2],[0,2])` → `2`.
+**B4.** Misses = 21 = one per distinct `n` from 0 to 20; every later request for the same `n` is a hit (18).
+Lab 4's naive `fib(20)` made 21,891 calls; the cached version makes 39.
 
-*(b) Duplicate handling is the whole difficulty. Test specifically with the spec's input, which contains two `-1`s: a solution without the `a[i] == a[i-1]` skip (or without a de-duplicating set) returns `(-1,0,1)` twice.*
-*(c) Must return **index** pairs, not value pairs, and must find all three for `[3,3,3]` — a dict-of-value→single-index approach finds only one and loses 2 of 3 points.*
-*(d) A submission that nests four loops is correct but O(n⁴) — the point of the exercise is the pairwise-sum lookup table. Award 1 of 3.*
-
-**B4 Memoization Cache (10 pts).**
-
-```python
-def memoize_with_stats(func):
-    cache = {}
-    def wrapper(x):
-        if x in cache:
-            wrapper.cache_hits += 1
-            return cache[x]
-        wrapper.cache_misses += 1
-        cache[x] = func(x)
-        return cache[x]
-    wrapper.cache_hits = wrapper.cache_misses = 0
-    return wrapper
-```
-
-Verified on memoized Fibonacci: `fib(20) = 6765`, **misses = 21**, hits = 18. The 21 misses are exactly `fib(0)…fib(20)` — one per unique subproblem, confirming the spec's stated expectation.
-
-*The counters must be attributes **on the returned wrapper** (as above), not module-level globals — the spec requires `.cache_hits` / `.cache_misses` be reachable from the decorated function. A common error is incrementing before the cache check, which makes every call a "miss".*
-
-**B5 Set Theory (10 pts).** 2.5 pts each. Verified: `jaccard_similarity({1,2,3},{2,3,4})` → `0.5`.
-
-*(a) Guard the empty-union case — `jaccard(set(), set())` is 0/0. Convention: define it as 1.0 (identical sets) or raise; either is acceptable if documented. An unguarded `ZeroDivisionError` loses 1.*
-*(d) `isdisjoint` can short-circuit on the **first** shared element and iterates the smaller set, so it is O(min(|a|,|b|)) and allocates nothing. `len(a & b) == 0` must materialise the entire intersection first — O(min) time but O(min) *space*, and no early exit. The comment explaining this is the graded part.*
+**Marking.** B1 3 each. B2: 3/3/4/5/3 — `longest_consecutive` must start runs only at run starts (otherwise
+Θ(n²)). B3: 4/6/6 — `two_sum_all_pairs([3, 3, 3], 6)` must give all three pairs. B4: 6 code, 4 explanation.
+B5: 2/2/4. Missing cost statement or fewer than two asserts: −1 per function (max −5).
 
 ---
 
-*CS 101 · Week 8 · Problem Set 8 · Due Friday Week 9 · © CSE Department*
+*CS 101 · Week 8 · Problem Set 8 · Due Friday 27 November 2026, 17:00 · © CSE Department*

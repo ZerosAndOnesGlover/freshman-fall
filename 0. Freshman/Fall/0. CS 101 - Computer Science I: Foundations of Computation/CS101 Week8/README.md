@@ -21,19 +21,19 @@ CS101_Week8/
 │                                                     list vs set vs dict decision framework
 │
 ├── lab/
-│   ├── LAB 8 Hash Tables from Scratch.md         ← Tue of W9: build both hash table variants,
+│   ├── LAB 8 Hash Tables from Scratch.md         ← Tue 24 Nov (W9): build both hash table variants,
 │   │                                                 load-factor experiments, amortized
-│   │                                                 insertion verification, dict vs list
-│   │                                                 benchmark, hash/eq contract investigation
+│   │                                                 insertion verification, dict/set
+│   │                                                 patterns, hash/eq contract investigation
 │   └── hash_table_starter.py                    ← Lab starter — both variants + resize
 │                                                     integrity test suite
 │
 ├── assignments/
 │   ├── QUIZ 8 Week 8 Wednesday.md                  ← In-class quiz (covers Week 7)
-│   ├── PS 8 Hash Tables and Dictionaries.md      ← Problem Set 8 (due Friday Week 9)
-│   └── ps8_starter.py                           ← Full scaffold: hash table extensions,
-│                                                     6 refactored algorithms, two-sum family,
-│                                                     memoization decorators, set theory
+│   ├── PS 8 Hash Tables and Dictionaries.md      ← Problem Set 8 (due Fri 27 Nov, 17:00)
+│   └── ps8_starter.py                           ← Scaffold: hash table extensions,
+│                                                     dict/set rewrites, two-sum family,
+│                                                     counted memoisation, set operations
 │
 ├── resources/
 │   └── Reading Guide Week 8.md                   ← 3 experimentation sessions, complexity
@@ -52,12 +52,12 @@ CS101_Week8/
 
 | Day | Event | Topic |
 |-----|-------|-------|
-| Wed | Lecture 25 + Quiz 8 | The hashing idea; Python dict/set; hashable vs unhashable; hash/eq contract |
-| Thu | Lecture 26 | Collision resolution: chaining vs open addressing; load factor; resizing |
-| Fri | Lecture 27 + PS8 released | Practical patterns: counting, grouping, complement search, memoization |
-| Tue (W9) | Lab 8 (graded) | Build both hash table variants from scratch; empirical load-factor/speedup analysis |
+| Wed 18 Nov | Lecture 25 + Quiz 8 | The hashing idea; Python dict/set; hashable vs unhashable; hash/eq contract |
+| Thu 19 Nov | Lecture 26 | Collision resolution: chaining vs open addressing; load factor; resizing |
+| Fri 20 Nov | Lecture 27 + PS8 released | Practical patterns: counting, grouping, complement search, memoization |
+| Tue 24 Nov (W9) | Lab 8 (graded) | Two hash tables from scratch, load factor, resizing, dict/set patterns, hash contract |
 
-**📌 Project 1 is due this Friday (end of Week 9)** — if you haven't started, begin immediately. See Week 7's [[PROJECT 1 Data Analysis Tool]].
+**📌 Project 1 is due Friday 27 November, 17:00 (end of Week 9)** — if you haven't started, begin immediately. See Week 7's [[PROJECT 1 Data Analysis Tool]].
 
 ---
 
@@ -79,11 +79,11 @@ CS101_Week8/
 - [ ] Notes for L26
 - [ ] Read CLRS Ch. 11.4 (open addressing)
 
-### Tuesday Lab, Week 9 (Required, Graded)
+### Tuesday 24 November Lab, Week 9 (Required, Graded)
 - [ ] Build both `ChainedHashTable` and `OpenAddressingHashTable` — full test suite passes
 - [ ] Run load-factor experiments and record analysis
 - [ ] Verify amortized O(1) insertion empirically
-- [ ] Run the dict-vs-list membership benchmark
+- [ ] Solve the three dict/set pattern problems
 - [ ] Complete the `__hash__`/`__eq__` contract investigation
 - [ ] TA checkoff
 

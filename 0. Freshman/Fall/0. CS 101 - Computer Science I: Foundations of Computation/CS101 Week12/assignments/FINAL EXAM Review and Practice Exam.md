@@ -1,7 +1,7 @@
 # CS 101 · Final Exam
 ## Review Guide and Practice Exam
 
-**Exam:** Week 12, during the scheduled examination period
+**Exam:** Tuesday 22 December 2026 · from 09:00 · VNC 100 (finals week). ⚠️ The Assessment Calendar books 09:00–11:30 (150 min) but this paper is written for 3 hours — to be reconciled.
 **Duration:** 3 hours · **Format:** Written, closed book. One double-sided A4 sheet of handwritten notes permitted.
 **Covers:** Weeks 1–11 — the entire course
 **Weight:** 25% of final grade

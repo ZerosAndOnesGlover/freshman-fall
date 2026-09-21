@@ -1,8 +1,12 @@
 # CS 101 · Lab 8
 ## Building a Hash Table From Scratch
 
-**Tuesday of Week 9 · Lab Section** — sat after this week's Wed–Fri lectures, and covers Week 8.
-*Duration: 2 hours · Graded on completion (TA checkoff)*
+**Date:** Tuesday 24 November 2026 · 15:00–16:50 · Lab Section (Week 9) — covers Week 8 (L25–L27)
+*Duration: 2 hours · 100 points via TA checkoff, part of the Labs component (10%)*
+
+**Tools used:** Weeks 0–8 — the hash tables of L26, dict/set patterns of L27, `random.randint` (L17),
+`time.perf_counter` (as L20 and L25 use it). Everything goes in **one file**, `hash_table.py`: importing
+your own modules is not something this course has taught.
 
 ---
 
@@ -11,9 +15,8 @@
 By the end of this lab, you will:
 - [ ] Implement a complete hash table using chaining, from scratch
 - [ ] Implement a complete hash table using open addressing (linear probing), from scratch
-- [ ] Empirically measure and visualize load factor's effect on performance
+- [ ] Measure load factor's effect on performance
 - [ ] Verify amortized O(1) insertion via resizing, directly
-- [ ] Benchmark dict/set vs. list for membership testing at scale
 - [ ] Apply dict/set patterns to solve 3 real algorithmic problems
 - [ ] Investigate the `__hash__`/`__eq__` contract with a custom class
 
@@ -22,9 +25,8 @@ By the end of this lab, you will:
 ## Setup
 
 ```bash
-cd "$CS101"        # set in ~/.bashrc -- see Lab 0
-mkdir -p week8 && cd week8
-pip install matplotlib --user   # if not already installed
+mkdir -p "$CS101/week8"
+cd "$CS101/week8"
 ```
 
 ---
@@ -305,7 +307,7 @@ Run it: `python3 hash_table.py`
 
 ## Part 2: Load Factor vs. Performance — Empirical Investigation (30 minutes)
 
-Create `load_factor_experiment.py`:
+Add this section to the **bottom** of `hash_table.py` (instead of a separate `load_factor_experiment.py`):
 
 ```python
 #!/usr/bin/env python3
@@ -316,7 +318,6 @@ CS 101 — Week 8, Lab 8
 Empirically measure how load factor affects average comparisons/probes per lookup.
 """
 
-from hash_table import ChainedHashTable, OpenAddressingHashTable
 import random
 
 
@@ -335,7 +336,7 @@ def measure_chained_at_load_factor(target_load_factor, table_size=1000, num_look
 
     # Measure average comparisons per lookup (successful lookups only)
     ht.total_comparisons = 0
-    sample_keys = random.sample(keys, min(num_lookups, len(keys)))
+    sample_keys = [keys[random.randint(0, len(keys) - 1)] for _ in range(num_lookups)]
     for k in sample_keys:
         ht.get(k)
 
@@ -354,7 +355,7 @@ def measure_open_addressing_at_load_factor(target_load_factor, table_size=1000, 
         ht.put(k, 1)
 
     ht.total_probes = 0
-    sample_keys = random.sample(keys, min(num_lookups, len(keys)))
+    sample_keys = [keys[random.randint(0, len(keys) - 1)] for _ in range(num_lookups)]
     for k in sample_keys:
         ht.get(k)
 
@@ -394,7 +395,7 @@ Run it: `python3 load_factor_experiment.py`
 
 ## Part 3: Verifying Amortized O(1) Insertion (20 minutes)
 
-Create `amortized_insertion_test.py`:
+Add this section to the **bottom** of `hash_table.py` (instead of a separate `amortized_insertion_test.py`):
 
 ```python
 #!/usr/bin/env python3
@@ -406,7 +407,6 @@ Verify that hash table insertion is O(1) amortized, despite occasional
 O(n) resize operations — the same pattern as PS6's DynamicArray.
 """
 
-from hash_table import ChainedHashTable
 import time
 
 
@@ -440,66 +440,13 @@ print(f"This confirms O(1) AMORTIZED cost: {total_time/n*1e6:.3f} μs per insert
 print(f"even though {resize_count} individual insertions were much more expensive (the resizes).")
 ```
 
-**Record in `LAB 8 Hash Tables from Scratch.md`:** How does the ratio of max-to-average insertion time compare to what you found for `DynamicArray` in PS6? Is the underlying mathematical reason the same?
+**Record in `LAB 8 Hash Tables from Scratch.md`:** How does the max-to-average ratio connect to PS 6's `simulate_appends` with doubling? Is the underlying reason the same?
 
 ---
 
-## Part 4: Dict vs. List Membership Benchmark (20 minutes)
+## Part 4: Apply the Patterns — Three Real Problems (20 minutes)
 
-Create `membership_benchmark.py`:
-
-```python
-#!/usr/bin/env python3
-"""
-membership_benchmark.py
-CS 101 — Week 8, Lab 8
-
-The single most important practical lesson of this week: measure the
-real-world cost difference between list and set/dict membership testing.
-"""
-
-import time
-import random
-
-
-def benchmark_membership(sizes):
-    print(f"{'n':>10} {'list (μs)':>15} {'set (μs)':>15} {'speedup':>10}")
-
-    for n in sizes:
-        data = list(range(n))
-        data_set = set(data)
-
-        # Worst case: search for an element NOT present (must scan everything for list)
-        target = -1
-
-        # Time list membership (average over several repeats for stability)
-        repeats = max(1, min(20, 1_000_000 // max(n, 1)))
-        t0 = time.perf_counter()
-        for _ in range(repeats):
-            target in data
-        t_list = (time.perf_counter() - t0) / repeats
-
-        t0 = time.perf_counter()
-        for _ in range(repeats):
-            target in data_set
-        t_set = (time.perf_counter() - t0) / repeats
-
-        speedup = t_list / t_set if t_set > 0 else float('inf')
-        print(f"{n:10} {t_list*1e6:15.3f} {t_set*1e6:15.4f} {speedup:9.0f}x")
-
-
-benchmark_membership([100, 1000, 10000, 100000, 1000000])
-```
-
-Run it: `python3 membership_benchmark.py`
-
-**Record in `LAB 8 Hash Tables from Scratch.md`:** At n=1,000,000, what is the approximate speedup factor? Does this match the theoretical prediction (list O(n), set O(1) — so the speedup should scale roughly linearly with n)?
-
----
-
-## Part 5: Apply the Patterns — Three Real Problems (20 minutes)
-
-Create `dict_patterns.py`:
+Add this section to the **bottom** of `hash_table.py` (instead of a separate `dict_patterns.py`):
 
 ```python
 #!/usr/bin/env python3
@@ -575,9 +522,9 @@ print("\n🎉 All pattern applications passed!")
 
 ---
 
-## Part 6: The `__hash__`/`__eq__` Contract — Investigation (10 minutes)
+## Part 5: The `__hash__`/`__eq__` Contract — Investigation (10 minutes)
 
-Create `hash_contract_investigation.py`:
+Add this section to the **bottom** of `hash_table.py` (instead of a separate `hash_contract_investigation.py`):
 
 ```python
 #!/usr/bin/env python3
@@ -652,7 +599,7 @@ Run it and **record in `LAB 8 Hash Tables from Scratch.md`:**
 
 ---
 
-## Part 7: Commit and Reflection (10 minutes)
+## Part 6: Commit and Reflection (10 minutes)
 
 ```bash
 cd "$CS101/week8"
@@ -667,7 +614,7 @@ git push
 
 **Q2.** In `_resize()` for `ChainedHashTable`, why is it WRONG to simply copy the old `_buckets` list into a bigger array (e.g., `self._buckets = old_buckets + [[] for _ in range(extra)]`)? What specifically breaks?
 
-**Q3.** Your membership benchmark showed dramatic speedups for `set` over `list`. Given this, why doesn't Python just make ALL lists behave like sets internally? What would be lost?
+**Q3.** L25's timing demo showed dramatic speedups for `set` over `list` membership. Given this, why doesn't Python just make ALL lists behave like sets internally? What would be lost?
 
 **Q4.** The `OpenAddressingHashTable` uses a lower max load factor (0.5) than `ChainedHashTable` (0.75). Using your Part 2 data, justify why this different threshold makes engineering sense.
 
@@ -675,27 +622,15 @@ git push
 
 ## TA Checkoff Criteria
 
-Show your TA:
-- [ ] `hash_table.py` — both classes fully implemented, `run_tests()` passes including resize integrity checks
-- [ ] `load_factor_experiment.py` output with analysis in notes
-- [ ] `amortized_insertion_test.py` output with comparison to PS6's DynamicArray
-- [ ] `membership_benchmark.py` output showing dramatic speedup at large n
-- [ ] `dict_patterns.py` — all 3 functions implemented and passing
-- [ ] `hash_contract_investigation.py` output with both questions answered
+| Part | Points | Show your TA |
+|---|---|---|
+| 1 | 35 | Both hash tables implemented; `run_tests()` passes including resize integrity |
+| 2 | 20 | Load-factor table with the recorded analysis |
+| 3 | 15 | Insertion-timing output with the comparison to PS 6 |
+| 4 | 20 | `two_sum`, `first_unique_char`, `group_anagrams` pass their asserts |
+| 5 | 10 | Contract investigation output with both questions answered |
+| **Total** | **100** | Reflection answered and work committed (required) |
 
 ---
 
-## Bonus Challenges
-
-**Bonus 1 — Robin Hood hashing:**
-Research "Robin Hood hashing," a refinement of open addressing that reduces variance in probe sequence length by having "richer" (shorter probe distance) entries yield their slot to "poorer" (longer probe distance) entries during insertion. Implement it and compare average probe counts against your linear-probing version at high load factor.
-
-**Bonus 2 — Custom hash function quality:**
-Write a deliberately BAD hash function (e.g., `hash(key) = len(key)` for strings) and measure how badly it degrades your `ChainedHashTable`'s performance (via `max_chain_length()`) compared to Python's built-in `hash()`. This demonstrates concretely why hash function QUALITY, not just the collision-resolution strategy, matters enormously.
-
-**Bonus 3 — Real memory comparison:**
-Using `sys.getsizeof()` (from Week 7's lab), compare the actual memory footprint of your `ChainedHashTable` vs. `OpenAddressingHashTable` vs. Python's built-in `dict`, all holding the same 10,000 key-value pairs.
-
----
-
-*CS 101 · Week 8 · Lab 8 · © CSE Department*
+*CS 101 · Week 8 · Lab 8 · Tuesday 24 November 2026 · © CSE Department*

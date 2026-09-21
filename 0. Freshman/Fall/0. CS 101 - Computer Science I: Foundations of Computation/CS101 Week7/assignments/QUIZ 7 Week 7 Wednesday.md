@@ -1,6 +1,7 @@
 # CS 101 · Quiz 7
 ## Week 7, Wednesday — In-Class Assessment
 
+**Date:** Wednesday 11 November 2026 · 09:00–09:10 (start of L22) · Week 7
 **Duration:** 10 minutes (first 10 minutes of Wednesday lecture)
 **Format:** Written — closed book, closed notes
 **Covers:** Week 6 material: Big-O, recurrences, Master Theorem, amortized analysis

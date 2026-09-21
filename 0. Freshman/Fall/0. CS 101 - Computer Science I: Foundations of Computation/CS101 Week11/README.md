@@ -48,13 +48,13 @@ CS101 Week11/
 
 | Day | Session | Topic |
 |---|---|---|
-| Tue | L34 | Models of computation; finite automata and their ceiling; the Turing machine; Church–Turing; universality |
-| Wed | Quiz 11 + L35 | Decidable vs recognisable; **the halting problem**; diagonalization; sound/complete/total |
-| Thu | Lab 11 | Build a Turing machine simulator; meet the halting problem experimentally |
-| Fri | L36 | Reduction; the landscape of undecidable problems; Rice's theorem; what it means for real tools |
+| Wed 9 Dec | Quiz 11 + L34 | Models of computation; finite automata and their ceiling; the Turing machine; Church–Turing; universality |
+| Thu 10 Dec | L35 | Decidable vs recognisable; **the halting problem**; diagonalization; sound/complete/total |
+| Fri 11 Dec | L36 + PS 11 released | Reduction; the landscape of undecidable problems; Rice's theorem; what it means for real tools |
+| Tue 15 Dec (W12) | Lab 11 | Build a Turing machine simulator; meet the halting problem experimentally |
 
-**Quiz 11** (Wednesday, 10 min) covers **Week 10** — files, exceptions, atomic writes.
-**PS 11** released Friday, due Friday of Week 12.
+**Quiz 11** (Wednesday 9 December, 10 min) covers **Week 10** — files, exceptions, atomic writes.
+**PS 11** released Friday 11 December, due Friday 18 December, 17:00.
 
 ---
 

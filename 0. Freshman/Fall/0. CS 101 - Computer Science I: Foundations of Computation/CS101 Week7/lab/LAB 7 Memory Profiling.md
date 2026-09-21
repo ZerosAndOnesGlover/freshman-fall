@@ -1,8 +1,12 @@
 # CS 101 · Lab 7
 ## Memory Profiling: List vs. Linked List
 
-**Tuesday of Week 8 · Lab Section** — sat after this week's Wed–Fri lectures, and covers Week 7.
-*Duration: 2 hours · Graded on completion (TA checkoff)*
+**Date:** Tuesday 17 November 2026 · 15:00–16:50 · Lab Section (Week 8) — covers Week 7 (L22–L24)
+*Duration: 2 hours · 100 points via TA checkoff, part of the Labs component (10%)*
+
+**Tools used:** Weeks 0–7 — classes as L23–L24 write them, `sys.getsizeof` (L22), `timeit` (L22/L24
+exercises), `collections.deque`. Everything goes in **one file**, `data_structures.py`: importing your
+own modules is not something this course has taught.
 
 ---
 
@@ -12,7 +16,7 @@ By the end of this lab, you will:
 - [ ] Measure actual memory usage of Python lists vs. hand-rolled linked lists
 - [ ] Empirically verify the O(1) vs O(n) complexity claims from Wednesday/Thursday's lectures
 - [ ] Implement a complete singly linked list, doubly linked list, stack, and queue
-- [ ] Use `sys.getsizeof()` and `tracemalloc` to profile memory
+- [ ] Use `sys.getsizeof()` to measure memory
 - [ ] Benchmark front/back/random-access operations across all structures
 - [ ] Build and test a bracket-matching stack application
 
@@ -37,8 +41,6 @@ import sys
 # Empty containers:
 print("Empty list:      ", sys.getsizeof([]))
 print("Empty tuple:      ", sys.getsizeof(()))
-print("Empty dict:       ", sys.getsizeof({}))
-print("Empty set:        ", sys.getsizeof(set()))
 
 # A single small int (Python ints are OBJECTS, not raw machine words):
 print("Int 0:            ", sys.getsizeof(0))
@@ -62,26 +64,11 @@ for n in [0, 1, 10, 100, 1000]:
 ```python
 import sys
 
-def deep_getsizeof(obj, seen=None):
-    """
-    Recursively compute the total size of obj and everything it references.
-    (A simplified version — real deep-size tools handle cycles more robustly.)
-    """
-    if seen is None:
-        seen = set()
-
-    obj_id = id(obj)
-    if obj_id in seen:
-        return 0
-    seen.add(obj_id)
-
-    size = sys.getsizeof(obj)
-
-    if isinstance(obj, dict):
-        size += sum(deep_getsizeof(k, seen) + deep_getsizeof(v, seen) for k, v in obj.items())
-    elif isinstance(obj, (list, tuple, set)):
-        size += sum(deep_getsizeof(item, seen) for item in obj)
-
+def deep_getsizeof(lst):
+    """Size of the list object plus the size of every item it points to."""
+    size = sys.getsizeof(lst)
+    for item in lst:
+        size += sys.getsizeof(item)
     return size
 
 
@@ -353,7 +340,7 @@ Run it: `python3 data_structures.py` — all four should pass.
 
 ## Part 3: Empirical Memory Comparison (30 minutes)
 
-Create `memory_comparison.py`:
+Add this section to the **bottom** of `data_structures.py` (it replaces a separate `memory_comparison.py`):
 
 ```python
 #!/usr/bin/env python3
@@ -365,7 +352,6 @@ Compare memory usage: Python list vs. our LinkedList, for the same data.
 """
 
 import sys
-from data_structures import LinkedList, Node
 
 
 def measure_list_memory(n):
@@ -405,7 +391,7 @@ for n in [10, 100, 1000, 10000]:
     print(f"{n:8} {list_mem:20} {linked_mem:20} {ratio:7.2f}x")
 ```
 
-Run it: `python3 memory_comparison.py`
+Run it: `python3 data_structures.py`
 
 **Record in `LAB 7 Memory Profiling.md`:**
 1. What is the approximate ratio (LinkedList memory / Python list memory)? Does this ratio stay roughly constant as n grows, or does it change?
@@ -416,7 +402,7 @@ Run it: `python3 memory_comparison.py`
 
 ## Part 4: Benchmarking Operation Complexity (30 minutes)
 
-Create `benchmark_operations.py`:
+Add this section to the **bottom** of `data_structures.py` (it replaces a separate `benchmark_operations.py`):
 
 ```python
 #!/usr/bin/env python3
@@ -429,16 +415,12 @@ Empirically verify the complexity claims:
   - LinkedList:  O(1) prepend/append (with tail), O(n) get(i) for large i
 """
 
-import time
-from data_structures import LinkedList
+import timeit
 
 
 def time_op(func, repeats=100):
-    """Time a zero-arg callable, averaged over `repeats` runs."""
-    start = time.perf_counter()
-    for _ in range(repeats):
-        func()
-    return (time.perf_counter() - start) / repeats
+    """Average time of a zero-argument callable over `repeats` runs, using timeit as L24 does."""
+    return timeit.timeit(func, number=repeats) / repeats
 
 
 print("=" * 70)
@@ -449,7 +431,6 @@ print(f"{'n':>10} {'append (μs)':>15} {'insert(0,x) (μs)':>18} {'ratio':>8}")
 for n in [1000, 10000, 100000]:
     base = list(range(n))
 
-    t_append = time_op(lambda: base.append(0)) if False else None
     # Use fresh copies to avoid growing unboundedly across iterations:
     def do_append():
         base.append(0)
@@ -480,7 +461,7 @@ for n in [1000, 5000, 20000]:
     print(f"{n:10} {t_get_first:15.3f} {t_get_last:18.3f} {t_get_last/t_get_first:8.1f}x")
 ```
 
-Run it: `python3 benchmark_operations.py`
+Run it: `python3 data_structures.py`
 
 **Record in `LAB 7 Memory Profiling.md`:**
 1. For Part A, does the ratio (`insert(0,x)` time / `append` time) grow as n grows? Is this consistent with O(n) vs O(1)?
@@ -491,7 +472,7 @@ Run it: `python3 benchmark_operations.py`
 
 ## Part 5: Application — Bracket Matching and Undo/Redo (15 minutes)
 
-Create `applications.py`:
+Add this section to the **bottom** of `data_structures.py` (it replaces a separate `applications.py`):
 
 ```python
 #!/usr/bin/env python3
@@ -502,7 +483,6 @@ CS 101 — Week 7, Lab 7
 Real applications of Stack and Queue.
 """
 
-from data_structures import Stack, Queue
 
 
 def is_balanced(expression):
@@ -595,7 +575,7 @@ print("\n🎉 All application tests passed!")
 ```bash
 cd "$CS101/week7"
 git add .
-git commit -m "Week 7 Lab: memory profiling, linked lists, stacks, queues, applications"
+git commit -m "CS 101 Lab 7: memory, linked lists, stacks, queues, applications"
 git push
 ```
 
@@ -613,26 +593,15 @@ git push
 
 ## TA Checkoff Criteria
 
-Show your TA:
-- [ ] `data_structures.py` — all four classes fully implemented, `run_tests()` passes
-- [ ] `memory_comparison.py` output with ratio analysis in notes
-- [ ] `benchmark_operations.py` output with both ratio analyses in notes
-- [ ] `applications.py` — `is_balanced` and `UndoRedoEditor` both fully implemented and passing
-- [ ] `LAB 7 Memory Profiling.md` with all reflection questions answered
+| Part | Points | Show your TA |
+|---|---|---|
+| 1 | 15 | `getsizeof` results and the two recorded answers |
+| 2 | 35 | All four classes implemented; `run_tests()` passes |
+| 3 | 15 | Memory table with the ratio analysis |
+| 4 | 15 | Both timing tables with the ratio analyses |
+| 5 | 20 | `is_balanced` and `UndoRedoEditor` pass their asserts |
+| **Total** | **100** | Reflection answered and work committed (required) |
 
 ---
 
-## Bonus Challenges
-
-**Bonus 1 — Circular buffer:**
-Implement a `CircularQueue` using a fixed-size Python list (not `deque`), where the front and back "wrap around" using modular arithmetic. This achieves O(1) enqueue/dequeue WITHOUT the memory overhead of a linked structure, at the cost of a fixed maximum capacity. Compare its memory footprint to both the Python-list-based and linked-list-based queues.
-
-**Bonus 2 — Skip list preview:**
-Research "skip lists" — a probabilistic data structure that adds extra "express lane" pointers to a linked list, achieving O(log n) search (unlike a plain linked list's O(n)). Sketch (in comments, no need for full implementation) how you would add one extra pointer per node to skip every other node, and estimate the resulting search complexity.
-
-**Bonus 3 — Real memory profiling with `tracemalloc`:**
-Use Python's built-in `tracemalloc` module to get a more accurate picture of peak memory usage during the construction of a large LinkedList vs. a large Python list. Compare its results to your `sys.getsizeof()`-based estimates from Part 3.
-
----
-
-*CS 101 · Week 7 · Lab 7 · © CSE Department*
+*CS 101 · Week 7 · Lab 7 · Tuesday 17 November 2026 · © CSE Department*

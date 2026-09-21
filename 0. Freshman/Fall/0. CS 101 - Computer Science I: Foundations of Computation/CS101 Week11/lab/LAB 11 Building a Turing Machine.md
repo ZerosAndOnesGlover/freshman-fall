@@ -1,8 +1,9 @@
 # CS 101 · Lab 11
 ## Building a Turing Machine
 
-**Duration:** 3 hours · **Starter:** `tm_lab_starter.py` · **Submit:** your completed file + `answers.md`
-**Thursday of Week 11 · Lab Section** — Week 11 runs Tue/Wed/Fri lectures with a Thursday lab, so this one is sat mid-week, after L34 and L35.
+**Date:** Tuesday 15 December 2026 · 15:00–16:50 · Lab Section (Week 12) — covers Week 11 (L34–L36)
+*Duration: 2 hours · 100 points (60% tests, 40% `answers.md`), part of the Labs component (10%)*
+**Starter:** `tm_lab_starter.py` · **Submit:** your completed file + `answers.md`
 
 ---
 
@@ -12,7 +13,6 @@ By the end you will have:
 
 - Implemented a working Turing machine simulator from the formal definition
 - Built machines for three languages, including one no finite automaton can recognise
-- Watched a universal machine simulate another machine
 - Confronted the halting problem experimentally, and seen exactly where the experiment fails
 
 The lecture gave you the theory. Today the theory has to run.
@@ -34,7 +34,7 @@ specification, and they say precisely what each function must do.
 
 ---
 
-## Part 1 — Read the Definition Again (15 minutes)
+## Part 1 — Read the Definition Again (10 minutes)
 
 Before coding, translate the formal definition into the data structures in the starter.
 
@@ -56,7 +56,7 @@ simulator can be faithful to an infinite tape using finite memory.
 
 ---
 
-## Part 2 — Implement `step()` (35 minutes)
+## Part 2 — Implement `step()` (25 minutes)
 
 `step()` performs exactly one transition. Get this right and everything else follows.
 
@@ -86,7 +86,7 @@ both before the lookup and after the move.)
 
 ---
 
-## Part 3 — Implement `run()` (30 minutes)
+## Part 3 — Implement `run()` (20 minutes)
 
 `run()` drives `step()` in a loop and reports what happened.
 
@@ -113,7 +113,7 @@ bug. Explain the difference in one sentence each, and say which one is a *halt*.
 
 ---
 
-## Part 4 — Build Three Machines (50 minutes)
+## Part 4 — Build Three Machines (30 minutes)
 
 **Exercise 4.1 — `unary_increment()`.** Return the machine from Exercise 1.1. Two transitions.
 
@@ -145,34 +145,11 @@ rather than about Python's `re` engine.
 
 ---
 
-## Part 5 — The Universal Machine (25 minutes)
-
-L34 §5 claimed a machine can simulate another machine given its description. Your simulator **is**
-that claim, in Python.
-
-**Exercise 5.1.** Write a function:
-
-```python
-def universal(machine_description, tape_input):
-    """machine_description is a (transitions, start, accept, reject) tuple."""
-```
-
-that builds a `TuringMachine` from the description and runs it. Three lines.
-
-**Exercise 5.2.** Call `universal()` on the *description* of `a_n_b_n()` with input `"aabb"`.
-Confirm you get the same result as calling the machine directly.
-
-**Exercise 5.3.** In `answers.md`: you have just written a program that takes a program as data and
-runs it. Name the two things this makes possible — one from L34 (an architecture) and one from L35
-(a proof technique).
-
----
-
-## Part 6 — Meeting the Halting Problem (30 minutes)
+## Part 5 — Meeting the Halting Problem (15 minutes)
 
 Now try to do the impossible, and watch precisely where it fails.
 
-**Exercise 6.1.** Write:
+**Exercise 5.1.** Write:
 
 ```python
 def will_halt(machine, tape_input, budget=10_000):
@@ -181,10 +158,10 @@ def will_halt(machine, tape_input, budget=10_000):
 
 using your `run()`. This is easy — write it.
 
-**Exercise 6.2.** `will_halt` is **not** a halting decider. State, in one sentence, exactly what it
+**Exercise 5.2.** `will_halt` is **not** a halting decider. State, in one sentence, exactly what it
 gets wrong, and give a machine on which it returns the wrong answer.
 
-**Exercise 6.3 — the experiment.** Try to repair it by raising the budget. Write a loop that
+**Exercise 5.3 — the experiment.** Try to repair it by raising the budget. Write a loop that
 doubles `budget` until the machine halts:
 
 ```python
@@ -200,14 +177,14 @@ def will_halt_harder(machine, tape_input):
 In `answers.md`: this is *sound* — when it returns, it is right. Which of the three properties from
 L35 §6 does it lack, and on which inputs does the failure show up?
 
-**Exercise 6.4.** Connect it to the proof. `will_halt_harder` is exactly the **recogniser** from
+**Exercise 5.4.** Connect it to the proof. `will_halt_harder` is exactly the **recogniser** from
 L35 §5. Write one sentence explaining why no amount of cleverness in choosing budgets can turn it
 into a decider — and be specific about which direction (yes-instances or no-instances) is the
 problem.
 
 ---
 
-## Part 7 — Checkoff and Submission (10 minutes)
+## Part 6 — Checkoff and Submission (5 minutes)
 
 Before submitting, confirm:
 
@@ -215,12 +192,11 @@ Before submitting, confirm:
 - [ ] `step()` states and maintains its head-validity invariant (Ex 2.3)
 - [ ] `run()` distinguishes all four outcomes, and checks halting states before stepping
 - [ ] All three machines built, `a_n_b_n()` verified on the full accept/reject list
-- [ ] `universal()` implemented and demonstrated (Part 5)
-- [ ] `answers.md` addresses 1.1, 1.2, 2.2, 2.3, 3.2, 3.3, 4.2, 4.4, 4.5, 5.3, 6.2, 6.3, 6.4
+- [ ] `answers.md` addresses 1.1, 1.2, 2.2, 2.3, 3.2, 3.3, 4.2, 4.4, 4.5, 5.2, 5.3, 5.4
 - [ ] No `__pycache__` directory in your submission
 
 **Marking:** 60% tests passing, 40% `answers.md`. The written answers are marked on whether you can
-say *why*, not on length. Exercises 4.5, 6.3 and 6.4 carry the most weight — they are the ones that
+say *why*, not on length. Exercises 4.5, 5.3 and 5.4 carry the most weight — they are the ones that
 show whether the week landed.
 
 ---
@@ -237,41 +213,10 @@ Answer in `answers.md`, a paragraph each:
    everything any computer can ever do. What is your honest reaction, and what would it take to
    convince you?
 
-3. Part 6 had you build something that *almost* decides halting. Describe the experience of the gap
+3. Part 5 had you build something that *almost* decides halting. Describe the experience of the gap
    between "works on everything I tried" and "provably cannot work" — and say where else in
    programming you have met that gap.
 
 ---
 
-## Bonus Challenges
-
-1. **Binary increment.** A TM that adds 1 to a binary number. Harder than unary — you must handle
-   the carry, which means walking right to the end, then processing leftward.
-
-2. **Palindrome checker.** Accept `w` over `{0,1}` iff `w` reads the same backwards. Cross off the
-   first and last symbols and repeat.
-
-3. **Step-count growth.** Measure steps for `a_n_b_n()` at n = 1..12 and tabulate. The crossing-off
-   strategy walks the tape once per pair, so predict the growth *before* measuring, then check.
-   Take **first and second differences** of your step counts — that is the fastest way to identify
-   the degree. Fit an exact closed form and verify it on every n you measured. (Compare your Week 6
-   techniques.)
-
-4. **A two-tape machine.** Extend the simulator to two tapes. Then re-implement `a_n_b_n()` using
-   the second tape as a counter and compare step counts. You have just experienced why multi-tape
-   machines are *no more powerful* but can be *polynomially faster* — the computability/complexity
-   distinction from L34 §4, made concrete.
-
-5. **Busy beaver.** Among 3-state, 2-symbol machines that halt on a blank tape, the record for
-   *most `1`s written* is **6**, and the record for *most steps taken* is **21**. Careful: these are
-   **two different machines** — the 6-`1` champion halts in 13 steps, and the 21-step champion writes
-   only 4 `1`s. Σ(n) and S(n) are separate functions.
-
-   Search the space (there are few enough to brute-force) and find both champions. Then read why
-   BB(5) took until 2024 to settle, and why BB(6) is beyond reach — this is undecidability with a
-   number attached: BB grows faster than *any* computable function, which is exactly why no program
-   can compute it.
-
----
-
-*CS 101 · Week 11 · Lab 11 · © CSE Department*
+*CS 101 · Week 11 · Lab 11 · Tuesday 15 December 2026 · © CSE Department*

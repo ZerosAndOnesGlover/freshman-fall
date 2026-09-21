@@ -142,8 +142,12 @@ Registry). It is reproduced here for convenience; the registry copy governs if t
 
 ## Problem Set Policy
 
+- **Taught before assessed:** every problem set, lab and quiz uses only material from the lectures of its
+  own week and earlier (and, where it borrows from another course, from that course's same or earlier
+  weeks). Each problem set opens with a box listing what it uses and what it deliberately does not.
+
 - **Released:** Every Friday after lecture
-- **Due:** The following Friday at 11:59 PM
+- **Due:** The following Friday at 17:00 (late penalty from 17:01). Every problem set states its exact release and due date-time.
 - **Submission:** Via the course submission portal (link on course page)
 - **Late Policy:** 20% deduction per day, no submissions accepted after 3 days late
 - **Lowest grade dropped:** Your lowest problem set grade is automatically dropped

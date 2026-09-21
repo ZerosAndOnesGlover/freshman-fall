@@ -204,7 +204,23 @@ def extract_parts(text: str):
             # ECE 110 separates a part from its title with a dash rather than a
             # colon ("## Part A — Registers"), which the capture keeps.
             found.setdefault(m.start(), (label.strip(), title.lstrip("—–-").strip(), pts))
-    return [found[k] for k in sorted(found)]
+    parts = [found[k] for k in sorted(found)]
+
+    # A Part heading that carries its own total ("## Part A: Written (40 points)") and is
+    # followed by its questions (A1 12, A2 12, ...) would be answered twice. Drop the Part
+    # heading when the questions under it add up to exactly its points.
+    kept = []
+    for i, (label, title, pts) in enumerate(parts):
+        if label.startswith("Part"):
+            below = []
+            for nxt in parts[i + 1:]:
+                if nxt[0].startswith("Part"):
+                    break
+                below.append(nxt[2])
+            if below and sum(below) == pts:
+                continue
+        kept.append((label, title, pts))
+    return kept
 
 
 def total_points(text: str, parts, default: float = 100):

@@ -1,8 +1,10 @@
 # CS 101 · Problem Set 11
 ## Computability and Undecidability
 
-**Released:** Friday, Week 11 | **Due:** Friday, Week 12 (11:59 PM)
-**Total:** 100 points + 10 bonus
+**Released:** Friday 11 December 2026, 10:00 (after L36) · Week 11
+**Due:** Friday 18 December 2026, 17:00 · Week 12 — late penalty from 17:01
+**Submission:** `ps11.py` and your answer sheet in `"$CS101/week11"`, committed to the Freshman Fall repo.
+**Total:** 100 points · **Expected time:** about 4 hours
 
 ---
 
@@ -155,24 +157,6 @@ impossible.
 Fill in `CLASSIFICATIONS` with `"decidable"` or `"undecidable"` for all six questions. Then, **in
 this file**, justify each in one sentence, naming either Rice's theorem, a resource bound, or
 "syntactic". *(The dict is 3 pts; the justifications are 3 pts.)*
-
-&nbsp;
-
----
-
-## Bonus (10 points)
-
-**BX1 (4 pts).** Implement a **palindrome** checker as a TM over `{0,1}`. Then state its step count
-as a function of n and justify the growth from the algorithm.
-
-**BX2 (6 pts).** The **busy beaver** function Σ(n) is the largest number of `1`s any halting n-state,
-2-symbol TM writes on a blank tape. Brute-force Σ(3) and S(3) (the max steps).
-
-Report both, and note that they are achieved by **different machines** — say which achieves which,
-and give the other statistic for each.
-
-Then explain, in a short paragraph, why Σ being **uncomputable** follows from the halting problem.
-*(Hint: if you could compute Σ(n), what could you do with an arbitrary n-state machine?)*
 
 &nbsp;
 

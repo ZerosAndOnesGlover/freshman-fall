@@ -1,6 +1,7 @@
 # CS 101 · Quiz 8
 ## Week 8, Wednesday — In-Class Assessment
 
+**Date:** Wednesday 18 November 2026 · 09:00–09:10 (start of L25) · Week 8
 **Duration:** 10 minutes (first 10 minutes of Wednesday lecture)
 **Format:** Written — closed book, closed notes
 **Covers:** Week 7 material: ADTs, dynamic arrays, linked lists, stacks, queues, deques

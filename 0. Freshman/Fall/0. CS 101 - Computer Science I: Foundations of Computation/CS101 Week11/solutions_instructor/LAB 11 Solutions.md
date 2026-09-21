@@ -3,6 +3,9 @@
 
 **Reference implementation:** `tm_lab_solution.py` — verified **11/11 tests passing**.
 
+
+> Lab sat Tuesday 15 December 2026 (moved from Thursday of Week 11, which clashed with the PHYS 141 lab).
+> Revised 2026-09-21: the universal-machine part and the bonus challenges were removed to fit 110 minutes.
 ---
 
 ## Marking Summary
@@ -12,7 +15,7 @@
 | Tests passing (11) | 60% |
 | `answers.md` written responses | 40% |
 
-Within the written portion, weight **4.5, 6.3, 6.4** most heavily — they are the exercises that
+Within the written portion, weight **4.5, 5.3, 5.4** most heavily — they are the exercises that
 reveal whether the week's central idea landed. A student can reach 11/11 by pattern-matching the
 lecture tables; only the written answers show understanding.
 
@@ -185,44 +188,18 @@ or "the engine can't handle nesting" has the conclusion without the reason.
 **5.1**
 
 ```python
-def universal(machine_description, tape_input):
-    transitions, start, accept, reject = machine_description
-    return TuringMachine(transitions, start, accept, reject).run(tape_input)
-```
-
-**5.2** Both routes return `("accept", "XXYY", 13)`.
-
-**5.3** The two consequences:
-
-- **From L34** — the **stored-program computer** (von Neumann architecture). One fixed machine runs
-  any computation, selected by a description supplied as *data*. This is why your laptop does not
-  need rewiring per application, and why L01's architecture keeps code and data in the same memory.
-- **From L35** — **self-reference**, and therefore the halting-problem proof. Because a machine can
-  be handed a machine description, it can be handed *its own*. `paradox(paradox)` is only writable
-  because of universality.
-
-*Mark for:* recognising that universality is not a convenience but the enabling mechanism for the
-impossibility proof. Students often get the first and miss the second.
-
----
-
-## Part 6
-
-**6.1**
-
-```python
 def will_halt(machine, tape_input, budget=10_000):
     return machine.run(tape_input, max_steps=budget)[0] != "timeout"
 ```
 
-**6.2** It returns `False` for machines that **halt, but take more than `budget` steps** — conflating
+**5.2** It returns `False` for machines that **halt, but take more than `budget` steps** — conflating
 "did not halt in time" with "does not halt". Any machine exceeding the budget works as a
 counterexample; the cleanest is the unary-increment machine on an input of 20,000 `1`s, which halts
 in 20,001 steps but is reported as non-halting at the default budget.
 
 *Mark for:* a concrete counterexample, not just the description.
 
-**6.3** It lacks **totality**. It is sound (a `True` return is always correct, since the machine
+**5.3** It lacks **totality**. It is sound (a `True` return is always correct, since the machine
 demonstrably halted) and it is complete on yes-instances (any halting machine is eventually caught,
 because the budget doubles without bound and every halting computation has a finite step count).
 
@@ -230,7 +207,7 @@ because the budget doubles without bound and every halting computation has a fin
 and `will_halt_harder` never returns. It gives a wrong answer to nobody; it simply gives no answer to
 some.
 
-**6.4** This is exactly L35 §5's recogniser. No budget schedule fixes it because **the problem is
+**5.4** This is exactly L35 §5's recogniser. No budget schedule fixes it because **the problem is
 asymmetric**: halting is witnessed by a finite computation, so running long enough always confirms a
 *yes*. Non-halting has no finite witness — at every step, "it might halt on the next one" remains
 consistent with everything observed so far, so no finite observation ever establishes *no*.
@@ -265,49 +242,3 @@ detectable problems while undetectable ones sail through, benchmarks that fail t
 
 ---
 
-## Bonus Challenges
-
-**3. Step-count growth — verified.**
-
-| n | steps | 1st diff | 2nd diff |
-|---|---|---|---|
-| 1 | 5 | — | — |
-| 2 | 13 | 8 | — |
-| 3 | 25 | 12 | 4 |
-| 4 | 41 | 16 | 4 |
-| 5 | 61 | 20 | 4 |
-| 6 | 85 | 24 | 4 |
-| 8 | 145 | 32 | 4 |
-| 10 | 221 | 40 | 4 |
-| 12 | 313 | 48 | 4 |
-
-Constant second difference ⟹ **quadratic**. The exact closed form is
-
-**steps(n) = 2n² + 2n + 1**
-
-verified at every n above (n=1: 2+2+1=5 ✓; n=5: 50+10+1=61 ✓; n=12: 288+24+1=313 ✓).
-
-**Why:** each of the n crossing-off cycles walks right to find a `b` and walks back left, traversing
-O(n) cells — n cycles × O(n) work = Θ(n²). This is the cost of having only one tape and one head:
-the machine has no way to "jump" to the position it wants.
-
-**4.** A two-tape machine recognises `aⁿbⁿ` in **Θ(n)** — copy the `a`s to tape 2, then consume one
-per `b`. It is no more *powerful* (a two-tape machine is simulable on one tape, at quadratic cost)
-but is polynomially *faster*. This is the cleanest concrete illustration of L34 §4's point that the
-Church–Turing thesis says nothing about speed.
-
-**5. Busy beaver — verified by exhaustive search** over 3-state, 2-symbol machines:
-
-- **Σ(3) = 6** — most `1`s written. That champion halts in **13** steps.
-- **S(3) = 21** — most steps taken. That champion writes only **4** `1`s.
-
-**These are different machines**, and the lab says so explicitly because the conflation is
-widespread. Students who report "the busy beaver writes 6 ones in 21 steps" should be corrected.
-
-BB is uncomputable, and the reason is worth stating: it grows faster than every computable function.
-If BB were computable you could decide halting — run any n-state machine for BB(n) steps; if it has
-not halted, it never will.
-
----
-
-*CS 101 · Week 11 · Lab 11 Solutions · Instructor copy — do not distribute*

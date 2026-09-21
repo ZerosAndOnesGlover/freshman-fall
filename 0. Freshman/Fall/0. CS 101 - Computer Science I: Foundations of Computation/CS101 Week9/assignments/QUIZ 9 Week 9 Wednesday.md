@@ -1,6 +1,7 @@
 # CS 101 · Quiz 9
 ## Week 9, Wednesday — In-Class Assessment
 
+**Date:** Wednesday 25 November 2026 · 09:00–09:10 (start of L28) · Week 9
 **Duration:** 10 minutes (first 10 minutes of Wednesday lecture)
 **Format:** Written — closed book, closed notes
 **Covers:** Week 8 material: hash tables, collision resolution, load factor, dict/set patterns

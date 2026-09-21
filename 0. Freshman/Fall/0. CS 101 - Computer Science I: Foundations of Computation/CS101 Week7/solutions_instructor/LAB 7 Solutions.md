@@ -1,9 +1,10 @@
 # CS 101 · Week 7
 ## LAB 7 Solutions — INSTRUCTOR ONLY
 
-> **All code below was executed and all stated outputs are real.** Where a benchmark appears,
-> the absolute timings are machine-specific — grade the *ratios* and the conclusions, never the
-> raw milliseconds.
+> Lab sat Tuesday 17 November 2026. **All code below was executed and all stated outputs are real.**
+> Timings are machine-specific — grade the *ratios* and the conclusions, never the raw milliseconds.
+> Since the 2026-09-21 revision the lab is one file (`data_structures.py`), has no dict/set rows in 1.1,
+> and `deep_getsizeof` handles lists only.
 
 ---
 
@@ -15,8 +16,6 @@ Measured on CPython 3.14, 64-bit:
 |---|---|
 | `[]` | 56 |
 | `()` | 48 |
-| `{}` | 64 |
-| `set()` | **216** |
 | `0` | 28 |
 | `1` | 28 |
 | `10**100` | **72** |
@@ -46,9 +45,6 @@ element**, one 64-bit pointer each. Bytes-per-element falls from 72 at n=1 to 8.
 The number to internalise: **a Python list costs 8 bytes per element regardless of what the elements
 are**, because it stores *references*, never the objects. That is exactly what Exercise 1.2 probes.
 
-> `set()` at 216 bytes is the outlier worth a comment — an empty set pre-allocates a small hash
-> table, where an empty list allocates no element array at all.
-
 ---
 
 ## Exercise 1.2 — Deep vs. Shallow Size
@@ -71,11 +67,9 @@ For comparison, `[i for i in range(1000)]` gives shallow 8,856, deep 36,856 — 
 value, while the pointer cost is fixed at 8 bytes. The larger the integers, the more the deep size
 dominates.
 
-> **A subtlety worth raising with strong students.** `deep_getsizeof` uses a `seen` set, so shared
-> objects are counted once. CPython caches integers **−5 to 256** as singletons, so a list of
-> `range(1000)` contains 257 shared objects and 743 distinct ones — the deep size is therefore
-> slightly *lower* than 1000 × 28 would suggest. A student who investigates why the arithmetic does
-> not come out exactly right has found the small-int cache from L04 on their own.
+> `deep_getsizeof` adds `getsizeof` of every item, so a value that appears twice is counted twice —
+> fine for these lists, whose items are all distinct objects except the cached small ints (−5 to 256).
+> With `range(1000)` that double-counting is invisible: 8,856 + 1000 × 28 = 36,856 exactly (measured).
 
 ---
 

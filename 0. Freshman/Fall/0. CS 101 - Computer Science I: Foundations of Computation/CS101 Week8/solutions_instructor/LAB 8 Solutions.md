@@ -5,6 +5,10 @@
 > the absolute timings are machine-specific — grade the *ratios* and the conclusions, never the
 > raw milliseconds.
 
+
+> Lab sat Tuesday 24 November 2026. Revised 2026-09-21: one file (`hash_table.py`), lookups sampled with
+> `random.randint` (with replacement — averages move by a few percent from the figures below, which were
+> measured with `random.sample`), and the old Part 4 membership benchmark removed (L25 already demonstrates it).
 ---
 
 ## Part 1 — Both Hash Table Variants
@@ -112,28 +116,7 @@ poor fit for hard real-time systems.
 
 ---
 
-## Part 4 — Dict vs. List Membership
-
-| n | `x in list` | `x in set` | Ratio |
-|---|---|---|---|
-| 1,000 | 12.586 ms | 0.0348 ms | **362×** |
-| 100,000 | 1,393.126 ms | 0.0385 ms | **36,166×** |
-
-(1,000 lookups each, worst-case element.)
-
-**The set time barely moves** — 0.0348 → 0.0385 ms for a 100× larger collection — confirming Θ(1).
-The list time scales by ~111×, confirming Θ(n). The ratio grows *linearly with n*, which is the
-signature of comparing an O(n) operation against an O(1) one.
-
-This is the largest single speedup available in the course: converting a list to a set before a
-membership-heavy loop turns Θ(n·m) into Θ(n + m).
-
-**When the list is still right:** unhashable elements; order or duplicates matter; the collection is
-tiny and checked once (building the set costs Θ(n) and allocates); or you need indexing.
-
----
-
-## Part 5 — The Three Patterns
+## Part 4 — The Three Patterns
 
 - **Counting** — `Counter(items)` or `d[k] = d.get(k, 0) + 1`. Θ(n).
 - **Grouping** — `defaultdict(list)`, appending each item under its computed key. The anagram
@@ -143,7 +126,7 @@ tiny and checked once (building the set costs Θ(n) and allocates); or you need 
 
 ---
 
-## Part 6 — The `__hash__`/`__eq__` Contract
+## Part 5 — The `__hash__`/`__eq__` Contract
 
 **Defining `__eq__` alone makes the class unhashable:**
 

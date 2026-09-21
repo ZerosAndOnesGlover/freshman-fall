@@ -1,10 +1,11 @@
 # CS 101 · Project 2
 ## Algorithm Visualizer
 
-**Assigned:** Friday, Week 10
-**Due:** Friday, Week 12 at 11:59 PM
-**Weight:** 5% of final grade (half of the 10% Projects grade)
-**Submission:** A zip containing all source code, a [[CS101 Week12/README|README]], and a written report (`report.md`)
+**Assigned:** Friday 4 December 2026, 10:00 · Week 10
+**Due:** Friday 18 December 2026, 17:00 · Week 12 — late penalty from 17:01
+**Weight:** Half of the 10% Projects component
+**Submission:** `visualize.py`, `report.md` and `benchmark.txt` in `"$CS101/project2"`, committed to the Freshman Fall repo
+**Expected time:** about 10 hours over two weeks
 **Collaboration:** Individual project — no partners, no code sharing
 **Starter:** `project2_starter.py`
 
@@ -100,14 +101,15 @@ that frame.
 
 Requirements:
 
-- Bars scale to the terminal width and to the largest value present
+- Bars scale to a fixed width (60 characters, as the starter's `render_frame` does) and to the largest value present
 - The frame's `indices` are visually distinguished
 - `compare`, `swap` and `write` are distinguishable from one another
-- Playback supports a configurable delay, and a **step count budget** so that a 40,000-frame bubble
-  sort does not run for ten minutes
+- Playback prints frames one after another and has a **frame budget** (show at most `k` frames, evenly
+  spaced) so that a 40,000-frame bubble sort does not scroll for ten minutes; pressing Enter
+  (`input()`) between frames is an acceptable step mode
 
-The renderer must not import your algorithms, and your algorithms must not import your renderer.
-**They communicate only through frames.** This separation is graded.
+Your renderer functions take frames only — they never call an algorithm — and your algorithms never
+print. **They communicate only through frames.** This separation is graded.
 
 ### 2.3 — Verified Measurements (Required)
 
@@ -145,23 +147,28 @@ Apply Week 10 properly:
   clear error, not a confusing crash deep in the renderer
 - Handle a missing file, an empty file, and a malformed file distinctly
 
-### 2.6 — Command-Line Interface (Required)
+### 2.6 — A Menu (Required)
 
-```bash
-python3 visualize.py --algo merge --shape reversed --size 40 --delay 0.05
-python3 visualize.py --algo bubble --shape random --size 30 --save trace.json
-python3 visualize.py --replay trace.json
-python3 visualize.py --benchmark          # the comparison table, no animation
+`main()` offers a menu with `input()` and loops until the user quits:
+
+```
+1) animate   — choose algorithm, input shape, size, frame budget
+2) save      — run an algorithm and save its trace to a file name you type
+3) replay    — load a saved trace and animate it
+4) benchmark — print the measured-vs-predicted table (and save it to benchmark.txt)
+q) quit
 ```
 
-Use `argparse`. Invalid arguments must produce a helpful message, not a traceback.
+Invalid choices and non-numeric sizes produce a helpful message and show the menu again — never a
+traceback (the `try`/`except ValueError` idiom).
 
 ---
 
 ## Part 3: Design Requirements (Non-Negotiable)
 
-1. **Separate modules.** At minimum: `tracer.py`, `algorithms.py`, `render.py`, `persist.py`,
-   `visualize.py`. A single-file submission loses the full architecture mark.
+1. **One file, clearly separated sections.** `visualize.py` has five headed sections — tracer,
+   algorithms, rendering, persistence, menu — in that order. (Splitting a program across modules
+   that import each other is not something this course has taught, so it is not required.)
 2. **Algorithms know nothing about display.** No `print` inside any algorithm.
 3. **No banned libraries.** Standard library only. No `numpy`, `matplotlib`, `pandas`, `curses`,
    `rich`, or any third-party package.
@@ -177,7 +184,7 @@ Use `argparse`. Invalid arguments must produce a helpful message, not a tracebac
 
 1,000–1,500 words, eight sections:
 
-1. **Architecture** — your modules and why the boundaries fall where they do
+1. **Architecture** — your five sections and why the boundaries fall where they do
 2. **The instrumentation decision** — what `Tracer` records, what it does not, and what that costs
 3. **Measured vs predicted** — your table, with the four verified claims from §2.3
 4. **The inversion result** — why bubble and insertion perform identically many swaps, and why
@@ -199,28 +206,22 @@ Use `argparse`. Invalid arguments must produce a helpful message, not a tracebac
 |-----------|--------|----------|
 | Algorithms & instrumentation | 25% | All five correct; every operation routed through `Tracer`; passes the self-test |
 | Verified measurements | 20% | All four §2.3 claims demonstrated; table accurate; theory correctly stated |
-| Renderer | 15% | Proportional, highlights indices, distinguishes events, playback controls work |
-| Architecture & separation | 15% | Clean modules; algorithms independent of display; no `print` in algorithms |
+| Renderer | 15% | Proportional, highlights indices, distinguishes events, frame budget works |
+| Architecture & separation | 15% | Clean sections; algorithms independent of display; no `print` in algorithms |
 | Persistence & robustness | 10% | Atomic write; validation on load; missing/empty/malformed handled distinctly |
 | Written report | 15% | All 8 sections; §4 and §6 substantive rather than perfunctory |
 | **Total** | **100%** | |
-
-**Bonus (up to 5%):** implement `quick_sort` with a selectable pivot strategy and demonstrate, by
-measurement, an input that drives naive first-element pivoting to its Θ(n²) worst case — then show
-the same input handled by median-of-three.
 
 ---
 
 ## Submission Checklist
 
 - [ ] `python3 project2_starter.py` (with your implementations) reports **15/15**
-- [ ] All source modules, separated per §Part 3
-- [ ] [[CS101 Week12/README|README]] — how to run it, with worked example commands
+- [ ] `visualize.py`, with the five sections of §Part 3
 - [ ] `report.md` — 1,000–1,500 words, all 8 sections
-- [ ] `benchmark.txt` — saved output of `--benchmark`
-- [ ] One saved trace file, and evidence that `--replay` reads it back
+- [ ] `benchmark.txt` — saved output of the benchmark menu option
+- [ ] One saved trace file, and evidence that the replay option reads it back
 - [ ] Test file(s) demonstrating correctness on empty, single-element, and duplicate-heavy inputs
-- [ ] No `__pycache__` in the zip
 - [ ] Git history showing incremental progress, not one commit the night before
 
 ---
@@ -229,12 +230,12 @@ the same input handled by median-of-three.
 
 | By when | What |
 |---|---|
-| End of Week 10 | Read the starter; implement `insertion_sort` and `selection_sort`; get their self-tests green |
-| Mid Week 11 | `merge_sort` and `binary_search` done; all 15 self-tests passing |
-| End of Week 11 | Renderer working; playback and highlighting |
-| Mid Week 12 | Persistence, CLI, benchmark table |
-| 2 days before due | Full end-to-end run; begin `report.md` |
-| Due date | Final polish, edge cases, submit |
+| Tue 8 Dec | Read the starter; implement `insertion_sort` and `selection_sort`; get their self-tests green |
+| Thu 10 Dec | `merge_sort` and `binary_search` done; all 15 self-tests passing |
+| Sat 12 Dec | Renderer working; playback and highlighting |
+| Mon 14 Dec | Persistence, menu, benchmark table |
+| Wed 16 Dec | Full end-to-end run; begin `report.md` |
+| Fri 18 Dec, 17:00 | Final polish, edge cases, submit |
 
 **A warning about pacing.** Weeks 11 and 12 also carry PS 11 and the final exam. The algorithms are
 the part with hard correctness requirements and they are front-loaded deliberately — do not leave
@@ -254,4 +255,4 @@ the report asks you to explain results that only your own code produces.
 
 ---
 
-*CS 101 · Week 12 · Project 2 · © CSE Department*
+*CS 101 · Project 2 · Assigned Friday 4 December, due Friday 18 December 2026, 17:00 · © CSE Department*

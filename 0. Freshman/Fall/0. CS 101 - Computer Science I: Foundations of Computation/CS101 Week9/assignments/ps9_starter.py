@@ -108,24 +108,34 @@ def collapse_whitespace(s):
 
 
 def find_doubled_words(text):
-    """Words appearing twice in a row, case-insensitively.
+    """Words appearing twice in a row, exactly (same case).
 
-    >>> find_doubled_words("the the quick Fox fox")
-    ['the', 'Fox']
+    >>> find_doubled_words("the the quick Fox fox fox")
+    ['the', 'fox']
     """
-    # TODO: a backreference (\1) is the whole trick here
+    # TODO: a backreference (\1) is the whole trick here (L30 §3)
     raise NotImplementedError
 
 
 # ─────────────────────────── Part C: log analyser ────────────────────────────
 
-def analyse_log(path):
-    """Stream `path` once and return the summary dict described in the handout.
+SAMPLE_LOG = [
+    "2026-12-01 09:15:02 INFO server started",
+    "2026-12-01 11:02:33 ERROR disk full",
+    "2026-12-01 11:05:10 WARN disk nearly full",
+    "this line is not a log entry",
+    "2026-12-01 11:40:00 ERROR disk full again",
+    "2026-12-01 14:00:00 INFO backup complete",
+    "2026-12-01 11:59:59 INFO user login",
+    "",
+]
+
+def analyse_log(lines):
+    """One pass over a list of log lines; return the summary dict described in the handout.
 
     Keys: total_lines, parsed, malformed, by_level, busiest_hour, top_words
-    Must NOT load the whole file into memory.
     """
-    # TODO: open once, iterate line by line, accumulate into lists/Counters
+    # TODO
     raise NotImplementedError
 
 
@@ -158,7 +168,8 @@ def main():
         ("valid_email no tld",        lambda: valid_email("a@b"), False),
         ("split_fields quoted",       lambda: split_fields('name,"Smith, John",42'), ['name', 'Smith, John', '42']),
         ("collapse_whitespace",       lambda: collapse_whitespace("  a   b \t\n c  "), "a b c"),
-        ("find_doubled_words",        lambda: find_doubled_words("the the quick Fox fox"), ['the', 'Fox']),
+        ("find_doubled_words",        lambda: find_doubled_words("the the quick Fox fox fox"), ['the', 'fox']),
+        ("analyse_log sample",        lambda: analyse_log(SAMPLE_LOG)["busiest_hour"], "11"),
     ]
     for label, fn, want in tests:
         total += 1

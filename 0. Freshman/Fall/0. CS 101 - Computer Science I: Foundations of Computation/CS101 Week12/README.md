@@ -42,12 +42,12 @@ convention.
 
 | Day | Session | Topic |
 |---|---|---|
-| Tue | L37 | Synthesis — the abstraction stack, four threads, one worked problem using seven weeks at once |
-| Wed | L38 | What comes next — concurrency, the layers above and below, how to choose |
-| Thu | — | No lab. Project 2 support hours |
-| Fri | L39 | Reading code, judgement, and the practice of programming |
+| Tue 15 Dec | Lab 11 | Turing machine simulator (covers Week 11) |
+| Wed 16 Dec | L37 | Synthesis — the abstraction stack, four threads, one worked problem using seven weeks at once |
+| Thu 17 Dec | L38 | What comes next — concurrency, the layers above and below, how to choose |
+| Fri 18 Dec | L39 | Reading code, judgement, and the practice of programming |
 
-**Project 2 due** Friday, 11:59 PM. **Final Exam** during the scheduled examination period.
+**Project 2 due** Friday 18 December, 17:00. **Final Exam** Tuesday 22 December, 09:00–11:30, VNC 100.
 
 There is no Quiz 12 and no PS 12.
 
@@ -70,10 +70,10 @@ By the end of Week 12 you should be able to:
 
 | Item | Weight | Due |
 |---|---|---|
-| **Project 2** — Algorithm Visualizer | 5% | Friday, Week 12 |
-| **Final Exam** — covers Weeks 1–11 | 25% | Examination period |
+| **Project 2** — Algorithm Visualizer | 5% | Friday 18 December, 17:00 |
+| **Final Exam** — covers Weeks 1–11 | 25% | Tuesday 22 December, 09:00–11:30 |
 
-Project 2 was **assigned in Week 10**; the specification lives here in Week 12 with the rest of the
+Project 2 was **assigned Friday 4 December (Week 10)**; the specification lives here in Week 12 with the rest of the
 final-week material.
 
 ---

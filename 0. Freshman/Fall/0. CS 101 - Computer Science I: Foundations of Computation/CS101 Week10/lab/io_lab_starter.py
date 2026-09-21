@@ -58,20 +58,6 @@ def ordering_demo(fail):
     return log
 
 # ── Part 4 ───────────────────────────────────────────────────────────────────
-def bench_eafp(key, n=200_000):
-    d = {"a": 1}
-    t0 = time.perf_counter()
-    for _ in range(n):
-        if key in d: _ = d[key]
-    lbyl = time.perf_counter() - t0
-    t0 = time.perf_counter()
-    for _ in range(n):
-        try: _ = d[key]
-        except KeyError: pass
-    eafp = time.perf_counter() - t0
-    return lbyl * 1000, eafp * 1000
-
-# ── Part 6 ───────────────────────────────────────────────────────────────────
 def load_records(path):
     """TODO: return (good, bad); header is line 1 so data starts at line 2.
        Catch KeyError, ValueError AND TypeError."""
@@ -84,7 +70,4 @@ if __name__ == "__main__":
     print("\nPart 3 — ordering:")
     print("  no exception:", ordering_demo(False))
     print("  exception   :", ordering_demo(True))
-    print("\nPart 4 — EAFP vs LBYL (ms):")
-    print("  hit  LBYL={:.1f}  EAFP={:.1f}".format(*bench_eafp("a")))
-    print("  miss LBYL={:.1f}  EAFP={:.1f}".format(*bench_eafp("z")))
     print("\nRemaining parts: implement the TODOs.")

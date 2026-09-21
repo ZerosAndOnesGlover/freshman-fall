@@ -4,6 +4,9 @@
 > **All code below was executed and all stated outputs are real.** Absolute timings are
 > machine-specific — grade the *ratios* and the conclusions, never the raw milliseconds.
 
+
+> Lab sat Tuesday 1 December 2026. Revised 2026-09-21: Part 6 (concordance) removed to fit the 110-minute
+> slot; the checkoff table in the handout now carries the points.
 ---
 
 ## Part 1 — The Concatenation Trap
@@ -225,81 +228,6 @@ Correct tools: `html.parser` in the standard library, or `lxml` / `BeautifulSoup
 
 Accept any answer naming the regular/context-free distinction. Award partial credit for "regex
 can't handle nesting" without the language classes.
-
----
-
-## Part 6 — Concordance, n-grams, and One More Regex Limit
-
-### 6.1 Reference implementation and expected output
-
-```python
-def concordance(text):
-    index = defaultdict(list)
-    for lineno, line in enumerate(text.splitlines(), start=1):
-        for word in re.findall(r"[\w']+", line):
-            index[normalise(word)].append(lineno)
-    return index
-```
-
-Verified on the sample text — words spanning both lines:
-
-| Word | Lines | Occurrences |
-|---|---|---|
-| `the` | 1, 2 | **4** |
-| `fox` | 1, 2 | **3** |
-| `quick` | 1, 2 | **2** |
-| `dog` | 1, 2 | **2** |
-
-Top words overall: `[('the', 4), ('fox', 3), ('quick', 2), ('dog', 2)]`.
-
-**Marking points.** `The` / `the` must collapse to a single entry — a student whose output has both
-has skipped `casefold`. Using `defaultdict(list)` rather than `if w not in index` is the L27
-grouping pattern and worth a mark. Storing duplicate line numbers (as here) is correct if the
-occurrence count is wanted; a `set` is also acceptable if the student states the trade-off.
-
-### 6.2 n-grams
-
-```python
-def ngrams(text, n):
-    words = [normalise(w) for w in re.findall(r"[\w']+", text)]
-    return Counter(tuple(words[i:i+n]) for i in range(len(words) - n + 1))
-```
-
-**18 words → 17 bigrams**, confirming the general relationship **(W − n + 1) n-grams from W words**
-— the same off-by-one as the alignment count in naive search, and worth pointing out as such.
-
-Complexity: **Θ(W · n)** — there are W − n + 1 slices and each tuple costs Θ(n) to build. For fixed
-small n this is Θ(W).
-
-*The keys must be tuples, not lists — lists are unhashable and cannot be Counter keys. That is L25's
-hashability rule appearing again.*
-
-### 6.3 Sentence splitting
-
-```
-re.split(r"(?<=[.!?])\s+", "A dog. A cat.")
-# ['A dog.', 'A cat.']                       correct
-
-re.split(r"(?<=[.!?])\s+", "Dr. Smith went home. He slept.")
-# ['Dr.', 'Smith went home.', 'He slept.']   WRONG — 3 pieces, should be 2
-```
-
-**Expected answer.** The pattern splits after any `.`, `!`, or `?` followed by whitespace, and the
-period in `Dr.` satisfies that. Deciding whether a given period ends a sentence requires knowing
-whether the preceding token is an abbreviation — **information the character sequence alone does
-not contain**.
-
-Patching with an abbreviation list is not a general fix because the list is unbounded and
-context-dependent: `Dr.`, `Mr.`, `Inc.`, `etc.`, `e.g.`, initials like `J. R. R. Tolkien`, decimal
-numbers, ellipses, and URLs all break it — and `etc.` genuinely *can* end a sentence, so even a
-perfect list does not decide the case.
-
-Real tools use trained statistical models over the surrounding context: `nltk`'s Punkt tokeniser or
-spaCy. Accept any answer that identifies the need for context beyond the pattern.
-
-> This is the **third** distinct regex boundary the lab demonstrates: performance (Part 4),
-> language class (Part 5), and now *semantic* context (Part 6). Students who articulate all three
-> as separate limits have understood the tool properly.
 
 ---
 

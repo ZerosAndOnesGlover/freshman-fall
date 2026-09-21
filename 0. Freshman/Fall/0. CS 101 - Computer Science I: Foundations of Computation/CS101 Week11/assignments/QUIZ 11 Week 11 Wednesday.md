@@ -1,6 +1,7 @@
 # CS 101 · Quiz 11
 ## Week 11, Wednesday — In-Class Assessment
 
+**Date:** Wednesday 9 December 2026 · 09:00–09:10 (start of L34) · Week 11
 **Duration:** 10 minutes (first 10 minutes of Wednesday lecture)
 **Format:** Written — closed book, closed notes
 **Covers:** Week 10 material: files, the I/O boundary, exceptions, structured formats

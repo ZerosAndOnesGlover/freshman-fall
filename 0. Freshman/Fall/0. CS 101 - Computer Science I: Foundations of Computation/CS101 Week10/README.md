@@ -21,17 +21,17 @@ CS101_Week10/
 │                                                     writes, defensive reading of real files
 │
 ├── lab/
-│   ├── LAB 10 Robust File Handling.md           ← Tue of W11: reproduce the truncation hazard and defeat
+│   ├── LAB 10 Robust File Handling.md           ← Tue 8 Dec (W11): reproduce the truncation hazard and defeat
 │   │                                                 it, measure encoding damage, establish
-│   │                                                 exception ordering, benchmark EAFP vs LBYL,
+│   │                                                 exception ordering,
 │   │                                                 build a defensive CSV loader
 │   └── io_lab_starter.py                        ← Lab starter — mode table, truncation, encoding
-│                                                     and EAFP demos ready to run; the rest TODO
+│                                                     and ordering demos ready to run; the rest TODO
 │
 ├── assignments/
 │   ├── QUIZ 10 Week 10 Wednesday.md             ← In-class quiz (covers Week 9)
 │   ├── MIDTERM 2 Review and Practice Exam.md    ← Covers Weeks 6-9, with full answer key
-│   ├── PS 10 Files IO and Error Handling.md     ← Problem Set 10 (due Friday Week 11)
+│   ├── PS 10 Files IO and Error Handling.md     ← Problem Set 10 (due Fri 11 Dec, 17:00)
 │   └── ps10_starter.py                          ← Scaffold with a 14-test self-check suite
 │
 ├── resources/
@@ -51,10 +51,10 @@ persisting data without losing it, and failing in ways that can be diagnosed.
 
 | Day | Event | Topic |
 |-----|-------|-------|
-| Wed | Lecture 31 + Quiz 10 | Files, modes, context managers, encoding, streaming |
-| Thu | Lecture 32 | Exceptions, the hierarchy, EAFP vs LBYL, raising well |
-| Fri | Lecture 33 + PS10 released | csv/json, pathlib, atomic writes, defensive parsing |
-| Tue (W11) | Lab 10 (graded) | Measure every failure mode above yourself |
+| Wed 2 Dec | Lecture 31 + Quiz 10 | Files, modes, context managers, encoding, streaming |
+| Thu 3 Dec | Lecture 32 | Exceptions, the hierarchy, EAFP vs LBYL, raising well |
+| Fri 4 Dec | Lecture 33 + PS10 released | csv/json, pathlib, atomic writes, defensive parsing |
+| Tue 8 Dec (W11) | Lab 10 (graded) | Modes and truncation, encoding, exception mechanics, a defensive CSV loader |
 | — | **Midterm 2** | Covers Weeks 6–9 |
 
 **📌 Midterm 2 does not cover Week 10.** This week's material appears on the final.
@@ -84,11 +84,10 @@ persisting data without losing it, and failing in ways that can be diagnosed.
 - [ ] Notes for L33
 - [ ] PS10 released — read it completely
 
-### Tuesday Lab, Week 11 (Required, Graded)
+### Tuesday 8 December Lab, Week 11 (Required, Graded)
 - [ ] Mode table; truncation reproduced; `atomic_write` proven to protect the original
 - [ ] Encoding damage measured and explained
 - [ ] Both exception orderings recorded; `BaseException` point made
-- [ ] EAFP vs LBYL benchmarked in **both** directions
 - [ ] Defensive CSV loader handling all three defects
 - [ ] TA checkoff
 
