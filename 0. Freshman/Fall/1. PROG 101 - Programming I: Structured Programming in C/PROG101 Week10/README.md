@@ -12,14 +12,14 @@ conditional compilation, and the small number of jobs a function cannot do.
 
 | Day | Session | Topic |
 |---|---|---|
-| Tue | Lecture 1 | The Preprocessor |
-| Wed | Lecture 2 | Macros and Their Traps |
-| Thu | Lecture 3 | Conditional Compilation and Macro Idioms |
-| Mon (Week 11) | Lab 10 | Seeing the Preprocessor (2 hrs, BH 215) |
+| Tue 1 Dec | Lecture 1 | The Preprocessor |
+| Wed 2 Dec | Lecture 2 | Macros and Their Traps |
+| Thu 3 Dec | Lecture 3 | Conditional Compilation and Macro Idioms |
+| Mon 7 Dec (Week 11) | Lab 10 | Seeing the Preprocessor (2 hrs, BH 215) |
 
 **Quiz 9** at the start of Tuesday's lecture, covering **Week 9**.
 **Midterm 2** Wednesday 18:00–19:30, VNC 100 — covers **Weeks 6–9**, worth **12%**.
-**Problem Set 10** released Friday, due Friday of Week 11.
+**Problem Set 10** released Friday 4 Dec, due Friday 11 Dec, 17:00.
 
 ---
 

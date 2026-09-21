@@ -37,7 +37,7 @@ status: in-progress
 
 | Item | Topic | Possible | Earned |
 |---|---|---|---|
-| PS 0 | The C compilation model | 100 | 92 |
+| PS 0 | The C compilation model | 100 | |
 | PS 1 | Types, variables, the memory model | 100 | |
 | PS 2 | Operators, expressions, control flow | 100 | |
 | PS 3 | Functions and structured programming | 100 | |
@@ -105,7 +105,7 @@ carries no course weight.*
 
 | Item | Topic | Possible | Earned |
 |---|---|---|---|
-| Quiz 0 | Week 0 — the compilation model | 20 | 20 |
+| Quiz 0 | Week 0 — the compilation model | 20 | |
 | Quiz 1 | Week 1 — types and the memory model | 20 | |
 | Quiz 2 | Week 2 — operators and control flow | 20 | |
 | Quiz 3 | Week 3 — functions and the call stack | 20 | |

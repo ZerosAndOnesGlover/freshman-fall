@@ -1,7 +1,7 @@
 # PROG 101 · Quiz 8
 ## Week 9, Tuesday — In-Class Assessment
 
-**Administered:** start of Week 9, Lecture 1 (Tuesday)
+**Date:** Tuesday 24 November 2026 · 10:00–10:10 (start of Week 9, Lecture 1)
 **Covers:** Week 8 material
 **Duration:** 10 minutes · Closed book · 20 points
 

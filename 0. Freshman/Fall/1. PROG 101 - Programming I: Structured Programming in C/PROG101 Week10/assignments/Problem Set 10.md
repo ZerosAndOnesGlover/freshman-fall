@@ -1,7 +1,8 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 10 · Problem Set 10: The Preprocessor and Macros
 
-**Released:** Friday, Week 10 · **Due:** Friday, Week 11 at 17:00
+**Released:** Friday 4 December 2026, 10:00 · Week 10 (after Thursday's Lecture 3)
+**Due:** Friday 11 December 2026, 17:00 · Week 11 — late penalty from 17:01
 **Total:** 100 points
 **Build with:** `gcc -Wall -Wextra -Werror -pedantic -std=c11 -g`
 **Check with:** `valgrind --leak-check=full --error-exitcode=1`

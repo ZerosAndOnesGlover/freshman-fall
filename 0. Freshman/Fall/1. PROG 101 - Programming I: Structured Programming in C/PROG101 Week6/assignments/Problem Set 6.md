@@ -1,8 +1,12 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 6 · Problem Set 6: Pointers II — Dynamic Memory
 
-**Released:** Friday, Week 6 · **Due:** Friday, Week 7 at 17:00
-**Total:** 100 points
+**Released:** Friday 6 November 2026, 10:00 · Week 6 (after Thursday's Lecture 3)
+**Due:** Friday 13 November 2026, 17:00 · Week 7 — late penalty from 17:01
+**Submission:** Commit to the Freshman Fall repo under `"$PROG101/week6/ps6"`; submit the commit hash on the course portal.
+**Total:** 100 points · **Expected time:** about 5 hours
+**What this uses:** Weeks 0–6, including the `typedef struct` `Vec` that Lecture 03 builds.
+**Not needed:** function pointers (Week 11), files (Week 8), the rest of `struct` (Week 7).
 **Build with:** `gcc -Wall -Wextra -Werror -pedantic -std=c11 -g`
 **Check with:** `valgrind --leak-check=full --show-leak-kinds=all --error-exitcode=1`
 
@@ -47,67 +51,42 @@ Write tests that:
 - Run Valgrind-clean (0 leaks)
 - Test empty strings, single characters, no delimiter found
 
-### 1B: Complete Dynamic Array Extension (15 pts)
+### 1B: Extending Lecture 03's Dynamic Array (15 pts)
 
-Extend your Lab 3 `DynArray` with:
+Start from the `Vec` of Lecture 03 (`vec_init`, `vec_push`, `vec_free`) and add:
 
 ```c
-/* dynarray_ext.h / dynarray_ext.c */
+/* Append every element of src to dst. 0 on success, -1 if an allocation failed.
+ * Must work when dst and src are the same Vec. */
+int vec_extend(Vec *dst, const Vec *src);
 
-/* Append all elements of src to dst */
-void da_extend(DynArray *dst, const DynArray *src);
+/* A new Vec with the elements in reverse order. Caller must vec_free the result. */
+Vec vec_reversed(const Vec *v);
 
-/* Return a new DynArray containing elements of da where predicate(element) != 0.
- * Caller must call da_free on the result. */
-DynArray da_filter(const DynArray *da, int (*predicate)(int));
+/* Remove every element equal to value, in place, keeping order, in one pass.
+ * Returns how many were removed. */
+size_t vec_remove_value(Vec *v, int value);
 
-/* Apply fn to every element in-place: da[i] = fn(da[i]) */
-void da_map(DynArray *da, int (*fn)(int));
+/* Give back unused capacity: afterwards cap == len (an empty Vec frees its buffer). */
+int vec_shrink_to_fit(Vec *v);
 
-/* Return the sum of fn(element) for all elements.
- * Initial accumulator value is init. */
-int da_reduce(const DynArray *da, int (*fn)(int, int), int init);
-
-/* Return a new DynArray with elements in reverse order.
- * Caller must call da_free on the result. */
-DynArray da_reversed(const DynArray *da);
-
-/* Remove all elements where predicate(element) != 0, in-place. */
-void da_remove_if(DynArray *da, int (*predicate)(int));
-
-/* Return index of element for which key_fn returns minimum value.
- * Returns -1 if empty. */
-int da_min_by(const DynArray *da, int (*key_fn)(int));
+void vec_print(const Vec *v);      /* e.g.  [1, 2, 3] len=3 cap=4 */
 ```
 
-Demonstrate with:
-```c
-DynArray nums;
-da_init(&nums);
-for (int i = 1; i <= 10; i++) da_push(&nums, i);
+Demonstrate: push `1..5`, extend with `{3, 4}`, extend the Vec **with itself**, print the reversed copy,
+remove every `3`, shrink to fit, and reverse an empty Vec. Expected:
 
-/* Filter: keep only evens */
-int is_even(int x) { return x % 2 == 0; }
-DynArray evens = da_filter(&nums, is_even);
-da_print(&evens);  /* [2, 4, 6, 8, 10] */
-
-/* Map: square each element */
-int square(int x) { return x * x; }
-da_map(&evens, square);
-da_print(&evens);  /* [4, 16, 36, 64, 100] */
-
-/* Reduce: sum */
-int add(int acc, int x) { return acc + x; }
-int total = da_reduce(&evens, add, 0);
-printf("Sum of squares of evens: %d\n", total);  /* 220 */
-
-da_free(&evens);
-da_free(&nums);
+```
+[1, 2, 3, 4, 5, 3, 4] len=7 cap=8
+[1, 2, 3, 4, 5, 3, 4, 1, 2, 3, 4, 5, 3, 4] len=14 cap=16
+[4, 3, 5, 4, 3, 2, 1, 4, 3, 5, 4, 3, 2, 1] len=14 cap=16
+removed 4
+[1, 2, 4, 5, 4, 1, 2, 4, 5, 4] len=10 cap=16
+[1, 2, 4, 5, 4, 1, 2, 4, 5, 4] len=10 cap=10
+[] len=0 cap=0
 ```
 
 All must be Valgrind-clean.
-
----
 
 ---
 
@@ -215,7 +194,7 @@ it. *(2 pts each.)*
 
 /* (c) */  int *a = malloc(4*sizeof *a); if (!a) return -1; a = malloc(8*sizeof *a); free(a);
 
-/* (d) */  FILE *f = fopen(p,"r"); char *b = malloc(100); if (!b) return -1; fclose(f); free(b);
+/* (d) */  char *b = malloc(100); if (!b) return -1; if (n < 0) return -1; free(b);
 
 /* (e) */  free(p); free(p);
 ```
@@ -291,9 +270,120 @@ A leaking run prints `definitely lost: N bytes in M blocks` and, with `--error-e
 *`strlen` returns the length **without** the NUL, so every allocation must be `strlen(s) + 1`. Off-by-one here is the single most common defect and valgrind catches it as `Invalid write of size 1` — worth running even on submissions that look right.*
 *"Caller must free" must be honoured by the student's own test harness too, or their program is not valgrind-clean regardless of library correctness.*
 
-**4B Dynamic Array Extension (15 pts).**
-*Growth must be **multiplicative** (doubling or ×1.5) — cross-reference CS 101 PS 6 B4, where additive growth is shown to give O(n) amortised appends instead of O(1).*
-*The subtle one to probe: after `realloc`, **every previously held pointer into the buffer is invalid** — realloc may move the block. A submission that caches `&arr->data[i]` across an append has a latent use-after-free that valgrind will flag only if the block actually moves. Also require the `tmp = realloc(...); if (tmp) ptr = tmp;` idiom — assigning `ptr = realloc(ptr, …)` directly **leaks the original block** when realloc returns NULL.*
+**1B Extending the Vec (15 pts).** Reference, compiled and run under Valgrind (clean); output as in the handout:
+
+```c
+/* vec_ext.c — PS 6 1B (reference): extending Lecture 03's Vec */
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct {
+    int   *data;
+    size_t len;
+    size_t cap;
+} Vec;
+
+void vec_init(Vec *v) { v->data = NULL; v->len = v->cap = 0; }
+void vec_free(Vec *v) { free(v->data); v->data = NULL; v->len = v->cap = 0; }
+
+static int vec_grow(Vec *v)
+{
+    size_t ncap = v->cap ? v->cap * 2 : 4;
+    if (ncap > SIZE_MAX / sizeof *v->data) return -1;
+    int *tmp = realloc(v->data, ncap * sizeof *v->data);
+    if (!tmp) return -1;
+    v->data = tmp;
+    v->cap = ncap;
+    return 0;
+}
+
+int vec_push(Vec *v, int value)
+{
+    if (v->len == v->cap && vec_grow(v) != 0) return -1;
+    v->data[v->len++] = value;
+    return 0;
+}
+
+/* Append every element of src to dst. 0 on success, -1 if an allocation failed. */
+int vec_extend(Vec *dst, const Vec *src)
+{
+    size_t n = src->len;                 /* read first: dst and src may be the same Vec */
+    for (size_t i = 0; i < n; i++)
+        if (vec_push(dst, src->data[i]) != 0) return -1;
+    return 0;
+}
+
+/* A new Vec with the elements in reverse order. Caller must vec_free it. */
+Vec vec_reversed(const Vec *v)
+{
+    Vec r;
+    vec_init(&r);
+    for (size_t i = v->len; i-- > 0; )
+        if (vec_push(&r, v->data[i]) != 0) { vec_free(&r); break; }
+    return r;
+}
+
+/* Remove every element equal to value, in place, keeping order. Returns how many were removed. */
+size_t vec_remove_value(Vec *v, int value)
+{
+    size_t w = 0;
+    for (size_t r = 0; r < v->len; r++)
+        if (v->data[r] != value) v->data[w++] = v->data[r];
+    size_t removed = v->len - w;
+    v->len = w;
+    return removed;
+}
+
+/* Give back unused capacity: cap becomes len (or the buffer is freed when len == 0). */
+int vec_shrink_to_fit(Vec *v)
+{
+    if (v->len == 0) { vec_free(v); return 0; }
+    int *tmp = realloc(v->data, v->len * sizeof *v->data);
+    if (!tmp) return -1;
+    v->data = tmp;
+    v->cap = v->len;
+    return 0;
+}
+
+void vec_print(const Vec *v)
+{
+    printf("[");
+    for (size_t i = 0; i < v->len; i++) printf(i ? ", %d" : "%d", v->data[i]);
+    printf("] len=%zu cap=%zu\n", v->len, v->cap);
+}
+
+int main(void)
+{
+    Vec nums, more;
+    vec_init(&nums);
+    vec_init(&more);
+    for (int i = 1; i <= 5; i++) vec_push(&nums, i);
+    for (int i = 3; i <= 4; i++) vec_push(&more, i);
+    vec_extend(&nums, &more);
+    vec_print(&nums);
+    vec_extend(&nums, &nums);                 /* self-extend */
+    vec_print(&nums);
+    Vec r = vec_reversed(&nums);
+    vec_print(&r);
+    printf("removed %zu\n", vec_remove_value(&nums, 3));
+    vec_print(&nums);
+    vec_shrink_to_fit(&nums);
+    vec_print(&nums);
+    Vec empty;
+    vec_init(&empty);
+    Vec er = vec_reversed(&empty);
+    vec_print(&er);
+    vec_free(&r); vec_free(&nums); vec_free(&more); vec_free(&er);
+    return 0;
+}
+```
+
+*3 per function. The two to probe:* **self-extend** — `vec_extend(&v, &v)` must read `src->len` once before
+looping, or it never stops; and it works only because it reads `src->data[i]` through the struct after each
+possible `realloc`. A version that caches `const int *p = src->data` before the loop reads freed memory as
+soon as the buffer moves — Valgrind reports `Invalid read`. And `vec_shrink_to_fit` must use the
+`tmp = realloc(...)` idiom: `v->data = realloc(v->data, …)` leaks the block if `realloc` fails.
 
 ---
 
@@ -474,15 +564,15 @@ in practice and is worth calling out if a student misses it.
 | **(a)** | The pointer is overwritten with a string literal; the 10-byte block is unreachable | `10 bytes in 1 blocks are definitely lost` | Copy into it: `strcpy(s,"hello")` — or better `snprintf(s,10,"hello")`. Also: `s` now points at a literal, so a later `free(s)` would be an invalid free |
 | **(b)** | `p = realloc(p, …)` — on failure the original block leaks and the only reference is destroyed | `definitely lost` on the allocation-failure path | Use a temporary: `void *t = realloc(p,n); if (t) p = t;` |
 | **(c)** | The first allocation is overwritten by the second and never freed | `16 bytes in 1 blocks are definitely lost` | `free(a)` before reassigning, or use a second variable |
-| **(d)** | `fopen`'s return is never checked; if it fails, `fclose(NULL)` is undefined. Also `f` leaks on the `!b` early return | `Invalid free()` / open file descriptor at exit | Check `f` immediately; `fclose(f)` before the early `return -1` |
+| **(d)** | `b` leaks on the `n < 0` early return: the error path skips `free` | `definitely lost: 100 bytes in 1 blocks` | `free(b)` before the early `return -1` (or validate `n` before allocating) |
 | **(e)** | Double free — the allocator's metadata is corrupted | `Invalid free() / delete / delete[] / realloc()` | Free once; adopt `free(p); p = NULL;` so a second call is a safe no-op |
 
 **Marking notes.**
 
 - **(a)** has *two* defects — the leak and the fact that `s` afterwards points at read-only storage.
   Award the 2 for the leak; note the second in feedback as a bonus observation.
-- **(d)** is the error-path leak, and it is the one students miss most often: they spot the unchecked
-  `fopen` and not the `f` still open at the early return.
+- **(d)** is the error-path leak, and it is the one students miss most often: every early `return` after a
+  `malloc` needs its own `free`. (2026-09-21: the old version used `fopen`, which is Week 8.)
 - **(b)** is Lecture 2's headline rule. If a student writes the fix without the temporary, they have
   not understood it.
 

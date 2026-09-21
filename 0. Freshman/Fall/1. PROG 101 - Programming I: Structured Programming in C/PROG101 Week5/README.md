@@ -11,13 +11,13 @@ array traversal, and every data structure from Week 7 onward.
 
 | Day | Session | Topic |
 |---|---|---|
-| Tue | Lecture 1 | What a Pointer Is |
-| Wed | Lecture 2 | Pass-by-Pointer and Pointer Arithmetic |
-| Thu | Lecture 3 | NULL, `const`, and the Classic Pointer Errors |
-| Mon (Week 6) | Lab 5 | Pointer Mechanics and Write-Back (2 hrs, BH 215) |
+| Tue 27 Oct | Lecture 1 | What a Pointer Is |
+| Wed 28 Oct | Lecture 2 | Pass-by-Pointer and Pointer Arithmetic |
+| Thu 29 Oct | Lecture 3 | NULL, `const`, and the Classic Pointer Errors |
+| Mon 2 Nov (Week 6) | Lab 5 | Pointer Mechanics and Write-Back (2 hrs, BH 215) |
 
 **Quiz 4** at the start of Tuesday's lecture, covering **Week 4**.
-**Problem Set 5** released Friday, due Friday of Week 6.
+**Problem Set 5** released Friday 30 Oct, due Friday 6 Nov, 17:00.
 
 > **No `malloc` this week.** Everything operates on storage you already have. The heap is Week 6.
 

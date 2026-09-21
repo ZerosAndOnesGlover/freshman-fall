@@ -2,6 +2,7 @@
 ## Week 12, Tuesday — In-Class Assessment
 
 **Duration:** 10 minutes · **Format:** Written, closed book
+**Date:** Tuesday 15 December 2026 · 10:00–10:10 (start of Week 12, Lecture 1)
 **Covers:** Week 11 — function pointers and generic programming
 
 ---

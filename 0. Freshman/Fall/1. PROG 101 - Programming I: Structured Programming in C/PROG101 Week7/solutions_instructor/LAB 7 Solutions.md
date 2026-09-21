@@ -69,7 +69,8 @@ double shape_area(const Shape *s) {
 
 ## Part 3 — `linkedlist` Reference Implementation
 
-**Valgrind-clean: 32 allocs, 32 frees, 0 errors.** Full verified transcript:
+**Valgrind-clean, 0 errors.** Verified transcript (2026-09-21: the merge, cycle and middle functions were removed
+from the lab — slow/fast pointers and Floyd's algorithm are not taught; the transcript lines for them are cut):
 
 ```
 built:                [10, 20, 30, 40, 50]
@@ -84,9 +85,7 @@ delete_at(1):         [10, 30, 40, 50]
 delete_at(999) noop:  [10, 30, 40, 50]
 reverse:              [50, 40, 30, 10]
 dup list [3,1,3,2,1,3] -> dedup [3, 1, 2]
-merge_sorted([0,2,4,6],[1,3,5,7]) -> [0, 1, 2, 3, 4, 5, 6, 7]
 insert_sorted -> [7, 14, 21, 28, 35]
-has_cycle=0 ; after linking tail->head: has_cycle=1
 empty list: length=0 contains=0 index_of=-1; deletes on empty survived
 ```
 
@@ -134,19 +133,9 @@ Node *list_reverse(Node *head) {
     }
     return prev;                   /* prev, not head — head is NULL at exit */
 }
-
-bool list_has_cycle(const Node *head) {          /* Floyd's tortoise and hare */
-    const Node *slow = head, *fast = head;
-    while (fast && fast->next) {
-        slow = slow->next;
-        fast = fast->next->next;
-        if (slow == fast) return true;
-    }
-    return false;
-}
 ```
 
-### The six defects to grade for
+### The four defects to grade for
 
 1. **`free_list` reading after free.** `while (h) { free(h); h = h->next; }` is a use-after-free.
    Save `next` first. It usually *appears* to work because `free` does not erase the bytes.
@@ -155,12 +144,7 @@ bool list_has_cycle(const Node *head) {          /* Floyd's tortoise and hare */
    `head->next = prev` destroys the only reference to it.
 3. **`list_copy` must be a deep copy.** Verified: mutating the copy leaves the original unchanged.
    A version returning the same nodes will double-free at cleanup.
-4. **`list_merge_sorted` consumes both inputs** — the handout says so explicitly. Using `list_a`
-   after the call is a use-after-free, and freeing both inputs *and* the result is a double free.
-   Check the test file for this.
-5. **`list_remove_duplicates` must free the removed nodes**, not merely unlink them.
-6. **A cycle makes `list_free` loop forever.** The test that creates a cycle must break it before
-   freeing — the reference does exactly that.
+4. **`list_remove_duplicates` must free the removed nodes**, not merely unlink them.
 
 Empty-list behaviour is mandatory on every function: `list_length(NULL) == 0`,
 `list_index_of(NULL, x) == -1`, and the three delete functions must be no-ops rather than crashes.

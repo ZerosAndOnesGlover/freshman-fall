@@ -11,13 +11,13 @@ type, and understood exactly what you gave up to get it.
 
 | Day | Session | Topic |
 |---|---|---|
-| Tue | Lecture 1 | Function Pointers — Code as Data |
-| Wed | Lecture 2 | Generic Programming with `void *` |
-| Thu | Lecture 3 | Callbacks and Generic Containers |
-| Mon (Week 12) | Lab 11 | Generic Programming in C (2 hrs, BH 215) |
+| Tue 8 Dec | Lecture 1 | Function Pointers — Code as Data |
+| Wed 9 Dec | Lecture 2 | Generic Programming with `void *` |
+| Thu 10 Dec | Lecture 3 | Callbacks and Generic Containers |
+| Mon 14 Dec (Week 12) | Lab 11 | Generic Programming in C (2 hrs, BH 215) |
 
 **Quiz 10** at the start of Tuesday's lecture, covering **Week 10**.
-**Problem Set 11** released Friday, due Friday of Week 12.
+**Problem Set 11** released Friday 11 Dec, due Friday 18 Dec, 17:00.
 
 ---
 

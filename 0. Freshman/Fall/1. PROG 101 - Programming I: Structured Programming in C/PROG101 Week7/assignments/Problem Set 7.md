@@ -1,16 +1,21 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 7 · Problem Set 7
 
-**Released:** End of Week 7 Thursday
-**Due:** Before Week 8 Lecture 1
-**Directory:** `$PROG101/week7/ps7/`
-**Total:** 100 points
+**Released:** Thursday 12 November 2026, 11:00 (after Week 7 Lecture 3)
+**Due:** Tuesday 17 November 2026, 10:00 (start of Week 8 Lecture 1) — late penalty from 10:01
+**Directory:** `"$PROG101/week7/ps7"` in the Freshman Fall repo
+**Total:** 100 points · **Expected time:** about 4 hours
+
+**What this uses:** Weeks 0–7 — structs, layout and padding, `typedef`, unions and tagged unions, enums and
+bit fields, singly linked lists with insertion, deletion and the pointer-to-pointer technique (Lecture 03).
+**Not needed:** a doubly linked list (Lecture 03 only previews it), sorting a linked list (merge sort is
+Week 9), function pointers (Week 11).
 
 ---
 
-## Problem 1: Struct Design and Memory (15 pts)
+## Problem 1: Struct Design and Memory (20 pts)
 
-### 1A: The Optimal Layout Challenge (8 pts)
+### 1A: The Optimal Layout Challenge (10 pts)
 
 Create `optimal_layout.c`. Given this poorly-ordered struct:
 
@@ -30,7 +35,7 @@ struct Record {
 3. Write both struct definitions in your file and verify both sizes with `printf`.
 4. Compute the percentage memory savings. If you had an array of 1,000,000 such records, how many bytes would you save in total?
 
-### 1B: Struct with Embedded Array (7 pts)
+### 1B: Struct with Embedded Array (10 pts)
 
 Create `embedded_array.c`. Define:
 
@@ -68,7 +73,7 @@ Demonstrate with an array of 5 items, sorted by score using `qsort`.
 
 ---
 
-## Problem 2: Tagged Unions — A Simple Calculator Value System (20 pts)
+## Problem 2: Tagged Unions — A Simple Calculator Value System (25 pts)
 
 Create `calcvalue.h` and `calcvalue.c` — a tagged union representing values in a small calculator language that supports integers, floats, and errors.
 
@@ -127,94 +132,9 @@ void value_print(const Value *v);
 
 ---
 
-## Problem 3: Complete Doubly Linked List (25 pts)
+## Problem 3: A Student Record System (30 pts)
 
-Build a full doubly linked list library — more capable than the singly linked list from lab, supporting O(1) operations at both ends and O(1) deletion given a node pointer.
-
-### `dlinkedlist.h`
-
-```c
-#ifndef DLINKEDLIST_H
-#define DLINKEDLIST_H
-
-#include <stdbool.h>
-
-typedef struct DNode {
-    int data;
-    struct DNode *next;
-    struct DNode *prev;
-} DNode;
-
-typedef struct {
-    DNode *head;
-    DNode *tail;
-    int    size;
-} DList;
-
-/* === Lifecycle === */
-void  dlist_init(DList *list);
-void  dlist_free(DList *list);   /* frees all nodes, resets to empty */
-
-/* === O(1) operations at both ends === */
-void  dlist_push_front(DList *list, int value);
-void  dlist_push_back(DList *list, int value);
-int   dlist_pop_front(DList *list);   /* assert non-empty */
-int   dlist_pop_back(DList *list);    /* assert non-empty */
-
-/* === O(1) deletion given a node pointer (the key advantage of doubly linked) === */
-void  dlist_delete_node(DList *list, DNode *node);
-
-/* === Search === */
-DNode *dlist_find(const DList *list, int value);   /* NULL if not found */
-
-/* === Insertion relative to a node === */
-void  dlist_insert_before(DList *list, DNode *node, int value);
-void  dlist_insert_after(DList *list, DNode *node, int value);
-
-/* === Query === */
-int   dlist_size(const DList *list);
-bool  dlist_is_empty(const DList *list);
-
-/* === Traversal helpers === */
-void  dlist_print_forward(const DList *list);   /* head to tail */
-void  dlist_print_backward(const DList *list);  /* tail to head, using prev */
-
-/* === Advanced === */
-
-/* Reverse the entire list in-place (swap next/prev for every node,
- * then swap head/tail). O(n) time, O(1) space. */
-void  dlist_reverse(DList *list);
-
-/* Remove all nodes with the given value. Returns count removed. */
-int   dlist_remove_all(DList *list, int value);
-
-/* Rotate the list left by k positions.
- * Example: [1,2,3,4,5] rotated left by 2 → [3,4,5,1,2] */
-void  dlist_rotate_left(DList *list, int k);
-
-#endif
-```
-
-### Design Requirements
-
-- Maintain the `DList` struct's `head`, `tail`, and `size` fields consistently after **every** operation — this is the hardest part of doubly linked lists
-- `dlist_delete_node` must correctly handle: deleting the head, deleting the tail, deleting the only node, and deleting a middle node — four distinct cases
-- Draw out each case on paper before coding it (this is not optional — doubly linked list bugs are notoriously subtle)
-
-### Required Test Coverage
-
-Your `test_dlinkedlist.c` must specifically test:
-1. Push/pop from both ends interleaved (push_front, push_back, pop_front, pop_back in varying order)
-2. `dlist_delete_node` for each of the four cases listed above
-3. `dlist_reverse` on empty, single-element, and multi-element lists — verify both forward and backward traversal after reversing
-4. `dlist_rotate_left` with k=0, k=size (no-op cases), k > size (should wrap using modulo), and typical k
-5. Full Valgrind-clean run
-
----
-
-## Problem 4: A Student Record System (20 pts)
-
-Build a complete student database using structs, arrays, and a linked list for one component. This problem integrates everything from Weeks 1–4.
+Build a complete student database using structs, arrays, and a linked list for one component. This problem integrates everything from Weeks 1–7.
 
 Create `student_system.h` and `student_system.c`:
 
@@ -261,11 +181,11 @@ Student *roster_top_student(Student *roster_head);
 /* Return the number of students in the roster with GPA >= threshold */
 int   roster_count_above_gpa(const Student *roster_head, double threshold);
 
-/* Sort the roster (the linked list) by GPA descending, using any
- * O(n log n) or better algorithm applied to a linked list (merge sort
- * recommended — see list_merge_sorted pattern from lab).
- * Returns the new head of the sorted list. */
-Student *roster_sort_by_gpa(Student *roster_head);
+/* Insert s so the roster stays sorted by GPA, highest first; equal GPAs keep
+ * the order they arrived in. Use Lecture 03's pointer-to-pointer technique so
+ * that inserting at the head needs no special case. O(n).
+ * Returns the (possibly new) head. */
+Student *roster_insert_by_gpa(Student *roster_head, Student *s);
 ```
 
 ### Demo Program
@@ -275,12 +195,13 @@ Write a `main()` that:
 2. Prints the full roster
 3. Reports the top student
 4. Reports how many students have GPA >= 3.0
-5. Sorts the roster by GPA and prints it again
+5. Builds a second roster by inserting the same students (after their courses are added) with
+   `roster_insert_by_gpa`, and prints it in GPA order
 6. Frees everything and verifies clean under Valgrind
 
 ---
 
-## Problem 5: Enum-Driven State Machine — Traffic Light Controller (20 pts)
+## Problem 4: Enum-Driven State Machine — Traffic Light Controller (25 pts)
 
 Create `traffic_light.c`. Build a traffic light simulation using enums and structs (no OOP — pure C state machine).
 
@@ -338,14 +259,11 @@ CC     = gcc
 CFLAGS = -Wall -Wextra -Werror -Wswitch -g -std=c11
 
 PROGRAMS = optimal_layout embedded_array calcvalue_test \
-           test_dlinkedlist student_system_test traffic_light
+           student_system_test traffic_light
 
 all: $(PROGRAMS)
 
 calcvalue_test: calcvalue_test.o calcvalue.o
-	$(CC) $(CFLAGS) -o $@ $^
-
-test_dlinkedlist: test_dlinkedlist.o dlinkedlist.o
 	$(CC) $(CFLAGS) -o $@ $^
 
 student_system_test: student_system_test.o student_system.o
@@ -367,7 +285,7 @@ clean:
 ```bash
 cd "$PROG101/week7/ps7"
 git add .
-git commit -m "PS4 complete: structs, unions, linked lists, enums"
+git commit -m "PROG 101 PS 7: structs, unions, linked lists, enums"
 ```
 
 Run `valgrind --leak-check=full` on every program with dynamic allocation before submitting.
@@ -378,11 +296,10 @@ Run `valgrind --leak-check=full` on every program with dynamic allocation before
 
 | Problem | Points | Key Criteria |
 |---------|--------|-------------|
-| P1: Struct design and memory | 15 | Correct layouts, correct savings computation |
-| P2: Tagged union calculator | 20 | Error propagation, type promotion, correct arithmetic |
-| P3: Doubly linked list | 25 | All 4 deletion cases correct, rotate/reverse correct, Valgrind-clean |
-| P4: Student record system | 20 | Integrates structs+arrays+linked list correctly |
-| P5: Traffic light state machine | 20 | Correct transitions, correct car counting, -Wswitch clean |
+| P1: Struct design and memory | 20 | Correct layouts, correct savings computation |
+| P2: Tagged union calculator | 25 | Error propagation, type promotion, correct arithmetic |
+| P3: Student record system | 30 | Structs + arrays + linked list; sorted insertion; Valgrind-clean |
+| P4: Traffic light state machine | 25 | Correct transitions, correct car counting, -Wswitch clean |
 | **Total** | **100** | |
 
 ---
@@ -447,45 +364,35 @@ Run `valgrind --leak-check=full` on every program with dynamic allocation before
 
 ---
 
-### Problem 3 — Doubly Linked List (25 pts)
-
-*The four deletion cases named in the rubric — **empty, single-element, head, tail, middle** — are where marks are actually won and lost. Require a test for each; a submission that only tests middle-deletion will pass casually and corrupt `head`/`tail` in production.*
-
-Deletion must fix **four** pointers, and the two boundary ones are conditional:
-
-```c
-if (node->prev) node->prev->next = node->next; else list->head = node->next;
-if (node->next) node->next->prev = node->prev; else list->tail = node->prev;
-free(node);
-list->size--;
-```
-
-*Omitting either `else` branch leaves a dangling `head`/`tail` — valgrind reports `Invalid read` on the next traversal. Verify with:*
-
-```bash
-gcc -Wall -Wextra -Werror -g -std=c11 -o dll dll_test.c dlinkedlist.c
-valgrind --leak-check=full --error-exitcode=1 ./dll
-```
-
-*A clean run reports `All heap blocks were freed -- no leaks are possible` and `ERROR SUMMARY: 0 errors`; the non-zero exit code makes it script-able. `list_destroy` must free **every** node — the classic leak is freeing the head then losing the rest, or iterating with `free(cur); cur = cur->next;` (use-after-free: save `next` **before** freeing).*
-*`reverse` should relink by swapping each node's `prev`/`next` and then swapping `head`/`tail` — O(n), no allocation. `rotate` must handle rotation amounts ≥ size (take modulo) and rotation of an empty or single-element list without crashing.*
-
----
-
-### Problem 4 — Student Record System (20 pts)
+### Problem 3 — Student Record System (30 pts)
 
 *This is the integration problem: structs inside a linked list, with arrays inside the structs. Grade primarily on **ownership clarity** — for every allocation, who frees it, and is that stated? A record removed from the list must have its heap fields freed too, not just the node.*
-*Search/sort routines should take `const` pointers where they don't mutate. Any sort should reuse the generic comparator machinery from PS3 P5A rather than duplicating it — cross-reference and reward the reuse.*
-*Must be valgrind-clean under the same command as Problem 3.*
+*Search routines should take `const` pointers where they don't mutate.* Reference for the sorted insert
+(checked: GPAs `3.2, 3.9, 2.5, 3.9, 3.2` for ids 1–5 give `2:3.9 4:3.9 1:3.2 5:3.2 3:2.5`, Valgrind clean):
+
+```c
+Student *roster_insert_by_gpa(Student *head, Student *s)
+{
+    Student **link = &head;                       /* pointer-to-pointer technique, Lecture 03 §6 */
+    while (*link != NULL && (*link)->gpa >= s->gpa)
+        link = &(*link)->next;
+    s->next = *link;
+    *link = s;
+    return head;
+}
+```
+
+`>=` (not `>`) is what keeps equal GPAs in arrival order. *Must be valgrind-clean:*
+`valgrind --leak-check=full --error-exitcode=1 ./student_system_test`.
 
 ---
 
-### Problem 5 — Traffic Light State Machine (20 pts)
+### Problem 4 — Traffic Light State Machine (25 pts)
 
 *`-Wswitch` clean is an explicit rubric item: switch on the enum **without** a `default:` so that adding a state later produces a compile-time warning naming every unhandled switch. A `default: break;` defeats this and should cost marks even though the program works — the point of the exercise is compiler-enforced exhaustiveness.*
 *Do not compare enum values against raw integers, and do not rely on the numeric values of enumerators unless they are explicitly assigned.*
 *Car counting is the correctness trap: cars should only pass on the state that permits it, and the count must not advance during the transition/amber state. Require the test output to show a full cycle with the running total, so an off-by-one in the tick loop is visible.*
-*Transition table should be data (`struct { State from; Event ev; State to; }` or a 2-D array) rather than nested `if`s — same design point as PS3 P5B; award at most half the design credit for an `if` cascade.*
+*Transition table should be data (`struct { State from; Event ev; State to; }` or a 2-D array) rather than nested `if`s — award at most half the design credit for an `if` cascade.*
 
 ---
 

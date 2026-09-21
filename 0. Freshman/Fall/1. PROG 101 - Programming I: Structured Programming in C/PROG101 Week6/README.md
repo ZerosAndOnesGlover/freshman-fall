@@ -11,14 +11,14 @@ onward depends on this, and so does every memory bug you will spend an evening c
 
 | Day | Session | Topic |
 |---|---|---|
-| Tue | Lecture 1 | The Process Memory Map and `malloc` |
-| Wed | Lecture 2 | `realloc`, `free`, and Ownership |
-| Thu | Lecture 3 | Valgrind and the Dynamic Array |
-| Mon (Week 7) | Lab 6 | The Heap and a Dynamic Array (2 hrs, BH 215) |
+| Tue 3 Nov | Lecture 1 | The Process Memory Map and `malloc` |
+| Wed 4 Nov | Lecture 2 | `realloc`, `free`, and Ownership |
+| Thu 5 Nov | Lecture 3 | Valgrind and the Dynamic Array |
+| Mon 9 Nov (Week 7) | Lab 6 | The Heap and a Dynamic Array (2 hrs, BH 215) |
 
 **Quiz 5** at the start of Tuesday's lecture, covering **Week 5**.
 **Midterm 1** Thursday 18:00–19:30, VNC 100 — covers **Weeks 0–5**, worth **12%**.
-**Problem Set 6** released Friday, due Friday of Week 7.
+**Problem Set 6** released Friday 6 Nov, due Friday 13 Nov, 17:00.
 
 > **From this week on, every submission must be Valgrind-clean.** Zero errors, zero bytes
 > definitely lost. A leak is a defect and is graded as one.

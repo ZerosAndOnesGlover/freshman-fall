@@ -1,7 +1,8 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 12 · Problem Set 12: Software Engineering in C
 
-**Released:** Friday, Week 12 · **Due:** Friday of finals week at 17:00
+**Released:** Friday 18 December 2026, 10:00 · Week 12 (after Thursday's Lecture 3)
+**Due:** Friday 25 December 2026, 17:00 (Friday of finals week) — ⚠️ this is Christmas Day since the term moved to 21 September; see the ACADEMIC CALENDAR's open decisions
 **Total:** 100 points
 **Build with:** `gcc -Wall -Wextra -Werror -pedantic -std=c11 -g`
 **Check with:** `valgrind --leak-check=full --error-exitcode=1` and `-fsanitize=address,undefined`

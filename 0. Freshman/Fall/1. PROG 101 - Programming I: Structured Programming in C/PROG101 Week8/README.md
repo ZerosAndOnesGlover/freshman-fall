@@ -13,10 +13,10 @@ Week 8 takes everything you've built — structs, arrays, linked lists — and g
 
 | Day | Event | Topic | Duration |
 |-----|-------|-------|----------|
-| Tuesday | Lecture 1 | File I/O Basics: fopen, fread, fwrite | 50 min |
-| Wednesday | Lecture 2 | The UNIX File Model: File Descriptors | 50 min |
-| Thursday | Lecture 3 | Binary Files and Struct Serialization | 50 min |
-| Monday (Week 9) | **Lab 8** | Persistent Student Record Database | 2 hours |
+| Tue 17 Nov | Lecture 1 | File I/O Basics: fopen, fread, fwrite | 50 min |
+| Wed 18 Nov | Lecture 2 | The UNIX File Model: File Descriptors | 50 min |
+| Thu 19 Nov | Lecture 3 | Binary Files and Struct Serialization | 50 min |
+| Mon 23 Nov (Week 9) | **Lab 8** | Persistent Student Record Database | 2 hours |
 
 ---
 
@@ -32,7 +32,7 @@ PROG101 Week8/
 ├── lab/
 │   └── LAB 8 File IO Studentdb.md                  ← CSV import + binary basics + complete persistent student database
 ├── assignments/
-│   └── Problem Set 8.md                           ← 5 problems: text utilities, config parser, log analyzer, binary inventory, key-value store
+│   └── Problem Set 8.md                           ← 4 problems: text utilities, config parser, log analyzer, binary inventory (due Tue 24 Nov, 10:00)
 ├── quizzes/
 │   └── QUIZ 7.md                                  ← 10 questions + full answer key (sat Tuesday, covers Week 7)
 ├── resources/
@@ -124,13 +124,3 @@ fseek(fp, (long)index * RECORD_SIZE, SEEK_SET);  /* correct */
 ```
 
 ---
-
-## Challenge Problems (Optional)
-
-1. **Implement `wc` fully** — replicate the real Unix `wc` command including `-l`, `-w`, `-c`, `-m` flags, reading from stdin if no filename is given (so it works with pipes: `cat file | ./wc -l`).
-
-2. **A simple B-tree-lite index** — extend the Week 8 binary database with a separate in-memory sorted array of `{id, index}` pairs, rebuilt on load, enabling O(log n) lookup by id via binary search instead of the linear scan `sdb_find_by_id` currently uses.
-
-3. **Crash-safe writes** — modify the student database so that `sdb_update_gpa` writes to a temporary shadow location first, then atomically renames it into place (or uses a write-ahead log pattern), ensuring a crash mid-write never corrupts a record. This is a simplified taste of the ARIES recovery algorithm covered in Year 3's Database Systems course.
-
-4. **A tiny `tar`-like archiver** — write a program that packs multiple files into one archive file (storing each file's name, size, and content sequentially) and a second program that unpacks the archive back into individual files.

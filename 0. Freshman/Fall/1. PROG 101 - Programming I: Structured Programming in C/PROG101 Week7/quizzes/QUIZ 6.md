@@ -1,7 +1,7 @@
 # PROG 101 · Quiz 6
 ## Week 7, Tuesday — In-Class Assessment
 
-**Administered:** start of Week 7, Lecture 1 (Tuesday)
+**Date:** Tuesday 10 November 2026 · 10:00–10:10 (start of Week 7, Lecture 1)
 **Covers:** Week 6 material — dynamic memory, ownership, Valgrind
 **Duration:** 10 minutes · **Format:** Written, closed book · **Total: 20 points**
 
@@ -11,24 +11,24 @@
 
 **A1.** `malloc(16)` returns a non-NULL pointer. The 16 bytes are:
 
-&nbsp;&nbsp;(a) all zero (b) **indeterminate** (c) all `0xFF` (d) copied from the previous allocation
+&nbsp;&nbsp;(a) all zero (b) indeterminate (c) all `0xFF` (d) copied from the previous allocation
 
 **A2.** `realloc(p, n)` returns NULL. What is the state of the original block?
 
-&nbsp;&nbsp;(a) freed (b) **still allocated and valid** (c) partially freed (d) undefined
+&nbsp;&nbsp;(a) freed (b) still allocated and valid (c) partially freed (d) undefined
 
 **A3.** `free(NULL)` is:
 
-&nbsp;&nbsp;(a) undefined behaviour (b) a crash (c) **a guaranteed no-op** (d) implementation-defined
+&nbsp;&nbsp;(a) undefined behaviour (b) a crash (c) a guaranteed no-op (d) implementation-defined
 
 **A4.** Which does `calloc(n, size)` do that `malloc(n * size)` does not?
 
-&nbsp;&nbsp;(a) allocate faster (b) **zero the memory and check the multiplication for overflow**
+&nbsp;&nbsp;(a) allocate faster (b) zero the memory and check the multiplication for overflow
 (c) allow resizing later (d) register the block for automatic release
 
 **A5.** A growable array doubling its capacity gives an amortised append cost of:
 
-&nbsp;&nbsp;(a) O(log n) (b) **O(1)** (c) O(n) (d) O(n log n)
+&nbsp;&nbsp;(a) O(log n) (b) O(1) (c) O(n) (d) O(n log n)
 
 ---
 

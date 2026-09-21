@@ -3,7 +3,7 @@
 
 **Graded: 20 points**
 **Duration:** 2 hours
-**Lab session:** Monday of Week 8 — sat after this week's Tue–Thu lectures, and covers Week 7.
+**Date:** Monday 16 November 2026 · 15:00–16:50 · Lab Section (Week 8) — covers Week 7 (Lectures 01–03)
 **Submission:** Push to Git, show TA before leaving
 
 ---
@@ -212,17 +212,6 @@ Node *list_remove_duplicates(Node *head);
 /* Return a deep copy of the list (new nodes, same values, same order). */
 Node *list_copy(const Node *head);
 
-/* Merge two SORTED lists into one sorted list. Consumes both input lists
- * (their nodes are reused, not copied) — do not use list_a or list_b after this call. */
-Node *list_merge_sorted(Node *head_a, Node *head_b);
-
-/* Detect if the list contains a cycle (Floyd's cycle detection). */
-bool list_has_cycle(const Node *head);
-
-/* Find the middle node of the list (slow/fast pointer technique).
- * For even length, return the FIRST of the two middle nodes. */
-Node *list_find_middle(Node *head);
-
 /* === Cleanup === */
 
 /* Free every node in the list. Returns NULL (the new, empty head). */
@@ -239,20 +228,8 @@ void list_print(const Node *head);   /* Prints: 10 -> 20 -> 30 -> NULL */
 
 - Every insertion/deletion function must correctly handle the empty-list case
 - `list_free` must not leak any node — verify with Valgrind
-- `list_merge_sorted` must not allocate any new nodes — it relinks existing nodes
-- `list_has_cycle` and `list_find_middle` use the classic slow/fast (tortoise and hare) two-pointer technique:
-
-```c
-bool list_has_cycle(const Node *head) {
-    const Node *slow = head, *fast = head;
-    while (fast != NULL && fast->next != NULL) {
-        slow = slow->next;
-        fast = fast->next->next;
-        if (slow == fast) return true;   /* they met — cycle detected */
-    }
-    return false;   /* fast reached NULL — no cycle */
-}
-```
+- `list_copy` allocates new nodes; `list_reverse` and `list_remove_duplicates` only relink existing ones
+  (freeing the removed duplicates)
 
 ### `test_linkedlist.c`
 
@@ -264,10 +241,10 @@ Write comprehensive tests. Structure similar to previous weeks' test suites:
 
 static int passed = 0, failed = 0;
 
-#define CHECK(desc, cond) do { \
-    if (cond) { printf("  PASS: %s\n", desc); passed++; } \
-    else      { printf("  FAIL: %s\n", desc); failed++; } \
-} while (0)
+static void check(const char *desc, int cond) {
+    if (cond) { printf("  PASS: %s\n", desc); passed++; }
+    else      { printf("  FAIL: %s\n", desc); failed++; }
+}
 
 void test_insertion(void) {
     printf("=== Insertion ===\n");
@@ -276,20 +253,20 @@ void test_insertion(void) {
     head = list_insert_front(head, 20);
     head = list_insert_front(head, 10);
     /* head: 10 -> 20 -> 30 */
-    CHECK("length after 3 inserts", list_length(head) == 3);
-    CHECK("first element", list_get_at(head, 0) == 10);
-    CHECK("last element",  list_get_at(head, 2) == 30);
+    check("length after 3 inserts", list_length(head) == 3);
+    check("first element", list_get_at(head, 0) == 10);
+    check("last element",  list_get_at(head, 2) == 30);
 
     head = list_insert_end(head, 40);
-    CHECK("insert_end works", list_get_at(head, 3) == 40);
+    check("insert_end works", list_get_at(head, 3) == 40);
 
     head = list_insert_at(head, 2, 25);
     /* head: 10 -> 20 -> 25 -> 30 -> 40 */
-    CHECK("insert_at middle", list_get_at(head, 2) == 25);
-    CHECK("length after insert_at", list_length(head) == 5);
+    check("insert_at middle", list_get_at(head, 2) == 25);
+    check("length after insert_at", list_length(head) == 5);
 
     head = list_free(head);
-    CHECK("head is NULL after free", head == NULL);
+    check("head is NULL after free", head == NULL);
 }
 
 void test_deletion(void) {
@@ -306,32 +283,16 @@ void test_reverse(void) {
     /* TODO: test reverse on empty, single-element, and multi-element lists */
 }
 
-void test_merge_sorted(void) {
-    /* TODO: build two sorted lists, merge, verify single sorted result */
-}
-
-void test_cycle_detection(void) {
-    /* TODO: build a list WITHOUT a cycle — verify has_cycle returns false.
-     * Build a list WITH a manually-constructed cycle — verify true.
-     * WARNING: after testing a cyclic list, you cannot safely list_free it
-     *          with a naive loop (it would loop forever). Break the cycle
-     *          first, then free, OR write the test to leak intentionally
-     *          with a comment explaining why (acceptable for THIS test only).
-     */
-}
-
-void test_find_middle(void) {
-    /* TODO: test odd length (5 elements), even length (4 elements),
-     * single element, and verify against the "first of two middles" rule */
+void test_copy_and_duplicates(void) {
+    /* TODO: copy a list, change the original, verify the copy is unchanged;
+     * remove duplicates from {3, 1, 3, 2, 1} -> {3, 1, 2}, and from an empty list */
 }
 
 int main(void) {
     test_insertion();
     test_deletion();
     test_reverse();
-    test_merge_sorted();
-    test_cycle_detection();
-    test_find_middle();
+    test_copy_and_duplicates();
 
     printf("\n=== Results: %d passed, %d failed ===\n", passed, failed);
     return failed > 0 ? 1 : 0;
@@ -344,7 +305,7 @@ int main(void) {
 valgrind --leak-check=full ./test_linkedlist
 ```
 
-Must report **0 errors, 0 leaks** (except intentionally in the cycle test, which you must document — or better, break the cycle before freeing to keep the whole suite clean).
+Must report **0 errors, 0 leaks**.
 
 ---
 
@@ -393,7 +354,7 @@ clean:
 |------|--------|---------|
 | 1: Struct layout investigation | 4 | Correct predictions/diagrams for all 5 structs |
 | 2: Shape system | 4 | All 4 shape types, correct area/perimeter, -Wswitch clean |
-| 3: Linked list implementation | 6 | All functions correct including cycle/middle detection |
+| 3: Linked list implementation | 6 | All functions correct, including the empty-list cases |
 | 3: Test suite | 4 | Comprehensive coverage, all tests pass |
 | 3: Valgrind clean | 2 | 0 errors, 0 leaks |
 | **Total** | **20** | |

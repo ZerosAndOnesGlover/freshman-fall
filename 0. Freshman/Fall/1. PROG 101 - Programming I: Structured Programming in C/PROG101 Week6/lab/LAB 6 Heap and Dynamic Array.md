@@ -2,7 +2,7 @@
 ## Week 6 · Lab 6: The Heap and a Dynamic Array
 
 **Duration:** 2 hours · **Points:** 20 · **Room:** BH 215
-**Lab session:** Monday of Week 7 — sat after this week's Tue–Thu lectures, and covers Week 6.
+**Date:** Monday 9 November 2026 · 15:00–16:50 · Lab Section (Week 7) — covers Week 6 (Lectures 01–03)
 
 **Build with:** `gcc -Wall -Wextra -Werror -pedantic -std=c11 -g`
 **Check with:** `valgrind --leak-check=full --show-leak-kinds=all --error-exitcode=1`
@@ -135,7 +135,8 @@ void   da_print(const DynArray *da);
 /* Return true if da1 and da2 contain the same elements in the same order. */
 bool   da_equal(const DynArray *da1, const DynArray *da2);
 
-/* Sort elements in ascending order (use qsort internally). */
+/* Sort elements in ascending order with insertion sort (Week 4) -- qsort needs a
+ * comparator function pointer, which is Week 11. */
 void   da_sort(DynArray *da);
 
 #endif

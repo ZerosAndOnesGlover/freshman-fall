@@ -1,7 +1,7 @@
 # PROG 101 · Midterm 1
 ## Review Guide and Practice Exam
 
-**Exam:** Week 6, Thursday · 18:00–19:30 · VNC 100
+**Exam:** Wednesday 4 November 2026 · 18:00–19:30 · VNC 100 (Week 6)
 **Duration:** 90 minutes · **Format:** Written, closed book. One handwritten A4 sheet, one side.
 **Covers:** Weeks 0–5 · **Weight:** 12.5% of final grade
 
@@ -118,11 +118,11 @@ int main(void){ a(); printf("done\n"); return 0; }
 
 State the maximum number of stack frames alive at once.
 
-**B3 (6 pts).** What does this print, and why is it not 25?
+**B3 (6 pts).** What does this print? Explain both numbers.
 
 ```c
-#define SQUARE(x) x * x
-printf("%d\n", SQUARE(2+3));
+int a[5] = {1, 2, 3};
+printf("%d %zu\n", a[3], sizeof a / sizeof a[0]);
 ```
 
 **B4 (7 pts).** For each, say whether it compiles:
@@ -247,9 +247,9 @@ not). GCC warns `-Wsequence-point`.
 **B2 (6 pts).** Output: **`a b c B A done`**. Maximum frames alive: **4** — `main`, `a`, `b`, `c`,
 all live while `c` runs. Verified.
 
-**B3 (6 pts).** Prints **11**. `SQUARE(2+3)` expands textually to `2+3 * 2+3`, which is
-`2 + 6 + 3`. The parameter is not parenthesised. The fix is `((x) * (x))` — **both** the parameter
-and the whole body need parentheses, and they fix different bugs.
+**B3 (6 pts).** Prints **`0 5`** (verified). An array initialiser with fewer values than elements sets the
+rest to zero, so `a[3]` is `0`; `sizeof a / sizeof a[0]` is `20 / 4 = 5` because `a` here is the array itself,
+not a decayed pointer. *(2026-09-21: replaced a `SQUARE(x)` macro-trap question — function-like macros are Week 10.)*
 
 **B4 (7 pts).** (a) **compiles** — the pointer is not const. (b) **rejected** — the target is const
 through `p`. (c) **rejected** — the pointer is const. (d) **compiles** — only the pointer is const.

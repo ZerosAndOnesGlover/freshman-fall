@@ -2,6 +2,7 @@
 ## Week 11, Tuesday — In-Class Assessment
 
 **Duration:** 10 minutes · **Format:** Written, closed book
+**Date:** Tuesday 8 December 2026 · 10:00–10:10 (start of Week 11, Lecture 1)
 **Covers:** Week 10 — the preprocessor and macros
 
 ---

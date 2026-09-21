@@ -1,14 +1,18 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 8 · Problem Set 8
 
-**Released:** End of Week 8 Thursday
-**Due:** Before Week 9 Lecture 1
-**Directory:** `$PROG101/week8/ps8/`
-**Total:** 100 points
+**Released:** Thursday 19 November 2026, 11:00 (after Week 8 Lecture 3)
+**Due:** Tuesday 24 November 2026, 10:00 (start of Week 9 Lecture 1) — late penalty from 10:01
+**Directory:** `"$PROG101/week8/ps8"` in the Freshman Fall repo
+**Total:** 100 points · **Expected time:** about 4 hours
+
+**What this uses:** Weeks 0–8 — this week's `FILE *` I/O, `fgets`/`fprintf`, `argc`/`argv` as the Lecture 01 and
+Lecture 02 examples use them, low-level descriptors, `fseek`/`ftell`, and binary records with `fread`/`fwrite`.
+(Revised 2026-09-21: the key-value store problem was removed to fit the five-day window.)
 
 ---
 
-## Problem 1: Text File Utilities (20 pts)
+## Problem 1: Text File Utilities (25 pts)
 
 Create `text_utils.c`. Implement a small suite of command-line text file tools, dispatched by `argv[1]`:
 
@@ -55,7 +59,7 @@ Provide a test file `sample.txt` (at least 20 lines, some duplicated, some conta
 
 ---
 
-## Problem 2: A Configuration File Parser (15 pts)
+## Problem 2: A Configuration File Parser (20 pts)
 
 Create `config_parser.c`/`config_parser.h`. Parse simple INI-style configuration files:
 
@@ -122,7 +126,7 @@ Provide a sample `.ini` file matching the example above and demonstrate every ac
 
 ---
 
-## Problem 3: Log File Analyzer (25 pts)
+## Problem 3: Log File Analyzer (30 pts)
 
 Create `log_analyzer.c`. Process a server log file with this format (one entry per line):
 
@@ -260,62 +264,13 @@ Write `main()` in a separate `inventory_demo.c` that:
 
 ---
 
-## Problem 5: A Simple Key-Value Store (15 pts)
-
-Create `kvstore.c`/`kvstore.h`. Implement a persistent key-value store backed by an append-only log file — this is the same principle underlying real databases (LSM trees, write-ahead logs from Year 3's curriculum, simplified here).
-
-```c
-#define KV_KEY_LEN 32
-#define KV_VALUE_LEN 128
-
-/* Every "set" operation appends a new record. The LATEST record for a
- * given key (scanning from the end) is the current value.
- * A tombstone value is used to represent deletion. */
-
-typedef struct {
-    char key[KV_KEY_LEN];
-    char value[KV_VALUE_LEN];
-    int  is_tombstone;   /* 1 = this is a deletion marker for 'key' */
-} KVRecord;
-
-/* Open (or create) the key-value store file. */
-FILE *kv_open(const char *filename);
-void  kv_close(FILE *fp);
-
-/* Append a set operation. O(1) — always appends, never searches. */
-int   kv_set(FILE *fp, const char *key, const char *value);
-
-/* Append a tombstone (delete) record for the key. */
-int   kv_delete(FILE *fp, const char *key);
-
-/* Look up the CURRENT value for a key by scanning from the END of the
- * file backward (most recent record wins). Returns 0 and fills out_value
- * if found and not tombstoned. Returns -1 if not found or was deleted. */
-int   kv_get(FILE *fp, const char *key, char out_value[KV_VALUE_LEN]);
-
-/* Compact the store: scan all records, keep only the latest non-tombstoned
- * value for each unique key, write a fresh minimal file.
- * Returns the count of unique live keys after compaction. */
-int   kv_compact(FILE *fp, const char *new_filename);
-
-/* Print every LIVE key-value pair (after resolving to latest values). */
-void  kv_print_all(FILE *fp);
-```
-
-### Requirements
-
-- `kv_get` must scan backward from the end of the file (use `fseek` with `SEEK_END` and negative offsets, moving one record at a time toward the start) — this correctly finds the most recent value without needing an in-memory index
-- Demonstrate: set several keys, overwrite one key's value (verify `kv_get` returns the NEW value), delete a key (verify `kv_get` returns not-found), compact, verify the compacted file has exactly the right number of unique live keys
-
----
-
 ## Makefile
 
 ```makefile
 CC     = gcc
 CFLAGS = -Wall -Wextra -Werror -g -std=c11
 
-PROGRAMS = text_utils config_test log_analyzer inventory_demo kv_test
+PROGRAMS = text_utils config_test log_analyzer inventory_demo
 
 all: $(PROGRAMS)
 
@@ -323,9 +278,6 @@ config_test: config_test.o config_parser.o
 	$(CC) $(CFLAGS) -o $@ $^
 
 inventory_demo: inventory_demo.o inventory.o
-	$(CC) $(CFLAGS) -o $@ $^
-
-kv_test: kv_test.o kvstore.o
 	$(CC) $(CFLAGS) -o $@ $^
 
 %: %.c
@@ -358,11 +310,10 @@ All programs performing dynamic allocation or binary file writes must be Valgrin
 
 | Problem | Points | Key Criteria |
 |---------|--------|-------------|
-| P1: Text file utilities | 20 | All 5 subcommands correct, matches Unix tool behavior |
-| P2: Config parser | 15 | Correct section/key/value parsing, type conversions |
-| P3: Log analyzer | 25 | Correct parsing, all analytics correct, malformed lines handled |
+| P1: Text file utilities | 25 | All 5 subcommands correct, matches Unix tool behavior |
+| P2: Config parser | 20 | Correct section/key/value parsing, type conversions |
+| P3: Log analyzer | 30 | Correct parsing, all analytics correct, malformed lines handled |
 | P4: Binary inventory | 25 | All CRUD + business logic correct, Valgrind-clean |
-| P5: Key-value store | 15 | Correct backward scan, correct compaction |
 | **Total** | **100** | |
 
 ---
@@ -397,18 +348,18 @@ These recur in all five problems and are where most marks are lost. Check each e
 
 ---
 
-### Problem 1 — Text File Utilities (20 pts)
+### Problem 1 — Text File Utilities (25 pts)
 
 *Behaviour should match the Unix tools it imitates. The boundary cases that separate a working implementation from an approximate one: an **empty file** (0 lines, 0 words, 0 bytes — not 1 line); a file whose **last line lacks a newline** (still counts as a line); **CRLF** input (`\r` must not be counted as a word character); and lines longer than the read buffer (must not be silently truncated or counted twice).*
 *`wc`-style counting: a "word" is a maximal run of non-whitespace. The usual bug is counting *transitions into* whitespace, which miscounts when the file ends mid-word or begins with whitespace.*
 
-### Problem 2 — Configuration File Parser (15 pts)
+### Problem 2 — Configuration File Parser (20 pts)
 
 *Grade the parsing rules as a spec: comments, blank lines, `[section]` headers, `key = value` with surrounding whitespace trimmed on **both** key and value, and values containing `=` (only the **first** `=` separates). That last one is the discriminating test — `url = http://x/?a=b` must keep the whole RHS.*
 *Type conversion must **detect failure**, not silently yield 0 — `strtol`/`strtod` with `endptr` checking, as in PS0 Problem 3. A config reader that turns a typo into 0 is worse than one that errors.*
 *Unterminated `[section` and duplicate keys need a documented policy (error vs last-wins). Either is fine; silence is not.*
 
-### Problem 3 — Log File Analyzer (25 pts)
+### Problem 3 — Log File Analyzer (30 pts)
 
 *"Malformed lines handled" is an explicit rubric item: the analyzer must skip or report bad lines and continue, never abort or miscount. Seed the test data with a truncated line, an empty line, and a line with the wrong field count.*
 *Fixed-width `%s` in `sscanf` is mandatory — `sscanf(line, "%s", buf)` with an unbounded `buf` is an exploitable overflow. Require `%31s` style width limits matched to the buffer, and check the **return value** of `sscanf` against the expected field count; that return is how malformed lines are detected in the first place.*
@@ -420,13 +371,5 @@ These recur in all five problems and are where most marks are lost. Check each e
 *Portability caveat worth a bonus mark if raised: `fwrite`ing a struct directly embeds this platform's **padding, endianness, and type sizes**. The file is not portable to a different ABI. (Cross-reference PS4 P1A — the same padding that cost 8 bytes per record is now baked into the file format.) Serialising field-by-field avoids it.*
 *Never `fwrite` a struct containing a **pointer** — the address is meaningless once reloaded. If any record holds a `char *`, the design is wrong; it must be a fixed `char[N]`.*
 *Deletion policy must be explicit — tombstone flag vs. compaction — and CRUD must round-trip: write, close, reopen, read, and compare. Valgrind-clean is a rubric item.*
-
-### Problem 5 — Key-Value Store (15 pts)
-
-*This is an append-only log with last-write-wins semantics. The **backward scan** is the point: reading from the end and taking the first match found gives the newest value without maintaining an index. A forward scan that keeps overwriting a candidate is also correct but does unnecessary work — accept it, note the difference.*
-*Compaction must preserve exactly the live set: for each distinct key, the most recent value; deleted keys dropped entirely. Test the sequence `put a=1; put a=2; del a; put a=3` → after compaction `a=3` must survive as a single entry. A compactor that keeps the *first* occurrence instead of the last inverts the semantics and is the common failure.*
-*Compaction must be crash-safe in principle — write to a temp file, then `rename()` (atomic on POSIX) — rather than truncating the live file in place. Mention it; award a bonus mark, don't require it.*
-
----
 
 *PROG 101 · Week 8 · Problem Set 8 · © CSE Department*

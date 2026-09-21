@@ -1,7 +1,8 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 11 · Problem Set 11: The C Standard Library and Generic Programming
 
-**Released:** Friday, Week 11 · **Due:** Friday, Week 12 at 17:00
+**Released:** Friday 11 December 2026, 10:00 · Week 11 (after Thursday's Lecture 3)
+**Due:** Friday 18 December 2026, 17:00 · Week 12 — late penalty from 17:01
 **Total:** 100 points
 **Build with:** `gcc -Wall -Wextra -Werror -pedantic -std=c11 -g`
 **Check with:** `valgrind --leak-check=full --error-exitcode=1`

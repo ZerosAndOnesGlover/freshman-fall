@@ -1,8 +1,11 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 5 · Problem Set 5: Pointers I
 
-**Released:** Friday, Week 5 · **Due:** Friday, Week 6 at 17:00
-**Total:** 100 points
+**Released:** Friday 30 October 2026, 10:00 · Week 5 (after Thursday's Lecture 3)
+**Due:** Friday 6 November 2026, 17:00 · Week 6 — late penalty from 17:01
+**Submission:** Commit to the Freshman Fall repo under `"$PROG101/week5/ps5"`; submit the commit hash on the course portal.
+**Total:** 100 points · **Expected time:** about 4–5 hours
+**What this uses:** Weeks 0–5. **Not needed:** function pointers (Week 11), `malloc` (Week 6), structs (Week 7).
 **Build with:** `gcc -Wall -Wextra -Werror -pedantic -std=c11`
 **Check with:** `valgrind --leak-check=full --error-exitcode=1` and `-fsanitize=address,undefined`
 
@@ -207,8 +210,8 @@ is (`*(a + i)`), not a claim that pointer style is better.
 size_t p_strlen(const char *s);
 void   p_reverse(int *a, size_t n);
 int   *p_find(int *a, size_t n, int target);          /* NULL if absent          */
-size_t p_count_if(const int *a, size_t n, int (*pred)(int));
-size_t p_filter(int *a, size_t n, int (*pred)(int));  /* returns new length      */
+size_t p_count_between(const int *a, size_t n, int lo, int hi);   /* lo <= x <= hi */
+size_t p_remove_negatives(int *a, size_t n);         /* returns new length      */
 void   p_rotate(int *a, size_t n, size_t k);          /* rotate LEFT by k, O(n)  */
 ```
 
@@ -216,7 +219,8 @@ void   p_rotate(int *a, size_t n, size_t k);          /* rotate LEFT by k, O(n) 
 
 1. **No `[]` in any function body.** Its use costs the marks for that function.
 2. Every function must be correct for `n == 0` and `n == 1`.
-3. `p_filter` must preserve relative order and run in **one pass**, O(n).
+3. `p_remove_negatives` must preserve relative order and run in **one pass**, O(n): a write pointer
+   trailing a read pointer.
 4. `p_rotate` must be O(n) time and **O(1) extra space**. A temporary array is not acceptable.
    `k` may exceed `n`.
 5. `const` where the function does not modify — the signatures above already show where.
@@ -227,9 +231,9 @@ void   p_rotate(int *a, size_t n, size_t k);          /* rotate LEFT by k, O(n) 
 
 | Component | Points |
 |---|---|
-| `p_strlen`, `p_find`, `p_count_if` correct | 6 |
+| `p_strlen`, `p_find`, `p_count_between` correct | 6 |
 | `p_reverse` correct incl. even/odd/n≤1 | 4 |
-| `p_filter` correct, order-preserving, one pass | 6 |
+| `p_remove_negatives` correct, order-preserving, one pass | 6 |
 | `p_rotate` O(n) time and O(1) space, handles k > n | 6 |
 | Tests cover the required edge cases | 3 |
 
@@ -411,17 +415,17 @@ int *p_find(int *a, size_t n, int target)
     return NULL;
 }
 
-size_t p_count_if(const int *a, size_t n, int (*pred)(int))
+size_t p_count_between(const int *a, size_t n, int lo, int hi)
 {
     size_t c = 0;
-    for (const int *p = a; p != a + n; p++) if (pred(*p)) c++;
+    for (const int *p = a; p != a + n; p++) if (*p >= lo && *p <= hi) c++;
     return c;
 }
 
-size_t p_filter(int *a, size_t n, int (*pred)(int))
+size_t p_remove_negatives(int *a, size_t n)
 {
     int *w = a;
-    for (int *r = a; r != a + n; r++) if (pred(*r)) *w++ = *r;
+    for (int *r = a; r != a + n; r++) if (*r >= 0) *w++ = *r;
     return (size_t)(w - a);
 }
 
@@ -437,7 +441,9 @@ void p_rotate(int *a, size_t n, size_t k)
 ```
 
 **Verified: 16 checks passing, Valgrind clean** — including `n = 0`, `n = 1`, even and odd lengths,
-all-kept and none-kept filters, and `k > n`.
+all-kept and none-kept removals, and `k > n`. (2026-09-21: `p_count_if`/`p_filter` took
+function-pointer predicates — Week 11 — and were replaced; checked: `{5,-1,3,-7,0,8}` gives
+`p_count_between(…,0,5) = 3` and `p_remove_negatives` → `5 3 0 8`, length 4.)
 
 **Marking notes.**
 
@@ -449,7 +455,7 @@ all-kept and none-kept filters, and `k > n`.
 - **`n == 0` must be guarded before `k %= n`** — otherwise it is a division by zero, which is
   undefined behaviour in the very line meant to make the function safe. This is the same shape as
   Week 6's `size != 0` guard before `SIZE_MAX / size`.
-- **`p_filter` must be one pass** with a write cursor trailing a read cursor. Removing elements one
+- **`p_remove_negatives` must be one pass** with a write cursor trailing a read cursor. Removing elements one
   at a time with a shift is Θ(n²) — cap at 3 of 6 and name the cost.
 - **`p != a + n` rather than `p < a + n`.** Both work for arrays; `!=` is the convention that
   generalises. Do not deduct for `<`.

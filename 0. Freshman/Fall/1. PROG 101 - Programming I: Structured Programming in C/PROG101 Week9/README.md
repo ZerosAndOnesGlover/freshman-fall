@@ -13,10 +13,10 @@ Week 9 introduces recursion as a fundamental problem-solving tool — not a curi
 
 | Day | Event | Topic | Duration |
 |-----|-------|-------|----------|
-| Tuesday | Lecture 1 | Recursion Fundamentals | 50 min |
-| Wednesday | Lecture 2 | Divide-and-Conquer and Backtracking | 50 min |
-| Thursday | Lecture 3 | Recursive Data Structures: Binary Trees | 50 min |
-| Monday (Week 10) | **Lab 9** | Recursion + Sorting + Complete BST Library | 2 hours |
+| Tue 24 Nov | Lecture 1 | Recursion Fundamentals | 50 min |
+| Wed 25 Nov | Lecture 2 | Divide-and-Conquer and Backtracking | 50 min |
+| Thu 26 Nov | Lecture 3 | Recursive Data Structures: Binary Trees | 50 min |
+| Mon 30 Nov (Week 10) | **Lab 9** | Recursion + Sorting + Complete BST Library | 2 hours |
 
 ---
 
@@ -136,13 +136,3 @@ if (root->left->data < root->data && root->right->data > root->data) ...
 ```
 
 ---
-
-## Challenge Problems (Optional)
-
-1. **Iterative traversals** — implement `inorder`, `preorder`, and `postorder` **without recursion**, using an explicit stack (array + top index) that you manage yourself. This reveals exactly what the call stack was doing for you all along.
-
-2. **AVL tree rotations** — implement single and double rotations (left, right, left-right, right-left) and use them to keep a BST height-balanced after every insertion. Verify with `tree_is_balanced` from Lab 9 that the tree never degenerates, even under sorted-order insertion.
-
-3. **Expression tree evaluator** — build a binary tree representing an arithmetic expression (operators as internal nodes, operands as leaves) from a prefix or postfix token sequence, then evaluate it recursively.
-
-4. **The Tower of Hanoi** — implement the classic recursive solution, print the sequence of moves, and prove (by counting) that it requires exactly `2ⁿ - 1` moves for `n` disks. Then explain, using the recursion tree, why this count is unavoidable.

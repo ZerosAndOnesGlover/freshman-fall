@@ -1,7 +1,7 @@
 # PROG 101 · Final Exam
 ## Review Guide
 
-**Exam:** Finals week · **Duration:** 120 minutes
+**Exam:** Thursday 24 December 2026 · 14:00 · VNC 100 (finals week) · **Duration:** 120 minutes — ⚠️ the Assessment Calendar books 14:00–16:30 (150 min); to be reconciled
 **Format:** Written, closed book. One handwritten A4 sheet, **both sides**.
 **Covers:** Weeks 0–12, comprehensive · **Weight:** 20% of final grade
 

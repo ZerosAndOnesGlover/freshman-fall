@@ -13,10 +13,10 @@ Week 7 is where C stops being about individual values and starts being about **d
 
 | Day | Event | Topic | Duration |
 |-----|-------|-------|----------|
-| Tuesday | Lecture 1 | Structures: Composite Types and Memory Layout | 50 min |
-| Wednesday | Lecture 2 | Unions, Enumerations, and Bit Fields | 50 min |
-| Thursday | Lecture 3 | Linked Lists: Structs and Pointers Combined | 50 min |
-| Monday (Week 8) | **Lab 7** | Struct Layout + Tagged Unions + Linked List Library | 2 hours |
+| Tue 10 Nov | Lecture 1 | Structures: Composite Types and Memory Layout | 50 min |
+| Wed 11 Nov | Lecture 2 | Unions, Enumerations, and Bit Fields | 50 min |
+| Thu 12 Nov | Lecture 3 | Linked Lists: Structs and Pointers Combined | 50 min |
+| Mon 16 Nov (Week 8) | **Lab 7** | Struct Layout + Tagged Unions + Linked List Library | 2 hours |
 
 ---
 
@@ -32,7 +32,7 @@ PROG101 Week7/
 ├── lab/
 │   └── LAB 7 Structs Linkedlist.md                   ← Layout investigation + shapes + full linked list
 ├── assignments/
-│   └── Problem Set 7.md                             ← 5 problems: layout, tagged unions, doubly linked list, student system, state machine
+│   └── Problem Set 7.md                             ← 4 problems: layout, tagged unions, student system, state machine (due Tue 17 Nov, 10:00)
 ├── quizzes/
 │   └── QUIZ 6.md                                    ← 10 questions + full answer key (sat Tuesday, covers Week 6)
 ├── resources/
@@ -132,13 +132,3 @@ head = list_insert_front(head, 5);  /* CORRECT */
 ```
 
 ---
-
-## Challenge Problems (Optional)
-
-1. **In-place linked list sort** — implement merge sort on a singly linked list (split into two halves using slow/fast pointers, recursively sort each half, merge). O(n log n) time, O(log n) space (recursion stack only — no array conversion allowed).
-
-2. **LRU Cache** — combine a doubly linked list with a hash table (conceptually — you can use a simple array-based lookup for this exercise) to implement a Least Recently Used cache with O(1) `get` and `put`.
-
-3. **Polynomial as a Linked List** — represent a polynomial as a linked list of `{coefficient, exponent}` nodes sorted by descending exponent. Implement addition and multiplication of two polynomials.
-
-4. **Union-Based Small Vector Optimization** — design a struct that stores up to 4 integers inline (in a union with a fixed array) but falls back to a heap-allocated array for more than 4 — a simplified version of "small vector optimization" used in real C++ standard libraries.

@@ -11,10 +11,10 @@ works, and find out why when it does not.
 
 | Day | Session | Topic |
 |---|---|---|
-| Tue | Lecture 1 | Style, Readability, and Structure |
-| Wed | Lecture 2 | Testing in C |
-| Thu | Lecture 3 | Debugging |
-| Mon (Week 13) | Lab 12 | Refactor, Test, Debug (2 hrs, BH 215) |
+| Tue 15 Dec | Lecture 1 | Style, Readability, and Structure |
+| Wed 16 Dec | Lecture 2 | Testing in C |
+| Thu 17 Dec | Lecture 3 | Debugging |
+| Mon 21 Dec (Week 13) | Lab 12 | Refactor, Test, Debug (2 hrs, BH 215) |
 
 **Quiz 11** at the start of Tuesday's lecture, covering **Week 11**.
 **Problem Set 12** released Friday, due Friday of finals week.

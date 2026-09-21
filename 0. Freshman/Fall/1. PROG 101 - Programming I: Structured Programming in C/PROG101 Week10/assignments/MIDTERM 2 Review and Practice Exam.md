@@ -1,7 +1,7 @@
 # PROG 101 · Midterm 2
 ## Review Guide and Practice Exam
 
-**Exam:** Week 10, Wednesday · 18:00–19:30 · VNC 100
+**Exam:** Tuesday 1 December 2026 · 18:00–19:30 · VNC 100 (Week 10; the calendar's date — Wednesday evening is MATH 141's midterm)
 **Duration:** 90 minutes · **Format:** Written, closed book. One handwritten A4 sheet, one side.
 **Covers:** Weeks 6–9 · **Weight:** 12.5% of final grade
 
