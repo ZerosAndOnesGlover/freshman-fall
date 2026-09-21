@@ -1,5 +1,5 @@
 # MATH 151 · Discrete Mathematics for Computer Science
-## Lecture 4.2 (L13) — Set Identities and Proof Techniques
+## Lecture 13 (L13) — Set Identities and Proof Techniques
 ### Thursday, Week 4
 
 **Date:** Thursday 22 October 2026 · 13:00–13:50 · Week 4
@@ -290,4 +290,4 @@ $x \in A$ means $x$ is an element of $A$. $X \subseteq A$ means every element of
 
 ---
 
-*Next: Lecture 4.3 — Power Sets, Cartesian Products, and Inclusion-Exclusion*
+*Next: Lecture 14 — Power Sets, Cartesian Products, and Inclusion-Exclusion*

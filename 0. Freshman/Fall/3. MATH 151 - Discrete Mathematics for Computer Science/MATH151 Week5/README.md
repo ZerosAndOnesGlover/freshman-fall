@@ -44,9 +44,9 @@ MATH151_Week5/
 ├── README.md
 │
 ├── lectures/
-│   ├── L15 Functions and Properties.md      ← Lecture 16 (Monday)
-│   ├── L16 Composition and Inverses.md      ← Lecture 17 (Thursday)
-│   └── L17 Bijections and Cardinality.md    ← Lecture 18 (Friday)
+│   ├── L15 Functions and Properties.md      ← Lecture 15 (Monday 26 Oct)
+│   ├── L16 Composition and Inverses.md      ← Lecture 16 (Thursday 29 Oct)
+│   └── L17 Bijections and Cardinality.md    ← Lecture 17 (Friday 30 Oct)
 │
 ├── assignments/
 │   └── PS 5 Functions.md
@@ -74,12 +74,12 @@ MATH151_Week5/
 
 | Day | Event | Topic |
 |---|---|---|
-| Monday | Quiz 5 (15 min) | Covers Week 4: sets, identities, power sets, products |
-| Monday | Lecture 16 | Functions as relations; injective, surjective, bijective |
-| Thursday | Lecture 17 | Composition of functions; inverse functions |
-| Wednesday | Lab 5 | Function workshop: proofs, composition, Python function analysis |
-| Friday | Lecture 18 | Bijections, cardinality, and counting with functions |
-| Friday | PS 5 Released | Due Week 6 Friday |
+| Monday 26 Oct, 13:00 | Quiz 5 (15 min) | Covers Week 4: sets, identities, power sets, products |
+| Monday 26 Oct, 13:00 | Lecture 15 | Functions as relations; injective, surjective, bijective |
+| Thursday 29 Oct, 13:00 | Lecture 16 | Composition of functions; inverse functions |
+| Friday 30 Oct, 13:00 | Lecture 17 | Bijections, cardinality, and counting with functions |
+| Friday 30 Oct, 14:00 | PS 5 released | Due Friday 6 Nov, 17:00 |
+| Wednesday 4 Nov, 15:00 (Week 6) | Lab 5 | Function workshop: proofs, composition, Python function analysis |
 
 ---
 

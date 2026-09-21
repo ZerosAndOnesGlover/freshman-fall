@@ -45,11 +45,16 @@ $f^{-1}(y)=(y+5)/4$
 
 ### Problem 4 (4 points)
 
-**Pigeons:** the 13 chosen integers. **Pigeonholes:** the 12 pairs summing to 25 from $\{1,\ldots,24\}$: $\{1,24\},\{2,23\},\ldots,\{12,13\}$.
+**(a)** **No.** Lecture 15 §7: if $f:A\to B$ is injective then $|A|\le|B|$. Here $|A|=4>3=|B|$, so no function
+$A\to B$ is injective (some two inputs must share an output).
 
-**Proof.** Partition $\{1,\ldots,24\}$ into 12 pairs each summing to 25. With 13 integers chosen (pigeons) and 12 pairs (pigeonholes), $13>12$ ⟹ two chosen integers fall into the same pair ⟹ their sum is 25. ∎
+*Grading: 1 pt for "no", 1 pt for citing $|A|\le|B|$ (or the equivalent "4 distinct outputs need 4 elements").*
 
-*Grading: 1 pt for correctly identifying pigeons. 1 pt for correctly constructing the 12 pigeonhole pairs. 2 pts for correctly stated conclusion with valid counting ($13>12$).*
+**(b)** For example $f(1)=a,\ f(2)=b,\ f(3)=c,\ f(4)=a$. Every element of $B$ is hit, so $f$ is **surjective**; it is
+**not injective** since $f(1)=f(4)$ — as (a) says it must be.
+
+*Grading: 1 pt for a valid surjection, 1 pt for "not injective" with the witness pair. Do not require or reward
+the phrase "Pigeonhole Principle" — that name is taught in Week 8.*
 
 ---
 
@@ -57,7 +62,7 @@ $f^{-1}(y)=(y+5)/4$
 
 | Score | Interpretation |
 |---|---|
-| 18–20 | Mastered functions and Pigeonhole |
+| 18–20 | Mastered functions |
 | 14–17 | Solid; review composition order and inverse algebra |
 | 10–13 | Re-read Lectures 5.1–5.3; redo PS5 |
 | < 10 | Schedule office hours before Week 6 |

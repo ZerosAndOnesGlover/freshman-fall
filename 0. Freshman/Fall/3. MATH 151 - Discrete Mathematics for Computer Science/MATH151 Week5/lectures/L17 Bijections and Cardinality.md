@@ -1,5 +1,5 @@
 # MATH 151 · Discrete Mathematics for Computer Science
-## Lecture 5.3 (L17) — Bijections and Cardinality
+## Lecture 17 (L17) — Bijections and Cardinality
 ### Friday, Week 5
 
 **Date:** Friday 30 October 2026 · 13:00–13:50 · Week 5

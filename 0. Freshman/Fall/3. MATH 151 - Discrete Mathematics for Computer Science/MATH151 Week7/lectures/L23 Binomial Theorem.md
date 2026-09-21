@@ -1,5 +1,5 @@
 # MATH 151 · Discrete Mathematics for Computer Science
-## Lecture 7.3 (L23) — The Binomial Theorem and Pascal's Triangle
+## Lecture 23 (L23) — The Binomial Theorem and Pascal's Triangle
 ### Friday, Week 7
 
 **Date:** Friday 13 November 2026 · 13:00–13:50 · Week 7
@@ -96,7 +96,7 @@ $$0^n = \sum_{k=0}^n(-1)^k\binom{n}{k}$$
 
 For $n\geq1$: $0 = \binom{n}{0}-\binom{n}{1}+\binom{n}{2}-\cdots\pm\binom{n}{n}$.
 
-**Interpretation:** the number of EVEN-sized subsets of an $n$-set equals the number of ODD-sized subsets (for $n\geq1$) — each equal to $2^{n-1}$. (This resolves Week 4's Lecture 4.3, Exercise 5!)
+**Interpretation:** the number of EVEN-sized subsets of an $n$-set equals the number of ODD-sized subsets (for $n\geq1$) — each equal to $2^{n-1}$. (This resolves Week 4's Lecture 14, Exercise 5!)
 
 ### Identity 3: The Hockey Stick Identity
 

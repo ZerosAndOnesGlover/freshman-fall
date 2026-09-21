@@ -1,6 +1,6 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Quiz 4 — Mathematical Induction
-### Administered: Monday, Week 4 (first 15 minutes of class)
+### Administered: Monday 19 October 2026, 13:00–13:15 (first 15 minutes of class) · Week 4
 
 **Name:** _________________________________ **Section:** ___________ **Date:** ___________
 

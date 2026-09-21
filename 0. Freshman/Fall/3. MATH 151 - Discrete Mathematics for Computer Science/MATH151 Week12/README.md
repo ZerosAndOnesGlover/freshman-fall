@@ -24,7 +24,7 @@ Monday covers **divisibility and primes**: the division algorithm, unique factor
 proof that the primes never run out. That proof is widely misremembered as "$p_1\cdots p_k+1$ is
 prime", and Monday kills the misremembering with a counterexample you can check by hand.
 
-Wednesday is the payoff. The **Euclidean algorithm** computes gcds in $O(\log n)$; its extended form
+Thursday is the payoff. The **Euclidean algorithm** computes gcds in $O(\log n)$; its extended form
 produces modular inverses; **Euler's theorem** then makes RSA work, and the proof of RSA's correctness
 is three lines. You will encrypt and decrypt a number by hand.
 
@@ -44,9 +44,9 @@ Friday reviews the whole course and traces where each thread continues.
 MATH151 Week12/
 ├── README.md
 ├── lectures/
-│   ├── L36 Divisibility and Primes.md         ← Lecture 37 (Monday)
-│   ├── L37 Modular Arithmetic and RSA.md      ← Lecture 38 (Wednesday)
-│   └── L38 Review and the Road Ahead.md       ← Lecture 39 (Friday)
+│   ├── L36 Divisibility and Primes.md         ← Lecture 36 (Monday 14 Dec)
+│   ├── L37 Modular Arithmetic and RSA.md      ← Lecture 37 (Thursday 17 Dec)
+│   └── L38 Review and the Road Ahead.md       ← Lecture 38 (Friday 18 Dec)
 ├── assignments/
 │   └── PS 12 Number Theory.md
 ├── lab/
@@ -86,12 +86,12 @@ By the end of Week 12 you should be able to:
 
 | Day | Event | Topic |
 |---|---|---|
-| Monday | Quiz 12 (15 min) | Covers Week 11: trees, MSTs, traversal |
-| Monday | Lecture 37 | Divisibility, the division algorithm, primes, unique factorisation |
-| Wednesday | Lecture 38 | Congruence, Euclid, Bézout, Fermat, Euler, CRT, RSA |
-| Wednesday | Lab 12 | Implement RSA from scratch |
-| Friday | Lecture 39 | Course review and the road ahead |
-| Friday | PS 12 Released | Due Wednesday of Finals Week |
+| Monday 14 Dec, 13:00 | Quiz 12 (15 min) | Covers Week 11: trees, MSTs, traversal |
+| Monday 14 Dec, 13:00 | Lecture 36 | Divisibility, the division algorithm, primes, unique factorisation |
+| Thursday 17 Dec, 13:00 | Lecture 37 | Congruence, Euclid, Bézout, Fermat, Euler, CRT, RSA |
+| Friday 18 Dec, 13:00 | Lecture 38 | Course review and the road ahead |
+| Friday 18 Dec, 14:00 | PS 12 released | Due Wednesday 23 Dec, 17:00 (finals week) |
+| Wednesday 23 Dec, 15:00 (Week 13) | Lab 12 | Implement RSA from scratch |
 
 ---
 

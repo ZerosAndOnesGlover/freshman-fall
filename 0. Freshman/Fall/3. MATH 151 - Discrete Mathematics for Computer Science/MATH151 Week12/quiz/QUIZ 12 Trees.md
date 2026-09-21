@@ -1,6 +1,6 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Quiz 12 — Trees and Traversal
-### Administered: Monday, Week 12 (first 15 minutes of class)
+### Administered: Monday 14 December 2026, 13:00–13:15 (first 15 minutes of class) · Week 12
 
 **Name:** _________________________________ **Section:** ___________ **Date:** ___________
 

@@ -1,5 +1,5 @@
 # MATH 151 · Discrete Mathematics for Computer Science
-## Lecture 8.2 (L25) — The Principle of Inclusion–Exclusion
+## Lecture 25 (L25) — The Principle of Inclusion–Exclusion
 ### Thursday, Week 8
 
 **Date:** Thursday 19 November 2026 · 13:00–13:50 · Week 8
@@ -202,4 +202,4 @@ trade-off — exact and slow versus approximate and fast — recurs throughout a
 - **Epp, 5e §9.3** — Counting with inclusion–exclusion
 - **Levin, 3e §1.6** — Advanced counting
 
-*Next: Lecture 8.3 — Advanced Counting: Putting Pigeonhole and Inclusion–Exclusion to Work*
+*Next: Lecture 26 — Advanced Counting: Putting Pigeonhole and Inclusion–Exclusion to Work*

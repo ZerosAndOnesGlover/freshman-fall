@@ -1,5 +1,5 @@
 # MATH 151 · Discrete Mathematics for Computer Science
-## Lecture 4.1 (L12) — Sets and Set Operations
+## Lecture 12 (L12) — Sets and Set Operations
 ### Monday, Week 4
 
 **Date:** Monday 19 October 2026 · 13:00–13:50 · Week 4
@@ -271,4 +271,4 @@ Let $U = \{1,2,\ldots,12\}$, $A = \{1,2,3,4,5,6\}$, $B = \{2,4,6,8,10,12\}$, $C 
 
 ---
 
-*Next: Lecture 4.2 — Set Identities and Proof Techniques*
+*Next: Lecture 13 — Set Identities and Proof Techniques*

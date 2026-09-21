@@ -1,6 +1,6 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Lab 5 — Function Workshop: Properties, Composition, Bijections
-### Wednesday, Week 5 | Duration: 2 hours
+### Wednesday 4 November 2026, 15:00–16:50 · Week 6 | Duration: 2 hours | Covers Week 5 (all three lectures)
 
 ---
 

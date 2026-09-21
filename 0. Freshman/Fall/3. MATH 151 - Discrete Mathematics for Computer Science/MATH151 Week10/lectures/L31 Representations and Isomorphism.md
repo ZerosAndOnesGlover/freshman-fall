@@ -1,5 +1,5 @@
 # MATH 151 · Discrete Mathematics for Computer Science
-## Lecture 10.2 (L31) — Representations and Isomorphism
+## Lecture 31 (L31) — Representations and Isomorphism
 ### Thursday, Week 10
 
 **Date:** Thursday 3 December 2026 · 13:00–13:50 · Week 10
@@ -182,4 +182,4 @@ A small change in the question produces a large change in difficulty, which is w
 - **Epp, 5e §10.3** — Matrix representations
 - **Levin, 3e §4.2** — Isomorphism
 
-*Next: Lecture 10.3 — Paths, Connectivity, Euler and Hamilton*
+*Next: Lecture 32 — Paths, Connectivity, Euler and Hamilton*

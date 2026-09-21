@@ -1,8 +1,11 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Problem Set 5: Functions
-### Released: Friday, Week 5 | Due: Friday, Week 6 (11:59 PM)
+### Released: Friday 30 October 2026, 14:00 (after the Friday lecture) | Due: Friday 6 November 2026, 17:00 (Week 6)
 
 ---
+
+> *Revised 2026-09-21.* The optional bonus section was removed to keep the set to 100 points of
+> this week's material.
 
 **Instructions:**
 - For every injectivity/surjectivity claim: state clearly whether you are proving or disproving, and use the correct proof strategy (construction for surjectivity, algebra for injectivity, explicit counterexamples for disproof).
@@ -10,7 +13,7 @@
 - Show all work.
 - Submit as a single PDF.
 
-**Scoring:** 100 points total, plus an optional 8-point bonus.
+**Scoring:** 100 points total.
 
 ---
 
@@ -112,13 +115,3 @@ is a bijection. What does this say about using "length" as a measure of set size
 **D5.** *(5 pts)* The set of **finite** subsets of $\mathbb{N}$ is countable, but
 $\mathcal{P}(\mathbb{N})$ is not. Explain precisely where the listing argument succeeds for the
 first and fails for the second.
-
-## Bonus (8 points — optional)
-
-**Bonus 1.** (4 pts) Prove: if $A$ and $B$ are finite sets with $|A|=|B|$, and $f:A\to B$ is injective, then $f$ is automatically surjective (and hence bijective).
-
-*(This is the "same-size implies equivalence of injective/surjective" fact stated in Monday's lecture — prove it rigorously by counting: a list of $n$ distinct outputs drawn from an $n$-element codomain must exhaust it.)*
-
-**Bonus 2.** (4 pts) A function $f:\{1,\ldots,n\}\to\{1,\ldots,n\}$ that is a bijection is called a **permutation** of $\{1,\ldots,n\}$. Prove: if $f$ is a permutation of $\{1,\ldots,n\}$, then $f\circ f\circ\cdots\circ f$ ($f$ composed with itself $k$ times, for large enough $k$) eventually equals $\text{id}$.
-
-*(Hint: Consider the sequence $x, f(x), f(f(x)), \ldots$ for a fixed element $x$. Since $\{1,\ldots,n\}$ is finite, this sequence must eventually repeat a value, since $n+1$ terms cannot all be distinct in an $n$-element set. Then use injectivity of $f$ to show the repetition must cycle back to $x$ itself, not some later element.)*

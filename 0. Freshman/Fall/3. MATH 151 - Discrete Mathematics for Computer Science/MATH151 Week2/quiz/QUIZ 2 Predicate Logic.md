@@ -1,6 +1,6 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Quiz 2 — Predicate Logic and Quantifiers
-### Administered: Monday, Week 2 (first 15 minutes of class)
+### Administered: Monday 5 October 2026, 13:00–13:15 (first 15 minutes of class) · Week 2
 
 **Name:** _________________________________ **Section:** ___________ **Date:** ___________
 

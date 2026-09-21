@@ -1,5 +1,5 @@
 # MATH 151 · Discrete Mathematics for Computer Science
-## Lecture 4.3 (L14) — Power Sets, Cartesian Products, and Inclusion-Exclusion
+## Lecture 14 (L14) — Power Sets, Cartesian Products, and Inclusion-Exclusion
 ### Friday, Week 4
 
 **Date:** Friday 23 October 2026 · 13:00–13:50 · Week 4

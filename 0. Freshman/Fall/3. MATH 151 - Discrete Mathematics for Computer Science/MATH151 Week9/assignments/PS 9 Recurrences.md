@@ -1,15 +1,18 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Problem Set 9: Recurrence Relations and Generating Functions
-### Released: Friday, Week 9 | Due: Friday, Week 10 (11:59 PM)
+### Released: Friday 27 November 2026, 14:00 (after the Friday lecture) | Due: Friday 4 December 2026, 17:00 (Week 10)
 
 ---
+
+> *Revised 2026-09-21.* The optional bonus section was removed to keep the set to 100 points of
+> this week's material.
 
 **Instructions:**
 - Every closed form must be **checked against at least three iterated values**. Show the check.
 - State initial conditions explicitly whenever you write a recurrence.
 - Show all work. Submit as a single PDF.
 
-**Scoring:** 100 points total, plus an optional 8-point bonus.
+**Scoring:** 100 points total.
 
 ---
 
@@ -78,16 +81,6 @@ most 3 of each type**, and compute the coefficient of $x^5$.
 
 **D5.** *(6 pts)* Explain what "formal power series" means and why convergence is irrelevant to
 everything done in this part. Give one operation that is legitimate on formal series.
-
----
-
-## Bonus (8 points — optional)
-
-**Bonus 1.** *(4 pts)* Use partial fractions on $\dfrac{x}{1-x-x^2}$ to derive Binet's formula.
-*(Factor the denominator as $(1-\varphi x)(1-\psi x)$.)*
-
-**Bonus 2.** *(4 pts)* Solve $a_n = 4a_{n-1} - 4a_{n-2} + 2^n$, where $2$ is a **double** root of the
-characteristic equation. Explain why the particular guess must be $Cn^2 2^n$.
 
 ---
 

@@ -1,12 +1,13 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Quiz 4 — Scope Preview
-### Quiz administered: Monday, Week 4 (first 15 minutes of lecture)
+### Quiz administered: Monday 19 October 2026, 13:00–13:15 (first 15 minutes of lecture) · Week 4
 
 ---
 
-**Coverage:** Weeks 3 and 4 material:
+**Coverage:** Week 3 material only:
 - Week 3: Mathematical induction — weak and strong
-- Week 4: Sets — operations, power sets, Cartesian products (covered next week)
+
+*(Week 4 material is not on this quiz — it is taught after the quiz.)*
 
 ---
 

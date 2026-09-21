@@ -24,7 +24,7 @@ Monday is about **modelling**. Writing $T_n = 2T_{n-1}+1$ for the Tower of Hanoi
 solving it is mechanical. Most of the marks in this material go to students who can turn a word
 problem into a recurrence, so that is where the lecture spends its time.
 
-Wednesday gives the **characteristic equation** — a complete method for linear, constant-coefficient,
+Thursday gives the **characteristic equation** — a complete method for linear, constant-coefficient,
 homogeneous recurrences. It produces Binet's formula for Fibonacci, which is worth meeting once in
 your life: every Fibonacci number is an integer, and the formula that generates them is built
 entirely out of $\sqrt5$.
@@ -46,9 +46,9 @@ that reading over your own work never will.
 MATH151 Week9/
 ├── README.md
 ├── lectures/
-│   ├── L27 Recurrence Relations.md          ← Lecture 28 (Monday)
-│   ├── L28 Solving Linear Recurrences.md    ← Lecture 29 (Wednesday)
-│   └── L29 Generating Functions.md          ← Lecture 30 (Friday)
+│   ├── L27 Recurrence Relations.md          ← Lecture 27 (Monday 23 Nov)
+│   ├── L28 Solving Linear Recurrences.md    ← Lecture 28 (Thursday 26 Nov)
+│   └── L29 Generating Functions.md          ← Lecture 29 (Friday 27 Nov)
 ├── assignments/
 │   └── PS 9 Recurrences.md
 ├── lab/
@@ -86,12 +86,12 @@ By the end of Week 9 you should be able to:
 
 | Day | Event | Topic |
 |---|---|---|
-| Monday | Quiz 9 (15 min) | Covers Week 8: Pigeonhole and Inclusion–Exclusion |
-| Monday | Lecture 28 | Modelling with recurrences; solving by iteration |
-| Wednesday | Lecture 29 | The characteristic equation; Binet's formula; non-homogeneous terms |
-| Wednesday | Lab 9 | Recurrence workshop: model, solve, verify numerically |
-| Friday | Lecture 30 | Generating functions; convolution and counting |
-| Friday | PS 9 Released | Due Week 10 Friday |
+| Monday 23 Nov, 13:00 | Quiz 9 (15 min) | Covers Week 8: Pigeonhole and Inclusion–Exclusion |
+| Monday 23 Nov, 13:00 | Lecture 27 | Modelling with recurrences; solving by iteration |
+| Thursday 26 Nov, 13:00 | Lecture 28 | The characteristic equation; Binet's formula; non-homogeneous terms |
+| Friday 27 Nov, 13:00 | Lecture 29 | Generating functions; convolution and counting |
+| Friday 27 Nov, 14:00 | PS 9 released | Due Friday 4 Dec, 17:00 |
+| Wednesday 2 Dec, 15:00 (Week 10) | Lab 9 | Recurrence workshop: model, solve, verify numerically |
 
 ---
 

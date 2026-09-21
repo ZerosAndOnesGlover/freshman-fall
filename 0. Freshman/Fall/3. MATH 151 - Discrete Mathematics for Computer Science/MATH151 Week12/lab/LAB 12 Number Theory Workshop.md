@@ -1,6 +1,6 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Lab 12 — Number Theory Workshop: Euclid to RSA
-### Wednesday, Week 12 | Duration: 2 hours
+### Wednesday 23 December 2026, 15:00–16:50 · Week 13 (finals week) | Duration: 2 hours | Covers Week 12 (all three lectures)
 
 ---
 

@@ -1,5 +1,5 @@
 # MATH 151 · Discrete Mathematics for Computer Science
-## Lecture 8.3 (L26) — Advanced Counting: Choosing the Right Tool
+## Lecture 26 (L26) — Advanced Counting: Choosing the Right Tool
 ### Friday, Week 8
 
 **Date:** Friday 20 November 2026 · 13:00–13:50 · Week 8
@@ -103,7 +103,7 @@ $$6 \times 44 = \mathbf{264}$$
 *(Verified by exhaustive enumeration of all $720$ permutations: exactly 264 have precisely one fixed
 point.)*
 
-The multiplication rule (Week 7) supplies the outer structure; inclusion–exclusion (Wednesday)
+The multiplication rule (Week 7) supplies the outer structure; inclusion–exclusion (Thursday)
 supplies $D_5$. Most real counting problems are like this — a Week 7 skeleton with a Week 8 organ
 inside.
 
@@ -154,7 +154,7 @@ every year.
 
 4. How many permutations of $\{1,\ldots,7\}$ fix exactly two elements?
 
-5. Verify $\sum_{k=0}^{5}\binom{5}{k}D_{5-k} = 120$ using the derangement values from Lecture 8.2.
+5. Verify $\sum_{k=0}^{5}\binom{5}{k}D_{5-k} = 120$ using the derangement values from Lecture 25.
 
 6. **(Stretch.)** Any 5 points placed inside a unit square have two within distance $\frac{\sqrt2}{2}$ of each other. Construct the pigeonholes, and explain why 4 points would not suffice for the argument.
 

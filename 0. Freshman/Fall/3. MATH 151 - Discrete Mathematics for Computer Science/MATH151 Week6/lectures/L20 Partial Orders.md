@@ -1,5 +1,5 @@
 # MATH 151 · Discrete Mathematics for Computer Science
-## Lecture 6.3 (L20) Partial Orders and Hasse Diagrams
+## Lecture 20 (L20) Partial Orders and Hasse Diagrams
 ### Friday, Week 6
 
 **Date:** Friday 6 November 2026 · 13:00–13:50 · Week 6

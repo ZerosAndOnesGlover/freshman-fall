@@ -44,13 +44,13 @@ $$A^2=\begin{pmatrix}2&1&1&2&0\\1&3&2&1&1\\1&2&3&1&1\\2&1&1&3&0\\0&1&1&0&1\end{p
 
 ---
 
-## Section 3 Solutions — Traversal and Connectivity
+## Section 3 Solutions — Connectivity by Brute Force
 
-**3.1** *(5 pts)* `bfs(adj, 'a')` returns `['a','b','c','d','e']`.
+**3.1** *(5 pts)* Each pass adds every neighbour of something already found, so a vertex is added
+exactly when there is a path to it; the loop stops when a pass adds nothing. From every vertex of $G$
+it returns `{a, b, c, d, e}`, so **$G$ is connected**.
 
-Orders differ by starting vertex, and also depend on the **order neighbours appear in the adjacency
-list**. A BFS order is therefore not a property of the graph — it is a property of the graph *plus*
-the representation. Students should say this.
+*(All Section 3 outputs checked by running the reference code in Python 3.14.)*
 
 **3.2** *(4 pts)* $C_6$ → **1** component; two disjoint triangles → **2** ✓
 
@@ -66,6 +66,7 @@ the representation. Students should say this.
 | $K_{3,3}$ | **Yes** |
 | $G$ | **No** |
 
+The brute force tries $2^n$ colourings (product rule), so $2^5=32$ for $G$ and $2^6=64$ for $K_{3,3}$.
 Even cycles are bipartite, odd cycles are not — exactly the odd-cycle theorem. $G$ fails because it
 contains triangles, which are 3-cycles. $K_{3,3}$ is bipartite by construction.
 
@@ -163,7 +164,7 @@ gap.**
 |---|---|
 | 1 | 1.4 justified by degrees, not by searching |
 | 2.2 | All three checks confirmed, triangles listed |
-| 3.1 | Recognition that BFS order depends on the representation |
+| 3.1 | The path argument for `reachable`, and "$G$ is connected" |
 | 3.3 | `['d']` matching the hand answer |
 | 3.4 | Results tied back to the odd-cycle theorem |
 | 4.2 | Both the agreeing and the separating invariants named |

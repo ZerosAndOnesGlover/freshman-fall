@@ -1,5 +1,5 @@
 # MATH 151 · Discrete Mathematics for Computer Science
-## Lecture 0.2. Truth Tables: Systematic Evaluation of Compound Propositions
+## Lecture 1. Truth Tables: Systematic Evaluation of Compound Propositions
 ### Thursday, Week 0
 
 **Date:** Thursday 24 September 2026 · 13:00–13:50 · Week 0
@@ -93,7 +93,7 @@ Three variables → 8 rows.
 | F   | T   | F     | **T**       |
 | F   | F   | T     | **T**       |
 
-Every row is T. This formula is always true, a **tautology**. (We explore tautologies in Lecture 0.3.)
+Every row is T. This formula is always true, a **tautology**. (We explore tautologies in Lecture 2.)
 
 ---
 
@@ -101,9 +101,9 @@ Every row is T. This formula is always true, a **tautology**. (We explore tautol
 
 The conditional p → q consistently confuses students because its truth table differs from intuition. Let us examine it from three angles.
 
-### Angle 1: The Promise Interpretation (Lecture 0.1 Review)
+### Angle 1: The Promise Interpretation (Lecture 0 Review)
 
-The conditional is a promise: "If p, I guarantee q." The only way to *break* the promise is to have p true but q false. This gives us the truth table from Lecture 0.1.
+The conditional is a promise: "If p, I guarantee q." The only way to *break* the promise is to have p true but q false. This gives us the truth table from Lecture 0.
 
 ### Angle 2: The Logical Equivalence
 
@@ -313,4 +313,4 @@ This is not just a convenience, writing a truth table evaluator teaches you that
 
 ---
 
-*Next: Lecture 0.3 — [[L02 Tautologies and Logical Laws]]*
+*Next: Lecture 2 — [[L02 Tautologies and Logical Laws]]*

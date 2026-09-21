@@ -116,7 +116,7 @@ Actually the correct contrapositive of "3∤n → 9∤n²" is "9|n² → 3|n."
 **Proof.** We prove the contrapositive: if 9|n², then 3|n.
 
 If 9|n², then 3|n² (since 9|n² means n²=9k, so n²=3(3k), meaning 3|n²).
-By Example 5 of Lecture 2.2 (if 3|n² then 3|n), we conclude 3|n.
+By Example 5 of Lecture 7 (if 3|n² then 3|n), we conclude 3|n.
 By contrapositive, the original holds. ∎
 
 Alternative direct approach for contrapositive:
@@ -324,29 +324,3 @@ Since p is prime and p∤a, gcd(p,a)=1 (the only positive divisors of p are 1 an
 By Euclid's Lemma (D4): since p|ab and gcd(p,a)=1, we have p|b. ∎
 
 **The contrast between (b) and (c):** The key is that primality of a gives gcd(a,b)=1 whenever a∤b, which is the hypothesis needed for Euclid's Lemma. For composite a (like 4), gcd(4,6)=2≠1, so the lemma doesn't apply.
-
----
-
-## Bonus Solutions
-
-### Bonus 1. √2 + √3 is irrational.
-
-**Proof.** Suppose √2 + √3 = r for some r ∈ ℚ.
-Then √3 = r − √2.
-Squaring: 3 = r² − 2r√2 + 2.
-So 2r√2 = r² − 1, giving √2 = (r²−1)/(2r).
-Since r is rational and r ≠ 0 (if r=0 then √2+√3=0, impossible), (r²−1)/(2r) is rational.
-But this means √2 is rational — contradicting the fact that √2 is irrational.
-Contradiction. Therefore √2 + √3 is irrational. ∎
-
-*Note: We need r ≠ 0. If r = 0 then √3 = −√2, squaring gives 3 = 2, contradiction. So r ≠ 0 regardless.*
-
-### Bonus 2. Errors in the 1=2 "proof."
-
-**Error (and only error):** The step "Dividing both sides by (a−b): a+b = b."
-
-Since a = b = 1, we have a − b = 0. Division by zero is undefined (and invalid in real number arithmetic). All other steps up to that point are valid.
-
-(a² = ab: 1 = 1 ✓. a²−b² = ab−b²: 0 = 0 ✓. (a−b)(a+b) = b(a−b): 0·2 = 1·0 ✓. After division by (a−b) = 0: INVALID.)
-
-Every subsequent step after the division is built on this invalid operation, so the "conclusion" 2=1 is meaningless. The step violates the axiom that division by zero is undefined in ℝ.

@@ -42,9 +42,9 @@ MATH151_Week1/
 ├── README.md
 │
 ├── lectures/
-│   ├── L03 Predicates and Quantifiers.md        ← Lecture 4 (Monday)
-│   ├── L04 Negation and Equivalences.md         ← Lecture 5 (Thursday)
-│   └── L05 Nested Quantifiers.md                ← Lecture 6 (Friday)
+│   ├── L03 Predicates and Quantifiers.md        ← Lecture 3 (Monday 28 Sep)
+│   ├── L04 Negation and Equivalences.md         ← Lecture 4 (Thursday 1 Oct)
+│   └── L05 Nested Quantifiers.md                ← Lecture 5 (Friday 2 Oct)
 │
 ├── assignments/
 │   └── PS 1 Predicate Logic.md
@@ -72,12 +72,12 @@ MATH151_Week1/
 
 | Day | Event | Topic |
 |---|---|---|
-| Monday | Quiz 1 (15 min) | Covers all of Week 0 propositional logic |
-| Monday | Lecture 4 | Predicates, domains, quantifiers ∀ and ∃ |
-| Thursday | Lecture 5 | Negating quantified statements, logical equivalences with quantifiers |
-| Wednesday | Lab 1 | Quantifier translation workshop + Python predicate evaluator |
-| Friday | Lecture 6 | Nested quantifiers, order matters, bounded quantifiers |
-| Friday | PS 1 Released | Due Week 2 Friday |
+| Monday 28 Sep, 13:00 | Quiz 1 (15 min) | Covers all of Week 0 propositional logic |
+| Monday 28 Sep, 13:00 | Lecture 3 | Predicates, domains, quantifiers ∀ and ∃ |
+| Thursday 1 Oct, 13:00 | Lecture 4 | Negating quantified statements, logical equivalences with quantifiers |
+| Friday 2 Oct, 13:00 | Lecture 5 | Nested quantifiers, order matters, bounded quantifiers |
+| Friday 2 Oct, 14:00 | PS 1 released | Due Friday 9 Oct, 17:00 |
+| Wednesday 7 Oct, 15:00 (Week 2) | Lab 1 | Quantifier translation workshop + Python predicate evaluator |
 
 ---
 

@@ -1,5 +1,5 @@
 # MATH 151 · Discrete Mathematics for Computer Science
-## Lecture 2.2 (L07) — Proof by Contrapositive
+## Lecture 7 (L07) — Proof by Contrapositive
 ### Thursday, Week 2
 
 **Date:** Thursday 8 October 2026 · 13:00–13:50 · Week 2
@@ -228,4 +228,4 @@ When forming the contrapositive, you must negate BOTH the hypothesis and conclus
 
 ---
 
-*Next: Lecture 2.3 — Proof by Contradiction*
+*Next: Lecture 8 — Proof by Contradiction*

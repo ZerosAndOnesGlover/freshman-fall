@@ -1,6 +1,6 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Lab 6 — Relations Workshop: Properties, Equivalence Classes, and Hasse Diagrams
-### Wednesday, Week 6 | Duration: 2 hours
+### Wednesday 11 November 2026, 15:00–16:50 · Week 7 | Duration: 2 hours | Covers Week 6 (all three lectures)
 
 ---
 

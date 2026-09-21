@@ -156,50 +156,6 @@ $256 = 2^8$ ✓
 
 ---
 
-## Bonus Solutions
-
-### Bonus 1: "COMBINATORICS" with vowels together
-
-Word: C-O-M-B-I-N-A-T-O-R-I-C-S (13 letters).
-
-Letters: C(2), O(2), M(1), B(1), I(2), N(1), A(1), T(1), R(1), S(1). Total: 2+2+1+1+2+1+1+1+1+1=13 ✓
-
-Vowels: O,I,A,O,I → O(2), I(2), A(1) — 5 vowels total.
-Consonants: C,M,B,N,T,R,C,S → C(2), M(1), B(1), N(1), T(1), R(1), S(1) — 8 consonants.
-
-**Treat the vowel block as one unit.** We now arrange: [vowel-block] + 8 consonants = 9 "items" total, but consonants have repeats (C appears twice).
-
-Arrangements of 9 items with C repeated twice: $\dfrac{9!}{2!}=\dfrac{362880}{2}=181440$
-
-**Internal arrangements of the vowel block** (O,I,A,O,I — 5 letters with O×2, I×2, A×1):
-$$\frac{5!}{2!2!1!}=\frac{120}{4}=30$$
-
-**Total:** $181440\times30 = 5{,}443{,}200$
-
----
-
-### Bonus 2: Hockey Stick Identity by induction on $n$
-
-**Claim:** $\sum_{i=r}^n\binom{i}{r}=\binom{n+1}{r+1}$ for fixed $r$, all $n\geq r$.
-
-**Proof.** By induction on $n$, for fixed $r\geq0$.
-
-**Base case ($n=r$):** LHS $=\binom{r}{r}=1$. RHS $=\binom{r+1}{r+1}=1$. Equal. ✓
-
-**Inductive step:** Assume $\sum_{i=r}^{k}\binom{i}{r}=\binom{k+1}{r+1}$ for some $k\geq r$. [IH]
-
-We show $\sum_{i=r}^{k+1}\binom{i}{r}=\binom{k+2}{r+1}$.
-
-$$\sum_{i=r}^{k+1}\binom{i}{r} = \left(\sum_{i=r}^{k}\binom{i}{r}\right) + \binom{k+1}{r} = \binom{k+1}{r+1}+\binom{k+1}{r} \quad\text{[by IH]}$$
-
-By Pascal's Rule: $\binom{k+1}{r+1}+\binom{k+1}{r} = \binom{k+2}{r+1}$.
-
-So $\sum_{i=r}^{k+1}\binom{i}{r}=\binom{k+2}{r+1} = \binom{(k+1)+1}{r+1}$. ✓
-
-By induction, the identity holds for all $n\geq r$. ∎
-
----
-
 ## Part E — The Four-Fold Way
 
 ### E1. *(4 pts)* The classification table, $n=5$, $r=3$

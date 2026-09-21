@@ -1,12 +1,13 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Quiz 6 — Scope Preview
-### Quiz administered: Monday, Week 6 (first 15 minutes of lecture)
+### Quiz administered: Monday 2 November 2026, 13:00–13:15 (first 15 minutes of lecture) · Week 6
 
 ---
 
-**Coverage:** Weeks 5 and 6 material:
+**Coverage:** Week 5 material only:
 - Week 5: Functions — injective, surjective, bijective, composition, inverses, bijections and cardinality
-- Week 6: Relations — reflexive, symmetric, transitive; equivalence relations; partial orders (covered next week)
+
+*(Week 6 material is not on this quiz — it is taught after the quiz.)*
 
 ---
 

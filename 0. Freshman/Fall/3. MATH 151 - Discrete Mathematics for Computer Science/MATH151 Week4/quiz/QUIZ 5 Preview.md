@@ -1,12 +1,13 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Quiz 5 — Scope Preview
-### Quiz administered: Monday, Week 5 (first 15 minutes of lecture)
+### Quiz administered: Monday 26 October 2026, 13:00–13:15 (first 15 minutes of lecture) · Week 5
 
 ---
 
-**Coverage:** Weeks 4 and 5 material:
+**Coverage:** Week 4 material only:
 - Week 4: Sets — operations, identities, power sets, Cartesian products, Inclusion-Exclusion
-- Week 5: Functions — injective, surjective, bijective; composition, inverse (covered next week)
+
+*(Week 5 material is not on this quiz — it is taught after the quiz.)*
 
 ---
 

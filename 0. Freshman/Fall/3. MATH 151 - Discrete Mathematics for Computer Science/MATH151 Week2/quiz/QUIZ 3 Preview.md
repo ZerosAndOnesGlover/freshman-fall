@@ -1,12 +1,13 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Quiz 3 — Scope Preview
-### Quiz administered: Monday, Week 3 (first 15 minutes of lecture)
+### Quiz administered: Monday 12 October 2026, 13:00–13:15 (first 15 minutes of lecture) · Week 3
 
 ---
 
-**Coverage:** Weeks 2 and 3 material:
+**Coverage:** Week 2 material only:
 - Week 2: Proof techniques — direct proof, contrapositive, contradiction
-- Week 3: Mathematical induction — weak induction, strong induction
+
+*(Week 3 material is not on this quiz — it is taught after the quiz.)*
 
 ---
 

@@ -1,6 +1,6 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Lab 7 — Counting Workshop: Classification and Computation
-### Wednesday, Week 7 | Duration: 2 hours
+### Wednesday 18 November 2026, 15:00–16:50 · Week 8 | Duration: 2 hours | Covers Week 7 (all three lectures)
 
 ---
 

@@ -1,8 +1,12 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Problem Set 1 — Predicate Logic and Quantifiers
-### Released: Friday, Week 1 | Due: Friday, Week 2 (11:59 PM)
+### Released: Friday 2 October 2026, 14:00 (after the Friday lecture) | Due: Friday 9 October 2026, 17:00 (Week 2)
 
 ---
+
+> *Revised 2026-09-21.* The optional bonus section was removed to keep the set to 100 points of
+> this week's material, several repetitive sub-items were cut, and D3's definitions of function, injection
+> and surjection (Week 5) were removed.
 
 **Instructions:**
 - Show all work. Unsupported answers receive no credit.
@@ -55,19 +59,14 @@ Domain: ℤ unless otherwise stated.
 - (d) ∃x, x² = x
 - (e) ∃x ∈ ℝ, x² = 2
 - (f) ∃x ∈ ℤ, x² = 2
-- (g) ∀x ∈ ℚ, ∃y ∈ ℚ, y > x
-- (h) ∀x ∈ ℝ, x = 0 ∨ x > 0 ∨ x < 0
-
 ---
 
 **B2.** (6 pts) Translate each English statement into predicate logic. Define all predicates and state the domain.
 
 - (a) "Some prime number is even."
 - (b) "Not every real number is rational."
-- (c) "Every algorithm either terminates or runs forever." *(Tautology? Or genuine constraint?)*
-- (d) "There is a real number that is not the square of any real number."
-- (e) "Every input to the function produces an output." *(Domain: all inputs)*
-- (f) "No integer is both positive and negative."
+- (c) "There is a real number that is not the square of any real number."
+- (d) "No integer is both positive and negative."
 
 ---
 
@@ -75,12 +74,10 @@ Domain: ℤ unless otherwise stated.
 
 - (a) ∀x (x > 0 → ∃y, y² = x)
 - (b) ∃x ∀y (x ≤ y)
-- (c) ∀x ∀y (x < y → ∃z, x < z < y)
-- (d) ∀x (P(x) → ∀y (P(y) → P(x + y)))
-- (e) ∃x ¬P(x)
-- (f) ¬∀x P(x)
+- (c) ∃x ¬P(x)
+- (d) ¬∀x P(x)
 
-For (e) and (f): are these equivalent? Determine which are true and which are false over ℝ.
+For (c) and (d): are these equivalent? Determine which are true and which are false over ℝ.
 
 ---
 
@@ -118,15 +115,11 @@ For (e) and (f): are these equivalent? Determine which are true and which are fa
 
 - (a) ∀x ∃y (y > x)
 - (b) ∃y ∀x (y > x)
-- (c) ∀x ∀y (x < y → ∃z, x < z < y)
-- (d) ∀x ∃y (x + y = 0)
-- (e) ∃x ∀y (x + y = 0)
-- (f) ∀x ∀y ∃z (z = x + y)
-- (g) ∃x ∃y (x² + y² = 5)
-- (h) ∀x ∃y (x · y = 1) — domain: ℤ
-- (i) ∀x ∃y (x · y = 1) — domain: ℚ \ {0}
-- (j) ∃x ∀y ∀z (x = y + z)
-
+- (c) ∀x ∃y (x + y = 0)
+- (d) ∃x ∀y (x + y = 0)
+- (e) ∃x ∃y (x² + y² = 5)
+- (f) ∀x ∃y (x · y = 1) — domain: ℤ
+- (g) ∀x ∃y (x · y = 1) — domain: ℚ \ {0}
 ---
 
 **D2.** (8 pts) Negate each nested quantifier statement fully. Then evaluate whether the original is true or false.
@@ -138,17 +131,11 @@ For (e) and (f): are these equivalent? Determine which are true and which are fa
 
 ---
 
-**D3.** (10 pts) Express each definition or claim formally using nested quantifiers.
+**D3.** (10 pts, 5 each) Express each claim formally using nested quantifiers.
 
-- (a) **Definition of function:** A relation f ⊆ A × B is a function if every element of A is related to exactly one element of B. (Use ∀ and ∃! or expand ∃! explicitly.)
+- (a) **Sequence boundedness:** Define "the sequence a₁, a₂, a₃, … is bounded" using quantifiers. Then use your definition to show that the sequence aₙ = (−1)ⁿ is bounded.
 
-- (b) **Injection (one-to-one):** f: ℤ → ℤ defined by f(x) = 2x. Write the injectivity definition as a quantified statement, then prove it is satisfied.
-
-- (c) **Surjection (onto):** f: ℤ → ℤ defined by f(x) = 2x. Write the surjectivity definition, then show it fails by finding a y ∈ ℤ with no preimage.
-
-- (d) **Sequence boundedness:** Define "the sequence a₁, a₂, a₃, … is bounded" using quantifiers. Then use your definition to show that the sequence aₙ = (−1)ⁿ is bounded.
-
-- (e) **Density of ℚ in ℝ:** "Between any two distinct real numbers, there exists a rational number." Write this formally, then write its negation formally and translate the negation into English.
+- (b) **Density of ℚ in ℝ:** "Between any two distinct real numbers, there exists a rational number." Write this formally, then write its negation formally and translate the negation into English.
 
 ---
 
@@ -157,8 +144,7 @@ For (e) and (f): are these equivalent? Determine which are true and which are fa
 **E1.** (6 pts) Express each program property in predicate logic. Define all predicates and domains.
 
 - (a) *Type safety:* "Every well-typed program does not encounter a type error at runtime."
-- (b) *Memory safety:* "Every memory access in the program accesses an address that was allocated and has not yet been freed."
-- (c) *Termination:* "For every valid input, the program halts in a finite number of steps."
+- (b) *Termination:* "For every valid input, the program halts in a finite number of steps."
 
 ---
 
@@ -182,31 +168,6 @@ f(n) = O(g(n)) iff ∃C ∈ ℝ⁺, ∃n₀ ∈ ℕ, ∀n ∈ ℕ, (n ≥ n₀ �
 - (b) Which spec is weaker? Which is stronger?
 - (c) A load balancer distributes each request to some available server. Which spec does it satisfy?
 - (d) A system with a single server that handles all requests satisfies which spec(s)?
-
----
-
-## Bonus (8 points — optional)
-
-**Bonus 1.** (4 pts) The ε-δ definition of continuity of f at point a:
-
-∀ε > 0, ∃δ > 0, ∀x ∈ ℝ, (|x − a| < δ → |f(x) − f(a)| < ε)
-
-The definition of **uniform continuity** of f on ℝ:
-
-∀ε > 0, ∃δ > 0, ∀x ∈ ℝ, ∀y ∈ ℝ, (|x − y| < δ → |f(x) − f(y)| < ε)
-
-- (a) What is the quantifier difference between the two definitions?
-- (b) Show that uniform continuity implies pointwise continuity (at every point). Argue from the quantifier structure.
-- (c) Write the negation of uniform continuity. What does a function that is NOT uniformly continuous look like? Describe it in English.
-
-**Bonus 2.** (4 pts) Let P(x, y) = "x and y are friends" over the domain of people at a party.
-
-Express each social property in predicate logic:
-- (a) "Everyone has at least one friend at the party."
-- (b) "There is someone who is friends with everyone."
-- (c) "No one is friends with themselves."
-- (d) "Friendship is symmetric: if x is friends with y, then y is friends with x."
-- (e) If properties (c) and (d) both hold, show that the negation of (b) can be simplified. State the simplified form in English.
 
 ---
 

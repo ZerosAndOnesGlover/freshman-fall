@@ -1,7 +1,7 @@
 # MATH 151 · Problem Set 11 Solutions
 ## INSTRUCTOR ONLY — DO NOT DISTRIBUTE
 
-**Total: 100 points**, plus 8 bonus. All traces and values verified computationally.
+**Total: 100 points.** All traces and values verified computationally.
 
 $T$ denotes $V=\{a,\ldots,g\}$, $E=\{ab,ac,bd,be,cf,cg\}$.
 
@@ -251,46 +251,6 @@ This works because the colour of a vertex is the parity of its BFS level, and a 
 closes a cycle of odd length.
 
 *Marking: 3 for the method, 1 for the running time, 1 for the odd-cycle connection.*
-
----
-
-## Bonus Solutions
-
-### Bonus 1. *(4 pts)* The cut property
-
-Let $(S, V\setminus S)$ be a partition with both parts non-empty, and let $e=(u,v)$ be a
-minimum-weight edge crossing it. Suppose some MST $T$ omits $e$.
-
-$T$ is spanning, so it contains a path from $u$ to $v$. That path starts in $S$ and ends outside, so
-it crosses the partition at some edge $f$, and $w(f) \ge w(e)$ since $e$ is a minimum crossing edge.
-
-Consider $T' = T - f + e$. Adding $e$ to $T$ creates exactly one cycle — the path plus $e$ — and $f$
-lies on it, so removing $f$ leaves a spanning tree. Its weight is $w(T) - w(f) + w(e) \le w(T)$.
-
-Since $T$ is minimum, $w(T') = w(T)$, so $T'$ is also an MST — and it contains $e$. ∎
-
-*Marking: 1 setup, 2 exchange argument, 1 conclusion. Note the conclusion is "**some** MST", not
-"every MST" — with ties, other MSTs may omit $e$.*
-
----
-
-### Bonus 2. *(4 pts)* Cycle detection by DFS
-
-**(⟸)** If DFS finds an edge $u\to v$ with $v$ currently on the recursion stack, then $v$ is an
-ancestor of $u$ in the DFS tree, so a path $v \rightsquigarrow u$ exists; adding $u\to v$ closes a
-cycle.
-
-**(⟹)** If a cycle exists, consider the first of its vertices that DFS visits, say $v$. Every other
-cycle vertex is reachable from $v$, so DFS explores them all before $v$ finishes — meaning $v$ is
-still on the stack when the cycle's edge back into $v$ is examined.
-
-**Why "already visited" is insufficient:** in a DAG such as $a\to b$, $a\to c$, $b\to d$, $c\to d$,
-DFS reaches $d$ from $b$, finishes it, then examines $c\to d$ and finds $d$ already visited — with no
-cycle present. The distinction is between a vertex that is *finished* (safe) and one that is *still
-open on the stack* (a cycle). Implementations use three colours: white, grey, black.
-
-*Marking: 1 per direction, 2 for the insufficiency example. The three-colour scheme earns full credit
-on the last part.*
 
 ---
 

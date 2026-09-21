@@ -1,5 +1,5 @@
 # MATH 151 · Discrete Mathematics for Computer Science
-## Lecture 2.3 (L08) — Proof by Contradiction
+## Lecture 8 (L08) — Proof by Contradiction
 ### Friday, Week 2
 
 **Date:** Friday 9 October 2026 · 13:00–13:50 · Week 2
@@ -58,7 +58,7 @@ $$p^2 = 2q^2$$
 
 This means p² is even (it equals 2q², which is divisible by 2).
 
-By the theorem proved in Lecture 2.2 (if n² is even then n is even), p is even.
+By the theorem proved in Lecture 7 (if n² is even then n is even), p is even.
 
 Since p is even, p = 2k for some integer k.
 
@@ -124,7 +124,7 @@ Then √3 = p/q in lowest terms, so p² = 3q².
 
 Thus 3 | p².
 
-By the result from Lecture 2.2 Example 5 (if 3 | n², then 3 | n), we have 3 | p.
+By the result from Lecture 7 Example 5 (if 3 | n², then 3 | n), we have 3 | p.
 
 So p = 3k for some integer k.
 

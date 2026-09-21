@@ -45,9 +45,9 @@ MATH151_Week2/
 ├── README.md
 │
 ├── lectures/
-│   ├── L06 Direct Proof.md              ← Lecture 7 (Monday)
-│   ├── L07 Proof by Contrapositive.md   ← Lecture 8 (Thursday)
-│   └── L08 Proof by Contradiction.md    ← Lecture 9 (Friday)
+│   ├── L06 Direct Proof.md              ← Lecture 6 (Monday 5 Oct)
+│   ├── L07 Proof by Contrapositive.md   ← Lecture 7 (Thursday 8 Oct)
+│   └── L08 Proof by Contradiction.md    ← Lecture 8 (Friday 9 Oct)
 │
 ├── assignments/
 │   └── PS 2 Proof Techniques.md
@@ -75,12 +75,12 @@ MATH151_Week2/
 
 | Day | Event | Topic |
 |---|---|---|
-| Monday | Quiz 2 (15 min) | Covers Week 1: predicate logic, quantifiers, negation |
-| Monday | Lecture 7 | Direct proof — definitions, even/odd, divisibility |
-| Thursday | Lecture 8 | Proof by contrapositive — when and how |
-| Wednesday | Lab 2 | Proof workshop: writing, critiquing, fixing proofs |
-| Friday | Lecture 9 | Proof by contradiction — irrationality, infinitude of primes |
-| Friday | PS 2 Released | Due Week 3 Friday |
+| Monday 5 Oct, 13:00 | Quiz 2 (15 min) | Covers Week 1: predicate logic, quantifiers, negation |
+| Monday 5 Oct, 13:00 | Lecture 6 | Direct proof — definitions, even/odd, divisibility |
+| Thursday 8 Oct, 13:00 | Lecture 7 | Proof by contrapositive — when and how |
+| Friday 9 Oct, 13:00 | Lecture 8 | Proof by contradiction — irrationality, infinitude of primes |
+| Friday 9 Oct, 14:00 | PS 2 released | Due Friday 16 Oct, 17:00 |
+| Wednesday 14 Oct, 15:00 (Week 3) | Lab 2 | Proof workshop: writing, critiquing, fixing proofs |
 
 ---
 

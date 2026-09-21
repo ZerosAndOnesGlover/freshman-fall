@@ -65,7 +65,7 @@ Divide the unit square into 4 quarter-squares (side $1/2$). With 5 points and 4 
 
 **Worked example (permutation cycles):** For a bijection $f:\{1,\ldots,n\}\to\{1,\ldots,n\}$ and any starting element $x$, the sequence $x, f(x), f(f(x)),\ldots$ takes values in a finite set of size $n$. After at most $n+1$ terms, some value repeats (Pigeonhole: $n+1$ terms, $n$ possible values). Injectivity of $f$ then forces the repetition to cycle back to $x$ itself.
 
-**Worked example (subset sums, Lecture 5.3 Section 8):** $2^{10}=1024$ subsets of a 10-element set; sums range over at most 1001 values ($\{0,\ldots,1000\}$ for elements up to 100 each) ⟹ two distinct subsets share a sum ⟹ (after removing common elements) two disjoint subsets with equal sums.
+**Worked example (subset sums, Lecture 17 Section 8):** $2^{10}=1024$ subsets of a 10-element set; sums range over at most 1001 values ($\{0,\ldots,1000\}$ for elements up to 100 each) ⟹ two distinct subsets share a sum ⟹ (after removing common elements) two disjoint subsets with equal sums.
 
 ---
 

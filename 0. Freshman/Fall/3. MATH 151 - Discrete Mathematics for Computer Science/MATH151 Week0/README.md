@@ -35,9 +35,9 @@ MATH151_Week0/
 ├── README.md                         ← You are here
 │
 ├── lectures/
-│   ├── L00 Propositions and Connectives.md     ← Lecture 1 (Monday)
-│   ├── L01 Truth Tables.md                     ← Lecture 2 (Thursday)
-│   └── L02 Tautologies and Logical Laws.md     ← Lecture 3 (Friday)
+│   ├── L00 Propositions and Connectives.md     ← Lecture 0 (Monday 21 Sep)
+│   ├── L01 Truth Tables.md                     ← Lecture 1 (Thursday 24 Sep)
+│   └── L02 Tautologies and Logical Laws.md     ← Lecture 2 (Friday 25 Sep)
 │
 ├── assignments/
 │   └── PS 0 Propositional Logic.md              ← Problem Set 0 (released Friday, due Week 1 Friday)
@@ -64,11 +64,11 @@ MATH151_Week0/
 
 | Day       | Event         | Topic                                                                  |
 | --------- | ------------- | ---------------------------------------------------------------------- |
-| Monday    | Lecture 1     | Propositions, logical connectives, negation, conjunction, disjunction  |
-| Thursday  | Lecture 2     | Conditional, biconditional, complete truth tables, operator precedence |
-| Wednesday | Lab 0         | Truth table computation, logical translation exercises                 |
-| Friday    | Lecture 3     | Tautologies, contradictions, logical equivalence, the standard laws    |
-| Friday    | PS 0 Released | Full problem set, due next Friday                                      |
+| Monday 21 Sep, 13:00 | Lecture 0 | Propositions, logical connectives, negation, conjunction, disjunction  |
+| Thursday 24 Sep, 13:00 | Lecture 1 | Conditional, biconditional, complete truth tables, operator precedence |
+| Friday 25 Sep, 13:00 | Lecture 2 | Tautologies, contradictions, logical equivalence, the standard laws    |
+| Friday 25 Sep, 14:00 | PS 0 released | Due Friday 2 Oct, 17:00 |
+| Wednesday 30 Sep, 15:00 (Week 1) | Lab 0 | Truth table computation, logical translation exercises                 |
 
 ---
 

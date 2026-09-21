@@ -1,6 +1,6 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Quiz 10 — Recurrences and Generating Functions
-### Administered: Monday, Week 10 (first 15 minutes of class)
+### Administered: Monday 30 November 2026, 13:00–13:15 (first 15 minutes of class) · Week 10
 
 **Name:** _________________________________ **Section:** ___________ **Date:** ___________
 

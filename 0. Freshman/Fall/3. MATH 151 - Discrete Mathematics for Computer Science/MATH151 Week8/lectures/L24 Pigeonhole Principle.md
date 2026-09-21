@@ -1,5 +1,5 @@
 # MATH 151 · Discrete Mathematics for Computer Science
-## Lecture 8.1 (L24) — The Pigeonhole Principle
+## Lecture 24 (L24) — The Pigeonhole Principle
 ### Monday, Week 8
 
 **Date:** Monday 16 November 2026 · 13:00–13:50 · Week 8
@@ -28,7 +28,7 @@ Combining: $|A| = |f(A)| \leq |B|$, contradicting $|A| > |B|$.
 
 Therefore no injective function exists from $A$ to $B$ when $|A|>|B|$ — equivalently, any function $f:A\to B$ must send at least two elements of $A$ to the same element of $B$. ∎
 
-**Connection to Week 5's earlier material:** This proof is literally the counting consequence from Monday's lecture (Section 7 of Lecture 5.1) turned into a theorem: injective functions require $|A|\leq|B|$; its contrapositive is the Pigeonhole Principle.
+**Connection to Week 5's earlier material:** This proof is literally the counting consequence from Monday's lecture (Section 7 of Lecture 15) turned into a theorem: injective functions require $|A|\leq|B|$; its contrapositive is the Pigeonhole Principle.
 
 ---
 

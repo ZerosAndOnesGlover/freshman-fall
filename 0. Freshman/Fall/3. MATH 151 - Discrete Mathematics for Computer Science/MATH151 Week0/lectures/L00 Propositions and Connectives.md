@@ -1,5 +1,5 @@
 # MATH 151 · Discrete Mathematics for Computer Science
-## Lecture 0.1. Propositions and Logical Connectives
+## Lecture 0. Propositions and Logical Connectives
 ### Monday, Week 0
 
 **Date:** Monday 21 September 2026 · 13:00–13:50 · Week 0
@@ -343,4 +343,4 @@ Work these before Thursday's lecture:
 
 ---
 
-*Next: Lecture 0.2 — [[L01 Truth Tables]]*
+*Next: Lecture 1 — [[L01 Truth Tables]]*

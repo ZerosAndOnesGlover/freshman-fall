@@ -1,5 +1,5 @@
 # MATH 151 · Discrete Mathematics for Computer Science
-## Lecture 0.3. Tautologies, Contradictions, Logical Equivalence, and the Laws of Logic
+## Lecture 2. Tautologies, Contradictions, Logical Equivalence, and the Laws of Logic
 ### Friday, Week 0
 
 **Date:** Friday 25 September 2026 · 13:00–13:50 · Week 0
@@ -73,7 +73,7 @@ All F. Contradiction. ∎
 
 Most propositions we encounter are contingencies. Their truth value *depends on* (is contingent on) the state of the world.
 
-**Example:** p → q is a contingency (true in rows 1, 3, 4; false in row 2 of the truth table from Lecture 0.2).
+**Example:** p → q is a contingency (true in rows 1, 3, 4; false in row 2 of the truth table from Lecture 1).
 
 ---
 
@@ -317,7 +317,7 @@ DNF = (l₁ ∧ l₂ ∧ ...) ∨ (l₁' ∧ l₂' ∧ ...) ∨ ...
 
 **{¬, ∧} is functionally complete** (since p ∨ q ≡ ¬(¬p ∧ ¬q) by De Morgan).
 
-**{NAND} alone is functionally complete** (shown in Exercise 4 of Lecture 0.2).
+**{NAND} alone is functionally complete** (shown in Exercise 4 of Lecture 1).
 
 **{NOR} alone is functionally complete** (similar argument).
 

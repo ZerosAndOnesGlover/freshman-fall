@@ -1,6 +1,6 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Quiz 1 — Propositional Logic
-### Administered: Monday, Week 1 (first 15 minutes of class)
+### Administered: Monday 28 September 2026, 13:00–13:15 (first 15 minutes of class) · Week 1
 
 **Name:** _________________________________ **Section:** ___________ **Date:** ___________
 

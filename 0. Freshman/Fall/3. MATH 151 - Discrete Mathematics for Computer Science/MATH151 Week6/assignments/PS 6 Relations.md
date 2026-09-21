@@ -1,8 +1,11 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Problem Set 6 — Relations
-### Released: Friday, Week 6 | Due: Friday, Week 7 (11:59 PM)
+### Released: Friday 6 November 2026, 14:00 (after the Friday lecture) | Due: Friday 13 November 2026, 17:00 (Week 7)
 
 ---
+
+> *Revised 2026-09-21.* The optional bonus section was removed to keep the set to 100 points of
+> this week's material.
 
 **Instructions:**
 - For each of the four properties (reflexive, symmetric, antisymmetric, transitive), give a direct proof if the property holds, or a specific counterexample if it fails.
@@ -20,7 +23,7 @@
 
 **(a)** On $\mathbb{Z}$: $R = \{(a,b) : a \geq b\}$
 
-**(b)** On $\mathbb{Z}^+$: $R = \{(a,b) : \gcd(a,b) = 1\}$ (a and b are coprime)
+**(b)** On $\mathbb{Z}^+$: $R = \{(a,b) : \gcd(a,b) = 1\}$ (a and b are coprime — their greatest common divisor, the largest positive integer dividing both, is 1)
 
 **(c)** $A=\{1,2,3,4,5\}$, $R = \{(1,1),(2,2),(3,3),(4,4),(5,5),(1,2),(2,1),(3,4)\}$
 
@@ -97,11 +100,3 @@
 $$\text{utils} \preceq \text{parser}, \quad \text{utils}\preceq\text{lexer}, \quad \text{lexer}\preceq\text{compiler}, \quad \text{parser}\preceq\text{compiler}$$
 
 Find ALL valid topological sorts (complete build orders) consistent with this partial order.
-
----
-
-## Bonus (8 points — optional)
-
-**Bonus 1.** (4 pts) Prove: the relation "is isomorphic to" on the set of all finite simple graphs is an equivalence relation. (You may assume the standard definition: $G_1$ is isomorphic to $G_2$ if there is a bijection between their vertex sets that preserves adjacency.) Only prove the three defining properties — you do not need to construct explicit isomorphisms for arbitrary graphs, just argue the relation's properties abstractly using composition/inversion of bijections.
-
-**Bonus 2.** (4 pts) A relation $R$ on $A$ is called a **strict partial order** if it is irreflexive ($\forall a, (a,a)\notin R$) and transitive. Prove: every strict partial order is automatically antisymmetric (in the vacuous sense described in Friday's Example 2), and prove that if $R$ is a strict partial order, then $R\cup\{(a,a):a\in A\}$ (adding all self-loops) is a genuine partial order (reflexive, antisymmetric, transitive).

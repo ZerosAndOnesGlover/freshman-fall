@@ -1,12 +1,13 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Quiz 2 — Scope Preview
-### Quiz administered: Monday, Week 2 (first 15 minutes of lecture)
+### Quiz administered: Monday 5 October 2026, 13:00–13:15 (first 15 minutes of lecture) · Week 2
 
 ---
 
-**Coverage:** Weeks 1 and 2 material:
+**Coverage:** Week 1 material only:
 - Week 1: Predicate logic, quantifiers, nested quantifiers, negation of quantified statements
-- Week 2: Proof techniques — direct proof, proof by contradiction, proof by contrapositive (covered next week)
+
+*(Week 2 material is not on this quiz — it is taught after the quiz.)*
 
 ---
 

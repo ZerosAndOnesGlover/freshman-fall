@@ -1,5 +1,5 @@
 # MATH 151 · Discrete Mathematics for Computer Science
-## Lecture 6.1 (L18) Relations and Their Fundamental Properties
+## Lecture 18 (L18) Relations and Their Fundamental Properties
 ### Monday, Week 6
 
 **Date:** Monday 2 November 2026 · 13:00–13:50 · Week 6
@@ -240,4 +240,4 @@ For each relation, determine which of reflexive/symmetric/antisymmetric/transiti
 
 ---
 
-*Next: Lecture 6.2 — Equivalence Relations and Equivalence Classes*
+*Next: Lecture 19 — Equivalence Relations and Equivalence Classes*

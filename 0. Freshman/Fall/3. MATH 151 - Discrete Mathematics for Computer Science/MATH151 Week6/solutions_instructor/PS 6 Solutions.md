@@ -280,37 +280,3 @@ After removing utils: lexer and parser both become minimal (both only depended o
 2. utils, parser, lexer, compiler
 
 (Only 2 valid orderings — since lexer and parser are incomparable to each other but both must precede compiler, and utils must be first.)
-
----
-
-## Bonus Solutions
-
-### Bonus 1: Graph isomorphism is an equivalence relation
-
-**Reflexive:** The identity map on any graph's vertex set is a bijection preserving adjacency (trivially — same graph mapped to itself). So $G\cong G$.
-
-**Symmetric:** If $G_1\cong G_2$ via bijection $f$, then $f^{-1}$ (which exists since $f$ is bijective, Week 5) is also adjacency-preserving (if $f$ preserves "adjacent ⟺ adjacent," so does its inverse, by the biconditional nature of the preservation property), giving $G_2\cong G_1$.
-
-**Transitive:** If $G_1\cong G_2$ via $f$ and $G_2\cong G_3$ via $g$, then $g\circ f$ is a bijection (composition of bijections is bijective, Week 5) from $G_1$'s vertices to $G_3$'s vertices, and preserves adjacency (composing two adjacency-preserving maps preserves adjacency), giving $G_1\cong G_3$.
-
-Equivalence relation. ∎
-
----
-
-### Bonus 2: Strict partial orders
-
-**Part 1: irreflexive + transitive ⟹ antisymmetric (vacuously).**
-
-Suppose $(a,b)\in R$ and $(b,a)\in R$ for some $a,b$. By transitivity, $(a,a)\in R$. But $R$ is irreflexive, so $(a,a)\notin R$ — contradiction. So it's impossible to have both $(a,b)\in R$ and $(b,a)\in R$ for ANY $a,b$ (whether equal or not) — in particular, this can never happen for $a\neq b$, so the antisymmetry condition's hypothesis is never satisfied, making it vacuously true. ∎
-
-**Part 2: $R\cup\{(a,a):a\in A\}$ is a genuine partial order.**
-
-Let $R'=R\cup\{(a,a):a\in A\}$.
-
-*Reflexive:* every $(a,a)\in R'$ by construction. ✓
-
-*Antisymmetric:* Suppose $(a,b),(b,a)\in R'$ with $a\neq b$. Since $a\neq b$, neither pair can be one of the added diagonal pairs (which only have equal coordinates), so both $(a,b),(b,a)\in R$. But we just showed this is impossible for the original strict order $R$ (Part 1) unless $a=b$ — contradiction. So $R'$ is antisymmetric. ✓
-
-*Transitive:* Let $(a,b),(b,c)\in R'$. Case both original (in $R$): then $(a,c)\in R\subseteq R'$ by transitivity of $R$. Case one or both are diagonal pairs (e.g., $a=b$): then the composition reduces trivially — e.g., if $(a,a)\in R'$ (diagonal) and $(a,c)\in R'$, the "transitive" requirement is just $(a,c)\in R'$, already true. All cases check out. ✓
-
-$R'$ is reflexive, antisymmetric, transitive — a genuine partial order. ∎

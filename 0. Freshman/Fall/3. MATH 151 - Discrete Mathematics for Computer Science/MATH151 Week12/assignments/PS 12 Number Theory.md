@@ -1,15 +1,18 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Problem Set 12: Number Theory
-### Released: Friday, Week 12 | Due: Wednesday of Finals Week (11:59 PM)
+### Released: Friday 18 December 2026, 14:00 (after the Friday lecture) | Due: Wednesday 23 December 2026, 17:00 (finals week)
 
 ---
+
+> *Revised 2026-09-21.* The optional bonus section was removed to keep the set to 100 points of
+> this week's material.
 
 **Instructions:**
 - Show every step of the Euclidean algorithm; a bare gcd earns no method marks.
 - For every modular inverse, state the gcd condition that guarantees it exists.
 - Submit as a single PDF.
 
-**Scoring:** 100 points total, plus an optional 8-point bonus.
+**Scoring:** 100 points total.
 
 > **This is the last problem set of the course.** It is also the most directly useful: everything in
 > Part D is running on the machine you submit it from.
@@ -76,16 +79,6 @@ Name the theorem you use.
 
 **D4.** *(6 pts)* An attacker knows $n$ and $e$. Explain precisely what they must compute to recover
 $d$, why that is believed hard, and why "believed" rather than "proved".
-
----
-
-## Bonus (8 points — optional)
-
-**Bonus 1.** *(4 pts)* Prove that if $n$ is composite, it has a prime factor $\le\sqrt n$. Explain how
-this justifies stopping trial division at $\sqrt n$.
-
-**Bonus 2.** *(4 pts)* Show that $\varphi$ is multiplicative for coprime arguments:
-$\gcd(m,n)=1 \implies \varphi(mn)=\varphi(m)\varphi(n)$. Verify for $m=8$, $n=9$.
 
 ---
 

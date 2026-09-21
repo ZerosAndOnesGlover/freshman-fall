@@ -25,7 +25,7 @@ Monday builds that vocabulary and proves the one theorem everything rests on —
 Theorem**, that the degrees sum to twice the edge count. Its corollary, that odd-degree vertices come
 in pairs, looks like a curiosity and turns out to settle a 300-year-old puzzle on Friday.
 
-Wednesday is about **representation** and **sameness**. The adjacency matrix and adjacency list are
+Thursday is about **representation** and **sameness**. The adjacency matrix and adjacency list are
 not interchangeable — the choice decides whether your algorithm is feasible on a graph with a million
 vertices. And "are these two graphs the same?" turns out to be a genuinely hard question: invariants
 can prove two graphs *different*, but nothing short of exhibiting a bijection proves them the same.
@@ -44,9 +44,9 @@ direction.
 MATH151 Week10/
 ├── README.md
 ├── lectures/
-│   ├── L30 Graph Terminology.md                     ← Lecture 31 (Monday)
-│   ├── L31 Representations and Isomorphism.md       ← Lecture 32 (Wednesday)
-│   └── L32 Paths Connectivity Euler Hamilton.md     ← Lecture 33 (Friday)
+│   ├── L30 Graph Terminology.md                     ← Lecture 30 (Monday 30 Nov)
+│   ├── L31 Representations and Isomorphism.md       ← Lecture 31 (Thursday 3 Dec)
+│   └── L32 Paths Connectivity Euler Hamilton.md     ← Lecture 32 (Friday 4 Dec)
 ├── assignments/
 │   └── PS 10 Graphs.md
 ├── lab/
@@ -85,12 +85,12 @@ By the end of Week 10 you should be able to:
 
 | Day | Event | Topic |
 |---|---|---|
-| Monday | Quiz 10 (15 min) | Covers Week 9: recurrences and generating functions |
-| Monday | Lecture 31 | Terminology; the Handshake Theorem; standard families; bipartiteness |
-| Wednesday | Lecture 32 | Matrices and lists; walk counting; isomorphism and invariants |
-| Wednesday | Lab 10 | Graph workshop: build both representations, traverse, test invariants |
-| Friday | Lecture 33 | Paths, connectivity, cut vertices; Euler and Hamilton |
-| Friday | PS 10 Released | Due Week 11 Friday |
+| Monday 30 Nov, 13:00 | Quiz 10 (15 min) | Covers Week 9: recurrences and generating functions |
+| Monday 30 Nov, 13:00 | Lecture 30 | Terminology; the Handshake Theorem; standard families; bipartiteness |
+| Thursday 3 Dec, 13:00 | Lecture 31 | Matrices and lists; walk counting; isomorphism and invariants |
+| Friday 4 Dec, 13:00 | Lecture 32 | Paths, connectivity, cut vertices; Euler and Hamilton |
+| Friday 4 Dec, 14:00 | PS 10 released | Due Friday 11 Dec, 17:00 |
+| Wednesday 9 Dec, 15:00 (Week 11) | Lab 10 | Graph workshop: build both representations, traverse, test invariants |
 
 ---
 

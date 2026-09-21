@@ -1,5 +1,5 @@
 # MATH 151 · Discrete Mathematics for Computer Science
-## Lecture 1.1 (L03) — Predicates, Domains, and Quantifiers
+## Lecture 3 (L03) — Predicates, Domains, and Quantifiers
 ### Monday, Week 1
 
 **Date:** Monday 28 September 2026 · 13:00–13:50 · Week 1
@@ -348,4 +348,4 @@ Domain for all problems: ℤ (integers) unless stated.
 
 ---
 
-*Next: Lecture 1.2 — Negating Quantified Statements, Quantifier Equivalence Laws*
+*Next: Lecture 4 — Negating Quantified Statements, Quantifier Equivalence Laws*

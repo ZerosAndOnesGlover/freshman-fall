@@ -1,6 +1,6 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Quiz 6 — Functions
-### Administered: Monday, Week 6 (first 15 minutes of class)
+### Administered: Monday 2 November 2026, 13:00–13:15 (first 15 minutes of class) · Week 6
 
 **Name:** _________________________________ **Section:** ___________ **Date:** ___________
 
@@ -9,6 +9,8 @@
 **Instructions:** Closed notes. 15 minutes.
 
 **Total: 20 points**
+
+> *Revised 2026-09-21.* Problem 4 used to require the Pigeonhole Principle, which is taught in Week 8.
 
 ---
 
@@ -68,9 +70,11 @@ Determine whether $f:\mathbb{R}\to\mathbb{R}$, $f(x)=4x-5$, is invertible. If ye
 
 ### Problem 4 (4 points)
 
-Prove using the Pigeonhole Principle: among any 13 integers chosen from $\{1,2,\ldots,24\}$, two of them sum to 25.
+Let $A=\{1,2,3,4\}$ and $B=\{a,b,c\}$.
 
-Clearly identify the pigeons and pigeonholes in your proof.
+**(a)** (2 pts) Can a function $f:A\to B$ be injective? Justify using the finite-set counting facts from Lecture 15.
+
+**(b)** (2 pts) Write down an explicit surjective $f:A\to B$ (a table of values is fine). Is it injective?
 
 &nbsp;
 

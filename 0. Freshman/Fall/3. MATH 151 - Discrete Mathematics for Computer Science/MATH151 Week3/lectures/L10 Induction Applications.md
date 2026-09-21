@@ -1,5 +1,5 @@
 # MATH 151 · Discrete Mathematics for Computer Science
-## Lecture 3.2 (L10) — Induction Applications: Inequalities, Divisibility, and Recursion
+## Lecture 10 (L10) — Induction Applications: Inequalities, Divisibility, and Recursion
 ### Thursday, Week 3
 
 **Date:** Thursday 15 October 2026 · 13:00–13:50 · Week 3
@@ -278,10 +278,10 @@ def array_sum(arr, n):
 ```
 **Claim:** `array_sum(arr, n)` returns $\sum_{i=0}^{n-1} \text{arr}[i]$ for all $n \geq 0$.
 
-4. **Telescoping:** Prove that $\sum_{i=1}^{n} \frac{1}{i(i+1)} = \frac{n}{n+1}$ by induction. *(Compare to the pattern you found in Exercise 4 from Lecture 3.1.)*
+4. **Telescoping:** Prove that $\sum_{i=1}^{n} \frac{1}{i(i+1)} = \frac{n}{n+1}$ by induction. *(Compare to the pattern you found in Exercise 4 from Lecture 9.)*
 
 5. Find the error: "Proof that all integers are equal: P(n) = 'in any set of n integers, all are equal.' Base: P(1) trivially true. Inductive step: given n+1 integers $a_1,\ldots,a_{n+1}$, by P(n) applied to $\{a_1,\ldots,a_n\}$: $a_1=\ldots=a_n$. By P(n) applied to $\{a_2,\ldots,a_{n+1}\}$: $a_2=\ldots=a_{n+1}$. Since $a_2$ is in both groups, all are equal." *(Same error as the horses — find it.)*
 
 ---
 
-*Next: Lecture 3.3 — Strong Induction and the Well-Ordering Principle*
+*Next: Lecture 11 — Strong Induction and the Well-Ordering Principle*

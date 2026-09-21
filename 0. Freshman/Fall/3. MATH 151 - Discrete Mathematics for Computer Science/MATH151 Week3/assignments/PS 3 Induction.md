@@ -1,8 +1,11 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Problem Set 3 — Mathematical Induction
-### Released: Friday, Week 3 | Due: Friday, Week 4 (11:59 PM)
+### Released: Friday 16 October 2026, 14:00 (after the Friday lecture) | Due: Friday 23 October 2026, 17:00 (Week 4)
 
 ---
+
+> *Revised 2026-09-21.* The optional bonus section was removed to keep the set to 100 points of
+> this week's material.
 
 **Instructions:**
 - Every induction proof must include: (1) a clearly labeled base case, (2) a clearly stated induction hypothesis, (3) a clearly labeled inductive step, (4) a conclusion sentence.
@@ -171,18 +174,3 @@ Therefore, for all $n \geq 1$, $2^n \geq n+1$. ∎
 **E3.** (4 pts) Determine whether the following claim is true or false. If true, prove it. If false, find the smallest counterexample and explain why induction would fail.
 
 **Claim:** For all $n \geq 0$, $n^2 - n + 41$ is prime.
-
----
-
-## Bonus (8 points — optional)
-
-**Bonus 1.** (4 pts) Prove by induction: for all $n \geq 1$,
-$$\sum_{i=1}^{n} \frac{1}{\sqrt{i}} \geq \sqrt{n}$$
-
-*(Hint: For the inductive step, you need to show $\sqrt{k} + \frac{1}{\sqrt{k+1}} \geq \sqrt{k+1}$. Manipulate this carefully — multiply through by $\sqrt{k+1}$ and use the AM-GM inequality or direct algebra.)*
-
-**Bonus 2.** (4 pts) A **tiling** of a $2^n \times 2^n$ chessboard (with one square removed) by L-shaped trominoes (pieces covering 3 squares in an L-shape) is always possible for any $n \geq 1$ regardless of which square is removed.
-
-Prove this by induction on $n$.
-
-*Hint:* For the inductive step, divide the $2^{k+1} \times 2^{k+1}$ board into four $2^k \times 2^k$ quadrants. Place one tromino at the center covering one square from each of the three quadrants that do NOT contain the removed square. Then apply the IH to each quadrant.*

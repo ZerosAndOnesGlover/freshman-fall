@@ -1,6 +1,6 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Lab 8 — Advanced Counting Workshop: Pigeonhole and Inclusion–Exclusion
-### Wednesday, Week 8 | Duration: 2 hours
+### Wednesday 25 November 2026, 15:00–16:50 · Week 9 | Duration: 2 hours | Covers Week 8 (all three lectures)
 
 ---
 
@@ -191,7 +191,7 @@ Write `count_union(sets)` implementing the full inclusion–exclusion formula ov
 Python sets, and check it against `len(set().union(*sets))` for several random inputs.
 
 Then time both as the number of sets grows from 3 to 15. **Plot or tabulate the result** and state
-what the growth curve is — this is the $2^n$ cost from Lecture 8.2 made visible.
+what the growth curve is — this is the $2^n$ cost from Lecture 25 made visible.
 
 ---
 
@@ -200,7 +200,7 @@ what the growth curve is — this is the $2^n$ cost from Lecture 8.2 made visibl
 1. Section 3 asked you to classify without solving. Which two problems did you find hardest to
    classify, and what feature of the wording misled you?
 
-2. The subset-sum argument in Lecture 8.3 proves two subsets share a sum but gives no way to find
+2. The subset-sum argument in Lecture 26 proves two subsets share a sum but gives no way to find
    them. Describe, in your own words, why an existence proof can be easy while the search is hard.
 
 3. Your Exercise 4.3 timing shows inclusion–exclusion becoming unusable somewhere between 15 and 25

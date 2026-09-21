@@ -1,6 +1,6 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Lab 1 — Quantifier Workshop: Translation, Evaluation, and Computation
-### Wednesday, Week 1 | Duration: 2 hours
+### Wednesday 7 October 2026, 15:00–16:50 · Week 2 | Duration: 2 hours | Covers Week 1 (all three lectures)
 
 ---
 

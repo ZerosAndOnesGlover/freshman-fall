@@ -1,5 +1,5 @@
 # MATH 151 · Discrete Mathematics for Computer Science
-## Lecture 9.1 (L27) — Recurrence Relations: Modelling and Iteration
+## Lecture 27 (L27) — Recurrence Relations: Modelling and Iteration
 ### Monday, Week 9
 
 **Date:** Monday 23 November 2026 · 13:00–13:50 · Week 9
@@ -126,7 +126,7 @@ $$a_n = 2a_{n-1}+3 \quad\text{— linear, order 1, constant coefficients, \textb
 $$a_n = a_{n-1}\cdot a_{n-2} \quad\text{— \textbf{not} linear}$$
 $$a_n = n\,a_{n-1} \quad\text{— linear but \textbf{not} constant-coefficient}$$
 
-Wednesday's method solves exactly the first kind — **linear, constant-coefficient, homogeneous** —
+Thursday's method solves exactly the first kind — **linear, constant-coefficient, homogeneous** —
 and extends with effort to the second. The last two need other tools.
 
 ---
@@ -168,4 +168,4 @@ and extends with effort to the second. The last two need other tools.
 - **Epp, 5e §5.6** — Recursive definitions and sequences
 - **Levin, 3e §2.4** — Solving recurrence relations
 
-*Next: Lecture 9.2 — Solving Linear Recurrences with the Characteristic Equation*
+*Next: Lecture 28 — Solving Linear Recurrences with the Characteristic Equation*

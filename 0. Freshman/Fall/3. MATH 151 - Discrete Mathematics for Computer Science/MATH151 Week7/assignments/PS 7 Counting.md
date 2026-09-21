@@ -1,8 +1,11 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Problem Set 7 — Counting
-### Released: Friday, Week 7 | Due: Friday, Week 8 (11:59 PM)
+### Released: Friday 13 November 2026, 14:00 (after the Friday lecture) | Due: Friday 20 November 2026, 17:00 (Week 8)
 
 ---
+
+> *Revised 2026-09-21.* The optional bonus section was removed to keep the set to 100 points of
+> this week's material.
 
 **Instructions:**
 - For every problem, explicitly state which counting scenario applies (order? repetition?) before computing.
@@ -22,7 +25,7 @@
 
 **(b)** A computer password must be 6 characters: the first 2 must be uppercase letters, the last 4 must be digits. How many passwords are possible?
 
-**(c)** How many integers from 1 to 500 are divisible by 4 or by 6? *(Careful — check for overlap using Inclusion-Exclusion.)*
+**(c)** How many integers from 1 to 500 are divisible by 4 or by 6? *(Careful — check for overlap using the two-set Inclusion-Exclusion formula from Week 4.)*
 
 **(d)** A binary string has length 8. How many such strings start with "11" or end with "00" (or both)?
 
@@ -109,13 +112,3 @@ its value for $n=5$, $r=3$.
 
 - (a) How many distinct arrangements of the letters of **BANANA**?
 - (b) How many bit strings of length 8 contain exactly three 1s?
-
----
-
-## Bonus (8 points — optional)
-
-**Bonus 1.** (4 pts) How many ways can the letters of "COMBINATORICS" be arranged such that all the vowels (O, I, A, O, I) appear together as a contiguous block (in any order among themselves)?
-
-*(Hint: treat the vowel-block as a single unit, arrange it with the remaining consonants, then separately count internal arrangements of the vowel block, accounting for repeated letters.)*
-
-**Bonus 2.** (4 pts) Prove the Hockey Stick Identity $\sum_{i=r}^{n}\binom{i}{r}=\binom{n+1}{r+1}$ using **induction on $n$** (a different proof than the combinatorial one given in Friday's lecture). State your base case and inductive step clearly, citing Pascal's Rule where needed.

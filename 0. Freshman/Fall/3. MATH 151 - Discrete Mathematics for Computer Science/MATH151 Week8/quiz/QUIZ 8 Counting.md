@@ -1,6 +1,6 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Quiz 8 — Counting
-### Administered: Monday, Week 8 (first 15 minutes of class)
+### Administered: Monday 16 November 2026, 13:00–13:15 (first 15 minutes of class) · Week 8
 
 **Name:** _________________________________ **Section:** ___________ **Date:** ___________
 

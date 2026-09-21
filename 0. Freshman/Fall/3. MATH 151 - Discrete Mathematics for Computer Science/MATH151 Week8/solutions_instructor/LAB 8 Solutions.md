@@ -204,7 +204,7 @@ Agrees with `len(set().union(*sets))` on every random input.
 | 20 | 1048575 |
 
 The curve is exponential, not polynomial — the giveaway is that a log-scale plot of time against $n$
-is a straight line. This is Lecture 8.2's $2^n$ cost made visible, and it is why database query
+is a straight line. This is Lecture 25's $2^n$ cost made visible, and it is why database query
 planners truncate the expansion after the pairwise terms rather than computing it exactly.
 
 *Marking: 3 for a correct implementation agreeing with `set.union`, 3 for the timing data, and full

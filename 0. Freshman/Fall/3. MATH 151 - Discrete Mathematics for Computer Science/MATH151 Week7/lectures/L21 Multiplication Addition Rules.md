@@ -1,5 +1,5 @@
 # MATH 151 · Discrete Mathematics for Computer Science
-## Lecture 7.1 (L21) — The Multiplication Rule and Addition Rule
+## Lecture 21 (L21) — The Multiplication Rule and Addition Rule
 ### Monday, Week 7
 
 **Date:** Monday 9 November 2026 · 13:00–13:50 · Week 7
@@ -200,4 +200,4 @@ Bijection Principle:
 
 ---
 
-*Next: Lecture 7.2 — Permutations and Combinations*
+*Next: Lecture 22 — Permutations and Combinations*

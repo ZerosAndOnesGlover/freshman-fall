@@ -1,8 +1,11 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Problem Set 2 — Proof Techniques
-### Released: Friday, Week 2 | Due: Friday, Week 3 (11:59 PM)
+### Released: Friday 9 October 2026, 14:00 (after the Friday lecture) | Due: Friday 16 October 2026, 17:00 (Week 3)
 
 ---
+
+> *Revised 2026-09-21.* The optional bonus section was removed to keep the set to 100 points of
+> this week's material.
 
 **Instructions:**
 - Every proof must be written in complete mathematical prose. No pseudocode, no bullet points, no arrows.
@@ -152,23 +155,3 @@ What exactly goes wrong? At what step does the proof fail? Why does the analogou
 **(c)** If p is prime and p | ab, then p | a or p | b.
 
 *(The contrast between (b) and (c) is one of the most important distinctions in number theory.)*
-
----
-
-## Bonus (8 points — optional)
-
-**Bonus 1.** (4 pts) Prove that √2 + √3 is irrational.
-
-*Hint:* Suppose √2 + √3 = r for some rational r. Square both sides and isolate √6. Then show √6 is irrational using the approach from Lecture 2.3.
-
-**Bonus 2.** (4 pts) The following is a famous "proof" that 1 = 2. Find EVERY error (there may be more than one):
-
-Let a = b = 1.
-Then a² = ab.
-Then a² − b² = ab − b².
-Then (a−b)(a+b) = b(a−b).
-Then a + b = b.
-Then 1 + 1 = 1.
-Then 2 = 1.
-
-Identify every invalid step, the reason it is invalid, and what assumption it violates.

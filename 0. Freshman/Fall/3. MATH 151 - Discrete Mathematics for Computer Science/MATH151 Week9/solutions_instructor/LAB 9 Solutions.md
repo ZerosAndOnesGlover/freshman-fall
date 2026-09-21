@@ -88,7 +88,7 @@ $n \le 30$**.
 **3.** Memoised: **59 calls** at $n=30$ (one per subproblem, plus the misses), against $2{,}692{,}537$
 — a factor of about $45{,}000$.
 
-**4.** Naive is $\Theta(\varphi^n)$; memoised is $\Theta(n)$. The $\varphi$ is exactly Lecture 9.2's
+**4.** Naive is $\Theta(\varphi^n)$; memoised is $\Theta(n)$. The $\varphi$ is exactly Lecture 28's
 golden ratio: $C_n = 2F_{n+1}-1$ and $F_n \sim \varphi^n/\sqrt5$, so the call count grows like
 $\varphi^n$.
 

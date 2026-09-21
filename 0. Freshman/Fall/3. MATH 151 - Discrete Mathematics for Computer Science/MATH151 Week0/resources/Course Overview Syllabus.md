@@ -9,7 +9,7 @@
 |---|---|
 | **Credits** | 3 |
 | **Meetings** | Mon/Wed/Fri, 50 minutes each |
-| **Lab** | Wednesday, 2 hours |
+| **Lab** | Wednesday 15:00–16:50. Lab N meets the Wednesday **after** Week N, so all three of the week's lectures come first (Lab 0: Wed 30 Sep 2026; Lab 12: Wed 23 Dec 2026) |
 | **Semester** | Fall, Year 1 |
 | **Prerequisites** | None |
 
@@ -49,10 +49,10 @@ Free at `discrete.openmathbooks.org`. Focused and excellent.
 
 | Component | Weight | Details |
 |-----------|--------|---------|
-| **Problem Sets (13)** | 40% | PS 0–12, released Friday, due the following Friday at 23:59. Each worth 100 points. **Lowest 1 dropped.** |
-| **Weekly Quizzes (12)** | 15% | Quiz 1–12, first 15 minutes of Monday's lecture. Each worth 20 points. Quiz *N* covers Week *N−1*. **Lowest 1 dropped.** |
-| **Lab Sections (13)** | 15% | Lab 0–12, Wednesdays, 2 hours. Graded on **completion** against the checkoff criteria, not on points. |
-| **Final Exam** | 30% | Comprehensive, 3 hours. One double-sided A4 sheet of handwritten notes. |
+| **Problem Sets (13)** | 40% | PS 0–12, released Friday 14:00, due the following Friday at 17:00 (PS 12: Wednesday 23 December 2026, 17:00). Each worth 100 points. **Lowest 1 dropped.** |
+| **Weekly Quizzes (12)** | 15% | Quiz 1–12, first 15 minutes of Monday's lecture (13:00–13:15; 28 September – 14 December 2026). Each worth 20 points. Quiz *N* covers Week *N−1*. **Lowest 1 dropped.** |
+| **Lab Sections (13)** | 15% | Lab 0–12, Wednesdays 15:00–16:50, each one week after its material. Graded on **completion** against the checkoff criteria, not on points. |
+| **Final Exam** | 30% | Monday 21 December 2026, 08:00 (registry slot 08:00–10:00 — *the registry allows 120 minutes, not 3 hours; one of the two must change*). Comprehensive. One double-sided A4 sheet of handwritten notes. |
 
 **Total:** 100%
 
@@ -104,7 +104,7 @@ prose "Lecture *k*" is file `L(k−1)`.
 
 ## Lab Policy
 
-Labs meet Wednesday for 2 hours and are graded on **completion**: your TA signs off the checkoff
+Labs meet Wednesday 15:00–16:50 and are graded on **completion**: your TA signs off the checkoff
 criteria printed at the end of each lab sheet. Work in pairs, but both partners submit.
 
 Labs use Python 3 with **no external libraries**. Implementing the algorithms yourself is the point —

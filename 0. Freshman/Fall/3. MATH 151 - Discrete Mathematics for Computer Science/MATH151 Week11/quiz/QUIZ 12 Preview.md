@@ -1,6 +1,6 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Quiz 12 — Scope Preview
-### Quiz administered: Monday, Week 12 (first 15 minutes of lecture)
+### Quiz administered: Monday 14 December 2026, 13:00–13:15 (first 15 minutes of lecture) · Week 12
 
 ---
 

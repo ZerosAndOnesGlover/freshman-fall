@@ -1,5 +1,5 @@
 # MATH 151 · Discrete Mathematics for Computer Science
-## Lecture 1.2 (L04) — Negating Quantified Statements and Logical Equivalences
+## Lecture 4 (L04) — Negating Quantified Statements and Logical Equivalences
 ### Thursday, Week 1
 
 **Date:** Thursday 1 October 2026 · 13:00–13:50 · Week 1
@@ -329,4 +329,4 @@ Let Alloc(b, t) = "block b is allocated at time t", Free(b, t) = "block b is fre
 
 ---
 
-*Next: Lecture 1.3 — Nested Quantifiers: When Order Matters*
+*Next: Lecture 5 — Nested Quantifiers: When Order Matters*

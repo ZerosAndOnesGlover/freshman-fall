@@ -25,7 +25,7 @@ there is nothing to search for and nothing to optimise over. Monday develops tha
 five equivalent characterisations of a tree and the height bound that explains why balanced binary
 search trees exist at all.
 
-Wednesday asks a harder question: given a graph with weighted edges, find the cheapest subset that
+Thursday asks a harder question: given a graph with weighted edges, find the cheapest subset that
 keeps everything connected. **Kruskal and Prim both answer it greedily and both are correct** — which
 is unusual, since greedy algorithms normally fail. The reason they work is the **cut property**, and
 that property is exactly what the Travelling Salesman Problem lacks.
@@ -43,9 +43,9 @@ detected" is a topological sort correctly reporting that no valid order exists.
 MATH151 Week11/
 ├── README.md
 ├── lectures/
-│   ├── L33 Trees and Their Properties.md     ← Lecture 34 (Monday)
-│   ├── L34 Spanning Trees.md                 ← Lecture 35 (Wednesday)
-│   └── L35 BFS and DFS.md                    ← Lecture 36 (Friday)
+│   ├── L33 Trees and Their Properties.md     ← Lecture 33 (Monday 7 Dec)
+│   ├── L34 Spanning Trees.md                 ← Lecture 34 (Thursday 10 Dec)
+│   └── L35 BFS and DFS.md                    ← Lecture 35 (Friday 11 Dec)
 ├── assignments/
 │   └── PS 11 Trees.md
 ├── lab/
@@ -84,12 +84,12 @@ By the end of Week 11 you should be able to:
 
 | Day | Event | Topic |
 |---|---|---|
-| Monday | Quiz 11 (15 min) | Covers Week 10: graphs, isomorphism, Euler and Hamilton |
-| Monday | Lecture 34 | Trees; equivalences; rooted and binary trees; height bounds |
-| Wednesday | Lecture 35 | Spanning trees; Cayley; Kruskal and Prim; the cut property |
-| Wednesday | Lab 11 | Tree workshop: implement all four algorithms |
-| Friday | Lecture 36 | BFS, DFS, topological sort |
-| Friday | PS 11 Released | Due Week 12 Friday |
+| Monday 7 Dec, 13:00 | Quiz 11 (15 min) | Covers Week 10: graphs, isomorphism, Euler and Hamilton |
+| Monday 7 Dec, 13:00 | Lecture 33 | Trees; equivalences; rooted and binary trees; height bounds |
+| Thursday 10 Dec, 13:00 | Lecture 34 | Spanning trees; Cayley; Kruskal and Prim; the cut property |
+| Friday 11 Dec, 13:00 | Lecture 35 | BFS, DFS, topological sort |
+| Friday 11 Dec, 14:00 | PS 11 released | Due Friday 18 Dec, 17:00 |
+| Wednesday 16 Dec, 15:00 (Week 12) | Lab 11 | Tree workshop: implement all four algorithms |
 
 ---
 

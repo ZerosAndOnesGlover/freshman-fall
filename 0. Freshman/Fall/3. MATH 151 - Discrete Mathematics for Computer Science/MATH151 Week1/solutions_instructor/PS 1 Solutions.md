@@ -86,10 +86,6 @@ specify their domains, and why "n | 0" surprises students who have only seen pos
 
 **(f)** ∃x ∈ ℤ, x² = 2: **FALSE.** √2 is irrational, so no integer squares to 2. (If n² = 2, then n = √2 ∉ ℤ.)
 
-**(g)** ∀x ∈ ℚ, ∃y ∈ ℚ, y > x: **TRUE.** Given any rational x, take y = x + 1 ∈ ℚ, and y > x.
-
-**(h)** ∀x ∈ ℝ, x = 0 ∨ x > 0 ∨ x < 0: **TRUE.** This is the trichotomy of real numbers — every real is zero, positive, or negative. (Tautological given the ordering of ℝ.)
-
 ---
 
 ### B2. Translations
@@ -102,19 +98,15 @@ Domain: ℤ⁺. P(x) = "x is prime", E(x) = "x is even."
 Domain: ℝ. Q(x) = "x is rational."
 **¬∀x Q(x)** equiv. **∃x ¬Q(x).** [True — witness: x = √2]
 
-**(c)** "Every algorithm either terminates or runs forever."
-Domain: algorithms. T(a) = "a terminates", F(a) = "a runs forever" = ¬T(a).
 **∀a (T(a) ∨ ¬T(a)).** This is a tautology — every algorithm either terminates or it doesn't. The formula is vacuously true regardless of the algorithms. (It's propositional tautology p ∨ ¬p applied universally.)
 
-**(d)** "There is a real number that is not the square of any real number."
+**(c)** "There is a real number that is not the square of any real number."
 Domain: ℝ.
 **∃x ∈ ℝ, ∀y ∈ ℝ, y² ≠ x.** [True — witness: x = −1, since no real squares to a negative.]
 
-**(e)** "Every input to the function produces an output."
-Domain: inputs, outputs. f = the function.
 **∀x ∃y, f(x) = y.** (This is essentially the definition of total function.)
 
-**(f)** "No integer is both positive and negative."
+**(d)** "No integer is both positive and negative."
 Domain: ℤ. Pos(x) = "x > 0", Neg(x) = "x < 0."
 **∀x ¬(Pos(x) ∧ Neg(x))** equiv. **∀x (Pos(x) → ¬Neg(x)).**
 
@@ -126,15 +118,11 @@ Domain: ℤ. Pos(x) = "x > 0", Neg(x) = "x < 0."
 
 **(b)** ∃x ∀y (x ≤ y): "There exists a real number that is less than or equal to every real number" — i.e., a minimum real number. FALSE over ℝ (ℝ has no minimum).
 
-**(c)** ∀x ∀y (x < y → ∃z, x < z < y): "Between any two distinct real numbers, there exists a real number." TRUE (take z = (x+y)/2).
+**(c)** ∃x ¬P(x): "There exists an irrational real number." TRUE (e.g., √2).
 
-**(d)** ∀x (P(x) → ∀y (P(y) → P(x+y))): "For any two rational numbers, their sum is rational." TRUE (ℚ is closed under addition).
+**(d)** ¬∀x P(x): "Not every real number is rational." TRUE (same meaning as (c)).
 
-**(e)** ∃x ¬P(x): "There exists an irrational real number." TRUE (e.g., √2).
-
-**(f)** ¬∀x P(x): "Not every real number is rational." TRUE (same meaning as (e)).
-
-**(e) and (f) equivalence:** ¬∀x P(x) ≡ ∃x ¬P(x) by De Morgan for quantifiers. So yes, they are equivalent — and both are true.
+**(c) and (d) equivalence:** ¬∀x P(x) ≡ ∃x ¬P(x) by De Morgan for quantifiers. So yes, they are equivalent — and both are true.
 
 ---
 
@@ -209,22 +197,15 @@ So the original is FALSE (and indeed, x and −x have the same absolute value fo
 
 **(b)** ∃y ∀x (y > x): **FALSE.** Any candidate y would need to exceed every integer, including y−1. Impossible.
 
-**(c)** ∀x ∀y (x < y → ∃z, x < z < y): **FALSE** over ℤ. Counterexample: x=0, y=1. No integer z satisfies 0 < z < 1.
-(This is TRUE over ℝ — illustrates how domain matters.)
+**(c)** ∀x ∃y (x + y = 0): **TRUE.** Given x, take y = −x ∈ ℤ.
 
-**(d)** ∀x ∃y (x + y = 0): **TRUE.** Given x, take y = −x ∈ ℤ.
+**(d)** ∃x ∀y (x + y = 0): **FALSE.** Any fixed x would need x + y = 0 for all y, requiring y = −x always — but y varies. No single x satisfies this for all y.
 
-**(e)** ∃x ∀y (x + y = 0): **FALSE.** Any fixed x would need x + y = 0 for all y, requiring y = −x always — but y varies. No single x satisfies this for all y.
+**(e)** ∃x ∃y (x² + y² = 5): **TRUE.** Witness: x=1, y=2. 1+4=5 ✓. (Also x=2,y=1 and negatives.)
 
-**(f)** ∀x ∀y ∃z (z = x + y): **TRUE.** Given any x, y ∈ ℤ, take z = x+y ∈ ℤ (integers are closed under addition).
+**(f)** ∀x ∃y (x · y = 1) over ℤ: **FALSE.** Counterexample: x=2. We need 2y=1, so y=1/2 ∉ ℤ.
 
-**(g)** ∃x ∃y (x² + y² = 5): **TRUE.** Witness: x=1, y=2. 1+4=5 ✓. (Also x=2,y=1 and negatives.)
-
-**(h)** ∀x ∃y (x · y = 1) over ℤ: **FALSE.** Counterexample: x=2. We need 2y=1, so y=1/2 ∉ ℤ.
-
-**(i)** ∀x ∃y (x · y = 1) over ℚ\{0}: **TRUE.** Given any non-zero rational x = p/q, take y = q/p ∈ ℚ\{0}. Then xy = 1.
-
-**(j)** ∃x ∀y ∀z (x = y + z): **FALSE.** A single x would need to equal y+z for all pairs (y,z), which is impossible since y+z takes all integer values.
+**(g)** ∀x ∃y (x · y = 1) over ℚ\{0}: **TRUE.** Given any non-zero rational x = p/q, take y = q/p ∈ ℚ\{0}. Then xy = 1.
 
 ---
 
@@ -259,29 +240,11 @@ Original: FALSE (sum of squares ≥ 0 always over ℤ). Negation: TRUE.
 
 ### D3. Definitions
 
-**(a) Function definition:**
-∀x∈A, ∃!y∈B, f(x)=y
-
-Expanded form of ∃!:
-∀x∈A, (∃y∈B, f(x)=y) ∧ (∀y₁∈B ∀y₂∈B, (f(x)=y₁ ∧ f(x)=y₂) → y₁=y₂)
-
-**(b) f(x) = 2x, injectivity:**
-∀x₁∈ℤ ∀x₂∈ℤ, (f(x₁)=f(x₂) → x₁=x₂)
-= ∀x₁ ∀x₂, (2x₁=2x₂ → x₁=x₂)
-
-Proof: Assume 2x₁ = 2x₂. Dividing both sides by 2: x₁ = x₂. ✓ So f is injective.
-
-**(c) f(x) = 2x, surjectivity onto ℤ:**
-∀y∈ℤ, ∃x∈ℤ, 2x=y
-
-Counterexample: y=1. We need 2x=1, so x=1/2 ∉ ℤ. So f is NOT surjective onto ℤ.
-(f is surjective onto the even integers, but not onto all of ℤ.)
-
-**(d) Sequence {aₙ} = (−1)ⁿ bounded:**
+**(a) Sequence {aₙ} = (−1)ⁿ bounded:**
 Definition: ∃M∈ℝ, ∀n∈ℕ, |aₙ| ≤ M.
 Take M = 1. Then |aₙ| = |(−1)ⁿ| = 1 ≤ 1 for all n. ✓ Bounded.
 
-**(e) Density of ℚ in ℝ:**
+**(b) Density of ℚ in ℝ:**
 Formal: ∀x∈ℝ ∀y∈ℝ, (x < y → ∃q∈ℚ, x < q < y)
 Negation: ∃x∈ℝ ∃y∈ℝ, (x < y ∧ ∀q∈ℚ, ¬(x < q < y))
          = ∃x∈ℝ ∃y∈ℝ, (x < y ∧ ∀q∈ℚ, q≤x ∨ q≥y)
@@ -299,12 +262,7 @@ T(p) = "p is well-typed", E(p,s) = "p encounters a type error at runtime state s
 **∀p (T(p) → ∀s ¬E(p,s))**
 Or: **∀p ∀s (T(p) ∧ reachable(p,s) → ¬E(p,s))**
 
-**(b)** Memory safety:
-Let A(addr,t) = "address addr was allocated at or before time t and not yet freed."
-Access(p,addr,t) = "program p accesses address addr at time t."
-**∀t ∀addr (Access(p,addr,t) → A(addr,t))**
-
-**(c)** Termination:
+**(b)** Termination:
 Domain: inputs, execution steps.
 Valid(x) = "x is a valid input", Halts(p,x,n) = "p halts on x within n steps."
 **∀x (Valid(x) → ∃n∈ℕ, Halts(p,x,n))**
@@ -336,36 +294,3 @@ Given: f(n) = O(g(n)) iff ∃C∈ℝ⁺ ∃n₀∈ℕ ∀n∈ℕ (n≥n₀ → f
 **(c)** A load balancer satisfies **Spec A** — each request is routed to some server, but not necessarily the same one. Different requests may go to different servers.
 
 **(d)** A single server handling all requests satisfies **both Spec A and Spec B**. The single server is the witness for ∃s in Spec B, and it works for every request r.
-
----
-
-## Bonus Solutions
-
-### Bonus 1
-
-**(a)** Continuity at a: ∀ε>0 ∃δ>0 ∀x (|x−a|<δ → |f(x)−f(a)|<ε)
-Uniform continuity: ∀ε>0 ∃δ>0 ∀x ∀y (|x−y|<δ → |f(x)−f(y)|<ε)
-
-Difference: In continuity, the ∀x for the center point a is *outside* ∃δ. In uniform continuity, both ∀x and ∀y (the two points being compared) come *after* ∃δ. So for continuity, δ may depend on both ε and the center point a. For uniform continuity, δ depends only on ε.
-
-**(b)** Uniform continuity → pointwise continuity at every a:
-Given ε>0, uniform continuity supplies δ that works for ALL x,y. In particular, fixing x=a and letting y be the variable, we have: ∀y (|a−y|<δ → |f(a)−f(y)|<ε). This is exactly pointwise continuity at a. ✓
-
-**(c)** Negation of uniform continuity:
-∃ε>0 ∀δ>0 ∃x ∃y (|x−y|<δ ∧ |f(x)−f(y)|≥ε)
-English: "There exists some ε>0 such that for any δ>0, no matter how small, we can find two points within δ of each other whose function values are at least ε apart."
-Informally: the function can be made to oscillate by at least ε over arbitrarily small intervals. Example: f(x) = sin(1/x) near x=0.
-
-### Bonus 2
-
-**(a)** ∀x ∃y (x≠y ∧ F(x,y)) — everyone has a friend (distinct from themselves)
-
-**(b)** ∃x ∀y (x≠y → F(x,y)) — someone is friends with everyone else
-
-**(c)** ∀x ¬F(x,x) — no one is friends with themselves
-
-**(d)** ∀x ∀y (F(x,y) → F(y,x)) — friendship is symmetric
-
-**(e)** With (c) and (d): ¬(b) = ∀x ∃y (x≠y ∧ ¬F(x,y)).
-Using (d), F(x,y)↔F(y,x), so ¬F(x,y)↔¬F(y,x).
-The negation says: "Everyone has someone they are not friends with (other than themselves)." With symmetry this means: "Everyone has some non-friend." This cannot be further simplified to a dramatically shorter form, but it can be stated as: "No person is friends with every other person at the party."

@@ -1,7 +1,7 @@
 # MATH 151 · Problem Set 10 Solutions
 ## INSTRUCTOR ONLY — DO NOT DISTRIBUTE
 
-**Total: 100 points**, plus 8 bonus. All computations verified.
+**Total: 100 points.** All computations verified.
 
 Throughout, $G$ denotes $V=\{a,b,c,d,e\}$, $E=\{ab,ac,bc,bd,cd,de\}$.
 
@@ -258,41 +258,6 @@ components — impossible. Hence no Hamilton cycle exists. ∎
 
 *Marking: 2 for setting up $G-v$, 3 for "deleting one vertex from a cycle leaves a path", 1 for the
 contradiction. That middle step is the key insight.*
-
----
-
-## Bonus Solutions
-
-### Bonus 1. *(4 pts)*
-
-Let $u,w$ be the two odd-degree vertices and suppose an Euler trail starts at $x\notin\{u,w\}$.
-
-At any vertex that is neither the start nor the end, each visit uses two edges (one in, one out), so
-its degree must be even. Since $u$ has odd degree and is not an endpoint under this assumption, the
-trail must at some point arrive at $u$ and be unable to leave — but then $u$ is the end, contrary to
-assumption.
-
-Therefore the trail's endpoints are exactly the odd-degree vertices. ∎
-
-*Marking: 2 for the parity-at-interior-vertices argument, 2 for the conclusion.*
-
----
-
-### Bonus 2. *(4 pts)*
-
-The Petersen graph: 10 vertices, 15 edges, 3-regular, connected, vertex-transitive. **Exhaustive
-search over all Hamilton cycle candidates finds none** *(verified computationally)*.
-
-The standard hand argument: any Hamilton cycle would have to use some number of spokes; a parity
-analysis of the outer 5-cycle, inner pentagram, and spokes shows every case forces a shorter cycle to
-close prematurely.
-
-**Dirac's theorem does not apply:** it requires every degree $\ge n/2 = 5$, but Petersen is 3-regular.
-Dirac is a **sufficient** condition, so its failure gives no information either way — the Petersen
-graph simply lies outside its scope.
-
-*Marking: 2 for establishing non-Hamiltonicity, 2 for the correct reading of Dirac. Students who say
-"Dirac fails, therefore not Hamiltonian" have inverted the logic — deduct 2.*
 
 ---
 

@@ -328,21 +328,3 @@ p ∨ q ≡ ¬p → q  [since p→q ≡ ¬p∨q, so ¬p→q ≡ ¬¬p∨q ≡ p�
 **(c)** {∧, ∨} cannot express ¬: Every formula using only ∧ and ∨, when all variables are T, evaluates to T. But ¬p evaluates to F when p=T. So negation is outside the expressible set.
 
 More formally: any formula built from ∧ and ∨ with all-true inputs gives all-true outputs. Negation takes a true input to false — impossible with these connectives alone.
-
----
-
-## Bonus Solutions
-
-**(a)** p | q = ¬(p∧q): truth table matches NAND. ✓
-
-**(b)** 
-- ¬p = p | p  (since ¬(p∧p) = ¬p) ✓
-- p ∧ q = (p|q)|(p|q)  [since ¬(¬(p∧q)) = p∧q and using (a)] ✓
-- p ∨ q = (p|p)|(q|q)  [this is (¬p)|(¬q) = ¬(¬p ∧ ¬q) = p∨q, by De Morgan] ✓
-
-**(c)** NOR: p↓q = ¬(p∨q)
-- ¬p = p ↓ p  (since ¬(p∨p) = ¬p) ✓
-- p ∨ q = (p↓q)↓(p↓q)  (double NOR = double negation of OR = OR) ✓
-- p ∧ q = (p↓p)↓(q↓q) = ¬p↓¬q = ¬(¬p∨¬q) = p∧q by De Morgan ✓
-
-**(d)** Using one gate type simplifies manufacturing: a chip fab can optimize a single cell design to the maximum. Cost per gate drops. You also need only one type of spare part. The tradeoff: circuits may require more gates to implement the same function compared to a mixed-gate design. For example, a 2-input AND requires 2 NAND gates (one to NAND, one to negate the NAND output), vs a single AND gate. This extra gate count means more area and potentially more power consumption — the practical cost of universality.

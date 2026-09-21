@@ -1,15 +1,18 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Problem Set 11: Trees, Spanning Trees, and Traversal
-### Released: Friday, Week 11 | Due: Friday, Week 12 (11:59 PM)
+### Released: Friday 11 December 2026, 14:00 (after the Friday lecture) | Due: Friday 18 December 2026, 17:00 (Week 12)
 
 ---
+
+> *Revised 2026-09-21.* The optional bonus section was removed to keep the set to 100 points of
+> this week's material.
 
 **Instructions:**
 - Draw every tree you construct and label the vertices.
 - For every algorithm trace, tabulate the state at each step — not just the final answer.
 - Show all work. Submit as a single PDF.
 
-**Scoring:** 100 points total, plus an optional 8-point bonus.
+**Scoring:** 100 points total.
 
 ---
 
@@ -83,16 +86,6 @@ Then state precisely what changes when edges are weighted.
 $c\to d$, $d\to e$. Explain why there is more than one.
 
 **D4.** *(5 pts)* Describe how to test bipartiteness with a single BFS, and state the running time.
-
----
-
-## Bonus (8 points — optional)
-
-**Bonus 1.** *(4 pts)* Prove the **cut property**: for any partition of $V$ into two non-empty sets,
-the minimum-weight edge crossing the partition lies in some MST.
-
-**Bonus 2.** *(4 pts)* Show that a directed graph has a cycle iff some DFS encounters an edge to a
-vertex currently on the recursion stack. Explain why testing "already visited" is not sufficient.
 
 ---
 

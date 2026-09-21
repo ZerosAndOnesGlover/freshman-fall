@@ -1,7 +1,7 @@
 # MATH 151 · Problem Set 12 Solutions
 ## INSTRUCTOR ONLY — DO NOT DISTRIBUTE
 
-**Total: 100 points**, plus 8 bonus. All values verified computationally.
+**Total: 100 points.** All values verified computationally.
 
 ---
 
@@ -240,35 +240,6 @@ absolute — it is contingent on the machine model.
 
 *Marking: 3 for the chain $d\leftarrow\varphi(n)\leftarrow p,q\leftarrow$ factoring; 3 for the
 believed-versus-proved distinction with a reason.*
-
----
-
-## Bonus Solutions
-
-### Bonus 1. *(4 pts)*
-Let $n$ be composite, so $n = ab$ with $1<a\le b<n$. Then $a^2 \le ab = n$, giving $a\le\sqrt n$.
-Now $a>1$, so $a$ has a prime divisor $p\le a\le\sqrt n$, and $p\mid a\mid n$. ∎
-
-**Justifying trial division:** if no prime $\le\sqrt n$ divides $n$, then by the contrapositive $n$
-is not composite, hence prime. Testing beyond $\sqrt n$ is therefore redundant — any factor above it
-has already been found as the partner of one below.
-
-*Marking: 3 for the proof, 1 for the algorithmic consequence.*
-
----
-
-### Bonus 2. *(4 pts)*
-**Verification for $m=8$, $n=9$** (coprime): $\varphi(8)=4$, $\varphi(9)=6$, and $\varphi(72)=24 =
-4\times6$ ✓ *(all confirmed by direct count).*
-
-**Proof sketch.** By CRT the map $x \mapsto (x\bmod m,\ x\bmod n)$ is a bijection
-$\mathbb{Z}_{mn}\to\mathbb{Z}_m\times\mathbb{Z}_n$. Moreover $\gcd(x,mn)=1$ **iff** $\gcd(x,m)=1$ and
-$\gcd(x,n)=1$. So the bijection restricts to a bijection between the units of $\mathbb{Z}_{mn}$ and
-the pairs of units, giving $\varphi(mn)=\varphi(m)\varphi(n)$. ∎
-
-*Marking: 1 verification, 3 proof. Full credit requires the CRT bijection; hand-waving at "counting
-coprime pairs" earns 2. Note coprimality of $m,n$ is essential — $\varphi(4)\varphi(6)=2\cdot2=4$ but
-$\varphi(24)=8$.*
 
 ---
 

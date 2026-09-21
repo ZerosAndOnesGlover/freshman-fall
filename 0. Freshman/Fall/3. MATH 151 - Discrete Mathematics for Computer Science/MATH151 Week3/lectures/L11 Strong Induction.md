@@ -1,5 +1,5 @@
 # MATH 151 · Discrete Mathematics for Computer Science
-## Lecture 3.3 (L11) — Strong Induction and the Well-Ordering Principle
+## Lecture 11 (L11) — Strong Induction and the Well-Ordering Principle
 ### Friday, Week 3
 
 **Date:** Friday 16 October 2026 · 13:00–13:50 · Week 3
@@ -260,7 +260,7 @@ By the Principle of Strong Induction, P(n) holds for all n ≥ n₀. ∎
    - (a) For all $n \geq 1$, $\sum_{i=1}^{n} i = n(n+1)/2$.
    - (b) Every $n \geq 2$ has a unique prime factorization (uniqueness part).
    - (c) The sequence $a_n = 3a_{n-1} - 2a_{n-2}$ with $a_1=1, a_2=3$ satisfies $a_n = 2^{n-1} + (-1)^n \cdot 0$... compute a formula and decide.
-   - (d) The number of regions created by n lines in general position in the plane is $1 + n + \binom{n}{2}$.
+   - (d) The number of regions created by n lines in general position in the plane is $1 + n + \frac{n(n-1)}{2}$.
 
 4. **CS application:** Prove by strong induction that merge sort (which splits an array of size n into two halves, sorts each recursively, then merges) correctly sorts any array of size n ≥ 1.
    *State the induction hypothesis clearly. You may assume the merge step is correct.*

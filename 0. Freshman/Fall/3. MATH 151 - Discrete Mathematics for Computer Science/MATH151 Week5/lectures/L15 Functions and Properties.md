@@ -1,5 +1,5 @@
 # MATH 151 · Discrete Mathematics for Computer Science
-## Lecture 5.1 (L15) — Functions: Definitions and Fundamental Properties
+## Lecture 15 (L15) — Functions: Definitions and Fundamental Properties
 ### Monday, Week 5
 
 **Date:** Monday 26 October 2026 · 13:00–13:50 · Week 5
@@ -232,4 +232,4 @@ For each function, determine domain/codomain given, and classify as injective, s
 
 ---
 
-*Next: Lecture 5.2 — Composition of Functions and Inverse Functions*
+*Next: Lecture 16 — Composition of Functions and Inverse Functions*

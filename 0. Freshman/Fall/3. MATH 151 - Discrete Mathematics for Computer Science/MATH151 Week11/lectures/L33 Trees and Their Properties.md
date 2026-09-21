@@ -1,5 +1,5 @@
 # MATH 151 · Discrete Mathematics for Computer Science
-## Lecture 11.1 (L33) — Trees and Their Properties
+## Lecture 33 (L33) — Trees and Their Properties
 ### Monday, Week 11
 
 **Date:** Monday 7 December 2026 · 13:00–13:50 · Week 11
@@ -53,7 +53,7 @@ Each characterisation is the useful one somewhere:
 graph that forces a cycle. Remove a leaf $v$ and its single edge: the result is still connected and
 acyclic, so by the induction hypothesis it has $(n-1)-1$ edges. Adding $v$ back gives $n-1$. ∎
 
-*The "a finite tree has a leaf" step is the one to dwell on. It is used again in Wednesday's proof
+*The "a finite tree has a leaf" step is the one to dwell on. It is used again in Thursday's proof
 and in nearly every tree induction you will ever write.*
 
 ---
@@ -185,4 +185,4 @@ path per file; a prefix-free code has exactly one decoding.
 - **Epp, 5e §10.5** — Trees: definitions and properties
 - **Levin, 3e §4.3** — Trees
 
-*Next: Lecture 11.2 — Spanning Trees and Minimum Spanning Trees*
+*Next: Lecture 34 — Spanning Trees and Minimum Spanning Trees*

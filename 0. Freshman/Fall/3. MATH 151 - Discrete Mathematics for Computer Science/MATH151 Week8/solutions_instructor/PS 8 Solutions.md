@@ -1,7 +1,7 @@
 # MATH 151 · Problem Set 8 Solutions
 ## INSTRUCTOR ONLY — DO NOT DISTRIBUTE
 
-**Total: 100 points**, plus 8 bonus. All numeric results verified by computation.
+**Total: 100 points.** All numeric results verified by computation.
 
 ---
 
@@ -55,7 +55,7 @@ Otherwise, all 100 partial sums have remainders in $\{1,\ldots,99\}$ — only 99
 
 ### A1(e): 10 integers 1-100, two disjoint subsequences equal sum
 
-Direct application of Lecture 5.3 Section 8's worked example: $2^{10}=1024$ subsets; sums range over $\{0,\ldots,1000\}$ (loose bound, 1001 values) since each of 10 integers ≤100. $1024>1001$ ⟹ two distinct subsets share a sum ⟹ disjointify to get two disjoint nonempty subsets with equal sums (as in the lecture's proof). ∎
+Direct application of Lecture 17 Section 8's worked example: $2^{10}=1024$ subsets; sums range over $\{0,\ldots,1000\}$ (loose bound, 1001 values) since each of 10 integers ≤100. $1024>1001$ ⟹ two distinct subsets share a sum ⟹ disjointify to get two disjoint nonempty subsets with equal sums (as in the lecture's proof). ∎
 
 ---
 
@@ -267,47 +267,6 @@ procedure to locate it.** Proofs of this kind are called *non-constructive*, and
 
 *Marking: 2 for identifying the proof as non-constructive, 2 for the complexity contrast. Students
 who merely restate the pigeonhole argument earn 1.*
-
----
-
-## Bonus Solutions
-
-### Bonus 1. *(4 pts)* $R(3,3)=6$
-
-**Six suffices.** Fix a person $P$. $P$ has 5 relationships, each "acquaintance" or "stranger". By
-pigeonhole, at least $\lceil5/2\rceil=3$ are of the same kind — say $P$ knows $A$, $B$, $C$.
-
-If any two of $A,B,C$ know each other, they form a mutually-acquainted triangle with $P$. If none
-do, then $A,B,C$ are mutual strangers. Either way a monochromatic triangle exists. ∎
-
-**Five does not suffice.** Arrange 5 people in a cycle, with each person knowing their two
-neighbours and being a stranger to the other two. Both the acquaintance graph ($C_5$) and the
-stranger graph (also a 5-cycle) are triangle-free. *(Verified: neither $C_5$ nor its complement
-contains a triangle.)* Hence $R(3,3)=6$ exactly.
-
-*Marking: 2 for the upper bound with the pigeonhole step, 2 for the $C_5$ construction. Many
-students prove only that 6 suffices, which shows $R(3,3)\le6$, not equality.*
-
----
-
-### Bonus 2. *(4 pts)* Five points in a unit square
-
-Partition the unit square into four closed sub-squares of side $\frac12$. Five points (pigeons) into
-four sub-squares (pigeonholes) ⟹ some sub-square contains two points.
-
-The greatest distance between two points of a $\frac12\times\frac12$ square is its diagonal,
-
-$$\sqrt{\left(\tfrac12\right)^2+\left(\tfrac12\right)^2} = \frac{\sqrt2}{2} \approx 0.7071$$
-
-so those two points are within $\frac{\sqrt2}{2}$ of each other. ∎
-
-**Why 4 points fail.** With four points there is no forced sharing — place one at each corner of the
-unit square and the minimum pairwise distance is 1, which exceeds $\frac{\sqrt2}{2}$. The argument
-needs strictly more pigeons than holes.
-
-*Marking: 2 for constructing the four sub-squares, 1 for the diagonal, 1 for the four-point
-counterexample. Constructing the partition is the whole difficulty — nothing in the problem statement
-mentions sub-squares.*
 
 ---
 

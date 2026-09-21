@@ -1,15 +1,18 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Problem Set 10: Graphs
-### Released: Friday, Week 10 | Due: Friday, Week 11 (11:59 PM)
+### Released: Friday 4 December 2026, 14:00 (after the Friday lecture) | Due: Friday 11 December 2026, 17:00 (Week 11)
 
 ---
+
+> *Revised 2026-09-21.* The optional bonus section was removed to keep the set to 100 points of
+> this week's material.
 
 **Instructions:**
 - Draw every graph you are asked to construct, and label the vertices.
 - For any isomorphism claim, **exhibit the bijection**; for any non-isomorphism claim, **name the invariant**.
 - Show all work. Submit as a single PDF.
 
-**Scoring:** 100 points total, plus an optional 8-point bonus.
+**Scoring:** 100 points total.
 
 ---
 
@@ -84,17 +87,6 @@ exists, and say what minimum change to the bridge layout would create one.
 question for a general graph has no comparable shortcut.
 
 **D5.** *(6 pts)* Prove that a graph with a cut vertex has no Hamilton cycle.
-
----
-
-## Bonus (8 points — optional)
-
-**Bonus 1.** *(4 pts)* Prove that if $G$ is connected with exactly two odd-degree vertices, every
-Euler trail begins and ends at those two vertices.
-
-**Bonus 2.** *(4 pts)* The Petersen graph is 3-regular, connected, and vertex-transitive, yet has no
-Hamilton cycle. Verify by exhaustive reasoning on a drawing that no Hamilton cycle exists, and
-explain why Dirac's theorem does not apply.
 
 ---
 

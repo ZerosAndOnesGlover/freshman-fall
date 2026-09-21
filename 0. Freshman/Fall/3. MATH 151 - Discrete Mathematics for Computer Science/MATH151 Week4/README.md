@@ -39,9 +39,9 @@ MATH151_Week4/
 ├── README.md
 │
 ├── lectures/
-│   ├── L12 Sets and Operations.md         ← Lecture 13 (Monday)
-│   ├── L13 Set Identities and Proofs.md   ← Lecture 14 (Thursday)
-│   └── L14 Power Sets and Products.md     ← Lecture 15 (Friday)
+│   ├── L12 Sets and Operations.md         ← Lecture 12 (Monday 19 Oct)
+│   ├── L13 Set Identities and Proofs.md   ← Lecture 13 (Thursday 22 Oct)
+│   └── L14 Power Sets and Products.md     ← Lecture 14 (Friday 23 Oct)
 │
 ├── assignments/
 │   └── PS 4 Sets.md
@@ -69,12 +69,12 @@ MATH151_Week4/
 
 | Day | Event | Topic |
 |---|---|---|
-| Monday | Quiz 4 (15 min) | Covers Week 3: weak and strong induction |
-| Monday | Lecture 13 | Sets, set-builder notation, operations (∪, ∩, −, complement) |
-| Thursday | Lecture 14 | Set identities, element-chasing proofs, algebra of sets |
-| Wednesday | Lab 4 | Set workshop: proofs, Venn diagrams, Python set operations |
-| Friday | Lecture 15 | Power sets, Cartesian products, Inclusion-Exclusion |
-| Friday | PS 4 Released | Due Week 5 Friday |
+| Monday 19 Oct, 13:00 | Quiz 4 (15 min) | Covers Week 3: weak and strong induction |
+| Monday 19 Oct, 13:00 | Lecture 12 | Sets, set-builder notation, operations (∪, ∩, −, complement) |
+| Thursday 22 Oct, 13:00 | Lecture 13 | Set identities, element-chasing proofs, algebra of sets |
+| Friday 23 Oct, 13:00 | Lecture 14 | Power sets, Cartesian products, Inclusion-Exclusion |
+| Friday 23 Oct, 14:00 | PS 4 released | Due Friday 30 Oct, 17:00 |
+| Wednesday 28 Oct, 15:00 (Week 5) | Lab 4 | Set workshop: proofs, Venn diagrams, Python set operations |
 
 ---
 

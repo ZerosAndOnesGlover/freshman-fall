@@ -39,9 +39,9 @@ MATH151_Week7/
 ├── README.md
 │
 ├── lectures/
-│   ├── L21 Multiplication Addition Rules.md   ← Lecture 22 (Monday)
-│   ├── L22 Permutations and Combinations.md   ← Lecture 23 (Thursday)
-│   └── L23 Binomial Theorem.md                ← Lecture 24 (Friday)
+│   ├── L21 Multiplication Addition Rules.md   ← Lecture 21 (Monday 9 Nov)
+│   ├── L22 Permutations and Combinations.md   ← Lecture 22 (Thursday 12 Nov)
+│   └── L23 Binomial Theorem.md                ← Lecture 23 (Friday 13 Nov)
 │
 ├── assignments/
 │   └── PS 7 Counting.md
@@ -69,12 +69,12 @@ MATH151_Week7/
 
 | Day | Event | Topic |
 |---|---|---|
-| Monday | Quiz 7 (15 min) | Covers Week 6: relations, equivalence relations, partial orders |
-| Monday | Lecture 22 | Multiplication Rule, Addition Rule, basic counting arguments |
-| Thursday | Lecture 23 | Permutations, combinations, the four counting scenarios |
-| Wednesday | Lab 7 | Counting workshop: problem classification, Python combinatorics |
-| Friday | Lecture 24 | The Binomial Theorem, Pascal's Triangle, combinatorial identities |
-| Friday | PS 7 Released | Due Week 8 Friday |
+| Monday 9 Nov, 13:00 | Quiz 7 (15 min) | Covers Week 6: relations, equivalence relations, partial orders |
+| Monday 9 Nov, 13:00 | Lecture 21 | Multiplication Rule, Addition Rule, basic counting arguments |
+| Thursday 12 Nov, 13:00 | Lecture 22 | Permutations, combinations, the four counting scenarios |
+| Friday 13 Nov, 13:00 | Lecture 23 | The Binomial Theorem, Pascal's Triangle, combinatorial identities |
+| Friday 13 Nov, 14:00 | PS 7 released | Due Friday 20 Nov, 17:00 |
+| Wednesday 18 Nov, 15:00 (Week 8) | Lab 7 | Counting workshop: problem classification, Python combinatorics |
 
 ---
 

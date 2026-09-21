@@ -1,6 +1,6 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Quiz 11 — Graphs
-### Administered: Monday, Week 11 (first 15 minutes of class)
+### Administered: Monday 7 December 2026, 13:00–13:15 (first 15 minutes of class) · Week 11
 
 **Name:** _________________________________ **Section:** ___________ **Date:** ___________
 

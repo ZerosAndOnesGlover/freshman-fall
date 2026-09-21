@@ -1,15 +1,18 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Problem Set 8: Advanced Counting
-### Released: Friday, Week 8 | Due: Friday, Week 9 (11:59 PM)
+### Released: Friday 20 November 2026, 14:00 (after the Friday lecture) | Due: Friday 27 November 2026, 17:00 (Week 9)
 
 ---
+
+> *Revised 2026-09-21.* The optional bonus section was removed to keep the set to 100 points of
+> this week's material.
 
 **Instructions:**
 - For every Pigeonhole proof, **explicitly name the pigeons and the pigeonholes** before the argument. A proof without them scores at most half.
 - For every inclusion–exclusion computation, state each intersection's size and how you obtained it.
 - Show all work. Submit as a single PDF.
 
-**Scoring:** 100 points total, plus an optional 8-point bonus.
+**Scoring:** 100 points total.
 
 ---
 
@@ -66,10 +69,10 @@ all $D_4$ derangements of $\{1,2,3,4\}$ explicitly to confirm the count.
 **C2.** *(5 pts)* How many permutations of $\{1,\ldots,7\}$ fix **exactly two** elements?
 
 **C3.** *(5 pts)* Verify the identity $\sum_{k=0}^{n}\binom{n}{k}D_{n-k} = n!$ for $n = 5$, using
-the derangement values from Lecture 8.2. Explain in one sentence why the identity must hold.
+the derangement values from Lecture 25. Explain in one sentence why the identity must hold.
 
 **C4.** *(5 pts)* The probability that a random permutation of $n$ objects is a derangement tends to
-$1/e$. Using the table from Lecture 8.2, state the smallest $n$ for which $D_n/n!$ agrees with $1/e$
+$1/e$. Using the table from Lecture 25, state the smallest $n$ for which $D_n/n!$ agrees with $1/e$
 to three decimal places, and comment on how fast the convergence is.
 
 ---
@@ -91,18 +94,6 @@ holds.
 **D3.** *(4 pts)* The subset-sum argument in D1(d) proves a collision exists but gives no way to find
 it, and the search problem is NP-complete. Explain in a short paragraph why an existence proof can be
 easy while the corresponding search is intractable.
-
----
-
-## Bonus (8 points — optional)
-
-**Bonus 1.** *(4 pts)* Prove the Ramsey result $R(3,3) = 6$: among any 6 people, three are mutual
-acquaintances or three are mutual strangers. Then exhibit a 5-person configuration with neither,
-showing 6 is the smallest such number.
-
-**Bonus 2.** *(4 pts)* Prove that any 5 points inside a unit square include two within distance
-$\frac{\sqrt2}{2}$. Construct the pigeonholes explicitly, and explain why the argument fails for 4
-points.
 
 ---
 

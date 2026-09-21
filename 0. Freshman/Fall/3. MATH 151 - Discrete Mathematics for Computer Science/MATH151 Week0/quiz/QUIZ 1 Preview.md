@@ -1,14 +1,15 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Quiz 1 Scope Preview
-### Quiz administered: Monday, Week 1 (first 15 minutes of lecture)
+### Quiz administered: Monday 28 September 2026, 13:00–13:15 (first 15 minutes of lecture) · Week 1
 
 ---
 
 **Format:** 4–5 short problems. No notes. No calculator. 15 minutes.
 
-**Coverage:** Weeks 0 and 1 material:
+**Coverage:** Week 0 material only:
 - Week 0: Propositional logic (propositions, connectives, truth tables, tautologies, equivalence laws)
-- Week 1: Predicate logic and quantifiers (covered next week)
+
+*(Week 1 material is not on this quiz — it is taught after the quiz.)*
 
 ---
 
@@ -101,4 +102,4 @@ Variables: p = "function terminates", q = "input is finite", r = "memory overflo
 
 ## After the Quiz
 
-The remaining class time on Week 2 Monday will cover **Predicate Logic and Quantifiers** (Week 1 material, Lecture 1.0). Bring your course reader.
+The rest of the class on Monday 28 September is Lecture 3, **Predicate Logic and Quantifiers**. Bring your course reader.

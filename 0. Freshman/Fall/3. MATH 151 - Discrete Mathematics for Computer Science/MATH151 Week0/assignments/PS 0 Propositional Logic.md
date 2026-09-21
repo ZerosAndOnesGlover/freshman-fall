@@ -1,8 +1,11 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Problem Set 0: Propositional Logic
-### Released: Friday, Week 0 | Due: Friday, Week 1 (11:59 PM)
+### Released: Friday 25 September 2026, 14:00 (after the Friday lecture) | Due: Friday 2 October 2026, 17:00 (Week 1)
 
 ---
+
+> *Revised 2026-09-21.* The optional bonus section was removed to keep the set to 100 points of
+> this week's material.
 
 **Instructions:**
 - Show all work. Answers without justification receive no credit.
@@ -143,7 +146,7 @@ Assignment: p = T, q = F, r = T, s = F
 
 ## Part D: Equivalence Laws and Normal Forms (32 points)
 
-**D1.** (12 pts) Prove each equivalence using *only* the laws from Lecture 0.3 (no truth tables). Cite the law at each step.
+**D1.** (12 pts) Prove each equivalence using *only* the laws from Lecture 2 (L02, Friday) (no truth tables). Cite the law at each step.
 
 (a) (p ∧ q) ∨ (p ∧ ¬q) ≡ p
 
@@ -182,20 +185,6 @@ Assignment: p = T, q = F, r = T, s = F
 *(Hint: use the equivalence p → q ≡ ¬p ∨ q.)*
 
 (c) The set {∧, ∨} is NOT functionally complete. What connective does it fail to express, and why?
-
----
-
-## Bonus (10 pts. optional, does not affect grade negatively)
-
-**B.** The *Sheffer stroke* (NAND, written p | q) and *Peirce arrow* (NOR, written p ↓ q) are each alone functionally complete.
-
-(a) Verify: p | q ≡ ¬(p ∧ q) using a truth table.
-
-(b) Express ¬p, p ∧ q, and p ∨ q using only the NAND operator |.
-
-(c) NOR (p ↓ q = ¬(p ∨ q)) is the basis of certain older computer architectures (the Apollo Guidance Computer used only NOR gates). Express ¬p, p ∧ q, and p ∨ q using only NOR.
-
-(d) **Open-ended:** Why would a hardware engineer ever choose to build a chip using only one gate type? Discuss the trade-offs. (2–3 sentences.)
 
 ---
 

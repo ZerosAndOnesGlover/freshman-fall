@@ -1,5 +1,5 @@
 # MATH 151 · Discrete Mathematics for Computer Science
-## Lecture 12.1 (L36) — Divisibility and Primes
+## Lecture 36 (L36) — Divisibility and Primes
 ### Monday, Week 12
 
 **Date:** Monday 14 December 2026 · 13:00–13:50 · Week 12
@@ -141,7 +141,7 @@ Two facts, in tension:
 - **Factoring the product is hard.** No known classical algorithm factors a 2048-bit semiprime in
   reasonable time.
 
-This asymmetry is the whole basis of RSA, which Wednesday builds. **It is not a theorem** — nobody has
+This asymmetry is the whole basis of RSA, which Thursday builds. **It is not a theorem** — nobody has
 proved factoring is hard, only that no one has managed it. Shor's algorithm factors in polynomial
 time *on a quantum computer*, which is why post-quantum cryptography is an active field.
 
@@ -190,4 +190,4 @@ time *on a quantum computer*, which is why post-quantum cryptography is an activ
 - **Epp, 5e §4.3–4.4** — Divisibility and the division algorithm
 - **Levin, 3e §3.1** — Number theory basics
 
-*Next: Lecture 12.2 — Modular Arithmetic, the GCD, and RSA*
+*Next: Lecture 37 — Modular Arithmetic, the GCD, and RSA*

@@ -1,7 +1,7 @@
 # MATH 151 · Problem Set 9 Solutions
 ## INSTRUCTOR ONLY — DO NOT DISTRIBUTE
 
-**Total: 100 points**, plus 8 bonus. Every closed form below was verified against iteration.
+**Total: 100 points.** Every closed form below was verified against iteration.
 
 ---
 
@@ -264,41 +264,6 @@ where each coefficient is a **finite** sum.
 
 *Marking: 3 for the definition, 3 for the finiteness argument. "We just don't care about convergence"
 earns 1 — the question asks why we are entitled not to.*
-
----
-
-## Bonus Solutions
-
-### Bonus 1. *(4 pts)* Partial fractions ⟹ Binet
-
-$1-x-x^2 = (1-\varphi x)(1-\psi x)$, since $\varphi\psi = -1$ and $\varphi+\psi = 1$.
-
-$$\frac{x}{(1-\varphi x)(1-\psi x)} = \frac{1}{\sqrt5}\left(\frac{1}{1-\varphi x}-\frac{1}{1-\psi x}\right)$$
-
-Each term expands by the geometric series $\frac{1}{1-cx}=\sum c^nx^n$, so the coefficient of $x^n$ is
-
-$$\frac{\varphi^n-\psi^n}{\sqrt5} = F_n \qquad\blacksquare$$
-
-**This is why the two methods agree**: the characteristic roots are the reciprocals of the roots of
-the generating function's denominator.
-
----
-
-### Bonus 2. *(4 pts)* $a_n=4a_{n-1}-4a_{n-2}+2^n$
-
-The characteristic equation is $(r-2)^2=0$, so $2$ is a **double** root and the homogeneous solution
-is $(A+Bn)2^n$.
-
-Guessing $C2^n$ fails: it already solves the homogeneous equation, giving $0=2^n$. Guessing $Cn2^n$
-fails for the same reason — $n2^n$ is *also* a homogeneous solution.
-
-The rule is to multiply by $n$ once per repetition of the root, so with multiplicity 2 the guess must
-be $Cn^22^n$. Substituting gives $C=\tfrac12$, and
-
-$$a_n = (A+Bn)2^n + \tfrac12 n^2 2^n$$
-
-*Marking: 2 for the multiplicity argument, 2 for the form. Full credit does not require solving for
-$A$ and $B$, since no initial conditions were given.*
 
 ---
 

@@ -43,9 +43,9 @@ MATH151_Week6/
 ├── README.md
 │
 ├── lectures/
-│   ├── L18 Relations and Properties.md       ← Lecture 19 (Monday)
-│   ├── L19 Equivalence Relations.md          ← Lecture 20 (Thursday)
-│   └── L20 Partial Orders.md                 ← Lecture 21 (Friday)
+│   ├── L18 Relations and Properties.md       ← Lecture 18 (Monday 2 Nov)
+│   ├── L19 Equivalence Relations.md          ← Lecture 19 (Thursday 5 Nov)
+│   └── L20 Partial Orders.md                 ← Lecture 20 (Friday 6 Nov)
 │
 ├── assignments/
 │   └── PS 6 Relations.md
@@ -73,12 +73,12 @@ MATH151_Week6/
 
 | Day | Event | Topic |
 |---|---|---|
-| Monday | Quiz 6 (15 min) | Covers Week 5: functions, composition, inverses, Pigeonhole |
-| Monday | Lecture 19 | Relations, representations, reflexive/symmetric/antisymmetric/transitive |
-| Thursday | Lecture 20 | Equivalence relations, equivalence classes, the Fundamental Theorem |
-| Wednesday | Lab 6 | Relations workshop: proofs, digraphs, Python relation checker |
-| Friday | Lecture 21 | Partial orders, Hasse diagrams, total orders, topological sort |
-| Friday | PS 6 Released | Due Week 7 Friday |
+| Monday 2 Nov, 13:00 | Quiz 6 (15 min) | Covers Week 5: functions, composition, inverses, cardinality |
+| Monday 2 Nov, 13:00 | Lecture 18 | Relations, representations, reflexive/symmetric/antisymmetric/transitive |
+| Thursday 5 Nov, 13:00 | Lecture 19 | Equivalence relations, equivalence classes, the Fundamental Theorem |
+| Friday 6 Nov, 13:00 | Lecture 20 | Partial orders, Hasse diagrams, total orders, topological sort |
+| Friday 6 Nov, 14:00 | PS 6 released | Due Friday 13 Nov, 17:00 |
+| Wednesday 11 Nov, 15:00 (Week 7) | Lab 6 | Relations workshop: proofs, digraphs, Python relation checker |
 
 ---
 

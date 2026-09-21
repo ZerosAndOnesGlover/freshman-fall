@@ -1,5 +1,5 @@
 # MATH 151 · Discrete Mathematics for Computer Science
-## Lecture 12.3 (L38) — Review and the Road Ahead
+## Lecture 38 (L38) — Review and the Road Ahead
 ### Friday, Week 12
 
 **Date:** Friday 18 December 2026 · 13:00–13:50 · Week 12
@@ -185,6 +185,6 @@ items open more questions than anything else on the syllabus.
 
 ---
 
-*MATH 151 · Week 12 · Lecture 12.3 · © CSE Department*
+*MATH 151 · Week 12 · Lecture 38 · © CSE Department*
 
 *This concludes MATH 151. Good luck.*

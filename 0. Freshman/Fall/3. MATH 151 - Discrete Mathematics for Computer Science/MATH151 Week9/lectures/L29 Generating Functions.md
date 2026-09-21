@@ -1,5 +1,5 @@
 # MATH 151 · Discrete Mathematics for Computer Science
-## Lecture 9.3 (L29) — Generating Functions
+## Lecture 29 (L29) — Generating Functions
 ### Friday, Week 9
 
 **Date:** Friday 27 November 2026 · 13:00–13:50 · Week 9
@@ -8,7 +8,7 @@
 
 ## 1. A Sequence as a Single Object
 
-Wednesday's characteristic-equation method is powerful but narrow: it handles linear,
+Thursday's characteristic-equation method is powerful but narrow: it handles linear,
 constant-coefficient recurrences and little else. **Generating functions** are a wider technique, and
 they rest on one strange idea.
 
@@ -88,7 +88,7 @@ $a_n = 5a_{n-1}-6a_{n-2}$, $a_0=1$, $a_1=4$ has generating function
 
 $$G(x) = \frac{1-x}{1-5x+6x^2}$$
 
-**Verified:** its coefficients are $1, 4, 14, 46, 146, 454, 1394, 4246$ — matching Wednesday's closed
+**Verified:** its coefficients are $1, 4, 14, 46, 146, 454, 1394, 4246$ — matching Thursday's closed
 form $2\cdot3^n-2^n$.
 
 ---
@@ -169,7 +169,7 @@ in signal processing is this operation.
 
 2. Find the generating function for $a_n = 2a_{n-1}$, $a_0 = 1$, and identify the sequence.
 
-3. Find the generating function for $a_n = a_{n-1}+2a_{n-2}$, $a_0 = 2$, $a_1 = 7$. *(You solved this recurrence in Lecture 9.2 Exercise 3 — check the coefficients match.)*
+3. Find the generating function for $a_n = a_{n-1}+2a_{n-2}$, $a_0 = 2$, $a_1 = 7$. *(You solved this recurrence in Lecture 28 Exercise 3 — check the coefficients match.)*
 
 4. Write the generating function for making $n$ cents from 1¢, 2¢, and 5¢ coins. Find the coefficient of $x^{10}$ and verify by listing.
 

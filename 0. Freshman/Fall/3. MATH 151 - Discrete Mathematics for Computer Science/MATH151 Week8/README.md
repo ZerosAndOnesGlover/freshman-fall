@@ -30,7 +30,7 @@ is inversely proportional to its difficulty: the statement is obvious, and the a
 (hash collisions, the impossibility of universal lossless compression, two subsets with equal sums)
 are not.
 
-The two are easy to confuse and answer opposite questions. Lecture 8.3 is devoted to telling them
+The two are easy to confuse and answer opposite questions. Lecture 26 (Friday) is devoted to telling them
 apart, because that choice — not the arithmetic — is where marks and real problems are lost.
 
 **A note on existence versus search.** Friday's subset-sum argument proves two subsets must share a
@@ -45,9 +45,9 @@ one of the deepest facts in computer science and you meet it here first.
 MATH151 Week8/
 ├── README.md
 ├── lectures/
-│   ├── L24 Pigeonhole Principle.md            ← Lecture 25 (Monday)
-│   ├── L25 Inclusion Exclusion.md             ← Lecture 26 (Wednesday)
-│   └── L26 Advanced Counting Applications.md  ← Lecture 27 (Friday)
+│   ├── L24 Pigeonhole Principle.md            ← Lecture 24 (Monday 16 Nov)
+│   ├── L25 Inclusion Exclusion.md             ← Lecture 25 (Thursday 19 Nov)
+│   └── L26 Advanced Counting Applications.md  ← Lecture 26 (Friday 20 Nov)
 ├── assignments/
 │   └── PS 8 Advanced Counting.md
 ├── lab/
@@ -84,12 +84,12 @@ By the end of Week 8 you should be able to:
 
 | Day | Event | Topic |
 |---|---|---|
-| Monday | Quiz 8 (15 min) | Covers Week 7: multiplication/addition rules, permutations, combinations, binomial theorem |
-| Monday | Lecture 25 | The Pigeonhole Principle, basic and generalised |
-| Wednesday | Lecture 26 | The Principle of Inclusion–Exclusion; surjections; derangements |
-| Wednesday | Lab 8 | Advanced counting workshop: both techniques, plus brute-force verification |
-| Friday | Lecture 27 | Choosing the right tool; complement counting; constructed pigeonholes |
-| Friday | PS 8 Released | Due Week 9 Friday |
+| Monday 16 Nov, 13:00 | Quiz 8 (15 min) | Covers Week 7: multiplication/addition rules, permutations, combinations, binomial theorem |
+| Monday 16 Nov, 13:00 | Lecture 24 | The Pigeonhole Principle, basic and generalised |
+| Thursday 19 Nov, 13:00 | Lecture 25 | The Principle of Inclusion–Exclusion; surjections; derangements |
+| Friday 20 Nov, 13:00 | Lecture 26 | Choosing the right tool; complement counting; constructed pigeonholes |
+| Friday 20 Nov, 14:00 | PS 8 released | Due Friday 27 Nov, 17:00 |
+| Wednesday 25 Nov, 15:00 (Week 9) | Lab 8 | Advanced counting workshop: both techniques, plus brute-force verification |
 
 ---
 
@@ -146,7 +146,7 @@ derangements satisfy the elegant recurrence $D_n = (n-1)(D_{n-1} + D_{n-2})$. We
 uses inclusion–exclusion for the totient function.
 
 **Sideways:** CS 101's hash tables assume collisions happen; this week proves they must. Its Week 11
-computability material and Lecture 8.3's existence-versus-search contrast are the same idea seen from
+computability material and Lecture 26 (Friday)'s existence-versus-search contrast are the same idea seen from
 two directions.
 
 ---

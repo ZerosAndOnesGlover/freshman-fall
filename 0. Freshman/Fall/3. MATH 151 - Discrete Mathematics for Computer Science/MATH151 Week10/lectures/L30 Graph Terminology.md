@@ -1,5 +1,5 @@
 # MATH 151 · Discrete Mathematics for Computer Science
-## Lecture 10.1 (L30) — Graphs: Terminology and Basic Results
+## Lecture 30 (L30) — Graphs: Terminology and Basic Results
 ### Monday, Week 10
 
 **Date:** Monday 30 November 2026 · 13:00–13:50 · Week 10
@@ -120,7 +120,7 @@ sequence $(2,2,2,2,2,2)$ — yet $C_6$ is connected and the pair of triangles is
 different graphs.**
 
 This is the first hint that deciding whether two graphs are "the same" is subtle, which is
-Wednesday's subject.
+Thursday's subject.
 
 ---
 
@@ -179,4 +179,4 @@ build order exist, and the algorithm that finds one — topological sort — is 
 - **Epp, 5e §10.1** — Graphs: definitions and basic properties
 - **Levin, 3e §4.1** — Introduction to graph theory
 
-*Next: Lecture 10.2 — Representations and Isomorphism*
+*Next: Lecture 31 — Representations and Isomorphism*

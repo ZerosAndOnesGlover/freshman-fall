@@ -1,12 +1,13 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Quiz 8 — Scope Preview
-### Quiz administered: Monday, Week 8 (first 15 minutes of lecture)
+### Quiz administered: Monday 16 November 2026, 13:00–13:15 (first 15 minutes of lecture) · Week 8
 
 ---
 
-**Coverage:** Weeks 7 and 8 material:
+**Coverage:** Week 7 material only:
 - Week 7: Counting — multiplication/addition rules, permutations, combinations, binomial theorem
-- Week 8: Advanced Counting — the Pigeonhole Principle and Inclusion–Exclusion (covered next week)
+
+*(Week 8 material is not on this quiz — it is taught after the quiz.)*
 
 ---
 
@@ -27,7 +28,7 @@
 
 - Multiplication: sequential/independent steps → multiply counts
 - Addition: mutually exclusive alternatives → add counts
-- If categories overlap: use Inclusion–Exclusion (Week 8), NOT plain addition
+- If categories overlap: use the two-set Inclusion–Exclusion formula (Week 4), NOT plain addition
 
 ### 3. Complementary Counting
 

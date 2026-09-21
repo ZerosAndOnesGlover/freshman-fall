@@ -1,8 +1,11 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Problem Set 4 — Sets
-### Released: Friday, Week 4 | Due: Friday, Week 5 (11:59 PM)
+### Released: Friday 23 October 2026, 14:00 (after the Friday lecture) | Due: Friday 30 October 2026, 17:00 (Week 5)
 
 ---
+
+> *Revised 2026-09-21.* The optional bonus section was removed to keep the set to 100 points of
+> this week's material.
 
 **Instructions:**
 - For proofs of set identities, choose either element-chasing or algebraic (law-based) proof, and state which you are using.
@@ -119,13 +122,3 @@ Compute:
 How many people use **exactly one** of the three products?
 
 *(Hint: first find $|A \cup B \cup C|$, then think carefully about how to isolate "exactly one" — you may need to compute the number using exactly-two and exactly-three counts and subtract.)*
-
----
-
-## Bonus (8 points — optional)
-
-**Bonus 1.** (4 pts) Prove: for finite sets $A$ and $B$, $|\mathcal{P}(A \times B)| = 2^{|A|\cdot|B|}$.
-
-**Bonus 2.** (4 pts) The **symmetric difference** $\oplus$ has an interesting algebraic structure. Prove that $\oplus$ is associative: $(A \oplus B) \oplus C = A \oplus (B \oplus C)$.
-
-*(Hint: An element-chasing proof works, but requires careful case analysis on which of $A, B, C$ the element belongs to. Alternatively, note that $x \in A \oplus B \oplus C$ iff $x$ belongs to an ODD number of the three sets — prove this characterization first, then use it.)*

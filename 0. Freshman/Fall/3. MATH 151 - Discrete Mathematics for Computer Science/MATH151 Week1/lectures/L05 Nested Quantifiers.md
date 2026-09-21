@@ -1,5 +1,5 @@
 # MATH 151 · Discrete Mathematics for Computer Science
-## Lecture 1.3 (L05) — Nested Quantifiers
+## Lecture 5 (L05) — Nested Quantifiers
 ### Friday, Week 1
 
 **Date:** Friday 2 October 2026 · 13:00–13:50 · Week 1
@@ -95,7 +95,7 @@ The most important fact about nested quantifiers:
 
 ## 5. Loop Interpretation of Nested Quantifiers
 
-The loop analogy from Lecture 1.1 extends naturally to nested quantifiers:
+The loop analogy from Lecture 3 extends naturally to nested quantifiers:
 
 ```python
 # ∀x ∀y P(x, y)

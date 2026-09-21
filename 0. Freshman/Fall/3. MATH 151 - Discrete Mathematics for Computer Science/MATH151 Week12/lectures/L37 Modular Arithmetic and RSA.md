@@ -1,5 +1,5 @@
 # MATH 151 · Discrete Mathematics for Computer Science
-## Lecture 12.2 (L37) — Modular Arithmetic, the GCD, and RSA
+## Lecture 37 (L37) — Modular Arithmetic, the GCD, and RSA
 ### Thursday, Week 12
 
 **Date:** Thursday 17 December 2026 · 13:00–13:50 · Week 12
@@ -206,4 +206,4 @@ would break RSA on a sufficiently large quantum computer.
 - **Epp, 5e §8.4** — Modular arithmetic and applications
 - **Levin, 3e §3.1** — Number theory
 
-*Next: Lecture 12.3 — Review and the Road Ahead*
+*Next: Lecture 38 — Review and the Road Ahead*

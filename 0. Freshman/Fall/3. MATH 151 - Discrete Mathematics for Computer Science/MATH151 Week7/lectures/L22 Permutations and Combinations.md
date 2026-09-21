@@ -1,5 +1,5 @@
 # MATH 151 · Discrete Mathematics for Computer Science
-## Lecture 7.2 (L22) — Permutations and Combinations
+## Lecture 22 (L22) — Permutations and Combinations
 ### Thursday, Week 7
 
 **Date:** Thursday 12 November 2026 · 13:00–13:50 · Week 7
@@ -248,4 +248,4 @@ Indistinguishable objects:
 
 ---
 
-*Next: Lecture 7.3 — The Binomial Theorem and Pascal's Triangle*
+*Next: Lecture 23 — The Binomial Theorem and Pascal's Triangle*

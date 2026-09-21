@@ -1,6 +1,6 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Quiz 3 — Proof Techniques
-### Administered: Monday, Week 3 (first 15 minutes of class)
+### Administered: Monday 12 October 2026, 13:00–13:15 (first 15 minutes of class) · Week 3
 
 **Name:** _________________________________ **Section:** ___________ **Date:** ___________
 

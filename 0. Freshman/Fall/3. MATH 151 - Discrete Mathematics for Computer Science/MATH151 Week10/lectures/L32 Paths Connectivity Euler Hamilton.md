@@ -1,5 +1,5 @@
 # MATH 151 · Discrete Mathematics for Computer Science
-## Lecture 10.3 (L32) — Paths, Connectivity, Euler and Hamilton
+## Lecture 32 (L32) — Paths, Connectivity, Euler and Hamilton
 ### Friday, Week 10
 
 **Date:** Friday 4 December 2026 · 13:00–13:50 · Week 10
@@ -29,7 +29,7 @@ because Euler is about **edges** (trails) and Hamilton is about **vertices** (pa
 > it splits into **connected components**.
 
 **Verified:** $C_6$ has **1** component; two disjoint triangles have **2** — the invariant that
-separated them on Wednesday.
+separated them on Thursday.
 
 > **Definition.** A **cut vertex** is a vertex whose removal increases the number of components. A
 > **bridge** is such an edge.

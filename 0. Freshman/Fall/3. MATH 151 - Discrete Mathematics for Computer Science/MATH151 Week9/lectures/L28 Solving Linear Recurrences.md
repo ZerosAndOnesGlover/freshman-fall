@@ -1,5 +1,5 @@
 # MATH 151 · Discrete Mathematics for Computer Science
-## Lecture 9.2 (L28) — Solving Linear Recurrences: The Characteristic Equation
+## Lecture 28 (L28) — Solving Linear Recurrences: The Characteristic Equation
 ### Thursday, Week 9
 
 **Date:** Thursday 26 November 2026 · 13:00–13:50 · Week 9
@@ -191,4 +191,4 @@ Monday obtained by unrolling.)*
 - **Epp, 5e §5.8** — Second-order linear homogeneous recurrences
 - **Levin, 3e §2.4** — Characteristic roots
 
-*Next: Lecture 9.3 — Generating Functions*
+*Next: Lecture 29 — Generating Functions*

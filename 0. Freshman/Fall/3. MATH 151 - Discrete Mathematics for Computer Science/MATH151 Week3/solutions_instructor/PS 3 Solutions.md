@@ -132,7 +132,7 @@ since $k+1 \geq 5 > 2$. ✓ ∎
 
 ---
 
-### B1(e): Bernoulli's Inequality — proved in Lecture 3.2, see that solution.
+### B1(e): Bernoulli's Inequality — proved in Lecture 10, see that solution.
 
 ---
 
@@ -317,25 +317,3 @@ $n = 41$: $41^2 - 41 + 41 = 41^2 = 1681$, which is not prime ($1681 = 41^2$).
 Also $n = 40$: $40^2 - 40 + 41 = 1600 - 40 + 41 = 1601$. Is 1601 prime? $\sqrt{1601}\approx40$. Check divisibility by primes up to 40: not divisible by 2,3,5,7,11,13,17,19,23,29,31,37. Yes, 1601 is prime. So the first counterexample is $n=41$.
 
 **Why induction would fail:** If you attempted to prove "P(k) → P(k+1)" where P(n) = "$n^2-n+41$ is prime," you would immediately find that P(41) is false. The inductive step would fail because P(40) is true but P(41) is false — the implication P(40)→P(41) is F.
-
----
-
-## Bonus Solutions
-
-### Bonus 1: $\sum_{i=1}^{n}\frac{1}{\sqrt{i}} \geq \sqrt{n}$
-
-**Base case** ($n=1$): $\frac{1}{\sqrt{1}}=1\geq1=\sqrt{1}$. ✓
-
-**IH:** Assume $\sum_{i=1}^{k}\frac{1}{\sqrt{i}}\geq\sqrt{k}$.
-
-$$\sum_{i=1}^{k+1}\frac{1}{\sqrt{i}} \geq \sqrt{k} + \frac{1}{\sqrt{k+1}}$$
-
-Need to show $\sqrt{k} + \frac{1}{\sqrt{k+1}} \geq \sqrt{k+1}$.
-
-This is equivalent to $\frac{1}{\sqrt{k+1}} \geq \sqrt{k+1}-\sqrt{k}$.
-
-Multiply both sides by $\sqrt{k+1}$: $1 \geq \sqrt{k+1}(\sqrt{k+1}-\sqrt{k}) = (k+1) - \sqrt{k(k+1)}$.
-
-This is $\sqrt{k(k+1)} \geq k$, i.e., $k(k+1) \geq k^2$, i.e., $k^2+k \geq k^2$, i.e., $k\geq0$. ✓ ∎
-
-### Bonus 2: Tromino Tiling — see standard combinatorics textbook proof. Key: inductive step divides $2^{k+1}\times2^{k+1}$ board into four quadrants of size $2^k\times2^k$. Place one L-tromino at the center covering the corner square of each of the three quadrants NOT containing the removed square. Apply IH to each quadrant. The three covered center corners serve as the "removed square" for those three quadrants.

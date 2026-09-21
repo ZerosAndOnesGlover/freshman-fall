@@ -1,6 +1,6 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Quiz 9 — Advanced Counting
-### Administered: Monday, Week 9 (first 15 minutes of class)
+### Administered: Monday 23 November 2026, 13:00–13:15 (first 15 minutes of class) · Week 9
 
 **Name:** _________________________________ **Section:** ___________ **Date:** ___________
 

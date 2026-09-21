@@ -1,5 +1,5 @@
 # MATH 151 · Discrete Mathematics for Computer Science
-## Lecture 6.2 (L19) — Equivalence Relations and Equivalence Classes
+## Lecture 19 (L19) — Equivalence Relations and Equivalence Classes
 ### Thursday, Week 6
 
 **Date:** Thursday 5 November 2026 · 13:00–13:50 · Week 6
@@ -223,4 +223,4 @@ Fundamental Theorem:
 
 ---
 
-*Next: Lecture 6.3 — Partial Orders and Hasse Diagrams*
+*Next: Lecture 20 — Partial Orders and Hasse Diagrams*

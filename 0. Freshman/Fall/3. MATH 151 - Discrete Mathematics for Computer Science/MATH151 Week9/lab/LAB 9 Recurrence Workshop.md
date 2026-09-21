@@ -1,6 +1,6 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Lab 9 — Recurrence Workshop: Modelling, Solving, Verifying
-### Wednesday, Week 9 | Duration: 2 hours
+### Wednesday 2 December 2026, 15:00–16:50 · Week 10 | Duration: 2 hours | Covers Week 9 (all three lectures)
 
 ---
 
@@ -96,7 +96,7 @@ def fib_naive(n):
 1. Instrument it to count calls. Tabulate the count for $n = 5, 10, 15, 20, 25, 30$.
 2. Confirm the call count itself satisfies a recurrence, and identify it.
 3. Write a memoised version and compare both time and call count at $n=30$.
-4. State the complexity of each and connect it to Lecture 9.2's $\Theta(\varphi^n)$.
+4. State the complexity of each and connect it to Lecture 28's $\Theta(\varphi^n)$.
 
 ### Exercise 3.4 — Power Series by Formal Division
 

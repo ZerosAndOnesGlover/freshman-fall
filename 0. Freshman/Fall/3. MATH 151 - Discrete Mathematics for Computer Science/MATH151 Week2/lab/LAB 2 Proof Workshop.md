@@ -1,6 +1,6 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Lab 2 — Proof Workshop: Writing, Critiquing, and Fixing Proofs
-### Wednesday, Week 2 | Duration: 2 hours
+### Wednesday 14 October 2026, 15:00–16:50 · Week 3 | Duration: 2 hours | Covers Week 2 (all three lectures)
 
 ---
 

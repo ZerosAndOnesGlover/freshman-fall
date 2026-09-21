@@ -43,9 +43,9 @@ MATH151_Week3/
 ├── README.md
 │
 ├── lectures/
-│   ├── L09 Weak Induction.md            ← Lecture 10 (Monday)
-│   ├── L10 Induction Applications.md    ← Lecture 11 (Thursday)
-│   └── L11 Strong Induction.md          ← Lecture 12 (Friday)
+│   ├── L09 Weak Induction.md            ← Lecture 9 (Monday 12 Oct)
+│   ├── L10 Induction Applications.md    ← Lecture 10 (Thursday 15 Oct)
+│   └── L11 Strong Induction.md          ← Lecture 11 (Friday 16 Oct)
 │
 ├── assignments/
 │   └── PS 3 Induction.md
@@ -73,12 +73,12 @@ MATH151_Week3/
 
 | Day | Event | Topic |
 |---|---|---|
-| Monday | Quiz 3 (15 min) | Covers Week 2: direct proof, contrapositive, contradiction |
-| Monday | Lecture 10 | Weak induction — principle, structure, summation formulas |
-| Thursday | Lecture 11 | Induction applications — inequalities, divisibility, recursion |
-| Wednesday | Lab 3 | Induction workshop: writing, debugging, and verifying proofs |
-| Friday | Lecture 12 | Strong induction — when and why, prime factorization, Fibonacci |
-| Friday | PS 3 Released | Due Week 4 Friday |
+| Monday 12 Oct, 13:00 | Quiz 3 (15 min) | Covers Week 2: direct proof, contrapositive, contradiction |
+| Monday 12 Oct, 13:00 | Lecture 9 | Weak induction — principle, structure, summation formulas |
+| Thursday 15 Oct, 13:00 | Lecture 10 | Induction applications — inequalities, divisibility, recursion |
+| Friday 16 Oct, 13:00 | Lecture 11 | Strong induction — when and why, prime factorization, Fibonacci |
+| Friday 16 Oct, 14:00 | PS 3 released | Due Friday 23 Oct, 17:00 |
+| Wednesday 21 Oct, 15:00 (Week 4) | Lab 3 | Induction workshop: writing, debugging, and verifying proofs |
 
 ---
 

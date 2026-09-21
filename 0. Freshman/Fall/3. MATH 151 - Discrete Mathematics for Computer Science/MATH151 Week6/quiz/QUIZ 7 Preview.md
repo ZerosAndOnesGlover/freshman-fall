@@ -1,12 +1,13 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Quiz 7 — Scope Preview
-### Quiz administered: Monday, Week 7 (first 15 minutes of lecture)
+### Quiz administered: Monday 9 November 2026, 13:00–13:15 (first 15 minutes of lecture) · Week 7
 
 ---
 
-**Coverage:** Weeks 6 and 7 material:
+**Coverage:** Week 6 material only:
 - Week 6: Relations — reflexive/symmetric/antisymmetric/transitive, equivalence relations, partial orders
-- Week 7: Counting — permutations, combinations, multiplication/addition rules (covered next week)
+
+*(Week 7 material is not on this quiz — it is taught after the quiz.)*
 
 ---
 

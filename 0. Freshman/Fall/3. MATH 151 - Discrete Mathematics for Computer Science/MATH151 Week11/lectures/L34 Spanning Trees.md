@@ -1,5 +1,5 @@
 # MATH 151 · Discrete Mathematics for Computer Science
-## Lecture 11.2 (L34) — Spanning Trees and Minimum Spanning Trees
+## Lecture 34 (L34) — Spanning Trees and Minimum Spanning Trees
 ### Thursday, Week 11
 
 **Date:** Thursday 10 December 2026 · 13:00–13:50 · Week 11
@@ -20,7 +20,7 @@ edge's endpoints are still joined by the rest of the cycle. Repeat. Each step re
 $G$ is finite, so the process terminates, and it stops precisely when no cycle remains: a connected
 acyclic spanning subgraph. ∎
 
-**The proof is an algorithm**, though a poor one. Wednesday's real algorithms build up rather than
+**The proof is an algorithm**, though a poor one. Thursday's real algorithms build up rather than
 tear down.
 
 ---
@@ -193,4 +193,4 @@ them for failover.
 - **Epp, 5e §10.6** — Spanning trees and shortest paths
 - **Levin, 3e §4.3** — Trees and spanning trees
 
-*Next: Lecture 11.3 — Breadth-First and Depth-First Search*
+*Next: Lecture 35 — Breadth-First and Depth-First Search*

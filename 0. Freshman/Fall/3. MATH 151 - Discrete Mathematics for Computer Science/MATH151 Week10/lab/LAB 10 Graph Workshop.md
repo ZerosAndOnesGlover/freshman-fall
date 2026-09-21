@@ -1,6 +1,6 @@
 # MATH 151 · Discrete Mathematics for Computer Science
-## Lab 10 — Graph Workshop: Representations, Invariants, Traversal
-### Wednesday, Week 10 | Duration: 2 hours
+## Lab 10 — Graph Workshop: Representations, Invariants, Connectivity
+### Wednesday 9 December 2026, 15:00–16:50 · Week 11 | Duration: 2 hours | Covers Week 10 (all three lectures)
 
 ---
 
@@ -66,35 +66,42 @@ $\sum\deg = 2|E|$. Test on $G$, $K_5$, and $C_6$.
 
 ---
 
-## Section 3 — Traversal and Connectivity (35 min)
+## Section 3 — Connectivity by Brute Force (35 min)
 
-**3.1** *(5 pts)* Implement breadth-first search returning visit order:
+> *Revised 2026-09-21.* This section used to start from breadth-first search, which is taught in
+> Week 11 (Lecture 35). It now uses only Lecture 32's definition of connectivity — a path between two
+> vertices — and Week 7's product rule for the colouring search.
 
 ```python
-from collections import deque
-
-def bfs(adj, start):
-    seen, order, q = {start}, [], deque([start])
-    while q:
-        u = q.popleft()
-        order.append(u)
-        for v in adj[u]:
-            if v not in seen:
-                seen.add(v)
-                q.append(v)
-    return order
+def reachable(adj, start):
+    """Every vertex joined to start by a path: keep adding neighbours until nothing new appears."""
+    found = {start}
+    changed = True
+    while changed:
+        changed = False
+        for u in list(found):
+            for v in adj[u]:
+                if v not in found:
+                    found.add(v)
+                    changed = True
+    return found
 ```
 
-Run from every vertex of $G$ and tabulate the orders. Explain why they differ.
+**3.1** *(5 pts)* Explain in two sentences why `reachable` returns exactly the vertices joined to
+`start` by a path (Lecture 32's definition). Run it from every vertex of $G$. What does the output say
+about whether $G$ is connected?
 
-**3.2** *(4 pts)* Write `components(V, E)` counting connected components. Test on $C_6$ (expect 1)
-and on two disjoint triangles (expect 2).
+**3.2** *(4 pts)* Write `components(V, E)` counting connected components: take any vertex not yet
+covered, remove everything `reachable` from it, and repeat. Test on $C_6$ (expect 1) and on two
+disjoint triangles (expect 2).
 
 **3.3** *(5 pts)* Write `cut_vertices(V, E)` by brute force: remove each vertex and count components.
 Confirm your Exercise 1.3 answer.
 
-**3.4** *(5 pts)* Write `is_bipartite(V, E)` by 2-colouring during a traversal. Test on $C_4$, $C_5$,
-$C_6$, $K_{3,3}$, and $G$. State which are bipartite and relate the results to the odd-cycle theorem.
+**3.4** *(5 pts)* Write `is_bipartite(V, E)` by brute force: use `product([0, 1], repeat=len(V))` (Lab 7)
+to try every 2-colouring and check whether some colouring gives every edge two different colours. How
+many colourings does a graph with $n$ vertices need in the worst case? Test on $C_4$, $C_5$, $C_6$,
+$K_{3,3}$, and $G$. State which are bipartite and relate the results to the odd-cycle theorem.
 
 ---
 
@@ -124,7 +131,7 @@ degree criterion. Test on $C_6$, $K_4$, $K_5$, and $G$.
 graph does not**. Report how long each search took.
 
 **5.3** *(3 pts)* Your two functions differ enormously in cost. Explain why in one paragraph,
-referring to Lecture 10.3.
+referring to Lecture 32.
 
 ---
 
@@ -147,7 +154,7 @@ Show your TA:
 
 - [ ] Section 1: all four hand answers, with the Euler question justified by degrees
 - [ ] 2.2: diagonal, walk count, and triangle count all confirmed
-- [ ] 3.1–3.3: BFS working, components correct on both tests, cut vertices matching Section 1
+- [ ] 3.1–3.3: `reachable` explained, components correct on both tests, cut vertices matching Section 1
 - [ ] 3.4: bipartite results for all five graphs, related to the odd-cycle theorem
 - [ ] 4.2–4.3: distinguishing invariants identified in every pair
 - [ ] 4.4: timing reported, $20!$ computed

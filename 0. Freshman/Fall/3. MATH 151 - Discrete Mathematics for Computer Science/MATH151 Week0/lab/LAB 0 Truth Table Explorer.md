@@ -1,6 +1,6 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Lab 0 Truth Table Explorer: Logic by Hand and by Machine
-### Wednesday, Week 0 | Duration: 2 hours
+### Wednesday 30 September 2026, 15:00–16:50 · Week 1 | Duration: 2 hours | Covers Week 0 (all three lectures)
 
 ---
 
@@ -56,7 +56,7 @@ For each pair of formulas, build their truth tables side by side and determine i
 
 **(c)** Are ¬p ∨ q and p → q equivalent? (You should already know this from lecture — confirm it now.)
 
-For any equivalent pair, identify which law(s) from Lecture 0.3 explain the equivalence.
+For any equivalent pair, identify which law(s) from Lecture 2 explain the equivalence.
 
 ---
 
@@ -80,7 +80,7 @@ Write the name and a brief English description of the inference rule each tautol
 
 ### Exercise 2.1. Decoding Code Conditions
 
-Each code snippet contains a boolean condition. Translate it into propositional logic, simplify it using the laws from Lecture 0.3, and describe in plain English what condition causes the branch to execute.
+Each code snippet contains a boolean condition. Translate it into propositional logic, simplify it using the laws from Lecture 2, and describe in plain English what condition causes the branch to execute.
 
 **(a)**
 ```python

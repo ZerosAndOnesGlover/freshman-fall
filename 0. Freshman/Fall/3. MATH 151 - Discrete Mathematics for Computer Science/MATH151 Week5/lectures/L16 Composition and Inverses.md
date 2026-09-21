@@ -1,5 +1,5 @@
 # MATH 151 · Discrete Mathematics for Computer Science
-## Lecture 5.2 (L16) — Composition of Functions and Inverse Functions
+## Lecture 16 (L16) — Composition of Functions and Inverse Functions
 ### Thursday, Week 5
 
 **Date:** Thursday 29 October 2026 · 13:00–13:50 · Week 5
@@ -264,4 +264,4 @@ Inverse:
 
 ---
 
-*Next: Lecture 5.3 — Bijections and Cardinality*
+*Next: Lecture 17 — Bijections and Cardinality*

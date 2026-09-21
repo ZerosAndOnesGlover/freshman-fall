@@ -136,13 +136,13 @@
 | Day | Time | Event |
 |-----|------|-------|
 | Monday | Start of lecture | ⚠️ MATH 141 Quiz (Weeks 2–12) |
-| Monday | 15:00 | PROG 101 Lab begins |
+| Monday | 15:00 | PROG 101 Lab (Lab N on Monday of Week N+1, from 28 Sep) |
 | Wednesday | Start of lecture | ⚠️ CS 101 Quiz (Weeks 2–12) |
-| Wednesday | 15:00 | MATH 151 Lab begins |
+| Wednesday | 15:00 | MATH 151 Lab (Lab N on Wednesday of Week N+1, from 30 Sep) |
 | Tuesday | Start of lecture | ⚠️ PROG 101 Quiz (Weeks 2–12) |
 | Thursday | 14:00 | PHYS 141 Lab begins (3 hrs) |
-| Friday | 15:00 | MATH 141 Lab begins |
-| Tuesday | 15:00 | CS 101 Lab begins |
+| Friday | 15:00 | MATH 141 Lab (Lab N on Friday of Week N, from 25 Sep) |
+| Tuesday | 15:00 | CS 101 Lab (Lab N on Tuesday of Week N+1, from 29 Sep) |
 | Ongoing | TBD | Project milestones (see ASSESSMENT CALENDAR.md) |
 
 ---

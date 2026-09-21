@@ -1,6 +1,6 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 ## Lab 11 — Tree Workshop: Spanning Trees, MSTs, and Traversal
-### Wednesday, Week 11 | Duration: 2 hours
+### Wednesday 16 December 2026, 15:00–16:50 · Week 12 | Duration: 2 hours | Covers Week 11 (all three lectures)
 
 ---
 
@@ -16,7 +16,7 @@ near-linear time.
 
 ### Exercise 1.1
 For $T$: $V=\{a,\ldots,g\}$, $E=\{ab,ac,bd,be,cf,cg\}$ — verify it is a tree using **two** different
-characterisations from Lecture 11.1.
+characterisations from Lecture 33.
 
 ### Exercise 1.2
 Root $T$ at $a$. Tabulate depths, state the height, list leaves and internal vertices.

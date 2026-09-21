@@ -1,5 +1,5 @@
 # MATH 151 · Discrete Mathematics for Computer Science
-## Lecture 2.1 (L06) — Direct Proof
+## Lecture 6 (L06) — Direct Proof
 ### Monday, Week 2
 
 **Date:** Monday 5 October 2026 · 13:00–13:50 · Week 2
@@ -335,4 +335,4 @@ Proof.
 
 ---
 
-*Next: Lecture 2.2 — Proof by Contrapositive*
+*Next: Lecture 7 — Proof by Contrapositive*

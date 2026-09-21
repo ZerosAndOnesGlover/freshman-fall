@@ -1,5 +1,5 @@
 # MATH 151 · Discrete Mathematics for Computer Science
-## Lecture 11.3 (L35) — Breadth-First and Depth-First Search
+## Lecture 35 (L35) — Breadth-First and Depth-First Search
 ### Friday, Week 11
 
 **Date:** Friday 11 December 2026 · 13:00–13:50 · Week 11
@@ -127,7 +127,7 @@ produces a **spanning tree** — the BFS tree or DFS tree.
 | DFS tree | Tall and narrow | Non-tree edges connect ancestors to descendants |
 
 Both are spanning trees of the same graph, generally different, both with $n-1$ edges. This gives a
-third construction to add to Wednesday's Kruskal and Prim — though neither traversal tree is
+third construction to add to Thursday's Kruskal and Prim — though neither traversal tree is
 minimum-weight, since neither consults the weights.
 
 ---
