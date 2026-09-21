@@ -1,8 +1,11 @@
 # CS 101 · Lab 4
 ## Recursion Tree Drawing and Implementation
 
-**Tuesday of Week 5 · Lab Section** — sat after this week's Wed–Fri lectures, and covers Week 4.
-*Duration: 2 hours · Graded on completion (TA checkoff)*
+**Date:** Tuesday 27 October 2026 · 15:00–16:50 · Lab Section (Week 5) — covers Week 4 (L13–L15)
+*Duration: 2 hours · 100 points via TA checkoff, part of the Labs component (10%)*
+
+**Tools used:** Weeks 0–4 only. No dictionaries (so no memo tables — Week 8), no timing modules,
+no Big-O notation yet (Week 6): you count calls instead.
 
 ---
 
@@ -34,7 +37,7 @@ Work on paper. For each function:
 1. Draw the complete recursion tree for the given input
 2. Label each node with the function call and its return value
 3. Count total nodes (= total calls)
-4. State the big-O complexity
+4. Say how the count grows when `n` grows
 
 ### Exercise 1.1: Linear Recursion
 
@@ -50,7 +53,7 @@ Draw the tree for `count_up(5)`.
 **Answer in `LAB 4 Recursion Trees.md`:**
 - How many nodes total?
 - What is the depth of the tree?
-- O(___)
+- How does the number of calls grow as `n` grows by 1? As the list length doubles?
 
 ### Exercise 1.2: Binary Recursion (the expensive kind)
 
@@ -67,7 +70,7 @@ Draw the tree for `fib(5)`. (This is large — count carefully.)
 - How many nodes? (Count by hand or in levels)
 - How many times is `fib(2)` computed?
 - How many times is `fib(1)` computed?
-- O(___)
+- How does the number of calls grow as `n` grows by 1? As the list length doubles?
 
 ### Exercise 1.3: Divide and Conquer
 
@@ -89,7 +92,7 @@ Draw the tree for `binary_search([1,2,3,4,5,6,7,8], 3, 0, 7)`.
 **Answer:**
 - How many nodes? (worst case, searching for a missing element)
 - What is the maximum depth for a list of length 8? Of length 16? Of length n?
-- O(___)
+- How does the number of calls grow as `n` grows by 1? As the list length doubles?
 
 ### Exercise 1.4: Tree Recursion on a Real Tree
 
@@ -113,7 +116,7 @@ def tree_sum(node):
 **Answer:**
 - How many calls total (including the None calls)?
 - For a tree with n nodes, how many None-calls are made? (Hint: binary tree property)
-- O(___)
+- How does the number of calls grow as `n` grows by 1? As the list length doubles?
 
 ---
 
@@ -307,64 +310,29 @@ assert binary_search([], 5)    == -1
 print("✓ binary_search")
 
 
-# ─── Exercise 2.4: Fibonacci with memoization ─────────────────────────────────
+# ─── Exercise 2.4: Counting Fibonacci calls ──────────────────────────────────
 
-def fib_naive(n):
-    """Naive Fibonacci — O(2^n). Do not call with n > 35."""
+calls = 0
+
+def fib_counted(n):
+    """
+    Naive Fibonacci that also counts how many times it is called.
+    Base cases: fib(0) = 0, fib(1) = 1.  Recursive case: fib(n-1) + fib(n-2).
+    """
+    global calls
+    calls += 1
     if n <= 1:
         return n
-    return fib_naive(n-1) + fib_naive(n-2)
+    return fib_counted(n - 1) + fib_counted(n - 2)
 
 
-def fib_memo(n, memo=None):
-    """
-    Fibonacci with memoization — O(n).
+# TODO: for n in 5, 10, 15, 20, 25: reset calls to 0, call fib_counted(n),
+#       and print n, the result, and calls. Record the table in your notes.
+# Check: fib_counted(10) == 55 with 177 calls; fib_counted(20) == 6765 with 21891 calls.
+# Question: roughly what factor does the call count grow by each time n rises by 5?
 
-    Key: store computed results in memo dict to avoid recomputation.
-    Each subproblem is solved exactly once.
-
-    Base cases: fib(0) = 0, fib(1) = 1.
-    Recursive case: fib(n) = fib(n-1) + fib(n-2).
-    Memoization: before computing, check if result already in memo.
-
-    Examples:
-        fib_memo(10) → 55
-        fib_memo(50) → 12586269025  (fast! naive would take hours)
-    """
-    if memo is None:
-        memo = {}
-
-    if n in memo:
-        return memo[n]
-
-    if n <= 1:
-        return n
-
-    memo[n] = fib_memo(n-1, memo) + fib_memo(n-2, memo)
-    return memo[n]
-
-
-# Correctness tests:
-assert fib_memo(0)  == 0
-assert fib_memo(1)  == 1
-assert fib_memo(10) == 55
-assert fib_memo(20) == 6765
-assert fib_memo(50) == 12586269025
-
-# Verify memoized matches naive (for small n):
-for i in range(15):
-    assert fib_naive(i) == fib_memo(i), f"Mismatch at n={i}"
-print("✓ fib_memo (matches naive for n=0..14)")
-
-# Performance comparison:
-import time
-
-t0 = time.time(); fib_naive(30); t1 = time.time()
-t2 = time.time(); fib_memo(30);  t3 = time.time()
-
-print(f"  fib_naive(30): {(t1-t0)*1000:.1f} ms")
-print(f"  fib_memo(30):  {(t3-t2)*1000:.3f} ms")
-print(f"  Speedup: ~{(t1-t0)/(t3-t2+1e-9):.0f}x")
+assert fib_counted(10) == 55
+print("✓ fib_counted")
 
 
 # ─── Exercise 2.5: Tower of Hanoi with move counter ──────────────────────────
@@ -421,53 +389,6 @@ for n in range(1, 12):
 print("✓ hanoi — formula verified for n=1..11")
 
 
-# ─── Exercise 2.6: Permutations ──────────────────────────────────────────────
-
-def permutations(lst):
-    """
-    Return all permutations of lst as a list of lists.
-    Uses the choose-explore-unchoose (backtracking) pattern.
-
-    Base case: 0 or 1 elements → only one permutation.
-    Recursive case: for each element as the first, permute the rest.
-
-    Total permutations: n! (verified by len(permutations(range(n))) == factorial(n))
-
-    Examples:
-        permutations([1,2])     → [[1,2],[2,1]]
-        permutations([1,2,3])   → 6 permutations
-        permutations([])        → [[]]
-    """
-    if len(lst) <= 1:
-        return [lst[:]]
-
-    result = []
-    lst = lst[:]    # work on a copy to avoid modifying caller's list
-
-    for i in range(len(lst)):
-        # CHOOSE: swap element i to the front
-        lst[0], lst[i] = lst[i], lst[0]
-
-        # EXPLORE: get all permutations of the rest
-        for perm in permutations(lst[1:]):
-            result.append([lst[0]] + perm)
-
-        # UNCHOOSE: restore the swap
-        lst[0], lst[i] = lst[i], lst[0]
-
-    return result
-
-
-perms_3 = permutations([1, 2, 3])
-assert len(perms_3) == 6
-assert sorted(perms_3) == sorted([
-    [1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]
-])
-assert permutations([]) == [[]]
-assert permutations([1]) == [[1]]
-print("✓ permutations")
-
-
 # ─── All tests summary ────────────────────────────────────────────────────────
 
 print("\n🎉 All lab tests passed!")
@@ -477,58 +398,42 @@ print("\n🎉 All lab tests passed!")
 
 ## Part 3: The Slicing Anti-Pattern Fix (15 minutes)
 
-Create `slicing_fix.py`. Demonstrate and fix the O(n²) slicing problem.
+Create `slicing_fix.py`. `lst[1:]` copies the rest of the list on every call, so a recursive sum over
+n items copies about n²/2 elements in total; passing an index copies nothing (L15 §6).
 
 ```python
 # slicing_fix.py
-# Demonstrates the O(n^2) slicing anti-pattern and its O(n) fix.
+# Demonstrates the slicing anti-pattern and its index-based fix.
 
-import time
-
-# VERSION 1: O(n^2) — creates a new list slice each recursive call
+# VERSION 1: copies a new list slice on each recursive call
 def sum_slow(lst):
     if not lst:
         return 0
-    return lst[0] + sum_slow(lst[1:])   # lst[1:] = O(n) each time!
+    return lst[0] + sum_slow(lst[1:])   # lst[1:] copies len(lst) - 1 items
 
 
-# VERSION 2: O(n) — passes index, no slice creation
+# VERSION 2: passes an index, no copying
 def sum_fast(lst, i=0):
     if i == len(lst):
         return 0
-    return lst[i] + sum_fast(lst, i + 1)   # O(1) per call
+    return lst[i] + sum_fast(lst, i + 1)   # no copy
 
 
 # Verify both are correct:
 test = list(range(1, 101))
-assert sum_slow(test) == sum(test) == 5050
-assert sum_fast(test) == sum(test) == 5050
+assert sum_slow(test) == 5050
+assert sum_fast(test) == 5050
 print("Both versions correct.")
-
-# Benchmark (use a larger list for visible difference):
-import sys
-sys.setrecursionlimit(5000)   # temporarily increase for this benchmark
-
-n = 900   # stay under limit
-big = list(range(n))
-
-t0 = time.perf_counter(); sum_slow(big); t1 = time.perf_counter()
-t2 = time.perf_counter(); sum_fast(big); t3 = time.perf_counter()
-
-print(f"\nFor n={n}:")
-print(f"  sum_slow (O(n²) slicing): {(t1-t0)*1000:.2f} ms")
-print(f"  sum_fast (O(n) index):    {(t3-t2)*1000:.2f} ms")
-print(f"  Ratio: {(t1-t0)/(t3-t2+1e-9):.1f}x slower")
 
 # Apply the same fix to reverse:
 def reverse_slow(lst):
-    """O(n^2) due to slicing."""
+    """Copies a slice on every call."""
     if not lst:
         return []
     return reverse_slow(lst[1:]) + [lst[0]]
 
 def reverse_fast(lst, i=None, result=None):
-    """O(n) — accumulates into result list."""
+    """Walks an index down the list and accumulates into result."""
     if i is None:
         i = len(lst) - 1
     if result is None:
@@ -558,116 +463,22 @@ print("✓ count_occurrences")
 
 ---
 
-## Part 4: Backtracking — N-Queens (15 minutes)
-
-The N-Queens problem: place N queens on an N×N chessboard so no two queens attack each other (no two in the same row, column, or diagonal).
-
-```python
-# n_queens.py
-
-def is_safe(board, row, col):
-    """
-    Return True if placing a queen at (row, col) is safe,
-    given queens already placed in rows 0..row-1.
-
-    board[r] = column of queen in row r.
-    Check: no queen in same column, or either diagonal.
-    """
-    for r in range(row):
-        c = board[r]
-        if c == col:                  # same column
-            return False
-        if abs(c - col) == abs(r - row):  # same diagonal
-            return False
-    return True
-
-
-def solve_nqueens(n, row=0, board=None, solutions=None):
-    """
-    Find all solutions to the N-Queens problem.
-
-    board: list of length n where board[r] = column of queen in row r.
-    solutions: accumulates all valid complete boards.
-
-    Backtracking pattern:
-        For each column in this row:
-            CHOOSE: place queen at (row, col)
-            EXPLORE: recursively solve remaining rows
-            UNCHOOSE: (implicit — board[row] is overwritten next iteration)
-
-    Returns:
-        list of boards (each board is a list of column indices)
-    """
-    if board is None:
-        board = [0] * n
-    if solutions is None:
-        solutions = []
-
-    # Base case: all rows filled → valid solution found
-    if row == n:
-        solutions.append(board[:])   # append a copy
-        return solutions
-
-    for col in range(n):
-        if is_safe(board, row, col):
-            board[row] = col                              # CHOOSE
-            solve_nqueens(n, row + 1, board, solutions)  # EXPLORE
-            # UNCHOOSE: board[row] overwritten on next iteration
-
-    return solutions
-
-
-def print_board(board):
-    """Print an N-Queens solution as a grid."""
-    n = len(board)
-    for row in range(n):
-        line = ""
-        for col in range(n):
-            line += "Q " if board[row] == col else ". "
-        print(" ", line)
-    print()
-
-
-# Solve and display:
-for n in [4, 5, 6, 8]:
-    solutions = solve_nqueens(n)
-    print(f"N={n}: {len(solutions)} solutions")
-
-print("\nOne solution for N=8:")
-print_board(solve_nqueens(8)[0])
-
-# Known solution counts:
-assert len(solve_nqueens(4)) == 2
-assert len(solve_nqueens(5)) == 10
-assert len(solve_nqueens(8)) == 92
-print("✓ n_queens solution counts verified")
-```
-
-**Answer in `LAB 4 Recursion Trees.md`:**
-1. For N=8, how many boards does the solver examine before finding all 92 solutions? (Add a counter.)
-2. The `is_safe` check is O(row). What is the total work done for an N=8 board? Estimate.
-3. Draw the recursion tree structure for N=4 (don't draw all branches — show the shape).
-
----
-
-## Part 5: Commit and Reflection (10 minutes)
+## Part 4: Commit and Reflection (10 minutes)
 
 ```bash
 cd "$CS101/week4"
 git add .
-git commit -m "Week 4 Lab: recursion trees, merge sort, binary search, Hanoi, N-Queens"
+git commit -m "CS 101 Lab 4: recursion trees, merge sort, binary search, Hanoi"
 git push
 ```
 
 ### Reflection in `LAB 4 Recursion Trees.md`:
 
-**Q1.** You drew the recursion tree for `fib(5)` and counted how many times each sub-problem was recomputed. Explain in one paragraph why memoization fixes this, and state the time complexity of memoized Fibonacci.
+**Q1.** You drew the tree for `fib(5)` and counted how often each sub-problem is recomputed. Using your `fib_counted` table, explain in one paragraph why the call count explodes, and what idea (L14's closing section names it) would stop the recomputation.
 
 **Q2.** The Tower of Hanoi takes 2^n - 1 moves. This is provably optimal — you cannot solve it in fewer moves. Using the recurrence T(n) = 2·T(n-1) + 1, prove by induction that T(n) = 2^n - 1.
 
-**Q3.** In the N-Queens backtracking solver, the UNCHOOSE step is implicit (the board is overwritten on the next iteration). Would it still work correctly if you explicitly added `board[row] = -1` after the recursive call? Why or why not?
-
-**Q4.** For which of the following problems is recursion the *clearest* solution, and for which is iteration clearer? Justify each.
+**Q3.** For which of the following problems is recursion the *clearest* solution, and for which is iteration clearer? Justify each.
 - (a) Computing the sum of integers from 1 to n
 - (b) Traversing a binary tree in sorted order
 - (c) Finding whether a string is a palindrome
@@ -677,31 +488,14 @@ git push
 
 ## TA Checkoff Criteria
 
-Show your TA:
-- [ ] `LAB 4 Recursion Trees.md` with 4 recursion trees drawn (Parts 1.1–1.4)
-- [ ] `recursion_lab.py` with all tests passing (6 functions)
-- [ ] `slicing_fix.py` with benchmark output and `count_occurrences` implemented
-- [ ] `n_queens.py` running with correct solution counts
-- [ ] `LAB 4 Recursion Trees.md` reflection questions answered
+| Part | Points | Show your TA |
+|---|---|---|
+| 1 | 30 | Four recursion trees drawn with the counts answered (Exercises 1.1–1.4) |
+| 2 | 45 | `recursion_lab.py`: all tests pass; the `fib_counted` table recorded |
+| 3 | 15 | `slicing_fix.py` runs; `count_occurrences` implemented |
+| Reflection | 10 | Q1–Q3 answered in the notes |
+| **Total** | **100** | Work committed (required) |
 
 ---
 
-## Bonus Challenges
-
-**Bonus 1 — Sudoku solver:**
-Extend the backtracking pattern to solve Sudoku. Represent the board as a 9×9 list of lists (0 = empty). Use `is_valid(board, row, col, num)` to check placement validity, then backtrack.
-
-**Bonus 2 — Memoized power set:**
-The power set of size n has 2^n subsets. Can memoization help? Why or why not? (Think about what subproblems overlap.)
-
-**Bonus 3 — Ackermann function:**
-Implement the Ackermann function:
-- A(0, n) = n + 1
-- A(m, 0) = A(m-1, 1)
-- A(m, n) = A(m-1, A(m, n-1))
-
-Try `A(3, 4)`. What is the depth of the recursion tree? Why does `sys.setrecursionlimit` need to be very high?
-
----
-
-*CS 101 · Week 4 · Lab 4 · © CSE Department*
+*CS 101 · Week 4 · Lab 4 · Tuesday 27 October 2026 · © CSE Department*

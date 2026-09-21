@@ -1,9 +1,9 @@
 # CS 101 · Week 4
 ## LAB 4 Solutions (INSTRUCTOR ONLY)
 
-> **All code below was executed and all stated outputs are real.** Where a benchmark appears,
-> the absolute timings are machine-specific — grade the *ratios* and the conclusions, never the
-> raw milliseconds.
+> Lab sat Tuesday 27 October 2026. **All code below was executed and all stated outputs are real.**
+> Students answer the "how does it grow" questions in words ("doubles when n rises by 1", "one more
+> call when the list doubles"); the Big-O forms below are for the instructor — Big-O is taught in Week 6.
 
 ---
 
@@ -155,76 +155,33 @@ equally a copy, and to the `find` anti-pattern in L15 §6.
 
 ---
 
-## Part 4 — N-Queens
+## Exercise 2.4 — `fib_counted`
 
-```python
-def is_safe(board, row, col):
-    """board[r] = column of the queen in row r; rows above `row` are filled."""
-    for r in range(row):
-        if board[r] == col or abs(board[r] - col) == row - r:
-            return False
-    return True
+Measured:
 
+| n | fib(n) | calls |
+|---|---|---|
+| 5 | 5 | 15 |
+| 10 | 55 | 177 |
+| 15 | 610 | 1973 |
+| 20 | 6765 | 21891 |
+| 25 | 75025 | 242785 |
 
-def solve_nqueens(n, row=0, board=None, solutions=None):
-    if board is None:
-        board = [-1] * n
-    if solutions is None:
-        solutions = []
-    if row == n:
-        solutions.append(board[:])          # COPY — see below
-        return solutions
-    for col in range(n):
-        if is_safe(board, row, col):
-            board[row] = col                # choose
-            solve_nqueens(n, row + 1, board, solutions)   # explore
-            board[row] = -1                 # unchoose
-    return solutions
-```
-
-Verified solution counts:
-
-| n | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
-|---|---|---|---|---|---|---|---|---|
-| Solutions | 1 | 0 | 0 | **2** | 10 | 4 | 40 | **92** |
-
-These match the known values; **n = 2 and n = 3 having zero solutions is a correct result**, not a
-bug, and is a good sanity check that the student's `is_safe` is not too permissive.
-
-### The three things that go wrong
-
-1. **`solutions.append(board)` without `[:]`.** Every recorded solution then aliases the one shared
-   `board`, and since backtracking restores it to all `-1`, the output is the right *number* of
-   solutions, all identical and all empty. **Symptom: 92 identical rows for n = 8.** This is the
-   single most common backtracking bug.
-2. **Missing the unchoose.** Without `board[row] = -1`, stale queens from abandoned branches remain
-   and `is_safe` rejects valid positions — the count comes out too low.
-3. **Diagonal test wrong.** `abs(board[r] - col) == row - r` is the correct condition. Writing
-   `abs(board[r] - col) == abs(row - r)` is equivalent here (since `r < row`) but `board[r] - col
-   == row - r` without the `abs` checks only one diagonal and yields inflated counts.
-
-The one-queen-per-row encoding (`board[r]` = column) makes row conflicts *structurally impossible*,
-which is why `is_safe` only tests columns and diagonals. Reward students who articulate that the
-representation eliminated a whole class of check.
+The count grows by about **11×** each time `n` rises by 5 (φ⁵ ≈ 11.1). Q1: the same sub-problems
+are recomputed — `fib(2)` alone is computed `fib(n−1)` times — and **memoisation** (L14's closing
+section) would compute each once. Students should *name* it, not implement it: dictionaries are Week 8.
 
 ---
 
 ## Marking Scheme
 
-The lab is checkoff-graded against the criteria on the handout. Within each part:
-
-- **Method (≈60%).** Correct approach, required loop/structure type actually used, edge cases
-  considered, invariants stated where the handout asks for them.
-- **Result (≈40%).** Code runs, produces the specified output, and the written answers are correct.
-
-**Carry-through.** A wrong helper that is then used correctly downstream costs marks once.
-
-**Watch for the two failure modes that matter:**
-1. Code that produces the right answer for the sample input and is wrong in general — always run
-   the edge cases listed under each exercise.
-2. Written answers that restate the observation instead of explaining it. "0.1 + 0.2 isn't 0.3
-   because floats are imprecise" earns nothing; the answer must reach binary representation.
+| Part | Points | Notes |
+|---|---|---|
+| 1 | 30 | 7.5 per tree: correct shape, correct counts, a sensible growth statement |
+| 2 | 45 | tests pass (35); the `fib_counted` table matches the one above (10) |
+| 3 | 15 | `slicing_fix.py` runs (5); `count_occurrences` index-based, no slicing (10) |
+| Reflection | 10 | Q2's induction must show both base case and step |
 
 ---
 
-*CS 101 · Week 4 · Lab Solutions · Instructor Copy · © CSE Department*
+*CS 101 · Week 4 · Lab 4 Solutions · Instructor only*

@@ -1,9 +1,7 @@
 # CS 101 · Week 3
 ## LAB 3 Solutions (INSTRUCTOR ONLY)
 
-> **All code below was executed and all stated outputs are real.** Where a benchmark appears,
-> the absolute timings are machine-specific — grade the *ratios* and the conclusions, never the
-> raw milliseconds.
+> Lab sat Tuesday 20 October 2026. **All code below was executed and all stated outputs are real.**
 
 ---
 
@@ -118,154 +116,288 @@ def add_to_total(total, n):
 
 ---
 
-## Part 2 — Scope Bug Hunt
+## Part 2 — Scope Bug Hunt (20, 5 each)
 
-The recurring bugs and their fixes:
-
-| Bug pattern | Why it fails | Fix |
-|---|---|---|
-| Assigning to a global without declaring it | `UnboundLocalError`, as Ex 1.4 | `global`, or better, parameter + return |
-| Mutable default argument | Shared across calls | `=None` sentinel |
-| Shadowing a builtin (`list = [...]`, `sum = 0`) | Later `list(...)` or `sum(...)` raises `TypeError: 'int' object is not callable` | Rename the variable |
-| Reading a loop variable after the loop | Works, but holds the *last* value — and is undefined if the loop body never ran | Initialise before the loop |
-| `nonlocal` where `global` is needed (or vice versa) | Binds to the wrong scope | Trace which frame owns the name |
-
-> **The builtin-shadowing one produces the most baffling error message**, because the failure
-> appears at a *later, unrelated* line. Show students `python3 -c "import builtins; print(dir(builtins))"`
-> once and the habit sticks.
+| Case | What happens | Why | Fix |
+|---|---|---|---|
+| 1 `accumulate` | `UnboundLocalError` | `running_total += n` assigns, so `running_total` is local for the whole body (L11 LEGB) | Better: take the total as a parameter and return the new one; or `global running_total` |
+| 2 `append_copy` | `original` becomes `[1, 2, 3, 4]` | `lst` and `original` name one list; `append` mutates it | `return lst + [item]` builds a new list |
+| 3 `safe_max` | **no bug** | `default=0` is an immutable `int`; a shared default is only dangerous when it is mutable (`[]`) and then mutated | — (the explanation earns the 5) |
+| 4 `analyze` | works here, but `len` is now a local `int` | the local name hides the built-in inside `analyze`; any `len(...)` call there would fail with `TypeError: 'int' object is not callable` | rename to `count` |
 
 ---
 
-## Part 3 — `text_statistics.py` Reference Solution
+## Part 3 — `text_statistics.py` (35)
 
-Complete implementation; all asserts below pass.
+Reference implementation (the handout's starter with every `TODO` filled). `run_tests()` passes and
+the report prints:
+
+```
+Word count:          29
+Sentence count:      4
+Avg word length:     4.55
+Longest word:        vexingly
+Shortest word:       my
+Is pangram:          True
+Reading level:       Elementary
+```
 
 ```python
-import re
-from collections import Counter
+#!/usr/bin/env python3
+"""
+text_statistics.py
+CS 101 — Week 3, Lab 3
+
+Text analysis library demonstrating function decomposition.
+
+Student: ____________________________
+Date: ______________________________
+"""
+
 
 def _clean_text(text):
-    """Return lowercase text stripped of surrounding whitespace."""
+    """
+    Return lowercase text stripped of leading/trailing whitespace.
+    Internal helper used by multiple functions.
+
+    >>> _clean_text("  Hello World!  ")
+    'hello world!'
+    """
     return text.strip().lower()
 
-def _words(text):
-    """Return the list of alphabetic words in text, lowercased."""
-    return re.findall(r"[a-z']+", _clean_text(text))
 
-def _sentences(text):
-    """Return non-empty sentences, split on . ! ? terminators."""
-    return [s for s in re.split(r"[.!?]+", text) if s.strip()]
+def _tokenize(text):
+    """
+    Split text into a list of words (lowercase, whitespace-split).
 
-def word_count(text):        return len(_words(text))
-def sentence_count(text):    return len(_sentences(text))
+    >>> _tokenize("The quick brown fox")
+    ['the', 'quick', 'brown', 'fox']
+    """
+    return _clean_text(text).split()
+
+
+def word_count(text):
+    """
+    Return the number of words in text.
+
+    >>> word_count("Hello world")
+    2
+    >>> word_count("")
+    0
+    """
+    return len(_tokenize(text))
+
+
+def sentence_count(text):
+    """
+    Return the number of sentences (count of . ! ? characters).
+
+    >>> sentence_count("Hello! How are you? I'm fine.")
+    3
+    >>> sentence_count("No punctuation here")
+    0
+    """
+    count = 0
+    for ch in text:
+        if ch in ".!?":
+            count += 1
+    return count
+
 
 def average_word_length(text):
-    ws = _words(text)
-    return sum(len(w) for w in ws) / len(ws) if ws else 0.0
+    """
+    Return the mean number of characters per word.
+    Return 0.0 if there are no words.
+
+    >>> average_word_length("cat dog owl")
+    3.0
+    >>> average_word_length("")
+    0.0
+    """
+    words = _tokenize(text)
+    if not words:
+        return 0.0
+    total = 0
+    for w in words:
+        total += len(w)
+    return total / len(words)
+
 
 def longest_word(text):
-    ws = _words(text)
-    return max(ws, key=len) if ws else ""
+    """
+    Return the longest word in text (first one if there's a tie).
+    Return "" if text has no words.
+
+    >>> longest_word("the quick brown fox")
+    'quick'
+    """
+    best = ""
+    for w in _tokenize(text):
+        if len(w) > len(best):
+            best = w
+    return best
+
 
 def shortest_word(text):
-    ws = _words(text)
-    return min(ws, key=len) if ws else ""
+    """
+    Return the shortest word in text (first one if there's a tie).
+    Return "" if text has no words.
 
-def char_frequency(text):
-    c = Counter(ch for ch in _clean_text(text) if ch.isalpha())
-    return sorted(c.items(), key=lambda kv: (-kv[1], kv[0]))
+    >>> shortest_word("the quick brown fox")
+    'the'
+    """
+    words = _tokenize(text)
+    if not words:
+        return ""
+    best = words[0]
+    for w in words:
+        if len(w) < len(best):
+            best = w
+    return best
+
 
 def is_pangram(text):
-    return set("abcdefghijklmnopqrstuvwxyz") <= set(_clean_text(text))
+    """
+    Return True if text contains every letter a-z at least once.
+    Case-insensitive.
+
+    >>> is_pangram("The quick brown fox jumps over the lazy dog")
+    True
+    >>> is_pangram("Hello world")
+    False
+    """
+    lowered = text.lower()
+    for letter in "abcdefghijklmnopqrstuvwxyz":
+        if letter not in lowered:
+            return False
+    return True
+
 
 def reading_level(text):
-    sc = sentence_count(text)
-    if sc == 0:
+    """
+    Estimate reading level based on average words per sentence.
+
+    Heuristic:
+        avg_words_per_sentence < 10  → "Elementary"
+        avg_words_per_sentence < 15  → "Middle"
+        avg_words_per_sentence < 20  → "High School"
+        otherwise                    → "College"
+
+    If there are no sentences (no .!?), return "Unknown".
+
+    >>> reading_level("I am. You are. He is.")
+    'Elementary'
+    """
+    sentences = sentence_count(text)
+    if sentences == 0:
+        return "Unknown"
+    avg = word_count(text) / sentences
+    if avg < 10:
         return "Elementary"
-    wps = word_count(text) / sc
-    if wps < 10:  return "Elementary"
-    if wps < 15:  return "Middle"
-    if wps < 20:  return "High School"
+    if avg < 15:
+        return "Middle"
+    if avg < 20:
+        return "High School"
     return "College"
 
-def analyze(text):
-    return {
-        "word_count":          word_count(text),
-        "sentence_count":      sentence_count(text),
-        "average_word_length": average_word_length(text),
-        "longest_word":        longest_word(text),
-        "shortest_word":       shortest_word(text),
-        "char_frequency":      char_frequency(text),
-        "is_pangram":          is_pangram(text),
-        "reading_level":       reading_level(text),
-    }
 
-def display(stats):
-    """The ONLY function permitted to print."""
-    for k, v in stats.items():
-        print(f"{k:>22}: {v}")
+def display_report(text):
+    """
+    Print a formatted analysis report for text.
+    This is the ONLY function that may print.
+    """
+    print("=" * 50)
+    print("TEXT ANALYSIS REPORT")
+    print("=" * 50)
+    print(f"  Word count:          {word_count(text)}")
+    print(f"  Sentence count:      {sentence_count(text)}")
+    print(f"  Avg word length:     {average_word_length(text):.2f}")
+    print(f"  Longest word:        {longest_word(text)}")
+    print(f"  Shortest word:       {shortest_word(text)}")
+    print(f"  Is pangram:          {is_pangram(text)}")
+    print(f"  Reading level:       {reading_level(text)}")
+    print("=" * 50)
+
+
+def run_tests():
+    """Run all assertion tests."""
+
+    # word_count
+    assert word_count("hello world") == 2
+    assert word_count("") == 0
+    assert word_count("  spaces  ") == 1
+    print("✓ word_count")
+
+    # sentence_count
+    assert sentence_count("Hello! How are you? I'm fine.") == 3
+    assert sentence_count("No punctuation") == 0
+    print("✓ sentence_count")
+
+    # average_word_length
+    assert average_word_length("cat dog owl") == 3.0
+    assert average_word_length("") == 0.0
+    print("✓ average_word_length")
+
+    # longest_word
+    assert longest_word("the quick brown fox") == "quick"
+    assert longest_word("") == ""
+    print("✓ longest_word")
+
+    # shortest_word
+    assert shortest_word("the quick brown fox") == "the"
+    assert shortest_word("") == ""
+    print("✓ shortest_word")
+
+    # is_pangram
+    assert is_pangram("The quick brown fox jumps over the lazy dog") == True
+    assert is_pangram("Hello world") == False
+    print("✓ is_pangram")
+
+    # reading_level
+    assert reading_level("I am. You are. He is.") == "Elementary"
+    print("✓ reading_level")
+
+    print("\n🎉 All tests passed!")
+
+
+if __name__ == "__main__":
+    run_tests()
+
+    sample = """
+    The quick brown fox jumps over the lazy dog.
+    Pack my box with five dozen liquor jugs.
+    How vexingly quick daft zebras jump!
+    The five boxing wizards jump quickly.
+    """
+    display_report(sample)
+
 ```
 
-Verified output for `"The quick brown fox jumps over the lazy dog. It was remarkably fast!"`:
-
-```
-            word_count: 13
-        sentence_count: 2
-   average_word_length: 4.153846153846154
-          longest_word: remarkably
-         shortest_word: it
-        char_frequency: [('a', 5), ('e', 4), ('o', 4), ('r', 4), ('t', 4), ...]
-            is_pangram: True
-         reading_level: Elementary
-```
-
-### What to check at checkoff
-
-1. **Does `analyze` call the other functions, or re-implement them?** The specification is explicit.
-   A student who recomputes the word list inside `analyze` has failed the main requirement of the
-   lab, however correct the numbers.
-2. **Do the edge cases return rather than crash?** Verified behaviour:
-
-   | Input | `word_count` | `sentence_count` | `reading_level` | `longest_word` |
-   |---|---|---|---|---|
-   | `""` | 0 | 0 | `"Elementary"` | `""` |
-   | `"just words here"` (no terminator) | 3 | **1** | `"Elementary"` | `"words"` |
-   | `"!!! ???"` | 0 | 0 | `"Elementary"` | `""` |
-
-   `average_word_length("")` must be `0.0`, not `ZeroDivisionError`. This is the most common
-   crash. Text with no terminating punctuation must still count as **one** sentence, not zero —
-   otherwise `reading_level` divides by zero.
-3. **Ties.** `longest_word` and `shortest_word` must be deterministic. `max(..., key=len)` returns
-   the **first** maximum, which is a defensible rule; any documented rule is acceptable, but the
-   docstring must say which.
-4. **No printing outside `display`.** Grep for `print(` — it should appear exactly once.
-5. **Two asserts per function**, and they must include an edge case, not two happy paths.
+**Checkoff:** every function implemented (4 each for the seven = 28); `display_report` calls the
+others rather than recomputing (4); `print(` appears only in `display_report` and `run_tests` (3).
+`average_word_length("")` must return `0.0`, not raise `ZeroDivisionError` — the commonest crash.
+Punctuation stays attached to words (`"dog."` has length 4); that is acceptable because the spec
+splits on whitespace.
 
 ---
 
-## Part 4 — Recursion First Look
+## Part 4 — Recursion First Look (15)
 
-Accept any correct recursive `factorial` or `countdown`. The one thing to insist on is that the
-**base case is an inequality** (`n <= 0`), not an equality — see Lab 4.
+```python
+def power(base, exp):
+    if exp == 0:
+        return 1
+    return base * power(base, exp - 1)
 
----
+def sum_digits(n):
+    if n < 10:
+        return n
+    return n % 10 + sum_digits(n // 10)
+```
 
-## Marking Scheme
-
-The lab is checkoff-graded against the criteria on the handout. Within each part:
-
-- **Method (≈60%).** Correct approach, required loop/structure type actually used, edge cases
-  considered, invariants stated where the handout asks for them.
-- **Result (≈40%).** Code runs, produces the specified output, and the written answers are correct.
-
-**Carry-through.** A wrong helper that is then used correctly downstream costs marks once.
-
-**Watch for the two failure modes that matter:**
-1. Code that produces the right answer for the sample input and is wrong in general — always run
-   the edge cases listed under each exercise.
-2. Written answers that restate the observation instead of explaining it. "0.1 + 0.2 isn't 0.3
-   because floats are imprecise" earns nothing; the answer must reach binary representation.
+All handout asserts pass (`power(3, 4) == 81`, `sum_digits(9999) == 36`). `factorial(5)` reaches 7
+frames at its deepest (module + 6 calls, `n = 5 … 0`). 8 for `power`, 7 for `sum_digits`.
 
 ---
 
-*CS 101 · Week 3 · Lab Solutions · Instructor Copy · © CSE Department*
+*CS 101 · Week 3 · Lab 3 Solutions · Instructor only*

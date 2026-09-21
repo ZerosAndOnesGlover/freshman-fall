@@ -10,8 +10,6 @@ Student: ____________________________
 Date: ______________________________
 """
 
-import time
-import sys
 
 
 # ─── Exercise 2.1: Fast Power ─────────────────────────────────────────────────
@@ -165,54 +163,29 @@ assert binary_search([], 5)     == -1, f"empty list"
 print("✓ binary_search")
 
 
-# ─── Exercise 2.4: Fibonacci with memoization ─────────────────────────────────
+# ─── Exercise 2.4: Counting Fibonacci calls ──────────────────────────────────
 
-def fib_naive(n):
-    """Naive Fibonacci — O(2^n). Only use for n ≤ 30."""
+calls = 0
+
+def fib_counted(n):
+    """
+    Naive Fibonacci that also counts how many times it is called.
+    Base cases: fib(0) = 0, fib(1) = 1.  Recursive case: fib(n-1) + fib(n-2).
+    """
+    global calls
+    calls += 1
     if n <= 1:
         return n
-    return fib_naive(n-1) + fib_naive(n-2)
+    return fib_counted(n - 1) + fib_counted(n - 2)
 
 
-def fib_memo(n, memo=None):
-    """
-    Fibonacci with top-down memoization. O(n) time, O(n) space.
+# TODO: for n in 5, 10, 15, 20, 25: reset calls to 0, call fib_counted(n),
+#       and print n, the result, and calls. Record the table in your notes.
+# Check: fib_counted(10) == 55 with 177 calls; fib_counted(20) == 6765 with 21891 calls.
+# Question: roughly what factor does the call count grow by each time n rises by 5?
 
-    Store computed results in memo dict to avoid recomputation.
-    Each of the n distinct subproblems is solved exactly once.
-
-    === Correctness ===
-    Same as fib_naive (memoization doesn't change the result, only speed).
-    Each fib_memo(k) returns fib(k) by induction:
-        Base: fib_memo(0)=0, fib_memo(1)=1  ✓
-        Step: fib_memo(n) = fib_memo(n-1) + fib_memo(n-2)
-                          = fib(n-1) + fib(n-2) (IH)
-                          = fib(n)  ✓
-    ===================
-
-    Examples:
-        fib_memo(10) → 55
-        fib_memo(50) → 12586269025
-    """
-    if memo is None:
-        memo = {}
-
-    # TODO:
-    # 1. Check if n is in memo → return memo[n]
-    # 2. Base cases: n <= 1 → return n
-    # 3. Compute, store in memo[n], return
-    pass
-
-
-# Correctness:
-for i in range(15):
-    assert fib_naive(i) == fib_memo(i), f"Mismatch at n={i}"
-assert fib_memo(50) == 12586269025
-
-# Performance:
-t0 = time.perf_counter(); fib_naive(30); t1 = time.perf_counter()
-t2 = time.perf_counter(); fib_memo(300); t3 = time.perf_counter()
-print(f"✓ fib_memo — naive(30): {(t1-t0)*1000:.1f}ms  memo(300): {(t3-t2)*1000:.3f}ms")
+assert fib_counted(10) == 55
+print("✓ fib_counted")
 
 
 # ─── Exercise 2.5: Tower of Hanoi ─────────────────────────────────────────────
@@ -264,52 +237,6 @@ print("✓ hanoi — 2^n - 1 formula verified for n=1..11")
 
 print("\nHanoi n=3 moves:")
 hanoi(3, verbose=True)
-
-
-# ─── Exercise 2.6: Permutations ───────────────────────────────────────────────
-
-def permutations(lst):
-    """
-    Return all permutations of lst as a list of lists.
-    Uses choose-explore-unchoose (backtracking).
-
-    Total: n! permutations for a list of n elements.
-
-    === Correctness ===
-    Base: permutations([]) = [[]], permutations([x]) = [[x]]  ✓
-    Step: Every permutation of lst starts with some element lst[i].
-          For each i: put lst[i] first (swap), recurse on the rest (n-1)!
-          perms, then restore swap (unchoose).
-          Total: n * (n-1)! = n! permutations.  ✓
-    ===================
-
-    Examples:
-        permutations([])      → [[]]
-        permutations([1])     → [[1]]
-        permutations([1,2])   → [[1,2],[2,1]]
-        permutations([1,2,3]) → 6 permutations
-    """
-    if len(lst) <= 1:
-        return [lst[:]]
-
-    result = []
-    lst = lst[:]    # work on a copy
-
-    for i in range(len(lst)):
-        # TODO: CHOOSE, EXPLORE, UNCHOOSE
-        pass
-
-    return result
-
-
-assert permutations([]) == [[]]
-assert permutations([1]) == [[1]]
-assert len(permutations([1, 2, 3])) == 6
-assert sorted(permutations([1, 2])) == [[1, 2], [2, 1]]
-# Verify all unique:
-p3 = permutations([1, 2, 3])
-assert len(set(map(tuple, p3))) == 6, "All permutations should be unique"
-print("✓ permutations")
 
 
 # ─── Summary ─────────────────────────────────────────────────────────────────

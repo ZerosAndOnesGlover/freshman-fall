@@ -1,168 +1,184 @@
 # CS 101 · Week 6
-## LAB 6 Solutions — INSTRUCTOR ONLY
+## LAB 6 Solutions: INSTRUCTOR ONLY
 
-> **All code below was executed and all stated outputs are real.** Where a benchmark appears,
-> the absolute timings are machine-specific — grade the *ratios* and the conclusions, never the
-> raw milliseconds.
-
----
-
-## Part 1 — Theoretical Analysis
-
-| Function | Big-O | Reasoning | Recurrence |
-|---|---|---|---|
-| **A** | **Θ(n)** | Single loop, O(1) body | — |
-| **B** | **Θ(n²)** | Nested loops, inner bound independent of outer ⇒ multiply | — |
-| **C** | **Θ(log n)** | `i *= 2` — counter is *multiplied*, so it reaches n in log₂n steps | — |
-| **D** | **Θ(n log n)** | Timsort; Θ(n) on already-sorted input (adaptive) | — |
-| **E** | **Θ(2ⁿ)** | Two recursive calls, each on n−1 | T(n) = 2T(n−1) + O(1) |
-| **F** | **Θ(φⁿ)**, φ≈1.618 | Two calls on n−1 and n−2 — overlapping subproblems | T(n) = T(n−1) + T(n−2) + O(1) |
-| **G** | **O(n²)** worst, **O(1)** best | Nested loop; returns early on the first duplicate | — |
-| **H** | **Θ(n log n)** | Master Theorem case 2: a=2, b=2, f(n)=n, n^(log₂2)=n | T(n) = 2T(n/2) + n |
-
-**Points that separate a good answer from a passing one:**
-
-- **C is the only sublinear function.** The distinguishing feature is multiplication of the counter,
-  not the `while`.
-- **E vs. F.** Both are exponential but with *different bases*: E branches on n−1 twice giving 2ⁿ,
-  F on n−1 and n−2 giving φⁿ. Students who write "both O(2ⁿ)" have an upper bound that is correct
-  but not tight for F.
-- **G must be stated with best and worst cases.** It is the only function here whose cost depends
-  on the *data* rather than just n. `O(n²)` alone is an incomplete answer.
-- **D is a trap for students who write Θ(n).** `sorted` is not free.
+> Lab sat Tuesday 10 November 2026. **All code below was executed; the counts are real output** and are
+> exact — every student's instrumented file should print the same numbers.
 
 ---
 
-## Part 2–3 — Empirical Measurement and Exponent Estimation
+## Part 1 — Predictions (30)
 
-Fitting log t = k·log n + c over four doubling sizes; **k is the empirical exponent**.
-
-| Function | Measured doubling ratios | Fitted k | Theory |
+| Function | Bound | Reasoning | Recurrence |
 |---|---|---|---|
-| A | 1.72, 2.06, 1.97 | **0.946** | 1 |
-| B | 4.74, 4.41, 3.95 | **2.123** | 2 |
-| G (no duplicates — worst case) | 4.24, 4.05, 4.11 | **2.045** | 2 |
-| D | 2.18, 2.53, 2.46 | **1.263** | 1 + log correction |
+| A | Θ(n) | one loop, n iterations | — |
+| B | Θ(n²) | two nested loops of n | — |
+| C | Θ(log n) | `i` doubles until it reaches n | — |
+| D | Θ(n log n) | Timsort (L18 §3); Θ(n) on already-sorted input | — |
+| E | Θ(2ⁿ) | two calls on n − 1 | T(n) = 2T(n−1) + 1 |
+| F | Θ(φⁿ), φ ≈ 1.618 (O(2ⁿ) accepted in Part 1) | calls on n − 1 and n − 2 | T(n) = T(n−1) + T(n−2) + 1 |
+| G | Θ(n²) worst case | pairs i < j; early exit on a duplicate | — |
+| H | **Θ(n)** | two calls on n/2, **O(1)** extra work — `+ n` adds a number, it does not loop | T(n) = 2T(n/2) + O(1) → Master case 1 |
 
-Raw timings:
+*Most students write T(n) = 2T(n/2) + n → Θ(n log n) for H. That is the trap Part 3 exposes; do not
+deduct in Part 1 if Part 3 catches and explains it.* 3.75 per row.
+
+---
+
+## Part 2 — Reference `count_growth.py` (35)
+
+```python
+#!/usr/bin/env python3
+"""
+count_growth.py — CS 101 Lab 6 (Tuesday 10 November 2026)
+Each function adds 1 to the global `ops` every time its innermost step runs.
+"""
+import math
+
+ops = 0
+
+
+def func_a(n):
+    global ops
+    total = 0
+    for i in range(n):
+        ops += 1
+        total += i
+    return total
+
+
+def func_b(n):
+    global ops
+    total = 0
+    for i in range(n):
+        for j in range(n):
+            ops += 1
+            total += i * j
+    return total
+
+
+def func_c(n):
+    global ops
+    count = 0
+    i = 1
+    while i < n:
+        ops += 1
+        count += 1
+        i *= 2
+    return count
+
+
+def func_e(n):
+    global ops
+    ops += 1
+    if n <= 1:
+        return 1
+    return func_e(n - 1) + func_e(n - 1)
+
+
+def func_f(n):
+    global ops
+    ops += 1
+    if n <= 1:
+        return n
+    return func_f(n - 1) + func_f(n - 2)
+
+
+def func_g(lst):
+    global ops
+    n = len(lst)
+    for i in range(n):
+        for j in range(i + 1, n):
+            ops += 1
+            if lst[i] == lst[j]:
+                return True
+    return False
+
+
+def func_h(n):
+    global ops
+    ops += 1
+    if n <= 1:
+        return n
+    return func_h(n // 2) + func_h(n // 2) + n
+
+
+def count_ops(func, arg):
+    """Reset ops, run func(arg), return how many steps it counted."""
+    global ops
+    ops = 0
+    func(arg)
+    return ops
+
+
+if __name__ == "__main__":
+    print("Polynomial-looking functions: steps at n and 2n, and k = log2(ratio)")
+    for name, func, make_arg in [("A", func_a, lambda n: n), ("B", func_b, lambda n: n),
+                                 ("C", func_c, lambda n: n), ("G", func_g, lambda n: list(range(n))),
+                                 ("H", func_h, lambda n: n)]:
+        row = f"  {name}:"
+        previous = None
+        for n in [256, 512, 1024, 2048]:
+            steps = count_ops(func, make_arg(n))
+            if previous is not None:
+                row += f"  n={n}: {steps} (k={math.log2(steps / previous):.2f})"
+            else:
+                row += f"  n={n}: {steps}"
+            previous = steps
+        print(row)
+
+    print("\nExponential-looking functions: ratio of steps from n to n+1")
+    for name, func in [("E", func_e), ("F", func_f)]:
+        row = f"  {name}:"
+        previous = None
+        for n in range(16, 21):
+            steps = count_ops(func, n)
+            row += f"  n={n}: {steps}" + ("" if previous is None else f" (x{steps / previous:.3f})")
+            previous = steps
+        print(row)
+```
+
+Output:
 
 ```
-func_a   n=  200,000   10.368 ms      func_b   n=  300     4.191 ms
-         n=  400,000   17.871 ms               n=  600    19.854 ms
-         n=  800,000   36.861 ms               n= 1200    87.464 ms
-         n=1,600,000   72.488 ms               n= 2400   345.065 ms
+Polynomial-looking functions: steps at n and 2n, and k = log2(ratio)
+  A:  n=256: 256  n=512: 512 (k=1.00)  n=1024: 1024 (k=1.00)  n=2048: 2048 (k=1.00)
+  B:  n=256: 65536  n=512: 262144 (k=2.00)  n=1024: 1048576 (k=2.00)  n=2048: 4194304 (k=2.00)
+  C:  n=256: 8  n=512: 9 (k=0.17)  n=1024: 10 (k=0.15)  n=2048: 11 (k=0.14)
+  G:  n=256: 32640  n=512: 130816 (k=2.00)  n=1024: 523776 (k=2.00)  n=2048: 2096128 (k=2.00)
+  H:  n=256: 511  n=512: 1023 (k=1.00)  n=1024: 2047 (k=1.00)  n=2048: 4095 (k=1.00)
 
-func_g   n=    500      3.855 ms      func_d   n=100,000   20.499 ms
-         n=  1,000     16.330 ms               n=200,000   44.705 ms
-         n=  2,000     66.215 ms               n=400,000  113.170 ms
-         n=  4,000    272.362 ms               n=800,000  278.661 ms
+Exponential-looking functions: ratio of steps from n to n+1
+  E:  n=16: 65535  n=17: 131071 (x2.000)  n=18: 262143 (x2.000)  n=19: 524287 (x2.000)  n=20: 1048575 (x2.000)
+  F:  n=16: 3193  n=17: 5167 (x1.618)  n=18: 8361 (x1.618)  n=19: 13529 (x1.618)  n=20: 21891 (x1.618)
 ```
 
-**How to read these:**
-
-- **A gives k = 0.946, not 1.000.** This is *not* evidence against Θ(n) — it is measurement noise
-  plus fixed overhead. At the smallest size a constant startup cost is a larger fraction of the
-  total, which flattens the fitted line. The doubling ratios (1.72, 2.06, 1.97) straddle 2, which
-  is the more robust read. **Expect k within ±0.1 of theory and treat anything closer as luck.**
-- **B and G both land near 2.0**, confirming quadratic. G was measured on input with **no
-  duplicates**, forcing the worst case; a student who benchmarks G on random data with repeats will
-  measure something close to Θ(1) and conclude the function is constant-time. That is the single
-  most instructive mistake available in this lab — **the benchmark must construct the worst case
-  deliberately.**
-- **D gives k = 1.263, visibly above 1.** The log factor in n log n behaves like a slowly growing
-  exponent: over this range, log₂n runs from ~17 to ~20, so t ∝ n·log n looks like n^1.06 in
-  theory. The measured 1.26 exceeds even that, because sorting 800,000 floats starts to miss cache.
-  **This is why Θ(n) and Θ(n log n) cannot be reliably separated empirically** — the log factor is
-  within the noise of ordinary measurement, which is a genuine limitation worth stating.
-
-### `func_c` — logarithmic
-
-| n | `func_c(n)` | log₂ n |
-|---|---|---|
-| 1,000 | 10 | 10.0 |
-| 1,000,000 | 20 | 19.9 |
-| 10⁹ | 30 | 29.9 |
-| 10¹² | 40 | 39.9 |
-
-The return value **is** ⌈log₂ n⌉. Multiplying n by 1000 adds ~10 to the count. Note this cannot be
-timed meaningfully — 40 iterations is below the clock's resolution — so the *return value* is the
-measurement. Reward students who realise that counting operations beats timing them when the
-operation count is small.
-
-### `func_e` and `func_f` — exponential, by call count
-
-| n | `func_e` calls | `func_f` calls |
-|---|---|---|
-| 5 | 31 | 15 |
-| 10 | 1,023 | 177 |
-| 15 | 32,767 | 1,973 |
-| 20 | **1,048,575** | **21,891** |
-
-- **`func_e` makes exactly 2ⁿ − 1 calls.** Check: 2²⁰ − 1 = 1,048,575 ✓. The recurrence
-  C(n) = 2C(n−1) + 1 with C(1) = 1 unrolls to 2ⁿ − 1.
-- **`func_f` makes 2·fib(n+1) − 1 calls**: fib(21) = 10,946, and 2(10,946) − 1 = 21,891 ✓.
-
-The ratio between them at n = 20 is nearly **48×**, and it widens with n — a concrete demonstration
-that φⁿ and 2ⁿ are *not* the same growth rate even though both are "exponential".
-
-### `func_h` — the Master Theorem case
-
-| n | Return value | Calls | n·log₂n |
-|---|---|---|---|
-| 16 | 80 | 31 | 64 |
-| 64 | 448 | 127 | 384 |
-| 256 | 2,304 | 511 | 2,048 |
-| 1,024 | 11,264 | 2,047 | 10,240 |
-
-The return value is exactly **n(log₂ n + 1)** — check 1024 × 11 = 11,264 ✓ — confirming
-T(n) = 2T(n/2) + n solves to Θ(n log n). The **call count is 2n − 1** (2·1024 − 1 = 2,047 ✓),
-because the recursion tree is a complete binary tree with n leaves.
-
-This function is the cleanest illustration in the course of Master Theorem **case 2**: the critical
-exponent n^(log_b a) = n^(log₂2) = n matches f(n) = n, so every level costs the same Θ(n) and there
-are log n levels.
+A student whose counts differ has put `ops += 1` somewhere other than the innermost step (for E, F, H:
+not at the top of the call). 5 per function (7 functions).
 
 ---
 
-## Part 5 — Formal Big-O Proofs
+## Part 3 — Prediction vs. Count (20, 5 each)
 
-`func_b` executes its inner statement exactly n² times, so a proof for it is immediate with c = 1,
-n₀ = 0. The instructive case is a polynomial with lower-order terms — use this as the model:
+1. Doubling `n` adds **one** step to C (8, 9, 10, 11): Θ(log n) grows by a constant per doubling, so
+   `log₂(ratio)` → 0 rather than settling at a positive `k`.
+2. `list(range(n))` has no duplicates, so the early return never fires: exactly `n(n−1)/2` pairs
+   (32640 at 256). Any list with a duplicate at the front, e.g. `[1, 1, …]`, returns after one comparison.
+3. H makes `2n − 1` calls with constant work each: Θ(n), `k = 1.00`. The `+ n` is one addition, not n.
+4. φ, the golden ratio. F's calls grow ×1.618 per step, so it is Θ(φⁿ); it is also O(2ⁿ) because
+   φ < 2, but that bound overestimates by (2/φ)ⁿ.
 
-> **Claim.** 3n² + 100n + 7 is O(n²).
-> **Proof.** Take n₀ = 1. For all n ≥ 1 we have n ≤ n² and 1 ≤ n², so
-> 3n² + 100n + 7 ≤ 3n² + 100n² + 7n² = 110n².
-> Hence c = 110, n₀ = 1 witnesses the definition. ∎
+## Part 4 — Proofs (15)
 
-**Grade the structure, not the constants.** Any valid (c, n₀) pair proves the claim — c = 110 with
-n₀ = 1 and c = 4 with n₀ = 101 are equally correct. What must be present:
+5.1 `3n² + 5n + 2 ≤ 3n² + 5n² + 2n² = 10n²` for n ≥ 1 (c = 10, n₀ = 1). 5.2 `100n ≤ n²` for n ≥ 100
+(c = 1, n₀ = 100). 5.3 `n² ≥ n` for n ≥ 1 (c = 1, n₀ = 1). 5.4 No: `2ⁿ / n¹⁰⁰` → ∞ (for instance at
+n = 1024, 2¹⁰²⁴ vs 2¹⁰⁰⁰), so no constant c can bound it. *4/4/4/3.*
 
-1. The definition **stated** before it is used.
-2. **Explicit** c and n₀, not "for large enough n".
-3. An inequality chain that actually establishes f(n) ≤ c·g(n), with each step justified.
+## Reflection (required, not scored)
 
-A proof that ends "therefore it is O(n²)" without exhibiting constants has asserted the conclusion,
-not proved it. Conversely, students who note that the same argument proves O(n³) — and that this is
-*true but weaker* — have understood that Big-O is an upper bound and deserve credit.
-
----
-
-## Marking Scheme
-
-The lab is checkoff-graded against the criteria on the handout. Within each part:
-
-- **Method (≈60%).** Correct approach, required loop/structure type actually used, edge cases
-  considered, invariants stated where the handout asks for them.
-- **Result (≈40%).** Code runs, produces the specified output, and the written answers are correct.
-
-**Carry-through.** A wrong helper that is then used correctly downstream costs marks once.
-
-**Watch for the two failure modes that matter:**
-1. Code that produces the right answer for the sample input and is wrong in general — always run
-   the edge cases listed under each exercise.
-2. Written answers that restate the observation instead of explaining it. "0.1 + 0.2 isn't 0.3
-   because floats are imprecise" earns nothing; the answer must reach binary representation.
+Q1: E doubles per step: about 2⁴¹ ≈ 2.2 × 10¹² steps at n = 40 — roughly 37 minutes at 10⁹ steps/s
+(and Python manages far fewer than 10⁹). Q2: counts are exact and machine-independent; they hide the
+cost of each step (a dict lookup and an addition count the same) and memory effects.
 
 ---
 
-*CS 101 · Week 6 · Lab Solutions · Instructor Copy · © CSE Department*
+*CS 101 · Week 6 · Lab 6 Solutions · Instructor only*

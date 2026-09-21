@@ -1,7 +1,8 @@
 # CS 101 · Midterm 1 Review & Practice Exam
 ## Covers Weeks 0–5: Foundations Through Sorting Algorithms
 
-**Midterm 1 Format:** 75 minutes, written, closed book. One handwritten cheat sheet (1 side of 8.5×11) allowed.
+**Midterm 1:** Monday 2 November 2026 · 18:00–19:15 · VNC 100 (Week 6, before L19)
+**Format:** 75 minutes, written, closed book. One handwritten cheat sheet (1 side of 8.5×11) allowed.
 **Weight:** 15% of final grade
 
 ---
@@ -162,7 +163,16 @@ def g(n):
     return g(n // 2) + g(n // 2) + 1
 ```
 
-### 4.2 (5 points) Prove that `2n² + 10n = O(n²)`. State your chosen constants c and n₀ and verify the inequality.
+### 4.2 (5 points) Count exactly how many times `total += 1` runs in the code below, as a formula in `n`, and say how the count changes when `n` doubles.
+
+```python
+total = 0
+for i in range(n):
+    for j in range(i + 1, n):
+        total += 1
+```
+
+*(Formal Big-O proofs with constants c and n₀ are Week 6 material and are on Midterm 2, not this exam.)*
 
 ### 4.3 (4 points) A student says: "Merge sort is always faster than insertion sort because O(n log n) beats O(n²)." Under what specific circumstance is this statement FALSE? Give a concrete example.
 
@@ -293,7 +303,7 @@ This recurrence matches a simple binary tree traversal (visit every node once, O
 **4.1** (a) Outer loop O(n), inner loop halves each time → O(log n) per outer iteration → total **O(n log n)**.
 (b) `T(n) = 2T(n/2) + O(1)` → by the same reasoning as 3.3 → **O(n)**.
 
-**4.2** Choose c=3, n₀=5. Verify: `2n²+10n ≤ 3n²` ⟺ `10n ≤ n²` ⟺ `10 ≤ n`. Holds for n≥10, so use n₀=10 (or verify n₀=5 doesn't quite work: 10(5)=50 ≤ 25? No — must use n₀=10). Correct proof: c=3, n₀=10: for all n≥10, `2n²+10n ≤ 3n²`. ∎
+**4.2** For each `i` the inner loop runs `n − 1 − i` times: `(n−1) + (n−2) + … + 0 = n(n−1)/2`. Doubling `n` roughly **quadruples** the count (e.g. n = 10 → 45, n = 20 → 190). *3 pts formula, 2 pts doubling behaviour.*
 
 **4.3** False when n is small — for small n (roughly n<20-50 depending on constants), insertion sort's lower constant factor and simplicity often make it faster in absolute terms despite the "worse" asymptotic class, because the O(n log n) vs O(n²) gap hasn't yet overcome the constant-factor difference. Example: sorting a 10-element list — insertion sort typically outperforms merge sort due to merge sort's recursive call overhead and auxiliary array allocation.
 

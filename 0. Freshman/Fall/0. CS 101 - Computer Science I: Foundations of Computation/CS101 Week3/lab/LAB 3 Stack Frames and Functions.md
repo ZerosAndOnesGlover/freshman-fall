@@ -1,8 +1,11 @@
 # CS 101 · Lab 3
 ## Stack Frame Visualization and Function Design
 
-**Tuesday of Week 4 · Lab Section** — sat after this week's Wed–Fri lectures, and covers Week 3.
-*Duration: 2 hours · Graded on completion (TA checkoff)*
+**Date:** Tuesday 20 October 2026 · 15:00–16:50 · Lab Section (Week 4) — covers Week 3 (L10–L12)
+*Duration: 2 hours · 100 points via TA checkoff, part of the Labs component (10%)*
+
+**Tools used:** Weeks 0–3 only. No dictionaries (Week 8) and no sorting (Week 5); recursion only as
+the L12 preview (numbers, not lists).
 
 ---
 
@@ -152,7 +155,7 @@ b = double_return(5) + 1   # What happens?
 
 ## Part 2: Scope Bug Hunt (20 minutes)
 
-Create `scope_bugs.py`. Each function has a scope-related bug. Find it, explain it, and fix it.
+Create `scope_bugs.py`. There are four cases; three have a scope-related bug and one does not. Find it, explain it, and fix it.
 
 ```python
 # scope_bugs.py
@@ -184,19 +187,6 @@ new_list = append_copy(original, 4)
 
 
 # ─── Bug 3 ────────────────────────────────────────────────────────────────────
-# This factory is supposed to create different multiplier functions.
-def make_multipliers():
-    multipliers = []
-    for factor in [1, 2, 3, 4, 5]:
-        multipliers.append(lambda x: x * factor)   # Bug: closure trap!
-    return multipliers
-
-fns = make_multipliers()
-# fns[0](10) should be 10, fns[1](10) should be 20, etc.
-# Are they? Run it and see. Explain why.
-
-
-# ─── Bug 4 ────────────────────────────────────────────────────────────────────
 # This should return the maximum of a list, defaulting to 0 for empty lists.
 def safe_max(lst, default=0):
     if lst == []:
@@ -213,7 +203,7 @@ def safe_max(lst, default=0):
 #  default=0 safe but default=[] would be dangerous?)
 
 
-# ─── Bug 5 ────────────────────────────────────────────────────────────────────
+# ─── Bug 4 ────────────────────────────────────────────────────────────────────
 # This should shadow the built-in len correctly. What's wrong?
 def analyze(data):
     len = 0                      # Bug: this shadows the built-in!
@@ -243,13 +233,11 @@ Create `text_statistics.py`.
 Write a **text analysis library** with the following public interface:
 
 ```python
-analyze(text)           → dict with all statistics below
 word_count(text)        → int
 sentence_count(text)    → int
 average_word_length(text) → float
 longest_word(text)      → str
 shortest_word(text)     → str
-char_frequency(text)    → list of (char, count) tuples, sorted by count desc
 is_pangram(text)        → bool
 reading_level(text)     → str  # "Elementary", "Middle", "High School", or "College"
 ```
@@ -267,12 +255,12 @@ reading_level(text)     → str  # "Elementary", "Middle", "High School", or "Co
    - Be independently testable
    - Have at least 2 `assert` tests below its definition
 
-2. **`analyze(text)` must:**
-   - Call all other functions (not re-implement their logic)
-   - Return a dictionary with keys matching the function names
+2. **`display_report(text)` must:**
+   - Call the other functions (not re-implement their logic)
+   - Be the only function that prints
 
-3. **No function may:**
-   - Print anything (all output goes through a separate `display` function)
+3. **No other function may:**
+   - Print anything
    - Modify its arguments
 
 4. **Helper functions:**
@@ -346,7 +334,7 @@ def average_word_length(text):
     Return the mean number of characters per word.
     Return 0.0 if there are no words.
 
-    >>> average_word_length("cat dog bird")
+    >>> average_word_length("cat dog owl")
     3.0
     >>> average_word_length("")
     0.0
@@ -374,21 +362,6 @@ def shortest_word(text):
 
     >>> shortest_word("the quick brown fox")
     'the'
-    """
-    # TODO
-    pass
-
-
-def char_frequency(text):
-    """
-    Return a list of (char, count) tuples for all alphabetic characters,
-    sorted by count descending, then alphabetically for ties.
-    Text is case-insensitive.
-
-    >>> char_frequency("aabbc")
-    [('a', 2), ('b', 2), ('c', 1)]
-
-    Hint: use nested loops — no dictionaries allowed.
     """
     # TODO
     pass
@@ -427,42 +400,21 @@ def reading_level(text):
     pass
 
 
-def analyze(text):
-    """
-    Run all analyses on text and return a dictionary.
-
-    Keys: word_count, sentence_count, average_word_length,
-          longest_word, shortest_word, char_frequency,
-          is_pangram, reading_level
-
-    This function must CALL the other functions — not reimplement them.
-    """
-    # TODO
-    pass
-
-
 def display_report(text):
     """
     Print a formatted analysis report for text.
     This is the ONLY function that may print.
     """
-    results = analyze(text)
-
     print("=" * 50)
     print("TEXT ANALYSIS REPORT")
     print("=" * 50)
-    print(f"  Word count:          {results['word_count']}")
-    print(f"  Sentence count:      {results['sentence_count']}")
-    print(f"  Avg word length:     {results['average_word_length']:.2f}")
-    print(f"  Longest word:        {results['longest_word']}")
-    print(f"  Shortest word:       {results['shortest_word']}")
-    print(f"  Is pangram:          {results['is_pangram']}")
-    print(f"  Reading level:       {results['reading_level']}")
-    print()
-    print("  Top 5 most frequent characters:")
-    for char, count in results['char_frequency'][:5]:
-        bar = "█" * count
-        print(f"    '{char}': {bar} ({count})")
+    print(f"  Word count:          {word_count(text)}")
+    print(f"  Sentence count:      {sentence_count(text)}")
+    print(f"  Avg word length:     {average_word_length(text):.2f}")
+    print(f"  Longest word:        {longest_word(text)}")
+    print(f"  Shortest word:       {shortest_word(text)}")
+    print(f"  Is pangram:          {is_pangram(text)}")
+    print(f"  Reading level:       {reading_level(text)}")
     print("=" * 50)
 
 
@@ -481,7 +433,7 @@ def run_tests():
     print("✓ sentence_count")
 
     # average_word_length
-    assert average_word_length("cat dog bird") == 3.0
+    assert average_word_length("cat dog owl") == 3.0
     assert average_word_length("") == 0.0
     print("✓ average_word_length")
 
@@ -495,11 +447,6 @@ def run_tests():
     assert shortest_word("") == ""
     print("✓ shortest_word")
 
-    # char_frequency
-    freq = char_frequency("aabbc")
-    assert freq[0][1] >= freq[1][1]   # sorted descending by count
-    print("✓ char_frequency")
-
     # is_pangram
     assert is_pangram("The quick brown fox jumps over the lazy dog") == True
     assert is_pangram("Hello world") == False
@@ -508,12 +455,6 @@ def run_tests():
     # reading_level
     assert reading_level("I am. You are. He is.") == "Elementary"
     print("✓ reading_level")
-
-    # analyze
-    results = analyze("The quick brown fox jumps over the lazy dog.")
-    assert "word_count" in results
-    assert results["is_pangram"] == True
-    print("✓ analyze")
 
     print("\n🎉 All tests passed!")
 
@@ -635,23 +576,14 @@ git push
 
 ## TA Checkoff Criteria
 
-Show your TA:
-- [ ] Python Tutor answers for Exercises 1.1–1.5 in `LAB 3 Stack Frames and Functions.md`
-- [ ] All 5 bugs in `scope_bugs.py` identified, explained, and fixed
-- [ ] `text_statistics.py` with all functions implemented and all tests passing
-- [ ] `recursion_intro.py` with `power` and `sum_digits` implemented and tests passing
-- [ ] Git log showing commits
+| Part | Points | Show your TA |
+|---|---|---|
+| 1 | 30 | Python Tutor answers for Exercises 1.1–1.5 (6 each) |
+| 2 | 20 | All 4 cases in `scope_bugs.py` explained; the 3 bugs fixed (5 each) |
+| 3 | 35 | `text_statistics.py`: every function implemented, `run_tests()` passes, report prints |
+| 4 | 15 | `recursion_intro.py`: `power` and `sum_digits` pass their tests |
+| **Total** | **100** | Reflection answered and work committed (required) |
 
 ---
 
-## Bonus Challenges
-
-**Bonus 1:** Add a `compare_texts(text1, text2)` function to `text_statistics.py` that prints a side-by-side comparison of two texts' statistics.
-
-**Bonus 2:** Implement `flatten(lst)` recursively — given a list that may contain nested lists, return a flat list of all elements: `flatten([1,[2,[3,4]],5]) → [1,2,3,4,5]`.
-
-**Bonus 3:** Implement the Tower of Hanoi recursively: `hanoi(n, from_peg, to_peg, via_peg)` prints the sequence of moves to transfer n disks from `from_peg` to `to_peg` using `via_peg` as auxiliary. The algorithm is 3 lines of code. Visualize `hanoi(3, 'A', 'C', 'B')` in Python Tutor.
-
----
-
-*CS 101 · Week 3 · Lab 3 · © CSE Department*
+*CS 101 · Week 3 · Lab 3 · Tuesday 20 October 2026 · © CSE Department*

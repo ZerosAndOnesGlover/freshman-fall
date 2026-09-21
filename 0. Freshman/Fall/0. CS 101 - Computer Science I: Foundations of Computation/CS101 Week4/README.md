@@ -23,15 +23,15 @@ CS101_Week4/
 │                                                      power set walkthrough, anti-patterns
 │
 ├── lab/
-│   ├── LAB 4 Recursion Trees.md                  ← Tue of W5: hand-drawn recursion trees,
+│   ├── LAB 4 Recursion Trees.md                  ← Tue 27 Oct (W5): hand-drawn recursion trees,
 │   │                                                 6 recursive implementations,
-│   │                                                 slicing anti-pattern fix, N-Queens
+│   │                                                 slicing anti-pattern fix, Fibonacci call counts
 │   └── recursion_lab_starter.py                 ← Lab starter with TODOs + full test suite
 │
 ├── assignments/
 │   ├── QUIZ 4 Week 4 Wednesday.md                    ← In-class quiz (covers Week 3)
-│   ├── PS 4 Recursion.md                         ← Problem Set 4 (due Friday Week 5)
-│   └── ps4_starter.py                           ← Full scaffold: 6 sections, 30+ functions
+│   ├── PS 4 Recursion.md                         ← Problem Set 4 (due Fri 30 Oct, 17:00)
+│   └── ps4_starter.py                           ← Scaffold: 5 sections, 16 functions
 │
 ├── resources/
 │   └── Reading Guide Week 4.md                   ← 3 REPL sessions, algorithm comparison
@@ -49,10 +49,10 @@ CS101_Week4/
 
 | Day | Event | Topic |
 |-----|-------|-------|
-| Wed | Lecture 13 + Quiz 4 | Three laws; induction; recursion trees; Fibonacci; Hanoi; binary search |
-| Thu | Lecture 14 | Counting calls; merge sort; recursive descent parsing; trees; iteration conversion |
-| Fri | Lecture 15 + PS4 released | Stack depth; tail recursion; 5 design patterns; power set; anti-patterns |
-| Tue (W5) | Lab 4 (graded) | Recursion tree drawing; 6 implementations; slicing fix; N-Queens backtracking |
+| Wed 21 Oct | Lecture 13 + Quiz 4 | Three laws; induction; recursion trees; Fibonacci; Hanoi; binary search |
+| Thu 22 Oct | Lecture 14 | Counting calls; merge sort; recursive descent parsing; trees; iteration conversion |
+| Fri 23 Oct | Lecture 15 + PS4 released | Stack depth; tail recursion; 5 design patterns; power set; anti-patterns |
+| Tue 27 Oct (W5) | Lab 4 (graded) | Recursion trees, merge sort, binary search, Hanoi, counting Fibonacci calls |
 
 ---
 
@@ -72,13 +72,12 @@ CS101_Week4/
 
 ### Thursday
 - [ ] Notes for L14
-- [ ] REPL Session B (memoization transformation — measure the speedup yourself)
+- [ ] REPL Session B (count the calls of naive Fibonacci)
 
-### Tuesday Lab, Week 5 (Required, Graded)
+### Tuesday 27 October Lab, Week 5 (Required, Graded)
 - [ ] Draw all 4 recursion trees by hand (Part 1)
-- [ ] Implement all 6 functions in `recursion_lab.py` with correctness comments
+- [ ] Implement the functions in `recursion_lab.py` and record the `fib_counted` table
 - [ ] Fix the slicing anti-pattern (`slicing_fix.py`)
-- [ ] Implement and run the N-Queens solver
 - [ ] TA checkoff
 
 ### Friday
@@ -151,8 +150,6 @@ Without notes:
 | Fast power | O(log n) | Square to halve the exponent |
 | Tree operations | O(n) | One call per child; base case on None |
 | Tower of Hanoi | O(2^n) moves | Move n-1, move 1, move n-1 — provably optimal |
-| Permutations | O(n!) | Choose-explore-unchoose over all positions |
-| N-Queens | O(n!) worst case | Backtracking with pruning via `is_safe` |
 | Power set | O(2^n) | Include or exclude each element |
 
 ---

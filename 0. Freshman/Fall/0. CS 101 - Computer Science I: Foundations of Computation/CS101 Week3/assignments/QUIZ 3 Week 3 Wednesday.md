@@ -1,6 +1,7 @@
 # CS 101 · Quiz 3
 ## Week 3, Wednesday: In-Class Assessment
 
+**Date:** Wednesday 14 October 2026 · 09:00–09:10 (start of L10) · Week 3
 **Duration:** 10 minutes (first 10 minutes of Wednesday lecture)
 **Format:** Written — closed book, closed notes
 **Covers:** Week 2 material: conditionals, while loops, for loops, loop invariants
@@ -55,16 +56,16 @@ Fix:
 State the **loop invariant** for this loop:
 
 ```python
-def product(lst):
-    result = 1
-    for x in lst:
-        result *= x
-    return result
+lst = [3, 1, 4, 1, 5]
+result = 1
+for x in lst:
+    result *= x
+print(result)
 ```
 
 Invariant (complete the sentence): "At the start of each iteration, `result` equals ..."
 
-Then show that the **invariant + exit condition** proves the function is correct.
+Then show that the **invariant + exit condition** proves the program prints the product of `lst`.
 
 ---
 
@@ -73,22 +74,20 @@ Then show that the **invariant + exit condition** proves the function is correct
 What does this print? (No trace needed — reason about it.)
 
 ```python
-def mystery(n):
-    count = 0
-    while n > 1:
-        if n % 2 == 0:
-            n //= 2
-        else:
-            n = 3 * n + 1
-        count += 1
-    return count
-
-print(mystery(8))
+n = 8
+count = 0
+while n > 1:
+    if n % 2 == 0:
+        n //= 2
+    else:
+        n = 3 * n + 1
+    count += 1
+print(count)
 ```
 
 Answer: _______________
 
-What well-known sequence does `mystery` compute the length of?
+What well-known sequence does this loop compute the length of?
 
 ---
 
@@ -135,9 +134,9 @@ else:
 **Q3:**
 Invariant: "At the start of each iteration, `result` equals the product of all elements in `lst` that have been processed so far (i.e., `lst[0] * lst[1] * ... * lst[k-1]` where k elements have been seen)."
 
-At exit: k = len(lst), so result = product of all elements = correct return value. ✓
+At exit: k = len(lst), so `result` is the product of all elements, which is what is printed (60). ✓
 
-**Q4:** `mystery(8)`:
+**Q4:** `n = 8`:
 8 → 4 → 2 → 1 (3 steps)
 Output: `3`
 This computes the Collatz sequence length.

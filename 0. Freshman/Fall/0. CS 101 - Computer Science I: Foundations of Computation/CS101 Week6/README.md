@@ -21,16 +21,16 @@ CS101_Week6/
 │                                                          case, limits of Big-O, course synthesis
 │
 ├── lab/
-│   ├── LAB 6 Empirical vs Theoretical Complexity.md  ← Tue of W7: analyze 8 functions by hand FIRST,
-│   │                                                     then benchmark, fit curves, plot,
-│   │                                                     formal proof practice
-│   └── analyze_growth_starter.py                    ← Lab starter — regression-based estimator
+│   ├── LAB 6 Empirical vs Theoretical Complexity.md  ← Tue 10 Nov (W7): analyze 8 functions by hand FIRST,
+│   │                                                     then count their steps, estimate
+│   │                                                     exponents, formal proof practice
+│   └── count_growth_starter.py                      ← Lab starter — the functions + step-count tables
 │
 ├── assignments/
 │   ├── QUIZ 6 Week 6 Wednesday.md                        ← In-class quiz (covers Week 5)
-│   ├── PS 6 Algorithm Analysis.md                    ← Problem Set 6 (due Friday Week 7)
-│   ├── ps6_starter.py                               ← Full scaffold: proofs-to-code, Karatsuba,
-│   │                                                     closest pair, amortized dynamic array
+│   ├── PS 6 Algorithm Analysis.md                    ← Problem Set 6 (due Fri 13 Nov, 17:00)
+│   ├── ps6_starter.py                               ← Scaffold: classifying code, tribonacci
+│   │                                                     call counts, amortized append simulation
 │   └── MIDTERM 1 Review and Practice Exam.md         ← Full practice exam + complete answer key
 │                                                          (Weeks 0–5)
 │
@@ -50,10 +50,10 @@ CS101_Week6/
 
 | Day | Event | Topic |
 |-----|-------|-------|
-| Wed | Lecture 19 + Quiz 6 | Formal O/Ω/Θ definitions, worked proofs, loop analysis rules |
-| Thu | Lecture 20 | Recurrence relations: recursion tree, substitution, Master Theorem |
-| Fri | Lecture 21 + PS6 released | Complexity classes in depth, log-log math, limits of Big-O |
-| Tue (W7) | Lab 6 (graded) | Theoretical analysis → empirical benchmark → curve fitting → formal proofs |
+| Wed 4 Nov | Lecture 19 + Quiz 6 | Formal O/Ω/Θ definitions, worked proofs, loop analysis rules |
+| Thu 5 Nov | Lecture 20 | Recurrence relations: recursion tree, substitution, Master Theorem |
+| Fri 6 Nov | Lecture 21 + PS6 released | Complexity classes in depth, log-log math, limits of Big-O |
+| Tue 10 Nov (W7) | Lab 6 (graded) | Step counts vs predicted complexity, growth exponents, Big-O proofs |
 
 **⚠️ Midterm 1 this week** — covers Weeks 0 through 5. A full practice exam with answer key is included in [[CS101 Week6/assignments/MIDTERM 1 Review and Practice Exam|MIDTERM 1 Review and Practice Exam]].
 
@@ -77,11 +77,11 @@ CS101_Week6/
 - [ ] Notes for L20
 - [ ] Practice Session B (recurrence practice — all 4 recurrences)
 
-### Tuesday Lab, Week 7 (Required, Graded)
+### Tuesday 10 November Lab, Week 7 (Required, Graded)
 - [ ] Complete Part 1 (theoretical analysis) BEFORE writing any code
-- [ ] Run the full benchmark and curve-fitting pipeline
-- [ ] Generate both comparison plots
-- [ ] Complete all 4 formal Big-O proofs in Part 5
+- [ ] Instrument the functions and record the step-count tables
+- [ ] Answer the prediction-vs-count questions (watch function H)
+- [ ] Complete all 4 formal Big-O proofs in Part 4
 - [ ] TA checkoff
 
 ### Friday

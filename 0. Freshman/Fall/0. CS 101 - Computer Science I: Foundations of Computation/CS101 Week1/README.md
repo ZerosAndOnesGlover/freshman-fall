@@ -18,14 +18,14 @@ CS101_Week1/
 │                                                  conversions, math module, REPL workflow
 │
 ├── lab/
-│   ├── LAB 1 Type Exploration.md              ← Tue of W2: Python Tutor, type experiments,
-│   │                                              string challenges, unit converter
-│   ├── starter_unit_converter.py             ← Lab starter — implement 3 TODOs
-│   └── [type_experiments.py, string_challenges.py, etc. — you create these]
+│   ├── LAB 1 Type Exploration.md              ← Tue 6 Oct (W2): Python Tutor, predictions,
+│   │                                              f-string formatting, converter
+│   ├── starter_converter.py                  ← Lab starter — fill in the conversions
+│   └── [type_experiments.py, precedence_test.py, etc. — you create these]
 │
 ├── assignments/
 │   ├── QUIZ 1 Week 1 Wednesday.md                 ← In-class quiz (10 min, covers Week 0)
-│   ├── PS 1 Data Types and Expressions.md     ← Problem Set 1 (due Friday Week 2)
+│   ├── PS 1 Data Types and Expressions.md     ← Problem Set 1 (due Fri 9 Oct, 17:00)
 │   └── ps1_starter.py                        ← PS1 starter code with TODOs
 │
 ├── resources/
@@ -43,10 +43,10 @@ CS101_Week1/
 
 | Day | Event | Topic |
 |-----|-------|-------|
-| Wed | Lecture 4 + Quiz 1 | Python object model, types deep dive, mutable vs immutable |
-| Thu | Lecture 5 | Expressions, evaluation model, operator precedence, bitwise |
-| Fri | Lecture 6 + PS1 released | Type system, conversions, `math`, REPL as thinking tool |
-| Tue (W2) | Lab 1 (graded) | Python Tutor visualization, type experiments, unit converter |
+| Wed 30 Sep | Lecture 4 + Quiz 1 | Python object model, types deep dive, mutable vs immutable |
+| Thu 1 Oct | Lecture 5 | Expressions, evaluation model, operator precedence, bitwise |
+| Fri 2 Oct | Lecture 6 + PS1 released | Type system, conversions, `math`, REPL as thinking tool |
+| Tue 6 Oct (W2) | Lab 1 (graded) | Python Tutor, predict-then-run, formatting, converter |
 
 ---
 
@@ -69,9 +69,9 @@ CS101_Week1/
 - [ ] Take notes during L05
 - [ ] Try the REPL Session B (short-circuit evaluation)
 
-### Tuesday Lab, Week 2 (Required)
+### Tuesday 6 October Lab, Week 2 (Required)
 - [ ] Complete all parts of LAB1
-- [ ] Implement `convert_linear()` and `convert_temperature()` in unit_converter.py
+- [ ] Finish `converter.py` from `starter_converter.py`
 - [ ] Get TA checkoff
 
 ### Friday
@@ -80,7 +80,7 @@ CS101_Week1/
 - [ ] Begin Part A (written questions) over the weekend
 
 ### Weekend
-- [ ] Start PS1 — at minimum complete B1, B2, B3
+- [ ] Start PS1 — at minimum complete Part A and B1, B2
 - [ ] Watch "Floating Point Numbers" (Computerphile) — explains PS1 written Q4
 
 ---

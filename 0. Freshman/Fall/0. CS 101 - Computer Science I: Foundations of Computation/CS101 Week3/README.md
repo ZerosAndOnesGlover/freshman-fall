@@ -22,15 +22,15 @@ CS101_Week3/
 │                                                      keyword args, mortgage refactor
 │
 ├── lab/
-│   ├── LAB 3 Stack Frames and Functions.md       ← Tue of W4: Python Tutor visualization,
+│   ├── LAB 3 Stack Frames and Functions.md       ← Tue 20 Oct (W4): Python Tutor visualization,
 │   │                                                 scope bug hunt, text analysis library,
 │   │                                                 recursion intro
 │   └── starter_text_statistics.py               ← Lab starter with TODOs + full test suite
 │
 ├── assignments/
 │   ├── QUIZ 3 Week 3 Wednesday.md                    ← In-class quiz (covers Week 2)
-│   ├── PS 3 Functions and Scope.md               ← Problem Set 3 (due Friday Week 4)
-│   └── ps3_starter.py                           ← Full scaffold with assertions throughout
+│   ├── PS 3 Functions and Scope.md               ← Problem Set 3 (due Fri 23 Oct, 17:00)
+│   └── ps3_starter.py                           ← Scaffold: signatures and docstring TODOs
 │
 ├── resources/
 │   └── Reading Guide Week 3.md                   ← 3 REPL sessions, concept map,
@@ -48,10 +48,10 @@ CS101_Week3/
 
 | Day | Event | Topic |
 |-----|-------|-------|
-| Wed | Lecture 10 + Quiz 3 | Why functions; anatomy; return vs print; composition; specifications |
-| Thu | Lecture 11 | Namespaces; LEGB; call stack; frames; global; mutable default trap; `*args`/`**kwargs` |
-| Fri | Lecture 12 + PS3 released | Function design; SRP; pure functions; testing; recursion preview |
-| Tue (W4) | Lab 3 (graded) | Python Tutor visualization; scope bugs; text analysis library; recursive functions |
+| Wed 14 Oct | Lecture 10 + Quiz 3 | Why functions; anatomy; return vs print; composition; specifications |
+| Thu 15 Oct | Lecture 11 | Namespaces; LEGB; call stack; frames; global; mutable default trap; `*args`/`**kwargs` |
+| Fri 16 Oct | Lecture 12 + PS3 released | Function design; SRP; pure functions; testing; recursion preview |
+| Tue 20 Oct (W4) | Lab 3 (graded) | Python Tutor stack frames, scope bugs, text statistics, recursion first look |
 
 ---
 
@@ -75,9 +75,9 @@ CS101_Week3/
 - [ ] Notes for L11
 - [ ] REPL Session B (scope edge cases)
 
-### Tuesday Lab, Week 4 (Required, Graded)
+### Tuesday 20 October Lab, Week 4 (Required, Graded)
 - [ ] Python Tutor exercises 1.1–1.5 with written answers
-- [ ] All 5 scope bugs found, explained, fixed
+- [ ] All 4 scope cases explained; the 3 bugs fixed
 - [ ] `text_statistics.py` — all functions implemented, all tests passing
 - [ ] `recursion_intro.py` — `power` and `sum_digits` implemented
 - [ ] TA checkoff

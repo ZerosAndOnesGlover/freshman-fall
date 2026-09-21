@@ -1,9 +1,10 @@
 # CS 101 · Quiz 5
 ## Week 5, Wednesday — In-Class Assessment
 
+**Date:** Wednesday 28 October 2026 · 09:00–09:10 (start of L16) · Week 5
 **Duration:** 10 minutes (first 10 minutes of Wednesday lecture)
 **Format:** Written — closed book, closed notes
-**Covers:** Week 4 material: recursion, base cases, recursion trees, memoization
+**Covers:** Week 4 material: recursion, base cases, recursion trees, recursion to iteration
 
 ---
 
@@ -40,7 +41,7 @@ Function computed: _______________
 
 ### Question 3 (2 points)
 
-This function is exponential (O(2^n)) due to overlapping subproblems. Rewrite it to run in O(n) using memoization.
+This function recomputes the same sub-problems many times. Rewrite it as a **loop** (L14 §5) that does only `n` steps.
 
 ```python
 def paths(n):
@@ -50,7 +51,7 @@ def paths(n):
     return paths(n - 1) + paths(n - 2)
 ```
 
-Memoized version:
+Iterative version:
 ```python
 
 
@@ -61,25 +62,25 @@ Memoized version:
 
 ### Question 4 (2 points)
 
-What is the time complexity of each? Write your answer as O(...).
+Roughly how many calls does each make for input `n`? Choose from: `n`, `log₂ n`, `2ⁿ`, and (for total work) `n log₂ n`.
 
 **(a)** A recursive function with one recursive call, reducing n by 1 each time.
-O(___)
+________
 
 **(b)** A recursive function with two recursive calls, each on n-1 (no memoization).
-O(___)
+________
 
 **(c)** A recursive function with one recursive call on n/2 (halving).
-O(___)
+________
 
 **(d)** A recursive function with two recursive calls, each on n/2, plus O(n) work to combine results.
-O(___)
+________
 
 ---
 
 ### Question 5 (2 points)
 
-Why does this function run in O(n²) instead of O(n), despite looking like simple linear recursion? Identify the specific issue and describe the fix (you don't need to write code — just describe it).
+This makes only `n` calls, yet copies about `n²/2` list elements in total. Why? Identify the specific issue and describe the fix (you don't need to write code — just describe it).
 
 ```python
 def last_element(lst):
@@ -88,7 +89,7 @@ def last_element(lst):
     return last_element(lst[1:])
 ```
 
-Why O(n²): _______________
+Why so much copying: _______________
 
 Fix (describe): _______________
 
@@ -111,25 +112,19 @@ Function computed: **factorial** (n!)
 
 **Q3:**
 ```python
-def paths(n, memo=None):
-    if memo is None:
-        memo = {}
-    if n in memo:
-        return memo[n]
-    if n <= 1:
-        return 1
-    memo[n] = paths(n-1, memo) + paths(n-2, memo)
-    return memo[n]
+def paths(n):
+    a, b = 1, 1          # paths(0), paths(1)
+    for _ in range(n - 1):
+        a, b = b, a + b
+    return b
 ```
+Check: `paths(1) = 1`, `paths(2) = 2`, `paths(5) = 8`. Accept any loop that keeps the last two values.
 
 **Q4:**
-(a) O(n)
-(b) O(2^n)
-(c) O(log n)
-(d) O(n log n)
+(a) `n` (b) about `2ⁿ` (c) about `log₂ n` (d) `n log₂ n` total work (merge sort's shape)
 
 **Q5:**
-Why O(n²): `lst[1:]` creates a new list of size n-1 each call — this slicing operation is O(n). With n recursive calls, each doing O(n) work for the slice, total work is O(n²).
+Why: `lst[1:]` copies the rest of the list on every call: (n−1) + (n−2) + … + 1 ≈ n²/2 copies.
 Fix: pass an index into the original list instead of slicing (e.g., `last_element(lst, i=0)` incrementing `i`, or recursing with `i+1` and checking `i == len(lst)-1`), avoiding any list copying.
 
 ---

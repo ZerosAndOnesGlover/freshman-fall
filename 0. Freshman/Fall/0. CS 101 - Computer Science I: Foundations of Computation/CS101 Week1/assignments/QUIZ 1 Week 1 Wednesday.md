@@ -1,6 +1,7 @@
 # CS 101 · Quiz 1
 ## Week 1, Wednesday: In-Class Assessment
 
+**Date:** Wednesday 30 September 2026 · 09:00–09:10 (start of L04) · Week 1
 **Duration:** 10 minutes (first 10 minutes of Wednesday lecture)
 **Format:** Written: closed book, closed notes
 **Weight:** Part of lab/quiz participation grade
@@ -34,9 +35,9 @@ print(x * y)
 print(x + y)
 ```
 
-Line 3 output: "555"
+Line 3 output: ____________
 
-Line 4 output or error: TypeError
+Line 4 output or error: ____________
 
 ---
 
@@ -45,9 +46,9 @@ Line 4 output or error: TypeError
 What is the value of each expression?
 
 ```python
-(a)  2 ** 3 ** 2     = 512
+(a)  2 ** 3 ** 2     = ______
 
-(b)  10 // 3 + 10 % 3  = 4
+(b)  10 // 3 + 10 % 3  = ______
 ```
 
 ---
@@ -56,9 +57,9 @@ What is the value of each expression?
 
 Complete the blanks:
 
-A **Turing Machine** consists of an infinite tape, a read/write head, and a finite set of instructions with transition states.
+A **Turing Machine** consists of an infinite ________, a read/write ________, and a finite set of ________.
 
-The **Halting Problem** is the question of whether, given any program P and input I, P will halt. Turing proved this is undecidable (decidable / undecidable).
+The **Halting Problem** is the question of whether, given any program P and input I, P will ________. Turing proved this is ________ (decidable / undecidable).
 
 ---
 
@@ -66,11 +67,11 @@ The **Halting Problem** is the question of whether, given any program P and inpu
 
 What is the difference between `==` and `is` in Python?
 
-== compares values while is checks if the values are from the same object.
+____________________________________________
 
 Write a specific, concrete example of when you should use `is` instead of `==`:
 
-We use `is` when we want to check if two objects are the same.
+____________________________________________
 
 ---
 

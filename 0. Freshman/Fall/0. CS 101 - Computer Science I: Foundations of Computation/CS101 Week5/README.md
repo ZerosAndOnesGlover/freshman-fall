@@ -21,16 +21,15 @@ CS101_Week5/
 │                                                      Ω(n log n) decision-tree lower bound
 │
 ├── lab/
-│   ├── LAB 5 Sorting Benchmarks.md               ← Tue of W6: implement + instrument all 5 sorts,
-│   │                                                 benchmark 10→100,000, plot log-log,
-│   │                                                 verify best-case & stability empirically
-│   └── sorting_algorithms_starter.py            ← Lab starter — 5 algorithms + verify_all()
+│   ├── LAB 5 Sorting Benchmarks.md               ← Tue 3 Nov (W6): four sorts that count comparisons
+│   │                                                 and swaps, growth tables, stability traces
+│   └── sorting_counts_starter.py                ← Lab starter — four sorts + checks and tables
 │
 ├── assignments/
 │   ├── QUIZ 5 Week 5 Wednesday.md                    ← In-class quiz (covers Week 4)
-│   ├── PS 5 Searching and Sorting.md             ← Problem Set 5 (due Friday Week 6)
-│   └── ps5_starter.py                           ← Full scaffold: 4 sections, search + sort +
-│                                                      empirical analysis + event scheduling
+│   ├── PS 5 Searching and Sorting.md             ← Problem Set 5 (due Fri 6 Nov, 17:00)
+│   └── ps5_starter.py                           ← Scaffold: search variants, sorts,
+│                                                      comparison counting
 │
 ├── resources/
 │   └── Reading Guide Week 5.md                   ← 3 experimentation sessions, algorithm
@@ -49,10 +48,10 @@ CS101_Week5/
 
 | Day | Event | Topic |
 |-----|-------|-------|
-| Wed | Lecture 16 + Quiz 5 | Linear vs binary search; invariant proofs; binary search on the answer |
-| Thu | Lecture 17 | Selection, insertion, bubble sort; stability; O(n²) at scale |
-| Fri | Lecture 18 + PS5 released | Merge sort, quicksort, Timsort; Ω(n log n) lower bound |
-| Tue (W6) | Lab 5 (graded) | Implement, instrument, benchmark, and plot all 5 sorting algorithms |
+| Wed 28 Oct | Lecture 16 + Quiz 5 | Linear vs binary search; invariant proofs; binary search on the answer |
+| Thu 29 Oct | Lecture 17 | Selection, insertion, bubble sort; stability; O(n²) at scale |
+| Fri 30 Oct | Lecture 18 + PS5 released | Merge sort, quicksort, Timsort; Ω(n log n) lower bound |
+| Tue 3 Nov (W6) | Lab 5 (graded) | Comparison and swap counts for four sorts, growth tables, stability traces |
 
 **⚠️ Midterm 1 is next week** (Week 6), covering everything from Week 0 through Week 5.
 
@@ -76,10 +75,10 @@ CS101_Week5/
 - [ ] Notes for L17
 - [ ] REPL Session B (watch selection sort degrade vs merge sort)
 
-### Tuesday Lab, Week 6 (Required, Graded)
-- [ ] Implement all 5 instrumented sorting algorithms
-- [ ] Run the full benchmark (n=10 to 100,000) and generate all 3 plots
-- [ ] Verify best-case behavior and stability empirically
+### Tuesday 3 November Lab, Week 6 (Required, Graded)
+- [ ] Implement the four counting sorts; all checks pass
+- [ ] Record the growth table and the swap counts
+- [ ] Trace selection and insertion sort for stability
 - [ ] TA checkoff
 
 ### Friday

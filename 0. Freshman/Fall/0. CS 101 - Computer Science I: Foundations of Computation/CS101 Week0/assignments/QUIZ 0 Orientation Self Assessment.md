@@ -14,49 +14,31 @@ It is not graded. Answer honestly, your score tells you where to review before L
 **A1.** In one sentence, define an **algorithm**. What three properties must it have?
 
 ```
-Your answer: A sequence of finite steps, that is unambiguous, to solve a problem 
+Your answer:
 ```
 
 **A2.** What is the **Church-Turing Thesis**? What does it imply about your laptop vs. a Turing Machine?
 
 ```
-Your answer: Anything that can be computed by an algorithm can be computed by a Turing machine. This implies that my laptop and a Turing machine are equally powerful. That is, same computational power, not performance though because a Turing machine might take a longer time, but eventually it halts.
+Your answer:
 ```
 
 **A3.** Why is the **Halting Problem** significant? Give the key idea of Turing's proof (not the full proof — just the idea).
 
 ```
-Your answer: The halting problem shows that there are fundamental limits to computation. It proves that there are questions that no algorithm can answer for all possible programs and inputs.
-
-Turing used a self-reference paradox:
-
-	1. Assume there exists a perfect program called halts that can determine whether any program halts.
-	2.Construct another program, often called contradict, that uses halts on itself.
-	3.contradict does the opposite of what halts predicts:
-		* If halts says it will stop, contradict loops forever.
-		* If halts says it will loop forever, contradict stops immediately.
-		  
-	4.Then ask:
-		What happens when contradict runs on itself?
-
-Whichever answer halts gives, contradict does the opposite, creating a contradiction.
-
-Therefore, the original assumption—that a perfect halts program exists—must be false.
+Your answer:
 ```
 
 **A4.** What is the difference between a **dynamically-typed** language (like Python) and a **statically-typed** language (like C or Java)? Name one advantage of each.
 
 ```
-Your answer: In a dynamically-typed language, the type is attached to the object (where the value exist), but in a statically-typed language, the type is attached to the variable (the label that points to the object). So, changing the value of a dynamically-typed language variable can change the type of the variable (since it stores its type in the value) but changing the value in a statically-typed language variable will not change the type of the variable, so a variable defined with a type can only change values to another one from the same type, assigning a value of a different type leads to a compiler error.
-
-Advantage (dynamic): Flexibilty
-Advantage (static): Catch errors at compile time.
+Your answer:
 ```
 
 **A5.** What is a **REPL**, and why is it a useful tool for learning programming?
 
 ```
-Your answer: Read Evaluate Print Loop; It is useful as a quick test for program features and to test small execution.
+Your answer:
 ```
 
 ---
@@ -75,20 +57,15 @@ print(x % y)
 ```
 Your prediction:
 ```
-3.3333333334
-3
-1
 
 ```
 Actual output (run it):
 ```
-3.3333333333333335
-3
-1
+
 ```
 Were you right? If not, explain why:
 ```
-A bit, I only missed the number of threes after the decimal and the final rounding number.
+
 ```
 
 **B2.**
@@ -100,17 +77,11 @@ print(type(5 // 2))
 ```
 Your prediction:
 ```
-# int
-# float
-# float
-# int
+
 ```
 Actual:
 ```
-<class 'int'>
-<class 'float'>
-<class 'float'>
-<class 'int'>
+
 ```
 
 **B3.**
@@ -125,19 +96,11 @@ print(not a)
 ```
 Your prediction:
 ```
-# False
-# True
-# False
-# True
-# False
+
 ```
 Actual:
 ```
-1
-10
-False
-True
-False
+
 ```
 
 **B4.**
@@ -150,19 +113,11 @@ print(bool(None))
 ```
 Your prediction:
 ```
-# False
-# False
-# False
-# False
-# False
+
 ```
 Actual:
 ```
-False
-False
-False
-False
-False
+
 ```
 
 **B5.**
@@ -177,21 +132,11 @@ print("Science" in name)
 ```
 Your prediction:
 ```
-# 16
-# C
-# e
-# Computer
-# computer science
-# True
+
 ```
 Actual:
 ```
-16
-C
-e
-Computer
-computer science
-True
+
 ```
 
 ---
@@ -200,8 +145,18 @@ True
 
 For each line, state whether it succeeds or raises an error. If it succeeds, give the result and type.
 
-| Expression     | Succeeds or Error? | Result (if success) | Type (if success) |
-| -------------- | ------------------ | ------------------- | ----------------- |
+| Expression | Succeeds or Error? | Result (if success) | Type (if success) |
+|---|---|---|---|
+| `int(3.9)` | | | |
+| `int("42")` | | | |
+| `int("3.9")` | | | |
+| `int("hello")` | | | |
+| `float(True)` | | | |
+| `str(None)` | | | |
+| `bool(0.0)` | | | |
+| `bool(-1)` | | | |
+
+-------------- | ------------------ | ------------------- | ----------------- |
 | `int(3.9)`     | Succeeds           | 3                   | int               |
 | `int("42")`    | Suceeds            | 42                  | int               |
 | `int("3.9")`   | Error              |                     |                   |
@@ -218,20 +173,20 @@ For each line, state whether it succeeds or raises an error. If it succeeds, giv
 **D1.** What is the difference between `git add` and `git commit`?
 
 ```
-Your answer: git add stages changes while git commit is a snapshot (edition) of a working repository.
+Your answer:
 ```
 
 **D2.** What command shows you the current state of your repository (what's changed, what's staged)?
 
 ```
-Your answer: git status
+Your answer:
 ```
 
 **D3.** What does a good commit message look like? Give an example of a bad one and a good one.
 
 ```
-Bad: A commit that doesn't explain the code changes or misleads completely
-Good: A commit that explain what changed exactly in the code.
+Bad:
+Good:
 ```
 
 ---
@@ -243,17 +198,17 @@ Good: A commit that explain what changed exactly in the code.
 
 Your order (most theoretical → most practical):
 ```
-Computer Science --> Software Engineering --> Computer Engineering
+
 ```
 Justify your ordering in one sentence:
 ```
-Computer Science teaches the thoery of computation, software engineering uses these theory to build systems while Computer Engineering builds the electronic devices (hardware) the software interacts with. 
+
 ```
 
 **E2.** Why do we study Python in CS 101 rather than teaching it as a purely theoretical course with no programming?
 
 ```
-Your answer: Python is a tool to explain Computer Science concepts
+Your answer:
 ```
 
 **E3.** What is the **Von Neumann architecture**, and what is its key insight about programs and data?
@@ -296,6 +251,10 @@ Your answer:
 **D1.** `git add` stages changes (prepares them for a commit). `git commit` permanently saves the staged changes to history with a message.
 **D2.** `git status`
 **D3.** Bad: `"fix"`, `"stuff"`, `"aaa"`. Good: `"Add temperature conversion formula"`, `"Fix off-by-one error in loop termination"`
+
+**E1.** Computer Science → Software Engineering → Computer Engineering is the usual answer (L01 §3). Accept a defended alternative.
+**E2.** The course's ideas (algorithms, cost, correctness) only become concrete when you run them: a program is a precise, testable statement of an algorithm, and Python keeps syntax out of the way.
+**E3.** One memory holds **both the program's instructions and its data**; the CPU fetches, decodes and executes instructions one at a time (L01 §8). Key insight: a program is just data, so programs can load and run other programs.
 
 ---
 

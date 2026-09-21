@@ -1,6 +1,7 @@
 # CS 101 · Quiz 2
 ## Week 2, Wednesday: In-Class Assessment
 
+**Date:** Wednesday 7 October 2026 · 09:00–09:10 (start of L07) · Week 2
 **Duration:** 10 minutes (first 10 minutes of Wednesday lecture)
 **Format:** Written — closed book, closed notes
 **Covers:** Week 1 material: types, expressions, operators, type conversions

@@ -1,6 +1,7 @@
 # CS 101 · Quiz 4
 ## Week 4, Wednesday — In-Class Assessment
 
+**Date:** Wednesday 21 October 2026 · 09:00–09:10 (start of L13) · Week 4
 **Duration:** 10 minutes (first 10 minutes of Wednesday lecture)
 **Format:** Written — closed book, closed notes
 **Covers:** Week 3 material: functions, scope, LEGB, call stack, mutable defaults

@@ -18,14 +18,14 @@ CS101_Week2/
 │                                                   zip, Sieve of Eratosthenes
 │
 ├── lab/
-│   ├── LAB 2 Debugging and Loops.md            ← Tue of W3: print debugging, PDB,
-│   │                                               Collatz, Sieve, Caesar cipher
-│   └── loops_starter.py                       ← Lab starter code with TODOs + test suite
+│   ├── LAB 2 Debugging and Loops.md            ← Tue 13 Oct (W3): print debugging,
+│   │                                               Collatz, Sieve, FizzBuzz, invariants
+│   └── debug_exercise.py                      ← Lab starter: five one-bug programs
 │
 ├── assignments/
 │   ├── QUIZ 2 Week 2 Wednesday.md                  ← In-class quiz (covers Week 1)
-│   ├── PS 2 Control Flow.md                    ← Problem Set 2 (due Friday Week 3)
-│   └── ps2_starter.py                         ← PS2 starter code with full test suite
+│   ├── PS 2 Control Flow.md                    ← Problem Set 2 (due Fri 16 Oct, 17:00)
+│   └── ps2_starter.py                         ← PS2 starter with TODOs
 │
 ├── resources/
 │   └── Reading Guide Week 2.md                 ← Reading, REPL sessions, common mistakes,
@@ -43,10 +43,10 @@ CS101_Week2/
 
 | Day | Event | Topic |
 |-----|-------|-------|
-| Wed | Lecture 7 + Quiz 2 | Conditionals: `if/elif/else`, decision trees, guard clauses |
-| Thu | Lecture 8 | `while` loops, loop invariants, accumulator/search/reduction patterns |
-| Fri | Lecture 9 + PS2 released | `for` loops, `range`, `enumerate`, `zip`, Sieve of Eratosthenes |
-| Tue (W3) | Lab 2 (graded) | Debugging with print + PDB, Collatz, Caesar cipher |
+| Wed 7 Oct | Lecture 7 + Quiz 2 | Conditionals: `if/elif/else`, decision trees, guard clauses |
+| Thu 8 Oct | Lecture 8 | `while` loops, loop invariants, accumulator/search/reduction patterns |
+| Fri 9 Oct | Lecture 9 + PS2 released | `for` loops, `range`, `enumerate`, `zip`, Sieve of Eratosthenes |
+| Tue 13 Oct (W3) | Lab 2 (graded) | Tracing, print-debugging, Collatz, Sieve, FizzBuzz, invariants |
 
 ---
 
@@ -68,11 +68,10 @@ CS101_Week2/
 - [ ] Notes for L08
 - [ ] REPL Session B (while loop tracing)
 
-### Tuesday Lab, Week 3 (Required, Graded)
-- [ ] Complete all 5 buggy functions in `debug_exercise.py`
-- [ ] Implement all 5 functions in `loops_starter.py` (all tests pass)
-- [ ] Write loop invariants for 3 functions
-- [ ] Complete PDB exercise with convergence analysis
+### Tuesday 13 October Lab, Week 3 (Required, Graded)
+- [ ] Fix and explain the 5 bugs in `debug_exercise.py`
+- [ ] Write `loops.py`: Collatz, Sieve, FizzBuzz — every check value matches
+- [ ] Invariant comments on 2 loops
 - [ ] TA checkoff
 
 ### Friday
@@ -81,7 +80,7 @@ CS101_Week2/
 - [ ] PS2 released — read all parts this weekend
 
 ### Weekend
-- [ ] Start PS2 — complete B1, B2, B3 before next Tuesday
+- [ ] Start PS2 — complete Part A and B1 before next Tuesday
 - [ ] Read Guttag Ch. 3.1–3.3 (numerical programs)
 
 ---

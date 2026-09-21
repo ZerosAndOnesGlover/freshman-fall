@@ -1,7 +1,7 @@
 # CS 101 · Lab 0
 ## Environment Setup & First Programs
 
-**Friday of Week 0 · Lab Section** — the Week 0 orientation lab slot; from Lab 1 onward the lab meets Tuesday.
+**Date:** Friday 25 September 2026 · 15:00–16:50 · Lab Section (Week 0) — the orientation lab slot; from Lab 1 onward the lab meets Tuesday.
 *Duration: 2 hours · Graded — 100 points via in-lab TA checkoff, part of the Labs component (10%)*
 
 ---
@@ -9,13 +9,13 @@
 ## Objectives
 
 By the end of this lab, you will have:
-- [x] Python 3.10+ installed and working
-- [x] VS Code installed with the Python extension
-- [x] Git installed and configured
-- [x] A GitHub account connected to your repository
-- [x] Your first Python program committed and pushed
-- [x] Successfully experimented with the REPL
-- [x] Completed 3 warm-up exercises
+- [ ] Python 3.10+ installed and working
+- [ ] VS Code installed with the Python extension
+- [ ] Git installed and configured
+- [ ] A GitHub account connected to your repository
+- [ ] Your first Python program committed and pushed
+- [ ] Successfully experimented with the REPL
+- [ ] Completed 3 warm-up exercises
 
 If you get stuck on any step, raise your hand. The TA will help. Everyone hits installation problems, it is normal and expected.
 
@@ -77,49 +77,46 @@ git config --global user.email "your.email@university.edu"
 
 ## Part 2: Git Repository Setup (20 minutes)
 
-### 2.1 Create Your Course Repository
+### 2.1 Create Your Freshman Fall Repository
 
 Your coursework does not live in your home directory. It lives in the Academic Registry, next to
-the answer sheets for this course:
+the answer sheets. **All six Freshman Fall courses share one repository**, rooted at:
 
 ```
-5. Academic Registry/4. Submissions/Year1 Freshman/Fall/0. CS 101/
+5. Academic Registry/4. Submissions/Year1 Freshman/Fall/
 ```
 
-That is a long path with spaces in it, so give it a name once. Add this to `~/.bashrc` (the
-registry's [[4. Submissions/README|README]] has the full block, for every course):
+Each course is a folder inside it (`0. CS 101/`, `1. PROG 101/`, …). That is a long path with
+spaces in it, so give it names once. Add this to `~/.bashrc` (the registry's
+[[4. Submissions/README|README]] has the full block):
 
 ```bash
 export ACADEMICS=~/"Documents/1. Academics/0. Computer Science and Engineering (B.Sc)"
-export CS101="$ACADEMICS/5. Academic Registry/4. Submissions/Year1 Freshman/Fall/0. CS 101"
+export FALL1="$ACADEMICS/5. Academic Registry/4. Submissions/Year1 Freshman/Fall"
+export CS101="$FALL1/0. CS 101"
 ```
 
-Then open a new terminal, create the directory, and make it a repository:
+Then open a new terminal and make the **Fall folder** a repository — once, for all six courses:
 
 ```bash
+cd "$FALL1"
+git init          # skip this if another course's lab already did it
+ls -la            # You should see a .git folder
 mkdir -p "$CS101"
-cd "$CS101"
-
-# Initialize a Git repository
-git init
-
-# Verify it worked
-ls -la   # You should see a .git folder
 ```
 
-**Quote `"$CS101"` every time.** The path contains spaces; unquoted, `cd` gets five arguments and
-fails.
+**Quote `"$FALL1"` and `"$CS101"` every time.** The paths contain spaces; unquoted, `cd` gets
+several arguments and fails.
 
-This directory is its own repository with its own remote, deliberately kept out of the vault's git
-repo — so you commit CS 101 from inside `$CS101`, not from the vault root. Every course you take
-gets its own repo the same way.
+This repository is deliberately kept out of the vault's git repo. You can run `git` commands from
+inside any course folder — Git finds the repository in the parent folder automatically.
 
 ### 2.2 Create a README
 
-Create a file called [[CS101 Week0/README|README]] with this content:
+Create a file called `README.md` in `"$FALL1"` with this content:
 
 ```markdown
-# CS 101 — Computer Science I: Foundations of Computation
+# Freshman Fall — Coursework
 
 **Student:** Your Name Here
 **Year:** Freshman
@@ -127,18 +124,19 @@ Create a file called [[CS101 Week0/README|README]] with this content:
 
 ## Course Overview
 
-This repository contains all assignments, labs, and projects for CS 101.
+This repository contains my assignments, labs and projects for all six Freshman Fall courses.
 
 ## Structure
 
-- `week0/` — Orientation & Setup
-- `week1/` — Data, Types, and Expressions
-- ... (more weeks to come)
+- `0. CS 101/` — Computer Science I (one `weekN/` folder per week)
+- `1. PROG 101/` — Programming I in C
+- ... (one folder per course)
 ```
 
 ### 2.3 Your First Commit
 
 ```bash
+cd "$FALL1"
 git add README.md
 git status       # See what's staged
 git commit -m "Initial commit: Add README for CS 101"
@@ -148,11 +146,11 @@ git log          # See your commit history
 ### 2.4 Connect to GitHub (if using GitHub)
 
 1. Go to [github.com](https://github.com) and create an account if you don't have one
-2. Create a new repository called `cs101` (make it private)
+2. Create a new repository called `freshman-fall` (make it private)
 3. Follow GitHub's instructions to connect your local repo:
 
 ```bash
-git remote add origin https://github.com/yourusername/cs101.git
+git remote add origin https://github.com/yourusername/freshman-fall.git
 git branch -M main
 git push -u origin main
 ```
@@ -196,55 +194,55 @@ Open the Python REPL (`python3`) and run each of these. **Write down what you ob
 
 ```python
 # Types and their behavior
-type(42)           # <class 'int'>
-type(3.14)         # <class 'float'>
-type(True)         # <class 'bool'>
-type("hello")      # <class 'str'>
-type(None)         # <class 'NoneType'>
+type(42)
+type(3.14)
+type(True)
+type("hello")
+type(None)
 
 # Integer arithmetic
-2 ** 32            # 4294967296
-2 ** 64            # 18446744073709551616
-2 ** 100    # 1267650600228229401496703205376 (Notice: Python handles this without overflow!)
-10 // 3            # 3
-10 % 3             # 1
--10 % 3            # 2 (This might surprise you — think about why)
+2 ** 32
+2 ** 64
+2 ** 100           # Notice anything about the size?
+10 // 3
+10 % 3
+-10 % 3            # This might surprise you — think about why
 
 # Float behavior
-0.1 + 0.2           # 0.30000000000000004 (Notice anything?)
-0.1 + 0.2 == 0.3    # False (What do you expect?)
-round(0.1 + 0.2, 10)# 0.3
+0.1 + 0.2          # Notice anything?
+0.1 + 0.2 == 0.3   # What do you expect?
+round(0.1 + 0.2, 10)
 
 # String operations
-"hello" + " " + "world"                           # 'hello world'
-"ha" * 5                                          # 'hahahahaha'
-len("computer science")                           # 16
-"Computer Science".lower()                        # 'computer science'
-"Computer Science".upper()                        # 'COMPUTER SCIENCE'
-"Computer Science".replace("Computer", "Data")    # 'Data Science'
-"one,two,three".split(",")                        # ['one', 'two', 'three']
+"hello" + " " + "world"
+"ha" * 5
+len("computer science")
+"Computer Science".lower()
+"Computer Science".upper()
+"Computer Science".replace("Computer", "Data")
+"one,two,three".split(",")
 
 # Type conversion
-int(3.9)        # 3 (Truncates or rounds?)
-int("42")       # 42
-int("3.9")      # ValueError: invalid literal for int() with base 10: '3.9' (What happens here? Python refuses to do two conversions, it wants to be explicit)
-float("3.14")   # 3.14
-str(2 ** 10)    # '1024'
-bool(0)         # False
-bool([])        # False
-bool([1, 2, 3]) # True
+int(3.9)           # Truncates or rounds?
+int("42")
+int("3.9")         # What happens here?
+float("3.14")
+str(2 ** 10)
+bool(0)
+bool([])
+bool([1, 2, 3])
 ```
 
 **REPL Observations Log** (fill this out):
 
-| Expression         | Result              | Why (your explanation)                                                                                                                                                                                                                         |
-| ------------------ | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `0.1 + 0.2`        | 0.30000000000000004 | Neither 0.1 nor 0.2 is exactly representable in binary.                                                                                                                                                                                        |
-| `0.1 + 0.2 == 0.3` | False               | They're not the same because of the binary approximation due to infinite decimal numbers in their binary representation of all three numbers.                                                                                                  |
-| `-10 % 3`          | 2                   | Python uses integer division so it floors the division of -10/3 to get -4 instead of -3.333...<br>Now it takes that -4 to multiply 3 to get -12, then check for the remainder i.e -12-10, that gives 2, which is the classic modulo operation. |
-| `int(3.9)`         | 3                   | Python truncates the floating point to get the integer 3                                                                                                                                                                                       |
-| `int("3.9")`       | ValueError          | Python types won't convert twice, so 3.9(float) can only be converted to 3(int). But then, we still have a string to deal with, so there is an error - `ValueError`                                                                            |
-| `bool([])`         | False               | An empty array is False in Python.                                                                                                                                                                                                             |
+| Expression | Result | Why (your explanation) |
+|---|---|---|
+| `0.1 + 0.2` | | |
+| `0.1 + 0.2 == 0.3` | | |
+| `-10 % 3` | | |
+| `int(3.9)` | | |
+| `int("3.9")` | | |
+| `bool([])` | | |
 
 ### Exercise 3.3: Temperature Converter
 
@@ -367,16 +365,16 @@ Why is it better to make many small commits ("Add temperature conversion formula
 ## Lab Completion Checklist
 
 Before leaving:
-- [x] Python 3.10+ installed: `python3 --version`
-- [x] VS Code installed with Python extension
-- [x] Git installed and configured with your name and email
-- [x] `hello.py` created and running
-- [x] REPL Observations Log filled out
-- [x] `temperature.py` completed (including absolute zero)
-- [x] `calculator.py` run with multiple inputs
-- [x] `reflection.md` written
-- [x] All files committed to Git
-- [x] TA has checked you off
+- [ ] Python 3.10+ installed: `python3 --version`
+- [ ] VS Code installed with Python extension
+- [ ] Git installed and configured with your name and email
+- [ ] `hello.py` created and running
+- [ ] REPL Observations Log filled out
+- [ ] `temperature.py` completed (including absolute zero)
+- [ ] `calculator.py` run with multiple inputs
+- [ ] `reflection.md` written
+- [ ] All files committed to Git
+- [ ] TA has checked you off
 
 ---
 
