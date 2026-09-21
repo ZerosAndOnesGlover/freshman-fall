@@ -1,7 +1,8 @@
 # MATH 141 · Calculus I
 ## Problem Set 8
 ### Topic: Riemann Sums, the Definite Integral, and Its Properties
-**Released:** Wednesday, Week 8 · **Due:** Wednesday, Week 9 (start of class)
+**Released:** Wednesday 18 November 2026, 12:00 (after Lecture 03) · Week 8
+**Due:** Wednesday 25 November 2026, 11:00 (start of class) · Week 9 — late penalty after 11:00
 
 **Total:** 100 points
 

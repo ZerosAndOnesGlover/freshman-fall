@@ -1,5 +1,7 @@
 # MATH 141 · Calculus I
 ## Quiz 10 (Monday, Week 10 — Start of Class)
+
+**Date:** Monday 30 November 2026 · 11:00–11:15 (start of Lecture 01) · Week 10
 ### Covers: Week 9 — the Fundamental Theorem of Calculus
 *(Q1–Q2 review Week 8's sigma notation and the properties of the definite integral.)*
 

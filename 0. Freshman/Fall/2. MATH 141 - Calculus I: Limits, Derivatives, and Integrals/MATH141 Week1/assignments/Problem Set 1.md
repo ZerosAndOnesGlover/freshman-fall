@@ -1,13 +1,14 @@
 # MATH 141 · Calculus I
 ## Problem Set 1
-### Topic: Limits and Continuity
-**Released:** Wednesday, Week 1 · **Due:** Friday, Week 2, 17:00
+### Topic: Limits
+**Released:** Wednesday 30 September 2026, 12:00 (after Lecture 03) · Week 1
+**Due:** Wednesday 7 October 2026, 11:00 (start of class) · Week 2 — late penalty after 11:00
+**Total:** 100 points
 
-> **Re-dated 2026-08-16.** This set was previously due Wednesday Week 2 *at the start of class* —
-> the same class period that delivers `Lecture 03: The Intermediate Value Theorem`. Part D (12 pts)
-> is entirely IVT, so it was collected before the theorem had been taught. The Friday 17:00 deadline
-> puts it after Wednesday's lecture and matches the standard problem-set slot in [[Year1 - Freshman/FALL SCHEDULE|FALL SCHEDULE]].
-> See [[Year1 - Freshman/PREREQUISITE AUDIT|PREREQUISITE AUDIT]], finding #13.
+**What this uses:** Week 1 only — limits and limit laws, one-sided limits, the Squeeze Theorem, the two special
+trigonometric limits and ε-δ (Lecture 02 §4), limits at infinity (Lecture 03). **Not needed:** continuity,
+discontinuity types and the IVT, which are Week 2. *(Revised 2026-09-21: the IVT part, the continuity
+questions and the differentiability bonus were removed, and the set is scored out of 100.)*
 
 ---
 
@@ -20,9 +21,9 @@
 
 ---
 
-## Part A — Evaluating Limits (3 pts each)
+## Part A — Evaluating Limits (46 pts)
 
-**A1.** Evaluate each limit, or state that it does not exist (DNE). Justify each answer fully.
+**A1.** *(24 pts, 4 each)* Evaluate each limit, or state that it does not exist (DNE). Justify each answer fully.
 
 (a) $\displaystyle\lim_{x \to 3} \frac{x^2 - 9}{x - 3}$
 
@@ -40,7 +41,7 @@
 
 ---
 
-**A2.** Use the Squeeze Theorem to evaluate:
+**A2.** *(10 pts)* Use the Squeeze Theorem to evaluate:
 
 (a) $\displaystyle\lim_{x \to 0} \left(x^2 \cos\frac{1}{x^2}\right)$
 
@@ -50,7 +51,7 @@ For each, explicitly state the bounding functions and verify their limits.
 
 ---
 
-**A3.** Evaluate using the special trigonometric limits $\displaystyle\lim_{x\to 0}\frac{\sin x}{x} = 1$ and $\displaystyle\lim_{x \to 0} \frac{1 - \cos x}{x} = 0$:
+**A3.** *(12 pts, 3 each)* Evaluate using the special trigonometric limits $\displaystyle\lim_{x\to 0}\frac{\sin x}{x} = 1$ and $\displaystyle\lim_{x \to 0} \frac{1 - \cos x}{x} = 0$:
 
 (a) $\displaystyle\lim_{x \to 0} \frac{\sin 7x}{4x}$
 
@@ -62,9 +63,9 @@ For each, explicitly state the bounding functions and verify their limits.
 
 ---
 
-## Part B — One-Sided Limits and Piecewise Functions (4 pts each)
+## Part B — One-Sided Limits and Piecewise Functions (16 pts)
 
-**B1.** Let
+**B1.** *(8 pts)* Let
 $$f(x) = \begin{cases} x^2 - 1 & x < 0 \\ 2 & x = 0 \\ \sqrt{x} + 1 & 0 < x < 4 \\ 3x - 7 & x \geq 4 \end{cases}$$
 
 Find each of the following, or state DNE:
@@ -73,19 +74,18 @@ Find each of the following, or state DNE:
 
 (b) $\displaystyle\lim_{x \to 4^-} f(x)$, $\quad \displaystyle\lim_{x \to 4^+} f(x)$, $\quad \displaystyle\lim_{x \to 4} f(x)$, $\quad f(4)$
 
-(c) Is $f$ continuous at $x = 0$? At $x = 4$? Justify using the three-part definition.
 
 ---
 
-**B2.** Find all values of the constants $a$ and $b$ that make the following function continuous everywhere:
+**B2.** *(8 pts)* Find every value of the constant $a$ for which $\displaystyle\lim_{x \to 2} g(x)$ exists, where
 
-$$g(x) = \begin{cases} ax + 3b & x \leq -1 \\ a - 2bx & -1 < x \leq 2 \\ 3a - b + x & x > 2 \end{cases}$$
+$$g(x) = \begin{cases} ax + 3 & x < 2 \\ x^2 - a & x \geq 2 \end{cases}$$
 
-Show your system of equations and solve it completely.
+Compute both one-sided limits in terms of $a$, and state the value of the limit for your $a$.
 
 ---
 
-## Part C — Epsilon-Delta Proofs (5 pts each)
+## Part C — Epsilon-Delta Proofs (24 pts, 8 each)
 
 **C1.** Using the formal $\varepsilon$-$\delta$ definition, prove:
 $$\lim_{x \to 5} (3x - 7) = 8$$
@@ -107,59 +107,22 @@ $$\lim_{x \to 3} x^2 = 9$$
 
 ---
 
-## Part D — Intermediate Value Theorem (4 pts each)
+## Part E — Conceptual (14 pts)
 
-**D1.** Prove that the equation $x^4 + x - 3 = 0$ has at least two real solutions. Identify intervals containing each solution.
+**E1.** *(6 pts)* A student writes: *"Since $f(2) = 5$, we know $\lim_{x \to 2} f(x) = 5$."*
 
----
-
-**D2.** A continuous function $f$ satisfies $f(0) = -1$ and $f(3) = 5$.
-
-(a) Prove there exists $c \in (0, 3)$ such that $f(c) = 0$.
-
-(b) Prove there exists $c \in (0, 3)$ such that $f(c) = c$.
-*(Hint: Define $g(x) = f(x) - x$ and apply IVT.)*
-
-(c) Can you conclude there is a $c$ with $f(c) = 7$? Explain carefully.
+Is this correct? Explain what the limit does and does not depend on, and give a piecewise function with
+$f(2) = 5$ whose limit at $2$ is not $5$.
 
 ---
 
-**D3.** Two hikers start at the bottom of a mountain trail at 8:00 AM on the same day, traveling the same path. Hiker A reaches the summit at 2:00 PM. Hiker B starts at the summit at 8:00 AM and reaches the bottom at 2:00 PM. Prove that at some time between 8:00 AM and 2:00 PM, both hikers were at exactly the same point on the trail.
-
-*(This is a classic IVT application. Define position functions carefully.)*
-
----
-
-## Part E — Conceptual and Synthesis (6 pts each)
-
-**E1.** A student writes: *"Since $\lim_{x \to 2} f(x) = 5$ and $f(2) = 5$, the function $f$ is continuous at $x = 2$."*
-
-Is this reasoning correct? What is missing? State the complete three-part definition and explain which parts the student verified and which were assumed.
-
----
-
-**E2.** Consider the function $f(x) = \dfrac{x^2 - x - 6}{x - 3}$.
+**E2.** *(8 pts)* Consider $f(x) = \dfrac{x^2 - x - 6}{x - 3}$.
 
 (a) What is the natural domain of $f$?
 
 (b) Evaluate $\displaystyle\lim_{x \to 3} f(x)$.
 
-(c) Define $g(x)$ to be the continuous extension of $f$ to all of $\mathbb{R}$. Write a formula for $g(x)$.
-
-(d) What type of discontinuity does $f$ have at $x = 3$?
-
-(e) Graph $f$ and $g$ on the same axes, clearly indicating the difference.
-
----
-
-**E3 (Challenge — 3 bonus pts).** The following function is defined for all $x \in [-1, 1]$:
-$$f(x) = \begin{cases} x \sin\!\left(\dfrac{1}{x}\right) & x \neq 0 \\ 0 & x = 0 \end{cases}$$
-
-(a) Prove $f$ is continuous at $x = 0$. *(Use the Squeeze Theorem.)*
-
-(b) Is $f$ differentiable at $x = 0$? To investigate, compute $\displaystyle\lim_{h \to 0} \frac{f(h) - f(0)}{h}$ and determine if it exists.
-
-(c) What does part (b) suggest about the relationship between continuity and differentiability? (This will be made precise in Week 3, where differentiability is shown to imply continuity but not conversely.)
+(c) $f(3)$ does not exist, yet the limit does. Explain in one or two sentences why that is no contradiction.
 
 ---
 
@@ -167,14 +130,12 @@ $$f(x) = \begin{cases} x \sin\!\left(\dfrac{1}{x}\right) & x \neq 0 \\ 0 & x = 0
 
 | Part | Points | Focus |
 |------|--------|-------|
-| A (6 problems × 3) | 18 | Limit computation techniques |
-| B (2 problems × 4) | 8 | Piecewise functions and continuity |
-| C (3 problems × 5) | 15 | Epsilon-delta proofs |
-| D (3 problems × 4) | 12 | Intermediate Value Theorem |
-| E (2 problems × 6) | 12 | Conceptual understanding |
-| E3 bonus | 3 | Challenge |
-| **Total** | **65 + 3 bonus** | |
+| A | 46 | Limit computation techniques |
+| B | 16 | One-sided limits and piecewise functions |
+| C | 24 | Epsilon-delta proofs |
+| E | 14 | Conceptual understanding |
+| **Total** | **100** | |
 
 ---
 
-*Submit to the course portal by 11:59 PM the night before class, or bring a physical copy to class Wednesday.*
+*Submit to the course portal by 11:00 on Wednesday 7 October, or bring a physical copy to class.*

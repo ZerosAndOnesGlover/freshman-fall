@@ -2,7 +2,7 @@
 ## Rules, Chains, and Motion
 
 **Duration:** 2 hours · **20 points**
-**Lab session:** Friday of Week 4
+**Date:** Friday 23 October 2026 · 15:00–16:50 · Lab Section (Week 4) — covers Week 4 (Lectures 01–03)
 
 ---
 

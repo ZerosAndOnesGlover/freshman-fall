@@ -1,9 +1,14 @@
 # MATH 141 · Calculus I
-## Lab 06 (Friday, Week 6)
-### Visualizing Extrema, the Mean Value Theorem, and Curve Shape
+## Lab 06
+### Visualizing Extrema, the Mean Value Theorem, and L'Hôpital's Rule
 
+**Date:** Friday 6 November 2026 · 15:00–16:50 · Lab Section (Week 6) — covers Week 6 (Lectures 01–03)  
 **Duration:** 2 hours | **Tools:** Desmos, Python (optional)
-**Submission:** Written report due Monday, Week 7
+**Submission:** Written report due Monday 9 November 2026, 17:00 (Week 7)
+
+> *Revised 2026-09-21.* The old Part 3 (reading $f''$ for concavity) and Part 4 (when the Second
+> Derivative Test fails) used Week 7 material. Part 3 now uses $f$ and $f'$ only, and Part 4 checks
+> L'Hôpital's Rule numerically.
 
 ---
 
@@ -11,8 +16,8 @@
 
 1. Visualize the Extreme Value Theorem and see why its hypotheses matter
 2. See the Mean Value Theorem geometrically — the parallel secant/tangent lines
-3. Explore the relationship between $f$, $f'$, and $f''$ graphically, side by side
-4. Discover why the Second Derivative Test can fail
+3. Read increasing/decreasing and local extrema from the graphs of $f$ and $f'$ side by side
+4. Check L'Hôpital's Rule numerically
 5. Build a numerical root-counting tool using Rolle's Theorem logic
 
 ---
@@ -78,63 +83,53 @@ A ball is thrown, and its height (in meters) is $h(t) = -4.9t^2 + 20t + 1$ for $
 
 ---
 
-## Part 3 — Three Graphs Side by Side: $f$, $f'$, $f''$ (35 min)
-
-This is the most important conceptual exercise of the week: training your eye to read the relationships between a function and its derivatives.
+## Part 3 — $f$ and $f'$ Side by Side (25 min)
 
 ### Exercise 3.1
 
 Consider $f(x) = x^4 - 4x^3 + 4x^2$.
 
-**Step 1:** Compute $f'(x)$ and $f''(x)$ by hand.
+**Step 1:** Compute $f'(x)$ by hand and factor it.
 
-**Step 2:** In Desmos, graph all three functions $f$, $f'$, $f''$ using different colors, all on the same axes (or use Desmos's graph-folder feature to organize them).
+**Step 2:** In Desmos, graph $f$ and $f'$ in different colours on the same axes.
 
-**Question 3a:** Identify every $x$-value where $f'(x) = 0$ from the graph. At each such point, check: is $f$ increasing or decreasing on either side? Does this match a local max, local min, or neither?
+**Question 3a:** Identify every $x$-value where $f'(x) = 0$. At each, is $f$ increasing or decreasing on
+either side? Is it a local max, a local min, or neither?
 
-**Question 3b:** Identify every $x$-value where $f''(x) = 0$. At each, check: does the concavity of $f$ actually change there? (Sometimes $f''=0$ does NOT mean an inflection point — verify this carefully.)
+**Question 3b:** Fill in this table:
 
-**Question 3c:** Fill in this synthesis table:
+| Interval | Sign of $f'$ | $f$ increasing or decreasing? |
+|----------|--------------|-------------------------------|
+| | | |
+| | | |
+| | | |
+| | | |
 
-| $x$-value | $f'(x)$ sign change? | $f''(x)$ sign change? | Classification |
-|-----------|----------------------|------------------------|-----------------|
-| | | | |
-| | | | |
-| | | | |
+### Exercise 3.2 — Reading $f$ from $f'$
 
-### Exercise 3.2 — Reverse Engineering
+You are given ONLY $f'(x) = (x+2)(x-1)^2$ (no formula for $f$ itself).
 
-You are given ONLY the graph of $f'(x) = (x+2)(x-1)^2$ (no formula for $f$ itself).
+**Question 3c:** Without finding $f(x)$, determine all critical numbers of $f$, the intervals where $f$ is
+increasing or decreasing (MVT Corollary 3), and the classification of each critical number.
 
-**Question 3d:** Without finding $f(x)$, determine:
-- All critical numbers of $f$
-- Intervals where $f$ is increasing/decreasing
-- Classification of each critical point (local max/min/neither)
-
-**Question 3e:** Now compute $f''(x)$ from $f'(x)$ and determine concavity intervals and inflection points — still without ever finding $f(x)$ itself.
-
-**Question 3f:** Sketch what $f(x)$ might look like, using only this derivative information. (Many different functions $f$ could have this $f'$ — they'd all differ by a vertical shift, per MVT Corollary 2 from Tuesday's lecture. Your sketch just needs the correct *shape*.)
+**Question 3d:** Many functions have this $f'$. By MVT Corollary 2, how are any two of them related?
 
 ---
 
-## Part 4 — When the Second Derivative Test Fails (20 min)
+## Part 4 — L'Hôpital's Rule Numerically (20 min)
 
-### Exercise 4.1 — Three Functions, Same $f'(0)=f''(0)=0$
+**Question 4a:** Tabulate $\dfrac{e^h-1-h}{h^2}$ for $h = 0.1, 0.01, 0.001, 0.0001$. What value does it
+approach? Confirm with L'Hôpital's Rule (applied twice).
 
-Consider three functions:
-$$f_1(x) = x^4 \qquad f_2(x) = -x^4 \qquad f_3(x) = x^3$$
+**Question 4b:** Tabulate $\dfrac{\ln x}{\sqrt{x}}$ for $x = 10, 10^2, 10^4, 10^6$. What does it approach?
+Confirm with L'Hôpital's Rule. What does this say about which of $\ln x$ and $\sqrt{x}$ grows faster?
 
-**Question 4a:** Verify for all three that $f'(0) = 0$ and $f''(0) = 0$ (so the Second Derivative Test gives no information).
-
-**Question 4b:** Graph all three in Desmos near $x=0$. Classify the behavior at $x=0$ for each: local min, local max, or neither (inflection with horizontal tangent)?
-
-**Question 4c:** Use the First Derivative Test on each to confirm your graphical classification algebraically.
-
-**Question 4d:** This exercise demonstrates that $f''(c)=0$ is truly inconclusive — it is consistent with a local min, local max, OR neither. Write a one-paragraph explanation of why the Second Derivative Test has this gap, referring to the geometric meaning of $f''$.
+**Question 4c:** In Desmos, graph $\dfrac{x+\sin x}{x}$ and $1+\cos x$ for $x$ up to 100. Use the picture to
+explain why L'Hôpital's Rule cannot be used on the first, even though its limit exists.
 
 ---
 
-## Part 5 — Numerical Root Counting via Rolle's Theorem (15 min)
+## Part 5 — Numerical Root Counting via Rolle's Theorem (20 min)
 
 ### Exercise 5.1 — Automated Reasoning
 
@@ -151,7 +146,7 @@ Rolle's Theorem, used contrapositively, gives a root-counting technique: if $f'(
 **Question 5e (Pseudocode):** Write pseudocode for a function `count_roots_via_derivative(f, f_prime, a, b)` that:
 1. Checks if `f_prime` changes sign on `[a,b]` (using many sample points)
 2. If `f_prime` never changes sign, concludes "at most one root" in `[a,b]`
-3. Uses the bisection method (Lab 1) to actually locate the root if `f(a)` and `f(b)` have opposite signs
+3. Uses the bisection method (Lab 02) to actually locate the root if `f(a)` and `f(b)` have opposite signs
 
 ---
 
@@ -159,11 +154,11 @@ Rolle's Theorem, used contrapositively, gives a root-counting technique: if $f'(
 
 Include:
 1. Answers to all questions
-2. Desmos screenshots for Parts 1, 2, and 3
-3. The synthesis table from Exercise 3.1
-4. Your sketch from Exercise 3.2
-5. Pseudocode from Exercise 5.5
-6. **Reflection** (6–8 sentences): How has visualizing $f$, $f'$, and $f''$ together changed the way you think about a function's graph? What is the most useful "reading" skill you developed today — being able to go from $f'$ back to properties of $f$, or forward from $f$ to properties of $f'$ and $f''$?
+2. Desmos screenshots for Parts 1, 2, 3 and 4
+3. The tables from Exercise 3.1 and Part 4
+4. Pseudocode from Question 5e
+5. **Reflection** (5–6 sentences): What is the most useful "reading" skill you developed today — going
+   from $f'$ back to properties of $f$, or seeing a theorem's hypotheses fail in a picture?
 
 **Grading:**
 
@@ -171,8 +166,8 @@ Include:
 |---------|--------|
 | Part 1 — EVT hypotheses | 15 |
 | Part 2 — MVT visualization | 25 |
-| Part 3 — Three graphs synthesis | 30 |
-| Part 4 — Second Derivative Test failure | 15 |
-| Part 5 — Root counting | 10 |
+| Part 3 — $f$ and $f'$ side by side | 20 |
+| Part 4 — L'Hôpital numerically | 20 |
+| Part 5 — Root counting | 15 |
 | Reflection | 5 |
 | **Total** | **100** |

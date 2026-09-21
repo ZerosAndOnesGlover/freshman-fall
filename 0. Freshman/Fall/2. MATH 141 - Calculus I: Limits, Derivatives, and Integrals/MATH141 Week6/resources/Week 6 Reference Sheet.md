@@ -1,6 +1,6 @@
 # MATH 141 · Calculus I
 ## Week 6 Reference Sheet
-### Extrema · Rolle's Theorem · MVT · Shape of a Graph
+### Extrema · Rolle's Theorem · MVT · L'Hôpital's Rule
 
 ---
 
@@ -54,49 +54,27 @@ $f$ continuous on $[a,b]$, differentiable on $(a,b)$ $\implies$ $\exists\,c\in(a
 
 ---
 
-## First Derivative Test
+## L'Hôpital's Rule
 
-At critical number $c$:
+**Applies only to** $\dfrac{0}{0}$ or $\dfrac{\infty}{\infty}$ forms:
 
-| Sign change of $f'$ at $c$ | Conclusion |
-|------------------------------|-----------|
-| $+ \to -$ | Local maximum |
-| $- \to +$ | Local minimum |
-| No change | Not an extremum |
+$$\lim_{x\to a}\frac{f(x)}{g(x)} = \lim_{x\to a}\frac{f'(x)}{g'(x)}$$
 
----
+*(Differentiate numerator and denominator SEPARATELY — this is NOT the quotient rule.)*
 
-## Concavity and the Second Derivative
+**Can be reapplied** if the new limit is still indeterminate.
 
-| Sign of $f''$ | Concavity |
-|---------------|-----------|
-| $f''(x)>0$ | Concave up (⌣) |
-| $f''(x)<0$ | Concave down (⌢) |
+**Always verify the indeterminate form FIRST** — applying the rule to a non-indeterminate limit gives a wrong answer.
 
-**Inflection point:** concavity changes. Necessary (not sufficient) condition: $f''(c)=0$ or undefined.
+### Converting Other Indeterminate Forms
 
----
+| Form | Strategy |
+|------|----------|
+| $0\cdot\infty$ | Rewrite as $\dfrac{f}{1/g}$ or $\dfrac{g}{1/f}$ → $0/0$ or $\infty/\infty$ |
+| $\infty-\infty$ | Combine into a single fraction (common denominator) → $0/0$ |
+| $0^0$, $1^\infty$, $\infty^0$ | Take $\ln$ of both sides → exponent becomes $0\cdot\infty$ product → solve → exponentiate with $e$ |
 
-## Second Derivative Test
-
-At a critical number $c$ where $f'(c)=0$:
-
-| $f''(c)$ | Conclusion |
-|----------|-----------|
-| $>0$ | Local minimum |
-| $<0$ | Local maximum |
-| $=0$ | **Inconclusive** — use First Derivative Test |
-
----
-
-## Complete Curve Analysis Checklist
-
-1. Domain
-2. $f'(x)$: critical numbers, increase/decrease intervals
-3. Classify critical points (First or Second Derivative Test)
-4. $f''(x)$: concavity intervals, inflection points
-5. Asymptotes (vertical, horizontal — Week 1 techniques)
-6. Sketch
+**Key limit proved via L'Hôpital:** $\displaystyle\lim_{x\to\infty}\left(1+\dfrac1x\right)^x = e$
 
 ---
 
@@ -104,11 +82,12 @@ At a critical number $c$ where $f'(c)=0$:
 
 | ❌ Wrong | ✅ Right |
 |---------|---------|
-| $f'(c)=0 \implies$ extremum at $c$ | Must check sign change (First Deriv. Test) |
-| $f''(c)=0 \implies$ inflection point | Must verify concavity actually changes |
+| $f'(c)=0 \implies$ extremum at $c$ | Check that $f'$ changes sign (MVT Corollary 3); $x^3$ at $0$ is the counterexample |
 | Using EVT on an open interval | EVT requires CLOSED, bounded interval |
 | Forgetting to check endpoints in Closed Interval Method | Endpoints are always candidates |
-| Assuming Second Derivative Test always works | It's silent when $f''(c)=0$ |
+| Apply L'Hôpital to a non-indeterminate limit | Always check form is $0/0$ or $\infty/\infty$ first |
+| Apply quotient rule instead of L'Hôpital | Differentiate numerator and denominator separately |
+| Assume $0^0$ form always equals 1 | Must actually compute the limit — it's genuinely indeterminate |
 
 ---
 
@@ -118,7 +97,7 @@ At a critical number $c$ where $f'(c)=0$:
 |-----|-------|-------|
 | Monday | **Quiz 06** + Lecture 1 | Extrema, EVT, Fermat's Theorem, Closed Interval Method |
 | Tuesday | Lecture 2 | Rolle's Theorem, Mean Value Theorem, corollaries |
-| Friday | **Lab 06** | EVT hypotheses, MVT visualization, $f/f'/f''$ synthesis |
-| Wednesday | Lecture 3 + **PS4 Released** | I/D Test, concavity, First & Second Derivative Tests |
+| Wednesday | Lecture 3 + **PS 6 released** (12:00) (12:00) | L'Hôpital's Rule, all indeterminate forms |
+| Friday | **Lab 06** (15:00) | EVT hypotheses, MVT visualization, reading $f$ from $f'$, L'Hôpital numerically |
 
-**Next week:** Curve sketching synthesis, L'Hôpital's Rule, applied optimization problems.
+**Next week:** Shape of a graph (First and Second Derivative Tests, concavity), curve sketching, applied optimization.

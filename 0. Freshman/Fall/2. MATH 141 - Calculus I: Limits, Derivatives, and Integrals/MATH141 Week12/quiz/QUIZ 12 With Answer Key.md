@@ -1,5 +1,7 @@
 # MATH 141 · Quiz 12
 ## Administered: start of Week 12, Monday
+
+**Date:** Monday 14 December 2026 · 11:00–11:15 (start of Lecture 01) · Week 12
 ### Covers: Week 11 — applications of integration
 
 **Duration:** 15 minutes · Closed book · **20 points**

@@ -11,12 +11,12 @@ mechanical, and then asks what the results *mean*.
 
 | Day | Lecture | Topic |
 |---|---|---|
-| Monday | 1 | Differentiation Rules: Power, Product, Quotient |
-| Tuesday | 2 | The Chain Rule |
-| Wednesday | 3 | Higher Derivatives and Rates of Change |
-| — | Lab 04 | Rules, Chains, and Motion |
+| Monday 19 Oct | 1 | Differentiation Rules: Power, Product, Quotient |
+| Tuesday 20 Oct | 2 | The Chain Rule |
+| Wednesday 21 Oct | 3 | Higher Derivatives and Rates of Change |
+| Friday 23 Oct, 15:00 | Lab 04 | Rules, Chains, and Motion |
 
-**Quiz 04** at the start of Monday's lecture, covering Week 3.
+**Quiz 04** at the start of Monday 19 October 2026's lecture (11:00), covering Week 3.
 **Problem Set 4** due at the start of Wednesday's lecture next week.
 
 ---

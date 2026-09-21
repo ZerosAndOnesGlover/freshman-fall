@@ -2,7 +2,7 @@
 ## Areas, Volumes, and Numerical Checks
 
 **Duration:** 2 hours · **20 points**
-**Lab session:** Friday of Week 11
+**Date:** Friday 11 December 2026 · 15:00–16:50 · Lab Section (Week 11) — covers Week 11 (Lectures 01–03)
 
 ---
 

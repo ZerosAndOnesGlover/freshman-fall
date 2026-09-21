@@ -1,5 +1,7 @@
 # MATH 141 · Quiz 11
 ## Administered: start of Week 11, Monday
+
+**Date:** Monday 7 December 2026 · 11:00–11:15 (start of Lecture 01) · Week 11
 ### Covers: Week 10 — integration techniques
 
 **Duration:** 15 minutes · Closed book · **20 points**

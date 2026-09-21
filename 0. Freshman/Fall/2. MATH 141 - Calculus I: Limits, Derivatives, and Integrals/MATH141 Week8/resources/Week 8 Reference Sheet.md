@@ -116,7 +116,7 @@ Fundamental Theorem** — it is the most important result on this sheet.
 |-----|-------|-------|
 | Monday | **Quiz 08** + Lecture 1 | Sigma notation, Riemann sums, the area and distance problems |
 | Tuesday | Lecture 2 | The definite integral: definition and integrability |
-| Wednesday | Lecture 3 + **PS 8 released** | Properties, comparison, average value, MVT for Integrals |
+| Wednesday | Lecture 3 + **PS 8 released** (12:00) | Properties, comparison, average value, MVT for Integrals |
 | Friday | **Lab 08** | Convergence rates, sample-point independence, numerical integrator |
 
 **Next week:** the Fundamental Theorem of Calculus — where all of this collapses into

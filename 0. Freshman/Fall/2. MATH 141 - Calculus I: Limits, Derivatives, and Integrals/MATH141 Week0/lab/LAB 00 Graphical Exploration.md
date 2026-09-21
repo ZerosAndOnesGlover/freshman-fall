@@ -5,10 +5,11 @@
 ---
 
 **Duration:** 2 hours  
-**Lab session:** Friday of Week 0
+**Date:** Friday 25 September 2026 · 15:00–16:50 · Lab Section (Week 0) — covers Lectures 00–03
 **Format:** Individual or pairs (pairs must submit separate lab reports)  
 **Graded on:** Completion + correctness of written responses (not graded during Week 0: this is the orientation lab)  
-**Tools Required:** Python 3 with `matplotlib` and `numpy` (instructions below), or [Desmos](https://www.desmos.com) (free, browser-based)
+**Tools Required:** [Desmos](https://www.desmos.com) (free, browser-based). Python with `matplotlib` is an optional alternative
+for students who already know it — plotting libraries are not taught in CS 101.
 
 ---
 
@@ -95,7 +96,7 @@ b. All the graphs pass through which specific points? Explain algebraically why 
 
 c. For $x \in (0, 1)$, which function is largest? For $x > 1$, which is largest? Explain why.
 
-d. Compare the "flatness" of each function near $x = 0$. Which is flattest? What does this suggest about their derivatives at $x = 0$?
+d. Compare the "flatness" of each function near $x = 0$. Which is flattest? What does this suggest about how steep each graph is near $x = 0$?
 
 ---
 
@@ -251,7 +252,7 @@ c. Is the floor function one-to-one? Does it have an inverse? Explain.
 
 ---
 
-## Part 3: Average Rate of Change and the Approach to Calculus (45 minutes)
+## Part 3: Average Rate of Change and the Approach to Calculus (60 minutes)
 
 ### Activity 3.1: Secant Lines
 
@@ -351,57 +352,6 @@ b. Verify algebraically: expand $(2+h)^3$ and simplify $\dfrac{(2+h)^3 - 8}{h}$.
 c. What is the pattern? The derivative of $x^2$ at $x = 1$ is $2$. The derivative of $x^3$ at $x = 2$ is (your answer). Can you guess a general formula for the derivative of $x^n$ at $x = a$?
 
 ---
-
-### Activity 3.3: The Derivative of $e^x$ — A Surprise
-
-```python
-def expf(x):
-    return np.exp(x)
-
-x_fixed = 0.0
-h_values = [1.0, 0.5, 0.1, 0.01, 0.001, 0.0001]
-
-print("Secant slopes for f(x) = eˣ at x = 0:")
-print(f"{'h':>10} {'slope':>20} {'f(0)':>15}")
-print("-" * 50)
-for h in h_values:
-    slope = (expf(x_fixed + h) - expf(x_fixed)) / h
-    print(f"{h:>10.6f} {slope:>20.15f} {expf(x_fixed):>15.10f}")
-```
-
-**Written Questions 3.3:**
-
-a. What value does the slope of $e^x$ at $x = 0$ approach? How does it compare to $f(0) = e^0$?
-
-b. This is the remarkable property of $e^x$: its derivative equals itself. Verify this numerically at $x = 1$ and $x = 2$ by computing the secant slopes.
-
-c. What base $a$ makes the derivative of $a^x$ at $x = 0$ equal exactly to $1$? You just found it numerically. (Answer: $e$.)
-
----
-
-## Part 4: Investigations (15 minutes)
-
-### Activity 4.1: The Mystery of $|x|$ at $x = 0$
-
-```python
-x_fixed = 0.0
-h_values = [0.5, 0.1, 0.01, -0.01, -0.1, -0.5]
-
-print("Secant slopes for f(x) = |x| at x = 0:")
-print(f"{'h':>10} {'slope':>15}")
-print("-" * 30)
-for h in h_values:
-    slope = (abs(x_fixed + h) - abs(x_fixed)) / h
-    print(f"{h:>10.4f} {slope:>15.6f}")
-```
-
-**Written Questions 4.1:**
-
-a. What happens to the slope for positive $h$ vs negative $h$?
-
-b. Does the secant slope approach a single value as $h \to 0$? What does this mean for the derivative of $|x|$ at $x = 0$?
-
-c. Look at the graph of $|x|$ at $x = 0$. What feature of the graph corresponds to your numerical finding?
 
 ---
 

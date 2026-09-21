@@ -7,7 +7,7 @@
 ---
 
 **Reading:** Stewart §4.7 | Spivak Ch. 11 (applied problems)
-**Problem Set 7 released today. Due: Wednesday, Week 6.**
+**Problem Set 7 released today, 12:00. Due: Wednesday 18 November 2026, 11:00 (Week 8).**
 
 ---
 

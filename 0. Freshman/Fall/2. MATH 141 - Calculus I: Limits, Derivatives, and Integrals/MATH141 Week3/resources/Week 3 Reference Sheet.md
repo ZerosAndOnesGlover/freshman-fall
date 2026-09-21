@@ -1,6 +1,6 @@
 # MATH 141 · Calculus I
 ## Week 3 Reference Sheet
-### The Derivative — Definition and Rules
+### The Derivative — Definition and Differentiability
 
 ---
 
@@ -12,7 +12,7 @@ $$f'(a) = \lim_{h\to0}\frac{f(a+h)-f(a)}{h} \qquad \text{or} \qquad f'(a)=\lim_{
 
 ---
 
-## Complete Differentiation Rule Table
+## Preview — Differentiation Rule Table (taught in Week 4; not needed for PS 3 or Lab 03)
 
 | Function | Derivative | Notes |
 |----------|-----------|-------|
@@ -35,7 +35,7 @@ $$f'(a) = \lim_{h\to0}\frac{f(a+h)-f(a)}{h} \qquad \text{or} \qquad f'(a)=\lim_{
 
 ---
 
-## Chain Rule — Key Pattern
+## Preview — Chain Rule (taught Week 4 Lecture 2)
 
 $$\frac{d}{dx}[f(g(x))] = \underbrace{f'(g(x))}_{\text{outer deriv.}} \cdot \underbrace{g'(x)}_{\text{inner deriv.}}$$
 
@@ -107,8 +107,8 @@ $$f'(a) = \left.\frac{dy}{dx}\right|_{x=a}$$
 | Day | Event | Topic |
 |-----|-------|-------|
 | Monday | **Quiz 03** + Lecture 1 | Derivative definition, difference quotient |
-| Tuesday | Lecture 2 | Power, product, quotient rules; trig derivatives |
-| Friday | **Lab 03** | Secant→tangent, numerical differentiation, $e$ |
-| Wednesday | Lecture 3 + **PS2 released** | Chain rule, exponential derivatives |
+| Tuesday | Lecture 2 | The derivative as a function; numerical difference quotients |
+| Wednesday | Lecture 3 + **PS 3 released** (12:00) (12:00) | Differentiability versus continuity |
+| Friday | **Lab 03** (15:00) | Secant→tangent, numerical differentiation, $e$ |
 
-**Next week:** Implicit differentiation, logarithmic differentiation, and inverse trig derivatives.
+**Next week:** Differentiation rules, the chain rule, higher derivatives.

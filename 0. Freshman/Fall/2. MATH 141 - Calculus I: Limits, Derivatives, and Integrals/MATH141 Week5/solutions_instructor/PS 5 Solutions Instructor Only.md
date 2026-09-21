@@ -1,6 +1,8 @@
 # MATH 141 · Problem Set 5 Solutions
 ## INSTRUCTOR ONLY — DO NOT DISTRIBUTE
 
+*Revised 2026-09-21 to match the 100-point set; items are numbered as in the new set.*
+
 ---
 
 
@@ -47,19 +49,7 @@ $y'(e^x+xe^y)=-ye^x-e^y$
 
 $y'=\dfrac{-ye^x-e^y}{e^x+xe^y}$
 
-**A1(d).** $\ln(x+y)=x^2+y$
-
-$\dfrac{1+y'}{x+y}=2x+y'$
-
-$1+y'=(x+y)(2x+y')=2x(x+y)+(x+y)y'$
-
-$y'-(x+y)y'=2x(x+y)-1$
-
-$y'[1-(x+y)]=2x(x+y)-1$
-
-$y'=\dfrac{2x(x+y)-1}{1-(x+y)}$
-
-**A1(e).** $\cos(x-y)=x\sin y$
+**A1(d).** $\cos(x-y)=x\sin y$
 
 $-\sin(x-y)(1-y')=\sin y+x\cos y\cdot y'$
 
@@ -85,11 +75,12 @@ $y''(2y-x)+y'(2y'-1)=y'-2$
 
 $y''=\dfrac{y'-2-y'(2y'-1)}{2y-x}=\dfrac{y'-2-2y'^2+y'}{2y-x}=\dfrac{2y'-2-2y'^2}{2y-x}$
 
-Substitute $y'=\dfrac{y-2x}{2y-x}$ and simplify using the original equation. Final answer after substitution and simplification using $x^2-xy+y^2=3$:
+Substitute $y'=\dfrac{y-2x}{2y-x}$ and put everything over $(2y-x)^2$. The numerator collapses to
+$-6(x^2-xy+y^2)$, which is $-18$ by the original equation:
 
-$y''=\dfrac{-6}{(2y-x)^3} \cdot \dfrac{\text{[by substituting and using constraint]}}{1}$
+$y''=-\dfrac{18}{(2y-x)^3}$
 
-Let students verify numerically at a specific point.
+*(Checked with SymPy. The old key left this unfinished.)*
 
 ---
 
@@ -115,28 +106,6 @@ Discriminant: $16-672<0$. No real solutions — no horizontal tangents on this c
 
 ---
 
-**A4(a).** $2(x^2+y^2)^2=25(x^2-y^2)$
-
-$4(x^2+y^2)(2x+2yy')=25(2x-2yy')$
-
-$8(x^2+y^2)x+8(x^2+y^2)yy'=50x-50yy'$
-
-$y'[8(x^2+y^2)y+50y]=50x-8(x^2+y^2)x$
-
-$y'=\dfrac{x[50-8(x^2+y^2)]}{y[8(x^2+y^2)+50]}=\dfrac{x[25-4(x^2+y^2)]}{y[4(x^2+y^2)+25]}$
-
-**A4(b).** Check $(3,1)$: $2(9+1)^2=200$ and $25(9-1)=200$ ✓. Check $(-3,1)$: same ✓.
-
-At $(3,1)$: $x^2+y^2=10$. $y'=\dfrac{3[25-40]}{1[40+25]}=\dfrac{3(-15)}{65}=-\dfrac{9}{13}$.
-
-Tangent: $y-1=-\dfrac{9}{13}(x-3)$, i.e., $9x+13y=40$.
-
-At $(-3,1)$: $y'=\dfrac{-3[25-40]}{1[40+25]}=\dfrac{-3(-15)}{65}=\dfrac{9}{13}$.
-
-Tangent: $y-1=\dfrac{9}{13}(x+3)$, i.e., $9x-13y+40=0$.
-
----
-
 ## Part B — Logarithmic Derivatives
 
 **B1(a).** $y'=\dfrac{4x^3+6x}{x^4+3x^2-1}$
@@ -145,15 +114,11 @@ Tangent: $y-1=\dfrac{9}{13}(x+3)$, i.e., $9x-13y+40=0$.
 
 $y'=\dfrac{2x}{x^2+1}-\dfrac{2x}{x^2-1}=2x\cdot\dfrac{(x^2-1)-(x^2+1)}{(x^2+1)(x^2-1)}=\dfrac{-4x}{x^4-1}$
 
-**B1(c).** $y=\ln|\tan x+\sec x|$
+**B1(c).** $y'=2x\ln(3x)+x^2\cdot\dfrac{1}{x}=2x\ln(3x)+x$
 
-$y'=\dfrac{\sec^2x+\sec x\tan x}{\tan x+\sec x}=\dfrac{\sec x(\sec x+\tan x)}{\tan x+\sec x}=\sec x$
+**B1(d).** $y'=\dfrac{1}{\ln x}\cdot\dfrac{1}{x}=\dfrac{1}{x\ln x}$
 
-**B1(d).** $y'=2x\ln(3x)+x^2\cdot\dfrac{1}{x}=2x\ln(3x)+x$
-
-**B1(e).** $y'=\dfrac{1}{\ln x}\cdot\dfrac{1}{x}=\dfrac{1}{x\ln x}$
-
-**B1(f).** $y'=\dfrac{3x^2}{(x^3+1)\ln 5}$
+**B1(e).** $y'=\dfrac{3x^2}{(x^3+1)\ln 5}$
 
 **B2(a).** $\ln y=\tan x\ln x$
 
@@ -161,19 +126,7 @@ $\dfrac{y'}{y}=\sec^2x\ln x+\dfrac{\tan x}{x}$
 
 $y'=x^{\tan x}\!\left(\sec^2x\ln x+\dfrac{\tan x}{x}\right)$
 
-**B2(b).** $\ln y=x\ln(\ln x)$
-
-$\dfrac{y'}{y}=\ln(\ln x)+x\cdot\dfrac{1}{\ln x}\cdot\dfrac{1}{x}=\ln(\ln x)+\dfrac{1}{\ln x}$
-
-$y'=(\ln x)^x\!\left(\ln(\ln x)+\dfrac{1}{\ln x}\right)$
-
-**B2(c).** $\ln y=3x\ln(x^2+1)$
-
-$\dfrac{y'}{y}=3\ln(x^2+1)+\dfrac{6x^2}{x^2+1}$
-
-$y'=(x^2+1)^{3x}\!\left(3\ln(x^2+1)+\dfrac{6x^2}{x^2+1}\right)$
-
-**B2(d).** $\ln y=\tfrac{3}{2}\ln x+4\ln(2x-1)-\tfrac{1}{2}\ln(x^2+1)$
+**B2(b).** $\ln y=\tfrac{3}{2}\ln x+4\ln(2x-1)-\tfrac{1}{2}\ln(x^2+1)$
 
 $\dfrac{y'}{y}=\dfrac{3}{2x}+\dfrac{8}{2x-1}-\dfrac{x}{x^2+1}$
 
@@ -195,17 +148,9 @@ $y'=\dfrac{x^{3/2}(2x-1)^4}{\sqrt{x^2+1}}\!\left(\dfrac{3}{2x}+\dfrac{8}{2x-1}-\
 
 *Note: $\arctan(1/x)+\arctan x=\pi/2$ for $x>0$, consistent with $(\arctan x)'=1/(1+x^2)$ and $(\arctan(1/x))'=-1/(1+x^2)$.*
 
-**C1(e).** $y=\arcsin(\cos x)$; $y'=\dfrac{-\sin x}{\sqrt{1-\cos^2x}}=\dfrac{-\sin x}{|\sin x|}=\begin{cases}-1 & \sin x>0\\+1 & \sin x<0\end{cases}$
-
 **C2.** $(\arctan x)'=\dfrac{1}{1+x^2}$, $(\text{arccot}\,x)'=\dfrac{-1}{1+x^2}$. Sum $=0$.
 
 Since their derivatives sum to zero, $\arctan x+\text{arccot}\,x=C$ (constant). At $x=1$: $\arctan 1+\text{arccot}\,1=\pi/4+\pi/4=\pi/2$. So $C=\pi/2$.
-
-**C3.** $f(x)=\arcsin\!\left(\dfrac{2x}{1+x^2}\right)$. Let $x=\tan\theta$: $\dfrac{2\tan\theta}{1+\tan^2\theta}=\sin 2\theta$, so $f=\arcsin(\sin 2\theta)=2\theta=2\arctan x$.
-
-Therefore $f'(x)=\dfrac{2}{1+x^2}$.
-
-*(Verify directly: inner derivative $=\dfrac{2(1+x^2)-2x(2x)}{(1+x^2)^2}=\dfrac{2-2x^2}{(1+x^2)^2}$. Chain rule: $\dfrac{(2-2x^2)/(1+x^2)^2}{\sqrt{1-4x^2/(1+x^2)^2}}$. Simplify $1-\dfrac{4x^2}{(1+x^2)^2}=\dfrac{(1-x^2)^2}{(1+x^2)^2}$. So $f'=\dfrac{(2-2x^2)/(1+x^2)^2}{|1-x^2|/(1+x^2)}=\dfrac{2(1-x^2)}{(1+x^2)|1-x^2|}=\dfrac{2}{1+x^2}$ for $|x|<1$.)*
 
 ---
 
@@ -245,54 +190,13 @@ $2D\dfrac{dD}{dt}=2x\dfrac{dx}{dt}+2y\dfrac{dy}{dt}=2(2)(4)+2(1.5)(3)=16+9=25$
 
 $\dfrac{dD}{dt}=\dfrac{25}{2(2.5)}=5$ km/h.
 
-**D5.** Person is $4$ m from wall, so $12-4=8$ m from spotlight. Let $x=$ distance from spotlight to person, $s=$ shadow length on wall.
-
-By similar triangles (spotlight at ground level, person height 2m, wall height $H$):
-
-$\dfrac{H}{12}=\dfrac{2}{x}$ (similar triangles: light ray from spotlight over person's head to wall).
-
-$H=\dfrac{24}{x}$.
-
-The person walks **away from the spotlight, toward the wall**, at 1.5 m/s, so the distance from the
-spotlight is *increasing*: $\dfrac{dx}{dt}=+1.5$ m/s.
-
-> **Establish the sign before differentiating.** Writing $x=12-d$ (with $d$ the distance from the
-> wall) and then tracking $\frac{dd}{dt}=-1.5$ gives the same $\frac{dx}{dt}=+1.5$, but introduces a
-> second sign flip for no gain. Choose the variable that increases with the motion and the
-> bookkeeping stays simple. Marks here are for **internal consistency with the student's own stated
-> convention**, not for matching ours.
-
-$H=24/x$, so $\dfrac{dH}{dt}=-\dfrac{24}{x^2}\dfrac{dx}{dt}$.
-
-At $d=4$: $x=8$ m. $\dfrac{dH}{dt}=-\dfrac{24}{64}(1.5)=-\dfrac{36}{64}=-\dfrac{9}{16}$ m/s.
-
-Shadow height $H$ decreasing at $9/16$ m/s — shadow getting shorter.
-
-**D6.** $\ell=$ rope length, $x=$ horizontal distance, $h=3$ m constant.
-
-$\ell^2=x^2+9$. At $\ell=5$: $x=4$ m.
-
-$2\ell\dfrac{d\ell}{dt}=2x\dfrac{dx}{dt} \implies \dfrac{dx}{dt}=\dfrac{\ell}{x}\dfrac{d\ell}{dt}=\dfrac{5}{4}(-1)=-\dfrac{5}{4}$ m/s.
-
-Boat approaching dock at $5/4$ m/s.
-
 ---
 
 ## Part E — Mixed
 
-**E1.** Let $u=\dfrac{\sqrt{x}-1}{\sqrt{x}+1}$.
+**E1.** $y'=2\arcsin x\cdot\dfrac{1}{\sqrt{1-x^2}}=\dfrac{2\arcsin x}{\sqrt{1-x^2}}$
 
-$u'=\dfrac{\frac{1}{2\sqrt{x}}(\sqrt{x}+1)-(\sqrt{x}-1)\frac{1}{2\sqrt{x}}}{(\sqrt{x}+1)^2}=\dfrac{\frac{1}{2\sqrt{x}}[(\sqrt{x}+1)-(\sqrt{x}-1)]}{(\sqrt{x}+1)^2}=\dfrac{\frac{1}{\sqrt{x}}}{(\sqrt{x}+1)^2}$
-
-$y'=\dfrac{1}{1+u^2}\cdot u'$.
-
-$1+u^2=1+\dfrac{(\sqrt{x}-1)^2}{(\sqrt{x}+1)^2}=\dfrac{(\sqrt{x}+1)^2+(\sqrt{x}-1)^2}{(\sqrt{x}+1)^2}=\dfrac{2x+2}{(\sqrt{x}+1)^2}=\dfrac{2(x+1)}{(\sqrt{x}+1)^2}$
-
-$y'=\dfrac{(\sqrt{x}+1)^2}{2(x+1)}\cdot\dfrac{1/\sqrt{x}}{(\sqrt{x}+1)^2}=\dfrac{1}{2\sqrt{x}(x+1)}$
-
-**E2.** $y'=2\arcsin x\cdot\dfrac{1}{\sqrt{1-x^2}}=\dfrac{2\arcsin x}{\sqrt{1-x^2}}$
-
-**E3.** $y=e^{\arctan x}(1+x^2)^{1/2}$
+**E2.** $y=e^{\arctan x}(1+x^2)^{1/2}$
 
 $y'=e^{\arctan x}\cdot\dfrac{1}{1+x^2}\cdot(1+x^2)^{1/2}+e^{\arctan x}\cdot\dfrac{1}{2}(1+x^2)^{-1/2}\cdot2x$
 
@@ -300,11 +204,7 @@ Simplifying each term, and using $\dfrac{\sqrt{1+x^2}}{1+x^2}=\dfrac{1}{\sqrt{1+
 
 $=e^{\arctan x}\!\left[\dfrac{\sqrt{1+x^2}}{1+x^2}+\dfrac{x}{\sqrt{1+x^2}}\right]=e^{\arctan x}\!\left[\dfrac{1}{\sqrt{1+x^2}}+\dfrac{x}{\sqrt{1+x^2}}\right]=\dfrac{e^{\arctan x}(1+x)}{\sqrt{1+x^2}}$
 
-**E4.** $y=\ln(1+\sin x)-\ln(1-\sin x)$
-
-$y'=\dfrac{\cos x}{1+\sin x}+\dfrac{\cos x}{1-\sin x}=\cos x\cdot\dfrac{(1-\sin x)+(1+\sin x)}{1-\sin^2x}=\dfrac{2\cos x}{\cos^2x}=2\sec x$
-
-**E5.** $\ln y=x^2\ln x$
+**E3.** $\ln y=x^2\ln x$
 
 $\dfrac{y'}{y}=2x\ln x+x$
 
@@ -316,8 +216,4 @@ $y'=x^{x^2}(2x\ln x+x)=x^{x^2+1}(2\ln x+1)$
 
 **F1.** If you substitute $x=6$, $y=8$ into $x^2+y^2=100$ before differentiating, you get $100=100$, which differentiates to $0=0$ — a useless identity. The variables must remain variable during differentiation because we need to track how they change relative to each other. Specific numerical values are a single snapshot; the derivative captures the rate of change as we move through that snapshot.
 
-**F2(a).** $F=x^2+y^2-25$. $F_x=2x$, $F_y=2y$. $-F_x/F_y=-x/y$ ✓
-
-**F2(b).** $F=x^3+y^3-6xy$. $F_x=3x^2-6y$, $F_y=3y^2-6x$. $-F_x/F_y=-(3x^2-6y)/(3y^2-6x)=(2y-x^2)/(y^2-2x)$ ✓
-
-**F3.** The power rule $(x^n)'=nx^{n-1}$ requires $n$ to be a **constant**. In $y=x^x$, the exponent is $x$ — a variable. The student treated a variable exponent as a constant, which is invalid. The power rule and exponential rule each handle only one special case; $x^x$ is neither. Logarithmic differentiation gives the correct $y'=x^x(\ln x+1)$.
+**F2.** The power rule $(x^n)'=nx^{n-1}$ requires $n$ to be a **constant**. In $y=x^x$, the exponent is $x$ — a variable. The student treated a variable exponent as a constant, which is invalid. The power rule and exponential rule each handle only one special case; $x^x$ is neither. Logarithmic differentiation gives the correct $y'=x^x(\ln x+1)$.

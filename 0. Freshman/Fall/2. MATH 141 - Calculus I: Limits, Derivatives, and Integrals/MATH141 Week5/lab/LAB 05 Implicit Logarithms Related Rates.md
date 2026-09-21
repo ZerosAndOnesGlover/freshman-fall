@@ -1,9 +1,13 @@
 # MATH 141 · Calculus I
-## Lab 05 (Friday, Week 5)
+## Lab 05
 ### Implicit Curves, Logarithmic Derivatives, and Related Rates Simulation
 
+**Date:** Friday 30 October 2026 · 15:00–16:50 · Lab Section (Week 5) — covers Week 5 (Lectures 01–03)  
 **Duration:** 2 hours | **Tools:** Desmos, Python (optional)
-**Submission:** Written report due Monday, Week 6
+**Submission:** Written report due Monday 2 November 2026, 17:00 (Week 6)
+
+> *Revised 2026-09-21:* Exercise 1.3 (lemniscate) and Exercise 3.3 (design your own problem) removed to fit
+> the two hours.
 
 ---
 
@@ -17,7 +21,7 @@
 
 ---
 
-## Part 1 — Implicit Curves in Desmos (25 min)
+## Part 1 — Implicit Curves in Desmos (20 min)
 
 Desmos can plot implicit curves directly. Type the equation as-is (e.g., `x^2 + y^2 = 25`).
 
@@ -47,18 +51,6 @@ At the point $(2, 2)$: Verify this point lies on the curve. Compute $dy/dx$ ther
 **Question 1e:** Find all points where the tangent is horizontal (numerically from the graph, then verify algebraically by setting $2y - x^2 = 0$ and substituting back).
 
 **Question 1f:** Where is $dy/dx$ undefined on this curve? What is happening geometrically at those points?
-
----
-
-### Exercise 1.3 — Lemniscate of Bernoulli
-
-Graph $(x^2 + y^2)^2 = 4(x^2 - y^2)$ in Desmos (a figure-eight curve).
-
-**Question 1g:** Describe the shape. How many $x$-intercepts does it have? $y$-intercepts?
-
-**Question 1h:** Use implicit differentiation to find $dy/dx$. Show your work step by step.
-
-**Question 1i:** At the point $(1, 1)$ — verify it lies on the curve — find the tangent line and add it to Desmos.
 
 ---
 
@@ -99,7 +91,7 @@ At $x = 0$, the slope of $y = a^x$ is $\lim_{h\to0}\dfrac{a^h - 1}{h} = \ln a$.
 
 ---
 
-## Part 3 — Related Rates Simulation (35 min)
+## Part 3 — Related Rates Simulation (30 min)
 
 ### Exercise 3.1 — The Sliding Ladder (Numerical Simulation)
 
@@ -148,23 +140,6 @@ A balloon inflates so $r(t) = \sqrt{t}$ cm for $t > 0$ (in seconds).
 
 ---
 
-### Exercise 3.3 — Design Your Own Related Rates Problem
-
-**Question 3i:** Invent a related rates scenario involving one of the following:
-- A cone being filled with liquid
-- A shadow cast by a moving light source
-- Two objects moving toward/away from each other
-
-Write out:
-1. The physical setup (a few sentences + diagram)
-2. The equation relating the variables
-3. The rates given and the rate to find
-4. The full solution
-
-Exchange with a partner and check each other's work.
-
----
-
 ## Part 4 — Inverse Trig Derivatives Numerically (20 min)
 
 ### Exercise 4.1 — Verifying $(\arctan x)' = 1/(1+x^2)$
@@ -196,16 +171,15 @@ Include:
 1. Completed tables from Parts 1, 3, and 4
 2. Answers to all questions with clear labels
 3. Desmos screenshots for Parts 1 and 2 (showing curves, tangent lines, and derivative functions)
-4. Your original related rates problem from Exercise 3.3 with full solution
-5. **Reflection** (5–8 sentences): What is the most geometrically surprising result from today's lab? How does the visual behavior of implicit curves connect to what implicit differentiation computes algebraically?
+4. **Reflection** (5–8 sentences): What is the most geometrically surprising result from today's lab? How does the visual behavior of implicit curves connect to what implicit differentiation computes algebraically?
 
 **Grading:**
 
 | Section | Points |
 |---------|--------|
-| Part 1 — Implicit curves | 25 |
+| Part 1 — Implicit curves | 20 |
 | Part 2 — Logarithm derivative | 20 |
 | Part 3 — Related rates simulation | 30 |
-| Part 4 — Inverse trig verification | 15 |
+| Part 4 — Inverse trig verification | 20 |
 | Reflection | 10 |
 | **Total** | **100** |

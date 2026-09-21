@@ -249,5 +249,5 @@ $x\leq\tfrac12<1$); for $x>\tfrac12$, $f(x)=0\neq x$. Continuity is doing all th
 theorem — this is a one-dimensional case of the Brouwer fixed-point theorem.
 
 *Next Week: Week 2 — The Derivative: Definition, Geometric Meaning, and Basic Rules*  
-*Problem Set 1 released today (Wednesday). Due next Wednesday.*  
+*Problem Set 1 is due Wednesday 7 October 2026, 11:00.*  
 *Lab 1 is Friday — see lab instructions file.*

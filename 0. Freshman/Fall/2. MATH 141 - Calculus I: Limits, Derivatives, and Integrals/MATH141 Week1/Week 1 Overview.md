@@ -2,10 +2,10 @@
 ## Week 1 Overview and Instructor Notes
 
 **Topic:** Limits — Intuition, the ε-δ Definition, Infinite Limits and Limits at Infinity
-**Lectures:** Monday / Tuesday / Wednesday  
-**Lab:** Friday  
-**Quiz:** Monday (covers Week 0 — functions, algebra, trigonometry, exponentials/logarithms)
-**Problem Set 1:** Released Wednesday, due following Wednesday
+**Lectures:** Monday 28 Sep / Tuesday 29 Sep / Wednesday 30 September 2026, 11:00  
+**Lab:** Friday 2 October 2026, 15:00–16:50 (Lab 01)  
+**Quiz:** Monday 28 September 2026, 11:00–11:15 (covers Week 0 — functions, algebra, trigonometry, exponentials/logarithms)
+**Problem Set 1:** Released Wednesday 30 September 2026, 12:00 · due Wednesday 7 October 2026, 11:00
 
 ---
 

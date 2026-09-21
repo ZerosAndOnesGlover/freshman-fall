@@ -2,10 +2,10 @@
 ## Week 8 Overview and Instructor Notes
 
 **Topic:** Riemann Sums · The Definite Integral · Properties of the Definite Integral
-**Lectures:** Monday / Tuesday / Wednesday
-**Lab:** Friday
-**Quiz:** Monday (covers Week 7 — shape of a graph, curve sketching, applied optimization)
-**Problem Set 8:** Released Wednesday, due following Wednesday
+**Lectures:** Monday 16 Nov / Tuesday 17 Nov / Wednesday 18 November 2026, 11:00
+**Lab:** Friday 20 November 2026, 15:00–16:50 (Lab 08)
+**Quiz:** Monday 16 November 2026, 11:00–11:15 (covers Week 7 — shape of a graph, curve sketching, applied optimization)
+**Problem Set 8:** Released Wednesday 18 November 2026, 12:00 · due Wednesday 25 November 2026, 11:00
 
 ---
 

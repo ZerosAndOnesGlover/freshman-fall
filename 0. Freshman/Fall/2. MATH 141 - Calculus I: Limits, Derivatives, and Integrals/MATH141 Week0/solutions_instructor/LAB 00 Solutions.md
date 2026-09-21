@@ -68,32 +68,8 @@ cancellation *is* the derivative computation, done before they have the word for
 The h = 10⁻⁶ row shows 6.0000010009 rather than 6.000001 exactly: floating-point error is already
 visible, and Lab 1 pursues it.
 
-**3.3 The e^x surprise.** The limit (eʰ − 1)/h:
-
-| h | (eʰ − 1)/h |
-|---|---|
-| 1 | 1.7182818285 |
-| 0.1 | 1.0517091808 |
-| 0.01 | 1.0050167084 |
-| 0.001 | 1.0005001667 |
-| 10⁻⁶ | 1.0000005000 |
-
-**The limit is 1**, so (eˣ)′ = eˣ · 1 = eˣ: the function is its own derivative. This is the
-*defining* property of e, and the activity's job is to make it an observation before it is a rule.
-Try 2ˣ and 3ˣ for contrast — their limits are ln 2 ≈ 0.693 and ln 3 ≈ 1.099, bracketing 1, which is
-where e "lives".
-
----
-
-## Part 4 — The Mystery of |x| at 0
-
-Left-hand secant slopes are **−1**, right-hand are **+1**, for every h. They never approach a
-common value, so the two-sided limit does not exist and **|x| is not differentiable at 0** — despite
-being perfectly continuous there.
-
-**Continuity does not imply differentiability.** The graph has a *corner*: no single tangent line
-exists, because the slope jumps. Differentiability is the strictly stronger condition, and this is
-the cleanest counterexample in the course. (The converse *does* hold: differentiable ⇒ continuous.)
+*(2026-09-21: Activity 3.3 on eˣ and Part 4 on |x| were removed from the handout — they go past Lecture 03's
+one worked secant example.)*
 
 ---
 

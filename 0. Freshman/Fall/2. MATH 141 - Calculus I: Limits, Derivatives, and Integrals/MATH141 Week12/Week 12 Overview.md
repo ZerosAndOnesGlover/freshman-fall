@@ -10,14 +10,16 @@ your head, and one preview of where it goes next.
 
 | Day | Lecture | Topic |
 |---|---|---|
-| Monday | 1 | Review and Synthesis |
-| Tuesday | 2 | Taylor Polynomials: A Preview |
-| Wednesday | 3 | Final Preparation and the Road Ahead |
-| — | Lab 12 | Mixed Review and Self-Diagnosis |
+| Monday 14 Dec | 1 | Review and Synthesis |
+| Tuesday 15 Dec | 2 | Taylor Polynomials: A Preview |
+| Wednesday 16 Dec | 3 | Final Preparation and the Road Ahead |
+| Friday 18 Dec, 15:00 | Lab 12 | Mixed Review and Self-Diagnosis |
 
-**Quiz 12** at the start of Monday's lecture, covering Week 11.
+**Quiz 12** at the start of Monday 14 December 2026's lecture (11:00), covering Week 11.
 **Problem Set 12** — optional, ungraded revision set with full solutions.
-**Final Exam** in the examination period: comprehensive, 3 hours, one side of A4 handwritten notes.
+**Final Exam** Wednesday 23 December 2026, 09:00 (examination period): comprehensive,
+3 hours as written — *the registry slot and the syllabus both say 150 minutes (09:00–11:30), and the
+syllabus allows a 2-page cheat sheet, not one side; see the flag in the MATH 141 audit*, one side of A4 handwritten notes.
 
 ---
 

@@ -1,5 +1,7 @@
 # MATH 141 · Calculus I
 ## Quiz 08 (Monday, Week 8 — Start of Class)
+
+**Date:** Monday 16 November 2026 · 11:00–11:15 (start of Lecture 01) · Week 8
 ### Covers: Week 7 — Shape of a Graph, Curve Sketching, Applied Optimization
 
 **Time:** 15 minutes | **Closed book, closed notes**

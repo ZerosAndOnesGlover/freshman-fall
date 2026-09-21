@@ -19,9 +19,6 @@ The circle is not a function, and implicit differentiation is precisely the tool
 
 $$y' = \frac{ay - x^2}{y^2 - ax}$$
 
-**1.3 Lemniscate** (x²+y²)² = a²(x²−y²). Same method; the algebra is heavier and the point is that
-the *method* is unchanged no matter how unpleasant the curve.
-
 **The universal error to grade for:** dropping the dy/dx factor. Every y is a function of x, so
 d/dx(y³) = 3y²·(dy/dx). A student who writes 3y² has not done implicit differentiation at all.
 
@@ -49,7 +46,7 @@ faster.
 
 ## Part 3 — Related Rates
 
-**3.1 Sliding ladder.** L = 10 ft, base moving out at dx/dt = 2 ft/s. From x² + y² = 100,
+**3.1 Sliding ladder.** L = 10 ft, base moving out at dx/dt = 2 m/s. From x² + y² = 100,
 differentiating with respect to t gives 2x·x′ + 2y·y′ = 0, so **dy/dt = −x·x′/y**.
 
 | x (ft) | y (ft) | dy/dt (ft/s) |
@@ -60,7 +57,7 @@ differentiating with respect to t gives 2x·x′ + 2y·y′ = 0, so **dy/dt = �
 
 **dy/dt → −∞ as x → 10.** The top of the ladder accelerates without bound as the base nears the
 wall's distance. This is physically impossible — a real ladder's top cannot exceed the speed the
-model implies — and the reason is that the *constraint* "the base moves at constant 2 ft/s" becomes
+model implies — and the reason is that the *constraint* "the base moves at constant 2 m/s" becomes
 unsustainable. Students who notice the model breaks down have understood more than those who just
 report the number.
 

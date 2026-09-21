@@ -225,7 +225,7 @@ The formal justification for "Big-O dominance" in every algorithms course you'll
 
 ---
 
-## Lecture 1 Exercises
+## Lecture 3 Exercises
 
 1. Evaluate using L'Hôpital's Rule:
    - (a) $\displaystyle\lim_{x\to0}\frac{e^{2x}-1}{\sin x}$

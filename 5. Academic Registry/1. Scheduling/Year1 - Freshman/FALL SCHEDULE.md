@@ -43,7 +43,7 @@
 | **12:00** | 🍽️ Lunch Break                        | 🍽️ Lunch Break                        | 🍽️ Lunch Break                        | 🍽️ Lunch Break                        | 🍽️ Lunch Break                        |
 | **13:00** | 📖 **MATH151**<br>13:00–13:50<br>(LEC) | —                                      | 🎤 **CS190**<br>13:00–13:50<br>(SEM)   | 📖 **MATH151**<br>13:00–13:50<br>(LEC) | 📖 **MATH151**<br>13:00–13:50<br>(LEC) |
 | **14:00** | 📖 **PHYS141**<br>14:00–14:50<br>(LEC) | 📖 **PHYS141**<br>14:00–14:50<br>(LEC) | —                                      | 🔬 **PHYS141**<br>14:00–17:00<br>(LAB) | 📖 **PHYS141**<br>14:00–14:50<br>(LEC) |
-| **15:00** | 🔬 **PROG101**<br>15:00–16:50<br>(LAB) | 🔬 **CS101**<br>15:00–16:50<br>(LAB)   | 🔬 **MATH151**<br>15:00–16:50<br>(LAB) | —                                      | —                                      |
+| **15:00** | 🔬 **PROG101**<br>15:00–16:50<br>(LAB) | 🔬 **CS101**<br>15:00–16:50<br>(LAB)   | 🔬 **MATH151**<br>15:00–16:50<br>(LAB) | —                                      | 🔬 **MATH141**<br>15:00–16:50<br>(LAB)   |
 | **17:00** | —                                      | —                                      | —                                      | —                                      | —                                      |
 | **18:00** | 📚 Evening Study                       | 📚 Evening Study                       | 📚 Evening Study                       | 📚 Evening Study                       | 📚 Evening Study                       |
 
@@ -111,6 +111,7 @@
 12:00 – 13:00   Lunch
 13:00 – 13:50   📖 MATH 151 Lecture
 14:00 – 14:50   📖 PHYS 141 Lecture
+15:00 – 16:50   🔬 MATH 141 LAB SECTION (weekly, Weeks 0–12; covers that week's Mon–Wed lectures)
 17:00           ⚠️  PROBLEM SET DUE (courses anchored earlier in the week) — submit before 17:00 via portal.
                     Late penalty begins at 17:01.
 17:00 – 20:00   Weekend start — plan the weekend's study time now.
@@ -140,6 +141,7 @@
 | Wednesday | 15:00 | MATH 151 Lab begins |
 | Tuesday | Start of lecture | ⚠️ PROG 101 Quiz (Weeks 2–12) |
 | Thursday | 14:00 | PHYS 141 Lab begins (3 hrs) |
+| Friday | 15:00 | MATH 141 Lab begins |
 | Tuesday | 15:00 | CS 101 Lab begins |
 | Ongoing | TBD | Project milestones (see ASSESSMENT CALENDAR.md) |
 

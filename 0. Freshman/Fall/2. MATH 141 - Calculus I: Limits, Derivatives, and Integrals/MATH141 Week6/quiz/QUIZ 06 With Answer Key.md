@@ -1,5 +1,7 @@
 # MATH 141 · Calculus I
 ## Quiz 06 (Monday, Week 6 — Start of Class)
+
+**Date:** Monday 2 November 2026 · 11:00–11:15 (start of Lecture 01) · Week 6
 ### Covers: Week 5 — Implicit Differentiation, Logs, Inverse Trig, Related Rates
 
 **Time:** 15 minutes | **Closed book, closed notes**

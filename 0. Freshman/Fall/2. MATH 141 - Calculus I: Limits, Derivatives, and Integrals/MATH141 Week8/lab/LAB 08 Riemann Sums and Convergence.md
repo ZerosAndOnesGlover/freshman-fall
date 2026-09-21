@@ -1,9 +1,10 @@
 # MATH 141 · Calculus I
-## Lab 08 (Friday, Week 8)
+## Lab 08
 ### Riemann Sums, Convergence, and Sample-Point Independence
 
+**Date:** Friday 20 November 2026 · 15:00–16:50 · Lab Section (Week 8) — covers Week 8 (Lectures 01–03)  
 **Duration:** 2 hours | **Tools:** Desmos, Python
-**Submission:** Written report due Monday, Week 9
+**Submission:** Written report due Monday 23 November 2026, 17:00 (Week 9)
 **Total: 100 points**
 
 > **No antiderivatives in this lab.** The Fundamental Theorem arrives in Week 9. Every exact value

@@ -83,7 +83,7 @@ $$= \frac12\int_3^4 u^{-1/2}\,du = \frac12\left[2u^{1/2}\right]_3^4 = \left[\sqr
 
 ## 3. Symmetry — A Powerful Shortcut
 
-Recall Week 5's discussion (and Problem Set 6's Problem F3): even and odd functions have special integral properties. We can now PROVE these results rigorously using substitution.
+Recall Week 8 (Problem Set 8, D4): even and odd functions have special integral properties. We can now PROVE these results rigorously using substitution.
 
 > **Theorem (Symmetry in Integration).**
 >
@@ -107,7 +107,7 @@ $$\int_{-a}^a f(x)\,dx = \int_0^af(x)\,dx+\int_0^af(x)\,dx = 2\int_0^af(x)\,dx \
 
 $$\int_{-a}^a f(x)\,dx = -\int_0^af(x)\,dx+\int_0^af(x)\,dx = 0 \quad\square$$
 
-**This is exactly the proof promised (but deferred) in Problem Set 6, Problem F3** — the Substitution Rule was the missing tool.
+**This makes Problem Set 8 D4's area argument rigorous** — the Substitution Rule was the missing tool.
 
 ### Example 5
 

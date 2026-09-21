@@ -7,6 +7,9 @@
 
 ---
 
+> Lab sat Friday 2 October 2026. Revised 2026-09-21: Parts 2 (discontinuities) and 4 (bisection) removed —
+> both need Week 2. Part numbers are kept so they match the handout.
+
 ## Part 1 — When Numerical Tables Lie
 
 **1.1 A deceptive table.** The standard construction evaluates a function at points where it looks
@@ -57,21 +60,6 @@ was ill-conditioned.
 
 ---
 
-## Part 2 — Discontinuities
-
-| Type | Example | Behaviour |
-|---|---|---|
-| **Removable** | (x²−1)/(x−1) at x=1 | Limit exists (=2) but f(1) is undefined. A single point is missing; redefining f(1)=2 repairs it |
-| **Jump** | sign(x) at 0 | One-sided limits exist and **differ**; no redefinition can repair it |
-| **Infinite** | 1/x² at 0 | Function grows without bound; the limit does not exist (even as ±∞ it is not a real limit) |
-| **Floor** ⌊x⌋ | at every integer | Jump of 1 at each integer; right-continuous everywhere, left-discontinuous at integers |
-
-The floor function is the useful one: it is discontinuous at **infinitely many** points yet
-continuous on every open interval between them. Students should note it is **right**-continuous —
-lim(x→n⁺)⌊x⌋ = n = ⌊n⌋, while the left limit is n−1.
-
----
-
 ## Part 3 — The Special Trigonometric Limits
 
 | x | sin(x)/x | (1 − cos x)/x² |
@@ -96,33 +84,6 @@ problem as Part 1: 1 − cos x subtracts nearly equal quantities. The stable for
 **3.2 Geometric verification.** The squeeze cos x ≤ sin(x)/x ≤ 1 on (0, π/2) comes from comparing
 the areas of the inner triangle, the sector, and the outer triangle. Both bounds → 1, so the middle
 does too.
-
----
-
-## Part 4 — Bisection
-
-f(x) = x³ − x − 2 on [1,2]: f(1) = **−2**, f(2) = **4**. Opposite signs, f continuous, so the
-**Intermediate Value Theorem** guarantees a root in between.
-
-| Iteration | Bracket | Width |
-|---|---|---|
-| 1 | [1.500000000, 2.000000000] | 5.00 × 10⁻¹ |
-| 2 | [1.500000000, 1.750000000] | 2.50 × 10⁻¹ |
-| 3 | [1.500000000, 1.625000000] | 1.25 × 10⁻¹ |
-| 5 | [1.500000000, 1.531250000] | 3.12 × 10⁻² |
-| 10 | [1.520507812, 1.521484375] | 9.77 × 10⁻⁴ |
-| 12 | [1.521240234, 1.521484375] | 2.44 × 10⁻⁴ |
-
-Root ≈ **1.521362305**, with f ≈ −1.0 × 10⁻⁴.
-
-**The width halves every step**: after n steps it is (b−a)/2ⁿ, so reaching tolerance ε needs
-**n ≥ log₂((b−a)/ε)** iterations — about 3.3 steps per decimal digit. That predictability is
-bisection's selling point; Newton's method is faster but can diverge, while bisection **cannot
-fail** once a sign change is bracketed.
-
-Note the IVT guarantees *existence*, never uniqueness. A student who claims "exactly one root" from
-the IVT alone has over-concluded — here it happens to be true, but that needs a separate argument
-(f′ = 3x² − 1 > 0 on [1,2], so f is strictly increasing).
 
 ---
 

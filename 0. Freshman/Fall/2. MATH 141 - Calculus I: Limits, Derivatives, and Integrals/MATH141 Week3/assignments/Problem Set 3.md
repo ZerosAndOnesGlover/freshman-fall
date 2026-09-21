@@ -1,153 +1,76 @@
 # MATH 141 · Calculus I
 ## Problem Set 3
-### Topic: The Derivative — Definition, Rules, and Applications
-**Released:** Wednesday, Week 3 · **Due:** Wednesday, Week 4 (start of class)
+### Topic: The Derivative — Definition, Tangent Lines, and Differentiability
+**Released:** Wednesday 14 October 2026, 12:00 (after Lecture 03) · Week 3
+**Due:** Wednesday 21 October 2026, 11:00 (start of class) · Week 4 — late penalty after 11:00
+**Total:** 100 points
+
+**What this uses:** Week 3 only — the limit definition of the derivative (Lecture 01), the derivative as a
+function and numerical difference quotients (Lecture 02), and differentiability versus continuity
+(Lecture 03), plus Weeks 1–2's limits and continuity.
+
+**Not needed, and not allowed:** the differentiation rules (power, product, quotient, chain), which are
+Week 4. Every derivative here is computed **from the definition**.
+
+> *Revised 2026-09-21.* The earlier version was titled "Definition, Rules, and Applications": 36 points of
+> rule drills, a chain-rule part, higher derivatives, an ODE check and a quotient-rule proof, all of which need
+> Week 4 lectures that had not happened when the set was released. Rule practice is Problem Set 4's job.
 
 ---
 
-**Instructions:** Show all work. State which rule(s) you use at each step. Box final answers. Collaboration on ideas is permitted; all writing must be your own.
+**Instructions:** Show all work. Box final answers. Collaboration on ideas is permitted; all writing must be your own.
 
 ---
 
-## Part A — Derivatives from the Definition (5 pts each)
+## Part A — Derivatives from the Definition (32 pts, 8 each)
 
-For each function, compute $f'(x)$ using the limit definition $\displaystyle f'(x)=\lim_{h\to0}\frac{f(x+h)-f(x)}{h}$. Do NOT use differentiation rules.
+For each function, compute $f'(x)$ using $\displaystyle f'(x)=\lim_{h\to0}\frac{f(x+h)-f(x)}{h}$.
 
 **A1.** $f(x) = 4x^2 - 3x + 1$
 
 **A2.** $f(x) = \dfrac{1}{2x+3}$
 
-**A3.** $f(x) = \sqrt{x+4}$
+**A3.** $f(x) = \sqrt{x+4}$ *(rationalize the numerator)*
 
 **A4.** A function $f$ satisfies $f(x+h) - f(x) = 3x^2h + 3xh^2 + h^3$ for all $x, h$.
 - (a) Find $f'(x)$ using the definition.
-- (b) What is $f(x)$? (Recall: what function has this property?)
+- (b) Name a function $f$ with this property.
 
 ---
 
-## Part B — Differentiation Rules (3 pts each)
+## Part B — Tangent Lines and Velocity (32 pts)
 
-Differentiate. Simplify where reasonable. State every rule used.
+**B1.** *(8 pts)* For $f(x) = x^3$, find $f'(x)$ from the definition (expand $(x+h)^3$). Then write the equation of
+the tangent line at $x = 2$.
 
-**B1.** $y = 7x^6 - 4x^{3/2} + \dfrac{2}{x^2} - \pi$
+**B2.** *(8 pts)* For $y = x^3 - 4x$, find $y'$ from the definition and the tangent line at the point $(2, 0)$.
 
-**B2.** $y = (x^2+3)(x^3-5x+1)$ — use the product rule (do NOT expand first)
+**B3.** *(6 pts)* The tangent line to $y = f(x)$ at $x = 1$ passes through the point $(4, 10)$, and $f(1) = 4$. Find $f'(1)$.
 
-**B3.** $y = \dfrac{3x^2 - 2x + 1}{x^2 + 1}$
+**B4.** *(10 pts)* A particle moves along a line with position $s(t) = t^2 - 6t + 5$ metres ($t$ in seconds, $t \ge 0$).
 
-**B4.** $y = x^3\sin x$
-
-**B5.** $y = \dfrac{\cos x}{1 + \sin x}$
-
-**B6.** $y = (2x^3 - x + 4)^6$
-
-**B7.** $y = \sin(4x^2 - 1)$
-
-**B8.** $y = e^{3x^2+2x}$
-
-**B9.** $y = \sqrt{\tan x}$
-
-**B10.** $y = \cos^3(x^2)$ — three layers; identify each before differentiating
-
-**B11.** $y = \dfrac{e^x}{x^2+1}$
-
-**B12.** $y = x^2 e^{-x}\sin x$ — requires product rule twice (or extended product rule)
+- (a) Find the velocity $v(t) = s'(t)$ **from the definition**.
+- (b) When is the particle at rest, and where is it then?
+- (c) When is it moving in the positive direction?
 
 ---
 
-## Part C — Tangent Lines and Linear Approximation (5 pts each)
+## Part C — Conceptual Understanding (36 pts)
 
-**C1.** Find the equation of the tangent line and normal line to $y = x^3 - 4x$ at the point $(2, 0)$.
+**C1.** *(8 pts)* Explain in precise language why the statement "the slope of $y = x^2$ at $x = 3$ is $6$" means
+$\displaystyle\lim_{h\to0}\frac{(3+h)^2 - 9}{h} = 6$. Then verify the limit algebraically.
 
-*(The normal line is perpendicular to the tangent line at the point of tangency.)*
-
-**C2.** Find all points on the curve $y = x^4 - 2x^2$ where the tangent line is horizontal.
-
-**C3.** The tangent line to $y = f(x)$ at $x = 1$ passes through the point $(4, 10)$, and $f(1) = 4$. Find $f'(1)$.
-
-**C4.** Use the linearization $L(x) = f(a) + f'(a)(x-a)$ to approximate:
-- (a) $\sqrt{9.04}$ by linearizing $f(x) = \sqrt{x}$ at $a = 9$
-- (b) $(1.002)^{10}$ by linearizing $f(x) = x^{10}$ at $a = 1$
-
-For each, compute the exact value with a calculator and find the percentage error.
-
----
-
-## Part D — Higher-Order Derivatives and Physics (4 pts each)
-
-**D1.** For $f(x) = x^5 - 10x^3 + 15x$, find $f'(x)$, $f''(x)$, $f'''(x)$, and $f^{(4)}(x)$.
-
-**D2.** Find $y''$ for $y = x\cos x$.
-
-**D3.** A particle moves along a line with position $s(t) = t^3 - 6t^2 + 9t + 2$ (meters, $t$ in seconds, $t \geq 0$).
-
-- (a) Find the velocity $v(t) = s'(t)$ and acceleration $a(t) = s''(t)$.
-- (b) When is the particle at rest?
-- (c) When is the particle moving in the positive direction?
-- (d) When is the acceleration positive? What does this mean physically?
-- (e) Find the total distance traveled in the first 4 seconds. *(Hint: find where velocity changes sign.)*
-
-**D4.** Prove that $y = e^{-x}\sin x$ satisfies the equation $y'' + 2y' + 2y = 0$.
-
-*(This is a second-order linear ODE — the type governing damped oscillators in physics and electrical circuits. You'll see these again in differential equations.)*
-
----
-
-## Part E — Chain Rule and Composition (4 pts each)
-
-**E1.** Find $\dfrac{dy}{dx}$ using the chain rule. Identify the outer and inner functions explicitly before differentiating.
-
-- (a) $y = \sin^5(3x)$
-- (b) $y = e^{\cos(2x)}$
-- (c) $y = \left(\dfrac{x+1}{x-1}\right)^3$
-
-**E2.** The following information is known:
-
-| $x$ | $f(x)$ | $f'(x)$ | $g(x)$ | $g'(x)$ |
-|-----|--------|---------|--------|---------|
-| 1 | 3 | $-2$ | 2 | 5 |
-| 2 | 1 | 4 | 1 | $-3$ |
-| 3 | 2 | 1 | 3 | 0 |
-
-Find:
-- (a) $(f\circ g)'(1)$
-- (b) $(g\circ f)'(2)$
-- (c) $\left(\dfrac{f}{g}\right)'(3)$
-- (d) $(f\cdot g\circ f)'(1)$
-
----
-
-## Part F — Conceptual Understanding (5 pts each)
-
-**F1.** A student claims: "Since $(fg)' = f'g + fg'$, we have $(fff)' = f'ff + ff'f + fff' = 3f^2f'$ by the same logic." Is the student correct? Either justify the claim by applying the product rule twice, or find the error.
-
-**F2.** Explain in precise mathematical language why the statement "the slope of $y = x^2$ at $x = 3$ is $6$" means $\displaystyle\lim_{h\to0}\frac{(3+h)^2 - 9}{h} = 6$. Then verify this limit algebraically.
-
-**F3 (Differentiability vs Continuity).** For each function, determine: is $f$ continuous at $x=0$? Is $f$ differentiable at $x=0$? Justify each answer.
+**C2 (Differentiability vs Continuity).** *(15 pts, 5 each)* Is $f$ continuous at $x=0$? Is $f$ differentiable at
+$x=0$? Justify each from the definitions.
 
 - (a) $f(x) = |x|$
 - (b) $f(x) = x|x|$
-- (c) $f(x) = \begin{cases} x^2\sin(1/x) & x\neq 0 \\ 0 & x=0 \end{cases}$
+- (c) $f(x) = \begin{cases} x^2\sin(1/x) & x\neq 0 \\ 0 & x=0 \end{cases}$ *(use the Squeeze Theorem on the difference quotient)*
 
-*(Part (c) is hard — compute the derivative from the definition directly.)*
-
----
-
-## Part G — Challenge (6 pts bonus)
-
-**G1.** Prove the **quotient rule** from the **product rule** and the **chain rule** as follows:
-
-Write $\dfrac{f}{g} = f\cdot(g)^{-1}$. Apply the product rule to get $\left(\dfrac{f}{g}\right)' = f'\cdot g^{-1} + f\cdot(g^{-1})'$.
-
-Then use the chain rule to find $(g^{-1})' = \dfrac{d}{dx}[g(x)^{-1}]$.
-
-Combine to recover the standard quotient rule formula.
-
-**G2.** A function $f$ is differentiable everywhere and satisfies $f(x+y) = f(x)f(y)$ for all $x, y\in\mathbb{R}$, and $f(0) = 1$, $f'(0) = k$.
-
-- (a) Show $f(0) = 1$ is consistent with the functional equation.
-- (b) Differentiate both sides of $f(x+y)=f(x)f(y)$ with respect to $x$ (treating $y$ as constant), then set $x=0$ to show $f'(y) = k\cdot f(y)$.
-- (c) What well-known function satisfies both $f(x+y)=f(x)f(y)$ and $f'(x)=kf(x)$?
+**C3 (Numerical derivative).** *(13 pts)* For $f(x) = 2^x$, compute the forward difference quotient
+$\dfrac{f(1+h)-f(1)}{h}$ and the central difference quotient $\dfrac{f(1+h)-f(1-h)}{2h}$ for $h = 0.1, 0.01, 0.001$
+(calculator or Python), to six decimal places. Which converges faster? The exact value is $2\ln 2 \approx 1.386294$ (you will derive it in Week 5); how many
+correct digits does each quotient give at $h = 0.001$?
 
 ---
 
@@ -155,11 +78,7 @@ Combine to recover the standard quotient rule formula.
 
 | Part | Points | Focus |
 |------|--------|-------|
-| A (4 × 5) | 20 | Definition — no rules allowed |
-| B (12 × 3) | 36 | Rule fluency |
-| C (4 × 5) | 20 | Geometric applications |
-| D (4 × 4) | 16 | Higher derivatives, physics |
-| E (2 × 4) | 8 | Chain rule depth |
-| F (3 × 5) | 15 | Conceptual understanding |
-| G bonus | 12 | Proof and theory |
-| **Total** | **115 + 12 bonus** | |
+| A | 32 | Derivatives from the definition |
+| B | 32 | Tangent lines and velocity |
+| C | 36 | Meaning, differentiability, numerical derivatives |
+| **Total** | **100** | |

@@ -148,7 +148,8 @@ PATTERNS = [
     # ### 2.1 (8 points) Trace this code...
     re.compile(r"^###\s+(\d+\.\d+)\s*\((\d+)\s*(?:points?|pts?)\)\s*(.*?)$", re.M),
     # ## Part C: Applied — Log Analyser (12 points)
-    re.compile(r"^##\s+(Part\s+[A-Z])[:.]?\s*(.*?)\s*\((\d+)\s*(?:bonus\s+)?(?:points?|pts?)\)", re.M),
+    # ## Part A — Mechanical Differentiation (40 pts, 5 each)   -- MATH 141
+    re.compile(r"^##\s+(Part\s+[A-Z])[:.]?\s*(.*?)\s*\((\d+)\s*(?:bonus\s+)?(?:points?|pts?)(?:,[^)\n]*)?\)", re.M),
     # ## Problem 3: A Multi-File Program (30 pts)          -- PROG 101
     re.compile(r"^##\s+(Problem\s+\d+)[:.]?\s*(.*?)\s*\((\d+)\s*(?:points?|pts?)\)", re.M),
     # ### Part A: Newton's First and Second Laws (Problems 1-7) — 35 pts   -- PHYS 141

@@ -1,8 +1,9 @@
 # MATH 141 · Calculus I
-## Lab 01 (Friday, Week 1)
+## Lab 01
 ### Numerical and Graphical Investigation of Limits
 
-**Duration:** 2 hours | **Submission:** End of lab session + written report due Monday, Week 2  
+**Date:** Friday 2 October 2026 · 15:00–16:50 · Lab Section (Week 1) — covers Week 1 (Lectures 01–03)  
+**Duration:** 2 hours | **Submission:** End of lab session + written report due Monday 5 October 2026, 11:00  
 **Tools:** Desmos (desmos.com), Python (optional), pen and paper for proofs
 
 ---
@@ -12,9 +13,11 @@
 By the end of this lab you will:
 1. Distinguish between limits that can be evaluated by substitution and those that cannot
 2. Understand the limitations of numerical tables for limit estimation
-3. Observe graphically the three types of discontinuity
-4. Verify the two special trigonometric limits numerically and geometrically
-5. Use bisection (IVT) to locate a root to four decimal places
+3. Verify the two special trigonometric limits numerically and geometrically
+4. Build intuition for the ε-δ definition
+
+*(Revised 2026-09-21: the discontinuity-types and bisection parts need Week 2 — continuity and the IVT —
+and were removed; they now belong to Lab 02.)*
 
 ---
 
@@ -75,66 +78,6 @@ The rationalized form is $g(x) = \dfrac{1}{\sqrt{1+x}+1}$ (derive this yourself 
 
 ---
 
-## Part 2 — Graphical Investigation of Discontinuities (25 min)
-
-For each function, use Desmos to graph it, then answer the questions.
-
-### Exercise 2.1 — Removable Discontinuity
-
-$$f(x) = \frac{x^3 - 8}{x - 2}$$
-
-**Question 2a:** Graph $f$ on Desmos. What does the graph look like near $x = 2$? Describe precisely.
-
-**Question 2b:** Algebraically simplify $f(x)$ for $x \neq 2$. What is $\lim_{x \to 2} f(x)$?
-
-**Question 2c:** Define $g(x)$ to be the continuous extension of $f$. Write the formula for $g(x)$ as a single expression valid for all $x \in \mathbb{R}$.
-
-**Question 2d:** On Desmos, plot both $f(x)$ and $g(x)$. What is the visual difference?
-
----
-
-### Exercise 2.2 — Jump Discontinuity
-
-$$h(x) = \frac{|2x - 4|}{2x - 4}$$
-
-**Question 2e:** Graph $h$ on Desmos. Describe the graph completely — what is it for $x < 2$? For $x > 2$? At $x = 2$?
-
-**Question 2f:** Compute $\lim_{x \to 2^-} h(x)$ and $\lim_{x \to 2^+} h(x)$ algebraically.
-
-**Question 2g:** Explain why this discontinuity cannot be removed (unlike Exercise 2.1).
-
----
-
-### Exercise 2.3 — Infinite Discontinuity
-
-$$k(x) = \frac{x + 1}{x^2 - x - 6}$$
-
-**Question 2h:** Factor the denominator. Where are the vertical asymptotes?
-
-**Question 2i:** For each vertical asymptote $x = a$, determine:
-- $\lim_{x \to a^-} k(x)$
-- $\lim_{x \to a^+} k(x)$
-
-Use Desmos to verify your answers graphically.
-
-**Question 2j:** Does this function have any removable discontinuities? Explain.
-
----
-
-### Exercise 2.4 — The Floor Function (Jump Discontinuity at Every Integer)
-
-The **floor function** $f(x) = \lfloor x \rfloor$ (greatest integer $\leq x$) is available in Desmos as `floor(x)`.
-
-**Question 2k:** Graph $\lfloor x \rfloor$ on Desmos for $x \in [-3, 4]$. At which points is it discontinuous?
-
-**Question 2l:** For a general integer $n$, compute $\lim_{x \to n^-} \lfloor x \rfloor$ and $\lim_{x \to n^+} \lfloor x \rfloor$.
-
-**Question 2m:** Is $f(x) = \lfloor x \rfloor$ left-continuous or right-continuous at integers? (A function is right-continuous at $a$ if $\lim_{x \to a^+} f(x) = f(a)$.)
-
-> **CS Connection:** The floor function is used in hash table indexing (`bucket = hash(key) % n`), pagination (page number = `floor(item_index / page_size)`), and fixed-point arithmetic. Understanding its discontinuities explains why boundary conditions in index calculations require careful handling.
-
----
-
 ## Part 3 — Verifying the Special Trigonometric Limits (20 min)
 
 ### Exercise 3.1 — Numerical Verification
@@ -177,47 +120,6 @@ Compute and compare the three areas:
 
 ---
 
-## Part 4 — The Bisection Method (25 min)
-
-### Exercise 4.1 — Locating a Root
-
-Consider $f(x) = x^3 - 2x - 5$.
-
-**Question 4a:** Verify that $f(2) < 0$ and $f(3) > 0$. This establishes a root in $(2, 3)$ by IVT.
-
-**Question 4b:** Complete the bisection table below. At each step, compute $f(m)$ where $m$ is the midpoint, then choose the new interval.
-
-| Step | $a$ | $b$ | $m = (a+b)/2$ | $f(m)$ | New interval |
-|------|-----|-----|---------------|--------|--------------|
-| 0 | 2 | 3 | 2.5 | | |
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
-| 6 | | | | | |
-| 7 | | | | | |
-
-**Question 4c:** After 7 steps, what interval contains the root? How long is this interval? What is the guaranteed accuracy of your approximation?
-
-**Question 4d:** The exact root is approximately $x \approx 2.0946$. How many bisection steps would be needed to guarantee 6 decimal places of accuracy? Show your reasoning using the formula: after $n$ steps, interval length $= (b-a)/2^n$.
-
-**Question 4e:** In Python (or pseudocode), write a bisection function:
-
-```python
-def bisect(f, a, b, tol=1e-6, max_iter=100):
-    """
-    Find a root of f in [a, b] using bisection.
-    Preconditions: f(a) and f(b) have opposite signs.
-    """
-    # Your implementation here
-    pass
-```
-
-**Question 4f:** How does bisection connect to binary search in computer science? What is the time complexity (in terms of number of function evaluations) to achieve precision $\varepsilon$ starting from interval $[a, b]$?
-
----
-
 ## Part 5 — Open Investigation: Building Intuition for ε-δ (20 min)
 
 ### Exercise 5.1 — Interactive Epsilon-Delta
@@ -240,20 +142,17 @@ Set $\varepsilon = 0.5$ using a Desmos slider.
 
 Submit a typed or handwritten report containing:
 
-1. **Completed tables** from Parts 1, 3, and 4
+1. **Completed tables** from Parts 1 and 3
 2. **Written answers** to all Questions (label each clearly)
-3. **Desmos screenshots** for Exercises 2.1–2.4 and 3.2
-4. **Bisection code** from Exercise 4.5 (can be pseudocode or Python)
-5. **Reflection paragraph** (5–8 sentences): What was the most surprising thing you discovered in this lab? What does it tell you about the relationship between numerical evidence and mathematical proof?
+3. **Desmos screenshot** for Exercise 3.2
+4. **Reflection paragraph** (5–8 sentences): What was the most surprising thing you discovered in this lab? What does it tell you about the relationship between numerical evidence and mathematical proof?
 
 **Grading:**
 
 | Section | Points |
 |---------|--------|
-| Part 1 — Deceptive tables | 20 |
-| Part 2 — Discontinuity types | 20 |
-| Part 3 — Trig limits | 20 |
-| Part 4 — Bisection | 25 |
-| Part 5 — ε-δ exploration | 10 |
-| Reflection | 5 |
+| Part 1 — Deceptive tables | 35 |
+| Part 3 — Trig limits | 35 |
+| Part 5 — ε-δ exploration | 20 |
+| Reflection | 10 |
 | **Total** | **100** |

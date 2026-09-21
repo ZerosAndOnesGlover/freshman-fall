@@ -1,5 +1,7 @@
 # MATH 141 · Quiz 09
 ## Administered: start of Week 9, Monday
+
+**Date:** Monday 23 November 2026 · 11:00–11:15 (start of Lecture 01) · Week 9
 ### Covers: Week 8 — Riemann sums, the definite integral, and its properties
 
 **Duration:** 15 minutes · Closed book · **20 points**

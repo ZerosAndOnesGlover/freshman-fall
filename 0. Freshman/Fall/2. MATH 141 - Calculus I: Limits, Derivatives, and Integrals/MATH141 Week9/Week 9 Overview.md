@@ -11,13 +11,13 @@ intractable limit into an antiderivative evaluated twice.
 
 | Day | Lecture | Topic |
 |---|---|---|
-| Monday | 1 | The Fundamental Theorem, Part 1 |
-| Tuesday | 2 | FTC Part 2 and Evaluation |
-| Wednesday | 3 | Accumulation and Functions Defined by Integrals |
-| — | Lab 09 | Accumulation Functions and the FTC Numerically |
+| Monday 23 Nov | 1 | The Fundamental Theorem, Part 1 |
+| Tuesday 24 Nov | 2 | FTC Part 2 and Evaluation |
+| Wednesday 25 Nov | 3 | Accumulation and Functions Defined by Integrals |
+| Friday 27 Nov, 15:00 | Lab 09 | Accumulation Functions and the FTC Numerically |
 
-**Quiz 09** at the start of Monday's lecture, covering Week 8.
-**Problem Set 9** due Wednesday of Week 10.
+**Quiz 09** at the start of Monday 23 November 2026's lecture (11:00), covering Week 8.
+**Problem Set 9** released Wednesday 25 November 2026, 12:00; due Wednesday 2 December 2026, 11:00 (Week 10).
 
 ---
 

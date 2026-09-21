@@ -36,21 +36,22 @@ status: in-progress
 
 ## Problem Sets — 30%, lowest 1 dropped
 
-*Problem Set 12 is an ungraded self-diagnostic and is deliberately absent from this table.*
+*Problem Set 12 is an ungraded self-diagnostic and is deliberately absent from this table. Every set was
+normalised to 100 points on 2026-09-21 when the sets were cut back to what had been taught.*
 
 | Item | Topic | Possible | Earned |
 |---|---|---|---|
 | PS 0 | Functions, algebra, trigonometry review | 100 | |
-| PS 1 | Limits, ε-δ, limits at infinity | 65 | |
+| PS 1 | Limits, ε-δ, limits at infinity | 100 | |
 | PS 2 | Continuity, discontinuity, the IVT | 100 | |
-| PS 3 | The derivative and differentiability | 115 | |
+| PS 3 | The derivative and differentiability | 100 | |
 | PS 4 | Differentiation rules, chain rule, higher derivatives | 100 | |
-| PS 5 | Implicit differentiation, logs, inverse trig, related rates | 140 | |
-| PS 6 | Extrema, Rolle, MVT, L'Hôpital | 125 | |
-| PS 7 | Shape of a graph, curve sketching, optimization | 167 | |
+| PS 5 | Implicit differentiation, logs, inverse trig, related rates | 100 | |
+| PS 6 | Extrema, Rolle, MVT, L'Hôpital | 100 | |
+| PS 7 | Shape of a graph, curve sketching, optimization | 100 | |
 | PS 8 | Riemann sums, the definite integral, properties | 100 | |
 | PS 9 | The Fundamental Theorem of Calculus | 100 | |
-| PS 10 | Substitution, symmetry, integration by parts | 157 | |
+| PS 10 | Substitution, symmetry, integration by parts | 100 | |
 | PS 11 | Areas, volumes, accumulation | 100 | |
 
 ---
@@ -83,19 +84,19 @@ status: in-progress
 
 | Item | Topic | Possible | Earned |
 |---|---|---|---|
-| Lab 0 | Graphical exploration | 100 | |
+| Lab 0 | Graphical exploration *(ungraded orientation — leave blank)* | 100 | |
 | Lab 1 | Limits numerically and graphically | 100 | |
 | Lab 2 | Continuity and bisection | 20 | |
 | Lab 3 | Derivative exploration | 100 | |
 | Lab 4 | Rules, chains, and motion | 20 | |
 | Lab 5 | Implicit, logarithms, related rates | 100 | |
-| Lab 6 | Extrema, MVT, curve shape | 100 | |
+| Lab 6 | Extrema, MVT, L'Hôpital | 100 | |
 | Lab 7 | L'Hôpital, curve sketching, optimization | 100 | |
 | Lab 8 | Riemann sums and convergence | 100 | |
 | Lab 9 | Accumulation and the FTC | 20 | |
 | Lab 10 | Substitution, parts, tabular | 100 | |
 | Lab 11 | Areas, volumes, numerical checks | 20 | |
-| Lab 12 | Mixed review and self-diagnosis | 100 | |
+| Lab 12 | Mixed review and self-diagnosis *(ungraded — leave blank)* | 100 | |
 
 > **Differing lab totals are intentional, not an error.** Each lab is scored out of the total printed
 > on it; `gpa.py` converts every row to a percentage before averaging, so a 20-point lab and a

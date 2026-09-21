@@ -1,90 +1,73 @@
 # MATH 141 · Calculus I
 ## Problem Set 7
-### Topic: L'Hôpital's Rule, Curve Sketching, Applied Optimization
-**Released:** Wednesday, Week 7 · **Due:** Wednesday, Week 8 (start of class)
+### Topic: Shape of a Graph, Curve Sketching, Applied Optimization
+**Released:** Wednesday 11 November 2026, 12:00 (after Lecture 03) · Week 7
+**Due:** Wednesday 18 November 2026, 11:00 (start of class) · Week 8 — late penalty after 11:00
+**Total:** 100 points
+
+**What this uses:** Week 7 — increasing/decreasing, the First and Second Derivative Tests and concavity
+(Lecture 01), curve sketching and slant asymptotes (Lecture 02), applied optimization (Lecture 03) — plus
+Week 6's extrema, MVT and L'Hôpital's Rule.
+
+**Not needed:** Newton's method, antiderivatives, anything from Week 8 on.
+
+> *Revised 2026-09-21.* Cut from 167 to 100 points. The old Parts A–B were 50 points of L'Hôpital drills —
+> a Week 6 topic, now practised in Problem Set 6 — and are reduced to a two-question review. Curve
+> sketching keeps three of five functions; optimization keeps four of six; the L'Hôpital proof questions
+> (old E1–E2) were removed.
 
 ---
 
-## Part A — L'Hôpital's Rule: Basic Forms (3 pts each)
-
-**A1.** Evaluate using L'Hôpital's Rule. Verify the indeterminate form before applying.
-
-- (a) $\displaystyle\lim_{x\to0}\frac{\sin 3x}{x}$ (verify against the Week 1 special trig limit method)
-- (b) $\displaystyle\lim_{x\to1}\frac{\ln x}{x-1}$
-- (c) $\displaystyle\lim_{x\to\infty}\frac{5x^2+3x}{2x^2-1}$ (verify against the Week 1 algebraic method — divide by highest power)
-- (d) $\displaystyle\lim_{x\to0}\frac{e^x-e^{-x}}{\sin x}$
-- (e) $\displaystyle\lim_{x\to\pi/2}\frac{\cos x}{x-\pi/2}$
-- (f) $\displaystyle\lim_{x\to\infty}\frac{\ln(\ln x)}{\ln x}$
-
-**A2.** Some of these require applying L'Hôpital's Rule more than once. Evaluate:
-
-- (a) $\displaystyle\lim_{x\to0}\frac{x-\sin x}{x^3}$
-- (b) $\displaystyle\lim_{x\to0}\frac{e^x-1-x-x^2/2}{x^3}$
-- (c) $\displaystyle\lim_{x\to\infty}\frac{x^3}{e^{2x}}$
+**Instructions:** Show all work. Box final answers. Collaboration on ideas is permitted; all writing must be your own.
 
 ---
 
-## Part B — Other Indeterminate Forms (4 pts each)
+## Part A — L'Hôpital Review (10 pts, 5 each)
 
-**B1.** Convert to $0/0$ or $\infty/\infty$, then apply L'Hôpital's Rule:
+**A1.** $\displaystyle\lim_{x\to0}\frac{x-\sin x}{x^3}$ *(you may need the rule more than once)*
 
-- (a) $\displaystyle\lim_{x\to0^+}\sqrt{x}\ln x$ *(form $0\cdot\infty$)*
-- (b) $\displaystyle\lim_{x\to\infty}xe^{-x}$ *(form $0\cdot\infty$)*
-- (c) $\displaystyle\lim_{x\to0}\left(\frac{1}{x}-\csc x\right)$ *(form $\infty-\infty$)*
-- (d) $\displaystyle\lim_{x\to1^+}\left(\frac{1}{\ln x}-\frac{1}{x-1}\right)$ *(form $\infty-\infty$)*
-
-**B2.** Use logarithms to handle these exponential indeterminate forms:
-
-- (a) $\displaystyle\lim_{x\to0^+}(1+2x)^{1/x}$ *(form $1^\infty$)*
-- (b) $\displaystyle\lim_{x\to\infty}x^{1/\ln x}$ *(form $\infty^0$)*
-- (c) $\displaystyle\lim_{x\to0^+}(\sin x)^x$ *(form $0^0$)*
-- (d) $\displaystyle\lim_{x\to\infty}\left(1-\frac{3}{x}\right)^{2x}$ *(form $1^\infty$)*
-
-**B3.** Explain why L'Hôpital's Rule cannot be directly applied to $\displaystyle\lim_{x\to\infty}\frac{x+\cos x}{x}$ in a way that terminates usefully. Solve this limit correctly using an alternative method, and explain the general lesson.
+**A2.** $\displaystyle\lim_{x\to0^+}(1+2x)^{1/x}$ *(form $1^\infty$)*
 
 ---
 
-## Part C — Complete Curve Sketching (10 pts each)
+## Part B — Complete Curve Sketching (36 pts, 12 each)
 
 For each function, perform the FULL curve sketching analysis: domain, intercepts, symmetry, all asymptotes, intervals of increase/decrease, classified local extrema, intervals of concavity, inflection points. State each result clearly (you do not need to submit an actual hand-drawn graph, but your written analysis should be complete enough that someone else could sketch it accurately from your work).
 
-**C1.** $f(x) = \dfrac{2x^2}{x^2-1}$
+**B1.** $f(x) = \dfrac{2x^2}{x^2-1}$
 
-**C2.** $f(x) = x^4 - 2x^2 + 1$
+**B2.** $f(x) = \dfrac{x^2+1}{x}$ *(has a slant asymptote)*
 
-**C3.** $f(x) = \dfrac{x^2+1}{x}$ *(has a slant asymptote)*
-
-**C4.** $f(x) = x^2 e^{-x}$
-
-**C5.** $f(x) = \ln(x^2+1)$
+**B3.** $f(x) = x^2 e^{-x}$
 
 ---
 
-## Part D — Applied Optimization (7 pts each)
+## Part C — Applied Optimization (40 pts, 10 each)
 
-For each problem, follow the full 8-step strategy: set up variables, write objective and constraint, reduce to one variable, state domain, differentiate, find and verify critical numbers, answer the question with correct units and physical interpretation.
+For each problem: define variables, write the objective function and the constraint, reduce to one variable
+with its domain, find critical numbers, and **justify** that you have a maximum or minimum.
 
-**D1.** A rectangular box (with a square base and open top) must have volume $32{,}000\ \text{cm}^3$. Find the dimensions that minimize the amount of material used.
+**C1.** A rectangular box (with a square base and open top) must have volume $32{,}000\ \text{cm}^3$. Find the dimensions that minimize the amount of material used.
 
-**D2.** A rectangle is inscribed in the ellipse $\dfrac{x^2}{16}+\dfrac{y^2}{9}=1$ with sides parallel to the axes. Find the dimensions of the rectangle with maximum area.
+**C2.** A rectangle is inscribed in the ellipse $\dfrac{x^2}{16}+\dfrac{y^2}{9}=1$ with sides parallel to the axes. Find the dimensions of the rectangle with maximum area.
 
-**D3.** A piece of wire $20$ m long is cut into two pieces. One piece is bent into a square, the other into an equilateral triangle. How should the wire be cut to (a) maximize and (b) minimize the total enclosed area? *(For (a), consider the boundary case carefully — the answer may involve using all the wire for one shape.)*
+**C3.** A retailer sells $x$ units of a product per month at price $p(x) = 200 - 0.5x$ dollars. The cost to produce $x$ units is $C(x) = 3000 + 40x$. Find the production level $x$ that maximizes profit, and compute the maximum profit.
 
-**D4.** Find the dimensions of the right circular cylinder of maximum volume that can be inscribed in a sphere of radius $R$.
-
-**D5.** A retailer sells $x$ units of a product per month at price $p(x) = 200 - 0.5x$ dollars. The cost to produce $x$ units is $C(x) = 3000 + 40x$. Find the production level $x$ that maximizes profit, and compute the maximum profit.
-
-**D6.** A window is in the shape of a rectangle topped by a semicircle. The perimeter of the entire window (including the diameter of the semicircle, which is NOT part of the perimeter since it's internal) is $10$ m. Find the dimensions that maximize the area of the window admitting the most light.
+**C4.** A window is a rectangle topped by a semicircle. Its outer boundary — the bottom and two sides of the
+rectangle plus the semicircular arc — is $10$ m long. (The diameter where the semicircle meets the rectangle
+is inside the window and is not counted.) Find the dimensions that maximize the area of the window.
 
 ---
 
-## Part E — Conceptual and Proof (5 pts each)
+## Part D — Conceptual (14 pts)
 
-**E1.** State precisely what conditions must be verified before applying L'Hôpital's Rule. Give an example (different from the lecture) where blindly applying the rule without checking the indeterminate form gives an incorrect answer.
+**D1.** *(8 pts)* Consider $f_1(x)=x^4$, $f_2(x)=-x^4$ and $f_3(x)=x^3$.
+- (a) Show that $f'(0)=0$ and $f''(0)=0$ for all three.
+- (b) Classify $x=0$ for each (local min, local max, or neither) using the First Derivative Test.
+- (c) What do (a) and (b) together say about the Second Derivative Test when $f''(c)=0$?
 
-**E2.** Explain the logical connection between L'Hôpital's Rule and the Mean Value Theorem discussed in Week 6. Specifically, describe how Cauchy's Generalized MVT is used in the proof.
-
-**E3.** In an optimization problem, why is it not sufficient to simply find where $f'(x)=0$ and declare that the answer? Describe the additional verification step(s) required, referencing specific tests from Week 4.
+**D2.** *(6 pts)* In an optimization problem, why is it not enough to find where $f'(x)=0$ and declare that
+the answer? Describe the verification step(s) required, naming the tests from Weeks 6–7.
 
 ---
 
@@ -92,9 +75,8 @@ For each problem, follow the full 8-step strategy: set up variables, write objec
 
 | Part | Points | Focus |
 |------|--------|-------|
-| A (6+3 problems) | 27 | L'Hôpital's Rule — basic forms |
-| B (3+4+1 problems) | 33 | Other indeterminate forms |
-| C (5 × 10) | 50 | Full curve sketching synthesis |
-| D (6 × 7) | 42 | Applied optimization |
-| E (3 × 5) | 15 | Conceptual understanding |
-| **Total** | **167** | |
+| A | 10 | L'Hôpital review |
+| B | 36 | Curve sketching |
+| C | 40 | Applied optimization |
+| D | 14 | Conceptual |
+| **Total** | **100** | |

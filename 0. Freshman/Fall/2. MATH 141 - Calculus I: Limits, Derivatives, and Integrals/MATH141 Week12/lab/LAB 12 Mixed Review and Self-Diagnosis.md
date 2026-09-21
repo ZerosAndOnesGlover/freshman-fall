@@ -2,7 +2,7 @@
 ## Mixed Review and Self-Diagnosis
 
 **Duration:** 2 hours · **Ungraded — attendance only**
-**Lab session:** Friday of Week 12
+**Date:** Friday 18 December 2026 · 15:00–16:50 · Lab Section (Week 12) — covers Week 12 (Lectures 01–03)
 
 ---
 

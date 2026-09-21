@@ -32,12 +32,12 @@ When your CS 331 (AI) course tells you to "take the gradient of the loss functio
 
 | Component | Weight | Notes |
 |-----------|--------|-------|
-| Weekly Problem Sets (12) | **30%** | PS 0–11, released Wednesday, due the following Wednesday at the start of class. Lowest 1 dropped. **Exception: PS 0** is released Monday of Week 0 and due **Friday of Week 0, 11:59 PM** — Week 0 is compressed so the course can begin Week 1 on schedule. Week 12's Problem Set 12 is an **ungraded** self-diagnostic and carries no weight. |
-| Midterm Exam 1 (Week 6) | **15%** | 75 minutes. Covers Weeks 0–5. 1 cheat sheet (handwritten, 1 side). |
-| Midterm Exam 2 (Week 10) | **15%** | 75 minutes. Covers Weeks 6–9. Same rules. |
-| Final Exam (Week 12) | **20%** | 150 minutes. Comprehensive. 2-page cheat sheet. |
-| Lab Sections (13 labs) | **10%** | Weekly 2-hr lab. Graded on completion + correctness. |
-| Weekly Quizzes (12) | **10%** | 15 minutes at the start of Monday's lecture, Weeks 1–12. Quiz *N* covers Week *N−1*. Lowest 1 dropped. |
+| Weekly Problem Sets (12) | **30%** | PS 0–11, released Wednesday, due the following Wednesday at the start of class. Lowest 1 dropped. **Exception: PS 0** is released Monday of Week 0 and due **Friday 25 September 2026, 17:00** — Week 0 is compressed so the course can begin Week 1 on schedule. Week 12's Problem Set 12 is an **ungraded** self-diagnostic and carries no weight. |
+| Midterm Exam 1 (Week 6) | **15%** | Thursday 5 November 2026, 18:00–19:15. 75 minutes. Covers Weeks 0–5. 1 cheat sheet (handwritten, 1 side). |
+| Midterm Exam 2 (Week 10) | **15%** | Wednesday 2 December 2026, 18:00–19:15. 75 minutes. Covers Weeks 6–9. Same rules. |
+| Final Exam (exam period) | **20%** | Wednesday 23 December 2026, 09:00–11:30. 150 minutes. Comprehensive. 2-page cheat sheet. |
+| Lab Sections (13 labs) | **10%** | Weekly 2-hr lab, Fridays 15:00–16:50 (Lab 00 on Friday 25 September 2026). Graded on completion + correctness. |
+| Weekly Quizzes (12) | **10%** | 15 minutes at the start of Monday's lecture (11:00–11:15), Weeks 1–12 (28 September – 14 December 2026). Quiz *N* covers Week *N−1*. Lowest 1 dropped. |
 
 > **A note on these weights.** The Year 1 curriculum document specifies this course's topics,
 > textbooks and credit hours, but **not its assessment breakdown**. The division above is set by the

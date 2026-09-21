@@ -1,8 +1,9 @@
 # MATH 141 · Problem Set 10 Solutions
 ## INSTRUCTOR ONLY — DO NOT DISTRIBUTE
 
----
+*Revised 2026-09-21 to match the 100-point set; items are numbered as in the new set.*
 
+---
 
 ## Marking Scheme
 
@@ -43,20 +44,6 @@ A bare answer with no working earns at most the execution marks — and in proof
 
 **A6.** $u=x^3-2x+5$, $du=(3x^2-2)dx$. $\int\frac{du}u=\ln|u|+C=\ln|x^3-2x+5|+C$
 
-**A7.** $\int\sec x\cdot\frac{\sec x+\tan x}{\sec x+\tan x}dx=\int\frac{\sec^2x+\sec x\tan x}{\sec x+\tan x}dx$
-
-Let $u=\sec x+\tan x$, $du=(\sec x\tan x+\sec^2x)dx$ — exactly the numerator!
-
-$=\int\frac{du}u=\ln|u|+C=\ln|\sec x+\tan x|+C$
-
-**A8.** $u=1-x^2\implies x^2=1-u$, $du=-2x\,dx$. Write $x^3\,dx=x^2\cdot x\,dx=(1-u)\cdot\left(-\frac{du}2\right)$
-
-$\int x^3\sqrt{1-x^2}dx=-\frac12\int(1-u)\sqrt u\,du=-\frac12\int(u^{1/2}-u^{3/2})du$
-
-$=-\frac12\left[\frac23u^{3/2}-\frac25u^{5/2}\right]+C=-\frac13u^{3/2}+\frac15u^{5/2}+C$
-
-$=-\frac13(1-x^2)^{3/2}+\frac15(1-x^2)^{5/2}+C$
-
 ---
 
 ## Part B — Definite Integrals via Substitution
@@ -69,19 +56,11 @@ $\frac12\int_1^5u^2du=\frac12\left[\frac{u^3}3\right]_1^5=\frac16(125-1)=\frac{1
 
 $\int_2^3\frac{2\,du}u=2[\ln u]_2^3=2(\ln3-\ln2)=2\ln(3/2)$
 
-**B3.** $u=\sin x$, limits: $x=0\to u=0$; $x=\pi/2\to u=1$.
-
-$\int_0^1u^5du=\left[\frac{u^6}6\right]_0^1=\frac16$
-
-**B4.** $u=x^2+1$, limits: $x=0\to u=1$; $x=1\to u=2$.
-
-$\frac12\int_1^2u^{-2}du=\frac12\left[-\frac1u\right]_1^2=\frac12\left(-\frac12+1\right)=\frac14$
-
-**B5.** $u=1+\ln x$, limits: $x=1\to u=1$; $x=e\to u=2$.
+**B3.** $u=1+\ln x$, limits: $x=1\to u=1$; $x=e\to u=2$.
 
 $\int_1^2\frac{du}u=[\ln u]_1^2=\ln2$
 
-**B6.** $u=e^x+1$, limits: $x=0\to u=2$; $x=\ln3\to u=4$.
+**B4.** $u=e^x+1$, limits: $x=0\to u=2$; $x=\ln3\to u=4$.
 
 $\int_2^4u^{1/2}du=\left[\frac23u^{3/2}\right]_2^4=\frac23(8-2\sqrt2)=\frac{16}3-\frac{4\sqrt2}3$
 
@@ -111,20 +90,6 @@ $=2\left[\frac{1920-2688+280+1470}{105}\right]=2\left[\frac{982}{105}\right]=\fr
 
 ---
 
-**C3.** Let $I=\int_0^\pi\dfrac{x\sin x}{1+\cos^2x}dx$. Substitute $x\to\pi-x$: $\sin(\pi-x)=\sin x$, $\cos(\pi-x)=-\cos x$, so $\cos^2(\pi-x)=\cos^2x$.
-
-$I=\int_0^\pi\dfrac{(\pi-x)\sin x}{1+\cos^2x}dx=\pi\int_0^\pi\dfrac{\sin x}{1+\cos^2x}dx-I$
-
-$2I=\pi\int_0^\pi\dfrac{\sin x}{1+\cos^2x}dx$
-
-Let $w=\cos x$, $dw=-\sin x\,dx$. Limits: $x=0\to w=1$; $x=\pi\to w=-1$.
-
-$\int_0^\pi\dfrac{\sin x}{1+\cos^2x}dx=\int_{-1}^1\dfrac{dw}{1+w^2}=[\arctan w]_{-1}^1=\dfrac\pi4-\left(-\dfrac\pi4\right)=\dfrac\pi2$
-
-$2I=\pi\cdot\dfrac\pi2=\dfrac{\pi^2}2\implies I=\dfrac{\pi^2}4$
-
----
-
 ## Part D — Integration by Parts (Single)
 
 **D1.** $u=x,dv=\cos3x\,dx$; $du=dx,v=\frac13\sin3x$
@@ -151,10 +116,6 @@ $=x\arctan(2x)-\frac14\ln(1+4x^2)+C$
 
 $\int x\sec^2x\,dx=x\tan x-\int\tan x\,dx=x\tan x-\ln|\sec x|+C$
 
-**D6.** $u=(\ln x)^2,dv=dx$; $du=\frac{2\ln x}xdx,v=x$
-
-$\int(\ln x)^2dx=x(\ln x)^2-2\int\ln x\,dx=x(\ln x)^2-2(x\ln x-x)+C=x(\ln x)^2-2x\ln x+2x+C$
-
 ---
 
 ## Part E — Repeated/Circular
@@ -167,15 +128,7 @@ From D1-style computation: $\int x\cos x\,dx=x\sin x+\cos x$ (standard result)
 
 $=-x^2\cos x+2(x\sin x+\cos x)+C=-x^2\cos x+2x\sin x+2\cos x+C$
 
-**E2.** $\int x^2e^{-x}dx$: $u=x^2,dv=e^{-x}dx$; $du=2xdx,v=-e^{-x}$
-
-$=-x^2e^{-x}+2\int xe^{-x}dx$
-
-$\int xe^{-x}dx$: $u=x,dv=e^{-x}dx$; $=-xe^{-x}+\int e^{-x}dx=-xe^{-x}-e^{-x}$
-
-$=-x^2e^{-x}+2(-xe^{-x}-e^{-x})+C=-e^{-x}(x^2+2x+2)+C$
-
-**E3.** $I=\int e^{-x}\cos x\,dx$. $u=\cos x,dv=e^{-x}dx$; $du=-\sin x\,dx,v=-e^{-x}$
+**E2.** $I=\int e^{-x}\cos x\,dx$. $u=\cos x,dv=e^{-x}dx$; $du=-\sin x\,dx,v=-e^{-x}$
 
 $I=-e^{-x}\cos x-\int e^{-x}\sin x\,dx$
 
@@ -187,31 +140,9 @@ $I=-e^{-x}\cos x-[-e^{-x}\sin x+I]=-e^{-x}\cos x+e^{-x}\sin x-I$
 
 $2I=e^{-x}(\sin x-\cos x)\implies I=\frac{e^{-x}(\sin x-\cos x)}2+C$
 
-**E4.** $I=\int e^{3x}\sin(2x)dx$. $u=\sin2x,dv=e^{3x}dx$; $du=2\cos2x\,dx,v=\frac13e^{3x}$
-
-$I=\frac13e^{3x}\sin2x-\frac23\int e^{3x}\cos2x\,dx$
-
-New integral: $u=\cos2x,dv=e^{3x}dx$; $du=-2\sin2x\,dx,v=\frac13e^{3x}$
-
-$\int e^{3x}\cos2x\,dx=\frac13e^{3x}\cos2x+\frac23\int e^{3x}\sin2x\,dx=\frac13e^{3x}\cos2x+\frac23I$
-
-$I=\frac13e^{3x}\sin2x-\frac23\left[\frac13e^{3x}\cos2x+\frac23I\right]=\frac13e^{3x}\sin2x-\frac29e^{3x}\cos2x-\frac49I$
-
-$I+\frac49I=\frac13e^{3x}\sin2x-\frac29e^{3x}\cos2x$
-
-$\frac{13}9I=\frac{e^{3x}}9(3\sin2x-2\cos2x)$
-
-$I=\frac{e^{3x}(3\sin2x-2\cos2x)}{13}+C$
-
-**E5.** $\int_0^{\pi/2}x\sin x\,dx$: antiderivative (from standard result) $=-x\cos x+\sin x$
+**E3.** $\int_0^{\pi/2}x\sin x\,dx$: antiderivative (from standard result) $=-x\cos x+\sin x$
 
 $=[-x\cos x+\sin x]_0^{\pi/2}=(0+1)-(0+0)=1$
-
-**E6.** $\int_1^ex^2\ln x\,dx$: $u=\ln x,dv=x^2dx$; $du=\frac1xdx,v=\frac{x^3}3$
-
-$=\left[\frac{x^3}3\ln x\right]_1^e-\int_1^e\frac{x^2}3dx=\left(\frac{e^3}3-0\right)-\frac13\left[\frac{x^3}3\right]_1^e$
-
-$=\frac{e^3}3-\frac19(e^3-1)=\frac{3e^3-e^3+1}9=\frac{2e^3+1}9$
 
 ---
 
@@ -223,34 +154,6 @@ $=\frac12\int we^wdw$
 
 By parts: $u=w,dv=e^wdw$; $=\frac12[we^w-e^w]+C=\frac12e^w(w-1)+C=\frac12e^{x^2}(x^2-1)+C$
 
-**F2.** $u=\ln x,du=\frac1xdx$. $\int\ln(\ln x)\cdot\frac1xdx$... let $w=\ln x$ first: $\int\ln(w)\,dw=w\ln w-w+C=\ln x\ln(\ln x)-\ln x+C$
-
-**F3.** $f(x)=x^3\sqrt{1-x^2}$: $f(-x)=-x^3\sqrt{1-x^2}=-f(x)$ — **odd**. By symmetry: $\int_{-1}^1f\,dx=0$ immediately, no computation needed.
-
-**F4.** $I=\int\sin(\ln x)dx$. $u=\sin(\ln x),dv=dx$; $du=\frac{\cos(\ln x)}xdx,v=x$
-
-$I=x\sin(\ln x)-\int\cos(\ln x)dx$
-
-New: $u=\cos(\ln x),dv=dx$; $du=-\frac{\sin(\ln x)}xdx,v=x$
-
-$\int\cos(\ln x)dx=x\cos(\ln x)+\int\sin(\ln x)dx=x\cos(\ln x)+I$
-
-$I=x\sin(\ln x)-[x\cos(\ln x)+I]=x\sin(\ln x)-x\cos(\ln x)-I$
-
-$2I=x[\sin(\ln x)-\cos(\ln x)]\implies I=\frac x2[\sin(\ln x)-\cos(\ln x)]+C$
-
-**F5.** $u=\arctan x,dv=x\,dx$; $du=\frac1{1+x^2}dx,v=\frac{x^2}2$
-
-$\int x\arctan x\,dx=\frac{x^2}2\arctan x-\frac12\int\frac{x^2}{1+x^2}dx$
-
-$\frac{x^2}{1+x^2}=1-\frac1{1+x^2}$
-
-$\int\frac{x^2}{1+x^2}dx=x-\arctan x$
-
-$=\frac{x^2}2\arctan x-\frac12(x-\arctan x)+C=\frac{x^2}2\arctan x-\frac x2+\frac12\arctan x+C$
-
-$=\frac{(x^2+1)}2\arctan x-\frac x2+C$
-
 ---
 
 ## Part G — Conceptual
@@ -258,15 +161,3 @@ $=\frac{(x^2+1)}2\arctan x-\frac x2+C$
 **G1.** From $\frac{d}{dx}[uv]=u'v+uv'$, integrate both sides: $uv=\int u'v\,dx+\int uv'\,dx=\int v\,du+\int u\,dv$. Rearranging: $\int u\,dv=uv-\int v\,du$.
 
 **G2.** With $u=x,dv=e^{x^2}dx$: finding $v=\int e^{x^2}dx$ is IMPOSSIBLE in elementary terms — $e^{x^2}$ has no elementary antiderivative. Integration by Parts requires being able to find $v$, so this choice fails immediately at step 2 of the method. Correct approach: substitution. Let $w=x^2,dw=2x\,dx$: $\int xe^{x^2}dx=\frac12\int e^wdw=\frac12e^{x^2}+C$.
-
-**G3.** LIATE prioritizes choosing $u$ to be the function that gets SIMPLER when differentiated (logs and inverse trig become algebraic; algebraic functions reduce in degree), while $dv$ should be easy to integrate repeatedly without growing more complex (exponentials and trig functions stay in the same "family" under integration). Counter-example: $\int xe^x\,dx$ with $u=e^x,dv=x\,dx$: $du=e^xdx,v=\frac{x^2}2$. Result: $\frac{x^2}2e^x-\int\frac{x^2}2e^xdx$ — the new integral $\int\frac{x^2}2e^xdx$ is MORE complex (higher power of $x$) than the original, showing this choice makes the problem worse, not better.
-
-**G4 (Bonus).** $u=x^n,dv=e^xdx$; $du=nx^{n-1}dx,v=e^x$.
-
-$\int x^ne^xdx=x^ne^x-n\int x^{n-1}e^xdx \quad\square$
-
-Apply for $n=2$: $\int x^2e^xdx=x^2e^x-2\int xe^xdx$
-
-Apply for $n=1$: $\int xe^xdx=xe^x-1\int e^xdx=xe^x-e^x$
-
-Combine: $\int x^2e^xdx=x^2e^x-2(xe^x-e^x)=x^2e^x-2xe^x+2e^x+C=e^x(x^2-2x+2)+C$ ✓ Matches Wednesday's Example 5.

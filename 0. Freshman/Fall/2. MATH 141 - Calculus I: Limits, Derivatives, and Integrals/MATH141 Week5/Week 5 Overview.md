@@ -2,10 +2,10 @@
 ## Week 5 Overview and Instructor Notes
 
 **Topic:** Implicit Differentiation · Logarithmic Derivatives · Inverse Trig · Related Rates
-**Lectures:** Monday / Tuesday / Wednesday
-**Lab:** Friday
-**Quiz:** Monday (covers Week 4 — differentiation rules, the chain rule, higher derivatives and rates)
-**Problem Set 5:** Released Wednesday, due following Wednesday
+**Lectures:** Monday 26 Oct / Tuesday 27 Oct / Wednesday 28 October 2026, 11:00
+**Lab:** Friday 30 October 2026, 15:00–16:50 (Lab 05)
+**Quiz:** Monday 26 October 2026, 11:00–11:15 (covers Week 4 — differentiation rules, the chain rule, higher derivatives and rates)
+**Problem Set 5:** Released Wednesday 28 October 2026, 12:00 · due Wednesday 4 November 2026, 11:00
 
 ---
 

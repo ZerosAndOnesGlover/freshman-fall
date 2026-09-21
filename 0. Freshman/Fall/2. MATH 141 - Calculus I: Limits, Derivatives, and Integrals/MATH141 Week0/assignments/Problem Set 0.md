@@ -4,8 +4,9 @@
 
 ---
 
-**Released:** Monday, Week 0  
-**Due:** Friday, Week 0 (by 11:59 PM — submit via course portal)  
+**Released:** Monday 21 September 2026, 12:00 (after Lecture 00) · Week 0  
+**Due:** Friday 25 September 2026, 17:00 · Week 0 — submit via course portal; late penalty from 17:01  
+**Uses:** Week 0 lectures only (functions, algebra, exponentials and logarithms, trigonometry). No limits, derivatives or induction.  
 **Total Points:** 100  
 **Policy:** Show all work. Correct answers without work receive no credit. You may discuss approaches with classmates, but all written solutions must be your own.  
 **Collaboration:** Allowed for conceptual discussion. Written solutions must be independently written.
@@ -38,7 +39,7 @@ Let $f(x) = \dfrac{x}{x-1}$.
 
 **(b)** Find $f^{-1}(x)$. What do you notice about $f$ and $f^{-1}$? *(3 pts)*
 
-**(c)** Find $f(f(f(x)))$. Can you spot the pattern? Prove it by induction (or strong inductive reasoning). *(2 pts)*
+**(c)** Find $f(f(f(x)))$. Using (a), explain what applying $f$ four times gives, and five times. *(2 pts)*
 
 ---
 
@@ -85,7 +86,7 @@ Solve each inequality. Express your answer in interval notation. Show sign chart
 
 Perform the following algebraic manipulations. These exact steps appear in derivative calculations.
 
-**(a)** Simplify: $\dfrac{\sqrt{x+h} - \sqrt{x}}{h}$ by rationalizing the numerator. What does this expression approach as $h \to 0$? *(3 pts)*
+**(a)** Simplify: $\dfrac{\sqrt{x+h} - \sqrt{x}}{h}$ by rationalizing the numerator, until no $h$ is left in the denominator. What does the simplified expression equal when you put $h = 0$? *(3 pts)*
 
 **(b)** Simplify: $\dfrac{\dfrac{1}{(x+h)^2} - \dfrac{1}{x^2}}{h}$. Expand and cancel $h$ from numerator and denominator. *(3 pts)*
 
@@ -167,33 +168,6 @@ Prove each identity. Start from one side and transform it to the other — do no
 
 ---
 
-## Challenge Problems (Bonus - up to 10 points)
-
-*These will not raise your grade above 100, but are excellent preparation for the difficulty of the course. Attempt them only after completing the main assignment.*
-
-**Bonus 1.** *(4 points)*
-
-Prove the **triangle inequality** rigorously: $|a + b| \leq |a| + |b|$ for all $a, b \in \mathbb{R}$.  
-Then prove the **reverse triangle inequality**: $\big| |a| - |b| \big| \leq |a - b|$.  
-*Hint for forward: Use $|x|^2 = x^2$. For reverse: apply forward inequality with $a = (a-b) + b$.*
-
-**Bonus 2.** *(3 points)*
-
-A function $f: \mathbb{R} \to \mathbb{R}$ satisfies $f(x + y) = f(x) + f(y)$ for all $x, y \in \mathbb{R}$ (called **Cauchy's functional equation**).
-
-- Prove that $f(0) = 0$.
-- Prove that $f(nx) = nf(x)$ for all positive integers $n$.
-- Prove that $f(rx) = rf(x)$ for all rational numbers $r$.
-- What function does this force $f$ to be, assuming $f$ is continuous?
-
-**Bonus 3.** *(3 points)*
-
-Without a calculator, determine which is larger: $e^\pi$ or $\pi^e$.  
-Provide a complete mathematical proof (not just a decimal approximation argument).  
-*Hint: Consider the function $g(x) = \ln x / x$ and find its behavior.*
-
----
-
 ## Submission Guidelines
 
 - Clearly label each problem and part
@@ -201,6 +175,8 @@ Provide a complete mathematical proof (not just a decimal approximation argument
 - Show all steps — partial credit is given for correct method with arithmetic errors
 - Submit a single PDF (scanned handwritten or typed)
 - Late submissions lose 10% per day; not accepted after 72 hours
+- *(Revised 2026-09-21: the induction proof in 2(c), the limit in 6(a) and the bonus problems — which needed
+  continuity and derivatives — were removed; everything here is Week 0.)*
 
 ---
 

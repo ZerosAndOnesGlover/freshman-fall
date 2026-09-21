@@ -1,5 +1,7 @@
 # MATH 141 · Quiz 02
 ## Administered: start of Week 2, Monday
+
+**Date:** Monday 5 October 2026 · 11:00–11:15 (start of Lecture 01) · Week 2
 ### Covers: Week 1 — limits, ε-δ, infinite limits and limits at infinity
 
 **Duration:** 15 minutes · Closed book · **20 points**

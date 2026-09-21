@@ -1,7 +1,8 @@
 # CS 101 · Lab 0
 ## Environment Setup & First Programs
 
-**Date:** Friday 25 September 2026 · 15:00–16:50 · Lab Section (Week 0) — the orientation lab slot; from Lab 1 onward the lab meets Tuesday.
+**Date:** Tuesday 29 September 2026 · 15:00–16:50 · Lab Section (Week 1) — covers Week 0. Like every CS 101 lab, it
+sits on the Tuesday after the week it covers (moved from Friday of Week 0, which is MATH 141's lab slot).
 *Duration: 2 hours · Graded — 100 points via in-lab TA checkoff, part of the Labs component (10%)*
 
 ---

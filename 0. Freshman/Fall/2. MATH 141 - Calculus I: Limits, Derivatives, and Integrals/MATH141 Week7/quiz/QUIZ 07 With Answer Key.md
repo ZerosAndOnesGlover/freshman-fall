@@ -1,5 +1,7 @@
 # MATH 141 · Calculus I
 ## Quiz 07 (Monday, Week 7 — Start of Class)
+
+**Date:** Monday 9 November 2026 · 11:00–11:15 (start of Lecture 01) · Week 7
 ### Covers: Week 6 — Extrema, Rolle's Theorem, the MVT, L'Hôpital's Rule
 
 **Time:** 15 minutes | **Closed book, closed notes**

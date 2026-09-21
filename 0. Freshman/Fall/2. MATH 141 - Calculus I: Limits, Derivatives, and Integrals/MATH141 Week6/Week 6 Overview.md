@@ -2,10 +2,10 @@
 ## Week 6 Overview and Instructor Notes
 
 **Topic:** Extrema · Rolle's Theorem · The Mean Value Theorem · L'Hôpital's Rule
-**Lectures:** Monday / Tuesday / Wednesday
-**Lab:** Friday
-**Quiz:** Monday (covers Week 5 — implicit differentiation, logs, inverse trig, related rates)
-**Problem Set 6:** Released Wednesday, due following Wednesday
+**Lectures:** Monday 2 / Tuesday 3 / Wednesday 4 November 2026, 11:00
+**Lab:** Friday 6 November 2026, 15:00–16:50 (Lab 06)
+**Quiz:** Monday 2 November 2026, 11:00–11:15 (Quiz 06, covers Week 5 — implicit differentiation, logs, inverse trig, related rates)
+**Problem Set 6:** Released Wednesday 4 November 2026, 12:00 · due Wednesday 11 November 2026, 11:00
 
 ---
 
@@ -19,9 +19,10 @@ By the end of Week 6, students will be able to:
 4. State and prove Rolle's Theorem from the EVT and Fermat's Theorem
 5. State and prove the Mean Value Theorem from Rolle's Theorem
 6. Apply the MVT corollaries — especially the I/D Test and the "+C" foundation for integration
-7. Use the First Derivative Test and Second Derivative Test to classify critical points
-8. Determine intervals of concavity and locate inflection points
-9. Perform a complete qualitative analysis of a function's graph from its derivatives
+7. Evaluate limits of indeterminate forms with L'Hôpital's Rule, converting $0\cdot\infty$, $\infty-\infty$ and
+   $1^\infty$ forms first
+
+*(Concavity, the Second Derivative Test and curve sketching are Week 7.)*
 
 ---
 
@@ -55,9 +56,9 @@ MATH141 Week6/
 
 **Tuesday (Rolle's/MVT):** This is a proof-heavy lecture — budget time accordingly. The Rolle's Theorem proof (via EVT + Fermat) should be done carefully since it's a template for the MVT proof. The MVT proof via the auxiliary function $g(x)$ is one of the most elegant arguments in the course — the trick of "tilting" the function to reduce to Rolle's Theorem is a technique students will see again (e.g., Taylor's theorem in Week 12). Corollary 2 deserves emphasis: it is the entire justification for "+C" in indefinite integrals, which students will take on faith otherwise starting Week 9, when FTC Part 2 lets them use *any* antiderivative.
 
-**Friday (Lab):** Part 3 (three graphs side by side) is the conceptual core of the entire week — the ability to move fluently between $f$, $f'$, $f''$ is the single most transferable skill from this unit. Give this part the most time. Part 2's physical MVT example (ball height/velocity) tends to land well.
+**Friday (Lab):** Part 3 (reading $f$ from $f'$) is the conceptual core — it rehearses MVT Corollary 3 before Week 7 adds $f''$. Part 4 checks Wednesday's L'Hôpital limits numerically. Part 2's physical MVT example (ball height/velocity) tends to land well.
 
-**Wednesday (Shape of a Graph):** This lecture synthesizes everything. The full curve analysis examples should be done completely on the board — don't skip steps. Emphasize the procedure as a repeatable checklist (given in the resource sheet). The CS connection to convexity in ML optimization is a good closer for students with that background.
+**Wednesday (L'Hôpital's Rule):** Insist that students name the indeterminate form before every application. The $1^\infty$ case (take logs, then exponentiate) is where most marks are lost. Close with the growth-rate hierarchy — it is the CS connection students will use in algorithm analysis.
 
 ---
 
@@ -65,10 +66,10 @@ MATH141 Week6/
 
 1. **Confusing local and absolute extrema**, especially at endpoints of a closed interval (endpoints can be absolute extrema without being "local" in the strict open-interval-neighborhood sense — some texts include endpoints in local extrema definitions; be consistent with Stewart's convention).
 
-2. **Assuming $f'(c)=0$ automatically means an extremum.** This is the single most common error of the week. Constant refrain: always verify via First or Second Derivative Test.
+2. **Assuming $f'(c)=0$ automatically means an extremum.** This is the single most common error of the week. Constant refrain: always check the sign of $f'$ on each side (Corollary 3).
 
 3. **Forgetting to check both hypotheses of Rolle's/MVT** before applying them — especially differentiability (not just continuity). The $x^{2/3}$ example is a good one to drill on this.
 
-4. **Second Derivative Test misapplication when $f''(c)=0$.** Students often report "no conclusion" as if the point is definitely not an extremum, rather than correctly falling back to the First Derivative Test.
+4. **Applying L'Hôpital's Rule to a form that is not indeterminate** — e.g. to $\frac{x+1}{x}$ as $x\to0$. Check the form before each application.
 
-5. **Inflection point without verifying sign change.** Just finding $f''(c)=0$ is not sufficient — must confirm concavity actually changes sign around $c$ (see Example: $f(x)=x^4$ has $f''(0)=0$ but no inflection point there, since $f''(x)=12x^2\geq0$ never goes negative).
+5. **Forgetting to exponentiate in $1^\infty$ problems.** Finding $\ln y\to L$ and reporting $L$ instead of $e^L$.

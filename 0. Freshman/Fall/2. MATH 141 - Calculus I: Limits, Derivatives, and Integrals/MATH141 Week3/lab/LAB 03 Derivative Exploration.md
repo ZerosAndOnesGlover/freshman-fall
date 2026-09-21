@@ -1,9 +1,13 @@
 # MATH 141 · Calculus I
-## Lab 03 (Friday, Week 3)
-### The Derivative: Numerical Exploration, Graphical Interpretation, and Rule Verification
+## Lab 03
+
+**Date:** Friday 16 October 2026 · 15:00–16:50 · Lab Section (Week 3) — covers Week 3 (Lectures 01–03).
+Everything is done from the definition of the derivative; the rules arrive in Week 4.
+*(Revised 2026-09-21: the f'' / concavity question — Week 7 — and the product-rule check — Week 4 — were removed.)*
+### The Derivative: Numerical Exploration and Graphical Interpretation
 
 **Duration:** 2 hours | **Tools:** Desmos, Python (optional)
-**Submission:** Written report due Monday, Week 4
+**Submission:** Written report due Monday 19 October 2026, 17:00 (Week 4)
 
 ---
 
@@ -11,7 +15,7 @@
 
 1. Experience the derivative as a limit of slopes of secant lines
 2. Understand graphically what differentiability looks like (and what failure looks like)
-3. Verify differentiation rules numerically
+3. Compare forward and central difference quotients numerically
 4. Build intuition for the relationship between a function's graph and its derivative's graph
 5. Apply numerical differentiation and understand its limitations
 
@@ -86,15 +90,11 @@ In Desmos, graph $f(x) = x^3 - 3x$.
 - $f'(x) < 0$ (function decreasing)
 - $f'(x) = 0$ (function has horizontal tangent)
 
-**Question 2b:** Now compute $f'(x)$ using the power and sum rules. Solve $f'(x)=0$ exactly.
+**Question 2b:** Now compute $f'(x)$ **from the definition** (expand $(x+h)^3$). Solve $f'(x)=0$ exactly.
 
 **Question 2c:** Graph both $f(x)$ and $f'(x)$ in Desmos. Do the zero crossings of $f'$ correspond to the turning points of $f$? Verify.
 
-**Question 2d:** Graph $f''(x)$ as well. Describe the relationship between:
-- Where $f''(x) > 0$ and the shape of $f$ (concave up or down?)
-- Where $f''(x) = 0$ and what happens to $f$
-
-**Question 2e:** Sketch (by hand) what the graph of $f'$ would look like for the function shown below, given only its graph. You should be able to identify:
+**Question 2d:** Sketch (by hand) what the graph of $f'$ would look like for the function shown below, given only its graph. You should be able to identify:
 - Where $f' = 0$
 - Where $f' > 0$ vs $f' < 0$
 - Roughly how steep $f'$ is
@@ -182,22 +182,6 @@ Fill in the table (use a calculator):
 
 ---
 
-### Exercise 4.2 — Verifying the Product Rule Numerically
-
-Let $f(x) = x^2$ and $g(x) = \sin x$. The product is $p(x) = x^2\sin x$.
-
-At $x = 1$:
-- $f(1) = 1$, $f'(1) = 2$
-- $g(1) = \sin(1)$, $g'(1) = \cos(1)$
-- Product rule predicts: $p'(1) = f'(1)g(1) + f(1)g'(1) = 2\sin(1) + \cos(1)$
-
-**Question 4e:** Compute $2\sin(1)+\cos(1)$ numerically.
-
-**Question 4f:** Verify this using the central difference formula with $h = 0.001$:
-$$p'(1) \approx \frac{(1.001)^2\sin(1.001) - (0.999)^2\sin(0.999)}{0.002}$$
-
-**Question 4g:** Do they agree to 3+ decimal places? What does this confirm?
-
 ---
 
 ## Part 5 — The Derivative of $e^x$ (15 min)
@@ -218,7 +202,7 @@ Fill in this table for $a = 2$, $a = e \approx 2.71828$, $a = 3$:
 
 **Question 5b:** What value does each column approach? For which base does $\lim_{h\to0}\frac{a^h-1}{h} = 1$?
 
-**Question 5c:** This means $\dfrac{d}{dx}[e^x]\big|_{x=0} = 1$. Using the chain rule generalization, show that $\dfrac{d}{dx}[e^x] = e^x$ everywhere by computing $\dfrac{d}{dx}[e^x]$ via the limit definition:
+**Question 5c:** This means $\dfrac{d}{dx}[e^x]\big|_{x=0} = 1$. Using the limit definition, show that $\dfrac{d}{dx}[e^x] = e^x$ everywhere by computing $\dfrac{d}{dx}[e^x]$ via the limit definition:
 
 $$\frac{d}{dx}[e^x] = \lim_{h\to0}\frac{e^{x+h}-e^x}{h} = e^x\lim_{h\to0}\frac{e^h-1}{h}$$
 
@@ -238,10 +222,10 @@ Include:
 
 | Section | Points |
 |---------|--------|
-| Part 1 — Secant convergence | 20 |
+| Part 1 — Secant convergence | 25 |
 | Part 2 — Reading derivatives from graphs | 20 |
 | Part 3 — Non-differentiable points | 20 |
-| Part 4 — Numerical differentiation | 25 |
+| Part 4 — Numerical differentiation | 20 |
 | Part 5 — The number $e$ | 10 |
 | Reflection | 5 |
 | **Total** | **100** |

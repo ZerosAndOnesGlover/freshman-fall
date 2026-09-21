@@ -11,13 +11,13 @@ is the point of the week, not memorising four formulas.
 
 | Day | Lecture | Topic |
 |---|---|---|
-| Monday | 1 | Area Between Curves |
-| Tuesday | 2 | Volumes by Slicing: Disks and Washers |
-| Wednesday | 3 | Cylindrical Shells, and Accumulation Revisited |
-| — | Lab 11 | Areas, Volumes, and Numerical Checks |
+| Monday 7 Dec | 1 | Area Between Curves |
+| Tuesday 8 Dec | 2 | Volumes by Slicing: Disks and Washers |
+| Wednesday 9 Dec | 3 | Cylindrical Shells, and Accumulation Revisited |
+| Friday 11 Dec, 15:00 | Lab 11 | Areas, Volumes, and Numerical Checks |
 
-**Quiz 11** at the start of Monday's lecture, covering Week 10.
-**Problem Set 11** due Wednesday of Week 12.
+**Quiz 11** at the start of Monday 7 December 2026's lecture (11:00), covering Week 10.
+**Problem Set 11** released Wednesday 9 December 2026, 12:00; due Wednesday 16 December 2026, 11:00 (Week 12).
 
 ---
 

@@ -7,7 +7,7 @@
 ---
 
 **Reading:** Stewart §4.3 | Spivak Ch. 11 (§11.3)
-**Problem Set 4 released today. Due: Wednesday, Week 7.**
+**Problem Set 6 is due Wednesday 11 November 2026, 11:00.**
 
 ---
 

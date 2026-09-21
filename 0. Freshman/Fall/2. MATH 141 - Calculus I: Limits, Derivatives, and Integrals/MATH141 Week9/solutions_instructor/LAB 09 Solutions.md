@@ -1,28 +1,17 @@
 # MATH 141 · Lab 09 Solutions (Instructor)
 ## Accumulation Functions and the FTC Numerically
 
-All figures below were produced by running the lab. Simpson's rule with $n=10^5$ unless stated.
+All figures below were produced by running the lab: midpoint rule with $n=10^5$ unless stated.
 
 ---
 
 ## Part 1: Building an Accumulation Function (6 pts)
 
-**1A.** Reference implementation:
+**1A.** The Lab 08 `midpoint_rule`, unchanged. Check: $\int_0^1x^2dx$ at $n=1000$ gives
+$0.33333325$ (error $8.3\times10^{-8}=\tfrac{1}{12n^2}$).
 
-```python
-def integrate(f, a, b, n=100000):
-    """Simpson's rule. n is forced even."""
-    if n % 2:
-        n += 1
-    h = (b - a) / n
-    s = f(a) + f(b)
-    for i in range(1, n):
-        s += (4 if i % 2 else 2) * f(a + i*h)
-    return s * h / 3
-```
-
-*Accept the trapezoid rule at reduced accuracy, but 1B's ten decimal places will not come out —
-require Simpson or a finer trapezoid grid.*
+*Every value below was recomputed with the midpoint rule at $n=10^5$ (Python 3.14) and agrees with the
+earlier Simpson figures to the digits shown.*
 
 **1B.** $F(x)=\int_0^x e^{-t^2}dt$:
 
@@ -118,6 +107,7 @@ $G(x)=\int_{x^2}^{x^3}\sin t\,dt$, formula $G'(x)=3x^2\sin(x^3)-2x\sin(x^2)$.
 
 | | Value |
 |---|---|
+| $G(1.3)$ (4A) | $0.4671514$ |
 | Central difference, $h=10^{-5}$ | $1.5264599$ |
 | Formula | $1.5264599$ |
 
@@ -125,9 +115,9 @@ $G(x)=\int_{x^2}^{x^3}\sin t\,dt$, formula $G'(x)=3x^2\sin(x^3)-2x\sin(x^2)$.
 
 | $x$ | Numerical $G'$ | Formula | Agreement |
 |---|---|---|---|
-| $0.7$ | matches | matches | 7 decimals |
+| $0.7$ | $-0.1644949$ | $-0.1644949$ | 9 decimals |
 | $1.3$ | $1.5264599$ | $1.5264599$ | 7 decimals |
-| $2.0$ | matches | matches | 7 decimals |
+| $2.0$ | $14.8995089$ | $14.8995089$ | 7 decimals |
 
 **Yes — the formula holds at all three.** It is not a coincidence at one point; it is FTC 1 composed
 with the chain rule, and it holds wherever the integrand is continuous.
@@ -142,7 +132,7 @@ obtainable without evaluating the integral.*
 
 | Symptom | Cause | Action |
 |---|---|---|
-| 1B short of ten decimals | Trapezoid rule, coarse $n$ | −0.5; require Simpson |
+| 1B short of ten decimals | Coarse $n$ | −0.5; require $n=10^5$ |
 | 1D agreement only to 5 digits | $h$ too small — subtractive cancellation | Teachable: $h=10^{-5}$ is near the optimum for central differences |
 | 2A written after plotting | Defeats the exercise | −1; the prediction must precede the data |
 | 3C shows one piece only | Stopped at the sign change | −1 |

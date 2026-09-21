@@ -7,7 +7,7 @@
 ---
 
 **Reading:** Stewart §3.4 | Spivak Ch. 10 (§10.3)
-**Problem Set 2 released today. Due: Wednesday, Week 3.**
+**Problem Set 3 is due Wednesday 21 October 2026, 11:00.**
 
 ---
 
@@ -286,4 +286,4 @@ value, never $f$ itself.
 ---
 
 *Reading for Week 3: Stewart §3.5 (implicit differentiation), §3.6 (derivatives of logarithms)*
-*Problem Set 2 due next Wednesday — see assignment file.*
+*Problem Set 4 is released tomorrow after Lecture 3.*

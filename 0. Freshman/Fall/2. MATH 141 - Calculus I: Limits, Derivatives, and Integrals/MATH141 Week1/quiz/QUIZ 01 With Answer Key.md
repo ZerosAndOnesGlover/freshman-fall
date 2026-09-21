@@ -1,5 +1,7 @@
 # MATH 141 · Calculus I
 ## Quiz 01 (Monday, Week 1 — Start of Class)
+
+**Date:** Monday 28 September 2026 · 11:00–11:15 (start of Lecture 01) · Week 1
 ### Covers: Week 0 Material (Functions, Algebra, Trigonometry, Exponentials/Logarithms)
 
 **Time:** 15 minutes | **Closed book, closed notes**  

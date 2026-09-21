@@ -7,7 +7,7 @@
 ---
 
 **Reading:** Stewart §7.1 | Spivak Ch. 19 (Integration Techniques)
-**Problem Set 10 released today. Due: Wednesday, Week 8.**
+**Problem Set 10 released today, 12:00. Due: Wednesday 9 December 2026, 11:00 (Week 11).**
 
 ---
 
@@ -127,7 +127,7 @@ $$\int\frac{x}{1+x^2}\,dx = \frac12\ln(1+x^2)+C$$
 
 $$\int\arctan x\,dx = x\arctan x-\frac12\ln(1+x^2)+C$$
 
-*(This confirms the result derived by a different method in Week 3's Problem Set, Problem C1(c) — a nice consistency check across techniques.)*
+*(This confirms Problem Set 5, C1(c), where you differentiated $x\arctan x-\tfrac12\ln(1+x^2)$ and got $\arctan x$ — a nice consistency check across techniques.)*
 
 ---
 

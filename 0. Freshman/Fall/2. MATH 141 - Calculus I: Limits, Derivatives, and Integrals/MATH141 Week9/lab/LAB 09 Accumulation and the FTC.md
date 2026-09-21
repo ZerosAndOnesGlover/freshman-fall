@@ -1,8 +1,11 @@
 # MATH 141 · Lab 09
 ## Accumulation Functions and the FTC Numerically
 
+**Date:** Friday 27 November 2026 · 15:00–16:50 · Lab Section (Week 9) — covers Week 9 (Lectures 01–03)
 **Duration:** 2 hours · **20 points**
-**Lab session:** Friday of Week 9
+
+> *Revised 2026-09-21.* 1A used to ask for Simpson's rule, which no lecture or handout gives. It now reuses
+> the Lab 08 midpoint rule, which reaches the same ten decimal places at $n=100\,000$.
 
 ---
 
@@ -10,7 +13,19 @@
 
 Let $F(x)=\displaystyle\int_0^x e^{-t^2}\,dt$ — the function from Problem Set 9, Part D.
 
-**1A.** Write a routine `integrate(f, a, b, n)` implementing Simpson's rule. *(2 pts)*
+**1A.** Bring your `midpoint_rule(f, a, b, n)` from Lab 08 Exercise 4.1 (it is repeated below) and check it
+on $\displaystyle\int_0^1 x^2\,dx=\tfrac13$ with $n=1000$. Use $n=100\,000$ for everything below. *(2 pts)*
+
+```python
+def midpoint_rule(f, a, b, n):
+    """Approximate the integral of f from a to b with n midpoint rectangles."""
+    delta_x = (b - a) / n
+    total = 0.0
+    for i in range(n):
+        midpoint = a + (i + 0.5) * delta_x
+        total += f(midpoint) * delta_x
+    return total
+```
 
 **1B.** Tabulate $F(x)$ for $x=0,0.5,1,1.5,2,3$ to ten decimal places. *(1 pt)*
 
@@ -57,7 +72,7 @@ $d(t)=\int_0^t\lvert v\rvert$. Describe in two sentences where and why the curve
 
 Let $G(x)=\displaystyle\int_{x^2}^{x^3}\sin t\,dt$.
 
-**4A.** Evaluate $G$ numerically at $x=1.3$ using your integrator. *(1 pt)*
+**4A.** Evaluate $G$ numerically at $x=1.3$ using `midpoint_rule`. *(1 pt)*
 
 **4B.** Estimate $G'(1.3)$ by central difference. *(1 pt)*
 

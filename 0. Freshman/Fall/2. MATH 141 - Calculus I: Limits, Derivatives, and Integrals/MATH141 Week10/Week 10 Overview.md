@@ -2,10 +2,10 @@
 ## Week 10 Overview and Instructor Notes
 
 **Topic:** Indefinite Integrals and the Net Change Theorem · The Substitution Rule · Definite Substitution and Symmetry · Integration by Parts
-**Lectures:** Monday / Tuesday / Wednesday
-**Lab:** Friday
-**Quiz:** Monday (covers Week 9 — the Fundamental Theorem of Calculus)
-**Problem Set 10:** Released Wednesday, due following Wednesday
+**Lectures:** Monday 30 Nov / Tuesday 1 Dec / Wednesday 2 December 2026, 11:00
+**Lab:** Friday 4 December 2026, 15:00–16:50 (Lab 10)
+**Quiz:** Monday 30 November 2026, 11:00–11:15 (covers Week 9 — the Fundamental Theorem of Calculus)
+**Problem Set 10:** Released Wednesday 2 December 2026, 12:00 · due Wednesday 9 December 2026, 11:00
 
 ---
 

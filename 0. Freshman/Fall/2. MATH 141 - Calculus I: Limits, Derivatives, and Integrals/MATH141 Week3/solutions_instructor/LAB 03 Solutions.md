@@ -7,6 +7,9 @@
 
 ---
 
+> Lab sat Friday 16 October 2026. Revised 2026-09-21: 2b is now done from the definition, giving f′(x) = 3x² − 3
+> (zeros at x = ±1); the f″/concavity question and the product-rule check were removed.
+
 ## Part 1 — Secant Lines Converging to the Tangent
 
 For f(x) = x² at x = 3 the secant slope is exactly **6 + h**, converging to 6 = f′(3). See Lab 0
@@ -30,7 +33,6 @@ The correspondences students must state:
 | local max or min | f′ **crosses** zero |
 | horizontal inflection | f′ **touches** zero without crossing |
 | steepest ascent | f′ at a local maximum |
-| concave up | f′ increasing |
 
 The distinction between *crossing* and *touching* zero is what separates an extremum from a
 saddle — and is exactly why the first-derivative **sign** test works where "f′ = 0" alone does not.
@@ -86,8 +88,6 @@ By h = 10⁻¹⁰ both methods have the *same* error, because both are pure nois
 > nowhere near machine epsilon. Students who report only that "smaller h is more accurate" have
 > stopped measuring too early — insist on the full range down to 10⁻¹⁰.
 
-**4.2 Product rule.** Verify (fg)′ = f′g + fg′ numerically at several points; the mismatch with the
-plausible-looking f′g′ should be immediate and large.
 
 ---
 

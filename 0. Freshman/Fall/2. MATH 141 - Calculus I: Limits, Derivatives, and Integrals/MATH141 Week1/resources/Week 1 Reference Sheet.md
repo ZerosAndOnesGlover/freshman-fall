@@ -122,8 +122,8 @@ $$\lim_{x\to a}f(x)=L \iff \forall\,\varepsilon>0,\;\exists\,\delta>0: 0<|x-a|<\
 |-----|-------|---------|
 | Monday | **Quiz 01** (15 min) + Lecture 1 | Quiz covers Week 0; Lecture: limits intuition, one-sided limits, Squeeze Theorem |
 | Tuesday | Lecture 2 | ε-δ definition, proofs, two special trig limits |
+| Wednesday | Lecture 3 + **PS 1 released** (12:00) | Infinite limits and limits at infinity; Problem Set 1 due next Wednesday |
 | Friday | **Lab 01** (2 hours) | Numerical/graphical investigation; bisection |
-| Wednesday | Lecture 3 + **PS1 Released** | Continuity, IVT; Problem Set 1 due next Wednesday |
 
 ---
 

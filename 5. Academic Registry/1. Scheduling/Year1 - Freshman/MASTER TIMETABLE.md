@@ -10,12 +10,12 @@
 
 | Code         | Course Title                                    | Credits | Schedule                          | Assessment                                                 |
 | ------------ | ----------------------------------------------- | ------- | --------------------------------- | ---------------------------------------------------------- |
-| **CS 101**   | Computer Science I · Foundations of Computation  | 4       | Wed/Thu/Fri 09:00 + Tue Lab 15:00 | PS 30%, Quizzes 10%, Midterms 30%, Final 20%, Projects 10% |
+| **CS 101**   | Computer Science I · Foundations of Computation | 4       | Wed/Thu/Fri 09:00 + Tue Lab 15:00 | PS 30%, Quizzes 10%, Midterms 30%, Final 20%, Projects 10% |
 | **PROG 101** | Programming I: Structured Programming in C      | 4       | Tue/Wed/Thu 10:00 + Mon Lab 15:00 | Lab 20%, PS 35%, Midterms 25%, Final 20%                   |
-| **MATH 141** | Calculus I · Limits, Derivatives, and Integrals      | 4       | Mon/Tue/Wed 11:00 + Fri Rec 11:00 | PS 30%, Midterms 40%, Final 30%                            |
+| **MATH 141** | Calculus I · Limits, Derivatives, and Integrals | 4       | Mon/Tue/Wed 11:00 + Fri Rec 11:00 + Fri Lab 15:00 | PS 30%, Midterms 40%, Final 30%                            |
 | **MATH 151** | Discrete Mathematics for Computer Science       | 3       | Mon/Thu/Fri 13:00 + Wed Lab 15:00 | PS 40%, Midterms 30%, Final 30%                            |
 | **PHYS 141** | Physics I: Mechanics, Waves, and Thermodynamics | 4       | Mon/Tue/Fri 14:00 + Thu Lab 14:00 | Lab 20%, PS 30%, Midterms 30%, Final 20%                   |
-| **CS 190**   | CS Seminar · Profession, Ethics & Culture        | 1       | Wed 13:00                         | Participation 40%, Papers 60%                              |
+| **CS 190**   | CS Seminar · Profession, Ethics & Culture       | 1       | Wed 13:00                         | Participation 40%, Papers 60%                              |
 |              | **Total Fall Credits**                          | **20**  |                                   |                                                            |
 
 ### Spring Semester

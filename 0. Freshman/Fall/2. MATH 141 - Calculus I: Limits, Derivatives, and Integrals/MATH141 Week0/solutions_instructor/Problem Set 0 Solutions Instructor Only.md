@@ -121,9 +121,7 @@ $f$ **is its own inverse** — it's an involution. This is confirmed by part (a)
 
 $f(f(f(x))) = f(f(f(x))) = f(x)$ (since $f(f(x)) = x$, applying $f$ once more gives $f(x)$).
 
-**Pattern:** $f^{(n)}(x) = x$ if $n$ is even, $f^{(n)}(x) = f(x)$ if $n$ is odd.
-
-**Proof:** By induction. Base: $f^{(2)}(x) = x$ (proven). Inductive step: If $f^{(2k)}(x) = x$, then $f^{(2k+2)}(x) = f(f(f^{(2k)}(x))) = f(f(x)) = x$. ✓
+**Pattern:** four applications are two pairs, each pair giving back $x$: $f^{(4)}(x) = x$; five is one more, $f^{(5)}(x) = f(x)$. In general even counts give $x$, odd counts give $f(x)$. *(Revised 2026-09-21: no induction proof is asked for — induction is not part of MATH 141.)*
 
 ---
 
@@ -268,7 +266,7 @@ Multiply numerator and denominator by $\sqrt{x+h}+\sqrt{x}$:
 
 $$= \frac{(x+h)-x}{h(\sqrt{x+h}+\sqrt{x})} = \frac{h}{h(\sqrt{x+h}+\sqrt{x})} = \frac{1}{\sqrt{x+h}+\sqrt{x}}$$
 
-As $h \to 0$: $\dfrac{1}{\sqrt{x}+\sqrt{x}} = \dfrac{1}{2\sqrt{x}}$
+At $h = 0$ the simplified form is $\dfrac{1}{\sqrt{x}+\sqrt{x}} = \dfrac{1}{2\sqrt{x}}$ (Week 3 will show this is the derivative of $\sqrt{x}$)
 
 *This is the derivative of $\sqrt{x}$. Students should note this.*
 
@@ -277,7 +275,7 @@ As $h \to 0$: $\dfrac{1}{\sqrt{x}+\sqrt{x}} = \dfrac{1}{2\sqrt{x}}$
 $$= \frac{\frac{x^2 - (x+h)^2}{x^2(x+h)^2}}{h} = \frac{x^2 - x^2 - 2xh - h^2}{hx^2(x+h)^2} = \frac{-2xh - h^2}{hx^2(x+h)^2}$$
 $$= \frac{h(-2x-h)}{hx^2(x+h)^2} = \frac{-2x-h}{x^2(x+h)^2}$$
 
-As $h \to 0$: $\dfrac{-2x}{x^4} = \dfrac{-2}{x^3}$
+At $h = 0$ the simplified form is $\dfrac{-2x}{x^4} = \dfrac{-2}{x^3}$
 
 *This is the derivative of $x^{-2}$.*
 
@@ -414,36 +412,3 @@ $$\boxed{\theta = \pi/6, \pi/2, 5\pi/6}$$
 
 ---
 
-## Bonus Solutions
-
-**Bonus 1 — Triangle Inequality:**
-
-$|a+b|^2 = (a+b)^2 = a^2 + 2ab + b^2 \leq a^2 + 2|a||b| + b^2 = (|a|+|b|)^2$
-
-Since both sides are non-negative, taking square roots: $|a+b| \leq |a|+|b|$. ∎
-
-**Reverse:** Apply forward to $a = (a-b) + b$: $|a| = |(a-b)+b| \leq |a-b|+|b|$  
-So $|a|-|b| \leq |a-b|$. By symmetry, $|b|-|a| \leq |b-a| = |a-b|$.  
-Therefore $\big||a|-|b|\big| \leq |a-b|$. ∎
-
-**Bonus 2 — Cauchy's Functional Equation:**
-
-$f(0) = f(0+0) = f(0)+f(0) \Rightarrow f(0) = 0$.  
-By induction: $f(nx) = nf(x)$ for $n \in \mathbb{N}$.  
-For $n < 0$: $f(0) = f(x + (-x)) = f(x)+f(-x) = 0 \Rightarrow f(-x) = -f(x)$.  
-For rational $r = p/q$: $qf(px/q) = f(px) = pf(x) \Rightarrow f(px/q) = (p/q)f(x)$.  
-If continuous: $f(x) = cx$ where $c = f(1)$.
-
-**Bonus 3 — $e^\pi$ vs $\pi^e$:**
-
-Want to compare $e^\pi$ and $\pi^e$. Taking $\ln$: compare $\pi$ vs $e\ln\pi$.  
-Equivalent: compare $\pi/e$ vs $\ln\pi$.  
-Consider $g(x) = \ln x / x$. $g'(x) = (1-\ln x)/x^2 = 0$ at $x = e$. Max at $x = e$.  
-So $\ln x / x < \ln e / e = 1/e$ for all $x \neq e$.  
-Apply at $x = \pi$: $\ln\pi/\pi < 1/e \Rightarrow e\ln\pi < \pi \Rightarrow \ln(\pi^e) < \ln(e^\pi) \Rightarrow \pi^e < e^\pi$.
-
-Therefore $e^\pi > \pi^e$. ∎
-
----
-
-*Grading notes: Award partial credit liberally for correct setup with arithmetic errors. The most important thing is that students demonstrate they understand the method.*

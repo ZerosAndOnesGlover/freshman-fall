@@ -1,30 +1,52 @@
 # MATH 141 · Calculus I
 ## Week 7 Reference Sheet
-### L'Hôpital's Rule · Curve Sketching · Applied Optimization
+### Shape of a Graph · Curve Sketching · Applied Optimization
 
 ---
 
-## L'Hôpital's Rule
+## First Derivative Test
 
-**Applies only to** $\dfrac{0}{0}$ or $\dfrac{\infty}{\infty}$ forms:
+At critical number $c$:
 
-$$\lim_{x\to a}\frac{f(x)}{g(x)} = \lim_{x\to a}\frac{f'(x)}{g'(x)}$$
+| Sign change of $f'$ at $c$ | Conclusion |
+|------------------------------|-----------|
+| $+ \to -$ | Local maximum |
+| $- \to +$ | Local minimum |
+| No change | Not an extremum |
 
-*(Differentiate numerator and denominator SEPARATELY — this is NOT the quotient rule.)*
+---
 
-**Can be reapplied** if the new limit is still indeterminate.
+## Concavity and the Second Derivative
 
-**Always verify the indeterminate form FIRST** — applying the rule to a non-indeterminate limit gives a wrong answer.
+| Sign of $f''$ | Concavity |
+|---------------|-----------|
+| $f''(x)>0$ | Concave up (⌣) |
+| $f''(x)<0$ | Concave down (⌢) |
 
-### Converting Other Indeterminate Forms
+**Inflection point:** concavity changes. Necessary (not sufficient) condition: $f''(c)=0$ or undefined.
 
-| Form | Strategy |
-|------|----------|
-| $0\cdot\infty$ | Rewrite as $\dfrac{f}{1/g}$ or $\dfrac{g}{1/f}$ → $0/0$ or $\infty/\infty$ |
-| $\infty-\infty$ | Combine into a single fraction (common denominator) → $0/0$ |
-| $0^0$, $1^\infty$, $\infty^0$ | Take $\ln$ of both sides → exponent becomes $0\cdot\infty$ product → solve → exponentiate with $e$ |
+---
 
-**Key limit proved via L'Hôpital:** $\displaystyle\lim_{x\to\infty}\left(1+\dfrac1x\right)^x = e$
+## Second Derivative Test
+
+At a critical number $c$ where $f'(c)=0$:
+
+| $f''(c)$ | Conclusion |
+|----------|-----------|
+| $>0$ | Local minimum |
+| $<0$ | Local maximum |
+| $=0$ | **Inconclusive** — use First Derivative Test |
+
+---
+
+## Complete Curve Analysis Checklist
+
+1. Domain
+2. $f'(x)$: critical numbers, increase/decrease intervals
+3. Classify critical points (First or Second Derivative Test)
+4. $f''(x)$: concavity intervals, inflection points
+5. Asymptotes (vertical, horizontal — Week 1 techniques)
+6. Sketch
 
 ---
 
@@ -86,11 +108,10 @@ Directly underlies Big-O complexity comparisons: $O(\log n) < O(n) < O(n\log n) 
 
 | ❌ Wrong | ✅ Right |
 |---------|---------|
-| Apply L'Hôpital to a non-indeterminate limit | Always check form is $0/0$ or $\infty/\infty$ first |
-| Apply quotient rule instead of L'Hôpital | Differentiate numerator and denominator separately |
+| $f''(c)=0 \implies$ inflection point | Must verify concavity actually changes |
+| Assuming Second Derivative Test always works | It's silent when $f''(c)=0$ |
 | Forget to verify max/min in optimization | Always apply 2nd/1st Derivative Test after finding critical points |
 | Skip domain restrictions in optimization | Physical constraints (positivity) restrict the domain |
-| Assume $0^0$ form always equals 1 | Must actually compute the limit — it's genuinely indeterminate |
 
 ---
 
@@ -98,9 +119,9 @@ Directly underlies Big-O complexity comparisons: $O(\log n) < O(n) < O(n\log n) 
 
 | Day | Event | Topic |
 |-----|-------|-------|
-| Monday | **Quiz 07** + Lecture 1 | L'Hôpital's Rule, all indeterminate forms |
+| Monday | **Quiz 07** + Lecture 1 | I/D Test, First Derivative Test, concavity, Second Derivative Test |
 | Tuesday | Lecture 2 | Complete curve sketching synthesis, slant asymptotes |
-| Friday | **Lab 07** | Growth hierarchies, curve sketching practice, optimization design |
-| Wednesday | Lecture 3 + **PS5 Released** | Applied optimization: full worked examples |
+| Wednesday | Lecture 3 + **PS 7 released** (12:00) (12:00) | Applied optimization: full worked examples |
+| Friday | **Lab 07** (15:00) | Growth hierarchies, curve sketching practice, optimization |
 
 **Next week:** Introduction to Integral Calculus — Riemann Sums and the Definite Integral.

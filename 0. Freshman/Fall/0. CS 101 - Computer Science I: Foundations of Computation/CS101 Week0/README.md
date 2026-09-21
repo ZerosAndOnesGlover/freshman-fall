@@ -16,7 +16,7 @@ CS101_Week0/
 │   └── L03 Values Types and Expressions.md ← Fri: Python types, operators, expressions
 │
 ├── lab/
-│   ├── LAB 0 Environment Setup.md          ← Fri of W0 lab instructions (2 hours)
+│   ├── LAB 0 Environment Setup.md          ← Tue 29 Sep (W1) lab instructions (2 hours)
 │   ├── starter_hello.py                   ← Lab starter code — hello world
 │   ├── starter_temperature.py             ← Lab starter code — temperature converter
 │   ├── starter_calculator.py              ← Lab starter code — calculator
@@ -45,9 +45,9 @@ CS101_Week0/
 | Wed | Lecture 1 | What is CS? Algorithms, Turing, history, Von Neumann |     |
 | Thu | Lecture 2 | Python, tools, terminal, REPL, Git setup             |     |
 | Fri | Lecture 3 | Values, types, expressions, operators                |     |
-| Fri (W0) | Lab 0     | Environment setup, first programs, Git repo          |     |
+| Tue 29 Sep (W1) | Lab 0     | Environment setup, first programs, Git repo          |     |
 
-**No Problem Set this week.** (PS1 releases Friday of Week 1.)
+**No Problem Set this week.** (PS1 releases Friday 2 October.)
 **No Quiz this week.** (Quiz 1 is Wednesday of Week 2.)
 **Ungraded self-assessment quiz** in `assignments/` — do this over the weekend.
 
@@ -68,7 +68,7 @@ CS101_Week0/
 - [ ] Complete at least the Python and Git installation steps
 - [ ] Try the terminal commands in L02
 
-### Friday Lab, Week 0 (Required)
+### Tuesday 29 September Lab, Week 1 (Required)
 - [ ] Bring laptop with Python, VS Code, Git installed (or ask for help)
 - [ ] Complete all of LAB 0 Environment Setup.md
 - [ ] Get checked off by TA before leaving

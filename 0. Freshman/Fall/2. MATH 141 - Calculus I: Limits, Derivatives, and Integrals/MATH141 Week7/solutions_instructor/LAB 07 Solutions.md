@@ -78,7 +78,10 @@ has done the exercise backwards and should be told so — the point is to predic
 ## Part 3 — Optimization
 
 **3.1 Minimum-cost pipeline.** The standard setup: minimise a cost function over a feasible domain,
-typically C(x) = a·√(x²+h²) + b·(L−x). Setting C′ = 0 gives the interior critical point.
+here C(x) = 5000√(x²+25) + 3000(10 − x) on 0 ≤ x ≤ 10.
+C′(x) = 5000x/√(x²+25) − 3000 = 0 ⇒ x/√(x²+25) = 3/5 ⇒ **x = 3.75 km**. C(3.75) = 5000(6.25) + 3000(6.25)
+= **$50,000**, against C(0) = $55,000 and C(10) ≈ $55,902 at the endpoints. (Checked by a 100,001-point grid
+in Python.) The box problem in 3.2: V(2) = 128, the maximum on (0, 6).
 
 **Three things a complete answer must include:**
 
@@ -92,14 +95,6 @@ typically C(x) = a·√(x²+h²) + b·(L−x). Setting C′ = 0 gives the interi
 without derivatives. The comparison worth drawing: the analytic method gives an **exact** answer and
 requires a differentiable closed form; the numerical method needs only evaluations and works on
 functions with no closed form at all. Neither dominates.
-
----
-
-## Part 4 — Design Your Own
-
-Grade the **modelling**, not the arithmetic: is there a genuine constraint that eliminates one
-variable? Is the objective function correctly derived from the geometry or economics? Is the domain
-stated? A problem whose "constraint" does not actually constrain anything is the commonest failure.
 
 ---
 

@@ -1,9 +1,12 @@
 # MATH 141 · Calculus I
-## Lab 07 (Friday, Week 7)
+## Lab 07
 ### L'Hôpital's Rule Verification, Curve Sketching Practice, and Optimization Design
 
+**Date:** Friday 13 November 2026 · 15:00–16:50 · Lab Section (Week 7) — covers Weeks 6–7  
 **Duration:** 2 hours | **Tools:** Desmos, Python (optional)
-**Submission:** Written report due Monday, Week 8
+**Submission:** Written report due Monday 16 November 2026, 17:00 (Week 8)
+
+> *Revised 2026-09-21.* Part 4 (design your own optimization problem) removed to fit the two hours.
 
 ---
 
@@ -147,19 +150,6 @@ def find_max_numerically(f, a, b, n_points=10000):
 
 ---
 
-## Part 4 — Design Your Own Optimization Problem (15 min)
-
-**Question 4a:** Working with a partner, design an original applied optimization problem (not from the lecture or textbook). It should involve:
-- A clear real-world context
-- A geometric or algebraic constraint
-- A well-defined objective function
-
-Write the full problem statement, then solve it completely (objective function, constraint, differentiation, verification).
-
-**Question 4b:** Verify your answer using Desmos by graphing the objective function over its domain and visually confirming the extremum location.
-
----
-
 ## Lab Report Requirements
 
 Include:
@@ -167,16 +157,14 @@ Include:
 2. Full written analysis for all three functions in Part 2, with Desmos screenshots
 3. Complete solution to Exercise 3.1 with Desmos screenshot
 4. Your Python/pseudocode results from Exercise 3.2, with discussion of tradeoffs
-5. Your original optimization problem and full solution from Part 4
-6. **Reflection** (6–8 sentences): Compare the "exact" calculus approach to optimization with the "numerical/brute-force" approach from Exercise 3.2. What does calculus give you that brute-force search does not? In what situations might brute-force still be preferable?
+5. **Reflection** (6–8 sentences): Compare the "exact" calculus approach to optimization with the "numerical/brute-force" approach from Exercise 3.2. What does calculus give you that brute-force search does not? In what situations might brute-force still be preferable?
 
 **Grading:**
 
 | Section | Points |
 |---------|--------|
 | Part 1 — Growth rate hierarchies | 20 |
-| Part 2 — Curve sketching practice | 30 |
-| Part 3 — Optimization design/verify | 30 |
-| Part 4 — Original problem | 15 |
+| Part 2 — Curve sketching practice | 35 |
+| Part 3 — Optimization design/verify | 40 |
 | Reflection | 5 |
 | **Total** | **100** |

@@ -2,7 +2,7 @@
 ## Continuity, Discontinuity, and Bisection
 
 **Duration:** 2 hours · **20 points**
-**Lab session:** Friday of Week 2
+**Date:** Friday 9 October 2026 · 15:00–16:50 · Lab Section (Week 2) — covers Week 2 (Lectures 01–03)
 
 ---
 
@@ -52,8 +52,8 @@ $n\ge\log_2\!\big((b-a)/\varepsilon\big)$ for $\varepsilon=10^{-4},10^{-6},10^{-
 
 ## Part 4: The IVT Over the Rationals (3 pts)
 
-**4A.** Run your bisection on $f(x)=x^2-2$ over $[1,2]$, printing each midpoint as a **fraction**
-(use Python's `fractions.Fraction`). *(1 pt)*
+**4A.** Run your bisection on $f(x)=x^2-2$ over $[1,2]$, printing each midpoint as an exact fraction
+**by hand** for the first five steps (3/2, 5/4, …), then with Python to 15 decimal places. *(1 pt)*
 
 **4B.** Every midpoint is rational, and the brackets shrink toward $\sqrt2$. Explain in three
 sentences what this demonstrates about the IVT over $\mathbb{Q}$ versus over $\mathbb{R}$. *(2 pts)*

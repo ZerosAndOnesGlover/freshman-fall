@@ -114,7 +114,8 @@ $$\int_a^b u\,dv = \Big[uv\Big]_a^b - \int_a^b v\,du$$
 |-----|-------|-------|
 | Monday | **Quiz 10** + Lecture 1 | Indefinite integrals, Net Change Theorem, Substitution Rule |
 | Tuesday | Lecture 2 | Substitution in definite integrals, symmetry theorems |
+| Wednesday | Lecture 3 + **PS 10 released** (12:00) | Integration by Parts, repeated & circular cases |
 | Friday | **Lab 10** | Pattern recognition drills, symmetry visualization, tabular method |
-| Wednesday | Lecture 3 + **PS7 Released** | Integration by Parts, repeated & circular cases |
 
-**Next week:** Trigonometric integrals and trigonometric substitution.
+**Next week:** Applications of integration — area between curves, volumes by slicing and by shells.
+*(Trigonometric integrals and trigonometric substitution are in MATH 142.)*

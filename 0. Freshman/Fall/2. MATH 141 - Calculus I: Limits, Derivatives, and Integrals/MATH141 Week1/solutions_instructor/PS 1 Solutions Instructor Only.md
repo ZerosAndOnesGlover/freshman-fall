@@ -26,7 +26,7 @@ A bare answer with no working earns at most the execution marks — and in proof
 
 **3. Confusing 'limit exists' with 'function is defined'.** A limit can exist where f(a) is undefined, and f(a) can exist where the limit does not. Continuity requires the limit to exist, f(a) to exist, and the two to agree — all three.
 
-**4. Applying the IVT without checking its hypotheses.** The IVT needs continuity on a **closed** interval [a,b]. It guarantees existence, never uniqueness or a value — a student who claims 'exactly one root' from IVT alone has over-concluded.
+
 
 ---
 
@@ -130,33 +130,9 @@ $= 1 \cdot 1 \cdot \dfrac{5}{2 \cdot 1} = \boxed{\dfrac{5}{2}}$
 - $\lim_{x\to 4} f(x)$: DNE (one-sided limits $3 \neq 5$)
 - $f(4) = 3(4)-7 = 5$
 
-**B1(c):**
-- At $x=0$: Not continuous. Two-sided limit DNE.
-- At $x=4$: Not continuous. Two-sided limit DNE. (Also $f(4) = 5$ but limit from left is 3.)
-
----
-
-**B2.** Continuity at $x = -1$:
-
-$\lim_{x\to -1^-}g(x) = a(-1) + 3b = -a + 3b$
-
-$\lim_{x\to -1^+}g(x) = a - 2b(-1) = a + 2b$
-
-Set equal: $-a + 3b = a + 2b \Rightarrow b = 2a \quad \cdots (1)$
-
-Continuity at $x = 2$:
-
-$\lim_{x\to 2^-}g(x) = a - 2b(2) = a - 4b$
-
-$\lim_{x\to 2^+}g(x) = 3a - b + 2$
-
-Set equal: $a - 4b = 3a - b + 2 \Rightarrow -2a - 3b = 2 \quad \cdots (2)$
-
-Substitute $(1)$ into $(2)$: $-2a - 3(2a) = 2 \Rightarrow -8a = 2 \Rightarrow a = -\dfrac{1}{4}$
-
-Then $b = 2(-\frac{1}{4}) = -\dfrac{1}{2}$.
-
-**Answer:** $a = -\dfrac{1}{4}$, $b = -\dfrac{1}{2}$
+**B2.** $\lim_{x\to2^-}g(x) = 2a + 3$ and $\lim_{x\to2^+}g(x) = 4 - a$. The limit exists exactly when they agree:
+$2a + 3 = 4 - a \Rightarrow a = \dfrac{1}{3}$, and then $\lim_{x\to2}g(x) = \dfrac{11}{3}$. For every other $a$ the one-sided
+limits differ and the limit does not exist. *(4 for the one-sided limits, 4 for solving and the value.)*
 
 ---
 
@@ -189,49 +165,13 @@ $$\left|\frac{1}{x}-\frac{1}{2}\right| = \frac{|x-2|}{2|x|} < \frac{|x-2|}{2} < 
 
 ---
 
-## Part D — IVT
-
-**D1.** $f(x) = x^4 + x - 3$.
-
-$f(0) = -3 < 0$, $f(2) = 16+2-3 = 15 > 0 \Rightarrow$ root in $(0,2)$.
-
-$f(-2) = 16-2-3 = 11 > 0$, $f(-1) = 1-1-3 = -3 < 0 \Rightarrow$ root in $(-2,-1)$.
-
-Since $f$ is a polynomial (continuous), IVT gives at least one root in each interval. Two roots confirmed.
-
----
-
-**D2(a).** $g(x) = f(x)$. $g(0) = -1 < 0 < 5 = g(3)$. Since $0$ is between $f(0)$ and $f(3)$, by IVT $\exists\, c\in(0,3)$ with $f(c)=0$. $\square$
-
-**D2(b).** Let $h(x) = f(x)-x$. $h(0) = f(0)-0 = -1 < 0$ and $h(3) = f(3)-3 = 5-3 = 2 > 0$. By IVT $\exists\, c\in(0,3)$ with $h(c)=0$, i.e., $f(c)=c$. $\square$
-
-**D2(c).** No. IVT guarantees values between $f(a)=-1$ and $f(b)=5$. Since $7 > 5$, the IVT gives no conclusion. Without more information about $f$, we cannot determine whether $f(c)=7$ for some $c$.
-
----
-
-**D3.** Let position $0$ = bottom, position $1$ = summit. Let $A(t)$ = Hiker A's position at time $t\in[0,6]$ (hours after 8 AM). Let $B(t)$ = Hiker B's position. $A(0)=0, A(6)=1$; $B(0)=1, B(6)=0$. Both are continuous. Let $g(t) = A(t)-B(t)$. Then $g(0) = -1 < 0$ and $g(6) = 1 > 0$. By IVT, $\exists\, c\in(0,6)$ with $g(c)=0$, i.e., $A(c)=B(c)$. At time $c$ hours after 8 AM, both hikers are at the same position. $\square$
-
----
-
 ## Part E
 
-**E1.** The reasoning is incomplete. The student verified (2) $\lim_{x\to2}f(x)=5$ and (3) the limit equals $f(2)=5$ simultaneously. But the three requirements are: (1) $f(2)$ is defined, (2) $\lim_{x\to2}f(x)$ exists, (3) they are equal. The student assumed all three without stating them. A complete argument must verify each separately.
+**E1.** Not correct. The limit describes values of $f(x)$ for $x$ **near** 2, $x \neq 2$; it ignores $f(2)$ entirely.
+Example: $f(x) = x$ for $x \neq 2$ and $f(2) = 5$ has $f(2) = 5$ but $\lim_{x\to2}f(x) = 2$. *(3 explanation, 3 example.)*
 
 **E2.**
 (a) Domain: $\mathbb{R}\setminus\{3\}$ (denominator zero at $x=3$)
 (b) $\lim_{x\to3}\dfrac{(x-3)(x+2)}{x-3} = \lim_{x\to3}(x+2) = 5$
-(c) $g(x) = x+2$ for all $x\in\mathbb{R}$
-(d) Removable discontinuity (limit exists, $f(3)$ undefined)
-(e) $f$ is the line $y=x+2$ with a hole at $(3,5)$; $g$ is the complete line.
-
----
-
-**E3 (Bonus).**
-
-(a) $\left|x\sin\!\left(\frac{1}{x}\right) - 0\right| = |x|\left|\sin\!\left(\frac{1}{x}\right)\right| \leq |x| \to 0$. By Squeeze, $\lim_{x\to0}f(x)=0=f(0)$. Continuous. $\square$
-
-(b) $\lim_{h\to0}\dfrac{f(h)-f(0)}{h} = \lim_{h\to0}\dfrac{h\sin(1/h)}{h} = \lim_{h\to0}\sin(1/h)$.
-
-This limit does not exist (oscillates between $-1$ and $1$). So $f$ is not differentiable at 0.
-
-(c) Continuity does not imply differentiability. A function can be continuous at a point but fail to have a derivative there. This example is pathological but illuminating — the "corner" or "kink" intuition for non-differentiability is insufficient; here there is no geometric corner, just infinite oscillation in the slope.
+(c) The limit only uses $x$ near 3, where $f(x) = x + 2$; whether $f(3)$ is defined never enters. (Week 2 names
+this a removable discontinuity.)

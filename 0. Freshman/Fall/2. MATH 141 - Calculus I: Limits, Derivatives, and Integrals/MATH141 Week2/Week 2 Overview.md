@@ -10,13 +10,13 @@ the ways it can fail, and prove the first genuinely non-obvious theorem of the c
 
 | Day | Lecture | Topic |
 |---|---|---|
-| Monday | 1 | Continuity: The Three-Part Definition |
-| Tuesday | 2 | Classifying Discontinuities |
-| Wednesday | 3 | The Intermediate Value Theorem |
-| — | Lab 02 | Continuity, Discontinuity, and Bisection |
+| Monday 5 Oct | 1 | Continuity: The Three-Part Definition |
+| Tuesday 6 Oct | 2 | Classifying Discontinuities |
+| Wednesday 7 Oct | 3 | The Intermediate Value Theorem |
+| Friday 9 Oct, 15:00 | Lab 02 | Continuity, Discontinuity, and Bisection |
 
-**Quiz 02** at the start of Monday's lecture, covering Week 1.
-**Problem Set 2** due Wednesday of Week 3.
+**Quiz 02** at the start of Monday 5 October 2026's lecture (11:00), covering Week 1.
+**Problem Set 2** released Wednesday 7 October 2026, 12:00; due Wednesday 14 October 2026, 11:00 (Week 3).
 
 ---
 

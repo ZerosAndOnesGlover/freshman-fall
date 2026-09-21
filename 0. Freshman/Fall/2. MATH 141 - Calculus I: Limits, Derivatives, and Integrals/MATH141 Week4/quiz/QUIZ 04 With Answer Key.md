@@ -1,5 +1,7 @@
 # MATH 141 · Quiz 04
 ## Administered: start of Week 4, Monday
+
+**Date:** Monday 19 October 2026 · 11:00–11:15 (start of Lecture 01) · Week 4
 ### Covers: Week 3 — the derivative, its definition, and differentiability
 
 **Duration:** 15 minutes · Closed book · **20 points**

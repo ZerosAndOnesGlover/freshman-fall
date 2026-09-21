@@ -225,4 +225,4 @@ A stronger conclusion follows: since $f'$ is a derivative it has the intermediat
 (Darboux's theorem), so $f'\neq0$ everywhere means $f'$ has **constant sign** — $f$ is strictly
 monotonic, not merely injective.
 
-*Next: Wednesday — Derivatives and the Shape of a Graph (increasing/decreasing, concavity)*
+*Next: Wednesday — L'Hôpital's Rule*

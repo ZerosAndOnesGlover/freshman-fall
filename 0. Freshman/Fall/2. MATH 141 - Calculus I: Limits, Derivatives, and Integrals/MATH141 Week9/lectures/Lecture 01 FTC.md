@@ -7,7 +7,7 @@
 ---
 
 **Reading:** Stewart §5.3 | Spivak Ch. 14 (The Fundamental Theorem)
-**Problem Set 6 released today. Due: Wednesday, Week 7.**
+**Problem Set 8 is due Wednesday 25 November 2026, 11:00.**
 
 ---
 
@@ -283,4 +283,4 @@ the MVT supplies. The two parts are not the same statement; one manufactures ant
 other spends them.
 
 *Reading for Week 7: Stewart §5.4–5.5 (Indefinite Integrals, the Substitution Rule)*
-*Problem Set 6 due next Wednesday — see assignment file.*
+*Problem Set 9 is released Wednesday after Lecture 3.*

@@ -1,7 +1,8 @@
 # MATH 141 · Problem Set 12
 ## Comprehensive Revision (Optional, Ungraded)
 
-**Released:** Week 12 · **Not submitted** — full solutions below
+**Released:** Monday 14 December 2026, 12:00 · Week 12 · **Not submitted** — full solutions below
+**Work it before:** the final exam, Wednesday 23 December 2026, 09:00
 **Suggested time:** 3 hours, under exam conditions
 
 > **Work this cold, timed, before reading the solutions.** Its value is entirely diagnostic: it tells

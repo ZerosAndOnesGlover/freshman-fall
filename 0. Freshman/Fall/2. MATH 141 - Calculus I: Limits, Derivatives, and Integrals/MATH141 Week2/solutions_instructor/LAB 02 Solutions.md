@@ -98,7 +98,7 @@ from testing `>=` instead of `>`; accept either with a note.*
 
 ## Part 4: The IVT Over the Rationals (3 pts)
 
-**4A.** With `Fraction`, the midpoints are $\tfrac32,\tfrac54,\tfrac{11}{8},\tfrac{23}{16},\dots$ —
+**4A.** By hand, the midpoints are $\tfrac32,\tfrac54,\tfrac{11}{8},\tfrac{23}{16},\dots$ —
 **every one rational**, with denominators doubling.
 
 **4B — the expected explanation.**

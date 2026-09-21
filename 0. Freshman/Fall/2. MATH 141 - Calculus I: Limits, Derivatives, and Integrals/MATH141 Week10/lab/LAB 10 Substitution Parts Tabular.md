@@ -1,9 +1,10 @@
 # MATH 141 · Calculus I
-## Lab 10 (Friday, Week 10)
+## Lab 10
 ### Substitution Pattern Recognition, Symmetry, and the Tabular Method for Integration by Parts
 
+**Date:** Friday 4 December 2026 · 15:00–16:50 · Lab Section (Week 10) — covers Week 10 (Lectures 01–03)  
 **Duration:** 2 hours | **Tools:** Desmos, Python (optional)
-**Submission:** Written report due Monday, Week 11
+**Submission:** Written report due Monday 7 December 2026, 17:00 (Week 11)
 
 ---
 

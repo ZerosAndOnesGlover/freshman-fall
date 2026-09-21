@@ -2,10 +2,10 @@
 ## Week 7 Overview and Instructor Notes
 
 **Topic:** Shape of a Graph · Curve Sketching Synthesis · Applied Optimization
-**Lectures:** Monday / Tuesday / Wednesday
-**Lab:** Friday
-**Quiz:** Monday (covers Week 6 — extrema, Rolle's Theorem, the MVT, L'Hôpital's Rule)
-**Problem Set 7:** Released Wednesday, due following Wednesday
+**Lectures:** Monday 9 Nov / Tuesday 10 Nov / Wednesday 11 November 2026, 11:00
+**Lab:** Friday 13 November 2026, 15:00–16:50 (Lab 07)
+**Quiz:** Monday 9 November 2026, 11:00–11:15 (covers Week 6 — extrema, Rolle's Theorem, the MVT, L'Hôpital's Rule)
+**Problem Set 7:** Released Wednesday 11 November 2026, 12:00 · due Wednesday 18 November 2026, 11:00
 
 ---
 
@@ -13,9 +13,9 @@
 
 By the end of Week 7, students will be able to:
 
-1. Recognize $0/0$ and $\infty/\infty$ indeterminate forms and apply L'Hôpital's Rule correctly
-2. Convert $0\cdot\infty$, $\infty-\infty$, $0^0$, $1^\infty$, $\infty^0$ forms into L'Hôpital-applicable forms
-3. Reapply L'Hôpital's Rule when necessary and recognize when it fails to terminate
+1. Use the Increasing/Decreasing Test and the First Derivative Test to classify critical numbers
+2. Determine concavity and inflection points, and apply the Second Derivative Test (knowing when it is inconclusive)
+3. Use L'Hôpital's Rule (Week 6) to find the asymptotic behaviour needed in curve sketching
 4. Perform a complete 8-step curve sketching analysis on rational, exponential, and logarithmic functions
 5. Identify and compute slant (oblique) asymptotes via polynomial division
 6. Set up and solve applied optimization problems using the full 8-step strategy
@@ -50,11 +50,11 @@ MATH141 Week7/
 
 ## Pacing Notes
 
-**Monday (L'Hôpital's Rule):** After Quiz 07, open by revisiting the unsolved $0/0$ limits from Week 1 to motivate the need for a new tool. The Cauchy MVT proof sketch connects directly back to last week — spend a few minutes making this link explicit, since it demonstrates the payoff of the "abstract" MVT machinery. Budget significant time for the indeterminate form conversions (Section 6) — these are where most computational errors occur. The growth rate hierarchy (Section 8) is an excellent bridge to CS-background students; consider opening or closing with it.
+**Monday (Shape of a Graph):** After Quiz 07, build directly on Week 6's MVT Corollary 3 — the Increasing/Decreasing Test is already proved. Spend the new time on concavity and the Second Derivative Test, and show $x^4$, $-x^4$, $x^3$ side by side so students see why $f''(c)=0$ is inconclusive.
 
 **Tuesday (Curve Sketching):** This lecture is synthesis, not new theory — pacing can be brisk on individual techniques (all previously covered) but should slow down on the worked examples, since students need to see the *complete* checklist executed fluently, start to finish, more than once. Do at least two of the three worked examples fully on the board. The slant asymptote technique (Section 3) is the one genuinely new piece of content this lecture — don't rush it.
 
-**Friday (Lab):** Part 1 (growth rate hierarchies) reinforces Monday's lecture with visual/numerical evidence — very effective for building intuition about "why" the abstract limit theorems matter. Part 3's numerical optimizer (grid search) is a nice moment to explicitly connect to gradient descent / numerical methods students may see later — call this out explicitly if time allows.
+**Friday (Lab):** Part 1 (growth rate hierarchies) revisits Week 6's L'Hôpital lecture with visual/numerical evidence — very effective for building intuition about "why" the abstract limit theorems matter. Part 3's numerical optimizer (grid search) is a nice moment to explicitly connect to gradient descent / numerical methods students may see later — call this out explicitly if time allows.
 
 **Wednesday (Applied Optimization):** The most important lecture of the week for many students, since it is the most commonly tested skill in later courses (economics, physics, engineering). Insist on the full 8-step structure every time — sloppy setup is the primary source of errors here, not the calculus itself. The Snell's Law exercise (in the exercise set) is an excellent capstone if time allows — it shows calculus deriving a physical law from a "least time" principle, foreshadowing the calculus of variations.
 
@@ -62,11 +62,11 @@ MATH141 Week7/
 
 ## Common Student Errors — Week 7
 
-1. **Applying L'Hôpital's Rule without checking the indeterminate form.** This is the single most common error. Drill: state the form explicitly ("this is $0/0$") before applying the rule.
+1. **Reading $f''(c)=0$ as "inflection point".** Concavity must actually change sign at $c$ — $x^4$ has $f''(0)=0$ and no inflection.
 
-2. **Confusing L'Hôpital's Rule with the Quotient Rule.** Students sometimes compute $(f/g)'$ instead of $f'/g'$. These are entirely different operations.
+2. **Reading an inconclusive Second Derivative Test as "no extremum".** Fall back to the First Derivative Test (Problem Set 7, D1).
 
-3. **Stopping after one application when the result is still indeterminate.** Reapply until the form is no longer indeterminate (or recognize the rule isn't converging, as in Part B3 of the problem set).
+3. **Carrying L'Hôpital errors into asymptote work** — applying the rule to a form that is not indeterminate. State the form before each application.
 
 4. **In curve sketching, confusing domain exclusions with vertical asymptotes.** A rational function may have a hole (removable discontinuity, Week 2) rather than a true vertical asymptote at an excluded point — always check whether the numerator also vanishes there.
 

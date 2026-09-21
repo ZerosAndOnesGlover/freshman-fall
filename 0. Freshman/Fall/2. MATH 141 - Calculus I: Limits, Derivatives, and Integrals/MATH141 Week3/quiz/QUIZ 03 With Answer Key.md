@@ -1,5 +1,7 @@
 # MATH 141 · Calculus I
 ## Quiz 03 (Monday, Week 3 — Start of Class)
+
+**Date:** Monday 12 October 2026 · 11:00–11:15 (start of Lecture 01) · Week 3
 ### Covers: Week 2 — Continuity, Types of Discontinuity, and the IVT
 
 **Time:** 15 minutes | **Closed book, closed notes**

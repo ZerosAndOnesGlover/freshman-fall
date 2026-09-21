@@ -43,38 +43,50 @@ differentiability has assumed the conclusion.
 
 ---
 
-## Part 3 — f, f′, f″ Side by Side
+## Part 3 — f and f′ Side by Side
 
-| f | f′ | f″ |
+**3.1** $f'(x)=4x^3-12x^2+8x=4x(x-1)(x-2)$. Critical numbers $0, 1, 2$.
+
+| Interval | Sign of f′ | f |
 |---|---|---|
-| increasing | positive | — |
-| local max | crosses 0 downward | negative |
-| local min | crosses 0 upward | positive |
-| concave up | increasing | positive |
-| inflection point | local extremum | **crosses** zero |
+| $(-\infty,0)$ | − | decreasing |
+| $(0,1)$ | + | increasing |
+| $(1,2)$ | − | decreasing |
+| $(2,\infty)$ | + | increasing |
 
-**The inflection point requires f″ to change sign, not merely to vanish.** f(x) = x⁴ has f″(0) = 0
-and no inflection there. This is the exact analogue of "f′ = 0 does not imply an extremum".
+Local minima at $x=0$ ($f=0$) and $x=2$ ($f=0$); local maximum at $x=1$ ($f=1$).
 
-**3.2 Reverse engineering** — given f′, reconstruct the shape of f — is the harder and more valuable
-direction, and is the skill Part 4 of Lab 6 (accumulation functions) formalises.
+**3.2** $f'=(x+2)(x-1)^2$. Critical numbers $-2, 1$. $f'<0$ on $(-\infty,-2)$ and $f'>0$ on $(-2,1)$ and
+$(1,\infty)$: local minimum at $x=-2$; **no extremum at $x=1$** (f′ touches 0 without changing sign —
+the squared factor). Any two such $f$ differ by a constant (Corollary 2).
 
 ---
 
-## Part 4 — When the Second-Derivative Test Fails
+## Part 4 — L'Hôpital Numerically
 
-Three functions with **f′(0) = f″(0) = 0** and three different behaviours:
+*(Values computed in Python 3.14.)*
 
-| f | Behaviour at 0 |
+| h | (eʰ−1−h)/h² |
 |---|---|
-| x⁴ | **local minimum** |
-| −x⁴ | **local maximum** |
-| x³ | **neither** — inflection with horizontal tangent |
+| 0.1 | 0.517092 |
+| 0.01 | 0.501671 |
+| 0.001 | 0.500167 |
+| 0.0001 | 0.500017 |
 
-**f″(c) = 0 is therefore completely inconclusive.** The test says nothing, and a student who
-concludes "no extremum" from it has made a real error. The fallback is the **first-derivative sign
-test**: examine the sign of f′ on either side of the critical point. For x⁴, f′ = 4x³ goes − to +,
-so it is a minimum; for x³, f′ = 3x² is ≥ 0 on both sides, so no extremum.
+Limit $\tfrac12$: two applications give $e^h/2\to\tfrac12$.
+
+| x | ln x/√x |
+|---|---|
+| 10 | 0.728141 |
+| 10² | 0.460517 |
+| 10⁴ | 0.092103 |
+| 10⁶ | 0.013816 |
+
+Limit 0 (L'Hôpital: $2/\sqrt{x}\to0$): $\sqrt{x}$ grows faster than $\ln x$. Note the value *rises* at
+first — the limit only shows for large $x$.
+
+**4c.** $1+\cos x$ oscillates between 0 and 2 forever, so $\lim f'/g'$ does not exist and the rule gives
+no information; the graph of $(x+\sin x)/x$ visibly settles to 1.
 
 ---
 
@@ -87,9 +99,9 @@ c in (a,b).
 roots, f has at most k+1. Combined with the IVT (which supplies *existence* from sign changes),
 this brackets the root count exactly.
 
-For f(x) = x³ − x − 2: f′ = 3x² − 1 has two roots (±1/√3), so f has **at most three** roots. Testing
-signs shows exactly one sign change, so f has **exactly one** real root — the 1.5213… found by
-bisection in Lab 1.
+For f(x) = x⁵ + 3x + 1: f′(x) = 5x⁴ + 3 ≥ 3 > 0, so f′ is never zero and f has **at most one** root.
+f(−1) = −3 < 0 and f(0) = 1 > 0, so by the IVT there is a root in (−1, 0). Hence **exactly one** real
+root.
 
 This pairing is the point of the exercise: **IVT gives existence, Rolle gives uniqueness.** Neither
 alone is enough.

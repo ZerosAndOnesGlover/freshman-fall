@@ -7,7 +7,7 @@
 ---
 
 **Reading:** Stewart §3.9 | Spivak Ch. 11 (applications of differentiation)
-**Problem Set 5 released today. Due: Wednesday, Week 4.**
+**Problem Set 5 released today, 12:00. Due: Wednesday 4 November 2026, 11:00 (Week 6).**
 
 ---
 

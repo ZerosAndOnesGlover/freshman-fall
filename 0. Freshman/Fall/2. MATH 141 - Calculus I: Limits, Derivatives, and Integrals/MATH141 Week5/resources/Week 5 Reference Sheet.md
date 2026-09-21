@@ -119,7 +119,7 @@ All combined with: constant multiple, sum, product, quotient, and chain rules.
 |-----|-------|-------|
 | Monday | **Quiz 05** + Lecture 1 | Implicit differentiation |
 | Tuesday | Lecture 2 | Log derivatives, log diff., inverse trig |
+| Wednesday | Lecture 3 + **PS 5 released** (12:00) | Related rates |
 | Friday | **Lab 05** | Implicit curves, log exploration, related rates simulation |
-| Wednesday | Lecture 3 + **PS3 Released** | Related rates |
 
 **Next week:** Extrema, Rolle's Theorem, Mean Value Theorem.
