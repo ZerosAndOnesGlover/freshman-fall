@@ -4,7 +4,7 @@
 **Week 8 · Friday**
 *"Knowing that dict lookup is O(1) is theory. Knowing WHEN to reach for a dict instead of a list is engineering." — CS 101*
 
-**Date:** Friday 16 October 2026 · 09:00–09:50 · Week 8
+**Date:** Friday 20 November 2026 · 09:00–09:50 · Week 8
 
 ---
 

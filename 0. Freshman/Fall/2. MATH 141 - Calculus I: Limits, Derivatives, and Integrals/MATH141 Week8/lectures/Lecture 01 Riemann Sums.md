@@ -2,7 +2,7 @@
 ## Week 8 · Lecture 1 (Monday)
 ### Areas, Distances, and Riemann Sums
 
-**Date:** Monday 12 October 2026 · 11:00–11:50 · Week 8
+**Date:** Monday 16 November 2026 · 11:00–11:50 · Week 8
 
 ---
 

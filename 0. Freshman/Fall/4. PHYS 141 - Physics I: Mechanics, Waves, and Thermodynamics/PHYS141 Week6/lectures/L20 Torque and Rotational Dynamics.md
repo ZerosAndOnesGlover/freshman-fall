@@ -3,7 +3,7 @@
 
 > **Core Principle:** Torque is the rotational analog of force — it is what causes angular acceleration. Just as F = ma governs linear motion, τ = Iα governs rotational motion, where the moment of inertia I plays the role of "rotational mass," quantifying how the mass of an object is distributed relative to the rotation axis.
 
-**Date:** Tuesday 29 September 2026 · 14:00–14:50 · Week 6
+**Date:** Tuesday 3 November 2026 · 14:00–14:50 · Week 6
 
 ---
 

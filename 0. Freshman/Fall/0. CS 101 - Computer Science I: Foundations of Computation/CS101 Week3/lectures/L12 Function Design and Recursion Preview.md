@@ -4,7 +4,7 @@
 **Week 3 · Friday**
 *"The art of programming is the art of organizing complexity." — Edsger Dijkstra*
 
-**Date:** Friday 11 September 2026 · 09:00–09:50 · Week 3
+**Date:** Friday 16 October 2026 · 09:00–09:50 · Week 3
 
 ---
 

@@ -1,7 +1,7 @@
 # PHYS 141 · Physics I: Mechanics, Waves & Thermodynamics
 ## Lecture 31 — Sound Waves, Intensity, and the Decibel Scale
 
-**Date:** Monday 26 October 2026 · 14:00–14:50 · Week 10
+**Date:** Monday 30 November 2026 · 14:00–14:50 · Week 10
 
 ---
 

@@ -2,7 +2,7 @@
 ## Week 10 · Lecture 1 (Monday)
 ### Indefinite Integrals, the Net Change Theorem, and the Substitution Rule
 
-**Date:** Monday 26 October 2026 · 11:00–11:50 · Week 10
+**Date:** Monday 30 November 2026 · 11:00–11:50 · Week 10
 
 ---
 

@@ -2,7 +2,7 @@
 ## Lecture · Week 4: Algorithmic Bias
 ### Case Studies in Hiring, Lending, and Facial Recognition
 
-**Date:** Wednesday 16 September 2026 · 13:00–13:50 · Week 4
+**Date:** Wednesday 21 October 2026 · 13:00–13:50 · Week 4
 
 ---
 

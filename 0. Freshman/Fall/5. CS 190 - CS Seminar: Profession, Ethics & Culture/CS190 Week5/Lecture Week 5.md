@@ -2,7 +2,7 @@
 ## Lecture · Week 5: Privacy and Surveillance
 ### Data Collection, GDPR, and the Fourth Amendment
 
-**Date:** Wednesday 23 September 2026 · 13:00–13:50 · Week 5
+**Date:** Wednesday 28 October 2026 · 13:00–13:50 · Week 5
 
 ---
 

@@ -1,7 +1,7 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 12 · Lecture 3: Debugging
 
-**Date:** Thursday 12 November 2026 · 10:00–10:50 · Week 12
+**Date:** Thursday 17 December 2026 · 10:00–10:50 · Week 12
 
 ---
 

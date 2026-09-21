@@ -2,7 +2,7 @@
 ## Lecture · Week 2: How Software Gets Built
 ### Agile, Open Source, and Research Labs
 
-**Date:** Wednesday 2 September 2026 · 13:00–13:50 · Week 2
+**Date:** Wednesday 7 October 2026 · 13:00–13:50 · Week 2
 
 ---
 

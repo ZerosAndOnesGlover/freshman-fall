@@ -2,7 +2,7 @@
 ## Lecture 7.2 (L22) — Permutations and Combinations
 ### Thursday, Week 7
 
-**Date:** Thursday 8 October 2026 · 13:00–13:50 · Week 7
+**Date:** Thursday 12 November 2026 · 13:00–13:50 · Week 7
 
 ---
 

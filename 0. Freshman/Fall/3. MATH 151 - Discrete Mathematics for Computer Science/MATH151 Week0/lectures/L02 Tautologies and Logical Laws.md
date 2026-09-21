@@ -2,7 +2,7 @@
 ## Lecture 0.3. Tautologies, Contradictions, Logical Equivalence, and the Laws of Logic
 ### Friday, Week 0
 
-**Date:** Friday 21 August 2026 · 13:00–13:50 · Week 0
+**Date:** Friday 25 September 2026 · 13:00–13:50 · Week 0
 
 ---
 

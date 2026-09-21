@@ -1,7 +1,7 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 11 · Lecture 1: Function Pointers — Code as Data
 
-**Date:** Tuesday 3 November 2026 · 10:00–10:50 · Week 11
+**Date:** Tuesday 8 December 2026 · 10:00–10:50 · Week 11
 
 ---
 

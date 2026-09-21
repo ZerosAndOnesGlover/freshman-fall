@@ -1,7 +1,7 @@
 # PHYS 141 · Physics I: Mechanics, Waves & Thermodynamics
 ## Lecture 29 — Superposition and Interference
 
-**Date:** Tuesday 20 October 2026 · 14:00–14:50 · Week 9
+**Date:** Tuesday 24 November 2026 · 14:00–14:50 · Week 9
 
 ---
 

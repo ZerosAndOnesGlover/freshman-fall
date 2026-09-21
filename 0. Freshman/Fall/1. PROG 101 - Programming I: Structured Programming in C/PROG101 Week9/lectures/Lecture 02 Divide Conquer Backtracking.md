@@ -1,7 +1,7 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 9 · Lecture 2: Recursive Algorithms — Divide-and-Conquer and Backtracking
 
-**Date:** Wednesday 21 October 2026 · 10:00–10:50 · Week 9
+**Date:** Wednesday 25 November 2026 · 10:00–10:50 · Week 9
 
 ---
 

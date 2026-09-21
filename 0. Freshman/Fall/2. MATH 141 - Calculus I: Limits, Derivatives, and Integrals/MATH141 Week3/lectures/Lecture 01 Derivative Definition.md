@@ -2,7 +2,7 @@
 ## Week 3 · Lecture 1 (Monday)
 ### The Derivative: Definition, Geometric Meaning, and the Difference Quotient
 
-**Date:** Monday 7 September 2026 · 11:00–11:50 · Week 3
+**Date:** Monday 12 October 2026 · 11:00–11:50 · Week 3
 
 ---
 

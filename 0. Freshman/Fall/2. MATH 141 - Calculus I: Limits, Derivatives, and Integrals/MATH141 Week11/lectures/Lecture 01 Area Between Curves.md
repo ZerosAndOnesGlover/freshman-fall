@@ -2,7 +2,7 @@
 ## Week 11 · Lecture 1 (Monday)
 ### Area Between Curves
 
-**Date:** Monday 2 November 2026 · 11:00–11:50 · Week 11
+**Date:** Monday 7 December 2026 · 11:00–11:50 · Week 11
 
 ---
 

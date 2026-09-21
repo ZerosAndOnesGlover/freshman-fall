@@ -2,7 +2,7 @@
 ## Lecture 10.3 (L32) — Paths, Connectivity, Euler and Hamilton
 ### Friday, Week 10
 
-**Date:** Friday 30 October 2026 · 13:00–13:50 · Week 10
+**Date:** Friday 4 December 2026 · 13:00–13:50 · Week 10
 
 ---
 

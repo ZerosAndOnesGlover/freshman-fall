@@ -4,7 +4,7 @@
 **Week 4 · Friday**
 *"Recursion requires trusting the inductive hypothesis — and that trust is earned by proof, not intuition." — CS 101*
 
-**Date:** Friday 18 September 2026 · 09:00–09:50 · Week 4
+**Date:** Friday 23 October 2026 · 09:00–09:50 · Week 4
 
 ---
 

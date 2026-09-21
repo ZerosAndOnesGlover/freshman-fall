@@ -1,7 +1,7 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 0 · Lecture 1: What Is a Compiler? The C Compilation Model
 
-**Date:** Tuesday 18 August 2026 · 10:00–10:50 · Week 0
+**Date:** Tuesday 22 September 2026 · 10:00–10:50 · Week 0
 
 ---
 

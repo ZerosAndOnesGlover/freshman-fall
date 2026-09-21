@@ -2,7 +2,7 @@
 ## Week 4 · Lecture 2 (Tuesday)
 ### The Chain Rule: Differentiating Composite Functions
 
-**Date:** Tuesday 15 September 2026 · 11:00–11:50 · Week 4
+**Date:** Tuesday 20 October 2026 · 11:00–11:50 · Week 4
 
 ---
 

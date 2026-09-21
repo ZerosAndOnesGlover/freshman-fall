@@ -1,7 +1,7 @@
 # PHYS 141 · Physics I: Mechanics, Waves & Thermodynamics
 ## Lecture 26 — Pendulums and Physical Oscillators
 
-**Date:** Tuesday 13 October 2026 · 14:00–14:50 · Week 8
+**Date:** Tuesday 17 November 2026 · 14:00–14:50 · Week 8
 
 ---
 

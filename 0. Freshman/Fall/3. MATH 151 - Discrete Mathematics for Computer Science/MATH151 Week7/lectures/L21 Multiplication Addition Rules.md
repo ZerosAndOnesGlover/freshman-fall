@@ -2,7 +2,7 @@
 ## Lecture 7.1 (L21) — The Multiplication Rule and Addition Rule
 ### Monday, Week 7
 
-**Date:** Monday 5 October 2026 · 13:00–13:50 · Week 7
+**Date:** Monday 9 November 2026 · 13:00–13:50 · Week 7
 
 ---
 

@@ -2,7 +2,7 @@
 ## Week 2 · Lecture 2 (Tuesday)
 ### Classifying Discontinuities
 
-**Date:** Tuesday 1 September 2026 · 11:00–11:50 · Week 2
+**Date:** Tuesday 6 October 2026 · 11:00–11:50 · Week 2
 
 ---
 

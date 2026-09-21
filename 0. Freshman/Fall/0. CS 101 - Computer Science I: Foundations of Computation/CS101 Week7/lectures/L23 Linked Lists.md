@@ -4,7 +4,7 @@
 **Week 7 · Thursday**
 *"Building your own linked list forces you to confront every design decision the underlying array-based structures made for you invisibly." — CS 101*
 
-**Date:** Thursday 8 October 2026 · 09:00–09:50 · Week 7
+**Date:** Thursday 12 November 2026 · 09:00–09:50 · Week 7
 
 ---
 

@@ -1,7 +1,7 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 7 · Lecture 3: Linked Lists — Structs and Pointers Combined
 
-**Date:** Thursday 8 October 2026 · 10:00–10:50 · Week 7
+**Date:** Thursday 12 November 2026 · 10:00–10:50 · Week 7
 
 ---
 

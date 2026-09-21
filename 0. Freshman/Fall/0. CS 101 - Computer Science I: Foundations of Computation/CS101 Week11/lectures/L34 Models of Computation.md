@@ -1,7 +1,7 @@
 # CS 101 · Lecture 34 (Week 11, Lecture 1)
 ## Models of Computation: What a Computer Fundamentally Is
 
-**Date:** Wednesday 4 November 2026 · 09:00–09:50 · Week 11
+**Date:** Wednesday 9 December 2026 · 09:00–09:50 · Week 11
 
 ---
 

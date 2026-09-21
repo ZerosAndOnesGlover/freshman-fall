@@ -4,7 +4,7 @@
 **Week 8 · Thursday**
 *"No hash function is perfect — collisions are not a bug, they are a mathematical certainty (pigeonhole principle). The engineering question is how gracefully you handle them." — CS 101*
 
-**Date:** Thursday 15 October 2026 · 09:00–09:50 · Week 8
+**Date:** Thursday 19 November 2026 · 09:00–09:50 · Week 8
 
 ---
 

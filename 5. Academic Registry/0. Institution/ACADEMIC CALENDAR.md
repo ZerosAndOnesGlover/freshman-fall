@@ -14,53 +14,55 @@
 
 ### Fall Semester, Year 1
 
-> **Dated for 2026.** Term opens **Monday 17 August 2026**. Week 0 is an ordinary five-day week;
-> thirteen teaching weeks (W0–W12) run continuously with no break weeks, ending Friday 13 November.
+> **Dated for 2026.** Term opens **Monday 21 September 2026**. Week 0 is an ordinary five-day week;
+> thirteen teaching weeks (W0–W12) run continuously with no break weeks, ending Friday 18 December; finals run Monday 21 – Friday 25 December.
+> (Re-based on 2026-09-21 from the earlier 17 August opening: every date moved +35 days.)
 > Week↔date conversion lives in [[Year1 - Freshman/ASSESSMENT CALENDAR|ASSESSMENT CALENDAR]].
 
 | Date | Event |
 |------|-------|
-| Thu Aug 13 | Freshman Orientation begins |
-| Mon Aug 17 | **Classes begin — Week 0** |
-| Fri Aug 21 | Week 0 labs (setup/orientation, ungraded) |
-| Fri Aug 21 | Add/Drop deadline |
-| Mon Aug 24 | **Week 1 begins — all graded work begins** |
-| Fri Aug 28 | Problem Set 1 due — CS 101, MATH 151, PHYS 141 (17:00) |
-| Tue Sep 01 | Quizzes begin — PROG 101 Quiz 1 (start of Tuesday lecture) |
-| Wed Sep 02 | CS 101 Quiz 1 (start of Wednesday lecture) |
-| Fri Sep 04 | Problem Set 1 due — MATH 141, PROG 101 (re-dated; see PREREQUISITE AUDIT) |
-| Mon Sep 07 | Labor Day — ⚠️ classes currently scheduled to run (see note below) |
-| Mon Sep 28 | **MIDTERM 1 WEEK begins (Week 6)** |
-| Mon Sep 28 | CS 101 Midterm 1 (75 min, 18:00–19:15) |
-| Wed Sep 30 | PROG 101 Midterm 1 (90 min, 18:00–19:30) |
-| Thu Oct 01 | MATH 141 Midterm 1 (75 min, 18:00–19:15) |
-| Fri Oct 02 | MATH 151 Midterm 1 (75 min, 18:00–19:15) |
-| Fri Oct 23 | CS 101 Project 1 due — Data Analysis Tool (17:00) |
-| Mon Oct 26 | **MIDTERM 2 WEEK begins (Week 10)** |
-| Mon Oct 26 | CS 101 Midterm 2 (75 min, 18:00–19:15) |
-| Tue Oct 27 | PROG 101 Midterm 2 (90 min, 18:00–19:30) |
-| Wed Oct 28 | MATH 141 Midterm 2 (75 min, 18:00–19:15) |
-| Mon Nov 09 | **Last week of instruction (Week 12)** |
-| Wed Nov 11 | Veterans Day — ⚠️ classes currently scheduled to run (see note below) |
-| Fri Nov 13 | Last Problem Set due, all courses (17:00) |
-| Fri Nov 13 | CS 101 Project 2 due — Algorithm Visualizer (17:00) |
-| Fri Nov 13 | **Last day of instruction** |
-| Mon Nov 16 | **FINALS WEEK begins** |
-| Mon Nov 16 | MATH 151 Final Exam (120 min, 08:00–10:00) |
-| Tue Nov 17 | CS 101 Final Exam (150 min, 09:00–11:30) |
-| Wed Nov 18 | MATH 141 Final Exam (150 min, 09:00–11:30) |
-| Thu Nov 19 | PROG 101 Final Exam (150 min, 14:00–16:30) |
-| Fri Nov 20 | CS 190 Seminar final paper due (23:59) |
-| Fri Nov 20 | **Fall semester ends** |
+| Thu Sep 17 | Freshman Orientation begins |
+| Mon Sep 21 | **Classes begin — Week 0** |
+| Fri Sep 25 | Week 0 labs (setup/orientation, ungraded) |
+| Fri Sep 25 | Add/Drop deadline |
+| Mon Sep 28 | **Week 1 begins — all graded work begins** |
+| Fri Oct 02 | Problem Set 1 due — CS 101, MATH 151, PHYS 141 (17:00) |
+| Tue Oct 06 | Quizzes begin — PROG 101 Quiz 1 (start of Tuesday lecture) |
+| Wed Oct 07 | CS 101 Quiz 1 (start of Wednesday lecture) |
+| Fri Oct 09 | Problem Set 1 due — MATH 141, PROG 101 (re-dated; see PREREQUISITE AUDIT) |
+| Mon Oct 12 | Columbus Day / Indigenous Peoples' Day (Week 3) — ⚠️ classes currently scheduled to run (see note below) |
+| Mon Nov 02 | **MIDTERM 1 WEEK begins (Week 6)** |
+| Mon Nov 02 | CS 101 Midterm 1 (75 min, 18:00–19:15) |
+| Wed Nov 04 | PROG 101 Midterm 1 (90 min, 18:00–19:30) |
+| Thu Nov 05 | MATH 141 Midterm 1 (75 min, 18:00–19:15) |
+| Fri Nov 06 | MATH 151 Midterm 1 (75 min, 18:00–19:15) |
+| Wed Nov 11 | Veterans Day (Week 7) — ⚠️ classes currently scheduled to run (see note below) |
+| Thu Nov 26 | Thanksgiving (Week 9) — ⚠️ classes currently scheduled to run (see note below) |
+| Fri Nov 27 | CS 101 Project 1 due — Data Analysis Tool (17:00) |
+| Mon Nov 30 | **MIDTERM 2 WEEK begins (Week 10)** |
+| Mon Nov 30 | CS 101 Midterm 2 (75 min, 18:00–19:15) |
+| Tue Dec 01 | PROG 101 Midterm 2 (90 min, 18:00–19:30) |
+| Wed Dec 02 | MATH 141 Midterm 2 (75 min, 18:00–19:15) |
+| Mon Dec 14 | **Last week of instruction (Week 12)** |
+| Fri Dec 18 | Last Problem Set due, all courses (17:00) |
+| Fri Dec 18 | CS 101 Project 2 due — Algorithm Visualizer (17:00) |
+| Fri Dec 18 | **Last day of instruction** |
+| Mon Dec 21 | **FINALS WEEK begins** |
+| Mon Dec 21 | MATH 151 Final Exam (120 min, 08:00–10:00) |
+| Tue Dec 22 | CS 101 Final Exam (150 min, 09:00–11:30) |
+| Wed Dec 23 | MATH 141 Final Exam (150 min, 09:00–11:30) |
+| Thu Dec 24 | PROG 101 Final Exam (150 min, 14:00–16:30) |
+| Fri Dec 25 | CS 190 Seminar final paper due (23:59) |
+| Fri Dec 25 | **Fall semester ends** |
 
-> **⚠️ Two open decisions on this calendar.**
-> 1. **Public holidays.** Labor Day (Mon Sep 07) and Veterans Day (Wed Nov 11) fall inside teaching
->    weeks. The pre-2026 calendar observed Labor Day as NO CLASSES. This calendar currently runs
->    classes on both, because the term was specified as thirteen continuous weeks. Cancelling
->    Mon Sep 07 would cost W3's Monday lectures for MATH 141, MATH 151 and PHYS 141 plus their
->    quizzes and the PROG 101 lab; cancelling Wed Nov 11 would cost W12's CS 101 quiz and lecture.
-> 2. **No reading day.** Instruction ends Fri Nov 13 and finals open Mon Nov 16, so there is no
->    reading day. The pre-2026 calendar allowed one. Adding it pushes finals to Tue Nov 17.
+> **⚠️ Open decisions on this calendar.**
+> 1. **Public holidays.** Columbus Day (Mon Oct 12, W3), Veterans Day (Wed Nov 11, W7) and
+>    Thanksgiving (Thu Nov 26 and the Friday after, W9) fall inside teaching weeks. The calendar runs
+>    classes on all of them, because the term is specified as thirteen continuous weeks. Labor Day
+>    (Mon Sep 07) is now before the term and no longer an issue.
+> 2. **Finals week runs into Christmas.** Finals are Mon Dec 21 – Fri Dec 25; the CS 190 final paper
+>    is due on Christmas Day. Moving it to Wed Dec 23 or Thu Dec 24 is the cheapest fix.
+> 3. **No reading day.** Instruction ends Fri Dec 18 and finals open Mon Dec 21.
 
 ### Spring Semester, Year 1
 

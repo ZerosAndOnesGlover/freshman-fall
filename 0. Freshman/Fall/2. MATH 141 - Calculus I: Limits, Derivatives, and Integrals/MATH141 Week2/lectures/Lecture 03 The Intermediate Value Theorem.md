@@ -2,7 +2,7 @@
 ## Week 2 · Lecture 3 (Wednesday)
 ### The Intermediate Value Theorem
 
-**Date:** Wednesday 2 September 2026 · 11:00–11:50 · Week 2
+**Date:** Wednesday 7 October 2026 · 11:00–11:50 · Week 2
 
 ---
 

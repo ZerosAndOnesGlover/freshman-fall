@@ -2,7 +2,7 @@
 ## Lecture 5.2 (L16) — Composition of Functions and Inverse Functions
 ### Thursday, Week 5
 
-**Date:** Thursday 24 September 2026 · 13:00–13:50 · Week 5
+**Date:** Thursday 29 October 2026 · 13:00–13:50 · Week 5
 
 ---
 

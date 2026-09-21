@@ -1,7 +1,7 @@
 # PHYS 141 · Physics I: Mechanics, Waves & Thermodynamics
 ## Lecture 33 — The Doppler Effect
 
-**Date:** Friday 30 October 2026 · 14:00–14:50 · Week 10
+**Date:** Friday 4 December 2026 · 14:00–14:50 · Week 10
 
 ---
 

@@ -2,7 +2,7 @@
 ## Lecture 6.2 (L19) — Equivalence Relations and Equivalence Classes
 ### Thursday, Week 6
 
-**Date:** Thursday 1 October 2026 · 13:00–13:50 · Week 6
+**Date:** Thursday 5 November 2026 · 13:00–13:50 · Week 6
 
 ---
 

@@ -5,7 +5,7 @@
 *"To understand recursion, you must first understand recursion." — anonymous*
 *"Recursion is not a trick. It is a mathematical concept." — CS 101*
 
-**Date:** Wednesday 16 September 2026 · 09:00–09:50 · Week 4
+**Date:** Wednesday 21 October 2026 · 09:00–09:50 · Week 4
 
 ---
 

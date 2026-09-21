@@ -2,7 +2,7 @@
 ## Lecture · Week 3: Ethics in Computing
 ### The ACM Code of Ethics and Professional Responsibility
 
-**Date:** Wednesday 9 September 2026 · 13:00–13:50 · Week 3
+**Date:** Wednesday 14 October 2026 · 13:00–13:50 · Week 3
 
 ---
 

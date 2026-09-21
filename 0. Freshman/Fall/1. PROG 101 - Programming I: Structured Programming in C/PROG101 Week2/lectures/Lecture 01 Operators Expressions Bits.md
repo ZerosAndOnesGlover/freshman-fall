@@ -1,7 +1,7 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 2 · Lecture 1: Operators, Expressions, and Bit Manipulation
 
-**Date:** Tuesday 1 September 2026 · 10:00–10:50 · Week 2
+**Date:** Tuesday 6 October 2026 · 10:00–10:50 · Week 2
 
 ---
 
@@ -16,27 +16,27 @@ By the end of this lecture you will:
 
 ---
 
-## 1. The Complete C Operator Hierarchy
+## 1. The Complete `C` Operator Hierarchy
 
 Operators in C have a fixed precedence (which binds tighter) and associativity (left-to-right or right-to-left when precedences are equal).
 
-| Precedence | Operators | Associativity |
-|-----------|-----------|---------------|
-| 15 (highest) | `()` `[]` `->` `.` | Left to right |
-| 14 | Unary: `!` `~` `++` `--` `+` `-` `*` `&` `sizeof` `(cast)` | **Right to left** |
-| 13 | `*` `/` `%` | Left to right |
-| 12 | `+` `-` | Left to right |
-| 11 | `<<` `>>` | Left to right |
-| 10 | `<` `<=` `>` `>=` | Left to right |
-| 9 | `==` `!=` | Left to right |
-| 8 | `&` (bitwise AND) | Left to right |
-| 7 | `^` (bitwise XOR) | Left to right |
-| 6 | `\|` (bitwise OR) | Left to right |
-| 5 | `&&` (logical AND) | Left to right |
-| 4 | `\|\|` (logical OR) | Left to right |
-| 3 | `?:` (ternary) | **Right to left** |
-| 2 | `=` `+=` `-=` `*=` `/=` `%=` `&=` `^=` `\|=` `<<=` `>>=` | **Right to left** |
-| 1 (lowest) | `,` (comma) | Left to right |
+| Precedence   | Operators                                                  | Associativity     |
+| ------------ | ---------------------------------------------------------- | ----------------- |
+| 15 (highest) | `()` `[]` `->` `.`                                         | Left to right     |
+| 14           | Unary: `!` `~` `++` `--` `+` `-` `*` `&` `sizeof` `(cast)` | **Right to left** |
+| 13           | `*` `/` `%`                                                | Left to right     |
+| 12           | `+` `-`                                                    | Left to right     |
+| 11           | `<<` `>>`                                                  | Left to right     |
+| 10           | `<` `<=` `>` `>=`                                          | Left to right     |
+| 9            | `==` `!=`                                                  | Left to right     |
+| 8            | `&` (bitwise AND)                                          | Left to right     |
+| 7            | `^` (bitwise XOR)                                          | Left to right     |
+| 6            | `\|` (bitwise OR)                                          | Left to right     |
+| 5            | `&&` (logical AND)                                         | Left to right     |
+| 4            | `\|\|` (logical OR)                                        | Left to right     |
+| 3            | `?:` (ternary)                                             | **Right to left** |
+| 2            | `=` `+=` `-=` `*=` `/=` `%=` `&=` `^=` `\|=` `<<=` `>>=`   | **Right to left** |
+| 1 (lowest)   | `,` (comma)                                                | Left to right     |
 
 **Practical rule:** When in doubt, use parentheses. They cost nothing and prevent bugs.
 

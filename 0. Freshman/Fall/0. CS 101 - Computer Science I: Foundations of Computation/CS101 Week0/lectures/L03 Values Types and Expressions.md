@@ -4,7 +4,7 @@
 **Week 0 · Lecture 3 of 3**
 *"A type is a set of values together with a set of operations on those values." — Barbara Liskov*
 
-**Date:** Friday 21 August 2026 · 09:00–09:50 · Week 0
+**Date:** Friday 25 September 2026 · 09:00–09:50 · Week 0
 
 ---
 

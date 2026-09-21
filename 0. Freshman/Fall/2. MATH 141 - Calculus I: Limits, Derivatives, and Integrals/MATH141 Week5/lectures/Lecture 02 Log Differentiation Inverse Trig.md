@@ -2,7 +2,7 @@
 ## Week 5 · Lecture 2 (Tuesday)
 ### Derivatives of Logarithms, Logarithmic Differentiation, and Inverse Trig Functions
 
-**Date:** Tuesday 22 September 2026 · 11:00–11:50 · Week 5
+**Date:** Tuesday 27 October 2026 · 11:00–11:50 · Week 5
 
 ---
 

@@ -1,7 +1,7 @@
 # PHYS 141 · Physics I: Mechanics, Waves & Thermodynamics
 ## Lecture 30 — Standing Waves and Resonance on Strings
 
-**Date:** Friday 23 October 2026 · 14:00–14:50 · Week 9
+**Date:** Friday 27 November 2026 · 14:00–14:50 · Week 9
 
 ---
 

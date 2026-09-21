@@ -1,7 +1,7 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 4 · Lecture 1: Arrays — The First Data Structure
 
-**Date:** Tuesday 15 September 2026 · 10:00–10:50 · Week 4
+**Date:** Tuesday 20 October 2026 · 10:00–10:50 · Week 4
 
 ---
 

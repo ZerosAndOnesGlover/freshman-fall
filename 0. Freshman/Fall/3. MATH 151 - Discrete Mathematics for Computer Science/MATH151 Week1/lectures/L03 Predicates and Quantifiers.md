@@ -2,7 +2,7 @@
 ## Lecture 1.1 (L03) — Predicates, Domains, and Quantifiers
 ### Monday, Week 1
 
-**Date:** Monday 24 August 2026 · 13:00–13:50 · Week 1
+**Date:** Monday 28 September 2026 · 13:00–13:50 · Week 1
 
 ---
 

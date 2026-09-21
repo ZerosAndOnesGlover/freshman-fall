@@ -1,7 +1,7 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 4 · Lecture 3: Buffer Safety and the Bounded String Functions
 
-**Date:** Thursday 17 September 2026 · 10:00–10:50 · Week 4
+**Date:** Thursday 22 October 2026 · 10:00–10:50 · Week 4
 
 ---
 

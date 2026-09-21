@@ -1,7 +1,7 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 3 · Lecture 2: The Call Stack and Scope
 
-**Date:** Wednesday 9 September 2026 · 10:00–10:50 · Week 3
+**Date:** Wednesday 14 October 2026 · 10:00–10:50 · Week 3
 
 ---
 

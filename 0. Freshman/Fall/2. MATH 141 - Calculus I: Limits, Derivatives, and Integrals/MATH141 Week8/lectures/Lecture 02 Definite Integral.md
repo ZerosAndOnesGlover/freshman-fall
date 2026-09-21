@@ -2,7 +2,7 @@
 ## Week 8 · Lecture 2 (Tuesday)
 ### The Definite Integral: Formal Definition, Notation, and Properties
 
-**Date:** Tuesday 13 October 2026 · 11:00–11:50 · Week 8
+**Date:** Tuesday 17 November 2026 · 11:00–11:50 · Week 8
 
 ---
 

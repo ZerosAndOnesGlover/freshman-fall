@@ -2,7 +2,7 @@
 ## Lecture 3.3 (L11) — Strong Induction and the Well-Ordering Principle
 ### Friday, Week 3
 
-**Date:** Friday 11 September 2026 · 13:00–13:50 · Week 3
+**Date:** Friday 16 October 2026 · 13:00–13:50 · Week 3
 
 ---
 

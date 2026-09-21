@@ -1,7 +1,7 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 8 · Lecture 1: File I/O Basics (`fopen`, `fread`, `fwrite`, and Text Processing)
 
-**Date:** Tuesday 13 October 2026 · 10:00–10:50 · Week 8
+**Date:** Tuesday 17 November 2026 · 10:00–10:50 · Week 8
 
 ---
 

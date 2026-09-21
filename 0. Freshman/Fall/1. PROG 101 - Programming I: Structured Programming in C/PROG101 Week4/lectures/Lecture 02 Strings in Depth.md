@@ -1,7 +1,7 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 4 · Lecture 2: Strings in Depth — Processing, Searching, Building
 
-**Date:** Wednesday 16 September 2026 · 10:00–10:50 · Week 4
+**Date:** Wednesday 21 October 2026 · 10:00–10:50 · Week 4
 
 ---
 

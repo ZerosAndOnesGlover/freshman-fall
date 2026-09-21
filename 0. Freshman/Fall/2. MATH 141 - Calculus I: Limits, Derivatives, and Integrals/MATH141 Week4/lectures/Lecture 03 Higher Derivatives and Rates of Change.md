@@ -2,7 +2,7 @@
 ## Week 4 · Lecture 3 (Wednesday)
 ### Higher Derivatives and Rates of Change
 
-**Date:** Wednesday 16 September 2026 · 11:00–11:50 · Week 4
+**Date:** Wednesday 21 October 2026 · 11:00–11:50 · Week 4
 
 ---
 

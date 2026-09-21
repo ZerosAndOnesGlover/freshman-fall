@@ -3,7 +3,7 @@
 
 > **Core Principle:** When the net external torque on a system is zero, its total angular momentum is exactly conserved. This single principle explains the spinning skater speeding up as they pull in their arms, the stability of gyroscopes and bicycle wheels, and the way orbiting bodies sweep out equal areas in equal times. It is as fundamental to rotational mechanics as linear momentum conservation is to translational mechanics.
 
-**Date:** Tuesday 6 October 2026 · 14:00–14:50 · Week 7
+**Date:** Tuesday 10 November 2026 · 14:00–14:50 · Week 7
 
 ---
 

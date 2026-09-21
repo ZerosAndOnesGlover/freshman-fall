@@ -2,7 +2,7 @@
 ## Lecture 5.3 (L17) — Bijections and Cardinality
 ### Friday, Week 5
 
-**Date:** Friday 25 September 2026 · 13:00–13:50 · Week 5
+**Date:** Friday 30 October 2026 · 13:00–13:50 · Week 5
 
 ---
 

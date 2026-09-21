@@ -2,7 +2,7 @@
 ## Lecture 5.1 (L15) — Functions: Definitions and Fundamental Properties
 ### Monday, Week 5
 
-**Date:** Monday 21 September 2026 · 13:00–13:50 · Week 5
+**Date:** Monday 26 October 2026 · 13:00–13:50 · Week 5
 
 ---
 

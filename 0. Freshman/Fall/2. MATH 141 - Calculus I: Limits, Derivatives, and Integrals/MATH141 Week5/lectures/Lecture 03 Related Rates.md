@@ -2,7 +2,7 @@
 ## Week 5 · Lecture 3 (Wednesday)
 ### Related Rates
 
-**Date:** Wednesday 23 September 2026 · 11:00–11:50 · Week 5
+**Date:** Wednesday 28 October 2026 · 11:00–11:50 · Week 5
 
 ---
 

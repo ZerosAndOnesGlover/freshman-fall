@@ -2,7 +2,7 @@
 ## Week 0 · Lecture 0 of 4
 ### The Language of Mathematics: Sets, Notation & Logic
 
-**Date:** Monday 17 August 2026 · 11:00–11:50 · Week 0
+**Date:** Monday 21 September 2026 · 11:00–11:50 · Week 0
 
 ---
 

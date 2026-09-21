@@ -2,7 +2,7 @@
 ## Lecture 2.2 (L07) — Proof by Contrapositive
 ### Thursday, Week 2
 
-**Date:** Thursday 3 September 2026 · 13:00–13:50 · Week 2
+**Date:** Thursday 8 October 2026 · 13:00–13:50 · Week 2
 
 ---
 

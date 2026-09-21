@@ -2,7 +2,7 @@
 ## Week 12 · Lecture 3 (Wednesday)
 ### Final Preparation and the Road Ahead
 
-**Date:** Wednesday 11 November 2026 · 11:00–11:50 · Week 12
+**Date:** Wednesday 16 December 2026 · 11:00–11:50 · Week 12
 
 ---
 

@@ -3,7 +3,7 @@
 
 > **Core Principle:** Motion in two dimensions is not a new subject — it is two simultaneous applications of one-dimensional kinematics, one along each perpendicular axis. The key insight is that perpendicular components of motion are completely independent of each other. This independence is not a convenience; it is a deep consequence of the structure of Euclidean space and Newton's laws.
 
-**Date:** Monday 31 August 2026 · 14:00–14:50 · Week 2
+**Date:** Monday 5 October 2026 · 14:00–14:50 · Week 2
 
 ---
 

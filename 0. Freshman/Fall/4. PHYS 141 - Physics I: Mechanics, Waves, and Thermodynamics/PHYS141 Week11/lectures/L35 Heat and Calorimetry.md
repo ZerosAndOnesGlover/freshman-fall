@@ -1,7 +1,7 @@
 # PHYS 141 · Physics I: Mechanics, Waves & Thermodynamics
 ## Lecture 35 — Heat, Specific Heat Capacity, and Calorimetry
 
-**Date:** Tuesday 3 November 2026 · 14:00–14:50 · Week 11
+**Date:** Tuesday 8 December 2026 · 14:00–14:50 · Week 11
 
 ---
 

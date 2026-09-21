@@ -3,7 +3,7 @@
 
 > **Core Principle:** A rigid body is an idealized object whose particles maintain fixed distances from one another — it can translate and rotate, but not deform. Every particle in a rotating rigid body shares the same angular velocity and angular acceleration, even though different particles have different linear speeds. This shared angular description is what makes rotational mechanics tractable.
 
-**Date:** Monday 28 September 2026 · 14:00–14:50 · Week 6
+**Date:** Monday 2 November 2026 · 14:00–14:50 · Week 6
 
 ---
 

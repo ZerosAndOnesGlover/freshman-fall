@@ -3,7 +3,7 @@
 
 > **Core Principle:** For an isolated system (no external forces), total momentum is exactly conserved — a direct consequence of Newton's Third Law. This is true regardless of what happens internally: elastic bounces, sticky collisions, explosions. Momentum conservation is the single most powerful tool for analyzing collisions, because it holds even when we know nothing about the complicated forces during impact.
 
-**Date:** Tuesday 22 September 2026 · 14:00–14:50 · Week 5
+**Date:** Tuesday 27 October 2026 · 14:00–14:50 · Week 5
 
 ---
 

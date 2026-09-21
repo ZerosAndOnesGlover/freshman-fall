@@ -4,7 +4,7 @@
 **Week 6 · Wednesday**
 *"Big-O notation captures the essential shape of how an algorithm scales, discarding constants and lower-order terms." — CS 101*
 
-**Date:** Wednesday 30 September 2026 · 09:00–09:50 · Week 6
+**Date:** Wednesday 4 November 2026 · 09:00–09:50 · Week 6
 
 ---
 

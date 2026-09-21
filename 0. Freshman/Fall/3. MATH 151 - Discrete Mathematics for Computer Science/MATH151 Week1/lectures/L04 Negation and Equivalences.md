@@ -2,7 +2,7 @@
 ## Lecture 1.2 (L04) — Negating Quantified Statements and Logical Equivalences
 ### Thursday, Week 1
 
-**Date:** Thursday 27 August 2026 · 13:00–13:50 · Week 1
+**Date:** Thursday 1 October 2026 · 13:00–13:50 · Week 1
 
 ---
 

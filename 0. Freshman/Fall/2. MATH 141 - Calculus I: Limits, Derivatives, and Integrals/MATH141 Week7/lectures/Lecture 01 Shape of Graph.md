@@ -2,7 +2,7 @@
 ## Week 7 · Lecture 1 (Monday)
 ### Derivatives and the Shape of a Graph: Increasing/Decreasing, Concavity, and the First & Second Derivative Tests
 
-**Date:** Monday 5 October 2026 · 11:00–11:50 · Week 7
+**Date:** Monday 9 November 2026 · 11:00–11:50 · Week 7
 
 ---
 

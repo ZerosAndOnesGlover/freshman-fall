@@ -2,7 +2,7 @@
 ## Week 6 · Lecture 3 (Wednesday)
 ### L'Hôpital's Rule: Resolving Indeterminate Forms
 
-**Date:** Wednesday 30 September 2026 · 11:00–11:50 · Week 6
+**Date:** Wednesday 4 November 2026 · 11:00–11:50 · Week 6
 
 ---
 

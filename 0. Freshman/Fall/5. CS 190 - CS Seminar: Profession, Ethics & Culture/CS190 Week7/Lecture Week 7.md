@@ -2,7 +2,7 @@
 ## Lecture · Week 7: Intellectual Property in Computing
 ### Copyright, Patents, Trade Secrets, and the DMCA
 
-**Date:** Wednesday 7 October 2026 · 13:00–13:50 · Week 7
+**Date:** Wednesday 11 November 2026 · 13:00–13:50 · Week 7
 
 ---
 

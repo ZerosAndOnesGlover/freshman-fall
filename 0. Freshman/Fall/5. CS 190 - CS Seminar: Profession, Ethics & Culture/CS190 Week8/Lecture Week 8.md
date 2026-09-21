@@ -2,7 +2,7 @@
 ## Lecture · Week 8: Cybersecurity Ethics
 ### Responsible Disclosure, Hacktivism, and the Law That Governs Both
 
-**Date:** Wednesday 14 October 2026 · 13:00–13:50 · Week 8
+**Date:** Wednesday 18 November 2026 · 13:00–13:50 · Week 8
 
 ---
 

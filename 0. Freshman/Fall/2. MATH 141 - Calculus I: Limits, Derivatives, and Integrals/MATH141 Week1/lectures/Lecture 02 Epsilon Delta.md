@@ -2,7 +2,7 @@
 ## Week 1 · Lecture 2 (Tuesday)
 ### The Formal ε-δ Definition of a Limit
 
-**Date:** Tuesday 25 August 2026 · 11:00–11:50 · Week 1
+**Date:** Tuesday 29 September 2026 · 11:00–11:50 · Week 1
 
 ---
 

@@ -2,7 +2,7 @@
 ## Week 11 · Lecture 3 (Wednesday)
 ### Cylindrical Shells, and Accumulation Revisited
 
-**Date:** Wednesday 4 November 2026 · 11:00–11:50 · Week 11
+**Date:** Wednesday 9 December 2026 · 11:00–11:50 · Week 11
 
 ---
 

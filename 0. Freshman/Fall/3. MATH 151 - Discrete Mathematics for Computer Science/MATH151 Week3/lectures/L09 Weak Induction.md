@@ -2,7 +2,7 @@
 ## Lecture 3.1 (L09) — Mathematical Induction: The Principle and Basic Applications
 ### Monday, Week 3
 
-**Date:** Monday 7 September 2026 · 13:00–13:50 · Week 3
+**Date:** Monday 12 October 2026 · 13:00–13:50 · Week 3
 
 ---
 

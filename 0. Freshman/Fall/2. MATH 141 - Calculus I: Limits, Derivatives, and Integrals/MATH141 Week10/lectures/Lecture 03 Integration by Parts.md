@@ -2,7 +2,7 @@
 ## Week 10 · Lecture 3 (Wednesday)
 ### Integration by Parts
 
-**Date:** Wednesday 28 October 2026 · 11:00–11:50 · Week 10
+**Date:** Wednesday 2 December 2026 · 11:00–11:50 · Week 10
 
 ---
 

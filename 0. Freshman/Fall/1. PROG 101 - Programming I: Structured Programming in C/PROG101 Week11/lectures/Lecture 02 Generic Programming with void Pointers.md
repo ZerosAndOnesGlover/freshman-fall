@@ -1,7 +1,7 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 11 · Lecture 2: Generic Programming with `void *`
 
-**Date:** Wednesday 4 November 2026 · 10:00–10:50 · Week 11
+**Date:** Wednesday 9 December 2026 · 10:00–10:50 · Week 11
 
 ---
 

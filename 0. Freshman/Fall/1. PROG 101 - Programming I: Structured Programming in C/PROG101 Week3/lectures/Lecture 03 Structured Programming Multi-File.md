@@ -1,7 +1,7 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 3 · Lecture 3: Functions and Structured Programming
 
-**Date:** Thursday 10 September 2026 · 10:00–10:50 · Week 3
+**Date:** Thursday 15 October 2026 · 10:00–10:50 · Week 3
 
 ---
 

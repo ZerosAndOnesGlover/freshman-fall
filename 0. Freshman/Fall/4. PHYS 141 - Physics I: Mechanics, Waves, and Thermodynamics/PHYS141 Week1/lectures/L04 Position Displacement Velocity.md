@@ -3,7 +3,7 @@
 
 > **Core Principle:** Motion is the change of position over time. To describe motion precisely, you need a reference point, a direction convention, and a clock. Everything else in kinematics follows from these three choices — and from calculus.
 
-**Date:** Monday 24 August 2026 · 14:00–14:50 · Week 1
+**Date:** Monday 28 September 2026 · 14:00–14:50 · Week 1
 
 ---
 

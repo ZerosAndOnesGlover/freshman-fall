@@ -1,7 +1,7 @@
 # CS 101 · Lecture 35 (Week 11, Lecture 2)
 ## Decidability and the Halting Problem
 
-**Date:** Thursday 5 November 2026 · 09:00–09:50 · Week 11
+**Date:** Thursday 10 December 2026 · 09:00–09:50 · Week 11
 
 ---
 

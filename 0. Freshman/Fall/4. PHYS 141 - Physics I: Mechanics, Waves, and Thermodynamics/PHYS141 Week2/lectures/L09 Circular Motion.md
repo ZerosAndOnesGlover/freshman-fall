@@ -3,7 +3,7 @@
 
 > **Core Principle:** An object moving in a circle at constant speed is still accelerating — because its velocity direction is changing. This centripetal acceleration always points toward the center of the circle. It requires a centripetal force (Week 3) and is the reason planets orbit, cars corner, and electrons (classically) circle nuclei.
 
-**Date:** Friday 4 September 2026 · 14:00–14:50 · Week 2
+**Date:** Friday 9 October 2026 · 14:00–14:50 · Week 2
 
 ---
 

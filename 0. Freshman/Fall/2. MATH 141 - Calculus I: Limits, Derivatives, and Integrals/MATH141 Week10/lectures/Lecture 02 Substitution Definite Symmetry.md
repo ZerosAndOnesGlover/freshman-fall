@@ -2,7 +2,7 @@
 ## Week 10 · Lecture 2 (Tuesday)
 ### The Substitution Rule for Definite Integrals, and Symmetry
 
-**Date:** Tuesday 27 October 2026 · 11:00–11:50 · Week 10
+**Date:** Tuesday 1 December 2026 · 11:00–11:50 · Week 10
 
 ---
 

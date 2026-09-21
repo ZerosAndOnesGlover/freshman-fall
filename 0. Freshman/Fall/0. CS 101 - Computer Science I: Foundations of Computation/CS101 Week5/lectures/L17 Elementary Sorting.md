@@ -4,7 +4,7 @@
 **Week 5 · Thursday**
 *"Sorting is the process by which chaos is transformed into structure — and that structure is what makes efficient search, deduplication, and analysis possible." — CS 101*
 
-**Date:** Thursday 24 September 2026 · 09:00–09:50 · Week 5
+**Date:** Thursday 29 October 2026 · 09:00–09:50 · Week 5
 
 ---
 

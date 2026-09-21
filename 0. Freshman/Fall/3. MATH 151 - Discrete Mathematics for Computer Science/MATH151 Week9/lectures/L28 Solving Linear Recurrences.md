@@ -2,7 +2,7 @@
 ## Lecture 9.2 (L28) — Solving Linear Recurrences: The Characteristic Equation
 ### Thursday, Week 9
 
-**Date:** Thursday 22 October 2026 · 13:00–13:50 · Week 9
+**Date:** Thursday 26 November 2026 · 13:00–13:50 · Week 9
 
 ---
 

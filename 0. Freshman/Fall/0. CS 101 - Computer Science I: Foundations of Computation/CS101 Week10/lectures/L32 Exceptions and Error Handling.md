@@ -1,7 +1,7 @@
 # CS 101 · Lecture 32 (Week 10, Lecture 2)
 ## Exceptions: Error Handling as Control Flow
 
-**Date:** Thursday 29 October 2026 · 09:00–09:50 · Week 10
+**Date:** Thursday 3 December 2026 · 09:00–09:50 · Week 10
 
 ---
 

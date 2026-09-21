@@ -2,7 +2,7 @@
 ## Lecture 10.2 (L31) — Representations and Isomorphism
 ### Thursday, Week 10
 
-**Date:** Thursday 29 October 2026 · 13:00–13:50 · Week 10
+**Date:** Thursday 3 December 2026 · 13:00–13:50 · Week 10
 
 ---
 

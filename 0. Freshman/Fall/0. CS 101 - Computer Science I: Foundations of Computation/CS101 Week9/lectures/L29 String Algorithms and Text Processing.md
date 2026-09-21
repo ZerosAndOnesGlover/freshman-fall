@@ -1,7 +1,7 @@
 # CS 101 · Lecture 29 (Week 9, Lecture 2)
 ## String Algorithms: Searching, Tokenising, and Text Processing
 
-**Date:** Thursday 22 October 2026 · 09:00–09:50 · Week 9
+**Date:** Thursday 26 November 2026 · 09:00–09:50 · Week 9
 
 ---
 

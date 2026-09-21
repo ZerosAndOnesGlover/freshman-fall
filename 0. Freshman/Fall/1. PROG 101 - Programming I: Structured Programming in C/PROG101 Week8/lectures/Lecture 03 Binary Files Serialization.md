@@ -1,7 +1,7 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 8 · Lecture 3: Binary Files and Struct Serialization
 
-**Date:** Thursday 15 October 2026 · 10:00–10:50 · Week 8
+**Date:** Thursday 19 November 2026 · 10:00–10:50 · Week 8
 
 ---
 

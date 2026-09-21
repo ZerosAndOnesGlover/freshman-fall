@@ -2,7 +2,7 @@
 ## Week 3 · Lecture 2 (Tuesday)
 ### The Derivative as a Function
 
-**Date:** Tuesday 8 September 2026 · 11:00–11:50 · Week 3
+**Date:** Tuesday 13 October 2026 · 11:00–11:50 · Week 3
 
 ---
 

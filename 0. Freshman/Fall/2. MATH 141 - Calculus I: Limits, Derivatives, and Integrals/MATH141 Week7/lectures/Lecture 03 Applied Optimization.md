@@ -2,7 +2,7 @@
 ## Week 7 · Lecture 3 (Wednesday)
 ### Applied Optimization: Maximum and Minimum Problems
 
-**Date:** Wednesday 7 October 2026 · 11:00–11:50 · Week 7
+**Date:** Wednesday 11 November 2026 · 11:00–11:50 · Week 7
 
 ---
 

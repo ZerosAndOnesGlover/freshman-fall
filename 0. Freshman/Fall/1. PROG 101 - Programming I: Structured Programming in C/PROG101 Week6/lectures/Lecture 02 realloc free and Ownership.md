@@ -1,7 +1,7 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 6 · Lecture 2: `realloc`, `free`, and Ownership
 
-**Date:** Wednesday 30 September 2026 · 10:00–10:50 · Week 6
+**Date:** Wednesday 4 November 2026 · 10:00–10:50 · Week 6
 
 ---
 

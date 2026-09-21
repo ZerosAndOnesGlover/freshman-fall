@@ -2,7 +2,7 @@
 ## Lecture · Week 6: AI and Society
 ### Autonomous Weapons, Deepfakes, and LLMs
 
-**Date:** Wednesday 30 September 2026 · 13:00–13:50 · Week 6
+**Date:** Wednesday 4 November 2026 · 13:00–13:50 · Week 6
 
 ---
 

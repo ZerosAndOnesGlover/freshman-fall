@@ -2,7 +2,7 @@
 ## Lecture 4.2 (L13) — Set Identities and Proof Techniques
 ### Thursday, Week 4
 
-**Date:** Thursday 17 September 2026 · 13:00–13:50 · Week 4
+**Date:** Thursday 22 October 2026 · 13:00–13:50 · Week 4
 
 ---
 

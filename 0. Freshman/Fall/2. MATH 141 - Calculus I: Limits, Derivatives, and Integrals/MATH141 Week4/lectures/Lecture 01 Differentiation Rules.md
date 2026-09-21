@@ -2,7 +2,7 @@
 ## Week 4 · Lecture 1 (Monday)
 ### Differentiation Rules: Power, Sum, Product, Quotient
 
-**Date:** Monday 14 September 2026 · 11:00–11:50 · Week 4
+**Date:** Monday 19 October 2026 · 11:00–11:50 · Week 4
 
 ---
 

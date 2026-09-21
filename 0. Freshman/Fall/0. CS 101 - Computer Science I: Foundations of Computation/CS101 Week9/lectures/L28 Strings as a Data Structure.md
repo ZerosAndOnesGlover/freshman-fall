@@ -1,7 +1,7 @@
 # CS 101 · Lecture 28 (Week 9, Lecture 1)
 ## Strings as a Data Structure: Immutability, Encoding, and Cost
 
-**Date:** Wednesday 21 October 2026 · 09:00–09:50 · Week 9
+**Date:** Wednesday 25 November 2026 · 09:00–09:50 · Week 9
 
 ---
 

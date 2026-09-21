@@ -2,7 +2,7 @@
 ## Week 9 · Lecture 1 (Monday)
 ### The Fundamental Theorem of Calculus
 
-**Date:** Monday 19 October 2026 · 11:00–11:50 · Week 9
+**Date:** Monday 23 November 2026 · 11:00–11:50 · Week 9
 
 ---
 

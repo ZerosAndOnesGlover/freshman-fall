@@ -1,7 +1,7 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 1 · Lecture 3: Floating-Point and Type Conversions
 
-**Date:** Thursday 27 August 2026 · 10:00–10:50 · Week 1
+**Date:** Thursday 1 October 2026 · 10:00–10:50 · Week 1
 
 ---
 

@@ -2,7 +2,7 @@
 ## Lecture 2.3 (L08) — Proof by Contradiction
 ### Friday, Week 2
 
-**Date:** Friday 4 September 2026 · 13:00–13:50 · Week 2
+**Date:** Friday 9 October 2026 · 13:00–13:50 · Week 2
 
 ---
 

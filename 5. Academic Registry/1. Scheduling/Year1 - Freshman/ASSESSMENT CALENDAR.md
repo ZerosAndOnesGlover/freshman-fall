@@ -34,30 +34,31 @@
 > **This table is the source of truth for the week→date conversion.** As of 2026-08-16 every
 > lecture file also carries a `**Date:**` line with its own date, time and week — derived from
 > this map, not maintained independently. If the two ever disagree, **this table wins** and the
-> lecture lines should be regenerated from it. Problem sets and labs still quote week numbers only.
-> Term opens **Monday 17 August 2026**. Week 0 is an ordinary five-day week; Week 1 opens the
+> lecture lines should be regenerated from it. Since 2026-09-21 every problem set and lab also
+> carries its own dates and times (release/due, sitting), derived from this map the same way.
+> Term opens **Monday 21 September 2026** (re-based from 17 August: every date moved +35 days). Week 0 is an ordinary five-day week; Week 1 opens the
 > following Monday. Thirteen teaching weeks (W0–W12) run continuously with no break weeks,
-> ending Friday 13 November; finals follow immediately.
+> ending Friday 18 December; finals follow immediately (Mon 21 – Fri 25 December).
 
 | Week   | Monday     | Friday     | |
 | ------ | ---------- | ---------- |---|
-| W0     | Mon Aug 17 | Fri Aug 21 |
-| W1     | Mon Aug 24 | Fri Aug 28 |
-| W2     | Mon Aug 31 | Fri Sep 04 |
-| W3     | Mon Sep 07 | Fri Sep 11 |
-| W4     | Mon Sep 14 | Fri Sep 18 |
-| W5     | Mon Sep 21 | Fri Sep 25 |
-| W6     | Mon Sep 28 | Fri Oct 02 |  ← **Midterm 1**
-| W7     | Mon Oct 05 | Fri Oct 09 |
-| W8     | Mon Oct 12 | Fri Oct 16 |
-| W9     | Mon Oct 19 | Fri Oct 23 |
-| W10    | Mon Oct 26 | Fri Oct 30 |  ← **Midterm 2**
-| W11    | Mon Nov 02 | Fri Nov 06 |
-| W12    | Mon Nov 09 | Fri Nov 13 |
-| Finals | Mon Nov 16 | Fri Nov 20 |  ← no classes; exams only
+| W0     | Mon Sep 21 | Fri Sep 25 |
+| W1     | Mon Sep 28 | Fri Oct 02 |
+| W2     | Mon Oct 05 | Fri Oct 09 |
+| W3     | Mon Oct 12 | Fri Oct 16 |
+| W4     | Mon Oct 19 | Fri Oct 23 |
+| W5     | Mon Oct 26 | Fri Oct 30 |
+| W6     | Mon Nov 02 | Fri Nov 06 |  ← **Midterm 1**
+| W7     | Mon Nov 09 | Fri Nov 13 |
+| W8     | Mon Nov 16 | Fri Nov 20 |
+| W9     | Mon Nov 23 | Fri Nov 27 |
+| W10    | Mon Nov 30 | Fri Dec 04 |  ← **Midterm 2**
+| W11    | Mon Dec 07 | Fri Dec 11 |
+| W12    | Mon Dec 14 | Fri Dec 18 |
+| Finals | Mon Dec 21 | Fri Dec 25 |  ← no classes; exams only
 
-**Anchors** — check any regenerated map against these three: **W0 = Mon Aug 17**,
-**W6 = Mon Sep 28** (Midterm 1, per the curriculum docx), **W10 = Mon Oct 26** (Midterm 2, per the
+**Anchors** — check any regenerated map against these three: **W0 = Mon Sep 21**,
+**W6 = Mon Nov 02** (Midterm 1, per the curriculum docx), **W10 = Mon Nov 30** (Midterm 2, per the
 curriculum docx). If all three hold, the map is right.
 
 ---
@@ -66,58 +67,58 @@ curriculum docx). If all three hold, the map is right.
 
 | Week   | Date   | Course       | Assessment                  | Weight | Notes                                   |
 | ------ | ------ | ------------ | --------------------------- | ------ | --------------------------------------- |
-| W1     | Aug 28 | **CS 101**   | 📝 Problem Set 1             | ≈3%    | 17:00 · First graded PS, start early |
-| W1     | Aug 28 | **MATH 151** | 📝 Problem Set 1             | ≈3%    | 17:00 |
-| W1     | Aug 28 | **PHYS 141** | 📝 Problem Set 1             | ≈3%    | 17:00 |
-| W2     | Sep 04 | **MATH 141** | 📝 Problem Set 1             | ≈3%    | 17:00 · re-dated, see PREREQUISITE AUDIT #13 |
-| W2     | Sep 04 | **PROG 101** | 📝 Problem Set 1             | ≈3%    | 17:00 · re-dated, see PREREQUISITE AUDIT #11–12 |
-| W2     | Sep 01 | **PROG 101** | 📊 Quiz 1                    | ≈0.8%  | 10 min, start of Tuesday lecture |
-| W2     | Sep 02 | **CS 101**   | 📊 Quiz 1                    | ≈0.8%  | 10 min, start of Wednesday lecture |
-| W2     | Sep 04 | **ALL**      | 📝 Problem Set 2             | ≈3%    | 17:00 |
-| W3     | Sep 08 | **PROG 101** | 📊 Quiz 2                    | ≈0.8%  | 10 min, start of Tuesday lecture |
-| W3     | Sep 09 | **CS 101**   | 📊 Quiz 2                    | ≈0.8%  | 10 min, start of Wednesday lecture |
-| W3     | Sep 11 | **ALL**      | 📝 Problem Set 3             | ≈3%    | 17:00 |
-| W4     | Sep 15 | **PROG 101** | 📊 Quiz 3                    | ≈0.8%  | 10 min, start of Tuesday lecture |
-| W4     | Sep 16 | **CS 101**   | 📊 Quiz 3                    | ≈0.8%  | 10 min, start of Wednesday lecture |
-| W4     | Sep 18 | **ALL**      | 📝 Problem Set 4             | ≈3%    | 17:00 |
-| W5     | Sep 22 | **PROG 101** | 📊 Quiz 4                    | ≈0.8%  | 10 min, start of Tuesday lecture |
-| W5     | Sep 23 | **CS 101**   | 📊 Quiz 4                    | ≈0.8%  | 10 min, start of Wednesday lecture |
-| W5     | Sep 25 | **ALL**      | 📝 Problem Set 5             | ≈3%    | 17:00 |
-| W6     | Sep 29 | **PROG 101** | 📊 Quiz 5                    | ≈0.8%  | 10 min, start of Tuesday lecture |
-| W6     | Sep 30 | **CS 101**   | 📊 Quiz 5                    | ≈0.8%  | 10 min, start of Wednesday lecture |
-| W6     | Oct 02 | **ALL**      | 📝 Problem Set 6             | ≈3%    | 17:00 |
-| W6     | Sep 28 | **CS 101**   | 📘 Midterm 1                 | 15%    | 18:00–19:15 · VNC 100 · Weeks 0–5 |
-| W6     | Sep 30 | **PROG 101** | 📘 Midterm 1                 | 12%    | 18:00–19:30 · VNC 100 · Weeks 0–5 |
-| W6     | Oct 01 | **MATH 141** | 📘 Midterm 1                 | 20%    | 18:00–19:15 · VNC 200 · Weeks 0–5 |
-| W6     | Oct 02 | **MATH 151** | 📘 Midterm 1                 | 25%    | 18:00–19:15 · VNC 200 · Weeks 0–5 |
-| W7     | Oct 06 | **PROG 101** | 📊 Quiz 6                    | ≈0.8%  | 10 min, start of Tuesday lecture |
-| W7     | Oct 07 | **CS 101**   | 📊 Quiz 6                    | ≈0.8%  | 10 min, start of Wednesday lecture |
-| W7     | Oct 09 | **ALL**      | 📝 Problem Set 7             | ≈3%    | 17:00 |
-| W8     | Oct 13 | **PROG 101** | 📊 Quiz 7                    | ≈0.8%  | 10 min, start of Tuesday lecture |
-| W8     | Oct 14 | **CS 101**   | 📊 Quiz 7                    | ≈0.8%  | 10 min, start of Wednesday lecture |
-| W8     | Oct 16 | **ALL**      | 📝 Problem Set 8             | ≈3%    | 17:00 |
-| W9     | Oct 20 | **PROG 101** | 📊 Quiz 8                    | ≈0.8%  | 10 min, start of Tuesday lecture |
-| W9     | Oct 21 | **CS 101**   | 📊 Quiz 8                    | ≈0.8%  | 10 min, start of Wednesday lecture |
-| W9     | Oct 23 | **ALL**      | 📝 Problem Set 9             | ≈3%    | 17:00 |
-| W9     | Oct 23 | **CS 101**   | 📋 Project 1 Due             | 10%    | Data Analysis Tool · 17:00 |
-| W10    | Oct 27 | **PROG 101** | 📊 Quiz 9                    | ≈0.8%  | 10 min, start of Tuesday lecture |
-| W10    | Oct 28 | **CS 101**   | 📊 Quiz 9                    | ≈0.8%  | 10 min, start of Wednesday lecture |
-| W10    | Oct 30 | **ALL**      | 📝 Problem Set 10            | ≈3%    | 17:00 |
-| W10    | Oct 26 | **CS 101**   | 📘 Midterm 2                 | 15%    | 18:00–19:15 · VNC 100 · Weeks 6–9 |
-| W10    | Oct 27 | **PROG 101** | 📘 Midterm 2                 | 12%    | 18:00–19:30 · VNC 100 · Weeks 6–9 |
-| W10    | Oct 28 | **MATH 141** | 📘 Midterm 2                 | 20%    | 18:00–19:15 · VNC 200 · Weeks 6–9 |
-| W11    | Nov 03 | **PROG 101** | 📊 Quiz 10                   | ≈0.8%  | 10 min, start of Tuesday lecture |
-| W11    | Nov 04 | **CS 101**   | 📊 Quiz 10                   | ≈0.8%  | 10 min, start of Wednesday lecture |
-| W11    | Nov 06 | **ALL**      | 📝 Problem Set 11            | ≈3%    | 17:00 |
-| W12    | Nov 10 | **PROG 101** | 📊 Quiz 11                   | ≈0.8%  | 10 min, start of Tuesday lecture |
-| W12    | Nov 11 | **CS 101**   | 📊 Quiz 11                   | ≈0.8%  | 10 min, start of Wednesday lecture |
-| W12    | Nov 13 | **ALL**      | 📝 Problem Set 12            | ≈3%    | 17:00 |
-| W12    | Nov 13 | **CS 101**   | 📋 Project 2 Due             | 10%    | Algorithm Visualizer · 17:00 |
-| Finals | Nov 16 | **MATH 151** | 📕 Final Exam                | 30%    | 08:00–10:00 · VNC 200 · Comprehensive |
-| Finals | Nov 17 | **CS 101**   | 📕 Final Exam                | 20%    | 09:00–11:30 · VNC 100 · Comprehensive |
-| Finals | Nov 18 | **MATH 141** | 📕 Final Exam                | 40%    | 09:00–11:30 · VNC 200 · Comprehensive |
-| Finals | Nov 19 | **PROG 101** | 📕 Final Exam                | 20%    | 14:00–16:30 · VNC 100 · Comprehensive |
-| Finals | Nov 20 | **CS 190**   | 🎤 Final Paper Due           | 40%    | 23:59 · Position paper · 1500 words min |
+| W1     | Oct 02 | **CS 101**   | 📝 Problem Set 1             | ≈3%    | 17:00 · First graded PS, start early |
+| W1     | Oct 02 | **MATH 151** | 📝 Problem Set 1             | ≈3%    | 17:00 |
+| W1     | Oct 02 | **PHYS 141** | 📝 Problem Set 1             | ≈3%    | 17:00 |
+| W2     | Oct 09 | **MATH 141** | 📝 Problem Set 1             | ≈3%    | 17:00 · re-dated, see PREREQUISITE AUDIT #13 |
+| W2     | Oct 09 | **PROG 101** | 📝 Problem Set 1             | ≈3%    | 17:00 · re-dated, see PREREQUISITE AUDIT #11–12 |
+| W2     | Oct 06 | **PROG 101** | 📊 Quiz 1                    | ≈0.8%  | 10 min, start of Tuesday lecture |
+| W2     | Oct 07 | **CS 101**   | 📊 Quiz 1                    | ≈0.8%  | 10 min, start of Wednesday lecture |
+| W2     | Oct 09 | **ALL**      | 📝 Problem Set 2             | ≈3%    | 17:00 |
+| W3     | Oct 13 | **PROG 101** | 📊 Quiz 2                    | ≈0.8%  | 10 min, start of Tuesday lecture |
+| W3     | Oct 14 | **CS 101**   | 📊 Quiz 2                    | ≈0.8%  | 10 min, start of Wednesday lecture |
+| W3     | Oct 16 | **ALL**      | 📝 Problem Set 3             | ≈3%    | 17:00 |
+| W4     | Oct 20 | **PROG 101** | 📊 Quiz 3                    | ≈0.8%  | 10 min, start of Tuesday lecture |
+| W4     | Oct 21 | **CS 101**   | 📊 Quiz 3                    | ≈0.8%  | 10 min, start of Wednesday lecture |
+| W4     | Oct 23 | **ALL**      | 📝 Problem Set 4             | ≈3%    | 17:00 |
+| W5     | Oct 27 | **PROG 101** | 📊 Quiz 4                    | ≈0.8%  | 10 min, start of Tuesday lecture |
+| W5     | Oct 28 | **CS 101**   | 📊 Quiz 4                    | ≈0.8%  | 10 min, start of Wednesday lecture |
+| W5     | Oct 30 | **ALL**      | 📝 Problem Set 5             | ≈3%    | 17:00 |
+| W6     | Nov 03 | **PROG 101** | 📊 Quiz 5                    | ≈0.8%  | 10 min, start of Tuesday lecture |
+| W6     | Nov 04 | **CS 101**   | 📊 Quiz 5                    | ≈0.8%  | 10 min, start of Wednesday lecture |
+| W6     | Nov 06 | **ALL**      | 📝 Problem Set 6             | ≈3%    | 17:00 |
+| W6     | Nov 02 | **CS 101**   | 📘 Midterm 1                 | 15%    | 18:00–19:15 · VNC 100 · Weeks 0–5 |
+| W6     | Nov 04 | **PROG 101** | 📘 Midterm 1                 | 12%    | 18:00–19:30 · VNC 100 · Weeks 0–5 |
+| W6     | Nov 05 | **MATH 141** | 📘 Midterm 1                 | 20%    | 18:00–19:15 · VNC 200 · Weeks 0–5 |
+| W6     | Nov 06 | **MATH 151** | 📘 Midterm 1                 | 25%    | 18:00–19:15 · VNC 200 · Weeks 0–5 |
+| W7     | Nov 10 | **PROG 101** | 📊 Quiz 6                    | ≈0.8%  | 10 min, start of Tuesday lecture |
+| W7     | Nov 11 | **CS 101**   | 📊 Quiz 6                    | ≈0.8%  | 10 min, start of Wednesday lecture |
+| W7     | Nov 13 | **ALL**      | 📝 Problem Set 7             | ≈3%    | 17:00 |
+| W8     | Nov 17 | **PROG 101** | 📊 Quiz 7                    | ≈0.8%  | 10 min, start of Tuesday lecture |
+| W8     | Nov 18 | **CS 101**   | 📊 Quiz 7                    | ≈0.8%  | 10 min, start of Wednesday lecture |
+| W8     | Nov 20 | **ALL**      | 📝 Problem Set 8             | ≈3%    | 17:00 |
+| W9     | Nov 24 | **PROG 101** | 📊 Quiz 8                    | ≈0.8%  | 10 min, start of Tuesday lecture |
+| W9     | Nov 25 | **CS 101**   | 📊 Quiz 8                    | ≈0.8%  | 10 min, start of Wednesday lecture |
+| W9     | Nov 27 | **ALL**      | 📝 Problem Set 9             | ≈3%    | 17:00 |
+| W9     | Nov 27 | **CS 101**   | 📋 Project 1 Due             | 10%    | Data Analysis Tool · 17:00 |
+| W10    | Dec 01 | **PROG 101** | 📊 Quiz 9                    | ≈0.8%  | 10 min, start of Tuesday lecture |
+| W10    | Dec 02 | **CS 101**   | 📊 Quiz 9                    | ≈0.8%  | 10 min, start of Wednesday lecture |
+| W10    | Dec 04 | **ALL**      | 📝 Problem Set 10            | ≈3%    | 17:00 |
+| W10    | Nov 30 | **CS 101**   | 📘 Midterm 2                 | 15%    | 18:00–19:15 · VNC 100 · Weeks 6–9 |
+| W10    | Dec 01 | **PROG 101** | 📘 Midterm 2                 | 12%    | 18:00–19:30 · VNC 100 · Weeks 6–9 |
+| W10    | Dec 02 | **MATH 141** | 📘 Midterm 2                 | 20%    | 18:00–19:15 · VNC 200 · Weeks 6–9 |
+| W11    | Dec 08 | **PROG 101** | 📊 Quiz 10                   | ≈0.8%  | 10 min, start of Tuesday lecture |
+| W11    | Dec 09 | **CS 101**   | 📊 Quiz 10                   | ≈0.8%  | 10 min, start of Wednesday lecture |
+| W11    | Dec 11 | **ALL**      | 📝 Problem Set 11            | ≈3%    | 17:00 |
+| W12    | Dec 15 | **PROG 101** | 📊 Quiz 11                   | ≈0.8%  | 10 min, start of Tuesday lecture |
+| W12    | Dec 16 | **CS 101**   | 📊 Quiz 11                   | ≈0.8%  | 10 min, start of Wednesday lecture |
+| W12    | Dec 18 | **ALL**      | 📝 Problem Set 12            | ≈3%    | 17:00 |
+| W12    | Dec 18 | **CS 101**   | 📋 Project 2 Due             | 10%    | Algorithm Visualizer · 17:00 |
+| Finals | Dec 21 | **MATH 151** | 📕 Final Exam                | 30%    | 08:00–10:00 · VNC 200 · Comprehensive |
+| Finals | Dec 22 | **CS 101**   | 📕 Final Exam                | 20%    | 09:00–11:30 · VNC 100 · Comprehensive |
+| Finals | Dec 23 | **MATH 141** | 📕 Final Exam                | 40%    | 09:00–11:30 · VNC 200 · Comprehensive |
+| Finals | Dec 24 | **PROG 101** | 📕 Final Exam                | 20%    | 14:00–16:30 · VNC 100 · Comprehensive |
+| Finals | Dec 25 | **CS 190**   | 🎤 Final Paper Due           | 40%    | 23:59 · Position paper · 1500 words min |
 
 
 ---

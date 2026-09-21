@@ -2,7 +2,7 @@
 ## Week 7 · Lecture 2 (Tuesday)
 ### Curve Sketching: The Complete Synthesis
 
-**Date:** Tuesday 6 October 2026 · 11:00–11:50 · Week 7
+**Date:** Tuesday 10 November 2026 · 11:00–11:50 · Week 7
 
 ---
 

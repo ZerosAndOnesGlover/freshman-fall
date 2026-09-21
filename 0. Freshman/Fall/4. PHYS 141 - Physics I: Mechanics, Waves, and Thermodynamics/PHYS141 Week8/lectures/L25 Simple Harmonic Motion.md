@@ -1,7 +1,7 @@
 # PHYS 141 · Physics I: Mechanics, Waves & Thermodynamics
 ## Lecture 25 — Simple Harmonic Motion: Kinematics and Dynamics
 
-**Date:** Monday 12 October 2026 · 14:00–14:50 · Week 8
+**Date:** Monday 16 November 2026 · 14:00–14:50 · Week 8
 
 ---
 

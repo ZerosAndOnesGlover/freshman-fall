@@ -1,7 +1,7 @@
 # PHYS 141 · Physics I: Mechanics, Waves & Thermodynamics
 ## Lecture 27 — Damped and Driven Oscillations, and Resonance
 
-**Date:** Friday 16 October 2026 · 14:00–14:50 · Week 8
+**Date:** Friday 20 November 2026 · 14:00–14:50 · Week 8
 
 ---
 

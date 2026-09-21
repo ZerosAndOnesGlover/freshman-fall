@@ -2,7 +2,7 @@
 ## Lecture 6.1 (L18) Relations and Their Fundamental Properties
 ### Monday, Week 6
 
-**Date:** Monday 28 September 2026 · 13:00–13:50 · Week 6
+**Date:** Monday 2 November 2026 · 13:00–13:50 · Week 6
 
 ---
 

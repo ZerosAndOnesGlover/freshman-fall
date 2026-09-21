@@ -2,7 +2,7 @@
 ## Lecture 0.2. Truth Tables: Systematic Evaluation of Compound Propositions
 ### Thursday, Week 0
 
-**Date:** Thursday 20 August 2026 · 13:00–13:50 · Week 0
+**Date:** Thursday 24 September 2026 · 13:00–13:50 · Week 0
 
 ---
 

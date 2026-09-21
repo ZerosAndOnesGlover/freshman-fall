@@ -2,7 +2,7 @@
 ## Lecture 3.2 (L10) — Induction Applications: Inequalities, Divisibility, and Recursion
 ### Thursday, Week 3
 
-**Date:** Thursday 10 September 2026 · 13:00–13:50 · Week 3
+**Date:** Thursday 15 October 2026 · 13:00–13:50 · Week 3
 
 ---
 

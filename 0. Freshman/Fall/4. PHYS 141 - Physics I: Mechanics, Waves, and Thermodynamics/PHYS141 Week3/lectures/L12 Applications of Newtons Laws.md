@@ -3,7 +3,7 @@
 
 > **Core Principle:** Newton's second law is one equation — ΣF⃗ = ma⃗ — applied over and over to different systems with different forces. Mastery of this week's material comes from methodical FBD construction and disciplined component decomposition, not from memorizing special cases.
 
-**Date:** Friday 11 September 2026 · 14:00–14:50 · Week 3
+**Date:** Friday 16 October 2026 · 14:00–14:50 · Week 3
 
 ---
 

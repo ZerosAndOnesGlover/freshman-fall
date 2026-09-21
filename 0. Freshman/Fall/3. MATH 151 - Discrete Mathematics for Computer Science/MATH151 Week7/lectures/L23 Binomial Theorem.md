@@ -2,7 +2,7 @@
 ## Lecture 7.3 (L23) — The Binomial Theorem and Pascal's Triangle
 ### Friday, Week 7
 
-**Date:** Friday 9 October 2026 · 13:00–13:50 · Week 7
+**Date:** Friday 13 November 2026 · 13:00–13:50 · Week 7
 
 ---
 

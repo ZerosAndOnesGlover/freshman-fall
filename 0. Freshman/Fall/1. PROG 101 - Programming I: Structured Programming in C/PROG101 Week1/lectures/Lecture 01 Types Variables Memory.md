@@ -1,7 +1,7 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 1 · Lecture 1: Types, Variables, and the Memory Model
 
-**Date:** Tuesday 25 August 2026 · 10:00–10:50 · Week 1
+**Date:** Tuesday 29 September 2026 · 10:00–10:50 · Week 1
 
 ---
 

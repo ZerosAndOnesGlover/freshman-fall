@@ -1,7 +1,7 @@
 # PHYS 141 · Physics I: Mechanics, Waves & Thermodynamics
 ## Lecture 28 — Wave Properties and the Wave Equation
 
-**Date:** Monday 19 October 2026 · 14:00–14:50 · Week 9
+**Date:** Monday 23 November 2026 · 14:00–14:50 · Week 9
 
 ---
 

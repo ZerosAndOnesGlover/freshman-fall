@@ -2,7 +2,7 @@
 ## Lecture · Week 9: Tech Industry Culture
 ### Diversity, Work Culture, and Mental Health
 
-**Date:** Wednesday 21 October 2026 · 13:00–13:50 · Week 9
+**Date:** Wednesday 25 November 2026 · 13:00–13:50 · Week 9
 
 ---
 

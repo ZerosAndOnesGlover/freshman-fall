@@ -2,7 +2,7 @@
 ## Lecture · Week 1: The History of Computing
 ### From Babbage to Turing to Silicon Valley
 
-**Date:** Wednesday 26 August 2026 · 13:00–13:50 · Week 1
+**Date:** Wednesday 30 September 2026 · 13:00–13:50 · Week 1
 
 ---
 

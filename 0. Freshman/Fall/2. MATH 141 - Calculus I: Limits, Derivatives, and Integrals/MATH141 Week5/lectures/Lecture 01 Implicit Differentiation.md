@@ -2,7 +2,7 @@
 ## Week 5 · Lecture 1 (Monday)
 ### Implicit Differentiation
 
-**Date:** Monday 21 September 2026 · 11:00–11:50 · Week 5
+**Date:** Monday 26 October 2026 · 11:00–11:50 · Week 5
 
 ---
 

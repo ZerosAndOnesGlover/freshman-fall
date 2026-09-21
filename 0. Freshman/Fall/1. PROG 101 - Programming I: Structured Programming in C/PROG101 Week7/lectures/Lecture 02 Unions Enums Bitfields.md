@@ -1,7 +1,7 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 7 · Lecture 2: Unions, Enumerations, and Bit Fields
 
-**Date:** Wednesday 7 October 2026 · 10:00–10:50 · Week 7
+**Date:** Wednesday 11 November 2026 · 10:00–10:50 · Week 7
 
 ---
 

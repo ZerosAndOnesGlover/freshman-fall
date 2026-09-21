@@ -1,7 +1,7 @@
 # CS 101 · Lecture 38 (Week 12, Lecture 2)
 ## What Comes Next: The Map of the Field
 
-**Date:** Thursday 12 November 2026 · 09:00–09:50 · Week 12
+**Date:** Thursday 17 December 2026 · 09:00–09:50 · Week 12
 
 ---
 

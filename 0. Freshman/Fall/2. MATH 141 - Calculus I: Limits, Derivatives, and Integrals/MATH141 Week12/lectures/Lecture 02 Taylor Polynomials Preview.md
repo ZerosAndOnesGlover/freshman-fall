@@ -2,7 +2,7 @@
 ## Week 12 · Lecture 2 (Tuesday)
 ### Taylor Polynomials: A Preview
 
-**Date:** Tuesday 10 November 2026 · 11:00–11:50 · Week 12
+**Date:** Tuesday 15 December 2026 · 11:00–11:50 · Week 12
 
 ---
 

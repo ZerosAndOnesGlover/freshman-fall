@@ -1,7 +1,7 @@
 # PROG 101 · Programming I - Structured Programming in C
 ## Week 0 · Lecture 2: The Command Line, Make, and GDB
 
-**Date:** Wednesday 19 August 2026 · 10:00–10:50 · Week 0
+**Date:** Wednesday 23 September 2026 · 10:00–10:50 · Week 0
 
 ---
 

@@ -2,7 +2,7 @@
 ## Week 1 · Lecture 3 (Wednesday)
 ### Infinite Limits and Limits at Infinity
 
-**Date:** Wednesday 26 August 2026 · 11:00–11:50 · Week 1
+**Date:** Wednesday 30 September 2026 · 11:00–11:50 · Week 1
 
 ---
 

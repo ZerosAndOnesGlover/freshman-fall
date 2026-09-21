@@ -2,7 +2,7 @@
 ## Week 0 · Lecture 1 of 4
 ### Functions: The Engine of Mathematics
 
-**Date:** Tuesday 18 August 2026 · 11:00–11:50 · Week 0
+**Date:** Tuesday 22 September 2026 · 11:00–11:50 · Week 0
 
 ---
 

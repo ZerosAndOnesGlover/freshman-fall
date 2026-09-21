@@ -1,7 +1,7 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 5 · Lecture 1: What a Pointer Is
 
-**Date:** Tuesday 22 September 2026 · 10:00–10:50 · Week 5
+**Date:** Tuesday 27 October 2026 · 10:00–10:50 · Week 5
 
 ---
 

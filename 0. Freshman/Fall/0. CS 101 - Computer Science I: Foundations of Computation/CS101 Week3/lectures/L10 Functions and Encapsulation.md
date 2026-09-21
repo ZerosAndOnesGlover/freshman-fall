@@ -4,7 +4,7 @@
 **Week 3 · Wednesday**
 *"A function is not just a named block of code — it is a contract between the caller and the implementation." — Barbara Liskov*
 
-**Date:** Wednesday 9 September 2026 · 09:00–09:50 · Week 3
+**Date:** Wednesday 14 October 2026 · 09:00–09:50 · Week 3
 
 ---
 
