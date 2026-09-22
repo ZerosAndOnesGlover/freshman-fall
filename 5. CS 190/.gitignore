@@ -1,0 +1,11 @@
+# Drafts and the presentation are submitted work and are NOT ignored.
+# Only the temporary files editors write while a document is open are
+# ignored.
+
+# Office lock files
+~$*
+.~lock.*#
+
+# Per-week scratch space: classwork practice, test code, experiments.
+# Never submitted. Listed last so it overrides the allow rules above.
+practice/

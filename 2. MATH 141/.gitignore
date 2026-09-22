@@ -1,0 +1,19 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Test and notebook artifacts
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Editor files
+tempCodeRunnerFile.py
+
+# Per-week scratch space: classwork practice, test code, experiments.
+# Never submitted. Listed last so it overrides the allow rules above.
+practice/

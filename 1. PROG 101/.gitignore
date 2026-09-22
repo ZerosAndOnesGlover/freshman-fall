@@ -1,0 +1,35 @@
+# Shape-based ignore: deny everything, then allow sources and docs back.
+#
+# This inverts the usual approach deliberately. Listing build output by
+# name meant every new executable was committable until someone
+# remembered to add it, which is how seven binaries ended up tracked.
+# Here anything not explicitly allowed below is ignored, so object
+# files, assembly, preprocessed output and extensionless executables
+# stay out with no maintenance.
+#
+# Adding a new kind of source file means adding one line here.
+
+# Deny everything...
+*
+
+# ...but descend into directories. Without this git never recurses, and
+# nothing inside week0/, week1/ etc. could be allowed back.
+!*/
+
+# C sources and headers
+!*.c
+!*.h
+
+# Build and helper scripts
+!Makefile
+!*.sh
+
+# Answer sheets, notes and documentation
+!*.md
+
+# This file
+!.gitignore
+
+# Per-week scratch space: classwork practice, test code, experiments.
+# Never submitted. Listed last so it overrides the allow rules above.
+practice/

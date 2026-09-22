@@ -1,0 +1,22 @@
+# Semester-wide ignores for every course folder.
+#
+# This file covers what any course can produce whatever it is written
+# in. Each course folder has its own .gitignore for the output of its
+# own tools (Python, C, office documents).
+
+# ─── OS noise ────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── Editor files ────────────────────────────────────────────────────
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# ─── Obsidian ────────────────────────────────────────────────────────
+# Present only if a course folder is ever opened as its own vault.
+.obsidian/
+.trash/
