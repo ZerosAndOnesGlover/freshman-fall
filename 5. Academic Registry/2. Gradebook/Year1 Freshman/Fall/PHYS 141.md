@@ -69,12 +69,12 @@ component.*
 | Lab 2 | Projectile motion | 100 | |
 | Lab 3 | Newton's second law | 100 | |
 | Lab 4 | Conservation of energy | 100 | |
-| Lab 5 | Collisions | 100 | |
-| Lab 6 | Moment of inertia and rolling | 100 | |
+| Lab 5 | Collisions | 85 | |
+| Lab 6 | Moment of inertia and parallel axis | 75 | |
 | Lab 7 | Angular momentum conservation | 100 | |
-| Lab 8 | The simple pendulum and SHM | 100 | |
+| Lab 8 | The simple pendulum and SHM | 80 | |
 | Lab 9 | Standing waves on a string | 100 | |
-| Lab 10 | Speed of sound and resonance | 100 | |
+| Lab 10 | Speed of sound and resonance | 80 | |
 | Lab 11 | Specific heat and thermal expansion | 100 | |
 | Lab 12 | Heat engines and thermal efficiency | 100 | |
 

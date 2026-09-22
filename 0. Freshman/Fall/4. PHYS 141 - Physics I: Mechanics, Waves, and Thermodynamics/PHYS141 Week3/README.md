@@ -13,8 +13,8 @@
 | [[L11 Newtons Third Law and Free Body Diagrams]] | Action-reaction pairs; the free body diagram method |
 | [[L12 Applications of Newtons Laws]] | Tension, normal force, friction, inclined planes, connected systems |
 | [[LAB 3 Newtons Second Law]] | Atwood machine; verifying F = ma with varying mass and force |
-| [[PS 3 Newtons Three Laws of Motion]] | 20 problems on Newton's laws and their applications |
-| [[QUIZ 3 Newtons Three Laws of Motion]] | 10-question quiz (administered Monday, Week 4) |
+| [[PS 3 Newtons Three Laws of Motion]] | 10 problems on Newton's laws and their applications |
+| [[QUIZ 3 Newtons Three Laws of Motion]] | 10-question quiz (administered Monday 19 Oct, 14:00) |
 | [[PHYS141 Week3/resources/Resources\|Resources]] | Textbook references, deeper reading |
 | [[PHYS141 Week3/solutions_instructor/PS 3 Solutions\|PS 3 Solutions]] | Full worked solutions (instructor only) |
 
@@ -39,13 +39,13 @@ By the end of Week 3, you will be able to:
 
 | Day | Activity |
 |-----|----------|
-| Monday | Lecture 10 — Newton's First and Second Laws |
-| Tuesday | Lecture 11 — Newton's Third Law and Free Body Diagrams |
-| Friday | Lecture 12 — Applications: Friction, Inclines, Connected Systems |
-| Thursday | Lab 3 — Newton's Second Law: Atwood Machine (3 hrs) |
-| Friday EOD | Problem Set 3 released |
-| Following Friday | Problem Set 3 due |
-| Monday (Week 4) | Quiz 3 |
+| Mon 12 Oct, 14:00 | Lecture 10 — Newton's First and Second Laws |
+| Tue 13 Oct, 14:00 | Lecture 11 — Newton's Third Law and Free Body Diagrams |
+| Thu 15 Oct, 14:00–17:00 | Lab 3 — Newton's Second Law: Atwood Machine (3 hrs) |
+| Fri 16 Oct, 14:00 | Lecture 12 — Applications: Friction, Inclines, Connected Systems |
+| Fri 16 Oct, 15:00 | Problem Set 3 released |
+| Fri 23 Oct, 17:00 | Problem Set 3 due |
+| Mon 19 Oct, 14:00 | Quiz 3 |
 
 ---
 

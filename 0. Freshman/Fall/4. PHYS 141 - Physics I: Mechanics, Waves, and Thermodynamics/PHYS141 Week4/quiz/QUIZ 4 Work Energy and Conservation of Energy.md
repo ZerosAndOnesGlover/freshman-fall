@@ -1,7 +1,7 @@
 # PHYS 141 · Quiz 4
 ## Work, Energy & Conservation of Energy
 
-**Administered:** Monday of Week 5, the Monday after this material is covered — covers Week 4.
+**Administered:** Monday 26 October 2026, 14:00 (start of lecture) · Week 5, the Monday after this material is covered — covers Week 4.
 **Time limit:** 20 minutes | **Format:** Closed book
 **Formula sheet:** W=Fdcosθ; KE=½mv²; U_grav=mgy; U_spring=½kx²; F=−dU/dx; P=Fv; g=9.81 m/s²
 

@@ -1,7 +1,7 @@
 # PHYS 141 · Quiz 8
 ## Simple Harmonic Motion and Oscillators
 
-**Administered:** Monday of Week 9, the Monday after this material is covered — covers Week 8.
+**Administered:** Monday 23 November 2026, 14:00 (start of lecture) · Week 9, the Monday after this material is covered — covers Week 8.
 **Time limit:** 20 minutes | **Format:** Closed book
 **Formula sheet:** $\omega=\sqrt{k/m}$; $T=2\pi/\omega$; $x=A\cos(\omega t+\phi)$;
 $E=\tfrac12kA^2$; $v=\omega\sqrt{A^2-x^2}$; $T_{\text{pend}}=2\pi\sqrt{L/g}$;
@@ -42,7 +42,7 @@ critically, or overdamped? Show the comparison.
 
 &nbsp;
 
-**8.** (3 pts) For that oscillator, find the time for the amplitude to fall to half its initial value.
+**8.** (3 pts) For that oscillator, find the time for the amplitude to fall to half its initial value. (ln 2 = 0.693.)
 
 &nbsp;
 

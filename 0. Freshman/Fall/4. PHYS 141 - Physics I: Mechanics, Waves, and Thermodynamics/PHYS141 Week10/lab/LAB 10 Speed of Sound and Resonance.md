@@ -1,10 +1,15 @@
 # PHYS 141 · Lab 10
 ## The Speed of Sound and Resonance in Air Columns
 
-**Duration:** 3 hours | **Total: 100 points**
-**Lab session:** Thursday of Week 10 — the lab meets Thursday, after that week's Mon/Tue lectures.
+**Duration:** 3 hours | **Total: 80 points**
+**Lab session:** Thursday 3 December 2026, 14:00–17:00 · Week 10 — the lab meets Thursday, after that week's Mon/Tue lectures.
 
 ---
+
+> **Line fits:** use the formulas in the *Fitting a Straight Line* box in Lab 1 (slope, intercept and
+> their uncertainties), or `LINEST`, which gives the same numbers.
+
+> *Revised 2026-09-21.* Part 4 was removed: it needs Lecture 33 (Friday), after this Thursday lab. The lab is now out of 80.
 
 ## Objectives
 
@@ -12,7 +17,6 @@
 2. Verify that successive resonances are spaced by $\lambda/2$
 3. Determine the end correction and compare it with $0.6r$
 4. Verify the inverse-square law and the decibel scale with a sound level meter
-5. Observe the Doppler effect and measure the shift
 
 ---
 
@@ -97,29 +101,6 @@ the sound level at distances from 0.50 m to 4.00 m.
 
 ---
 
-## Part 4 — The Doppler Effect (30 min, 20 pts)
-
-**Procedure.** Attach a small speaker emitting a steady tone (1–2 kHz) to a string and swing it in a
-horizontal circle, or mount it on a rotating arm. Record the sound with a phone spectrum analyser
-from a few metres away, in the plane of the circle.
-
-**Analysis.**
-
-1. From your recording, identify the maximum and minimum received frequencies, $f_{\max}$ and
-   $f_{\min}$. *(5 pts)*
-2. Using $f_{\max} = f\dfrac{v}{v-v_s}$ and $f_{\min} = f\dfrac{v}{v+v_s}$, solve for **both** the
-   emitted frequency $f$ and the source speed $v_s$. *(8 pts)*
-3. Measure the radius and period of the circular motion, compute $v_s = 2\pi R/T$ independently, and
-   compare. *(4 pts)*
-4. At which points in the circle does the listener hear $f_{\max}$, $f_{\min}$, and the unshifted
-   $f$? Explain in terms of the component of velocity along the line of sight. *(3 pts)*
-
-> **Question 4 is the conceptual heart of the part.** The Doppler shift depends only on the velocity
-> component *towards the listener*, so the unshifted frequency is heard when the speaker is moving
-> **across** the line of sight, not when it is nearest or furthest.
-
----
-
 ## Lab Report Requirements
 
 | Component | Points |
@@ -127,8 +108,7 @@ from a few metres away, in the plane of the circle.
 | Part 1: resonance data, $v$ for three forks, comparison with temperature prediction | 35 |
 | Part 2: end correction extracted and compared with $0.6r$ | 15 |
 | Part 3: $I$ vs $1/r^2$ plot, source power, dB-vs-log-distance slope, 6 dB rule | 30 |
-| Part 4: Doppler extremes, $f$ and $v_s$ extracted, independent check | 20 |
-| **Total** | **100** |
+| **Total** | **80** |
 
 ---
 

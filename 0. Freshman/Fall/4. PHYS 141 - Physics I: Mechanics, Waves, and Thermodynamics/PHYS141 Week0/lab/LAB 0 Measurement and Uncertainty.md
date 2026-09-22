@@ -2,7 +2,7 @@
 # Measurement and Uncertainty
 
 **Duration:** 3 hours | **Grading:** Completion + correctness (not graded on "right answer" — graded on correct methodology)
-**Lab session:** Thursday of Week 0 — the lab meets Thursday, after that week's Mon/Tue lectures.
+**Lab session:** Thursday 24 September 2026, 14:00–17:00 · Week 0 — the lab meets Thursday, after that week's Mon/Tue lectures.
 
 ---
 

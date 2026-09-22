@@ -2,9 +2,11 @@
 # Collisions: Verifying Conservation of Momentum
 
 **Duration:** 3 hours | **Partners:** Groups of 2–3
-**Lab session:** Thursday of Week 5 — the lab meets Thursday, after that week's Mon/Tue lectures.
+**Lab session:** Thursday 29 October 2026, 14:00–17:00 · Week 5 — the lab meets Thursday, after that week's Mon/Tue lectures.
 
 ---
+
+> *Revised 2026-09-21.* Part 3 was removed: it needs Lecture 18 (Friday), after this Thursday lab. The lab is now out of 85.
 
 ## Objectives
 
@@ -96,14 +98,6 @@ Use the elastic collision formulas from Lecture 17 to compute theoretical values
 
 ---
 
-## Part 3: Center of Mass Motion (Conceptual + Quick Measurement)
-
-1. For one of your elastic collision trials, calculate $v_{cm} = \dfrac{m_1v_{1i}+m_2v_{2i}}{m_1+m_2}$ before the collision.
-2. Calculate $v_{cm}$ again using the final velocities after collision: $v_{cm} = \dfrac{m_1v_{1f}+m_2v_{2f}}{m_1+m_2}$.
-3. Confirm these two values match (within experimental uncertainty). This directly demonstrates that the center of mass velocity is unaffected by the (internal) collision forces.
-
----
-
 ## Part 4: Written Discussion
 
 **Q1.** In Part 1, does the fraction of kinetic energy lost depend on the initial speed $v_{1i}$, or only on the mass ratio? Use your data across different speeds (same masses) to answer empirically, then explain using the algebra of $KE_{lost}/KE_i$ derived from the perfectly inelastic collision formula.
@@ -121,9 +115,8 @@ Use the elastic collision formulas from Lecture 17 to compute theoretical values
 | Part 1 data table and KE-loss analysis | 20 |
 | Part 2 data table, momentum and KE verification | 25 |
 | Coefficient of restitution calculation and discussion | 15 |
-| Part 3 center-of-mass velocity check | 15 |
 | Part 4 written discussion (Q1–Q3) | 25 |
-| **Total** | **100** |
+| **Total** | **85** |
 
 ---
 

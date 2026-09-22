@@ -2,7 +2,7 @@
 # Measuring Constant Acceleration — Measuring g
 
 **Duration:** 3 hours | **Partners:** Groups of 2–3
-**Lab session:** Thursday of Week 1 — the lab meets Thursday, after that week's Mon/Tue lectures.
+**Lab session:** Thursday 1 October 2026, 14:00–17:00 · Week 1 — the lab meets Thursday, after that week's Mon/Tue lectures.
 
 ---
 
@@ -66,12 +66,35 @@ $$v_{n+1} \approx \frac{y_{n+2} - y_n}{2\Delta t}$$
 
 (This is the "mid-point velocity" formula — more accurate than using adjacent dots because it samples over a larger interval, reducing the relative error from position measurement uncertainty.)
 
+### Fitting a Straight Line (used in every lab from here on)
+
+> *Added 2026-09-21.* The lectures never teach line fitting, yet most labs need a slope and its
+> uncertainty. This box is the reference for all of them.
+
+For $N$ points $(x_i, y_i)$ and the line $y = mx + b$, the least-squares fit is
+
+$$\Delta = N\sum x_i^2 - \Big(\sum x_i\Big)^2,\qquad
+m = \frac{N\sum x_iy_i - \sum x_i\sum y_i}{\Delta},\qquad
+b = \frac{\sum x_i^2\sum y_i - \sum x_i\sum x_iy_i}{\Delta}.$$
+
+The scatter of the points about the line, and the uncertainties it implies, are
+
+$$s = \sqrt{\frac{\sum (y_i - mx_i - b)^2}{N-2}},\qquad
+\sigma_m = s\sqrt{\frac{N}{\Delta}},\qquad \sigma_b = s\sqrt{\frac{\sum x_i^2}{\Delta}}.$$
+
+**Line forced through the origin** ($y = mx$): $m = \dfrac{\sum x_iy_i}{\sum x_i^2}$,
+$s = \sqrt{\dfrac{\sum (y_i - mx_i)^2}{N-1}}$, $\sigma_m = \dfrac{s}{\sqrt{\sum x_i^2}}$.
+
+A spreadsheet's `LINEST(y, x, TRUE, TRUE)` returns the same $m$, $b$, $\sigma_m$ and $\sigma_b$. Use it to
+check your hand calculation once; after that you may use it directly. *(Check: the points (1, 2.1),
+(2, 3.9), (3, 6.2), (4, 7.8), (5, 10.1) give $m = 1.99 \pm 0.06$ and $b = 0.05 \pm 0.20$.)*
+
 ### 1.3 Analysis — Method A (y vs. t²)
 
 1. Plot y (vertical axis) vs. t² (horizontal axis) on graph paper or in a spreadsheet.
 2. Fit a straight line through the origin (since y = 0 at t = 0 by definition).
 3. Read off the slope m. Then g = 2m.
-4. Calculate the uncertainty in the slope (ask your TA for the linear regression uncertainty formula, or use your spreadsheet's LINEST function).
+4. Calculate the uncertainty in the slope with the through-the-origin formula in the box above.
 5. Report g ± σ_g.
 
 ### 1.4 Analysis — Method B (v vs. t)

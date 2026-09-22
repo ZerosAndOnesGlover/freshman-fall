@@ -89,28 +89,6 @@ choose d large enough to make the added term substantial.
 
 ---
 
-## Part 3 — The Rolling Race (θ = 10.0°, L = 1.2 m)
-
-$$a = \frac{g\sin\theta}{1+\beta}, \qquad \beta = \frac{I}{mR^2}$$
-
-| Object | β | t trials (s) | Mean t (s) | a_meas = 2L/t̄² | a_theory | Discrepancy |
-|---|---|---|---|---|---|---|
-| Solid sphere | 0.400 | 1.41, 1.39, 1.42 | 1.4067 ± 0.0088 | 1.2129 | 1.2168 | 0.3% |
-| Solid cylinder | 0.500 | 1.46, 1.44, 1.47 | 1.4567 ± 0.0088 | 1.1311 | 1.1357 | 0.4% |
-| Hoop/ring | 1.000 | 1.68, 1.71, 1.66 | 1.6833 ± 0.0145 | 0.8470 | 0.8517 | 0.6% |
-
-
-**Ranking (fastest → slowest): sphere, cylinder, hoop.** This matches theory exactly, and the
-ordering is by **β alone**.
-
-**Mass and radius cancel completely.** β = I/mR² is dimensionless and depends only on how mass is
-*distributed*, not on how much there is or how big the object is. A bowling ball and a marble reach
-the bottom together. If students have two spheres of different mass, racing them is the single most
-convincing demonstration in the lab — and the near-universal wrong prediction ("the heavy one
-wins") makes it worth doing.
-
----
-
 ## Part 4 — Written Discussion (expected answers)
 
 **Q1 — Why linearise rather than average per-trial I values?**
@@ -127,18 +105,6 @@ enormously: the 1/a vs. 1/m form recommended in the handout has pathological lev
 **worse** than naive averaging on clean data. Award full credit to any student who identifies
 either the propagation argument or the systematic-error argument; award bonus credit to any student
 who tests both and reports that averaging beat the handout's fit.
-
-**Q2 — Why is energy conservation valid despite static friction?**
-
-Static friction acts at the **contact point**, and for rolling without slipping that point is
-**instantaneously at rest** relative to the surface. Work is W = ∫F·dr, and the displacement of the
-point of application is zero, so **static friction does no work**. It supplies the torque that
-produces angular acceleration while transferring no energy — which is exactly what allows
-½mv² + ½Iω² = mgh to be used with no friction term.
-
-If the object *slips*, the contact point moves, friction becomes kinetic, work is done, energy is
-dissipated as heat, and the analysis fails. A student who says "friction always dissipates energy"
-should be shown the distinction; it is one of the most useful ideas in rotational mechanics.
 
 ---
 

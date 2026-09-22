@@ -2,7 +2,7 @@
 ## Kinematics in One Dimension
 
 **Time limit:** 20 minutes | **Format:** Closed book, formula sheet provided (kinematic equations only)
-**Administered:** Start of lecture, Monday Week 2
+**Administered:** Monday 5 October 2026, 14:00 (start of lecture) · Week 2
 
 *Formula sheet provided:*
 v = v₀ + at | Δx = v₀t + ½at² | v² = v₀² + 2aΔx | Δx = ½(v₀+v)t | g = 9.81 m/s²
@@ -95,7 +95,7 @@ D) Increases at an increasing rate
 
 7. v² = v₀² − 2gΔy → 0 = (14)² − 2(9.81)Δy → Δy = 196/19.62 = **9.99 ≈ 10.0 m**
 
-8. **D** — Ball 1 falls distance ½g t². Ball 2 falls ½g(t−1)². Separation = ½g[t² − (t−1)²] = ½g(2t−1) which grows linearly with t — so separation increases at an increasing rate from the ground frame. *(Accept D with any correct explanation.)*
+8. **C** — Ball 1 falls ½gt², ball 2 falls ½g(t−1)² (for t ≥ 1 s). Separation = ½g[t² − (t−1)²] = ½g(2t − 1) = g·t − g/2, which is **linear** in t: it increases at a constant rate, g × 1 s = 9.8 m/s. (Equivalently, ball 1 is always 9.8 m/s faster than ball 2.) *Corrected 2026-09-21: the old key printed D with an explanation that showed C.*
 
 9. (a) a = 4 m/s² (b) x(t) = ½(4)t² = 2t² (c) Δx = 2(9) = **18 m**
 

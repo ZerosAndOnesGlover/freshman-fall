@@ -13,8 +13,8 @@
 | [[L05 Acceleration and Motion Equations]] | Acceleration; deriving the constant-acceleration kinematic equations from calculus |
 | [[L06 Free Fall and Graphical Analysis]] | Free fall, g, sign conventions; reading and drawing motion graphs |
 | [[LAB 1 Constant Acceleration]] | Measuring g with a free-fall apparatus; graphing v(t) and extracting acceleration |
-| [[PS 1 Kinematics in One Dimension]] | 20 problems on 1D kinematics |
-| [[QUIZ 1 Kinematics in One Dimension]] | 10-question quiz (administered Monday, Week 2) |
+| [[PS 1 Kinematics in One Dimension]] | 10 problems on 1D kinematics |
+| [[QUIZ 1 Kinematics in One Dimension]] | 10-question quiz (administered Monday 5 Oct, 14:00) |
 | [[PHYS141 Week1/resources/Resources\|Resources]] | Textbook references, simulations, deeper reading |
 | [[PHYS141 Week1/solutions_instructor/PS 1 Solutions\|PS 1 Solutions]] | Full worked solutions |
 
@@ -38,13 +38,13 @@ By the end of Week 1, you will be able to:
 
 | Day | Activity |
 |-----|----------|
-| Monday | Lecture 4 — Position, Displacement, Velocity |
-| Tuesday | Lecture 5 — Acceleration & Kinematic Equations |
-| Friday | Lecture 6 — Free Fall & Graphical Analysis |
-| Thursday | Lab 1 — Constant Acceleration (3 hrs) |
-| Friday EOD | Problem Set 1 released |
-| Following Friday | Problem Set 1 due |
-| Monday (Week 2) | Quiz 1 |
+| Mon 28 Sep, 14:00 | Lecture 4 — Position, Displacement, Velocity |
+| Tue 29 Sep, 14:00 | Lecture 5 — Acceleration & Kinematic Equations |
+| Thu 1 Oct, 14:00–17:00 | Lab 1 — Constant Acceleration (3 hrs) |
+| Fri 2 Oct, 14:00 | Lecture 6 — Free Fall & Graphical Analysis |
+| Fri 2 Oct, 15:00 | Problem Set 1 released |
+| Fri 9 Oct, 17:00 | Problem Set 1 due |
+| Mon 5 Oct, 14:00 | Quiz 1 |
 
 ---
 

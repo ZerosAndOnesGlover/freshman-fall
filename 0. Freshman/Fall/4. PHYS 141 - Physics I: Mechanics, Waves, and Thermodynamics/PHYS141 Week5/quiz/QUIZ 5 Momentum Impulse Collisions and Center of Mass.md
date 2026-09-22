@@ -1,7 +1,7 @@
 # PHYS 141 · Quiz 5
 ## Momentum, Impulse, Collisions & Center of Mass
 
-**Administered:** Monday of Week 6, the Monday after this material is covered — covers Week 5.
+**Administered:** Monday 2 November 2026, 14:00 (start of lecture) · Week 6, the Monday after this material is covered — covers Week 5.
 **Time limit:** 20 minutes | **Format:** Closed book
 **Formula sheet:** p=mv; J=FΔt=Δp; perfectly inelastic: v_f=(m₁v₁+m₂v₂)/(m₁+m₂); elastic: v_{1f}=[(m1-m2)/(m1+m2)]v1i+[2m2/(m1+m2)]v2i (and symmetric for v_{2f}); r_cm=Σmr/M
 

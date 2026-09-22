@@ -13,8 +13,8 @@
 | [[L20 Torque and Rotational Dynamics]] | Torque as a cross product; moment of inertia; τ = Iα derived |
 | [[L21 Rotational Energy and Rolling Motion]] | Rotational kinetic energy; rolling without slipping; energy methods for rolling objects |
 | [[LAB 6 Moment of Inertia and Rolling]] | Measuring moment of inertia via rotational dynamics; race of rolling shapes |
-| [[PS 6 Rotational Kinematics and Dynamics]] | 20 problems on rotational kinematics, torque, and rolling motion |
-| [[QUIZ 6 Rotational Kinematics and Dynamics]] | 10-question quiz (administered Monday, Week 7) |
+| [[PS 6 Rotational Kinematics and Dynamics]] | 10 problems on rotational kinematics, torque, and rolling motion |
+| [[QUIZ 6 Rotational Kinematics and Dynamics]] | 10-question quiz (administered Monday 9 Nov, 14:00) |
 | [[PHYS141 Week6/resources/Resources\|Resources]] | Textbook references, deeper reading |
 | [[PHYS141 Week6/solutions_instructor/PS 6 Solutions\|PS 6 Solutions]] | Full worked solutions (instructor only) |
 
@@ -39,13 +39,13 @@ By the end of Week 6, you will be able to:
 
 | Day | Activity |
 |-----|----------|
-| Monday | Lecture 19 — Rigid Body Rotation and Kinematics |
-| Tuesday | Lecture 20 — Torque and Rotational Dynamics |
-| Friday | Lecture 21 — Rotational Energy and Rolling Motion |
-| Thursday | Lab 6 — Moment of Inertia and Rolling Race (3 hrs) |
-| Friday EOD | Problem Set 6 released |
-| Following Friday | Problem Set 6 due |
-| Monday (Week 7) | Quiz 6 |
+| Mon 2 Nov, 14:00 | Lecture 19 — Rigid Body Rotation and Kinematics |
+| Tue 3 Nov, 14:00 | Lecture 20 — Torque and Rotational Dynamics |
+| Thu 5 Nov, 14:00–17:00 | Lab 6 — Moment of Inertia and Rolling Race (3 hrs) |
+| Fri 6 Nov, 14:00 | Lecture 21 — Rotational Energy and Rolling Motion |
+| Fri 6 Nov, 15:00 | Problem Set 6 released |
+| Fri 13 Nov, 17:00 | Problem Set 6 due |
+| Mon 9 Nov, 14:00 | Quiz 6 |
 
 ---
 

@@ -2,9 +2,12 @@
 # Verifying Conservation of Angular Momentum
 
 **Duration:** 3 hours | **Partners:** Groups of 2–3
-**Lab session:** Thursday of Week 7 — the lab meets Thursday, after that week's Mon/Tue lectures.
+**Lab session:** Thursday 12 November 2026, 14:00–17:00 · Week 7 — the lab meets Thursday, after that week's Mon/Tue lectures.
 
 ---
+
+> **Line fits:** use the formulas in the *Fitting a Straight Line* box in Lab 1 (slope, intercept and
+> their uncertainties), or `LINEST`, which gives the same numbers.
 
 ## Objectives
 

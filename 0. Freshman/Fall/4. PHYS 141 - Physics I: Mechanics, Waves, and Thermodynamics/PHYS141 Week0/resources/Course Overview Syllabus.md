@@ -9,7 +9,7 @@
 |---|---|
 | **Credits** | 4 |
 | **Meetings** | Mon/Tue/Fri, 50 minutes each |
-| **Lab** | Thursday, 3 hours |
+| **Lab** | Thursday 14:00–17:00 (Lab 0: 24 September 2026; Lab 12: 17 December 2026) |
 | **Semester** | Fall, Year 1 |
 | **Prerequisites** | None (concurrent: MATH 141 strongly recommended) |
 
@@ -49,11 +49,11 @@ find HRK terse should work from Serway and consult HRK for depth.
 
 | Component | Weight | Details |
 |-----------|--------|---------|
-| **Problem Sets (13)** | 30% | PS 0–12, released Friday, due the following Friday at the start of class. Each worth 100 points. **Lowest 1 dropped.** |
-| **Laboratory (13)** | 25% | Lab 0–12, Thursdays, 3 hours. Each worth 100 points, assessed on the written report. **No lab grade is dropped.** |
-| **Weekly Quizzes (13)** | 10% | Quiz 0–12, 20 minutes, administered the Monday after the material is covered. Each worth 25 points. **Lowest 2 dropped.** |
-| **Midterm Exam** (after Week 6) | 15% | 90 minutes, covering Weeks 0–6. |
-| **Final Exam** (Finals week) | 20% | Comprehensive, 3 hours. Formula sheet provided; one double-sided A4 sheet of handwritten notes permitted. |
+| **Problem Sets (13)** | 30% | PS 0–12, released Friday 15:00, due the following Friday at 17:00 (PS 12: Wednesday 23 December 2026, 17:00). Each worth 100 points: 10 problems × 10. **Lowest 1 dropped.** |
+| **Laboratory (13)** | 25% | Lab 0–12, Thursdays 14:00–17:00. Each scored out of the total printed on it (100, or 75–85 for Labs 5, 6, 8 and 10, whose Friday-lecture parts were removed), assessed on the written report. **No lab grade is dropped.** |
+| **Weekly Quizzes (13)** | 10% | Quiz 0–12, 20 minutes at 14:00, administered the Monday after the material is covered (28 September – 21 December 2026). Each worth 25 points. **Lowest 2 dropped.** |
+| **Midterm Exam** (after Week 6) | 15% | 90 minutes, covering Weeks 0–6. *Date not yet set in the registry calendar.* |
+| **Final Exam** (Finals week, 21–25 December 2026) | 20% | Comprehensive, 3 hours. *Date not yet set in the registry calendar.* Formula sheet provided; one double-sided A4 sheet of handwritten notes permitted. |
 
 **Total:** 100%
 
@@ -109,7 +109,7 @@ union of the two listed topics, with static equilibrium added.
 ## Problem Set Policy
 
 - **Released:** Friday end of day
-- **Due:** The following Friday at the start of class
+- **Due:** The following Friday at 17:00
 - **Late policy:** 20% per day, nothing accepted after 3 days
 - **Lowest grade dropped**
 - **Format:** a single PDF; handwritten is fine if legible. Show working — a bare numerical answer

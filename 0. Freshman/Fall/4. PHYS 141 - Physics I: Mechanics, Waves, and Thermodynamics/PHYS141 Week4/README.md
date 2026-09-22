@@ -13,8 +13,8 @@
 | [[L14 Potential Energy and Conservative Forces]] | Conservative vs. non-conservative forces; gravitational and spring potential energy |
 | [[L15 Conservation of Energy]] | The full conservation law; power; energy diagrams |
 | [[LAB 4 Conservation of Energy]] | Verifying energy conservation on a track with varying friction |
-| [[PS 4 Work Energy and Conservation of Energy]] | 20 problems on work, energy, and conservation |
-| [[QUIZ 4 Work Energy and Conservation of Energy]] | 10-question quiz (administered Monday, Week 5) |
+| [[PS 4 Work Energy and Conservation of Energy]] | 10 problems on work, energy, and conservation |
+| [[QUIZ 4 Work Energy and Conservation of Energy]] | 10-question quiz (administered Monday 26 Oct, 14:00) |
 | [[PHYS141 Week4/resources/Resources\|Resources]] | Textbook references, deeper reading |
 | [[PHYS141 Week4/solutions_instructor/PS 4 Solutions\|PS 4 Solutions]] | Full worked solutions (instructor only) |
 
@@ -39,13 +39,13 @@ By the end of Week 4, you will be able to:
 
 | Day | Activity |
 |-----|----------|
-| Monday | Lecture 13 — Work and Kinetic Energy |
-| Tuesday | Lecture 14 — Potential Energy and Conservative Forces |
-| Friday | Lecture 15 — Conservation of Energy & Power |
-| Thursday | Lab 4 — Conservation of Energy (3 hrs) |
-| Friday EOD | Problem Set 4 released |
-| Following Friday | Problem Set 4 due |
-| Monday (Week 5) | Quiz 4 |
+| Mon 19 Oct, 14:00 | Lecture 13 — Work and Kinetic Energy |
+| Tue 20 Oct, 14:00 | Lecture 14 — Potential Energy and Conservative Forces |
+| Thu 22 Oct, 14:00–17:00 | Lab 4 — Conservation of Energy (3 hrs) |
+| Fri 23 Oct, 14:00 | Lecture 15 — Conservation of Energy & Power |
+| Fri 23 Oct, 15:00 | Problem Set 4 released |
+| Fri 30 Oct, 17:00 | Problem Set 4 due |
+| Mon 26 Oct, 14:00 | Quiz 4 |
 
 ---
 

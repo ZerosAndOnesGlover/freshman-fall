@@ -2,9 +2,12 @@
 ## Standing Waves on a String
 
 **Duration:** 3 hours | **Total: 100 points**
-**Lab session:** Thursday of Week 9 — the lab meets Thursday, after that week's Mon/Tue lectures.
+**Lab session:** Thursday 26 November 2026, 14:00–17:00 · Week 9 — the lab meets Thursday, after that week's Mon/Tue lectures.
 
 ---
+
+> **Line fits:** use the formulas in the *Fitting a Straight Line* box in Lab 1 (slope, intercept and
+> their uncertainties), or `LINEST`, which gives the same numbers.
 
 ## Objectives
 

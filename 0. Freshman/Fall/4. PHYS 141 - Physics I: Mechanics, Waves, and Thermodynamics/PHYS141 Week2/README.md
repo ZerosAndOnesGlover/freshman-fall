@@ -13,8 +13,8 @@
 | [[L08 Projectile Motion]] | Projectile motion derived from first principles; range, height, trajectories |
 | [[L09 Circular Motion]] | Uniform circular motion; centripetal acceleration; non-uniform circular motion |
 | [[LAB 2 Projectile Motion]] | Measuring projectile range vs. launch angle; comparing to theory |
-| [[PS 2 Kinematics 2D Projectile and Circular Motion]] | 20 problems on 2D kinematics, projectile motion, and circular motion |
-| [[QUIZ 2 Kinematics 2D Projectile and Circular Motion]] | 10-question quiz (administered Monday, Week 3) |
+| [[PS 2 Kinematics 2D Projectile and Circular Motion]] | 10 problems on 2D kinematics, projectile motion, and circular motion |
+| [[QUIZ 2 Kinematics 2D Projectile and Circular Motion]] | 10-question quiz (administered Monday 12 Oct, 14:00) |
 | [[PHYS141 Week2/resources/Resources\|Resources]] | Textbook references, simulations, supplementary reading |
 | [[PHYS141 Week2/solutions_instructor/PS 2 Solutions\|PS 2 Solutions]] | Full worked solutions (instructor only) |
 
@@ -39,13 +39,13 @@ By the end of Week 2, you will be able to:
 
 | Day | Activity |
 |-----|----------|
-| Monday | Lecture 7 — 2D Kinematics |
-| Tuesday | Lecture 8 — Projectile Motion |
-| Friday | Lecture 9 — Circular Motion |
-| Thursday | Lab 2 — Projectile Motion (3 hrs) |
-| Friday EOD | Problem Set 2 released |
-| Following Friday | Problem Set 2 due |
-| Monday (Week 3) | Quiz 2 |
+| Mon 5 Oct, 14:00 | Lecture 7 — 2D Kinematics |
+| Tue 6 Oct, 14:00 | Lecture 8 — Projectile Motion |
+| Thu 8 Oct, 14:00–17:00 | Lab 2 — Projectile Motion (3 hrs) |
+| Fri 9 Oct, 14:00 | Lecture 9 — Circular Motion |
+| Fri 9 Oct, 15:00 | Problem Set 2 released |
+| Fri 16 Oct, 17:00 | Problem Set 2 due |
+| Mon 12 Oct, 14:00 | Quiz 2 |
 
 ---
 

@@ -13,8 +13,8 @@
 | [[L17 Conservation of Momentum and Collisions]] | Conservation of momentum; elastic and inelastic collisions in 1D and 2D |
 | [[L18 Center of Mass]] | Center of mass definition and calculation; motion of the center of mass |
 | [[LAB 5 Collisions]] | Verifying momentum conservation in elastic and inelastic collisions on a track |
-| [[PS 5 Momentum Impulse Collisions and Center of Mass]] | 20 problems on momentum, impulse, collisions, and center of mass |
-| [[QUIZ 5 Momentum Impulse Collisions and Center of Mass]] | 10-question quiz (administered Monday, Week 6) |
+| [[PS 5 Momentum Impulse Collisions and Center of Mass]] | 10 problems on momentum, impulse, collisions, and center of mass |
+| [[QUIZ 5 Momentum Impulse Collisions and Center of Mass]] | 10-question quiz (administered Monday 2 Nov, 14:00) |
 | [[PHYS141 Week5/resources/Resources\|Resources]] | Textbook references, deeper reading |
 | [[PHYS141 Week5/solutions_instructor/PS 5 Solutions\|PS 5 Solutions]] | Full worked solutions (instructor only) |
 
@@ -39,13 +39,13 @@ By the end of Week 5, you will be able to:
 
 | Day | Activity |
 |-----|----------|
-| Monday | Lecture 16 — Momentum and Impulse |
-| Tuesday | Lecture 17 — Conservation of Momentum and Collisions |
-| Friday | Lecture 18 — Center of Mass |
-| Thursday | Lab 5 — Collisions (3 hrs) |
-| Friday EOD | Problem Set 5 released |
-| Following Friday | Problem Set 5 due |
-| Monday (Week 6) | Quiz 5 |
+| Mon 26 Oct, 14:00 | Lecture 16 — Momentum and Impulse |
+| Tue 27 Oct, 14:00 | Lecture 17 — Conservation of Momentum and Collisions |
+| Thu 29 Oct, 14:00–17:00 | Lab 5 — Collisions (3 hrs) |
+| Fri 30 Oct, 14:00 | Lecture 18 — Center of Mass |
+| Fri 30 Oct, 15:00 | Problem Set 5 released |
+| Fri 6 Nov, 17:00 | Problem Set 5 due |
+| Mon 2 Nov, 14:00 | Quiz 5 |
 
 ---
 

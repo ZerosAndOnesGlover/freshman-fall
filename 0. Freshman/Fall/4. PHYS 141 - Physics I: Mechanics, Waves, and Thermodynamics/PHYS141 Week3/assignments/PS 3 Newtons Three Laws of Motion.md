@@ -1,23 +1,18 @@
 # PHYS 141 · Problem Set 3
 ## Newton's Three Laws of Motion
 
-**Released:** Friday, Week 3 | **Due:** Friday, Week 4, 11:59 PM
+**Released:** Friday 16 October 2026, 15:00 (after the Friday lecture) · Week 3 | **Due:** Friday 23 October 2026, 17:00 (Week 4)
 **Instructions:** Draw a free body diagram for every problem involving forces. Establish coordinate axes. Show all steps. Report answers with correct units and significant figures.
 **Points:** 5 per problem · **100 total**
 
 ---
 
-### Part A: Newton's First and Second Laws (Problems 1–7) — 35 pts
+> *Revised 2026-09-21.* Cut from 20 problems to 10 (each now 10 points) to keep the weekly load in line with
+> the other Fall courses. Removed (old numbering): 1, 3, 6, 7, 10, 13, 14, 16, 18, 20.
 
-**1.** A net force of 48 N acts on an object and gives it an acceleration of 6.0 m/s².
+### Part A: Newton's First and Second Laws (Problems 1–3) — 30 pts
 
-(a) What is the mass of the object?
-(b) If the same net force acts on a second object and produces an acceleration of 24 m/s², what is the mass of the second object?
-(c) If both objects are combined and the same 48 N net force is applied, what is the acceleration of the combination?
-
----
-
-**2.** A 1200 kg car accelerates from rest to 25 m/s in 8.0 s on a flat road.
+**1.** A 1200 kg car accelerates from rest to 25 m/s in 8.0 s on a flat road.
 
 (a) What is the acceleration?
 (b) What net force is required?
@@ -26,19 +21,7 @@
 
 ---
 
-**3.** Three forces act on a 2.5 kg object:
-- F⃗₁ = (12, 0) N
-- F⃗₂ = (−5, 8) N
-- F⃗₃ = (0, −6) N
-
-(a) Find the net force vector.
-(b) Find the acceleration vector.
-(c) Find the magnitude and direction of the acceleration.
-(d) If the object starts from rest, find its velocity and position at t = 3.0 s.
-
----
-
-**4.** A 70 kg person stands on a scale in an elevator. Find the scale reading (in Newtons) when:
+**2.** A 70 kg person stands on a scale in an elevator. Find the scale reading (in Newtons) when:
 
 (a) The elevator is at rest.
 (b) The elevator accelerates upward at 2.5 m/s².
@@ -48,7 +31,7 @@
 
 ---
 
-**5.** A 0.50 kg ball is suspended from two strings that make angles of 30° and 60° with the vertical (the strings go to the left and right respectively, both attached to the ceiling).
+**3.** A 0.50 kg ball is suspended from two strings that make angles of 30° and 60° with the vertical (the strings go to the left and right respectively, both attached to the ceiling).
 
 (a) Draw the free body diagram on the ball.
 (b) Set up the equilibrium equations (ΣFₓ = 0, ΣFᵧ = 0).
@@ -57,26 +40,9 @@
 
 ---
 
-**6.** A traffic light of mass 22 kg is suspended at the midpoint of a cable stretched between two poles 12 m apart. The cable sags so that the midpoint is 0.30 m below the poles.
+### Part B: Newton's Third Law (Problems 4–5) — 20 pts
 
-(a) Find the angle the cable makes with the horizontal at the midpoint.
-(b) Find the tension in the cable. Why is the tension much larger than the weight of the traffic light? What happens to the tension as the sag goes to zero?
-
----
-
-**7.** A 3.0 kg block is pushed against a vertical wall by a horizontal force F = 45 N. The coefficient of static friction between the block and the wall is μ_s = 0.60.
-
-(a) Draw the free body diagram for the block.
-(b) Find the normal force exerted by the wall.
-(c) Find the maximum static friction force.
-(d) Find the actual friction force on the block and its direction. (Hint: Is the block accelerating? What does ΣFᵧ = ma require?)
-(e) What is the minimum horizontal force needed to prevent the block from sliding down?
-
----
-
-### Part B: Newton's Third Law (Problems 8–10) — 15 pts
-
-**8.** A 60 kg astronaut pushes on a 200 kg satellite, giving the satellite an acceleration of 0.50 m/s².
+**4.** A 60 kg astronaut pushes on a 200 kg satellite, giving the satellite an acceleration of 0.50 m/s².
 
 (a) What force does the astronaut exert on the satellite?
 (b) By Newton's Third Law, what force does the satellite exert on the astronaut?
@@ -85,7 +51,7 @@
 
 ---
 
-**9.** A 1500 kg car tows a 500 kg trailer. The car's engine produces a forward force of 4000 N. Resistance forces total 600 N on the car and 200 N on the trailer.
+**5.** A 1500 kg car tows a 500 kg trailer. The car's engine produces a forward force of 4000 N. Resistance forces total 600 N on the car and 200 N on the trailer.
 
 (a) Treating the car+trailer as a single system, find the acceleration.
 (b) Find the tension in the tow hitch (the force the hitch exerts on the trailer).
@@ -94,18 +60,9 @@
 
 ---
 
-**10.** You stand in an elevator holding a 5.0 kg box. The elevator accelerates upward at 3.0 m/s².
+### Part C: Friction (Problems 6–7) — 20 pts
 
-(a) Find the normal force the floor exerts on your feet (your mass = 65 kg, box mass = 5.0 kg).
-(b) Find the force your hands exert on the box.
-(c) By Newton's Third Law, what is the force the box exerts on your hands?
-(d) Find the force your feet exert on the floor. What is the Third Law partner of the floor's force on you?
-
----
-
-### Part C: Friction (Problems 11–14) — 20 pts
-
-**11.** A 15 kg box is on a horizontal surface. μ_s = 0.45, μ_k = 0.30. A horizontal force is applied.
+**6.** A 15 kg box is on a horizontal surface. μ_s = 0.45, μ_k = 0.30. A horizontal force is applied.
 
 (a) What is the minimum force needed to start the box sliding?
 (b) Once sliding, what force is needed to maintain constant velocity?
@@ -114,7 +71,7 @@
 
 ---
 
-**12.** A 4.0 kg block is on a 38° incline. μ_s = 0.50, μ_k = 0.35.
+**7.** A 4.0 kg block is on a 38° incline. μ_s = 0.50, μ_k = 0.35.
 
 (a) Show that the block slides down the incline. (Compare mg sinθ to f_s,max.)
 (b) Find the acceleration as it slides down.
@@ -123,27 +80,9 @@
 
 ---
 
-**13.** A block of mass m₁ = 3.0 kg rests on a surface with μ_k = 0.20. A string connects it horizontally over a frictionless pulley to a hanging mass m₂ = 1.5 kg.
+### Part D: Connected Systems and Inclines (Problems 8–10) — 30 pts
 
-(a) Will the system move? (Compare the driving force m₂g to the maximum static friction f_s,max = μ_s m₁g, using μ_s = 0.28.)
-(b) If it does move, find the acceleration and the tension.
-(c) Find the acceleration if μ_k were doubled. What does this suggest about how friction scales?
-(d) What minimum hanging mass m₂ would be required to start the system moving (with μ_s = 0.28)?
-
----
-
-**14.** A car enters a level circular curve of radius 80 m at 60 km/h. The coefficient of static friction between tires and road is 0.70.
-
-(a) Find the centripetal acceleration required.
-(b) Find the friction force required (this provides the centripetal force).
-(c) Find the maximum friction force available (f_s,max = μ_s mg — note N = mg on a flat road).
-(d) Is this speed safe? What is the maximum safe speed for this curve?
-
----
-
-### Part D: Connected Systems and Inclines (Problems 15–20) — 30 pts
-
-**15.** An Atwood machine has m₁ = 3.0 kg and m₂ = 5.0 kg.
+**8.** An Atwood machine has m₁ = 3.0 kg and m₂ = 5.0 kg.
 
 (a) Find the acceleration of the system.
 (b) Find the tension in the string.
@@ -153,11 +92,7 @@
 
 ---
 
-**16.** In an Atwood machine, the tension is measured to be 18 N and the acceleration is 2.0 m/s². Find m₁ and m₂. (You have two equations and two unknowns — use the Atwood formulae.)
-
----
-
-**17.** A 6.0 kg block on a frictionless 40° incline is connected by a string over a frictionless pulley at the top of the incline to a hanging 4.0 kg mass.
+**9.** A 6.0 kg block on a frictionless 40° incline is connected by a string over a frictionless pulley at the top of the incline to a hanging 4.0 kg mass.
 
 (a) Determine which way the system moves (does the hanging mass pull the block up, or does the block's weight component pull the hanging mass up?).
 (b) Write Newton's second law for each object.
@@ -166,15 +101,7 @@
 
 ---
 
-**18.** Two blocks are stacked: block A (2.0 kg) sits on top of block B (5.0 kg), which sits on a frictionless floor. The coefficient of static friction between A and B is μ_s = 0.40. A horizontal force F is applied to block B.
-
-(a) If both blocks accelerate together, what is the friction force on A from B?
-(b) What is the maximum force F that can be applied before A starts to slip on B?
-(c) If F = 30 N (exceeding the maximum found in (b)), find the separate accelerations of A and B, using kinetic friction μ_k = 0.30 between A and B.
-
----
-
-**19.** A 2.0 kg block and a 5.0 kg block are connected by a string on a double incline (like an "A"-frame): the 2.0 kg block is on the left side (angle 30°) and the 5.0 kg block is on the right side (angle 50°). The string passes over a frictionless pulley at the top. All surfaces are frictionless.
+**10.** A 2.0 kg block and a 5.0 kg block are connected by a string on a double incline (like an "A"-frame): the 2.0 kg block is on the left side (angle 30°) and the 5.0 kg block is on the right side (angle 50°). The string passes over a frictionless pulley at the top. All surfaces are frictionless.
 
 (a) Determine which side causes the system to accelerate.
 (b) Find the acceleration.
@@ -183,31 +110,17 @@
 
 ---
 
-**20. (Synthesis)** A 10 kg block is held against a wall by a rope angled 25° above horizontal, as well as by friction from the wall. μ_s = 0.55.
-
-(a) Draw the complete FBD. Identify all four forces.
-(b) Write ΣFₓ = 0 and ΣFᵧ = 0.
-(c) Solve for the tension in the rope and the normal force from the wall.
-(d) Find the friction force required.
-(e) Check whether the required friction force is achievable: compare to f_s,max = μ_s N.
-(f) What happens to the required rope tension as the rope angle increases from 0° to 90°? Is there an angle that minimizes the tension? Find it by setting dT/dθ = 0.
-
----
-
-
----
-
 ## Points Breakdown
 
 | Part | Problems | Points |
 |---|---|---|
-| **A** — Newton's First and Second Laws | 1–7 | 35 |
-| **B** — Newton's Third Law | 8–10 | 15 |
-| **C** — Friction | 11–14 | 20 |
-| **D** — Connected Systems and Inclines | 15–20 | 30 |
+| **A** — Newton's First and Second Laws | 1–3 | 30 |
+| **B** — Newton's Third Law | 4–5 | 20 |
+| **C** — Friction | 6–7 | 20 |
+| **D** — Connected Systems and Inclines | 8–10 | 30 |
 | | **Total** | **100** |
 
-Each problem is worth 5 points: 3 for a correct method (diagram, setup, chosen principle), 2 for a correct final answer with units and appropriate significant figures. A correct answer with no supporting work earns at most 2.
+Each problem is worth 10 points: 6 for a correct method (diagram, setup, chosen principle), 4 for a correct final answer with units and appropriate significant figures. A correct answer with no supporting work earns at most 4.
 
 ---
 

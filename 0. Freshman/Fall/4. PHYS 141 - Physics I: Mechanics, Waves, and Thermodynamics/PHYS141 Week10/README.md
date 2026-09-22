@@ -13,8 +13,8 @@
 | [[L32 Air Columns and Resonance]] | Boundary conditions in pipes; open–open and closed–open harmonics; end correction; the resonance tube |
 | [[L33 The Doppler Effect]] | Moving sources and observers; why they differ; shock waves and the Mach cone |
 | [[LAB 10 Speed of Sound and Resonance]] | $v$ from a resonance tube; end correction; inverse-square law with a level meter; Doppler from a swung speaker |
-| [[PS 10 Sound Doppler Resonance and Decibels]] | 22 problems on intensity, decibels, air columns, and Doppler |
-| [[QUIZ 10 Sound Doppler Resonance and Decibels]] | 10-question quiz (administered Monday, Week 11) |
+| [[PS 10 Sound Doppler Resonance and Decibels]] | 10 problems on intensity, decibels, air columns, and Doppler |
+| [[QUIZ 10 Sound Doppler Resonance and Decibels]] | 10-question quiz (administered Monday 7 Dec, 14:00) |
 | [[PHYS141 Week10/resources/Resources\|Resources]] | Textbook references, simulations, deeper reading |
 | [[PHYS141 Week10/solutions_instructor/PS 10 Solutions\|PS 10 Solutions]] | Full worked solutions (instructor only) |
 | [[PHYS141 Week10/solutions_instructor/LAB 10 Solutions\|LAB 10 Solutions]] | Expected data, analysis answers, systematic errors to look for |
@@ -45,11 +45,11 @@ By the end of Week 10, you will be able to:
 
 | Day | Activity |
 |-----|----------|
-| Monday | Lecture 31 — Sound Waves and Intensity |
-| Tuesday | Lecture 32 — Air Columns and Resonance |
-| Friday | Lecture 33 — The Doppler Effect |
-| Thursday | Lab 10 — Speed of Sound and Resonance (3 hrs) |
-| Friday EOD | Problem Set 10 released |
+| Mon 30 Nov, 14:00 | Lecture 31 — Sound Waves and Intensity |
+| Tue 1 Dec, 14:00 | Lecture 32 — Air Columns and Resonance |
+| Thu 3 Dec, 14:00–17:00 | Lab 10 — Speed of Sound and Resonance (3 hrs) |
+| Fri 4 Dec, 14:00 | Lecture 33 — The Doppler Effect |
+| Fri 4 Dec, 15:00 | Problem Set 10 released |
 
 ---
 

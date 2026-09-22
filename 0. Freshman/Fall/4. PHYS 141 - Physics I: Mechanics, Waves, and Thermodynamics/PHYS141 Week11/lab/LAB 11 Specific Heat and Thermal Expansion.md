@@ -2,7 +2,7 @@
 ## Specific Heat Capacity, Latent Heat, and Thermal Expansion
 
 **Duration:** 3 hours | **Total: 100 points**
-**Lab session:** Thursday of Week 11 — the lab meets Thursday, after that week's Mon/Tue lectures.
+**Lab session:** Thursday 10 December 2026, 14:00–17:00 · Week 11 — the lab meets Thursday, after that week's Mon/Tue lectures.
 
 ---
 

@@ -1,10 +1,15 @@
 # PHYS 141 · Lab 8
 ## The Simple Pendulum and Simple Harmonic Motion
 
-**Duration:** 3 hours | **Total: 100 points**
-**Lab session:** Thursday of Week 8 — the lab meets Thursday, after that week's Mon/Tue lectures.
+**Duration:** 3 hours | **Total: 80 points**
+**Lab session:** Thursday 19 November 2026, 14:00–17:00 · Week 8 — the lab meets Thursday, after that week's Mon/Tue lectures.
 
 ---
+
+> **Line fits:** use the formulas in the *Fitting a Straight Line* box in Lab 1 (slope, intercept and
+> their uncertainties), or `LINEST`, which gives the same numbers.
+
+> *Revised 2026-09-21.* Part 5 was removed: it needs Lecture 27 (Friday), after this Thursday lab. The lab is now out of 80.
 
 ## Objectives
 
@@ -12,7 +17,6 @@
 2. Test experimentally whether the period depends on amplitude, and find where the small-angle approximation fails
 3. Test whether the period depends on the mass of the bob
 4. Measure the spring constant of a spring two independent ways and compare
-5. Observe damping and estimate a decay constant
 
 ---
 
@@ -125,29 +129,6 @@ amplitude and time 20 oscillations. From $T = 2\pi\sqrt{m/k}$, extract $k$.
 
 ---
 
-## Part 5 — Damping (20 min, 20 pts)
-
-**Procedure.** Set the spring–mass system oscillating with an initial amplitude of about 10 cm.
-Record the amplitude every 5 oscillations until it has fallen below a quarter of its start.
-
-| Oscillation $n$ | Time (s) | Amplitude (m) |
-|---|---|---|
-| 0 | 0 | |
-| 5 | | |
-| 10 | | |
-| … | | |
-
-**Analysis.**
-
-1. Plot $\ln A$ against $t$. If the damping is viscous ($F = -bv$), this should be a straight line.
-   Is it? *(6 pts)*
-2. Extract $\gamma$ from the slope, and hence $b = 2m\gamma$. *(6 pts)*
-3. Compute $Q = \omega_0/2\gamma$ and state how many oscillations occur before the amplitude falls to
-   $1/e$. *(4 pts)*
-4. Is this system under-, critically, or overdamped? Justify by comparing $b$ with $2\sqrt{mk}$. *(4 pts)*
-
----
-
 ## Lab Report Requirements
 
 | Component | Points |
@@ -156,8 +137,7 @@ Record the amplitude every 5 oscillations until it has fallen below a quarter of
 | Part 2: amplitude data, comparison with predicted excess, physical explanation | 20 |
 | Part 3: mass independence demonstrated and explained | 10 |
 | Part 4: $k$ by both methods with uncertainties, agreement assessed | 25 |
-| Part 5: log plot, $\gamma$ and $Q$ extracted, damping regime identified | 20 |
-| **Total** | **100** |
+| **Total** | **80** |
 
 ---
 

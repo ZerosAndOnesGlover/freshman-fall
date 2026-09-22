@@ -69,24 +69,6 @@ parts of this lab.
 
 ---
 
-## Part 3 — Centre of Mass Motion
-
-$$v_{cm} = \frac{p_{total}}{M_{total}} = \frac{0.4210}{1.0} = 0.4210\ \text{m/s}$$
-
-After the inelastic collision: 0.4180 m/s. **Unchanged.**
-
-This is the deeper statement of the lab: because no *external* horizontal force acts, the centre of
-mass moves at constant velocity **through the collision**, whatever happens between the carts.
-Collision forces are internal and cancel in pairs by Newton's third law. In the elastic case the
-centre of mass also continues unchanged, even though both individual velocities change
-dramatically.
-
-A useful check students can run: in the **centre-of-mass frame** the total momentum is zero both
-before and after, and a perfectly inelastic collision brings both carts to rest — making it
-obvious that this collision loses the *maximum* energy consistent with momentum conservation.
-
----
-
 ## Part 4 — Written Discussion (expected answers)
 
 **Which quantity is conserved in both collision types?** **Momentum.** Kinetic energy is conserved

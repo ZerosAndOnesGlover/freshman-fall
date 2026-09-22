@@ -85,26 +85,6 @@ they found — for example recording $3\lambda/4$ as the first.*
 
 ---
 
-## Part 4 — The Doppler Effect *(20 pts)*
-
-1. $f_{\max}$ and $f_{\min}$ read from the spectrogram. *(5 pts)*
-2. Solving the pair simultaneously: *(8 pts)*
-   $$f = \frac{2f_{\max}f_{\min}}{f_{\max}+f_{\min}} \qquad v_s = v\,\frac{f_{\max}-f_{\min}}{f_{\max}+f_{\min}}$$
-   *Deriving these from the two Doppler equations is the substance of the question; students may
-   equally solve numerically.*
-3. Independent check: $v_s = 2\pi R/T$ from the measured radius and rotation period. Agreement within
-   10% is realistic given how hard it is to swing at constant speed. *(4 pts)*
-4. **$f_{\max}$** is heard when the speaker moves **directly towards** the listener, **$f_{\min}$**
-   when directly away — both at the points where the circle's tangent lies along the line of sight.
-   The **unshifted** $f$ is heard when the speaker moves **perpendicular** to the line of sight, i.e.
-   at the nearest and furthest points of the circle. *(3 pts)*
-
-> **Part 4's question 4 catches almost everyone.** The instinct is that the shift is greatest when the
-> source is closest. It is not: the Doppler effect depends only on the velocity component *along the
-> line of sight*, which is zero exactly when the source is nearest.
-
----
-
 ## Lab Report Marking Summary
 
 | Component | Points | Watch for |
@@ -112,8 +92,7 @@ they found — for example recording $3\lambda/4$ as the first.*
 | Part 1 | 35 | Spacing used rather than $L_1$; temperature comparison made |
 | Part 2 | 15 | $e$ consistent across frequencies; compared with $0.6r$ |
 | Part 3 | 30 | $-20$ dB/decade derived; reflections explained if slope is shallow |
-| Part 4 | 20 | Both $f$ and $v_s$ extracted; geometry of max/min understood |
-| **Total** | **100** | |
+| **Total** | **80** | |
 
 **Common errors to look for:**
 

@@ -2,7 +2,7 @@
 ## Measurement, Units, Coordinate Systems & Vectors
 
 **Time limit:** 20 minutes | **Format:** Closed book, no calculator except for basic arithmetic
-**Administered:** Start of lecture, Monday Week 1
+**Administered:** Monday 28 September 2026, 14:00 (start of lecture) · Week 1
 
 ---
 
@@ -53,7 +53,7 @@ where v, u are speeds, a is acceleration, s is displacement.
 
 ---
 
-**10.** (3 pts) A measurement gives x = 10.0 ± 0.2 and y = 5.0 ± 0.1. Calculate z = x·y and its uncertainty σ_z using proper error propagation rules.
+**10.** (3 pts) A measurement gives x = 10.0 ± 0.2 and y = 5.0 ± 0.1. Calculate z = x·y and its uncertainty σ_z, using the Lab 0 product rule $(\sigma_z/z)^2=(\sigma_x/x)^2+(\sigma_y/y)^2$.
 
 ---
 

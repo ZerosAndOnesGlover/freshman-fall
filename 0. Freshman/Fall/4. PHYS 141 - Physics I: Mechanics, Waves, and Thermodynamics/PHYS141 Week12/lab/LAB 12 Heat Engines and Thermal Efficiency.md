@@ -2,9 +2,12 @@
 ## Heat Engines, the Gas Laws, and Thermal Efficiency
 
 **Duration:** 3 hours | **Total: 100 points**
-**Lab session:** Thursday of Week 12 — the lab meets Thursday, after that week's Mon/Tue lectures.
+**Lab session:** Thursday 17 December 2026, 14:00–17:00 · Week 12 — the lab meets Thursday, after that week's Mon/Tue lectures.
 
 ---
+
+> **Line fits:** use the formulas in the *Fitting a Straight Line* box in Lab 1 (slope, intercept and
+> their uncertainties), or `LINEST`, which gives the same numbers.
 
 ## Objectives
 

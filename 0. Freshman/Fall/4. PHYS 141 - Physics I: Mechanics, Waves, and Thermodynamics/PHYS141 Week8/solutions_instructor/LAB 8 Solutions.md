@@ -104,19 +104,6 @@ direction**. Merely saying "the spring has mass" earns 3.*
 
 ---
 
-## Part 5 — Damping *(20 pts)*
-
-1. $\ln A$ against $t$ should be linear if damping is viscous. Real air damping is closer to
-   quadratic in $v$ at these speeds, so slight curvature is common and worth noting rather than
-   penalising. *(6 pts)*
-2. Slope $= -\gamma$; then $b = 2m\gamma$. *(6 pts)*
-3. $Q = \omega_0/2\gamma$, and the number of oscillations before the amplitude falls to $1/e$ is
-   $Q/\pi$. *(4 pts)*
-4. Compare $b$ with $2\sqrt{mk}$; for any classroom spring–mass system this will be **far** smaller,
-   so **underdamped**. *(4 pts)*
-
----
-
 ## Lab Report Marking Summary
 
 | Component | Points | Watch for |
@@ -125,8 +112,7 @@ direction**. Merely saying "the spring has mass" earns 3.*
 | Part 2 | 20 | $\sin\theta<\theta$ argument in Q4 |
 | Part 3 | 10 | Mass cancellation shown algebraically |
 | Part 4 | 25 | Spring mass biasing the **dynamic** method downward |
-| Part 5 | 20 | Log plot, $\gamma$ extracted, regime justified by comparison |
-| **Total** | **100** | |
+| **Total** | **80** | |
 
 **Common systematic errors to look for:**
 

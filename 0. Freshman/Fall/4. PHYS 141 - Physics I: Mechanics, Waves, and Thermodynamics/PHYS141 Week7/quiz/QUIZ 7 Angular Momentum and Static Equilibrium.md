@@ -1,7 +1,7 @@
 # PHYS 141 · Quiz 7
 ## Angular Momentum & Static Equilibrium
 
-**Administered:** Monday of Week 8, the Monday after this material is covered — covers Week 7.
+**Administered:** Monday 16 November 2026, 14:00 (start of lecture) · Week 8, the Monday after this material is covered — covers Week 7.
 **Time limit:** 20 minutes | **Format:** Closed book
 **Formula sheet:** L=mvr sinφ (particle); L=Iω (rigid body); τ_net=dL/dt; conservation: I_iω_i=I_fω_f; equilibrium: ΣF=0, Στ=0
 
@@ -63,7 +63,7 @@ D) The Sun exerts no force at all on the comet
 
 ---
 
-**10.** (3 pts) A 3.0 m uniform ladder (weight 150 N) leans against a frictionless wall at 60° from horizontal. Find the normal force from the wall.
+**10.** (3 pts) A 3.0 m uniform ladder (weight 150 N) leans against a frictionless wall at 60° from horizontal. Find the normal force from the wall. (sin 60° = 0.866, cos 60° = 0.500.)
 
 ---
 

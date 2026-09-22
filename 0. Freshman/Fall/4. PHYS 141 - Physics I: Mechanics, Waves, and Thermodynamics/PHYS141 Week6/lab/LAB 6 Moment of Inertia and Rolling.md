@@ -1,16 +1,20 @@
 # PHYS 141 · Lab 6
-# Moment of Inertia and the Rolling Race
+# Moment of Inertia and the Parallel-Axis Theorem
 
 **Duration:** 3 hours | **Partners:** Groups of 2–3
-**Lab session:** Thursday of Week 6 — the lab meets Thursday, after that week's Mon/Tue lectures.
+**Lab session:** Thursday 5 November 2026, 14:00–17:00 · Week 6 — the lab meets Thursday, after that week's Mon/Tue lectures.
 
 ---
+
+> **Line fits:** use the formulas in the *Fitting a Straight Line* box in Lab 1 (slope, intercept and
+> their uncertainties), or `LINEST`, which gives the same numbers.
+
+> *Revised 2026-09-21.* Part 3 was removed: it needs Lecture 21 (Friday), after this Thursday lab. The lab is now out of 75.
 
 ## Objectives
 
 1. Experimentally determine the moment of inertia of a rotating disk using torque and angular acceleration measurements
 2. Verify the parallel axis theorem
-3. Race different rolling shapes down an incline and compare measured accelerations to the theoretical prediction $a = g\sin\theta/(1+\beta)$
 4. Practice linearizing a nonlinear relationship for graphical analysis
 
 ---
@@ -105,38 +109,9 @@ letting it bias I.
 
 ---
 
-## Part 3: The Rolling Race
-
-### Procedure
-
-1. Obtain (or use provided) rolling objects: a solid sphere, a solid cylinder/disk, and a hoop/ring — ideally similar in size but this doesn't matter for the theoretical prediction.
-2. Set up an incline of known angle θ (measure with a protractor/digital angle finder) and known length L.
-3. Release each object from rest at the top, simultaneously if possible (or timed individually with a stopwatch) and measure the time to reach the bottom.
-4. Repeat each object's run 3 times. Record mean time and standard error.
-
-### Data Table
-
-| Object | β (theory) | t (s) — 3 trials | Mean t (s) | a_measured = 2L/t² (m/s²) | a_theory = g sinθ/(1+β) (m/s²) |
-|--------|-----------|---------------------|--------------|------------------------------|-----------------------------------|
-| Solid sphere | 0.400 | | | | |
-| Solid cylinder | 0.500 | | | | |
-| Hoop/ring | 1.000 | | | | |
-
-### Analysis
-
-1. Rank the objects by measured time (fastest to slowest). Does this match the theoretical prediction (sphere fastest, hoop slowest)?
-2. Compute percent discrepancy between a_measured and a_theory for each object.
-3. Does the race outcome depend on the mass or size of each object? If you have two spheres of different mass/size, test this directly — race them and confirm they arrive together (within experimental error).
-
----
-
 ## Part 4: Written Discussion
 
 **Q1.** In Part 1, why is it better to use the linearized 1/a vs. 1/m plot rather than simply averaging the I values computed from each individual trial? (Hint: think about how measurement uncertainty in a propagates differently depending on which variable you treat as primary.)
-
-**Q2.** In the rolling race, static friction acts on each object, yet you were able to use pure energy conservation (no friction work term) to derive the theoretical acceleration. Explain why this is valid, referencing the velocity of the contact point.
-
-**Q3.** If one of your "rolling" objects actually slipped somewhat (not perfectly rolling), would it arrive faster or slower than the frictionless-sliding (β=0) prediction? than the pure-rolling (correct β) prediction? Explain using the energy split between translation and rotation.
 
 ---
 
@@ -146,9 +121,8 @@ letting it bias I.
 |-----------|--------|
 | Part 1 data table and I extraction via linearized fit | 25 |
 | Part 2 parallel axis theorem verification | 20 |
-| Part 3 rolling race data table and analysis | 25 |
-| Part 4 written discussion (Q1–Q3) | 30 |
-| **Total** | **100** |
+| Part 4 written discussion (Q1) | 30 |
+| **Total** | **75** |
 
 ---
 
@@ -157,5 +131,3 @@ letting it bias I.
 **Q1.** Starting from $mg-T=ma$ and $Tr=I\alpha$ with $a=r\alpha$, derive $I = mr^2(g/a - 1)$ showing every algebraic step.
 
 **Q2.** Derive the linearized relationship $1/a = 1/g + I/(gr^2)\cdot(1/m)$ from the acceleration formula $a = mg/(m+I/r^2)$. Show your algebra.
-
-**Q3.** For the rolling race, calculate the theoretical time to reach the bottom (using $a=g\sin\theta/(1+\beta)$ and $L=\frac{1}{2}at^2$) for a solid sphere and a hoop, given θ=15° and L=1.5 m. Which do you predict will be faster, and by what percentage in time?

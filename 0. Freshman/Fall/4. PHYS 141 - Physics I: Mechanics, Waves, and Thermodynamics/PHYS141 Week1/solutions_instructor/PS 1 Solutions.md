@@ -3,15 +3,16 @@
 
 ---
 
+*Revised 2026-09-21 to match the 10-problem set; problems are numbered as in the new set.*
 
 ## Marking Scheme
 
-Each of the 20 problems is worth **5 points**, matching the point allocation printed on the problem set:
+Each of the 10 problems is worth **10 points**, matching the point allocation printed on the problem set:
 
-- **3 points — method.** A labelled diagram where forces or vectors are involved, an explicit coordinate/sign convention, the governing principle named, and the symbolic setup before numbers are substituted.
-- **2 points — answer.** Correct value, correct units, and significant figures consistent with the given data.
+- **6 points — method.** A labelled diagram where forces or vectors are involved, an explicit coordinate/sign convention, the governing principle named, and the symbolic setup before numbers are substituted.
+- **4 points — answer.** Correct value, correct units, and significant figures consistent with the given data.
 
-A correct final answer with no supporting work earns **at most 2 of 5**. Conversely, a correct method carried through with one arithmetic slip should retain all 3 method marks — grade the physics, not the calculator.
+A correct final answer with no supporting work earns **at most 4 of 10**. Conversely, a correct method carried through with one arithmetic slip should retain all 3 method marks — grade the physics, not the calculator.
 
 **Carry-through (error propagation).** If a student makes one error early and then reasons correctly from their own wrong value, deduct once at the point of error and award full marks downstream. Do not penalise the same mistake twice.
 
@@ -19,9 +20,9 @@ A correct final answer with no supporting work earns **at most 2 of 5**. Convers
 
 | Part | Topic | Problems | Points |
 |---|---|---|---|
-| **A** | Displacement, Velocity & the Derivative | 1–6 | 30 |
-| **B** | Constant Acceleration & Kinematic Equations | 7–14 | 40 |
-| **C** | Free Fall | 15–20 | 30 |
+| **A** | Displacement, Velocity & the Derivative | 1–3 | 30 |
+| **B** | Constant Acceleration & Kinematic Equations | 4–6 | 30 |
+| **C** | Free Fall | 7–10 | 40 |
 | | **Total** | | **100** |
 
 ### Common errors in this problem set
@@ -83,52 +84,6 @@ By x(t): x(3) = 2(27)−2(9)+2 = 54−18+2 = 38; x(0) = 2; Δx = 38−2 = **36 m
 
 ### Problem 4
 
-**(a)** The points are very close to a straight line through the origin. This strongly suggests constant acceleration.
-
-**(b)** Linear fit: slope ≈ (12.1−0)/(5.0−0) ≈ **2.42 m/s²** (accept 2.4–2.5 m/s²; precise regression gives ≈ 2.42 m/s²)
-
-**(c)** Area under v vs. t (trapezoid approximation):
-Δx ≈ ½(0+2.4)(1) + ½(2.4+4.8)(1) + ½(4.8+7.3)(1) + ½(7.3+9.6)(1) + ½(9.6+12.1)(1)
-= 1.2 + 3.6 + 6.05 + 8.45 + 10.85 = **30.15 m ≈ 30 m**
-(Or: ½ × base × height for the whole triangle: ½ × 5 × 12.1 ≈ 30.3 m)
-
-**(d)** x(t) = ½(2.42)t² ≈ **1.21t²** (starting from rest at origin)
-
----
-
-### Problem 5
-
-Take origin at Train A's start, eastward positive. Train A starts at x=0, Train B starts at x=+2000 m.
-
-**(a)** x_A(t) = 30t; x_B(t) = 2000 − 20t
-
-**(b)** Set equal: 30t = 2000 − 20t → 50t = 2000 → **t = 40 s**
-
-**(c)** x_A(40) = 30(40) = **1200 m** from A's start. Train B moved 20(40) = 800 m → **800 m from B's start.** Check: 1200 + 800 = 2000 ✓
-
-**(d)** v_A relative to B = v_A − v_B = 30 − (−20) = **+50 m/s** (eastward, as seen from Train B's frame)
-
----
-
-### Problem 6
-
-x(t) = 0.50 sin(2πt)
-
-**(a)** v(t) = 0.50(2π)cos(2πt) = **π cos(2πt) ≈ 3.14 cos(2πt) m/s**
-a(t) = −0.50(2π)²sin(2πt) = **−2π² sin(2πt) ≈ −19.74 sin(2πt) m/s²**
-
-**(b)** Max speed = Aω = 0.50 × 2π = **π ≈ 3.14 m/s**, occurring when cos(2πt) = ±1 → t = 0, 0.5 s, 1 s... which corresponds to x = sin(0) = **0 m** (the equilibrium position)
-
-**(c)** Max |a| = Aω² = 0.50 × 4π² = **2π² ≈ 19.7 m/s²**, occurring when |sin(2πt)| = 1 → x = ±A = **±0.50 m** (the turning points)
-
-**(d)** a(t) = −(2π)²(0.50 sin(2πt)) = −ω²x(t) ✓ (since x = A sin(ωt))
-
-**(e)** Not constant acceleration: a depends on position (and hence time). The 5 kinematic equations cannot be used. This requires solutions to a differential equation (d²x/dt² = −ω²x), which we will study in Week 8.
-
----
-
-### Problem 7
-
 v₀ = 20 m/s, v = 0, t = 4.0 s
 
 **(a)** a = (v−v₀)/t = (0−20)/4.0 = **−5.0 m/s²**
@@ -139,20 +94,7 @@ v₀ = 20 m/s, v = 0, t = 4.0 s
 
 ---
 
-### Problem 8
-
-**(a)** v = v₀ + at = 0 + 35(8.0) = **280 m/s**
-
-**(b)** Δx₁ = ½at² = ½(35)(64) = **1120 m**
-
-**(c)** After cutoff: v₀ = 280 m/s, v = 0, a = −9.81 m/s².
-Δx₂ = v²−v₀²)/(2a) = (0−280²)/(2×−9.81) = −78400/(−19.62) = **3996 m ≈ 4000 m**
-
-**(d)** Total height = 1120 + 3996 = **5116 m ≈ 5100 m**
-
----
-
-### Problem 9
+### Problem 5
 
 Origin at Car A's start, forward positive. Car A starts at x=0; Car B starts at x=50 m.
 
@@ -168,33 +110,7 @@ t = 10 s (physical) or t = −2.5 s (unphysical). **Car A catches Car B at t = 1
 
 ---
 
-### Problem 10
-
-v₀ = 5000 m/s, v = 200 m/s, Δx = 1.5×10⁶ m
-
-**(a)** v² = v₀² + 2aΔx → (200)² = (5000)² + 2a(1.5×10⁶)
-40000 = 25000000 + 3×10⁶ a
-a = (40000 − 25000000)/(3×10⁶) = −24960000/(3×10⁶) = **−8.32 m/s²**
-
-**(b)** t = (v−v₀)/a = (200−5000)/(−8.32) = **576 s ≈ 9.6 min**
-
-**(c)** v = 0, v₀ = 5000 m/s: a = (0−25×10⁶)/(3×10⁶) = **−8.33 m/s²** (essentially same, since 200² is negligible vs 5000²)
-
----
-
-### Problem 11
-
-v₀ = 8.0 m/s, a = −1.5 m/s²
-
-**(a)** v = 0 when t = v₀/|a| = 8.0/1.5 = **5.33 s**
-
-**(b)** Δx = v₀²/(2|a|) = 64/3 = **21.3 m**
-
-**(c)** At t = 10 s: the ball stopped at t = 5.33 s and remains at rest. **Position = 21.3 m from start.** (A common error is to blindly plug t = 10 into the equation, getting a negative position, which is wrong because the ball cannot roll backward on its own.)
-
----
-
-### Problem 12
+### Problem 6
 
 v₀ = +10 m/s, a = −2.0 m/s²
 
@@ -210,32 +126,7 @@ v(10) = 10 + (−2)(10) = **−10 m/s** (moving in negative direction, same spee
 
 ---
 
-### Problem 13
-
-v₀ = 0, a = 3.0×10¹⁴ m/s², Δx = 0.080 m
-
-**(a)** v² = 2aΔx = 2(3×10¹⁴)(0.080) = 4.8×10¹³
-v = **√(4.8×10¹³) = 6.93×10⁶ m/s**
-
-**(b)** t = v/a = 6.93×10⁶/(3×10¹⁴) = **2.31×10⁻⁸ s = 23.1 ns**
-
-**(c)** v/c = 6.93×10⁶/3×10⁸ = **0.023 = 2.3% of c**. This is below 10% of c, so relativistic corrections are small but not entirely negligible at the percent level.
-
----
-
-### Problem 14
-
-**(a)** v = v₀ + at → 10 = 0 + a(4.0) → **a = 2.5 m/s²**
-
-**(b)** Δx₁ = ½(2.5)(16) = **20 m**
-
-**(c)** Remaining distance: 100 − 20 = 80 m at 10 m/s → t₂ = 80/10 = 8.0 s. Total: **4.0 + 8.0 = 12.0 s**
-
-**(d)** Average speed = 100 m / 12.0 s = **8.33 m/s**
-
----
-
-### Problem 15
+### Problem 7
 
 v₀ = 0, a = −9.81 m/s², t = 3.5 s (taking down as negative, origin at top)
 
@@ -247,7 +138,7 @@ v₀ = 0, a = −9.81 m/s², t = 3.5 s (taking down as negative, origin at top)
 
 ---
 
-### Problem 16
+### Problem 8
 
 v₀ = +18 m/s, a = −9.81 m/s², origin = ground, up positive
 
@@ -264,7 +155,7 @@ v(3.2) = 18 − 9.81(3.2) = 18 − 31.4 = **−13.4 m/s** (moving downward)
 
 ---
 
-### Problem 17
+### Problem 9
 
 Origin at top of building, up positive. Launch point = origin, ground = −30 m.
 
@@ -280,27 +171,7 @@ t = 39.06/9.81 = **3.98 s**
 
 ---
 
-### Problem 18
-
-**(a)** Stone B (thrown downward) hits first — it has a head start in velocity. Stone B hits faster — it has been accelerating from a greater initial speed. Stone A, despite reaching a greater height, returns to the launch level with the same speed (18 m/s) — but then must still fall 40 m to the ground, gaining more speed than B which only had the 40 m to fall from the start.
-
-**Verification:** h = 40 m, |v₀| = 15 m/s, g = 9.81 m/s².
-
-**Stone A** (up positive, launch at y=0, ground at y=−40):
-−40 = 15t − 4.905t² → 4.905t² − 15t − 40 = 0
-t = [15 ± √(225+784.8)]/9.81 = [15 ± 31.77]/9.81 → t_A = **4.77 s**
-v_A = 15 − 9.81(4.77) = **−31.8 m/s**, speed = 31.8 m/s
-
-**Stone B** (down positive, a = +9.81 m/s²):
-40 = 15t + 4.905t² → 4.905t² + 15t − 40 = 0
-t = [−15 ± √(225+784.8)]/9.81 = [−15 + 31.77]/9.81 → t_B = **1.71 s**
-v_B = 15 + 9.81(1.71) = **31.8 m/s**
-
-Both stones hit at the same speed (31.8 m/s) ✓ — confirmed by energy conservation (same height, same |v₀|). Stone B hits much sooner (1.71 s vs 4.77 s) ✓.
-
----
-
-### Problem 19
+### Problem 10
 
 Take up positive, origin at ground. Ball 1 dropped from H: y₁ = H − ½gt². Ball 2 thrown up with v₀: y₂ = v₀t − ½gt².
 
@@ -313,13 +184,3 @@ Take up positive, origin at ground. Ball 1 dropped from H: y₁ = H − ½gt². 
 **(d)** H = 20 m: v₀_min = √(9.81×20/2) = √98.1 = **9.90 m/s**
 
 ---
-
-### Problem 20
-
-**(a)** t = v/g = 55/9.81 = **5.6 s**
-
-**(b)** Δx = v²/(2g) = (55)²/19.62 = **154 m**
-
-**(c)** Air resistance opposes motion — it acts upward while the skydiver falls, reducing the net downward force. The net acceleration is less than g throughout the fall, so it takes longer to reach any given speed than in pure free fall. As speed increases, the drag force increases (roughly as v²), reducing the net acceleration further, until drag equals gravity and acceleration reaches zero at terminal velocity.
-
-**(d)** With air resistance, the net force is F_net = mg − bv (or mg − cv², depending on the drag model). Newton's second law gives ma = mg − bv, i.e., a = g − (b/m)v. Acceleration is now a function of velocity (and hence time) — NOT constant. The 5 kinematic equations assume a = const and are therefore invalid. You would need to solve the first-order ODE dv/dt = g − (b/m)v (separable; solution involves an exponential approach to terminal velocity: v(t) = v_terminal(1 − e^(−bt/m))).

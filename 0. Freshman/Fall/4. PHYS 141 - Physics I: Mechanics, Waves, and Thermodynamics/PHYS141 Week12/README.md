@@ -13,7 +13,7 @@
 | [[L38 The Second Law Entropy and Heat Engines]] | Clausius and Kelvin–Planck; engine efficiency; the Carnot limit; refrigerators and heat pumps; entropy |
 | [[L39 Review and the Road Ahead]] | Course synthesis: the structural analogies, the five ideas worth keeping, exam preparation |
 | [[LAB 12 Heat Engines and Thermal Efficiency]] | Gas laws and absolute zero by extrapolation; work from a $PV$ cycle; engine efficiency vs Carnot; heat-pump COP and entropy |
-| [[PS 12 Laws of Thermodynamics Entropy and Heat Engines]] | 22 problems on the First and Second Laws, engines, and entropy |
+| [[PS 12 Laws of Thermodynamics Entropy and Heat Engines]] | 10 problems on the First and Second Laws, engines, and entropy |
 | [[QUIZ 12 Laws of Thermodynamics Entropy and Heat Engines]] | 10-question quiz (administered Monday of Finals Week) |
 | [[PHYS141 Week12/resources/Resources\|Resources]] | Textbook references, simulations, deeper reading, final-exam guidance |
 | [[PHYS141 Week12/solutions_instructor/PS 12 Solutions\|PS 12 Solutions]] | Full worked solutions (instructor only) |
@@ -44,11 +44,11 @@ By the end of Week 12, you will be able to:
 
 | Day | Activity |
 |-----|----------|
-| Monday | Lecture 37 — The First Law of Thermodynamics |
-| Tuesday | Lecture 38 — The Second Law, Entropy, and Heat Engines |
-| Friday | Lecture 39 — Review and the Road Ahead |
-| Thursday | Lab 12 — Heat Engines and Thermal Efficiency (3 hrs) |
-| Friday EOD | Problem Set 12 released (due Wednesday of Finals Week) |
+| Mon 14 Dec, 14:00 | Lecture 37 — The First Law of Thermodynamics |
+| Tue 15 Dec, 14:00 | Lecture 38 — The Second Law, Entropy, and Heat Engines |
+| Thu 17 Dec, 14:00–17:00 | Lab 12 — Heat Engines and Thermal Efficiency (3 hrs) |
+| Fri 18 Dec, 14:00 | Lecture 39 — Review and the Road Ahead |
+| Fri 18 Dec, 15:00 | Problem Set 12 released — due Wed 23 Dec, 17:00 (finals week) |
 
 ---
 

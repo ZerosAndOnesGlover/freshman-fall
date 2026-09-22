@@ -39,12 +39,12 @@ By the end of Week 0, you will be able to:
 
 | Day              | Activity                                 |
 | ---------------- | ---------------------------------------- |
-| Monday           | Lecture 1: Measurement & Units           |
-| Tuesday          | Lecture 2: Coordinate Systems            |
-| Friday           | Lecture 3: Vectors                       |
-| Thursday         | Lab 0: Measurement & Uncertainty (3 hrs) |
-| Friday EOD       | Problem Set 0 released                   |
-| Following Friday | Problem Set 0 due                        |
+| Mon 21 Sep, 14:00 | Lecture 1: Measurement & Units           |
+| Tue 22 Sep, 14:00 | Lecture 2: Coordinate Systems            |
+| Thu 24 Sep, 14:00–17:00 | Lab 0: Measurement & Uncertainty (3 hrs) |
+| Fri 25 Sep, 14:00 | Lecture 3: Vectors                       |
+| Fri 25 Sep, 15:00 | Problem Set 0 released                   |
+| Fri 2 Oct, 17:00 | Problem Set 0 due                        |
 
 ---
 

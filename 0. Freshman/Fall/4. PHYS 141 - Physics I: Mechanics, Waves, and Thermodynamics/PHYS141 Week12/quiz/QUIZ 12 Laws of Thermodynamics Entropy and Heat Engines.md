@@ -1,7 +1,7 @@
 # PHYS 141 · Quiz 12
 ## The Laws of Thermodynamics, Entropy, and Heat Engines
 
-**Administered:** Monday of Week 13, the Monday after this material is covered — covers Week 12.
+**Administered:** Monday 21 December 2026, 14:00 (start of lecture) · Week 13, the Monday after this material is covered — covers Week 12.
 **Time limit:** 20 minutes | **Format:** Closed book
 **Formula sheet:** $\Delta U = Q - W$; $W = \int P\,dV$; isothermal $W = nRT\ln(V_2/V_1)$;
 $e = 1 - Q_c/Q_h$; $e_{\text{Carnot}} = 1 - T_c/T_h$; $\text{COP}_{\text{fr}} = T_c/(T_h-T_c)$;

@@ -13,8 +13,8 @@
 | [[L23 Conservation of Angular Momentum]] | Conservation of angular momentum; spinning skaters, collisions, gyroscopic precession |
 | [[L24 Static Equilibrium]] | Conditions for static equilibrium; center of gravity; beam and ladder problems |
 | [[LAB 7 Angular Momentum Conservation]] | Verifying angular momentum conservation with a rotating platform |
-| [[PS 7 Angular Momentum and Static Equilibrium]] | 20 problems on angular momentum and static equilibrium |
-| [[QUIZ 7 Angular Momentum and Static Equilibrium]] | 10-question quiz (administered Monday, Week 8) |
+| [[PS 7 Angular Momentum and Static Equilibrium]] | 10 problems on angular momentum and static equilibrium |
+| [[QUIZ 7 Angular Momentum and Static Equilibrium]] | 10-question quiz (administered Monday 16 Nov, 14:00) |
 | [[PHYS141 Week7/resources/Resources\|Resources]] | Textbook references, deeper reading |
 | [[PHYS141 Week7/solutions_instructor/PS 7 Solutions\|PS 7 Solutions]] | Full worked solutions (instructor only) |
 
@@ -39,13 +39,13 @@ By the end of Week 7, you will be able to:
 
 | Day | Activity |
 |-----|----------|
-| Monday | Lecture 22 — Angular Momentum |
-| Tuesday | Lecture 23 — Conservation of Angular Momentum |
-| Friday | Lecture 24 — Static Equilibrium |
-| Thursday | Lab 7 — Angular Momentum Conservation (3 hrs) |
-| Friday EOD | Problem Set 7 released |
-| Following Friday | Problem Set 7 due |
-| Monday (Week 8) | Quiz 7 |
+| Mon 9 Nov, 14:00 | Lecture 22 — Angular Momentum |
+| Tue 10 Nov, 14:00 | Lecture 23 — Conservation of Angular Momentum |
+| Thu 12 Nov, 14:00–17:00 | Lab 7 — Angular Momentum Conservation (3 hrs) |
+| Fri 13 Nov, 14:00 | Lecture 24 — Static Equilibrium |
+| Fri 13 Nov, 15:00 | Problem Set 7 released |
+| Fri 20 Nov, 17:00 | Problem Set 7 due |
+| Mon 16 Nov, 14:00 | Quiz 7 |
 
 ---
 

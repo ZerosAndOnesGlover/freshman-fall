@@ -3,15 +3,16 @@
 
 ---
 
+*Revised 2026-09-21 to match the 10-problem set; problems are numbered as in the new set.*
 
 ## Marking Scheme
 
-Each of the 20 problems is worth **5 points**, matching the point allocation printed on the problem set:
+Each of the 10 problems is worth **10 points**, matching the point allocation printed on the problem set:
 
-- **3 points — method.** A labelled diagram where forces or vectors are involved, an explicit coordinate/sign convention, the governing principle named, and the symbolic setup before numbers are substituted.
-- **2 points — answer.** Correct value, correct units, and significant figures consistent with the given data.
+- **6 points — method.** A labelled diagram where forces or vectors are involved, an explicit coordinate/sign convention, the governing principle named, and the symbolic setup before numbers are substituted.
+- **4 points — answer.** Correct value, correct units, and significant figures consistent with the given data.
 
-A correct final answer with no supporting work earns **at most 2 of 5**. Conversely, a correct method carried through with one arithmetic slip should retain all 3 method marks — grade the physics, not the calculator.
+A correct final answer with no supporting work earns **at most 4 of 10**. Conversely, a correct method carried through with one arithmetic slip should retain all 3 method marks — grade the physics, not the calculator.
 
 **Carry-through (error propagation).** If a student makes one error early and then reasons correctly from their own wrong value, deduct once at the point of error and award full marks downstream. Do not penalise the same mistake twice.
 
@@ -19,9 +20,9 @@ A correct final answer with no supporting work earns **at most 2 of 5**. Convers
 
 | Part | Topic | Problems | Points |
 |---|---|---|---|
-| **A** | Momentum and Impulse | 1–6 | 30 |
-| **B** | Collisions | 7–15 | 45 |
-| **C** | Center of Mass | 16–20 | 25 |
+| **A** | Momentum and Impulse | 1–3 | 30 |
+| **B** | Collisions | 4–7 | 40 |
+| **C** | Center of Mass | 8–10 | 30 |
 | | **Total** | | **100** |
 
 ### Common errors in this problem set
@@ -50,16 +51,6 @@ Taking pitch direction as positive: v_i=+38 m/s, v_f=−45 m/s (opposite directi
 
 ### Problem 2
 
-**(a)** Δp = m(v_f−v_i) = 1000(0−18) = **−18,000 kg·m/s**. J = Δp = **−18,000 N·s**
-
-**(b)** F̄ = Δp/Δt = −18000/4.0 = **−4500 N**
-
-**(c)** F̄' = −18000/1.0 = **−18,000 N** — four times larger force for a stop time 4× shorter, confirming F̄ ∝ 1/Δt.
-
----
-
-### Problem 3
-
 **(a)** v = √(2gh) = √(2×9.81×1.2) = √23.544 = **4.85 m/s** (downward)
 
 **(b)** Taking up as positive: v_i=−4.85 m/s, v_f=0 (stops).
@@ -71,7 +62,7 @@ Taking pitch direction as positive: v_i=+38 m/s, v_f=−45 m/s (opposite directi
 
 ---
 
-### Problem 4
+### Problem 3
 
 **(a)** $$J = \int_0^6 (30-5t)\,dt = [30t-2.5t^2]_0^6 = 180-90 = \mathbf{90 \text{ N·s}}$$
 
@@ -81,28 +72,7 @@ Taking pitch direction as positive: v_i=+38 m/s, v_f=−45 m/s (opposite directi
 
 ---
 
-### Problem 5
-
-Mass flow rate dm/dt = 3.0 kg/s. Each kg arrives at 8.0 m/s and loses all horizontal velocity (Δv = 8.0 m/s per kg, in magnitude).
-
-$$\bar{F} = \frac{\Delta p}{\Delta t} = \frac{dm}{dt}\times \Delta v = 3.0 \times 8.0 = \mathbf{24 \text{ N}}$$
-
-(This treats the water stream as continuously delivering momentum change to the wall — force = mass flow rate × velocity change.)
-
----
-
-### Problem 6
-
-**(a)** Before impact: v = √(2gh₁) = √(2×9.81×2.0) = √39.24 = 6.26 m/s, **downward, so v_i = −6.26 m/s**
-After bounce (rises to 1.4 m): v = √(2gh₂) = √(2×9.81×1.4) = √27.47 = 5.24 m/s, **upward, so v_f = +5.24 m/s**
-
-**(b)** Δp = m(v_f−v_i) = 0.50(5.24−(−6.26)) = 0.50(11.5) = **5.75 kg·m/s** (upward)
-
-**(c)** F̄ = Δp/Δt = 5.75/0.008 = 718.75 N. Weight = 0.50×9.81 = 4.905 N. Ratio = 718.75/4.905 = **146.6×** the ball's weight.
-
----
-
-### Problem 7
+### Problem 4
 
 **(a)** v_f = [1500(12)+1000(0)]/(1500+1000) = 18000/2500 = **7.2 m/s**
 
@@ -112,17 +82,7 @@ After bounce (rises to 1.4 m): v = √(2gh₂) = √(2×9.81×1.4) = √27.47 = 
 
 ---
 
-### Problem 8
-
-**(a)** Taking A's direction as positive: v_A=+6.0, v_B=−2.0
-v_f = [2.0(6.0)+3.0(−2.0)]/(2.0+3.0) = (12.0−6.0)/5.0 = 6.0/5.0 = **1.2 m/s** (in A's original direction)
-
-**(b)** KE_i = ½(2.0)(36)+½(3.0)(4.0) = 36+6=42 J. KE_f = ½(5.0)(1.44) = 3.6 J.
-KE lost = 42−3.6 = **38.4 J**
-
----
-
-### Problem 9
+### Problem 5
 
 **(a)** Momentum conservation (perfectly inelastic): m_bullet·v_bullet = (m_bullet+m_block)·v_f
 0.020·v_bullet = (0.020+2.0)(4.0) = 2.02×4.0 = 8.08
@@ -134,17 +94,7 @@ KE lost = 1632.16−16.16 = **1616 J** — converted to heat, sound, and deforma
 
 ---
 
-### Problem 10
-
-v_f (from Problem 9) = 4.0 m/s, m_total = 2.02 kg, μ_k=0.30
-
-Work-energy theorem: −f_k·d = 0 − ½m_total v_f²
-f_k = μ_k·m_total·g = 0.30×2.02×9.81 = 5.946 N
-d = ½(2.02)(16)/5.946 = 16.16/5.946 = **2.72 m**
-
----
-
-### Problem 11
+### Problem 6
 
 m_A=3.0 kg, v_Ai=8.0 m/s, m_B=5.0 kg, v_Bi=0
 
@@ -159,43 +109,7 @@ $$v_{Bf} = \frac{2(3.0)}{8.0}(8.0)+\frac{5.0-3.0}{8.0}(0) = \frac{6.0}{8.0}(8.0)
 
 ---
 
-### Problem 12
-
-m_A=1.0 kg, v_Ai=6.0 m/s, v_Af=−2.0 m/s (bounces back)
-
-**(a)** Momentum: 1.0(6.0) = 1.0(−2.0)+m(v_Bf) → 6.0+2.0 = m·v_Bf → v_Bf = 8.0/m
-
-**(b)** Energy: ½(1.0)(36) = ½(1.0)(4.0)+½(m)(v_Bf²)
-18 = 2.0 + ½m(8.0/m)²= 2.0+32/m
-16 = 32/m → **m = 2.0 kg**
-
-Then v_Bf = 8.0/2.0 = **4.0 m/s**
-
-**(c)** Using general formula: v_Af = [(1.0−m)/(1.0+m)](6.0). With m=2.0: v_Af = [(1.0−2.0)/(3.0)](6.0) = (−1/3)(6.0) = **−2.0 m/s** ✓ matches given value, confirming m=2.0 kg is correct.
-
----
-
-### Problem 13
-
-m_A=2.0 kg, v_Ai=5.0 m/s (+x), m_B=4.0 kg (stationary). After: v_Af=2.0 m/s at 60° above +x.
-
-**x-momentum:** 2.0(5.0) = 2.0(2.0cos60°)+4.0(v_Bx)
-10.0 = 2.0(1.0)+4.0v_Bx = 2.0+4.0v_Bx
-v_Bx = 8.0/4.0 = 2.0 m/s
-
-**y-momentum:** 0 = 2.0(2.0sin60°)+4.0(v_By)
-0 = 2.0(1.732)+4.0v_By = 3.464+4.0v_By
-v_By = −0.866 m/s
-
-**(a)** |v_B| = √(4.0+0.75) = √4.75 = **2.18 m/s**. Direction = arctan(−0.866/2.0) = **−23.4°** (below +x axis)
-
-**(b)** KE_i = ½(2.0)(25) = 25.0 J
-KE_f = ½(2.0)(4.0)+½(4.0)(4.75) = 4.0+9.5 = 13.5 J
-KE_f < KE_i → **inelastic** (but not perfectly inelastic, since the objects have different final velocities, not a common one)
-
----
-
-### Problem 14
+### Problem 7
 
 m_bullet=0.010 kg, m_block=2.0 kg, h=0.12 m
 
@@ -212,25 +126,13 @@ KE lost = 475.65−2.365 = **473.3 J**
 
 ---
 
-### Problem 15
-
-m_total=2.0 kg, at peak v=0 before explosion. m1=0.8 kg at 15 m/s horizontal, m2=1.2 kg unknown.
-
-Momentum conservation (was zero before explosion, in both x and y):
-**x:** 0 = 0.8(15)+1.2(v2x) → v2x = −12/1.2 = −10 m/s
-**y:** 0 = 0+1.2(v2y) [fragment 1 purely horizontal, no y-component] → v2y = 0
-
-**Fragment 2: v2 = 10 m/s in the direction opposite to fragment 1 (horizontal, −x direction if fragment 1 was +x).**
-
----
-
-### Problem 16
+### Problem 8
 
 x_cm = [2.0(1.0)+3.0(4.0)+5.0(8.0)]/(2.0+3.0+5.0) = (2.0+12.0+40.0)/10.0 = 54.0/10.0 = **5.4 m**
 
 ---
 
-### Problem 17
+### Problem 9
 
 **(a)** x_cm = [4.0(2.0)+6.0(8.0)]/(4.0+6.0) = (8.0+48.0)/10.0 = 56.0/10.0 = 5.6 m
 y_cm = [4.0(3.0)+6.0(−1.0)]/10.0 = (12.0−6.0)/10.0 = 6.0/10.0 = 0.6 m
@@ -246,30 +148,7 @@ Sum = (12.0−6.0, 0+12.0) = (6.0, 12.0) ✓ matches
 
 ---
 
-### Problem 18
-
-**(a)** By symmetry, rod's CM is at its midpoint: **x_cm,rod = 1.5 m**
-
-**(b)** Combined CM: x_cm = [6.0(1.5)+4.0(3.0)]/(6.0+4.0) = (9.0+12.0)/10.0 = 21.0/10.0 = **2.1 m**
-
----
-
-### Problem 19
-
-m_cannon=1200 kg, m_ball=8.0 kg, v_ball=120 m/s
-
-**(a)** Momentum conservation (starts at rest, total = 0):
-0 = 1200(v_cannon)+8.0(120) → v_cannon = −960/1200 = **−0.80 m/s** (recoils backward)
-
-**(b)** Before firing: v_cm=0 (system at rest). After firing: v_cm = [1200(−0.80)+8.0(120)]/1208 = (−960+960)/1208 = **0 m/s**. Unchanged — makes sense because the firing is entirely an internal force (gunpowder explosion within the system); no external horizontal force acts, so v_cm must remain constant (zero).
-
-**(c)** KE_cannon = ½(1200)(0.80)² = ½(1200)(0.64) = 384 J
-KE_ball = ½(8.0)(120)² = ½(8.0)(14400) = 57,600 J
-Total KE = 384+57600 = 57,984 J. This energy comes from the **chemical potential energy of the gunpowder**, converted to kinetic energy during the explosion — analogous to the reverse of a perfectly inelastic collision (energy is added to the system rather than removed).
-
----
-
-### Problem 20
+### Problem 10
 
 m_person=70 kg, m_boat=120 kg, L=4.0 m
 

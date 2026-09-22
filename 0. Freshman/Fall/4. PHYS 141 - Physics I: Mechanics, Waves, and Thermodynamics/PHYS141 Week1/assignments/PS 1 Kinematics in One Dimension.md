@@ -1,13 +1,16 @@
 # PHYS 141 · Problem Set 1
 ## Kinematics in One Dimension
 
-**Released:** Friday, Week 1 | **Due:** Friday, Week 2, 11:59 PM
+**Released:** Friday 2 October 2026, 15:00 (after the Friday lecture) · Week 1 | **Due:** Friday 9 October 2026, 17:00 (Week 2)
 **Instructions:** Show all work. Establish your coordinate system explicitly in every problem. Report all answers with correct units and significant figures. Partial credit requires legible reasoning.
 **Points:** 5 per problem · **100 total**
 
 ---
 
-### Part A: Displacement, Velocity & the Derivative (Problems 1–6) — 30 pts
+> *Revised 2026-09-21.* Cut from 20 problems to 10 (each now 10 points) to keep the weekly load in line with
+> the other Fall courses. Removed (old numbering): 4, 5, 6, 8, 10, 11, 13, 14, 18, 20.
+
+### Part A: Displacement, Velocity & the Derivative (Problems 1–3) — 30 pts
 
 **1.** A particle's position is described by x(t) = 4t³ − 9t² + 3 (meters, t in seconds).
 
@@ -38,46 +41,9 @@
 
 ---
 
-**4.** A velocity-time graph has the following data points:
+### Part B: Constant Acceleration & Kinematic Equations (Problems 4–6) — 30 pts
 
-| t (s) | v (m/s) |
-|-------|---------|
-| 0.0 | 0.0 |
-| 1.0 | 2.4 |
-| 2.0 | 4.8 |
-| 3.0 | 7.3 |
-| 4.0 | 9.6 |
-| 5.0 | 12.1 |
-
-(a) Plot these points. Does the data suggest constant acceleration?
-(b) Use a best-fit calculation (or estimate from the graph) to find the acceleration.
-(c) Using the area-under-the-curve method, estimate the total displacement from t = 0 to t = 5 s.
-(d) What would the x(t) equation look like, assuming constant acceleration from rest?
-
----
-
-**5.** Two trains are on parallel tracks 2.0 km apart. Train A moves east at 30 m/s; Train B moves west at 20 m/s. Both maintain constant velocity.
-
-(a) Define a coordinate system and write x_A(t) and x_B(t).
-(b) At what time do they meet?
-(c) At the meeting point, how far is each train from its starting position?
-(d) What is the velocity of Train A as measured from Train B's reference frame? (Galilean relativity: v_rel = v_A − v_B)
-
----
-
-**6.** A particle moves such that its position is x(t) = A sin(ωt), where A = 0.50 m and ω = 2π rad/s.
-
-(a) Find v(t) = dx/dt and a(t) = dv/dt.
-(b) What is the maximum speed? At what position does maximum speed occur?
-(c) What is the maximum acceleration magnitude? At what position does it occur?
-(d) Show that a(t) = −ω²x(t). This relationship — acceleration proportional to negative displacement — is the defining feature of **simple harmonic motion**, which we will study in Week 8.
-(e) Is this a constant-acceleration problem? Why or why not?
-
----
-
-### Part B: Constant Acceleration & Kinematic Equations (Problems 7–14) — 40 pts
-
-**7.** A car initially moving at 20 m/s decelerates uniformly and stops in 4.0 s.
+**4.** A car initially moving at 20 m/s decelerates uniformly and stops in 4.0 s.
 
 (a) Find the acceleration.
 (b) Find the stopping distance.
@@ -85,16 +51,7 @@
 
 ---
 
-**8.** A rocket starts from rest and accelerates at 35 m/s² for 8.0 s.
-
-(a) Find its velocity at the end of the 8.0 s burn.
-(b) Find the distance traveled during the burn.
-(c) After the engine cuts off, the rocket continues upward while decelerating under gravity (a = −9.81 m/s²). How much additional height does it gain before stopping?
-(d) What is the total height reached above the launch point?
-
----
-
-**9.** Two cars are racing on a straight track. Car A starts from rest with constant acceleration a_A = 4.0 m/s². Car B starts at the same time but from a position 50 m ahead of A, with constant velocity v_B = 15 m/s.
+**5.** Two cars are racing on a straight track. Car A starts from rest with constant acceleration a_A = 4.0 m/s². Car B starts at the same time but from a position 50 m ahead of A, with constant velocity v_B = 15 m/s.
 
 (a) Write position equations x_A(t) and x_B(t) for both cars.
 (b) At what time does Car A catch Car B?
@@ -103,23 +60,7 @@
 
 ---
 
-**10.** A spacecraft decelerates from 5000 m/s to 200 m/s over a distance of 1500 km.
-
-(a) Find the deceleration (assume constant).
-(b) How long does the deceleration take?
-(c) If the spacecraft must decelerate to zero (from 5000 m/s) in the same 1500 km, what deceleration would be required?
-
----
-
-**11.** A ball rolls along a horizontal floor with initial velocity 8.0 m/s. Friction decelerates it at 1.5 m/s².
-
-(a) When does the ball stop?
-(b) How far does it travel before stopping?
-(c) Where is the ball at t = 10 s? (Careful — check whether it has stopped already.)
-
----
-
-**12. (Quadratic reasoning)** A particle starts at x = 0 with v₀ = +10 m/s and has constant acceleration a = −2.0 m/s².
+**6. (Quadratic reasoning)** A particle starts at x = 0 with v₀ = +10 m/s and has constant acceleration a = −2.0 m/s².
 
 (a) Find all times when the particle is at x = +12 m. Interpret both solutions physically.
 (b) Find the time when the particle returns to x = 0. What is its velocity at that point?
@@ -128,26 +69,9 @@
 
 ---
 
-**13.** An electron in a cathode ray tube is accelerated from rest across a potential that gives it constant acceleration a = 3.0 × 10¹⁴ m/s² over a length of 0.080 m.
+### Part C: Free Fall (Problems 7–10) — 40 pts
 
-(a) Find the final speed of the electron.
-(b) Find the time to traverse the accelerating region.
-(c) Express the final speed as a fraction of the speed of light (c = 3.0 × 10⁸ m/s). Does this fraction suggest that relativistic corrections might be needed? (For reference: relativistic effects become significant at v > 0.1c.)
-
----
-
-**14.** A sprinter accelerates from rest to 10 m/s in the first 4.0 s of a 100 m race, then maintains 10 m/s for the remainder.
-
-(a) What constant acceleration does the sprinter have in the first phase?
-(b) How far does the sprinter cover in the first 4.0 s?
-(c) How long does the sprinter take to run the full 100 m?
-(d) What is the sprinter's average speed for the entire race?
-
----
-
-### Part C: Free Fall (Problems 15–20) — 30 pts
-
-**15.** A stone is dropped (v₀ = 0) from a cliff of unknown height. It strikes the ground 3.5 s later.
+**7.** A stone is dropped (v₀ = 0) from a cliff of unknown height. It strikes the ground 3.5 s later.
 
 (a) How tall is the cliff?
 (b) What is the stone's speed on impact?
@@ -155,7 +79,7 @@
 
 ---
 
-**16.** A ball is thrown straight upward with v₀ = 18 m/s from ground level. Take upward as positive.
+**8.** A ball is thrown straight upward with v₀ = 18 m/s from ground level. Take upward as positive.
 
 (a) Find the maximum height reached.
 (b) Find the time to reach maximum height.
@@ -165,7 +89,7 @@
 
 ---
 
-**17.** A ball is thrown upward from the edge of a building 30 m tall with v₀ = +12 m/s (taking up as positive, origin at the top of the building).
+**9.** A ball is thrown upward from the edge of a building 30 m tall with v₀ = +12 m/s (taking up as positive, origin at the top of the building).
 
 (a) Find the maximum height above the building top.
 (b) Find the time when the ball hits the ground (30 m below the launch point).
@@ -174,14 +98,7 @@
 
 ---
 
-**18.** Two stones are thrown from the same height at the same instant. Stone A is thrown upward with speed 15 m/s; Stone B is thrown downward with speed 15 m/s.
-
-(a) Without any calculation, predict which stone hits the ground first and which hits faster. Explain your reasoning.
-(b) Now verify your predictions by calculating the impact times and speeds for both stones, assuming they are thrown from a height of 40 m.
-
----
-
-**19. (Synthesis)** A ball is dropped from height H. At the same instant, a second ball is thrown upward from the ground with speed v₀.
+**10. (Synthesis)** A ball is dropped from height H. At the same instant, a second ball is thrown upward from the ground with speed v₀.
 
 (a) At what time t do the two balls meet?
 (b) At what height do they meet?
@@ -192,28 +109,16 @@
 
 ---
 
-**20. (Estimation + Physics)** A skydiver in free fall reaches "terminal velocity" — the speed at which air resistance exactly balances gravity, so acceleration becomes zero — at approximately 55 m/s (for a belly-to-earth position).
-
-(a) Ignoring air resistance entirely, how long would it take to reach 55 m/s from rest?
-(b) How far would the skydiver have fallen in that time (still ignoring air resistance)?
-(c) In reality, with air resistance, the skydiver takes approximately 12 s to reach terminal velocity. Explain qualitatively why the actual time is longer than your answer in (a). What does this imply about the acceleration during those 12 s?
-(d) Why does the 5-equation constant-acceleration framework fail to describe the realistic problem with air resistance? What mathematical framework would you need instead?
-
----
-
-
----
-
 ## Points Breakdown
 
 | Part | Problems | Points |
 |---|---|---|
-| **A** — Displacement, Velocity & the Derivative | 1–6 | 30 |
-| **B** — Constant Acceleration & Kinematic Equations | 7–14 | 40 |
-| **C** — Free Fall | 15–20 | 30 |
+| **A** — Displacement, Velocity & the Derivative | 1–3 | 30 |
+| **B** — Constant Acceleration & Kinematic Equations | 4–6 | 30 |
+| **C** — Free Fall | 7–10 | 40 |
 | | **Total** | **100** |
 
-Each problem is worth 5 points: 3 for a correct method (diagram, setup, chosen principle), 2 for a correct final answer with units and appropriate significant figures. A correct answer with no supporting work earns at most 2.
+Each problem is worth 10 points: 6 for a correct method (diagram, setup, chosen principle), 4 for a correct final answer with units and appropriate significant figures. A correct answer with no supporting work earns at most 4.
 
 ---
 

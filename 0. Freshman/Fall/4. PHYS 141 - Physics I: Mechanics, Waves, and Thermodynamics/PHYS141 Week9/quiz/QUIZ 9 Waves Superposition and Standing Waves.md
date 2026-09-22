@@ -1,7 +1,7 @@
 # PHYS 141 · Quiz 9
 ## Waves, Superposition, and Standing Waves
 
-**Administered:** Monday of Week 10, the Monday after this material is covered — covers Week 9.
+**Administered:** Monday 30 November 2026, 14:00 (start of lecture) · Week 10, the Monday after this material is covered — covers Week 9.
 **Time limit:** 20 minutes | **Format:** Closed book
 **Formula sheet:** $v=f\lambda=\omega/k$; $k=2\pi/\lambda$; $\omega=2\pi f$;
 $v=\sqrt{F_T/\mu}$; $P=\tfrac12\mu v\omega^2A^2$; $f_n = nv/2L$;

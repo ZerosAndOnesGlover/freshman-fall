@@ -2,9 +2,12 @@
 # Projectile Motion: Measuring Range vs. Launch Angle
 
 **Duration:** 3 hours | **Partners:** Groups of 2–3
-**Lab session:** Thursday of Week 2 — the lab meets Thursday, after that week's Mon/Tue lectures.
+**Lab session:** Thursday 8 October 2026, 14:00–17:00 · Week 2 — the lab meets Thursday, after that week's Mon/Tue lectures.
 
 ---
+
+> **Line fits:** use the formulas in the *Fitting a Straight Line* box in Lab 1 (slope, intercept and
+> their uncertainties), or `LINEST`, which gives the same numbers.
 
 ## Objectives
 

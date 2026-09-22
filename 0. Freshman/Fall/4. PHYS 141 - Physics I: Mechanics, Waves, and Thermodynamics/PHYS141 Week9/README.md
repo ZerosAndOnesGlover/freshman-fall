@@ -13,8 +13,8 @@
 | [[L29 Superposition and Interference]] | The superposition principle; constructive and destructive interference; path difference; beats; reflection and phase inversion |
 | [[L30 Standing Waves]] | Standing waves from opposing travelling waves; nodes and antinodes; $f_n=nf_1$; pitch, timbre, and tuning |
 | [[LAB 9 Standing Waves on a String]] | Driven string resonances; $v$ two ways; $v^2$ vs $F_T$ to extract $\mu$; beats; node positions |
-| [[PS 9 Waves Superposition and Standing Waves]] | 20 problems on wave properties, interference, beats, and harmonics |
-| [[QUIZ 9 Waves Superposition and Standing Waves]] | 10-question quiz (administered Monday, Week 10) |
+| [[PS 9 Waves Superposition and Standing Waves]] | 10 problems on wave properties, interference, beats, and harmonics |
+| [[QUIZ 9 Waves Superposition and Standing Waves]] | 10-question quiz (administered Monday 30 Nov, 14:00) |
 | [[PHYS141 Week9/resources/Resources\|Resources]] | Textbook references, simulations, deeper reading |
 | [[PHYS141 Week9/solutions_instructor/PS 9 Solutions\|PS 9 Solutions]] | Full worked solutions (instructor only) |
 | [[PHYS141 Week9/solutions_instructor/LAB 9 Solutions\|LAB 9 Solutions]] | Expected data, analysis answers, systematic errors to look for |
@@ -45,11 +45,11 @@ By the end of Week 9, you will be able to:
 
 | Day | Activity |
 |-----|----------|
-| Monday | Lecture 28 — Wave Properties |
-| Tuesday | Lecture 29 — Superposition and Interference |
-| Friday | Lecture 30 — Standing Waves |
-| Thursday | Lab 9 — Standing Waves on a String (3 hrs) |
-| Friday EOD | Problem Set 9 released |
+| Mon 23 Nov, 14:00 | Lecture 28 — Wave Properties |
+| Tue 24 Nov, 14:00 | Lecture 29 — Superposition and Interference |
+| Thu 26 Nov, 14:00–17:00 | Lab 9 — Standing Waves on a String (3 hrs) |
+| Fri 27 Nov, 14:00 | Lecture 30 — Standing Waves |
+| Fri 27 Nov, 15:00 | Problem Set 9 released |
 
 ---
 

@@ -13,8 +13,8 @@
 | [[L35 Heat and Calorimetry]] | Heat as energy in transit; specific heat capacity; latent heat and the heating curve; calorimetry with phase changes |
 | [[L36 Heat Transfer and the Ideal Gas]] | Conduction, convection, radiation; $PV=nRT$; kinetic theory and what temperature *is* |
 | [[LAB 11 Specific Heat and Thermal Expansion]] | Specific heat of three metals by calorimetry; latent heat of fusion; linear expansion; cooling curve |
-| [[PS 11 Temperature Heat and Thermal Expansion]] | 22 problems on expansion, calorimetry, heat transfer, and the ideal gas |
-| [[QUIZ 11 Temperature Heat and Thermal Expansion]] | 10-question quiz (administered Monday, Week 12) |
+| [[PS 11 Temperature Heat and Thermal Expansion]] | 10 problems on expansion, calorimetry, heat transfer, and the ideal gas |
+| [[QUIZ 11 Temperature Heat and Thermal Expansion]] | 10-question quiz (administered Monday 14 Dec, 14:00) |
 | [[PHYS141 Week11/resources/Resources\|Resources]] | Textbook references, simulations, deeper reading |
 | [[PHYS141 Week11/solutions_instructor/PS 11 Solutions\|PS 11 Solutions]] | Full worked solutions (instructor only) |
 | [[PHYS141 Week11/solutions_instructor/LAB 11 Solutions\|LAB 11 Solutions]] | Expected data, analysis answers, systematic errors to look for |
@@ -45,11 +45,11 @@ By the end of Week 11, you will be able to:
 
 | Day | Activity |
 |-----|----------|
-| Monday | Lecture 34 — Temperature, the Zeroth Law, and Thermal Expansion |
-| Tuesday | Lecture 35 — Heat, Specific Heat Capacity, and Calorimetry |
-| Friday | Lecture 36 — Heat Transfer and the Ideal Gas |
-| Thursday | Lab 11 — Specific Heat and Thermal Expansion (3 hrs) |
-| Friday EOD | Problem Set 11 released |
+| Mon 7 Dec, 14:00 | Lecture 34 — Temperature, the Zeroth Law, and Thermal Expansion |
+| Tue 8 Dec, 14:00 | Lecture 35 — Heat, Specific Heat Capacity, and Calorimetry |
+| Thu 10 Dec, 14:00–17:00 | Lab 11 — Specific Heat and Thermal Expansion (3 hrs) |
+| Fri 11 Dec, 14:00 | Lecture 36 — Heat Transfer and the Ideal Gas |
+| Fri 11 Dec, 15:00 | Problem Set 11 released |
 
 ---
 

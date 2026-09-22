@@ -1,7 +1,7 @@
 # PHYS 141 · Quiz 3
 ## Newton's Three Laws of Motion
 
-**Administered:** Monday of Week 4, the Monday after this material is covered — covers Week 3.
+**Administered:** Monday 19 October 2026, 14:00 (start of lecture) · Week 4, the Monday after this material is covered — covers Week 3.
 **Time limit:** 20 minutes | **Format:** Closed book
 **Formula sheet:** g = 9.81 m/s²; F = ma; f_k = μ_k N; f_s ≤ μ_s N; Atwood: a = (m₂−m₁)g/(m₁+m₂)
 
