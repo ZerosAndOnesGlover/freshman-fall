@@ -96,9 +96,9 @@ mark is a surprise.
 | Peer Feedback & Question Preparation | 4% | Weeks 11 and 12 |
 | Course Reflection | 4% | Week 12 |
 | **Participation subtotal** | **40%** | |
-| Position Paper #1 | 20% | Assigned Week 3, due before Week 4 |
-| Position Paper #2 | 20% | Assigned Week 6, due before Week 7 |
-| Position Paper #3 | 20% | Assigned Week 9, due before Week 11 |
+| Position Paper #1 | 20% | Assigned Week 3, due Wed 21 Oct, 12:00 (before the Week 4 seminar) |
+| Position Paper #2 | 20% | Assigned Week 6, due Wed 11 Nov, 12:00 (before the Week 7 seminar) |
+| Position Paper #3 | 20% | Assigned Week 9, due Wed 9 Dec, 12:00 (before the Week 11 seminar) |
 | **Position Papers subtotal** | **60%** | |
 | **Total** | **100%** | |
 
@@ -125,8 +125,9 @@ All three papers are **750–1,000 words**, hard limits. Papers outside the rang
 
 ### Seminar Preparation
 
-A prep assignment is set for each of Weeks 0–10 (eleven in total) and is due **before** the seminar it
-belongs to. They run 250–400 words and are graded on completion and seriousness rather than on
+A prep assignment is set for each of Weeks 0–10 (eleven in total) and is due **at 12:00 on the Wednesday** of
+the seminar it belongs to (23 September – 2 December 2026). Each week's lecture notes are part of the
+reading for its prep: the seminar discusses the lecture rather than introducing it. They run 250–400 words and are graded on completion and seriousness rather than on
 correctness. **The discussion assumes you have done them**, which is the real reason they exist.
 
 The lowest is dropped, without a reason being required. Weeks 11 and 12 substitute the presentation

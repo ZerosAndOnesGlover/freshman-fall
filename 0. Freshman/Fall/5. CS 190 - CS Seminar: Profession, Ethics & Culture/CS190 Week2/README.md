@@ -28,7 +28,7 @@ By the end of Week 2, you should be able to:
 | [[Lecture Week 2]] | Core seminar content: agile, Open Source, and Research Labs |
 | [[CS190 Week2/Reading Guide\|Reading Guide]] | Annotated guide to this week's readings, with guiding questions |
 | [[CS190 Week2/Discussion Questions\|Discussion Questions]] | Questions the seminar will work through live — come with notes |
-| [[CS190 Week2/Prep Assignment\|Prep Assignment]] | Your participation-graded prep work, due before seminar |
+| [[CS190 Week2/Prep Assignment\|Prep Assignment]] | Your participation-graded prep work, due Wed 7 Oct, 12:00 (before the 13:00 seminar) |
 | [[Glossary Week 2]] | Terms introduced this week, defined precisely |
 
 ### Before Seminar

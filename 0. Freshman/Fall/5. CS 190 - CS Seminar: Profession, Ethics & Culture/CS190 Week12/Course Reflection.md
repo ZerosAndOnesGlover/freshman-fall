@@ -1,7 +1,7 @@
 # CS 190 · Week 12
 ## Course Reflection
 
-**Due:** End of Week 12. **The final deliverable of the course.**
+**Due:** Friday 18 December 2026, 17:00 (end of Week 12). **The final deliverable of the course.**
 **Length:** 600–800 words.
 **Weight:** Participation component (40% of the course grade).
 

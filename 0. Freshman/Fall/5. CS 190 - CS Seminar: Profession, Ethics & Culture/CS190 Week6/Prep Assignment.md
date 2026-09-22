@@ -1,6 +1,8 @@
 # Prep Assignment — Week 6 (Participation-Graded)
 
-**Due:** Before seminar begins.
+**Due:** Wednesday 4 November 2026, 12:00 — before the 13:00 seminar.
+**Read first:** this week's lecture notes (`Lecture Week 6.md`) and the Reading Guide. The seminar discusses the
+lecture; it does not introduce it, so the notes are part of the preparation.
 **Format:** One page, any format.
 **Grading:** Credit/no-credit on completion and evident engagement.
 

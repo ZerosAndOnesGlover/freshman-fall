@@ -1,6 +1,8 @@
 # Prep Assignment: Week 0 (Participation-Graded)
 
-**Due:** Before seminar begins.
+**Due:** Wednesday 23 September 2026, 12:00 — before the 13:00 seminar.
+**Read first:** this week's lecture notes (`Lecture Week 0.md`) and the Reading Guide. The seminar discusses the
+lecture; it does not introduce it, so the notes are part of the preparation.
 **Grading:** Participation component (40% of course grade is participation; this is one weekly instance of it). Not a formal position paper, those start Week 3. Graded credit/no-credit on completion and evident effort, not on "correctness" (there isn't one).
 
 ---

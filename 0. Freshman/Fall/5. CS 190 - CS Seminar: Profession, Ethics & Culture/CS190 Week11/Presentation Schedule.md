@@ -13,7 +13,7 @@ of twenty-four students therefore requires **two additional sessions** beyond th
 
 | Session | When | Slots |
 | --- | --- | --- |
-| **Session A** | Regular Week 11 seminar slot | 1–7 |
+| **Session A** | Wednesday 9 December 2026, 13:00–13:50 (regular seminar slot) | 1–7 |
 | **Session B** | Week 11, additional session (see course page) | 8–15 |
 | **Session C** | Week 11, additional session (see course page) | 16–24 |
 

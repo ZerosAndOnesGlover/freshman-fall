@@ -1,6 +1,8 @@
 # Prep Assignment — Week 9 (Participation-Graded)
 
-**Due:** Before Week 9 seminar. Bring a written copy.
+**Due:** Wednesday 25 November 2026, 12:00 — before the 13:00 seminar.
+**Read first:** this week's lecture notes (`Lecture Week 9.md`) and the Reading Guide. The seminar discusses the
+lecture; it does not introduce it, so the notes are part of the preparation.
 
 **Length:** Roughly one page.
 

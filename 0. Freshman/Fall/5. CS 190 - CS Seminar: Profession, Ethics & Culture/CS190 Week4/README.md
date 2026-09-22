@@ -28,7 +28,7 @@ By the end of Week 4, you should be able to:
 | [[Lecture Week 4]] | Core seminar content: case Studies in Hiring, Lending, and Facial Recognition |
 | [[CS190 Week4/Reading Guide\|Reading Guide]] | Annotated guide to this week's readings, with guiding questions |
 | [[CS190 Week4/Discussion Questions\|Discussion Questions]] | Questions the seminar will work through live — come with notes |
-| [[CS190 Week4/Prep Assignment\|Prep Assignment]] | Your participation-graded prep work, due before seminar |
+| [[CS190 Week4/Prep Assignment\|Prep Assignment]] | Your participation-graded prep work, due Wed 21 Oct, 12:00 (before the 13:00 seminar) |
 | [[Glossary Week 4]] | Terms introduced this week, defined precisely |
 
 ### Before Seminar

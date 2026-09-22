@@ -1,6 +1,8 @@
 # Prep Assignment — Week 5 (Participation-Graded)
 
-**Due:** Before seminar begins.
+**Due:** Wednesday 28 October 2026, 12:00 — before the 13:00 seminar.
+**Read first:** this week's lecture notes (`Lecture Week 5.md`) and the Reading Guide. The seminar discusses the
+lecture; it does not introduce it, so the notes are part of the preparation.
 **Format:** One page, any format.
 **Grading:** Credit/no-credit on completion and evident engagement.
 

@@ -45,7 +45,7 @@ By the end of Week 9, you should be able to:
 | [[CS190 Week9/Reading Guide\|Reading Guide]] | Abbate on the history, the WHO ICD-11 burnout entry, Clance & Imes on the imposter phenomenon |
 | [[CS190 Week9/Discussion Questions\|Discussion Questions]] | Twelve questions across history, work culture, and individual obligation |
 | [[CS190 Week9/Prep Assignment\|Prep Assignment]] | Account for the decline; separate the two arguments; state a limit you intend to hold |
-| `Position Paper #3` | **Assigned this week**, due before Week 11 — obligation without leverage |
+| `Position Paper #3` | **Assigned this week**, due Wed 9 Dec, 12:00 — obligation without leverage |
 | [[Glossary Week 9]] | Terms introduced this week, defined precisely |
 
 ### About Position Paper #3

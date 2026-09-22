@@ -1,7 +1,9 @@
 # Prep Assignment — Week 8 (Participation-Graded)
 
-**Due:** Before Week 8 seminar. Bring a printed or written copy; you will refer to it during
-discussion.
+**Due:** Wednesday 18 November 2026, 12:00 — before the 13:00 seminar.
+**Read first:** this week's lecture notes (`Lecture Week 8.md`) and the Reading Guide. The seminar discusses the
+lecture; it does not introduce it, so the notes are part of the preparation.
+Bring a printed or written copy; you will refer to it during discussion.
 
 **Length:** Roughly one page. This is preparation, not an essay.
 

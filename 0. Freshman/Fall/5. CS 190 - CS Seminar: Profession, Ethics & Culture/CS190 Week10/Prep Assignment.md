@@ -1,5 +1,8 @@
 # CS 190 · Week 10 Prep Assignment
-## Due: Before the Week 10 seminar
+## Due: Wednesday 2 December 2026, 12:00 — before the 13:00 seminar
+
+**Read first:** this week's lecture notes (`Lecture Week 10.md`) and the Reading Guide. The seminar discusses the
+lecture; it does not introduce it, so the notes are part of the preparation.
 
 **Length:** Roughly 400 words total. Bring a copy; this is participation-graded and is the basis of
 the discussion.
@@ -56,7 +59,7 @@ answer and a useful thing to have noticed before Week 11.
 
 ## A Note on Position Paper #3
 
-Paper #3 is due before **next week's** seminar. This week's material is directly usable in it:
+Paper #3 is due **Wed 9 Dec, 12:00**, before next week's seminar. This week's material is directly usable in it:
 automation is the clearest case in the whole course of a harm that nobody decided.
 
 If your account of obligation holds up against this case, it is a serious account.

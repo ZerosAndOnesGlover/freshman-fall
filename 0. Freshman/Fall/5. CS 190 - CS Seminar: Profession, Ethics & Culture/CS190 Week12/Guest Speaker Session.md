@@ -107,7 +107,7 @@ And a question the course has earned the right to ask:
 ## 6. Afterwards
 
 The final 10 minutes of the session are the **course retrospective**, run without the guest present —
-see [[Course Reflection]]. Your written reflection is due at the end of Week 12 and is the last
+see [[Course Reflection]]. Your written reflection is due Fri 18 Dec, 17:00 and is the last
 deliverable of the course.
 
 ---

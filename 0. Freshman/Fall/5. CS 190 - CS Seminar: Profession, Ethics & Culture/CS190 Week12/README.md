@@ -4,7 +4,7 @@
 **Format:** Weekly 1-hour seminar — guest remarks and questions, then a closing retrospective.
 **Assessment for this course (overall):** Participation 40%, Position Papers 60%
 **This week's deliverables:** Question preparation (before the seminar) and the **Course Reflection**,
-due end of Week 12 — the final deliverable of the course.
+due Fri 18 Dec, 17:00 — the final deliverable of the course.
 
 ---
 

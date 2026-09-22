@@ -5,7 +5,7 @@
 **Assessment for this course (overall):** Participation 40%, Position Papers 60%
 **This week's deliverables:** Your presentation (20 points, Participation) and one peer feedback form
 per presentation attended (Participation).
-**Position Paper #3 is due before this week's first session.**
+**Position Paper #3 is due Wed 9 Dec, 12:00, before this week's first session.**
 
 ---
 

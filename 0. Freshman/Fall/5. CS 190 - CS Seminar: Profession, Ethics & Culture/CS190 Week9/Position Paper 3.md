@@ -1,8 +1,8 @@
 # Position Paper #3
 ## Obligation Without Leverage: What Individuals Owe in Structural Problems
 
-**Assigned:** End of Week 9 seminar
-**Due:** Before Week 11 seminar *(note the extended window — this paper is harder, and Week 10's
+**Assigned:** End of the Week 9 seminar, Wednesday 25 November 2026
+**Due:** Wednesday 9 December 2026, 12:00 (before the Week 11 seminar) *(note the extended window — this paper is harder, and Week 10's
 material is relevant to it)*
 **Length:** 750–1,000 words (hard limits)
 **Weight:** The last of three position papers; together they constitute 60% of the course grade

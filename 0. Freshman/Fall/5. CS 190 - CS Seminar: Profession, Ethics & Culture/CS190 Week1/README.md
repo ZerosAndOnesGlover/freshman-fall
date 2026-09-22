@@ -28,7 +28,7 @@ By the end of Week 1, you should be able to:
 | [[Lecture Week 1]] | Core seminar content: from Babbage to Turing to Silicon Valley |
 | [[CS190 Week1/Reading Guide\|Reading Guide]] | Annotated guide to this week's readings, with guiding questions |
 | [[CS190 Week1/Discussion Questions\|Discussion Questions]] | Questions the seminar will work through live — come with notes |
-| [[CS190 Week1/Prep Assignment\|Prep Assignment]] | Your participation-graded prep work, due before seminar |
+| [[CS190 Week1/Prep Assignment\|Prep Assignment]] | Your participation-graded prep work, due Wed 30 Sep, 12:00 (before the 13:00 seminar) |
 | [[Glossary Week 1]] | Terms introduced this week, defined precisely |
 
 ### Before Seminar

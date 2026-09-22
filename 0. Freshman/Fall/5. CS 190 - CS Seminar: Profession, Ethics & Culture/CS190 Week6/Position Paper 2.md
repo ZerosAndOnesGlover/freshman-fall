@@ -1,8 +1,8 @@
 # Position Paper #2
 ## Correctness Is Not Consent: Ethics When the System Works as Intended
 
-**Assigned:** End of Week 6 seminar
-**Due:** Before Week 7 seminar
+**Assigned:** End of the Week 6 seminar, Wednesday 4 November 2026
+**Due:** Wednesday 11 November 2026, 12:00 (before the Week 7 seminar)
 **Length:** 750–1,000 words (hard limits)
 **Weight:** One of three position papers; together they constitute 60% of the course grade
 

@@ -1,7 +1,7 @@
 # CS 190 · Week 12
 ## Question Preparation
 
-**Due:** Before the Week 12 seminar. Submit on the course page.
+**Due:** Wednesday 16 December 2026, 12:00 (before the Week 12 seminar). Submit on the course page.
 **Length:** Roughly 250 words. Participation-graded.
 
 ---

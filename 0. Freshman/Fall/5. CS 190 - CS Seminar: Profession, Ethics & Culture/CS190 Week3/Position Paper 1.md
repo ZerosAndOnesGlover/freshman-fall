@@ -1,8 +1,8 @@
 # Position Paper #1
 ## Professional Obligation and the Limits of Employer Loyalty
 
-**Assigned:** End of Week 3 seminar
-**Due:** Before Week 4 seminar
+**Assigned:** End of the Week 3 seminar, Wednesday 14 October 2026
+**Due:** Wednesday 21 October 2026, 12:00 (before the Week 4 seminar)
 **Length:** 750–1,000 words (hard limits — papers outside this range will be returned ungraded)
 **Weight:** One of three position papers; together they constitute 60% of the course grade
 

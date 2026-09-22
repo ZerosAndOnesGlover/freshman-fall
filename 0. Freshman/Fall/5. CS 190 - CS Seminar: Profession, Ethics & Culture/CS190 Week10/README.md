@@ -4,7 +4,7 @@
 **Format:** Weekly 1-hour seminar + readings
 **Assessment for this course (overall):** Participation 40%, Position Papers 60%
 **This week's deliverables:** Discussion preparation notes (participation-graded).
-**Position Paper #3 is due before next week's seminar.**
+**Position Paper #3 is due Wed 9 Dec, 12:00, before next week's seminar.**
 
 ---
 
