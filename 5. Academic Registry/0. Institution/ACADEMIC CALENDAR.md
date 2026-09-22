@@ -17,25 +17,29 @@
 > **Dated for 2026.** Term opens **Monday 21 September 2026**. Week 0 is an ordinary five-day week;
 > thirteen teaching weeks (W0–W12) run continuously with no break weeks, ending Friday 18 December; finals run Monday 21 – Friday 25 December.
 > (Re-based on 2026-09-21 from the earlier 17 August opening: every date moved +35 days.)
-> Week↔date conversion lives in [[Year1 - Freshman/ASSESSMENT CALENDAR|ASSESSMENT CALENDAR]].
+> Week↔date conversion lives in [[Year1 - Freshman/ASSESSMENT CALENDAR|ASSESSMENT CALENDAR]], whose Graded Work table
+> (regenerated from the course files on 2026-09-22) lists every deadline; this page keeps the milestones.
 
 | Date | Event |
 |------|-------|
 | Thu Sep 17 | Freshman Orientation begins |
 | Mon Sep 21 | **Classes begin — Week 0** |
-| Fri Sep 25 | Week 0 labs (setup/orientation, ungraded) |
+| Thu Sep 24 | PHYS 141 Lab 0 (14:00–17:00) |
+| Fri Sep 25 | MATH 141 Lab 00 (15:00, ungraded) · MATH 141 PS 0 due (17:00) |
 | Fri Sep 25 | Add/Drop deadline |
-| Mon Sep 28 | **Week 1 begins — all graded work begins** |
-| Fri Oct 02 | Problem Set 1 due — CS 101, MATH 151, PHYS 141 (17:00) |
-| Tue Oct 06 | Quizzes begin — PROG 101 Quiz 1 (start of Tuesday lecture) |
-| Wed Oct 07 | CS 101 Quiz 1 (start of Wednesday lecture) |
-| Fri Oct 09 | Problem Set 1 due — MATH 141, PROG 101 (re-dated; see PREREQUISITE AUDIT) |
+| Mon Sep 28 | **Week 1 begins** · first quizzes: MATH 141, MATH 151, PHYS 141 · PROG 101 Lab 0 (15:00) |
+| Tue Sep 29 | PROG 101 PS 0 due (10:00) · CS 101 Lab 0 (15:00) |
+| Wed Sep 30 | MATH 151 Lab 0 (15:00) — each MATH 151 lab now meets the Wednesday after its week |
+| Fri Oct 02 | Problem Set 0 due — MATH 151, PHYS 141 (17:00) |
+| Tue Oct 06 | PROG 101 Quiz 1 (10:00) |
+| Wed Oct 07 | MATH 141 Problem Set 1 due (11:00) · CS 101 Quiz 2 (09:00) |
+| Fri Oct 09 | Problem Set 1 due — CS 101, MATH 151, PHYS 141, PROG 101 (17:00) |
 | Mon Oct 12 | Columbus Day / Indigenous Peoples' Day (Week 3) — ⚠️ classes currently scheduled to run (see note below) |
 | Mon Nov 02 | **MIDTERM 1 WEEK begins (Week 6)** |
 | Mon Nov 02 | CS 101 Midterm 1 (75 min, 18:00–19:15) |
 | Wed Nov 04 | PROG 101 Midterm 1 (90 min, 18:00–19:30) |
 | Thu Nov 05 | MATH 141 Midterm 1 (75 min, 18:00–19:15) |
-| Fri Nov 06 | MATH 151 Midterm 1 (75 min, 18:00–19:15) |
+| Fri Nov 06 | MATH 151 Midterm 1 (75 min, 18:00–19:15) — ⚠️ not in the MATH 151 syllabus |
 | Wed Nov 11 | Veterans Day (Week 7) — ⚠️ classes currently scheduled to run (see note below) |
 | Thu Nov 26 | Thanksgiving (Week 9) — ⚠️ classes currently scheduled to run (see note below) |
 | Fri Nov 27 | CS 101 Project 1 due — Data Analysis Tool (17:00) |
@@ -43,8 +47,8 @@
 | Mon Nov 30 | CS 101 Midterm 2 (75 min, 18:00–19:15) |
 | Tue Dec 01 | PROG 101 Midterm 2 (90 min, 18:00–19:30) |
 | Wed Dec 02 | MATH 141 Midterm 2 (75 min, 18:00–19:15) |
-| Mon Dec 14 | **Last week of instruction (Week 12)** |
-| Fri Dec 18 | Last Problem Set due, all courses (17:00) |
+| Mon Dec 14 | **Last week of instruction (Week 12)** · MATH 141 PS 12 released (optional, ungraded) |
+| Fri Dec 18 | Problem Set 11 due — CS 101, MATH 151, PHYS 141, PROG 101 (17:00) · CS 190 Course Reflection due (17:00) |
 | Fri Dec 18 | CS 101 Project 2 due — Algorithm Visualizer (17:00) |
 | Fri Dec 18 | **Last day of instruction** |
 | Mon Dec 21 | **FINALS WEEK begins** |
@@ -52,7 +56,8 @@
 | Tue Dec 22 | CS 101 Final Exam (150 min, 09:00–11:30) |
 | Wed Dec 23 | MATH 141 Final Exam (150 min, 09:00–11:30) |
 | Thu Dec 24 | PROG 101 Final Exam (150 min, 14:00–16:30) |
-| Fri Dec 25 | CS 190 Seminar final paper due (23:59) |
+| Wed Dec 23 | MATH 151 PS 12 and PHYS 141 PS 12 due (17:00) · MATH 151 Lab 12 (15:00) |
+| Fri Dec 25 | ⚠️ PROG 101 PS 12 still due today (Christmas Day) — decide |
 | Fri Dec 25 | **Fall semester ends** |
 
 > **⚠️ Open decisions on this calendar.**
@@ -69,7 +74,8 @@
 > **Dated for 2027.** Term opens **Monday 11 January 2027**. Week 0 is an ordinary five-day week;
 > thirteen teaching weeks (W0–W12) run continuously with **no break weeks** — the Spring Break week
 > in the pre-2027 calendar was dropped by decision. Instruction ends Friday 9 April.
-> Week↔date conversion lives in [[Year1 - Freshman/ASSESSMENT CALENDAR|ASSESSMENT CALENDAR]].
+> Week↔date conversion lives in [[Year1 - Freshman/ASSESSMENT CALENDAR|ASSESSMENT CALENDAR]], whose Graded Work table
+> (regenerated from the course files on 2026-09-22) lists every deadline; this page keeps the milestones.
 
 | Date       | Event                                                                           |
 | ---------- | ------------------------------------------------------------------------------- |

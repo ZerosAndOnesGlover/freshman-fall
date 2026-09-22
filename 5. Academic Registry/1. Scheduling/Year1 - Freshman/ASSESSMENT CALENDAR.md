@@ -65,60 +65,230 @@ curriculum docx). If all three hold, the map is right.
 
 ### Graded Work
 
+> *Regenerated 2026-09-22 from the course files.* Every date and time below is read from the file it
+> belongs to (the answer sheet's `source:`), and each weight is the gradebook component weight divided
+> by that component's item count. Exams come from the registry. Rows marked *TBA* or *decide* are open
+> decisions. Regenerate with `tools/make_fall_calendar.py` after changing a course file instead of editing rows by hand.
+
 | Week   | Date   | Course       | Assessment                  | Weight | Notes                                   |
 | ------ | ------ | ------------ | --------------------------- | ------ | --------------------------------------- |
-| W1     | Oct 02 | **CS 101**   | 📝 Problem Set 1             | ≈3%    | 17:00 · First graded PS, start early |
-| W1     | Oct 02 | **MATH 151** | 📝 Problem Set 1             | ≈3%    | 17:00 |
-| W1     | Oct 02 | **PHYS 141** | 📝 Problem Set 1             | ≈3%    | 17:00 |
-| W2     | Oct 09 | **MATH 141** | 📝 Problem Set 1             | ≈3%    | 17:00 · re-dated, see PREREQUISITE AUDIT #13 |
-| W2     | Oct 09 | **PROG 101** | 📝 Problem Set 1             | ≈3%    | 17:00 · re-dated, see PREREQUISITE AUDIT #11–12 |
-| W2     | Oct 06 | **PROG 101** | 📊 Quiz 1                    | ≈0.8%  | 10 min, start of Tuesday lecture |
-| W2     | Oct 07 | **CS 101**   | 📊 Quiz 1                    | ≈0.8%  | 10 min, start of Wednesday lecture |
-| W2     | Oct 09 | **ALL**      | 📝 Problem Set 2             | ≈3%    | 17:00 |
-| W3     | Oct 13 | **PROG 101** | 📊 Quiz 2                    | ≈0.8%  | 10 min, start of Tuesday lecture |
-| W3     | Oct 14 | **CS 101**   | 📊 Quiz 2                    | ≈0.8%  | 10 min, start of Wednesday lecture |
-| W3     | Oct 16 | **ALL**      | 📝 Problem Set 3             | ≈3%    | 17:00 |
-| W4     | Oct 20 | **PROG 101** | 📊 Quiz 3                    | ≈0.8%  | 10 min, start of Tuesday lecture |
-| W4     | Oct 21 | **CS 101**   | 📊 Quiz 3                    | ≈0.8%  | 10 min, start of Wednesday lecture |
-| W4     | Oct 23 | **ALL**      | 📝 Problem Set 4             | ≈3%    | 17:00 |
-| W5     | Oct 27 | **PROG 101** | 📊 Quiz 4                    | ≈0.8%  | 10 min, start of Tuesday lecture |
-| W5     | Oct 28 | **CS 101**   | 📊 Quiz 4                    | ≈0.8%  | 10 min, start of Wednesday lecture |
-| W5     | Oct 30 | **ALL**      | 📝 Problem Set 5             | ≈3%    | 17:00 |
-| W6     | Nov 03 | **PROG 101** | 📊 Quiz 5                    | ≈0.8%  | 10 min, start of Tuesday lecture |
-| W6     | Nov 04 | **CS 101**   | 📊 Quiz 5                    | ≈0.8%  | 10 min, start of Wednesday lecture |
-| W6     | Nov 06 | **ALL**      | 📝 Problem Set 6             | ≈3%    | 17:00 |
-| W6     | Nov 02 | **CS 101**   | 📘 Midterm 1                 | 15%    | 18:00–19:15 · VNC 100 · Weeks 0–5 |
-| W6     | Nov 04 | **PROG 101** | 📘 Midterm 1                 | 12%    | 18:00–19:30 · VNC 100 · Weeks 0–5 |
-| W6     | Nov 05 | **MATH 141** | 📘 Midterm 1                 | 20%    | 18:00–19:15 · VNC 200 · Weeks 0–5 |
-| W6     | Nov 06 | **MATH 151** | 📘 Midterm 1                 | 25%    | 18:00–19:15 · VNC 200 · Weeks 0–5 |
-| W7     | Nov 10 | **PROG 101** | 📊 Quiz 6                    | ≈0.8%  | 10 min, start of Tuesday lecture |
-| W7     | Nov 11 | **CS 101**   | 📊 Quiz 6                    | ≈0.8%  | 10 min, start of Wednesday lecture |
-| W7     | Nov 13 | **ALL**      | 📝 Problem Set 7             | ≈3%    | 17:00 |
-| W8     | Nov 17 | **PROG 101** | 📊 Quiz 7                    | ≈0.8%  | 10 min, start of Tuesday lecture |
-| W8     | Nov 18 | **CS 101**   | 📊 Quiz 7                    | ≈0.8%  | 10 min, start of Wednesday lecture |
-| W8     | Nov 20 | **ALL**      | 📝 Problem Set 8             | ≈3%    | 17:00 |
-| W9     | Nov 24 | **PROG 101** | 📊 Quiz 8                    | ≈0.8%  | 10 min, start of Tuesday lecture |
-| W9     | Nov 25 | **CS 101**   | 📊 Quiz 8                    | ≈0.8%  | 10 min, start of Wednesday lecture |
-| W9     | Nov 27 | **ALL**      | 📝 Problem Set 9             | ≈3%    | 17:00 |
-| W9     | Nov 27 | **CS 101**   | 📋 Project 1 Due             | 10%    | Data Analysis Tool · 17:00 |
-| W10    | Dec 01 | **PROG 101** | 📊 Quiz 9                    | ≈0.8%  | 10 min, start of Tuesday lecture |
-| W10    | Dec 02 | **CS 101**   | 📊 Quiz 9                    | ≈0.8%  | 10 min, start of Wednesday lecture |
-| W10    | Dec 04 | **ALL**      | 📝 Problem Set 10            | ≈3%    | 17:00 |
-| W10    | Nov 30 | **CS 101**   | 📘 Midterm 2                 | 15%    | 18:00–19:15 · VNC 100 · Weeks 6–9 |
-| W10    | Dec 01 | **PROG 101** | 📘 Midterm 2                 | 12%    | 18:00–19:30 · VNC 100 · Weeks 6–9 |
-| W10    | Dec 02 | **MATH 141** | 📘 Midterm 2                 | 20%    | 18:00–19:15 · VNC 200 · Weeks 6–9 |
-| W11    | Dec 08 | **PROG 101** | 📊 Quiz 10                   | ≈0.8%  | 10 min, start of Tuesday lecture |
-| W11    | Dec 09 | **CS 101**   | 📊 Quiz 10                   | ≈0.8%  | 10 min, start of Wednesday lecture |
-| W11    | Dec 11 | **ALL**      | 📝 Problem Set 11            | ≈3%    | 17:00 |
-| W12    | Dec 15 | **PROG 101** | 📊 Quiz 11                   | ≈0.8%  | 10 min, start of Tuesday lecture |
-| W12    | Dec 16 | **CS 101**   | 📊 Quiz 11                   | ≈0.8%  | 10 min, start of Wednesday lecture |
-| W12    | Dec 18 | **ALL**      | 📝 Problem Set 12            | ≈3%    | 17:00 |
-| W12    | Dec 18 | **CS 101**   | 📋 Project 2 Due             | 10%    | Algorithm Visualizer · 17:00 |
-| Finals | Dec 21 | **MATH 151** | 📕 Final Exam                | 30%    | 08:00–10:00 · VNC 200 · Comprehensive |
-| Finals | Dec 22 | **CS 101**   | 📕 Final Exam                | 20%    | 09:00–11:30 · VNC 100 · Comprehensive |
-| Finals | Dec 23 | **MATH 141** | 📕 Final Exam                | 40%    | 09:00–11:30 · VNC 200 · Comprehensive |
-| Finals | Dec 24 | **PROG 101** | 📕 Final Exam                | 20%    | 14:00–16:30 · VNC 100 · Comprehensive |
-| Finals | Dec 25 | **CS 190**   | 🎤 Final Paper Due           | 40%    | 23:59 · Position paper · 1500 words min |
+| W0 | Wed Sep 23 | **CS 190** | 🎤 Prep 0 | ≈1.1% | 12:00 |
+| W0 | Thu Sep 24 | **PHYS 141** | 🔬 Lab 0 | ≈1.9% | 14:00–17:00 |
+| W0 | Fri Sep 25 | **MATH 141** | 🔬 Lab 0 | ≈0.8% | 15:00–16:50 |
+| W0 | Fri Sep 25 | **MATH 141** | 📝 PS 0 | ≈2.5% | 17:00 |
+| W1 | Mon Sep 28 | **MATH 141** | 📊 Quiz 01 | ≈0.8% | 11:00–11:15 |
+| W1 | Mon Sep 28 | **MATH 151** | 📊 Quiz 1 | ≈1.2% | 13:00–13:15 |
+| W1 | Mon Sep 28 | **PHYS 141** | 📊 Quiz 0 | ≈0.8% | 14:00 |
+| W1 | Tue Sep 29 | **PROG 101** | 📝 PS 0 | ≈2.7% | 10:00 |
+| W1 | Tue Sep 29 | **PROG 101** | 📊 Quiz 0 | — | 10:00–10:10 |
+| W1 | Tue Sep 29 | **CS 101** | 🔬 Lab 0 | ≈0.8% | 15:00–16:50 |
+| W1 | Wed Sep 30 | **CS 101** | 📊 Quiz 1 | — | 09:00–09:10 |
+| W1 | Wed Sep 30 | **CS 190** | 🎤 Prep 1 | ≈1.1% | 12:00 |
+| W1 | Wed Sep 30 | **MATH 151** | 🔬 Lab 0 | ≈1.2% | 15:00–16:50 |
+| W1 | Thu Oct 01 | **PHYS 141** | 🔬 Lab 1 | ≈1.9% | 14:00–17:00 |
+| W1 | Fri Oct 02 | **MATH 141** | 🔬 Lab 1 | ≈0.8% | 15:00–16:50 |
+| W1 | Fri Oct 02 | **MATH 151** | 📝 PS 0 | ≈3.1% | 17:00 |
+| W1 | Fri Oct 02 | **PHYS 141** | 📝 PS 0 | ≈2.3% | 17:00 |
+| W2 | Mon Oct 05 | **MATH 141** | 📊 Quiz 02 | ≈0.8% | 11:00–11:15 |
+| W2 | Mon Oct 05 | **MATH 151** | 📊 Quiz 2 | ≈1.2% | 13:00–13:15 |
+| W2 | Mon Oct 05 | **PHYS 141** | 📊 Quiz 1 | ≈0.8% | 14:00 |
+| W2 | Mon Oct 05 | **PROG 101** | 🔬 Lab 1 | ≈1.7% | 15:00–16:50 |
+| W2 | Tue Oct 06 | **PROG 101** | 📊 Quiz 1 | — | 10:00–10:10 |
+| W2 | Tue Oct 06 | **CS 101** | 🔬 Lab 1 | ≈0.8% | 15:00–16:50 |
+| W2 | Wed Oct 07 | **CS 101** | 📊 Quiz 2 | — | 09:00–09:10 |
+| W2 | Wed Oct 07 | **MATH 141** | 📝 PS 1 | ≈2.5% | 11:00 |
+| W2 | Wed Oct 07 | **CS 190** | 🎤 Prep 2 | ≈1.1% | 12:00 |
+| W2 | Wed Oct 07 | **MATH 151** | 🔬 Lab 1 | ≈1.2% | 15:00–16:50 |
+| W2 | Thu Oct 08 | **PHYS 141** | 🔬 Lab 2 | ≈1.9% | 14:00–17:00 |
+| W2 | Fri Oct 09 | **MATH 141** | 🔬 Lab 2 | ≈0.8% | 15:00–16:50 |
+| W2 | Fri Oct 09 | **CS 101** | 📝 PS 1 | ≈2.7% | 17:00 |
+| W2 | Fri Oct 09 | **MATH 151** | 📝 PS 1 | ≈3.1% | 17:00 |
+| W2 | Fri Oct 09 | **PHYS 141** | 📝 PS 1 | ≈2.3% | 17:00 |
+| W2 | Fri Oct 09 | **PROG 101** | 📝 PS 1 | ≈2.7% | 17:00 |
+| W3 | Mon Oct 12 | **MATH 141** | 📊 Quiz 03 | ≈0.8% | 11:00–11:15 |
+| W3 | Mon Oct 12 | **MATH 151** | 📊 Quiz 3 | ≈1.2% | 13:00–13:15 |
+| W3 | Mon Oct 12 | **PHYS 141** | 📊 Quiz 2 | ≈0.8% | 14:00 |
+| W3 | Mon Oct 12 | **PROG 101** | 🔬 Lab 2 | ≈1.7% | 15:00–16:50 |
+| W3 | Tue Oct 13 | **PROG 101** | 📊 Quiz 2 | — | 10:00–10:10 |
+| W3 | Tue Oct 13 | **CS 101** | 🔬 Lab 2 | ≈0.8% | 15:00–16:50 |
+| W3 | Wed Oct 14 | **CS 101** | 📊 Quiz 3 | — | 09:00–09:10 |
+| W3 | Wed Oct 14 | **MATH 141** | 📝 PS 2 | ≈2.5% | 11:00 |
+| W3 | Wed Oct 14 | **CS 190** | 🎤 Prep 3 | ≈1.1% | 12:00 |
+| W3 | Wed Oct 14 | **MATH 151** | 🔬 Lab 2 | ≈1.2% | 15:00–16:50 |
+| W3 | Thu Oct 15 | **PHYS 141** | 🔬 Lab 3 | ≈1.9% | 14:00–17:00 |
+| W3 | Fri Oct 16 | **MATH 141** | 🔬 Lab 3 | ≈0.8% | 15:00–16:50 |
+| W3 | Fri Oct 16 | **CS 101** | 📝 PS 2 | ≈2.7% | 17:00 |
+| W3 | Fri Oct 16 | **MATH 151** | 📝 PS 2 | ≈3.1% | 17:00 |
+| W3 | Fri Oct 16 | **PHYS 141** | 📝 PS 2 | ≈2.3% | 17:00 |
+| W3 | Fri Oct 16 | **PROG 101** | 📝 PS 2 | ≈2.7% | 17:00 |
+| W4 | Mon Oct 19 | **MATH 141** | 📊 Quiz 04 | ≈0.8% | 11:00–11:15 |
+| W4 | Mon Oct 19 | **MATH 151** | 📊 Quiz 4 | ≈1.2% | 13:00–13:15 |
+| W4 | Mon Oct 19 | **PHYS 141** | 📊 Quiz 3 | ≈0.8% | 14:00 |
+| W4 | Mon Oct 19 | **PROG 101** | 🔬 Lab 3 | ≈1.7% | 15:00–16:50 |
+| W4 | Tue Oct 20 | **PROG 101** | 📊 Quiz 3 | — | 10:00–10:10 |
+| W4 | Tue Oct 20 | **CS 101** | 🔬 Lab 3 | ≈0.8% | 15:00–16:50 |
+| W4 | Wed Oct 21 | **CS 101** | 📊 Quiz 4 | — | 09:00–09:10 |
+| W4 | Wed Oct 21 | **MATH 141** | 📝 PS 3 | ≈2.5% | 11:00 |
+| W4 | Wed Oct 21 | **CS 190** | 🎤 Position Paper 1 | 20% | 12:00 |
+| W4 | Wed Oct 21 | **CS 190** | 🎤 Prep 4 | ≈1.1% | 12:00 |
+| W4 | Wed Oct 21 | **MATH 151** | 🔬 Lab 3 | ≈1.2% | 15:00–16:50 |
+| W4 | Thu Oct 22 | **PHYS 141** | 🔬 Lab 4 | ≈1.9% | 14:00–17:00 |
+| W4 | Fri Oct 23 | **MATH 141** | 🔬 Lab 4 | ≈0.8% | 15:00–16:50 |
+| W4 | Fri Oct 23 | **CS 101** | 📝 PS 3 | ≈2.7% | 17:00 |
+| W4 | Fri Oct 23 | **MATH 151** | 📝 PS 3 | ≈3.1% | 17:00 |
+| W4 | Fri Oct 23 | **PHYS 141** | 📝 PS 3 | ≈2.3% | 17:00 |
+| W4 | Fri Oct 23 | **PROG 101** | 📝 PS 3 | ≈2.7% | 17:00 |
+| W5 | Mon Oct 26 | **MATH 141** | 📊 Quiz 05 | ≈0.8% | 11:00–11:15 |
+| W5 | Mon Oct 26 | **MATH 151** | 📊 Quiz 5 | ≈1.2% | 13:00–13:15 |
+| W5 | Mon Oct 26 | **PHYS 141** | 📊 Quiz 4 | ≈0.8% | 14:00 |
+| W5 | Mon Oct 26 | **PROG 101** | 🔬 Lab 4 | ≈1.7% | 15:00–16:50 |
+| W5 | Tue Oct 27 | **PROG 101** | 📊 Quiz 4 | — | 10:00–10:10 |
+| W5 | Tue Oct 27 | **CS 101** | 🔬 Lab 4 | ≈0.8% | 15:00–16:50 |
+| W5 | Wed Oct 28 | **CS 101** | 📊 Quiz 5 | — | 09:00–09:10 |
+| W5 | Wed Oct 28 | **MATH 141** | 📝 PS 4 | ≈2.5% | 11:00 |
+| W5 | Wed Oct 28 | **CS 190** | 🎤 Prep 5 | ≈1.1% | 12:00 |
+| W5 | Wed Oct 28 | **MATH 151** | 🔬 Lab 4 | ≈1.2% | 15:00–16:50 |
+| W5 | Thu Oct 29 | **PHYS 141** | 🔬 Lab 5 | ≈1.9% | 14:00–17:00 |
+| W5 | Fri Oct 30 | **MATH 141** | 🔬 Lab 5 | ≈0.8% | 15:00–16:50 |
+| W5 | Fri Oct 30 | **CS 101** | 📝 PS 4 | ≈2.7% | 17:00 |
+| W5 | Fri Oct 30 | **MATH 151** | 📝 PS 4 | ≈3.1% | 17:00 |
+| W5 | Fri Oct 30 | **PHYS 141** | 📝 PS 4 | ≈2.3% | 17:00 |
+| W5 | Fri Oct 30 | **PROG 101** | 📝 PS 4 | ≈2.7% | 17:00 |
+| W6 | Mon Nov 02 | **MATH 141** | 📊 Quiz 06 | ≈0.8% | 11:00–11:15 |
+| W6 | Mon Nov 02 | **MATH 151** | 📊 Quiz 6 | ≈1.2% | 13:00–13:15 |
+| W6 | Mon Nov 02 | **PHYS 141** | 📊 Quiz 5 | ≈0.8% | 14:00 |
+| W6 | Mon Nov 02 | **PROG 101** | 🔬 Lab 5 | ≈1.7% | 15:00–16:50 |
+| W6 | Mon Nov 02 | **CS 101** | 📘 Midterm 1 | 15% | 18:00–19:15 · VNC 100 · Weeks 0–5 |
+| W6 | Tue Nov 03 | **PROG 101** | 📊 Quiz 5 | — | 10:00–10:10 |
+| W6 | Tue Nov 03 | **CS 101** | 🔬 Lab 5 | ≈0.8% | 15:00–16:50 |
+| W6 | Wed Nov 04 | **CS 101** | 📊 Quiz 6 | — | 09:00–09:10 |
+| W6 | Wed Nov 04 | **MATH 141** | 📝 PS 5 | ≈2.5% | 11:00 |
+| W6 | Wed Nov 04 | **CS 190** | 🎤 Prep 6 | ≈1.1% | 12:00 |
+| W6 | Wed Nov 04 | **MATH 151** | 🔬 Lab 5 | ≈1.2% | 15:00–16:50 |
+| W6 | Wed Nov 04 | **PROG 101** | 📘 Midterm 1 | 12.5% | 18:00–19:30 · VNC 100 · Weeks 0–5 |
+| W6 | Thu Nov 05 | **PHYS 141** | 🔬 Lab 6 | ≈1.9% | 14:00–17:00 |
+| W6 | Thu Nov 05 | **MATH 141** | 📘 Midterm 1 | 15% | 18:00–19:15 · VNC 200 · Weeks 0–5 |
+| W6 | Fri Nov 06 | **MATH 141** | 🔬 Lab 6 | ≈0.8% | 15:00–16:50 |
+| W6 | Fri Nov 06 | **CS 101** | 📝 PS 5 | ≈2.7% | 17:00 |
+| W6 | Fri Nov 06 | **MATH 151** | 📝 PS 5 | ≈3.1% | 17:00 |
+| W6 | Fri Nov 06 | **PHYS 141** | 📝 PS 5 | ≈2.3% | 17:00 |
+| W6 | Fri Nov 06 | **PROG 101** | 📝 PS 5 | ≈2.7% | 17:00 |
+| W6 | Fri Nov 06 | **MATH 151** | 📘 Midterm 1 | — | 18:00–19:15 · VNC 200 · Weeks 0–5 · *not in the MATH 151 syllabus — decide* |
+| W7 | Mon Nov 09 | **MATH 141** | 📊 Quiz 07 | ≈0.8% | 11:00–11:15 |
+| W7 | Mon Nov 09 | **MATH 151** | 📊 Quiz 7 | ≈1.2% | 13:00–13:15 |
+| W7 | Mon Nov 09 | **PHYS 141** | 📊 Quiz 6 | ≈0.8% | 14:00 |
+| W7 | Mon Nov 09 | **PROG 101** | 🔬 Lab 6 | ≈1.7% | 15:00–16:50 |
+| W7 | Tue Nov 10 | **PROG 101** | 📊 Quiz 6 | — | 10:00–10:10 |
+| W7 | Tue Nov 10 | **CS 101** | 🔬 Lab 6 | ≈0.8% | 15:00–16:50 |
+| W7 | Wed Nov 11 | **CS 101** | 📊 Quiz 7 | — | 09:00–09:10 |
+| W7 | Wed Nov 11 | **MATH 141** | 📝 PS 6 | ≈2.5% | 11:00 |
+| W7 | Wed Nov 11 | **CS 190** | 🎤 Prep 7 | ≈1.1% | 12:00 |
+| W7 | Wed Nov 11 | **CS 190** | 🎤 Position Paper 2 | 20% | 12:00 |
+| W7 | Wed Nov 11 | **MATH 151** | 🔬 Lab 6 | ≈1.2% | 15:00–16:50 |
+| W7 | Thu Nov 12 | **PHYS 141** | 🔬 Lab 7 | ≈1.9% | 14:00–17:00 |
+| W7 | Fri Nov 13 | **MATH 141** | 🔬 Lab 7 | ≈0.8% | 15:00–16:50 |
+| W7 | Fri Nov 13 | **CS 101** | 📝 PS 6 | ≈2.7% | 17:00 |
+| W7 | Fri Nov 13 | **MATH 151** | 📝 PS 6 | ≈3.1% | 17:00 |
+| W7 | Fri Nov 13 | **PHYS 141** | 📝 PS 6 | ≈2.3% | 17:00 |
+| W7 | Fri Nov 13 | **PROG 101** | 📝 PS 6 | ≈2.7% | 17:00 |
+| W8 | Mon Nov 16 | **MATH 141** | 📊 Quiz 08 | ≈0.8% | 11:00–11:15 |
+| W8 | Mon Nov 16 | **MATH 151** | 📊 Quiz 8 | ≈1.2% | 13:00–13:15 |
+| W8 | Mon Nov 16 | **PHYS 141** | 📊 Quiz 7 | ≈0.8% | 14:00 |
+| W8 | Mon Nov 16 | **PROG 101** | 🔬 Lab 7 | ≈1.7% | 15:00–16:50 |
+| W8 | Tue Nov 17 | **PROG 101** | 📝 PS 7 | ≈2.7% | 10:00 |
+| W8 | Tue Nov 17 | **PROG 101** | 📊 Quiz 7 | — | 10:00–10:10 |
+| W8 | Tue Nov 17 | **CS 101** | 🔬 Lab 7 | ≈0.8% | 15:00–16:50 |
+| W8 | Wed Nov 18 | **CS 101** | 📊 Quiz 8 | — | 09:00–09:10 |
+| W8 | Wed Nov 18 | **MATH 141** | 📝 PS 7 | ≈2.5% | 11:00 |
+| W8 | Wed Nov 18 | **CS 190** | 🎤 Prep 8 | ≈1.1% | 12:00 |
+| W8 | Wed Nov 18 | **MATH 151** | 🔬 Lab 7 | ≈1.2% | 15:00–16:50 |
+| W8 | Thu Nov 19 | **PHYS 141** | 🔬 Lab 8 | ≈1.9% | 14:00–17:00 |
+| W8 | Fri Nov 20 | **MATH 141** | 🔬 Lab 8 | ≈0.8% | 15:00–16:50 |
+| W8 | Fri Nov 20 | **CS 101** | 📝 PS 7 | ≈2.7% | 17:00 |
+| W8 | Fri Nov 20 | **MATH 151** | 📝 PS 7 | ≈3.1% | 17:00 |
+| W8 | Fri Nov 20 | **PHYS 141** | 📝 PS 7 | ≈2.3% | 17:00 |
+| W9 | Mon Nov 23 | **MATH 141** | 📊 Quiz 09 | ≈0.8% | 11:00–11:15 |
+| W9 | Mon Nov 23 | **MATH 151** | 📊 Quiz 9 | ≈1.2% | 13:00–13:15 |
+| W9 | Mon Nov 23 | **PHYS 141** | 📊 Quiz 8 | ≈0.8% | 14:00 |
+| W9 | Mon Nov 23 | **PROG 101** | 🔬 Lab 8 | ≈1.7% | 15:00–16:50 |
+| W9 | Tue Nov 24 | **PROG 101** | 📝 PS 8 | ≈2.7% | 10:00 |
+| W9 | Tue Nov 24 | **PROG 101** | 📊 Quiz 8 | — | 10:00–10:10 |
+| W9 | Tue Nov 24 | **CS 101** | 🔬 Lab 8 | ≈0.8% | 15:00–16:50 |
+| W9 | Wed Nov 25 | **CS 101** | 📊 Quiz 9 | — | 09:00–09:10 |
+| W9 | Wed Nov 25 | **MATH 141** | 📝 PS 8 | ≈2.5% | 11:00 |
+| W9 | Wed Nov 25 | **CS 190** | 🎤 Prep 9 | ≈1.1% | 12:00 |
+| W9 | Wed Nov 25 | **MATH 151** | 🔬 Lab 8 | ≈1.2% | 15:00–16:50 |
+| W9 | Thu Nov 26 | **PHYS 141** | 🔬 Lab 9 | ≈1.9% | 14:00–17:00 |
+| W9 | Fri Nov 27 | **MATH 141** | 🔬 Lab 9 | ≈0.8% | 15:00–16:50 |
+| W9 | Fri Nov 27 | **CS 101** | 📝 PS 8 | ≈2.7% | 17:00 |
+| W9 | Fri Nov 27 | **CS 101** | 📋 Project 1 | ≈5% | 17:00 |
+| W9 | Fri Nov 27 | **MATH 151** | 📝 PS 8 | ≈3.1% | 17:00 |
+| W9 | Fri Nov 27 | **PHYS 141** | 📝 PS 8 | ≈2.3% | 17:00 |
+| W10 | Mon Nov 30 | **MATH 141** | 📊 Quiz 10 | ≈0.8% | 11:00–11:15 |
+| W10 | Mon Nov 30 | **MATH 151** | 📊 Quiz 10 | ≈1.2% | 13:00–13:15 |
+| W10 | Mon Nov 30 | **PHYS 141** | 📊 Quiz 9 | ≈0.8% | 14:00 |
+| W10 | Mon Nov 30 | **PROG 101** | 🔬 Lab 9 | ≈1.7% | 15:00–16:50 |
+| W10 | Mon Nov 30 | **CS 101** | 📘 Midterm 2 | 15% | 18:00–19:15 · VNC 100 · Weeks 6–9 |
+| W10 | Tue Dec 01 | **PROG 101** | 📝 PS 9 | ≈2.7% | 10:00 |
+| W10 | Tue Dec 01 | **PROG 101** | 📊 Quiz 9 | — | 10:00–10:10 |
+| W10 | Tue Dec 01 | **CS 101** | 🔬 Lab 9 | ≈0.8% | 15:00–16:50 |
+| W10 | Tue Dec 01 | **PROG 101** | 📘 Midterm 2 | 12.5% | 18:00–19:30 · VNC 100 · Weeks 6–9 |
+| W10 | Wed Dec 02 | **CS 101** | 📊 Quiz 10 | — | 09:00–09:10 |
+| W10 | Wed Dec 02 | **MATH 141** | 📝 PS 9 | ≈2.5% | 11:00 |
+| W10 | Wed Dec 02 | **CS 190** | 🎤 Prep 10 | ≈1.1% | 12:00 |
+| W10 | Wed Dec 02 | **MATH 151** | 🔬 Lab 9 | ≈1.2% | 15:00–16:50 |
+| W10 | Wed Dec 02 | **MATH 141** | 📘 Midterm 2 | 15% | 18:00–19:15 · VNC 200 · Weeks 6–9 |
+| W10 | Thu Dec 03 | **PHYS 141** | 🔬 Lab 10 | ≈1.9% | 14:00–17:00 |
+| W10 | Fri Dec 04 | **MATH 141** | 🔬 Lab 10 | ≈0.8% | 15:00–16:50 |
+| W10 | Fri Dec 04 | **CS 101** | 📝 PS 9 | ≈2.7% | 17:00 |
+| W10 | Fri Dec 04 | **MATH 151** | 📝 PS 9 | ≈3.1% | 17:00 |
+| W10 | Fri Dec 04 | **PHYS 141** | 📝 PS 9 | ≈2.3% | 17:00 |
+| W11 | Mon Dec 07 | **MATH 141** | 📊 Quiz 11 | ≈0.8% | 11:00–11:15 |
+| W11 | Mon Dec 07 | **MATH 151** | 📊 Quiz 11 | ≈1.2% | 13:00–13:15 |
+| W11 | Mon Dec 07 | **PHYS 141** | 📊 Quiz 10 | ≈0.8% | 14:00 |
+| W11 | Mon Dec 07 | **PROG 101** | 🔬 Lab 10 | ≈1.7% | 15:00–16:50 |
+| W11 | Tue Dec 08 | **PROG 101** | 📊 Quiz 10 | — | 10:00–10:10 |
+| W11 | Tue Dec 08 | **CS 101** | 🔬 Lab 10 | ≈0.8% | 15:00–16:50 |
+| W11 | Wed Dec 09 | **CS 101** | 📊 Quiz 11 | — | 09:00–09:10 |
+| W11 | Wed Dec 09 | **MATH 141** | 📝 PS 10 | ≈2.5% | 11:00 |
+| W11 | Wed Dec 09 | **CS 190** | 🎤 Position Paper 3 | 20% | 12:00 |
+| W11 | Wed Dec 09 | **CS 190** | 🎤 Presentation | 10% | 13:00–13:50 · Session A; Sessions B and C not yet timetabled · peer feedback forms due at each session |
+| W11 | Wed Dec 09 | **MATH 151** | 🔬 Lab 10 | ≈1.2% | 15:00–16:50 |
+| W11 | Thu Dec 10 | **PHYS 141** | 🔬 Lab 11 | ≈1.9% | 14:00–17:00 |
+| W11 | Fri Dec 11 | **MATH 141** | 🔬 Lab 11 | ≈0.8% | 15:00–16:50 |
+| W11 | Fri Dec 11 | **CS 101** | 📝 PS 10 | ≈2.7% | 17:00 |
+| W11 | Fri Dec 11 | **MATH 151** | 📝 PS 10 | ≈3.1% | 17:00 |
+| W11 | Fri Dec 11 | **PHYS 141** | 📝 PS 10 | ≈2.3% | 17:00 |
+| W11 | Fri Dec 11 | **PROG 101** | 📝 PS 10 | ≈2.7% | 17:00 |
+| W12 | Mon Dec 14 | **MATH 141** | 📊 Quiz 12 | ≈0.8% | 11:00–11:15 |
+| W12 | Mon Dec 14 | **MATH 151** | 📊 Quiz 12 | ≈1.2% | 13:00–13:15 |
+| W12 | Mon Dec 14 | **PHYS 141** | 📊 Quiz 11 | ≈0.8% | 14:00 |
+| W12 | Mon Dec 14 | **PROG 101** | 🔬 Lab 11 | ≈1.7% | 15:00–16:50 |
+| W12 | Tue Dec 15 | **PROG 101** | 📊 Quiz 11 | — | 10:00–10:10 |
+| W12 | Tue Dec 15 | **CS 101** | 🔬 Lab 11 | ≈0.8% | 15:00–16:50 |
+| W12 | Wed Dec 16 | **MATH 141** | 📝 PS 11 | ≈2.5% | 11:00 |
+| W12 | Wed Dec 16 | **CS 190** | 🎤 Question Prep | ≈1% | 12:00 |
+| W12 | Wed Dec 16 | **MATH 151** | 🔬 Lab 11 | ≈1.2% | 15:00–16:50 |
+| W12 | Thu Dec 17 | **PHYS 141** | 🔬 Lab 12 | ≈1.9% | 14:00–17:00 |
+| W12 | Fri Dec 18 | **MATH 141** | 🔬 Lab 12 | ≈0.8% | 15:00–16:50 |
+| W12 | Fri Dec 18 | **CS 101** | 📝 PS 11 | ≈2.7% | 17:00 |
+| W12 | Fri Dec 18 | **CS 101** | 📋 Project 2 | ≈5% | 17:00 |
+| W12 | Fri Dec 18 | **CS 190** | 🎤 Reflection | 4% | 17:00 |
+| W12 | Fri Dec 18 | **MATH 151** | 📝 PS 11 | ≈3.1% | 17:00 |
+| W12 | Fri Dec 18 | **PHYS 141** | 📝 PS 11 | ≈2.3% | 17:00 |
+| W12 | Fri Dec 18 | **PROG 101** | 📝 PS 11 | ≈2.7% | 17:00 |
+| Finals | Mon Dec 21 | **MATH 151** | 📕 Final Exam | 30% | 08:00–10:00 · VNC 200 · Comprehensive · *syllabus says 3 h* |
+| Finals | Mon Dec 21 | **PHYS 141** | 📊 Quiz 12 | ≈0.8% | 14:00 |
+| Finals | Mon Dec 21 | **PROG 101** | 🔬 Lab 12 | ≈1.7% | 15:00–16:50 |
+| Finals | Tue Dec 22 | **CS 101** | 📕 Final Exam | 20% | 09:00–11:30 · VNC 100 · Comprehensive |
+| Finals | Wed Dec 23 | **MATH 141** | 📕 Final Exam | 20% | 09:00–11:30 · VNC 200 · Comprehensive |
+| Finals | Wed Dec 23 | **MATH 151** | 🔬 Lab 12 | ≈1.2% | 15:00–16:50 |
+| Finals | Wed Dec 23 | **MATH 151** | 📝 PS 12 | ≈3.1% | 17:00 |
+| Finals | Wed Dec 23 | **PHYS 141** | 📝 PS 12 | ≈2.3% | 17:00 |
+| Finals | Thu Dec 24 | **PROG 101** | 📕 Final Exam | 20% | 14:00–16:30 · VNC 100 · Comprehensive |
+| Finals | Fri Dec 25 | **PROG 101** | 📝 PS 12 | ≈2.7% | 17:00 |
+| TBA | — | **PHYS 141** | 📘 Midterm | 15% | after Week 6 · 90 min · *no date in the registry yet* |
+| TBA | — | **PHYS 141** | 📕 Final Exam | 20% | finals week · 3 h · *no date in the registry yet* |
 
 
 ---
