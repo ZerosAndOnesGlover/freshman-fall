@@ -1,6 +1,8 @@
 # PROG 102 · Quiz 4
 ## Week 4 · Tuesday, start of lecture · 15 minutes · 20 points
 
+**Date:** Tuesday 16 February 2027 · 10:00–10:15 (start of L13) · Week 4
+
 **Covers Week 3** — Lectures 10–12: iterators, containers, algorithms.
 
 **Closed book. No devices.** Answer on this sheet.

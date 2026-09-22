@@ -1,8 +1,19 @@
 # PROG 102 · Problem Set 1
 ## A `Vector3D` Class, and a Class That Owns Memory
 
-**Week 1 · Released Friday Week 1 · Due Friday Week 2, 17:00 · 100 points**
-**Covers:** Lectures 04–06
+**Released:** Friday 29 January 2027, 10:00 · Week 1 (after Thursday's L06)
+**Due:** Friday 5 February 2027, 17:00 · Week 2 — late penalty from 17:01
+**Points:** 100 · counts toward the Problem Sets component (30%, lowest one dropped)
+**Expected time:** about 4–5 hours
+
+## What this problem set uses
+
+Weeks 0–1: classes and `const` from Week 0; operator overloading, member versus free, `operator<<`,
+`operator[]` pairs and strict weak ordering (L04), throwing an exception (L04 §4.2), the Rule of Three
+and self-assignment (L05), copy-swap, the forced-failure harness and copy counting (L06).
+
+**Not needed and not expected:** templates (Week 2), `std::vector`/`std::string` (Week 3), move
+semantics (Week 5), exception guarantees by name beyond what L06 §2.3 says (Week 9).
 
 ---
 
@@ -12,8 +23,7 @@
 g++ -std=c++17 -Wall -Wextra -pedantic -g -fsanitize=address,undefined prog.cpp -o prog
 ```
 
-**No warnings.** Part D additionally requires `-O2` builds for the copy counts, and Part D3 requires
-several other flag combinations, all stated there.
+**No warnings.** Part D additionally requires an `-O2` build for the copy counts.
 
 **Deliverables:** `vector3d.hpp`, `vector3d_test.cpp`, `buffer.hpp`, `buffer_test.cpp`, `counting.cpp`,
 and `ANSWERS.md`. Name collaborators and state any generative-tool use at the top of `ANSWERS.md`.
@@ -23,7 +33,7 @@ gives them to you; this week you are building the thing they replace.
 
 ---
 
-## Part A — `Vector3D` (34 pts)
+## Part A — `Vector3D` (36 pts)
 
 A three-component vector of `double`. Store the components however you like; `double e[3]` is
 suggested.
@@ -36,7 +46,7 @@ double  operator[](int i) const;   // read
 double& operator[](int i);         // write
 ```
 
-Both must `throw std::out_of_range` for an index outside 0–2.
+Both must `throw std::out_of_range` for an index outside 0–2 (Lecture 04 §4.2).
 
 **A2.** *(8)* The compound assignments, as **member** functions returning `Vector3D&`:
 
@@ -67,7 +77,7 @@ a strict weak ordering** and justify each of the four conditions from Lecture 04
 
 **It must be a free function.** Chaining must work: `std::cout << "v = " << v << "\n";`
 
-**A6.** *(2)* Free functions `dot` and `cross`.
+**A6.** *(4)* Free functions `dot` and `cross`.
 
 **In one sentence, say why these are named functions rather than `operator*`.**
 
@@ -89,9 +99,9 @@ cross   = (-3, 6, -3)
 
 ---
 
-## Part B — A Class That Owns Memory (30 pts)
+## Part B — A Class That Owns Memory (32 pts)
 
-`Vector3D` needs none of the Rule of Three. **Say why in one line in `ANSWERS.md`** *(2 of the 30)*.
+`Vector3D` needs none of the Rule of Three. **Say why in one line in `ANSWERS.md`** *(2 of the 32)*.
 
 Now build one that does: `Buffer`, holding a heap-allocated `double[]`.
 
@@ -118,14 +128,14 @@ of your trace?** Identify which line would have to change for it to become one.
 
 ---
 
-## Part C — Copy-Swap (20 pts)
+## Part C — Copy-Swap (22 pts)
 
-**C1.** *(6)* Add a `swap` member marked `noexcept`, and replace your `operator=` with the copy-swap
+**C1.** *(7)* Add a `swap` member marked `noexcept`, and replace your `operator=` with the copy-swap
 form taking its parameter **by value**.
 
 Confirm `b = b` works with **no `this == &other` comparison anywhere in the class.**
 
-**C2.** *(8)* Replace `operator new[]` so it throws `std::bad_alloc` on demand. Then, for **both** your
+**C2.** *(8)* Add Lecture 06 §1's forced-failure harness (copy it as given). Then, for **both** your
 four-step operator and your copy-swap operator:
 
 - construct `a` holding known contents and `b` holding different contents;
@@ -135,21 +145,18 @@ four-step operator and your copy-swap operator:
 
 Paste both transcripts. One of them will report a sanitizer error.
 
-**C3.** *(6)* Answer both:
+**C3.** *(7)* Answer both:
 
-- **(a)** *(3)* Name the exception guarantee copy-swap provides, and say **which property of the
+- **(a)** *(4)* Name the exception guarantee copy-swap provides, and say **which property of the
   ordering** produces it.
 - **(b)** *(3)* `swap` is `noexcept`. If it could throw, would the guarantee in (a) still hold?
   Explain in two sentences.
 
 ---
 
-## Part D — Counting Copies (16 pts)
+## Part D — Counting Copies (10 pts)
 
-**D1.** *(6)* Build the counting harness from Lecture 06 §5 and reproduce the six-row table on your
-machine at `-std=c++17 -O2`.
-
-**D2.** *(4)* Before running anything, **write down your prediction** for the copy count of:
+**D1.** *(10)* Before running anything, **write down your prediction** for the copy count of:
 
 ```cpp
 Vector3D f() { Vector3D local(1,2,3); return local; }
@@ -157,20 +164,8 @@ Vector3D d = f();
 Vector3D e = Vector3D(1,2,3);
 ```
 
-Then measure. **Report your prediction and the measurement, even where they disagree** — the disagreement
+Then measure it with Lecture 06 §5's counting harness at `-std=c++17 -O2`. **Report your prediction and the measurement, even where they disagree** — the disagreement
 is worth more marks than a correct guess.
-
-**D3.** *(6)* Measure `Vector3D c = a + b;` under all five configurations:
-
-```
--std=c++11 -O0
--std=c++11 -O0 -fno-elide-constructors
--std=c++17 -O0
--std=c++17 -O0 -fno-elide-constructors
--std=c++17 -O2
-```
-
-**Explain in three sentences why the second and fourth rows differ**, given that the flag is the same.
 
 ---
 
@@ -178,13 +173,13 @@ is worth more marks than a correct guess.
 
 | Part | Points | Focus |
 | --- | --- | --- |
-| A | 34 | Operator overloading: member vs free, symmetry, `const` pairs |
-| B | 30 | The Rule of Three, and the self-assignment failure traced |
-| C | 20 | Copy-swap, and exception safety demonstrated rather than asserted |
-| D | 16 | Copy counting and guaranteed elision |
+| A | 36 | Operator overloading: member vs free, symmetry, `const` pairs |
+| B | 32 | The Rule of Three, and the self-assignment failure traced |
+| C | 22 | Copy-swap, and exception safety demonstrated rather than asserted |
+| D | 10 | Predicting and counting copies |
 | **Total** | **100** | |
 
-**Where the marks actually are:** B4, C2 and D3 are 26 points for *running experiments and reporting
+**Where the marks actually are:** B4, C2 and D1 are 26 points for *running experiments and reporting
 what happened*. None require you to invent anything. They are the cheapest marks here and they are the
 ones the midterm will draw on.
 

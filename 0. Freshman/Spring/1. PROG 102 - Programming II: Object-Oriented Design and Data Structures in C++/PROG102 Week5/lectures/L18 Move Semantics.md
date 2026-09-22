@@ -315,7 +315,7 @@ four numbers** and explain the one that disagrees with the others.
 It is also the week **Project 1 is assigned**, and the week the course stops giving you the class to
 write and starts giving you the interface to satisfy.
 
-**Midterm 1 was this week.** Whatever it told you about Weeks 0–4, Week 6 assumes all of it.
+**Midterm 1 is next Tuesday, 2 March, 18:00.** Whatever it tells you about Weeks 0–4, Week 6 assumes all of it.
 
 ---
 

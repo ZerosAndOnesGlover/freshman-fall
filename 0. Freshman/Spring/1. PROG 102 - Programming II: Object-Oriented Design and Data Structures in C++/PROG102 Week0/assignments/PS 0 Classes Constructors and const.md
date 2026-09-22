@@ -1,8 +1,19 @@
 # PROG 102 · Problem Set 0
 ## Classes, Constructors, and `const`
 
-**Week 0 · Released Friday Week 0 · Due Friday Week 1, 17:00 · 100 points**
-**Covers:** Lectures 00–03
+**Released:** Friday 22 January 2027, 11:00 · Week 0 (after Lecture 03)
+**Due:** Friday 29 January 2027, 17:00 · Week 1 — late penalty from 17:01
+**Points:** 100 · counts toward the Problem Sets component (30%, lowest one dropped)
+**Expected time:** about 4–5 hours
+
+## What this problem set uses
+
+Week 0 only (Lectures 00–03): references and `const`, `new`/`delete`, classes, constructors,
+destructors, initializer lists and declaration order, `explicit`, `const` member functions, `mutable`,
+`inline`, `extern "C"` and name mangling — plus the PROG 101 tools (`gcc -S`, `nm`, sanitizers).
+
+**Not needed and not expected:** operator overloading (Week 1 — including `operator new[]`), the copy
+constructor and Rule of Three (Week 1, which Part E sets up), templates or the STL.
 
 ---
 
@@ -29,7 +40,7 @@ collaborators and state any generative-tool use** at the top of `ANSWERS.md`.
 The point of this part is that you can always go and look. Every claim in Lecture 01 is checkable with
 tools you already have.
 
-**A1.** *(4)* Compile this file with `g++ -std=c++17 -O1 -S -masm=intel`:
+**A1.** *(5)* Compile this file with `g++ -std=c++17 -O1 -S -masm=intel`:
 
 ```cpp
 struct Counter {
@@ -43,13 +54,13 @@ void add_free(Counter* c, int n) { c->value += n; }
 Paste **both** function bodies from the `.s` file into `ANSWERS.md`. State whether they are identical,
 and name the register that carries `this`.
 
-**A2.** *(4)* Build a table of `sizeof` for four types: a struct with `int x; double y;` and no member
+**A2.** *(5)* Build a table of `sizeof` for four types: a struct with `int x; double y;` and no member
 functions; the same struct with five member functions added; an empty struct; and an empty struct with
 two member functions.
 
 Report the four numbers. **Explain the empty-struct result in one sentence** — why is it not 0?
 
-**A3.** *(4)* Demangle these by hand, showing your working, then check with `c++filt`:
+**A3.** *(5)* Demangle these by hand, showing your working, then check with `c++filt`:
 
 ```
 _ZN6Matrix9transposeEv
@@ -59,13 +70,7 @@ _ZNK6Matrix3getEii
 For the second, **say what the `K` encodes** and why that means it is a genuinely different symbol
 from the version without it.
 
-**A4.** *(4)* Move `add`'s definition *inside* the `Counter` struct body and recompile to assembly.
-The symbol `_ZN7Counter3addEi` disappears. **Explain why in two sentences**, using the words *inline*
-and *unused*.
-
-Then make it reappear without moving the definition back out. *(There is more than one way.)*
-
-**A5.** *(4)* Write a two-line file defining one ordinary C++ function and one `extern "C"` function.
+**A4.** *(5)* Write a two-line file defining one ordinary C++ function and one `extern "C"` function.
 Show the `nm` output. **State the one thing you give up inside `extern "C"`, and why that follows from
 what mangling is for.**
 
@@ -130,14 +135,27 @@ struct Wrong {
 };
 ```
 
-Overload `operator new[]` so it prints the byte count it is asked for. Run `Wrong w(4);` and report
-**how many integers were actually allocated on your machine.**
+To see what `new[]` is asked for, route the allocation through a small helper and change the list to
+`data(alloc_ints(size))`:
+
+```cpp
+int* alloc_ints(int n) {
+    std::fprintf(stderr, "new int[%d]\n", n);   // what the constructor actually asked for
+    return new int[n];
+}
+```
+
+Build at `-O0` and at `-O2`, run `Wrong w(4);`, and report **how many integers were requested on
+your machine** each time. (Any number other than 4 reproduces the bug; it is whatever bytes were
+already in memory, and can even be 0.)
 
 Then answer both:
 
 - **(a)** *(2)* Which of `-Wreorder` and `-Wuninitialized` fires? Quote both messages.
-- **(b)** *(3)* Swap the two member declarations, changing nothing else. **One warning still fires and
-  the bug goes away.** Explain what that tells you about what `-Wreorder` actually means.
+- **(b)** *(3)* Swap the two member declarations, changing nothing else, and report what happens to
+  both warnings and to the allocation. Then build Lecture 02 §4.2's `NotABug` — declarations swapped
+  **and** the list written `data(...)` first. **`-Wreorder` fires and there is no bug.** Explain what
+  that tells you about what `-Wreorder` actually means.
 
 **C3.** *(6)* Write a class with a `const int` member and an `int&` member, both initialized from
 constructor parameters. Demonstrate that writing through the reference member modifies the caller's

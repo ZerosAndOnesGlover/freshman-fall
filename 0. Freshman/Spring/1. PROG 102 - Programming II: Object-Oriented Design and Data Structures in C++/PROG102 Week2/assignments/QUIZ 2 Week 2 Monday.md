@@ -1,6 +1,8 @@
 # PROG 102 · Quiz 2
 ## Week 2 · Tuesday, start of lecture · 15 minutes · 20 points
 
+**Date:** Tuesday 2 February 2027 · 10:00–10:15 (start of L07) · Week 2
+
 **Covers Week 1** — Lectures 04–06: operator overloading, copy semantics, the Rule of Three,
 copy-swap, and copy counting.
 

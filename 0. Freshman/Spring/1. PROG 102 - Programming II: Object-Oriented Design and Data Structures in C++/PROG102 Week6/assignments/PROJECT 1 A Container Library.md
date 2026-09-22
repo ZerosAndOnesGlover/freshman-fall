@@ -1,7 +1,19 @@
 # PROG 102 · Project 1
 ## A Container Library
 
-**Assigned Week 6 · Due Friday Week 9, 17:00 · 100 points · 5% of the course grade**
+**Assigned:** Tuesday 2 March 2027, 10:00 (at L19) · Week 6
+**Due:** Friday 26 March 2027, 17:00 · Week 9 — late penalty from 17:01
+**Points:** 100 · 5% of the course grade
+
+## What this project uses
+
+Weeks 0–6 of PROG 102 — templates and the STL (Weeks 2–3), inheritance and exceptions as far as
+Lecture 04 §4.2 and Lecture 06 §2.3 take them, `unique_ptr` and the Rule of Five (Week 5), the
+sentinel list, iterators and the BST (Week 6) — plus CS 102 Weeks 1–2 for BST deletion, successors
+and iterative traversal.
+
+**Not needed and not expected:** `splice`, `unique`, `resize`/`assign`, a list merge sort, or the
+named exception guarantees of Week 9 beyond the "strong guarantee" Lecture 06 already names.
 
 ---
 
@@ -31,50 +43,36 @@ survive inputs that break naive implementations.
 
 ---
 
-## Part 1 — The Sequence Container (28 pts)
+## Part 1 — The Sequence Container (22 pts)
 
-**1.1** *(10)* `List<T>`: a templated doubly linked list with a sentinel node, the full Rule of Five,
+**1.1** *(12)* `List<T>`: a templated doubly linked list with a sentinel node, the full Rule of Five,
 and `insert`/`erase` with **no special cases**.
 
-Beyond PS 6, add:
+Beyond PS 6, add `remove_if(pred)` — `pred` is any callable, as in Lecture 12's algorithms — and
+`reverse()`. **`reverse` must relink nodes, not copy values**, and neither may allocate.
 
-```
-resize(n)          assign(count, value)        splice(pos, other)
-remove_if(pred)    unique()                    reverse()
-```
-
-`splice` must move nodes between lists **without allocating** — that is the operation a linked list
-exists for.
-
-**1.2** *(8)* `iterator` and `const_iterator` via `template <bool Const>`, satisfying
+**1.2** *(10)* `iterator` and `const_iterator` via `template <bool Const>`, satisfying
 `iterator_traits`, with the converting constructor.
 
 **Demonstrate at least eight distinct STL algorithms** working on your list.
 
-**1.3** *(10)* A `sort()` **member function**, since `std::sort` cannot work on your iterators.
-
-Implement a **merge sort that relinks nodes** rather than moving values. Verify it is stable, and show
-that it does **not** allocate per element.
-
-*(If you move values instead of relinking, you may earn at most 5 of the 10 — say so in your write-up
-rather than hoping it is not noticed.)*
-
 ---
 
-## Part 2 — The Associative Container (26 pts)
+## Part 2 — The Associative Container (28 pts)
 
-**2.1** *(10)* `BST<T, Compare = std::less<T>>` with `unique_ptr` children, `insert`, `contains`,
+**2.1** *(12)* `BST<T, Compare = std::less<T>>` with `unique_ptr` children, `insert`, `contains`,
 `erase`, `inorder`, `height`, `size`.
 
-**`erase` is the hard one.** Handle all three cases (no child, one child, two children) and say in your
-write-up which successor strategy you chose.
+**`erase` is the hard one.** Handle all three cases (no child, one child, two children), exactly as CS 102
+Lecture 05 §5 does, and say in your write-up which successor strategy you chose.
 
 **Height is in edges: empty = −1.**
 
 **2.2** *(8)* A **bidirectional in-order iterator** for the BST, so that `begin()`/`end()` and
 range-`for` work and STL algorithms apply.
 
-This is genuinely harder than the list's: `operator++` must find the in-order successor. **State in your
+This is genuinely harder than the list's: `operator++` must find the in-order successor (CS 102
+Lecture 05 §4 with parent pointers; Lecture 04 exercise 4 with an explicit stack). **State in your
 write-up whether you used parent pointers or an explicit stack, and what that cost you.**
 
 **2.3** *(8)* Make the BST **copyable** — a deep clone — while keeping it movable.
@@ -107,8 +105,7 @@ provide** and to have tested it. *(Week 9 is where this becomes the whole subjec
 
 ## Part 4 — Measurement (16 pts)
 
-**4.1** *(8)* Benchmark `List<T>` against `std::list<T>` for: build, traverse, copy, and
-`splice`/`sort` where comparable.
+**4.1** *(8)* Benchmark `List<T>` against `std::list<T>` for: build, traverse, copy, and `reverse`.
 
 **At least three runs each**, at a size where the times are not noise. Report absolute times and
 interpret the differences honestly — **including any case where yours is faster, which usually means
@@ -122,11 +119,11 @@ Your sorted-input numbers will be very bad. **Quantify how bad**, and state in t
 
 ---
 
-## Part 5 — The Write-Up (12 pts)
+## Part 5 — The Write-Up (16 pts)
 
 `DESIGN.md`, and it is marked as writing.
 
-**5.1** *(6)* **Design decisions.** For each of these, state what you chose and why:
+**5.1** *(8)* **Design decisions.** For each of these, state what you chose and why:
 
 - sentinel versus null-terminated;
 - raw `prev`/`next` pointers versus `unique_ptr` links;
@@ -136,7 +133,7 @@ Your sorted-input numbers will be very bad. **Quantify how bad**, and state in t
 The last one is the most important. **Name at least two operations you could have implemented and chose
 not to, and justify each.**
 
-**5.2** *(6)* **What the STL buys.** Having implemented both, write 300–500 words on what
+**5.2** *(8)* **What the STL buys.** Having implemented both, write 300–500 words on what
 `std::list` and `std::map` provide that yours do not, and what — if anything — yours does better.
 
 **An honest answer that says "nothing" for the second half is worth full marks.** An answer that
@@ -160,11 +157,11 @@ in [[PROG102 Week6/README|README]].
 
 | Part | Points | Focus |
 | --- | --- | --- |
-| 1 | 28 | The sequence container, its iterators, and a real `sort` |
-| 2 | 26 | The associative container, in-order iteration, deep copy |
+| 1 | 22 | The sequence container and its iterators |
+| 2 | 28 | The associative container, in-order iteration, deep copy |
 | 3 | 18 | Scale, invalidation, and exception behaviour |
 | 4 | 16 | Measurement against the STL, interpreted honestly |
-| 5 | 12 | The write-up |
+| 5 | 16 | The write-up |
 | **Total** | **100** | |
 
 ---

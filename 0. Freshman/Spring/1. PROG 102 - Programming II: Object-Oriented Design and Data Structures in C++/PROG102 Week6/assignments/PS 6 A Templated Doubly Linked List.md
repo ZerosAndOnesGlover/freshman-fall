@@ -1,8 +1,19 @@
 # PROG 102 · Problem Set 6
 ## A Templated Doubly Linked List
 
-**Week 6 · Released Friday Week 6 · Due Friday Week 7, 17:00 · 100 points**
-**Covers:** Lectures 19–21
+**Released:** Friday 5 March 2027, 10:00 · Week 6 (after Thursday's L21)
+**Due:** Friday 12 March 2027, 17:00 · Week 7 — late penalty from 17:01
+**Points:** 100 · counts toward the Problem Sets component (30%, lowest one dropped)
+**Expected time:** about 4–5 hours
+
+## What this problem set uses
+
+Weeks 0–6: templates, the STL algorithms and `iterator_traits` categories (Weeks 2–3), `unique_ptr`,
+move semantics and the Rule of Five (Week 5), the sentinel list (L19), writing iterators (L20) and the
+`unique_ptr` BST and its recursion-depth bug (L21).
+
+**Not needed and not expected:** `splice`, balancing, `std::shuffle`; design patterns (Week 7).
+Measuring BST height against insertion order is done in Lecture 21 §3.2.
 
 > **Project 1 was also assigned this week and is due Week 9.** This problem set is the foundation for
 > it — a good `List<T>` here is most of Project 1's Part A. **Do not throw this code away.**
@@ -23,7 +34,7 @@ You may — and should — use them in your *tests*, as a reference to compare a
 
 ---
 
-## Part A — The List (34 pts)
+## Part A — The List (36 pts)
 
 **A1.** *(10)* `List<T>` with a **sentinel node**, private nested `Node`, and:
 
@@ -37,7 +48,7 @@ push_back  push_front  pop_back  pop_front  clear
 `insert` and `erase` must have **no special cases** for head, tail or empty. If yours do, you have not
 used the sentinel properly.
 
-**A2.** *(8)* The full **Rule of Five**: destructor, copy constructor, move constructor,
+**A2.** *(10)* The full **Rule of Five**: destructor, copy constructor, move constructor,
 copy-and-swap assignment, and a `noexcept` `swap`.
 
 **Your class must contain no `this == &other` comparison.**
@@ -81,33 +92,27 @@ accumulate   max_element   count_if   find   reverse   copy (via back_inserter)
 
 ---
 
-## Part C — The BST (24 pts)
+## Part C — The BST (18 pts)
 
-**C1.** *(8)* `BST<T, Compare = std::less<T>>` with `unique_ptr` children, and `insert`, `contains`,
+**C1.** *(10)* `BST<T, Compare = std::less<T>>` with `unique_ptr` children, and `insert`, `contains`,
 `inorder`, `height`, `size`.
 
 **Height is in edges: empty = −1, single node = 0.**
 
 Verify on `{5,3,8,1,4,7,9,3}` that `size()` is **7**, `height()` is **2**, and the traversal is sorted.
 
-**C2.** *(6)* Show it working for `T = std::string` and for
+**C2.** *(8)* Show it working for `T = std::string` and for
 `BST<int, std::greater<int>>`.
 
 **How many of the five special members did your BST need? Why is that different from your List?**
-
-**C3.** *(10)* Measure height against insertion order for n = 10, 100, 1,000 and 10,000, both
-**sorted** and **shuffled** (at least 100 trials for the shuffled case).
-
-Tabulate both against $\log_2 n$, and report the ratio of the random height to $\log_2 n$ at each size.
-**Is that ratio constant? Which way does it drift?**
 
 Then state in one sentence what `std::map` provides that your BST does not.
 
 ---
 
-## Part D — The Bug at Scale (12 pts)
+## Part D — The Bug at Scale (16 pts)
 
-**D1.** *(6)* Build a chain of `unique_ptr`-linked nodes:
+**D1.** *(8)* Build a chain of `unique_ptr`-linked nodes:
 
 ```cpp
 struct Node { int v; std::unique_ptr<Node> next; };
@@ -116,13 +121,13 @@ struct Node { int v; std::unique_ptr<Node> next; };
 Destroy chains of 1,000, 100,000, 500,000 and 1,000,000 nodes. **Report where it breaks and what your
 stack limit is** (`ulimit -s`).
 
-**D2.** *(6)* Fix it with an iterative destructor and confirm 5,000,000 works.
+**D2.** *(8)* Fix it with an iterative destructor and confirm 5,000,000 works.
 
 Then answer both:
 
-- **(a)** *(3)* **Does AddressSanitizer help you diagnose the original?** Report what it says and why
+- **(a)** *(4)* **Does AddressSanitizer help you diagnose the original?** Report what it says and why
   that is unhelpful.
-- **(b)** *(3)* State the general rule this is an instance of, in one sentence. It should be about
+- **(b)** *(4)* State the general rule this is an instance of, in one sentence. It should be about
   recursion and input data, not about `unique_ptr`.
 
 ---
@@ -131,10 +136,10 @@ Then answer both:
 
 | Part | Points | Focus |
 | --- | --- | --- |
-| A | 34 | A correct sentinel list with the Rule of Five |
+| A | 36 | A correct sentinel list with the Rule of Five |
 | B | 30 | An iterator that satisfies the protocol — **and is refused by `std::sort`** |
-| C | 24 | A templated BST, and what balancing would have bought |
-| D | 12 | The recursive destructor, and the rule behind it |
+| C | 18 | A templated BST with `unique_ptr` children |
+| D | 16 | The recursive destructor, and the rule behind it |
 | **Total** | **100** | |
 
 **Where the marks actually are:** B is the largest part and B4 is the one students find strangest — you

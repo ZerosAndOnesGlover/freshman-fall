@@ -1,7 +1,7 @@
 # PROG 102 · Midterm 1 · Revision Guide
 ## Weeks 0–4
 
-**Sat in Week 5 · 75 minutes · 12.5% of the course grade**
+**Sat Tuesday 2 March 2027, 18:00–19:30 (Week 6, VNC 100) · a 75-minute paper · 12.5% of the course grade**
 **Closed book, closed device. One handwritten sheet of A4, one side only.**
 
 ---
@@ -189,7 +189,7 @@ which is the half people forget.
 - **Show working in Section D.** A number with no reasoning earns little; reasoning with an arithmetic
   slip earns most of the marks.
 - Anything you need in order to sit the exam — extra time, a separate room — is arranged by emailing
-  the instructor, **without giving a reason.** Do it this week, not in Week 5.
+  the instructor, **without giving a reason.** Do it this week, not the week of the paper.
 
 ---
 

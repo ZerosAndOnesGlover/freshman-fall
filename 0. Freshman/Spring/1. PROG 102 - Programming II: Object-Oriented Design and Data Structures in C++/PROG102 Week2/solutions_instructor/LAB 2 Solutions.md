@@ -28,7 +28,10 @@ the absolute bytes.**
 
 ---
 
-## Part A — Is Runtime Really Free? (10)
+> **Revised 2026-09-22.** Part D (error-message lengths) was removed: it repeated PS 2 Part E and needed `std::vector` and
+> `std::sort`, which arrive the day after this lab (Week 3). Points re-weighted to keep 40.
+
+## Part A — Is Runtime Really Free? (12)
 
 ### A1 (4)
 
@@ -38,7 +41,7 @@ out-of-class.
 *Marking: 4. Deduct 2 if members are defined in the class body — A2 will then produce nothing and they
 will have spent twenty minutes on it.*
 
-### A2 (3)
+### A2 (4)
 
 | Pair | Result |
 | --- | --- |
@@ -50,7 +53,7 @@ will have spent twenty minutes on it.*
 of label names has done the work correctly and drawn the wrong conclusion: award 2 of the 3 and
 correct it.*
 
-### A3 (3)
+### A3 (4)
 
 Reference, 1024 ints × 20,000 reps:
 
@@ -68,9 +71,9 @@ Do not accept a difference claim that is smaller than their own spread.*
 
 ---
 
-## Part B — Code Size and Compile Time (14)
+## Part B — Code Size and Compile Time (16)
 
-### B1 (6)
+### B1 (7)
 
 | types | compile (s) | text (bytes) |
 | --- | --- | --- |
@@ -91,7 +94,7 @@ $(43{,}993 - 2{,}776) / 99 \approx$ **416 bytes per instantiation.** Linear.
 differences are roughly constant, or that a fitted slope predicts intermediate points. "It looks
 linear" is 1 of the 2.*
 
-### B3 (4)
+### B3 (5)
 
 $(1.55 - 0.16)/99 \approx$ **14 ms per instantiation.** Compile time grows slightly *faster* than
 linearly at the top end on the reference machine.
@@ -101,9 +104,9 @@ superlinearity is mild and machine-dependent.*
 
 ---
 
-## Part C — Where Does the Bloat Come From? (10)
+## Part C — Where Does the Bloat Come From? (12)
 
-### C1 (5)
+### C1 (6)
 
 The generator emits 100 hand-written classes with identical members.
 
@@ -111,7 +114,7 @@ The generator emits 100 hand-written classes with identical members.
 version missing the copy constructor and assignment will be smaller and will produce a false
 disagreement.*
 
-### C2 (5)
+### C2 (6)
 
 | | compile | text |
 | --- | --- | --- |
@@ -127,7 +130,7 @@ disagreement.*
 > exactly the same 43,993 bytes and takes longer to compile. The cost comes from the number of distinct
 > types, so the fix is to reduce instantiations, not to give up genericity.
 
-*Marking: 2 (a), 2 (b), 1 (c). **(c) must be fair to the colleague** — a reply that just says "you're
+*Marking: 2 (a), 2 (b), 2 (c). **(c) must be fair to the colleague** — a reply that just says "you're
 wrong" scores 0 even if technically correct. The sheet asks for fairness deliberately; this is a
 communication mark and should be marked as one.*
 
@@ -139,30 +142,6 @@ communication mark and should be marked as one.*
 
 ---
 
-## Part D — The Error Messages (6)
-
-### D1 (3)
-
-| Error | lines |
-| --- | --- |
-| plain type error | 6 |
-| direct template | 5 |
-| through `std::sort` | 78 |
-
-*Marking: 3. Accept ±20% on 78. **The ordering must hold.***
-
-### D2 (3)
-
-- `predefined_ops.h:45:23: error: no match for 'operator<' (operand types are 'NoLess' and 'NoLess')`,
-  roughly 30 lines down.
-- `required from here` — the instantiation backtrace.
-- **What makes error 3 long is depth, not templates**, since error 2 is a template error and is
-  *shorter* than the non-template one.
-
-*Marking: 1 + 1 + 1. **The last point is the assessed one.***
-
----
-
 ## Checkoff Checklist
 
 1. `-O2` used for all timings; **no sanitizer build timed**.
@@ -170,7 +149,6 @@ communication mark and should be marked as one.*
 3. A2 states how label differences were handled.
 4. Part C's hand-written classes have the **same members** as the template.
 5. C2(c) is fair to the colleague.
-6. D2 attributes the long message to depth.
 
 ---
 
@@ -178,10 +156,9 @@ communication mark and should be marked as one.*
 
 | Part | Points |
 | --- | --- |
-| A | 10 |
-| B | 14 |
-| C | 10 |
-| D | 6 |
+| A | 12 |
+| B | 16 |
+| C | 12 |
 | **Total** | **40** |
 
 ---

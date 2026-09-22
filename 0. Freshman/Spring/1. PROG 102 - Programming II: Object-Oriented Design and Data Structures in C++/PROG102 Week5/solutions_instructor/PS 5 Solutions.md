@@ -16,6 +16,10 @@ which are the two places a wrong model shows up as a confident wrong answer.
 
 ---
 
+> **Revised 2026-09-22.** Removed B2 (assembly comparison), B4 (timing shared_ptr copies) and D3 (timing moves) — all three
+> repeat Lecture 16–18 measurements. B3→B2, D4→D3; items re-weighted to keep 100. Midterm 1 is Tue
+> 2 Mar (Week 6), not "this week".
+
 ## Part A — Rewrite Week 4's Hierarchy (26)
 
 ### A1 (8)
@@ -72,9 +76,9 @@ that it takes no ownership anyway.*
 
 ---
 
-## Part B — What It Costs (26)
+## Part B — What It Costs (16)
 
-### B1 (6)
+### B1 (8)
 
 ```
 int*            8
@@ -90,15 +94,6 @@ Both are 16 because they carry **two** pointers: one to the object, one to the c
 
 ### B2 (8)
 
-`raw(Widget*)` and `uniq(Widget&)` — **byte-identical**.
-`bad(const std::unique_ptr<Widget>&)` — one extra `mov rdi, QWORD PTR [rdi]`: an extra load, because
-the parameter is a pointer *to* the smart pointer.
-
-*Marking: 4 the identical pair, 4 the extra instruction identified. **A student who reports "identical"
-for all three has not compared the third.***
-
-### B3 (6)
-
 | | allocations |
 | --- | --- |
 | `shared_ptr<W>(new W)` | **2** |
@@ -109,27 +104,9 @@ for all three has not compared the third.***
 
 *Marking: 3 the counts, 3 the explanation.*
 
-### B4 (6)
+## Part C — Exception Safety and the Benchmark Trap (24)
 
-| | per operation |
-| --- | --- |
-| raw pointer | 0.90–1.13 ns |
-| `shared_ptr` by reference | 3.19–3.62 ns |
-| `shared_ptr` copied | 7.18–8.76 ns |
-
-**The refcount is the copy overhead — about 4 ns** (the difference between rows 2 and 3). The gap
-between rows 1 and 2 — roughly 2.4 ns — is **not** the refcount; it is the extra indirection and worse
-locality of a 16-byte handle.
-
-*Marking: 3 the three figures, 3 the separation. **The separation is the assessed idea.** A student who
-attributes the whole 8 ns to the reference count gets 1 of the 3 — the by-reference row is in their own
-table and refutes it.*
-
----
-
-## Part C — Exception Safety and the Benchmark Trap (18)
-
-### C1 (8)
+### C1 (10)
 
 | | `-O0` | `-O2` |
 | --- | --- | --- |
@@ -140,7 +117,7 @@ table and refutes it.*
 has almost certainly written an unconditional throw** — that is C2, and they should be given the marks
 for C2 if they explain it.*
 
-### C2 (6) — the assessed question
+### C2 (8) — the assessed question
 
 With an unconditional throw at `-O2`, the raw version reports **balanced**.
 
@@ -152,7 +129,7 @@ longer allocated anything.
 optimizer fixed the bug" scores 0 and is worth correcting directly — it is precisely the wrong
 conclusion.*
 
-### C3 (4)
+### C3 (6)
 
 Expected substance:
 
@@ -167,9 +144,9 @@ with no qualification gets 1.*
 
 ---
 
-## Part D — Cycles and Moves (30)
+## Part D — Cycles and Moves (34)
 
-### D1 (8)
+### D1 (10)
 
 ```
 use_count a=2 b=2
@@ -184,7 +161,7 @@ of the cycle, so no count ever reaches zero, even when the whole group is unreac
 
 *Marking: 5 both demonstrations, 3 the explanation. Must say **unreachable but still counted**.*
 
-### D2 (6)
+### D2 (10)
 
 ```
 before: expired=1 use_count=0
@@ -200,22 +177,7 @@ can be destroyed between the two calls, and `expired()` returning false is a sta
 *Marking: 4 the lifecycle, 2 the race. Accept a single-threaded framing if they identify the
 check-then-use gap.*
 
-### D3 (8)
-
-1 MB buffers, 2,000 operations:
-
-| | per operation |
-| --- | --- |
-| copy | 941–1036 µs |
-| move | 0.055–0.156 µs |
-
-At 16 bytes the ratio collapses toward 1 — a move is a constant few nanoseconds and a copy of 16 bytes
-is also a few nanoseconds. **The move's advantage is proportional to the data.**
-
-*Marking: 4 the 1 MB figures **in absolute terms**, 4 the small-buffer comparison and explanation. A
-ratio-only answer gets half — the sheet asks for per-operation times explicitly.*
-
-### D4 (8)
+### D3 (14)
 
 **(a) (3)** `a` prints empty, `size()` 0 — **valid but unspecified**. Legal: destroy it, assign to it,
 call `size()`. Undefined: `a[0]`, or any operation assuming contents.
@@ -236,9 +198,9 @@ equal has not counted. The expected counts are 0 and 1.*
 | Part | Points |
 | --- | --- |
 | A | 26 |
-| B | 26 |
-| C | 18 |
-| D | 30 |
+| B | 16 |
+| C | 24 |
+| D | 34 |
 | **Total** | **100** |
 
 ---
@@ -246,10 +208,7 @@ equal has not counted. The expected counts are 0 and 1.*
 ## What to Watch For
 
 1. **"The optimizer fixed the leak"** (C2). The most important correction in the set.
-2. **Attributing the whole `shared_ptr` gap to the refcount** (B4), refuted by their own middle row.
-3. **`return std::move(b);` reported as better** (D4b).
-4. **Ratio-only answers** to D3.
-5. **Not comparing the third signature** in B2.
+2. **`return std::move(b);` reported as better** (D3b).
 
 ---
 

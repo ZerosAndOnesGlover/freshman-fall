@@ -3,7 +3,7 @@
 
 **Credits:** 4 (3 lecture + 1 lab) · **Prerequisites:** PROG 101 (C), CS 101
 **Assessment for this course (overall):** Labs 20%, Problem Sets 30%, Midterms 25%, Final 15%, Projects 10%
-**This week's deliverables:** PS 4, Lab 4, Quiz 4 (Monday, covers Week 3) · **MIDTERM 1 announced**
+**This week's deliverables:** PS 4 (released Fri 19 Feb 10:00, due **Fri 26 Feb 17:00**), Lab 4 (**Mon 22 Feb**, 15:00), Quiz 4 (**Tue 16 Feb**, 10:00, covers Week 3) · MIDTERM 1 announced (sat Tue 2 Mar)
 
 ---
 
@@ -49,10 +49,10 @@ By the end of Week 4, you should be able to:
 | [[L13 Inheritance]] | Base and derived, is-a vs has-a, access specifiers, `override` |
 | [[L14 Virtual Functions and the vtable]] | The mechanism, the cost measured, and speculative devirtualization |
 | [[L15 Abstract Classes Destructors and Casting]] | Pure virtual, the destructor rule, slicing, `dynamic_cast` |
-| [[PS 4 A Shape Hierarchy]] | Due Friday of Week 5 |
+| [[PS 4 A Shape Hierarchy]] | Due Fri 26 Feb 17:00 |
 | [[PROG102 Week4/assignments/QUIZ 4 Week 4 Monday\|QUIZ 4 Week 4 Monday]] | 15 minutes, covers Week 3 |
 | [[LAB 4 Reading the vtable in GDB]] | Find the vptr, walk the vtable, watch it change |
-| [[PROG102 Week4/resources/MIDTERM 1 Revision Guide\|MIDTERM 1 Revision Guide]] | **Weeks 0–4, sat in Week 5.** Start now |
+| [[PROG102 Week4/resources/MIDTERM 1 Revision Guide\|MIDTERM 1 Revision Guide]] | **Weeks 0–4, sat Tue 2 Mar (Week 6).** Start now |
 | [[PROG102 Week4/resources/Reading Guide Week 4\|Reading Guide Week 4]] | *C++ Primer* Ch. 15, and every command to reproduce this week |
 | [[PROG102 Week4/solutions_instructor/PS 4 Solutions\|PS 4 Solutions]] | Instructor only |
 | [[PROG102 Week4/solutions_instructor/LAB 4 Solutions\|LAB 4 Solutions]] | Instructor only |
@@ -88,7 +88,7 @@ Then the assembly turned out to show something no textbook mentions, which Lectu
 
 ### Midterm 1
 
-**Announced this week, sat in Week 5.** 75 minutes, covers **Weeks 0–4**, one handwritten sheet
+**Announced this week, sat Tuesday 2 March 2027, 18:00–19:30 (Week 6).** A 75-minute paper, covers **Weeks 0–4**, one handwritten sheet
 (one side). The revision guide is in `resources/` and is worth reading *this* week, not next — it
 lists what is examinable and what is not, and points at the specific measurements you are expected to
 be able to explain.

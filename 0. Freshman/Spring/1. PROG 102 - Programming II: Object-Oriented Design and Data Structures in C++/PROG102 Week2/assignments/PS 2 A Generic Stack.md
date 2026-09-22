@@ -1,8 +1,20 @@
 # PROG 102 · Problem Set 2
 ## A Generic `Stack<T>`
 
-**Week 2 · Released Friday Week 2 · Due Friday Week 3, 17:00 · 100 points**
-**Covers:** Lectures 07–09
+**Released:** Friday 5 February 2027, 10:00 · Week 2 (after Thursday's L09)
+**Due:** Friday 12 February 2027, 17:00 · Week 3 — late penalty from 17:01
+**Points:** 100 · counts toward the Problem Sets component (30%, lowest one dropped)
+**Expected time:** about 4–5 hours
+
+## What this problem set uses
+
+Weeks 0–2: the Rule of Three and copy-swap (Week 1), throwing an exception (L04 §4.2), function
+templates and deduction (L07), class templates, the header rule, non-type parameters and `std::pair`
+(L08), instantiation, specialization and reading template errors (L09). `std::string` is used only
+as an element type, as the lectures use it.
+
+**Not needed and not expected:** `std::vector`, `std::sort` or any other STL container or algorithm
+(Week 3), move semantics (Week 5). Comparing template and hand-written assembly is Lab 2's job.
 
 ---
 
@@ -25,26 +37,21 @@ requires it.
 
 ## Part A — Function Templates (20 pts)
 
-**A1.** *(4)* Write `template <typename T> T maxof(T a, T b)`.
+**A1.** *(5)* Write `template <typename T> T maxof(T a, T b)`.
 
 Instantiate it explicitly for `int`, `double` and `long`. Run `nm` on the object file and paste the
 three mangled symbols. **For each, identify the substring encoding the type argument.**
 
-**A2.** *(4)* Compile `maxof<int>` alongside a hand-written `int maxof_int(int, int)` at `-O2` and
-compare the generated assembly.
-
-Paste both. **State whether they are identical**, and if they differ, say exactly how.
-
-**A3.** *(4)* Call `maxof(3, 7.5)` and paste the error.
+**A2.** *(5)* Call `maxof(3, 7.5)` and paste the error.
 
 Then fix it **three** ways. In one sentence, say which you would use in production and why.
 
-**A4.** *(4)* Write `template <typename Out, typename In> Out convert(In value)`.
+**A3.** *(5)* Write `template <typename Out, typename In> Out convert(In value)`.
 
 Call it as `convert<double>(42)`. Then **swap the two template parameters** in the declaration and show
 what the call site must become. **State the rule this demonstrates about parameter ordering.**
 
-**A5.** *(4)* Write the `const T&` version of `maxof` that returns `const T&`, and demonstrate the
+**A4.** *(5)* Write the `const T&` version of `maxof` that returns `const T&`, and demonstrate the
 dangling reference.
 
 Report **both** what the compiler says at build time and what AddressSanitizer says at run time.
@@ -62,7 +69,7 @@ size() const       top() const -> const T&   capacity() const
 empty() const
 ```
 
-`pop` and `top` must `throw std::underflow_error` when empty. `push` must grow the storage by doubling
+`pop` and `top` must `throw std::underflow_error` (from `<stdexcept>`, as in Lecture 04 §4.2) when empty. `push` must grow the storage by doubling
 when full.
 
 **Define the members outside the class body**, using the `template <typename T> ... Stack<T>::` form.
@@ -143,9 +150,10 @@ second argument.
 
 1. an ordinary non-template type error;
 2. a direct template error — your `maxof` on a type with no `operator>`;
-3. `std::sort` on a `std::vector` of a type with no `operator<`.
+3. comparing two `std::pair<P, int>` with `<`, where `P` has no `operator<` (`std::pair` is Lecture 08 §6).
 
-Put the counts in a table in `errors.md`.
+Put the counts in a table in `errors.md`. (Lecture 09 §5 measured an error through `std::sort`; you are
+doing the same with the one library template you have met.)
 
 **E2.** *(6)* For error 3:
 

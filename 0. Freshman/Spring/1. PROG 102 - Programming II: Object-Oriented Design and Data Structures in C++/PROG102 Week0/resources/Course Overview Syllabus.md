@@ -12,7 +12,8 @@
 | **Title** | Programming II: Object-Oriented Design and Data Structures in C++ |
 | **Credits** | 4 (3 lecture + 1 lab) |
 | **Semester** | Spring, Year 1 |
-| **Meeting** | 3 lectures per week + one 2-hour lab section |
+| **Meeting** | Lectures Tue/Wed/Thu 10:00–10:50; lab Mon 15:00–16:50 (Lab *N* meets the Monday after Week *N*) |
+| **Term** | Monday 18 January – Friday 16 April 2027; finals Monday 19 – Friday 23 April |
 | **Prerequisites** | **PROG 101 (C), CS 101** |
 | **Language** | **C++ (C++17 standard)** |
 | **Assessment** | **Labs 20%, Problem Sets 30%, Midterms 25%, Final 15%, Projects 10%** |
@@ -91,14 +92,15 @@ used from Week 0 without re-teaching.
 | **2** | Templates and Generic Programming | PS 2, Lab 2, Quiz 2 |
 | **3** | The Standard Template Library (STL) | PS 3, Lab 3, Quiz 3 |
 | **4** | Inheritance and Polymorphism | PS 4, Lab 4, Quiz 4 · *Midterm 1 announced* |
-| **5** | Memory Management and RAII | PS 5, Lab 5, Quiz 5 · **MIDTERM 1** (Weeks 0–4) |
-| **6** | Implementing Data Structures: Linked Lists and Trees | PS 6, Lab 6, Quiz 6 · **Project 1 assigned** |
+| **5** | Memory Management and RAII | PS 5, Lab 5, Quiz 5 |
+| **6** | Implementing Data Structures: Linked Lists and Trees | PS 6, Lab 6, Quiz 6 · **MIDTERM 1** (Tue 2 Mar, Weeks 0–4) · **Project 1 assigned** |
 | **7** | Design Patterns I: Creational and Structural | PS 7, Lab 7, Quiz 7 |
 | **8** | Design Patterns II: Behavioral | PS 8, Lab 8, Quiz 8 |
-| **9** | Exception Handling and Robust Software | PS 9, Lab 9, Quiz 9 · **Project 1 due** |
-| **10** | Concurrency: Threads and Synchronization | PS 10, Lab 10, Quiz 10 · **MIDTERM 2** (Weeks 5–9) |
+| **9** | Exception Handling and Robust Software | PS 9, Lab 9, Quiz 9 · **Project 1 due** (Fri 26 Mar) |
+| **10** | Concurrency: Threads and Synchronization | PS 10, Lab 10, Quiz 10 · **MIDTERM 2** (Tue 30 Mar, Weeks 5–9) |
 | **11** | Functional Programming in C++ and Modern Features | PS 11, Lab 11, Quiz 11 |
-| **12** | Software Engineering: Testing, Profiling, and Systems Design | Lab 12 · **FINAL EXAM** · **Project 2 due** |
+| **12** | Software Engineering: Testing, Profiling, and Systems Design | **Project 2 due** (Fri 16 Apr) · Lab 12 (the demo) meets Mon 19 Apr, in finals week |
+| **Finals** | — | **FINAL EXAM** Thu 22 Apr, 14:00–16:30 |
 
 ---
 
@@ -107,12 +109,12 @@ used from Week 0 without re-teaching.
 | Component | Weight | Details |
 | --- | --- | --- |
 | **Labs (13)** | 20% | Labs 0–12, one per week, marked on an in-lab checkoff. **Lowest 1 dropped.** |
-| **Problem Sets (12)** | 30% | PS 0–11, released Friday, due the following Friday. **Lowest 1 dropped.** No problem set in Week 12. |
-| **Midterm Exam 1** (Week 5) | 12.5% | 75 minutes. Covers Weeks 0–4. One handwritten sheet, 1 side. |
-| **Midterm Exam 2** (Week 10) | 12.5% | 75 minutes. Covers Weeks 5–9. Same rules. |
-| **Final Exam** (Week 12) | 15% | Comprehensive, 180 minutes. Two handwritten sheets. |
-| **Project 1** (assigned Week 6, due Week 9) | 5% | A substantial implementation with a written analysis. |
-| **Project 2** (due Week 12) | 5% | The capstone: a data structure library with tests. |
+| **Problem Sets (12)** | 30% | PS 0–11, released Friday 10:00 (PS 0: 11:00) after the week's last lecture, due the following Friday 17:00. **Lowest 1 dropped.** No problem set in Week 12. |
+| **Midterm Exam 1** (Tue 2 Mar, Week 6) | 12.5% | 18:00–19:30 slot, a 75-minute paper. Covers Weeks 0–4. One handwritten sheet, 1 side. |
+| **Midterm Exam 2** (Tue 30 Mar, Week 10) | 12.5% | 18:00–19:30 slot, a 75-minute paper. Covers Weeks 5–9. Same rules. |
+| **Final Exam** (Thu 22 Apr, finals week) | 15% | Comprehensive. Two handwritten sheets. ⚠️ Written for 180 minutes; the registry books 14:00–16:30 (150). Open decision. |
+| **Project 1** (assigned Tue 2 Mar, due Fri 26 Mar 17:00) | 5% | A substantial implementation with a written analysis. |
+| **Project 2** (assigned Tue 6 Apr, due Fri 16 Apr 17:00) | 5% | The capstone: a data structure library with tests. |
 | **Total** | **100%** | |
 
 > **These weights come directly from the Year 1 curriculum document**, which specifies *Labs 20%,
@@ -139,7 +141,7 @@ is the single most reliable way to have a bad final exam.
 The assessment line above sums to 100% without them, and that is what the curriculum specifies.
 **They are still required.**
 
-Quizzes are 15 minutes at the start of Monday's lecture, Weeks 1–11. **Quiz *N* covers Week *N−1***
+Quizzes are 15 minutes at the start of Tuesday's lecture (10:00), Weeks 1–11. **Quiz *N* covers Week *N−1***
 — the same convention as CS 101 and CS 102. They are marked and returned quickly so that you and the
 staff can see where you stand *before* an exam makes it expensive.
 

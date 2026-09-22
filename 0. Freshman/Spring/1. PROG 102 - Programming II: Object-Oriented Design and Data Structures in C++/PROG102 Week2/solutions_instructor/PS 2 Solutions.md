@@ -17,9 +17,13 @@ of Three was shaky. **Check their PS 1 Part C before concluding otherwise.**
 
 ---
 
+> **Revised 2026-09-22.** A2 (template vs hand-written assembly) was removed: Lab 2 Part A does it. A3–A5 are A2–A4. E's third
+> error no longer uses `std::sort` on a `std::vector` (Week 3); it compares two `std::pair<P,int>`
+> (Week 2). Measured: 6, 5 and 24 lines.
+
 ## Part A — Function Templates (20)
 
-### A1 (4)
+### A1 (5)
 
 ```
 W int    maxof<int>(int, int)          _Z5maxofIiET_S0_S0_
@@ -37,23 +41,7 @@ connects it to Lecture 03 §4 deserves a note of commendation, not extra marks.*
 away). That is the intended failure and the fix is explicit instantiation; award 1 if they diagnosed it
 in writing.
 
-### A2 (4)
-
-```asm
-maxof<int>(int, int):          maxof_int(int, int):
-        endbr64                        endbr64
-        cmp     edi, esi               cmp     edi, esi
-        mov     eax, esi               mov     eax, esi
-        cmovge  eax, edi               cmovge  eax, edi
-        ret                            ret
-```
-
-**Identical.**
-
-*Marking: 3 both listings, 1 the verdict. **Accept any architecture** — on ARM the instructions differ
-entirely and the claim is still that the two match each other.*
-
-### A3 (4)
+### A2 (5)
 
 ```
 error: no matching function for call to 'maxof(int, double)'
@@ -65,7 +53,7 @@ Three fixes: `maxof<double>(3, 7.5)`; `maxof(3.0, 7.5)`; two template parameters
 argument** — it is the smallest change and expresses the intent. Accept "make the literals agree" with a
 good reason.*
 
-### A4 (4)
+### A3 (5)
 
 `convert<double>(42)` — `Out` explicit, `In` deduced.
 
@@ -77,7 +65,7 @@ right.
 
 *Marking: 2 working code, 2 the rule. The rule must mention ordering, not just "it's more typing".*
 
-### A5 (4)
+### A4 (5)
 
 ```
 warning: possibly dangling reference to a temporary [-Wdangling-reference]
@@ -255,23 +243,23 @@ object**.*
 | --- | --- |
 | plain type error | 6 |
 | direct template | 5 |
-| through `std::sort` | 78 |
+| through `std::pair`'s `operator<` | 24 |
 
-*Marking: 4. Accept ±20% on the 78; line counts vary with compiler version. **The ordering must hold**:
+*Marking: 4. Accept ±20% on the 24; line counts vary with compiler version. **The ordering must hold**:
 the direct template error is not longer than the plain one.*
 
 ### E2 (6)
 
-**(a)** `predefined_ops.h:45:23: error: no match for 'operator<' (operand types are 'NoLess' and
-'NoLess')` — roughly 30 lines down, inside a standard library header.
+**(a)** `stl_pair.h:836:24: error: no match for 'operator<' (operand types are 'const P' and 'const P')`
+— line 5 of 24, inside a standard library header (g++ 13.3, re-run 2026-09-22).
 
 **(b)** `required from here` is the **instantiation backtrace** — it records which use caused this
 template to be instantiated, and following the chain upward leads from library internals back to the
 student's own line.
 
 **(c)** **Depth, not templates.** Error 2 is one level deep and is *shorter* than the non-template
-error. Error 3 passes through four or five layers of library internals, and each layer contributes
-context lines.
+error. Error 3 passes through the library's `operator<` for `pair` and then lists every candidate
+`operator<` it tried, and each contributes context lines.
 
 *Marking: 2 each. **(c) is the assessed idea of Part E.** "Templates have bad error messages" scores 0
 — the student's own error 2 refutes it, and the question points this out.*

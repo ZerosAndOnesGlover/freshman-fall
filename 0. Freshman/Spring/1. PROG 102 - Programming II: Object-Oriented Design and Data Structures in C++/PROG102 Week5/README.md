@@ -3,7 +3,7 @@
 
 **Credits:** 4 (3 lecture + 1 lab) · **Prerequisites:** PROG 101 (C), CS 101
 **Assessment for this course (overall):** Labs 20%, Problem Sets 30%, Midterms 25%, Final 15%, Projects 10%
-**This week's deliverables:** PS 5, Lab 5, Quiz 5 (Monday, covers Week 4) · **MIDTERM 1 (Weeks 0–4)**
+**This week's deliverables:** PS 5 (released Fri 26 Feb 10:00, due **Fri 5 Mar 17:00**), Lab 5 (**Mon 1 Mar**, 15:00), Quiz 5 (**Tue 23 Feb**, 10:00, covers Week 4) · MIDTERM 1 next Tuesday (2 Mar, 18:00, Weeks 0–4)
 
 ---
 
@@ -46,7 +46,7 @@ By the end of Week 5, you should be able to:
 | [[L16 RAII and unique_ptr]] | The idiom, exclusive ownership, and what it costs |
 | [[L17 shared_ptr weak_ptr and the Cost of Sharing]] | Reference counting, the cycle leak, and the atomic |
 | [[L18 Move Semantics]] | Rvalue references, `std::move`, Rule of Five, Rule of Zero |
-| [[PS 5 From Raw Pointers to Smart Pointers]] | Due Friday of Week 6 |
+| [[PS 5 From Raw Pointers to Smart Pointers]] | Due Fri 5 Mar 17:00 |
 | [[PROG102 Week5/assignments/QUIZ 5 Week 5 Monday\|QUIZ 5 Week 5 Monday]] | 15 minutes, covers Week 4 |
 | [[LAB 5 Leak Detection with AddressSanitizer]] | Find five leaks, fix them with ownership types |
 | [[PROG102 Week5/resources/Reading Guide Week 5\|Reading Guide Week 5]] | *C++ Primer* Ch. 12–13, Meyers Items 18–22, and every command |
@@ -80,19 +80,19 @@ answer has three parts:
 
 So `unique_ptr` is not free. **It is cheaper than free**, because the code it replaces was wrong.
 
-### Midterm 1 Is This Week
+### Midterm 1 Is Next Tuesday
 
-**75 minutes, covering Weeks 0–4**, one handwritten sheet, one side. The revision guide is in **Week
-4's** `resources/`. This week's material is **not** examinable on it.
+**Tuesday 2 March 2027, 18:00–19:30 — a 75-minute paper covering Weeks 0–4**, one handwritten sheet, one
+side. The revision guide is in **Week 4's** `resources/`. This week's material is **not** examinable on it.
 
-Plan accordingly: PS 5 is due in Week 6 and Lab 5 is on Thursday. **Do not start PS 5 the night before
-the exam.**
+Plan accordingly: PS 5 is due Friday 5 March and Lab 5 is Monday 1 March, the day before the paper.
 
 ### Connections
 
 **Back:** RAII was named in **Lecture 02 §5** and has been the answer since. The Rule of Three from
 **Week 1** becomes the Rule of Five here — and then the **Rule of Zero**, which retires it. **Week 4's**
-`std::vector<std::unique_ptr<Shape>>` was used in PS 4 without explanation; this week explains it.
+PS 4 held its shapes as `std::vector<Shape*>` and deleted them by hand; this week replaces that with
+`std::vector<std::unique_ptr<Shape>>`.
 
 **Forward:** **Week 6** builds a linked list and BST whose nodes are owned by `unique_ptr`. **Week 9**'s
 exception safety is RAII's real justification. **Week 10** is where the `shared_ptr` atomic stops being

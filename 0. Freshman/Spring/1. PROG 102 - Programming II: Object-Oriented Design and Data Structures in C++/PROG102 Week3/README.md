@@ -3,7 +3,7 @@
 
 **Credits:** 4 (3 lecture + 1 lab) · **Prerequisites:** PROG 101 (C), CS 101
 **Assessment for this course (overall):** Labs 20%, Problem Sets 30%, Midterms 25%, Final 15%, Projects 10%
-**This week's deliverables:** PS 3, Lab 3, Quiz 3 (Monday, covers Week 2)
+**This week's deliverables:** PS 3 (released Fri 12 Feb 10:00, due **Fri 19 Feb 17:00**), Lab 3 (**Mon 15 Feb**, 15:00), Quiz 3 (**Tue 9 Feb**, 10:00, covers Week 2)
 
 ---
 
@@ -44,7 +44,7 @@ By the end of Week 3, you should be able to:
 | [[L10 The Iterator Abstraction]] | Why algorithms and containers are separate, and what makes that possible |
 | [[L11 The Containers]] | Sequence, associative, adaptors — and how to choose |
 | [[L12 The Algorithms]] | `sort`, `find`, `transform`, `accumulate`, and `vector<bool>` |
-| [[PS 3 Ten Problems With the STL]] | Due Friday of Week 4 |
+| [[PS 3 Ten Problems With the STL]] | Due Fri 19 Feb 17:00 |
 | [[PROG102 Week3/assignments/QUIZ 3 Week 3 Monday\|QUIZ 3 Week 3 Monday]] | 15 minutes, covers Week 2 |
 | [[LAB 3 Profiling STL Containers]] | Measure the containers and find where the complexity table lies |
 | [[PROG102 Week3/resources/Reading Guide Week 3\|Reading Guide Week 3]] | *C++ Primer* Ch. 9–11, and every command to reproduce this week |
@@ -80,7 +80,7 @@ search is almost always there. This is the week's central engineering lesson and
 
 ### Assessment Reminder
 
-**Quiz 3 is Monday and covers Week 2** — templates, deduction, instantiation, specialization, and what
+**Quiz 3 is Tuesday 9 February and covers Week 2** — templates, deduction, instantiation, specialization, and what
 templates cost.
 
 ### Connections

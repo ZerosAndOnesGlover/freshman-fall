@@ -232,7 +232,8 @@ finished during construction.
 
 ### 4.2 The Same Warning Does Not Always Mean a Bug
 
-Now swap the two declarations and change nothing else:
+Now swap the two declarations **and** write the list the other way round. (Swapping the declarations
+alone would make the list agree with them, and both warnings would simply disappear.)
 
 ```cpp
 struct NotABug {

@@ -1,12 +1,14 @@
 # PROG 102 · Quiz 5
 ## Week 5 · Tuesday, start of lecture · 15 minutes · 20 points
 
+**Date:** Tuesday 23 February 2027 · 10:00–10:15 (start of L16) · Week 5
+
 **Covers Week 4** — Lectures 13–15: inheritance, virtual functions and the vtable, abstract classes,
 virtual destructors, slicing and casting.
 
 **Closed book. No devices.** Answer on this sheet.
 
-> **Midterm 1 is later this week** and covers Weeks 0–4. This quiz is a rehearsal for its Week 4
+> **Midterm 1 is next Tuesday, 2 March**, and covers Weeks 0–4. This quiz is a rehearsal for its Week 4
 > content.
 
 Name: ________________________  Section: ______  Date: ____________

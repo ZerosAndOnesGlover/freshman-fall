@@ -490,9 +490,12 @@ Deliberately absent, so you do not think you are missing something:
 | `std::vector`, `std::map`, iterators, algorithms | **Week 3** |
 | `virtual`, `override`, abstract base classes | **Week 4** |
 | `unique_ptr`, `shared_ptr`, `std::move`, `&&` | **Week 5** |
-| `try` / `catch` / `throw`, `noexcept` | **Week 9** |
+| `throw` and a basic `try`/`catch` | **Week 1** (Lecture 04 §4.2) — just enough to throw one |
+| exceptions properly, `noexcept` | **Week 9** |
 | `std::thread`, `std::mutex`, `std::atomic` | **Week 10** |
-| Lambdas `[](){}`, `std::function`, `constexpr` | **Week 11** |
+| Empty-bracket lambdas `[](…){…}` as comparators | **Week 3** (Lecture 12 §2.2) |
+| Lambdas with capture and `std::function`, enough to use | **Week 8** (Lecture 25 §4) |
+| How lambdas and `std::function` work and what they cost; `constexpr` | **Week 11** |
 
 ---
 

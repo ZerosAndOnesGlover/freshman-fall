@@ -17,7 +17,12 @@ what it costs, which is precisely the gap this course exists to close.
 
 ---
 
-## Part A — `Vector3D` (34)
+> **Revised 2026-09-22.** Removed D1 (reproducing Lecture 06's six-row table) and D3 (the five-configuration elision sweep,
+> already in Lecture 06 §6); D2 is now D1. C2 now uses the forced-failure harness printed in Lecture
+> 06 §1 (added there; verified to reproduce both transcripts under ASan). Throwing in A1/A2 is taught
+> in the new Lecture 04 §4.2. Items re-weighted to keep 100.
+
+## Part A — `Vector3D` (36)
 
 ### A1 (6)
 
@@ -86,7 +91,7 @@ Free function, takes and returns `std::ostream&`, no newline inside.
 *Marking: 2 correct signature, 1 chaining demonstrated, 1 no embedded newline. **Deduct the last point
 for `std::endl` inside the operator** — it flushes on every print.*
 
-### A6 (2)
+### A6 (4)
 
 `dot` and `cross` are named because **there are two products competing for one symbol**, and neither is
 "the" multiplication of vectors. `a * b` would not tell the reader which.
@@ -105,7 +110,7 @@ $|a| = \sqrt{14}$.
 
 ---
 
-## Part B — A Class That Owns Memory (30)
+## Part B — A Class That Owns Memory (32)
 
 ### Why `Vector3D` needs none of the three (2)
 
@@ -114,7 +119,7 @@ resource**, so memberwise copy is already correct and there is nothing for a des
 
 *Marking: 2. Must say *owns nothing* or equivalent. "Because it's small" is 0.*
 
-### B1 (6), B2 (8), B3 (8)
+### B1 (6), B2 (8), B3 (8) — plus 2 for the Vector3D line
 
 Standard deep-copy `Buffer`. The four-step assignment:
 
@@ -161,9 +166,9 @@ outcome.*
 
 ---
 
-## Part C — Copy-Swap (20)
+## Part C — Copy-Swap (22)
 
-### C1 (6)
+### C1 (7)
 
 ```cpp
 void swap(Buffer& o) noexcept { std::swap(n, o.n); std::swap(data, o.data); }
@@ -190,7 +195,7 @@ CopySwap after : a="hello"
 clean has not actually armed the failure, usually because they replaced `operator new` rather than
 `operator new[]`.*
 
-### C3 (6)
+### C3 (7)
 
 **(a) (3)** The **strong** exception guarantee. It comes from **ordering**: everything that can throw
 (the copy, in the parameter) happens *before* anything is modified (the swap). If the copy fails, the
@@ -205,22 +210,9 @@ requires the commit step to be unconditional, and only `noexcept` makes it so.
 
 ---
 
-## Part D — Counting Copies (16)
+## Part D — Counting Copies (10)
 
-### D1 (6)
-
-| Expression | ctor | copy | assign | dtor |
-| --- | --- | --- | --- | --- |
-| `V3 a(1,2,3), b(4,5,6);` | 2 | 0 | 0 | 0 |
-| `V3 c = a + b;` | 1 | 0 | 0 | 0 |
-| `c = a + b;` | 1 | 0 | 1 | 1 |
-| `dot` by value | 0 | 2 | 0 | 2 |
-| `dot` by `const&` | 0 | 0 | 0 | 0 |
-| `V3 s = a + b + c;` | 2 | 0 | 0 | 1 |
-
-*Marking: 1 per row.*
-
-### D2 (4)
+### D1 (10)
 
 | | copies |
 | --- | --- |
@@ -230,40 +222,20 @@ requires the commit step to be unconditional, and only `noexcept` makes it so.
 Both zero at `-O0` and `-O2`. **They differ only under `-fno-elide-constructors`**, where the named
 local costs 1 copy and the prvalue still costs 0.
 
-*Marking: 2 measurement, 2 for having recorded a prediction. **Award the prediction marks even when the
+*Marking: 5 measurement, 5 for having recorded a prediction. **Award the prediction marks even when the
 prediction was wrong** — the sheet promises this explicitly, and honest wrong predictions are the point.
 A student who "predicted" the exact right answer for all rows should be spot-checked for having
 measured first.*
 
-### D3 (6)
-
-| Configuration | copies |
-| --- | --- |
-| `-std=c++11 -O0` | 0 |
-| `-std=c++11 -O0 -fno-elide-constructors` | **2** |
-| `-std=c++17 -O0` | 0 |
-| `-std=c++17 -O0 -fno-elide-constructors` | **0** |
-| `-std=c++17 -O2` | 0 |
-
-**Rows 2 and 4 differ because the standard changed, not the compiler.** Before C++17, `a + b` produced
-a temporary and `c` was copy-constructed from it; eliding that copy was an *optimization*, which the
-flag disables. From C++17, `a + b` is a prvalue that initialises `c` directly — **there is no temporary
-and therefore no copy to elide**, so a flag that disables elision has nothing to act on.
-
-*Marking: 3 table, 3 explanation. **The explanation must locate the change in the standard rather than
-in the optimizer.** "GCC got smarter" is 0 of the 3 — it is the specific misconception the question
-exists to catch.*
-
----
 
 ## Marking Summary
 
 | Part | Points |
 | --- | --- |
-| A | 34 |
-| B | 30 |
-| C | 20 |
-| D | 16 |
+| A | 36 |
+| B | 32 |
+| C | 22 |
+| D | 10 |
 | **Total** | **100** |
 
 ---

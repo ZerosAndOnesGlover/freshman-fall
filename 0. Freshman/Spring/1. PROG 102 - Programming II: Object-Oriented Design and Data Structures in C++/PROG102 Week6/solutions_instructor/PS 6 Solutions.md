@@ -16,7 +16,10 @@ sand, and it is worth catching now.
 
 ---
 
-## Part A — The List (34)
+> **Revised 2026-09-22.** C3 (BST height against insertion order, which needed `std::shuffle` and repeats Lecture 21 §3.2)
+> was removed; its last sentence (what `std::map` adds) moved to C2. Re-weighted to keep 100.
+
+## Part A — The List (36)
 
 ### A1 (10)
 
@@ -43,7 +46,7 @@ the sentinel was added without being used — deduct 4 and show them the branch-
 **`end()` must be the sentinel**, not null. A null `end()` makes `--end()` impossible and A4's backward
 traversal will not work.
 
-### A2 (8)
+### A2 (10)
 
 Five members plus `noexcept` `swap`, copy-and-swap assignment.
 
@@ -149,9 +152,9 @@ why that should stop the code compiling.*
 
 ---
 
-## Part C — The BST (24)
+## Part C — The BST (18)
 
-### C1 (8)
+### C1 (10)
 
 Reference on `{5,3,8,1,4,7,9,3}`:
 
@@ -167,7 +170,7 @@ contains(4)=yes contains(6)=no
 3 has used the node-counting convention** — deduct 1 and point at the stated convention rather than
 treating it as wrong in general.*
 
-### C2 (6)
+### C2 (8)
 
 `std::string` and `std::greater<int>` both working.
 
@@ -178,35 +181,9 @@ nothing in the library owned its nodes; the BST needs none because `unique_ptr` 
 *Marking: 3 both demonstrations, 3 the comparison. **The comparison is the assessed half** and must
 identify *why* the two differ — the presence of a library type modelling the ownership.*
 
-### C3 (10)
+## Part D — The Bug at Scale (16)
 
-Reference, 200 trials per shuffled figure:
-
-| n | sorted input | random mean | $\log_2 n$ | ratio |
-| --- | --- | --- | --- | --- |
-| 10 | 9 | 4.54 | 3.32 | 1.37 |
-| 100 | 99 | 12.42 | 6.64 | 1.87 |
-| 1,000 | 999 | 21.02 | 9.97 | 2.11 |
-| 10,000 | 9,999 | 30.32 | 13.29 | 2.28 |
-
-**The ratio is not constant — it drifts upward**, from about 1.4 to about 2.3 across three orders of
-magnitude. Random BST height is $\Theta(\log n)$ but with a constant larger than 1 that converges
-slowly; students are **not** expected to name the asymptotic constant.
-
-**Sorted input gives height $n - 1$** — a linked list.
-
-`std::map` provides a **worst-case** $O(\log n)$ guarantee through self-balancing; theirs provides an
-average-case one.
-
-*Marking: 5 the table with both orders, 3 the ratio analysis including the drift, 2 the `std::map`
-sentence. **Accept any well-supported statement about the drift**; do not require a formula, and do not
-accept "the ratio is constant" if their own numbers show otherwise.*
-
----
-
-## Part D — The Bug at Scale (12)
-
-### D1 (6)
+### D1 (8)
 
 | chain length | result |
 | --- | --- |
@@ -220,7 +197,7 @@ with `ulimit -s` = 8192 KB.
 *Marking: 4 the table, 2 reporting their stack limit. **Thresholds will vary** — a student on a 16 MB
 stack may not fail until 2,000,000. Mark that they found *a* threshold and reported the limit.*
 
-### D2 (6)
+### D2 (8)
 
 ```cpp
 ~Node() { auto n = std::move(next); while (n) n = std::move(n->next); }
@@ -247,10 +224,10 @@ recursive descent parsers, and anything else that recurses per element.*
 
 | Part | Points |
 | --- | --- |
-| A | 34 |
+| A | 36 |
 | B | 30 |
-| C | 24 |
-| D | 12 |
+| C | 18 |
+| D | 16 |
 | **Total** | **100** |
 
 ---

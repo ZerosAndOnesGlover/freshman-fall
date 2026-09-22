@@ -1,6 +1,8 @@
 # PROG 102 · Quiz 1
 ## Week 1 · Tuesday, start of lecture · 15 minutes · 20 points
 
+**Date:** Tuesday 26 January 2027 · 10:00–10:15 (start of L04) · Week 1
+
 **Covers Week 0** — Lectures 00–03: C++ syntax, classes and `this`, constructors and destructors,
 encapsulation, `const`, `inline`, namespaces.
 

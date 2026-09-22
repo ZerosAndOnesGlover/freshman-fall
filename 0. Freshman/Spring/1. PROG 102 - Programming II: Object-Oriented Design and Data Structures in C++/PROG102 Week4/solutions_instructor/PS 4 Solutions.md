@@ -16,9 +16,13 @@ draws on directly.
 
 ---
 
-## Part A — The Hierarchy (34)
+> **Revised 2026-09-22.** Removed B2–B3 (GDB vtable dumps — Lab 4 Part B does both) and D1 (the three-attempt dispatch benchmark,
+> which is Lecture 14 §5's own measurement). A3 no longer uses `unique_ptr` (Week 5): shapes are
+> `Shape*` and are deleted by hand. D2–D3 are D1–D2. Items re-weighted to keep 100.
 
-### A1 (10)
+## Part A — The Hierarchy (36)
+
+### A1 (12)
 
 ```cpp
 class Shape {
@@ -69,7 +73,7 @@ largest    = Rectangle r1
 rejected   : triangle inequality violated
 ```
 
-*Marking A3: 4 the container and printing, 3 STL algorithms for total and max (a raw loop loses these),
+*Marking A3: 4 the container, printing and deleting every shape, 3 STL algorithms for total and max (a raw loop loses these),
 3 the rejected construction.*
 *Marking A4: 8 for the numbers matching and a sanitizer-clean transcript.*
 
@@ -78,9 +82,9 @@ right; anything else is worth investigating with them.
 
 ---
 
-## Part B — The vtable (16)
+## Part B — The vtable's Size (8)
 
-### B1 (6)
+### B1 (8)
 
 | | `sizeof` |
 | --- | --- |
@@ -94,32 +98,9 @@ the vtable is per class and the object holds one pointer to it.
 
 *Marking: 4 the numbers, 2 the explanation. Must say **one vptr regardless of count**.*
 
-### B2 (6)
+## Part C — The Three Traps (32)
 
-```
-vtable for 'Square' @ 0x...: [0] Square::area()  [1] Square::name()
-vtable for 'Circle' @ 0x...: [0] Circle::area()  [1] Circle::name()
-```
-
-Slot 0 is `area` in both **because the slot index is fixed by the declaration order in the base**, and
-both derive from the same base.
-
-*Marking: 4 both dumps, 2 the reason. "Because they're both shapes" is 0 of the 2 — the answer is about
-the base's declaration order.*
-
-### B3 (4)
-
-Swapping the declarations in the base swaps the slots in **every** derived vtable.
-
-*Marking: 4. A student who additionally notes this is a binary-compatibility hazard — a library adding
-a virtual function in the middle breaks every derived class not recompiled — has answered Lab 4 B3 and
-should be commended.*
-
----
-
-## Part C — The Three Traps (26)
-
-### C1 (10)
+### C1 (12)
 
 Without a virtual destructor:
 
@@ -143,7 +124,7 @@ precisely the "I forgot `virtual` entirely" case that gets no warning.
 *Marking: 6 the demonstrations, 4 the investigation. **A student who reports only "it warns" or only
 "it doesn't" gets 2 of the 4** — the question asks for both cases and the sheet says so.*
 
-### C2 (8)
+### C2 (10)
 
 ```
 by value    : Shape area=0.00
@@ -157,7 +138,7 @@ to a base-typed variable also fails. All three are caught.
 *Marking: 5 the three demonstrations, 3 the abstract-base follow-up. **Full marks require noticing that
 making the base abstract catches all three**, which is the practical takeaway.*
 
-### C3 (8)
+### C3 (10)
 
 `static_cast<D1*>` on a `D2` printed **222** — the value of `D2::b`, read through `D1::a`'s offset. No
 diagnostic. `dynamic_cast` returned `nullptr`.
@@ -173,25 +154,7 @@ gets 1 of the 3.*
 
 ## Part D — What Dispatch Costs (24)
 
-### D1 (12) — the three attempts
-
-| Attempt | non-virtual | virtual | ratio | What it measured |
-| --- | --- | --- | --- | --- |
-| (a) `unique_ptr` vector | 5.4 ms | 15.1 ms | ~2.8× | dispatch **+** pointer chasing **+** scattered allocations |
-| (b) contiguous, unequal size | 5.5 ms | 12.0 ms | ~2.2× | dispatch **+** twice the memory traffic |
-| (c) contiguous, padded to equal size | 8.70 ms | 17.16 ms | **1.97×** | dispatch |
-
-Attempt (c), five runs, individual ratios 2.29 / 1.23 / 2.89 / 2.08 / 1.74 — **mean 1.97×**, per call
-2.175 ns against 4.290 ns.
-
-*Marking: 3 + 4 + 5. **The marks are for the interpretations, not the numbers.** A student whose (a) and
-(b) ratios differ from the reference but who correctly says what each was measuring gets full marks. A
-student who reports only (c) gets 5 of the 12.*
-
-**Watch for:** ratios quoted from a single run of (c). The spread is 1.23×–2.89×; the sheet requires
-five runs and a mean, and this is why.
-
-### D2 (6)
+### D1 (12)
 
 ```asm
 mov  rax, QWORD PTR [rdi]        ; vptr
@@ -205,11 +168,11 @@ movsd xmm0, QWORD PTR 8[rdi]     ; inlined body
 **Speculative devirtualization.** With a second derived class visible, GCC generally abandons the guess
 and emits a plain indirect call.
 
-*Marking: 3 finding the guard, 3 the second-class experiment. **Accept either outcome for the second
+*Marking: 6 finding the guard, 6 the second-class experiment. **Accept either outcome for the second
 experiment if reported honestly** — it depends on version and inlining budget. A student who reports
 "the guard survived" and pastes the assembly showing it has done the work.*
 
-### D3 (6)
+### D2 (12)
 
 `dynamic_cast` ≈ **2.8×** a virtual call (19.0–22.2 ms against 53.3–61.4 ms over 10⁷).
 
@@ -220,8 +183,8 @@ experiment if reported honestly** — it depends on version and inlining budget.
 > alarming and the absolute number is not, and the absolute number is the one that decides whether it
 > matters.
 
-*Marking: 3 the ratio, 3 the judgement. **The answer must use absolute numbers**, as the question
-demands — an answer phrased entirely in ratios gets 1 of the 3, because "2×" is exactly the framing
+*Marking: 6 the ratio, 6 the judgement. **The answer must use absolute numbers**, as the question
+demands — an answer phrased entirely in ratios gets 2 of the 6, because "2×" is exactly the framing
 that misleads here.*
 
 ---
@@ -230,9 +193,9 @@ that misleads here.*
 
 | Part | Points |
 | --- | --- |
-| A | 34 |
-| B | 16 |
-| C | 26 |
+| A | 36 |
+| B | 8 |
+| C | 32 |
 | D | 24 |
 | **Total** | **100** |
 
@@ -243,24 +206,21 @@ that misleads here.*
 1. **Missing `virtual` on the destructor** in A1. Deduct even though A1 alone would not catch it.
 2. **Only one case investigated in C1.** The question asks for two.
 3. **"222 is garbage"** without identifying it as `D2::b` (C3).
-4. **Only attempt (c) reported** in D1. The two "wrong" measurements are 7 of the 12 marks.
-5. **A ratio-only answer to D3.** The most important correction in the set, and it is exactly what
+4. **A ratio-only answer to D2.** The most important correction in the set, and it is exactly what
    Section D of the midterm will probe.
 
 ---
 
 ## Feeding Into Week 5 and the Midterm
 
-**Midterm 1 is this week.** Two things to say in Monday's lecture:
+**Midterm 1 is Tuesday 2 March (Week 6).** Two things to say beforehand:
 
-- **Section D is 15 marks of "explain this table",** and PS 4 D1 is the rehearsal. Students who wrote
-  three interpretations have already practised it; students who reported only (c) have not.
+- **Section D is 15 marks of "explain this table",** and PS 4 D2 is the rehearsal.
 - The revision guide's ten-item list is not a hint, it is a list. Point at it.
 
-**For Week 5:** PS 4 A3 already used `std::vector<std::unique_ptr<Shape>>` without explanation. That is
-deliberate — Week 5 explains what they have been using, and it lands better having already relied on
-it. Open Lecture 16 by asking what would have happened with `std::vector<Shape*>` and who would have
-called `delete`.
+**For Week 5:** PS 4 A3 now uses `std::vector<Shape*>` and makes students `delete` every shape by hand.
+Open Lecture 16 by asking who remembered to, and what an early `return` or a thrown exception would
+have done to that cleanup loop.
 
 ---
 

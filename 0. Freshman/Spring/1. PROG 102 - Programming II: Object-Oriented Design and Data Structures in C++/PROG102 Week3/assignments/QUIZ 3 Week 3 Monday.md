@@ -1,6 +1,8 @@
 # PROG 102 · Quiz 3
 ## Week 3 · Tuesday, start of lecture · 15 minutes · 20 points
 
+**Date:** Tuesday 9 February 2027 · 10:00–10:15 (start of L10) · Week 3
+
 **Covers Week 2** — Lectures 07–09: function and class templates, deduction, instantiation,
 specialization, and what templates cost.
 

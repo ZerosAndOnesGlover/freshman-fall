@@ -1,5 +1,5 @@
 # PROG 102 · Problem Set 3 — Solutions and Marking Notes
-## Ten Problems With the STL
+## Five Problems With the STL
 
 **INSTRUCTOR COPY — not for distribution**
 
@@ -8,22 +8,26 @@
 ## Before Marking
 
 **Reference environment:** g++ 13.3.0, x86-64 Linux, `-std=c++17 -O2`. Outputs below are exact.
-Timings in Part B are not; **mark the ratios and the reasoning.**
+There are no timings in this set.
 
-**Calibration:** Part A is 60 points and rewards knowing the library. A student who solved all ten with
-loops has demonstrated something, but not the thing being assessed — apply the rule, and point them at
-the nomination exercise, which is where that instinct belongs.
+**Calibration:** Part A is 60 points and rewards knowing Lecture 12's algorithms. A loop where one of
+them fits costs part of the problem's marks; a loop in A5 costs nothing.
 
-**The marks that matter are B2, C1 and C4.** Those are the three where a student can produce correct
+**The marks that matter are B1 and B3.** Those are the three where a student can produce correct
 code and still hold a wrong model.
 
 ---
 
-## Part A — Ten Problems (60)
+> **Revised 2026-09-22.** Cut to taught material: A3 (`nth_element`), A5 (set algorithms), A6 (`rotate`), A7
+> (`stable_partition`) and A10 (`partial_sort`) needed algorithms Lecture 12 never teaches; Part B
+> (container timing) is Lab 3; C3 (invalidation under `reserve`) is Lab 3 D2. The no-raw-loops rule is
+> relaxed. Remaining: A1, A2, A4, A8, A9 → A1–A5 (12 each); C1, C2, C4 → B1–B3.
+
+## Part A — Five Problems (60)
 
 Reference input: `v = {5,3,8,1,9,2,8,3,7,4}`.
 
-### A1 (6) — word frequency
+### A1 (12) — word frequency
 
 `unordered_map<string,int>` to count, copy to a `vector<pair<...>>`, `std::sort` with a comparator
 falling back to the key.
@@ -38,7 +42,7 @@ dog   1
 `unordered_map` is fine** — the sort discards the order anyway, and a student who says so gets full
 justification marks.*
 
-### A2 (6) — deduplicate preserving order
+### A2 (12) — deduplicate preserving order
 
 ```
 5 3 8 1 9 2 7 4
@@ -50,16 +54,7 @@ justification marks.*
 only removes *adjacent* duplicates, so it needs a sorted range and would destroy the order the question
 asks to preserve. A student who tried it, noticed, and said so should get full marks.*
 
-### A3 (6) — k-th largest
-
-`std::nth_element` with `std::greater<int>()`, then read index `k-1`. **3rd largest of `v` is 8.**
-
-$O(n)$ average, against $O(n \log n)$ for a full sort.
-
-*Marking: 3 output, 3 the complexity claim. Must say $O(n)$ **average** — `nth_element` is
-introselect and its guarantee is average-case.*
-
-### A4 (6) — group anagrams
+### A3 (12) — group anagrams
 
 Sort each word's characters to form a key; `map<string, vector<string>>`.
 
@@ -70,46 +65,7 @@ Sort each word's characters to form a key; `map<string, vector<string>>`.
 *Marking: 4 correct grouping, 2 the key idea. Accept a character-count key as an alternative and note
 it is $O(n)$ per word rather than $O(n \log n)$.*
 
-### A5 (6) — set operations
-
-```
-intersection : 4 5
-union        : 1 2 3 4 5 6 7
-difference   : 1 2 3
-```
-
-**The precondition is that both input ranges are sorted.** `set_intersection` on unsorted input
-silently produces garbage — no error, no warning.
-
-*Marking: 4 the three results, 2 the precondition. **The precondition is the assessed half.** A student
-who does not state it loses 2 even with correct output, because their code works by accident on this
-input.*
-
-### A6 (6) — rotate
-
-`std::rotate(w.begin(), w.begin()+3, w.end())`:
-
-```
-1 9 2 8 3 7 4 5 3 8
-```
-
-*Marking: 4 output, 2 justification.*
-
-### A7 (6) — stable partition
-
-`std::stable_partition`, evens first:
-
-```
-8 2 8 4 5 3 1 9 3 7
-```
-
-`std::partition` gives a different arrangement (implementation-defined, typically `4 3 8 8 2 ...`-ish)
-and is not required to preserve relative order.
-
-*Marking: 3 the stable result, 3 for showing `partition` differs. **The student's `partition` output
-need not match anything** — it is unspecified. Mark whether they demonstrated a difference.*
-
-### A8 (6) — statistics
+### A4 (12) — statistics
 
 ```
 min=1 max=9 mean=5.00
@@ -122,7 +78,7 @@ min=1 max=9 mean=5.00
 accumulator gets 0 of those 2 and should be pointed at C1 — they have committed the trap the same
 problem set warns about.*
 
-### A9 (6) — longest increasing run
+### A5 (12) — longest increasing run
 
 `v = 5 3 8 1 9 2 8 3 7 4`. Strictly increasing consecutive runs: `5`, `3 8`, `1 9`, `2 8`, `3 7`, `4`.
 **Longest length 2**, first at index 1.
@@ -131,60 +87,9 @@ problem set warns about.*
 gets you the breaks but assembling the answer is awkward, and this is a legitimate nomination for the
 Part A note. A student who nominated this problem has chosen well.*
 
-### A10 (6) — top-N by custom key
+## Part B — Three Traps (40)
 
-`std::partial_sort` or `std::nth_element` + `sort` on the first three. **Not a full sort.**
-
-*Marking: 4 correct, 2 for avoiding the full sort. A `std::sort` of everything loses the 2.*
-
----
-
-## Part B — Choosing a Container (20)
-
-### B1 (8)
-
-Reference:
-
-| N | vector | list | ratio |
-| --- | --- | --- | --- |
-| 1,000 | 0.08 ms | 0.41 ms | 5.1× |
-| 5,000 | 0.71 ms | 32.5 ms | 45.9× |
-| 20,000 | 6.60 ms | 1,038 ms | 157× |
-| 50,000 | 45.3 ms | 8,086 ms | 178× |
-
-Front insertion, 100,000: vector 446 ms, list 3.5 ms — **list wins 128×**.
-
-*Marking: 5 the sorted-insertion table with a growing ratio, 3 the front-insertion reversal. **A
-student who only did (a) gets at most 5** — the reversal is what makes the part meaningful.*
-
-### B2 (6) — the assessed question
-
-Expected substance:
-
-> The list's $O(1)$ insertion is real, but reaching the position costs $O(n)$ pointer-chasing through
-> scattered memory, whereas the vector finds it with a binary search over contiguous memory. The
-> insertion is the cheap part of the operation and the search dominates. **A complexity table describes
-> one operation in isolation; a program does the search as well, on hardware where locality matters.**
-
-*Marking: 3 the search/insert distinction, 3 the general lesson. **"Lists are bad" scores 0** — B1(b)
-shows the list winning by 128×, and a student who ignores their own second table has not read it.*
-
-### B3 (6)
-
-`int` keys: insert 1.71×, lookup 6.50× in favour of `unordered_map`.
-
-With `std::string` keys the ratio typically **narrows**, because hashing a string is $O(\text{length})$
-and touches the character data, while comparing strings often decides on the first few characters. The
-hash's constant factor grows relative to the comparison.
-
-*Marking: 4 both tables, 2 a plausible reason. **Accept any coherent explanation supported by their
-numbers**, including "it did not change much on my machine" if they measured that and say so.*
-
----
-
-## Part C — Four Traps (20)
-
-### C1 (5)
+### B1 (14)
 
 ```
 accumulate({0.5,0.5,0.5}, 0)   -> 0
@@ -211,7 +116,7 @@ answers.
 *Marking: 3 the three results, 2 the distinction. **The distinction is the assessed half** and it is a
 genuinely important idea — sanitizers are not correctness checkers.*
 
-### C2 (5)
+### B2 (13)
 
 ```
 original                  size=7 : 1 2 3 2 4 2 5
@@ -225,19 +130,7 @@ size, because it has never heard of the container. Only the container can erase.
 *Marking: 3 output **including the tail**, 2 the explanation. A student who printed only `size()` and
 not the leftover `4 2 5` loses 1 — seeing the garbage is the point.*
 
-### C3 (5)
-
-ASan reports `heap-use-after-free` on the read through the stale iterator. After `reserve`, no report.
-
-**Is it correct?** *(2 of the 5)* — **No, it is not correct; it merely does not currently fail.** The
-code still holds an iterator across a `push_back`, which is undefined behaviour whenever a reallocation
-occurs. The `reserve` makes reallocation not happen *for this input*; change the count, or add a
-`push_back` elsewhere, and it returns.
-
-*Marking: 3 both transcripts, 2 the judgement. **"Yes, it's correct now" scores 0 of the 2.** The
-question says "answer carefully" and this is the distinction it is testing.*
-
-### C4 (5)
+### B3 (13)
 
 ```
 decltype(vb[0]) is bool? NO   (std::_Bit_reference)
@@ -260,8 +153,7 @@ different logic, not to make one type faster with a different contract.
 | Part | Points |
 | --- | --- |
 | A | 60 |
-| B | 20 |
-| C | 20 |
+| B | 40 |
 | **Total** | **100** |
 
 ---
@@ -270,8 +162,8 @@ different logic, not to make one type faster with a different contract.
 
 **Unmarked and required.** Read them anyway — they are the most informative thing in the submission.
 
-**A9 is the best nomination** and the most common good one: assembling "longest increasing run" out of
-`adjacent_find` is genuinely worse than a five-line loop. A student who nominated A9 with a clear
+**A5 is the best nomination** and the most common good one: assembling "longest increasing run" out of
+`adjacent_find` is genuinely worse than a five-line loop. A student who nominated A5 with a clear
 argument has understood the rule's purpose.
 
 **A weak nomination** is one that says the loop is better because "I find loops easier to read". Note
@@ -284,10 +176,7 @@ has, and the point of the nomination is that the constraint is not a law.
 ## What to Watch For
 
 1. **`std::unique` for A2.** Removes only adjacent duplicates. The expected error.
-2. **Unsorted input to `set_intersection`** (A5). Works by accident on this data.
-3. **`accumulate(..., 0)` for the mean** in A8, having been warned in C1 of the same sheet.
-4. **"Lists are bad"** in B2, contradicted by their own B1(b) table.
-5. **"Yes, `reserve` made it correct"** in C3. The most important correction in the set.
+2. **`accumulate(..., 0)` for the mean** in A4, having been warned in B1 of the same sheet.
 
 ---
 

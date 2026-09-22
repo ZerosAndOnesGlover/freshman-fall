@@ -151,7 +151,7 @@ substitutes for the other, and the interesting engineering is almost always in t
    PS 3 and it is the foundation of Week 11.
 3. **PS 3 Part A started.** Ten problems takes longer than it looks, mostly spent finding the right
    algorithm — which is the intended work.
-4. **Week 4 is the first midterm-relevant week.** Midterm 1 covers Weeks 0–4 and is sat in Week 5.
+4. **Week 4 is the first midterm-relevant week.** Midterm 1 covers Weeks 0–4 and is sat on Tuesday 2 March (Week 6).
    The revision guide arrives with Week 4's materials; do not wait for it to start reviewing Weeks 0–2.
 
 ---

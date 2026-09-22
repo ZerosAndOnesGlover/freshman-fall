@@ -3,7 +3,7 @@
 
 **Credits:** 4 (3 lecture + 1 lab) · **Prerequisites:** PROG 101 (C), CS 101
 **Assessment for this course (overall):** Labs 20%, Problem Sets 30%, Midterms 25%, Final 15%, Projects 10%
-**This week's deliverables:** PS 6, Lab 6, Quiz 6 (Monday, covers Week 5) · **Project 1 assigned**
+**This week's deliverables:** PS 6 (released Fri 5 Mar 10:00, due **Fri 12 Mar 17:00**), Lab 6 (**Mon 8 Mar**, 15:00), Quiz 6 (**Tue 2 Mar**, 10:00, covers Week 5) · **MIDTERM 1 Tue 2 Mar, 18:00 (Weeks 0–4)** · Project 1 assigned
 
 ---
 
@@ -54,7 +54,7 @@ By the end of Week 6, you should be able to:
 | [[L19 Implementing a Doubly Linked List]] | Sentinel, Rule of Five, insert and erase |
 | [[L20 Implementing Iterators]] | `iterator_traits`, `const_iterator`, and the category contract |
 | [[L21 Implementing a Binary Search Tree]] | `unique_ptr` children, the destructor trap, and the STL comparison |
-| [[PS 6 A Templated Doubly Linked List]] | Due Friday of Week 7 |
+| [[PS 6 A Templated Doubly Linked List]] | Due Fri 12 Mar 17:00 |
 | [[PROG102 Week6/assignments/QUIZ 6 Week 6 Monday\|QUIZ 6 Week 6 Monday]] | 15 minutes, covers Week 5 |
 | [[PROJECT 1 A Container Library]] | **Assigned this week, due Week 9** |
 | [[LAB 6 Benchmarking Against std list]] | Measure your list against `std::list` |

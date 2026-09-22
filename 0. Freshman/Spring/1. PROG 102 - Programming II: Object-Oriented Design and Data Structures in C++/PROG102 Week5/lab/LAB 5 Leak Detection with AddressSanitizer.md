@@ -1,10 +1,11 @@
 # PROG 102 · Lab 5
 ## Leak Detection with AddressSanitizer
 
-**Week 5 · 2-hour lab session · 40 points**
+**Date:** Monday 1 March 2027 · 15:00–16:50 · Lab section (Week 6) — covers Week 5 (L16–L18)
+*2-hour lab · 40 points · in-lab checkoff · part of the Labs component (20%)*
 **Deliverable:** `registry.cpp` (repaired), `RESULTS.md`. In-lab checkoff.
 
-> **Midterm 1 is this week.** This lab is deliberately shorter than Labs 2–4 and is finishable in the
+> **Midterm 1 is tomorrow, Tuesday 2 March, 18:00.** This lab is deliberately shorter than Labs 2–4 and is finishable in the
 > session. Do not let it collide with your revision.
 
 ---

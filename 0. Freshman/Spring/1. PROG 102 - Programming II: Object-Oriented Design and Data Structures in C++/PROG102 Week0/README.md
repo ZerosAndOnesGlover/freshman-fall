@@ -3,7 +3,7 @@
 
 **Credits:** 4 (3 lecture + 1 lab) · **Prerequisites:** PROG 101 (C), CS 101
 **Assessment for this course (overall):** Labs 20%, Problem Sets 30%, Midterms 25%, Final 15%, Projects 10%
-**This week's deliverables:** PS 0, Lab 0. **No quiz** — Quiz 1, in Week 1, covers this week.
+**This week's deliverables:** PS 0 (released Fri 22 Jan 11:00, due **Fri 29 Jan 17:00**), Lab 0 (**Mon 25 Jan**, 15:00). **No quiz** — Quiz 1 (Tue 26 Jan, 10:00) covers this week.
 
 ---
 
@@ -25,7 +25,8 @@ smart pointers as magic with unpredictable costs. You are coming from C, so you 
 ### A Note on Lecture 00
 
 **Week 0 has four lecture files but three timetabled lectures.** `L00` is the orientation-session
-primer and is not one of the three; Lectures 01–03 are Monday, Wednesday and Friday as usual. The
+primer (Tuesday 19 January); Lectures 01–03 follow on Wednesday, Thursday and Friday. Friday is not a
+normal PROG 102 lecture day — Week 0 alone uses a Friday 10:00 slot. The
 same holds for the numbering across the course — **L01–L39 are the 39 timetabled lectures**, three per
 week for thirteen weeks, and L00 sits outside that count.
 
@@ -59,7 +60,7 @@ By the end of Week 0, you should be able to:
 | [[L01 From C to C++]] | The `this` pointer proved in assembly, object size, name mangling, `extern "C"` |
 | [[L02 Constructors Destructors and Object Lifetime]] | Initializer lists, lifetime, destruction order, the road to RAII |
 | [[L03 Encapsulation const and Namespaces]] | Access control, `const` member functions, `inline`, namespaces |
-| [[PS 0 Classes Constructors and const]] | Due Friday of Week 1 |
+| [[PS 0 Classes Constructors and const]] | Due Fri 29 Jan 17:00 |
 | [[LAB 0 Porting C to C++]] | Port a working C program to C++ — and confirm your toolchain |
 | [[PROG102 Week0/resources/Course Overview Syllabus\|Course Overview Syllabus]] | **Read this in full in Week 0** — assessment, the two build lines, policies |
 | [[PROG102 Week0/resources/Reading Guide Week 0\|Reading Guide Week 0]] | *C++ Primer* Ch. 1–2 with guiding questions, plus the commands to reproduce every lecture measurement |

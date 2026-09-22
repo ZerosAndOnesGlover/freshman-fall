@@ -83,6 +83,22 @@ std::sort(v.begin(), v.end(), [](const P& a, const P& b) {       // by field
 The comparator must be a **strict weak ordering** (L04 §6.1). Violating it is undefined behaviour and
 `std::sort` can run off the end of the array — a real crash, not a wrong order.
 
+> **Just enough lambda syntax.** `[](const P& a, const P& b) { return a.score > b.score; }` is a
+> **lambda**: an unnamed function written where it is used. `[]` starts it, the parameters and body are
+> an ordinary function's, and the return type is deduced from the `return`. It does exactly what this
+> function object from Lecture 04 §5 does, and you may always write that instead:
+>
+> ```cpp
+> struct ByScoreDesc {
+>     bool operator()(const P& a, const P& b) const { return a.score > b.score; }
+> };
+> std::sort(v.begin(), v.end(), ByScoreDesc{});
+> ```
+>
+> Until Week 11, **write only empty-bracket lambdas `[]`** — ones that use nothing but their
+> parameters. Putting names inside the brackets (capture) is Week 11's subject, and so is what a lambda
+> really is.
+
 **`std::stable_sort`** preserves the relative order of equivalent elements, at the cost of extra
 memory. Use it when "equal" elements are distinguishable and the input order means something.
 

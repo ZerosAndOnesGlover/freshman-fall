@@ -3,7 +3,7 @@
 
 **Credits:** 4 (3 lecture + 1 lab) · **Prerequisites:** PROG 101 (C), CS 101
 **Assessment for this course (overall):** Labs 20%, Problem Sets 30%, Midterms 25%, Final 15%, Projects 10%
-**This week's deliverables:** PS 1, Lab 1, Quiz 1 (Monday, covers Week 0)
+**This week's deliverables:** PS 1 (released Fri 29 Jan 10:00, due **Fri 5 Feb 17:00**), Lab 1 (**Mon 1 Feb**, 15:00), Quiz 1 (**Tue 26 Jan**, 10:00, covers Week 0)
 
 ---
 
@@ -52,8 +52,8 @@ By the end of Week 1, you should be able to:
 | [[L04 Operator Overloading]] | Syntax, member vs free, symmetry, `<<`, `[]`, `()`, and when not to |
 | [[L05 Copy Semantics and the Rule of Three]] | Shallow vs deep, the generated copy constructor, self-assignment traced |
 | [[L06 The Copy-Swap Idiom]] | Copy-swap, copy elision measured, and a first look at moves |
-| [[PS 1 A Vector3D Class]] | Due Friday of Week 2 |
-| [[PROG102 Week1/assignments/QUIZ 1 Week 1 Monday\|QUIZ 1 Week 1 Monday]] | 15 minutes, start of Monday's lecture |
+| [[PS 1 A Vector3D Class]] | Due Fri 5 Feb 17:00 |
+| [[PROG102 Week1/assignments/QUIZ 1 Week 1 Monday\|QUIZ 1 Week 1 Monday]] | 15 minutes, start of Tuesday's lecture |
 | [[LAB 1 Debugging Copy Semantics]] | Instrument a class and count every copy it makes |
 | [[PROG102 Week1/resources/Reading Guide Week 1\|Reading Guide Week 1]] | *C++ Primer* Ch. 13–14, and the commands to reproduce every measurement |
 | [[PROG102 Week1/solutions_instructor/PS 1 Solutions\|PS 1 Solutions]] | Instructor only |
@@ -86,7 +86,7 @@ Predict before you measure. The gap between the two is the lab.
 
 ### Assessment Reminder
 
-**Quiz 1 is Monday, at the start of lecture, and covers Week 0** — classes, `this`, constructors,
+**Quiz 1 is Tuesday 26 January, at the start of lecture, and covers Week 0** — classes, `this`, constructors,
 destruction order, `const`, `inline`, namespaces. Quizzes carry no weight and are tracked separately;
 they exist so that you find out in Week 1 rather than Week 5.
 

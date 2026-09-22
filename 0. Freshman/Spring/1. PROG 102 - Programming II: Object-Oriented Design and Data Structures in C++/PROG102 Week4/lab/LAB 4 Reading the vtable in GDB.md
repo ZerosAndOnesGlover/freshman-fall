@@ -1,7 +1,8 @@
 # PROG 102 · Lab 4
 ## Reading the vtable in GDB
 
-**Week 4 · 2-hour lab session · 40 points**
+**Date:** Monday 22 February 2027 · 15:00–16:50 · Lab section (Week 5) — covers Week 4 (L13–L15)
+*2-hour lab · 40 points · in-lab checkoff · part of the Labs component (20%)*
 **Deliverable:** `shapes_gdb.cpp`, `RESULTS.md` with your GDB transcripts. In-lab checkoff.
 
 ---

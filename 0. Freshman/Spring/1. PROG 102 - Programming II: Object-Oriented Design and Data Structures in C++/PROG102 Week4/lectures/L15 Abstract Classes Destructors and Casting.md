@@ -373,7 +373,7 @@ explain where it came from.** Then do it with `dynamic_cast`.
 It answers the question §3.2 raised: `std::vector<Base*>` avoids slicing but leaves you deleting
 everything by hand. `std::vector<std::unique_ptr<Base>>` does not.
 
-**MIDTERM 1 is in Week 5** and covers Weeks 0–4. The revision guide is in `resources/` — start now, not
+**MIDTERM 1 is Tuesday 2 March, 18:00** (Week 6) and covers Weeks 0–4. The revision guide is in `resources/` — start now, not
 next Sunday.
 
 ---

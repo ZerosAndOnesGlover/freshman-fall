@@ -20,9 +20,14 @@ exact and should match. The C2 garbage values will not match and must not be req
 
 ---
 
+> **Revised 2026-09-22.** A4 (making an inline symbol reappear) was removed; A5 is now A4. C2 no
+> longer overloads `operator new[]` (operator overloading is Week 1) — it uses a printing helper. C2(b)
+> was factually wrong: swapping the declarations alone silences **both** warnings (verified with
+> g++ 13.3), so it now builds Lecture 02's `NotABug` for the warning-without-a-bug case.
+
 ## Part A — Reading the Machine (20)
 
-### A1 (4)
+### A1 (5)
 
 Both bodies:
 
@@ -39,7 +44,7 @@ _ZN7Counter3addEi:            _Z8add_freeP7Counteri:
 or Apple silicon will see `x0` and different mnemonics — **accept it fully**, the claim is that the two
 are identical, not that they are any particular instruction.*
 
-### A2 (4)
+### A2 (5)
 
 | Type | `sizeof` |
 | --- | --- |
@@ -55,7 +60,7 @@ make `&a[0] == &a[1]` in an array.
 explanation — the question asks why the standard says so. Accept any answer mentioning distinct
 addresses or array indexing.*
 
-### A3 (4)
+### A3 (5)
 
 - `_ZN6Matrix9transposeEv` → `Matrix::transpose()`
 - `_ZNK6Matrix3getEii` → `Matrix::get(int, int) const`
@@ -67,22 +72,7 @@ function**, which is exactly what lets you overload on `const`.
 *Marking: 1 each for the demanglings, 2 for the `K` explanation. The link to `this` is what is being
 assessed; "K means const" alone is 1 of the 2.*
 
-### A4 (4)
-
-An in-class definition is **implicitly `inline`**, and an inline function with no callers is never
-emitted — there is nothing to generate a symbol for.
-
-To make it reappear without moving the definition, any of:
-
-- call it from somewhere in the same file;
-- compile with `-fkeep-inline-functions`;
-- take its address (`auto p = &Counter::add;`).
-
-*Marking: 2 for the explanation using both words, 2 for any working method. Accept `-O0` if the student
-demonstrates it works on their setup — GCC still usually elides it, so check they actually ran it
-rather than assuming.*
-
-### A5 (4)
+### A4 (5)
 
 ```
 plain_c_function              <- extern "C"
@@ -197,15 +187,18 @@ the point is about *when* initialization happens, not what `const` means.*
 
 ### C2 (8)
 
-Instrumented `operator new[]` on the reference machine, asking for 4 integers:
+Through the `alloc_ints` helper, asking for 4 integers (g++ 13.3, x86-64, re-run 2026-09-22):
 
-| Build | Integers allocated |
+| Build | Integers requested |
 | --- | --- |
-| `-O0` | 99,539,950 |
-| `-O2` | 1,600,677,166 |
+| `-O0` | 1,460,368,271 |
+| `-O2` | 0 |
 
-> **Do not mark against these numbers.** They are uninitialized stack bytes. **Any large wrong number
-> is correct**, and a student who reports 4 has almost certainly not reproduced the bug — check their
+(Lecture 02's table, 99,539,950 and 1,600,677,166, came from a run that planted a value in the stack
+slot first; both runs are the same bug.)
+
+> **Do not mark against these numbers.** They are uninitialized stack bytes. **Any number other than 4
+> is correct** (0 included), and a student who reports 4 has almost certainly not reproduced the bug — check their
 > declaration order, which is the usual cause.
 
 **(a) (2)** Both fire:
@@ -215,7 +208,10 @@ warning: 'Wrong::size' will be initialized after [-Wreorder]
 warning: '*this.Wrong::size' is used uninitialized [-Wuninitialized]
 ```
 
-**(b) (3)** After swapping the declarations, `-Wreorder` still fires but the bug is gone. So
+**(b) (3)** Swapping the declarations alone makes the list agree with the declaration order: **both**
+warnings disappear and `new int[4]` is requested — the bug is gone. In `NotABug` (declarations
+swapped *and* list reversed) `-Wreorder` fires three lines and `-Wuninitialized` does not, and the
+allocation is still 4 (verified). So
 **`-Wreorder` means "your list order is misleading", not "your code is wrong"** — it compares list
 order against declaration order and says nothing about whether a member is read before it is set.
 `-Wuninitialized` is the one that fires only on the genuine fault.

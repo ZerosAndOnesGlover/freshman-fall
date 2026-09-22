@@ -3,7 +3,7 @@
 
 **Credits:** 4 (3 lecture + 1 lab) · **Prerequisites:** PROG 101 (C), CS 101
 **Assessment for this course (overall):** Labs 20%, Problem Sets 30%, Midterms 25%, Final 15%, Projects 10%
-**This week's deliverables:** PS 2, Lab 2, Quiz 2 (Monday, covers Week 1)
+**This week's deliverables:** PS 2 (released Fri 5 Feb 10:00, due **Fri 12 Feb 17:00**), Lab 2 (**Mon 8 Feb**, 15:00), Quiz 2 (**Tue 2 Feb**, 10:00, covers Week 1)
 
 ---
 
@@ -49,7 +49,7 @@ By the end of Week 2, you should be able to:
 | [[L07 Function Templates and Type Deduction]] | Syntax, deduction, explicit arguments, overload interaction |
 | [[L08 Class Templates and Generic Containers]] | `Stack<T>`, the header rule, non-type parameters, `pair` and `tuple` |
 | [[L09 Instantiation Specialization and Cost]] | Specialization, the cost measured, error messages, vs Java and Python |
-| [[PS 2 A Generic Stack]] | Due Friday of Week 3 |
+| [[PS 2 A Generic Stack]] | Due Fri 12 Feb 17:00 |
 | [[PROG102 Week2/assignments/QUIZ 2 Week 2 Monday\|QUIZ 2 Week 2 Monday]] | 15 minutes, covers Week 1 |
 | [[LAB 2 What Templates Cost]] | Measure compile time, binary size and runtime yourself |
 | [[PROG102 Week2/resources/Reading Guide Week 2\|Reading Guide Week 2]] | *C++ Primer* Ch. 16, and every command to reproduce this week |
@@ -86,7 +86,7 @@ actual engineering advice.
 
 ### Assessment Reminder
 
-**Quiz 2 is Monday and covers Week 1** — operator overloading, the Rule of Three, copy-swap, and copy
+**Quiz 2 is Tuesday 2 February and covers Week 1** — operator overloading, the Rule of Three, copy-swap, and copy
 counting.
 
 **Bring Lab 1's repaired `Roster`.** Lab 2 and PS 2 both build on it, and a `Roster` whose Rule of

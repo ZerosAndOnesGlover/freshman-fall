@@ -19,13 +19,16 @@ comparison's personal meaning but can still do B, C and D, which are where the i
    people.
 2. **The first run of the first container is always slow.** Allocator warm-up. Part A2 asks about it
    deliberately — do not let them "fix" it by deleting the run.
-3. **Part D is the point of the lab.** Budget for it: A 30 min, B 25 min, C 25 min, D 25 min.
+3. **Part C is the point of the lab.** Budget for it: A 35 min, B 30 min, C 35 min.
 
 ---
 
-## Part A — The Comparison (14)
+> **Revised 2026-09-22.** Part C (`splice`) was removed: `splice` is never taught in Lectures 19–21. Old Part D is Part C;
+> points re-weighted to keep 40.
 
-### A1 (8)
+## Part A — The Comparison (16)
+
+### A1 (10)
 
 Reference, n = 1,000,000:
 
@@ -62,9 +65,9 @@ regardless of the outcome.*
 
 ---
 
-## Part B — Where the Time Goes (12)
+## Part B — Where the Time Goes (14)
 
-### B1 (6)
+### B1 (7)
 
 Reference, n = 1,000,000 × 10 passes:
 
@@ -76,7 +79,7 @@ Reference, n = 1,000,000 × 10 passes:
 
 *Marking: 6 for all three containers, three runs. Accept 4×–15× for the list/vector ratio.*
 
-### B2 (6) — the assessed question
+### B2 (7) — the assessed question
 
 The answer must account for **both** facts:
 
@@ -94,30 +97,9 @@ structural rather than about code quality.*
 
 ---
 
-## Part C — Operations a List Is For (8)
+## Part C — Make It Lie (10)
 
-### C1 (5)
-
-`splice` relinks — constant time regardless of the number of elements moved (for the whole-list
-overload), against a vector's erase-and-insert which moves every element.
-
-*Marking: 5 for a working relinking splice and both benchmarks. **A splice that allocates or copies
-values is not a splice** — deduct 3 and point at the complexity line on cppreference.*
-
-### C2 (3)
-
-**This is the second half of Week 3's insertion paradox** — the case where you already hold the
-position and no search is needed. That is where the list's $O(1)$ structural operation is actually
-cashable, and Week 3 §L11 §4.2 measured the same thing as a 128× win.
-
-*Marking: 3. **Must identify it as the "position already known" half**, not just "lists are good at
-insertion".*
-
----
-
-## Part D — Make It Lie (6)
-
-### D1 (4)
+### C1 (6)
 
 | n | `std::sort` | sorted correctly? |
 | --- | --- | --- |
@@ -128,7 +110,7 @@ insertion".*
 *Marking: 4. **The "correctly sorted" column is essential** — a student who did not check it has missed
 what makes the result alarming.*
 
-### D2 (2)
+### C2 (4)
 
 About **4.8× per doubling** → $O(n^2 \log n)$. Sorting should be $O(n \log n)$, which would be about
 2.2× per doubling.
@@ -146,8 +128,7 @@ large dataset.
 1. `-O2`, three runs, no sanitizer builds timed.
 2. A2 identifies allocator warm-up rather than deleting the run.
 3. B2 explains **both** the vector gap and the list tie.
-4. C1's splice does not allocate.
-5. D1 reports that the lying sort produced **correct** output.
+4. C1 reports that the lying sort produced **correct** output.
 
 ---
 
@@ -155,24 +136,23 @@ large dataset.
 
 | Part | Points |
 | --- | --- |
-| A | 14 |
-| B | 12 |
-| C | 8 |
-| D | 6 |
+| A | 16 |
+| B | 14 |
+| C | 10 |
 | **Total** | **40** |
 
 ---
 
 ## Note for the Lab
 
-Close on Part D, and make the contrast with every previous lab explicit.
+Close on Part C, and make the contrast with every previous lab explicit.
 
 > **Labs 2 through 5 measured what things cost.** A template instantiation, a virtual call, a
 > `shared_ptr` copy. **Today you measured what a lie costs.**
 
 Then the part worth the last five minutes:
 
-> Look at what did *not* happen in Part D. Nothing crashed. No sanitizer fired. Every result was
+> Look at what did *not* happen in Part C. Nothing crashed. No sanitizer fired. Every result was
 > correctly sorted. The program was right and about a thousand times too slow — and **not one tool this
 > course has given you would have found it.**
 

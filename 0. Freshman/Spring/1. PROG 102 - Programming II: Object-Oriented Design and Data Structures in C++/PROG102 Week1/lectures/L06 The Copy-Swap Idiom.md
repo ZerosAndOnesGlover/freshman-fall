@@ -24,7 +24,26 @@ CharBuffer& operator=(const CharBuffer& o) {
 }
 ```
 
-The second flaw is the serious one, and this is what it costs. Forcing the allocation to fail:
+The second flaw is the serious one, and this is what it costs. To force an allocation to fail, the
+test program replaces the global `operator new[]` — the function every `new T[n]` calls — with one
+that throws when a flag is set. This is the harness; copy it as it is (Problem Set 1 does):
+
+```cpp
+#include <cstdlib>
+#include <new>
+
+static bool fail_next_new = false;           // set to true: the next new[] throws
+void* operator new[](std::size_t n) {
+    if (fail_next_new) { fail_next_new = false; throw std::bad_alloc(); }
+    if (void* p = std::malloc(n ? n : 1)) return p;
+    throw std::bad_alloc();
+}
+void operator delete[](void* p) noexcept { std::free(p); }
+void operator delete[](void* p, std::size_t) noexcept { std::free(p); }
+```
+
+Then `fail_next_new = true; try { a = b; } catch (const std::bad_alloc&) { … }` (Lecture 04 §4.2).
+Forcing the allocation to fail:
 
 ```
 FourStep before: a="hello"

@@ -1,7 +1,8 @@
 # PROG 102 · Lab 3
 ## Profiling STL Containers
 
-**Week 3 · 2-hour lab session · 40 points**
+**Date:** Monday 15 February 2027 · 15:00–16:50 · Lab section (Week 4) — covers Week 3 (L10–L12)
+*2-hour lab · 40 points · in-lab checkoff · part of the Labs component (20%)*
 **Deliverable:** `bench/` with your programs, `RESULTS.md`. In-lab checkoff.
 
 ---
@@ -76,7 +77,8 @@ Report both times and the ratio.
 ## Part C — Associative Containers (10 pts)
 
 **C1.** *(5)* Insert 200,000 random `int` keys into a `std::map` and a `std::unordered_map`, then look
-up every key in a shuffled order.
+up every key in a different order from the one you inserted them — reverse order is enough
+(`std::shuffle` is not needed and has not been taught).
 
 Report insert and lookup times for both, and the ratios.
 

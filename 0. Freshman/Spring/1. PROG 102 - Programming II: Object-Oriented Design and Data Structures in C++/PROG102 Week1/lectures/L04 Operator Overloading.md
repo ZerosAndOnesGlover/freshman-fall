@@ -199,6 +199,34 @@ This course's assignments ask you to throw from `operator[]` anyway, because the
 teaching context is a silent memory error. **Real containers do not**, and Week 3 explains the
 trade-off properly.
 
+### 4.2 Just Enough Exceptions to Throw One
+
+Week 9 covers exceptions properly. Until then you need exactly this much:
+
+```cpp
+#include <stdexcept>
+
+double& Vec::operator[](int i) {
+    if (i < 0 || i >= 3) throw std::out_of_range("Vec index");   // leaves the function at once
+    return e[i];
+}
+
+try {
+    v[7] = 1.0;                                     // throws
+} catch (const std::exception& ex) {                // catches it here
+    std::fprintf(stderr, "caught: %s\n", ex.what());
+}
+```
+
+- `throw` builds an exception object and leaves the current function immediately; destructors of the
+  locals it leaves still run.
+- `try { … } catch (const std::exception& ex) { … }` stops it. `ex.what()` is the message.
+- If nothing catches it, the program terminates.
+- `<stdexcept>` provides `std::out_of_range`, `std::domain_error` and `std::invalid_argument`. `<new>`
+  provides `std::bad_alloc`, which is what a failed `new` throws.
+
+What unwinding cleans up, what it costs, and the exception guarantees are Week 9.
+
 ---
 
 ## 5. `operator()`: The Function Call Operator

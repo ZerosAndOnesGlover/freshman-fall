@@ -119,7 +119,8 @@ std::accumulate(l.begin(), l.end(), 0);      // 28
 std::count_if(v.begin(), v.end(), [](int x){ return x % 2 == 0; });   // 2
 ```
 
-Verified — all four produce the values shown. `accumulate` was written once and works on both, because
+Verified — all four produce the values shown. (The `[](int x){ … }` in the last line is a *lambda*, a
+function written in place; Lecture 12 §2.2 gives the syntax.) `accumulate` was written once and works on both, because
 it needs only **input** iterators: read, advance, compare.
 
 `std::find` needs input iterators too. `std::reverse` needs bidirectional. `std::sort` needs random

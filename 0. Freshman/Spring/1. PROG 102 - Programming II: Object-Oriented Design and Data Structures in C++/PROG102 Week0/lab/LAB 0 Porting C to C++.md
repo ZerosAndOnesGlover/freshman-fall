@@ -1,7 +1,8 @@
 # PROG 102 · Lab 0
 ## Porting C to C++
 
-**Week 0 · 2-hour lab session · 40 points**
+**Date:** Monday 25 January 2027 · 15:00–16:50 · Lab section (Week 1) — covers Week 0 (L00–L03)
+*2-hour lab · 40 points · in-lab checkoff · part of the Labs component (20%)*
 **Deliverable:** `stack.cpp`, `RESULTS.md`. In-lab checkoff by your TA.
 
 > **Labs are worth 20% of this course.** They are a graded component, not a completion gate. If you

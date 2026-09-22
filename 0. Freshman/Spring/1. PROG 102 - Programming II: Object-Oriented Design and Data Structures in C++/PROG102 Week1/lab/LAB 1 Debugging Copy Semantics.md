@@ -1,7 +1,8 @@
 # PROG 102 · Lab 1
 ## Debugging Copy Semantics
 
-**Week 1 · 2-hour lab session · 40 points**
+**Date:** Monday 1 February 2027 · 15:00–16:50 · Lab section (Week 2) — covers Week 1 (L04–L06)
+*2-hour lab · 40 points · in-lab checkoff · part of the Labs component (20%)*
 **Deliverable:** `roster.hpp` (repaired), `RESULTS.md`. In-lab checkoff by your TA.
 
 ---
