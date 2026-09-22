@@ -1,7 +1,7 @@
 # CS 102 · Computer Science II
 ## Lecture 16: Weighted Shortest Paths — Relaxation, Ordering, and DAGs
 
-**Date:** Monday 15 February 2027 · 09:00–09:50 · Week 5
+**Date:** Monday 22 February 2027 · 09:00–09:50 · Week 5
 
 ---
 

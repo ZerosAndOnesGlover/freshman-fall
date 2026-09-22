@@ -2,7 +2,7 @@
 ## Week 12 · Lecture 3 (Friday)
 ### The Road Ahead
 
-**Date:** Friday 9 April 2027 · 11:00–11:50 · Week 12
+**Date:** Friday 16 April 2027 · 11:00–11:50 · Week 12
 
 ---
 

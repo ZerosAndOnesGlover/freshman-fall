@@ -2,7 +2,7 @@
 ## Week 2 · Lecture 1 (Monday)
 ### Trigonometric Substitution
 
-**Date:** Monday 25 January 2027 · 11:00–11:50 · Week 2
+**Date:** Monday 1 February 2027 · 11:00–11:50 · Week 2
 
 ---
 

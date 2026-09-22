@@ -1,7 +1,7 @@
 # CS 102 · Computer Science II
 ## Lecture 38: Reductions and NP-Completeness
 
-**Date:** Wednesday 7 April 2027 · 09:00–09:50 · Week 12
+**Date:** Wednesday 14 April 2027 · 09:00–09:50 · Week 12
 
 ---
 

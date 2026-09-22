@@ -2,7 +2,7 @@
 ## Week 7 · Lecture 2 (Thursday)
 ### Flip-Flops and Timing
 
-**Date:** Thursday 4 March 2027 · 13:00–14:15 · Week 7
+**Date:** Thursday 11 March 2027 · 13:00–14:15 · Week 7
 
 ---
 

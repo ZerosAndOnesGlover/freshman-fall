@@ -4,7 +4,7 @@
 **Week 10 · Thursday · 50 minutes**
 **Reading:** Williams Ch. 5, Ch. 6.1–6.2 · **Assumes:** L31, L32, Week 5
 
-**Date:** Thursday 25 March 2027 · 10:00–10:50 · Week 10
+**Date:** Thursday 1 April 2027 · 10:00–10:50 · Week 10
 
 ---
 

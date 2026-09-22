@@ -6,7 +6,7 @@
 **Assumes:** **Lecture 00** — this lecture uses `::`, `std::`, `explicit`, references and
 `new`/`delete` without explaining them.
 
-**Date:** Wednesday 13 January 2027 · 10:00–10:50 · Week 0
+**Date:** Wednesday 20 January 2027 · 10:00–10:50 · Week 0
 
 ---
 

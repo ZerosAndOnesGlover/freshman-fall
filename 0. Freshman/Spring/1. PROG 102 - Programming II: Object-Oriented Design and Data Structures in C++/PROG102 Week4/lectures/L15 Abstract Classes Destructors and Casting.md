@@ -5,7 +5,7 @@
 **Reading:** *C++ Primer* §15.4, §15.7, §19.2 · **Reference:** Stroustrup §20.4, §22.2
 **Assumes:** L13, L14
 
-**Date:** Thursday 11 February 2027 · 10:00–10:50 · Week 4
+**Date:** Thursday 18 February 2027 · 10:00–10:50 · Week 4
 
 ---
 

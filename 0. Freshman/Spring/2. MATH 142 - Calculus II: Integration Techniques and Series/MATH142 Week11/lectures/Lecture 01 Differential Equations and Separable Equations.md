@@ -2,7 +2,7 @@
 ## Week 11 · Lecture 1 (Monday)
 ### Differential Equations and Separable Equations
 
-**Date:** Monday 29 March 2027 · 11:00–11:50 · Week 11
+**Date:** Monday 5 April 2027 · 11:00–11:50 · Week 11
 
 ---
 

@@ -2,7 +2,7 @@
 ## Week 1 · Lecture 1 (Wednesday)
 ### Boolean Axioms and Theorems
 
-**Date:** Wednesday 20 January 2027 · 13:00–14:15 · Week 1
+**Date:** Wednesday 27 January 2027 · 13:00–14:15 · Week 1
 
 ---
 

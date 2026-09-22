@@ -5,7 +5,7 @@
 **Reading:** *C++ Primer* §12.1.1–12.1.5 · **Reference:** Meyers, *Effective Modern C++* Items 18, 21
 **Assumes:** L02 (destructors), Week 1 (Rule of Three), Week 4 (virtual destructors)
 
-**Date:** Tuesday 16 February 2027 · 10:00–10:50 · Week 5
+**Date:** Tuesday 23 February 2027 · 10:00–10:50 · Week 5
 
 ---
 

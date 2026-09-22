@@ -5,7 +5,7 @@
 **Reading:** *C++ Primer* §7.1.4, §7.5 · **Reference:** Stroustrup Ch. 17
 **Assumes:** **Lecture 00** §5 (references), §8 (`new`/`delete`), §14 (`= default`)
 
-**Date:** Thursday 14 January 2027 · 10:00–10:50 · Week 0
+**Date:** Thursday 21 January 2027 · 10:00–10:50 · Week 0
 
 ---
 

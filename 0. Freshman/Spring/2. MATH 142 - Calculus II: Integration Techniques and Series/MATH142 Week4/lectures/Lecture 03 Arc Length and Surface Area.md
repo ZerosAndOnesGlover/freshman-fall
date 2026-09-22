@@ -2,7 +2,7 @@
 ## Week 4 · Lecture 3 (Friday)
 ### Arc Length and Surface Area — Where Closed Forms Run Out
 
-**Date:** Friday 12 February 2027 · 11:00–11:50 · Week 4
+**Date:** Friday 19 February 2027 · 11:00–11:50 · Week 4
 
 ---
 

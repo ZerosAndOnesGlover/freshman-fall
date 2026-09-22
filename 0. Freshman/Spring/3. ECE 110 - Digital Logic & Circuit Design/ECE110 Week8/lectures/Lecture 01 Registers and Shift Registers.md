@@ -2,7 +2,7 @@
 ## Week 8 · Lecture 1 (Wednesday)
 ### Registers and Shift Registers
 
-**Date:** Wednesday 10 March 2027 · 13:00–14:15 · Week 8
+**Date:** Wednesday 17 March 2027 · 13:00–14:15 · Week 8
 
 ---
 

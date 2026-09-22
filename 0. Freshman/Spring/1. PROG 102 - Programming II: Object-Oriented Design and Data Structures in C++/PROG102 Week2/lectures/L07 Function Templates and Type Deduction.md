@@ -5,7 +5,7 @@
 **Reading:** *C++ Primer* §16.1.1, §16.2 · **Reference:** Stroustrup Ch. 23
 **Assumes:** L03 §4 (`inline`, weak symbols), Week 1 entire
 
-**Date:** Tuesday 26 January 2027 · 10:00–10:50 · Week 2
+**Date:** Tuesday 2 February 2027 · 10:00–10:50 · Week 2
 
 ---
 

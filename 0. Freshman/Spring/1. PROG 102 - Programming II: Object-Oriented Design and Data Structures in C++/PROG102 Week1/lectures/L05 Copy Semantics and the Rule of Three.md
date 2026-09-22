@@ -5,7 +5,7 @@
 **Reading:** *C++ Primer* §13.1–13.2 · **Reference:** Meyers, *Effective C++* Item 5–6
 **Assumes:** L02 (destructors, lifetime), L03 (`const` members), **PS 0 Part E**
 
-**Date:** Wednesday 20 January 2027 · 10:00–10:50 · Week 1
+**Date:** Wednesday 27 January 2027 · 10:00–10:50 · Week 1
 
 ---
 

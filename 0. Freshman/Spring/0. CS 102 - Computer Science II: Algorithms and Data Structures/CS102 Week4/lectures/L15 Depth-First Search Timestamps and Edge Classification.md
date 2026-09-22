@@ -1,7 +1,7 @@
 # CS 102 · Computer Science II
 ## Lecture 15: Depth-First Search — Timestamps and Edge Classification
 
-**Date:** Friday 12 February 2027 · 09:00–09:50 · Week 4
+**Date:** Friday 19 February 2027 · 09:00–09:50 · Week 4
 
 ---
 

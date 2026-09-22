@@ -1,7 +1,7 @@
 # CS 102 · Computer Science II
 ## Lecture 30: Huffman Coding
 
-**Date:** Friday 19 March 2027 · 09:00–09:50 · Week 9
+**Date:** Friday 26 March 2027 · 09:00–09:50 · Week 9
 
 ---
 

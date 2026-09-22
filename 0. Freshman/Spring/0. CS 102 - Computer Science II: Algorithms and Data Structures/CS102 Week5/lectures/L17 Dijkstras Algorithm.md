@@ -1,7 +1,7 @@
 # CS 102 · Computer Science II
 ## Lecture 17: Dijkstra's Algorithm
 
-**Date:** Wednesday 17 February 2027 · 09:00–09:50 · Week 5
+**Date:** Wednesday 24 February 2027 · 09:00–09:50 · Week 5
 
 ---
 

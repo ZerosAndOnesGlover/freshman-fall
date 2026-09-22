@@ -2,7 +2,7 @@
 ## Week 5 · Lecture 2 (Tuesday)
 ### Calculus with Parametric Curves
 
-**Date:** Tuesday 16 February 2027 · 11:00–11:50 · Week 5
+**Date:** Tuesday 23 February 2027 · 11:00–11:50 · Week 5
 
 ---
 

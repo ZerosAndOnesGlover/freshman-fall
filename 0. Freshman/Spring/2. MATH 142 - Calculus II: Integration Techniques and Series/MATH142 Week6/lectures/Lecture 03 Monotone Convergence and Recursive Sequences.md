@@ -2,7 +2,7 @@
 ## Week 6 · Lecture 3 (Friday)
 ### Monotone Convergence, and Sequences That Define Themselves
 
-**Date:** Friday 26 February 2027 · 11:00–11:50 · Week 6
+**Date:** Friday 5 March 2027 · 11:00–11:50 · Week 6
 
 ---
 

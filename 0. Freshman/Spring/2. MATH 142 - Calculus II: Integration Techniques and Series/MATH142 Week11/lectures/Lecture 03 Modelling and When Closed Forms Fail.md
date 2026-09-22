@@ -2,7 +2,7 @@
 ## Week 11 · Lecture 3 (Friday)
 ### Modelling, and When Closed Forms Fail
 
-**Date:** Friday 2 April 2027 · 11:00–11:50 · Week 11
+**Date:** Friday 9 April 2027 · 11:00–11:50 · Week 11
 
 ---
 

@@ -1,7 +1,7 @@
 # CS 102 · Computer Science II
 ## Lecture 04: Trees and Traversals
 
-**Date:** Monday 18 January 2027 · 09:00–09:50 · Week 1
+**Date:** Monday 25 January 2027 · 09:00–09:50 · Week 1
 
 ---
 

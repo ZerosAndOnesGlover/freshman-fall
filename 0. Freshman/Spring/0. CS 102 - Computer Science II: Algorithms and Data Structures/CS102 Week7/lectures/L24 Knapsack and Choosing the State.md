@@ -1,7 +1,7 @@
 # CS 102 · Computer Science II
 ## Lecture 24: Knapsack, and How to Choose the State
 
-**Date:** Friday 5 March 2027 · 09:00–09:50 · Week 7
+**Date:** Friday 12 March 2027 · 09:00–09:50 · Week 7
 
 ---
 

@@ -5,7 +5,7 @@
 **Reading:** *C++ Primer* §13.3 · **Reference:** Meyers, *Effective C++* Item 11
 **Assumes:** L05 (Rule of Three, self-assignment)
 
-**Date:** Thursday 21 January 2027 · 10:00–10:50 · Week 1
+**Date:** Thursday 28 January 2027 · 10:00–10:50 · Week 1
 
 ---
 

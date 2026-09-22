@@ -5,7 +5,7 @@
 **Reading:** *C++ Primer* §2.4.4, §6.5.2; cppreference on `constexpr` and structured bindings
 **Assumes:** L34, L35, Week 2
 
-**Date:** Thursday 1 April 2027 · 10:00–10:50 · Week 11
+**Date:** Thursday 8 April 2027 · 10:00–10:50 · Week 11
 
 ---
 

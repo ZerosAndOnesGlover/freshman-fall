@@ -5,7 +5,7 @@
 **Reading:** Gang of Four Ch. 4 (Adapter, Composite, Decorator, Facade)
 **Assumes:** L22, L23, Week 5 (`unique_ptr`)
 
-**Date:** Thursday 4 March 2027 · 10:00–10:50 · Week 7
+**Date:** Thursday 11 March 2027 · 10:00–10:50 · Week 7
 
 ---
 

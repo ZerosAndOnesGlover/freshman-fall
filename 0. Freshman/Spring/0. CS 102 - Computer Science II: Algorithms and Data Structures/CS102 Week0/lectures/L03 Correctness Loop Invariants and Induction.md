@@ -1,7 +1,7 @@
 # CS 102 · Computer Science II
 ## Lecture 03: Correctness — Loop Invariants and Induction
 
-**Date:** Friday 15 January 2027 · 09:00–09:50 · Week 0
+**Date:** Friday 22 January 2027 · 09:00–09:50 · Week 0
 
 ---
 

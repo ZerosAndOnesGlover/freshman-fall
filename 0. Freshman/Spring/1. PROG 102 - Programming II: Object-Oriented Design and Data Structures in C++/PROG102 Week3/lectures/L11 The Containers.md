@@ -5,7 +5,7 @@
 **Reading:** *C++ Primer* Ch. 9, §11.1–11.3 · **Reference:** Stroustrup Ch. 31
 **Assumes:** L10 (iterators and categories)
 
-**Date:** Wednesday 3 February 2027 · 10:00–10:50 · Week 3
+**Date:** Wednesday 10 February 2027 · 10:00–10:50 · Week 3
 
 ---
 

@@ -1,7 +1,7 @@
 # CS 102 · Computer Science II
 ## Lecture 02: Complexity Analysis, Reviewed and Sharpened
 
-**Date:** Wednesday 13 January 2027 · 09:00–09:50 · Week 0
+**Date:** Wednesday 20 January 2027 · 09:00–09:50 · Week 0
 
 ---
 

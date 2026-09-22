@@ -1,7 +1,7 @@
 # CS 102 · Computer Science II
 ## Lecture 29: Scheduling and Fractional Knapsack
 
-**Date:** Wednesday 17 March 2027 · 09:00–09:50 · Week 9
+**Date:** Wednesday 24 March 2027 · 09:00–09:50 · Week 9
 
 ---
 

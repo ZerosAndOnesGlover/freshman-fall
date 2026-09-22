@@ -2,7 +2,7 @@
 ## Week 5 · Lecture 1 (Wednesday)
 ### Decoders and Encoders
 
-**Date:** Wednesday 17 February 2027 · 13:00–14:15 · Week 5
+**Date:** Wednesday 24 February 2027 · 13:00–14:15 · Week 5
 
 ---
 

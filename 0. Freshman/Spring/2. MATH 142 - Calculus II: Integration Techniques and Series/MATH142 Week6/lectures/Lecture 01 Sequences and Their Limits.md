@@ -2,7 +2,7 @@
 ## Week 6 · Lecture 1 (Monday)
 ### Sequences and Their Limits
 
-**Date:** Monday 22 February 2027 · 11:00–11:50 · Week 6
+**Date:** Monday 1 March 2027 · 11:00–11:50 · Week 6
 
 ---
 

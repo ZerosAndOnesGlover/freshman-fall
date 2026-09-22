@@ -1,7 +1,7 @@
 # CS 102 · Computer Science II
 ## Lecture 18: Bellman–Ford, Negative Cycles, and Choosing an Algorithm
 
-**Date:** Friday 19 February 2027 · 09:00–09:50 · Week 5
+**Date:** Friday 26 February 2027 · 09:00–09:50 · Week 5
 
 ---
 

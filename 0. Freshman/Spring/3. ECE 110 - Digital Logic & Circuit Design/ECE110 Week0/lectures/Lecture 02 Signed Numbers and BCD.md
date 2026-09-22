@@ -2,7 +2,7 @@
 ## Week 0 · Lecture 2 (Thursday)
 ### Signed Numbers and BCD
 
-**Date:** Thursday 14 January 2027 · 13:00–14:15 · Week 0
+**Date:** Thursday 21 January 2027 · 13:00–14:15 · Week 0
 
 ---
 

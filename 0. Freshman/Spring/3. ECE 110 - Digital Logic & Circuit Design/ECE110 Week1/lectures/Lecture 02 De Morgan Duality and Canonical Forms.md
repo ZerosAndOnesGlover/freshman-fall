@@ -2,7 +2,7 @@
 ## Week 1 · Lecture 2 (Thursday)
 ### De Morgan's Laws and Canonical Forms
 
-**Date:** Thursday 21 January 2027 · 13:00–14:15 · Week 1
+**Date:** Thursday 28 January 2027 · 13:00–14:15 · Week 1
 
 ---
 

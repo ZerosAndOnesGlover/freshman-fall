@@ -2,7 +2,7 @@
 ## Week 7 · Lecture 1 (Wednesday)
 ### Latches and the Forbidden State
 
-**Date:** Wednesday 3 March 2027 · 13:00–14:15 · Week 7
+**Date:** Wednesday 10 March 2027 · 13:00–14:15 · Week 7
 
 ---
 

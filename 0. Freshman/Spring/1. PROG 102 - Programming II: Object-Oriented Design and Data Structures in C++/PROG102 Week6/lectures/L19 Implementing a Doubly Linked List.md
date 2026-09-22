@@ -5,7 +5,7 @@
 **Reading:** *C++ Primer* §9.2 (revisit), Ch. 13 · **Reference:** Stroustrup §31.4
 **Assumes:** Weeks 1, 2 and 5 — Rule of Five, templates, `unique_ptr`
 
-**Date:** Tuesday 23 February 2027 · 10:00–10:50 · Week 6
+**Date:** Tuesday 2 March 2027 · 10:00–10:50 · Week 6
 
 ---
 

@@ -2,7 +2,7 @@
 ## Week 7 · Lecture 1 (Monday)
 ### Series, Geometric and Telescoping
 
-**Date:** Monday 1 March 2027 · 11:00–11:50 · Week 7
+**Date:** Monday 8 March 2027 · 11:00–11:50 · Week 7
 
 ---
 

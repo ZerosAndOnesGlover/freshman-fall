@@ -4,7 +4,7 @@
 **Week 11 · Tuesday · 50 minutes**
 **Reading:** Meyers, *Effective Modern C++* Items 31–33 · **Assumes:** Week 1 (`operator()`), Week 2
 
-**Date:** Tuesday 30 March 2027 · 10:00–10:50 · Week 11
+**Date:** Tuesday 6 April 2027 · 10:00–10:50 · Week 11
 
 ---
 

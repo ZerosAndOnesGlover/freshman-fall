@@ -2,7 +2,7 @@
 ## Week 11 · Lecture 1 (Wednesday)
 ### SRAM and DRAM
 
-**Date:** Wednesday 31 March 2027 · 13:00–14:15 · Week 11
+**Date:** Wednesday 7 April 2027 · 13:00–14:15 · Week 11
 
 ---
 

@@ -2,7 +2,7 @@
 ## Week 4 · Lecture 1 (Wednesday)
 ### Karnaugh Maps
 
-**Date:** Wednesday 10 February 2027 · 13:00–14:15 · Week 4
+**Date:** Wednesday 17 February 2027 · 13:00–14:15 · Week 4
 
 ---
 

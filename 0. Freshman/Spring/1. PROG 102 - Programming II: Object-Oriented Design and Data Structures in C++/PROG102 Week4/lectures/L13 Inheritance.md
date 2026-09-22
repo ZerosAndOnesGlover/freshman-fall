@@ -5,7 +5,7 @@
 **Reading:** *C++ Primer* §15.1–15.3 · **Reference:** Stroustrup Ch. 20
 **Assumes:** Week 0 (classes, access control, construction order)
 
-**Date:** Tuesday 9 February 2027 · 10:00–10:50 · Week 4
+**Date:** Tuesday 16 February 2027 · 10:00–10:50 · Week 4
 
 ---
 

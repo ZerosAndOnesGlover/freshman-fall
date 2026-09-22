@@ -1,7 +1,7 @@
 # CS 102 · Computer Science II
 ## Lecture 27: Floyd–Warshall and All-Pairs Shortest Paths
 
-**Date:** Friday 12 March 2027 · 09:00–09:50 · Week 8
+**Date:** Friday 19 March 2027 · 09:00–09:50 · Week 8
 
 ---
 

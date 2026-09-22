@@ -1,7 +1,7 @@
 # CS 102 · Computer Science II
 ## Lecture 28: The Greedy Paradigm and Exchange Arguments
 
-**Date:** Monday 15 March 2027 · 09:00–09:50 · Week 9
+**Date:** Monday 22 March 2027 · 09:00–09:50 · Week 9
 
 ---
 

@@ -5,7 +5,7 @@
 **Reading:** Gang of Four Ch. 5 — Strategy, Command, Template Method
 **Assumes:** L25, Week 4, Week 7
 
-**Date:** Wednesday 10 March 2027 · 10:00–10:50 · Week 8
+**Date:** Wednesday 17 March 2027 · 10:00–10:50 · Week 8
 
 ---
 

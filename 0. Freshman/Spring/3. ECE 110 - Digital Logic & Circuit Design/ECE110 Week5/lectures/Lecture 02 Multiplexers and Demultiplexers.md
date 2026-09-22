@@ -2,7 +2,7 @@
 ## Week 5 · Lecture 2 (Thursday)
 ### Multiplexers and Demultiplexers
 
-**Date:** Thursday 18 February 2027 · 13:00–14:15 · Week 5
+**Date:** Thursday 25 February 2027 · 13:00–14:15 · Week 5
 
 ---
 

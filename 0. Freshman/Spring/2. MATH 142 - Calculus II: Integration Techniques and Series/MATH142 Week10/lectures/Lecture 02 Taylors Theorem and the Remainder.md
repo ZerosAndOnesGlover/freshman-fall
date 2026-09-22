@@ -2,7 +2,7 @@
 ## Week 10 · Lecture 2 (Tuesday)
 ### Taylor's Theorem, and Whether the Series Is Really $f$
 
-**Date:** Tuesday 23 March 2027 · 11:00–11:50 · Week 10
+**Date:** Tuesday 30 March 2027 · 11:00–11:50 · Week 10
 
 ---
 

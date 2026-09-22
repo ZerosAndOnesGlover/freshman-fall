@@ -2,7 +2,7 @@
 ## Week 3 · Lecture 1 (Wednesday)
 ### Half and Full Adders
 
-**Date:** Wednesday 3 February 2027 · 13:00–14:15 · Week 3
+**Date:** Wednesday 10 February 2027 · 13:00–14:15 · Week 3
 
 ---
 

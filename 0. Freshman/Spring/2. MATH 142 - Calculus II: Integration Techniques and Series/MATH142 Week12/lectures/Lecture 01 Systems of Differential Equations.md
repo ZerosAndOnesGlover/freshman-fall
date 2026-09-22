@@ -2,7 +2,7 @@
 ## Week 12 · Lecture 1 (Monday)
 ### Systems of Differential Equations
 
-**Date:** Monday 5 April 2027 · 11:00–11:50 · Week 12
+**Date:** Monday 12 April 2027 · 11:00–11:50 · Week 12
 
 ---
 

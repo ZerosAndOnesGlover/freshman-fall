@@ -2,7 +2,7 @@
 ## Week 0 · Lecture 1 (Wednesday)
 ### Number Systems and Conversions
 
-**Date:** Wednesday 13 January 2027 · 13:00–14:15 · Week 0
+**Date:** Wednesday 20 January 2027 · 13:00–14:15 · Week 0
 
 ---
 

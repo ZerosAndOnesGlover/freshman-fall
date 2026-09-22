@@ -2,7 +2,7 @@
 ## Week 6 · Lecture 1 (Wednesday)
 ### Building an ALU
 
-**Date:** Wednesday 24 February 2027 · 13:00–14:15 · Week 6
+**Date:** Wednesday 3 March 2027 · 13:00–14:15 · Week 6
 
 ---
 

@@ -2,7 +2,7 @@
 ## Week 11 · Lecture 2 (Thursday)
 ### ROM and Memory Organisation
 
-**Date:** Thursday 1 April 2027 · 13:00–14:15 · Week 11
+**Date:** Thursday 8 April 2027 · 13:00–14:15 · Week 11
 
 ---
 

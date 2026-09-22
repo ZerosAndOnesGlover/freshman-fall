@@ -4,7 +4,7 @@
 **Week 9 · Thursday · 50 minutes**
 **Reading:** Meyers, *Effective Modern C++* Item 14 · **Assumes:** L28, L29
 
-**Date:** Thursday 18 March 2027 · 10:00–10:50 · Week 9
+**Date:** Thursday 25 March 2027 · 10:00–10:50 · Week 9
 
 ---
 

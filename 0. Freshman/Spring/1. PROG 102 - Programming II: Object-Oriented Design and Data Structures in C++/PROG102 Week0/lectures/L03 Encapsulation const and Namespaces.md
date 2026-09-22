@@ -5,7 +5,7 @@
 **Reading:** *C++ Primer* §7.2–7.3, §18.2 · **Reference:** Stroustrup §16.2.3, Ch. 14
 **Assumes:** **Lecture 00** §12 (`static_cast`, `reinterpret_cast`), §15 (`static_assert`, `decltype`)
 
-**Date:** Friday 15 January 2027 · 10:00–10:50 · Week 0  <!-- 4th lecture in a 3-day week; see Calendar Reconciliation -->
+**Date:** Friday 22 January 2027 · 10:00–10:50 · Week 0  <!-- 4th lecture in a 3-day week; see Calendar Reconciliation -->
 
 ---
 

@@ -2,7 +2,7 @@
 ## Week 8 · Lecture 1 (Monday)
 ### Alternating Series
 
-**Date:** Monday 8 March 2027 · 11:00–11:50 · Week 8
+**Date:** Monday 15 March 2027 · 11:00–11:50 · Week 8
 
 ---
 

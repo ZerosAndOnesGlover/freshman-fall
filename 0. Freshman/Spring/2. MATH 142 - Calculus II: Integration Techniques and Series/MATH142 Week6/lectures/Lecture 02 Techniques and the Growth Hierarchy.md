@@ -2,7 +2,7 @@
 ## Week 6 · Lecture 2 (Tuesday)
 ### Techniques, and the Growth Hierarchy
 
-**Date:** Tuesday 23 February 2027 · 11:00–11:50 · Week 6
+**Date:** Tuesday 2 March 2027 · 11:00–11:50 · Week 6
 
 ---
 

@@ -2,7 +2,7 @@
 ## Week 10 · Lecture 1 (Monday)
 ### Taylor and Maclaurin Series
 
-**Date:** Monday 22 March 2027 · 11:00–11:50 · Week 10
+**Date:** Monday 29 March 2027 · 11:00–11:50 · Week 10
 
 ---
 

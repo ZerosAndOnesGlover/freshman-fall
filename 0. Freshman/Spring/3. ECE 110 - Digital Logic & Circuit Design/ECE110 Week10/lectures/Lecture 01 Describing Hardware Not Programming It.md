@@ -2,7 +2,7 @@
 ## Week 10 · Lecture 1 (Wednesday)
 ### Describing Hardware, Not Programming It
 
-**Date:** Wednesday 24 March 2027 · 13:00–14:15 · Week 10
+**Date:** Wednesday 31 March 2027 · 13:00–14:15 · Week 10
 
 ---
 

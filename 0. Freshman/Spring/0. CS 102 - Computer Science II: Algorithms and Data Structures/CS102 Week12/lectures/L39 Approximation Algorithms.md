@@ -1,7 +1,7 @@
 # CS 102 · Computer Science II
 ## Lecture 39: Approximation Algorithms
 
-**Date:** Friday 9 April 2027 · 09:00–09:50 · Week 12
+**Date:** Friday 16 April 2027 · 09:00–09:50 · Week 12
 
 ---
 

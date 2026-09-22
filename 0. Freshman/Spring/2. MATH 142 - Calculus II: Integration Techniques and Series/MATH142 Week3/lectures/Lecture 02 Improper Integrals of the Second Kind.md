@@ -2,7 +2,7 @@
 ## Week 3 · Lecture 2 (Tuesday)
 ### Improper Integrals of the Second Kind — and Singularities That Hide
 
-**Date:** Tuesday 2 February 2027 · 11:00–11:50 · Week 3
+**Date:** Tuesday 9 February 2027 · 11:00–11:50 · Week 3
 
 ---
 

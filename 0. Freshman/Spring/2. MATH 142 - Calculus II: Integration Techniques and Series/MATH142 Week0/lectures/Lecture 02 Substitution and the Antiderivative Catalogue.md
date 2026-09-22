@@ -2,7 +2,7 @@
 ## Week 0 · Lecture 2 (Tuesday)
 ### Substitution and the Antiderivative Catalogue
 
-**Date:** Tuesday 12 January 2027 · 11:00–11:50 · Week 0
+**Date:** Tuesday 19 January 2027 · 11:00–11:50 · Week 0
 
 ---
 

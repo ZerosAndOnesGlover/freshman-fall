@@ -2,7 +2,7 @@
 ## Week 11 · Lecture 2 (Tuesday)
 ### First-Order Linear Equations
 
-**Date:** Tuesday 30 March 2027 · 11:00–11:50 · Week 11
+**Date:** Tuesday 6 April 2027 · 11:00–11:50 · Week 11
 
 ---
 

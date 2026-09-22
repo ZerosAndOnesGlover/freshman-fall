@@ -2,7 +2,7 @@
 ## Week 1 · Lecture 3 (Friday)
 ### Trigonometric Integrals, and the Identity Behind Fourier Analysis
 
-**Date:** Friday 22 January 2027 · 11:00–11:50 · Week 1
+**Date:** Friday 29 January 2027 · 11:00–11:50 · Week 1
 
 ---
 

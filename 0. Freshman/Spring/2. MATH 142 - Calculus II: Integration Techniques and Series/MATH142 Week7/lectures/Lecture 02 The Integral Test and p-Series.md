@@ -2,7 +2,7 @@
 ## Week 7 · Lecture 2 (Tuesday)
 ### The Integral Test, and $p$-Series
 
-**Date:** Tuesday 2 March 2027 · 11:00–11:50 · Week 7
+**Date:** Tuesday 9 March 2027 · 11:00–11:50 · Week 7
 
 ---
 

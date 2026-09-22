@@ -4,7 +4,7 @@
 **Week 10 · Wednesday · 50 minutes**
 **Reading:** Williams Ch. 3–4 · **Assumes:** L31, Week 5 (RAII)
 
-**Date:** Wednesday 24 March 2027 · 10:00–10:50 · Week 10
+**Date:** Wednesday 31 March 2027 · 10:00–10:50 · Week 10
 
 ---
 

@@ -2,7 +2,7 @@
 ## Week 1 · Lecture 1 (Monday)
 ### Integration by Parts
 
-**Date:** Monday 18 January 2027 · 11:00–11:50 · Week 1
+**Date:** Monday 25 January 2027 · 11:00–11:50 · Week 1
 
 ---
 

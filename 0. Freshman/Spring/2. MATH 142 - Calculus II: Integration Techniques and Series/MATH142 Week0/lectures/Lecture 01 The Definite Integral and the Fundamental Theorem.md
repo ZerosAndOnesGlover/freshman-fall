@@ -2,7 +2,7 @@
 ## Week 0 · Lecture 1 (Monday)
 ### The Definite Integral and the Fundamental Theorem
 
-**Date:** Monday 11 January 2027 · 11:00–11:50 · Week 0
+**Date:** Monday 18 January 2027 · 11:00–11:50 · Week 0
 
 ---
 

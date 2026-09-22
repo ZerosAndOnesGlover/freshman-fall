@@ -4,7 +4,7 @@
 **Week 12 · Wednesday · 50 minutes**
 **Reading:** `perf` documentation; Meyers Item 30 (inlining) · **Assumes:** every measurement week
 
-**Date:** Wednesday 7 April 2027 · 10:00–10:50 · Week 12
+**Date:** Wednesday 14 April 2027 · 10:00–10:50 · Week 12
 
 ---
 

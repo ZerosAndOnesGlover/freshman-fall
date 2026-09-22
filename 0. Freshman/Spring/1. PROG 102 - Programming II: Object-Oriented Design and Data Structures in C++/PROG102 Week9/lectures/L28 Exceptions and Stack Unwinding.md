@@ -5,7 +5,7 @@
 **Reading:** *C++ Primer* §5.6, Ch. 18.1 · **Reference:** Meyers Item 8 (destructors and exceptions)
 **Assumes:** Week 5 (RAII), Week 1 (copy-and-swap)
 
-**Date:** Tuesday 16 March 2027 · 10:00–10:50 · Week 9
+**Date:** Tuesday 23 March 2027 · 10:00–10:50 · Week 9
 
 ---
 

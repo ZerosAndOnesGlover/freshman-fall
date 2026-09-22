@@ -1,7 +1,7 @@
 # CS 102 · Computer Science II
 ## Lecture 21: Union-Find, and What MSTs Are For
 
-**Date:** Friday 26 February 2027 · 09:00–09:50 · Week 6
+**Date:** Friday 5 March 2027 · 09:00–09:50 · Week 6
 
 ---
 

@@ -1,7 +1,7 @@
 # CS 102 · Computer Science II
 ## Lecture 34: Geometric Primitives and the Convex Hull
 
-**Date:** Monday 29 March 2027 · 09:00–09:50 · Week 11
+**Date:** Monday 5 April 2027 · 09:00–09:50 · Week 11
 
 ---
 

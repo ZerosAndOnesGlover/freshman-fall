@@ -1,7 +1,7 @@
 # CS 102 · Computer Science II
 ## Lecture 33: Suffix Arrays and Applications
 
-**Date:** Friday 26 March 2027 · 09:00–09:50 · Week 10
+**Date:** Friday 2 April 2027 · 09:00–09:50 · Week 10
 
 ---
 

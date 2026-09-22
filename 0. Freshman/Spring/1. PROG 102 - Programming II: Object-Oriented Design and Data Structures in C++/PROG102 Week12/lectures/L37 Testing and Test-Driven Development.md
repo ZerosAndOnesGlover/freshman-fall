@@ -4,7 +4,7 @@
 **Week 12 · Tuesday · 50 minutes**
 **Reading:** cppreference on assertions; Catch2 documentation · **Assumes:** Week 9 (Lab 9)
 
-**Date:** Tuesday 6 April 2027 · 10:00–10:50 · Week 12
+**Date:** Tuesday 13 April 2027 · 10:00–10:50 · Week 12
 
 ---
 

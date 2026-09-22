@@ -5,7 +5,7 @@
 **Reading:** *C++ Primer* §16.1.2, §16.1.3 · **Reference:** Stroustrup Ch. 23
 **Assumes:** L07, and Week 1's Rule of Three
 
-**Date:** Wednesday 27 January 2027 · 10:00–10:50 · Week 2
+**Date:** Wednesday 3 February 2027 · 10:00–10:50 · Week 2
 
 ---
 

@@ -2,7 +2,7 @@
 ## Week 1 · Lecture 2 (Tuesday)
 ### Repeated Parts, Reduction Formulas, and the Integral That Comes Back
 
-**Date:** Tuesday 19 January 2027 · 11:00–11:50 · Week 1
+**Date:** Tuesday 26 January 2027 · 11:00–11:50 · Week 1
 
 ---
 

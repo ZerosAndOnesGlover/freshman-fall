@@ -2,7 +2,7 @@
 ## Week 9 · Lecture 2 (Thursday)
 ### Mealy vs Moore
 
-**Date:** Thursday 18 March 2027 · 13:00–14:15 · Week 9
+**Date:** Thursday 25 March 2027 · 13:00–14:15 · Week 9
 
 ---
 

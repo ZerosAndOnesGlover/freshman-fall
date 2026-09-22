@@ -4,7 +4,7 @@
 **Week 8 · Thursday · 50 minutes**
 **Reading:** Gang of Four Ch. 5 — State · **Assumes:** L25, L26
 
-**Date:** Thursday 11 March 2027 · 10:00–10:50 · Week 8
+**Date:** Thursday 18 March 2027 · 10:00–10:50 · Week 8
 
 ---
 

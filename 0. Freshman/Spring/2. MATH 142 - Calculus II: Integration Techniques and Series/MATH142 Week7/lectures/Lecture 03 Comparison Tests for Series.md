@@ -2,7 +2,7 @@
 ## Week 7 · Lecture 3 (Friday)
 ### Comparison Tests for Series
 
-**Date:** Friday 5 March 2027 · 11:00–11:50 · Week 7
+**Date:** Friday 12 March 2027 · 11:00–11:50 · Week 7
 
 ---
 

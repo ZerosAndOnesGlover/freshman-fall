@@ -5,7 +5,7 @@
 **Reading:** *C++ Primer* §13.6 · **Reference:** Meyers Items 23–25, 29
 **Assumes:** Week 1 (Rule of Three, copy elision), L16, L17
 
-**Date:** Thursday 18 February 2027 · 10:00–10:50 · Week 5
+**Date:** Thursday 25 February 2027 · 10:00–10:50 · Week 5
 
 ---
 
