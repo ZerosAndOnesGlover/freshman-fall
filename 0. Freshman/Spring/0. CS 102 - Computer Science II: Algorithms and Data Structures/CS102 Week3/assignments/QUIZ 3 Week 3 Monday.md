@@ -1,6 +1,6 @@
 # CS 102 · Quiz 3
 
-**Week 3, Monday, first 15 minutes of lecture · 20 points**
+**Date:** Monday 8 February 2027 · 09:00–09:15 (start of L10) · Week 3 · 20 points
 **Covers Week 2** — rotations, AVL trees, and red-black trees. **Not** this week's material.
 
 Closed book. No calculator required — every number here is exact.

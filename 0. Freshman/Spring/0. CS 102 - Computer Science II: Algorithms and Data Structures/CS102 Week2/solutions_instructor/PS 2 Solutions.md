@@ -3,11 +3,15 @@
 
 **100 points.** All code below was executed; all output shown is real.
 
+> **Revised 2026-09-22.** The old Part C (measuring BST and AVL heights and rotations) was removed: it
+> repeated Lab 2 Part B. Old Parts D and E are now C and D, and every item was re-weighted to keep the
+> total at 100. Where a breakdown inside an item still quotes the old points, scale it in proportion.
+
 ---
 
-## Part A — Rotations (16 pts)
+## Part A — Rotations (20 pts)
 
-### A1 (4) — the rotations
+### A1 (5) — the rotations
 
 ```python
 def rotate_right(y):
@@ -31,7 +35,7 @@ def rotate_left(x):
 **in the right order**. A submission with the updates reversed loses 1 pt on each function; note it
 explicitly in feedback, because it will resurface as a mysterious failure in B2.
 
-### A2 (4) — subtree BST check
+### A2 (5) — subtree BST check
 
 ```python
 def check_bst(t, lo=None, hi=None):
@@ -42,9 +46,9 @@ def check_bst(t, lo=None, hi=None):
 ```
 
 **Marking:** 0 of 4 for the child-only test (`t.left.key < t.key < t.right.key`). This was Week 1's
-headline error and PS 1 E3; it is not a slip by Week 2.
+headline error and PS 1 C4; it is not a slip by Week 2.
 
-### A3 (8) — the test, and the broken version
+### A3 (10) — the test, and the broken version
 
 ```
 A3: rotation order-preservation, 500 random trees ... PASS
@@ -64,9 +68,9 @@ engaged with it should be told they were right to.
 
 ---
 
-## Part B — AVL Insertion (30 pts)
+## Part B — AVL Insertion (36 pts)
 
-### B1–B2 (18) — `avl_insert`
+### B1–B2 (21) — `avl_insert`
 
 See `ps2_ref.py`, reproduced in Lecture 08 §2. Marking for B2:
 
@@ -88,13 +92,13 @@ routinely — 22 of 70 events in a single trial.)*
 Do not deduct — but flag it in writing, because the identical code applied to deletion is a live bug.
 Worth a sentence in the Week 3 lecture.
 
-### B3 (6) — `check_avl`
+### B3 (8) — `check_avl`
 
 Must raise on all three of: order violation, **stored** height disagreeing with the recomputed one,
 and $|\mathrm{bf}| > 1$. 2 pts each. The stored-height check is the one that earns its keep; a
 checker that recomputes heights and never compares them to `t.height` gets 4 of 6.
 
-### B4 (6) — stress test
+### B4 (7) — stress test
 
 ```
 B4: AVL stress, 200 trials, checked after every insertion ... PASS
@@ -105,49 +109,9 @@ negatives in the key set, and comparison against `sorted(set(keys))`.
 
 ---
 
-## Part C — Measuring (18 pts)
+## Part C — The Height Bound (28 pts)
 
-Reference output. **Heights and rotation counts are deterministic and must match exactly.**
-
-### C1 (6) / C2 (6) — sorted input $0 \dots n-1$
-
-| $n$ | BST $h$ | AVL $h$ | perfect | AVL rotations | max rot / insert |
-| --- | --- | --- | --- | --- | --- |
-| 1,000 | 999 | 9 | 9 | 990 | **1** |
-| 10,000 | 9,999 | 13 | 13 | 9,986 | **1** |
-| 100,000 | 99,999\* | 16 | 16 | 99,983 | **1** |
-
-\* Not built. Each insertion walks the entire right spine, so $h = n-1$ by construction. A student
-who reports a *measured* value here either used a different structure or fabricated it — ask.
-
-Two things to draw out in the returned feedback:
-
-- **The AVL height equals the perfect height at all three sizes.** Not a coincidence: sorted input
-  drives every rebalance into the RR case, and the resulting shape is the most even one available.
-- **Maximum rotations per insertion is 1, not 2.** Sorted input never produces a double rotation,
-  which is exactly why the problem statement warns against testing only with sorted keys. A student
-  whose LR and RL branches are dead code will still produce this table perfectly.
-
-### C3 (6) — random input, mean of 5 seeds
-
-| $n$ | BST $h$ | AVL $h$ | AVL rotations |
-| --- | --- | --- | --- |
-| 1,000 | 20.0 | 11.0 | 698 |
-| 10,000 | 29.8 | 15.0 | 6,987 |
-| 100,000 | 39.8 | 19.0 | 69,742 |
-
-Seed-dependent, so accept anything within ±1 on BST height. **AVL heights are essentially
-seed-independent** — 11.0, 15.0, 19.0 with zero variance across the five seeds at every size — and a
-student reporting a fractional AVL height has averaged something else.
-
-The one-sentence answer for C3: the plain BST is feasible at $n = 10^5$ on random input because its
-expected height is $\Theta(\log n)$, so the build is $\Theta(n\log n)$, not $\Theta(n^2)$.
-
----
-
-## Part D — The Height Bound (24 pts)
-
-### D1 (8)
+### C1 (9)
 
 **The recurrence.** A minimal AVL tree of height $h$ has a root and two subtrees. One must have
 height exactly $h-1$. The other has height $h-1$ or $h-2$ by the invariant; taking $h-2$ minimises
@@ -165,7 +129,7 @@ $$N(h) = N(h-1) + N(h-2) + 1 = \big(F(h+2)-1\big) + \big(F(h+1)-1\big) + 1 = F(h
 (a bare assertion of the recurrence earns 2), 4 for the induction. Strong induction is required —
 two base cases and two inductive hypotheses. Deduct 2 for a single base case.
 
-### D2 (6)
+### C2 (7)
 
 $n \ge N(h) = F(h+3) - 1$, so $n + 1 \ge F(h+3)$.
 
@@ -183,7 +147,7 @@ $$h < 1.4404\log_2\!\left(n + \tfrac32\right) - 1.3277 \;\le\; 1.4404\log_2(n+2)
 **Marking:** 2 for the $F(k)$ lower bound, 2 for the algebra, 2 for correct numerical constants.
 Accept the $n + \frac32$ form — it is tighter and equally correct.
 
-### D3 (6)
+### C3 (7)
 
 **$n = 2, 7, 20$.** *(Verified by exhaustive check over $n = 1 \dots 500{,}000$: the $n+1$ form is
 violated exactly 13 times, at $n = 2, 7, 20, 54, 143, 376, 986, 2583, 6764, 17710, 46367, 121392,
@@ -194,7 +158,7 @@ sizes at which the worst-case height is actually attained, so they are precisely
 is off by a hair must fail. Accept any answer identifying them as minimal-AVL-tree sizes; award the
 full 6 for noticing the odd-$h$ pattern, 4 for identifying them as $N(h)$ values without it.
 
-### D4 (4)
+### C4 (5)
 
 - **Minimum:** $N(10) = 232$.
 - **Maximum:** a perfect tree of height 10, $2^{11} - 1 = 2047$.
@@ -204,9 +168,9 @@ a height-10 tree has 11 levels under the edge convention.
 
 ---
 
-## Part E — Reasoning (12 pts)
+## Part D — Reasoning (16 pts)
 
-### E1 (3)
+### D1 (4)
 
 An insertion raises a subtree's height by 1. The rotation at the lowest violating node **gives that
 level back** — the rebalanced subtree has exactly its pre-insertion height — so every ancestor sees
@@ -220,7 +184,7 @@ rotations — exactly $h/2$, and $h/2$ is $\Theta(\log n)$.)*
 **Marking:** the phrase to look for is *the rotation restores the original subtree height*. Without
 it, 1 pt.
 
-### E2 (3)
+### D2 (4)
 
 **AVL for read-heavy workloads.** A lookup table built once and queried constantly: the AVL tree is
 16 tall on 100,000 sorted keys against the red-black tree's 30, and every single query pays that
@@ -234,7 +198,7 @@ deletion, plus one bit of metadata per node instead of an integer.
 answer that says only "AVL is more balanced, red-black rebalances less" earns 1 — and note in
 feedback that the second half of that sentence is false for insertion on sorted input.
 
-### E3 (3)
+### D3 (4)
 
 The size-balanced invariant leaves almost no freedom of shape. At $n = 7$ there is **exactly one**
 legal tree, against 17 AVL-legal shapes and 429 BSTs. With no slack, an insertion cannot be absorbed
@@ -247,7 +211,7 @@ of Lecture 07 §2.
 
 Accept any concrete sequence forcing global restructuring. Full marks require naming the cost.
 
-### E4 (3)
+### D4 (4)
 
 `SortedList` is a list of ~1,000-element sublists. Its inner loop is a `list` slice assignment,
 which is a `memmove` over contiguous memory in C. The AVL tree executes interpreted function calls
@@ -264,7 +228,7 @@ workload `SortedList` does not support cheaply. **Any one of these, argued, earn
 ## Grade Distribution Note
 
 Parts A–B are mechanical and should be near-full for most of the cohort. **The separation happens in
-D1 (strong induction, done properly) and E1 (the insert/delete asymmetry).** If E1 is widely missed,
+C1 (strong induction, done properly) and D1 (the insert/delete asymmetry).** If D1 is widely missed,
 recover it at the start of Week 3 — the same reasoning pattern returns when we argue that heap
 `sift_down` costs $O(n)$ in aggregate.
 

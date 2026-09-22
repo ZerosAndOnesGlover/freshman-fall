@@ -8,7 +8,11 @@ submission; **machine-dependent** ones will not.
 
 ---
 
-## Part A — The Two Properties (20)
+> **Revised 2026-09-22.** Removed: Part D (timing Kruskal and Prim — Lab 6 Part B does it) and E3
+> (MST clustering — Lab 6 Part C does it). E1 now names its reference (threshold + BFS) instead of an
+> untaught "modified Dijkstra". Old Part E is Part D; items re-weighted to keep 100 points.
+
+## Part A — The Two Properties (22)
 
 ### A1 (6)
 
@@ -17,7 +21,7 @@ Brute force over $\binom{|E|}{V-1}$ subsets, keeping those that are spanning tre
 *The error to look for: testing "is a tree" by counting edges only. A subset of $V-1$ edges can
 contain a cycle and leave the graph disconnected. Require an acyclicity check (union-find is easiest).*
 
-### A2 (7) — deterministic: 0 violations
+### A2 (8) — deterministic: 0 violations
 
 Reference: **3,191 (graph, cut) pairs** across 200 random graphs, every non-trivial cut checked
 against every MST found by enumeration. **0 violations.**
@@ -36,7 +40,7 @@ the one consisting of $\{(1,2), (0,2)\}$.
 graph with a tie among minimum crossing edges. A student who claims no such graph exists has
 misread "some" as "every" — which is the misconception the question exists to catch.*
 
-### A3 (7) — deterministic: 0 violations
+### A3 (8) — deterministic: 0 violations
 
 Reference: **758 (cycle, strictly-heaviest-edge) cases** across 150 random graphs. **0 violations.**
 
@@ -48,9 +52,9 @@ So without "strictly" the property is false.
 
 ---
 
-## Part B — Prim and Kruskal (20)
+## Part B — Prim and Kruskal (22)
 
-### B1 (6), B2 (6), B3 (4) — deterministic: 0 mismatches
+### B1 (6), B2 (6), B3 (5) — deterministic: 0 mismatches
 
 Reference: all three algorithms against brute force on **295 graphs** with $V \le 7$ — **0
 mismatches** — and against each other on **500 graphs** with $V \le 40$ — **0 mismatches**.
@@ -59,7 +63,7 @@ mismatches** — and against each other on **500 graphs** with $V \le 40$ — **
 return different MSTs, and a student comparing edge sets will report spurious failures. If a submission
 reports mismatches, check what they compared before assuming a bug.*
 
-### B4 (4) — the assessed question
+### B4 (5) — the assessed question
 
 The difference is the **priority pushed**:
 
@@ -81,9 +85,9 @@ distances and one uses weights" is 2 of 4.*
 
 ---
 
-## Part C — Union-Find (24)
+## Part C — Union-Find (30)
 
-### C1 (8), C2 (6) — deterministic
+### C1 (9), C2 (7) — deterministic
 
 | $n$ | neither | rank | compression | both |
 | --- | --- | --- | --- | --- |
@@ -100,7 +104,7 @@ $n = 10^5$: **3,158×**.
 submission whose naive column is not roughly quadratic has an accidental optimisation — usually a
 `find` that assigns `p[x] = root` somewhere.*
 
-### C3 (6) — deterministic and exact
+### C3 (8) — deterministic and exact
 
 | $n$ | naive | both |
 | --- | --- | --- |
@@ -116,7 +120,7 @@ later `find` costs one step.
 closed forms with justification. A student who reports the naive column but not the formula has done
 the easy half.*
 
-### C4 (4)
+### C4 (6)
 
 | $n$ | steps/op | $\log_2 n$ |
 | --- | --- | --- |
@@ -135,70 +139,18 @@ without the practical qualification scores 1. Both halves are needed.*
 
 ---
 
-## Part D — Measuring (16)
+## Part D — Applications (26)
 
-### D1 (6) — machine-dependent
-
-| $V$ | $E$ | Kruskal | Prim (heap) |
-| --- | --- | --- | --- |
-| 1,000 | 5,000 | 3.7 ms | 4.1 ms |
-| 5,000 | 25,000 | 23.7 ms | 32.9 ms |
-| 20,000 | 100,000 | 124.3 ms | 300.5 ms |
-| 2,000 | 400,000 | 505.5 ms | 1,705.4 ms |
-
-Expected: **the measurements do not support the textbook advice.** Kruskal wins every row, including
-the dense one where Prim is supposed to be preferred.
-
-The reason: Kruskal's dominant cost is `sorted()`, which is C, while Prim's inner loop is interpreted
-bytecode executed once per edge. Prim's dense-graph advantage is *not sorting*, and in CPython that
-is not much of an advantage.
-
-*4 for the table, 2 for a correct explanation naming C versus interpreted. A student who reports the
-numbers and then repeats the textbook advice anyway scores 4 of 6 — the question asked whether their
-data supports it.*
-
-### D2 (6) — machine-dependent, but the ratio is stable
-
-| $V$ | $E$ | sort | union-find | ratio |
-| --- | --- | --- | --- | --- |
-| 1,000 | 5,000 | 1.0 ms | 1.7 ms | 1.72 |
-| 5,000 | 25,000 | 5.8 ms | 10.4 ms | 1.78 |
-| 20,000 | 100,000 | 31.1 ms | 63.2 ms | 2.03 |
-| 50,000 | 300,000 | 116.6 ms | 210.2 ms | 1.80 |
-
-**The sort does not dominate.** The union-find phase costs about 1.8× the sort, stably.
-
-### D3 (4) — the assessed question
-
-Expected reconciliation:
-
-1. The complexity comparison is between $\log E$ (unbounded) and $\alpha(V)$ (at most 4). It is
-   correct, and at sufficiently large $E$ the sort must dominate.
-2. It compares **operation counts**, and says nothing about the cost of one operation. `sorted()` runs
-   in C at a few nanoseconds per comparison; the union-find loop is interpreted at hundreds of
-   nanoseconds per edge.
-3. Over the range measured, that constant-factor ratio exceeds $\log E / \alpha(V)$. The measured ratio
-   is **flat at ~1.8 rather than shrinking**, which is the evidence that $\log E$ has not started to
-   matter yet.
-
-For the prediction to become visible you would need either a much larger $E$ — enough for $\log E$ to
-overcome a ~100× constant-factor gap, which is not reachable — or the two phases implemented in the
-same language.
-
-*Full marks require distinguishing operation count from operation cost. A student who says "Python is
-slow" has the right intuition and has not made the argument — 2 of 4.*
-
----
-
-## Part E — Applications (20)
-
-### E1 (5) — deterministic: 0 mismatches
+### D1 (9) — deterministic: 0 mismatches
 
 Reference: **15,988 (source, target) pairs** across 300 random graphs. **0 mismatches.**
 
-The comparison algorithm is Dijkstra with `max(d[u], w)` in place of `d[u] + w`.
+The handout's reference is the threshold test: sort the distinct weights, and for each pair take the
+smallest $w$ at which a BFS over edges of weight $\le w$ connects $u$ and $v$. It computes the same
+value as Dijkstra with `max(d[u], w)` in place of `d[u] + w` (which the original key used). Both are
+exact, so any mismatch is the student's MST path code.
 
-### E2 (5)
+### D2 (8)
 
 Smallest example: the triangle $0{-}1\ (2)$, $1{-}2\ (2)$, $0{-}2\ (3)$.
 
@@ -211,28 +163,7 @@ is forced to exclude exactly the edge that a shortest-path tree would want.**
 
 *3 for the example, 2 for the cycle-property argument. Any triangle $a, a, b$ with $a < b < 2a$ works.*
 
-### E3 (6) — deterministic
-
-300 points in 4 Gaussian clusters (`spread=3.0`, centres on a radius-35 circle, `seed=17`):
-
-| $k$ | sizes | smallest deleted edge |
-| --- | --- | --- |
-| 2 | 225, 75 | 35.547 |
-| 3 | 150, 75, 75 | 34.986 |
-| **4** | **75, 75, 75, 75** | **31.878** |
-| 5 | 75, 75, 75, 74, 1 | **5.247** |
-| 6 | 75, 75, 74, 73, 2, 1 | 5.112 |
-
-MST total 395.128; bottleneck 35.547.
-
-**Choosing $k$ from the last column**: the deleted edges are 35.5, 35.0, 31.9 — all comparable — and
-then drop to **5.247**, a factor of 6.1. The gap marks the boundary between "links between clusters"
-and "ordinary within-cluster wiring", so $k = 4$.
-
-*4 for the table, 2 for identifying the gap. A student who says "look for the elbow" without pointing
-at the 31.878 → 5.247 drop scores 1 of those 2.*
-
-### E4 (4) — deterministic: 0 mismatches
+### D3 (9) — deterministic: 0 mismatches
 
 Reference: adding 100 to every edge left the MST edge set unchanged in **300 of 300** graphs.
 
@@ -249,11 +180,10 @@ is the whole answer and must appear.*
 
 | Part | Points |
 | --- | --- |
-| A | 20 |
-| B | 20 |
-| C | 24 |
-| D | 16 |
-| E | 20 |
+| A | 22 |
+| B | 22 |
+| C | 30 |
+| D | 26 |
 | **Total** | **100** |
 
 ---
@@ -264,8 +194,8 @@ is the whole answer and must appear.*
 disagree on *which* MST they return. Expect several students to report false mismatches; this is a
 teaching moment about A2 rather than a deduction.
 
-**2. D3 is the fifth appearance of the same idea** — a complexity comparison that does not predict the
-measurement. The previous four were `SortedList` (Week 2), heap sort and `heapq.merge` (Week 3), and
+**2. The timing comparison has moved to Lab 6 Part B**, where it is the fifth appearance of the same
+idea — a complexity comparison that does not predict the measurement. The previous four were `SortedList` (Week 2), heap sort and `heapq.merge` (Week 3), and
 BFS locality (Week 4). By now a student should be reaching for "operation count versus operation cost"
 without prompting. If the cohort still is not, it is worth ten minutes rather than another deduction,
 because **Week 7 has no such moment** and the habit will go unrehearsed for a fortnight.

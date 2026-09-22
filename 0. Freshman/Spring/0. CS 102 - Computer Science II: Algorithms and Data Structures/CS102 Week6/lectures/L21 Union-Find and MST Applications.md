@@ -256,7 +256,7 @@ DP, and Week 7 opens by saying so.
 
 - Read CLRS §19.1–19.3 (disjoint sets) and §21.2. §19.4's proof of the $\alpha$ bound is hard and is
   **not examinable**; read its statement.
-- **PS 6** implements all four union-find variants and measures them, and builds the clustering.
+- **PS 6** implements all four union-find variants and measures them; **Lab 6** builds the clustering.
 - **Lab 6** is the campus cable layout, including the clustering and its failure mode.
 - **Quiz 6 covers Week 5.**
 

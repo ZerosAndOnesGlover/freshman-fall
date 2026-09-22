@@ -2,9 +2,9 @@
 ## Week 5: Graphs II — Shortest Paths
 
 **Assessment for this course (overall):** Problem Sets 35%, Midterms 25%, Final 20%, Projects 20%
-**This week's deliverables:** **PS 5** (released Friday, due Friday of Week 6), Lab 5, **Quiz 5 —
-which covers Week 4**.
-**MIDTERM 1 is this week**, 75 minutes, covering Weeks 0–4. Nothing in Week 5 is on it.
+**This week's deliverables:** **PS 5** (released Fri 26 Feb 10:00, due **Fri 5 Mar 17:00**), Lab 5 (**Tue 2 Mar**, 15:00), **Quiz 5** (Mon 22 Feb, 09:00) — which covers Week 4.
+**MIDTERM 1 is next Monday, 1 March 2027, 18:00–19:15**, 75 minutes, covering Weeks 0–4. Nothing in
+Week 5 is on it.
 
 ---
 
@@ -56,7 +56,7 @@ By the end of Week 5, you should be able to:
 | [[L16 Weighted Shortest Paths Relaxation and DAGs]] | Relaxation, optimal substructure, topological order, DAG paths, SCC |
 | [[L17 Dijkstras Algorithm]] | The algorithm, the proof, and exactly how it fails |
 | [[L18 Bellman-Ford Negative Cycles and Choosing an Algorithm]] | Bellman–Ford as a DP, negative cycles, and the selection table |
-| [[PS 5 Shortest Paths]] | 100 points, due Friday of Week 6 |
+| [[PS 5 Shortest Paths]] | 100 points, due Fri 5 Mar 17:00 |
 | [[CS102 Week5/assignments/QUIZ 5 Week 5 Monday\|QUIZ 5 Week 5 Monday]] | 20 points, formative — **covers Week 4** |
 | [[LAB 5 Route Planning on a Road Network]] | Dijkstra, A\*, and the cost-model change that breaks it |
 | [[CS102 Week5/resources/Reading Guide Week 5\|Reading Guide Week 5]] | CLRS §20.4–20.5, §22.1–22.4 |
@@ -67,7 +67,7 @@ By the end of Week 5, you should be able to:
 **1. Dijkstra does not fail loudly on negative weights — it fails 2.3% of the time.** Over 1,632
 random graphs with negative edges but no negative cycle, it returned a wrong answer on **38**. A fault
 that appears on one input in forty passes a small test suite comfortably. Only the correctness
-argument tells you the precondition, which is why PS 5 C4 asks you to name the single inequality that
+argument tells you the precondition, which is why PS 5 C3 asks you to name the single inequality that
 needs it.
 
 **2. The $O(VE)$ bound on Bellman–Ford is a worst case over *edge orderings*, and ordinary input is

@@ -1,7 +1,8 @@
 # CS 102 · Lab 4
 ## BFS and DFS on a Social Network
 
-**Week 4 · 2-hour lab session · 40 points**
+**Date:** Tuesday 23 February 2027 · 15:00–16:50 · Lab section (Week 5) — covers Week 4 (L13–L15)
+*2-hour lab · 40 points · in-lab checkoff*
 **Deliverable:** `lab4.py` and `RESULTS.md`. In-lab checkoff by your TA.
 
 > **Labs carry no direct weight** in CS 102, but **you must satisfactorily complete at least 10 of
@@ -31,8 +32,17 @@ very well-connected people, most people with a handful of connections — and th
   vertices to connect to, chosen with probability proportional to their current degree.
 
 The standard way to sample proportional to degree is to keep a list `rep` in which each vertex appears
-once per incident edge, and choose uniformly from it. Append the new vertex's $m$ chosen targets to
-`rep`, and the new vertex itself $m$ times.
+once per incident edge, and choose uniformly from it. **To make everyone's graph identical**, do it
+exactly this way:
+
+- Build the starting clique with `for i in range(m): for j in range(i+1, m):`, adding edge $i$–$j$
+  and appending `i` then `j` to `rep`.
+- For each new vertex `v`, draw `rep[random.randint(0, len(rep) - 1)]` repeatedly, skipping any
+  target already chosen, until you have $m$ targets. Keep them **in the order drawn**.
+- Add the edges in that order (append `u` to `adj[v]` and `v` to `adj[u]`). Then extend `rep` with
+  the $m$ targets in that order, then with `v` repeated $m$ times.
+
+`random.randint` is the one random function CS 101 taught; nothing else from `random` is needed.
 
 Use `random.seed(seed)` at the start so your graph is reproducible.
 
@@ -50,7 +60,7 @@ differs, and every later part will disagree.
 
 ## Part B — Degrees of Separation (12 pts)
 
-**B1.** *(4)* BFS from vertex 0. Report its **eccentricity** (the largest distance to any vertex), the
+**B1.** *(4)* BFS from vertex 0, visiting neighbours in adjacency-list order. Report its **eccentricity** (the largest distance to any vertex), the
 mean distance from vertex 0, and the **size of each BFS level**.
 
 **B2.** *(4)* The level sizes are not symmetric — they grow, peak, and then collapse. Explain both
@@ -70,8 +80,9 @@ all ordered pairs, and the full distribution of eccentricities.
 Computing an exact diameter costs $V$ BFS runs. The standard cheap alternative is the **double
 sweep**:
 
-1. BFS from an arbitrary vertex $s$; let $a$ be a farthest vertex from $s$.
-2. BFS from $a$; let $b$ be a farthest vertex from $a$.
+1. BFS from an arbitrary vertex $s$; let $a$ be a farthest vertex from $s$ (the smallest-numbered one
+   if several tie).
+2. BFS from $a$; let $b$ be a farthest vertex from $a$ (again the smallest-numbered).
 3. Report $\mathrm{dist}(a, b)$.
 
 Two BFS runs instead of $V$.
@@ -94,7 +105,9 @@ Two BFS runs instead of $V$.
 
 ## Part D — BFS Against DFS (10 pts)
 
-**D1.** *(4)* Run an **iterative** DFS from vertex 0 and record each vertex's depth in the DFS tree.
+**D1.** *(4)* Run Lecture 15's `dfs_iter` from vertex 0 — push every unseen neighbour, pop LIFO — with
+each stack entry carrying a depth one more than the vertex that pushed it, and record each vertex's
+depth when it is first popped. That is its depth in the DFS tree.
 Report the maximum DFS depth alongside the BFS eccentricity from B1.
 
 **D2.** *(3)* You should find the DFS depth is larger by roughly three orders of magnitude. Explain
@@ -142,16 +155,16 @@ matches the specification, every number below should match exactly.
 | components | **1** |
 | max degree | 192 |
 | min degree | 3 |
-| ten largest degrees | 192, 164, 142, 128, 118, 117, 114, 110, 109, 104 |
+| ten largest degrees | 192, 181, 166, 162, 151, 124, 120, 111, 111, 109 |
 | vertices of degree 3 | 2,024 |
 
 **B1 — BFS from vertex 0**
 
 | level | 0 | 1 | 2 | 3 | 4 |
 | --- | --- | --- | --- | --- | --- |
-| vertices | 1 | 142 | 1,543 | 3,001 | 313 |
+| vertices | 1 | 181 | 1,682 | 2,858 | 278 |
 
-Eccentricity of vertex 0: **4**. Mean distance from vertex 0: **2.697**.
+Eccentricity of vertex 0: **4**. Mean distance from vertex 0: **2.647**.
 
 **B3 — exact**
 
@@ -159,20 +172,20 @@ Eccentricity of vertex 0: **4**. Mean distance from vertex 0: **2.697**.
 | --- | --- |
 | diameter | **7** |
 | radius | 4 |
-| mean distance, all ordered pairs | 4.0511 |
-| eccentricity distribution | 4: 10 vertices, 5: 1,671, 6: 3,291, **7: 28** |
+| mean distance, all ordered pairs | 4.0236 |
+| eccentricity distribution | 4: 8 vertices, 5: 1,541, 6: 3,415, **7: 36** |
 
 **C1 — double sweep from vertex 0**
 
-$a = 757$ (eccentricity 6), $b = 2385$, estimate **6**.
+$a = 549$ (eccentricity 6), $b = 2988$, estimate **6**.
 
 **D1, D3 — DFS**
 
 | quantity | value |
 | --- | --- |
 | BFS eccentricity from vertex 0 | 4 |
-| **iterative DFS tree depth from vertex 0** | **3,226** |
-| ratio | 806× |
+| **iterative DFS tree depth from vertex 0** | **3,274** |
+| ratio | 818× |
 | recursive DFS on this network | **`RecursionError`** |
 
 The DFS depth is deterministic given the generator, because it depends on the order neighbours appear
@@ -184,11 +197,11 @@ describes.
 ## A Note on What This Lab Is Really Testing
 
 Vertex 0 is one of the three founding vertices, so it is a hub: its mean distance to everyone is
-**2.697** while the network-wide mean is **4.0511**. Starting a measurement there gives an
+**2.647** while the network-wide mean is **4.0236**. Starting a measurement there gives an
 unrepresentative answer, and the double sweep starts there.
 
 The heuristic then returns 6 against a true diameter of 7. **It is not badly wrong — it is wrong by
-one, in a predictable direction, for a reason you can quantify**: only 28 of 5,000 vertices achieve
+one, in a predictable direction, for a reason you can quantify**: only 36 of 5,000 vertices achieve
 eccentricity 7, so a procedure that examines two of them is unlikely to find one.
 
 That is the shape of a good heuristic, and knowing its failure direction is what makes it safe to use.

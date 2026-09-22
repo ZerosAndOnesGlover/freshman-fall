@@ -2,8 +2,7 @@
 ## Week 3: Heaps and Priority Queues
 
 **Assessment for this course (overall):** Problem Sets 35%, Midterms 25%, Final 20%, Projects 20%
-**This week's deliverables:** **PS 3** (released Friday, due Friday of Week 4), Lab 3, **Quiz 3 —
-which covers Week 2**.
+**This week's deliverables:** **PS 3** (released Fri 12 Feb 10:00, due **Fri 19 Feb 17:00**), Lab 3 (**Tue 16 Feb**, 15:00), **Quiz 3** (Mon 8 Feb, 09:00) — which covers Week 2.
 
 ---
 
@@ -52,7 +51,7 @@ By the end of Week 3, you should be able to:
 | [[L10 The Heap Property and the Array Representation]] | The two invariants, index arithmetic, sift-up and sift-down |
 | [[L11 Building a Heap in Linear Time and Heap Sort]] | The $\Theta(n)$ build proved and measured; heap sort against merge sort |
 | [[L12 Priority Queues and Their Applications]] | The ADT, `heapq`, `decrease_key`, top-$k$, Dijkstra, scheduling |
-| [[PS 3 Heaps and Priority Queues]] | 100 points, due Friday of Week 4 |
+| [[PS 3 Heaps and Priority Queues]] | 100 points, due Fri 19 Feb 17:00 |
 | [[CS102 Week3/assignments/QUIZ 3 Week 3 Monday\|QUIZ 3 Week 3 Monday]] | 20 points, formative — **covers Week 2** |
 | [[LAB 3 Heap Sort versus Merge Sort]] | Reproduce the comparison, then find what the comparison count cannot see |
 | [[CS102 Week3/resources/Reading Guide Week 3\|Reading Guide Week 3]] | CLRS Chapter 6, with the indexing warning to read first |
@@ -96,7 +95,7 @@ Both are deliberate, and both are graded.
 linear build. It is not — at $n = 10{,}000$ it does 9,992 swaps against an attainable bound of 9,995,
 and over $n \le 399$ it misses the bound for 270 of the 399 sizes. It *is* the true worst case for the
 insertion build. **The adversarial input for one algorithm is not automatically adversarial for
-another**, even when both produce the same structure. (PS 3 D3b.) Compare Week 2, where the extremal
+another**, even when both produce the same structure. (Lecture 11 §4.) Compare Week 2, where the extremal
 object — the Fibonacci tree — did serve both roles.
 
 **A test that passes can prove nothing.** The 0-indexed parent bug produces a valid heap on increasing
@@ -116,7 +115,7 @@ $n = 7$. The contiguity advantage is what let `SortedList` beat a hand-written A
 **Forward:** **Week 4** changes subject to graphs, and the link is tighter than it looks: a traversal
 is a loop that removes a vertex from a pending collection and adds its neighbours. BFS uses a queue,
 DFS a stack, and **Dijkstra uses this week's heap** — one algorithm skeleton, three data structures.
-**Week 5** builds Dijkstra properly and needs PS 3 Part E's `decrease_key`. **Week 6**'s Union-Find
+**Week 5** builds Dijkstra properly and needs PS 3 Part D's `decrease_key`. **Week 6**'s Union-Find
 has an amortised bound with the same shape as this week's build argument. **Week 9** builds Huffman
 codes by repeatedly extracting the two smallest frequencies, which is a priority queue and nothing
 else.

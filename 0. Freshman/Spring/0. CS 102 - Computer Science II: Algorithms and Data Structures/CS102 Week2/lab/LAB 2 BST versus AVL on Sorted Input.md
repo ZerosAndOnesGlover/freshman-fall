@@ -1,7 +1,8 @@
 # CS 102 · Lab 2
 ## BST versus AVL on Sorted Input
 
-**Week 2 · 2-hour lab session · 40 points**
+**Date:** Tuesday 9 February 2027 · 15:00–16:50 · Lab section (Week 3) — covers Week 2 (L07–L09)
+*2-hour lab · 40 points · in-lab checkoff*
 **Deliverable:** `lab2.py` and `RESULTS.md`. In-lab checkoff by your TA.
 
 > **Labs carry no direct weight** in CS 102, but **you must satisfactorily complete at least 10 of
@@ -30,7 +31,10 @@ finding that out at the wrong moment costs you half the lab.
 **A2.** *(3)* An AVL tree with a **global rotation counter**. Report both the total rotations for a
 build and the maximum for any single insertion.
 
-**A3.** *(4)* `check_avl(t)` from PS 2 B3, called after the last insertion of every build. **Do not
+**A3.** *(4)* `check_avl(t)`: one recursive pass that recomputes each node's height and raises if the
+BST order is broken, a **stored** height disagrees with the recomputed one, or $|\mathrm{bf}| > 1$
+(Lecture 08 §1). Call it after the last insertion of every build. (PS 2 B3 asks for the same checker;
+write it once and use it in both.) **Do not
 measure a structure you have not verified** — Lab 0 made this point and this lab is where ignoring it
 gets expensive.
 

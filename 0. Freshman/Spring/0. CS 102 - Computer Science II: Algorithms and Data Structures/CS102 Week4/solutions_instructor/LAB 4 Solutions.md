@@ -48,7 +48,7 @@ exactly 14,994.
 | max degree | 192 |
 | min degree | 3 |
 | median degree | 4 |
-| ten largest | 192, 164, 142, 128, 118, 117, 114, 110, 109, 104 |
+| ten largest | 192, 181, 166, 162, 151, 124, 120, 111, 111, 109 |
 | degree-3 vertices | 2,024 |
 
 $E = 3 + 3 \times 4997 = 14{,}994$: three edges among the initial triangle, then $m = 3$ per added
@@ -67,9 +67,9 @@ happen; they will find their bug.
 
 | level | 0 | 1 | 2 | 3 | 4 |
 | --- | --- | --- | --- | --- | --- |
-| vertices | 1 | 142 | 1,543 | 3,001 | 313 |
+| vertices | 1 | 181 | 1,682 | 2,858 | 278 |
 
-Eccentricity **4**, mean distance from vertex 0 **2.697**.
+Eccentricity **4**, mean distance from vertex 0 **2.647**.
 
 ### B2 (4)
 
@@ -77,8 +77,8 @@ Expected: the levels grow because each frontier vertex has several unvisited nei
 frontier multiplies — and it multiplies *fast* here because preferential attachment means the early
 frontier contains hubs.
 
-They collapse because the graph is finite: levels 0–3 account for $1+142+1543+3001 = 4{,}687$ of the
-5,000 vertices, so level 4 can only contain the 313 that remain. **The peak is where "most neighbours are new" stops being
+They collapse because the graph is finite: levels 0–3 account for $1+181+1682+2858 = 4{,}722$ of the
+5,000 vertices, so level 4 can only contain the 278 that remain. **The peak is where "most neighbours are new" stops being
 true.**
 
 *Full marks need both halves. The collapse is the half students omit — many write only the branching
@@ -90,8 +90,8 @@ argument, which alone would predict unbounded growth. 2 of 4 for one half.*
 | --- | --- |
 | **diameter** | **7** |
 | radius | 4 |
-| mean distance, all ordered pairs | 4.0511 |
-| eccentricities | 4: 10 · 5: 1,671 · 6: 3,291 · **7: 28** |
+| mean distance, all ordered pairs | 4.0236 |
+| eccentricities | 4: 8 · 5: 1,541 · 6: 3,415 · **7: 36** |
 
 ---
 
@@ -99,7 +99,7 @@ argument, which alone would predict unbounded growth. 2 of 4 for one half.*
 
 ### C1 (3) — deterministic
 
-From vertex 0: $a = 757$ (eccentricity 6), $b = 2385$, estimate **6**.
+From vertex 0: $a = 549$ (eccentricity 6), $b = 2988$, estimate **6**.
 
 ### C2 (3)
 
@@ -114,10 +114,10 @@ they used.*
 
 Three things wanted:
 
-1. **28 of 5,000 vertices** (0.56%) have eccentricity 7.
+1. **36 of 5,000 vertices** (0.72%) have eccentricity 7.
 2. The double sweep examines the eccentricity of exactly **two** vertices, neither chosen to be
-   extremal in the right way, so it is unlikely to land on one of the 28. Vertex 0 is a founding hub
-   with eccentricity 4 — one of the **10 most central vertices in the graph** — which makes it about
+   extremal in the right way, so it is unlikely to land on one of the 36. Vertex 0 is a founding hub
+   with eccentricity 4 — one of the **8 most central vertices in the graph** — which makes it about
    the worst possible starting point.
 3. **It is a lower bound, always.** $\mathrm{dist}(a,b)$ is the distance between two actual vertices,
    and the diameter is the maximum over all pairs, so the estimate can never exceed it. It can — and
@@ -141,8 +141,8 @@ argument, even if the guess is right.*
 | quantity | value |
 | --- | --- |
 | BFS eccentricity from vertex 0 | 4 |
-| **iterative DFS tree depth from vertex 0** | **3,226** |
-| ratio | 806× |
+| **iterative DFS tree depth from vertex 0** | **3,274** |
+| ratio | 818× |
 
 The DFS depth is deterministic given the generator and the adjacency order. A student whose value
 differs but whose A2 numbers match has a different push order in their stack — accept anything in the
@@ -161,8 +161,8 @@ Recursive DFS on the network raises **`RecursionError`**.
 
 The expected answer to the "why" question: **the recursion depth is bounded by the length of the DFS
 tree path, not by the graph's diameter.** The diameter says every vertex is within 7 steps *by the
-shortest route*; DFS does not take shortest routes, and its path here is 3,226 long. A small-diameter
-graph can still contain very long simple paths — the DFS here walks one of 3,226 vertices, about 65%
+shortest route*; DFS does not take shortest routes, and its path here is 3,274 long. A small-diameter
+graph can still contain very long simple paths — the DFS here walks one of 3,274 vertices, about 65%
 of the graph, in a network where no two vertices are more than 7 apart.
 
 *This is the graded idea of Part D. A student who says "because the graph is big" has missed it — a
@@ -175,7 +175,7 @@ vague answer, 3 for one that names the right quantity.*
 
 1. $E = 14{,}994$ and components $= 1$. **Check this first; nothing downstream is meaningful without
    it.**
-2. B1 level sizes match 1, 142, 1543, 3001, 313.
+2. B1 level sizes match 1, 181, 1682, 2858, 278.
 3. B3 diameter is 7, not 6. (A student reporting 6 has probably used their C1 code for B3.)
 4. C3 names the bound direction *and* justifies it.
 5. D3 distinguishes diameter from longest simple path.

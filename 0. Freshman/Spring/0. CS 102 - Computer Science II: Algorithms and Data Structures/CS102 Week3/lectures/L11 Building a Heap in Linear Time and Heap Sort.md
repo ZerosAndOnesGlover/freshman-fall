@@ -379,7 +379,7 @@ it is the guarantee that lets the fast path stay fast, and it is chosen for the 
 
 - Read CLRS §6.3–6.4 — `BUILD-MAX-HEAP` and `HEAPSORT`. §6.3's Figure 6.3 is the proof of section 3
   in a picture.
-- **PS 3** part C proves the $\sum h/2^h$ bound; part D reproduces the $n - s_2(n)$ measurement.
+- **PS 3** part C proves the $\sum h/2^h$ bound.
 - **Lab 3** builds both sorts and finds the locality effect on your own machine.
 - Next lecture: what a heap is actually *for* — the priority queue, and the algorithms that need one.
 

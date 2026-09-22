@@ -19,7 +19,7 @@ Also useful:
   Dijkstra's frontier anywhere.
 - **Skiena §8** — good on which algorithm to pick, which is Part E of the problem set.
 
-**This is a heavy reading week and MIDTERM 1 is in it.** If you must triage: read §22.1's introduction
+**This is a heavy reading week and MIDTERM 1 follows it on Monday 1 March.** If you must triage: read §22.1's introduction
 (relaxation) and §22.3 (Dijkstra) properly, skim §22.2, and come back to §20.5 after the exam.
 
 ---
@@ -56,7 +56,7 @@ counts from Lecture 18 §1.
 algorithm in it.
 
 **§22.3 (Dijkstra, 8 pages).** The proof of Theorem 22.6 is the one in Lecture 17 §2. **Find the step
-that uses non-negativity** — it is one inequality, and PS 5 C4 asks you to name it.
+that uses non-negativity** — it is one inequality, and PS 5 C3 asks you to name it.
 
 **§22.4 (difference constraints, 6 pages).** A system of inequalities $x_j - x_i \le b_k$ is a
 shortest-path problem in disguise, and it is feasible exactly when a constraint graph has no negative

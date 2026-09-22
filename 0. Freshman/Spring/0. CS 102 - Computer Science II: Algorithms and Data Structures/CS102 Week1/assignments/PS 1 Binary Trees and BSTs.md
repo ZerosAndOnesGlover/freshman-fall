@@ -1,8 +1,19 @@
 # CS 102 · Problem Set 1
 ## Binary Trees and Binary Search Trees
-**Released:** Friday, Week 1 | **Due:** Friday, Week 2 (start of class)
 
-**Total: 100 points**
+**Released:** Friday 29 January 2027, 10:00 (after L06) · Week 1
+**Due:** Friday 5 February 2027, 17:00 · Week 2 — late penalty from 17:01 (syllabus late policy)
+
+**Points:** 100 · counts toward the Problem Sets component (35%, lowest one dropped)
+**Expected time:** about 4–5 hours
+
+## What this problem set uses
+
+Weeks 0–1 only: loop invariants and induction (L03), tree terminology, the height bounds, the four
+traversals and reconstruction (L04), BST search, insert, delete, successor and validation (L05), and
+the average-case formulas (L06). Strong induction is also MATH 151.
+
+**Not needed and not expected:** balancing, rotations or AVL trees (Week 2); heaps (Week 3).
 
 > Written proofs must be proofs. A trace of one example is not a proof; see Lecture 03 §4.
 > Code must run. Submit `ps1.py` alongside your written work.
@@ -11,19 +22,16 @@
 
 ## Part A — Tree Terminology and Structure (20 pts)
 
-**A1.** *(4)* For a binary tree with $n = 6$ nodes, give the minimum and maximum possible height, and
+**A1.** *(5)* For a binary tree with $n = 6$ nodes, give the minimum and maximum possible height, and
 draw a tree achieving each. **Use the edge-counting convention** (a single node has height 0).
 
-**A2.** *(5)* Prove by induction that a perfect binary tree of height $h$ has exactly $2^{h+1} - 1$
+**A2.** *(6)* Prove by induction that a perfect binary tree of height $h$ has exactly $2^{h+1} - 1$
 nodes, and that $2^d$ of them are at depth $d$.
 
-**A3.** *(4)* Prove that any binary tree with $n$ nodes has height $h \ge \lceil\log_2(n+1)\rceil - 1$.
+**A3.** *(5)* Prove that any binary tree with $n$ nodes has height $h \ge \lceil\log_2(n+1)\rceil - 1$.
 *(Hint: use A2 — a tree of height $h$ cannot have more nodes than the perfect tree of height $h$.)*
 
-**A4.** *(4)* Define **full**, **complete**, and **perfect** binary trees. For each of the three
-pairs, either give a tree in one class but not the other, or prove containment.
-
-**A5.** *(3)* A binary tree has 20 leaves and every internal node has exactly 2 children. How many
+**A4.** *(4)* A binary tree has 20 leaves and every internal node has exactly 2 children. How many
 nodes does it have in total? **Justify** — do not just assert the formula.
 
 ---
@@ -70,41 +78,36 @@ your C1 tree, drawing the tree after each. Use the **successor** rule for the tw
 **C4.** *(5)* Implement `is_bst(t)` correctly. Then give a **5-node** tree that the naive
 parent-child-only check accepts but yours rejects, different from the one in Lecture 05 §1.
 
-**C5.** *(5)* Implement `successor(x)` **without parent pointers**, given the root. State its
+**C5.** *(5)* Implement `successor(root, key)` **without parent pointers**. Use L05 §4's two cases:
+if the node has a right subtree, take its minimum; otherwise, while searching down from the root for
+`key`, remember the last node where you turned **left** — that ancestor is case 2's answer. State its
 complexity and explain why it is not $\Theta(1)$ even when the answer is in the same subtree.
 
 ---
 
 ## Part D — Height and Analysis (20 pts)
 
-**D1.** *(4)* Insert `1..7` in ascending order. What height results? Now find an insertion order of
+**D1.** *(6)* Insert `1..7` in ascending order. What height results? Now find an insertion order of
 the same keys giving minimum height. **How many such orders exist?** Justify your count.
 
-**D2.** *(5)* Using $\text{IPL}(n) = 2(n+1)H_n - 4n$, compute the expected average node depth of a
+**D2.** *(7)* Using $\text{IPL}(n) = 2(n+1)H_n - 4n$, compute the expected average node depth of a
 random BST for $n = 31$. Compare with the perfectly balanced 31-node tree. Report the ratio and
 comment on how it relates to $2\ln 2$.
 
-**D3.** *(5)* You must support lookup on 10 million records. For each of the following, argue for or
+**D3.** *(7)* You must support lookup on 10 million records. For each of the following, argue for or
 against a plain BST and say what you would use instead where appropriate:
 - (a) keys arrive pre-sorted, one at a time, with queries interleaved;
 - (b) keys are random 128-bit UUIDs;
 - (c) keys arrive pre-sorted but may all be buffered before the structure is built.
 
-**D4.** *(6)* Lecture 06 reported that measured mean BST height at $n = 1000$ is about 20.3, while
-$4.311\ln n \approx 29.8$. **Both figures are correct.** Explain how, and state the general lesson
-about using asymptotic results as numerical predictions.
-
 ---
 
 ## Part E — Proof (15 pts)
 
-**E1.** *(5)* Prove that the inorder traversal of a BST yields keys in strictly increasing order.
+**E1.** *(8)* Prove that the inorder traversal of a BST yields keys in strictly increasing order.
 Use induction on subtree size and state your inductive hypothesis explicitly.
 
-**E2.** *(5)* Prove that Case 3 of BST deletion (two children) never recurses into Case 3.
-
-**E3.** *(5)* Prove or disprove: *if every node of a binary tree satisfies
-`left.key < key < right.key` for its immediate children, the tree is a BST.*
+**E2.** *(7)* Prove that Case 3 of BST deletion (two children) never recurses into Case 3.
 
 ---
 

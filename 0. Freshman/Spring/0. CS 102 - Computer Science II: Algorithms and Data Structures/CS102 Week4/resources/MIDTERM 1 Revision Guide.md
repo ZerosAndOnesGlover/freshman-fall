@@ -1,13 +1,14 @@
 # CS 102 · MIDTERM 1 — Revision Guide
 
-**Announced:** Week 4 · **Sat:** Week 5, during the lecture slot
+**Announced:** Week 4 · **Sat:** Monday 1 March 2027, 18:00–19:15 · Week 6 (evening, VNC 100)
 **Covers Weeks 0–4** · **Worth 12.5%** of the final grade
 
 **75 minutes.** Closed book. **One handwritten sheet, one side**, of your own notes is permitted. No
 calculators — every number on the paper is exact or is a complexity class.
 
 *(Format and weight per the Course Overview Syllabus. Midterms are 25% of the course, split equally
-between this paper and Midterm 2 in Week 10.)*
+between this paper and Midterm 2 on Monday 29 March, Week 10. The date follows the registry's
+ASSESSMENT CALENDAR, which pins Midterm 1 to Week 6.)*
 
 ---
 
@@ -140,7 +141,7 @@ its stride every step. Memory locality is not in the notation.
 ## How to Revise
 
 **Do not reread the lectures.** Work the problem sets again without looking at your solutions — PS 1
-through PS 3 are marked and returned, and PS 4 is due the same week as the paper.
+through PS 4 are due before the paper — PS 4 on Friday 26 February.
 
 In order of value:
 
@@ -156,11 +157,11 @@ In order of value:
 
 ## Practical
 
-- **Week 5 Monday's lecture runs as normal** and its material is *not* on this paper.
-- **Quiz 5 still runs** on Monday of Week 5, as usual, and covers Week 4 — the same material as
+- **Week 5's lectures and Lecture 19 (the morning of the paper)** are *not* on this paper, even
+  though they come before it.
+- **Quiz 5** (Monday 22 February) covers Week 4 — the same material as
   Section A of this paper. Treat it as a rehearsal.
-- **PS 4 is due Friday of Week 5**, after the paper. Do Parts A and B before the midterm — they are
-  the examinable material. Parts D and E are not examinable and can wait.
+- **PS 4 is due Friday 26 February**, before the paper, and all of it is examinable.
 - Past papers are on the course page. The two most recent are the best guide to Section D's style;
   earlier ones predate the current graph syllabus.
 

@@ -2,8 +2,8 @@
 ## Week 6: Graphs III — Minimum Spanning Trees
 
 **Assessment for this course (overall):** Problem Sets 35%, Midterms 25%, Final 20%, Projects 20%
-**This week's deliverables:** **PS 6** (released Friday, due Friday of Week 7), Lab 6, **Quiz 6 —
-which covers Week 5**.
+**MIDTERM 1 is Monday 1 March 2027, 18:00–19:15** (VNC 100), covering Weeks 0–4. This week's material is not on it.
+**This week's deliverables:** **PS 6** (released Fri 5 Mar 10:00, due **Fri 12 Mar 17:00**), Lab 6 (**Tue 9 Mar**, 15:00), **Quiz 6** (Mon 1 Mar, 09:00) — which covers Week 5.
 
 ---
 
@@ -46,7 +46,7 @@ By the end of Week 6, you should be able to:
 | [[L19 Spanning Trees and the Cut Property]] | The two properties, uniqueness, why greedy is safe, and what an MST is *not* |
 | [[L20 Prim and Kruskal]] | Both algorithms, both proofs, and where the time actually goes |
 | [[L21 Union-Find and MST Applications]] | Union-find measured, $\alpha(n)$, clustering, bottleneck |
-| [[PS 6 Minimum Spanning Trees]] | 100 points, due Friday of Week 7 |
+| [[PS 6 Minimum Spanning Trees]] | 100 points, due Fri 12 Mar 17:00 |
 | [[CS102 Week6/assignments/QUIZ 6 Week 6 Monday\|QUIZ 6 Week 6 Monday]] | 20 points, formative — **covers Week 5** |
 | [[LAB 6 Network Cable Layout]] | Campus fibre, the bottleneck, clustering, and breaking it |
 | [[CS102 Week6/resources/Reading Guide Week 6\|Reading Guide Week 6]] | CLRS Ch. 21 and §19.1–19.3 |
@@ -86,7 +86,7 @@ union-find phase costs about **1.8× the sort**, stably from $E = 5{,}000$ to $E
 complexity comparison is between $\log E$ and $\alpha(V)$ and is correct; it compares *operation
 counts*, and says nothing about one phase running in C and the other in interpreted Python. The ratio
 is flat rather than shrinking, which is the evidence that $\log E$ has not begun to matter. **This is
-the fifth instance of that pattern this term**, and PS 6 D3 asks you to state it in general.
+the fifth instance of that pattern this term**, and Lab 6 Part B asks you to state it in general.
 
 ### A Note on the Measurements
 

@@ -1,7 +1,8 @@
 # CS 102 · Lab 1
 ## Visualising Tree Traversals
 
-**Week 1 · 2-hour lab session · 40 points**
+**Date:** Tuesday 2 February 2027 · 15:00–16:50 · Lab section (Week 2) — covers Week 1 (L04–L06)
+*2-hour lab · 40 points · in-lab checkoff*
 **Deliverable:** `lab1.py` and `RESULTS.md`. In-lab checkoff by your TA.
 
 ---

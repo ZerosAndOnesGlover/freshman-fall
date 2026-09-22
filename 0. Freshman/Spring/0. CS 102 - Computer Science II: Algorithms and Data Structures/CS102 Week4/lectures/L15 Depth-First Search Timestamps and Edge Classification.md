@@ -334,7 +334,7 @@ make. Replacing the queue with a **priority queue** — the structure from Week 
 Dijkstra's algorithm and "fewest edges" into "least total weight."
 
 **Week 5 makes that substitution**, and also uses this lecture's finish-time ordering for shortest
-paths on DAGs. **MIDTERM 1 (Weeks 0–4) is in Week 5**; the revision guide in `resources/` lists what
+paths on DAGs. **MIDTERM 1 (Weeks 0–4) is Monday 1 March, in Week 6**; the revision guide in `resources/` lists what
 is examinable.
 
 ---

@@ -8,7 +8,11 @@ marked **deterministic**; where it will not, it is marked **machine-dependent**.
 
 ---
 
-## Part A — The Array Representation (16)
+> **Revised 2026-09-22.** The old Part D (measuring build swaps) was removed: Lecture 11 §4 already
+> reports those numbers. The old Part E is now Part D, and items were re-weighted to keep 100 points.
+> Where a breakdown inside an item still quotes the old points, scale it in proportion.
+
+## Part A — The Array Representation (18)
 
 ### A1 (4)
 
@@ -33,7 +37,7 @@ index range, which is what matters.
 
 ---
 
-### A2 (8)
+### A2 (10)
 
 **(a) (2)** $i//2 = (i-1)//2$ iff $i$ is odd.
 
@@ -95,7 +99,7 @@ merely says "it works for my example" scores 0 of those 2.*
 
 ---
 
-## Part B — The Priority Queue (30)
+## Part B — The Priority Queue (32)
 
 Reference implementation:
 
@@ -161,7 +165,7 @@ class MinHeap:
 operation sequences. Students may legitimately differ from `heapq` if they break ties differently,
 so **do not** mark against `heapq`'s array — mark against `check_heap` and drain order.)*
 
-### B1 (6)
+### B1 (7)
 
 The required counterexample: **`a = [5, 3, 4]`**. Both children are smaller than the root, so a
 careless implementation may swap with either.
@@ -183,15 +187,15 @@ any array of the form $[x, y, z]$ with $x > y$, $x > z$, $y < z$.*
 `a[0] = last` raises `IndexError` — the `if self.a:` guard is required. Watch for students who
 special-case `len(self.a) == 1` earlier and thereby return the wrong element; test it.
 
-### B3 (6)
+### B3 (7)
 
 Must be `for i in range(n//2 - 1, -1, -1)` with `sift_down`. Award 0 of 6 for a build implemented as
-repeated `push`, however correct — the question asks for the linear algorithm and Part D measures it.
+repeated `push`, however correct — the question asks for the linear algorithm and Part C proves it.
 
 Accept `range(n//2, -1, -1)`: starting one index too high is harmless, since index $\lfloor n/2\rfloor$
 is a leaf and `sift_down` returns immediately.
 
-### B4 (6)
+### B4 (5)
 
 ```python
 def check_heap(self):
@@ -201,7 +205,7 @@ def check_heap(self):
 3 for correctness, 3 for it actually being **called after every operation** in Part B5's tests. A
 `check_heap` that exists but is invoked only once at the end scores 3 of 6.
 
-### B5 (4)
+### B5 (5)
 
 Expected report: 300+ trials, **0 failures**. Reference run: 400 trials of interleaved push/pop with
 `check_heap()` after every operation, plus a full drain compared against `sorted()` — 0 failures. The
@@ -212,9 +216,9 @@ here.*
 
 ---
 
-## Part C — Why the Build Is Linear (20)
+## Part C — Why the Build Is Linear (26)
 
-### C1 (4)
+### C1 (5)
 
 A complete binary tree of $n$ nodes has at most $\lceil n/2^{h+1}\rceil$ nodes of height $h$.
 
@@ -226,7 +230,7 @@ at height $h$ is at most half the count at height $h-1$; the bound follows.
 *Accept the induction, or a direct argument from the level structure. 2 for the leaf base case, 2 for
 the halving step.*
 
-### C2 (8)
+### C2 (10)
 
 Total work is bounded by
 
@@ -253,7 +257,7 @@ cost of each call, and almost every node has height 0 or 1.
 *4 for the summation setup, 3 for a genuine derivation of the series (a bare "= 2" scores 0 of these
 3; an integral test or ratio argument is fine), 1 for the explanation of the missing $\log n$.*
 
-### C3 (4)
+### C3 (5)
 
 **Precondition:** `sift_down(i)` requires that the subtrees rooted at $2i+1$ and $2i+2$ are **already
 valid heaps**. It only moves `a[i]` down; it never repairs anything below.
@@ -268,7 +272,7 @@ its children, so the precondition fails at the very first non-leaf with an unhea
 *2 for the precondition, 2 for the demonstration with a number. Note the failure rate is not 100% —
 a student reporting ~85% is right, and one reporting 100% has a bug in their checker.*
 
-### C4 (4)
+### C4 (6)
 
 Both perform $n$ repairs, each $O(\log n)$ in the worst case, but **the repairs run in opposite
 directions and the tree is bottom-heavy.**
@@ -294,89 +298,9 @@ Reference figures:
 
 ---
 
-## Part D — Measuring the Build (16)
+## Part D — `decrease_key` (24)
 
-### D1 (6) — deterministic
-
-Random input, `random.seed(0)` then `[random.random() for _ in range(n)]`:
-
-| $n$ | $\Theta(n)$ build | insertion build |
-| --- | --- | --- |
-| 1,000 | 780 | 1,342 |
-| 10,000 | 7,456 | 12,688 |
-| 100,000 | 74,294 | 128,207 |
-
-Decreasing input $n, n-1, \dots, 1$:
-
-| $n$ | $\Theta(n)$ build | insertion build |
-| --- | --- | --- |
-| 1,000 | 992 | 7,987 |
-| 10,000 | 9,992 | 113,631 |
-| 100,000 | 99,990 | 1,468,946 |
-
-**The decreasing-input columns are exactly reproducible and are the ones to mark against.** The
-random columns depend on the seed; if a student used a different seed, check only that the build
-column falls in $0.74n \dots 0.78n$ and the insertion column in $1.28n \dots 1.35n$ (both drift
-slightly downward as $n$ grows).
-
-### D2 (4)
-
-| $n$ | build (decreasing) | $n - s_2(n)$ |
-| --- | --- | --- |
-| 1,000 | 992 | 994 |
-| 10,000 | 9,992 | 9,995 |
-| 100,000 | 99,990 | 99,994 |
-
-The expected observation: **the bound is very tight but is not attained.** $n - s_2(n)$ is exactly the
-sum of all node heights *(verified as an identity for every $n$ from 1 to 2,999)*, which is what the
-build would cost if every node sifted the full height of its subtree. Decreasing input comes within a
-handful of swaps but does not get there.
-
-*Award 4 for noticing the gap and identifying the bound as the sum of heights. Award 2 for a correct
-table with the observation "it's close." Award 0 for a student whose build column **exceeds** the
-bound — that is a proven upper bound and its violation is a bug, not a measurement.*
-
-### D3 (6)
-
-**(a) (3)** On random input, an insertion's `sift_up` exits almost immediately: a random new key is
-larger than its parent with probability close to 1, so the expected number of levels risen is
-**$O(1)$ and independent of $n$** — the reference figures give $1.28n$ total swaps, i.e. about 1.3
-per insertion at every size. Both builds are therefore $\Theta(n)$ and their ratio ($\approx 1.7$) is
-a constant.
-
-On decreasing input every key is smaller than everything present, so it rises from its leaf to the
-root — $\mathrm{depth}(i)$ levels — and the total is $\sum_i \mathrm{depth}(i) = \Theta(n\log n)$
-while the linear build stays at $\Theta(n)$. The ratio therefore grows like $\log n$: **8.0, 11.4,
-14.7** at the three sizes.
-
-*Accept "the average key doesn't move far" only if accompanied by the reason (most positions are near
-the bottom, so a random key is likely to be larger than its parent). 2 of 3 without the reason.*
-
-**(b) (3)** **No — decreasing input is not the worst case for the $\Theta(n)$ build**, and the D1/D2
-tables show it: 9,992 against a bound of 9,995 at $n = 10^4$.
-
-*(Verified: over $n = 1\dots399$, decreasing input attains $n - s_2(n)$ for only 129 values and falls
-short for 270, first at $n = 8$ where it does 6 swaps against a bound of 7. Exhaustive search over all
-$10!$ permutations at $n = 10$ does find inputs achieving all 8 swaps, so the bound is attainable —
-just not by this input.)*
-
-The implication: **the adversarial input for one algorithm is not automatically adversarial for
-another**, even when both produce the same structure. A worst-case benchmark built from "the reversed
-array" would silently measure a near-worst case here and a genuine worst case for the insertion
-build, and would give no warning that the two are different.
-
-*3 for the correct answer with the numerical evidence. 1 if the student says "no" without checking
-their own numbers against the bound.*
-
-> **Compare with Week 2**, where the extremal object *was* recognisable — the Fibonacci tree both
-> proved the AVL height bound and served as the worst-case deletion input. It is worth saying in
-> class that these two weeks disagree on purpose.
-
----
-
-## Part E — `decrease_key` (18)
-
-### E1 (7) — `IndexedPQ`
+### D1 (9) — `IndexedPQ`
 
 ```python
 class IndexedPQ:
@@ -427,7 +351,7 @@ scattered through `_up`/`_down`, 1 for ignoring non-improving priorities.*
 entry after overwriting it. Both leave a stale map that only shows up several operations later. E3's
 cross-check catches it; a student who reports E3 passing with this bug present has not run it.
 
-### E2 (7) — `LazyPQ`
+### D2 (9) — `LazyPQ`
 
 As in Lecture 12 §3. *4 for correct staleness detection in `pop`, 2 for suppressing non-improving
 pushes, 1 for handling exhaustion (a heap that is non-empty but contains only stale entries).*
@@ -438,7 +362,7 @@ a `decrease_key` occurred — so it passes any test without repeated keys. **E3'
 repeated keys exists to catch exactly this**; if a student's test generator draws keys from a large
 range, their cross-check proves nothing. Check the generator, not just the reported result.
 
-### E3 (4)
+### D3 (6)
 
 Expected: 200+ trials, 0 failures. *(Reference: 300 trials against a brute-force reference, checking
 identical output sets, correct final priorities, and non-decreasing pop order. 0 failures.)*
@@ -463,21 +387,19 @@ $\log E = O(\log V)$ step; stopping at "the heap is bigger but it still works" s
 
 | Part | Points |
 | --- | --- |
-| A | 16 |
-| B | 30 |
-| C | 20 |
-| D | 16 |
-| E | 18 |
+| A | 18 |
+| B | 32 |
+| C | 26 |
+| D | 24 |
 | **Total** | **100** |
 
 ---
 
 ## Notes for the Grading Meeting
 
-**1. A2(c) and D3(b) are the two questions that carry the week.** Both are about the same thing from
-opposite directions: A2(c) is a test that passes and proves nothing, D3(b) is a benchmark that runs
-and measures the wrong quantity. If the cohort does well on the code and poorly on these two, the
-problem set has not done its job, and it is worth ten minutes at the start of Week 4 rather than a
+**1. A2(c) and C4 are the two questions that carry the week.** A2(c) is a test that passes and proves
+nothing; C4 is an aggregate bound that is smaller than (operations) × (worst cost of one). If the
+cohort does well on the code and poorly on these two, the problem set has not done its job, and it is worth ten minutes at the start of Week 4 rather than a
 remark on the scripts.
 
 **2. Do not deduct twice for the `sift_down` wrong-child bug.** It will fail B5, and B1 asks for the
@@ -491,12 +413,11 @@ first when a submission crashes.
 `< 0` bug in AVL insertion is undetectable on PS 2's inputs and asked for it to be raised in Week 3.
 It is: **Lecture 11 §3's aggregate argument is the same reasoning pattern** — a cost that looks like
 (number of operations) × (worst case each) but is not, because the expensive case is rare. Students
-who lost marks on PS 2 E1 should be pointed at C4 here, which asks the same question in a setting
+who lost marks on PS 2 D1 should be pointed at C4 here, which asks the same question in a setting
 where the answer is easier to see.
 
 **5. Forward.** C2's convergent-series argument returns in **Week 6** for Union-Find's amortised
-bound, and D3(b)'s lesson returns in **Week 9**, where a greedy algorithm's worst case is likewise not
-the input anyone would guess.
+bound.
 
 ---
 

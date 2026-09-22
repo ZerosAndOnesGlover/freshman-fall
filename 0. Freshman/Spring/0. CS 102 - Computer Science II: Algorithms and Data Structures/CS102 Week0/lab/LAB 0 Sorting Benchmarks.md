@@ -1,7 +1,8 @@
 # CS 102 · Lab 0
 ## Implement and Benchmark Three Sorting Algorithms
 
-**Week 0 · 2-hour lab session · 40 points**
+**Date:** Tuesday 26 January 2027 · 15:00–16:50 · Lab section (Week 1) — covers Week 0 (L01–L03)
+*2-hour lab · 40 points · in-lab checkoff*
 **Deliverable:** `lab0.py` and a short `RESULTS.md`. In-lab checkoff by your TA.
 
 > **Labs carry no direct weight** in CS 102. They are still required: **you must satisfactorily

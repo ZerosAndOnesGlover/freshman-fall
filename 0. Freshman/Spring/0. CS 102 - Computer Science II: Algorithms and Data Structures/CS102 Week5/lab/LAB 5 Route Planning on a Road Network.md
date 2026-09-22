@@ -1,7 +1,8 @@
 # CS 102 · Lab 5
 ## Route Planning on a Road Network
 
-**Week 5 · 2-hour lab session · 40 points**
+**Date:** Tuesday 2 March 2027 · 15:00–16:50 · Lab section (Week 6) — covers Week 5 (L16–L18)
+*2-hour lab · 40 points · in-lab checkoff*
 **Deliverable:** `lab5.py` and `RESULTS.md`. In-lab checkoff by your TA.
 
 > **Labs carry no direct weight** in CS 102, but **you must satisfactorily complete at least 10 of

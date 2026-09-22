@@ -1,6 +1,6 @@
 # CS 102 · Quiz 2
 
-**Week 2, Monday, first 15 minutes of lecture · 20 points**
+**Date:** Monday 1 February 2027 · 09:00–09:15 (start of L07) · Week 2 · 20 points
 **Covers Week 1** — binary trees, traversals, and binary search trees. **Not** this week's material.
 
 Closed book. No calculator required — every number here is exact.

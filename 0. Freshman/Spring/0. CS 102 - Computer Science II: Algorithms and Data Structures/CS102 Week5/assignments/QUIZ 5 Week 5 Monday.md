@@ -1,10 +1,10 @@
 # CS 102 · Quiz 5
 
-**Week 5, Monday, first 15 minutes of lecture · 20 points**
+**Date:** Monday 22 February 2027 · 09:00–09:15 (start of L16) · Week 5 · 20 points
 **Covers Week 4** — graph representations, BFS, and DFS. **Not** this week's material.
 
 Closed book. Every number here is exact.
-**MIDTERM 1 is later this week and covers Weeks 0–4.** Treat this quiz as a rehearsal for its
+**MIDTERM 1 is Monday 1 March, 18:00, and covers Weeks 0–4.** Treat this quiz as a rehearsal for its
 Section A.
 
 ---

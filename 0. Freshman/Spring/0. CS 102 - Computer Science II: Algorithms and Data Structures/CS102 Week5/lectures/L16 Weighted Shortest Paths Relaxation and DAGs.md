@@ -238,7 +238,7 @@ a confusing list of edges.
 - Read CLRS §20.4 (topological sort), §20.5 (SCC), and §22.1 (DAG shortest paths).
 - **PS 5** implements both topological sorts and DAG shortest paths before touching Dijkstra.
 - **Quiz 5 covers Week 4** — representations, BFS, DFS, timestamps. Not this material.
-- **MIDTERM 1 is this week** and covers Weeks 0–4. This lecture is *not* on it.
+- **MIDTERM 1 is Monday 1 March** (Week 6) and covers Weeks 0–4. This lecture is *not* on it.
 - Next lecture: Dijkstra — what you can still do when the graph has cycles but no negative weights.
 
 ---

@@ -250,7 +250,7 @@ Two consequences:
 - Read CLRS §20.1 (representations) — short, and the exercises are worth doing.
 - **PS 4** is released Friday and implements both representations before either traversal.
 - **Quiz 4 covers Week 3** — heaps, the linear build, priority queues. Not graphs.
-- **MIDTERM 1 is announced this week**, covering Weeks 0–4, and sits in Week 5. The syllabus has the
+- **MIDTERM 1 is announced this week**, covering Weeks 0–4, and sits on Monday 1 March, 18:00 (Week 6). The syllabus has the
   format; the revision guide is in `resources/`.
 
 ---

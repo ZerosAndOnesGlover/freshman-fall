@@ -12,7 +12,8 @@
 | **Title** | Computer Science II: Algorithms and Data Structures |
 | **Credits** | 4 (3 lecture + 1 lab) |
 | **Semester** | Spring, Year 1 |
-| **Meeting** | 3 lectures per week + one 2-hour lab section |
+| **Meeting** | Lectures Mon/Wed/Fri 09:00–09:50; lab Tue 15:00–16:50 (Lab *N* meets the Tuesday after Week *N*) |
+| **Term** | Monday 18 January – Friday 16 April 2027; finals Monday 19 – Friday 23 April |
 | **Prerequisites** | **CS 101, MATH 151** |
 | **Languages** | Python 3 (primary), C (for the memory-sensitive work) |
 | **Assessment** | **Problem Sets 35%, Midterms 25%, Final 20%, Projects 20%** |
@@ -63,14 +64,15 @@ terminology, and summation manipulation are used from Week 0 without re-teaching
 | **2** | Balanced BSTs: AVL Trees and Red-Black Trees | PS 2, Lab 2, Quiz 2 |
 | **3** | Heaps and Priority Queues | PS 3, Lab 3, Quiz 3 |
 | **4** | Graphs I: Representations and Traversals | PS 4, Lab 4, Quiz 4 · *Midterm 1 announced* |
-| **5** | Graphs II: Shortest Paths | PS 5, Lab 5, Quiz 5 · **MIDTERM 1** (Weeks 0–4) |
-| **6** | Graphs III: Minimum Spanning Trees | PS 6, Lab 6, Quiz 6 |
+| **5** | Graphs II: Shortest Paths | PS 5, Lab 5, Quiz 5 |
+| **6** | Graphs III: Minimum Spanning Trees | PS 6, Lab 6, Quiz 6 · **MIDTERM 1** (Mon 1 Mar, Weeks 0–4) |
 | **7** | Dynamic Programming I: Principles | PS 7, Lab 7, Quiz 7 · **Project 1 assigned** |
 | **8** | Dynamic Programming II: Applications | PS 8, Lab 8, Quiz 8 |
 | **9** | Greedy Algorithms | PS 9, Lab 9, Quiz 9 · **Project 1 due** |
-| **10** | String Algorithms | PS 10, Lab 10, Quiz 10 · **MIDTERM 2** (Weeks 5–9) |
+| **10** | String Algorithms | PS 10, Lab 10, Quiz 10 · **MIDTERM 2** (Mon 29 Mar, Weeks 5–9) · Project 2 assigned |
 | **11** | Computational Geometry and Advanced Data Structures | PS 11, Lab 11, Quiz 11 |
-| **12** | NP-Completeness and the Limits of Efficiency | Lab 12 · **FINAL EXAM** · **Project 2 due** |
+| **12** | NP-Completeness and the Limits of Efficiency | **Project 2 due** (Fri 16 Apr) · Lab 12 meets Tue 20 Apr, in finals week |
+| **Finals** | — | **FINAL EXAM** Wed 21 Apr, 09:00–11:30 |
 
 ---
 
@@ -78,12 +80,12 @@ terminology, and summation manipulation are used from Week 0 without re-teaching
 
 | Component | Weight | Details |
 | --- | --- | --- |
-| **Problem Sets (11)** | 35% | PS 1–11, released Friday, due the following Friday. **Lowest 1 dropped.** No problem set in Weeks 0 or 12. |
-| **Midterm Exam 1** (Week 5) | 12.5% | 75 minutes. Covers Weeks 0–4. One handwritten sheet, 1 side. |
-| **Midterm Exam 2** (Week 10) | 12.5% | 75 minutes. Covers Weeks 5–9. Same rules. |
-| **Final Exam** (Week 12) | 20% | Comprehensive, 180 minutes. Two handwritten sheets. |
-| **Project 1** (assigned Week 7, due Week 9) | 10% | Substantial implementation with a written analysis. |
-| **Project 2** (due Week 12) | 10% | Second project, assigned Week 10. |
+| **Problem Sets (11)** | 35% | PS 1–11, released Friday 10:00 after the week's last lecture, due the following Friday 17:00. **Lowest 1 dropped.** No problem set in Weeks 0 or 12. |
+| **Midterm Exam 1** (Mon 1 Mar, Week 6) | 12.5% | 18:00–19:15, 75 minutes. Covers Weeks 0–4. One handwritten sheet, 1 side. |
+| **Midterm Exam 2** (Mon 29 Mar, Week 10) | 12.5% | 18:00–19:15, 75 minutes. Covers Weeks 5–9. Same rules. |
+| **Final Exam** (Wed 21 Apr, finals week) | 20% | Comprehensive. Two handwritten sheets. ⚠️ Written for 180 minutes; the registry books 09:00–11:30 (150). Open decision. |
+| **Project 1** (assigned Mon 8 Mar, due Fri 26 Mar 17:00) | 10% | Substantial implementation with a written analysis. |
+| **Project 2** (assigned Mon 29 Mar, due Fri 16 Apr 17:00) | 10% | Second project. |
 | **Total** | **100%** | |
 
 > **These weights come directly from the Year 1 curriculum document**, which specifies *Problem Sets
@@ -97,10 +99,11 @@ without them.
 
 **They are still required.**
 
-- **Labs (13, Weeks 0–12)** are marked on completion and correctness with an in-lab checkoff. **You
+- **Labs (13, Weeks 0–12)** meet Tuesday 15:00–16:50 of the week *after* the week they cover, so every
+  lab comes after its three lectures. They are marked on completion and correctness with an in-lab checkoff. **You
   must satisfactorily complete at least 10 of the 13 labs to pass the course**, regardless of your
   weighted average. A lab is where you find out that your algorithm was wrong.
-- **Quizzes (11, Weeks 1–11)** are 15 minutes at the start of Monday's lecture. **Quiz *N* covers
+- **Quizzes (11, Weeks 1–11)** are 15 minutes at the start of Monday's lecture (09:00–09:15). **Quiz *N* covers
   Week *N−1***, the same convention CS 101 used. They are marked and returned so that you and the
   staff can see where you stand before an exam makes it expensive.
 
@@ -168,7 +171,7 @@ D+ 67–69, D 63–66, D− 60–62, F below 60. The registry copy governs if th
 - **Generative tools:** permitted for explaining concepts and for debugging code you wrote. Not
   permitted for producing solutions. **State any use on the submission.** The reason is narrow and
   practical: this course is graded on whether you can design an algorithm under exam conditions in
-  Weeks 5, 10 and 12, and a term of outsourced problem sets produces a predictable result there.
+  Weeks 6 and 10 and finals week, and a term of outsourced problem sets produces a predictable result there.
 - **Exams:** closed book, closed device. The handwritten-sheet allowance is generous — build it as
   you go rather than the night before, since making it is most of the revision.
 

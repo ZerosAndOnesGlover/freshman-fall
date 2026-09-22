@@ -197,7 +197,7 @@ priorities, and non-decreasing pop order. 0 failures.)*
 
 **Answer 2 is what you should write.** It is shorter, it is local — the `pop` loop is the only place
 that knows about staleness — and it is what almost every production Dijkstra does. Answer 1 is worth
-implementing once, in PS 3 part E, so that the trade is yours rather than received.
+implementing once, in PS 3 part D, so that the trade is yours rather than received.
 
 > The general shape recurs: **when deleting from the middle is hard, mark instead of delete and clean
 > up on the way past.** The same idea appears in garbage collectors, in log-structured storage, and in
@@ -387,7 +387,7 @@ Three data structures, one algorithm skeleton. That is the observation Week 4 op
 ## 9. What to Do
 
 - Read CLRS §6.5 (priority queues) and the `heapq` module documentation.
-- **PS 3** is due Friday of Week 4. Part E implements both `decrease_key` strategies from §3.
+- **PS 3** is due Friday of Week 4. Part D implements both `decrease_key` strategies from §3.
 - **Lab 3** compares heap sort and merge sort, including the locality effect from Lecture 11 §6.
 - Week 4 begins graphs. Reread Lecture 10 §4 before then — **the adjacency list is another structure
   that replaces pointers with indices**, and the reasoning is the same.

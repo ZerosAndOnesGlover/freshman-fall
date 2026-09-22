@@ -2,8 +2,7 @@
 ## Week 1: Binary Trees and Binary Search Trees
 
 **Assessment for this course (overall):** Problem Sets 35%, Midterms 25%, Final 20%, Projects 20%
-**This week's deliverables:** **PS 1** (released Friday, due Friday of Week 2), Lab 1, **Quiz 1 —
-which covers Week 0**.
+**This week's deliverables:** **PS 1** (released Fri 29 Jan 10:00, due **Fri 5 Feb 17:00**), Lab 1 (**Tue 2 Feb**, 15:00), **Quiz 1** (Mon 25 Jan, 09:00) — which covers Week 0.
 
 ---
 
@@ -41,7 +40,7 @@ By the end of Week 1, you should be able to:
 | [[L04 Trees and Traversals]] | Terminology, shapes, height bounds, four traversals, reconstruction |
 | [[L05 Binary Search Trees]] | The invariant, search/insert/delete, successor, validation |
 | [[L06 BST Height Average and Worst Case]] | Why sorted input is the worst case; average-case results; what would fix it |
-| [[PS 1 Binary Trees and BSTs]] | 100 points, due Friday of Week 2 |
+| [[PS 1 Binary Trees and BSTs]] | 100 points, due Fri 5 Feb 17:00 |
 | [[CS102 Week1/assignments/QUIZ 1 Week 1 Monday\|QUIZ 1 Week 1 Monday]] | 20 points, formative — **covers Week 0** |
 | [[LAB 1 Visualising Tree Traversals]] | Build a renderer, instrument the traversals, measure heights |
 | [[CS102 Week1/resources/Reading Guide Week 1\|Reading Guide Week 1]] | CLRS §12.1–12.3 with guiding questions |
@@ -51,7 +50,7 @@ By the end of Week 1, you should be able to:
 
 **1. The BST invariant is about subtrees, not children.** Checking only
 `left.key < key < right.key` accepts trees that are not BSTs. This is the single most common bug of
-the week, it is the subject of PS 1 E3, and it appears again in the midterm.
+the week, it is the subject of PS 1 C4, and it appears again in the midterm.
 
 **2. Sorted input is the worst case.** Not a contrived adversarial sequence — the most natural input
 there is. A structure whose failure mode is triggered by *tidy* data fails in production on real

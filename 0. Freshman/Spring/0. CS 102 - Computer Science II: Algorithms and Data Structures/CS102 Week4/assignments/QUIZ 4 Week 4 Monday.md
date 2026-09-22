@@ -1,6 +1,6 @@
 # CS 102 · Quiz 4
 
-**Week 4, Monday, first 15 minutes of lecture · 20 points**
+**Date:** Monday 15 February 2027 · 09:00–09:15 (start of L13) · Week 4 · 20 points
 **Covers Week 3** — heaps, the linear build, and priority queues. **Not** this week's material.
 
 Closed book. No calculator required — every number here is exact.

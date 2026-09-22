@@ -63,7 +63,7 @@ invariant, then read the tighter analysis on the second pass. Figure 6.3 is the 
 
 **§6.5 (priority queues, 6 pages).** `HEAP-EXTRACT-MAX`, `HEAP-INCREASE-KEY`, `MAX-HEAP-INSERT`. Note
 that CLRS's `HEAP-INCREASE-KEY` assumes you already hold the element's index. **CLRS does not tell
-you how to find it**, and that omission is the whole subject of Lecture 12 §3 and PS 3 Part E.
+you how to find it**, and that omission is the whole subject of Lecture 12 §3 and PS 3 Part D.
 
 **Problem 6-2 (d-ary heaps)** is worth attempting. It is the natural generalisation, it is a plausible
 exam question, and it is the reason B-trees looked familiar last week.

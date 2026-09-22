@@ -1,6 +1,6 @@
 # CS 102 · Quiz 6
 
-**Week 6, Monday, first 15 minutes of lecture · 20 points**
+**Date:** Monday 1 March 2027 · 09:00–09:15 (start of L19) · Week 6 · 20 points
 **Covers Week 5** — shortest paths: relaxation, DAGs, Dijkstra, Bellman–Ford. **Not** this week's
 material.
 

@@ -206,7 +206,7 @@ and pays for it in time.**
   for negative weights you will find).
 - **PS 5** implements Bellman–Ford with the early exit, measures the rounds actually used, and
   extracts a negative cycle rather than merely reporting one.
-- **MIDTERM 1** is this week. This lecture is not on it.
+- **MIDTERM 1** is Monday 1 March, 18:00. This lecture is not on it.
 - **Week 6** keeps the greedy paradigm but changes the objective: minimum spanning trees, where the
   cut property plays the role that non-negativity plays here.
 

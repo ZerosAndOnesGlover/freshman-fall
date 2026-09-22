@@ -1,7 +1,8 @@
 # CS 102 · Lab 3
 ## Heap Sort versus Merge Sort
 
-**Week 3 · 2-hour lab session · 40 points**
+**Date:** Tuesday 16 February 2027 · 15:00–16:50 · Lab section (Week 4) — covers Week 3 (L10–L12)
+*2-hour lab · 40 points · in-lab checkoff*
 **Deliverable:** `lab3.py` and `RESULTS.md`. In-lab checkoff by your TA.
 
 > **Labs carry no direct weight** in CS 102, but **you must satisfactorily complete at least 10 of
@@ -72,6 +73,17 @@ You should find one sort tracking the prediction and one exceeding it.
 
 **C3.** *(3)* Measure peak memory for both at $n = 100{,}000$ with `tracemalloc`. Report both figures
 and the ratio, and say what heap sort's non-zero figure consists of.
+
+> `tracemalloc` has not been taught, and you need only these four lines of it:
+>
+> ```python
+> import tracemalloc
+> tracemalloc.start()
+> heapsort(list(a))                      # the call you are measuring
+> peak = tracemalloc.get_traced_memory()[1]; tracemalloc.stop()   # peak bytes since start()
+> ```
+>
+> `list(a)` hands the sort its own copy, and that copy is inside the measurement — say so.
 
 ---
 

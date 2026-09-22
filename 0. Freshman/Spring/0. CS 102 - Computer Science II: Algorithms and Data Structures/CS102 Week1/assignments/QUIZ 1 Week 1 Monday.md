@@ -1,5 +1,7 @@
 # CS 102 · Quiz 1
-## Administered: Monday, Week 1 (first 15 minutes of lecture)
+## Week 1, Monday — In-Class Assessment
+
+**Date:** Monday 25 January 2027 · 09:00–09:15 (start of L04) · Week 1
 
 **Name:** _________________________________ **Section:** ___________ **Date:** ___________
 

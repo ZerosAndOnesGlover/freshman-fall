@@ -175,7 +175,7 @@ writes**, which is worth knowing about the relationship between the literature a
 ## 7. What to Do
 
 - Read CLRS §21.2 — both algorithms, and the proofs, in 10 pages.
-- **PS 6** implements both and compares them, and asks you to explain the timing result in §4 rather
+- **PS 6** implements both and verifies them; **Lab 6** times them and asks you to explain the timing result in §4 rather
   than to repeat the textbook advice.
 - **Lab 6** lays cable on a campus, where the graph is complete and implicit.
 - Next lecture: the disjoint-set structure that makes Kruskal work, and what MSTs are used for.

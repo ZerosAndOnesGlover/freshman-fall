@@ -3,7 +3,7 @@
 
 **Credits:** 4 (3 lecture + 1 lab) · **Prerequisites:** CS 101, MATH 151
 **Assessment for this course (overall):** Problem Sets 35%, Midterms 25%, Final 20%, Projects 20%
-**This week's deliverable:** Lab 0. **No problem set and no quiz** — Quiz 1, in Week 1, covers this week.
+**This week's deliverable:** Lab 0 (**Tue 26 Jan**, 15:00). **No problem set and no quiz** — Quiz 1 (Mon 25 Jan, 09:00) covers this week.
 
 ---
 

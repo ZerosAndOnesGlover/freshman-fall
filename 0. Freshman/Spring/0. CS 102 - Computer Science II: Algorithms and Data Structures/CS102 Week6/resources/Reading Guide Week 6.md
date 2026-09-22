@@ -111,7 +111,7 @@ $O(m\,\alpha(n))$ is a **tight** bound rather than the best analysis anyone has 
 
 **"Kruskal's cost is dominated by the sort."** Asymptotically yes. Measured in CPython, the union-find
 phase costs about **1.8× the sort** at every size from $E = 5{,}000$ to $E = 300{,}000$, because
-`sorted()` is C and your union-find is interpreted. Both statements are true; PS 6 D3 asks you to
+`sorted()` is C and your union-find is interpreted. Both statements are true; Lab 6 Part B asks you to
 reconcile them.
 
 **"Prim for dense, Kruskal for sparse."** Measured on explicit edge lists in Python, Kruskal won every

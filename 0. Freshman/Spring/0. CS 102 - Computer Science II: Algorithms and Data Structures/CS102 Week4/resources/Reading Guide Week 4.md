@@ -83,7 +83,7 @@ Answer these as you read. They are not submitted, and three are on MIDTERM 1.
 
 6. Theorem 20.10 says undirected graphs have only tree and back edges. Lecture 15 §4 reports counting
    1,487 forward edges in undirected graphs. **Reconcile these.** (The reconciliation is the point of
-   PS 4 D1–D2.)
+   Lecture 15 §4.)
 
 7. Compare the collection in BFS, DFS, and the priority queue of Week 3. What single property of the
    collection determines which algorithm you get?
@@ -110,7 +110,7 @@ lists because real graphs are sparse, not because the matrix is bad.
 
 **"`v != parent` fails on multigraphs."** This is stated confidently in many places and is **false** —
 a parallel edge appears twice in a list-based adjacency structure and is found. What fails is building
-adjacency from `set`, which discards the duplicate before the algorithm runs. PS 4 D4 makes you settle
+adjacency from `set`, which discards the duplicate before the algorithm runs. PS 4 D2 makes you settle
 this by exhaustive search.
 
 ---

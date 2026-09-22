@@ -2,9 +2,9 @@
 ## Week 4: Graphs I — Representations and Traversals
 
 **Assessment for this course (overall):** Problem Sets 35%, Midterms 25%, Final 20%, Projects 20%
-**This week's deliverables:** **PS 4** (released Friday, due Friday of Week 5), Lab 4, **Quiz 4 —
-which covers Week 3**.
-**MIDTERM 1 is announced this week** and sits in Week 5, covering Weeks 0–4. See
+**This week's deliverables:** **PS 4** (released Fri 19 Feb 10:00, due **Fri 26 Feb 17:00**), Lab 4 (**Tue 23 Feb**, 15:00), **Quiz 4** (Mon 15 Feb, 09:00) — which covers Week 3.
+**MIDTERM 1 is announced this week** and sits on **Monday 1 March 2027, 18:00–19:15** (Week 6),
+covering Weeks 0–4. See
 [[CS102 Week4/resources/MIDTERM 1 Revision Guide|MIDTERM 1 Revision Guide]].
 
 ---
@@ -59,7 +59,7 @@ By the end of Week 4, you should be able to:
 | [[L13 Graphs Terminology and Representation]] | Terminology, both representations measured, the traversal skeleton |
 | [[L14 Breadth-First Search]] | BFS, the shortest-path proof, components, bipartiteness |
 | [[L15 Depth-First Search Timestamps and Edge Classification]] | DFS, timestamps, parenthesis theorem, edge types, cycles |
-| [[PS 4 Graph Traversal]] | 100 points, due Friday of Week 5 |
+| [[PS 4 Graph Traversal]] | 100 points, due Fri 26 Feb 17:00 |
 | [[CS102 Week4/assignments/QUIZ 4 Week 4 Monday\|QUIZ 4 Week 4 Monday]] | 20 points, formative — **covers Week 3** |
 | [[LAB 4 BFS and DFS on a Social Network]] | Degrees of separation, and a heuristic that gets it wrong |
 | [[CS102 Week4/resources/Reading Guide Week 4\|Reading Guide Week 4]] | CLRS §20.1–20.3, with the misreadings to avoid |
@@ -71,7 +71,7 @@ By the end of Week 4, you should be able to:
 **1. DFS does not find shortest paths.** On a 7-cycle, BFS gives vertex 6 a distance of 1 — it is
 adjacent to the source — while DFS places it at tree depth **6**. Both traversals visit the same
 vertices; only one of the trees means anything metric. Lab 4 makes the point at scale: on the social
-network, BFS's eccentricity from vertex 0 is **4** and the DFS tree depth is **3,226**.
+network, BFS's eccentricity from vertex 0 is **4** and the DFS tree depth is **3,274**.
 
 **2. Grey means "on the stack right now", not "visited".** Black means visited and finished. The whole
 back-edge test rests on that distinction, and conflating the two is the standard way to produce a
@@ -95,7 +95,7 @@ up to 3 edges, against a union-find ground truth: **0 disagreements.**
 The real fault is one step earlier. Build adjacency from `set` instead of `list` and the duplicate is
 discarded before the algorithm runs — **56 wrong answers** in the same search, the smallest being two
 vertices joined by two edges. **The received wisdom names the algorithm; the bug is in the data
-structure.** PS 4 D4 makes you settle it by search rather than by argument.
+structure.** PS 4 D2 makes you settle it by search rather than by argument.
 
 ### A Note on the Measurements
 
