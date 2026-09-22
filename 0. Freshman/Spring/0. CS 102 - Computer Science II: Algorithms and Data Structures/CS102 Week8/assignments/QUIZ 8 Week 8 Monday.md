@@ -1,6 +1,6 @@
 # CS 102 · Quiz 8
 
-**Week 8, Monday, first 15 minutes of lecture · 20 points**
+**Date:** Monday 15 March 2027 · 09:00–09:15 (start of L25) · Week 8 · 20 points
 **Covers Week 7** — optimal substructure, memoisation, LCS, edit distance, knapsack. **Not** this
 week's material.
 

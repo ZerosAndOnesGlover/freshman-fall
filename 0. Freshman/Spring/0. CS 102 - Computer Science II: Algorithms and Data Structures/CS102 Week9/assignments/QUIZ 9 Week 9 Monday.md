@@ -1,6 +1,6 @@
 # CS 102 · Quiz 9
 
-**Week 9, Monday, first 15 minutes of lecture · 20 points**
+**Date:** Monday 22 March 2027 · 09:00–09:15 (start of L28) · Week 9 · 20 points
 **Covers Week 8** — interval DP, LIS, coin change, tree and bitmask DP, Floyd–Warshall. **Not** this
 week's material.
 

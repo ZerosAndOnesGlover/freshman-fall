@@ -207,8 +207,7 @@ Two forward pointers:
   faster than DP when it works — and Week 9 is about proving when it does.
 
 **PROJECT 1 is assigned this week and due Friday of Week 9.** It builds a working `diff` from
-Lecture 23, and its stretch component is Hirschberg's algorithm. Ten percent of the course; read the
-brief now.
+Lecture 23, then makes it fast enough to use. Ten percent of the course; read the brief now.
 
 ---
 

@@ -1,8 +1,9 @@
 # CS 102 · FINAL EXAM — Revision Guide
 
-**Sat:** Week 12 · **Comprehensive — Weeks 0–12** · **Worth 20%** of the final grade
+**Sat:** Wednesday 21 April 2027, 09:00–11:30 · finals week (VNC 100) · **Comprehensive — Weeks 0–12** · **Worth 20%** of the final grade
 
-**180 minutes.** Closed book. **Two handwritten sheets** (both sides) of your own notes are permitted.
+**180 minutes** as written — ⚠️ the registry books a 150-minute slot (09:00–11:30); which one wins is an
+open decision in the course audit. Closed book. **Two handwritten sheets** (both sides) of your own notes are permitted.
 No calculators.
 
 *(Format and weight per the Course Overview Syllabus.)*
@@ -160,9 +161,10 @@ worth more spent on recurrences and preconditions.
 
 ## Practical
 
-- **PROJECT 2 and PS 11 are both due Friday of this week.** Neither is examinable, but both are due
-  before the paper for most timetables. **Plan the week, not the day.**
-- Lab 12 runs as normal. If you are at nine completed labs, it is compulsory.
+- **PROJECT 2 and PS 11 are both due Friday 16 April**, five days before the paper. **Plan the week,
+  not the day.**
+- Lab 12 meets Tuesday 20 April, the day before the paper. If you are at nine completed labs, it is
+  compulsory.
 - Past papers are on the course page. The two most recent match this syllabus; earlier ones predate the
   geometry week.
 - The course retrospective in [[CS102 Week12/resources/Course Retrospective|Course Retrospective]] is not examinable and is worth twenty

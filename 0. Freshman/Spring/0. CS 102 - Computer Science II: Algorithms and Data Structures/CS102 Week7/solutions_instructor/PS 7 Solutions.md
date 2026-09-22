@@ -8,9 +8,13 @@ submission; **machine-dependent** ones will not.
 
 ---
 
-## Part A — Fibonacci (18)
+> **Revised 2026-09-22.** Removed: A3 (timing the three Fibonacci versions — Lecture 22 §5 already
+> does it) and E2 (LIS, which is Week 8's Lecture 26). A4→A3, E3→E2 (now with a hint naming the
+> "ending at $i$" state), E4→E3; items re-weighted to keep 100 points.
 
-### A1 (4) — deterministic
+## Part A — Fibonacci (16)
+
+### A1 (5) — deterministic
 
 $\text{calls}(n) = 2F(n+1) - 1$, **exact for every $n = 0 \dots 25$**. At $n = 20$: 21,891 calls.
 
@@ -19,7 +23,7 @@ Growth: calls $\approx 1.447\,\varphi^{\,n}$. *(Verified: the ratio calls$/\varp
 
 *The constant is $2\varphi/\sqrt5 = 1.447$, which a strong student may derive. Do not require it.*
 
-### A2 (5) — deterministic
+### A2 (6) — deterministic
 
 Computing `fib(20)`:
 
@@ -36,22 +40,7 @@ Fibonacci is Fibonacci**.
 *3 for the counts, 2 for stating the identity. A student who notices the numbers are Fibonacci but does
 not pin down the index gets 1 of those 2.*
 
-### A3 (4) — machine-dependent
-
-| $n$ | naive | memoised | tabulated |
-| --- | --- | --- | --- |
-| 20 | 2.00 ms | 0.0045 ms | 0.00097 ms |
-| 25 | 23.59 ms | 0.0063 ms | 0.00101 ms |
-| 30 | 253.88 ms | 0.0068 ms | 0.00114 ms |
-| 32 | 685.63 ms | 0.0072 ms | 0.00120 ms |
-
-Expected: **tabulation is ~6× faster** despite identical complexity. The reasons: no function-call
-overhead per subproblem, no dictionary hashing, and array indexing instead. Both are $\Theta(n)$; the
-constants differ.
-
-*2 for the table, 2 for naming at least two of (call overhead, dict hashing, allocation).*
-
-### A4 (5)
+### A3 (5)
 
 **(a) (2)** `fib_memo(5000)` raises **`RecursionError`**; `fib_tab(5000)` returns a 1,045-digit
 integer. Memoisation recurses to the depth of the subproblem chain; tabulation iterates.
@@ -190,9 +179,9 @@ be in P" has the misconception the question is for — mark it, and write a sent
 
 ---
 
-## Part E — Choosing the State (16)
+## Part E — Choosing the State (18)
 
-### E1 (4) — coin change
+### E1 (6) — coin change
 
 **State** $C[t]$ = fewest coins summing to exactly $t$.
 **Recurrence** $C[t] = 1 + \min_{c_i \le t} C[t - c_i]$, with $C[0] = 0$ and $C[t] = \infty$ if no
@@ -202,19 +191,7 @@ option applies.
 *Worth mentioning in feedback: with coins $\{1, 5, 6, 9\}$ and $T = 11$, greedy gives $9+1+1 = 3$ and
 the optimum is $5+6 = 2$. This is Week 9's opening example.*
 
-### E2 (4) — LIS
-
-**State** $L[i]$ = length of the longest increasing subsequence **ending at** $i$.
-**Recurrence** $L[i] = 1 + \max\{L[j] : j < i,\ a[j] < a[i]\}$, or 1 if none.
-Answer is $\max_i L[i]$ — **not** $L[n-1]$. **States** $n$; **time** $\Theta(n^2)$.
-
-*The "ending at $i$" is the whole trick. A student whose state is "the LIS of the first $i$ elements"
-cannot write the recurrence, because that state does not say what the last element was. This is the
-same failure as E4 and worth linking in feedback.*
-
-*Sanity value: LIS of `[10,9,2,5,3,7,101,18]` is **4**.*
-
-### E3 (4) — maximum subarray
+### E2 (6) — maximum subarray
 
 **State** $M[i]$ = maximum sum of a subarray **ending at** $i$.
 **Recurrence** $M[i] = \max(a[i],\ M[i-1] + a[i])$. Answer $\max_i M[i]$.
@@ -223,7 +200,7 @@ same failure as E4 and worth linking in feedback.*
 *Again "ending at". A state of "the best subarray within the first $i$" gives $\Theta(n^2)$ because it
 does not compose. Sanity value: `[-2,1,-3,4,-1,2,1,-5,4]` → **6**.*
 
-### E4 (4) — the staircase with no two consecutive singles
+### E3 (6) — the staircase with no two consecutive singles
 
 **Why the obvious state fails**: "ways to reach step $i$" does not record whether the last move was a
 single, and the legality of the next move depends on exactly that. The naive state gives Fibonacci,
@@ -251,11 +228,11 @@ state, e.g. tracking "is the previous move a single" as a boolean.*
 
 | Part | Points |
 | --- | --- |
-| A | 18 |
+| A | 16 |
 | B | 22 |
 | C | 20 |
 | D | 24 |
-| E | 16 |
+| E | 18 |
 | **Total** | **100** |
 
 ---
@@ -263,8 +240,8 @@ state, e.g. tracking "is the previous move a single" as a boolean.*
 ## Notes for the Grading Meeting
 
 **1. Part E is where the marks separate**, and it is worth reading before the others. A–D are
-mechanical for a student who read the lectures; E asks them to design, and E2, E3 and E4 all fail in
-the *same* way — a state that does not record enough about the last decision. If a student got E4 and
+mechanical for a student who read the lectures; E asks them to design, and E2 and E3 both fail in
+the *same* way — a state that does not record enough about the last decision. If a student got E3 and
 missed E2, they have not seen the pattern; say so.
 
 **2. D3(b) will produce "it's a bug" answers.** It is not a bug, it is a different problem, and the
@@ -278,10 +255,8 @@ saying so on the scripts — a student who wrote a clean `lcs` and `recover` for
 1 Part 1.1 already.
 
 **5. Carried forward.** Weeks 2, 3, 4 and 6 each contained a measurement that contradicted a
-complexity comparison. **A3 is the same thing in miniature** — memoisation and tabulation are both
-$\Theta(n)$ and one is 6× faster — and Lecture 22 §5 gives the large version at 1,242×. Students who
-have internalised this by now should find A3 obvious; those who are still surprised will struggle in
-Week 8.
+complexity comparison; Lecture 22 §5's 1,242× memoisation-versus-tabulation gap is the Week 7 version.
+The old A3 timed it again and was removed as a repeat.
 
 ---
 

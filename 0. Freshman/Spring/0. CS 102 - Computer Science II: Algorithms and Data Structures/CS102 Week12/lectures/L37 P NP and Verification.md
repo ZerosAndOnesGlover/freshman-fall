@@ -162,8 +162,8 @@ professional skill this week teaches.
 
 - Read CLRS §34.1 (polynomial time) and §34.2 (verification). These two sections are the whole of this
   lecture, stated carefully.
-- **There is no problem set this week.** **PROJECT 2 and PS 11 are both due Friday**, and the **FINAL
-  EXAM** is this week.
+- **There is no problem set this week.** **PROJECT 2 and PS 11 are both due Friday 16 April**, and the
+  **FINAL EXAM** is Wednesday 21 April, in finals week.
 - **Lab 12** implements the TSP approximation from Lecture 39.
 - Next lecture: reductions — how to prove a problem is hard by relating it to one already known to be.
 

@@ -197,8 +197,8 @@ real loss, not a technicality: you have the length and not the answer.
 
 **Hirschberg's algorithm** recovers it anyway, in $\Theta(nm)$ time and $\Theta(\min(n,m))$ space, by
 divide-and-conquer: compute the middle column's forward and backward halves in linear space, find
-where the optimal path crosses it, and recurse on the two halves. **This is Project 1's stretch
-component** and it is the most elegant algorithm in this course.
+where the optimal path crosses it, and recurse on the two halves. It is beyond this course, and
+nothing assessed asks for it; Kleinberg & Tardos §6.7 has it if you are curious.
 
 ---
 

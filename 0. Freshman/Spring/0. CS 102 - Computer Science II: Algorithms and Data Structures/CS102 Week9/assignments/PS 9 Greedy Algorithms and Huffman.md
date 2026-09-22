@@ -1,12 +1,23 @@
 # CS 102 · Problem Set 9
 ## Greedy Algorithms and Huffman Coding
 
-**Released:** Friday, Week 9 · **Due:** Friday, Week 10, 23:59
-**100 points · counts toward the Problem Sets component (35% of the final grade)**
+**Released:** Friday 26 March 2027, 10:00 (after L30) · Week 9
+**Due:** Friday 2 April 2027, 17:00 · Week 10 — late penalty from 17:01 (syllabus late policy)
+**Points:** 100 · counts toward the Problem Sets component (35%, lowest one dropped)
+**Expected time:** about 4–5 hours
 
 **Submit:** `ps9.py` (runnable end to end) and `ps9.md` (written answers, tables, **proofs**).
 
-> **MIDTERM 2 is in Week 10** and covers Weeks 5–9. **The exchange arguments in Parts A and B are the
+## What this problem set uses
+
+Weeks 0–9: exchange arguments and activity selection (L28), total completion time, maximum lateness
+and fractional knapsack (L29), Huffman coding and the entropy bound (L30), plus Week 7's knapsack DP
+and Week 8's coin-change DP as references. `heapq` is Week 3.
+
+**Not needed and not expected:** string algorithms (Week 10). Bit-packing the encoded output is Lab 9's
+job, not this set's.
+
+> **MIDTERM 2 is Monday 29 March 2027, 18:00–19:15** (Week 10) and covers Weeks 5–9. **The exchange arguments in Parts A and B are the
 > single most examinable thing in this problem set** — four of those five weeks contain one.
 
 ---
@@ -75,29 +86,23 @@ optimum. Give the family, and the ratio as a function of your parameter.
 
 ## Part D — Huffman Coding (28 points)
 
-**D1.** *(6)* `huffman(freq)` returning a code, using `heapq`.
+**D1.** *(7)* `huffman(freq)` returning a code, using `heapq`.
 
 Verify on at least 300 random frequency sets that the code is **prefix-free**, and that its total cost
 matches an exhaustive optimum for $n \le 7$ symbols.
 
 > Your heap entries need a tie-break field. Say in one sentence what goes wrong without it.
 
-**D2.** *(5)* `encode(text, code)` and `decode(bits, code)`, with the bits **packed into bytes** and
-the padding length recorded.
-
-Verify a lossless round trip on at least 200 random texts, **including the empty string and a
-single-symbol text**.
-
-**D3.** *(5)* Reproduce the CLRS example $\{a{:}45, b{:}13, c{:}12, d{:}16, e{:}9, f{:}5\}$: report the
+**D2.** *(6)* Reproduce the CLRS example $\{a{:}45, b{:}13, c{:}12, d{:}16, e{:}9, f{:}5\}$: report the
 code length per symbol, the total bits, and the fixed-length cost.
 
-**D4.** *(6)* **The entropy bound.** Compute $H = -\sum p_s\log_2 p_s$ and verify
+**D3.** *(7)* **The entropy bound.** Compute $H = -\sum p_s\log_2 p_s$ and verify
 $H \le \bar{\ell} < H+1$ on at least 1,000 random distributions. Report violations of each side.
 
 Then tabulate entropy against Huffman's average for a **two-symbol** alphabet with
 $P(a) \in \{0.5, 0.7, 0.9, 0.99\}$, and explain in two sentences why the overhead grows.
 
-**D5.** *(6)* Prove Part 1 of the optimality argument:
+**D4.** *(8)* Prove Part 1 of the optimality argument:
 
 > If $x$ and $y$ are the two least frequent symbols, some optimal tree has them as siblings at maximum
 > depth.
@@ -115,9 +120,8 @@ of the exchange argument**. If no, give a counterexample and name the right tech
 **E1.** *(2)* Make change for $T$ using the fewest coins, denominations $[1, 7, 10]$.
 **E2.** *(2)* Select the maximum number of non-overlapping intervals.
 **E3.** *(2)* Fill a knapsack of capacity $W$ with divisible goods.
-**E4.** *(2)* Find a minimum spanning tree.
-**E5.** *(2)* Find a shortest path in a graph with some negative edge weights.
-**E6.** *(2)* Schedule jobs on one machine to minimise the number of late jobs.
+**E4.** *(3)* Find a minimum spanning tree.
+**E5.** *(3)* Find a shortest path in a graph with some negative edge weights.
 
 ---
 
@@ -175,10 +179,10 @@ Selects **3**; optimum **4**. No counterexample exists with 6 intervals or fewer
 ratio **0.412**. Classic case $W=50$, items $(10,60),(20,100),(30,120)$: greedy **160**, optimum
 **220**, fractional **240**.
 
-**D3** — CLRS example: code lengths $a{:}1, b{:}3, c{:}3, d{:}3, e{:}4, f{:}4$; total **224 bits**
+**D2** — CLRS example: code lengths $a{:}1, b{:}3, c{:}3, d{:}3, e{:}4, f{:}4$; total **224 bits**
 against **300** fixed-length.
 
-**D4** — 2,000 distributions: **0** violations on each side. Two-symbol alphabet:
+**D3** — 2,000 distributions: **0** violations on each side. Two-symbol alphabet:
 
 | $P(a)$ | 0.5 | 0.7 | 0.9 | 0.99 |
 | --- | --- | --- | --- | --- |
@@ -197,7 +201,7 @@ about **forty thousand** attempts.
 
 If your standard of correctness is "I tested it and it worked", this rule passes and is wrong.
 
-**That is why Parts A4, B2, C2 and D5 ask for proofs.** An exchange argument is three or four
+**That is why Parts A4, B2, C2 and D4 ask for proofs.** An exchange argument is three or four
 sentences; it is not hard, and it is the only thing that distinguishes a greedy algorithm that works
 from one that has not yet met its counterexample. You have now seen the same lesson in Week 5
 (Dijkstra, wrong on 2.3%), Week 8 (coin change, wrong on 42%) and here — three different algorithms,

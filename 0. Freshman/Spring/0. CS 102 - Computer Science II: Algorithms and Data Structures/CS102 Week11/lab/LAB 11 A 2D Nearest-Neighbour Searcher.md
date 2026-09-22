@@ -1,7 +1,8 @@
 # CS 102 · Lab 11
 ## A 2-D Nearest-Neighbour Searcher
 
-**Week 11 · 2-hour lab session · 40 points**
+**Date:** Tuesday 13 April 2027 · 15:00–16:50 · Lab section (Week 12) — covers Week 11 (L34–L36)
+*2-hour lab · 40 points · in-lab checkoff*
 **Deliverable:** `lab11.py` and `RESULTS.md`. In-lab checkoff by your TA.
 
 > **Labs carry no direct weight** in CS 102, but **you must satisfactorily complete at least 10 of
@@ -19,12 +20,12 @@ is finding that point, and it is the lab.
 
 ---
 
-## Part A — Build and Verify (12 pts)
+## Part A — Build and Verify (14 pts)
 
-**A1.** *(5)* `build(points, depth=0, k=2)` constructing a k-d tree by cycling through the axes and
+**A1.** *(6)* `build(points, depth=0, k=2)` constructing a k-d tree by cycling through the axes and
 splitting at the median.
 
-**A2.** *(4)* `nearest(node, q)` returning the nearest point and its squared distance, with the
+**A2.** *(5)* `nearest(node, q)` returning the nearest point and its squared distance, with the
 pruning test.
 
 Instrument it to count **nodes visited**.
@@ -39,12 +40,12 @@ Report mismatches.
 
 ---
 
-## Part B — What It Buys in 2-D (10 pts)
+## Part B — What It Buys in 2-D (12 pts)
 
-**B1.** *(4)* For $n \in \{1000, 8000, 64000\}$ random 2-D points, report the mean nodes visited over
+**B1.** *(5)* For $n \in \{1000, 8000, 64000\}$ random 2-D points, report the mean nodes visited over
 200 queries and the mean query time, against brute force.
 
-**B2.** *(3)* Plot or tabulate mean nodes visited against $n$. State the growth you observe and the
+**B2.** *(4)* Plot or tabulate mean nodes visited against $n$. State the growth you observe and the
 complexity it suggests.
 
 **B3.** *(3)* Report the **build** time alongside the query time.
@@ -53,9 +54,9 @@ At how many queries does building the tree pay for itself? Show the arithmetic.
 
 ---
 
-## Part C — The Curse of Dimensionality (12 pts)
+## Part C — The Curse of Dimensionality (14 pts)
 
-**C1.** *(5)* Generalise your tree to $d$ dimensions — it should already work if `build` takes `k`.
+**C1.** *(6)* Generalise your tree to $d$ dimensions — it should already work if `build` takes `k`.
 
 For $n = 8192$ and $d \in \{2, 4, 8, 16, 32\}$, report the mean nodes visited over 200 queries, that
 as a **percentage of $n$**, and the mean query time for both the tree and brute force.
@@ -63,7 +64,7 @@ as a **percentage of $n$**, and the mean query time for both the tree and brute 
 **Spot-check correctness at every dimension** — the tree stays correct throughout, and saying so is
 part of the result.
 
-**C2.** *(4)* Identify the dimension at which the k-d tree stops being faster than a linear scan.
+**C2.** *(5)* Identify the dimension at which the k-d tree stops being faster than a linear scan.
 
 Then explain **why the pruning test stops firing**. Your answer must refer to what the test compares.
 
@@ -72,20 +73,6 @@ Then explain **why the pruning test stops firing**. Your answer must refer to wh
 - **(a)** *(2)* Is the tree **incorrect** at $d = 32$? Answer precisely, and say what that implies
   about testing.
 - **(b)** *(1)* Name one technique used in practice for high-dimensional nearest-neighbour search.
-
----
-
-## Part D — A Real Query (6 pts)
-
-**D1.** *(3)* Build a k-d tree over 50,000 random points in the unit square and answer **k-nearest**
-queries for $k = 5$ — the five closest points, not just the nearest.
-
-Use a **bounded max-heap of size $k$** (Week 3), and prune against the heap's worst distance.
-
-**D2.** *(3)* Verify against brute force on at least 100 queries — the same five points, in the same
-order by distance. Report mismatches, and the mean nodes visited against Part B's $k = 1$ figure.
-
-Say in one sentence why $k = 5$ visits more nodes than $k = 1$.
 
 ---
 
@@ -100,10 +87,9 @@ Say in one sentence why $k = 5$ visits more nodes than $k = 1$.
 
 | Part | Points | Focus |
 | --- | --- | --- |
-| A | 12 | A correct tree, verified before measurement |
-| B | 10 | What it buys in 2-D |
-| C | 12 | Where it stops buying anything |
-| D | 6 | k-nearest with a bounded heap |
+| A | 14 | A correct tree, verified before measurement |
+| B | 12 | What it buys in 2-D |
+| C | 14 | Where it stops buying anything |
 | **Total** | **40** | |
 
 ---

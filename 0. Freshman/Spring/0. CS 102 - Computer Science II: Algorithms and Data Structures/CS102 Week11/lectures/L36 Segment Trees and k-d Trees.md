@@ -206,7 +206,7 @@ Two structures, one that scales and one whose usefulness evaporates at a thresho
 algorithm at all. It is the natural end of this course, because everything up to here has been about
 finding a good algorithm and Week 12 is about knowing when to stop looking.
 
-**PROJECT 2 is due Friday of Week 12**, and the **FINAL EXAM** is in Week 12 and is comprehensive.
+**PROJECT 2 is due Friday 16 April**, and the **FINAL EXAM** (Wednesday 21 April) is comprehensive.
 
 ---
 
@@ -214,7 +214,7 @@ finding a good algorithm and Week 12 is about knowing when to stop looking.
 
 - Segment trees and k-d trees are not in CLRS. **Sedgewick §3.5** covers geometric search; the
   *Competitive Programmer's Handbook* Chapter 9 is the best short treatment of segment trees.
-- **PS 11** implements both and reproduces §4's dimension table.
+- **PS 11** implements the segment tree.
 - **Lab 11** builds a nearest-neighbour searcher and finds the dimension where it stops paying.
 - **Quiz 11 covers Week 10.**
 

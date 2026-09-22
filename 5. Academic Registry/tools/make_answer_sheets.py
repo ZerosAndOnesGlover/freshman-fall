@@ -442,6 +442,11 @@ def sheet_for(src, label: str, component: str, course: str, possible: float,
     return "\n".join(out), shape, len(parts)
 
 
+# Exams whose sitting week the coverage rule below gets wrong. CS 102 Midterm 1
+# covers Weeks 0-4 but, since the 2026-09-22 Spring rework, is sat on Mon 1 Mar
+# 2027 (Week 6) as the registry's ASSESSMENT CALENDAR pins it.
+EXAM_WEEK = {("CS 102", "Midterm 1"): "week6"}
+
 COVERS = re.compile(r"Weeks?\s*(\d+)\s*[–—-]\s*(\d+)")
 LAST_WEEK = 12
 
@@ -453,8 +458,8 @@ def week_of(item: str, src, root: Path, topic: str = "") -> str:
     coverage they close off: a paper covering Weeks 0-5 is sat in Week 6, and a
     comprehensive final in the last week. That is checked against the two
     courses whose exams do have documents — CS 101 and PROG 101 both sit
-    Midterm 1 in Week 6 — and against CS 102's guide, which covers Weeks 0-4 and
-    is sat in Week 5. Everything else follows its source document's own week,
+    Midterm 1 in Week 6. CS 102's Midterm 1 covers Weeks 0-4 but is sat in
+    Week 6, so it is listed in EXAM_WEEK. Everything else follows its source document's own week,
     falling back to the item number, which is how weekly work is numbered.
     """
     is_exam = item.startswith(("Midterm", "Final"))
@@ -539,7 +544,8 @@ def build_course(course: str, year: str, sem: str, force: bool):
             pending += 1
             continue
         fname = f"{item}.md"
-        target = week_folder(dest, week_of(item, src, root, topic)) / fname
+        wk = EXAM_WEEK.get((course, item)) or week_of(item, src, root, topic)
+        target = week_folder(dest, wk) / fname
         existing = [p for p in dest.rglob(fname) if p.is_file()]
         if existing and not force:
             skipped += 1

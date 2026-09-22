@@ -19,7 +19,7 @@ Also useful:
 - **Skiena §10** — the practitioner's view of DP, and unusually good on *how to find the state*, which
   is the part textbooks skip.
 - **Kleinberg & Tardos, Chapter 6** — if your library has it, the best DP chapter in print. §6.6 on
-  sequence alignment and §6.7 on Hirschberg's linear-space algorithm are exactly Project 1.
+  sequence alignment is exactly Project 1; §6.7 (Hirschberg) is further than the course goes.
 
 ---
 
@@ -104,14 +104,14 @@ answers.
 
 **"The DP gives the answer."** The DP gives the *value*. Recovering the actual solution needs the
 table and a traceback, and if you rolled the table down to two rows to save space, **you cannot** —
-which is precisely the problem Hirschberg's algorithm solves and Project 1 asks you to implement.
+which is precisely the problem Hirschberg's algorithm solves (not assessed in this course).
 
 ---
 
 ## If You Have Extra Time
 
 **Hirschberg's algorithm** — linear-space LCS *with* recovery, by divide-and-conquer. Kleinberg &
-Tardos §6.7 is the clearest treatment. It is Project 1 Part 3, and it is the most elegant single
+Tardos §6.7 is the clearest treatment. It is not assessed, and it is the most elegant single
 algorithm in this course: $\Theta(nm)$ time and $\Theta(\min(n,m))$ space, measured at **139× less
 memory for 1.18× the time**.
 

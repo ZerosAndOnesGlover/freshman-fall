@@ -20,9 +20,12 @@ every subsequent measurement then describes the wrong algorithm.
 
 ---
 
-## Part A — Build and Verify (12)
+> **Revised 2026-09-22.** Part D (k-nearest neighbours with a bounded heap) was removed: $k$-NN search
+> is never taught. Points re-weighted to keep 40.
 
-### A1 (5), A2 (4), A3 (3) — deterministic: 0 mismatches
+## Part A — Build and Verify (14)
+
+### A1 (6), A2 (5), A3 (3) — deterministic: 0 mismatches
 
 **The three errors to check for:**
 
@@ -38,9 +41,9 @@ every subsequent measurement then describes the wrong algorithm.
 
 ---
 
-## Part B — What It Buys in 2-D (10)
+## Part B — What It Buys in 2-D (12)
 
-### B1 (4), B2 (3)
+### B1 (5), B2 (4)
 
 Mean nodes visited grows roughly **logarithmically** in $n$ — students should observe that going from
 $n = 1{,}000$ to $n = 64{,}000$ (a factor of 64) increases visits by a small factor, not by 64.
@@ -59,9 +62,9 @@ Typically a few hundred queries in 2-D. *The mark is for showing the arithmetic,
 
 ---
 
-## Part C — The Curse of Dimensionality (12)
+## Part C — The Curse of Dimensionality (14)
 
-### C1 (5) — deterministic node counts
+### C1 (6) — deterministic node counts
 
 | $d$ | nodes visited | % of $n$ | brute | k-d tree |
 | --- | --- | --- | --- | --- |
@@ -75,7 +78,7 @@ Typically a few hundred queries in 2-D. *The mark is for showing the arithmetic,
 different generator. **The percentages must show the same progression** — under 1% at $d \le 4$, around
 10% at $d = 8$, essentially 100% by $d = 16$.*
 
-### C2 (4) — the assessed question
+### C2 (5) — the assessed question
 
 **Between $d = 8$ and $d = 16$.**
 
@@ -106,30 +109,12 @@ own verification output — point at it.*
 
 ---
 
-## Part D — A Real Query (6)
-
-### D1 (3), D2 (3)
-
-k-nearest with a bounded max-heap of size $k$, pruning against the heap's **worst** distance rather
-than the best.
-
-Expected answer for why $k = 5$ visits more nodes: the pruning threshold is the distance to the
-$k$-th nearest, which is **larger** than the distance to the nearest. A larger threshold prunes less,
-so more of the tree is searched.
-
-*The heap must be a max-heap on distance (or a min-heap on negated distance) so the worst element is
-available in $O(1)$. A student who sorts a list of $k$ candidates on every insertion has the right
-answer and the wrong structure — 2 of 3, with a pointer back to Week 3 Lecture 12 §4.*
-
----
-
 ## Checkoff Checklist
 
 1. A3 verified **before** any timing.
 2. Squared distances used throughout — no square roots anywhere.
 3. C1's percentages progress 0.2% → 9.6% → 98.5%.
 4. C3(a) says the tree is **correct** at $d = 32$.
-5. D1 uses a bounded heap, not a sorted list.
 
 ---
 
@@ -137,10 +122,9 @@ answer and the wrong structure — 2 of 3, with a pointer back to Week 3 Lecture
 
 | Part | Points |
 | --- | --- |
-| A | 12 |
-| B | 10 |
-| C | 12 |
-| D | 6 |
+| A | 14 |
+| B | 12 |
+| C | 14 |
 | **Total** | **40** |
 
 Labs are pass/fail for progression: **10 of 13 required**, and this is Lab 11. **A student who has

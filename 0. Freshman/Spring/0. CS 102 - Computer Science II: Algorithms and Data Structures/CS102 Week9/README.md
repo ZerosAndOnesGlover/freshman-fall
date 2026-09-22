@@ -2,10 +2,9 @@
 ## Week 9: Greedy Algorithms
 
 **Assessment for this course (overall):** Problem Sets 35%, Midterms 25%, Final 20%, Projects 20%
-**This week's deliverables:** **PS 9** (released Friday, due Friday of Week 10), Lab 9, **Quiz 9 —
-which covers Week 8**.
-**PROJECT 1 IS DUE FRIDAY** — 10% of the course.
-**MIDTERM 2 is in Week 10**, covering Weeks 5–9.
+**This week's deliverables:** **PS 9** (released Fri 26 Mar 10:00, due **Fri 2 Apr 17:00**), Lab 9 (**Tue 30 Mar**, 15:00), **Quiz 9** (Mon 22 Mar, 09:00) — which covers Week 8.
+**PROJECT 1 IS DUE FRIDAY 26 MARCH, 17:00** — 10% of the course.
+**MIDTERM 2 is Monday 29 March, 18:00–19:15** (Week 10), covering Weeks 5–9.
 
 ---
 
@@ -50,7 +49,7 @@ By the end of Week 9, you should be able to:
 | [[L28 The Greedy Paradigm and Exchange Arguments]] | The paradigm, the template, activity selection, and three rules that fail |
 | [[L29 Scheduling and Fractional Knapsack]] | Three exchange arguments, and where divisibility is load-bearing |
 | [[L30 Huffman Coding]] | The algorithm, the two-part proof, entropy, and real measurements |
-| [[PS 9 Greedy Algorithms and Huffman]] | 100 points, due Friday of Week 10 |
+| [[PS 9 Greedy Algorithms and Huffman]] | 100 points, due Fri 2 Apr 17:00 |
 | [[CS102 Week9/assignments/QUIZ 9 Week 9 Monday\|QUIZ 9 Week 9 Monday]] | 20 points, formative — **covers Week 8** |
 | [[LAB 9 Compressing a File with Huffman]] | A real codec, and three results the theory does not predict |
 | [[CS102 Week9/resources/Reading Guide Week 9\|Reading Guide Week 9]] | CLRS §15.1–15.3, with §15.2 flagged as the section that matters |

@@ -20,7 +20,7 @@
 - **de Berg, Cheong, van Kreveld & Overmars, *Computational Geometry***, Ch. 1–5 — the standard
   reference, and unusually readable.
 
-> **PROJECT 2 is due Friday of Week 12** and the **FINAL EXAM** is in Week 12. If reading must be cut,
+> **PROJECT 2 is due Friday 16 April** and the **FINAL EXAM** is Wednesday 21 April. If reading must be cut,
 > read §33.1 properly and skim the rest.
 
 ---

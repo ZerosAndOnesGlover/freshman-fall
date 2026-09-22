@@ -2,9 +2,8 @@
 ## Week 8: Dynamic Programming II — Applications
 
 **Assessment for this course (overall):** Problem Sets 35%, Midterms 25%, Final 20%, Projects 20%
-**This week's deliverables:** **PS 8** (released Friday, due Friday of Week 9), Lab 8, **Quiz 8 —
-which covers Week 7**.
-**PROJECT 1 is due Friday of Week 9** — the same day as PS 8. **This is the heaviest week of the
+**This week's deliverables:** **PS 8** (released Fri 19 Mar 10:00, due **Fri 26 Mar 17:00**), Lab 8 (**Tue 23 Mar**, 15:00), **Quiz 8** (Mon 15 Mar, 09:00) — which covers Week 7.
+**PROJECT 1 is due Friday 26 March, 17:00** — the same day as PS 8. **This is the heaviest week of the
 term.** Prioritise the project; the problem set says so explicitly.
 
 ---
@@ -52,7 +51,7 @@ By the end of Week 8, you should be able to:
 | [[L25 Interval DP Matrix Chain and Optimal BSTs]] | The interval family, and why balance is the wrong objective here |
 | [[L26 Sequences Trees and Bitmasks]] | LIS, coin change, tree DP, bitmask TSP |
 | [[L27 Floyd-Warshall and All-Pairs Shortest Paths]] | The state, the loop order, negative cycles, and semirings |
-| [[PS 8 Dynamic Programming II]] | 100 points, due Friday of Week 9 |
+| [[PS 8 Dynamic Programming II]] | 100 points, due Fri 26 Mar 17:00 |
 | [[CS102 Week8/assignments/QUIZ 8 Week 8 Monday\|QUIZ 8 Week 8 Monday]] | 20 points, formative — **covers Week 7** |
 | [[LAB 8 Implementing Floyd-Warshall]] | Five lines, and four ways to get them wrong |
 | [[CS102 Week8/resources/Reading Guide Week 8\|Reading Guide Week 8]] | CLRS §14.2, §15.5, §23.1–23.2 |
@@ -105,7 +104,7 @@ exponent.
 BSTs answer the question **Week 2** deferred. Floyd–Warshall's negative-cycle test replaces **Week 5**'s
 virtual-source construction. The $(\min,\max)$ semiring computes exactly the minimax quantity **Week
 6** obtained from the MST — verified to agree on 250 of 250 graphs. The "ending at $i$" state is
-**PS 7 E2 and E3**.
+**PS 7 E2**.
 
 **Forward:** **Week 9** abandons tables entirely — greedy makes one choice and never revisits it,
 which is faster whenever it works, and the week is about proving that it does. Coin change is its

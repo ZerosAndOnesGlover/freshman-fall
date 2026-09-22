@@ -1,6 +1,6 @@
 # CS 102 · Quiz 11
 
-**Week 11, Monday, first 15 minutes of lecture · 20 points**
+**Date:** Monday 5 April 2027 · 09:00–09:15 (start of L34) · Week 11 · 20 points
 **Covers Week 10** — string matching, suffix arrays. **Not** this week's material.
 
 Closed book. Every number here is exact.

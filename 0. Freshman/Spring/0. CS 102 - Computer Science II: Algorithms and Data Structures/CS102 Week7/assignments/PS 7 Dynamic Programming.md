@@ -1,38 +1,43 @@
 # CS 102 · Problem Set 7
 ## Dynamic Programming I
 
-**Released:** Friday, Week 7 · **Due:** Friday, Week 8, 23:59
-**100 points · counts toward the Problem Sets component (35% of the final grade)**
+**Released:** Friday 12 March 2027, 10:00 (after L24) · Week 7
+**Due:** Friday 19 March 2027, 17:00 · Week 8 — late penalty from 17:01 (syllabus late policy)
+**Points:** 100 · counts toward the Problem Sets component (35%, lowest one dropped)
+**Expected time:** about 4–5 hours
 
 **Submit:** `ps7.py` (runnable end to end) and `ps7.md` (written answers, tables, recurrences).
 Written answers inside code comments will not be marked.
+
+## What this problem set uses
+
+Weeks 0–7: optimal substructure, memoisation and tabulation (L22), LCS, recovery, edit distance and
+the two-row space trick (L23), 0/1 knapsack, the rolled table, pseudo-polynomiality and the
+state-design checklist (L24). Brute-force references use the recursion of Week 0 and CS 101.
+
+**Not needed and not expected:** longest increasing subsequence, interval DP, bitmask DP (Week 8);
+greedy algorithms (Week 9).
 
 > **PROJECT 1 was also assigned this week** and is due Friday of Week 9. Parts B and C of this
 > problem set are directly reusable in it. Do them properly and you have started the project.
 
 ---
 
-## Part A — Fibonacci and the Cost of Recomputation (18 points)
+## Part A — Fibonacci and the Cost of Recomputation (16 points)
 
-**A1.** *(4)* Naive recursive `fib`, instrumented with a call counter. Tabulate calls for
+**A1.** *(5)* Naive recursive `fib`, instrumented with a call counter. Tabulate calls for
 $n = 0 \dots 25$ alongside $2F(n+1) - 1$.
 
 State whether the identity holds exactly, and give the growth rate of the call count in terms of
 $\varphi$.
 
-**A2.** *(5)* Instrument differently: count **how many times each subproblem** `fib(k)` is evaluated
+**A2.** *(6)* Instrument differently: count **how many times each subproblem** `fib(k)` is evaluated
 while computing `fib(20)`. Report the counts for $k = 18, 15, 10, 5, 2, 1$.
 
 You should recognise those numbers. **State the identity** and verify it for all $2 \le n \le 20$ and
 $1 \le k \le n$.
 
-**A3.** *(4)* Implement memoised and tabulated versions. Time all three at $n \in \{20, 25, 30, 32\}$
-and report the table.
-
-Then: the memoised and tabulated versions are both $\Theta(n)$. **One is several times faster.** Which,
-and why?
-
-**A4.** *(5)* Answer both:
+**A3.** *(5)* Write `fib_memo` and `fib_tab` as in Lecture 22 §4, then answer both:
 
 - **(a)** *(2)* What does `fib_memo(5000)` do, and what does `fib_tab(5000)` do? Explain the
   difference in one sentence.
@@ -114,21 +119,20 @@ Then answer:
 
 ---
 
-## Part E — Choosing the State (16 points)
+## Part E — Choosing the State (18 points)
 
 For each problem: state the subproblem, the recurrence with base cases, the number of states, and the
 running time. **No code required** — this part is about design.
 
-**E1.** *(4)* **Coin change.** Given coin denominations $c_1 \dots c_k$ (unlimited supply) and a target
+**E1.** *(6)* **Coin change** — Lecture 24 §6 names it as unbounded knapsack, minimising. Given coin denominations $c_1 \dots c_k$ (unlimited supply) and a target
 $T$, find the fewest coins summing to exactly $T$, or report that it is impossible.
 
-**E2.** *(4)* **Longest increasing subsequence** of an array of $n$ numbers. Give the
-$\Theta(n^2)$ formulation; you do not need the $\Theta(n\log n)$ one (Week 8).
+**E2.** *(6)* **Maximum-sum contiguous subarray** (the array may contain negatives). Your state should
+give a $\Theta(n)$ algorithm — if it gives $\Theta(n^2)$, you have chosen the wrong one. *Hint, from
+step 2 of Lecture 24's checklist: standing at index $i$, what you need to know is the best sum of a
+subarray that **ends exactly at $i$**. Make that the state.*
 
-**E3.** *(4)* **Maximum-sum contiguous subarray** (the array may contain negatives). Your state should
-give a $\Theta(n)$ algorithm — if it gives $\Theta(n^2)$, you have chosen the wrong one.
-
-**E4.** *(4)* A problem where the obvious state is **wrong**:
+**E3.** *(6)* A problem where the obvious state is **wrong**:
 
 > You are climbing $n$ stairs, one or two at a time, but **you may not take two singles in a row**.
 > Count the distinct ways to reach step $n$.
@@ -142,11 +146,11 @@ count the states.
 
 | Part | Points | Focus |
 | --- | --- | --- |
-| A | 18 | Why recomputation is fatal, and the two fixes |
+| A | 16 | Why recomputation is fatal, and the two fixes |
 | B | 22 | LCS, recovery, space, and what the table looks like |
 | C | 20 | Edit distance, and its precise relation to LCS |
 | D | 24 | Knapsack, the loop-direction bug, pseudo-polynomiality |
-| E | 16 | State design — the actual skill |
+| E | 18 | State design — the actual skill |
 | **Total** | **100** | |
 
 ---
@@ -163,14 +167,6 @@ A2, computing `fib(20)`:
 | $k$ | 18 | 15 | 10 | 5 | 2 | 1 |
 | --- | --- | --- | --- | --- | --- | --- |
 | times evaluated | 2 | 8 | 89 | 987 | 4,181 | **6,765** |
-
-A3:
-
-| $n$ | naive | memoised | tabulated |
-| --- | --- | --- | --- |
-| 20 | 2.00 ms | 0.0045 ms | 0.00097 ms |
-| 30 | 253.88 ms | 0.0068 ms | 0.00114 ms |
-| 32 | 685.63 ms | 0.0072 ms | 0.00120 ms |
 
 C2: `kitten`→`sitting` **3**; `sunday`→`saturday` **3**; `intention`→`execution` **5**.
 
@@ -197,14 +193,14 @@ D4, $n = 30$:
 
 ---
 
-## A Note on Parts D3 and E4
+## A Note on Parts D3 and E3
 
 **D3(b) is the most instructive bug in the course so far.** One character — the direction of a `range`
 — turns 0/1 knapsack into unbounded knapsack. Neither version errors, both return plausible numbers,
 and no test that only checks "is the answer sensible" will separate them. The only defence is knowing
 what the loop order *means*: descending reads the row above, ascending reads the row you are writing.
 
-**E4 exists because state design is the part that does not come from reading.** The obvious state
+**E3 exists because state design is the part that does not come from reading.** The obvious state
 fails, you will notice it failing, and fixing it is a small version of exactly what Week 8 asks you to
 do repeatedly. If you find yourself unable to write a recurrence, the problem is almost always the
 state and almost never the algebra.

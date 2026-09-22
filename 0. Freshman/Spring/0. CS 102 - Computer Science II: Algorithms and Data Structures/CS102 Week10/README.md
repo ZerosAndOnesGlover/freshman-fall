@@ -2,10 +2,9 @@
 ## Week 10: String Algorithms
 
 **Assessment for this course (overall):** Problem Sets 35%, Midterms 25%, Final 20%, Projects 20%
-**This week's deliverables:** **PS 10** (released Friday, due Friday of Week 11), Lab 10, **Quiz 10 —
-which covers Week 9**.
-**MIDTERM 2 is this week**, 75 minutes, covering Weeks 5–9. See [[CS102 Week10/resources/MIDTERM 2 Revision Guide|MIDTERM 2 Revision Guide]].
-**PROJECT 2 is assigned this week** and due Friday of Week 12 — **10% of the course**.
+**This week's deliverables:** **PS 10** (released Fri 2 Apr 10:00, due **Fri 9 Apr 17:00**), Lab 10 (**Tue 6 Apr**, 15:00), **Quiz 10** (Mon 29 Mar, 09:00) — which covers Week 9.
+**MIDTERM 2 is Monday 29 March, 18:00–19:15** (VNC 100), 75 minutes, covering Weeks 5–9. See [[CS102 Week10/resources/MIDTERM 2 Revision Guide|MIDTERM 2 Revision Guide]].
+**PROJECT 2 is assigned this week** (Mon 29 Mar) and due **Fri 16 Apr, 17:00** — **10% of the course**.
 
 ---
 
@@ -50,9 +49,9 @@ By the end of Week 10, you should be able to:
 | [[L31 Naive Matching and KMP]] | Borders, the failure function, and the amortised proof |
 | [[L32 Rabin-Karp and Boyer-Moore]] | Hashing and skipping, and what each depends on |
 | [[L33 Suffix Arrays and Applications]] | Preprocessing the text; LCP arrays and what they buy |
-| [[PS 10 String Matching]] | 100 points, due Friday of Week 11 |
+| [[PS 10 String Matching]] | 100 points, due Fri 9 Apr 17:00 |
 | [[CS102 Week10/assignments/QUIZ 10 Week 10 Monday\|QUIZ 10 Week 10 Monday]] | 20 points, formative — **covers Week 9** |
-| [[PROJECT 2 A Search Engine]] | **10% of the course**, due Friday of Week 12 |
+| [[PROJECT 2 A Search Engine]] | **10% of the course**, due Fri 16 Apr 17:00 |
 | [[LAB 10 Building a Plagiarism Detector]] | Fingerprinting, and why the parameter is the system |
 | [[CS102 Week10/resources/Reading Guide Week 10\|Reading Guide Week 10]] | CLRS §32.1–32.4, plus Sedgewick for what CLRS omits |
 | [[CS102 Week10/resources/MIDTERM 2 Revision Guide\|MIDTERM 2 Revision Guide]] | Format, examinable material, fifteen reproducible proofs |
@@ -102,12 +101,12 @@ That is the sixth instance of the pattern this term.
 **Week 6**'s union-find — an expensive step that cannot be expensive often. Rabin–Karp's rolling hash
 is what makes Lab 10's fingerprinting linear. Suffix arrays feed **Week 9**'s Huffman through the
 Burrows–Wheeler transform, and Project 2 uses **Week 3**'s bounded heap, **Week 7**'s edit distance and
-**Week 9**'s compression.
+this week's suffix array.
 
 **Forward:** **Week 11** turns to computational geometry and to segment trees, which decompose an
 interval the way Week 8's interval DP did. **Week 12** asks which problems admit no efficient algorithm
 — and several of the first NP-complete problems you meet are about strings. **Project 2** is due
-Friday of Week 12, the same day as the final exam week begins.
+Friday 16 April, the Friday before finals week.
 
 ---
 

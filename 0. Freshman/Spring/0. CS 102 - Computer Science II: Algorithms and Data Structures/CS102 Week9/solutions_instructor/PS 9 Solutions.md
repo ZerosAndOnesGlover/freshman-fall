@@ -11,6 +11,10 @@ ones will not.
 
 ---
 
+> **Revised 2026-09-22.** Removed: D2 (packing bits into bytes — Lab 9 A3 does it) and E6 (fewest
+> late jobs needs Moore–Hodgson, which is never taught). D3–D5 are now D2–D4; points re-weighted
+> within Parts D and E, part totals unchanged.
+
 ## Part A — Breaking Greedy Rules (24)
 
 ### A1 (6) — deterministic
@@ -137,7 +141,7 @@ approximation guarantee — not a bad constant, none at all.*
 
 ## Part D — Huffman (28)
 
-### D1 (6) — deterministic: 0 failures
+### D1 (7) — deterministic: 0 failures
 
 300+ random frequency sets: prefix-free and matching the exhaustive optimum.
 
@@ -148,24 +152,14 @@ comparing the third element, which for merged internal nodes may be a non-ordera
 *A student whose code works on their tests may still have this bug. Ask whether they have a tie-break
 field; do not deduct if they do not hit it, but note it.*
 
-### D2 (5)
-
-Round trip on 200+ texts including the three edge cases.
-
-**The bugs to look for:**
-- forgetting the **padding length**, which corrupts exactly the final symbol;
-- the **single-symbol** case, where the tree has one node and the natural code is the empty string —
-  which encodes to zero bits and cannot be decoded. Must be assigned `'0'`;
-- the **empty string**, which should round-trip to itself.
-
-### D3 (5) — deterministic
+### D2 (6) — deterministic
 
 Code lengths $a{:}1,\ b{:}3,\ c{:}3,\ d{:}3,\ e{:}4,\ f{:}4$. Total **224 bits** against **300**
 fixed-length — a 25% saving, essentially all of it from `a`.
 
 *Code lengths are determined; the actual bit strings are not. Do not mark against specific codewords.*
 
-### D4 (6) — deterministic
+### D3 (7) — deterministic
 
 1,000+ distributions: **0** violations on each side of $H \le \bar\ell < H+1$.
 
@@ -181,7 +175,7 @@ at 1, so the overhead approaches the full bit. At $P(a) = 0.99$ Huffman spends *
 
 *2 of 6 for the table alone. The explanation must say that the integer-bits constraint is what binds.*
 
-### D5 (6)
+### D4 (8)
 
 Let $T$ be optimal and $a, b$ two siblings at maximum depth. Suppose $x \ne a$, where $x$ is a least
 frequent symbol. Then $f_x \le f_a$ and $\mathrm{depth}(a) \ge \mathrm{depth}(x)$. Swapping them
@@ -206,12 +200,8 @@ optimal, so it remains optimal. Repeat for $y$ and $b$. $\square$
 | **E3** fractional knapsack | **Yes** — value/weight ratio. Exchange: move $\varepsilon$ of weight to the better ratio. |
 | **E4** MST | **Yes** — Prim or Kruskal. Exchange: the cut property (Week 6). |
 | **E5** shortest path with negative edges | **No.** Dijkstra fails on 2.3% of such instances (Week 5). Use Bellman–Ford. |
-| **E6** fewest late jobs | **Yes**, but **not** by the obvious rule. Plain EDF is suboptimal on **50%** of instances; **Moore–Hodgson** — process by deadline, and whenever the schedule goes late, drop the longest job scheduled so far — is optimal on 2,000 of 2,000. |
 
-*E1 and E6 are the discriminators. E1 catches students who assume any coin system with a 1 is
-canonical. **E6 catches the assumption that "greedy works" means "the first rule you thought of
-works"** — the answer is yes *and* the naive rule fails half the time. Full marks on E6 require the
-repair step.*
+*E1 is the discriminator: it catches students who assume any coin system with a 1 is canonical.*
 
 ---
 
@@ -230,7 +220,7 @@ repair step.*
 
 ## Notes for the Grading Meeting
 
-**1. Mark the proofs as proofs.** A4, B2, C2 and D5 are 19 marks between them and they are the reason
+**1. Mark the proofs as proofs.** A4, B2, C2 and D4 are 21 marks between them and they are the reason
 this problem set exists. Students have spent nine weeks being rewarded for working code; this is the
 set where an unjustified correct answer scores a third. **Say so in the feedback**, because MIDTERM 2
 applies the same standard a week later.

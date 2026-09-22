@@ -1,6 +1,6 @@
 # CS 102 · Quiz 10
 
-**Week 10, Monday, first 15 minutes of lecture · 20 points**
+**Date:** Monday 29 March 2027 · 09:00–09:15 (start of L31) · Week 10 · 20 points
 **Covers Week 9** — greedy algorithms, exchange arguments, Huffman coding. **Not** this week's
 material.
 

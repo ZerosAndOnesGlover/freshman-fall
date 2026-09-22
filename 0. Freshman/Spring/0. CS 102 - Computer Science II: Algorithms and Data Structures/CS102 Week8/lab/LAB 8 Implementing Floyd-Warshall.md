@@ -1,7 +1,8 @@
 # CS 102 · Lab 8
 ## Implementing Floyd–Warshall
 
-**Week 8 · 2-hour lab session · 40 points**
+**Date:** Tuesday 23 March 2027 · 15:00–16:50 · Lab section (Week 9) — covers Week 8 (L25–L27)
+*2-hour lab · 40 points · in-lab checkoff*
 **Deliverable:** `lab8.py` and `RESULTS.md`. In-lab checkoff by your TA.
 
 > **Labs carry no direct weight** in CS 102, but **you must satisfactorily complete at least 10 of

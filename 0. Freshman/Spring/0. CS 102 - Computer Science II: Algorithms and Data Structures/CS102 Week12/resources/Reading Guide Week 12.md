@@ -15,7 +15,7 @@
 - §34.5 five worked NP-complete problems — **read at least vertex cover**
 - §35.1 vertex cover, §35.2 TSP, §35.3 set cover, §35.5 subset-sum
 
-> **The FINAL EXAM is this week and is comprehensive**, and **PROJECT 2 and PS 11 are due Friday**.
+> **The FINAL EXAM is Wednesday 21 April and is comprehensive**, and **PROJECT 2 and PS 11 are due Friday 16 April**.
 > Chapter 34 is long. If you read three sections, read **§34.2, §34.3's statement of Cook–Levin, and
 > §35.1**.
 

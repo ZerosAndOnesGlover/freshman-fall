@@ -226,7 +226,7 @@ guarantees, and what it assumed to guarantee it, is what the subject actually co
   the PTAS).
 - **Lab 12** implements §3 and §4 and measures both.
 - **PROJECT 2 and PS 11 are due Friday.**
-- **The FINAL EXAM is this week and is comprehensive.** See
+- **The FINAL EXAM is Wednesday 21 April, 09:00, and is comprehensive.** See
   [[CS102 Week12/resources/FINAL EXAM Revision Guide|FINAL EXAM Revision Guide]].
 - And when you are done: [[CS102 Week12/resources/Course Retrospective|Course Retrospective]].
 

@@ -1,6 +1,6 @@
 # CS 102 · MIDTERM 2 — Revision Guide
 
-**Sat:** Week 10, during the lecture slot · **Covers Weeks 5–9** · **Worth 12.5%** of the final grade
+**Sat:** Monday 29 March 2027, 18:00–19:15 · Week 10 (evening, VNC 100) · **Covers Weeks 5–9** · **Worth 12.5%** of the final grade
 
 **75 minutes.** Closed book. **One handwritten sheet, one side**, of your own notes is permitted. No
 calculators — every number on the paper is exact or is a complexity class.
@@ -162,7 +162,7 @@ about assumptions, and it is where the marks are.
    safe.
 2. **Hand-trace** Dijkstra, Bellman–Ford, Kruskal, an LCS table, a knapsack table, and Floyd–Warshall
    on 5-vertex or 6-character inputs. Section B is exactly this.
-3. **Rework PS 5 Part C, PS 8 Part E4, and PS 9 Part A3** without your solutions. Those three questions
+3. **Rework PS 5 Part C, Lab 8 Part B (the loop order), and PS 9 Part A3** without your solutions. Those three questions
    contain the second half's whole methodological point.
 4. Reread the "Three Ideas Most Likely to Be Missed" in each week's README — five short sections,
    covering most of Section A.
@@ -172,10 +172,10 @@ about assumptions, and it is where the marks are.
 
 ## Practical
 
-- **Week 10 Monday's lecture runs as normal** and its material is **not** on this paper.
-- **Quiz 10 runs on Monday** as usual and covers Week 9 — the same material as Section A here.
-- **PS 10 is released Friday**, after the paper.
-- **PROJECT 2 is assigned this week** and due Week 12. Do not start it before the midterm.
+- **Lecture 31 (the morning of the paper)** runs as normal and its material is **not** on this paper.
+- **Quiz 10 runs that Monday at 09:00** as usual and covers Week 9 — the same material as Section A here.
+- **PS 9 is due Friday 2 April**, after the paper; **PS 10 is released that same Friday**.
+- **PROJECT 2 is assigned that Monday** and due Friday 16 April. Do not start it before the midterm.
 - Past papers are on the course page.
 
 ---

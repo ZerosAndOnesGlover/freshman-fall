@@ -1,7 +1,8 @@
 # CS 102 · Lab 9
 ## Compressing a File with Huffman
 
-**Week 9 · 2-hour lab session · 40 points**
+**Date:** Tuesday 30 March 2027 · 15:00–16:50 · Lab section (Week 10) — covers Week 9 (L28–L30)
+*2-hour lab · 40 points · in-lab checkoff*
 **Deliverable:** `lab9.py` and `RESULTS.md`. In-lab checkoff by your TA.
 
 > **Labs carry no direct weight** in CS 102, but **you must satisfactorily complete at least 10 of

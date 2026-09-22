@@ -2,9 +2,8 @@
 ## Week 11: Computational Geometry and Advanced Data Structures
 
 **Assessment for this course (overall):** Problem Sets 35%, Midterms 25%, Final 20%, Projects 20%
-**This week's deliverables:** **PS 11** (released Friday, due Friday of Week 12 — **the last problem
-set**), Lab 11, **Quiz 11 — which covers Week 10** and is the last quiz.
-**PROJECT 2 is due Friday of Week 12.** The **FINAL EXAM** is in Week 12 and is comprehensive.
+**This week's deliverables:** **PS 11** (released Fri 9 Apr 10:00, due **Fri 16 Apr 17:00** — **the last problem set**), Lab 11 (**Tue 13 Apr**, 15:00), **Quiz 11** (Mon 5 Apr, 09:00) — which covers Week 10 and is the last quiz.
+**PROJECT 2 is due Friday 16 April, 17:00.** The **FINAL EXAM** is Wednesday 21 April (finals week) and is comprehensive.
 
 ---
 
@@ -45,7 +44,7 @@ By the end of Week 11, you should be able to:
 | [[L34 Geometric Primitives and Convex Hull]] | The cross product, monotone chain, degeneracies, and float robustness |
 | [[L35 Segment Intersection and Closest Pair]] | Four orientation tests, the sweep line, and the packing argument |
 | [[L36 Segment Trees and k-d Trees]] | Range queries, and the curse of dimensionality measured |
-| [[PS 11 Computational Geometry]] | 100 points, due Friday of Week 12 — the last problem set |
+| [[PS 11 Computational Geometry]] | 100 points, due Fri 16 Apr 17:00 — the last problem set |
 | [[CS102 Week11/assignments/QUIZ 11 Week 11 Monday\|QUIZ 11 Week 11 Monday]] | 20 points, formative — **covers Week 10** |
 | [[LAB 11 A 2D Nearest-Neighbour Searcher]] | Build it, measure it, and find where it stops paying |
 | [[CS102 Week11/resources/Reading Guide Week 11\|Reading Guide Week 11]] | CLRS Ch. 33, plus what CLRS omits |
@@ -109,7 +108,7 @@ uses **Week 3**'s bounded heap. The closest pair is **Week 0**'s divide and conq
 **Forward:** **Week 12** is the last week — NP-completeness, and knowing when to stop looking for a
 better algorithm. It is the natural end: this week's k-d tree fails for a reason you can measure and
 work around; Week 12's problems fail for a reason nobody knows how to fix. **PROJECT 2** and **PS 11**
-are both due Friday of Week 12, and the **FINAL EXAM** is comprehensive.
+are both due Friday 16 April, and the **FINAL EXAM** (Wednesday 21 April) is comprehensive.
 
 ---
 

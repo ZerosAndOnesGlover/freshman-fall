@@ -1,12 +1,15 @@
 # CS 102 · Lab 12
 ## A TSP Approximation
 
-**Week 12 · 2-hour lab session · 40 points**
+**Date:** Tuesday 20 April 2027 · 15:00–16:50 · Lab section (finals week) — covers Week 12 (L37–L39)
+> ⚠️ Under the "Lab *N* meets the Tuesday after Week *N*" rule this lab falls in finals week, the day
+> before the CS 102 final. Moving it is an open decision recorded in the CS 102 course audit.
+*2-hour lab · 40 points · in-lab checkoff*
 **Deliverable:** `lab12.py` and `RESULTS.md`. In-lab checkoff by your TA.
 
 > **This is the last lab.** You must have satisfactorily completed **at least 10 of the 13** to pass
 > the course. If you are at nine, this one is compulsory.
-> **PROJECT 2 and PS 11 are due Friday. The FINAL EXAM is this week.**
+> **PROJECT 2 and PS 11 were due Friday 16 April. The FINAL EXAM is tomorrow, Wednesday 21 April, 09:00.**
 
 ---
 

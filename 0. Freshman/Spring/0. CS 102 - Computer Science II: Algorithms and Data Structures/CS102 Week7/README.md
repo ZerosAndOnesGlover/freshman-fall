@@ -2,9 +2,8 @@
 ## Week 7: Dynamic Programming I — Principles
 
 **Assessment for this course (overall):** Problem Sets 35%, Midterms 25%, Final 20%, Projects 20%
-**This week's deliverables:** **PS 7** (released Friday, due Friday of Week 8), Lab 7, **Quiz 7 —
-which covers Week 6**.
-**PROJECT 1 is assigned this week** and due Friday of Week 9. **10% of the course** — the largest
+**This week's deliverables:** **PS 7** (released Fri 12 Mar 10:00, due **Fri 19 Mar 17:00**), Lab 7 (**Tue 16 Mar**, 15:00), **Quiz 7** (Mon 8 Mar, 09:00) — which covers Week 6.
+**PROJECT 1 is assigned this week** (Mon 8 Mar) and due **Fri 26 Mar, 17:00**. **10% of the course** — the largest
 single piece of work this term. See [[PROJECT 1 A Working Diff]].
 
 ---
@@ -53,9 +52,9 @@ By the end of Week 7, you should be able to:
 | [[L22 Optimal Substructure and Memoisation]] | The two conditions, Fibonacci, memoisation vs tabulation measured |
 | [[L23 Longest Common Subsequence and Edit Distance]] | Both recurrences, traceback, space, and how they relate |
 | [[L24 Knapsack and Choosing the State]] | Knapsack, pseudo-polynomiality, and a checklist for state design |
-| [[PS 7 Dynamic Programming]] | 100 points, due Friday of Week 8 |
+| [[PS 7 Dynamic Programming]] | 100 points, due Fri 19 Mar 17:00 |
 | [[CS102 Week7/assignments/QUIZ 7 Week 7 Monday\|QUIZ 7 Week 7 Monday]] | 20 points, formative — **covers Week 6** |
-| [[PROJECT 1 A Working Diff]] | **10% of the course**, due Friday of Week 9 |
+| [[PROJECT 1 A Working Diff]] | **10% of the course**, due Fri 26 Mar 17:00 |
 | [[LAB 7 Visualising DP Tables]] | Print the tables, trace them, and measure the two techniques |
 | [[CS102 Week7/resources/Reading Guide Week 7\|Reading Guide Week 7]] | CLRS §14.1–14.4, with §14.3 flagged as the section that matters |
 | `solutions_instructor/` | PS 7 and Lab 7 solutions — instructor only |
@@ -75,8 +74,8 @@ running time is exponential in the input *size*. Measured at $n=30$: $W$ from 10
 NP-complete and have this algorithm at the same time.
 
 **3. Rolling the table down to two rows destroys the traceback.** You get the length and not the
-answer. That is not a technicality — it is the reason **Hirschberg's algorithm** exists, and it is
-Project 1's third part. Measured: 139× less memory for 1.18× the time.
+answer. That is not a technicality — it is the reason **Hirschberg's algorithm** exists (named in Lecture 23
+§5, not assessed). Project 1 therefore keeps the full table.
 
 ### One Bug and One Beautiful Number
 

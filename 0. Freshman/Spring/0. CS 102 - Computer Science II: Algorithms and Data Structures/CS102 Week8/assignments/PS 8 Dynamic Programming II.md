@@ -1,14 +1,23 @@
 # CS 102 · Problem Set 8
 ## Dynamic Programming II — Applications
 
-**Released:** Friday, Week 8 · **Due:** Friday, Week 9, 23:59
-**100 points · counts toward the Problem Sets component (35% of the final grade)**
+**Released:** Friday 19 March 2027, 10:00 (after L27) · Week 8
+**Due:** Friday 26 March 2027, 17:00 · Week 9 — late penalty from 17:01 (syllabus late policy)
+**Points:** 100 · counts toward the Problem Sets component (35%, lowest one dropped)
+**Expected time:** about 4 hours — kept short because Project 1 is due the same day
 
 **Submit:** `ps8.py` (runnable end to end) and `ps8.md` (written answers, tables, recurrences).
 
-> **PROJECT 1 is due the same day.** This is the heaviest week of the term. Parts A and B here are
-> short; Part E is the longest. **Start now**, and if something has to slip, let it be Part E rather
-> than the project — the project is worth 10% of the course and this problem set is worth about 3%.
+## What this problem set uses
+
+Weeks 0–8: interval DP, matrix chain and optimal BSTs (L25), LIS both ways with `bisect`, coin change,
+tree DP and bitmask DP (L26). Brute-force references use Week 7's methods and CS 101 recursion.
+
+**Not needed and not expected:** greedy proofs (Week 9 — D4 asks only what testing can and cannot
+show). Floyd–Warshall is Lab 8's job, not this set's.
+
+> **PROJECT 1 is due the same day.** If something has to slip, let it be this set rather than the
+> project — the project is worth 10% of the course and this problem set about 3%.
 
 ---
 
@@ -52,16 +61,14 @@ compare with the optimum.
 
 ---
 
-## Part C — Longest Increasing Subsequence (18 points)
+## Part C — Longest Increasing Subsequence (19 points)
 
-**C1.** *(4)* The $\Theta(n^2)$ version. State why the answer is $\max_i L[i]$ and not $L[n-1]$.
+**C1.** *(5)* The $\Theta(n^2)$ version. State why the answer is $\max_i L[i]$ and not $L[n-1]$.
 
-**C2.** *(5)* The $O(n\log n)$ version using `bisect`. Verify against C1 on at least 1,000 random
+**C2.** *(7)* The $O(n\log n)$ version using `bisect`. Verify against C1 on at least 1,000 random
 arrays.
 
-**C3.** *(5)* Time both at $n \in \{1000, 4000, 16000\}$ and report the speedup.
-
-**C4.** *(4)* **The trap.** The `tails` array has the right length but is generally **not** an
+**C3.** *(7)* **The trap.** The `tails` array has the right length but is generally **not** an
 increasing subsequence of the input.
 
 - **(a)** *(2)* Find the **smallest** array demonstrating this, by exhaustive search over short
@@ -71,47 +78,38 @@ increasing subsequence of the input.
 
 ---
 
-## Part D — Coin Change (14 points)
+## Part D — Coin Change (20 points)
 
-**D1.** *(4)* `coin_dp(T, coins)` returning the fewest coins, or `None` if impossible.
+**D1.** *(5)* `coin_dp(T, coins)` returning the fewest coins, or `None` if impossible.
 
-**D2.** *(4)* `coin_greedy(T, coins)` taking the largest coin that fits.
+**D2.** *(6)* `coin_greedy(T, coins)` taking the largest coin that fits.
 
 For each of $[1,2,5,10,20,50,100,200]$ (UK), $[1,5,10,25]$ (US), $[1,5,6,9]$ and $[1,3,4]$, report how
 many targets in $1 \dots 199$ greedy gets wrong, and the **smallest** failing target with both answers.
 
-**D3.** *(3)* A coin system on which greedy is always optimal is called **canonical**.
+**D3.** *(5)* A coin system on which greedy is always optimal is called **canonical**.
 
 Write a function that tests canonicality up to a bound, and use it to find **two** three-coin systems
 containing 1: one canonical and one not.
 
-**D4.** *(3)* In two sentences: what does D2 tell you about "I tested it and it worked"? Relate your
-answer to what Week 9 will require.
+**D4.** *(4)* In two sentences: what does D2 tell you about "I tested it and it worked"? Relate your
+answer to Lecture 26 §3.
 
 ---
 
-## Part E — Trees, Bitmasks, and All Pairs (32 points)
+## Part E — Trees and Bitmasks (25 points)
 
-**E1.** *(8)* **Maximum-weight independent set on a tree**, in $\Theta(V)$, using an explicit
+**E1.** *(12)* **Maximum-weight independent set on a tree**, in $\Theta(V)$, using an explicit
 (non-recursive) postorder.
 
 Verify against $2^n$ brute force on at least 200 random trees with $n \le 12$. Then run it on a
 **path graph of 100,000 vertices** and report that it completes — a recursive version will not.
 
-**E2.** *(8)* **TSP by bitmask DP** in $O(2^n n^2)$, verified against $(n-1)!$ brute force on at least
+**E2.** *(13)* **TSP by bitmask DP** in $O(2^n n^2)$, verified against $(n-1)!$ brute force on at least
 150 instances with $n \le 8$.
 
 Tabulate $(n-1)!$ against $2^n n^2$ for $n \in \{10, 15, 20, 25\}$, and state plainly whether this
 makes TSP tractable.
-
-**E3.** *(8)* **Floyd–Warshall**, verified against Bellman–Ford from every source on at least 200
-graphs — including graphs with negative edges but no negative cycle.
-
-**E4.** *(8)* **The loop order.** Implement a version parameterised by which of `i`, `j`, `k` is
-outermost, and test all **six** orderings against a correct reference on at least 150 graphs.
-
-Report a table of six rows. Then explain, in terms of what $d^{(k)}$ *means*, why exactly two of them
-work.
 
 ---
 
@@ -121,9 +119,9 @@ work.
 | --- | --- | --- |
 | A | 20 | Interval DP, reconstruction, and what DP buys |
 | B | 16 | Optimal BSTs, and reconciling them with Week 2 |
-| C | 18 | LIS both ways, and the `tails` trap |
-| D | 14 | Coin change, and when greedy fails |
-| E | 32 | Trees, bitmasks, Floyd–Warshall, and the loop order |
+| C | 19 | LIS both ways, and the `tails` trap |
+| D | 20 | Coin change, and when greedy fails |
+| E | 25 | Trees and bitmasks |
 | **Total** | **100** | |
 
 ---
@@ -144,15 +142,7 @@ Python 3.14, x86-64 Linux. **Counts are deterministic; timings are not.**
 
 **B2** — $p = [0.7,0.1,0.1,0.1]$: optimal **1.500**, balanced **2.000** (balanced is 1.333× worse).
 
-**C3:**
-
-| $n$ | $\Theta(n^2)$ | $O(n\log n)$ | speedup |
-| --- | --- | --- | --- |
-| 1,000 | 27.7 ms | 0.15 ms | 185× |
-| 4,000 | 421.5 ms | 0.64 ms | 661× |
-| 16,000 | 6,725.9 ms | 2.81 ms | **2,397×** |
-
-**C4** — smallest failing array **`[2, 3, 1]`**, whose `tails` is `[1, 3]`. Over 3,000 random arrays,
+**C3** — smallest failing array **`[2, 3, 1]`**, whose `tails` is `[1, 3]`. Over 3,000 random arrays,
 `tails` is not a subsequence **47%** of the time.
 
 **D2:**
@@ -173,35 +163,17 @@ Python 3.14, x86-64 Linux. **Counts are deterministic; timings are not.**
 | 20 | $1.22\times10^{17}$ | 419,430,400 |
 | 25 | $6.20\times10^{23}$ | 20,971,520,000 |
 
-**E4:**
-
-| loop order | wrong on |
-| --- | --- |
-| `k,i,j` | **0 of 200** |
-| `k,j,i` | **0 of 200** |
-| `i,k,j` | 78 of 200 |
-| `i,j,k` | 70 of 200 |
-| `j,i,k` | 70 of 200 |
-| `j,k,i` | 73 of 200 |
-
 **All verification mismatch counts should be 0.**
 
 ---
 
-## A Note on Parts D4 and E4
+## A Note on Part D4
 
-Both are about the same failure of reasoning.
-
-In **D4**, greedy coin change works on every real currency and is wrong for 84 of the first 199 targets
-on $[1,5,6,9]$. A student who tested on UK coins would have concluded it always works.
-
-In **E4**, four of the six loop orderings are wrong about a third of the time. A student who tested one
-graph would very likely have concluded any order works.
-
-**Neither error is visible in the code, and neither is caught by a small test suite.** What catches
-them is knowing what the state *means* — that greedy needs the coin system to be canonical, and that
-$d^{(k)}$ needs all of level $k$ before level $k+1$. **Week 9 is entirely about supplying that kind of
-argument for greedy algorithms**, and this problem set is the last one before you need it.
+Greedy coin change works on every real currency and is wrong for 84 of the first 199 targets on
+$[1,5,6,9]$. A student who tested on UK coins would have concluded it always works. **The error is not
+visible in the code, and a small test suite does not catch it.** What catches it is knowing what
+greedy needs from the coin system — and Lab 8's loop-order experiment shows the same failure of
+reasoning in Floyd–Warshall.
 
 ---
 

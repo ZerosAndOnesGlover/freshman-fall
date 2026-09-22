@@ -179,7 +179,7 @@ what varies, and identifying that is the skill the week is teaching.
 **MIDTERM 2 is this week** and covers Weeks 5–9 — not this material.
 
 **PROJECT 2 is assigned** and due Friday of Week 12. It builds a search engine from this week's
-indexing, Week 7's edit distance for fuzzy matching, and Week 9's compression.
+suffix array, Week 7's edit distance for fuzzy matching, and Week 3's bounded heap for ranking.
 
 **Week 11** turns to geometry and to segment trees, which decompose an interval the way Week 8's
 interval DP did. **Week 12** asks which problems have no efficient algorithm at all — and the string

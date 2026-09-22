@@ -1,19 +1,20 @@
 # CS 102 · Lab 10
 ## Building a Plagiarism Detector
 
-**Week 10 · 2-hour lab session · 40 points**
+**Date:** Tuesday 6 April 2027 · 15:00–16:50 · Lab section (Week 11) — covers Week 10 (L31–L33)
+*2-hour lab · 40 points · in-lab checkoff*
 **Deliverable:** `lab10.py` and `RESULTS.md`. In-lab checkoff by your TA.
 
 > **Labs carry no direct weight** in CS 102, but **you must satisfactorily complete at least 10 of
 > the 13 labs to pass the course.** See the syllabus.
-> **MIDTERM 2 is this week. PROJECT 2 is assigned this week.**
+> Midterm 2 was last Monday. **PROJECT 2 is due Friday 16 April.**
 
 ---
 
 ## Purpose
 
 Plagiarism detection is document fingerprinting: hash every $k$-character substring, compare the sets.
-The algorithm is Week 10's rolling hash and about fifteen lines.
+The hash is Lecture 32's Rabin–Karp rolling hash, and the whole thing is about fifteen lines.
 
 **Everything that matters is the choice of $k$**, and Part B makes you find it by measurement. Too
 small and unrelated documents look similar; too large and a few word changes destroy the signal. There
@@ -21,16 +22,17 @@ is a window in between, and it is not where most people guess.
 
 ---
 
-## Part A — Fingerprinting (12 pts)
+## Part A — Fingerprinting (16 pts)
 
-**A1.** *(3)* `kgrams(s, k)` returning every length-$k$ substring, and `fingerprint(s, k)` returning
-the **set** of their hashes. Use `hashlib.blake2b(..., digest_size=8)`.
+**A1.** *(4)* `kgrams(s, k)` returning every length-$k$ substring, and `fingerprint(s, k)` returning
+the **set** of their Rabin–Karp hashes — Lecture 32 §2's rolling hash with `base=256` and
+`mod=(1 << 61) - 1`, rolled across the document so the whole set costs $O(n)$.
 
-**A2.** *(3)* `jaccard(a, b)` $= |a \cap b| / |a \cup b|$ and `containment(a, b)` $= |a \cap b| / |a|$.
+**A2.** *(4)* `jaccard(a, b)` $= |a \cap b| / |a \cup b|$ and `containment(a, b)` $= |a \cap b| / |a|$.
 
 State in one sentence when containment is the better measure.
 
-**A3.** *(6)* Build four documents from a **3,000-word** vocabulary with Zipf-like frequencies
+**A3.** *(8)* Build four documents from a **3,000-word** vocabulary with Zipf-like frequencies
 (weight $1/(i+1)$ for the $i$-th word), each 600 words:
 
 - **A** — the reference, seed 1;
@@ -46,12 +48,12 @@ Report each document's length and the number of distinct $k$-grams at $k = 25$.
 
 ---
 
-## Part B — Choosing $k$ (12 pts)
+## Part B — Choosing $k$ (14 pts)
 
-**B1.** *(6)* For $k \in \{5, 10, 20, 40\}$, report the Jaccard similarity of A against each of C, D,
+**B1.** *(7)* For $k \in \{5, 10, 20, 40\}$, report the Jaccard similarity of A against each of C, D,
 E and B — a four-by-four table.
 
-**B2.** *(4)* Define **separation** = (score for E, the 30% copy) − (score for B, unrelated).
+**B2.** *(5)* Define **separation** = (score for E, the 30% copy) − (score for B, unrelated).
 
 Report it for each $k$ and identify the best. Then explain **both** failure directions in one sentence
 each:
@@ -65,36 +67,19 @@ Say which you would use to accuse a student, and why.
 
 ---
 
-## Part C — Winnowing (8 pts)
+## Part C — Judgement (10 pts)
 
-Storing every $k$-gram hash is $\Theta(n)$ per document. **Winnowing** keeps only some: slide a window
-of $w$ consecutive hashes and keep the **minimum** of each window.
-
-**C1.** *(4)* `winnow(s, k, w)`. Report, at $k = 25$ and $w = 8$, how many fingerprints it keeps for
-document A, as a count and a percentage of the unwinnowed set.
-
-**C2.** *(4)* Repeat B3 with winnowed fingerprints. Report the four Jaccard scores alongside the
-unwinnowed ones.
-
-Then answer: **the scores barely change while the index shrinks by nearly 80%.** Why does taking a
-minimum preserve matches — what property must two documents' winnowed sets share if they contain a
-common substring longer than $k + w$?
-
----
-
-## Part D — Judgement (8 pts)
-
-**D1.** *(3)* Your detector reports a Jaccard score. A student is accused on the basis of it.
+**C1.** *(4)* Your detector reports a Jaccard score. A student is accused on the basis of it.
 
 Give **two** distinct ways a high score can arise without plagiarism, and **one** way plagiarism can
 produce a low score.
 
-**D2.** *(3)* Real systems normalise before fingerprinting — lowercase, strip whitespace and
+**C2.** *(4)* Real systems normalise before fingerprinting — lowercase, strip whitespace and
 punctuation, and sometimes replace identifiers with a placeholder.
 
 Say what each normalisation defeats, and what new false positives each creates.
 
-**D3.** *(2)* Your detector compares two documents. A cohort of 300 submissions needs all pairs.
+**C3.** *(2)* Your detector compares two documents. A cohort of 300 submissions needs all pairs.
 
 State the number of comparisons, and one thing you would change about the design to make that feasible.
 
@@ -111,10 +96,9 @@ State the number of comparisons, and one thing you would change about the design
 
 | Part | Points | Focus |
 | --- | --- | --- |
-| A | 12 | Fingerprinting, and a corpus that can discriminate |
-| B | 12 | Choosing $k$ by measurement |
-| C | 8 | Winnowing, and why it preserves matches |
-| D | 8 | What the number does and does not mean |
+| A | 16 | Fingerprinting, and a corpus that can discriminate |
+| B | 14 | Choosing $k$ by measurement |
+| C | 10 | What the number does and does not mean |
 | **Total** | **40** | |
 
 ---
@@ -122,7 +106,8 @@ State the number of comparisons, and one thing you would change about the design
 ## Reference Numbers
 
 3,000-word Zipf vocabulary, 600-word documents, seeds as specified. Python 3.14 on x86-64 Linux.
-**Deterministic** given the same generator.
+Your vocabulary is your own, so your exact figures will differ; **the shape of the table should not**.
+If unrelated documents score above 0.05 at $k = 20$, your corpus is wrong.
 
 **B1 — Jaccard similarity of A against each document**
 
@@ -149,17 +134,6 @@ distinguish them from a real 30% copy at 0.390. At $k=40$ the 20%-edited documen
 | 30% chunk copied | 0.147 | 0.296 |
 | unrelated | **0.000** | **0.000** |
 
-**C1 / C2 — winnowing, $k = 25$, $w = 8$**
-
-Document A: **3,575** $k$-grams → **801** fingerprints (**22%**).
-
-| comparison | Jaccard, winnowed | Jaccard, full |
-| --- | --- | --- |
-| identical | 1.000 | 1.000 |
-| 20% words changed | 0.246 | 0.257 |
-| 30% chunk copied | 0.147 | 0.147 |
-| unrelated | 0.000 | 0.000 |
-
 ---
 
 ## A Note on What This Lab Is Really Testing
@@ -173,7 +147,7 @@ only way to find that out is to run it against a case you know the answer to.
 
 At $k = 20$ unrelated documents score **0.001**. Same algorithm, same code, one parameter.
 
-**Part D is the other half.** The output is a number, and a number is not evidence. Two students given
+**Part C is the other half.** The output is a number, and a number is not evidence. Two students given
 the same assignment, the same textbook and the same standard library will share long passages
 legitimately; a plagiarist who paraphrases will score low. **A detector produces candidates for a human
 to examine**, and a system that treats its score as a verdict is worse than no system, because it is

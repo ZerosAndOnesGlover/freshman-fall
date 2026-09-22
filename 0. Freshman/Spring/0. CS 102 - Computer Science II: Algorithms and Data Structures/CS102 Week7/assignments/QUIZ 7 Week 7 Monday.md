@@ -1,6 +1,6 @@
 # CS 102 · Quiz 7
 
-**Week 7, Monday, first 15 minutes of lecture · 20 points**
+**Date:** Monday 8 March 2027 · 09:00–09:15 (start of L22) · Week 7 · 20 points
 **Covers Week 6** — minimum spanning trees, the cut property, union-find. **Not** this week's
 material.
 

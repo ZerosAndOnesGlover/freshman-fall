@@ -12,9 +12,13 @@ ones will not.
 
 ---
 
-## Part A — Primitives (20)
+> **Revised 2026-09-22.** Removed: A4 (point in polygon by ray casting — never taught), C2 and E2's
+> timing, and E3 (the k-d tree dimension sweep — Lab 11 Part C verbatim). C3→C2; E2 is now only the
+> prefix-sum question; items re-weighted to keep 100 points.
 
-### A1 (4), A2 (6) — deterministic
+## Part A — Primitives (19)
+
+### A1 (5), A2 (8) — deterministic
 
 All seven intersection cases must pass:
 
@@ -32,30 +36,18 @@ All seven intersection cases must pass:
 "collinear, overlapping" has the four orientation tests right and no bounding-box check — the most
 common error, and it passes on random input because exact collinearity is rare.*
 
-### A3 (5)
+### A3 (6)
 
 Shoelace: $2A = \sum (x_i y_{i+1} - x_{i+1} y_i)$. The **sign** gives the orientation —
 positive for counter-clockwise, negative for clockwise. Take the absolute value for area.
 
-### A4 (5)
+## Part B — Convex Hull (26)
 
-Ray casting. Expected answer on the boundary case: **there is no universally right answer** — whether a
-boundary point is "inside" is a convention, and the standard one for tiling is that each point belongs
-to exactly one polygon, so boundaries are assigned asymmetrically (e.g. include the left and bottom
-edges, exclude the right and top). Otherwise adjacent polygons both claim their shared edge.
-
-*Accept any coherent answer that recognises it is a convention. "It returns True" without noticing the
-question is a convention scores 2 of 5.*
-
----
-
-## Part B — Convex Hull (22)
-
-### B1 (8) — deterministic: 0 mismatches
+### B1 (9) — deterministic: 0 mismatches
 
 500+ integer point sets with duplicates and collinear runs.
 
-### B2 (6) — deterministic
+### B2 (7) — deterministic
 
 | convention | hull of $(0,0),(1,0),(2,0),(3,0),(1,1)$ |
 | --- | --- |
@@ -66,7 +58,7 @@ Applications: `<=` for **rendering or storing the polygon** (you want vertices);
 whether a given point lies on the hull boundary**, or for any downstream code that needs every
 collinear boundary point present.
 
-### B3 (4) — deterministic
+### B3 (5) — deterministic
 
 Five collinear points with `< 0` returns
 
@@ -79,7 +71,7 @@ and return the two extreme points, or de-duplicate.
 *The failure is silent — the result is a "polygon" with repeated vertices that most downstream code
 accepts. 4 for reporting it exactly and giving a fix; 2 for reporting it without a fix.*
 
-### B4 (4)
+### B4 (5)
 
 Each point is **pushed exactly once** and **popped at most once**, so the total number of stack
 operations across the scan is at most $2n$. The `while` loop's iterations are bounded by the total
@@ -93,24 +85,11 @@ should recognise the shape immediately.*
 
 ---
 
-## Part C — Closest Pair (18)
+## Part C — Closest Pair (16)
 
-### C1 (6) — deterministic: 0 mismatches
+### C1 (8) — deterministic: 0 mismatches
 
-### C2 (6) — machine-dependent
-
-| $n$ | brute | D&C | speedup |
-| --- | --- | --- | --- |
-| 1,000 | 148.1 ms | 3.5 ms | 42× |
-| 2,000 | 605.9 ms | 7.4 ms | 82× |
-| 4,000 | 2,377.1 ms | 17.0 ms | 140× |
-| 8,000 | 9,544.9 ms | 41.3 ms | **231×** |
-
-Brute-force doubling ratio ≈ **4** ($\Theta(n^2)$); divide-and-conquer ≈ **2.2–2.4**
-($\Theta(n\log n)$, or $\Theta(n\log^2 n)$ if they re-sort the strip each level — accept either, but
-they should say which they implemented).
-
-### C3 (6)
+### C2 (8)
 
 **(a) (4)** The constant is **7** (or 8 points in the rectangle including the one being processed).
 
@@ -126,7 +105,7 @@ would be $\Theta(n^2)$ per level — giving $\Theta(n^2 \log n)$ overall, worse 
 
 ---
 
-## Part D — Floating Point (20)
+## Part D — Floating Point (21)
 
 ### D1 (6), D2 (6) — deterministic to within sampling
 
@@ -139,7 +118,7 @@ would be $\Theta(n^2)$ per level — giving $\Theta(n^2 \log n)$ overall, worse 
 "most collinear triples are not detected as collinear, and a large minority of signs are wrong" — is
 what is being marked.*
 
-### D3 (8) — the assessed question
+### D3 (9) — the assessed question
 
 **573 of 3,000 point sets (19.1%)** gave a float hull with a different vertex count from the exact
 hull.
@@ -162,62 +141,31 @@ transitivity or the resulting undefined behaviour.*
 
 ---
 
-## Part E — Spatial Structures (20)
+## Part E — Segment Trees (18)
 
-### E1 (6) — deterministic: 0 mismatches
+### E1 (10) — deterministic: 0 mismatches
 
-### E2 (4) — machine-dependent
-
-| $n$ | naive | segment tree | speedup |
-| --- | --- | --- | --- |
-| 10,000 | 97.5 ms | 4.3 ms | 22× |
-| 50,000 | 501.1 ms | 5.6 ms | 90× |
-| 200,000 | 2,740.4 ms | 8.3 ms | **332×** |
+### E2 (8)
 
 A prefix-sum array does range **sum** in $O(1)$, better than a segment tree. It **cannot** handle
 updates without an $\Theta(n)$ rebuild, and **cannot** handle non-invertible operations such as `min`.
-
-### E3 (10) — deterministic node counts
-
-**(a) (4)** 300+ 2-D queries against brute force: **0 mismatches.**
-
-**(b) (6)** $n = 8192$:
-
-| $d$ | nodes visited | % of $n$ | brute | k-d tree |
-| --- | --- | --- | --- | --- |
-| 2 | 20 | 0.2% | 6.75 ms | 0.02 ms |
-| 4 | 62 | 0.8% | 8.73 ms | 0.09 ms |
-| 8 | 787 | 9.6% | 13.61 ms | 1.78 ms |
-| **16** | **8,071** | **98.5%** | 22.49 ms | **25.06 ms** |
-| 32 | 8,192 | 100.0% | 37.72 ms | 42.94 ms |
-
-**It stops paying between 8 and 16 dimensions.**
-
-Expected explanation: the pruning test compares the distance along **one axis** against the best total
-distance found so far. In high dimensions the total distance is spread across many coordinates, so any
-single coordinate contributes a small fraction — and a small fraction almost never exceeds the whole.
-Nothing is pruned, so every node is visited.
-
-*Full marks require referring to what the test compares. "High dimensions are hard" is 2 of 6.*
-
----
 
 ## Marking Summary
 
 | Part | Points |
 | --- | --- |
-| A | 20 |
-| B | 22 |
-| C | 18 |
-| D | 20 |
-| E | 20 |
+| A | 19 |
+| B | 26 |
+| C | 16 |
+| D | 21 |
+| E | 18 |
 | **Total** | **100** |
 
 ---
 
 ## Notes for the Grading Meeting
 
-**1. This set is due in final-exam week, alongside Project 2.** The handout explicitly told students to
+**1. This set is due Friday 16 April, alongside Project 2, five days before the final.** The handout explicitly told students to
 prioritise the project and reminded them the lowest problem-set score is dropped. **Expect a wide
 spread and a lower submission rate than usual, and do not read that as a failure of the cohort.**
 Check whether a thin submission coincides with a strong project before commenting.
