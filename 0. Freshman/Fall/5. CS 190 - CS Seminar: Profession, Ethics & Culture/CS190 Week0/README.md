@@ -27,9 +27,9 @@ By the end of Week 0, you should be able to:
 | File                         | Purpose                                                                                                 |
 | ---------------------------- | ------------------------------------------------------------------------------------------------------- |
 | [[Lecture Week 0]]          | Core seminar content: the CS/SE/CE distinction, career landscape, why ethics belongs in a CS curriculum |
-| [[CS190 Week0/Reading Guide\|Reading Guide]]           | Annotated guide to this week's readings, with guiding questions                                         |
-| [[CS190 Week0/Discussion Questions\|Discussion Questions]]    | Questions the seminar will work through live — come with notes                                          |
-| [[CS190 Week0/Prep Assignment\|Prep Assignment]]         | Your participation-graded prep work, due Wed 23 Sep, 12:00 (before the 13:00 seminar)                                                 |
+| [[CS190 Week0/resources/Reading Guide\|Reading Guide]]           | Annotated guide to this week's readings, with guiding questions                                         |
+| [[CS190 Week0/resources/Discussion Questions\|Discussion Questions]]    | Questions the seminar will work through live — come with notes                                          |
+| [[CS190 Week0/assignments/Prep Assignment\|Prep Assignment]]         | Your participation-graded prep work, due Wed 23 Sep, 12:00 (before the 13:00 seminar)                                                 |
 | [[Careers Reference Sheet]] | A reference table of CS-adjacent careers, mapped to the courses that prepare you for them               |
 | [[Glossary]]                | Terms introduced this week, defined precisely                                                           |
 

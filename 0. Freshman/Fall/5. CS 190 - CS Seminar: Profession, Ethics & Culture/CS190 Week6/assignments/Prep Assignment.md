@@ -22,4 +22,4 @@ Position Paper #2 asks you to take a position on engineer responsibility for a t
 
 ---
 
-**Reminder:** Position Paper #2 is assigned this week (see [[CS190 Week6/Position Paper 2|Position Paper 2]]), due before the Week 7 seminar.
+**Reminder:** Position Paper #2 is assigned this week (see [[CS190 Week6/assignments/Position Paper 2|Position Paper 2]]), due before the Week 7 seminar.

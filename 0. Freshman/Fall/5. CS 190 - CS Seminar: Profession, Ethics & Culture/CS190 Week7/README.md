@@ -35,16 +35,16 @@ If you want the licence table, it is in [[Lecture Week 2]] §5.4.
 | File | Purpose |
 | --- | --- |
 | [[Lecture Week 7]] | Core seminar content: copyright, Patents, Trade Secrets, and the DMCA |
-| [[CS190 Week7/Reading Guide\|Reading Guide]] | Annotated guide to this week's readings, with guiding questions |
-| [[CS190 Week7/Discussion Questions\|Discussion Questions]] | Questions the seminar will work through live — come with notes |
-| [[CS190 Week7/Prep Assignment\|Prep Assignment]] | Your participation-graded prep work, due Wed 11 Nov, 12:00 (before the 13:00 seminar) |
+| [[CS190 Week7/resources/Reading Guide\|Reading Guide]] | Annotated guide to this week's readings, with guiding questions |
+| [[CS190 Week7/resources/Discussion Questions\|Discussion Questions]] | Questions the seminar will work through live — come with notes |
+| [[CS190 Week7/assignments/Prep Assignment\|Prep Assignment]] | Your participation-graded prep work, due Wed 11 Nov, 12:00 (before the 13:00 seminar) |
 | [[Glossary Week 7]] | Terms introduced this week, defined precisely |
 
 ### Before Seminar
 
-- [ ] Work through [[CS190 Week7/Reading Guide|Reading Guide]] and the assigned readings
-- [ ] Complete [[CS190 Week7/Prep Assignment|Prep Assignment]] (one page, credit/no-credit on evident engagement)
-- [ ] Read [[CS190 Week7/Discussion Questions|Discussion Questions]] and bring notes on at least two you have a view on
+- [ ] Work through [[CS190 Week7/resources/Reading Guide|Reading Guide]] and the assigned readings
+- [ ] Complete [[CS190 Week7/assignments/Prep Assignment|Prep Assignment]] (one page, credit/no-credit on evident engagement)
+- [ ] Read [[CS190 Week7/resources/Discussion Questions|Discussion Questions]] and bring notes on at least two you have a view on
 
 ### How This Course Is Graded (Reminder)
 

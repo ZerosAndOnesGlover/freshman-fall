@@ -118,7 +118,7 @@ Carry this frame into next week's discussion of intellectual property (Week 7), 
 
 ## Position Paper #2
 
-Assigned this week — see [[CS190 Week6/Position Paper 2|Position Paper 2]] for the full prompt. Due before the Week 7 seminar.
+Assigned this week — see [[CS190 Week6/assignments/Position Paper 2|Position Paper 2]] for the full prompt. Due before the Week 7 seminar.
 
 ---
 

@@ -20,11 +20,11 @@ For **each** of the three required readings (Dijkstra, ACM Computing Curricula e
 3. Strongest counterargument
 4. Your own position
 
-(This is the same four-question structure from [[CS190 Week0/Reading Guide|Reading Guide]] — use it directly.)
+(This is the same four-question structure from [[CS190 Week0/resources/Reading Guide|Reading Guide]] — use it directly.)
 
 ### Part B: One Discussion Question, Chosen in Advance
 
-From [[CS190 Week0/Discussion Questions|Discussion Questions]], pick **one** question (other than the warm-up questions 1–2) that you find most interesting or most uncomfortable, and write a short paragraph (4–6 sentences) actually attempting an answer. You will likely be asked to share this live, so write something you're willing to say out loud.
+From [[CS190 Week0/resources/Discussion Questions|Discussion Questions]], pick **one** question (other than the warm-up questions 1–2) that you find most interesting or most uncomfortable, and write a short paragraph (4–6 sentences) actually attempting an answer. You will likely be asked to share this live, so write something you're willing to say out loud.
 
 ### Part C: One Question You Have for the Class
 

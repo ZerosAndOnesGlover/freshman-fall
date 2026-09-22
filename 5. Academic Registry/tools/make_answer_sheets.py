@@ -82,16 +82,16 @@ KIND_ALIASES = {
 # Items whose source document is not named after the item at all.
 BESPOKE = {
     "CS 190": {
-        "Prep {n}":         "CS190 Week{n}/Prep Assignment.md",
-        "Position Paper 1": "CS190 Week3/Position Paper 1.md",
-        "Position Paper 2": "CS190 Week6/Position Paper 2.md",
-        "Position Paper 3": "CS190 Week9/Position Paper 3.md",
-        "Presentation":     "CS190 Week11/Presentation Brief.md",
-        "Peer Feedback A":  "CS190 Week11/Peer Feedback Form.md",
-        "Peer Feedback B":  "CS190 Week11/Peer Feedback Form.md",
-        "Peer Feedback C":  "CS190 Week11/Peer Feedback Form.md",
-        "Question Prep":    "CS190 Week12/Question Preparation.md",
-        "Reflection":       "CS190 Week12/Course Reflection.md",
+        "Prep {n}":         "CS190 Week{n}/assignments/Prep Assignment.md",
+        "Position Paper 1": "CS190 Week3/assignments/Position Paper 1.md",
+        "Position Paper 2": "CS190 Week6/assignments/Position Paper 2.md",
+        "Position Paper 3": "CS190 Week9/assignments/Position Paper 3.md",
+        "Presentation":     "CS190 Week11/assignments/Presentation Brief.md",
+        "Peer Feedback A":  "CS190 Week11/resources/Peer Feedback Form.md",
+        "Peer Feedback B":  "CS190 Week11/resources/Peer Feedback Form.md",
+        "Peer Feedback C":  "CS190 Week11/resources/Peer Feedback Form.md",
+        "Question Prep":    "CS190 Week12/assignments/Question Preparation.md",
+        "Reflection":       "CS190 Week12/assignments/Course Reflection.md",
         # "Contribution" is scored by the instructor from seminar participation;
         # there is nothing for the student to submit, so it gets no sheet.
     },
