@@ -303,7 +303,7 @@ and say what that tells you.
 escapes a thread's function calls `std::terminate` immediately** — there is no other thread to catch
 it. Everything you have learned this week has to be rebuilt for that.
 
-**Midterm 2 is in Week 10** and covers Weeks 5–9.
+**Midterm 2 is Tuesday 30 March, 18:00** (Week 10), and covers Weeks 5–9.
 
 ---
 

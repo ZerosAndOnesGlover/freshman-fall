@@ -443,9 +443,9 @@ def sheet_for(src, label: str, component: str, course: str, possible: float,
 
 
 # Exams whose sitting week the coverage rule below gets wrong. CS 102 Midterm 1
-# covers Weeks 0-4 but, since the 2026-09-22 Spring rework, is sat on Mon 1 Mar
+# (and PROG 102 Midterm 1) cover Weeks 0-4 but, since the 2026-09-22 Spring rework, are sat on Mon 1 / Tue 2 Mar
 # 2027 (Week 6) as the registry's ASSESSMENT CALENDAR pins it.
-EXAM_WEEK = {("CS 102", "Midterm 1"): "week6"}
+EXAM_WEEK = {("CS 102", "Midterm 1"): "week6", ("PROG 102", "Midterm 1"): "week6"}
 
 COVERS = re.compile(r"Weeks?\s*(\d+)\s*[–—-]\s*(\d+)")
 LAST_WEEK = 12

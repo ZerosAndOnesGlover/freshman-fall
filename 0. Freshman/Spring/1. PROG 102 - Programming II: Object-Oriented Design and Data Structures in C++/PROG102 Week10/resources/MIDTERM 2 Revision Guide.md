@@ -1,7 +1,7 @@
 # PROG 102 · Midterm 2 · Revision Guide
 ## Weeks 5–9
 
-**Sat in Week 10 · 75 minutes · 12.5% of the course grade**
+**Sat Tuesday 30 March 2027, 18:00–19:30 (Week 10, VNC 100) · a 75-minute paper · 12.5% of the course grade**
 **Closed book, closed device. One handwritten sheet of A4, one side only.**
 
 ---

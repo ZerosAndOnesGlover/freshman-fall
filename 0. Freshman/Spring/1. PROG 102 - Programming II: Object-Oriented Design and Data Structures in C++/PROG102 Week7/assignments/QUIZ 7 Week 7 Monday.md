@@ -1,6 +1,8 @@
 # PROG 102 · Quiz 7
 ## Week 7 · Tuesday, start of lecture · 15 minutes · 20 points
 
+**Date:** Tuesday 9 March 2027 · 10:00–10:15 (start of L22) · Week 7
+
 **Covers Week 6** — Lectures 19–21: implementing a linked list, iterators, and a BST.
 
 **Closed book. No devices.** Answer on this sheet.

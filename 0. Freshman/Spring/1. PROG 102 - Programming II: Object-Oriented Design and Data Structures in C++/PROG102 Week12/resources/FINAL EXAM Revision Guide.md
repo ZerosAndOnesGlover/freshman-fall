@@ -1,7 +1,8 @@
 # PROG 102 · Final Exam · Revision Guide
 ## Comprehensive — Weeks 0–12
 
-**Sat in Week 12 · 180 minutes · 15% of the course grade**
+**Sat Thursday 22 April 2027, 14:00–16:30 (finals week) · written for 180 minutes — ⚠️ the registry books 150;
+open decision · 15% of the course grade**
 **Closed book, closed device. Two handwritten sheets of A4.**
 
 ---

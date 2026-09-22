@@ -1,7 +1,8 @@
 # PROG 102 · Lab 7
 ## Refactoring a Messy Hierarchy
 
-**Week 7 · 2-hour lab session · 40 points**
+**Date:** Monday 15 March 2027 · 15:00–16:50 · Lab section (Week 8) — covers Week 7 (L22–L24)
+*2-hour lab · 40 points · in-lab checkoff · part of the Labs component (20%)*
 **Deliverable:** `notify_fixed.hpp`, `RESULTS.md`. In-lab checkoff.
 
 ---

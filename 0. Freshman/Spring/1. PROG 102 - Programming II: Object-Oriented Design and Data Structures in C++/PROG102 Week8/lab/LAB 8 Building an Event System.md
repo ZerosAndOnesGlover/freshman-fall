@@ -1,7 +1,8 @@
 # PROG 102 · Lab 8
 ## Building an Event System
 
-**Week 8 · 2-hour lab session · 40 points**
+**Date:** Monday 22 March 2027 · 15:00–16:50 · Lab section (Week 9) — covers Week 8 (L25–L27)
+*2-hour lab · 40 points · in-lab checkoff · part of the Labs component (20%)*
 **Deliverable:** `events.hpp`, `RESULTS.md`. In-lab checkoff.
 
 > **Project 1 is due Friday.** This lab is short by design. **Finish it in the session.**

@@ -1,6 +1,8 @@
 # PROG 102 · Quiz 9
 ## Week 9 · Tuesday, start of lecture · 15 minutes · 20 points
 
+**Date:** Tuesday 23 March 2027 · 10:00–10:15 (start of L28) · Week 9
+
 **Covers Week 8** — Lectures 25–27: Observer, Strategy, Command, Template Method, State, and what
 C++11 obsoleted.
 

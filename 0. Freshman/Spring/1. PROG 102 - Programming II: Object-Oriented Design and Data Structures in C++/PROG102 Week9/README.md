@@ -3,7 +3,7 @@
 
 **Credits:** 4 (3 lecture + 1 lab) · **Prerequisites:** PROG 101 (C), CS 101
 **Assessment for this course (overall):** Labs 20%, Problem Sets 30%, Midterms 25%, Final 15%, Projects 10%
-**This week's deliverables:** PS 9, Lab 9, Quiz 9 (Monday, covers Week 8) · **PROJECT 1 DUE FRIDAY**
+**This week's deliverables:** PS 9 (released Fri 26 Mar 10:00, due **Fri 2 Apr 17:00**), Lab 9 (**Mon 29 Mar**, 15:00), Quiz 9 (**Tue 23 Mar**, 10:00, covers Week 8) · **PROJECT 1 DUE FRIDAY 26 MAR, 17:00**
 
 ---
 
@@ -46,7 +46,7 @@ By the end of Week 9, you should be able to:
 | [[L28 Exceptions and Stack Unwinding]] | `throw`/`catch`, unwinding, the hierarchy, and what it costs |
 | [[L29 The Three Guarantees]] | Basic, strong, nothrow — demonstrated and tested |
 | [[L30 noexcept Assertions and Contracts]] | `noexcept`, assertions vs exceptions, preconditions |
-| [[PS 9 Making a Container Exception-Safe]] | Due Friday of Week 10 |
+| [[PS 9 Making a Container Exception-Safe]] | Due Fri 2 Apr 17:00 |
 | [[PROG102 Week9/assignments/QUIZ 9 Week 9 Monday\|QUIZ 9 Week 9 Monday]] | 15 minutes, covers Week 8 |
 | [[LAB 9 Testing for Failure]] | A test framework, and tests that check what happens when things break |
 | [[PROG102 Week9/resources/Reading Guide Week 9\|Reading Guide Week 9]] | Meyers, the standard's guarantees, and every command |

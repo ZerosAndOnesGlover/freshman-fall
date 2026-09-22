@@ -18,6 +18,9 @@ worth full marks.
 
 ---
 
+> **Revised 2026-09-22.** Removed B2–B3 (timing the four Strategy forms — Lecture 26 §3's own table). B4 is B2. Capture and
+> `std::function` are now taught for use in the new Lecture 25 §4 box. Items re-weighted to keep 100.
+
 ## Part A — Observer (32)
 
 ### A1 (6)
@@ -83,48 +86,15 @@ pre-empted Week 9 — note it approvingly and mark A4(b) on the demonstration.
 
 ---
 
-## Part B — Strategy, Measured (30)
+## Part B — Strategy (16)
 
-### B1 (6)
+### B1 (8)
 
 Adding a fourth strategy: **one new class, zero call sites.**
 
 *Marking: 4 the implementation, 2 the counts.*
 
-### B2 (12)
-
-| | time | vs lambda |
-| --- | --- | --- |
-| virtual Strategy | 165.7–167.6 ms | 1.04× |
-| **`std::function`** | **287.5–304.1 ms** | **1.85×** |
-| lambda / template | 159.9–160.9 ms | 1.00× |
-| default `operator<` | 149.9–151.2 ms | 0.94× |
-
-*Marking: 8 the four measurements with three runs and identical outputs confirmed, 4 for **a prediction
-recorded before running**.*
-
-**Award the prediction marks regardless of whether the prediction was right.** Most students rank
-`std::function` second; it is last. **A student who predicted correctly and shows no working should be
-spot-checked** — the sheet asks them to write it down first.
-
-### B3 (6)
-
-**(a)** `std::function`, at about **1.85×** the lambda.
-
-**(b)** Type erasure. A `std::function` can hold any callable of the right signature, so it stores a
-pointer to a type-erased wrapper and calls through it — **and that call cannot be inlined**, because
-the target is not known at compile time. In `std::sort`'s inner loop that is roughly $4 \times 10^7$
-uninlinable calls.
-
-**Week 3's `qsort` figure: about 2×.** This week's: 1.85×. **They are close because the mechanism is
-identical** — a callable whose type is erased, in a hot loop, costs about a factor of two, whether the
-erasure is spelled as a function pointer or as `std::function`.
-
-*Marking: 3 + 3. **Full marks require both ratios and the statement that the mechanism is the same.**
-An answer that says "`std::function` is slow because it's dynamic" without connecting to inlining is
-2 of the 6.*
-
-### B4 (6)
+### B2 (8)
 
 Acceptable, if specific:
 
@@ -140,9 +110,9 @@ Acceptable, if specific:
 
 ---
 
-## Part C — Command (22)
+## Part C — Command (30)
 
-### C1 (8), C2 (8)
+### C1 (10), C2 (10)
 
 Both must produce identical output. Reference counts for the append-only version:
 
@@ -157,7 +127,7 @@ comment in feedback if they notice it.**
 
 *Marking: 8 + 8, with 3 of the second 8 for the counts.*
 
-### C3 (6)
+### C3 (10)
 
 **(a)** Redo needs a second stack. The 1994 version pushes the popped `unique_ptr<Command>` onto it;
 the modern version pushes the popped `Action`. **Roughly equal work** — this is a case where the
@@ -172,9 +142,9 @@ clearer" is 1.*
 
 ---
 
-## Part D — The Argument (16)
+## Part D — The Argument (22)
 
-### D1 (6)
+### D1 (8)
 
 Expected substance: Strategy and Command existed because C++ had no way to pass behaviour-with-state as
 a value; a class with a virtual method was the only mechanism; C++11 lambdas provide it directly, and
@@ -183,7 +153,7 @@ the measured result is fewer lines, fewer types and better performance.
 *Marking: 6 for a coherent argument citing one pattern with evidence. **The evidence must be from their
 own work** — the line count or the benchmark.*
 
-### D2 (6)
+### D2 (8)
 
 Strong counterexamples: **Observer** (lifetime and notification, not callable-passing), **State**
 (multiple methods and identity per state), **Template Method** (hierarchy structure), **Composite**
@@ -192,7 +162,7 @@ Strong counterexamples: **Observer** (lifetime and notification, not callable-pa
 *Marking: 6. **The pattern chosen must genuinely not be about packaging a callable.** A student who
 picks Strategy and argues badly gets 2; one who picks Observer and argues well gets 6.*
 
-### D3 (4)
+### D3 (6)
 
 Anything plausible and specific: pattern matching / `std::variant` absorbing **Visitor**; reflection
 absorbing **Abstract Factory** or serialisation-flavoured Command; coroutines absorbing some **State**
@@ -208,9 +178,9 @@ plausible to you** — argument quality only.*
 | Part | Points |
 | --- | --- |
 | A | 32 |
-| B | 30 |
-| C | 22 |
-| D | 16 |
+| B | 16 |
+| C | 30 |
+| D | 22 |
 | **Total** | **100** |
 
 ---
@@ -221,9 +191,8 @@ plausible to you** — argument quality only.*
 2. **`shared_ptr` observers.** A leak by design.
 3. **"It crashes" as the whole of A4(b).** The fact that later observers are *skipped* is what Week 9
    needs.
-4. **B3 without both ratios.** The connection to Week 3 is the assessed idea.
-5. **A vague B4.** "More flexible" is not an example.
-6. **A student who fixed A4.** Note it approvingly; mark the demonstration.
+4. **A vague B2.** "More flexible" is not an example.
+5. **A student who fixed A4.** Note it approvingly; mark the demonstration.
 
 ---
 

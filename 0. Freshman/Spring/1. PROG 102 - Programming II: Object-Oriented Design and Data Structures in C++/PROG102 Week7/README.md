@@ -3,7 +3,7 @@
 
 **Credits:** 4 (3 lecture + 1 lab) · **Prerequisites:** PROG 101 (C), CS 101
 **Assessment for this course (overall):** Labs 20%, Problem Sets 30%, Midterms 25%, Final 15%, Projects 10%
-**This week's deliverables:** PS 7, Lab 7, Quiz 7 (Monday, covers Week 6) · **Project 1 due Week 9**
+**This week's deliverables:** PS 7 (released Fri 12 Mar 10:00, due **Fri 19 Mar 17:00**), Lab 7 (**Mon 15 Mar**, 15:00), Quiz 7 (**Tue 9 Mar**, 10:00, covers Week 6) · Project 1 due Fri 26 Mar
 
 ---
 
@@ -53,7 +53,7 @@ By the end of Week 7, you should be able to:
 | [[L22 What Patterns Are]] | The idea, the two principles, and when not to |
 | [[L23 Creational Patterns]] | Singleton, Factory Method, Abstract Factory, Builder |
 | [[L24 Structural Patterns]] | Adapter, Decorator, Composite, Facade |
-| [[PS 7 Factory Method and Decorator]] | Due Friday of Week 8 |
+| [[PS 7 Factory Method and Decorator]] | Due Fri 19 Mar 17:00 |
 | [[PROG102 Week7/assignments/QUIZ 7 Week 7 Monday\|QUIZ 7 Week 7 Monday]] | 15 minutes, covers Week 6 |
 | [[LAB 7 Refactoring a Messy Hierarchy]] | Take a class explosion apart with patterns |
 | [[PROG102 Week7/resources/Reading Guide Week 7\|Reading Guide Week 7]] | Gang of Four, and every command to reproduce this week |
@@ -90,7 +90,7 @@ is the whole trade, and it is unusually favourable.
 
 ### Assessment Reminder
 
-**Quiz 7 is Monday and covers Week 6** — the list, the iterator protocol, the BST, and the recursive
+**Quiz 7 is Tuesday 9 March and covers Week 6** — the list, the iterator protocol, the BST, and the recursive
 destructor.
 
 **Project 1 is due Week 9.** You should have Parts 1 and 2 substantially working by the end of this

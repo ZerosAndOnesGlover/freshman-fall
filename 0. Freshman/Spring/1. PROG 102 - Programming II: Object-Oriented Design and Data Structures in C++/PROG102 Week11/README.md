@@ -3,7 +3,7 @@
 
 **Credits:** 4 (3 lecture + 1 lab) · **Prerequisites:** PROG 101 (C), CS 101
 **Assessment for this course (overall):** Labs 20%, Problem Sets 30%, Midterms 25%, Final 15%, Projects 10%
-**This week's deliverables:** PS 11, Lab 11, Quiz 11 (Monday, covers Week 10) · **Project 2 assigned**
+**This week's deliverables:** PS 11 (released Fri 9 Apr 10:00, due **Fri 16 Apr 17:00**), Lab 11 (**Mon 12 Apr**, 15:00), Quiz 11 (**Tue 6 Apr**, 10:00, covers Week 10) · Project 2 assigned (due Fri 16 Apr)
 
 ---
 
@@ -42,7 +42,7 @@ By the end of Week 11, you should be able to:
 | [[L34 Lambdas and Closures]] | What a lambda is, captures, and the dangling bug |
 | [[L35 std function and Type Erasure]] | The mechanism, the hidden allocation, and when to use it |
 | [[L36 constexpr and Modern Features]] | `constexpr`, `if constexpr`, structured bindings, ranges preview |
-| [[PS 11 Imperative to Functional]] | Due Friday of Week 12 |
+| [[PS 11 Imperative to Functional]] | Due Fri 16 Apr 17:00 |
 | [[PROG102 Week11/assignments/QUIZ 11 Week 11 Monday\|QUIZ 11 Week 11 Monday]] | 15 minutes, covers Week 10 |
 | [[PROJECT 2 A Data Structure Library]] | **Assigned this week, due Week 12** |
 | [[LAB 11 Profiling Lambda Overhead]] | Measure the three ways to hold a callable |

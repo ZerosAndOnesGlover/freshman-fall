@@ -1,8 +1,19 @@
 # PROG 102 · Problem Set 8
 ## Observer and Strategy
 
-**Week 8 · Released Friday Week 8 · Due Friday Week 9, 17:00 · 100 points**
-**Covers:** Lectures 25–27
+**Released:** Friday 19 March 2027, 10:00 · Week 8 (after Thursday's L27)
+**Due:** Friday 26 March 2027, 17:00 · Week 9 — late penalty from 17:01
+**Points:** 100 · counts toward the Problem Sets component (30%, lowest one dropped)
+**Expected time:** about 3–4 hours — kept short because Project 1 is due the same day
+
+## What this problem set uses
+
+Weeks 0–8: `shared_ptr`/`weak_ptr` (Week 5), throwing (L04 §4.2), and this week — Observer and its
+`weak_ptr` form (L25), lambdas with capture and `std::function` as far as Lecture 25 §4's box takes
+them, Strategy, Command and Template Method (L26), State, MVC and the "obsoleted" argument (L27).
+
+**Not needed and not expected:** exception guarantees (Week 9), how `std::function` works inside
+(Week 11). Timing the four Strategy forms is Lecture 26 §3's measurement, not repeated here.
 
 > **Project 1 is due the same day as this problem set.** That is deliberate — this set is short, and
 > **Project 1 is worth more.** Do this one second.
@@ -56,69 +67,54 @@ it**.
 
 ---
 
-## Part B — Strategy, Measured (30 pts)
+## Part B — Strategy (16 pts)
 
-**B1.** *(6)* Implement Strategy the classic way: an interface with at least three concrete
+**B1.** *(8)* Implement Strategy the classic way: an interface with at least three concrete
 comparison strategies, used to sort a vector.
 
 Add a fourth strategy. **Report the lines changed and the call sites touched.**
 
-**B2.** *(12)* Sort **2,000,000** integers four ways, three runs each:
-
-1. classic Strategy (virtual call);
-2. `std::function`;
-3. a lambda passed as a template parameter;
-4. default `operator<`.
-
-**Write down your predicted ranking before running.** Report the prediction, the times, and whether all
-four produced identical output.
-
-**B3.** *(6)* One of those four is much slower than most people expect.
-
-- **(a)** *(3)* Which, and by what factor against the lambda?
-- **(b)** *(3)* Explain the mechanism. **Then find Week 3's `qsort` vs `std::sort` figure and state
-  both ratios.** Are they close, and why would you expect them to be?
-
-**B4.** *(6)* Give a concrete situation where `std::function` is the **right** choice despite B2.
+**B2.** *(8)* Lecture 26 §3 measured `std::function` as the slowest of four ways to pass a comparison.
+Give a concrete situation where it is nevertheless the **right** choice.
 
 Be specific about what a template parameter could not do there. **A vague answer about flexibility
 earns half.**
 
 ---
 
-## Part C — Command (22 pts)
+## Part C — Command (30 pts)
 
-**C1.** *(8)* Implement Command 1994-style — an interface, a concrete command class per action, and a
+**C1.** *(10)* Implement Command 1994-style — an interface, a concrete command class per action, and a
 history with `run` and `undo` — for a text buffer supporting **append** and **erase**.
 
-**C2.** *(8)* Implement the same behaviour with lambdas and `std::function`, with no `Command`
+**C2.** *(10)* Implement the same behaviour with lambdas and `std::function`, with no `Command`
 interface and no per-action classes.
 
 **Report non-blank line counts and type counts for both.** They must produce identical output.
 
-**C3.** *(6)* Answer both:
+**C3.** *(10)* Answer both:
 
-- **(a)** *(3)* Add **redo** to both versions. Which was easier, and what did each need?
-- **(b)** *(3)* Give a concrete case where the **1994 version is better.** Lecture 27 §3.4 names the
+- **(a)** *(5)* Add **redo** to both versions. Which was easier, and what did each need?
+- **(b)** *(5)* Give a concrete case where the **1994 version is better.** Lecture 27 §3.4 names the
   category; you supply a specific example.
 
 ---
 
-## Part D — The Argument (16 pts)
+## Part D — The Argument (22 pts)
 
 `ANSWERS.md`. Marked as writing.
 
-**D1.** *(6)* Lecture 27 §3.1 claims: *a design pattern is a workaround for something the language
+**D1.** *(8)* Lecture 27 §3.1 claims: *a design pattern is a workaround for something the language
 cannot say.*
 
 **Argue for it in four sentences, using one pattern from this week as evidence.**
 
-**D2.** *(6)* Now argue **against** it. Find a pattern from Weeks 7–8 that would still be needed in a
+**D2.** *(8)* Now argue **against** it. Find a pattern from Weeks 7–8 that would still be needed in a
 language with every feature you can think of, and defend it in four sentences.
 
 **Both halves are marked on the quality of the argument, not the position.**
 
-**D3.** *(4)* Pick one pattern from Weeks 7–8 and name a plausible **future** language feature that
+**D3.** *(6)* Pick one pattern from Weeks 7–8 and name a plausible **future** language feature that
 could absorb it. One paragraph.
 
 ---
@@ -128,9 +124,9 @@ could absorb it. One paragraph.
 | Part | Points | Focus |
 | --- | --- | --- |
 | A | 32 | Observer, and the four things it does not solve |
-| B | 30 | Four strategies measured, and the surprising one explained |
-| C | 22 | Command, both eras, counted |
-| D | 16 | Arguing both sides of the week's claim |
+| B | 16 | Strategy, and when `std::function` is right |
+| C | 30 | Command, both eras, counted |
+| D | 22 | Arguing both sides of the week's claim |
 | **Total** | **100** | |
 
 ---
@@ -139,10 +135,8 @@ could absorb it. One paragraph.
 
 1. Clean build; sanitizer-clean except where A1 and A4 deliberately provoke reports.
 2. A2's version contains **no `detach`** and no observer that knows its subject.
-3. B2 includes your **prediction, recorded before running.**
-4. B3 quotes **both** ratios — this week's and Week 3's.
-5. C2 reports line and type counts for both versions.
-6. Collaborators named; generative-tool use stated.
+3. C2 reports line and type counts for both versions.
+4. Collaborators named; generative-tool use stated.
 
 ---
 

@@ -19,7 +19,11 @@ argument.** D3 in particular is marked on the quality of the case *against* thei
 
 ---
 
-## Part A — Factory Method (24)
+> **Revised 2026-09-22.** Removed B3 (timing decorator chains) and C2 (racing 16 threads to a Singleton — threads are Week 10).
+> A4's registry now uses a function pointer instead of `std::function` (Week 11); Lecture 23 §3.2 shows
+> both. B4→B3, C3→C2; items re-weighted to keep 100.
+
+## Part A — Factory Method (26)
 
 ### A1 (8)
 
@@ -54,21 +58,22 @@ Expected substance:
 *Marking: 6. **The distinction between one boundary switch and many scattered ones is the whole
 answer.** "It's fine because it's a factory" is 2.*
 
-### A4 (4)
+### A4 (6)
 
-A `std::map<std::string, std::function<std::unique_ptr<Shape>(double)>>`.
+A `std::map<std::string, std::unique_ptr<Shape> (*)(double)>` — the function-pointer registry of
+Lecture 23 §3.2.
 
 **Both answers earn full marks.** The `if`-chain is simpler and adequate for a closed set; the registry
 is right when types are added by plugins or at run time.
 
-*Marking: 3 working registry, 1 the judgement. **Deduct nothing for preferring the if-chain** if the
+*Marking: 4 working registry, 2 the judgement. **Deduct nothing for preferring the if-chain** if the
 reason is "the set of shapes is closed" — that is the better answer for most programs.*
 
 ---
 
-## Part B — Decorator (34)
+## Part B — Decorator (30)
 
-### B1 (10)
+### B1 (12)
 
 Three decorators over one interface, composed with `unique_ptr` and `std::move`. Reference:
 
@@ -82,7 +87,7 @@ buffered<decrypted<inflated<raw-bytes-of(data.bin)>>>
 **A `Decorator` base holding the `unique_ptr` is expected but not required** — three independent
 decorators each holding their own is equally correct.
 
-### B2 (6)
+### B2 (8)
 
 Eight compositions printed, and:
 
@@ -98,29 +103,6 @@ Eight compositions printed, and:
 matter** — `BufferedEncryptedCompressedFileSource` makes the point in a way the number does not.*
 
 ### B3 (10)
-
-Reference, 10⁷ calls:
-
-| depth | per call |
-| --- | --- |
-| 0 | 2.06 ns |
-| 1 | 2.41 ns |
-| 2 | 2.98 ns |
-| 4 | 4.14 ns |
-| 8 | 6.70 ns |
-
-**Marginal: $(6.70 - 2.06)/8 \approx 0.58$ ns per layer.**
-
-**Why it is *below* Week 4's ~2 ns:** the targets in a decorator chain are perfectly predictable — the
-same object, the same vtable entry, every iteration — so the branch predictor learns them and GCC
-speculatively devirtualizes (L14 §6). Week 4's figure came from a benchmark controlled to defeat
-exactly that.
-
-*Marking: 5 the table with a marginal figure, 5 the comparison. **The comparison must invoke prediction
-or devirtualization**; "it's just faster" is 1 of the 5. Accept a student whose marginal figure is
-*higher* than 2 ns if they investigated and reported honestly.*
-
-### B4 (8)
 
 **(a) (4)** Runtime composition. The expected demonstration is building the chain from **data** — a
 config string, a command-line flag — which the subclassing version cannot do at all without a switch
@@ -142,7 +124,7 @@ anything equally concrete.*
 
 ## Part C — Singleton (22)
 
-### C1 (6)
+### C1 (10)
 
 Five calls, one construction. Defeating it: without `= delete`, `Config c = Config::instance();`
 copy-constructs a second.
@@ -150,28 +132,7 @@ copy-constructs a second.
 *Marking: 4 the demonstration, 2 defeating it. **A student who says "you can't defeat it" has not tried
 the copy** — that is the entire reason the deletion is there.*
 
-### C2 (8)
-
-```
-16 threads raced to initialise a 50 ms constructor
-constructions = 1
-all threads got the same address: yes
-```
-
-```
-__cxa_guard_acquire
-__cxa_guard_release
-__cxa_guard_abort
-```
-
-**Meaning:** the compiler emits a real lock around first-time initialization. The first caller takes
-it; later callers test a flag and skip. **The thread safety is a language guarantee implemented by
-runtime machinery, not an accident.**
-
-*Marking: 4 the threading result, 4 the guard functions with an interpretation. **The interpretation
-must say the compiler emits locking** — pasting the symbols without comment is 2 of the 4.*
-
-### C3 (8)
+### C2 (12)
 
 **(a) (4)** Every function that touched `Config::instance()` now takes a `Config&` — and the list is
 usually longer than the student expected, because the singleton was reachable from places that did not
@@ -189,7 +150,7 @@ purely anti-singleton gets 2 — the threading-through cost is real and the ques
 
 ---
 
-## Part D — Judgement (20)
+## Part D — Judgement (22)
 
 ### D1 (8)
 
@@ -203,12 +164,12 @@ named, so require others), **Strategy** (`std::sort`'s comparator; `unique_ptr`'
 *Marking: 2 per pattern up to 6, plus 2 for the "what varies" sentences being accurate. **Reject
 Iterator and `std::stack`** — the sheet excludes them.*
 
-### D2 (6)
+### D2 (7)
 
 *Marking: 3 for a specific, plausible application; 3 for a specific case where a pattern would make it
 worse. **Both must name a pattern and a class from their own code.** Generic answers get half.*
 
-### D3 (6) — the assessed writing
+### D3 (7) — the assessed writing
 
 The objection is easy: one implementation, no change in two years, an interface and a virtual call
 bought nothing, and L22 §6.2's test fails.
@@ -232,10 +193,10 @@ bullets are the strong arguments and a student who finds either has done the exe
 
 | Part | Points |
 | --- | --- |
-| A | 24 |
-| B | 34 |
+| A | 26 |
+| B | 30 |
 | C | 22 |
-| D | 20 |
+| D | 22 |
 | **Total** | **100** |
 
 ---
@@ -243,10 +204,8 @@ bullets are the strong arguments and a student who finds either has done the exe
 ## What to Watch For
 
 1. **"It's fine because it's a factory"** (A3) instead of the boundary argument.
-2. **B3's marginal figure omitted** — students report totals and skip the subtraction.
-3. **"It's just faster"** as the whole of B3's comparison.
-4. **A purely anti-singleton answer to C3(b)** that never names the cost of dependency injection.
-5. **A straw-man D3.** The most common failure in the set and the one worth feedback.
+2. **A purely anti-singleton answer to C2(b)** that never names the cost of dependency injection.
+3. **A straw-man D3.** The most common failure in the set and the one worth feedback.
 
 ---
 
@@ -255,8 +214,8 @@ bullets are the strong arguments and a student who finds either has done the exe
 Week 8 is behavioural patterns and ends by showing that **Strategy and Command are nearly obsolete in
 modern C++** — a lambda does both in one line.
 
-**Set that up on Monday** using B3: students have just measured a decorator layer at 0.58 ns and seen
-that indirection is cheap. Week 8's point is different — not that patterns are slow, but that **some of
+**Set that up on Tuesday** by recalling Lecture 24 §3.3's measurement that a decorator layer costs well under
+a nanosecond — indirection is cheap. Week 8's point is different — not that patterns are slow, but that **some of
 them were working around the absence of a language feature that now exists.**
 
 ---

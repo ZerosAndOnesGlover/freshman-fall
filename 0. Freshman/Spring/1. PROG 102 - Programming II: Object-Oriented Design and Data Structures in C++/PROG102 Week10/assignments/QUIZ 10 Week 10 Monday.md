@@ -1,12 +1,14 @@
 # PROG 102 · Quiz 10
 ## Week 10 · Tuesday, start of lecture · 15 minutes · 20 points
 
+**Date:** Tuesday 30 March 2027 · 10:00–10:15 (start of L31) · Week 10
+
 **Covers Week 9** — Lectures 28–30: exceptions, stack unwinding, the three guarantees, `noexcept`,
 assertions and contracts.
 
 **Closed book. No devices.** Answer on this sheet.
 
-> **Midterm 2 is later this week** and covers Weeks 5–9. This quiz is a rehearsal for its Week 9
+> **Midterm 2 is this evening, 18:00,** and covers Weeks 5–9. This quiz is a rehearsal for its Week 9
 > content.
 
 Name: ________________________  Section: ______  Date: ____________

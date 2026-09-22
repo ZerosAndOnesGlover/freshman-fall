@@ -1,7 +1,8 @@
 # PROG 102 · Lab 11
 ## Profiling Lambda Overhead
 
-**Week 11 · 2-hour lab session · 40 points**
+**Date:** Monday 12 April 2027 · 15:00–16:50 · Lab section (Week 12) — covers Week 11 (L34–L36)
+*2-hour lab · 40 points · in-lab checkoff · part of the Labs component (20%)*
 **Deliverable:** `bench.cpp`, `RESULTS.md`. In-lab checkoff.
 
 > **Project 2 is due next Friday and the final is that week.** This lab is short and its results feed

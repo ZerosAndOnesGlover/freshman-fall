@@ -93,6 +93,25 @@ This works, and it costs you:
 
 ## 4. `weak_ptr` Observers
 
+> **Just enough capture and `std::function` for Weeks 8–10.** Week 3 gave you empty-bracket lambdas.
+> This week's code puts names inside the brackets, and stores lambdas in variables:
+>
+> ```cpp
+> int k = 10;
+> auto add_k   = [k](int x) { return x + k; };     // [k]  : a COPY of k, taken now
+> auto bump_k  = [&k]() { ++k; };                   // [&k] : a REFERENCE to k — k must outlive the lambda
+> std::function<int(int)> f = add_k;                // #include <functional>: holds ANY callable
+> f(5);                                             //   taking int, returning int  -> 15
+> ```
+>
+> - The **capture list** names the outside variables the lambda uses: `[k]` copies, `[&k]` refers.
+> - `std::function<R(Args...)>` can hold a lambda, a function object or a function pointer with that
+>   signature, which is what lets different callables sit in one container.
+> - Only capture by reference what you are **sure** outlives the lambda.
+>
+> What a lambda compiles to, what capture costs, why a dangling capture is the classic bug, and how
+> `std::function` works inside are all **Week 11**.
+
 ```cpp
 class Subject {
     std::vector<std::weak_ptr<Observer>> observers;

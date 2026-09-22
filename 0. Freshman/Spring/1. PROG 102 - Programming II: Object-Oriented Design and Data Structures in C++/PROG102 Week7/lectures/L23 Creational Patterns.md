@@ -147,8 +147,16 @@ If the set of types is open — plugins, or types registered at run time — a r
 std::map<std::string, std::function<std::unique_ptr<Shape>(double)>> registry;
 ```
 
-*(`std::function` is Week 11. The idea is that new types register themselves and the factory never
-changes.)*
+*(`std::function` is Week 11. Until then a plain **function pointer** does the same job here, because
+the creators capture nothing — PROG 101 Week 11:)*
+
+```cpp
+using Creator = std::unique_ptr<Shape> (*)(double);
+std::unique_ptr<Shape> make_circle(double r) { return std::make_unique<Circle>(r); }
+std::map<std::string, Creator> registry{{"circle", make_circle}};
+```
+
+*The idea is that new types register themselves and the factory never changes.*
 
 ---
 

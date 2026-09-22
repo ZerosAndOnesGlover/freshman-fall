@@ -16,16 +16,20 @@ final draws on.
 
 ---
 
-## Part A — What a Lambda Is (26)
+> **Revised 2026-09-22.** Part B (timing callables, the `std::function` allocation threshold, and the 1.85× versus 3.5×
+> question) was removed: Lab 11 Parts A–C are the same experiments. Old C and D are B and C;
+> re-weighted to keep 100.
 
-### A1 (8)
+## Part A — What a Lambda Is (35)
+
+### A1 (10)
 
 Hand-written functor and lambda both **4 bytes**. Traits: class **yes**, copy-constructible **yes**,
 default-constructible **no**.
 
 *Marking: 4 the comparison, 2 both working with `count_if`, 2 the traits.*
 
-### A2 (8)
+### A2 (10)
 
 | Lambda | `sizeof` |
 | --- | --- |
@@ -41,14 +45,14 @@ default-constructible **no**.
 **Award prediction marks for honest wrong answers.** The two people usually miss are `[]` (they guess
 0, not 1 — Week 0's empty-class rule) and `[s]` (they guess 8, thinking a pointer, not 32).
 
-### A3 (4)
+### A3 (6)
 
 `[x]` prints the value at capture time, not the modified one. With `mutable`, the internal copy
 persists across calls.
 
 *Marking: 2 + 2.*
 
-### A4 (6)
+### A4 (9)
 
 **(a)** **No warnings** under `-Wall -Wextra -pedantic`.
 **(b)** ASan: `stack-use-after-return ... in operator()`.
@@ -59,64 +63,16 @@ answered; one who omits the part has not checked.*
 
 ---
 
-## Part B — Storing Callables (28)
+## Part B — Functional Style (32)
 
-### B1 (10)
-
-| | ns per call |
-| --- | --- |
-| lambda, direct | **0.606–0.667** |
-| function pointer | **1.499–1.539** |
-| `std::function` | **2.153–2.209** |
-
-*Marking: 7 the three figures with three runs, 3 for **stating what they changed** to defeat the
-optimizer.*
-
-**A student reporting 0.00 ns for any version has not fixed the benchmark.** Deduct 4 and point at the
-first attempt in the lab's reference numbers — this is the fourth time this course has done it to
-them.
-
-### B2 (8)
-
-`sizeof(std::function<int()>)` = **32**; allocation begins at **17 bytes**.
-
-*Marking: 5 the threshold found by sweeping, 3 the `sizeof`. **Accept any threshold** — it is
-implementation-defined, and a student on libc++ will get a different number. Mark the method.*
-
-### B3 (4)
-
-A `std::string` capture is 32 bytes → **allocates**. Captured by reference → 8 bytes → **does not**.
-
-**The risk:** the by-reference version dangles if the lambda outlives the string — A4's bug, arrived at
-from a performance motivation, which is how it usually happens in real code.
-
-*Marking: 2 the measurements, 2 the risk. **Full marks require naming the dangling risk**, since the
-optimisation invites it.*
-
-### B4 (6) — the assessed question
-
-Expected substance:
-
-> Per bare call, the erasure indirection is essentially the whole cost, so the ratio is large (3.5×).
-> Inside `std::sort`, the comparison is one part of a body that also swaps elements, moves data and
-> chases memory — so the same absolute overhead is a smaller fraction of the total, giving 1.85×.
-> **Both measure the same overhead against different denominators.**
-
-*Marking: 6. **"The sort is doing more work" is the answer**; an answer that claims one of the two
-measurements is wrong gets 1.*
-
----
-
-## Part C — Functional Style (26)
-
-### C1 (14)
+### B1 (16)
 
 Seven rewrites covering map, filter, fold, search, and partition/sort.
 
 *Marking: 2 per rewrite. **Require the category coverage** — a student with seven `transform` calls has
 not met the spec.*
 
-### C2 (6)
+### B2 (8)
 
 A composed operation:
 
@@ -129,7 +85,7 @@ stored in a container or returned from a non-template function.
 
 *Marking: 4 working composition, 2 the type discussion. Must mention that the type has no name.*
 
-### C3 (6) — the assessed question
+### B3 (8) — the assessed question
 
 **Two nominations required.** Good ones:
 
@@ -146,15 +102,15 @@ the sheet requires two, and Week 3's "prefer algorithms" was always bounded.*
 
 ---
 
-## Part D — Modern Features (20)
+## Part C — Modern Features (33)
 
-### D1 (6)
+### C1 (9)
 
 `static_assert` on the result, and `std::array<int, N>` where `N` is the computed value.
 
 *Marking: 3 each. **Both proofs required** — a student giving only the `static_assert` has one.*
 
-### D2 (6)
+### C2 (9)
 
 `if constexpr` dispatches correctly. With a plain `if`, the error is that `std::to_string` (or
 whatever) has no overload for the type in the untaken branch — **because a plain `if` compiles both
@@ -162,13 +118,13 @@ branches.**
 
 *Marking: 3 the working version, 3 the error and explanation.*
 
-### D3 (4)
+### C3 (7)
 
 Before/after with structured bindings.
 
 *Marking: 4.*
 
-### D4 (4)
+### C4 (8)
 
 A ranges rewrite, uncompiled. Expected savings: no iterator pairs, laziness (no intermediate
 container), composability.
@@ -182,22 +138,19 @@ cannot compile it.*
 
 | Part | Points |
 | --- | --- |
-| A | 26 |
-| B | 28 |
-| C | 26 |
-| D | 20 |
+| A | 35 |
+| B | 32 |
+| C | 33 |
 | **Total** | **100** |
 
 ---
 
 ## What to Watch For
 
-1. **0.00 ns in B1.** The fourth self-deleting benchmark of the course.
-2. **Missing the silence** in A4(a) — the absence of a warning is the finding.
-3. **Claiming one of B4's two ratios is wrong.** Both are correct.
-4. **Fewer than two nominations** in C3.
-5. **Only one proof** in D1.
-6. **`[s]` predicted as 8 bytes** in A2 — worth a comment, since it is the same misconception that
+1. **Missing the silence** in A4(a) — the absence of a warning is the finding.
+2. **Fewer than two nominations** in B3.
+3. **Only one proof** in C1.
+4. **`[s]` predicted as 8 bytes** in A2 — worth a comment, since it is the same misconception that
    makes people capture strings by reference and then dangle.
 
 ---
@@ -206,9 +159,9 @@ cannot compile it.*
 
 **Week 12 is the last week**: testing, `perf`, cache behaviour, and system design.
 
-**B1's numbers are the setup for it.** A lambda call is 0.6 ns; a cache miss is roughly 100 ns. **Week
+**Lab 11's numbers are the setup for it.** A lambda call is 0.6 ns; a cache miss is roughly 100 ns. **Week
 12's opening question is which of those two your program is actually spending its time on**, and
-students who have B1 in front of them can answer it.
+students who have Lab 11's table in front of them can answer it.
 
 **Say on Monday that the final's Section D will include a table from Weeks 10–12**, since those are the
 weeks not covered by either midterm and students systematically under-revise them.

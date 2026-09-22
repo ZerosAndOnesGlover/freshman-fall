@@ -1,11 +1,12 @@
 # PROG 102 · Lab 9
 ## Testing for Failure
 
-**Week 9 · 2-hour lab session · 40 points**
+**Date:** Monday 29 March 2027 · 15:00–16:50 · Lab section (Week 10) — covers Week 9 (L28–L30)
+*2-hour lab · 40 points · in-lab checkoff · part of the Labs component (20%)*
 **Deliverable:** `tests.cpp`, `RESULTS.md`. In-lab checkoff.
 
-> **Project 1 is due today.** This lab is short and directly useful to it — Part D asks you to
-> determine your own container's guarantee, which is Project 1 Part 3.3.
+> Project 1 was due last Friday; Part D here is the rigorous version of its Part 3.3. **Midterm 2 is
+> tomorrow, Tuesday 30 March, 18:00.** PS 9 (due Friday) starts from the table you produce in Part D.
 
 ---
 

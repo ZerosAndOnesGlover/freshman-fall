@@ -1,14 +1,25 @@
 # PROG 102 · Project 2
 ## A Data Structure Library
 
-**Assigned Week 11 · Due Friday Week 12, 17:00 · 100 points · 5% of the course grade**
+**Assigned:** Tuesday 6 April 2027, 10:00 (at L34) · Week 11
+**Due:** Friday 16 April 2027, 17:00 · Week 12 — late penalty from 17:01
+**Points:** 100 · 5% of the course grade
 **Demo and code review: Lab 12** *(a further 40 points, as part of the Labs component)*
+
+## What this project uses
+
+Everything through Week 11: your Project 1 containers, exception guarantees and `Fragile` (Week 9 and
+Lab 9), the bounded queue and TSan (Week 10), lambdas, `std::function`, `constexpr` and `if constexpr`
+(Week 11). BST deletion and successors are CS 102 Weeks 1–2.
+
+**Not needed and not expected:** a list `sort()` (never taught), the testing framework and profiler
+of Week 12. Benchmarking against the STL was Project 1's Part 4 and is not repeated.
 
 ---
 
 ## What This Is
 
-**The capstone.** A templated data structure library with a full test suite, benchmarks, and a written
+**The capstone.** A templated data structure library with a full test suite and a written
 design rationale.
 
 **It is Project 1, finished.** You are expected to reuse and improve your Project 1 code — that is the
@@ -39,12 +50,12 @@ have to defend in Lab 12.
 
 ---
 
-## Part 1 — The Containers (24 pts)
+## Part 1 — The Containers (26 pts)
 
 **1.1** *(10)* `List<T>` — a templated doubly linked list with a sentinel, the full Rule of Five,
-`iterator`/`const_iterator` satisfying `iterator_traits`, and a `sort()` member.
+`iterator`/`const_iterator` satisfying `iterator_traits`, `remove_if` and `reverse`.
 
-**1.2** *(8)* `Tree<T, Compare = std::less<T>>` — a BST with `unique_ptr` children, `insert`, `erase`,
+**1.2** *(10)* `Tree<T, Compare = std::less<T>>` — a BST with `unique_ptr` children, `insert`, `erase`,
 `contains`, a **bidirectional in-order iterator**, and a deep copy.
 
 **1.3** *(6)* If either of these is carried over from Project 1, **list what you changed and why** in
@@ -55,22 +66,22 @@ have to defend in Lab 12.
 
 ---
 
-## Part 2 — Exception Safety, Established (22 pts)
+## Part 2 — Exception Safety, Established (26 pts)
 
 **2.1** *(8)* Implement a throwing element type (`Fragile`) with a settable failure point and a live
 counter.
 
-**2.2** *(10)* For **at least four** operations across both containers, determine the guarantee **by
+**2.2** *(12)* For **at least four** operations across both containers, determine the guarantee **by
 sweeping the failure point across every allocation and copy.**
 
 Report a table per operation: failure point, state before, state after, leaked, guarantee observed.
 
-**2.3** *(4)* State each operation's guarantee — **the weakest observed, not the best** — in
+**2.3** *(6)* State each operation's guarantee — **the weakest observed, not the best** — in
 `CONTRACTS.md`, alongside preconditions and postconditions for every public function.
 
 ---
 
-## Part 3 — Modern C++ (16 pts)
+## Part 3 — Modern C++ (18 pts)
 
 **3.1** *(6)* Provide algorithm-friendly interfaces: your containers must work with at least **eight**
 STL algorithms, demonstrated.
@@ -81,16 +92,14 @@ STL algorithms, demonstrated.
 constexpr`, **structured bindings**, and a `constexpr` computation proved compile-time by a
 `static_assert`.
 
-**3.3** *(4)* Provide a `for_each`-style member taking a callable **as a template parameter**, and one
-taking `std::function`.
-
-**Measure both** over at least 10⁶ elements and report the difference. **Say which you would ship.**
+**3.3** *(6)* Provide a `for_each`-style member taking a callable **as a template parameter**, and one
+taking `std::function`. **Say which you would ship**, using Lab 11's measurements.
 
 ---
 
-## Part 4 — Concurrency (14 pts)
+## Part 4 — Concurrency (16 pts)
 
-**4.1** *(8)* Provide **one** thread-safe container — a bounded queue is the expected choice — with
+**4.1** *(10)* Provide **one** thread-safe container — a bounded queue is the expected choice — with
 blocking `push`/`pop`, a shutdown mechanism, and correct condition-variable usage.
 
 Test with at least 3 producers and 3 consumers, **TSan-clean**. State the command that worked.
@@ -104,25 +113,14 @@ Test with at least 3 producers and 3 consumers, **TSan-clean**. State the comman
 
 ---
 
-## Part 5 — Measurement (12 pts)
-
-**5.1** *(6)* Benchmark `List` against `std::list` and `Tree` against `std::map`, for build, traverse,
-lookup and copy, at a size where the numbers are not noise. Three runs each.
-
-**5.2** *(6)* For `Tree`, measure lookup on **random** and **sorted** insertion orders, at three sizes.
-
-**Quantify how bad the sorted case is**, and state what `std::map` spends to avoid it.
-
----
-
-## Part 6 — The Write-Up (12 pts)
+## Part 5 — The Write-Up (14 pts)
 
 `DESIGN.md`.
 
-**6.1** *(6)* **Decisions.** For each: what you chose and why — sentinel vs null; raw vs `unique_ptr`
+**5.1** *(7)* **Decisions.** For each: what you chose and why — sentinel vs null; raw vs `unique_ptr`
 links; the BST iterator's mechanism; and **at least two operations you deliberately did not provide.**
 
-**6.2** *(6)* **What you would do differently.** 300–500 words.
+**5.2** *(7)* **What you would do differently.** 300–500 words.
 
 Having built this twice — Project 1 and now — what would you change if you started again? **Be
 specific and be honest.** "Nothing" earns nothing.
@@ -133,7 +131,7 @@ specific and be honest.** "Nothing" earns nothing.
 
 ```
 list.hpp    tree.hpp    queue.hpp    fragile.hpp
-tests.cpp   bench.cpp   DESIGN.md    CONTRACTS.md   README.md
+tests.cpp   DESIGN.md      CONTRACTS.md   README.md
 ```
 
 ---
@@ -142,20 +140,19 @@ tests.cpp   bench.cpp   DESIGN.md    CONTRACTS.md   README.md
 
 | Part | Points | Focus |
 | --- | --- | --- |
-| 1 | 24 | The containers, and honest reporting of what changed |
-| 2 | 22 | Guarantees established by evidence |
-| 3 | 16 | Modern C++, used where it helps |
-| 4 | 14 | Thread safety where it belongs, and documented where it is absent |
-| 5 | 12 | Measurement against the standard library |
-| 6 | 12 | The write-up |
+| 1 | 26 | The containers, and honest reporting of what changed |
+| 2 | 26 | Guarantees established by evidence |
+| 3 | 18 | Modern C++, used where it helps |
+| 4 | 16 | Thread safety where it belongs, and documented where it is absent |
+| 5 | 14 | The write-up |
 | **Total** | **100** | |
 
 ---
 
 ## Late Policy
 
-**10% per day; nothing after 3 days.** The final exam is this week and no extensions are available
-beyond that.
+**10% per day; nothing after 3 days.** The final exam is Thursday 22 April and no extensions are
+available beyond that.
 
 **Partial credit is generous. Finish what you start** and state in [[PROG102 Week11/README|README]] what is incomplete. An
 accurate scope statement costs nothing; an inaccurate one costs a great deal.
@@ -164,17 +161,13 @@ accurate scope statement costs nothing; an inaccurate one costs a great deal.
 
 ## What Is Being Assessed
 
-Not whether you can beat `std::list`. You cannot, and Part 5 is built so that finding this out earns
-marks.
-
 **You are being assessed on whether you can build to a contract and tell the truth about it**: the
 iterator category you declare is one you honour (3.1), the guarantee you claim is one you swept for
-(2.2), the thread safety you document is one you tested (4.2), and the benchmark you report is one you
-understand (5.1).
+(2.2), and the thread safety you document is one you tested (4.2).
 
-**Part 6.2 is where that becomes explicit.** You have now built this library twice. The most valuable
+**Part 5.2 is where that becomes explicit.** You have now built this library twice. The most valuable
 thing you can write is an accurate account of what you got wrong the first time — and that is worth
-6 marks precisely because it is uncomfortable.
+7 marks precisely because it is uncomfortable.
 
 ---
 

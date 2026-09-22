@@ -1,10 +1,13 @@
 # PROG 102 · Lab 12
 ## Project Demo and Code Review
 
-**Week 12 · 2-hour lab session · 40 points**
+**Date:** Monday 19 April 2027 · 15:00–16:50 · Lab section (finals week) — covers Week 12 (L37–L39)
+*2-hour lab · 40 points · in-lab checkoff · part of the Labs component (20%)*
 **Deliverable:** your demo, a written review of a peer's project, `RESULTS.md`. In-lab checkoff.
 
-> **This is the last lab.** Project 2 is due Friday and the final exam is this week.
+> **This is the last lab.** Project 2 was due Friday 16 April; the final exam is Thursday 22 April, 14:00.
+> ⚠️ Under the "Lab *N* meets the Monday after Week *N*" rule this demo falls in finals week — an open
+> decision in the PROG 102 course audit.
 
 ---
 

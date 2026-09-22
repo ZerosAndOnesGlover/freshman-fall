@@ -3,7 +3,8 @@
 
 **Credits:** 4 (3 lecture + 1 lab) · **Prerequisites:** PROG 101 (C), CS 101
 **Assessment for this course (overall):** Labs 20%, Problem Sets 30%, Midterms 25%, Final 15%, Projects 10%
-**This week:** Lab 12 (your Project 2 demo) · **PROJECT 2 DUE** · **FINAL EXAM**
+**This week:** **PROJECT 2 DUE Fri 16 Apr, 17:00** · then, in finals week: Lab 12 (your Project 2 demo, **Mon 19 Apr**,
+15:00) and the **FINAL EXAM** (**Thu 22 Apr**, 14:00–16:30)
 **No problem set and no quiz this week.**
 
 ---
@@ -94,11 +95,11 @@ sudo sysctl kernel.perf_event_paranoid=1
 `std::chrono` and a loop. **You do not need a profiler to see the hierarchy — you need a benchmark
 designed to reveal it.**
 
-### Everything Is Due This Week
+### What Is Left
 
-- **Project 2** — Friday.
-- **Lab 12** — your demo and a code review of someone else's project.
-- **The final exam** — comprehensive, 180 minutes, two handwritten sheets.
+- **Project 2** — Friday 16 April, 17:00.
+- **Lab 12** — Monday 19 April: your demo and a code review of someone else's project.
+- **The final exam** — Thursday 22 April, 14:00; comprehensive, two handwritten sheets.
 
 **The revision guide is in `resources/` and you should read it now.**
 

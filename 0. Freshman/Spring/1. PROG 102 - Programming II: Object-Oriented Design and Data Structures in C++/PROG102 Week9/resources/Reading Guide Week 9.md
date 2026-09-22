@@ -170,7 +170,7 @@ evidence of anything.** Break one deliberately, watch it report, and then you kn
 4. Week 10 is **concurrency**, and it breaks much of this week: an exception escaping a thread's
    function calls `std::terminate` with no chance to catch it, and `shared_ptr`'s refcount finally
    takes the atomic path Week 5 §L17 §4.1 measured around.
-5. **Midterm 2 is in Week 10**, covering **Weeks 5–9**. Its revision guide ships with Week 10's
+5. **Midterm 2 is Tuesday 30 March** (Week 10), covering **Weeks 5–9**. Its revision guide ships with Week 10's
    materials, but the checklist in Week 4's guide shows you the format.
 
 ---

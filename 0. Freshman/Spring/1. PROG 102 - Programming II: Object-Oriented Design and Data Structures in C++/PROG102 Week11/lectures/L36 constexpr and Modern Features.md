@@ -218,7 +218,8 @@ of a medium-sized system. It measures the thing that has been lurking behind Wee
 results and Week 10's contention figure — **the memory hierarchy** — and it is where the course's
 running argument about abstraction and cost is settled.
 
-**Project 2 is due, the final exam is that week, and Lab 12 is your project demo.**
+**Project 2 is due Friday 16 April; Lab 12, your project demo, is Monday 19 April; the final exam is
+Thursday 22 April.**
 
 ---
 

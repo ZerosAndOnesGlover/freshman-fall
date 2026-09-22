@@ -1,10 +1,22 @@
 # PROG 102 · Problem Set 9
 ## Making a Container Exception-Safe
 
-**Week 9 · Released Friday Week 9 · Due Friday Week 10, 17:00 · 100 points**
-**Covers:** Lectures 28–30
+**Released:** Friday 26 March 2027, 10:00 · Week 9 (after Thursday's L30)
+**Due:** Friday 2 April 2027, 17:00 · Week 10 — late penalty from 17:01
+**Points:** 100 · counts toward the Problem Sets component (30%, lowest one dropped)
+**Expected time:** about 4 hours
 
-> **Midterm 2 is in Week 10** and covers Weeks 5–9. This problem set is the best revision available for
+## What this problem set uses
+
+Weeks 0–9: move semantics and `noexcept` moves (Week 5), your Week 6 container, exceptions and
+unwinding (L28), the three guarantees and the copy-then-swap recipe (L29), `noexcept`, assertions and
+contracts (L30) — and **Lab 9's `Fragile` element and failure sweep** (Monday 29 March), whose result
+Part B starts from.
+
+**Not needed and not expected:** threads (Week 10). The cost of exceptions is Lecture 28 §5's
+measurement and is not re-measured here.
+
+> **Midterm 2 is Tuesday 30 March, 18:00–19:30** (Week 10), and covers Weeks 5–9. This problem set is the best revision available for
 > the last third of it — **do it early in the week**, not the night before it is due.
 
 ---
@@ -15,93 +27,56 @@
 g++ -std=c++17 -Wall -Wextra -pedantic -g -fsanitize=address,undefined prog.cpp -o prog
 ```
 
-**Deliverables:** `container.hpp`, `fragile.hpp`, `safety_tests.cpp`, `costs.cpp`, `CONTRACTS.md`,
+**Deliverables:** `container.hpp`, `fragile.hpp`, `safety_tests.cpp`, `CONTRACTS.md`,
 `ANSWERS.md`. Name collaborators and state any generative-tool use.
 
 **Use your Week 6 `List<T>` or Project 1's container.** You may not start from `std::vector`.
 
 ---
 
-## Part A — What Exceptions Cost (20 pts)
+## Part A — What Exceptions Cost (12 pts)
 
-**A1.** *(8)* Measure the **happy path**: identical source compiled with and without exception support.
+**A1.** *(12)* Using Lecture 28 §5's measurements (happy path, throwing path, code size), answer all three:
 
-```
-g++ -std=c++17 -O2 -c work.cpp -o with.o
-g++ -std=c++17 -O2 -fno-exceptions -DNO_EXC -c work.cpp -o without.o
-```
-
-Report **times** (at least three runs, functions in a separate translation unit so they cannot be
-inlined away) **and `size` output for both objects.**
-
-**A2.** *(4)* Measure the **throwing path** over at least 100,000 throws. Report microseconds per throw
-and express it as a multiple of a normal call.
-
-**A3.** *(8)* Answer all three:
-
-- **(a)** *(3)* "C++ exceptions are zero-cost." **Which part of your data supports it and which part
+- **(a)** *(5)* "C++ exceptions are zero-cost." **Which part of the data supports it and which part
   refutes it?**
-- **(b)** *(3)* From your numbers, give a concrete rule about when exceptions are the wrong mechanism.
-  **Use your measurement, not a slogan.**
-- **(c)** *(2)* A first attempt at A1 compared an exception-throwing function against an error-code
-  function with an out-parameter, and reported 1.5×. **Why is that not an answer to A1's question?**
+- **(b)** *(4)* From those numbers, give a concrete rule about when exceptions are the wrong mechanism.
+  **Use the measurement, not a slogan.**
+- **(c)** *(3)* A first attempt at that measurement compared an exception-throwing function against an error-code
+  function with an out-parameter, and reported 1.5×. **Why is that not an answer to whether exceptions cost anything when nothing throws?**
 
 ---
 
-## Part B — Determining Your Guarantee (30 pts)
+## Part B — Upgrading to Strong (38 pts)
 
-**B1.** *(8)* Implement `Fragile` — an element type that throws on the *n*-th copy, with *n* settable,
-and a live-object counter so you can detect leaks.
-
-**Verify it works** before using it to test anything.
-
-**B2.** *(14)* For **three** operations on your container — at minimum an insertion, an assignment, and
-one of your choosing — determine the guarantee **by testing**.
-
-For each operation, **sweep the failure point across every copy it performs.** For each *n*, record:
-
-| n | state before | state after | leaked? | guarantee at this n |
-| --- | --- | --- | --- | --- |
-
-**B3.** *(8)* From your tables, state each operation's guarantee.
-
-- **(a)** *(4)* **It is the weakest observed, not the best.** Report all three, and flag any operation
-  where the weakest and the best differ.
-- **(b)** *(4)* Did any of them differ from what you expected before testing? **Report your prior**,
-  and if you were right for all three, say what you would have to test to be *sure* rather than lucky.
-
----
-
-## Part C — Upgrading to Strong (26 pts)
-
-**C1.** *(10)* Take one operation that came out **basic** and give it the **strong** guarantee using
+**B1.** *(16)* Take one operation that came out **basic** in Lab 9 Part D and give it the **strong** guarantee using
 L29 §4.1's recipe — risky work on a copy, commit with a `noexcept` swap.
 
-**Re-run your B2 sweep** and show it is now strong at every *n*.
+**Re-run Lab 9's Part C sweep** on it and show it is now strong at every *n*.
 
-**C2.** *(8)* Measure what that cost: time and peak memory, for the operation on a container of at
+**B2.** *(10)* Measure what that cost: time, and the number of element copies (your `Fragile` counter), for the operation on a container of at
 least 10,000 elements, before and after.
 
-**C3.** *(8)* Answer both:
+**B3.** *(12)* Answer both:
 
-- **(a)** *(4)* `std::vector::push_back` is strong but `std::vector::insert` in the middle is only
-  basic. **Explain why**, using your C2 numbers.
-- **(b)** *(4)* Give a concrete operation in your own container where strong would be the **wrong**
+- **(a)** *(6)* `std::vector::push_back` is strong but `std::vector::insert` in the middle is only
+  basic. **Explain why**, using your B2 numbers.
+- **(b)** *(6)* Give a concrete operation in your own container where strong would be the **wrong**
   choice, and justify it.
 
 ---
 
-## Part D — `noexcept` and Contracts (24 pts)
+## Part C — `noexcept` and Contracts (50 pts)
 
-**D1.** *(6)* Write a `noexcept` function that throws. Report the **compiler warning** and the
+**C1.** *(10)* Write a `noexcept` function that throws. Report the **compiler warning** and the
 **runtime behaviour**, and confirm that a surrounding `catch (...)` does not run.
 
-**D2.** *(6)* Take a class with a move constructor. Count moves and copies during `vector` growth
+**C2.** *(12)* Take a class with a move constructor. Count moves and copies during `vector` growth
 **with and without** `noexcept` on it. Report both.
 
 **Then state, in one sentence, what a missing `noexcept` silently costs.**
 
-**D3.** *(6)* For each of the following, decide **assertion or exception** and justify in one sentence:
+**C3.** *(12)* For each of the following, decide **assertion or exception** and justify in one sentence:
 
 1. an index past the end of an internal buffer, in a private helper;
 2. a configuration file that will not parse;
@@ -109,7 +84,7 @@ least 10,000 elements, before and after.
 4. a container invariant (`size <= capacity`) checked at the end of `insert`;
 5. a network read that times out.
 
-**D4.** *(6)* `CONTRACTS.md`: write the full contract for **every public function** of your container —
+**C4.** *(16)* `CONTRACTS.md`: write the full contract for **every public function** of your container —
 precondition, postcondition, and exception guarantee.
 
 Then find **one function whose contract you could not state cleanly**, and say in three sentences what
@@ -121,26 +96,22 @@ that tells you about the design.
 
 | Part | Points | Focus |
 | --- | --- | --- |
-| A | 20 | What exceptions cost, on all three axes |
-| B | 30 | Determining a guarantee by evidence rather than assertion |
-| C | 26 | Upgrading to strong, and what it costs |
-| D | 24 | `noexcept`, assertions, and writing the contract down |
+| A | 12 | What exceptions cost, read from the lecture's data |
+| B | 38 | Upgrading to strong, and what it costs |
+| C | 50 | `noexcept`, assertions, and writing the contract down |
 | **Total** | **100** | |
 
-**Where the marks actually are:** B is the largest part and it is entirely measurement. **B3(a) is the
-one to get right** — reporting the weakest observed guarantee rather than the best is the difference
-between documentation and marketing.
+**Where the marks actually are:** C4 — a contract for every public function — is the largest single
+item, and the function you cannot state cleanly is worth more than the ones you can.
 
 ---
 
 ## Submission Checklist
 
 1. Clean build; sanitizer-clean except where tests deliberately provoke reports.
-2. A1 compares **identical source**, two build configurations.
-3. B2 **sweeps** every failure point, not just the first.
-4. B3(a) reports the **weakest** guarantee per operation.
-5. D4 covers **every** public function.
-6. Collaborators named; generative-tool use stated.
+2. B1 re-runs the full sweep and shows strong at **every** *n*.
+3. C4 covers **every** public function.
+4. Collaborators named; generative-tool use stated.
 
 ---
 

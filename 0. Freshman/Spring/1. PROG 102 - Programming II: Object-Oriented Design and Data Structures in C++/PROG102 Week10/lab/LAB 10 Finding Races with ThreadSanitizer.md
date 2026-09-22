@@ -1,10 +1,11 @@
 # PROG 102 · Lab 10
 ## Finding Races with ThreadSanitizer
 
-**Week 10 · 2-hour lab session · 40 points**
+**Date:** Monday 5 April 2027 · 15:00–16:50 · Lab section (Week 11) — covers Week 10 (L31–L33)
+*2-hour lab · 40 points · in-lab checkoff · part of the Labs component (20%)*
 **Deliverable:** `tracker.cpp` (repaired), `RESULTS.md`. In-lab checkoff.
 
-> **Midterm 2 is this week.** This lab is short. **Finish it in the session.**
+> **Midterm 2 was last Tuesday.** This lab is short. **Finish it in the session.**
 
 ---
 

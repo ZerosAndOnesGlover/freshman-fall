@@ -3,7 +3,7 @@
 
 **Credits:** 4 (3 lecture + 1 lab) · **Prerequisites:** PROG 101 (C), CS 101
 **Assessment for this course (overall):** Labs 20%, Problem Sets 30%, Midterms 25%, Final 15%, Projects 10%
-**This week's deliverables:** PS 8, Lab 8, Quiz 8 (Monday, covers Week 7) · **Project 1 due next Friday**
+**This week's deliverables:** PS 8 (released Fri 19 Mar 10:00, due **Fri 26 Mar 17:00**), Lab 8 (**Mon 22 Mar**, 15:00), Quiz 8 (**Tue 16 Mar**, 10:00, covers Week 7) · Project 1 due next Friday, 26 Mar
 
 ---
 
@@ -39,7 +39,7 @@ By the end of Week 8, you should be able to:
 | [[L25 Observer]] | Publish-subscribe, the dangling observer, and `weak_ptr` |
 | [[L26 Strategy Command and Template Method]] | Three ways of parameterising behaviour |
 | [[L27 State MVC and What C++11 Obsoleted]] | State machines, MVC, and the week's argument |
-| [[PS 8 Observer and Strategy]] | Due Friday of Week 9 |
+| [[PS 8 Observer and Strategy]] | Due Fri 26 Mar 17:00 |
 | [[PROG102 Week8/assignments/QUIZ 8 Week 8 Monday\|QUIZ 8 Week 8 Monday]] | 15 minutes, covers Week 7 |
 | [[LAB 8 Building an Event System]] | An event system that survives its subscribers dying |
 | [[PROG102 Week8/resources/Reading Guide Week 8\|Reading Guide Week 8]] | Gang of Four Ch. 5, and every command |

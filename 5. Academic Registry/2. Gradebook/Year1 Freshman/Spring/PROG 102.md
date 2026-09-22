@@ -33,8 +33,8 @@ status: in-progress
 | Midterm Exam 1 | 12.5% | Weeks 0–4 |
 | Midterm Exam 2 | 12.5% | Weeks 5–9 |
 | Final Exam | 15% | Comprehensive |
-| Project 1 | 5% | Assigned Week 6, due Week 9 |
-| Project 2 | 5% | Due Week 12 |
+| Project 1 | 5% | Assigned Tue 2 Mar, due Fri 26 Mar |
+| Project 2 | 5% | Assigned Tue 6 Apr, due Fri 16 Apr |
 | **Total** | **100%** | |
 
 ---
@@ -57,7 +57,7 @@ status: in-progress
 | Lab 9 | Comprehensive tests with a C++ testing framework | 40 | |
 | Lab 10 | Find and fix race conditions with ThreadSanitizer | 40 | |
 | Lab 11 | Profile lambda overhead | 40 | |
-| Lab 12 | Final project demo and code review | 40 | |
+| Lab 12 | Final project demo and code review · Mon 19 Apr (finals week) | 40 | |
 
 ---
 
@@ -86,7 +86,7 @@ status: in-progress
 
 | Item | Topic | Possible | Earned |
 |---|---|---|---|
-| Midterm 1 | Weeks 0–4: classes, operators, templates, STL, polymorphism | 100 | |
+| Midterm 1 | Weeks 0–4: classes, operators, templates, STL, polymorphism · sat Tue 2 Mar (Week 6) | 100 | |
 
 ---
 
@@ -94,7 +94,7 @@ status: in-progress
 
 | Item | Topic | Possible | Earned |
 |---|---|---|---|
-| Midterm 2 | Weeks 5–9: RAII, data structures, design patterns, exceptions | 100 | |
+| Midterm 2 | Weeks 5–9: RAII, data structures, design patterns, exceptions · sat Tue 30 Mar | 100 | |
 
 ---
 
@@ -102,7 +102,7 @@ status: in-progress
 
 | Item | Topic | Possible | Earned |
 |---|---|---|---|
-| Final Exam | Comprehensive, Weeks 0–12 | 180 | |
+| Final Exam | Comprehensive, Weeks 0–12 · Thu 22 Apr | 180 | |
 
 ---
 
@@ -110,7 +110,7 @@ status: in-progress
 
 | Item | Topic | Possible | Earned |
 |---|---|---|---|
-| Project 1 | Assigned Week 6, due Week 9 | 100 | |
+| Project 1 | A container library · assigned Tue 2 Mar, due Fri 26 Mar | 100 | |
 
 ---
 
@@ -118,7 +118,7 @@ status: in-progress
 
 | Item | Topic | Possible | Earned |
 |---|---|---|---|
-| Project 2 | Data structure library with tests, due Week 12 | 100 | |
+| Project 2 | Data structure library with tests · assigned Tue 6 Apr, due Fri 16 Apr | 100 | |
 
 ---
 

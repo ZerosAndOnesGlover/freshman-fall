@@ -1,6 +1,8 @@
 # PROG 102 · Quiz 8
 ## Week 8 · Tuesday, start of lecture · 15 minutes · 20 points
 
+**Date:** Tuesday 16 March 2027 · 10:00–10:15 (start of L25) · Week 8
+
 **Covers Week 7** — Lectures 22–24: what patterns are, creational patterns, structural patterns.
 
 **Closed book. No devices.** Answer on this sheet.

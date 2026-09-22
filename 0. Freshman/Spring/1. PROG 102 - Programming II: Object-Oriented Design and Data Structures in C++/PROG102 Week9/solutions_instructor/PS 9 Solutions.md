@@ -16,28 +16,13 @@ is what Project 1 Part 3.3 needed.
 
 ---
 
-## Part A — What Exceptions Cost (20)
+> **Revised 2026-09-22.** Removed A1–A2 (timing exceptions — Lecture 28 §5's measurement; A3 now reads from it) and Part B
+> (the `Fragile` sweep — Lab 9 Parts C–D do it, two days before this set is due). C and D are B and C;
+> B2 counts copies instead of "peak memory" (never taught). Re-weighted to keep 100.
 
-### A1 (8)
+## Part A — What Exceptions Cost (12)
 
-| | ns/call | text |
-| --- | --- | --- |
-| with exceptions | 1.53–1.66 | **240 bytes** |
-| `-fno-exceptions` | 1.49–1.60 | **88 bytes** |
-
-*Marking: 5 the timings with three runs and functions in a separate TU, 3 the `size` output for both.*
-
-**A student whose timings differ by more than ~10% should check that their function was not inlined** —
-the whole point of the separate TU. **A student reporting 0.00 ms has had the loop deleted** (Week 5
-§L16 §5.4) and should be sent back.
-
-### A2 (4)
-
-**~1.68 µs per throw**, roughly **1000×** a normal call.
-
-*Marking: 3 the measurement, 1 expressing it as a multiple **of their own measured call cost**.*
-
-### A3 (8)
+### A1 (12)
 
 **(a)** **Supported:** the time on the happy path is indistinguishable. **Refuted:** code size is 2.7×.
 "Zero-cost" means zero *time* cost when nothing throws, and the slogan drops the qualifier.
@@ -56,53 +41,9 @@ answers the question its design encodes, not the question you asked. "It wasn't 
 
 ---
 
-## Part B — Determining Your Guarantee (30)
+## Part B — Upgrading to Strong (38)
 
-### B1 (8)
-
-`Fragile` with a static `throw_on_copy` counter and a static live count.
-
-*Marking: 5 the implementation, 3 the verification test. **A student who did not verify `Fragile`
-itself before using it** has built their whole Part B on an untested instrument — deduct 3 and say so.*
-
-### B2 (14)
-
-Reference shape, for a container of 2 receiving 4 elements:
-
-| n | before | after | leaked | guarantee at n |
-| --- | --- | --- | --- | --- |
-| 1 | 2 | 2 | no | strong |
-| 2 | 2 | 3 | no | basic |
-| 3 | 2 | 4 | no | basic |
-| … | | | | |
-
-*Marking: 14 — roughly 4 per operation plus 2 for sweeping rather than testing a single failure point.*
-
-**The sweep is the assessed method.** A student who armed the failure only at *n* = 1 will report
-"strong" for an operation that is basic, and that is exactly the error B3(a) exists to catch. **Deduct
-6 if there is no sweep**, regardless of how good the rest is.
-
-**Leak checking is required.** Basic requires *no leaks*, and a student who never checked has not
-demonstrated basic — they have demonstrated "did not crash".
-
-### B3 (8)
-
-**(a) (4)** The guarantee is the **weakest observed**. An operation strong at *n*=1 and basic at *n*=3
-**provides basic.**
-
-**(b) (4)** Any honest report. **Award full marks for a wrong prior honestly reported** — that is the
-point of asking. For a student right on all three, the answer to "how would you be sure rather than
-lucky" is: test more operations, more element types, and failure points in allocation as well as in
-copying.
-
-*Marking: 4 + 4. **A student reporting the best case as their guarantee gets 0 of the first 4**, even
-if their table is perfect — the table is the evidence and the conclusion contradicts it.*
-
----
-
-## Part C — Upgrading to Strong (26)
-
-### C1 (10)
+### B1 (16)
 
 Copy, do the risky work on the copy, `swap` to commit. The re-run sweep must show **strong at every
 n**.
@@ -110,7 +51,7 @@ n**.
 *Marking: 6 the implementation, 4 the re-run sweep. **A "strong" version whose commit step can throw is
 not strong** — check their `swap` is `noexcept`.*
 
-### C2 (8)
+### B2 (10)
 
 Time and peak memory before and after. **The expected shape: roughly $O(n)$ time and $O(n)$ additional
 memory for an operation that was $O(k)$.**
@@ -118,7 +59,7 @@ memory for an operation that was $O(k)$.**
 *Marking: 8 for both metrics measured. Accept any reasonable memory measurement — a counted allocator,
 `/usr/bin/time -v`, or an instrumented `operator new`.*
 
-### C3 (8)
+### B3 (12)
 
 **(a) (4)** `push_back` appends one element at the end; rolling back means removing it, which is cheap
 and needs no copy. Middle `insert` shifts every subsequent element; rolling that back would require
@@ -131,9 +72,9 @@ justification must reference their C2 numbers.**
 
 ---
 
-## Part D — `noexcept` and Contracts (24)
+## Part C — `noexcept` and Contracts (50)
 
-### D1 (6)
+### C1 (10)
 
 ```
 warning: 'throw' will always call 'terminate' [-Wterminate]
@@ -146,7 +87,7 @@ Aborted (core dumped)          exit 134
 *Marking: 3 the warning and runtime output, 3 for confirming the catch was skipped **and explaining
 that there is no unwinding**.*
 
-### D2 (6)
+### C2 (12)
 
 Without `noexcept`, `vector` growth **copies**; with it, it **moves**.
 
@@ -155,7 +96,7 @@ matters most — and nothing warns.
 
 *Marking: 4 the counts both ways, 2 the sentence.*
 
-### D3 (6)
+### C3 (12)
 
 1. **Assertion** — a private helper's index is a bug; no correct caller can trigger it.
 2. **Exception** — a file may legitimately be malformed; the world, not the program.
@@ -167,7 +108,7 @@ matters most — and nothing warns.
 *Marking: 1.2 each. **Item 3 is deliberately ambiguous**; a student who notices and argues both ways
 should get full marks for it.*
 
-### D4 (6)
+### C4 (16)
 
 Every public function with precondition, postcondition and guarantee.
 
@@ -185,29 +126,26 @@ presumes there is one, and there always is.*
 
 | Part | Points |
 | --- | --- |
-| A | 20 |
-| B | 30 |
-| C | 26 |
-| D | 24 |
+| A | 12 |
+| B | 38 |
+| C | 50 |
 | **Total** | **100** |
 
 ---
 
 ## What to Watch For
 
-1. **No sweep in B2.** The single most common failure, and it produces a wrong answer that looks right.
-2. **Reporting the best-case guarantee** in B3(a), contradicting their own table.
-3. **No leak check** — "did not crash" is not the basic guarantee.
-4. **A throwing commit step** in C1.
-5. **"It wasn't fair"** as the whole of A3(c).
-6. **"I could state every contract"** in D4.
+1. **No full re-sweep in B1** — strong at the first *n* is not strong.
+2. **A throwing commit step** in B1.
+3. **"It wasn't fair"** as the whole of A1(c).
+4. **"I could state every contract"** in C4.
 
 ---
 
 ## Feeding Into Week 10 and Midterm 2
 
 **Midterm 2 covers Weeks 5–9** and this problem set is the best available revision for its last third.
-**Say so on Monday.**
+**Say so on Tuesday**, before the 18:00 paper.
 
 For Week 10, the connection to draw is uncomfortable and worth stating: **everything in this problem
 set assumed one thread.** An exception escaping a thread's function calls `std::terminate` immediately

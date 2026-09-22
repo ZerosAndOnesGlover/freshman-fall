@@ -3,7 +3,7 @@
 
 **Credits:** 4 (3 lecture + 1 lab) · **Prerequisites:** PROG 101 (C), CS 101
 **Assessment for this course (overall):** Labs 20%, Problem Sets 30%, Midterms 25%, Final 15%, Projects 10%
-**This week's deliverables:** PS 10, Lab 10, Quiz 10 (Monday, covers Week 9) · **MIDTERM 2 (Weeks 5–9)**
+**This week's deliverables:** PS 10 (released Fri 2 Apr 10:00, due **Fri 9 Apr 17:00**), Lab 10 (**Mon 5 Apr**, 15:00), Quiz 10 (**Tue 30 Mar**, 10:00, covers Week 9) · **MIDTERM 2 Tue 30 Mar, 18:00 (Weeks 5–9)**
 
 ---
 
@@ -62,7 +62,7 @@ By the end of Week 10, you should be able to:
 | [[L31 Threads and Races]] | `std::thread`, the lost update, and why `-O2` hides it |
 | [[L32 Mutexes Deadlock and Condition Variables]] | Mutual exclusion, deadlock, and waiting properly |
 | [[L33 Atomics and Thread-Safe Data Structures]] | `std::atomic`, the bounded queue, and what sharing costs |
-| [[PS 10 A Thread-Safe Bounded Queue]] | Due Friday of Week 11 |
+| [[PS 10 A Thread-Safe Bounded Queue]] | Due Fri 9 Apr 17:00 |
 | [[PROG102 Week10/assignments/QUIZ 10 Week 10 Monday\|QUIZ 10 Week 10 Monday]] | 15 minutes, covers Week 9 |
 | [[LAB 10 Finding Races with ThreadSanitizer]] | Five races, found and fixed |
 | [[PROG102 Week10/resources/MIDTERM 2 Revision Guide\|MIDTERM 2 Revision Guide]] | **Weeks 5–9, sat this week** |

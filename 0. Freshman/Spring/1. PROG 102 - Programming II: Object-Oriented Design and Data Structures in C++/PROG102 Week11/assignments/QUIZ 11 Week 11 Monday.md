@@ -1,6 +1,8 @@
 # PROG 102 · Quiz 11
 ## Week 11 · Tuesday, start of lecture · 15 minutes · 20 points
 
+**Date:** Tuesday 6 April 2027 · 10:00–10:15 (start of L34) · Week 11
+
 **Covers Week 10** — Lectures 31–33: threads, races, mutexes, deadlock, condition variables, atomics.
 
 **Closed book. No devices.** Answer on this sheet.

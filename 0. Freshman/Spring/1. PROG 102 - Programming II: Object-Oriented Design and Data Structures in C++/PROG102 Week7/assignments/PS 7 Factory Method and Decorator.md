@@ -1,8 +1,19 @@
 # PROG 102 · Problem Set 7
 ## Factory Method and Decorator
 
-**Week 7 · Released Friday Week 7 · Due Friday Week 8, 17:00 · 100 points**
-**Covers:** Lectures 22–24
+**Released:** Friday 12 March 2027, 10:00 · Week 7 (after Thursday's L24)
+**Due:** Friday 19 March 2027, 17:00 · Week 8 — late penalty from 17:01
+**Points:** 100 · counts toward the Problem Sets component (30%, lowest one dropped)
+**Expected time:** about 3–4 hours
+
+## What this problem set uses
+
+Weeks 0–7: inheritance and virtual functions (Week 4), `unique_ptr`, `make_unique` and `std::move`
+(Week 5), and this week's patterns — what they are (L22), Singleton, Factory Method and registries
+(L23), Decorator and Adapter (L24). Function pointers are PROG 101 Week 11.
+
+**Not needed and not expected:** `std::function` and lambdas with capture (Week 11), threads (Week 10).
+No timing is asked for.
 
 > **Project 1 is due Week 9.** This problem set is deliberately lighter than PS 6. **Use the time you
 > save on Project 1**, not on this.
@@ -22,7 +33,7 @@ Name collaborators and state any generative-tool use.
 
 ---
 
-## Part A — Factory Method (24 pts)
+## Part A — Factory Method (26 pts)
 
 **A1.** *(8)* A `Shape` hierarchy with at least three concrete types, and:
 
@@ -45,73 +56,51 @@ smell.
 **Argue that it is acceptable here**, in three sentences. Your argument must distinguish this case from
 the one L15 objected to.
 
-**A4.** *(4)* Replace the `if`-chain with a **registry** — a `std::map` from name to a creating
-function — so that adding a shape does not modify `make_shape` at all.
-
-*(You may use `std::function`; it is Week 11 material and using it here is fine.)*
+**A4.** *(6)* Replace the `if`-chain with a **registry** — a `std::map` from name to a creating
+function — so that adding a shape does not modify `make_shape` at all. Use a **function pointer** as
+the map's value, as in Lecture 23 §3.2.
 
 **Which version would you ship, and why?** One sentence. **Both answers can earn full marks.**
 
 ---
 
-## Part B — Decorator (34 pts)
+## Part B — Decorator (30 pts)
 
-**B1.** *(10)* An interface with at least one concrete implementation and **three** decorators over it,
+**B1.** *(12)* An interface with at least one concrete implementation and **three** decorators over it,
 each adding an observable transformation.
 
 Compose them at run time with `unique_ptr` and `std::move`. Print the composition **and** the result.
 
-**B2.** *(6)* Compose and print **all eight** combinations of your three decorators.
+**B2.** *(8)* Compose and print **all eight** combinations of your three decorators.
 
 Then **write out the class names the subclassing version would have needed**, and tabulate
 $2^n$ against $n$ for n = 1, 3, 5, 8, 10.
 
-**B3.** *(10)* Measure the cost. Build chains of depth 0, 1, 2, 4 and 8 over an interface whose base
-operation is trivial, and time at least 10⁷ calls.
+**B3.** *(10)* Answer both:
 
-Report **per-call time at each depth and the marginal cost per layer.**
-
-Then compare your marginal figure with Week 4's virtual-call measurement (~2 ns). **They will differ.
-Explain why**, referring to L14 §6.
-
-**B4.** *(8)* Answer both:
-
-- **(a)** *(4)* Decorators wrap at run time. **Give one concrete thing this lets you do** that the
+- **(a)** *(5)* Decorators wrap at run time. **Give one concrete thing this lets you do** that the
   subclassing version cannot, and show the code.
-- **(b)** *(4)* Give **two** concrete disadvantages of a deep decorator chain. At least one must be
+- **(b)** *(5)* Give **two** concrete disadvantages of a deep decorator chain. At least one must be
   about debugging rather than performance.
 
 ---
 
 ## Part C — Singleton, and Whether to Use It (22 pts)
 
-**C1.** *(6)* Implement Meyers' Singleton with a constructor that prints. Call `instance()` five times
+**C1.** *(10)* Implement Meyers' Singleton with a constructor that prints. Call `instance()` five times
 and show it constructs once.
 
 Then **defeat it**: remove the deleted copy constructor and show how a second instance can be created.
 
-**C2.** *(8)* Race at least 16 threads to `instance()`, with a constructor that sleeps 50 ms.
+**C2.** *(12)* Take a small program that uses a singleton `Config` and rewrite it to pass a `Config&`.
 
-Report the construction count. Then find the guard in the generated assembly:
-
-```
-g++ -std=c++17 -O2 -S -masm=intel yourfile.cpp -o out.s
-grep __cxa_guard out.s
-```
-
-**Report what you find and what it means.**
-
-*(If ThreadSanitizer will not start, see Lab 0's toolchain note — `setarch $(uname -m) -R ./prog`.)*
-
-**C3.** *(8)* Take a small program that uses a singleton `Config` and rewrite it to pass a `Config&`.
-
-- **(a)** *(4)* **Which function signatures changed?** List them.
-- **(b)** *(4)* In three sentences: what did the signatures reveal that the singleton hid, and what did
+- **(a)** *(6)* **Which function signatures changed?** List them.
+- **(b)** *(6)* In three sentences: what did the signatures reveal that the singleton hid, and what did
   you give up?
 
 ---
 
-## Part D — Judgement (20 pts)
+## Part D — Judgement (22 pts)
 
 This part is marked as writing. `patterns.md`.
 
@@ -120,12 +109,12 @@ This part is marked as writing. `patterns.md`.
 
 For each: name the pattern, name the class, and say **what varies** in one sentence.
 
-**D2.** *(6)* Take any class from your PS 4, PS 6 or Project 1 code. **Identify one place where a
+**D2.** *(7)* Take any class from your PS 4, PS 6 or Project 1 code. **Identify one place where a
 pattern from this week would genuinely help**, and one where applying a pattern would make it worse.
 
 Both halves required. Be specific — name the pattern and the class.
 
-**D3.** *(6)* A colleague proposes an `IShapeFactory` abstract interface for a program with exactly one
+**D3.** *(7)* A colleague proposes an `IShapeFactory` abstract interface for a program with exactly one
 shape type, which has not changed in two years.
 
 Write the **three-sentence objection**, then the **strongest three-sentence case in favour**.
@@ -139,10 +128,10 @@ skill being assessed.
 
 | Part | Points | Focus |
 | --- | --- | --- |
-| A | 24 | Factory Method, and when a type-switch is acceptable |
-| B | 34 | Decorator, measured and argued |
+| A | 26 | Factory Method, and when a type-switch is acceptable |
+| B | 30 | Decorator, composed and argued |
 | C | 22 | Singleton, its guarantee, and its cost |
-| D | 20 | Judgement — including arguing against yourself |
+| D | 22 | Judgement — including arguing against yourself |
 | **Total** | **100** | |
 
 ---
@@ -151,10 +140,9 @@ skill being assessed.
 
 1. Clean build, sanitizer-clean, **no raw `new`/`delete`**.
 2. B2 includes both the eight compositions and the $2^n$ table.
-3. B3 reports the **marginal** cost per layer, not just totals.
 4. C2 includes the `__cxa_guard` finding.
 5. D3's case *in favour* is a real argument, not a straw man.
-6. Collaborators named; generative-tool use stated.
+5. Collaborators named; generative-tool use stated.
 
 ---
 
