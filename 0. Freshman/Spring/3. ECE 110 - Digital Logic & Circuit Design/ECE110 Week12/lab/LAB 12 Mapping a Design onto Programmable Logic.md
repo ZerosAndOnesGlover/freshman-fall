@@ -2,13 +2,15 @@
 ## Lab 12: Mapping a Design onto Programmable Logic
 ### Week 12 Lab Session
 
+**Date:** Friday 16 April 2027 · 14:00–15:50 · Lab section (Week 12) — after both of Week 12's lectures
+
 ---
 
-**Duration:** 2 hours (Friday 14:00–15:50, MEC 110)
+**Duration:** 2 hours (MEC 110)
 **Format:** Pairs. **Both partners submit their own report.**
 **Graded on:** completion + correctness — **100 points**
 **Tools:** Python, Icarus Verilog
-**Note:** the final exam is this week — **this lab is shorter than usual by design.**
+**Note:** the final exam is Monday 19 April — **this lab is shorter than usual by design.**
 
 ---
 

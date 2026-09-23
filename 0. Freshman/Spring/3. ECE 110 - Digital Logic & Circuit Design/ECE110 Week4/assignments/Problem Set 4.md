@@ -1,7 +1,8 @@
 # ECE 110 · Digital Logic
 ## Problem Set 4
 ### Topic: Karnaugh Maps, Minimization, Don't-Cares
-**Released:** Thursday, Week 4 · **Due:** Thursday, Week 5 at the start of class
+**Released:** Thursday 18 February 2027, 14:30 · Week 4 (after Thursday's Lecture 2)
+**Due:** Thursday 25 February 2027, 13:00 (start of class) · Week 5
 
 ---
 

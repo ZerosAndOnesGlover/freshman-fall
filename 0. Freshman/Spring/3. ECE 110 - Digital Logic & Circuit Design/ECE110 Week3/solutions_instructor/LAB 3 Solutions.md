@@ -4,9 +4,13 @@
 
 ---
 
-**Total: 100 points.** All figures produced by running the lab in Python and in Icarus Verilog 12.0.
+**Total: 100 points.** All figures produced by running the lab in Python.
 
 ---
+
+> **Revised 2026-09-23.** Verilog is taught in Week 10; this lab's Verilog part is now a Python
+> simulation of the same circuit, and the expected counts are unchanged. The reference code below was
+> run for this revision (Python 3.14).
 
 ## Part A — One Full Adder (25 pts)
 
@@ -60,23 +64,30 @@ $$\frac{4}{512} = 0.0078 = \mathbf{0.78\%}$$
 
 ### C1 (12)
 
-**Must be structural** — `xor`/`and`/`or` primitive instances, hierarchically composed. **A behavioural `assign {cout,sum} = a+b+cin;` earns 3 of 12**: it tests Verilog's adder, not the student's.
+**Must be structural** — gate functions composed into half adders, full adders and the chain. **An adder
+that returns `a + b + cin` internally earns 3 of 12**: it tests Python's adder, not the student's.
+
+```python
+def XOR(a, b): return a ^ b
+def AND(a, b): return a & b
+def OR(a, b):  return a | b
+def half(a, b):     return XOR(a, b), AND(a, b)
+def full(a, b, c):
+    s1, c1 = half(a, b); s, c2 = half(s1, c); return s, OR(c1, c2)
+def add4(a, b, cin):                 # a, b: lists of 4 bits, least significant first
+    s, c = [], cin
+    for i in range(4):
+        si, c = full(a[i], b[i], c); s.append(si)
+    return s, c
+```
 
 ### C2 (8)
 
-$$\textbf{512 cases, 0 failures.}$$
+$$\textbf{512 cases, 0 failures}$$ comparing `cout*16 + sum` against `a + b + cin`. *(Run 2026-09-23.)*
 
-*(Measured, Icarus Verilog 12.0.)*
-
-> ⚠ **Both traps in the lab text are real; we hit both.**
->
-> **The 1-bit `reg` loop counter hangs the simulation** with no error — incrementing 1 wraps to 0, so
-> `a <= 1` never goes false. Fix: `integer i, j`, assign `a = i[0]`.
->
-> **The width trap is worse because it produces a confident wrong answer.** Comparing a 4-bit `sum`
-> against a full-width `a - b` reported **240 failures out of 512** on a circuit that was entirely
-> correct. Python, using masked comparison, reported 0 on the same design. **Two tools disagreed and
-> the testbench was the thing that was wrong** — not the circuit, and not the other tool.
+> ⚠ **The width trap in the lab text is real.** Comparing the 4-bit `sum` alone against the unmasked
+> `a + b + cin` reports **256 failures out of 512** — every case whose total reaches 16 — on a circuit
+> that is entirely correct. **The test is what is wrong**, not the circuit.
 >
 > **This is the single most valuable thing in the lab.** Expect it in submissions, and when a student
 > reports mass failures, have them check the comparison width *before* they rewire anything.
@@ -178,12 +189,11 @@ $$\frac{2.58\text{ ns}}{0.333\text{ ns}} = \mathbf{7.7 \text{ clock periods}}$$
 
 Then the real lesson:
 
-> **While preparing this lab, the Verilog testbench reported 240 failures out of 512 on a circuit
-> that was completely correct.** The comparison was 4 bits wide on one side and unbounded on the
-> other. **Python, checking the same design, reported zero.**
+> **An unmasked comparison reports 256 failures out of 512 on this circuit, which is completely
+> correct.** The comparison was 4 bits wide on one side and unbounded on the other.
 >
-> **Two tools disagreed, and the answer was that the *test* was broken** — not the design, and not
-> the other tool. **When your checker fires, suspect the checker first.**
+> **The answer was that the *test* was broken** — not the design. **When your checker fires, suspect
+> the checker first.**
 
 Then set up Week 6:
 

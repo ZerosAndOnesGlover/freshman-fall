@@ -8,6 +8,10 @@
 
 ---
 
+> **Revised 2026-09-23.** Verilog is taught in Week 10; this lab's Verilog part is now a Python
+> simulation of the same circuit, and the expected counts are unchanged. The reference code below was
+> run for this revision (Python 3.14).
+
 ## Part A — The Python Checker (25 pts)
 
 ### A1 (10)
@@ -16,7 +20,7 @@
 
 ### A2 (10)
 
-$$\textbf{15 identities checked, 0 failures.}$$
+$$\textbf{16 identities checked, 0 failures.}$$
 
 *(Verified.)*
 
@@ -34,36 +38,40 @@ Left side $\overline{1\cdot0} = \overline0 = 1$; right side $\overline1\cdot\ove
 
 ---
 
-## Part B — The Verilog Checker (30 pts)
+## Part B — A Second, Independent Checker (30 pts)
 
 ### B1 (15)
 
-Reference run over all $2^3$ assignments of `a`,`b`,`c`, covering identity, null, idempotence, involution, complement, the four XOR constants, commutativity, both De Morgan laws, both absorption laws, the XOR definition, associativity, both distributive laws and consensus:
+Reference, all sixteen A2 identities on packed truth-table columns:
 
-```
-  Verilog: ALL Boolean identities hold, exhaustively.
+```python
+A, B, C = 0b11110000, 0b11001100, 0b10101010
+M = 0xFF
+def N(x): return ~x & M
+ids = [(A|0, A), (A&M, A), (A|M, M), (A&0, 0), (A|A, A), (A&A, A), (A|N(A), M), (A&N(A), 0),
+       (N(N(A)), A), (A|(A&B), A), (A&(A|B), A), (A&(B|C), (A&B)|(A&C)), (A|(B&C), (A|B)&(A|C)),
+       (N(A&B), N(A)|N(B)), (N(A|B), N(A)&N(B)), ((A&B)|(N(A)&C)|(B&C), (A&B)|(N(A)&C))]
+print(len(ids), "identities,", sum(l != r for l, r in ids), "failures")   # 16 identities, 0 failures
 ```
 
 $$\textbf{0 failures.}$$
 
-*(Verified with Icarus Verilog 12.0.)*
-
-*Marking: 10 working module, 5 for the failure count printed.*
-
-> **The `!==` point is worth a minute of the debrief.** With `!=`, a comparison involving `x`
-> evaluates to `x`, which is falsy in the `if`, so a genuinely broken identity can pass silently.
-> `!==` compares four-state values literally. **Week 10's uninitialised-register bugs are the same
-> hazard**, and students who meet it here recognise it there.
+*Marking: 10 working checker, 5 for the failure count printed. **Forgetting the `& 0xFF` on NOT**
+makes every identity with a complement fail — the commonest error, and a good one, because B2 then
+catches it.*
 
 ### B2 (8)
 
-**Both tools report 0 failures on the same identity set.** *(Verified: 15/15 in Python, 0 failures in Verilog.)*
+**Both checkers report 0 failures on the same 16 identities.** *(Verified.)*
 
-*Marking: 4 both counts, 4 for stating they agree. **If a student's tools disagreed and they diagnosed it, award full marks** — that is the lab working as intended.*
+*Marking: 4 both counts, 4 for stating they agree. **If a student's checkers disagreed and they
+diagnosed it, award full marks** — that is the lab working as intended.*
 
 ### B3 (7)
 
-Breaking the distributive law in the Verilog copy — writing `(a&b)|(a|c)` for `(a&b)|(a&c)` — produces:
+Breaking the distributive law in either checker — writing `(A&B)|(A|C)` for `(A&B)|(A&C)` — makes it fail on
+three rows (the row-by-row checker reports them individually; the integer checker shows
+`0b...` values that differ in three bits):
 
 ```
   FAIL distributive * over + at a=0 b=0 c=1  (0 vs 1)

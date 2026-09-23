@@ -1,7 +1,8 @@
 # ECE 110 · Digital Logic
 ## Problem Set 6
 ### Topic: Arithmetic Logic Unit Design
-**Released:** Thursday, Week 6 · **Due:** Thursday, Week 7 at the start of class
+**Released:** Thursday 4 March 2027, 14:30 · Week 6 (after Thursday's Lecture 2)
+**Due:** Thursday 11 March 2027, 13:00 (start of class) · Week 7
 
 ---
 

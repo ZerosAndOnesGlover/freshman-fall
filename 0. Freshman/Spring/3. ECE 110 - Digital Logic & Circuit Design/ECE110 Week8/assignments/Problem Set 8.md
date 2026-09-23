@@ -1,7 +1,8 @@
 # ECE 110 · Digital Logic
 ## Problem Set 8
 ### Topic: Registers, Counters, and Shift Registers
-**Released:** Thursday, Week 8 · **Due:** Thursday, Week 9 at the start of class
+**Released:** Thursday 18 March 2027, 14:30 · Week 8 (after Thursday's Lecture 2)
+**Due:** Thursday 25 March 2027, 13:00 (start of class) · Week 9
 
 ---
 

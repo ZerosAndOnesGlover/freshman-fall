@@ -1,7 +1,8 @@
 # ECE 110 · Digital Logic
 ## Problem Set 11
 ### Topic: Memory Circuits — SRAM, DRAM, ROM
-**Released:** Thursday, Week 11 · **Due:** Thursday, Week 12 at the start of class
+**Released:** Thursday 8 April 2027, 14:30 · Week 11 (after Thursday's Lecture 2)
+**Due:** Thursday 15 April 2027, 13:00 (start of class) · Week 12
 
 ---
 

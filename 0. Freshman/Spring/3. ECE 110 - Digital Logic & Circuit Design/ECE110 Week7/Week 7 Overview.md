@@ -6,7 +6,7 @@
 
 **Topic:** how a circuit remembers
 **Reading:** Harris & Harris §3.2 | Mano & Ciletti §5.1–5.3
-**Assessment this week:** PS 7, Lab 7, **Quiz 6** *(Wednesday — covers Week 6, ungraded)*
+**Assessment this week:** PS 7 (released Thu 11 Mar 14:30, due Thu 18 Mar 13:00), Lab 7 (**Fri 12 Mar**, 14:00), **Quiz 6** *(Wed 10 Mar, 13:00 — covers Week 6, ungraded)*
 
 ---
 
@@ -103,7 +103,7 @@ $$D: Q^+ = D \qquad JK: Q^+ = J\overline Q + \overline KQ \qquad T: Q^+ = T\oplu
 
 ## This Week's Work
 
-1. **Quiz 6** — Wednesday, covers Week 6. **Ungraded.**
+1. **Quiz 6** — Wed 10 Mar, covers Week 6. **Ungraded.**
 2. **Lab 7** — build a latch from gates, observe the forbidden state, then build a flip-flop.
 3. **PS 7** — characteristic and excitation tables, timing.
 

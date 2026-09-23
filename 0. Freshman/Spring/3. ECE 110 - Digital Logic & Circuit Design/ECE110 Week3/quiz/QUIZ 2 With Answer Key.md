@@ -2,6 +2,8 @@
 ## Quiz 2 — With Answer Key
 ### Week 3 · Wednesday · **Covers Week 2**
 
+**Date:** Wednesday 10 February 2027 · 13:00–13:10 (start of Lecture 1) · Week 3 · ungraded
+
 ---
 
 **Time:** 10 minutes, start of Wednesday's lecture

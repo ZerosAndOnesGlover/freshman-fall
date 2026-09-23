@@ -7,7 +7,7 @@
 ---
 
 **Reading:** Harris & Harris §5.2.1 | Mano & Ciletti §4.5
-**PS 6** released today, due Thursday of Week 7. **The MIDTERM is this week.**
+**PS 6** released today, due Thursday 11 March. **The MIDTERM is this evening, 18:00.**
 
 ---
 
@@ -122,4 +122,4 @@ $$P_{\text{group}} = P_3P_2P_1P_0 \qquad G_{\text{group}} = G_3+P_3G_2+P_3P_2G_1
 
 ---
 
-*Next: Friday — Lab 6, build the ALU. Then the midterm.*
+*Next: the midterm this evening, then Friday's Lab 6 — build the ALU.*

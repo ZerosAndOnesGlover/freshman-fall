@@ -1,7 +1,8 @@
 # ECE 110 · Digital Logic
 ## Problem Set 3
 ### Topic: Half Adders, Full Adders, Ripple-Carry Adders, Delay
-**Released:** Thursday, Week 3 · **Due:** Thursday, Week 4 at the start of class
+**Released:** Thursday 11 February 2027, 14:30 · Week 3 (after Thursday's Lecture 2)
+**Due:** Thursday 18 February 2027, 13:00 (start of class) · Week 4
 
 ---
 

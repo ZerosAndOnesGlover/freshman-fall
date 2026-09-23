@@ -2,9 +2,11 @@
 ## Lab 11: Memory — Timing, Refresh, and a ROM
 ### Week 11 Lab Session
 
+**Date:** Friday 9 April 2027 · 14:00–15:50 · Lab section (Week 11) — after both of Week 11's lectures
+
 ---
 
-**Duration:** 2 hours (Friday 14:00–15:50, MEC 110)
+**Duration:** 2 hours (MEC 110)
 **Format:** Pairs. **Both partners submit their own report.**
 **Graded on:** completion + correctness — **100 points**
 **Tools:** Icarus Verilog, Python. **74HC138 + diode/resistor ROM matrix** for Part D.

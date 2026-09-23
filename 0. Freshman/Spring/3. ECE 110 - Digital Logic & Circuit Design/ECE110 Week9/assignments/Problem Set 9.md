@@ -1,7 +1,8 @@
 # ECE 110 · Digital Logic
 ## Problem Set 9
 ### Topic: Finite State Machines — Mealy and Moore
-**Released:** Thursday, Week 9 · **Due:** Thursday, Week 10 at the start of class
+**Released:** Thursday 25 March 2027, 14:30 · Week 9 (after Thursday's Lecture 2)
+**Due:** Thursday 1 April 2027, 13:00 (start of class) · Week 10
 
 ---
 

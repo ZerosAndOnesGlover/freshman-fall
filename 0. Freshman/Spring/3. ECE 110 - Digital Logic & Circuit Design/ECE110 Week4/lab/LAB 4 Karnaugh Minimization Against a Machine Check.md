@@ -2,12 +2,15 @@
 ## Lab 4: Karnaugh Minimization Against a Machine Check
 ### Week 4 Lab Session
 
+**Date:** Friday 19 February 2027 · 14:00–15:50 · Lab section (Week 4) — after both of Week 4's lectures
+
 ---
 
-**Duration:** 2 hours (Friday 14:00–15:50, MEC 110)
+**Duration:** 2 hours (MEC 110)
 **Format:** Pairs. **Both partners submit their own report.**
 **Graded on:** completion + correctness — **100 points**
-**Tools:** Python 3 with `sympy` (`SOPform`, `POSform`), Icarus Verilog. Breadboard for Part D.
+**Tools:** Python 3 with `sympy` — only the two calls shown in Part B, `SOPform` and `POSform`, which
+return a minimal sum-of-products or product-of-sums for a list of variables and minterms. Breadboard for Part D.
 
 ---
 
@@ -81,7 +84,8 @@ Let $F = \sum m(0,1,2,5,6,7,8,9,10,14)$.
 
 ## Part D — Does Smaller Actually Work? (25 pts)
 
-**D1 (12 pts).** Take A5's canonical form and your minimal form. Write **both** in Verilog and prove by exhaustive testbench that they agree on all 16 inputs.
+**D1 (12 pts).** Take A5's canonical form and your minimal form. Write **both** as Python functions of
+four bits and prove, by checking all 16 inputs, that they agree.
 
 **Report the failure count.**
 

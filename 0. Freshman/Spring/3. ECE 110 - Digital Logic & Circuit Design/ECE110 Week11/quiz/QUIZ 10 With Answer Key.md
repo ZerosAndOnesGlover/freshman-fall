@@ -2,6 +2,8 @@
 ## Quiz 10 — With Answer Key
 ### Week 11 · Wednesday · **Covers Week 10**
 
+**Date:** Wednesday 7 April 2027 · 13:00–13:10 (start of Lecture 1) · Week 11 · ungraded
+
 ---
 
 **Time:** 10 minutes · **Closed book** · **UNGRADED**

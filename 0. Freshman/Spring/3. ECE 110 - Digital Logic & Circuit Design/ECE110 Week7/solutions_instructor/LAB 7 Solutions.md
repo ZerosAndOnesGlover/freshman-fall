@@ -8,6 +8,10 @@
 
 ---
 
+> **Revised 2026-09-23.** Verilog is taught in Week 10; this lab's Verilog part is now a Python
+> simulation of the same circuit, and the expected counts are unchanged. The reference code below was
+> run for this revision (Python 3.14).
+
 ## Part A — The SR Latch (30 pts)
 
 ### A1 (8), A2 (7)
@@ -92,15 +96,23 @@ $$\textbf{A T flip-flop} — \text{equivalently, a divide-by-2 counter.}$$
 
 ### D1 (10)
 
-**Must be structural** — gated D latches from `nand` primitives, master on the inverted clock. **A behavioural `always @(posedge clk) q <= d;` earns 3 of 10**: it asserts edge triggering rather than building it.
+**Must be two latches**, master on the low phase, slave on the high phase. **A function that just
+returns `d` on each "edge" earns 3 of 10**: it asserts edge triggering rather than building it.
+
+```python
+def step(clk, d, m, q):          # m = master's stored value, q = slave's (the output)
+    if clk == 0: m = d           # master transparent while the clock is low
+    else:        q = m           # slave transparent while the clock is high
+    return m, q
+```
 
 ### D2 (10)
 
 $$\textbf{12 clock edges, 0 failures.}$$
 
-**Both required checks pass:** $Q$ takes $D$'s value at each rising edge, **and** $Q$ does not move when $D$ changes while the clock is high. *(Measured, Icarus Verilog 12.0.)*
+**Both required checks pass:** $Q$ takes $D$'s value at each rising edge, **and** $Q$ does not move when $D$ changes while the clock is high. *(Run 2026-09-23: 12 edges; $D$ toggled while high each cycle.)*
 
-*Marking: 5 testbench, **5 for reporting BOTH checks.** A student who verifies only the sampling has not tested the property that distinguishes a flip-flop from a latch.*
+*Marking: 5 simulation, **5 for reporting BOTH checks.** A student who verifies only the sampling has not tested the property that distinguishes a flip-flop from a latch.*
 
 ---
 

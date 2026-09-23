@@ -2,13 +2,15 @@
 ## Lab 8: Counters and Shift Registers on the Bench
 ### Week 8 Lab Session
 
+**Date:** Friday 19 March 2027 · 14:00–15:50 · Lab section (Week 8) — after both of Week 8's lectures
+
 ---
 
-**Duration:** 2 hours (Friday 14:00–15:50, MEC 110)
+**Duration:** 2 hours (MEC 110)
 **Format:** Pairs. **Both partners submit their own report.**
 **Graded on:** completion + correctness — **100 points**
 **Parts:** 74HC74 (dual D FF) ×2, 74HC08, 74HC00, 74HC138, 74HC164 or 74HC195 (shift register), LEDs, **debounced pushbutton**, **function generator**, **oscilloscope**
-**Also:** Icarus Verilog
+**Also:** Python 3
 
 ---
 
@@ -76,7 +78,9 @@ $$T_0=1,\qquad T_1=Q_0,\qquad T_2=Q_0Q_1$$
 
 **What happens if you start it at `0000`?** Try it.
 
-**D3 (10 pts).** In Verilog, write both counters and a testbench that checks each against the expected count sequence for a full cycle. **Report failures.**
+**D3 (10 pts).** Simulate both counters in Python, one clock at a time — each flip-flop's next value
+computed from the present values, exactly as Lecture 2 derives them — and check each against the
+expected count sequence for a full cycle. **Report failures.**
 
 Then add a **mod-10** synchronous counter with detect-and-clear, and verify it produces $0\ldots9$ and repeats. **Give the detect equation you used.**
 

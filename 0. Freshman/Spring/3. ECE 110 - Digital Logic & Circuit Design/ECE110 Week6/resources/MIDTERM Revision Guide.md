@@ -8,7 +8,7 @@
 
 | | |
 |---|---|
-| **When** | Week 6 |
+| **When** | **Thursday 4 March 2027, 18:00–19:15** (Week 6, VNC 100) |
 | **Duration** | **75 minutes** |
 | **Covers** | **Weeks 0–5** — number systems through multiplexers |
 | **Not covered** | **Week 6** (the ALU and carry-lookahead). Those are on the final. |

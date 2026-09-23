@@ -2,6 +2,8 @@
 ## Quiz 11 — With Answer Key
 ### Week 12 · Wednesday · **Covers Week 11**
 
+**Date:** Wednesday 14 April 2027 · 13:00–13:10 (start of Lecture 1) · Week 12 · ungraded
+
 ---
 
 **Time:** 10 minutes · **Closed book** · **UNGRADED** · **The last quiz of the course.**

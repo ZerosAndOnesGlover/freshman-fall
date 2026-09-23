@@ -1,7 +1,8 @@
 # ECE 110 · Digital Logic
 ## Problem Set 0
 ### Topic: Number Systems, Two's Complement, and BCD
-**Released:** Thursday, Week 0 · **Due:** Thursday, Week 1 at the start of class
+**Released:** Thursday 21 January 2027, 14:30 · Week 0 (after Thursday's Lecture 2)
+**Due:** Thursday 28 January 2027, 13:00 (start of class) · Week 1
 
 ---
 

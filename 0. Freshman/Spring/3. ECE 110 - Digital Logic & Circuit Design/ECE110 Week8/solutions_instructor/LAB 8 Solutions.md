@@ -8,6 +8,10 @@
 
 ---
 
+> **Revised 2026-09-23.** Verilog is taught in Week 10; this lab's Verilog part is now a Python
+> simulation of the same circuit, and the expected counts are unchanged. The reference code below was
+> run for this revision (Python 3.14).
+
 ## Part A — Ripple Counter (25 pts)
 
 ### A1 (10)
@@ -95,7 +99,19 @@ $$\texttt{0001}\to\texttt{0010}\to\texttt{0100}\to\texttt{1000}\to\texttt{0001}\
 
 ### D3 (10)
 
-**Both counters verified over a full cycle: 0 failures.**
+**Both counters verified over a full cycle: 0 failures.** *(Run 2026-09-23.)*
+
+```python
+def sync4(q):        # q: 4 bits, least significant first; T flip-flops, T_i = AND of the lower bits
+    t = [1, q[0], q[0] & q[1], q[0] & q[1] & q[2]]
+    return [qi ^ ti for qi, ti in zip(q, t)]
+def ripple4(q):      # stage i toggles when stage i-1 falls from 1 to 0
+    n = q[:]; n[0] ^= 1
+    for i in range(1, 4):
+        if q[i-1] == 1 and n[i-1] == 0: n[i] ^= 1
+        else: break
+    return n
+```
 
 **Mod-10 with $\text{clear}=Q_3Q_1$ produces $0,1,\ldots,9,0,\ldots$** *(Verified.)*
 

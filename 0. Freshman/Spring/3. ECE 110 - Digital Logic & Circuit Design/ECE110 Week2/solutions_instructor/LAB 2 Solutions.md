@@ -4,9 +4,13 @@
 
 ---
 
-**Total: 100 points.** Simulation figures produced with Icarus Verilog 12.0; transistor figures are static-CMOS 2-input counts.
+**Total: 100 points.** Simulation figures produced by the Python reference below; transistor figures are static-CMOS 2-input counts.
 
 ---
+
+> **Revised 2026-09-23.** Verilog is taught in Week 10; this lab's Verilog part is now a Python
+> simulation of the same circuit, and the expected counts are unchanged. The reference code below was
+> run for this revision (Python 3.14).
 
 ## Part A — Gates on the Bench (25 pts)
 
@@ -37,7 +41,7 @@
 | **OR** | $\overline A\,\text{NAND}\,\overline B$ | **3** |
 | **XOR** | $(A\,\text{NAND}\,X)\,\text{NAND}\,(B\,\text{NAND}\,X)$, $X=A\,\text{NAND}\,B$ | **4** |
 
-**All four verified structurally in Verilog: 0 failures over the 4 input combinations.** *(Measured.)*
+**All four verified structurally in the Python simulation: 0 failures over the 4 input combinations.** *(Measured.)*
 
 **B4's shared sub-expression is $X = A\,\text{NAND}\,B$**, wired once and fed to both `g2` and `g3`. **A five-gate build computes it twice.**
 
@@ -88,28 +92,30 @@ Three reasons, any two for full marks:
 
 ---
 
-## Part D — The Verilog Cross-Check (25 pts)
+## Part D — The Simulation Cross-Check (25 pts)
 
 ### D1 (10)
 
-**Must use `nand` primitive instances**, not `assign`. A behavioural `assign y = a ^ b;` is not a rebuild and earns 3 of 10.
+**Must be built from a `NAND` function only**, wired as on the bench. `return a ^ b` is not a rebuild
+and earns 3 of 10.
+
+```python
+def NAND(a, b): return 1 - (a & b)
+def NOT_(a):    return NAND(a, a)
+def AND_(a, b): x = NAND(a, b); return NAND(x, x)
+def OR_(a, b):  return NAND(NAND(a, a), NAND(b, b))
+def XOR_(a, b): x = NAND(a, b); return NAND(NAND(a, x), NAND(b, x))
+```
 
 ### D2 (8)
 
 $$\textbf{0 failures over 4 input combinations, all four rebuilds.}$$
 
-*(Measured.)*
-
-> ⚠ **The hang.** A 1-bit `reg` as a loop counter never terminates: incrementing 1 wraps to 0, so
-> `a <= 1` is permanently true and the simulation runs forever with no error. **This bit us while
-> preparing the lab.** Expect it in submissions; the fix is `integer i, j` with `a = i[0]`.
->
-> **It is the same fault as Week 0's two's complement overflow** — a counter that wraps silently —
-> and it is worth naming that connection in the debrief.
+*(Run 2026-09-23.)*
 
 ### D3 (7)
 
-**All three agree for XOR:** bench measurement, Verilog simulation, and the Python checker from Lab 1.
+**All three agree for XOR:** bench measurement, the gate-level simulation, and the truth-table checker from Lab 1.
 
 **On disagreement:** the expected judgement is **trust the bench over the simulation**, because the simulation encodes your intent and the bench encodes what you actually wired — but **first check that the two are testing the same circuit**, since the usual cause is a wiring error rather than a modelling error.
 
@@ -153,7 +159,7 @@ $$\textbf{0 failures over 4 input combinations, all four rebuilds.}$$
 
 Then close on the method:
 
-> **You have now checked XOR three ways: by hand on a breadboard, in Verilog, and in Python.** All
+> **You have now checked XOR three ways: by hand on a breadboard, gate by gate in simulation, and as a truth table.** All
 > three agreed. **Next week you build something none of you can verify by staring at it** — a 4-bit
 > adder, with 512 input combinations — and that is when the habit starts paying for itself.
 

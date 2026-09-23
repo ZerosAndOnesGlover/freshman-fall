@@ -2,6 +2,8 @@
 ## Quiz 5 — With Answer Key
 ### Week 6 · Wednesday · **Covers Week 5**
 
+**Date:** Wednesday 3 March 2027 · 13:00–13:10 (start of Lecture 1) · Week 6 · ungraded
+
 ---
 
 **Time:** 10 minutes · **Closed book** · **UNGRADED**

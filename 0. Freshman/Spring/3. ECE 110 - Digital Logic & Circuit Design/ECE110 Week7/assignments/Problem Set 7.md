@@ -1,7 +1,8 @@
 # ECE 110 · Digital Logic
 ## Problem Set 7
 ### Topic: Latches and Flip-Flops — SR, D, JK, T
-**Released:** Thursday, Week 7 · **Due:** Thursday, Week 8 at the start of class
+**Released:** Thursday 11 March 2027, 14:30 · Week 7 (after Thursday's Lecture 2)
+**Due:** Thursday 18 March 2027, 13:00 (start of class) · Week 8
 
 ---
 

@@ -2,13 +2,15 @@
 ## Lab 3: Building and Timing a 4-Bit Ripple-Carry Adder
 ### Week 3 Lab Session
 
+**Date:** Friday 12 February 2027 · 14:00–15:50 · Lab section (Week 3) — after both of Week 3's lectures
+
 ---
 
-**Duration:** 2 hours (Friday 14:00–15:50, MEC 110)
+**Duration:** 2 hours (MEC 110)
 **Format:** Pairs. **Both partners submit their own report.**
 **Graded on:** completion + correctness — **100 points**
 **Parts:** 74HC86 (quad XOR), 74HC08 (quad AND), 74HC32 (quad OR), breadboard, DIP switches, LEDs, 330 Ω resistors
-**Also:** Icarus Verilog
+**Also:** Python 3 (the gate functions from Lab 2)
 
 ---
 
@@ -54,21 +56,19 @@ A 4-bit adder has **512** input combinations. You will verify a sample by hand o
 
 ## Part C — All 512, In Simulation (25 pts)
 
-**C1 (12 pts).** Write the adder **structurally** in Verilog — `xor`, `and`, `or` primitive instances wired into half adders, half adders into full adders, full adders into the chain. **No `assign a + b`.**
+**C1 (12 pts).** Simulate the adder **structurally** in Python — `XOR`, `AND`, `OR` gate functions (as in
+Lab 2 D1) wired into half adders, half adders into full adders, full adders into a 4-bit chain that
+takes and returns lists of bits. **No `a + b` inside the adder.**
 
-**C2 (8 pts).** Write a testbench sweeping every $A$, every $B$ and both carry-ins, comparing `{cout, sum}` against Verilog's `a + b + cin`.
+**C2 (8 pts).** Sweep every $A$, every $B$ and both carry-ins — $16\times16\times2 = 512$ cases — and compare
+the adder's `(cout, sum)` against Python's `a + b + cin`. **Report cases tested and failures.**
 
-**Report cases tested and failures.**
+> ⚠ **Mind the width of your comparison.** `sum` is 4 bits; `a + b + cin` can be 5. Compare
+> `cout * 16 + sum` against it, or compare `sum` against `(a + b + cin) & 0xF` — comparing `sum` to the
+> unmasked total reports hundreds of false failures on a correct adder.
 
-> ⚠ **Two traps, both of which caught us while preparing this lab.**
->
-> **Use `integer` loop counters**, not 1-bit `reg`s — a 1-bit counter wraps and the loop never ends.
->
-> **Mind the width of your comparison.** `sum` is 4 bits; `a + b` in a Verilog `integer` context is
-> not. Comparing them directly reports hundreds of false failures. **Mask, or compare `{cout,sum}`
-> against the full-width value.**
-
-**C3 (5 pts).** **Do your four bench readings appear among the 512 simulated cases, with the same answers?** Confirm explicitly.
+**C3 (5 pts).** **Do your four bench readings appear among the 512 simulated cases, with the same
+answers?** Confirm explicitly.
 
 ---
 
@@ -98,7 +98,7 @@ A 4-bit adder has **512** input combinations. You will verify a sample by hand o
 
 ## Submission
 
-Bench truth tables, your Verilog and testbench, your case/failure counts, and your timing tables.
+Bench truth tables, your simulation code, your case/failure counts, and your timing tables.
 
 > **Part D is the half of this lab that will still matter in Week 6.** Do not rush it to get the LEDs
 > blinking.

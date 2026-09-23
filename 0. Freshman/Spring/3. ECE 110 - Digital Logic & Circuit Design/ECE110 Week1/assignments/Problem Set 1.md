@@ -1,7 +1,8 @@
 # ECE 110 · Digital Logic
 ## Problem Set 1
 ### Topic: Boolean Algebra, De Morgan's Laws, Canonical Forms
-**Released:** Thursday, Week 1 · **Due:** Thursday, Week 2 at the start of class
+**Released:** Thursday 28 January 2027, 14:30 · Week 1 (after Thursday's Lecture 2)
+**Due:** Thursday 4 February 2027, 13:00 (start of class) · Week 2
 
 ---
 

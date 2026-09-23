@@ -2,13 +2,15 @@
 ## Lab 2: Gates on a Breadboard, and NAND-Only Rebuilds
 ### Week 2 Lab Session
 
+**Date:** Friday 5 February 2027 · 14:00–15:50 · Lab section (Week 2) — after both of Week 2's lectures
+
 ---
 
-**Duration:** 2 hours (Friday 14:00–15:50, MEC 110)
+**Duration:** 2 hours (MEC 110)
 **Format:** Pairs. **Both partners submit their own report.**
 **Graded on:** completion + correctness — **100 points**
 **Parts:** 74HC00 (quad NAND), 74HC02 (quad NOR), 74HC04 (hex inverter), 74HC08 (quad AND), 74HC32 (quad OR), 74HC86 (quad XOR), breadboard, LEDs, 330 Ω resistors, DIP switches
-**Also:** Icarus Verilog, for the cross-check in Part D
+**Also:** Python 3, for the cross-check in Part D
 
 ---
 
@@ -67,39 +69,27 @@
 
 ---
 
-## Part D — The Verilog Cross-Check (25 pts)
+## Part D — The Simulation Cross-Check (25 pts)
 
-**D1 (10 pts).** Write a Verilog module implementing each of your four B-part rebuilds **structurally** — as `nand` primitive instances wired together, not as `assign a & b`.
+**D1 (10 pts).** Simulate each of your four B-part rebuilds **structurally** in Python: one function per
+gate, wired together exactly as on your breadboard — not written as `a & b`.
 
-```verilog
-module xor_from_nand(output y, input a, b);
-  wire x;
-  nand g1(x, a, b);
-  nand g2(p, a, x);
-  nand g3(q, b, x);
-  nand g4(y, p, q);
-endmodule
+```python
+def NAND(a, b): return 1 - (a & b)            # the only primitive you may use
+
+def xor_from_nand(a, b):
+    x = NAND(a, b)
+    p = NAND(a, x)
+    q = NAND(b, x)
+    return NAND(p, q)
 ```
 
-**D2 (8 pts).** Write a testbench that drives all four input combinations and compares each rebuild against Verilog's built-in operator (`&`, `|`, `^`, `~`).
+**D2 (8 pts).** Drive all four input combinations through each rebuild and compare against Python's own
+operators (`a & b`, `a | b`, `a ^ b`, `1 - a`). **Report the failure count.**
 
-**Report the failure count.**
-
-> ⚠ **Use `integer` loop counters, not 1-bit `reg`s.**
->
-> ```verilog
-> reg a, b;
-> for (a = 0; a <= 1; a = a + 1) ...   // NEVER TERMINATES
-> ```
->
-> A 1-bit `reg` holding 1 wraps to 0 when incremented, so `a <= 1` is *always* true and the
-> simulation hangs with no error message. **Declare `integer i, j`, loop on those, and assign
-> `a = i[0]`.** This bit us while preparing the lab, and it is the same class of bug as Week 0's
-> two's complement overflow: a counter that silently wraps.
-
-**D3 (7 pts).** **Do your bench measurements, your Verilog simulation, and last week's Python checker all agree?**
-
-**Report all three verdicts for XOR.** If any two disagree, **say which you trust and why** — that judgement is the mark.
+**D3 (7 pts).** **Do your bench measurements, your simulation, and last week's truth-table checker all
+agree?** Report all three verdicts for XOR. If any two disagree, **say which you trust and why** —
+that judgement is the mark.
 
 ---
 
@@ -110,14 +100,14 @@ endmodule
 | A — gates on the bench | 25 |
 | B — NAND-only rebuilds | 30 |
 | C — cost, measured | 20 |
-| D — the Verilog cross-check | 25 |
+| D — the simulation cross-check | 25 |
 | **Total** | **100** |
 
 ---
 
 ## Submission
 
-Measured truth tables (photographed or transcribed), your Verilog, your counts, and your answers. **A truth table you did not measure is worth nothing here** — this is the week the algebra has to survive contact with a chip.
+Measured truth tables (photographed or transcribed), your Python simulation, your counts, and your answers. **A truth table you did not measure is worth nothing here** — this is the week the algebra has to survive contact with a chip.
 
 ---
 

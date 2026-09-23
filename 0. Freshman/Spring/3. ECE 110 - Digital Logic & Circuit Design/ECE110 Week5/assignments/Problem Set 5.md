@@ -1,7 +1,8 @@
 # ECE 110 · Digital Logic
 ## Problem Set 5
 ### Topic: Decoders, Encoders, Multiplexers, Demultiplexers
-**Released:** Thursday, Week 5 · **Due:** Thursday, Week 6 at the start of class
+**Released:** Thursday 25 February 2027, 14:30 · Week 5 (after Thursday's Lecture 2)
+**Due:** Thursday 4 March 2027, 13:00 (start of class) · Week 6
 
 ---
 

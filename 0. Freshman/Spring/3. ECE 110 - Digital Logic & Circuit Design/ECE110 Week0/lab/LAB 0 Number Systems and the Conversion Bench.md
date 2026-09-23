@@ -2,9 +2,11 @@
 ## Lab 0: Number Systems and the Conversion Bench
 ### Week 0 Lab Session
 
+**Date:** Friday 22 January 2027 · 14:00–15:50 · Lab section (Week 0) — after both of Week 0's lectures
+
 ---
 
-**Duration:** 2 hours (Friday 14:00–15:50, MEC 110)
+**Duration:** 2 hours (MEC 110)
 **Format:** Pairs. **Both partners submit their own report.**
 **Graded on:** completion + correctness — **100 points**
 **Tools:** Python 3. No breadboard this week — the hardware starts in Lab 2.

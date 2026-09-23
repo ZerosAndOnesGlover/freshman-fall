@@ -2,13 +2,15 @@
 ## Lab 9: A Sequence Detector in Mealy and Moore Form
 ### Week 9 Lab Session
 
+**Date:** Friday 26 March 2027 · 14:00–15:50 · Lab section (Week 9) — after both of Week 9's lectures
+
 ---
 
-**Duration:** 2 hours (Friday 14:00–15:50, MEC 110)
+**Duration:** 2 hours (MEC 110)
 **Format:** Pairs. **Both partners submit their own report.**
 **Graded on:** completion + correctness — **100 points**
 **Parts:** 74HC74 ×2, 74HC08, 74HC32, 74HC04, LEDs, DIP switch, **debounced pushbutton**
-**Also:** Icarus Verilog
+**Also:** Python 3
 
 ---
 
@@ -16,7 +18,7 @@
 
 **One specification, two machines, and a measured comparison.**
 
-You will build an overlapping `1011` detector as a Mealy machine on the bench, write both forms in Verilog, and verify each against a reference over thousands of cycles.
+You will build an overlapping `1011` detector as a Mealy machine on the bench, simulate both forms in Python, and verify each against a reference over thousands of cycles.
 
 ---
 
@@ -48,20 +50,21 @@ $$D_1 = Q_0\overline X + Q_1\overline{Q_0}X \qquad D_0 = X \qquad Y = Q_1Q_0X$$
 
 ---
 
-## Part C — Both Machines in Verilog (30 pts)
+## Part C — Both Machines in Simulation (30 pts)
 
-**C1 (10 pts).** Write the **Mealy** machine in Verilog, using your equations.
+**C1 (10 pts).** Simulate the **Mealy** machine in Python, using your equations: a function taking the
+present state bits and the input bit, returning the next state bits and the output.
 
-**C2 (10 pts).** Write the **Moore** machine. **It needs five states** — say in a comment why.
+**C2 (10 pts).** Simulate the **Moore** machine the same way. **It needs five states** — say in a comment
+why.
 
-**C3 (10 pts).** Write a testbench that drives **random input** for at least 2000 cycles and compares **both** machines against a reference that simply checks whether the last four bits were `1011`.
+**C3 (10 pts).** Drive **random input** (`random.randint(0, 1)`) for at least 2000 cycles into both, starting
+each from its reset state, and compare both against a reference that simply checks whether the last four
+bits were `1011`. **Report cycles checked and failures for each machine.**
 
-**Report cycles checked and failures for each machine.**
-
-> ⚠ **Pulse your reset.** `reg rst = 1;` with `always @(posedge clk or posedge rst)` **never fires** —
-> there is no rising edge if the signal starts high. This cost us a debugging session while preparing
-> the lab: the state stayed `xx` and the output was `x` for the first cycles. **Start at 0, drive to
-> 1, drive back to 0.**
+> ⚠ **Mind when each output is valid.** The Mealy output belongs to the cycle in which the fourth bit
+> arrives; the Moore output appears one clock later. Compare each against the reference at the right
+> moment, or a correct machine reports failures on every detection.
 
 ---
 
@@ -83,7 +86,7 @@ $$D_1 = Q_0\overline X + Q_1\overline{Q_0}X \qquad D_0 = X \qquad Y = Q_1Q_0X$$
 |---|---|
 | A — design on paper | 25 |
 | B — build it | 25 |
-| C — both machines in Verilog | 30 |
+| C — both machines in simulation | 30 |
 | D — compare | 20 |
 | **Total** | **100** |
 

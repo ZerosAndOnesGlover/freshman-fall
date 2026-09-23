@@ -39,12 +39,12 @@ Every design question in digital logic reduces to two numbers: **how many gates*
 | Component | Weight | Rule |
 |---|---|---|
 | **Laboratory** | **25%** | 13 labs, Weeks 0–12. No drops — the lab is a third of the contact hours. |
-| **Problem Sets** | **35%** | PS 0–12, released Thursday, due the following Thursday. Lowest 1 dropped. |
-| **Midterm Exam** *(Week 6)* | **25%** | 75 minutes, covering **Weeks 0–5**. One handwritten sheet, one side. |
-| **Final Exam** | **15%** | 120 minutes, comprehensive. Two handwritten pages. |
+| **Problem Sets** | **35%** | PS 0–12, released Thursday 14:30 after Lecture 2, due the following Thursday 13:00 (PS 12: Thu 22 Apr). Lowest 1 dropped. |
+| **Midterm Exam** *(Thu 4 Mar, 18:00–19:15, Week 6)* | **25%** | 75 minutes, covering **Weeks 0–5**. One handwritten sheet, one side. |
+| **Final Exam** *(Mon 19 Apr, 08:00–10:00)* | **15%** | 120 minutes, comprehensive. Two handwritten pages. |
 | **Total** | **100%** | |
 
-**Weekly quizzes are ungraded.** A short quiz runs at the start of Wednesday's lecture in **Weeks 2–12**, covering the previous week. It carries no weight and exists so that you and I both find out what has not landed while there is still time.
+**Weekly quizzes are ungraded.** A short quiz runs at the start of Wednesday's lecture (13:00) in **Weeks 2–12**, covering the previous week. It carries no weight and exists so that you and I both find out what has not landed while there is still time.
 
 > **Note on the registry.** The `MASTER TIMETABLE` breakdown above is authoritative for this course.
 > The `ASSESSMENT CALENDAR` previously listed the final at 30%; that has been corrected to 15% to

@@ -4,19 +4,43 @@
 
 ---
 
-**Total: 100 points.** All figures from running the lab in Icarus Verilog 12.0 and Python.
+**Total: 100 points.** All figures from running the lab in Python.
 
 ---
+
+> **Revised 2026-09-23.** Verilog is taught in Week 10; this lab's Verilog part is now a Python
+> simulation of the same circuit, and the expected counts are unchanged. The reference code below was
+> run for this revision (Python 3.14).
 
 ## Part A — The ALU (35 pts)
 
 ### A1 (12), A2 (12), A3 (11)
 
-**Reference implementation:** structural ripple-carry adder from Week 3 full adders; behavioural bitwise units; behavioural output mux; flags from the carries.
+**Reference implementation:** structural ripple-carry adder from Lab 3's full adders; bitwise units on
+single bits; output selection by opcode; flags from the carries.
+
+```python
+def alu(op, a, b):                       # a, b: ints 0..15; bits() / val() convert to and from bit lists
+    A, B = bits(a), bits(b)
+    if op in (0, 1):                     # ADD / SUB share one adder: SUB inverts B and sets carry-in
+        s, cout, carries = add4(A, [x ^ op for x in B], op)
+        r, C, V = val(s), cout, carries[3] ^ carries[4]
+    elif op == 7:                        # A < B (unsigned): no carry out of A + ~B + 1
+        s, cout, carries = add4(A, [1 - x for x in B], 1)
+        r, C, V = 1 - cout, 0, 0
+    else:
+        r = val({2: [x & y for x, y in zip(A, B)], 3: [x | y for x, y in zip(A, B)],
+                 4: [x ^ y for x, y in zip(A, B)], 5: [1 - x for x in A],
+                 6: [0] + A[:3]}[op])
+        C, V = (A[3] if op == 6 else 0), 0
+    return r, C, V, int(r == 0), (r >> 3) & 1          # result, C, V, Z, N
+```
+
+(`add4` here also returns the list of internal carries, so that $V = C_3 \oplus C_4$.)
 
 **A3 is the part with teeth.** Subtraction **must** reuse the adder via the Week 3 XOR trick — `SUB` driving both the $B$-input XORs and the least significant carry-in.
 
-*Marking A3: 11 for reuse. **A second adder instance, or a behavioural `A - B` in the datapath, caps this part at 5** — the whole point is that the hardware is already there.*
+*Marking A3: 11 for reuse. **A second adder, or Python's `a - b` in the datapath, caps this part at 5** — the whole point is that the hardware is already there.*
 
 > **$V$ must come from $C_3\oplus C_4$.** A student computing it by comparing against a wider result
 > has verified their own assumption rather than built a flag, and loses A2's marks even if the value
@@ -30,15 +54,16 @@
 
 $$\textbf{2048 cases (8 opcodes × 16 × 16), 0 failures.}$$
 
-*(Measured, Icarus Verilog 12.0; matches the Python model exactly.)*
+*(Run 2026-09-23.)*
 
-> ⚠ **The width trap again.** Comparing a 4-bit result against an unmasked `A - B` reports mass
-> false failures. **This is the third lab in which the testbench, not the circuit, was the thing that
-> broke** — Lab 2's 1-bit loop counter, Lab 3's 240 phantom failures, and now this. **Say so.**
+> ⚠ **The width trap again.** Comparing a 4-bit result against an unmasked `a - b` reports mass
+> false failures. **This is the second lab in which the test, not the circuit, was the thing that
+> broke** — Lab 3's 256 phantom failures, and now this. **Say so.**
 
 ### B2 (10)
 
-$$\textbf{256 signed pairs, 0 failures}$$ for $V$ on the ADD operation, checked with `$signed()`. *(Measured.)*
+$$\textbf{256 signed pairs, 0 failures}$$ for $V$ on the ADD operation, checked against true signed sums
+(64 of the 256 pairs overflow). *(Run 2026-09-23.)*
 
 ---
 

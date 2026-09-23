@@ -6,7 +6,7 @@
 
 **Topic:** where the bits actually live
 **Reading:** Harris & Harris §5.5 | Mano & Ciletti §7.1–7.5
-**Assessment this week:** PS 11, Lab 11, **Quiz 10** *(Wednesday — covers Week 10, ungraded)*
+**Assessment this week:** PS 11 (released Thu 8 Apr 14:30, due Thu 15 Apr 13:00), Lab 11 (**Fri 9 Apr**, 14:00), **Quiz 10** *(Wed 7 Apr, 13:00 — covers Week 10, ungraded)*
 
 ---
 
@@ -115,7 +115,7 @@ $$\frac{8192 \times 350\text{ ns}}{64\text{ ms}} = \mathbf{4.5\%} \text{ of the 
 
 ## This Week's Work
 
-1. **Quiz 10** — Wednesday, covers Week 10. **Ungraded.**
+1. **Quiz 10** — Wed 7 Apr, covers Week 10. **Ungraded.**
 2. **Lab 11** — model the array, compute the refresh budget, build a small ROM.
 3. **PS 11** — cell comparison, decoding, refresh arithmetic.
 

@@ -8,7 +8,7 @@
 
 **Reading:** Harris & Harris §5.2.4 | Mano & Ciletti §4.12
 **Quiz 5** — at the start of today's lecture. **Covers Week 5.** Ungraded.
-**The MIDTERM is this week.** Revision guide in `resources/`.
+**The MIDTERM is Thursday 4 March, 18:00.** Revision guide in `resources/`.
 
 ---
 

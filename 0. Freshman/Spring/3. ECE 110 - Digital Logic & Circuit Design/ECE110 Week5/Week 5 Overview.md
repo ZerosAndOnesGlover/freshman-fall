@@ -6,7 +6,7 @@
 
 **Topic:** the reusable blocks
 **Reading:** Harris & Harris §2.8, §5.2.4–5.2.6 | Mano & Ciletti §4.6–4.11
-**Assessment this week:** PS 5, Lab 5, **Quiz 4** *(Wednesday — covers Week 4, ungraded)*
+**Assessment this week:** PS 5 (released Thu 25 Feb 14:30, due Thu 4 Mar 13:00), Lab 5 (**Fri 26 Feb**, 14:00), **Quiz 4** *(Wed 24 Feb, 13:00 — covers Week 4, ungraded)*
 
 ---
 
@@ -97,7 +97,7 @@ $$F = x\cdot F|_{x=1} + \overline x\cdot F|_{x=0}$$
 
 ## This Week's Work
 
-1. **Quiz 4** — Wednesday, covers Week 4. **Ungraded.**
+1. **Quiz 4** — Wed 24 Feb, covers Week 4. **Ungraded.**
 2. **Lab 5** — mux-based logic, and the universal-block trick.
 3. **PS 5** — decoders, priority encoders, mux design, Shannon expansion.
 

@@ -6,7 +6,7 @@
 
 **Topic:** how a circuit decides over time
 **Reading:** Harris & Harris §3.4 | Mano & Ciletti §5.4–5.7
-**Assessment this week:** PS 9, Lab 9, **Quiz 8** *(Wednesday — covers Week 8, ungraded)*
+**Assessment this week:** PS 9 (released Thu 25 Mar 14:30, due Thu 1 Apr 13:00), Lab 9 (**Fri 26 Mar**, 14:00), **Quiz 8** *(Wed 24 Mar, 13:00 — covers Week 8, ungraded)*
 
 ---
 
@@ -101,7 +101,7 @@ $$D_1 = Q_0\overline X + Q_1X\overline{Q_0} \qquad D_0 = X \qquad Y = Q_1Q_0X$$
 
 ## This Week's Work
 
-1. **Quiz 8** — Wednesday, covers Week 8. **Ungraded.**
+1. **Quiz 8** — Wed 24 Mar, covers Week 8. **Ungraded.**
 2. **Lab 9** — build the detector both ways and compare.
 3. **PS 9** — state diagrams, tables, encoding, and one machine designed from scratch.
 

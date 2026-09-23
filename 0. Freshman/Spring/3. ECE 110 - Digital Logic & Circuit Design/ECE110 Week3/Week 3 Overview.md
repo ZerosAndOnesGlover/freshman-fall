@@ -6,7 +6,7 @@
 
 **Topic:** how you *add* with gates
 **Reading:** Harris & Harris §5.2.1 | Mano & Ciletti §4.3–4.5
-**Assessment this week:** PS 3, Lab 3, **Quiz 2** *(Wednesday — covers Week 2, ungraded)*
+**Assessment this week:** PS 3 (released Thu 11 Feb 14:30, due Thu 18 Feb 13:00), Lab 3 (**Fri 12 Feb**, 14:00), **Quiz 2** *(Wed 10 Feb, 13:00 — covers Week 2, ungraded)*
 
 ---
 
@@ -99,7 +99,7 @@ $$\boxed{\text{delay of an } N\text{-bit ripple-carry adder} = 2N+1 \text{ gate 
 
 ## This Week's Work
 
-1. **Quiz 2** — Wednesday, covers Week 2. **Ungraded.**
+1. **Quiz 2** — Wed 10 Feb, covers Week 2. **Ungraded.**
 2. **Lab 3** — build a 4-bit adder, verify all 512 cases, **measure the carry delay**.
 3. **PS 3** — adder design, delay analysis, subtraction.
 

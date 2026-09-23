@@ -6,7 +6,7 @@
 
 **Topic:** how a machine holds a number
 **Reading:** Harris & Harris §1.4 | Mano & Ciletti Ch. 1
-**Assessment this week:** PS 0, Lab 0. **No quiz** — quizzes begin in Week 2.
+**Assessment this week:** PS 0 (released Thu 21 Jan 14:30, due Thu 28 Jan 13:00), Lab 0 (**Fri 22 Jan**, 14:00). **No quiz** — quizzes begin in Week 2.
 
 ---
 

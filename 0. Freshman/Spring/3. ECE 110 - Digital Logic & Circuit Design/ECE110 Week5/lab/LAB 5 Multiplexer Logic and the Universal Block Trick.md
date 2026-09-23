@@ -2,13 +2,15 @@
 ## Lab 5: Multiplexer Logic and the Universal-Block Trick
 ### Week 5 Lab Session
 
+**Date:** Friday 26 February 2027 · 14:00–15:50 · Lab section (Week 5) — after both of Week 5's lectures
+
 ---
 
-**Duration:** 2 hours (Friday 14:00–15:50, MEC 110)
+**Duration:** 2 hours (MEC 110)
 **Format:** Pairs. **Both partners submit their own report.**
 **Graded on:** completion + correctness — **100 points**
 **Parts:** 74HC138 (3:8 decoder), 74HC151 (8:1 mux), 74HC153 (dual 4:1 mux), 74HC04, 74HC32, breadboard
-**Also:** Icarus Verilog
+**Also:** Python 3
 
 ---
 
@@ -75,13 +77,15 @@ You will implement one function with gates (Week 4's method), with a decoder plu
 
 ---
 
-## Part D — Verilog and the Lookup Table (25 pts)
+## Part D — Simulation and the Lookup Table (25 pts)
 
-**D1 (10 pts).** Write all four implementations in Verilog and prove by exhaustive testbench that they agree on all 8 inputs. **Report the failure count.**
+**D1 (10 pts).** Write all four implementations as Python functions (gate by gate, as in Lab 2) and prove
+by checking all 8 inputs that they agree. **Report the failure count.**
 
-**D2 (8 pts).** Write a parameterised module `lut3(output y, input [7:0] table_bits, input a,b,c)` that outputs `table_bits[{a,b,c}]`.
+**D2 (8 pts).** Write `lut3(table_bits, a, b, c)`, where `table_bits` is an 8-bit integer, returning bit
+number `4*a + 2*b + c` of it: `(table_bits >> (4*a + 2*b + c)) & 1`.
 
-**Show that setting `table_bits` to the right constant makes it compute $F$** — and that a different constant makes it compute something else, **with no change to the module.**
+**Show that setting `table_bits` to the right constant makes it compute $F$** — and that a different constant makes it compute something else, **with no change to the function.**
 
 **D3 (7 pts).** **You have just built the basic cell of an FPGA.** In two or three sentences, explain why an FPGA toolchain does not need Week 4's minimisation.
 
@@ -94,7 +98,7 @@ You will implement one function with gates (Week 4's method), with a decoder plu
 | A — the decoder | 25 |
 | B — the multiplexer | 30 |
 | C — the comparison | 20 |
-| D — Verilog and the lookup table | 25 |
+| D — simulation and the lookup table | 25 |
 | **Total** | **100** |
 
 ---

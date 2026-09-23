@@ -6,7 +6,7 @@
 
 **Topic:** how this is written down at scale
 **Reading:** Harris & Harris §4.1–4.6 | Mano & Ciletti §3.9, §5.8
-**Assessment this week:** PS 10, Lab 10, **Quiz 9** *(Wednesday — covers Week 9, ungraded)*
+**Assessment this week:** PS 10 (released Thu 1 Apr 14:30, due Thu 8 Apr 13:00), Lab 10 (**Fri 2 Apr**, 14:00), **Quiz 9** *(Wed 31 Mar, 13:00 — covers Week 9, ungraded)*
 
 ---
 
@@ -100,7 +100,7 @@ always @(a) y = a & b;    // b is missing
 
 ## This Week's Work
 
-1. **Quiz 9** — Wednesday, covers Week 9. **Ungraded.**
+1. **Quiz 9** — Wed 31 Mar, covers Week 9. **Ungraded.**
 2. **Lab 10** — write it, simulate it, then compare against the real chips.
 3. **PS 10** — combinational and sequential description, and finding the traps.
 

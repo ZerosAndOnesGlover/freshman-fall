@@ -6,13 +6,13 @@
 
 **Topic:** logic without a fab
 **Reading:** Harris & Harris §5.6 | Mano & Ciletti §7.6–7.8
-**Assessment this week:** PS 12, Lab 12, **Quiz 11** *(Wednesday — covers Week 11, ungraded)*, and the **FINAL EXAM**
+**Assessment this week:** PS 12 (released Thu 15 Apr 14:30, due Thu 22 Apr 13:00), Lab 12 (**Fri 16 Apr**, 14:00), **Quiz 11** *(Wed 14 Apr, 13:00 — covers Week 11, ungraded)*, and the **FINAL EXAM** *(Mon 19 Apr, 08:00–10:00)*
 
 ---
 
 ## ⚠ The Final Exam
 
-**120 minutes. Comprehensive — Weeks 0–12. Two handwritten pages. No calculator. 15% of the course.**
+**Monday 19 April 2027, 08:00–10:00 (finals week). 120 minutes. Comprehensive — Weeks 0–12. Two handwritten pages. No calculator. 15% of the course.**
 
 **A full revision guide is in this week's `resources/` folder.** Topic map for all thirteen weeks, the errors that recurred, a two-page sheet plan, and a sample paper with worked answers.
 
@@ -111,7 +111,7 @@ $$\text{HDL} \to \text{synthesis} \to \text{technology mapping} \to \text{placem
 
 ## This Week's Work
 
-1. **Quiz 11** — Wednesday, covers Week 11. **Ungraded.** *The last quiz.*
+1. **Quiz 11** — Wed 14 Apr, covers Week 11. **Ungraded.** *The last quiz.*
 2. **Lab 12** — map a design onto programmable logic and count the resources.
 3. **PS 12** — PLA/PAL/ROM sizing, LUT mapping.
 4. **THE FINAL EXAM.** See the revision guide in `resources/`.

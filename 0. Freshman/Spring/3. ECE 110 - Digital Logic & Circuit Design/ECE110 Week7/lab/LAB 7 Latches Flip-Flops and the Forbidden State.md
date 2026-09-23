@@ -2,13 +2,15 @@
 ## Lab 7: Latches, Flip-Flops, and the Forbidden State
 ### Week 7 Lab Session
 
+**Date:** Friday 12 March 2027 · 14:00–15:50 · Lab section (Week 7) — after both of Week 7's lectures
+
 ---
 
-**Duration:** 2 hours (Friday 14:00–15:50, MEC 110)
+**Duration:** 2 hours (MEC 110)
 **Format:** Pairs. **Both partners submit their own report.**
 **Graded on:** completion + correctness — **100 points**
 **Parts:** 74HC02 (quad NOR), 74HC00 (quad NAND), 74HC74 (dual D flip-flop), 74HC04, LEDs, DIP switches, **debounced pushbutton**, 330 Ω resistors
-**Also:** Icarus Verilog
+**Also:** Python 3
 
 ---
 
@@ -71,9 +73,13 @@ You will build a latch from two gates, watch it hold a bit, then deliberately dr
 
 ## Part D — Simulation (20 pts)
 
-**D1 (10 pts).** Write a **structural** master–slave D flip-flop in Verilog — two gated D latches from NAND primitives, on opposite clock phases.
+**D1 (10 pts).** Simulate a **master–slave D flip-flop** in Python: two gated D latches (Lecture 1 §5), the
+master enabled while the clock is low and the slave while it is high. A latch is one line —
+`q = d if en else q` — so the flip-flop is a function that takes the clock level, $D$ and the two
+stored values, and returns the new stored values.
 
-**D2 (10 pts).** Testbench it over at least 10 clock edges, **changing $D$ while the clock is high** each cycle.
+**D2 (10 pts).** Step it through at least 10 clock cycles as a sequence of half-periods (clock low, then
+high), **changing $D$ while the clock is high** each cycle.
 
 **Report the failure count**, and confirm two things: that $Q$ takes $D$'s value at the rising edge, and that **$Q$ does not move between edges.**
 

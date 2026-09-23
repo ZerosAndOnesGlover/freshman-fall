@@ -2,6 +2,8 @@
 ## Quiz 4 — With Answer Key
 ### Week 5 · Wednesday · **Covers Week 4**
 
+**Date:** Wednesday 24 February 2027 · 13:00–13:10 (start of Lecture 1) · Week 5 · ungraded
+
 ---
 
 **Time:** 10 minutes · **Closed book** · **UNGRADED**

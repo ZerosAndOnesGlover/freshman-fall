@@ -1,7 +1,8 @@
 # ECE 110 · Digital Logic
 ## Problem Set 2
 ### Topic: Logic Gates, Functional Completeness, Gate-Level Design
-**Released:** Thursday, Week 2 · **Due:** Thursday, Week 3 at the start of class
+**Released:** Thursday 4 February 2027, 14:30 · Week 2 (after Thursday's Lecture 2)
+**Due:** Thursday 11 February 2027, 13:00 (start of class) · Week 3
 
 ---
 

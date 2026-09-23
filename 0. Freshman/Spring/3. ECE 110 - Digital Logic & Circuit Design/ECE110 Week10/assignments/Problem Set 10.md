@@ -1,7 +1,8 @@
 # ECE 110 · Digital Logic
 ## Problem Set 10
 ### Topic: Verilog — Combinational and Sequential Description
-**Released:** Thursday, Week 10 · **Due:** Thursday, Week 11 at the start of class
+**Released:** Thursday 1 April 2027, 14:30 · Week 10 (after Thursday's Lecture 2)
+**Due:** Thursday 8 April 2027, 13:00 (start of class) · Week 11
 
 ---
 

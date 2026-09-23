@@ -2,12 +2,14 @@
 ## Lab 1: Boolean Identities, Verified Exhaustively
 ### Week 1 Lab Session
 
+**Date:** Friday 29 January 2027 · 14:00–15:50 · Lab section (Week 1) — after both of Week 1's lectures
+
 ---
 
-**Duration:** 2 hours (Friday 14:00–15:50, MEC 110)
+**Duration:** 2 hours (MEC 110)
 **Format:** Pairs. **Both partners submit their own report.**
 **Graded on:** completion + correctness — **100 points**
-**Tools:** Python 3, and **Icarus Verilog** (`iverilog`, `vvp`). No breadboard yet — hardware starts in Lab 2.
+**Tools:** Python 3. No breadboard yet — hardware starts in Lab 2. (Verilog is Week 10; nothing here needs it.)
 
 ---
 
@@ -15,7 +17,7 @@
 
 **This lab establishes the method you will use for the rest of the course: check a claim two independent ways, and believe it only when both agree.**
 
-You will verify every identity from this week — first in Python, then again in Verilog — and then use the same machinery to test three claims that are *not* all true.
+You will verify every identity from this week with two independently written Python checkers, and then use the same machinery to test three claims that are *not* all true.
 
 > **Why two tools?** Because a bug in your checker looks exactly like a true theorem. **Two unrelated
 > implementations agreeing is evidence; one implementation agreeing with itself is not.**
@@ -47,46 +49,27 @@ You will verify every identity from this week — first in Python, then again in
 
 ---
 
-## Part B — The Verilog Checker (30 pts)
+## Part B — A Second, Independent Checker (30 pts)
 
-**B1 (15 pts).** Write a Verilog module that loops over every assignment of `a`, `b`, `c` and checks the same identities, printing a message for each failure and a count at the end.
+**B1 (15 pts).** Write a second checker that **does not loop over assignments at all.** Represent each
+variable by its whole truth-table column, packed into an 8-bit integer — one bit per row:
 
-```verilog
-module id;
-  integer a, b, c;
-  integer fails;
-  task chk(input lhs, input rhs, input [255:0] label);
-    begin if (lhs !== rhs) begin
-      $display("  FAIL %0s at a=%0d b=%0d c=%0d", label, a, b, c);
-      fails = fails + 1; end end
-  endtask
-  initial begin
-    fails = 0;
-    for (a = 0; a < 2; a = a + 1)
-      for (b = 0; b < 2; b = b + 1)
-        for (c = 0; c < 2; c = c + 1) begin
-          chk( a & (b | c), (a&b) | (a&c), "distributive * over +" );
-          // ... your identities here
-        end
-    $display("failures: %0d", fails);
-  end
-endmodule
+```python
+A, B, C = 0b11110000, 0b11001100, 0b10101010   # the eight rows of a 3-input truth table
+MASK = 0xFF
+def NOT(x): return ~x & MASK                      # Python's ~ alone gives a negative number
+# x & y is AND on all eight rows at once; x | y is OR; x ^ y is XOR
+print(A & (B | C) == (A & B) | (A & C))           # an identity holds iff both sides are equal
 ```
 
-**Build and run it:**
+Check every identity from A2 this way, counting failures.
 
-```
-iverilog -g2012 -o id.vvp id.v
-vvp id.vvp
-```
-
-**Use `!==` rather than `!=`.** The `!==` operator compares `x` and `z` values literally; `!=` returns `x` when either side is unknown, and a comparison that returns "unknown" will not trip your failure counter. **This distinction will matter a great deal in Week 10 — meet it now.**
-
-**B2 (8 pts).** **Do your Python and Verilog results agree, identity for identity?**
-Report both counts. **If they disagree, the interesting work of this lab is finding out which one is wrong** — say what you found.
+**B2 (8 pts).** **Do your two checkers agree, identity for identity?**
+Report both counts. **If they disagree, the interesting work of this lab is finding out which one is
+wrong** — say what you found.
 
 **B3 (7 pts).** Deliberately break one identity in *one* of the two checkers — change a `&` to a `|`.
-**Confirm the disagreement is detected**, and report what the failing tool printed. Then restore it.
+**Confirm the disagreement is detected**, and report what the failing checker printed. Then restore it.
 
 ---
 
@@ -124,7 +107,7 @@ Let $F(A,B,C) = \sum m(1,3,5,6,7)$.
 | Part | Points |
 |---|---|
 | A — the Python checker | 25 |
-| B — the Verilog checker | 30 |
+| B — the independent checker | 30 |
 | C — three claims | 25 |
 | D — canonical forms and cost | 20 |
 | **Total** | **100** |
@@ -133,7 +116,7 @@ Let $F(A,B,C) = \sum m(1,3,5,6,7)$.
 
 ## Submission
 
-Your code (both languages), your measured counts, and your answers. **Every count reported must come from a run.**
+Your code (both checkers), your measured counts, and your answers. **Every count reported must come from a run.**
 
 > **"All identities verified" without the number of identities earns half marks.** The number is the
 > evidence.

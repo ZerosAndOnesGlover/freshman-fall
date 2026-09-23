@@ -6,7 +6,7 @@
 
 **Topic:** the algebra becomes hardware
 **Reading:** Harris & Harris §1.5–1.6, §2.5 | Mano & Ciletti §2.7–2.8, §3.5
-**Assessment this week:** PS 2, Lab 2, **Quiz 1** *(Wednesday — covers Week 1, ungraded)*
+**Assessment this week:** PS 2 (released Thu 4 Feb 14:30, due Thu 11 Feb 13:00), Lab 2 (**Fri 5 Feb**, 14:00), **Quiz 1** *(Wed 3 Feb, 13:00 — covers Week 1, ungraded)*
 
 ---
 
@@ -93,7 +93,7 @@ $$\overline A = A\ \text{NAND}\ A \qquad AB = \overline{(A\ \text{NAND}\ B)} \qq
 
 ## This Week's Work
 
-1. **Quiz 1** — Wednesday, covers Week 1. **Ungraded.**
+1. **Quiz 1** — Wed 3 Feb, covers Week 1. **Ungraded.**
 2. **Lab 2** — gates on a breadboard, and rebuilding each one from NAND alone.
 3. **PS 2** — gate-level design, completeness, cost.
 

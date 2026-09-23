@@ -4,9 +4,13 @@
 
 ---
 
-**Total: 100 points.** All figures from Icarus Verilog 12.0 and a Python reference.
+**Total: 100 points.** All figures from a Python reference.
 
 ---
+
+> **Revised 2026-09-23.** Verilog is taught in Week 10; this lab's Verilog part is now a Python
+> simulation of the same circuit, and the expected counts are unchanged. The reference code below was
+> run for this revision (Python 3.14).
 
 ## Part A — Design On Paper (25 pts)
 
@@ -55,7 +59,7 @@ $$\text{output} = \texttt{0001001001}$$
 
 ---
 
-## Part C — Both Machines in Verilog (30 pts)
+## Part C — Both Machines in Simulation (30 pts)
 
 ### C1 (10), C2 (10)
 
@@ -63,19 +67,22 @@ $$\text{output} = \texttt{0001001001}$$
 
 ### C3 (10)
 
-$$\textbf{4000 cycles, 0 failures}\ \text{(Mealy)}; \quad \textbf{2000 random sequences, 0 mismatches}\ \text{(both, against the reference)}$$
+$$\textbf{2000 random cycles, 130 detections; 0 failures (Mealy), 0 failures (Moore)}$$
+*(Run 2026-09-23 with `random.seed(2027)`; a student's detection count will differ with their seed.)*
 
-*(Measured.)*
+```python
+# states: 0 none, 1 '1', 2 '10', 3 '101'; Moore adds 4 = '1011' just seen (output 1)
+mealy = {(0,0):(0,0),(0,1):(1,0),(1,0):(2,0),(1,1):(1,0),(2,0):(0,0),(2,1):(3,0),(3,0):(2,0),(3,1):(1,1)}
+moore = {(0,0):0,(0,1):1,(1,0):2,(1,1):1,(2,0):0,(2,1):3,(3,0):2,(3,1):4,(4,0):2,(4,1):1}
+```
 
-> ⚠ **The reset bug is real and we hit it.** With `reg rst = 1;` and
-> `always @(posedge clk or posedge rst)`, **there is no rising edge on `rst`**, so the asynchronous
-> reset never fires: `q` stays `xx` and `y` is `x` for the first cycles. Our first run reported
-> exactly one failure, at $t=2$, with `y=x`.
->
-> **Expect this in submissions.** The symptom is a small number of failures at the very start and
-> `x` in the output. **The fix is to pulse the reset.**
+> ⚠ **The timing bug is real.** The Moore output belongs to the cycle *after* the fourth bit arrives.
+> Comparing it against the reference in the same cycle reports a failure at every detection — 130 of
+> them here — on a correct machine. **Expect this in submissions.** The fix is to compare the Moore
+> output with the previous cycle's reference.
 
-*Marking: 6 testbench, **4 for reporting both machines' counts.** A student who hit the reset bug and diagnosed it should be given full marks and told so.*
+*Marking: 6 simulation, **4 for reporting both machines' counts.** A student who hit the timing bug
+and diagnosed it should be given full marks and told so.*
 
 ---
 
@@ -155,8 +162,8 @@ Then close the sequential arc, and set up Week 10:
 > **Everything in it was Week 4's K-maps and Week 7's flip-flops.** What is new is the *procedure* —
 > and the procedure is mechanical enough that a machine could do it.
 >
-> **Next week you find out that one does.** You will write this machine in Verilog as a state
-> diagram in text, and a tool will produce the equations you spent Wednesday deriving by hand.
+> **Next week you find out that one does.** In Week 10 you will write this machine in Verilog as a
+> state diagram in text, and a tool will produce the equations you spent Wednesday deriving by hand.
 
 ---
 

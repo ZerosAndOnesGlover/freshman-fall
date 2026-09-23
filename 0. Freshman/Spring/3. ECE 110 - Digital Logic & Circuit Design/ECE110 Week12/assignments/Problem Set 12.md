@@ -1,11 +1,12 @@
 # ECE 110 · Digital Logic
 ## Problem Set 12
 ### Topic: Programmable Logic — PLAs, PALs, FPGAs
-**Released:** Thursday, Week 12 · **Due:** Thursday of exam week
+**Released:** Thursday 15 April 2027, 14:30 · Week 12 (after Thursday's Lecture 2)
+**Due:** Thursday 22 April 2027, 13:00 · finals week — ⚠️ after the final exam; see the course audit
 
 ---
 
-> **This is the last problem set, and it is deliberately short** — the final exam is this week.
+> **This is the last problem set, and it is deliberately short** — the final exam is Monday 19 April.
 >
 > **Show the sizing arithmetic.** That is most of the marks.
 

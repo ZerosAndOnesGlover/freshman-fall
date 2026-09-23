@@ -6,13 +6,13 @@
 
 **Topic:** the part that computes
 **Reading:** Harris & Harris §5.2.4 | Mano & Ciletti §4.12
-**Assessment this week:** PS 6, Lab 6, **Quiz 5** *(Wednesday — covers Week 5, ungraded)*, and the **MIDTERM EXAM**
+**Assessment this week:** PS 6 (released Thu 4 Mar 14:30, due Thu 11 Mar 13:00), Lab 6 (**Fri 5 Mar**, 14:00), **Quiz 5** *(Wed 3 Mar, 13:00 — covers Week 5, ungraded)*, and the **MIDTERM EXAM** *(Thu 4 Mar, 18:00–19:15)*
 
 ---
 
 ## ⚠ The Midterm
 
-**75 minutes. Covers Weeks 0–5. One handwritten sheet, one side. No calculator. 25% of the course.**
+**Thursday 4 March 2027, 18:00–19:15 (VNC 100). 75 minutes. Covers Weeks 0–5. One handwritten sheet, one side. No calculator. 25% of the course.**
 
 **A full revision guide is in this week's `resources/` folder** — topic checklist, the errors that have recurred, a sheet plan, and a sample paper with answers.
 
@@ -106,7 +106,7 @@
 
 ## This Week's Work
 
-1. **Quiz 5** — Wednesday, covers Week 5. **Ungraded.**
+1. **Quiz 5** — Wed 3 Mar, covers Week 5. **Ungraded.**
 2. **Lab 6** — build a 4-bit ALU and test all 2048 cases.
 3. **PS 6** — ALU design, flags, carry-lookahead.
 4. **THE MIDTERM.** See [[MIDTERM Revision Guide]].

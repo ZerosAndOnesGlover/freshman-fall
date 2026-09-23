@@ -2,9 +2,11 @@
 ## Lab 10: Verilog — Simulate, Then Compare With the Hardware
 ### Week 10 Lab Session
 
+**Date:** Friday 2 April 2027 · 14:00–15:50 · Lab section (Week 10) — after both of Week 10's lectures
+
 ---
 
-**Duration:** 2 hours (Friday 14:00–15:50, MEC 110)
+**Duration:** 2 hours (MEC 110)
 **Format:** Pairs. **Both partners submit their own report.**
 **Graded on:** completion + correctness — **100 points**
 **Tools:** Icarus Verilog. Breadboard from Week 9 still assembled for Part D.

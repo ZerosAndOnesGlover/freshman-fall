@@ -6,7 +6,7 @@
 
 **Topic:** how you make it smaller
 **Reading:** Harris & Harris §2.7 | Mano & Ciletti §3.1–3.4
-**Assessment this week:** PS 4, Lab 4, **Quiz 3** *(Wednesday — covers Week 3, ungraded)*
+**Assessment this week:** PS 4 (released Thu 18 Feb 14:30, due Thu 25 Feb 13:00), Lab 4 (**Fri 19 Feb**, 14:00), **Quiz 3** *(Wed 17 Feb, 13:00 — covers Week 3, ungraded)*
 
 ---
 
@@ -97,7 +97,7 @@ $$AB\overline C + ABC = AB(\overline C + C) = AB$$
 
 ## This Week's Work
 
-1. **Quiz 3** — Wednesday, covers Week 3. **Ungraded.**
+1. **Quiz 3** — Wed 17 Feb, covers Week 3. **Ungraded.**
 2. **Lab 4** — minimise by hand, then check every answer against a machine.
 3. **PS 4** — maps, don't-cares, and one function where POS wins.
 

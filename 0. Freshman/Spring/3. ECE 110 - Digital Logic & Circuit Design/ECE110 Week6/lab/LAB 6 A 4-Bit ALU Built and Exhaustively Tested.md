@@ -2,13 +2,15 @@
 ## Lab 6: A 4-Bit ALU, Built and Exhaustively Tested
 ### Week 6 Lab Session
 
+**Date:** Friday 5 March 2027 · 14:00–15:50 · Lab section (Week 6) — after both of Week 6's lectures
+
 ---
 
-**Duration:** 2 hours (Friday 14:00–15:50, MEC 110)
+**Duration:** 2 hours (MEC 110)
 **Format:** Pairs. **Both partners submit their own report.**
 **Graded on:** completion + correctness — **100 points**
-**Tools:** Icarus Verilog primarily; breadboard for Part D
-**Note:** the midterm is this week — **Parts A–C are the whole lab; Part D is short by design.**
+**Tools:** Python 3 (your gate functions and Week 3 adder from Labs 2–3); breadboard for Part D
+**Note:** the midterm was yesterday (Thursday 4 March) — **Parts A–C are the whole lab; Part D is short by design.**
 
 ---
 
@@ -22,7 +24,7 @@ Your ALU has 8 operations and two 4-bit operands: **2048 combinations**. You wil
 
 ## Part A — The ALU (35 pts)
 
-**A1 (12 pts).** Write a 4-bit ALU in Verilog with a 3-bit opcode:
+**A1 (12 pts).** Write a 4-bit ALU in Python, `alu(op, a, b)` on lists of four bits, with a 3-bit opcode:
 
 | op | operation |
 |:-:|---|
@@ -35,27 +37,31 @@ Your ALU has 8 operations and two 4-bit operands: **2048 combinations**. You wil
 | 110 | $A \ll 1$ |
 | 111 | $A<B$ *(unsigned, result 1 or 0)* |
 
-**Build the adder structurally** from your Week 3 full adders. **The bitwise operations and the output mux may be behavioural.**
+**Build the adder structurally** from your Lab 3 full adders. **The bitwise operations and the output
+selection may use Python's operators on single bits.**
 
 **A2 (12 pts).** Add the four flags: $C$, $V$, $Z$, $N$.
 
 **$V$ must come from the carries** ($C_3\oplus C_4$), not from comparing against a wider result.
 
-**A3 (11 pts).** **Subtraction must reuse the adder.** A second adder, or a behavioural `A - B` in place of the datapath, earns **half marks for this part** — the point is the Week 3 XOR trick.
+**A3 (11 pts).** **Subtraction must reuse the adder.** A second adder, or Python's `a - b` in place of the datapath, earns **half marks for this part** — the point is the Week 3 XOR trick.
 
 ---
 
 ## Part B — All 2048 (25 pts)
 
-**B1 (15 pts).** Write a testbench sweeping **all 8 opcodes × 16 values of $A$ × 16 values of $B$**, comparing against Verilog's own operators.
+**B1 (15 pts).** Sweep **all 8 opcodes × 16 values of $A$ × 16 values of $B$**, comparing against Python's
+own operators on integers.
 
 **Report cases tested and failures.**
 
-> ⚠ **Mask your comparisons to 4 bits.** This bit us in Lab 3 and it will bite you here: `A - B`
-> in an integer context is not 4 bits wide, and comparing it directly against a 4-bit result reports
-> hundreds of false failures on a correct design.
+> ⚠ **Mask your comparisons to 4 bits.** This bit us in Lab 3 and it will bite you here: `a - b`
+> in Python is not 4 bits wide (it can be negative), and comparing it directly against a 4-bit result
+> reports hundreds of false failures on a correct design. Compare against `(a - b) & 0xF`.
 
-**B2 (10 pts).** Separately verify **$V$ against true signed arithmetic** on all 256 signed operand pairs for the ADD operation, using `$signed()`.
+**B2 (10 pts).** Separately verify **$V$ against true signed arithmetic** on all 256 operand pairs for the
+ADD operation: read each 4-bit pattern as two's complement (`x - 16 if x >= 8 else x`, Week 0) and
+set the expected $V$ when the true sum falls outside $-8\ldots7$.
 
 **Report failures.**
 
@@ -97,9 +103,9 @@ Then: a hierarchical carry-lookahead adder at 64 bits measures **12 gate delays*
 
 ## Submission
 
-Your Verilog, your testbench, your case and failure counts, your timing tables, and the bench results.
+Your ALU code, your sweep, your case and failure counts, your timing tables, and the bench results.
 
-> **Good luck on the midterm.** The revision guide is in this week's `resources/`.
+> **The midterm was yesterday.** Marked papers come back in Week 8.
 
 ---
 

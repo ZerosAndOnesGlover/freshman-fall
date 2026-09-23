@@ -2,6 +2,8 @@
 ## Quiz 8 — With Answer Key
 ### Week 9 · Wednesday · **Covers Week 8**
 
+**Date:** Wednesday 24 March 2027 · 13:00–13:10 (start of Lecture 1) · Week 9 · ungraded
+
 ---
 
 **Time:** 10 minutes · **Closed book** · **UNGRADED**

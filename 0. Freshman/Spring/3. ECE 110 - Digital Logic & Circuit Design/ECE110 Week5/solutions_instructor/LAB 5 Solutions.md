@@ -4,9 +4,13 @@
 
 ---
 
-**Total: 100 points.** All implementations verified exhaustively in Python and Icarus Verilog.
+**Total: 100 points.** All implementations verified exhaustively in Python.
 
 ---
+
+> **Revised 2026-09-23.** Verilog is taught in Week 10; this lab's Verilog part is now a Python
+> simulation of the same circuit, and the expected counts are unchanged. The reference code below was
+> run for this revision (Python 3.14).
 
 ## Part A — The Decoder (25 pts)
 
@@ -111,7 +115,7 @@ $$\textbf{Cheapest to change: the mux.}$$
 
 ---
 
-## Part D — Verilog and the Lookup Table (25 pts)
+## Part D — Simulation and the Lookup Table (25 pts)
 
 ### D1 (10)
 
@@ -119,18 +123,17 @@ $$\textbf{Cheapest to change: the mux.}$$
 
 ### D2 (8)
 
-```verilog
-module lut3(output y, input [7:0] table_bits, input a, b, c);
-  assign y = table_bits[{a,b,c}];
-endmodule
+```python
+def lut3(table_bits, a, b, c):
+    return (table_bits >> (4*a + 2*b + c)) & 1
 ```
 
 **`table_bits = 8'b11101010` computes $\sum m(1,3,5,6,7)$** *(bit $i$ is the value at minterm $i$, so index 7 is the MSB)*.
 **`table_bits = 8'b11101001` computes $\sum m(0,3,5,6,7)$.**
 
-**The module is unchanged.** *(Verified.)*
+**The function is unchanged.** *(Verified 2026-09-23.)*
 
-*Marking: 5 module, **3 for demonstrating two different functions from one module.***
+*Marking: 5 function, **3 for demonstrating two different functions from one unchanged `lut3`.***
 
 ### D3 (7)
 
@@ -162,7 +165,7 @@ Minimisation exists to reduce gate count; **an FPGA does not buy gates, it buys 
 4. **B2 shows the derivation table**
 5. B3 names the function as parity
 6. **C3 notices the minimised form gets worse, not just different**
-7. D2 gets two functions from one unchanged module
+7. D2 gets two functions from one unchanged `lut3`
 8. D3 says the LUT cost is function-independent
 
 ---
@@ -177,7 +180,7 @@ Minimisation exists to reduce gate count; **an FPGA does not buy gates, it buys 
 
 Then name what they built:
 
-> **The module in D2 is a 3-input lookup table, and it is the basic cell of every FPGA on the
+> **The function in D2 is a 3-input lookup table, and it is the basic cell of every FPGA on the
 > market** — usually 4 to 6 inputs, built as a mux tree with memory cells on the data inputs.
 > **You program it by writing those bits.**
 >

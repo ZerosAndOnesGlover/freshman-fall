@@ -2,6 +2,8 @@
 ## Quiz 9 — With Answer Key
 ### Week 10 · Wednesday · **Covers Week 9**
 
+**Date:** Wednesday 31 March 2027 · 13:00–13:10 (start of Lecture 1) · Week 10 · ungraded
+
 ---
 
 **Time:** 10 minutes · **Closed book** · **UNGRADED**

@@ -6,7 +6,7 @@
 
 **Topic:** the algebra that circuits obey
 **Reading:** Harris & Harris §2.1–2.3 | Mano & Ciletti §2.1–2.6
-**Assessment this week:** PS 1, Lab 1. **No quiz** — quizzes begin Week 2.
+**Assessment this week:** PS 1 (released Thu 28 Jan 14:30, due Thu 4 Feb 13:00), Lab 1 (**Fri 29 Jan**, 14:00). **No quiz** — quizzes begin Week 2.
 
 ---
 

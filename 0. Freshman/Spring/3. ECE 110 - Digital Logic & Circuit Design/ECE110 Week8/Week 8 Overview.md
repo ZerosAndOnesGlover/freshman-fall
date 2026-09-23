@@ -6,7 +6,7 @@
 
 **Topic:** remembering more than one bit
 **Reading:** Harris & Harris §3.3, §5.4 | Mano & Ciletti §6.1–6.4
-**Assessment this week:** PS 8, Lab 8, **Quiz 7** *(Wednesday — covers Week 7, ungraded)*
+**Assessment this week:** PS 8 (released Thu 18 Mar 14:30, due Thu 25 Mar 13:00), Lab 8 (**Fri 19 Mar**, 14:00), **Quiz 7** *(Wed 17 Mar, 13:00 — covers Week 7, ungraded)*
 
 ---
 
@@ -109,7 +109,7 @@ $$\texttt{0001}\to\texttt{0010}\to\texttt{0100}\to\texttt{1000}\to\texttt{0001}$
 
 ## This Week's Work
 
-1. **Quiz 7** — Wednesday, covers Week 7. **Ungraded.**
+1. **Quiz 7** — Wed 17 Mar, covers Week 7. **Ungraded.**
 2. **Lab 8** — build both counters and **observe the ripple counter's transients**.
 3. **PS 8** — register design, counter design, mod-N counters.
 
