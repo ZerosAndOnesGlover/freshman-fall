@@ -2,7 +2,7 @@
 ## Week 12: NP-Completeness and the Limits of Efficiency
 
 **Assessment for this course (overall):** Problem Sets 35%, Midterms 25%, Final 20%, Projects 20%
-**This week's deliverables:** Lab 12 (**Tue 20 Apr**, 15:00 — in finals week, the Tuesday after this week) — the last lab. **There is no problem set and no quiz this
+**This week's deliverables:** none graded. Lab 12 is **optional self-paced revision** (solutions released Mon 19 Apr) — it is not part of the lab gate. **There is no problem set and no quiz this
 week.**
 **PROJECT 2 and PS 11 are both due Friday 16 April, 17:00.** The **FINAL EXAM** is **Wednesday 21 April,
 09:00–11:30**, in finals week, and is comprehensive —

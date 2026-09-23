@@ -54,7 +54,7 @@ By the end of Week 7, you should be able to:
 | [[L23 Creational Patterns]] | Singleton, Factory Method, Abstract Factory, Builder |
 | [[L24 Structural Patterns]] | Adapter, Decorator, Composite, Facade |
 | [[PS 7 Factory Method and Decorator]] | Due Fri 19 Mar 17:00 |
-| [[PROG102 Week7/assignments/QUIZ 7 Week 7 Monday\|QUIZ 7 Week 7 Monday]] | 15 minutes, covers Week 6 |
+| [[PROG102 Week7/assignments/QUIZ 7 Week 7 Tuesday\|QUIZ 7 Week 7 Tuesday]] | 15 minutes, covers Week 6 |
 | [[LAB 7 Refactoring a Messy Hierarchy]] | Take a class explosion apart with patterns |
 | [[PROG102 Week7/resources/Reading Guide Week 7\|Reading Guide Week 7]] | Gang of Four, and every command to reproduce this week |
 | [[PROG102 Week7/solutions_instructor/PS 7 Solutions\|PS 7 Solutions]] | Instructor only |

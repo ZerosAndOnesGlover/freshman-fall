@@ -174,7 +174,7 @@ and is not constrained to integer bits per symbol.
 | D | 10 |
 | **Total** | **40** |
 
-Labs are pass/fail for progression: **10 of 13 required.** This is Lab 9 of 13; a student who has
+Labs are pass/fail for progression: **10 of the 12 required labs (0–11).** This is Lab 9 of the 12 required; a student who has
 missed three already cannot afford to miss this one, and it is worth telling them individually.
 
 ---

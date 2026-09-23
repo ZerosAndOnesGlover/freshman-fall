@@ -2,8 +2,7 @@
 
 **Sat:** Wednesday 21 April 2027, 09:00–11:30 · finals week (VNC 100) · **Comprehensive — Weeks 0–12** · **Worth 20%** of the final grade
 
-**180 minutes** as written — ⚠️ the registry books a 150-minute slot (09:00–11:30); which one wins is an
-open decision in the course audit. Closed book. **Two handwritten sheets** (both sides) of your own notes are permitted.
+**150 minutes** — a mark a minute, written to be finishable in about 135. Closed book. **Two handwritten sheets** (both sides) of your own notes are permitted.
 No calculators.
 
 *(Format and weight per the Course Overview Syllabus.)*
@@ -14,7 +13,7 @@ No calculators.
 
 | section | marks | content |
 | --- | --- | --- |
-| A — short answer | 25 | 12–15 one-or-two-sentence questions across the whole course |
+| A — short answer | 25 | 10–12 one-or-two-sentence questions across the whole course |
 | B — trace and compute | 30 | Execute algorithms by hand on small inputs |
 | C — **proof** | 45 | Three proofs from the list below |
 | D — design and judgement | 50 | Three scenarios: choose, justify, state what you assumed |
@@ -163,8 +162,8 @@ worth more spent on recurrences and preconditions.
 
 - **PROJECT 2 and PS 11 are both due Friday 16 April**, five days before the paper. **Plan the week,
   not the day.**
-- Lab 12 meets Tuesday 20 April, the day before the paper. If you are at nine completed labs, it is
-  compulsory.
+- Lab 12 is optional, self-paced revision (solutions Monday 19 April) — the best practice there is for
+  Section D. It is not part of the lab gate, which Labs 0–11 decide.
 - Past papers are on the course page. The two most recent match this syllabus; earlier ones predate the
   geometry week.
 - The course retrospective in [[CS102 Week12/resources/Course Retrospective|Course Retrospective]] is not examinable and is worth twenty

@@ -43,7 +43,7 @@ By the end of Week 11, you should be able to:
 | [[L35 std function and Type Erasure]] | The mechanism, the hidden allocation, and when to use it |
 | [[L36 constexpr and Modern Features]] | `constexpr`, `if constexpr`, structured bindings, ranges preview |
 | [[PS 11 Imperative to Functional]] | Due Fri 16 Apr 17:00 |
-| [[PROG102 Week11/assignments/QUIZ 11 Week 11 Monday\|QUIZ 11 Week 11 Monday]] | 15 minutes, covers Week 10 |
+| [[PROG102 Week11/assignments/QUIZ 11 Week 11 Tuesday\|QUIZ 11 Week 11 Tuesday]] | 15 minutes, covers Week 10 |
 | [[PROJECT 2 A Data Structure Library]] | **Assigned this week, due Week 12** |
 | [[LAB 11 Profiling Lambda Overhead]] | Measure the three ways to hold a callable |
 | [[PROG102 Week11/resources/Reading Guide Week 11\|Reading Guide Week 11]] | Meyers Items 31–34, and every command |

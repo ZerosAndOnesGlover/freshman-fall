@@ -2,7 +2,7 @@
 ## Quiz 00 — Diagnostic
 ### Week 0 · Ungraded · Answer key included
 
-**Date:** Monday 18 January 2027 · 11:00–11:25, before Lecture 1 · Week 0
+**Date:** Thursday 21 January 2027 · 15:00–15:25, in the Week 0 recitation (SSB 108) · Week 0
 
 ---
 

@@ -1,6 +1,9 @@
 # ECE 110 · Digital Logic
 ## Problem Set 12 — Solutions
-### INSTRUCTOR / TA COPY — not for distribution
+### Released to students Friday 16 April 2027, 17:00
+
+> **Revised 2026-09-23.** PS 12 is now an ungraded self-check: a Thursday-to-Thursday deadline would
+> have fallen after the final exam (Monday 19 April). The point values below show weight only.
 
 ---
 

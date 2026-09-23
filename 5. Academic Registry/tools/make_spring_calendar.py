@@ -52,8 +52,8 @@ EXAMS=[("2027-03-01","18:00–19:15","CS 102","Midterm 1","12.5%","VNC 100 · We
 ("2027-03-31","18:00–19:15","MATH 142","Midterm 2","15%","VNC 100 · Weeks 5–9"),
 ("2027-04-19","08:00–10:00","ECE 110","Final Exam","15%","Comprehensive"),
 ("2027-04-20","09:00–11:30","MATH 142","Final Exam","20%","Comprehensive"),
-("2027-04-21","09:00–11:30","CS 102","Final Exam","20%","Comprehensive · *paper written for 180 min — decide*"),
-("2027-04-22","14:00–16:30","PROG 102","Final Exam","15%","Comprehensive · *paper written for 180 min — decide*")]
+("2027-04-21","09:00–11:30","CS 102","Final Exam","20%","Comprehensive · 150 min"),
+("2027-04-22","14:00–16:30","PROG 102","Final Exam","15%","Comprehensive · 150 min")]
 out=[]
 undated=[]
 for d,tm,c,a,wt,note in EXAMS:

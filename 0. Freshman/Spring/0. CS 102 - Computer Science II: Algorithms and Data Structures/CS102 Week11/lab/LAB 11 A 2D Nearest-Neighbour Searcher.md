@@ -6,8 +6,8 @@
 **Deliverable:** `lab11.py` and `RESULTS.md`. In-lab checkoff by your TA.
 
 > **Labs carry no direct weight** in CS 102, but **you must satisfactorily complete at least 10 of
-> the 13 labs to pass the course.** See the syllabus.
-> **PROJECT 2 is due Friday of Week 12.** This is Lab 11 of 13.
+> the 12 required labs (Labs 0–11) to pass the course.** See the syllabus.
+> **PROJECT 2 is due Friday of Week 12.** This is Lab 11 of the 12 required.
 
 ---
 

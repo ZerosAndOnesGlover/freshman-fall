@@ -82,8 +82,10 @@
 | Date       | Event                                                                           |
 | ---------- | ------------------------------------------------------------------------------- |
 | Mon Jan 18 | **Spring semester begins — Week 0**                                             |
-| Mon Jan 18 | Martin Luther King Day — ⚠️ classes currently scheduled to run (see note below) |
-| Mon Jan 18 | MATH 142 Diagnostic Quiz 00 (ungraded, 11:00)                                   |
+| Mon Jan 18 | Martin Luther King Day — **no classes** (university policy)                     |
+| Tue Jan 19 | CS 102 Lecture 01 (09:00) and MATH 142 Lecture 1 (11:00), moved from Monday     |
+| Wed Jan 20 | MATH 142 Lecture 2 (11:00), moved from Tuesday                                  |
+| Thu Jan 21 | MATH 142 Diagnostic Quiz 00 (ungraded, 15:00, recitation)                       |
 | Fri Jan 22 | Add/Drop deadline · MATH 142 PS 0 due (17:00) · ECE 110 Lab 0 (14:00)           |
 | Mon Jan 25 | **Week 1 begins** · first quizzes: CS 102, MATH 142 · PROG 102 Lab 0 (15:00)    |
 | Tue Jan 26 | PROG 102 Quiz 1 (10:00) · CS 102 Lab 0 (15:00)                                  |
@@ -91,7 +93,7 @@
 | Thu Jan 28 | ECE 110 PS 0 due (13:00)                                                        |
 | Fri Jan 29 | PROG 102 PS 0 due (17:00)                                                       |
 | Fri Feb 05 | Problem Set 1 due — CS 102, MATH 142, PROG 102 (17:00)                          |
-| Mon Feb 15 | Presidents Day (Week 4) — ⚠️ classes currently scheduled to run (see note below) |
+| Mon Feb 15 | Presidents Day (Week 4) — not a university holiday; classes run                  |
 | Mon Mar 01 | **MIDTERM 1 WEEK begins (Week 6)**                                              |
 | Mon Mar 01 | CS 102 Midterm 1 (75 min, 18:00–19:15) — Weeks 0–4                             |
 | Tue Mar 02 | PROG 102 Midterm 1 (75-min paper, 18:00–19:30 slot) — Weeks 0–4                 |
@@ -104,31 +106,31 @@
 | Tue Mar 30 | PROG 102 Midterm 2 (75-min paper, 18:00–19:30 slot) — Weeks 5–9                 |
 | Wed Mar 31 | MATH 142 Midterm 2 (75 min, 18:00–19:15) — Weeks 5–9                            |
 | Mon Apr 12 | **Last week of instruction (Week 12)**                                          |
+| Thu Apr 15 | MATH 142 Lab 12 (15:00, in place of the recitation)                            |
 | Fri Apr 16 | Problem Set 11 due — CS 102, MATH 142, PROG 102 (17:00)                         |
 | Fri Apr 16 | CS 102 Project 2 due — A Search Engine (17:00)                                  |
 | Fri Apr 16 | PROG 102 Project 2 due — A Data Structure Library (17:00)                       |
-| Fri Apr 16 | **Last day of instruction** · ECE 110 Lab 12 (14:00)                            |
+| Fri Apr 16 | **Last day of instruction** · ECE 110 Lab 12 (14:00) · ECE 110 PS 12 answers (ungraded self-check) |
 | Mon Apr 19 | **FINALS WEEK begins**                                                          |
 | Mon Apr 19 | ECE 110 Final Exam (120 min, 08:00–10:00)                                       |
-| Mon Apr 19 | ⚠️ PROG 102 Lab 12 — the Project 2 demo (15:00) falls in finals week — decide   |
+| Mon Apr 19 | PROG 102 Project 2 demo and code review (Lab 12, 15:00) — an assessment         |
 | Tue Apr 20 | MATH 142 Final Exam (150 min, 09:00–11:30)                                      |
-| Tue Apr 20 | ⚠️ CS 102 Lab 12 (15:00) falls in finals week — decide                          |
-| Wed Apr 21 | CS 102 Final Exam (09:00–11:30; paper written for 180 min — decide)             |
-| Wed Apr 21 | ⚠️ MATH 142 Lab 12 (15:00) falls in finals week — decide                        |
-| Thu Apr 22 | PROG 102 Final Exam (14:00–16:30; paper written for 180 min — decide)           |
-| Thu Apr 22 | ⚠️ ECE 110 PS 12 due (13:00) — after its final exam — decide                    |
+| Wed Apr 21 | CS 102 Final Exam (150 min, 09:00–11:30)                                        |
+| Thu Apr 22 | PROG 102 Final Exam (150 min, 14:00–16:30)                                      |
 | Fri Apr 23 | **Spring semester ends** · grade submission deadline                            |
 | Mon Apr 26 | Summer break begins                                                             |
 
-> **⚠️ Open decisions on this calendar** (each course's audit in `0. Freshman/Spring/4. Course Audits/`
-> lists its own; the finals-week rows above are marked ⚠️).
-> 1. **Public holidays.** MLK Day (**Mon Jan 18**) is now the **first day of term** (W0), and
->    Presidents Day (**Mon Feb 15**) falls in W4. Holidays did not move with the re-base. The pre-2027
->    calendar observed MLK as NO CLASSES. Classes currently run on both; cancelling Mon Jan 18 would
->    cost the first CS 102 and MATH 142 lectures, and cancelling Mon Feb 15 would move that week's
->    CS 102 and MATH 142 quizzes.
-> 2. **No reading day.** Instruction ends Fri Apr 16 and finals open Mon Apr 19. The pre-2027
->    calendar allowed a Saturday reading day.
+> **Decisions (2026-09-23).**
+> 1. **Holidays follow UNIVERSITY POLICIES.** MLK Day is a no-classes day; its two Monday lectures moved
+>    into free Week 0 slots. Presidents Day is not on the university's holiday list, so classes run.
+> 2. **Finals week holds assessments only.** Every lab that the "Lab *N* after Week *N*" rule pushed into
+>    it was resolved: CS 102 Lab 12 became optional self-paced revision (Labs 0–11 decide the gate), MATH 142
+>    Lab 12 moved to Thu Apr 15, and ECE 110 PS 12 became an ungraded self-check. PROG 102 Lab 12 stays on
+>    Mon Apr 19 because it *is* an assessment — the demo of Project 2, submitted Fri Apr 16.
+> 3. **Finals are at most 150 minutes**, matching the booked slots; the CS 102 and PROG 102 papers were
+>    rewritten to 150 minutes.
+> 4. **Reading day: Sat Apr 17.** Instruction ends Fri Apr 16 and finals open Mon Apr 19; the Saturday
+>    between is the reading day, as the pre-2027 calendar allowed. No teaching day is lost.
 
 
 ─────────────────────────────────────────────────────────────

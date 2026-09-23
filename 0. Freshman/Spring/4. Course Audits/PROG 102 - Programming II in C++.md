@@ -96,18 +96,19 @@ syllabus, quizzes, labs and answer-sheet filing. The final was "Week 12" and is 
 
 ---
 
-## Open decisions (left to you)
+## Decisions (2026-09-23)
 
-1. **Lab 12 (the Project 2 demo) is Mon 19 Apr, in finals week**, three days before the final. That is
-   arguably the right place for a demo, but it breaks "instruction ends Fri 16 Apr".
-2. **Exam lengths.**
-   - The final is written for 180 minutes; the registry books 150 (14:00–16:30).
-   - The midterm papers are 75 minutes in a 90-minute registry slot (18:00–19:30). They were left as
-     75-minute papers.
-3. **Week 0's Friday lecture** (L03, Fri 22 Jan 10:00) is outside PROG 102's Tue–Thu pattern. The
-   timetable has the slot free.
-4. **Holidays:**
-   - Presidents Day (Mon 15 Feb) is Lab 3.
-   - MLK Day (Mon 18 Jan) has no PROG 102 class.
-5. **Quiz file names still say "Monday"** (e.g. `QUIZ 3 Week 3 Monday.md`). Their contents and dates say
-   Tuesday. They were not renamed, to keep existing links intact.
+1. **The Project 2 demo stays on Mon 19 Apr.** Lab 12 is an assessment, the demo and code review of
+   Project 2 (submitted Fri 16 Apr), not a teaching lab. Finals week holds assessments, so it belongs
+   there. The handout says so, in BH 215 at 15:00.
+2. **The final is 150 minutes**, the length of the registry slot (Thu 22 Apr, 14:00–16:30). The revision
+   guide is rescaled to A30/B40/C40/D25/E15, which totals 150 at a mark a minute. The gradebook's
+   possible marks went from 180 to 150, and the answer sheets were regenerated.
+3. **The midterms stay 75-minute papers in the 90-minute slot.** This matches the other three courses'
+   midterms and leaves 15 minutes for seating and collection.
+4. **Week 0's Friday L03 (Fri 22 Jan, 10:00) is kept.** The slot is free, and without it PS 0 would
+   have nothing to release after.
+5. **The quiz files are renamed** `QUIZ N Week N Tuesday.md`, to match their contents. Every link and
+   answer sheet was updated.
+6. **Holidays follow UNIVERSITY POLICIES.** MLK Day has no PROG 102 class. Presidents Day is not a
+   university holiday, so Lab 3 runs on Mon 15 Feb.

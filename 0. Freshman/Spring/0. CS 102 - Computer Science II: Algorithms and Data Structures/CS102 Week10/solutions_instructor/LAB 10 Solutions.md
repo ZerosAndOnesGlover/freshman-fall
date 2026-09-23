@@ -155,7 +155,7 @@ design, and 44,850 comparisons is not a compute problem, it is a needless-work p
 | C | 10 |
 | **Total** | **40** |
 
-Labs are pass/fail for progression: **10 of 13 required.** This is Lab 10 of 13 — a student who has
+Labs are pass/fail for progression: **10 of the 12 required labs (0–11).** This is Lab 10 of the 12 required — a student who has
 missed three has now used their allowance and must complete Labs 11 and 12. **Tell them individually
 this week**, not in Week 12.
 

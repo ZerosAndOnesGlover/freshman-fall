@@ -3,6 +3,7 @@
 
 **Credits:** 4 (3 lecture + 1 lab) · **Prerequisites:** CS 101, MATH 151
 **Assessment for this course (overall):** Problem Sets 35%, Midterms 25%, Final 20%, Projects 20%
+**No class Monday 18 January** (Martin Luther King Day); Lecture 01 meets Tuesday 19 January, 09:00.
 **This week's deliverable:** Lab 0 (**Tue 26 Jan**, 15:00). **No problem set and no quiz** — Quiz 1 (Mon 25 Jan, 09:00) covers this week.
 
 ---
@@ -57,7 +58,7 @@ Lecture 03's exercises are the beginning of that skill and are worth more than t
 ### Assessment Reminder
 
 Labs and quizzes carry **no direct weight** — the curriculum's assessment line sums to 100% without
-them. They are still required: **at least 10 of 13 labs must be completed satisfactorily to pass the
+them. They are still required: **at least 10 of the 12 required labs (Labs 0–11) must be completed satisfactorily to pass the
 course**, and **Quiz *N* covers Week *N−1***. The reasoning is in the syllabus, and it is short: a lab
 you can skip for a 2% grade cost is a lab you will skip in the week you are busiest, which is
 reliably the week the material is hardest.

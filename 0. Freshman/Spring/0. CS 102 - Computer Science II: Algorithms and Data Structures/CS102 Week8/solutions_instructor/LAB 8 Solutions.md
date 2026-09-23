@@ -167,7 +167,7 @@ loop executes. For (b), reject "it's faster on dense graphs", which their own D1
 | D | 8 |
 | **Total** | **40** |
 
-Labs are pass/fail for progression: **10 of 13 required.**
+Labs are pass/fail for progression: **10 of the 12 required labs (0–11).**
 
 ---
 

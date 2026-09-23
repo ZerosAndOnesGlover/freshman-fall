@@ -13,7 +13,7 @@
 | **Credits** | 4 (3 lecture + 1 lab) |
 | **Semester** | Spring, Year 1 |
 | **Meeting** | Lectures Tue/Wed/Thu 10:00–10:50; lab Mon 15:00–16:50 (Lab *N* meets the Monday after Week *N*) |
-| **Term** | Monday 18 January – Friday 16 April 2027; finals Monday 19 – Friday 23 April |
+| **Term** | Monday 18 January – Friday 16 April 2027 (Monday 18 January is Martin Luther King Day — no classes); finals Monday 19 – Friday 23 April |
 | **Prerequisites** | **PROG 101 (C), CS 101** |
 | **Language** | **C++ (C++17 standard)** |
 | **Assessment** | **Labs 20%, Problem Sets 30%, Midterms 25%, Final 15%, Projects 10%** |
@@ -112,7 +112,7 @@ used from Week 0 without re-teaching.
 | **Problem Sets (12)** | 30% | PS 0–11, released Friday 10:00 (PS 0: 11:00) after the week's last lecture, due the following Friday 17:00. **Lowest 1 dropped.** No problem set in Week 12. |
 | **Midterm Exam 1** (Tue 2 Mar, Week 6) | 12.5% | 18:00–19:30 slot, a 75-minute paper. Covers Weeks 0–4. One handwritten sheet, 1 side. |
 | **Midterm Exam 2** (Tue 30 Mar, Week 10) | 12.5% | 18:00–19:30 slot, a 75-minute paper. Covers Weeks 5–9. Same rules. |
-| **Final Exam** (Thu 22 Apr, finals week) | 15% | Comprehensive. Two handwritten sheets. ⚠️ Written for 180 minutes; the registry books 14:00–16:30 (150). Open decision. |
+| **Final Exam** (Thu 22 Apr, finals week) | 15% | 14:00–16:30, 150 minutes, comprehensive. Two handwritten sheets. |
 | **Project 1** (assigned Tue 2 Mar, due Fri 26 Mar 17:00) | 5% | A substantial implementation with a written analysis. |
 | **Project 2** (assigned Tue 6 Apr, due Fri 16 Apr 17:00) | 5% | The capstone: a data structure library with tests. |
 | **Total** | **100%** | |

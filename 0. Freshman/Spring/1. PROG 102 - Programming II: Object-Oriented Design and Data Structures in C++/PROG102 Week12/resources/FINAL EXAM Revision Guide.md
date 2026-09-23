@@ -1,8 +1,7 @@
 # PROG 102 · Final Exam · Revision Guide
 ## Comprehensive — Weeks 0–12
 
-**Sat Thursday 22 April 2027, 14:00–16:30 (finals week) · written for 180 minutes — ⚠️ the registry books 150;
-open decision · 15% of the course grade**
+**Sat Thursday 22 April 2027, 14:00–16:30 (finals week) · 150 minutes · 15% of the course grade**
 **Closed book, closed device. Two handwritten sheets of A4.**
 
 ---
@@ -19,15 +18,15 @@ under-revised.
 
 | Section | Marks | What it asks |
 | --- | --- | --- |
-| **A — Short answer** | 40 | 16 questions. Definitions, one-line explanations, "what does this print" |
-| **B — Code reading** | 45 | What does this do; what is wrong with it; what does the compiler say |
-| **C — Code writing** | 45 | Write a class, an operation, or a fix. **Drawn from Project 2's material** |
-| **D — Explain a measurement** | 30 | Two tables. What they show, and what they do not |
-| **E — Design judgement** | 20 | An open question with no single right answer |
-| **Total** | **180** | |
+| **A — Short answer** | 30 | 12 questions. Definitions, one-line explanations, "what does this print" |
+| **B — Code reading** | 40 | What does this do; what is wrong with it; what does the compiler say |
+| **C — Code writing** | 40 | Write a class, an operation, or a fix. **Drawn from Project 2's material** |
+| **D — Explain a measurement** | 25 | Two tables. What they show, and what they do not |
+| **E — Design judgement** | 15 | An open question with no single right answer |
+| **Total** | **150** | |
 
-**Two hundred minutes of material in 180 minutes is not the design.** The paper is written to be
-finishable in 160. If you are short of time, you have been over-writing.
+**A mark a minute.** The paper is written to be finishable in about 135 minutes. If you are short of
+time, you have been over-writing.
 
 ---
 
@@ -46,7 +45,7 @@ as a 5% throwaway.
 
 ## Section D: The Measurements
 
-**Two tables, 30 marks.** Do not memorise numbers — the table is given. **Memorise what each
+**Two tables, 25 marks.** Do not memorise numbers — the table is given. **Memorise what each
 demonstrates and what it does not.**
 
 | Measurement | Shows | And does not show |
@@ -80,7 +79,7 @@ evidence for, and — where relevant — says what the denominator is.**
 
 ## Section E: Design Judgement
 
-**20 marks, no single right answer.** Likely shapes:
+**15 marks, no single right answer.** Likely shapes:
 
 - *"A colleague proposes X. Argue for and against."*
 - *"Choose a container/pattern/mechanism for this situation and defend it."*
@@ -155,7 +154,7 @@ Two sides of A4, handwritten. **Making them is most of the revision.**
 
 ## Practicalities
 
-- **180 minutes**, written to be finishable in 160.
+- **150 minutes**, written to be finishable in about 135.
 - **Section C is marked on ideas, not syntax.** Missing `#include`s cost nothing. A missing `virtual`
   destructor, a missing `noexcept` on a swap, or an `operator[]` that returns by value cost plenty.
 - **Section D: show your reasoning.** A number with no argument earns little; an argument with an

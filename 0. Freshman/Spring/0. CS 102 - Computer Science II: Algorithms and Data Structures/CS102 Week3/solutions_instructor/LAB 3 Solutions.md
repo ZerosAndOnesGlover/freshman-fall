@@ -236,7 +236,7 @@ At the bench, verify in this order:
 | D | 8 |
 | **Total** | **40** |
 
-Labs are pass/fail for progression: **10 of 13 required.** Record the score for feedback, but a
+Labs are pass/fail for progression: **10 of the 12 required labs (0–11).** Record the score for feedback, but a
 student who completes A–C and answers D1 wrongly still passes the lab.
 
 ---

@@ -13,7 +13,7 @@
 | **Credits** | 4 (3 lecture + 1 lab) |
 | **Semester** | Spring, Year 1 |
 | **Meeting** | Lectures Mon/Wed/Fri 09:00–09:50; lab Tue 15:00–16:50 (Lab *N* meets the Tuesday after Week *N*) |
-| **Term** | Monday 18 January – Friday 16 April 2027; finals Monday 19 – Friday 23 April |
+| **Term** | Monday 18 January – Friday 16 April 2027 (Monday 18 January is Martin Luther King Day — no classes); finals Monday 19 – Friday 23 April |
 | **Prerequisites** | **CS 101, MATH 151** |
 | **Languages** | Python 3 (primary), C (for the memory-sensitive work) |
 | **Assessment** | **Problem Sets 35%, Midterms 25%, Final 20%, Projects 20%** |
@@ -71,7 +71,7 @@ terminology, and summation manipulation are used from Week 0 without re-teaching
 | **9** | Greedy Algorithms | PS 9, Lab 9, Quiz 9 · **Project 1 due** |
 | **10** | String Algorithms | PS 10, Lab 10, Quiz 10 · **MIDTERM 2** (Mon 29 Mar, Weeks 5–9) · Project 2 assigned |
 | **11** | Computational Geometry and Advanced Data Structures | PS 11, Lab 11, Quiz 11 |
-| **12** | NP-Completeness and the Limits of Efficiency | **Project 2 due** (Fri 16 Apr) · Lab 12 meets Tue 20 Apr, in finals week |
+| **12** | NP-Completeness and the Limits of Efficiency | **Project 2 due** (Fri 16 Apr) · Lab 12: optional self-paced revision, no session |
 | **Finals** | — | **FINAL EXAM** Wed 21 Apr, 09:00–11:30 |
 
 ---
@@ -83,7 +83,7 @@ terminology, and summation manipulation are used from Week 0 without re-teaching
 | **Problem Sets (11)** | 35% | PS 1–11, released Friday 10:00 after the week's last lecture, due the following Friday 17:00. **Lowest 1 dropped.** No problem set in Weeks 0 or 12. |
 | **Midterm Exam 1** (Mon 1 Mar, Week 6) | 12.5% | 18:00–19:15, 75 minutes. Covers Weeks 0–4. One handwritten sheet, 1 side. |
 | **Midterm Exam 2** (Mon 29 Mar, Week 10) | 12.5% | 18:00–19:15, 75 minutes. Covers Weeks 5–9. Same rules. |
-| **Final Exam** (Wed 21 Apr, finals week) | 20% | Comprehensive. Two handwritten sheets. ⚠️ Written for 180 minutes; the registry books 09:00–11:30 (150). Open decision. |
+| **Final Exam** (Wed 21 Apr, finals week) | 20% | 09:00–11:30, 150 minutes, comprehensive. Two handwritten sheets. |
 | **Project 1** (assigned Mon 8 Mar, due Fri 26 Mar 17:00) | 10% | Substantial implementation with a written analysis. |
 | **Project 2** (assigned Mon 29 Mar, due Fri 16 Apr 17:00) | 10% | Second project. |
 | **Total** | **100%** | |
@@ -99,9 +99,10 @@ without them.
 
 **They are still required.**
 
-- **Labs (13, Weeks 0–12)** meet Tuesday 15:00–16:50 of the week *after* the week they cover, so every
-  lab comes after its three lectures. They are marked on completion and correctness with an in-lab checkoff. **You
-  must satisfactorily complete at least 10 of the 13 labs to pass the course**, regardless of your
+- **Labs (Labs 0–11 required; Lab 12 optional)** meet Tuesday 15:00–16:50 of the week *after* the week
+  they cover, so every lab comes after its three lectures. Lab 12 would fall in finals week, which holds
+  exams only, so it is optional self-paced revision. They are marked on completion and correctness with an in-lab checkoff. **You
+  must satisfactorily complete at least 10 of the 12 required labs (Labs 0–11) to pass the course**, regardless of your
   weighted average. A lab is where you find out that your algorithm was wrong.
 - **Quizzes (11, Weeks 1–11)** are 15 minutes at the start of Monday's lecture (09:00–09:15). **Quiz *N* covers
   Week *N−1***, the same convention CS 101 used. They are marked and returned so that you and the

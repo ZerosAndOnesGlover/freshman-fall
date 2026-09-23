@@ -6,7 +6,7 @@
 
 **Topic:** the last week — where everything goes next
 **Reading:** Stewart §9.6 | Apostol Ch. 8 §8.8
-**Assessment this week:** Lab 12, **Quiz 12** *(Mon 12 Apr, 11:00 — covers Week 11)*, PS 12 *(ungraded)*, and the **FINAL EXAM**
+**Assessment this week:** Lab 12 (**Thu 15 Apr, 15:00**, in place of the recitation), **Quiz 12** *(Mon 12 Apr, 11:00 — covers Week 11)*, PS 12 *(ungraded)*, and the **FINAL EXAM**
 
 ---
 
@@ -102,9 +102,9 @@ $$\frac{dx}{dt} = f(x,y), \qquad \frac{dy}{dt} = g(x,y)$$
 ## This Week's Work
 
 1. **Quiz 12** — Monday, 15 minutes, **covers Week 11** (separable and linear ODEs). *The last quiz.*
-2. **Lab 12** — the self-diagnostic. **Do it under exam conditions.**
+2. **Lab 12** — Thursday 15 April, 15:00–16:50 (SSB 108), the self-diagnostic. **Do it under exam conditions.**
 3. **PS 12** — ungraded, with answers included.
-4. **The FINAL EXAM.** See the revision guide in `resources/`.
+4. **The FINAL EXAM** — Tuesday 20 April, 09:00–11:30. See the revision guide in `resources/`.
 
 ---
 

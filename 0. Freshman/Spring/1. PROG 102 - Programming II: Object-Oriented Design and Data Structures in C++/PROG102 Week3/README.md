@@ -45,7 +45,7 @@ By the end of Week 3, you should be able to:
 | [[L11 The Containers]] | Sequence, associative, adaptors — and how to choose |
 | [[L12 The Algorithms]] | `sort`, `find`, `transform`, `accumulate`, and `vector<bool>` |
 | [[PS 3 Ten Problems With the STL]] | Due Fri 19 Feb 17:00 |
-| [[PROG102 Week3/assignments/QUIZ 3 Week 3 Monday\|QUIZ 3 Week 3 Monday]] | 15 minutes, covers Week 2 |
+| [[PROG102 Week3/assignments/QUIZ 3 Week 3 Tuesday\|QUIZ 3 Week 3 Tuesday]] | 15 minutes, covers Week 2 |
 | [[LAB 3 Profiling STL Containers]] | Measure the containers and find where the complexity table lies |
 | [[PROG102 Week3/resources/Reading Guide Week 3\|Reading Guide Week 3]] | *C++ Primer* Ch. 9–11, and every command to reproduce this week |
 | [[PROG102 Week3/solutions_instructor/PS 3 Solutions\|PS 3 Solutions]] | Instructor only |

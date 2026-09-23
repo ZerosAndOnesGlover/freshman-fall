@@ -39,7 +39,7 @@ Every design question in digital logic reduces to two numbers: **how many gates*
 | Component | Weight | Rule |
 |---|---|---|
 | **Laboratory** | **25%** | 13 labs, Weeks 0–12. No drops — the lab is a third of the contact hours. |
-| **Problem Sets** | **35%** | PS 0–12, released Thursday 14:30 after Lecture 2, due the following Thursday 13:00 (PS 12: Thu 22 Apr). Lowest 1 dropped. |
+| **Problem Sets** | **35%** | PS 0–11, released Thursday 14:30 after Lecture 2, due the following Thursday 13:00. Lowest 1 dropped. PS 12 is an ungraded self-check (answers Fri 16 Apr), because a due date after Week 12 would fall after the final. |
 | **Midterm Exam** *(Thu 4 Mar, 18:00–19:15, Week 6)* | **25%** | 75 minutes, covering **Weeks 0–5**. One handwritten sheet, one side. |
 | **Final Exam** *(Mon 19 Apr, 08:00–10:00)* | **15%** | 120 minutes, comprehensive. Two handwritten pages. |
 | **Total** | **100%** | |

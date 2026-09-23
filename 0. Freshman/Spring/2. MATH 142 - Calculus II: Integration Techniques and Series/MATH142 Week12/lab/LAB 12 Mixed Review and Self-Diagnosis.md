@@ -2,7 +2,10 @@
 ## Lab 12: Mixed Review and Self-Diagnosis
 ### Week 12 Lab Session
 
-**Date:** Wednesday 21 April 2027 · 15:00–16:50 · Lab section (finals week — see the course audit) — covers Week 12 (Lectures 1–3)
+**Date:** Thursday 15 April 2027 · 15:00–16:50 · SSB 108, in place of that week's recitation — covers Week 12 (Lectures 1–2; Lecture 3 is not needed)
+
+> Under the Wednesday-after rule Lab 12 would fall in finals week, which holds exams only. It needs only
+> Monday's and Tuesday's lectures, so it meets on the Thursday of Week 12 instead.
 
 ---
 

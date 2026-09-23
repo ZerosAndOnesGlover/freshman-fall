@@ -53,7 +53,7 @@ By the end of Week 1, you should be able to:
 | [[L05 Copy Semantics and the Rule of Three]] | Shallow vs deep, the generated copy constructor, self-assignment traced |
 | [[L06 The Copy-Swap Idiom]] | Copy-swap, copy elision measured, and a first look at moves |
 | [[PS 1 A Vector3D Class]] | Due Fri 5 Feb 17:00 |
-| [[PROG102 Week1/assignments/QUIZ 1 Week 1 Monday\|QUIZ 1 Week 1 Monday]] | 15 minutes, start of Tuesday's lecture |
+| [[PROG102 Week1/assignments/QUIZ 1 Week 1 Tuesday\|QUIZ 1 Week 1 Tuesday]] | 15 minutes, start of Tuesday's lecture |
 | [[LAB 1 Debugging Copy Semantics]] | Instrument a class and count every copy it makes |
 | [[PROG102 Week1/resources/Reading Guide Week 1\|Reading Guide Week 1]] | *C++ Primer* Ch. 13–14, and the commands to reproduce every measurement |
 | [[PROG102 Week1/solutions_instructor/PS 1 Solutions\|PS 1 Solutions]] | Instructor only |

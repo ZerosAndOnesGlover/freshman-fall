@@ -64,12 +64,11 @@ provenance notes stay: they describe how the lecture's numbers were produced and
 
 ---
 
-## Open decisions (left to you)
+## Decisions (2026-09-23)
 
-1. **PS 12 is due Thu 22 Apr, after the final exam** (Mon 19 Apr). This follows the course's own
-   "Thursday of exam week" rule. The alternatives are to drop PS 12, since the lowest problem set is
-   dropped anyway, or to shorten its window to Fri 16 Apr.
-2. **Presidents Day (Mon 15 Feb)** does not touch ECE 110; MLK Day does not either.
-3. **Verilog before Week 10.** If you would rather students met Verilog early, the other route is to
-   move Lecture 10.1 into Week 1 as a primer. The Python route was taken because it needs no new
-   teaching.
+1. **PS 12 is an ungraded self-check.** Its answers are released Fri 16 Apr, 17:00, before the final
+   on Mon 19 Apr. Graded work is PS 0–11. Since the lowest set is dropped anyway, nothing is lost, and
+   no work falls due after the final. The gradebook row and the answer sheet were removed.
+2. **Holidays** do not touch ECE 110, whose classes meet Wed–Fri.
+3. **The Python route for Labs 1–9 is kept.** It needs no new teaching, and Verilog still arrives
+   whole in Week 10, where Lectures 10.1–10.2 teach it properly.

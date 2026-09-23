@@ -63,7 +63,7 @@ By the end of Week 10, you should be able to:
 | [[L32 Mutexes Deadlock and Condition Variables]] | Mutual exclusion, deadlock, and waiting properly |
 | [[L33 Atomics and Thread-Safe Data Structures]] | `std::atomic`, the bounded queue, and what sharing costs |
 | [[PS 10 A Thread-Safe Bounded Queue]] | Due Fri 9 Apr 17:00 |
-| [[PROG102 Week10/assignments/QUIZ 10 Week 10 Monday\|QUIZ 10 Week 10 Monday]] | 15 minutes, covers Week 9 |
+| [[PROG102 Week10/assignments/QUIZ 10 Week 10 Tuesday\|QUIZ 10 Week 10 Tuesday]] | 15 minutes, covers Week 9 |
 | [[LAB 10 Finding Races with ThreadSanitizer]] | Five races, found and fixed |
 | [[PROG102 Week10/resources/MIDTERM 2 Revision Guide\|MIDTERM 2 Revision Guide]] | **Weeks 5–9, sat this week** |
 | [[PROG102 Week10/resources/Reading Guide Week 10\|Reading Guide Week 10]] | Williams, the memory model, and every command |

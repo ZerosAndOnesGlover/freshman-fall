@@ -1,15 +1,15 @@
 # CS 102 · Lab 12
 ## A TSP Approximation
 
-**Date:** Tuesday 20 April 2027 · 15:00–16:50 · Lab section (finals week) — covers Week 12 (L37–L39)
-> ⚠️ Under the "Lab *N* meets the Tuesday after Week *N*" rule this lab falls in finals week, the day
-> before the CS 102 final. Moving it is an open decision recorded in the CS 102 course audit.
-*2-hour lab · 40 points · in-lab checkoff*
-**Deliverable:** `lab12.py` and `RESULTS.md`. In-lab checkoff by your TA.
+**When:** self-paced, any time after Lecture 39 (Friday 16 April). **Optional** — there is no Lab 12
+session, because finals week holds exams only.
+*Ungraded · not part of the lab gate · solutions released Monday 19 April*
+**Deliverable:** none. `lab12.py` and `RESULTS.md` are for your own revision.
 
-> **This is the last lab.** You must have satisfactorily completed **at least 10 of the 13** to pass
-> the course. If you are at nine, this one is compulsory.
-> **PROJECT 2 and PS 11 were due Friday 16 April. The FINAL EXAM is tomorrow, Wednesday 21 April, 09:00.**
+> **Lab 12 is optional revision for the final.** The pass gate is **10 of the 12 required labs (Labs
+> 0–11)**; Lab 12 does not count towards it. It is the best practice there is for Section D of the
+> final: an exact method hitting a wall, an approximation with a guarantee, and a heuristic without one.
+> **The FINAL EXAM is Wednesday 21 April, 09:00.**
 
 ---
 
@@ -90,16 +90,12 @@ Start it from your MST tour.
 
 ---
 
-## Submission
+## Checking Your Work
 
-- `lab12.py` — runnable end to end, producing every table.
-- `RESULTS.md` — all tables and answers. **Include your machine and Python version.**
+Nothing is submitted. Compare your tables and answers with the solutions released on Monday 19 April.
+The weights below show where the effort belongs.
 
----
-
-## Marking
-
-| Part | Points | Focus |
+| Part | Weight | Focus |
 | --- | --- | --- |
 | A | 10 | The exponential wall, measured and extrapolated |
 | B | 12 | The 2-approximation and its proof |

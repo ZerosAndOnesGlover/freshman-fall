@@ -47,7 +47,7 @@ By the end of Week 5, you should be able to:
 | [[L17 shared_ptr weak_ptr and the Cost of Sharing]] | Reference counting, the cycle leak, and the atomic |
 | [[L18 Move Semantics]] | Rvalue references, `std::move`, Rule of Five, Rule of Zero |
 | [[PS 5 From Raw Pointers to Smart Pointers]] | Due Fri 5 Mar 17:00 |
-| [[PROG102 Week5/assignments/QUIZ 5 Week 5 Monday\|QUIZ 5 Week 5 Monday]] | 15 minutes, covers Week 4 |
+| [[PROG102 Week5/assignments/QUIZ 5 Week 5 Tuesday\|QUIZ 5 Week 5 Tuesday]] | 15 minutes, covers Week 4 |
 | [[LAB 5 Leak Detection with AddressSanitizer]] | Find five leaks, fix them with ownership types |
 | [[PROG102 Week5/resources/Reading Guide Week 5\|Reading Guide Week 5]] | *C++ Primer* Ch. 12–13, Meyers Items 18–22, and every command |
 | [[PROG102 Week5/solutions_instructor/PS 5 Solutions\|PS 5 Solutions]] | Instructor only |

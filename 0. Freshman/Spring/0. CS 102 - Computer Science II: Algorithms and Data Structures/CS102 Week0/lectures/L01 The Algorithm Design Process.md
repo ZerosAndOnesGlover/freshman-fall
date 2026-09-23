@@ -1,7 +1,7 @@
 # CS 102 · Computer Science II
 ## Lecture 01: The Algorithm Design Process
 
-**Date:** Monday 18 January 2027 · 09:00–09:50 · Week 0
+**Date:** Tuesday 19 January 2027 · 09:00–09:50 · Week 0 — moved from Monday 18 January (Martin Luther King Day, no classes)
 
 ---
 

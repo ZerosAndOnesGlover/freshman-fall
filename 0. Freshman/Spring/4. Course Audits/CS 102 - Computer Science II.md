@@ -133,7 +133,7 @@ material from a later week or from nowhere.
 - **Lab 11 Part D** ($k$-nearest with a bounded heap) is not taught.
 
 **Week 12.** Lab 12 is aligned: Held–Karp is from L26, and the MST tour and 2-opt are from L39. Only its
-date is a problem (see Open decisions).
+date was a problem; it is now optional revision (see Decisions).
 
 ---
 
@@ -170,16 +170,20 @@ re-run and match.
 
 ---
 
-## Open decisions (left to you)
+## Decisions (2026-09-23)
 
-1. **Lab 12 falls in finals week.** Under the Tuesday-after rule it meets Tue 20 Apr, the day before
-   the CS 102 final. The alternatives are to run it Tue 13 Apr before L39, which would break
-   taught-before-assessed, or to drop it: the 10-of-13 gate still works with 12 labs.
-2. **Final exam length.** The paper and revision guide are written for 180 minutes, but the registry
-   books 150 (09:00–11:30).
-3. **Midterm 1 scope.** It now sits in Week 6 but still covers Weeks 0–4, which matches the gradebook.
-   The registry's old note said "Weeks 0–5".
-4. **Holidays:** MLK Day (Mon 18 Jan) is the first CS 102 lecture, and Presidents Day (Mon 15 Feb) is
-   Quiz 4 and L13.
-5. **Project 1 is due the same day as PS 8** (Fri 26 Mar). The set was cut to about four hours for
-   that reason, but the collision is still there.
+1. **Lab 12 is optional, self-paced revision.** Running it on Tue 13 Apr would assess material before
+   L39 teaches it, and running it on Tue 20 Apr would put a lab in finals week, the day before the final.
+   It is now ungraded and not part of the gate. Its solutions are released Mon 19 Apr. The gate is
+   **10 of the 12 required labs (Labs 0–11)**. The handout, key, Week 12 README, syllabus, lab record
+   and gradebook all say so.
+2. **The final is 150 minutes**, the length of the registry slot (Wed 21 Apr, 09:00–11:30). The
+   revision guide is rescaled to a mark a minute, with Section A at 10–12 questions, and the answer
+   sheets were regenerated.
+3. **Midterm 1 covers Weeks 0–4.** This is kept, because Week 5 is examined on Midterm 2 and the
+   gradebook already says 0–4. The registry now agrees.
+4. **Holidays follow UNIVERSITY POLICIES.** MLK Day is a no-classes day, so L01 moves to Tue 19 Jan,
+   09:00. That slot is free, and the first lab is not until Week 1. Presidents Day is not a university
+   holiday, so Quiz 4 and L13 run on Mon 15 Feb as scheduled.
+5. **Project 1 and PS 8 both fall on Fri 26 Mar.** This is accepted. PS 8 was already cut to about
+   four hours, and moving either one would push work into Midterm 2 week.

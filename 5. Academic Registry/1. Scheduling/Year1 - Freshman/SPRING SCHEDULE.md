@@ -79,7 +79,7 @@
 10:00 – 10:50   📖 PROG 102 Lecture
 12:00 – 13:00   Lunch
 13:00 – 14:15   📖 ECE 110 Lecture — ⚠️ QUIZ DAY for ECE 110 (Weeks 2–12, ungraded)
-15:00 – 16:50   🔬 MATH 142 LAB SECTION (Lab N meets the Wednesday after Week N)
+15:00 – 16:50   🔬 MATH 142 LAB SECTION (Lab N meets the Wednesday after Week N; Lab 12 meets Thu 15 Apr in the recitation slot)
 18:00 – 21:00   Evening study
 ```
 
@@ -144,6 +144,8 @@ Midterm and final exams are held in the **evening** to avoid displacing regular 
 |-----------|-------------|---------|----------|
 | Midterm Exams | 18:00–19:15 or 18:00–19:30 | 75–90 min | Large lecture hall (see ROOM ASSIGNMENTS.md) |
 | Final Exams | 08:00–10:00, 09:00–11:30, or 14:00–16:30 | 120–150 min | Assigned exam room |
+
+> **Mon 18 Jan 2027 is Martin Luther King Day — no classes.** CS 102 Lecture 01 meets Tue 19 Jan 09:00; MATH 142 Lectures 1–2 meet Tue 19 and Wed 20 Jan 11:00; the MATH 142 diagnostic quiz is in the Thu 21 Jan recitation. Presidents Day (Mon 15 Feb) is not a university holiday; classes run.
 
 > Check ASSESSMENT CALENDAR.md for exact exam dates. Conflicts must be reported to your academic advisor at least 2 weeks in advance.
 

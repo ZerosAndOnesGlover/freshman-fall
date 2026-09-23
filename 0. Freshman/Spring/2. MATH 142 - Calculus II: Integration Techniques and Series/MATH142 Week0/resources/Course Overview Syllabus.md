@@ -7,7 +7,7 @@
 **Credits:** 4
 **Semester:** Spring, Year 1
 **Meeting:** lectures Mon/Tue/Fri 11:00–11:50; recitation Thu 15:00–15:50; lab Wed 15:00–16:50 (Lab *N* meets the Wednesday after Week *N*)
-**Term:** Monday 18 January – Friday 16 April 2027; finals Monday 19 – Friday 23 April
+**Term:** Monday 18 January – Friday 16 April 2027 (Monday 18 January is Martin Luther King Day — no classes); finals Monday 19 – Friday 23 April
 **Prerequisites:** MATH 141
 
 ---
@@ -44,7 +44,7 @@ When CS 331 tells you a gradient method converges linearly, or when you find out
 | Midterm Exam 1 (Wed 3 Mar, 18:00, Week 6) | **15%** | 75 minutes. Covers Weeks 0–4. 1 cheat sheet (handwritten, 1 side). |
 | Midterm Exam 2 (Wed 31 Mar, 18:00, Week 10) | **15%** | 75 minutes. Covers Weeks 5–9. Same rules. |
 | Final Exam (Tue 20 Apr, 09:00, finals week) | **20%** | 150 minutes. Comprehensive. 2-page cheat sheet. |
-| Lab Sections (13 labs) | **10%** | Weekly 2-hr lab, Wednesday 15:00 of the following week (Lab 12: Wed 21 Apr). Graded on completion + correctness. |
+| Lab Sections (13 labs) | **10%** | Weekly 2-hr lab, Wednesday 15:00 of the following week (Lab 12: Thu 15 Apr, 15:00, in place of that week's recitation). Graded on completion + correctness. |
 | Weekly Quizzes (12) | **10%** | 15 minutes at the start of Monday's lecture, Weeks 1–12. Quiz *N* covers Week *N−1*. Lowest 1 dropped. |
 
 > **A note on these weights.** The Year 1 curriculum document specifies this course's topics,
@@ -93,7 +93,7 @@ governs if the two ever differ.
 | **9** | Power Series; Radius and Interval of Convergence | A series with a variable in it | PS 9, Lab 9, Quiz 09 |
 | **10** | Taylor and Maclaurin Series; Applications | Any smooth function, as a polynomial | PS 10, Lab 10, Quiz 10, **MIDTERM 2** (Wed 31 Mar) |
 | **11** | Differential Equations: Separable and Linear | Equations whose unknown is a function | PS 11, Lab 11, Quiz 11 |
-| **12** | Systems; Numerical Methods Preview; Review | Where the exact answer runs out | PS 12 *(ungraded)*, Lab 12 (Wed 21 Apr), Quiz 12, **FINAL** (Tue 20 Apr) |
+| **12** | Systems; Numerical Methods Preview; Review | Where the exact answer runs out | PS 12 *(ungraded)*, Lab 12 (Thu 15 Apr), Quiz 12, **FINAL** (Tue 20 Apr) |
 
 ---
 

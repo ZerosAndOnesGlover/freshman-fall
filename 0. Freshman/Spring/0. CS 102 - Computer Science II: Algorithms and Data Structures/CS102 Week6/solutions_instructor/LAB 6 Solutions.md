@@ -179,7 +179,7 @@ about the clusters overlapping — the question asked what you would look at, gi
 | D | 8 |
 | **Total** | **40** |
 
-Labs are pass/fail for progression: **10 of 13 required.** A student completing A–C passes.
+Labs are pass/fail for progression: **10 of the 12 required labs (0–11).** A student completing A–C passes.
 
 ---
 

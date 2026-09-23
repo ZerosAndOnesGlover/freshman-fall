@@ -53,15 +53,21 @@ They were not trimmed further.
 
 ---
 
-## Open decisions (left to you)
+## Decisions (2026-09-23)
 
-1. **Lab 12 is Wed 21 Apr**, in finals week under the Wednesday-after rule. It is a mixed-review lab
-   and could be dropped, or moved into the Thu 15 Apr recitation slot at the cost of preceding
-   Lecture 3 of Week 12.
-2. **Adding a Wednesday lab slot** means 16:50 finishes on Wednesdays. SPRING SCHEDULE has been
-   updated to show it.
-3. **Holidays:**
-   - MLK Day (Mon 18 Jan) is Lecture 1 and the diagnostic.
-   - Presidents Day (Mon 15 Feb) is Quiz 04 and Week 4 Lecture 1.
-4. **Midterm 1 scope.** It sits in Week 6 but covers Weeks 0–4. The Week 5 material (parametric and
-   polar) is examined on Midterm 2, as the course already planned.
+1. **Lab 12 moves to Thu 15 Apr, 15:00–16:50, in the recitation slot (SSB 108).** Lab 12 covers
+   Lectures 1–2 of Week 12, both taught by Tue 13 Apr. Lecture 3 ("The Road Ahead") adds nothing that it
+   assesses. This keeps
+   finals week free of labs. The syllabus and the Week 12 Overview agree.
+2. **The Wednesday 15:00 lab slot is kept** for Labs 0–11. It is free in the Spring timetable, and it
+   falls after each week's three lectures.
+3. **The weights are the gradebook's:** PS 30%, Midterms 30% (15 + 15), Final 20%, Labs 10%, Quizzes
+   10%. The MASTER TIMETABLE and ASSESSMENT CALENDAR now say the same.
+4. **Holidays follow UNIVERSITY POLICIES.** MLK Day is a no-classes day:
+   - Lecture 1 moves to Tue 19 Jan and Lecture 2 to Wed 20 Jan, both at 11:00.
+   - The diagnostic Quiz 00 moves to the Thu 21 Jan recitation at 15:00.
+   - PS 0 is released Tue 19 Jan at 12:00.
+
+   Presidents Day is not a university holiday, so Quiz 04 runs on Mon 15 Feb.
+5. **Midterm 1 covers Weeks 0–4**, and Week 5 (parametric and polar) goes on Midterm 2, as the course
+   planned.

@@ -50,7 +50,7 @@ By the end of Week 4, you should be able to:
 | [[L14 Virtual Functions and the vtable]] | The mechanism, the cost measured, and speculative devirtualization |
 | [[L15 Abstract Classes Destructors and Casting]] | Pure virtual, the destructor rule, slicing, `dynamic_cast` |
 | [[PS 4 A Shape Hierarchy]] | Due Fri 26 Feb 17:00 |
-| [[PROG102 Week4/assignments/QUIZ 4 Week 4 Monday\|QUIZ 4 Week 4 Monday]] | 15 minutes, covers Week 3 |
+| [[PROG102 Week4/assignments/QUIZ 4 Week 4 Tuesday\|QUIZ 4 Week 4 Tuesday]] | 15 minutes, covers Week 3 |
 | [[LAB 4 Reading the vtable in GDB]] | Find the vptr, walk the vtable, watch it change |
 | [[PROG102 Week4/resources/MIDTERM 1 Revision Guide\|MIDTERM 1 Revision Guide]] | **Weeks 0–4, sat Tue 2 Mar (Week 6).** Start now |
 | [[PROG102 Week4/resources/Reading Guide Week 4\|Reading Guide Week 4]] | *C++ Primer* Ch. 15, and every command to reproduce this week |

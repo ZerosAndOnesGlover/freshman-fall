@@ -6,7 +6,8 @@
 
 **Topic:** the integral you already have, restated precisely enough to build on
 **Reading:** Stewart §5.1–5.5, §6.1, §6.5 (review) | Apostol Ch. 1–2 (optional, for the definition)
-**Assessment this week:** PS 0 (due **Friday of Week 0, 11:59 PM** — compressed), Lab 0, Diagnostic Quiz *(ungraded)*
+**Assessment this week:** PS 0 (released Tue 19 Jan 12:00, due **Fri 22 Jan 17:00** — compressed), Lab 0 (Wed 27 Jan, 15:00), Diagnostic Quiz *(ungraded, Thu 21 Jan 15:00 recitation)*
+**No class Monday 18 January** (Martin Luther King Day); Lectures 1 and 2 meet Tuesday and Wednesday at 11:00.
 
 ---
 
@@ -28,8 +29,8 @@ This week re-establishes three things: **the definition**, **the technique you a
 
 | | Day | Topic | The point |
 |---|---|---|---|
-| **Lecture 1** | Monday | The Definite Integral and the Fundamental Theorem | The integral is a limit; the FTC is a theorem, not a definition |
-| **Lecture 2** | Tuesday | Substitution and the Antiderivative Catalogue | The only technique you have, and its limits |
+| **Lecture 1** | Tuesday | The Definite Integral and the Fundamental Theorem | The integral is a limit; the FTC is a theorem, not a definition |
+| **Lecture 2** | Wednesday | Substitution and the Antiderivative Catalogue | The only technique you have, and its limits |
 | **Lecture 3** | Friday | Area, Average Value, and Net Change | What an integral is *for* |
 
 ---
@@ -76,4 +77,4 @@ The diagnostic quiz this week tests exactly this list. **It is ungraded.** Its o
 
 ---
 
-*Next: Monday — The Definite Integral and the Fundamental Theorem*
+*Next: Tuesday 19 January — The Definite Integral and the Fundamental Theorem. The diagnostic quiz is Thursday's recitation.*

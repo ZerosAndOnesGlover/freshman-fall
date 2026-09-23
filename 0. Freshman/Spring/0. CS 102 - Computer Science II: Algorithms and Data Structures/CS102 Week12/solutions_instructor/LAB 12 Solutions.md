@@ -7,16 +7,11 @@
 
 ## Before the Session
 
-**This is the last lab, in final-exam week, with Project 2 and PS 11 both due Friday.** Students will
-be at capacity.
-
-Two administrative things to do **before** anything else:
-
-1. **Check the lab register.** Anyone at nine completed labs must pass this one to progress. Tell them
-   individually and at the start, not at the end.
-2. **Say that Parts A–B are the compulsory core.** A student who completes A and B has passed the lab;
-   C and D are where the marks and the content are, but nobody should fail progression because they ran
-   out of time in exam week.
+**Revised 2026-09-23: Lab 12 is optional, self-paced revision.** It covers Lecture 39 (Friday 16 April),
+so under the Tuesday-after rule it would have met in finals week, which holds exams only. It has no
+session, is ungraded and does not count towards the gate (10 of the 12 required labs, 0–11). **Release
+these solutions on Monday 19 April**, two days before the final; Parts B and C are the best rehearsal for
+the final's Section D.
 
 **Compute cost:** A2's $n = 20$ run takes about **15 seconds** and is the only slow step. Have students
 launch it first and do Part B while it runs. **Warn them not to try $n = 24$** — it is about four
@@ -159,8 +154,7 @@ solvers do. Reject "ship 2-opt, it's better" without qualification: the question
 | D | 10 |
 | **Total** | **40** |
 
-**Progression: 10 of 13 labs required.** This is the last one. Confirm every student's count before
-they leave the room, and record it the same day.
+**Not recorded.** Lab 12 is optional revision; progression is decided by Labs 0–11.
 
 ---
 

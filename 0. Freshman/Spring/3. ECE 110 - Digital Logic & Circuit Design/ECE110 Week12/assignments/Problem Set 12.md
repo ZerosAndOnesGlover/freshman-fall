@@ -2,11 +2,13 @@
 ## Problem Set 12
 ### Topic: Programmable Logic — PLAs, PALs, FPGAs
 **Released:** Thursday 15 April 2027, 14:30 · Week 12 (after Thursday's Lecture 2)
-**Due:** Thursday 22 April 2027, 13:00 · finals week — ⚠️ after the final exam; see the course audit
+**Due:** not collected — an **ungraded self-check**. Answers are released Friday 16 April, 17:00.
 
 ---
 
-> **This is the last problem set, and it is deliberately short** — the final exam is Monday 19 April.
+> **This is the last problem set, and it is ungraded** — a self-check on Week 12 before the final exam on
+> Monday 19 April. Work it, then mark yourself against the answers released on Friday 16 April.
+> (Graded problem sets are PS 0–11; the final examines Week 12.)
 >
 > **Show the sizing arithmetic.** That is most of the marks.
 

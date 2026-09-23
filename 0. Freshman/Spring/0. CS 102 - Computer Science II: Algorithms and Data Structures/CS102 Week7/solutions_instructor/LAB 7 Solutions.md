@@ -154,7 +154,7 @@ nothing to skip — and tabulation's cells are cheaper, so it wins on the clock.
 | D | 10 |
 | **Total** | **40** |
 
-Labs are pass/fail for progression: **10 of 13 required.**
+Labs are pass/fail for progression: **10 of the 12 required labs (0–11).**
 
 ---
 

@@ -102,7 +102,7 @@ status: in-progress
 
 | Item | Topic | Possible | Earned |
 |---|---|---|---|
-| Final Exam | Comprehensive, Weeks 0–12 · Thu 22 Apr | 180 | |
+| Final Exam | Comprehensive, Weeks 0–12 · Thu 22 Apr, 150 min | 150 | |
 
 ---
 

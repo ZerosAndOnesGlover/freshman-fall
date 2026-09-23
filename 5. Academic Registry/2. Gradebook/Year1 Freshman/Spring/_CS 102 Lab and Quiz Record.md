@@ -25,7 +25,7 @@ rather than relying on nobody filling in a row.
 
 ## Labs — Completion Gate
 
-**A student must satisfactorily complete at least 10 of the 13 labs to pass CS 102**, regardless of
+**A student must satisfactorily complete at least 10 of the 12 required labs (Labs 0–11) to pass CS 102**, regardless of
 weighted average. Mark `✓`, `partial`, or leave blank.
 
 | Lab | Week | Topic | Complete? |
@@ -42,7 +42,7 @@ weighted average. Mark `✓`, `partial`, or leave blank.
 | Lab 9 | 9 | Compress a file with Huffman coding | |
 | Lab 10 | 10 | Plagiarism detector | |
 | Lab 11 | 11 | 2D nearest-neighbour searcher | |
-| Lab 12 | 12 | TSP approximation | |
+| Lab 12 | 12 | TSP approximation — optional revision, not in the gate | |
 
 **Labs completed:** ____ / 13 &nbsp;&nbsp; **Gate met (≥ 10):** ☐
 

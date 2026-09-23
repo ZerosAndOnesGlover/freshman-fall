@@ -1,7 +1,7 @@
 # MATH 142 · Calculus II
 ## Problem Set 0
 ### Topic: Review — the FTC, Substitution, and Applications of the Integral
-**Released:** Monday 18 January 2027, 12:00 · Week 0 (after Lecture 1)
+**Released:** Tuesday 19 January 2027, 12:00 · Week 0 (after Lecture 1)
 **Due:** Friday 22 January 2027, 17:00 · Week 0 — compressed; late penalty from 17:01
 
 ---

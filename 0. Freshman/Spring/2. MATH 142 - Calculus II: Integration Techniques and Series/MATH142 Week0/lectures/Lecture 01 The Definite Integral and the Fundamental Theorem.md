@@ -1,8 +1,8 @@
 # MATH 142 · Calculus II
-## Week 0 · Lecture 1 (Monday)
+## Week 0 · Lecture 1 (Tuesday)
 ### The Definite Integral and the Fundamental Theorem
 
-**Date:** Monday 18 January 2027 · 11:00–11:50 · Week 0
+**Date:** Tuesday 19 January 2027 · 11:00–11:50 · Week 0 — moved from Monday 18 January (Martin Luther King Day, no classes)
 
 ---
 

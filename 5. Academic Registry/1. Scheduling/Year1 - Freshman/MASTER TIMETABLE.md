@@ -24,7 +24,7 @@
 | ------------ | ----------------------------------------------------------------- | ------- | -------------------------- | ------------------------------------------------------ |
 | **CS 102**   | Computer Science II: Algorithms and Data Structures               | 4       | Mon/Wed/Fri 09:00 + Tue Lab 15:00 | PS 35%, Midterms 25%, Final 20%, Projects 20%          |
 | **PROG 102** | Programming II: Object-Oriented Design and Data Structures in C++ | 4       | Tue/Wed/Thu 10:00 + Mon Lab 15:00 | Lab 20%, PS 30%, Midterms 25%, Final 15%, Projects 10% |
-| **MATH 142** | Calculus II · Integration Techniques and Series                    | 4       | Mon/Tue/Fri 11:00 + Wed Lab 15:00 + Thu Rec 15:00 | PS 30%, Midterms 40%, Final 30% ⚠️ (gradebook and syllabus: PS 30, Midterms 15+15, Final 20, Labs 10, Quizzes 10 — decide) |
+| **MATH 142** | Calculus II · Integration Techniques and Series                    | 4       | Mon/Tue/Fri 11:00 + Wed Lab 15:00 + Thu Rec 15:00 | PS 30%, Midterms 30%, Final 20%, Labs 10%, Quizzes 10% |
 | **ECE 110**  | Digital Logic & Circuit Design                                    | 3       | Wed/Thu 13:00 + Fri Lab 14:00 | Lab 25%, PS 35%, Midterm 25%, Final 15%               |
 |              | **Total Spring Credits**                                          | **15**  |                            |                                                        |
 

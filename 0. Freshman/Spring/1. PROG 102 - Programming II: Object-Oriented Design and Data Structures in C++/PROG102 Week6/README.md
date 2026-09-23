@@ -55,7 +55,7 @@ By the end of Week 6, you should be able to:
 | [[L20 Implementing Iterators]] | `iterator_traits`, `const_iterator`, and the category contract |
 | [[L21 Implementing a Binary Search Tree]] | `unique_ptr` children, the destructor trap, and the STL comparison |
 | [[PS 6 A Templated Doubly Linked List]] | Due Fri 12 Mar 17:00 |
-| [[PROG102 Week6/assignments/QUIZ 6 Week 6 Monday\|QUIZ 6 Week 6 Monday]] | 15 minutes, covers Week 5 |
+| [[PROG102 Week6/assignments/QUIZ 6 Week 6 Tuesday\|QUIZ 6 Week 6 Tuesday]] | 15 minutes, covers Week 5 |
 | [[PROJECT 1 A Container Library]] | **Assigned this week, due Week 9** |
 | [[LAB 6 Benchmarking Against std list]] | Measure your list against `std::list` |
 | [[PROG102 Week6/resources/Reading Guide Week 6\|Reading Guide Week 6]] | *C++ Primer* §9.2, Ch. 16 revisited, and every command |

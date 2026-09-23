@@ -6,7 +6,7 @@
 
 **Topic:** logic without a fab
 **Reading:** Harris & Harris §5.6 | Mano & Ciletti §7.6–7.8
-**Assessment this week:** PS 12 (released Thu 15 Apr 14:30, due Thu 22 Apr 13:00), Lab 12 (**Fri 16 Apr**, 14:00), **Quiz 11** *(Wed 14 Apr, 13:00 — covers Week 11, ungraded)*, and the **FINAL EXAM** *(Mon 19 Apr, 08:00–10:00)*
+**Assessment this week:** PS 12 (released Thu 15 Apr 14:30 — **ungraded self-check**, answers Fri 16 Apr), Lab 12 (**Fri 16 Apr**, 14:00), **Quiz 11** *(Wed 14 Apr, 13:00 — covers Week 11, ungraded)*, and the **FINAL EXAM** *(Mon 19 Apr, 08:00–10:00)*
 
 ---
 
@@ -113,7 +113,7 @@ $$\text{HDL} \to \text{synthesis} \to \text{technology mapping} \to \text{placem
 
 1. **Quiz 11** — Wed 14 Apr, covers Week 11. **Ungraded.** *The last quiz.*
 2. **Lab 12** — map a design onto programmable logic and count the resources.
-3. **PS 12** — PLA/PAL/ROM sizing, LUT mapping.
+3. **PS 12** — PLA/PAL/ROM sizing, LUT mapping. **Ungraded**; answers released Friday 16 April.
 4. **THE FINAL EXAM.** See the revision guide in `resources/`.
 
 ---

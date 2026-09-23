@@ -50,7 +50,7 @@ By the end of Week 2, you should be able to:
 | [[L08 Class Templates and Generic Containers]] | `Stack<T>`, the header rule, non-type parameters, `pair` and `tuple` |
 | [[L09 Instantiation Specialization and Cost]] | Specialization, the cost measured, error messages, vs Java and Python |
 | [[PS 2 A Generic Stack]] | Due Fri 12 Feb 17:00 |
-| [[PROG102 Week2/assignments/QUIZ 2 Week 2 Monday\|QUIZ 2 Week 2 Monday]] | 15 minutes, covers Week 1 |
+| [[PROG102 Week2/assignments/QUIZ 2 Week 2 Tuesday\|QUIZ 2 Week 2 Tuesday]] | 15 minutes, covers Week 1 |
 | [[LAB 2 What Templates Cost]] | Measure compile time, binary size and runtime yourself |
 | [[PROG102 Week2/resources/Reading Guide Week 2\|Reading Guide Week 2]] | *C++ Primer* Ch. 16, and every command to reproduce this week |
 | [[PROG102 Week2/solutions_instructor/PS 2 Solutions\|PS 2 Solutions]] | Instructor only |

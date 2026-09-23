@@ -1,8 +1,8 @@
 # MATH 142 · Calculus II
-## Week 0 · Lecture 2 (Tuesday)
+## Week 0 · Lecture 2 (Wednesday)
 ### Substitution and the Antiderivative Catalogue
 
-**Date:** Tuesday 19 January 2027 · 11:00–11:50 · Week 0
+**Date:** Wednesday 20 January 2027 · 11:00–11:50 · Week 0 — moved from Tuesday to follow Lecture 1
 
 ---
 

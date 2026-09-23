@@ -127,7 +127,7 @@ own verification output — point at it.*
 | C | 14 |
 | **Total** | **40** |
 
-Labs are pass/fail for progression: **10 of 13 required**, and this is Lab 11. **A student who has
+Labs are pass/fail for progression: **10 of the 12 required labs (0–11)**, and this is Lab 11. **A student who has
 missed three labs must pass this one and Lab 12.** Check the register before the session and tell them
 individually — Week 12 is too late.
 

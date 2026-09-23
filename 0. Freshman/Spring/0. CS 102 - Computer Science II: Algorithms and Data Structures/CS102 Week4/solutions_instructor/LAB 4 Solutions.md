@@ -192,7 +192,7 @@ vague answer, 3 for one that names the right quantity.*
 | D | 10 |
 | **Total** | **40** |
 
-Labs are pass/fail for progression: **10 of 13 required.** A student who completes A, B and D and
+Labs are pass/fail for progression: **10 of the 12 required labs (0–11).** A student who completes A, B and D and
 answers C3 poorly still passes.
 
 ---

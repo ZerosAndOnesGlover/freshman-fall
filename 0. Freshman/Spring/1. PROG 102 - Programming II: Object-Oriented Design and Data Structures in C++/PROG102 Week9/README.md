@@ -47,7 +47,7 @@ By the end of Week 9, you should be able to:
 | [[L29 The Three Guarantees]] | Basic, strong, nothrow — demonstrated and tested |
 | [[L30 noexcept Assertions and Contracts]] | `noexcept`, assertions vs exceptions, preconditions |
 | [[PS 9 Making a Container Exception-Safe]] | Due Fri 2 Apr 17:00 |
-| [[PROG102 Week9/assignments/QUIZ 9 Week 9 Monday\|QUIZ 9 Week 9 Monday]] | 15 minutes, covers Week 8 |
+| [[PROG102 Week9/assignments/QUIZ 9 Week 9 Tuesday\|QUIZ 9 Week 9 Tuesday]] | 15 minutes, covers Week 8 |
 | [[LAB 9 Testing for Failure]] | A test framework, and tests that check what happens when things break |
 | [[PROG102 Week9/resources/Reading Guide Week 9\|Reading Guide Week 9]] | Meyers, the standard's guarantees, and every command |
 | [[PROG102 Week9/solutions_instructor/PS 9 Solutions\|PS 9 Solutions]] | Instructor only |
