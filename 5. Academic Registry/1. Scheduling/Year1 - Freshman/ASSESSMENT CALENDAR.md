@@ -331,79 +331,179 @@ derived from the week numbers, never the reverse.
 
 ### Graded Work
 
-| Week   | Date   | Course                 | Assessment               | Weight | Notes |
-| ------ | ------ | ---------------------- | ------------------------ | ------ | ----- |
-| W0     | Jan 18 | **MATH 142**           | 📊 Quiz 00 Diagnostic     | —      | Ungraded, answer key included |
-| W1     | Jan 25 | **CS 102**             | 📊 Quiz 1                 | ≈0.8%  | 15 min, start of Monday lecture · covers W0 |
-| W1     | Jan 26 | **PROG 102**           | 📊 Quiz 1                 | ≈0.8%  | 15 min, start of Tuesday lecture · covers W0 · ⚠️ see note 2 |
-| W1     | Jan 25 | **MATH 142**           | 📊 Quiz 01                | ≈0.8%  | start of Monday lecture · covers W0 |
-| W1     | Jan 29 | **CS 102 / PROG 102**  | 📝 Problem Set 1          | ≈3%    | 17:00 |
-| W2     | Feb 01 | **CS 102**             | 📊 Quiz 2                 | ≈0.8%  | 15 min, start of Monday lecture · covers W1 |
-| W2     | Feb 02 | **PROG 102**           | 📊 Quiz 2                 | ≈0.8%  | 15 min, start of Tuesday lecture · covers W1 · ⚠️ see note 2 |
-| W2     | Feb 01 | **MATH 142**           | 📊 Quiz 02                | ≈0.8%  | start of Monday lecture · covers W1 |
-| W2     | Feb 03 | **ECE 110**            | 📊 Quiz 1                 | —      | Ungraded · start of Wednesday lecture · covers W1 |
-| W2     | Feb 05 | **CS 102 / PROG 102**  | 📝 Problem Set 2          | ≈3%    | 17:00 |
-| W3     | Feb 08 | **CS 102**             | 📊 Quiz 3                 | ≈0.8%  | 15 min, start of Monday lecture · covers W2 |
-| W3     | Feb 09 | **PROG 102**           | 📊 Quiz 3                 | ≈0.8%  | 15 min, start of Tuesday lecture · covers W2 · ⚠️ see note 2 |
-| W3     | Feb 08 | **MATH 142**           | 📊 Quiz 03                | ≈0.8%  | start of Monday lecture · covers W2 |
-| W3     | Feb 10 | **ECE 110**            | 📊 Quiz 2                 | —      | Ungraded · start of Wednesday lecture · covers W2 |
-| W3     | Feb 12 | **CS 102 / PROG 102**  | 📝 Problem Set 3          | ≈3%    | 17:00 |
-| W4     | Feb 15 | **CS 102**             | 📊 Quiz 4                 | ≈0.8%  | 15 min, start of Monday lecture · covers W3 |
-| W4     | Feb 16 | **PROG 102**           | 📊 Quiz 4                 | ≈0.8%  | 15 min, start of Tuesday lecture · covers W3 · ⚠️ see note 2 |
-| W4     | Feb 15 | **MATH 142**           | 📊 Quiz 04                | ≈0.8%  | start of Monday lecture · covers W3 |
-| W4     | Feb 17 | **ECE 110**            | 📊 Quiz 3                 | —      | Ungraded · start of Wednesday lecture · covers W3 |
-| W4     | Feb 19 | **CS 102 / PROG 102**  | 📝 Problem Set 4          | ≈3%    | 17:00 |
-| W5     | Feb 22 | **CS 102**             | 📊 Quiz 5                 | ≈0.8%  | 15 min, start of Monday lecture · covers W4 |
-| W5     | Feb 23 | **PROG 102**           | 📊 Quiz 5                 | ≈0.8%  | 15 min, start of Tuesday lecture · covers W4 · ⚠️ see note 2 |
-| W5     | Feb 22 | **MATH 142**           | 📊 Quiz 05                | ≈0.8%  | start of Monday lecture · covers W4 |
-| W5     | Feb 24 | **ECE 110**            | 📊 Quiz 4                 | —      | Ungraded · start of Wednesday lecture · covers W4 |
-| W5     | Feb 26 | **CS 102 / PROG 102**  | 📝 Problem Set 5          | ≈3%    | 17:00 |
-| W6     | Mar 01 | **CS 102**             | 📊 Quiz 6                 | ≈0.8%  | 15 min, start of Monday lecture · covers W5 |
-| W6     | Mar 02 | **PROG 102**           | 📊 Quiz 6                 | ≈0.8%  | 15 min, start of Tuesday lecture · covers W5 · ⚠️ see note 2 |
-| W6     | Mar 01 | **MATH 142**           | 📊 Quiz 06                | ≈0.8%  | start of Monday lecture · covers W5 |
-| W6     | Mar 03 | **ECE 110**            | 📊 Quiz 5                 | —      | Ungraded · start of Wednesday lecture · covers W5 |
-| W6     | Mar 05 | **CS 102 / PROG 102**  | 📝 Problem Set 6          | ≈3%    | 17:00 |
-| W6     | Mar 01 | **CS 102**             | 📘 Midterm 1              | 15%    | 18:00–19:15 · Weeks 0–5 |
-| W6     | Mar 02 | **PROG 102**           | 📘 Midterm 1              | 12%    | 18:00–19:30 · Weeks 0–5 |
-| W6     | Mar 03 | **MATH 142**           | 📘 Midterm 1              | 20%    | 18:00–19:15 · Weeks 0–5 |
-| W6     | Mar 04 | **ECE 110**            | 📘 Midterm                | 25%    | 18:00–19:15 · Weeks 0–5 · only midterm |
-| W7     | Mar 08 | **CS 102**             | 📊 Quiz 7                 | ≈0.8%  | 15 min, start of Monday lecture · covers W6 |
-| W7     | Mar 09 | **PROG 102**           | 📊 Quiz 7                 | ≈0.8%  | 15 min, start of Tuesday lecture · covers W6 · ⚠️ see note 2 |
-| W7     | Mar 08 | **MATH 142**           | 📊 Quiz 07                | ≈0.8%  | start of Monday lecture · covers W6 |
-| W7     | Mar 10 | **ECE 110**            | 📊 Quiz 6                 | —      | Ungraded · start of Wednesday lecture · covers W6 |
-| W7     | Mar 12 | **CS 102 / PROG 102**  | 📝 Problem Set 7          | ≈3%    | 17:00 |
-| W8     | Mar 15 | **CS 102**             | 📊 Quiz 8                 | ≈0.8%  | 15 min, start of Monday lecture · covers W7 |
-| W8     | Mar 16 | **PROG 102**           | 📊 Quiz 8                 | ≈0.8%  | 15 min, start of Tuesday lecture · covers W7 · ⚠️ see note 2 |
-| W8     | Mar 15 | **MATH 142**           | 📊 Quiz 08                | ≈0.8%  | start of Monday lecture · covers W7 |
-| W8     | Mar 17 | **ECE 110**            | 📊 Quiz 7                 | —      | Ungraded · start of Wednesday lecture · covers W7 |
-| W8     | Mar 19 | **CS 102 / PROG 102**  | 📝 Problem Set 8          | ≈3%    | 17:00 |
-| W9     | Mar 22 | **CS 102**             | 📊 Quiz 9                 | ≈0.8%  | 15 min, start of Monday lecture · covers W8 |
-| W9     | Mar 23 | **PROG 102**           | 📊 Quiz 9                 | ≈0.8%  | 15 min, start of Tuesday lecture · covers W8 · ⚠️ see note 2 |
-| W9     | Mar 22 | **MATH 142**           | 📊 Quiz 09                | ≈0.8%  | start of Monday lecture · covers W8 |
-| W9     | Mar 24 | **ECE 110**            | 📊 Quiz 8                 | —      | Ungraded · start of Wednesday lecture · covers W8 |
-| W9     | Mar 26 | **CS 102 / PROG 102**  | 📝 Problem Set 9          | ≈3%    | 17:00 |
-| W9     | Mar 26 | **CS 102**             | 📋 Project 1 Due          | 10%    | Search/Sort Visualizer · 17:00 |
-| W10    | Mar 29 | **CS 102**             | 📊 Quiz 10                | ≈0.8%  | 15 min, start of Monday lecture · covers W9 |
-| W10    | Mar 30 | **PROG 102**           | 📊 Quiz 10                | ≈0.8%  | 15 min, start of Tuesday lecture · covers W9 · ⚠️ see note 2 |
-| W10    | Mar 29 | **MATH 142**           | 📊 Quiz 10                | ≈0.8%  | start of Monday lecture · covers W9 |
-| W10    | Mar 31 | **ECE 110**            | 📊 Quiz 9                 | —      | Ungraded · start of Wednesday lecture · covers W9 |
-| W10    | Apr 02 | **CS 102 / PROG 102**  | 📝 Problem Set 10         | ≈3%    | 17:00 |
-| W10    | Mar 29 | **CS 102**             | 📘 Midterm 2              | 15%    | 18:00–19:15 · Weeks 6–9 |
-| W10    | Mar 30 | **PROG 102**           | 📘 Midterm 2              | 12%    | 18:00–19:30 · Weeks 6–9 |
-| W11    | Apr 05 | **CS 102**             | 📊 Quiz 11                | ≈0.8%  | 15 min, start of Monday lecture · covers W10 |
-| W11    | Apr 06 | **PROG 102**           | 📊 Quiz 11                | ≈0.8%  | 15 min, start of Tuesday lecture · covers W10 · ⚠️ see note 2 |
-| W11    | Apr 05 | **MATH 142**           | 📊 Quiz 11                | ≈0.8%  | start of Monday lecture · covers W10 |
-| W11    | Apr 07 | **ECE 110**            | 📊 Quiz 10                | —      | Ungraded · start of Wednesday lecture · covers W10 |
-| W11    | Apr 09 | **CS 102 / PROG 102**  | 📝 Problem Set 11         | ≈3%    | 17:00 |
-| W12    | Apr 12 | **MATH 142**           | 📊 Quiz 12                | ≈0.8%  | start of Monday lecture · covers W11 |
-| W12    | Apr 14 | **ECE 110**            | 📊 Quiz 11                | —      | Ungraded · start of Wednesday lecture · covers W11 |
-| W12    | Apr 16 | **CS 102 / PROG 102**  | 📝 Problem Set 12         | ≈3%    | 17:00 |
-| W12    | Apr 16 | **CS 102**             | 📋 Project 2 Due          | 10%    | Algorithm Implementation Suite · 17:00 |
-| W12    | Apr 16 | **PROG 102**           | 📋 Project 2 Due          | 10%    | Complete Data Structure Library · 17:00 |
-| Finals | Apr 19 | **ECE 110**            | 📕 Final Exam             | 15%    | 08:00–10:00 |
-| Finals | Apr 20 | **MATH 142**           | 📕 Final Exam             | 40%    | 09:00–11:30 |
-| Finals | Apr 21 | **CS 102**             | 📕 Final Exam             | 20%    | 09:00–11:30 |
-| Finals | Apr 22 | **PROG 102**           | 📕 Final Exam             | 15%    | 14:00–16:30 |
+> *Regenerated 2026-09-23 from the course files* after the Spring rework (see
+> `0. Freshman/Spring/4. Course Audits/`). Every date and time below is read from the file it belongs to
+> (the answer sheet's `source:`), and each weight is the gradebook component weight divided by that
+> component's item count. Exams come from the registry list in the script. Rows marked *decide* are open
+> decisions. Regenerate with `tools/make_spring_calendar.py` after changing a course file instead of
+> editing rows by hand.
+>
+> **Slots:** CS 102 Lab *N* Tue of Week *N+1*; PROG 102 Lab *N* Mon of Week *N+1*; MATH 142 Lab *N*
+> Wed of Week *N+1*; ECE 110 Lab *N* Fri of Week *N*. Problem sets are due Fri 17:00 (CS 102, PROG 102,
+> MATH 142) or Thu 13:00 (ECE 110). CS 102 labs and quizzes and ECE 110 quizzes carry no weight (—).
+
+| Week   | Date   | Course       | Assessment                  | Weight | Notes                                   |
+| ------ | ------ | ------------ | --------------------------- | ------ | --------------------------------------- |
+| W0 | Fri Jan 22 | **ECE 110** | 🔬 LAB 0 | ≈1.9% | 14:00–15:50 |
+| W0 | Fri Jan 22 | **MATH 142** | 📝 PS 0 | ≈2.5% | 17:00 |
+| W1 | Mon Jan 25 | **CS 102** | 📊 Quiz 1 | — | 09:00–09:15 |
+| W1 | Mon Jan 25 | **MATH 142** | 📊 Quiz 01 | ≈0.8% | 11:00–11:15 |
+| W1 | Mon Jan 25 | **PROG 102** | 🔬 Lab 0 | ≈1.5% | 15:00–16:50 |
+| W1 | Tue Jan 26 | **PROG 102** | 📊 Quiz 1 | — | 10:00–10:15 |
+| W1 | Tue Jan 26 | **CS 102** | 🔬 Lab 0 | — | 15:00–16:50 |
+| W1 | Wed Jan 27 | **MATH 142** | 🔬 Lab 0 | ≈0.8% | 15:00–16:50 |
+| W1 | Thu Jan 28 | **ECE 110** | 📝 PS 0 | ≈2.7% | 13:00 |
+| W1 | Fri Jan 29 | **ECE 110** | 🔬 LAB 1 | ≈1.9% | 14:00–15:50 |
+| W1 | Fri Jan 29 | **PROG 102** | 📝 PS 0 | ≈2.5% | 17:00 |
+| W2 | Mon Feb 01 | **CS 102** | 📊 Quiz 2 | — | 09:00–09:15 |
+| W2 | Mon Feb 01 | **MATH 142** | 📊 Quiz 02 | ≈0.8% | 11:00–11:15 |
+| W2 | Mon Feb 01 | **PROG 102** | 🔬 Lab 1 | ≈1.5% | 15:00–16:50 |
+| W2 | Tue Feb 02 | **PROG 102** | 📊 Quiz 2 | — | 10:00–10:15 |
+| W2 | Tue Feb 02 | **CS 102** | 🔬 Lab 1 | — | 15:00–16:50 |
+| W2 | Wed Feb 03 | **ECE 110** | 📊 Quiz 1 | — | 13:00–13:10 |
+| W2 | Wed Feb 03 | **MATH 142** | 🔬 Lab 1 | ≈0.8% | 15:00–16:50 |
+| W2 | Thu Feb 04 | **ECE 110** | 📝 PS 1 | ≈2.7% | 13:00 |
+| W2 | Fri Feb 05 | **ECE 110** | 🔬 LAB 2 | ≈1.9% | 14:00–15:50 |
+| W2 | Fri Feb 05 | **CS 102** | 📝 PS 1 | ≈3.2% | 17:00 |
+| W2 | Fri Feb 05 | **MATH 142** | 📝 PS 1 | ≈2.5% | 17:00 |
+| W2 | Fri Feb 05 | **PROG 102** | 📝 PS 1 | ≈2.5% | 17:00 |
+| W3 | Mon Feb 08 | **CS 102** | 📊 Quiz 3 | — | 09:00–09:15 |
+| W3 | Mon Feb 08 | **MATH 142** | 📊 Quiz 03 | ≈0.8% | 11:00–11:15 |
+| W3 | Mon Feb 08 | **PROG 102** | 🔬 Lab 2 | ≈1.5% | 15:00–16:50 |
+| W3 | Tue Feb 09 | **PROG 102** | 📊 Quiz 3 | — | 10:00–10:15 |
+| W3 | Tue Feb 09 | **CS 102** | 🔬 Lab 2 | — | 15:00–16:50 |
+| W3 | Wed Feb 10 | **ECE 110** | 📊 Quiz 2 | — | 13:00–13:10 |
+| W3 | Wed Feb 10 | **MATH 142** | 🔬 Lab 2 | ≈0.8% | 15:00–16:50 |
+| W3 | Thu Feb 11 | **ECE 110** | 📝 PS 2 | ≈2.7% | 13:00 |
+| W3 | Fri Feb 12 | **ECE 110** | 🔬 LAB 3 | ≈1.9% | 14:00–15:50 |
+| W3 | Fri Feb 12 | **CS 102** | 📝 PS 2 | ≈3.2% | 17:00 |
+| W3 | Fri Feb 12 | **MATH 142** | 📝 PS 2 | ≈2.5% | 17:00 |
+| W3 | Fri Feb 12 | **PROG 102** | 📝 PS 2 | ≈2.5% | 17:00 |
+| W4 | Mon Feb 15 | **CS 102** | 📊 Quiz 4 | — | 09:00–09:15 |
+| W4 | Mon Feb 15 | **MATH 142** | 📊 Quiz 04 | ≈0.8% | 11:00–11:15 |
+| W4 | Mon Feb 15 | **PROG 102** | 🔬 Lab 3 | ≈1.5% | 15:00–16:50 |
+| W4 | Tue Feb 16 | **PROG 102** | 📊 Quiz 4 | — | 10:00–10:15 |
+| W4 | Tue Feb 16 | **CS 102** | 🔬 Lab 3 | — | 15:00–16:50 |
+| W4 | Wed Feb 17 | **ECE 110** | 📊 Quiz 3 | — | 13:00–13:10 |
+| W4 | Wed Feb 17 | **MATH 142** | 🔬 Lab 3 | ≈0.8% | 15:00–16:50 |
+| W4 | Thu Feb 18 | **ECE 110** | 📝 PS 3 | ≈2.7% | 13:00 |
+| W4 | Fri Feb 19 | **ECE 110** | 🔬 LAB 4 | ≈1.9% | 14:00–15:50 |
+| W4 | Fri Feb 19 | **CS 102** | 📝 PS 3 | ≈3.2% | 17:00 |
+| W4 | Fri Feb 19 | **MATH 142** | 📝 PS 3 | ≈2.5% | 17:00 |
+| W4 | Fri Feb 19 | **PROG 102** | 📝 PS 3 | ≈2.5% | 17:00 |
+| W5 | Mon Feb 22 | **CS 102** | 📊 Quiz 5 | — | 09:00–09:15 |
+| W5 | Mon Feb 22 | **MATH 142** | 📊 Quiz 05 | ≈0.8% | 11:00–11:15 |
+| W5 | Mon Feb 22 | **PROG 102** | 🔬 Lab 4 | ≈1.5% | 15:00–16:50 |
+| W5 | Tue Feb 23 | **PROG 102** | 📊 Quiz 5 | — | 10:00–10:15 |
+| W5 | Tue Feb 23 | **CS 102** | 🔬 Lab 4 | — | 15:00–16:50 |
+| W5 | Wed Feb 24 | **ECE 110** | 📊 Quiz 4 | — | 13:00–13:10 |
+| W5 | Wed Feb 24 | **MATH 142** | 🔬 Lab 4 | ≈0.8% | 15:00–16:50 |
+| W5 | Thu Feb 25 | **ECE 110** | 📝 PS 4 | ≈2.7% | 13:00 |
+| W5 | Fri Feb 26 | **ECE 110** | 🔬 LAB 5 | ≈1.9% | 14:00–15:50 |
+| W5 | Fri Feb 26 | **CS 102** | 📝 PS 4 | ≈3.2% | 17:00 |
+| W5 | Fri Feb 26 | **MATH 142** | 📝 PS 4 | ≈2.5% | 17:00 |
+| W5 | Fri Feb 26 | **PROG 102** | 📝 PS 4 | ≈2.5% | 17:00 |
+| W6 | Mon Mar 01 | **CS 102** | 📊 Quiz 6 | — | 09:00–09:15 |
+| W6 | Mon Mar 01 | **MATH 142** | 📊 Quiz 06 | ≈0.8% | 11:00–11:15 |
+| W6 | Mon Mar 01 | **PROG 102** | 🔬 Lab 5 | ≈1.5% | 15:00–16:50 |
+| W6 | Mon Mar 01 | **CS 102** | 📘 Midterm 1 | 12.5% | 18:00–19:15 · VNC 100 · Weeks 0–4 |
+| W6 | Tue Mar 02 | **PROG 102** | 📊 Quiz 6 | — | 10:00–10:15 |
+| W6 | Tue Mar 02 | **CS 102** | 🔬 Lab 5 | — | 15:00–16:50 |
+| W6 | Tue Mar 02 | **PROG 102** | 📘 Midterm 1 | 12.5% | 18:00–19:30 · VNC 100 · Weeks 0–4 · 75-minute paper |
+| W6 | Wed Mar 03 | **ECE 110** | 📊 Quiz 5 | — | 13:00–13:10 |
+| W6 | Wed Mar 03 | **MATH 142** | 🔬 Lab 5 | ≈0.8% | 15:00–16:50 |
+| W6 | Wed Mar 03 | **MATH 142** | 📘 Midterm 1 | 15% | 18:00–19:15 · VNC 100 · Weeks 0–4 |
+| W6 | Thu Mar 04 | **ECE 110** | 📝 PS 5 | ≈2.7% | 13:00 |
+| W6 | Thu Mar 04 | **ECE 110** | 📘 Midterm | 25% | 18:00–19:15 · VNC 100 · Weeks 0–5 · ECE 110's only midterm |
+| W6 | Fri Mar 05 | **ECE 110** | 🔬 LAB 6 | ≈1.9% | 14:00–15:50 |
+| W6 | Fri Mar 05 | **CS 102** | 📝 PS 5 | ≈3.2% | 17:00 |
+| W6 | Fri Mar 05 | **MATH 142** | 📝 PS 5 | ≈2.5% | 17:00 |
+| W6 | Fri Mar 05 | **PROG 102** | 📝 PS 5 | ≈2.5% | 17:00 |
+| W7 | Mon Mar 08 | **CS 102** | 📊 Quiz 7 | — | 09:00–09:15 |
+| W7 | Mon Mar 08 | **MATH 142** | 📊 Quiz 07 | ≈0.8% | 11:00–11:15 |
+| W7 | Mon Mar 08 | **PROG 102** | 🔬 Lab 6 | ≈1.5% | 15:00–16:50 |
+| W7 | Tue Mar 09 | **PROG 102** | 📊 Quiz 7 | — | 10:00–10:15 |
+| W7 | Tue Mar 09 | **CS 102** | 🔬 Lab 6 | — | 15:00–16:50 |
+| W7 | Wed Mar 10 | **ECE 110** | 📊 Quiz 6 | — | 13:00–13:10 |
+| W7 | Wed Mar 10 | **MATH 142** | 🔬 Lab 6 | ≈0.8% | 15:00–16:50 |
+| W7 | Thu Mar 11 | **ECE 110** | 📝 PS 6 | ≈2.7% | 13:00 |
+| W7 | Fri Mar 12 | **ECE 110** | 🔬 LAB 7 | ≈1.9% | 14:00–15:50 |
+| W7 | Fri Mar 12 | **CS 102** | 📝 PS 6 | ≈3.2% | 17:00 |
+| W7 | Fri Mar 12 | **MATH 142** | 📝 PS 6 | ≈2.5% | 17:00 |
+| W7 | Fri Mar 12 | **PROG 102** | 📝 PS 6 | ≈2.5% | 17:00 |
+| W8 | Mon Mar 15 | **CS 102** | 📊 Quiz 8 | — | 09:00–09:15 |
+| W8 | Mon Mar 15 | **MATH 142** | 📊 Quiz 08 | ≈0.8% | 11:00–11:15 |
+| W8 | Mon Mar 15 | **PROG 102** | 🔬 Lab 7 | ≈1.5% | 15:00–16:50 |
+| W8 | Tue Mar 16 | **PROG 102** | 📊 Quiz 8 | — | 10:00–10:15 |
+| W8 | Tue Mar 16 | **CS 102** | 🔬 Lab 7 | — | 15:00–16:50 |
+| W8 | Wed Mar 17 | **ECE 110** | 📊 Quiz 7 | — | 13:00–13:10 |
+| W8 | Wed Mar 17 | **MATH 142** | 🔬 Lab 7 | ≈0.8% | 15:00–16:50 |
+| W8 | Thu Mar 18 | **ECE 110** | 📝 PS 7 | ≈2.7% | 13:00 |
+| W8 | Fri Mar 19 | **ECE 110** | 🔬 LAB 8 | ≈1.9% | 14:00–15:50 |
+| W8 | Fri Mar 19 | **CS 102** | 📝 PS 7 | ≈3.2% | 17:00 |
+| W8 | Fri Mar 19 | **MATH 142** | 📝 PS 7 | ≈2.5% | 17:00 |
+| W8 | Fri Mar 19 | **PROG 102** | 📝 PS 7 | ≈2.5% | 17:00 |
+| W9 | Mon Mar 22 | **CS 102** | 📊 Quiz 9 | — | 09:00–09:15 |
+| W9 | Mon Mar 22 | **MATH 142** | 📊 Quiz 09 | ≈0.8% | 11:00–11:15 |
+| W9 | Mon Mar 22 | **PROG 102** | 🔬 Lab 8 | ≈1.5% | 15:00–16:50 |
+| W9 | Tue Mar 23 | **PROG 102** | 📊 Quiz 9 | — | 10:00–10:15 |
+| W9 | Tue Mar 23 | **CS 102** | 🔬 Lab 8 | — | 15:00–16:50 |
+| W9 | Wed Mar 24 | **ECE 110** | 📊 Quiz 8 | — | 13:00–13:10 |
+| W9 | Wed Mar 24 | **MATH 142** | 🔬 Lab 8 | ≈0.8% | 15:00–16:50 |
+| W9 | Thu Mar 25 | **ECE 110** | 📝 PS 8 | ≈2.7% | 13:00 |
+| W9 | Fri Mar 26 | **ECE 110** | 🔬 LAB 9 | ≈1.9% | 14:00–15:50 |
+| W9 | Fri Mar 26 | **CS 102** | 📝 PS 8 | ≈3.2% | 17:00 |
+| W9 | Fri Mar 26 | **CS 102** | 📋 Project 1 | 10% | 17:00 |
+| W9 | Fri Mar 26 | **MATH 142** | 📝 PS 8 | ≈2.5% | 17:00 |
+| W9 | Fri Mar 26 | **PROG 102** | 📝 PS 8 | ≈2.5% | 17:00 |
+| W9 | Fri Mar 26 | **PROG 102** | 📋 Project 1 | 5% | 17:00 |
+| W10 | Mon Mar 29 | **CS 102** | 📊 Quiz 10 | — | 09:00–09:15 |
+| W10 | Mon Mar 29 | **MATH 142** | 📊 Quiz 10 | ≈0.8% | 11:00–11:15 |
+| W10 | Mon Mar 29 | **PROG 102** | 🔬 Lab 9 | ≈1.5% | 15:00–16:50 |
+| W10 | Mon Mar 29 | **CS 102** | 📘 Midterm 2 | 12.5% | 18:00–19:15 · VNC 100 · Weeks 5–9 |
+| W10 | Tue Mar 30 | **PROG 102** | 📊 Quiz 10 | — | 10:00–10:15 |
+| W10 | Tue Mar 30 | **CS 102** | 🔬 Lab 9 | — | 15:00–16:50 |
+| W10 | Tue Mar 30 | **PROG 102** | 📘 Midterm 2 | 12.5% | 18:00–19:30 · VNC 100 · Weeks 5–9 · 75-minute paper |
+| W10 | Wed Mar 31 | **ECE 110** | 📊 Quiz 9 | — | 13:00–13:10 |
+| W10 | Wed Mar 31 | **MATH 142** | 🔬 Lab 9 | ≈0.8% | 15:00–16:50 |
+| W10 | Wed Mar 31 | **MATH 142** | 📘 Midterm 2 | 15% | 18:00–19:15 · VNC 100 · Weeks 5–9 |
+| W10 | Thu Apr 01 | **ECE 110** | 📝 PS 9 | ≈2.7% | 13:00 |
+| W10 | Fri Apr 02 | **ECE 110** | 🔬 LAB 10 | ≈1.9% | 14:00–15:50 |
+| W10 | Fri Apr 02 | **CS 102** | 📝 PS 9 | ≈3.2% | 17:00 |
+| W10 | Fri Apr 02 | **MATH 142** | 📝 PS 9 | ≈2.5% | 17:00 |
+| W10 | Fri Apr 02 | **PROG 102** | 📝 PS 9 | ≈2.5% | 17:00 |
+| W11 | Mon Apr 05 | **CS 102** | 📊 Quiz 11 | — | 09:00–09:15 |
+| W11 | Mon Apr 05 | **MATH 142** | 📊 Quiz 11 | ≈0.8% | 11:00–11:15 |
+| W11 | Mon Apr 05 | **PROG 102** | 🔬 Lab 10 | ≈1.5% | 15:00–16:50 |
+| W11 | Tue Apr 06 | **PROG 102** | 📊 Quiz 11 | — | 10:00–10:15 |
+| W11 | Tue Apr 06 | **CS 102** | 🔬 Lab 10 | — | 15:00–16:50 |
+| W11 | Wed Apr 07 | **ECE 110** | 📊 Quiz 10 | — | 13:00–13:10 |
+| W11 | Wed Apr 07 | **MATH 142** | 🔬 Lab 10 | ≈0.8% | 15:00–16:50 |
+| W11 | Thu Apr 08 | **ECE 110** | 📝 PS 10 | ≈2.7% | 13:00 |
+| W11 | Fri Apr 09 | **ECE 110** | 🔬 LAB 11 | ≈1.9% | 14:00–15:50 |
+| W11 | Fri Apr 09 | **CS 102** | 📝 PS 10 | ≈3.2% | 17:00 |
+| W11 | Fri Apr 09 | **MATH 142** | 📝 PS 10 | ≈2.5% | 17:00 |
+| W11 | Fri Apr 09 | **PROG 102** | 📝 PS 10 | ≈2.5% | 17:00 |
+| W12 | Mon Apr 12 | **MATH 142** | 📊 Quiz 12 | ≈0.8% | 11:00–11:15 |
+| W12 | Mon Apr 12 | **PROG 102** | 🔬 Lab 11 | ≈1.5% | 15:00–16:50 |
+| W12 | Tue Apr 13 | **CS 102** | 🔬 Lab 11 | — | 15:00–16:50 |
+| W12 | Wed Apr 14 | **ECE 110** | 📊 Quiz 11 | — | 13:00–13:10 |
+| W12 | Wed Apr 14 | **MATH 142** | 🔬 Lab 11 | ≈0.8% | 15:00–16:50 |
+| W12 | Thu Apr 15 | **ECE 110** | 📝 PS 11 | ≈2.7% | 13:00 |
+| W12 | Fri Apr 16 | **ECE 110** | 🔬 LAB 12 | ≈1.9% | 14:00–15:50 |
+| W12 | Fri Apr 16 | **CS 102** | 📝 PS 11 | ≈3.2% | 17:00 |
+| W12 | Fri Apr 16 | **CS 102** | 📋 Project 2 | 10% | 17:00 |
+| W12 | Fri Apr 16 | **MATH 142** | 📝 PS 11 | ≈2.5% | 17:00 |
+| W12 | Fri Apr 16 | **PROG 102** | 📝 PS 11 | ≈2.5% | 17:00 |
+| W12 | Fri Apr 16 | **PROG 102** | 📋 Project 2 | 5% | 17:00 |
+| Finals | Mon Apr 19 | **ECE 110** | 📕 Final Exam | 15% | 08:00–10:00 · Comprehensive |
+| Finals | Mon Apr 19 | **PROG 102** | 🔬 Lab 12 | ≈1.5% | 15:00–16:50 |
+| Finals | Tue Apr 20 | **MATH 142** | 📕 Final Exam | 20% | 09:00–11:30 · Comprehensive |
+| Finals | Tue Apr 20 | **CS 102** | 🔬 Lab 12 | — | 15:00–16:50 |
+| Finals | Wed Apr 21 | **CS 102** | 📕 Final Exam | 20% | 09:00–11:30 · Comprehensive · *paper written for 180 min — decide* |
+| Finals | Wed Apr 21 | **MATH 142** | 🔬 Lab 12 | ≈0.8% | 15:00–16:50 |
+| Finals | Thu Apr 22 | **ECE 110** | 📝 PS 12 | ≈2.7% | 13:00 |
+| Finals | Thu Apr 22 | **PROG 102** | 📕 Final Exam | 15% | 14:00–16:30 · Comprehensive · *paper written for 180 min — decide* |
 
 ---
 
@@ -415,15 +515,9 @@ derived from the week numbers, never the reverse.
    (Quiz 1 in W2), which was **off by one against every quiz file**; corrected here.
    **ECE 110 is the lone Spring exception** and does follow the Fall pattern: its Quiz *N* sits in
    Week *N+1*, so its eleven quizzes run W2–W12.
-2. ⚠️ **PROG 102 quiz day is unresolved.** All eleven PROG 102 quiz files say *"Week N · Monday,
-   start of lecture"*, but [[Year1 - Freshman/SPRING SCHEDULE|SPRING SCHEDULE]] gives PROG 102 lectures on **Tue/Wed/Thu** with
-   Monday as its *lab*. A quiz "at the start of lecture" on a day with no lecture is impossible,
-   so this calendar uses **Tuesday** — PROG 102's first lecture of the week, and the day
-   [[Year1 - Freshman/SPRING SCHEDULE|SPRING SCHEDULE]] itself marks as its quiz day. The eleven quiz files most likely inherited
-   "Monday" from the CS 102 template. **Fix the quiz files or confirm Tuesday.**
-3. ⚠️ **MATH 142 quiz day conflicts too, the other way.** Its quiz files say Monday, which matches
-   its first lecture of the week; [[Year1 - Freshman/SPRING SCHEDULE|SPRING SCHEDULE]] marks **Friday**. This calendar follows the
-   quiz files (Monday), consistent with how the same conflict was resolved for PROG 101 in Fall.
+2. **PROG 102 quizzes are Tuesday 10:00**, at the start of its first lecture of the week. The quiz files
+   already said Tuesday; the earlier note here was stale. (Their file names still say "Monday".)
+3. **MATH 142 quizzes are Monday 11:00**, at the start of its first lecture, as the quiz files say.
 4. **MLK Day (Mon Jan 18 2027) is the first day of term (W0)** and Presidents Day (Mon Feb 15) falls
    in W4; holidays did not move with the re-base. Classes currently run on both.
    The pre-2027 calendar observed it as NO CLASSES. Same open decision as Fall's Labor Day.
