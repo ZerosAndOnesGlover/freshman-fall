@@ -2,6 +2,8 @@
 ## Lab 00: Numerical Integration and the Error of a Rule
 ### Week 0 Lab Session
 
+**Date:** Wednesday 27 January 2027 · 15:00–16:50 · Lab section (Week 1) — covers Week 0 (Lectures 1–3)
+
 ---
 
 **Duration:** 2 hours

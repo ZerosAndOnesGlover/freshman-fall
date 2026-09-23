@@ -262,7 +262,7 @@ This is evaluable — *verified symbolically to give exactly $2\pi^2$*, confirmi
 | **C5** | Assuming "looks hard" means "impossible" | Weeks 9–10 |
 | **D2(d)** | Not seeing injectivity as the deciding property | Week 5 (parametric curves) |
 
-**Midterm 1 is next week and covers Weeks 0–4.** The most valuable single instruction for revision: **for every problem, draw it or classify it before computing.** Almost every error above is a computation begun too early.
+**Midterm 1 is Wednesday 3 March and covers Weeks 0–4.** The most valuable single instruction for revision: **for every problem, draw it or classify it before computing.** Almost every error above is a computation begun too early.
 
 ---
 

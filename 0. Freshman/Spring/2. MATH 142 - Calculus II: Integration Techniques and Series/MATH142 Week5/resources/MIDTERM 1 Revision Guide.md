@@ -8,7 +8,7 @@
 
 | | |
 |---|---|
-| **When** | Week 5 |
+| **When** | **Wednesday 3 March 2027, 18:00–19:15** (Week 6, VNC 100) |
 | **Duration** | **75 minutes** |
 | **Covers** | **Weeks 0–4** — review, parts, trig integrals, trig substitution, partial fractions, improper integrals, comparison, volumes, arc length, surface area |
 | **Not covered** | **Week 5** (parametric and polar). That is examined on Midterm 2. |

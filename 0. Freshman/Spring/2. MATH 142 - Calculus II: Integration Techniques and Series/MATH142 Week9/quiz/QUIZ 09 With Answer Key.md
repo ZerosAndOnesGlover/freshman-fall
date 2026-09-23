@@ -4,6 +4,7 @@
 
 ---
 
+**Date:** Monday 22 March 2027 · 11:00–11:15 (start of Lecture 1) · Week 9
 **Time:** 15 minutes, start of Monday's lecture
 **Closed book, no calculator**
 **Total: 20 points** (4 points each)

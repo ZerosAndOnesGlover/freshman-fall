@@ -8,7 +8,7 @@
 
 **Reading:** Stewart §10.1 | Apostol Ch. 2 §2.14
 **Quiz 05** — this Monday, **covers Week 4** (volumes, arc length, surface area)
-**Midterm 1 this week** — covering Weeks 0–4. See the revision guide in `resources/`.
+**Midterm 1 is Wednesday 3 March, 18:00–19:15** (Week 6) — covering Weeks 0–4. See the revision guide in `resources/`.
 
 ---
 

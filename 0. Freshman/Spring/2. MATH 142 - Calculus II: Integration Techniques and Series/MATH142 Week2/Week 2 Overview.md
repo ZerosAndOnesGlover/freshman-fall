@@ -6,7 +6,7 @@
 
 **Topic:** the last two integration techniques, and the first *theorem* about which integrals are doable
 **Reading:** Stewart §7.3–7.4 | Apostol Ch. 6 §6.13–6.15
-**Assessment this week:** PS 2, Lab 2, **Quiz 02** *(Monday — covers Week 1)*
+**Assessment this week:** PS 2, Lab 2, **Quiz 02** *(Mon 1 Feb, 11:00 — covers Week 1)*
 
 ---
 
@@ -53,7 +53,7 @@ Compare that with Week 0's opening fact, that $e^{-x^2}$ has none. **Here is an 
 |---|---|---|---|
 | **Lecture 1** | Monday | Trigonometric Substitution | Three patterns; and you must convert back |
 | **Lecture 2** | Tuesday | Completing the Square; Rationalizing | Making an integral *fit* a pattern |
-| **Lecture 3** | Wednesday | Partial Fractions | The algorithm, and the theorem it proves |
+| **Lecture 3** | Friday | Partial Fractions | The algorithm, and the theorem it proves |
 
 ---
 
@@ -68,7 +68,7 @@ Compare that with Week 0's opening fact, that $e^{-x^2}$ has none. **Here is an 
 ## This Week's Work
 
 1. **Quiz 02** — Monday, 15 minutes, **covers Week 1** (parts, reduction formulas, trigonometric integrals)
-2. **PS 2** — released Wednesday, due Wednesday of Week 3
+2. **PS 2** — released Fri 5 Feb 12:00, due Fri 12 Feb 17:00
 3. **Lab 2** — partial fractions, and a famous one-line proof that $\tfrac{22}{7} > \pi$
 
 ---

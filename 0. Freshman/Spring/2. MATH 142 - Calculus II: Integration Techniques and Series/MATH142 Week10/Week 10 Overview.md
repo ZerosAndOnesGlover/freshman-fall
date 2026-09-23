@@ -6,13 +6,13 @@
 
 **Topic:** the climax of the course
 **Reading:** Stewart §11.10–11.11 | Apostol Ch. 11 §11.6–11.11
-**Assessment this week:** PS 10, Lab 10, **Quiz 10** *(Monday — covers Week 9)*, and **MIDTERM 2**
+**Assessment this week:** PS 10, Lab 10, **Quiz 10** *(Mon 29 Mar, 11:00 — covers Week 9)*, and **MIDTERM 2**
 
 ---
 
 ## ⚠ Midterm 2
 
-**Midterm 2 is this week.** 75 minutes, covering **Weeks 5–9**, one handwritten sheet (one side), no calculator.
+**Midterm 2 is Wednesday 31 March, 18:00–19:15 (VNC 100).** 75 minutes, covering **Weeks 5–9**, one handwritten sheet (one side), no calculator.
 
 **A full revision guide is in this week's `resources/` folder.** This week's new material (Taylor series) is **not** on it — that is examined on the final.
 
@@ -44,7 +44,7 @@ $$\boxed{c_n = \frac{f^{(n)}(a)}{n!}}$$
 |---|---|---|---|
 | **Lecture 1** | Monday | Taylor and Maclaurin Series | The coefficients are forced; and the standard library |
 | **Lecture 2** | Tuesday | Taylor's Theorem and the Remainder | Does the series actually equal $f$? |
-| **Lecture 3** | Wednesday | Applications | Limits, non-elementary integrals, and Week 0's debt |
+| **Lecture 3** | Friday | Applications | Limits, non-elementary integrals, and Week 0's debt |
 
 ---
 
@@ -112,7 +112,7 @@ $$\int_0^1 e^{-x^2}dx = \sum_{n=0}^\infty\frac{(-1)^n}{n!\,(2n+1)}$$
 
 1. **Quiz 10** — Monday, 15 minutes, **covers Week 9** (power series, radius, interval)
 2. **MIDTERM 2** — covering Weeks 5–9. See the revision guide in `resources/`
-3. **PS 10** — released Wednesday, due Wednesday of Week 11
+3. **PS 10** — released Fri 2 Apr 12:00, due Fri 9 Apr 17:00
 4. **Lab 10** — Taylor error bounds, and settling Week 0's debt
 
 ---

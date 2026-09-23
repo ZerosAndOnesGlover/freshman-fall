@@ -1,7 +1,8 @@
 # MATH 142 · Calculus II
 ## Problem Set 3
 ### Topic: Improper Integrals; Comparison Tests
-**Released:** Wednesday, Week 3 | **Due:** Wednesday, Week 4 (start of class)
+**Released:** Friday 12 February 2027, 12:00 · Week 3 (after Friday's Lecture 3)
+**Due:** Friday 19 February 2027, 17:00 · Week 4 — late penalty from 17:01
 
 ---
 

@@ -2,12 +2,14 @@
 ## Lab 10: Taylor Approximation, and Week 0's Debt
 ### Week 10 Lab Session
 
+**Date:** Wednesday 7 April 2027 · 15:00–16:50 · Lab section (Week 11) — covers Week 10 (Lectures 1–3)
+
 ---
 
 **Duration:** 2 hours
 **Format:** Individual or pairs (pairs submit separate reports)
 **Graded on:** completion + correctness — **100 points**
-**Tools required:** Python 3 with `sympy` and `mpmath`
+**Tools required:** Python 3 with `sympy` and `mpmath` — only the calls in Lab 02's SymPy box and Lab 03's mpmath box
 
 ---
 

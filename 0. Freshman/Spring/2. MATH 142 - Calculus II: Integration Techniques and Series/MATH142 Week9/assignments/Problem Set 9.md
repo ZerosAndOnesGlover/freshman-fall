@@ -1,7 +1,8 @@
 # MATH 142 · Calculus II
 ## Problem Set 9
 ### Topic: Power Series; Radius and Interval of Convergence
-**Released:** Wednesday, Week 9 | **Due:** Wednesday, Week 10 (start of class)
+**Released:** Friday 26 March 2027, 12:00 · Week 9 (after Friday's Lecture 3)
+**Due:** Friday 2 April 2027, 17:00 · Week 10 — late penalty from 17:01
 
 ---
 

@@ -8,7 +8,7 @@
 
 | | |
 |---|---|
-| **When** | end of Week 12 |
+| **When** | **Tuesday 20 April 2027, 09:00–11:30** (finals week) |
 | **Duration** | **150 minutes** |
 | **Covers** | **Weeks 0–12 — comprehensive** |
 | **Weight** | **20%** of the course |

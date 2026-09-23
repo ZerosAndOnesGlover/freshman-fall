@@ -248,7 +248,7 @@ $$L = \int_0^{2\pi}2a\sin\frac t2\,dt = \boxed{8a}$$
 | **B2** | Swapping the horizontal/vertical conditions | Midterm 2 |
 | **D1(a)** | Memorising $\frac12$ rather than deriving it | Midterm 2 |
 
-**Midterm 1 was this week and covered Weeks 0–4.** Once marked, the most useful feedback is a per-topic breakdown rather than a single score — **Week 6 begins a completely different subject**, and a student weak on integration technique will not be rescued by the change but will be able to keep up if they patch it now.
+**Midterm 1 (Wed 3 Mar) falls inside this set's window and covers Weeks 0–4.** Once marked, the most useful feedback is a per-topic breakdown rather than a single score — **Week 6 begins a completely different subject**, and a student weak on integration technique will not be rescued by the change but will be able to keep up if they patch it now.
 
 ---
 

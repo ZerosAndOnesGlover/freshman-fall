@@ -6,7 +6,7 @@
 
 **Topic:** the limit of a list — and the foundation of everything remaining in the course
 **Reading:** Stewart §11.1 | Apostol Ch. 10 §10.1–10.6
-**Assessment this week:** PS 6, Lab 6, **Quiz 06** *(Monday — covers Week 5)*
+**Assessment this week:** PS 6, Lab 6, **Quiz 06** *(Mon 1 Mar, 11:00 — covers Week 5)*, and **MIDTERM 1** *(Wed 3 Mar, 18:00–19:15, Weeks 0–4)*
 
 ---
 
@@ -60,7 +60,7 @@ is *defined* as the limit of its sequence of **partial sums** $s_N = a_1+\cdots+
 |---|---|---|---|
 | **Lecture 1** | Monday | Sequences and Their Limits | The definition, and the function connection |
 | **Lecture 2** | Tuesday | Techniques and the Growth Hierarchy | How to actually compute these limits |
-| **Lecture 3** | Wednesday | Monotone Convergence; Recursive Sequences | Convergence proved **without** knowing the limit |
+| **Lecture 3** | Friday | Monotone Convergence; Recursive Sequences | Convergence proved **without** knowing the limit |
 
 ---
 
@@ -118,7 +118,7 @@ Compare with the labs so far:
 ## This Week's Work
 
 1. **Quiz 06** — Monday, 15 minutes, **covers Week 5** (parametric curves, polar coordinates)
-2. **PS 6** — released Wednesday, due Wednesday of Week 7
+2. **PS 6** — released Fri 5 Mar 12:00, due Fri 12 Mar 17:00
 3. **Lab 6** — recursion, fixed points, and why some iterations are astronomically faster than others
 
 ---

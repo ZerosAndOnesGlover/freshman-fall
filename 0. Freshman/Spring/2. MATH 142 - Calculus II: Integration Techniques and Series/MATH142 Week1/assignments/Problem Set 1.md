@@ -1,7 +1,8 @@
 # MATH 142 · Calculus II
 ## Problem Set 1
 ### Topic: Integration by Parts; Trigonometric Integrals
-**Released:** Wednesday, Week 1 | **Due:** Wednesday, Week 2 (start of class)
+**Released:** Friday 29 January 2027, 12:00 · Week 1 (after Friday's Lecture 3)
+**Due:** Friday 5 February 2027, 17:00 · Week 2 — late penalty from 17:01
 
 ---
 

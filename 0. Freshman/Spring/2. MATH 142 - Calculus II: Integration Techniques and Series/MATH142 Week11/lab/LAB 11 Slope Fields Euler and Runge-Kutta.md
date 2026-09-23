@@ -2,12 +2,14 @@
 ## Lab 11: Slope Fields, Euler's Method, and Runge–Kutta
 ### Week 11 Lab Session
 
+**Date:** Wednesday 14 April 2027 · 15:00–16:50 · Lab section (Week 12) — covers Week 11 (Lectures 1–3)
+
 ---
 
 **Duration:** 2 hours
 **Format:** Individual or pairs (pairs submit separate reports)
 **Graded on:** completion + correctness — **100 points**
-**Tools required:** Python 3 with `mpmath`; `matplotlib` for Part A
+**Tools required:** Python 3 with `mpmath` (the calls in Lab 03's box). Part A is sketched by hand — no plotting library is needed
 
 ---
 
@@ -23,13 +25,16 @@ Then it turns the methods on an equation that has no solution at all.
 
 ## Part A — Slope Fields (15 pts)
 
-**A1 (9 pts).** Plot the slope field of $\dfrac{dy}{dx}=y-x$ on $[-2,3]\times[-2,5]$.
+**A1 (9 pts).** Have Python print the slope $y-x$ at every integer point of $[-2,3]\times[-2,5]$, and
+from that table **sketch the slope field by hand** on graph paper — a short segment of the right slope
+at each point, as in Lecture 3 §1. *(If you already know a plotting library you may use it; nothing is
+marked for the tool.)*
 
-Overlay the solution curves through $(0,2)$, $(0,1)$ and $(0,0)$.
+Overlay, by hand, the solution curves through $(0,2)$, $(0,1)$ and $(0,0)$, following the segments.
 
 **A2 (6 pts).** The exact solution through $(0,2)$ is $y=e^x+x+1$. *(You may verify this by substitution.)*
 
-- (a) Confirm your plotted curve matches.
+- (a) Confirm your sketched curve matches the exact solution at a few points.
 - (b) One of your three curves is a straight line. **Which initial condition gives it, and why does the slope field make that obvious?**
 
 ---
@@ -102,7 +107,7 @@ In two or three sentences, relate this to Week 0's opening claim about $\int e^{
 
 ## What to Submit
 
-1. The slope field plot with three solution curves (Part A)
+1. The slope-field table and your hand sketch with three solution curves (Part A)
 2. Euler's table with ratios and your order (Part B)
 3. Both improved tables and the comparison (Part C)
 4. The Riccati results and your reflection (Part D)

@@ -2,12 +2,14 @@
 ## Lab 06: Recursion, Fixed Points, and Chaos
 ### Week 6 Lab Session
 
+**Date:** Wednesday 10 March 2027 · 15:00–16:50 · Lab section (Week 7) — covers Week 6 (Lectures 1–3)
+
 ---
 
 **Duration:** 2 hours
 **Format:** Individual or pairs (pairs submit separate reports)
 **Graded on:** completion + correctness — **100 points**
-**Tools required:** Python 3 with `mpmath` (you will need far more than 15 digits)
+**Tools required:** Python 3 with `mpmath` (you will need far more than 15 digits) — only the calls in Lab 02's SymPy box and Lab 03's mpmath box
 
 ---
 

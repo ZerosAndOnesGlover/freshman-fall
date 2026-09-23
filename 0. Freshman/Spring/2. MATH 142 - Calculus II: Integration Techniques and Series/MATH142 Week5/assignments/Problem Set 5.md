@@ -1,7 +1,8 @@
 # MATH 142 · Calculus II
 ## Problem Set 5
 ### Topic: Parametric Curves; Polar Coordinates
-**Released:** Wednesday, Week 5 | **Due:** Wednesday, Week 6 (start of class)
+**Released:** Friday 26 February 2027, 12:00 · Week 5 (after Friday's Lecture 3)
+**Due:** Friday 5 March 2027, 17:00 · Week 6 — late penalty from 17:01
 
 ---
 

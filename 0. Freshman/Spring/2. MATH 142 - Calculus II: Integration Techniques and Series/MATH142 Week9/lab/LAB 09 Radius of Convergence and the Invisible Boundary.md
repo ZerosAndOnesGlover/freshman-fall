@@ -2,12 +2,14 @@
 ## Lab 09: Radius of Convergence, and the Invisible Boundary
 ### Week 9 Lab Session
 
+**Date:** Wednesday 31 March 2027 · 15:00–16:50 · Lab section (Week 10) — covers Week 9 (Lectures 1–3)
+
 ---
 
 **Duration:** 2 hours
 **Format:** Individual or pairs (pairs submit separate reports)
 **Graded on:** completion + correctness — **100 points**
-**Tools required:** Python 3 with `sympy` and `mpmath`
+**Tools required:** Python 3 with `sympy` and `mpmath` — only the calls in Lab 02's SymPy box and Lab 03's mpmath box
 
 ---
 

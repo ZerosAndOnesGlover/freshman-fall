@@ -230,7 +230,7 @@ Two things, and the second matters more:
 
 Then look ahead:
 
-> Next week is **Midterm 1** and parametric curves. And in Week 6 the questions become almost entirely
+> Next week is parametric curves, and **Midterm 1** follows on Wednesday 3 March. And in Week 6 the questions become almost entirely
 > of the second kind — from there to the end of the course, "does this converge?" is the question, and
 > exact reasoning is the only tool that answers it.
 

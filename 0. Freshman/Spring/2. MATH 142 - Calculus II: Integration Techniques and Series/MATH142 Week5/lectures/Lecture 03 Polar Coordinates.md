@@ -188,7 +188,7 @@ Weeks 0–5 have been about **integration and geometry** — evaluating, computi
 
 **Week 6 changes the subject entirely.** We start with sequences, and from there the question is almost always *"does this converge?"* — the question you first met in Week 3, now asked of sums instead of integrals. The computations will get easier and the reasoning much harder.
 
-**Midterm 1 is this week**, covering Weeks 0–4. **This week's material is examined on Midterm 2, not Midterm 1.**
+**Midterm 1 is Wednesday 3 March, 18:00–19:15**, covering Weeks 0–4. **This week's material is examined on Midterm 2, not Midterm 1.**
 
 ---
 

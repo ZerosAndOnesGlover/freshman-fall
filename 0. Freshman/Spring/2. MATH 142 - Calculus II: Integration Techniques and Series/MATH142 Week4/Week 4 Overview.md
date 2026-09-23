@@ -6,7 +6,7 @@
 
 **Topic:** the slice-approximate-sum-limit pattern, applied three more times
 **Reading:** Stewart §6.2–6.3, §8.1–8.2 | Apostol Ch. 2 §2.11–2.13
-**Assessment this week:** PS 4, Lab 4, **Quiz 04** *(Monday — covers Week 3)*
+**Assessment this week:** PS 4, Lab 4, **Quiz 04** *(Mon 15 Feb, 11:00 — covers Week 3)*
 
 ---
 
@@ -38,7 +38,7 @@ This week runs it three more times. **There is no new theory** — the whole wee
 |---|---|---|---|
 | **Lecture 1** | Monday | Volumes by Discs and Washers | Slice perpendicular to the axis |
 | **Lecture 2** | Tuesday | Volumes by Cylindrical Shells | Slice parallel to it — and when that is the only sane choice |
-| **Lecture 3** | Wednesday | Arc Length and Surface Area | Where closed forms run out |
+| **Lecture 3** | Friday | Arc Length and Surface Area | Where closed forms run out |
 
 ---
 
@@ -95,14 +95,14 @@ This is the **painter's paradox**: the horn holds exactly $\pi$ cubic units of p
 ## This Week's Work
 
 1. **Quiz 04** — Monday, 15 minutes, **covers Week 3** (improper integrals, comparison tests)
-2. **PS 4** — released Wednesday, due Wednesday of Week 5
+2. **PS 4** — released Fri 19 Feb 12:00, due Fri 26 Feb 17:00
 3. **Lab 4** — Gabriel's Horn, and measuring how a polygon converges to a curve
 
 ---
 
 ## Midterm 1
 
-**Midterm 1 is next week (Week 5) and covers Weeks 0–4** — this week completes its syllabus.
+**Midterm 1 is Wednesday 3 March (Week 6) and covers Weeks 0–4** — this week completes its syllabus.
 
 75 minutes, one handwritten sheet, no calculator. A revision guide will be posted with the Week 5 materials, but the useful preparation starts now: **rework PS 0–4 from a blank page**, under time.
 

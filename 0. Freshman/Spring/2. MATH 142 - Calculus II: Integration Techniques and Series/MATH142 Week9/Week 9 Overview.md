@@ -6,7 +6,7 @@
 
 **Topic:** series with a variable in them — and the first step toward representing functions
 **Reading:** Stewart §11.8–11.9 | Apostol Ch. 11 §11.1–11.5
-**Assessment this week:** PS 9, Lab 9, **Quiz 09** *(Monday — covers Week 8)*
+**Assessment this week:** PS 9, Lab 9, **Quiz 09** *(Mon 22 Mar, 11:00 — covers Week 8)*
 
 ---
 
@@ -70,7 +70,7 @@ The two endpoints are independent, so all four combinations occur — and with $
 |---|---|---|---|
 | **Lecture 1** | Monday | Power Series and the Radius | The Ratio Test, and the three cases |
 | **Lecture 2** | Tuesday | Endpoints and the Interval | Where the Ratio Test stops and Weeks 7–8 start |
-| **Lecture 3** | Wednesday | Functions as Power Series | Term-by-term operations, and why they are legal |
+| **Lecture 3** | Friday | Functions as Power Series | Term-by-term operations, and why they are legal |
 
 ---
 
@@ -127,7 +127,7 @@ And worse — **the boundary is not visible numerically.** At $N=200$ terms, the
 ## This Week's Work
 
 1. **Quiz 09** — Monday, 15 minutes, **covers Week 8** (alternating series, absolute convergence, Ratio/Root)
-2. **PS 9** — released Wednesday, due Wednesday of Week 10
+2. **PS 9** — released Fri 26 Mar 12:00, due Fri 2 Apr 17:00
 3. **Lab 9** — finding radii, watching the boundary, and deriving $\pi/4$ by integrating a series
 
 ---

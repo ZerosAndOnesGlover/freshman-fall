@@ -6,13 +6,13 @@
 
 **Topic:** the last week — where everything goes next
 **Reading:** Stewart §9.6 | Apostol Ch. 8 §8.8
-**Assessment this week:** Lab 12, **Quiz 12** *(Monday — covers Week 11)*, PS 12 *(ungraded)*, and the **FINAL EXAM**
+**Assessment this week:** Lab 12, **Quiz 12** *(Mon 12 Apr, 11:00 — covers Week 11)*, PS 12 *(ungraded)*, and the **FINAL EXAM**
 
 ---
 
 ## ⚠ The Final Exam
 
-**150 minutes. Comprehensive — Weeks 0–12. Two-page cheat sheet. No calculator. 20% of the course.**
+**Tuesday 20 April, 09:00–11:30 (finals week). 150 minutes. Comprehensive — Weeks 0–12. Two-page cheat sheet. No calculator. 20% of the course.**
 
 **A full revision guide is in this week's `resources/` folder.** It contains a topic map for all thirteen weeks, the errors that have recurred all term, a two-page sheet plan, and a sample paper.
 
@@ -34,7 +34,7 @@
 |---|---|---|---|
 | **Lecture 1** | Monday | Systems of Differential Equations | Two coupled unknowns; the phase plane |
 | **Lecture 2** | Tuesday | Numerical Methods Preview | What you have been doing all term, named properly |
-| **Lecture 3** | Wednesday | The Road Ahead | Where every thread of this course continues |
+| **Lecture 3** | Friday | The Road Ahead | Where every thread of this course continues |
 
 ---
 

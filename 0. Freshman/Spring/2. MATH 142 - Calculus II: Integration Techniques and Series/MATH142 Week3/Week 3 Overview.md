@@ -6,7 +6,7 @@
 
 **Topic:** integrals where the region is unbounded — and how to tell whether they mean anything
 **Reading:** Stewart §7.8 | Apostol Ch. 10 §10.7–10.9
-**Assessment this week:** PS 3, Lab 3, **Quiz 03** *(Monday — covers Week 2)*
+**Assessment this week:** PS 3, Lab 3, **Quiz 03** *(Mon 8 Feb, 11:00 — covers Week 2)*
 
 ---
 
@@ -47,7 +47,7 @@ If the limit exists and is finite, the integral **converges**. Otherwise it **di
 |---|---|---|---|
 | **Lecture 1** | Monday | Improper Integrals of Type I | Infinite interval; the $p$-test |
 | **Lecture 2** | Tuesday | Improper Integrals of Type II | Unbounded integrand; singularities that hide |
-| **Lecture 3** | Wednesday | Comparison Tests | Deciding convergence **without** evaluating |
+| **Lecture 3** | Friday | Comparison Tests | Deciding convergence **without** evaluating |
 
 ---
 
@@ -95,14 +95,14 @@ Lab 3 computes $\int_1^T\frac{dx}{x^p}$ for a range of $p$ and watches $T$ grow.
 ## This Week's Work
 
 1. **Quiz 03** — Monday, 15 minutes, **covers Week 2** (trigonometric substitution, partial fractions)
-2. **PS 3** — released Wednesday, due Wednesday of Week 4
+2. **PS 3** — released Fri 12 Feb 12:00, due Fri 19 Feb 17:00
 3. **Lab 3** — the $p$-test measured, and the limits of numerical evidence
 
 ---
 
 ## Looking Ahead: Midterm 1
 
-**Midterm 1 is in Week 5** and covers Weeks 0–4. After this week only one topic remains on it (Week 4's applications), so this is the point to start consolidating rather than to fall behind.
+**Midterm 1 is Wednesday 3 March, 18:00–19:15 (Week 6)** and covers Weeks 0–4. After this week only one topic remains on it (Week 4's applications), so this is the point to start consolidating rather than to fall behind.
 
 ---
 

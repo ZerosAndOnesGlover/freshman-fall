@@ -289,7 +289,7 @@ $$\frac{x^2}{2}-2\ln(x^2+4)+2\arctan\frac x2 + C$$
 | **B4 / C5 / D2** | Not checking whether a fraction is proper | Anywhere a rational function appears |
 | **C4** | Constant numerator over an irreducible quadratic | Week 11 (partial fractions in ODEs) |
 
-**Midterm 1 covers Weeks 0–4 and is two weeks away.** Parts A–C of this set are a fair sample of its computational half; students who found them slow rather than hard need volume practice, not more theory.
+**Midterm 1 covers Weeks 0–4 and is on Wednesday 3 March.** Parts A–C of this set are a fair sample of its computational half; students who found them slow rather than hard need volume practice, not more theory.
 
 ---
 

@@ -4,6 +4,7 @@
 
 ---
 
+**Date:** Monday 15 February 2027 · 11:00–11:15 (start of Lecture 1) · Week 4
 **Time:** 15 minutes, start of Monday's lecture
 **Closed book, no calculator**
 **Total: 20 points** (4 points each)
@@ -92,7 +93,7 @@ $$= \Big[-3(1-x)^{1/3}\Big]_0^1 + \Big[3(x-1)^{1/3}\Big]_1^2 = 3+3 = \boxed{6}$$
 
 **Q5 is the diagnostic, and it is deliberately a case where carelessness is rewarded** with the right number. Students who did not split should be told explicitly that they got 6 by luck: for $p=\tfrac23$ the antiderivative extends continuously across the singularity, and for $p\ge1$ it does not.
 
-**Midterm 1 is next week.** If Q1/Q2 show the two $p$-tests being confused with each other, that is worth five minutes of board time — it is the single most examinable confusion in Weeks 0–4.
+**Midterm 1 is Wednesday 3 March.** If Q1/Q2 show the two $p$-tests being confused with each other, that is worth five minutes of board time — it is the single most examinable confusion in Weeks 0–4.
 
 ---
 

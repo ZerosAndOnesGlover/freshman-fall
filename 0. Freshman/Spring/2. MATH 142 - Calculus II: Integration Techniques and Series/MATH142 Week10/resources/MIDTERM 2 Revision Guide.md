@@ -8,7 +8,7 @@
 
 | | |
 |---|---|
-| **When** | Week 10 |
+| **When** | **Wednesday 31 March 2027, 18:00–19:15** (Week 10, VNC 100) |
 | **Duration** | **75 minutes** |
 | **Covers** | **Weeks 5–9** — parametric and polar, sequences, series and all convergence tests, power series |
 | **Not covered** | **Week 10** (Taylor series). That is examined on the final. |

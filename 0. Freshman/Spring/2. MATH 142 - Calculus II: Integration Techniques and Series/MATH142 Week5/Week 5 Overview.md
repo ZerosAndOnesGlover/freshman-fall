@@ -1,18 +1,18 @@
 # MATH 142 · Calculus II
 ## Week 5 · Overview
-### Parametric Curves; Polar Coordinates — and **Midterm 1**
+### Parametric Curves; Polar Coordinates — and **Midterm 1** (next Wednesday)
 
 ---
 
 **Topic:** two ways of describing curves that are not graphs of functions
 **Reading:** Stewart §10.1–10.4 | Apostol Ch. 2 §2.14
-**Assessment this week:** PS 5, Lab 5, **Quiz 05** *(Monday — covers Week 4)*, and **MIDTERM 1**
+**Assessment this week:** PS 5, Lab 5, **Quiz 05** *(Mon 22 Feb, 11:00 — covers Week 4)*, and **MIDTERM 1**
 
 ---
 
 ## ⚠ Midterm 1
 
-**Midterm 1 is this week.** 75 minutes, covering **Weeks 0–4**, one handwritten sheet (one side), no calculator.
+**Midterm 1 is next Wednesday, 3 March, 18:00–19:15 (Week 6, VNC 100).** 75 minutes, covering **Weeks 0–4**, one handwritten sheet (one side), no calculator.
 
 **A full revision guide is in this week's `resources/` folder.** Read it now, not the night before — it contains a topic checklist, the seven errors that cost the most marks, and a worked sample paper.
 
@@ -44,7 +44,7 @@ Everything so far has been $y=f(x)$: for each $x$, one $y$. That is a serious re
 |---|---|---|---|
 | **Lecture 1** | Monday | Parametric Curves | A curve is a path, not a graph |
 | **Lecture 2** | Tuesday | Calculus with Parametric Curves | Slopes, areas, arc lengths — all via the chain rule |
-| **Lecture 3** | Wednesday | Polar Coordinates | Area is $\tfrac12\int r^2d\theta$, and why the $\tfrac12$ |
+| **Lecture 3** | Friday | Polar Coordinates | Area is $\tfrac12\int r^2d\theta$, and why the $\tfrac12$ |
 
 ---
 
@@ -90,8 +90,8 @@ $$\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2 = 2a^2(1-\cos t) = 4
 ## This Week's Work
 
 1. **Quiz 05** — Monday, 15 minutes, **covers Week 4** (volumes, arc length, surface area)
-2. **MIDTERM 1** — covering Weeks 0–4. See the revision guide in `resources/`
-3. **PS 5** — released Wednesday, due Wednesday of Week 6
+2. **MIDTERM 1** — Wed 3 Mar, 18:00, covering Weeks 0–4. See the revision guide in `resources/`
+3. **PS 5** — released Fri 26 Feb 12:00, due Fri 5 Mar 17:00
 4. **Lab 5** — the cycloid and the ellipse: one has a closed form, one cannot
 
 ---

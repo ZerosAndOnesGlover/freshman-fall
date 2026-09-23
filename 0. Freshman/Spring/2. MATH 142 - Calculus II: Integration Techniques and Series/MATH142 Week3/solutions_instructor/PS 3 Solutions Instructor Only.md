@@ -290,7 +290,7 @@ This is worth making explicit, because it sharpens the moral:
 | **D1(b)** | Memorised two inequalities instead of one reason | Week 7 ($p$-series) |
 | **A4** | Taking limits of pieces instead of the combination | Week 7 (telescoping series) |
 
-**Midterm 1 is in Week 5.** This set plus Week 4 completes its syllabus. The single most valuable revision instruction to give the class: **for every integral on the exam, look at it before computing** — is it improper, is the fraction proper, is there symmetry. Three of the four failure modes above are failures to look.
+**Midterm 1 is Wednesday 3 March (Week 6).** This set plus Week 4 completes its syllabus. The single most valuable revision instruction to give the class: **for every integral on the exam, look at it before computing** — is it improper, is the fraction proper, is there symmetry. Three of the four failure modes above are failures to look.
 
 ---
 

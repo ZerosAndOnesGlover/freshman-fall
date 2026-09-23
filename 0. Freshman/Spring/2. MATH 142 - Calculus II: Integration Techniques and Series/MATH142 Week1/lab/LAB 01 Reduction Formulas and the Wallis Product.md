@@ -2,12 +2,15 @@
 ## Lab 01: Reduction Formulas and the Wallis Product
 ### Week 1 Lab Session
 
+**Date:** Wednesday 3 February 2027 · 15:00–16:50 · Lab section (Week 2) — covers Week 1 (Lectures 1–3)
+
 ---
 
 **Duration:** 2 hours
 **Format:** Individual or pairs (pairs submit separate reports)
 **Graded on:** completion + correctness — **100 points**
 **Tools required:** Python 3. Use `fractions.Fraction` for Parts A and D — **not** floating point.
+`Fraction(a, b)` is the exact rational $a/b$; `+ - * /` on Fractions stay exact. That is all of it you need.
 
 ---
 

@@ -172,7 +172,7 @@ $$V = \pi\int_1^\infty\frac{dx}{x^2} = \pi \qquad\text{but}\qquad S = 2\pi\int_1
 
 ## Midterm 1
 
-**Next week, covering Weeks 0–4.** This lecture completes the syllabus. Start reworking PS 0–4 from a blank page now, under time.
+**Wednesday 3 March, 18:00–19:15 (Week 6), covering Weeks 0–4.** This lecture completes the syllabus. Start reworking PS 0–4 from a blank page now, under time.
 
 ---
 

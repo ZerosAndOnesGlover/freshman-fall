@@ -1,7 +1,8 @@
 # MATH 142 · Calculus II
 ## Problem Set 8
 ### Topic: Alternating Series; Absolute Convergence; Ratio and Root Tests
-**Released:** Wednesday, Week 8 | **Due:** Wednesday, Week 9 (start of class)
+**Released:** Friday 19 March 2027, 12:00 · Week 8 (after Friday's Lecture 3)
+**Due:** Friday 26 March 2027, 17:00 · Week 9 — late penalty from 17:01
 
 ---
 

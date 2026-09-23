@@ -2,12 +2,29 @@
 ## Lab 03: The $p$-Test, and the Limits of Numerical Evidence
 ### Week 3 Lab Session
 
+**Date:** Wednesday 17 February 2027 · 15:00–16:50 · Lab section (Week 4) — covers Week 3 (Lectures 1–3)
+
 ---
 
 **Duration:** 2 hours
 **Format:** Individual or pairs (pairs submit separate reports)
 **Graded on:** completion + correctness — **100 points**
 **Tools required:** Python 3 with `mpmath` (`pip install mpmath`) — you will need exponents beyond `float` range
+
+> **mpmath — every call the MATH 142 labs use, in one place.** No course has taught it; this is all you
+> need, here and in Labs 4–12.
+>
+> ```python
+> import mpmath as mp
+> mp.mp.dps = 30                  # work to 30 significant digits (set before computing)
+> mp.mpf(1) / 3                   # a high-precision number; arithmetic on mpf stays high-precision
+> mp.log, mp.exp, mp.sqrt, mp.sin, mp.pi, mp.e    # the usual functions and constants
+> mp.quad(f, [a, b])              # a numerical integral; mp.inf allowed as an endpoint
+> mp.euler                        # the Euler–Mascheroni constant (Lab 7)
+> mp.ellipe(m)                    # the complete elliptic integral E(m) (Lab 5)
+> ```
+>
+> Wherever a lab says "numerical quadrature", your own Simpson's rule from Lab 00 is equally acceptable.
 
 ---
 

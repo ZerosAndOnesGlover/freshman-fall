@@ -2,12 +2,33 @@
 ## Lab 02: Partial Fractions, and a Proof that $\tfrac{22}{7} > \pi$
 ### Week 2 Lab Session
 
+**Date:** Wednesday 10 February 2027 · 15:00–16:50 · Lab section (Week 3) — covers Week 2 (Lectures 1–3)
+
 ---
 
 **Duration:** 2 hours
 **Format:** Individual or pairs (pairs submit separate reports)
 **Graded on:** completion + correctness — **100 points**
 **Tools required:** Python 3 with `sympy` (`pip install sympy`) and `fractions`
+
+> **SymPy — every call the MATH 142 labs use, in one place.** No course has taught SymPy, so this box
+> is the whole of what you need; nothing else from the library is expected, in this lab or later ones.
+>
+> ```python
+> import sympy as sp
+> x, n, t = sp.symbols('x n t')          # symbols to build expressions with: (x**2 + 1)/(x - 1)
+> sp.apart(e, x)                          # partial fractions (Week 2)
+> sp.together(e);  sp.simplify(e)         # recombine over one denominator; simplify
+> sp.div(p, q, x)                         # polynomial division -> (quotient, remainder)
+> sp.diff(F, x)                           # derivative
+> sp.integrate(f, x)                      # antiderivative
+> sp.integrate(f, (x, a, b))              # definite integral; use sp.oo for infinity
+> sp.limit(e, n, sp.oo)                   # a limit
+> sp.series(sp.atan(x), x, 0, 10)         # Maclaurin expansion up to (not including) x**10
+> sp.sin, sp.cos, sp.exp, sp.log, sp.sqrt, sp.pi, sp.E   # use these, not math's, inside expressions
+> ```
+>
+> **SymPy checks your hand working; it never replaces it.** Every lab asks for the hand derivation first.
 
 ---
 

@@ -6,7 +6,7 @@
 
 **Topic:** infinite sums, and the first machinery for deciding whether they mean anything
 **Reading:** Stewart §11.2–11.4 | Apostol Ch. 10 §10.10–10.14
-**Assessment this week:** PS 7, Lab 7, **Quiz 07** *(Monday — covers Week 6)*
+**Assessment this week:** PS 7, Lab 7, **Quiz 07** *(Mon 8 Mar, 11:00 — covers Week 6)*
 
 ---
 
@@ -39,7 +39,7 @@ $$\sum_{n=1}^{\infty}a_n \;:=\; \lim_{N\to\infty}s_N, \qquad\text{where}\qquad s
 |---|---|---|---|
 | **Lecture 1** | Monday | Series, Geometric, Telescoping | The two series we can actually sum |
 | **Lecture 2** | Tuesday | The Integral Test and $p$-Series | Week 3, translated — plus error bounds |
-| **Lecture 3** | Wednesday | Comparison Tests | Deciding by resemblance |
+| **Lecture 3** | Friday | Comparison Tests | Deciding by resemblance |
 
 ---
 
@@ -114,7 +114,7 @@ converges — but its partial sums have error almost exactly $\frac1N$, so **ten
 ## This Week's Work
 
 1. **Quiz 07** — Monday, 15 minutes, **covers Week 6** (sequences, monotone convergence, recursion)
-2. **PS 7** — released Wednesday, due Wednesday of Week 8
+2. **PS 7** — released Fri 12 Mar 12:00, due Fri 19 Mar 17:00
 3. **Lab 7** — how slowly the harmonic series diverges, and how to make a convergent series usable
 
 ---

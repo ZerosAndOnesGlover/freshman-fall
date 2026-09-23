@@ -1,7 +1,8 @@
 # MATH 142 · Calculus II
 ## Problem Set 6
 ### Topic: Sequences — Convergence, Divergence, Recursion
-**Released:** Wednesday, Week 6 | **Due:** Wednesday, Week 7 (start of class)
+**Released:** Friday 5 March 2027, 12:00 · Week 6 (after Friday's Lecture 3)
+**Due:** Friday 12 March 2027, 17:00 · Week 7 — late penalty from 17:01
 
 ---
 

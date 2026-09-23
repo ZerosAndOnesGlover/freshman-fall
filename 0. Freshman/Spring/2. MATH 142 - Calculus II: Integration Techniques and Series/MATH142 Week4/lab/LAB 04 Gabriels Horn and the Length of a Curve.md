@@ -2,12 +2,14 @@
 ## Lab 04: Gabriel's Horn, and the Length of a Curve
 ### Week 4 Lab Session
 
+**Date:** Wednesday 24 February 2027 · 15:00–16:50 · Lab section (Week 5) — covers Week 4 (Lectures 1–3)
+
 ---
 
 **Duration:** 2 hours
 **Format:** Individual or pairs (pairs submit separate reports)
 **Graded on:** completion + correctness — **100 points**
-**Tools required:** Python 3 with `mpmath` and `sympy`
+**Tools required:** Python 3 with `mpmath` and `sympy` — only the calls in Lab 02's SymPy box and Lab 03's mpmath box
 
 ---
 

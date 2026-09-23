@@ -1,7 +1,8 @@
 # MATH 142 · Calculus II
 ## Problem Set 10
 ### Topic: Taylor and Maclaurin Series; Remainders; Applications
-**Released:** Wednesday, Week 10 | **Due:** Wednesday, Week 11 (start of class)
+**Released:** Friday 2 April 2027, 12:00 · Week 10 (after Friday's Lecture 3)
+**Due:** Friday 9 April 2027, 17:00 · Week 11 — late penalty from 17:01
 
 ---
 

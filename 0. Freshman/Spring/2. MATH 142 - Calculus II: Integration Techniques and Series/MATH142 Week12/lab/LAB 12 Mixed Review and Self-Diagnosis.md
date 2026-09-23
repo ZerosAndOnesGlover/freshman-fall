@@ -2,12 +2,14 @@
 ## Lab 12: Mixed Review and Self-Diagnosis
 ### Week 12 Lab Session
 
+**Date:** Wednesday 21 April 2027 · 15:00–16:50 · Lab section (finals week — see the course audit) — covers Week 12 (Lectures 1–3)
+
 ---
 
 **Duration:** 2 hours
 **Format:** **Individual.** This one is not useful in pairs.
 **Graded on:** completion + honesty — **100 points**
-**Tools required:** Python 3 with `mpmath`, for Part B only
+**Tools required:** Python 3 with `mpmath`, for Part B only — only the calls in Lab 02's SymPy box and Lab 03's mpmath box
 
 ---
 

@@ -30,7 +30,7 @@ This week re-establishes three things: **the definition**, **the technique you a
 |---|---|---|---|
 | **Lecture 1** | Monday | The Definite Integral and the Fundamental Theorem | The integral is a limit; the FTC is a theorem, not a definition |
 | **Lecture 2** | Tuesday | Substitution and the Antiderivative Catalogue | The only technique you have, and its limits |
-| **Lecture 3** | Wednesday | Area, Average Value, and Net Change | What an integral is *for* |
+| **Lecture 3** | Friday | Area, Average Value, and Net Change | What an integral is *for* |
 
 ---
 

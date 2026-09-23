@@ -6,7 +6,7 @@
 
 **Topic:** equations whose unknown is a function
 **Reading:** Stewart §9.1–9.5 | Apostol Ch. 8 §8.1–8.7
-**Assessment this week:** PS 11, Lab 11, **Quiz 11** *(Monday — covers Week 10)*
+**Assessment this week:** PS 11, Lab 11, **Quiz 11** *(Mon 5 Apr, 11:00 — covers Week 10)*
 
 ---
 
@@ -48,7 +48,7 @@ $$\frac{dy}{dx} = ky, \qquad y'+P(x)y = Q(x), \qquad \frac{dy}{dt}=ky\left(1-\fr
 |---|---|---|---|
 | **Lecture 1** | Monday | Separable Equations | Separate the variables, then integrate |
 | **Lecture 2** | Tuesday | First-Order Linear Equations | The integrating factor makes it a product rule |
-| **Lecture 3** | Wednesday | Modelling, and When Closed Forms Fail | Where the honest answer is numerical |
+| **Lecture 3** | Friday | Modelling, and When Closed Forms Fail | Where the honest answer is numerical |
 
 ---
 
@@ -109,7 +109,7 @@ At $n=320$ steps, RK4's error is $2.15\times10^{-12}$ against Euler's $4.24\time
 ## This Week's Work
 
 1. **Quiz 11** — Monday, 15 minutes, **covers Week 10** (Taylor series, remainders)
-2. **PS 11** — released Wednesday, due Wednesday of Week 12
+2. **PS 11** — released Fri 9 Apr 12:00, due Fri 16 Apr 17:00
 3. **Lab 11** — slope fields, and Euler versus Runge–Kutta
 
 ---

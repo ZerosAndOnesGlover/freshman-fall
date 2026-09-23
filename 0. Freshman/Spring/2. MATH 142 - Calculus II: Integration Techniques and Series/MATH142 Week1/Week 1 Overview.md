@@ -6,7 +6,7 @@
 
 **Topic:** the second integration technique, and the first family of integrals that needs a strategy
 **Reading:** Stewart §7.1–7.2 | Apostol Ch. 5 §5.9
-**Assessment this week:** PS 1, Lab 1, **Quiz 01** *(Monday — covers Week 0)*
+**Assessment this week:** PS 1, Lab 1, **Quiz 01** *(Mon 25 Jan, 11:00 — covers Week 0)*
 
 ---
 
@@ -28,7 +28,7 @@ This week adds the second: **integration by parts**, which is the product rule r
 |---|---|---|---|
 | **Lecture 1** | Monday | Integration by Parts | The product rule backwards; choosing $u$ |
 | **Lecture 2** | Tuesday | Repeated Parts, Reduction Formulas, Definite Parts | When once is not enough |
-| **Lecture 3** | Wednesday | Trigonometric Integrals | A family with a decision procedure |
+| **Lecture 3** | Friday | Trigonometric Integrals | A family with a decision procedure |
 
 ---
 
@@ -57,7 +57,7 @@ This is **orthogonality**, and it is the reason Fourier analysis works at all �
 ## This Week's Work
 
 1. **Quiz 01** — Monday, 15 minutes, **covers Week 0** (the FTC, substitution, applications)
-2. **PS 1** — released Wednesday, due Wednesday of Week 2
+2. **PS 1** — released Fri 29 Jan 12:00, due Fri 5 Feb 17:00
 3. **Lab 1** — reduction formulas, and a 300-year-old formula for $\pi$ that converges terribly
 
 ---

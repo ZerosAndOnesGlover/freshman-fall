@@ -1,7 +1,8 @@
 # MATH 142 · Calculus II
 ## Problem Set 4
 ### Topic: Volumes of Revolution, Arc Length, Surface Area
-**Released:** Wednesday, Week 4 | **Due:** Wednesday, Week 5 (start of class)
+**Released:** Friday 19 February 2027, 12:00 · Week 4 (after Friday's Lecture 3)
+**Due:** Friday 26 February 2027, 17:00 · Week 5 — late penalty from 17:01
 
 ---
 

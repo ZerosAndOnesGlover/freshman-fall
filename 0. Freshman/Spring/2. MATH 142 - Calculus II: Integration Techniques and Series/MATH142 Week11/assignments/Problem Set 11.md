@@ -1,7 +1,8 @@
 # MATH 142 · Calculus II
 ## Problem Set 11
 ### Topic: Differential Equations — Separable and Linear
-**Released:** Wednesday, Week 11 | **Due:** Wednesday, Week 12 (start of class)
+**Released:** Friday 9 April 2027, 12:00 · Week 11 (after Friday's Lecture 3)
+**Due:** Friday 16 April 2027, 17:00 · Week 12 — late penalty from 17:01
 
 ---
 

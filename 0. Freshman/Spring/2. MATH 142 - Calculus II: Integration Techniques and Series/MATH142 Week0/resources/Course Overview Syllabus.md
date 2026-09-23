@@ -6,7 +6,8 @@
 **Course:** MATH 142: Calculus II — Integration Techniques and Series
 **Credits:** 4
 **Semester:** Spring, Year 1
-**Meeting:** 3 lectures per week (50 min each) + weekly lab (2 hr)
+**Meeting:** lectures Mon/Tue/Fri 11:00–11:50; recitation Thu 15:00–15:50; lab Wed 15:00–16:50 (Lab *N* meets the Wednesday after Week *N*)
+**Term:** Monday 18 January – Friday 16 April 2027; finals Monday 19 – Friday 23 April
 **Prerequisites:** MATH 141
 
 ---
@@ -39,11 +40,11 @@ When CS 331 tells you a gradient method converges linearly, or when you find out
 
 | Component | Weight | Notes |
 |-----------|--------|-------|
-| Weekly Problem Sets (12) | **30%** | PS 0–11, released Wednesday, due the following Wednesday at the start of class. Lowest 1 dropped. **Exception: PS 0** is released Monday of Week 0 and due **Friday of Week 0, 11:59 PM** — Week 0 is compressed so the course can begin Week 1 on schedule. Week 12's Problem Set 12 is an **ungraded** self-diagnostic and carries no weight. |
-| Midterm Exam 1 (Week 5) | **15%** | 75 minutes. Covers Weeks 0–4. 1 cheat sheet (handwritten, 1 side). |
-| Midterm Exam 2 (Week 10) | **15%** | 75 minutes. Covers Weeks 5–9. Same rules. |
-| Final Exam (Week 12) | **20%** | 150 minutes. Comprehensive. 2-page cheat sheet. |
-| Lab Sections (13 labs) | **10%** | Weekly 2-hr lab. Graded on completion + correctness. |
+| Weekly Problem Sets (12) | **30%** | PS 0–11, released Friday 12:00 after the week's third lecture, due the following Friday 17:00. Lowest 1 dropped. **Exception: PS 0** is released Monday 18 January and due **Friday 22 January, 17:00** — Week 0 is compressed so the course can begin Week 1 on schedule. Week 12's Problem Set 12 is an **ungraded** self-diagnostic and carries no weight. |
+| Midterm Exam 1 (Wed 3 Mar, 18:00, Week 6) | **15%** | 75 minutes. Covers Weeks 0–4. 1 cheat sheet (handwritten, 1 side). |
+| Midterm Exam 2 (Wed 31 Mar, 18:00, Week 10) | **15%** | 75 minutes. Covers Weeks 5–9. Same rules. |
+| Final Exam (Tue 20 Apr, 09:00, finals week) | **20%** | 150 minutes. Comprehensive. 2-page cheat sheet. |
+| Lab Sections (13 labs) | **10%** | Weekly 2-hr lab, Wednesday 15:00 of the following week (Lab 12: Wed 21 Apr). Graded on completion + correctness. |
 | Weekly Quizzes (12) | **10%** | 15 minutes at the start of Monday's lecture, Weeks 1–12. Quiz *N* covers Week *N−1*. Lowest 1 dropped. |
 
 > **A note on these weights.** The Year 1 curriculum document specifies this course's topics,
@@ -85,14 +86,14 @@ governs if the two ever differ.
 | **2** | Trigonometric Substitution; Partial Fractions | Trading one integral for an easier one | PS 2, Lab 2, Quiz 02 |
 | **3** | Improper Integrals; Comparison Tests | Integrating to infinity | PS 3, Lab 3, Quiz 03 |
 | **4** | Volumes of Revolution, Arc Length, Surface Area | Slice, approximate, sum, take the limit | PS 4, Lab 4, Quiz 04 |
-| **5** | Parametric Curves; Polar Coordinates | Curves that are not graphs of functions | PS 5, Lab 5, Quiz 05, **MIDTERM 1** |
-| **6** | Sequences: Convergence and Divergence | The limit of a list | PS 6, Lab 6, Quiz 06 |
+| **5** | Parametric Curves; Polar Coordinates | Curves that are not graphs of functions | PS 5, Lab 5, Quiz 05 |
+| **6** | Sequences: Convergence and Divergence | The limit of a list | PS 6, Lab 6, Quiz 06, **MIDTERM 1** (Wed 3 Mar) |
 | **7** | Series: Geometric, p-series, Integral, Comparison | An infinite sum is a limit of finite ones | PS 7, Lab 7, Quiz 07 |
 | **8** | Alternating Series; Ratio and Root Tests | Absolute vs conditional convergence | PS 8, Lab 8, Quiz 08 |
 | **9** | Power Series; Radius and Interval of Convergence | A series with a variable in it | PS 9, Lab 9, Quiz 09 |
-| **10** | Taylor and Maclaurin Series; Applications | Any smooth function, as a polynomial | PS 10, Lab 10, Quiz 10, **MIDTERM 2** |
+| **10** | Taylor and Maclaurin Series; Applications | Any smooth function, as a polynomial | PS 10, Lab 10, Quiz 10, **MIDTERM 2** (Wed 31 Mar) |
 | **11** | Differential Equations: Separable and Linear | Equations whose unknown is a function | PS 11, Lab 11, Quiz 11 |
-| **12** | Systems; Numerical Methods Preview; Review | Where the exact answer runs out | PS 12 *(ungraded)*, Lab 12, Quiz 12, **FINAL** |
+| **12** | Systems; Numerical Methods Preview; Review | Where the exact answer runs out | PS 12 *(ungraded)*, Lab 12 (Wed 21 Apr), Quiz 12, **FINAL** (Tue 20 Apr) |
 
 ---
 

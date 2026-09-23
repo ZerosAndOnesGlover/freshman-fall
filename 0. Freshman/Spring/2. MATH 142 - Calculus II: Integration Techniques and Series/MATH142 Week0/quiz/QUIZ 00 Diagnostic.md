@@ -2,6 +2,8 @@
 ## Quiz 00 — Diagnostic
 ### Week 0 · Ungraded · Answer key included
 
+**Date:** Monday 18 January 2027 · 11:00–11:25, before Lecture 1 · Week 0
+
 ---
 
 **Time:** 25 minutes, closed book, no calculator

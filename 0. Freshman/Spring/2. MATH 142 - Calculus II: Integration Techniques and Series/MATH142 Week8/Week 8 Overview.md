@@ -6,7 +6,7 @@
 
 **Topic:** what the signs are doing — and the strangest theorem in the course
 **Reading:** Stewart §11.5–11.7 | Apostol Ch. 10 §10.17–10.21
-**Assessment this week:** PS 8, Lab 8, **Quiz 08** *(Monday — covers Week 7)*
+**Assessment this week:** PS 8, Lab 8, **Quiz 08** *(Mon 15 Mar, 11:00 — covers Week 7)*
 
 ---
 
@@ -32,7 +32,7 @@ $$1-\frac12+\frac13-\frac14+\frac15-\cdots \;=\;\ln 2$$
 |---|---|---|---|
 | **Lecture 1** | Monday | Alternating Series | A test with **two** hypotheses, and the best error bound in the course |
 | **Lecture 2** | Tuesday | Absolute vs Conditional Convergence | Two kinds of convergence, and why the difference matters |
-| **Lecture 3** | Wednesday | The Ratio and Root Tests | Geometric comparison, automated |
+| **Lecture 3** | Friday | The Ratio and Root Tests | Geometric comparison, automated |
 
 ---
 
@@ -109,7 +109,7 @@ $$\sum\frac1n \quad\text{and}\quad \sum\frac{1}{n^2}$$
 ## This Week's Work
 
 1. **Quiz 08** — Monday, 15 minutes, **covers Week 7** (series, Integral Test, comparison)
-2. **PS 8** — released Wednesday, due Wednesday of Week 9
+2. **PS 8** — released Fri 19 Mar 12:00, due Fri 26 Mar 17:00
 3. **Lab 8** — the Leibniz error bound, and rearranging a series to sum to $\pi$
 
 ---

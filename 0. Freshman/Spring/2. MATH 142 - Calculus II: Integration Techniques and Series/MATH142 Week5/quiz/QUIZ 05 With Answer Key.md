@@ -4,6 +4,7 @@
 
 ---
 
+**Date:** Monday 22 February 2027 · 11:00–11:15 (start of Lecture 1) · Week 5
 **Time:** 15 minutes, start of Monday's lecture
 **Closed book, no calculator**
 **Total: 20 points** (4 points each)
@@ -86,7 +87,7 @@ $\approx 24.12$
 
 ## Note for the Instructor
 
-**Midterm 1 is this week.** This quiz is a deliberate dress rehearsal for its computational half, and the marking above flags the three errors most likely to recur:
+**Midterm 1 is Wednesday 3 March, 18:00–19:15.** This quiz is a deliberate dress rehearsal for its computational half, and the marking above flags the three errors most likely to recur:
 
 1. **Q3** — $(R-r)^2$ instead of $R^2-r^2$
 2. **Q5** — $dx$ instead of $ds$

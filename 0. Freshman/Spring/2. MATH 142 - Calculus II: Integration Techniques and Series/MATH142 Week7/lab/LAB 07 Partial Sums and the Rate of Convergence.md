@@ -2,12 +2,14 @@
 ## Lab 07: Partial Sums and the Rate of Convergence
 ### Week 7 Lab Session
 
+**Date:** Wednesday 17 March 2027 · 15:00–16:50 · Lab section (Week 8) — covers Week 7 (Lectures 1–3)
+
 ---
 
 **Duration:** 2 hours
 **Format:** Individual or pairs (pairs submit separate reports)
 **Graded on:** completion + correctness — **100 points**
-**Tools required:** Python 3 with `mpmath`
+**Tools required:** Python 3 with `mpmath` — only the calls in Lab 02's SymPy box and Lab 03's mpmath box
 
 ---
 

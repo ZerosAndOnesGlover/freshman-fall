@@ -2,12 +2,14 @@
 ## Lab 08: Error Bounds, and Rearranging a Series to Any Sum You Like
 ### Week 8 Lab Session
 
+**Date:** Wednesday 24 March 2027 · 15:00–16:50 · Lab section (Week 9) — covers Week 8 (Lectures 1–3)
+
 ---
 
 **Duration:** 2 hours
 **Format:** Individual or pairs (pairs submit separate reports)
 **Graded on:** completion + correctness — **100 points**
-**Tools required:** Python 3 with `mpmath`
+**Tools required:** Python 3 with `mpmath` — only the calls in Lab 02's SymPy box and Lab 03's mpmath box
 
 ---
 

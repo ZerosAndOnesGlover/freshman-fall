@@ -1,7 +1,7 @@
 # MATH 142 · Calculus II
 ## Problem Set 12
 ### Topic: Course-Wide Self-Diagnostic — **UNGRADED**
-**Released:** Wednesday, Week 12 | **Due:** never — **answers are at the end**
+**Released:** Friday 16 April 2027, 12:00 · Week 12 (after Lecture 3) | **Due:** never — **answers are at the end**
 
 ---
 

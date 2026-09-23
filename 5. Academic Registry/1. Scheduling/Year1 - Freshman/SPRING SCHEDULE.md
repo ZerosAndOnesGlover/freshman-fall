@@ -40,9 +40,8 @@
 | **11:00** | 📖 **MATH142**<br>11:00–11:50<br>(LEC) | 📖 **MATH142**<br>11:00–11:50<br>(LEC) | — | — | 📖 **MATH142**<br>11:00–11:50<br>(LEC) |
 | **12:00** | 🍽️ Lunch Break | 🍽️ Lunch Break | 🍽️ Lunch Break | 🍽️ Lunch Break | 🍽️ Lunch Break |
 | **13:00** | — | — | 📖 **ECE110**<br>13:00–14:15<br>(LEC) | 📖 **ECE110**<br>13:00–14:15<br>(LEC) | — |
-14:00–15:50
-(LAB) |
-| **15:00** | 🔬 **PROG102**<br>15:00–16:50<br>(LAB) | 🔬 **CS102**<br>15:00–16:50<br>(LAB) | — | 💬 **MATH142**<br>15:00–15:50<br>(REC) | — |
+| **14:00** | — | — | — | — | 🔬 **ECE110**<br>14:00–15:50<br>(LAB) |
+| **15:00** | 🔬 **PROG102**<br>15:00–16:50<br>(LAB) | 🔬 **CS102**<br>15:00–16:50<br>(LAB) | 🔬 **MATH142**<br>15:00–16:50<br>(LAB) | 💬 **MATH142**<br>15:00–15:50<br>(REC) | — |
 | **17:00** | — | — | — | — | — |
 | **18:00** | 📚 Evening Study | 📚 Evening Study | 📚 Evening Study | 📚 Evening Study | 📚 Evening Study |
 
@@ -60,7 +59,6 @@
 11:00 – 11:50   📖 MATH 142 Lecture — ⚠️ QUIZ DAY for MATH 142 (Weeks 1–12)
 12:00 – 13:00   Lunch Break (protected — schedule this, do not skip it)
 15:00 – 16:50   🔬 PROG 102 LAB SECTION (mandatory)
-17:00           Problem set DUE from previous week (submitted via course portal)
 18:00 – 21:00   Evening study block — Problem set + lecture review
 ```
 
@@ -81,8 +79,8 @@
 10:00 – 10:50   📖 PROG 102 Lecture
 12:00 – 13:00   Lunch
 13:00 – 14:15   📖 ECE 110 Lecture — ⚠️ QUIZ DAY for ECE 110 (Weeks 2–12, ungraded)
-17:00           ⚠️  NEW PROBLEM SET RELEASED — download immediately, skim the questions.
-18:00 – 21:00   Evening study — begin problem set
+15:00 – 16:50   🔬 MATH 142 LAB SECTION (Lab N meets the Wednesday after Week N)
+18:00 – 21:00   Evening study
 ```
 
 ### Thursday
@@ -125,14 +123,15 @@
 | Day | Time | Event |
 |-----|------|-------|
 | Monday | Start of lecture | ⚠️ CS 102 Quiz (Weeks 1–11) |
-| Monday | 15:00 | PROG 102 Lab begins |
+| Monday | 15:00 | PROG 102 Lab (Lab N on Monday of Week N+1) |
 | Tuesday | Start of lecture | ⚠️ PROG 102 Quiz (Weeks 1–11) |
-| Tuesday | 15:00 | CS 102 Lab begins |
+| Tuesday | 15:00 | CS 102 Lab (Lab N on Tuesday of Week N+1) |
 | Wednesday | Start of lecture | ⚠️ ECE 110 Quiz (Weeks 2–12, ungraded) |
-| Wednesday | 17:00 | New problem set released |
+| Wednesday | 15:00 | MATH 142 Lab (Lab N on Wednesday of Week N+1) |
 | Monday | Start of lecture | ⚠️ MATH 142 Quiz (Weeks 1–12) |
 | Friday | 14:00 | ECE 110 Lab begins |
-| Friday | 17:00 | ⚠️ Problem set due |
+| Friday | 10:00–12:00 | New problem sets released after the week's last lecture (CS 102, PROG 102 10:00; MATH 142 12:00) |
+| Friday | 17:00 | ⚠️ Problem sets due (CS 102, PROG 102, MATH 142) |
 | Ongoing | TBD | Project milestones (see ASSESSMENT CALENDAR.md) |
 
 ---

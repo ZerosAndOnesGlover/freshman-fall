@@ -8,7 +8,7 @@
 
 **Reading:** Stewart §11.10 | Apostol Ch. 11 §11.6–11.8
 **Quiz 10** — this Monday, **covers Week 9** (power series, radius, interval of convergence)
-**Midterm 2 this week** — covering Weeks 5–9. See the revision guide in `resources/`.
+**Midterm 2 is Wednesday 31 March, 18:00** — covering Weeks 5–9. See the revision guide in `resources/`.
 
 ---
 

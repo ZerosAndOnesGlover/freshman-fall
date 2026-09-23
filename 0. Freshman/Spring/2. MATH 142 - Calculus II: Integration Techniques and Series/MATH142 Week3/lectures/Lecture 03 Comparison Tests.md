@@ -221,7 +221,7 @@ In Week 6 we ask it of sequences, in Week 7 of infinite sums. And the tests ther
 > when $p>1$, for exactly the reason $\int_1^\infty\frac{dx}{x^p}$ does. **You have already done the
 > hard part.**
 
-Before that, **Week 4** returns to computation — volumes, arc length, surface area — and **Midterm 1 in Week 5** covers Weeks 0–4.
+Before that, **Week 4** returns to computation — volumes, arc length, surface area — and **Midterm 1 on Wednesday 3 March, 18:00–19:15** covers Weeks 0–4.
 
 ---
 

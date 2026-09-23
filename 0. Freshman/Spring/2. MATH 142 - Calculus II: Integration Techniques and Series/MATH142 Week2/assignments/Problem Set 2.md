@@ -1,7 +1,8 @@
 # MATH 142 · Calculus II
 ## Problem Set 2
 ### Topic: Trigonometric Substitution; Partial Fractions
-**Released:** Wednesday, Week 2 | **Due:** Wednesday, Week 3 (start of class)
+**Released:** Friday 5 February 2027, 12:00 · Week 2 (after Friday's Lecture 3)
+**Due:** Friday 12 February 2027, 17:00 · Week 3 — late penalty from 17:01
 
 ---
 
