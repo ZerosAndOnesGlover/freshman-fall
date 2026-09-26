@@ -4,155 +4,151 @@
 
 **Date:** Friday 2 October 2026 · 15:00–16:50 · Lab Section (Week 1) — covers Week 1 (Lectures 01–03)  
 **Duration:** 2 hours | **Submission:** End of lab session + written report due Monday 5 October 2026, 11:00  
-**Tools:** Desmos (desmos.com), Python (optional), pen and paper for proofs
+**Tools:** Desmos (see the Lab 00 table) and the Python REPL, using only CS 101 Weeks 0–1: arithmetic,
+variables and the `math` module (CS 101 Lecture 06, this morning). No loops or functions are needed.
+**Expected time:** the session itself (11 questions), plus at most 30 minutes to tidy your answers.
 
 ---
 
 ## Lab Objectives
 
 By the end of this lab you will:
-1. Distinguish between limits that can be evaluated by substitution and those that cannot
-2. Understand the limitations of numerical tables for limit estimation
-3. Verify the two special trigonometric limits numerically and geometrically
-4. Build intuition for the ε-δ definition
-
-*(Revised 2026-09-21: the discontinuity-types and bisection parts need Week 2 — continuity and the IVT —
-and were removed; they now belong to Lab 02.)*
+1. Understand why a table of values can suggest a limit but never prove one
+2. See floating-point round-off spoil a limit, and fix it with algebra
+3. Check $\lim_{x\to 0} \frac{\sin x}{x} = 1$ numerically
+4. Build intuition for the ε-δ definition with Desmos sliders
 
 ---
 
-## Part 1 — When Numerical Tables Lie (30 min)
+## Python for Today
 
-One of the most important lessons in calculus: **numerical evidence is suggestive, not conclusive.** This part demonstrates that dramatically.
+Everything is one line at a time at the `>>>` prompt. Use the up arrow to repeat a line with a new `x`.
+
+```python
+>>> import math
+>>> x = 0.1
+>>> math.sin(math.pi / x)
+-1.2246467991473533e-15
+>>> (math.sqrt(1 + x) - 1) / x
+0.4880884817015163
+```
+
+- `1e-8` means $1 \times 10^{-8}$, and Python prints very small or large results the same way:
+  `-1.22e-15` is $-0.00000000000000122$, which is zero apart from round-off.
+- `math.sin` and `math.cos` work in **radians**, which is what calculus needs.
+
+---
+
+## Part 1 — When Numerical Tables Lie (40 min)
 
 ### Exercise 1.1 — A Deceptive Table
 
-Consider $f(x) = \sin\!\left(\dfrac{\pi}{x}\right)$.
-
-Fill in the table:
+Let $f(x) = \sin\!\left(\dfrac{\pi}{x}\right)$. Compute it at $x = 1$, $0.1$, $0.01$ and $0.001$.
 
 | $x$ | $f(x) = \sin(\pi/x)$ |
 |-----|----------------------|
 | 1 | |
-| 0.5 | |
 | 0.1 | |
 | 0.01 | |
 | 0.001 | |
-| 0.0001 | |
 
-**Question 1a:** Based on the table, what would you guess $\lim_{x \to 0} \sin(\pi/x)$ equals?
+### Question 1 (9 points)
 
-**Question 1b:** Now compute $f(2/n)$ for integer values $n = 1, 2, 3, 4, 5$. What do you observe?
+Based only on the table, what would you guess $\lim_{x \to 0} \sin(\pi/x)$ is?
 
-**Question 1c:** Explain in one paragraph why $\lim_{x \to 0} \sin(\pi/x)$ does not exist, even though some tables might suggest a value. What is happening geometrically?
+### Question 2 (9 points)
 
-**Question 1d:** Graph $f(x) = \sin(\pi/x)$ on Desmos for $x \in [-0.5, 0.5]$. Describe what you see near $x = 0$.
+Now compute $f$ at $x = 2/401$ and at $x = 2/403$. Both are within $0.005$ of $0$. What do you get, and what does that do to your guess?
 
----
+### Question 3 (9 points)
 
-### Exercise 1.2 — Round-Off Error in Limits
+Graph $y = \sin(\pi/x)$ in Desmos for $-0.5 \le x \le 0.5$. Describe what happens near $x = 0$, and explain in a few sentences why $\lim_{x \to 0} \sin(\pi/x)$ does not exist.
 
-Consider $g(x) = \dfrac{\sqrt{1+x} - 1}{x}$.
+### Exercise 1.2 — Round-Off Error
 
-The true limit is $\lim_{x \to 0} g(x) = \dfrac{1}{2}$ (you'll prove this in Problem Set 1 using rationalization).
+Let $g(x) = \dfrac{\sqrt{1+x} - 1}{x}$. Its limit as $x \to 0$ is $\dfrac{1}{2}$ (Problem Set 1, Problem 1(b), shows the same method).
 
-Fill in the table using a calculator:
+First, rationalize by hand to show $g(x) = \dfrac{1}{\sqrt{1+x}+1}$ for $x \neq 0$. Then fill in the table using `(math.sqrt(1 + x) - 1) / x` and `1 / (math.sqrt(1 + x) + 1)`.
 
-| $x$ | $g(x)$ (calculator) | $g(x)$ (rationalized form) |
-|-----|--------------------|-----------------------------|
-| $0.1$ | | |
-| $0.01$ | | |
-| $0.001$ | | |
-| $0.0001$ | | |
-| $0.00001$ | | |
-| $0.000001$ | | |
-| $0.0000001$ | | |
+| $x$ | original form | rationalized form |
+|-----|---------------|-------------------|
+| `1e-4` | | |
+| `1e-8` | | |
+| `1e-12` | | |
+| `1e-15` | | |
 
-The rationalized form is $g(x) = \dfrac{1}{\sqrt{1+x}+1}$ (derive this yourself first).
+### Question 4 (9 points)
 
-**Question 1e:** At what point does the calculator column start behaving unexpectedly? Why does this happen? (Think about floating-point precision — the difference of two nearly-equal numbers.)
+Where does the original form start to go wrong? Explain why, using what CS 101 Lecture 04 §4 says about floating-point numbers: what happens when you subtract two nearly equal numbers?
 
-**Question 1f:** Which form — the original or rationalized — is more numerically stable as $x \to 0$? Why?
+### Question 5 (9 points)
 
-> **CS Connection:** This exercise demonstrates **catastrophic cancellation** — a critical concept in numerical computing. When two nearly-equal floating-point numbers are subtracted, significant digits are lost. The rationalized form avoids this by eliminating the subtraction. This is why numerical analysts always seek algebraically equivalent forms that avoid subtracting nearly-equal quantities.
+Which form is more trustworthy as $x \to 0$, and why? What does this say about the algebra you do to find a limit?
 
 ---
 
-## Part 3 — Verifying the Special Trigonometric Limits (20 min)
+## Part 2 — The Limit of $\frac{\sin x}{x}$ (30 min)
 
-### Exercise 3.1 — Numerical Verification
+Fill in the table with `math.sin(x) / x`.
 
-Fill in the table for $f(x) = \dfrac{\sin x}{x}$ (with $x$ in radians):
+| $x$ | $\sin x / x$ |
+|-----|--------------|
+| $0.5$ | |
+| $0.1$ | |
+| $0.01$ | |
+| $-0.1$ | |
 
-| $x$ | $\sin x$ | $\sin x / x$ |
-|-----|----------|--------------|
-| $1.0$ | | |
-| $0.5$ | | |
-| $0.1$ | | |
-| $0.01$ | | |
-| $0.001$ | | |
-| $-0.1$ | | |
-| $-0.01$ | | |
+### Question 6 (8 points)
 
-**Question 3a:** What value does $\dfrac{\sin x}{x}$ appear to approach as $x \to 0$?
+What value does $\dfrac{\sin x}{x}$ appear to approach as $x \to 0$? Why do $x = 0.1$ and $x = -0.1$ give the same value?
 
-**Question 3b:** Graph $\dfrac{\sin x}{x}$ on Desmos. Note that Desmos will show a filled dot at $x = 0$ — why is this misleading? (Desmos is computing a limit, not $f(0)$.)
+### Question 7 (8 points)
 
-### Exercise 3.2 — Geometric Verification
+Graph $y = \sin(x)/x$ in Desmos. It draws an unbroken curve through $x = 0$. Now type `sin(0)/0` into Desmos. What does it say, and why is the unbroken picture misleading?
 
-On paper (or using Desmos geometry tools), draw a unit circle with a small angle $\theta > 0$.
+### Question 8 (9 points)
 
-Mark:
-- Point $A = (1, 0)$
-- Point $P = (\cos\theta, \sin\theta)$ on the circle
-- Point $T = (1, \tan\theta)$ where the tangent line at $A$ meets the line $OP$
-
-Compute and compare the three areas:
-- Triangle $OAP$: area $= \dfrac{1}{2}\cos\theta\sin\theta$
-- Circular sector $OAP$: area $= \dfrac{1}{2}\theta$
-- Triangle $OAT$: area $= \dfrac{1}{2}\tan\theta$
-
-**Question 3c:** Write the inequality chain relating these three areas.
-
-**Question 3d:** Divide through by $\dfrac{1}{2}\sin\theta$ and take the reciprocal to get $\cos\theta \leq \dfrac{\sin\theta}{\theta} \leq \dfrac{1}{\cos\theta}$.
-
-**Question 3e:** Apply the Squeeze Theorem to conclude $\lim_{\theta \to 0^+} \dfrac{\sin\theta}{\theta} = 1$.
+Lecture 02 §4 proves $\cos x \leq \dfrac{\sin x}{x} \leq \dfrac{1}{\cos x}$ for small $x > 0$. Compute `math.cos(0.1)` and `1 / math.cos(0.1)`, and check the chain at $x = 0.1$ against your table. Then explain in two sentences how the Squeeze Theorem turns this chain into $\lim_{x\to 0^+} \frac{\sin x}{x} = 1$.
 
 ---
 
-## Part 5 — Open Investigation: Building Intuition for ε-δ (20 min)
+## Part 3 — Building Intuition for ε-δ (30 min)
 
-### Exercise 5.1 — Interactive Epsilon-Delta
+In Desmos, graph $f(x) = 2x + 1$ and the lines $y = 5 - e$ and $y = 5 + e$, with a slider for $e$ (Desmos has no ε key; $e$ plays its role). Also graph the vertical lines $x = 2 - d$ and $x = 2 + d$ with a slider for $d$ (this is δ).
 
-In Desmos, graph $f(x) = 2x + 1$ and the horizontal lines $y = 5 - \varepsilon$ and $y = 5 + \varepsilon$.
+### Question 9 (10 points)
 
-Set $\varepsilon = 0.5$ using a Desmos slider.
+Set $e = 0.5$. Move $d$ to find the largest $\delta$ for which every $x$ with $|x - 2| < \delta$ has $|f(x) - 5| < 0.5$. Then find the exact $\delta$ algebraically. Do they agree?
 
-**Question 5a:** By inspecting the graph, estimate the largest $\delta$ such that when $|x - 2| < \delta$, we have $|f(x) - 5| < 0.5$.
+### Question 10 (10 points)
 
-**Question 5b:** Now find the exact $\delta$ algebraically from $\varepsilon = 0.5$. Does it match your graphical estimate?
+Repeat with $e = 0.1$ and $e = 0.01$. What rule gives $\delta$ from $\varepsilon$ for this function, and why?
 
-**Question 5c:** Decrease $\varepsilon$ to $0.1$, then $0.01$, then $0.001$. What is the pattern relating $\varepsilon$ and $\delta$?
+### Question 11 (10 points)
 
-**Question 5d:** Now try $f(x) = x^2$ and the limit $\lim_{x \to 2} x^2 = 4$. With $\varepsilon = 0.5$, graphically estimate $\delta$. Then check against the algebraic result $\delta = \min(1, \varepsilon/5)$ from Tuesday's lecture.
+Change $f$ to $f(x) = x^2$ and the lines to $y = 4 \pm e$, for $\lim_{x \to 2} x^2 = 4$. With $e = 0.5$, estimate the largest $\delta$ from the graph. Compare it with $\delta = \min(1, \varepsilon/5)$ from Lecture 02 Example 2. Is the lecture's $\delta$ larger or smaller than the largest possible one, and does that matter for the proof?
 
 ---
 
 ## Lab Report Requirements
 
-Submit a typed or handwritten report containing:
+Write your answers under Questions 1–11 in your answer sheet. Include:
 
-1. **Completed tables** from Parts 1 and 3
-2. **Written answers** to all Questions (label each clearly)
-3. **Desmos screenshot** for Exercise 3.2
-4. **Reflection paragraph** (5–8 sentences): What was the most surprising thing you discovered in this lab? What does it tell you about the relationship between numerical evidence and mathematical proof?
+1. **The three completed tables**, and the hand rationalization before the Exercise 1.2 table
+2. **One Desmos screenshot or link** for Question 3 and one for Part 3
 
 **Grading:**
 
 | Section | Points |
 |---------|--------|
-| Part 1 — Deceptive tables | 35 |
-| Part 3 — Trig limits | 35 |
-| Part 5 — ε-δ exploration | 20 |
-| Reflection | 10 |
+| Part 1 — Deceptive tables and round-off (Questions 1–5) | 45 |
+| Part 2 — $\sin x / x$ (Questions 6–8) | 25 |
+| Part 3 — ε-δ exploration (Questions 9–11) | 30 |
 | **Total** | **100** |
+
+---
+
+*Revised 2026-09-21: the discontinuity-types and bisection parts need Week 2 (continuity and the IVT) and were
+removed. Revised 2026-09-26: the lab now uses only Week 0–1 Python and Desmos, and was cut from 15 questions,
+five long tables, a geometric construction and a reflection to 11 questions and three short tables, so it
+fits the session.*

@@ -54,7 +54,7 @@ MATH141 Week1/
 
 **Tuesday (Lecture 2):** The ε-δ definition is the hardest single concept of the week. Do not skip the game-theoretic interpretation — it is the best pedagogical entry point. Work Example 1 (linear) and Example 2 (quadratic) in full on the board; students should copy every line. Assign the exercises as part of in-class discussion time if available.
 
-**Friday (Lab 01):** Parts 1 and 2 are the most important. The catastrophic cancellation exercise (1.2) should prompt genuine surprise — this is often the first time students see that their calculator can lie. Part 4 (bisection) connects directly to CS students' background.
+**Friday (Lab 01):** Part 1 is the most important. The catastrophic cancellation exercise (1.2) should prompt genuine surprise — this is often the first time students see that their calculator can lie. The lab's Python is one-line REPL arithmetic with the `math` module, which CS 101 teaches that morning; no loops or functions.
 
 **Wednesday (Lecture 3):** Continuity should feel natural after limits. Spend the most time on IVT — its proof (requiring completeness of ℝ) is profound. The fixed-point corollary is worth a few minutes for CS students (fixed-point iteration is foundational in numerical computing and functional programming).
 

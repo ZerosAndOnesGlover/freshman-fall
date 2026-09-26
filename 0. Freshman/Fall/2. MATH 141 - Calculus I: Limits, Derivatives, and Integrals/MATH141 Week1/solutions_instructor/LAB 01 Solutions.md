@@ -1,117 +1,105 @@
 # MATH 141 · Week 1
 ## LAB 01 Solutions — INSTRUCTOR ONLY
 
-> **Every numerical value below was computed, not estimated.** Students working in Desmos rather
-> than Python will see the same behaviour but fewer digits — grade the *reasoning and the observed
-> trend*, not agreement to the last decimal place.
+> **Every numerical value below was computed in Python, not estimated.** Grade the *reasoning and the
+> observed trend*, not agreement to the last decimal place.
+
+*(Revised 2026-09-26 to match the 11-question version of the lab, which uses only Week 0–1 Python.)*
 
 ---
-
-> Lab sat Friday 2 October 2026. Revised 2026-09-21: Parts 2 (discontinuities) and 4 (bisection) removed —
-> both need Week 2. Part numbers are kept so they match the handout.
 
 ## Part 1 — When Numerical Tables Lie
 
-**1.1 A deceptive table.** The standard construction evaluates a function at points where it looks
-convergent while the true limit differs — e.g. sin(π/x) sampled at x = 1, 1/2, 1/3, … gives 0 every
-time, suggesting a limit of 0, when in fact the limit as x → 0 **does not exist** (the function
-oscillates through every value in [−1,1] infinitely often).
-
-**The lesson: a table samples countably many points; a limit is a statement about all of them.** No
-finite table can *prove* a limit. It can only suggest one, or refute one.
-
-**1.2 Round-off error — the important exercise.**
-
-f(x) = (√(x+1) − 1)/x, whose exact limit as x → 0 is **0.5**:
-
-| x | computed f(x) |
+| x | `math.sin(math.pi / x)` |
 |---|---|
-| 10⁻¹ | 0.488088481701516 |
-| 10⁻⁴ | 0.499987500623966 |
-| 10⁻⁸ | 0.499999996961265 |
-| 10⁻¹² | 0.500044450291171 |
-| 10⁻¹⁴ | 0.488498130835069 |
-| 10⁻¹⁵ | 0.444089209850063 |
-| 10⁻¹⁶ | **0.000000000000000** |
+| 1 | 1.2246467991473532e-16 |
+| 0.1 | -1.2246467991473533e-15 |
+| 0.01 | 1.964386723728472e-15 |
+| 0.001 | -3.2141664592756335e-13 |
 
-The values improve to about x = 10⁻⁸ and then **get worse**, collapsing to exactly 0.
+**Q1.** Every entry is zero apart from round-off, since $\pi/x$ is a whole multiple of $\pi$. The natural
+guess is $0$.
 
-**Why: catastrophic cancellation.** For tiny x, √(x+1) and 1 agree to nearly all 16 significant
-digits a `double` carries. Subtracting them annihilates the leading digits and leaves only
-round-off noise, which is then divided by a tiny x — amplifying the error enormously. At x = 10⁻¹⁶,
-√(x+1) rounds to exactly 1.0 and the numerator is 0.
+**Q2.** $f(2/401) = \sin(200.5\pi) = 1$ and $f(2/403) = \sin(201.5\pi) = -1$. Python prints `1.0` and `-1.0`.
+Points arbitrarily close to $0$ give $1$ and $-1$, so the guess of $0$ is wrong.
 
-**The fix is algebraic, not numerical.** Multiply by the conjugate:
+**Q3.** Near $0$ the graph oscillates faster and faster between $-1$ and $1$ and fills a band. The limit
+would have to be one number $L$ that $f(x)$ stays close to for **all** $x$ near $0$. But every interval
+around $0$ contains points where $f = 1$ and points where $f = -1$, so no $L$ works. **A table samples a
+few points; a limit is a statement about all of them.**
 
-$$\frac{\sqrt{x+1}-1}{x} = \frac{x}{x\left(\sqrt{x+1}+1\right)} = \frac{1}{\sqrt{x+1}+1}$$
+**Exercise 1.2 table.**
 
-which involves no subtraction of nearly equal quantities. Verified:
-
-| x | stable form |
-|---|---|
-| 10⁻¹² | 0.499999999999875 |
-| 10⁻¹⁵ | 0.500000000000000 |
-| 10⁻¹⁶ | 0.500000000000000 |
-
-**This is the single most important idea in the lab**, and it connects directly to CS: the same
-algebra that finds the limit by hand also makes the computation numerically stable. Students who
-conclude "computers are unreliable" have missed it — the computer is reliable, the *expression*
-was ill-conditioned.
-
----
-
-## Part 3 — The Special Trigonometric Limits
-
-| x | sin(x)/x | (1 − cos x)/x² |
+| x | original | rationalized |
 |---|---|---|
-| 1 | 0.841470984808 | 0.459697694132 |
-| 0.1 | 0.998334166468 | 0.499583472197 |
-| 0.01 | 0.999983333417 | 0.499995833347 |
-| 0.001 | 0.999999833333 | 0.499999958326 |
-| 10⁻⁵ | 0.999999999983 | 0.500000041370 |
+| 1e-4 | 0.49998750062396624 | 0.49998750062496095 |
+| 1e-8 | 0.4999999969612645 | 0.49999999875 |
+| 1e-12 | 0.5000444502911705 | 0.499999999999875 |
+| 1e-15 | 0.44408920985006256 | 0.4999999999999999 |
 
-**Limits: 1 and 1/2.**
+**Q4.** The original form is good to about 8 digits at `1e-8` and then gets **worse**: 0.50004 at `1e-12`
+and 0.444 at `1e-15`. This is **catastrophic cancellation**. A float carries about 16 significant digits.
+For tiny $x$, $\sqrt{1+x}$ and $1$ agree in almost all of them, so subtracting leaves mostly round-off
+noise. Dividing by the tiny $x$ then magnifies that noise.
 
-Note the second column at x = 10⁻⁵ reads 0.500000041 — *worse* than at x = 10⁻³. Same cancellation
-problem as Part 1: 1 − cos x subtracts nearly equal quantities. The stable form uses the identity
-1 − cos x = 2sin²(x/2).
-
-> **The degrees trap.** In degree mode, sin(1°)/1 = **0.01745**, not 1 — because sin(1°) = sin(π/180
-> radians). Every calculus result for trigonometric functions assumes **radians**, and a student
-> whose whole table reads ≈0.01745 has their calculator in the wrong mode. Check this first when a
-> table looks systematically wrong.
-
-**3.2 Geometric verification.** The squeeze cos x ≤ sin(x)/x ≤ 1 on (0, π/2) comes from comparing
-the areas of the inner triangle, the sector, and the outer triangle. Both bounds → 1, so the middle
-does too.
+**Q5.** The rationalized form, because it has no subtraction of nearly equal numbers. The algebra that
+finds the limit by hand also makes the computation stable. The computer is not unreliable; the
+*expression* was badly conditioned.
 
 ---
 
-## Part 5 — ε–δ Intuition
+## Part 2 — The Limit of sin x / x
 
-The deliverable is that students find a **δ that works for a given ε**, and understand the order of
-quantifiers: for **every** ε > 0 there **exists** δ > 0. A student who picks ε in terms of δ has the
-logic backwards and earns no method marks however tidy the algebra.
+| x | sin(x)/x |
+|---|---|
+| 0.5 | 0.958851077208406 |
+| 0.1 | 0.9983341664682815 |
+| 0.01 | 0.9999833334166665 |
+| −0.1 | 0.9983341664682815 |
 
-For a linear function the relationship is exact: |f(x) − L| < ε with f(x) = mx + c requires
-δ = ε/|m|. Starting there before attempting quadratics is the right scaffolding.
+**Q6.** It approaches **1**. $\frac{\sin x}{x}$ is even: $\frac{\sin(-x)}{-x} = \frac{-\sin x}{-x} = \frac{\sin x}{x}$.
+
+> **The degrees trap.** A student whose table reads about 0.01745 has a calculator in degree mode. Python's
+> `math.sin` is always in radians.
+
+**Q7.** Desmos reports `undefined`. The function has no value at $0$. The curve looks unbroken because the
+hole is a single point, which a plot cannot show. The limit exists, but $f(0)$ does not.
+
+**Q8.** At $x = 0.1$: $\cos 0.1 = 0.99500$, $\frac{\sin 0.1}{0.1} = 0.99833$, $\frac{1}{\cos 0.1} = 1.00502$.
+The chain holds. As $x \to 0^+$ both outer bounds tend to $\cos 0 = 1$, so the Squeeze Theorem forces the
+middle to $1$ as well.
+
+---
+
+## Part 3 — ε-δ Intuition
+
+**Q9.** $\delta = 0.25$. Algebraically, $|(2x+1) - 5| = 2|x - 2| < 0.5$ exactly when $|x-2| < 0.25$. The
+graph and the algebra agree.
+
+**Q10.** $\delta = 0.05$ and $\delta = 0.005$. The rule is $\delta = \varepsilon/2$, because the line has
+slope 2: moving $x$ by $\delta$ moves $f(x)$ by $2\delta$.
+
+**Q11.** $x^2 < 4.5$ needs $x < 2.1213$; $x^2 > 3.5$ needs $x > 1.8708$. The right side is the tighter one,
+so the largest $\delta \approx 0.1213$. The lecture's $\delta = \min(1, 0.5/5) = 0.1$ is **smaller**. That is
+fine: a proof needs *a* $\delta$ that works, and any smaller $\delta$ also works. It does not need the largest.
+
+The quantifier order is the thing to check: for **every** ε there **exists** a δ. A student who picks ε in
+terms of δ has the logic backwards.
 
 ---
 
 ## Marking Scheme
 
-- **Method (≈60%).** Correct technique named, hypotheses checked where a theorem requires them,
-  symbolic setup before numerical evaluation, and a stated reason for each observed behaviour.
-- **Execution (≈40%).** Correct arithmetic, sensible precision, correct plot or table, and a
-  conclusion that actually follows from the data.
+- **Method (≈60%).** A stated reason for each observed behaviour, and the hand rationalization before the
+  Exercise 1.2 table.
+- **Execution (≈40%).** Correct values, sensible precision, and a conclusion that follows from the data.
 
 **Carry-through.** Penalise a wrong value once; award downstream marks if the student reasons
 correctly from their own error.
 
-**The specific failure to watch for in a computational lab:** reporting *what* the computer printed
-without explaining *why*. "The table approaches 0.5" is an observation; "the table approaches 0.5
-because the conjugate cancels the removable factor" is the answer. A lab report that is a
-transcript earns the execution marks only.
+**The failure to watch for:** reporting *what* the computer printed without explaining *why*. "The
+table approaches 0.5" is an observation; "the table approaches 0.5 because the conjugate cancels the
+removable factor" is the answer. A report that is a transcript earns the execution marks only.
 
 ---
 
