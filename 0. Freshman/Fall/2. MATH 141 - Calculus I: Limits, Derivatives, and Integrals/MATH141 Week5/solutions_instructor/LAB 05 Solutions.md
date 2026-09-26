@@ -1,106 +1,74 @@
 # MATH 141 · Week 5
 ## LAB 05 Solutions — INSTRUCTOR ONLY
 
-> **Every numerical value below was computed, not estimated.** Students working in Desmos rather
-> than Python will see the same behaviour but fewer digits — grade the *reasoning and the observed
-> trend*, not agreement to the last decimal place.
+> **Every numerical value below was computed in Python, not estimated.** Grade the *reasoning and the
+> observed trend*, not agreement to the last decimal place.
+
+*(Revised 2026-09-26 to match the 7-question version of the lab.)*
 
 ---
 
 ## Part 1 — Implicit Curves
 
-**1.1 Circle** x² + y² = 25. Implicit differentiation: 2x + 2y·y′ = 0 ⇒ **y′ = −x/y**.
+**Q1 (10).** At $(3, 4)$: $dy/dx = -3/4$. The line touches the circle at $(3, 4)$ without crossing it.
+$dy/dx$ is undefined where $y = 0$, at $(\pm 5, 0)$: the tangent there is **vertical**.
 
-The slope is undefined where y = 0 — at (±5, 0), where the tangent is vertical. That is the
-geometric payoff: an implicit curve can have vertical tangents, which no function y = f(x) can.
-The circle is not a function, and implicit differentiation is precisely the tool for that case.
+**Q2 (10).** $27 + 27 = 54 = 6 \cdot 3 \cdot 3$ ✓. Slope $= \dfrac{6 - 9}{9 - 6} = -1$, tangent $y = -x + 6$.
+$(3, 3)$ is the tip of the loop, on the line $y = x$, and the tangent there is perpendicular to that line.
 
-**1.2 Folium of Descartes** x³ + y³ = 3axy. Differentiating: 3x² + 3y²y′ = 3a(y + xy′), so
+**Q3 (10).** $y = x^2/2$ in the curve: $x^3 + \dfrac{x^6}{8} = 3x^3$, so $x^6 = 16x^3$. Then $x = 0$ or
+$x^3 = 16$. At $x = 16^{1/3} \approx 2.520$, $y = x^2/2 \approx 3.175$: the top of the loop.
 
-$$y' = \frac{ay - x^2}{y^2 - ax}$$
-
-**The universal error to grade for:** dropping the dy/dx factor. Every y is a function of x, so
-d/dx(y³) = 3y²·(dy/dx). A student who writes 3y² has not done implicit differentiation at all.
-
----
-
-## Part 2 — The Logarithm
-
-**2.1** (ln x)′ = 1/x. Numerically, the central difference at x = 2 gives 0.5000000000 against the
-exact 0.5. Geometrically: ln x is defined as the area under 1/t from 1 to x, so its rate of change
-*is* the height of that curve — the FTC, previewed.
-
-**2.2** e via the derivative: (1 + 1/n)ⁿ →
-
-| n | (1 + 1/n)ⁿ |
-|---|---|
-| 10 | 2.59374246 |
-| 1,000 | 2.71692393 |
-| 10⁶ | 2.71828047 |
-
-converging to e = 2.718281828…. Convergence is **slow** — O(1/n) — so a million terms buys only six
-correct digits. Worth noting: this is a bad way to compute e, and the series Σ1/k! converges far
-faster.
+$x = 0$ gives the origin, but there the formula is $\frac{0}{0}$. The curve crosses itself at the origin, so
+it has no single tangent there. Accept an answer that notes this; don't require it.
 
 ---
 
-## Part 3 — Related Rates
+## Part 2 — Two Derivative Formulas
 
-**3.1 Sliding ladder.** L = 10 ft, base moving out at dx/dt = 2 m/s. From x² + y² = 100,
-differentiating with respect to t gives 2x·x′ + 2y·y′ = 0, so **dy/dt = −x·x′/y**.
+**Q4 (15).** `central(math.log, 2)` $= 0.50000004$ against $1/2$. `central(math.log, 0.5)` $= 2.0000027$ against
+$2$. $\ln x$ is steep near $0$ and flattens as $x$ grows, exactly as $1/x$ is large near $0$ and small for
+large $x$. It is always increasing, since $1/x > 0$ on its domain.
 
-| x (ft) | y (ft) | dy/dt (ft/s) |
+**Q5 (15).**
+
+| a | 1/(1+a²) | central |
 |---|---|---|
-| 6 | 8.0000 | −1.5000 |
-| 8 | 6.0000 | −2.6667 |
-| 9.9 | 1.4107 | **−14.0358** |
+| 0 | 1.0 | 0.99999967 |
+| 1 | 0.5 | 0.50000008 |
+| 5 | 0.03846154 | 0.03846154 |
 
-**dy/dt → −∞ as x → 10.** The top of the ladder accelerates without bound as the base nears the
-wall's distance. This is physically impossible — a real ladder's top cannot exceed the speed the
-model implies — and the reason is that the *constraint* "the base moves at constant 2 m/s" becomes
-unsustainable. Students who notice the model breaks down have understood more than those who just
-report the number.
-
-**The procedural error to grade for:** substituting x = 6 *before* differentiating. Any quantity
-that varies must stay symbolic until after d/dt is applied; substituting early turns a variable into
-a constant and forces its rate to zero.
-
-**3.2 Expanding balloon.** V = (4/3)πr³ ⇒ dV/dt = 4πr²·dr/dt. Note dr/dt = (dV/dt)/(4πr²)
-**decreases** as r grows, at constant inflation rate — the surface area is spreading the same volume
-over more of it.
+$\arctan$ is steepest at $x = 0$ and flattens toward its asymptotes $\pm\pi/2$. That matches
+$\frac{1}{1+x^2}$, whose maximum is $1$ at $x = 0$ and which tends to $0$ as $|x| \to \infty$.
 
 ---
 
-## Part 4 — Inverse Trig Derivatives
+## Part 3 — Related Rates Simulation
 
-(arctan x)′ = 1/(1+x²). Central-difference verification with h = 10⁻⁶:
+**Q6 (25).** The blank is `-x / y * 2`.
 
-| x | Numerical | Exact |
-|---|---|---|
-| 0.5 | 0.8000000000 | 0.8000000000 |
-| 1.0 | 0.5000000000 | 0.5000000000 |
-| 2.0 | 0.2000000000 | 0.2000000000 |
+| t | x | y | numerical | exact |
+|---|---|---|---|---|
+| 0 | 0 | 10.000000 | 0.000000 | 0.000000 |
+| 1 | 2 | 9.797959 | −0.408249 | −0.408248 |
+| 2 | 4 | 9.165151 | −0.872874 | −0.872872 |
+| 3 | 6 | 8.000000 | −1.500007 | −1.500000 |
+| 4 | 8 | 6.000000 | −2.666708 | −2.666667 |
+| 4.5 | 9 | 4.358899 | −4.129712 | −4.129483 |
 
-Agreement to 10 digits. Contrast with (arcsin x)′ = 1/√(1−x²), whose **domain restriction |x| < 1**
-matters — attempting the numerical derivative at x = 1 fails, and it should, because the tangent is
-vertical there.
+They agree to 4–5 decimal places; the gap grows near the end, where $y$ changes fastest.
+
+**Q7 (15).** $dy/dt = -2x/y \to -\infty$ as $y \to 0$. The formula says the top falls infinitely fast, which
+no real ladder does. In reality the top leaves the wall before that, so the model, which assumes the top
+stays on the wall, stops being valid near the end.
 
 ---
 
 ## Marking Scheme
 
-- **Method (≈60%).** Correct technique named, hypotheses checked where a theorem requires them,
-  symbolic setup before numerical evaluation, and a stated reason for each observed behaviour.
-- **Execution (≈40%).** Correct arithmetic, sensible precision, correct plot or table, and a
-  conclusion that actually follows from the data.
-
-**Carry-through.** Penalise a wrong value once; award downstream marks if the student reasons
-correctly from their own error.
-
-**The specific failure to watch for in a computational lab:** reporting *what* the computer printed
-without explaining *why*. "The table approaches 0.5" is an observation; "the table approaches 0.5
-because the conjugate cancels the removable factor" is the answer. A lab report that is a
-transcript earns the execution marks only.
+- **Method (≈60%).** Derivatives found by hand before any numerical check, and a stated reason for each
+  observation.
+- **Execution (≈40%).** Correct values, and conclusions that follow from them.
 
 ---
 
