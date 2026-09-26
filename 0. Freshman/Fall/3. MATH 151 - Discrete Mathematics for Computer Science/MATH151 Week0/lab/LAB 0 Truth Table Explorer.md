@@ -9,7 +9,7 @@ By the end of this lab, you will be able to:
 1. Build systematic truth tables for formulas with 2–4 variables
 2. Identify equivalences by comparing truth table columns
 3. Translate real programming conditions into propositional formulas
-4. Write a small Python program to evaluate and classify propositional formulas
+4. Evaluate propositional formulas in the Python REPL and use it to check an equivalence
 5. Recognize logical laws "in the wild" — in code, circuits, and database queries
 
 **Materials needed:** Pencil, graph paper (or ruled paper), laptop with Python 3 installed.
@@ -17,6 +17,10 @@ By the end of this lab, you will be able to:
 **Grading:** Labs are graded on completion and effort, checked off by TA at end of session. Bring completed work to checkoff.
 
 ---
+
+*(Revised 2026-09-26: the Python section used `itertools.product`, `def`, dictionaries, `zip` and lambdas. On
+30 September CS 101 has taught only values, types, variables and the boolean operators. It is now a REPL
+exercise with `and`, `or`, `not`. Sections 1 and 2 were also cut to fit the two hours.)*
 
 ## Section 1 Warm-up: Hand Calculations (30 min)
 
@@ -40,10 +44,6 @@ Use this ordering for all 3-variable tables in this lab.
 
 **(b)** (p ∨ q) → (q ∨ r)
 
-**(c)** ¬p ↔ (q ∧ r)
-
-**(d)** (p → q) ∧ (¬r → ¬q)
-
 ---
 
 ### Exercise 1.2. Equivalence Detection
@@ -53,8 +53,6 @@ For each pair of formulas, build their truth tables side by side and determine i
 **(a)** Are p → (q → r) and (p ∧ q) → r equivalent?
 
 **(b)** Are (p ∨ q) → r and (p → r) ∧ (q → r) equivalent?
-
-**(c)** Are ¬p ∨ q and p → q equivalent? (You should already know this from lecture — confirm it now.)
 
 For any equivalent pair, identify which law(s) from Lecture 2 explain the equivalence.
 
@@ -66,11 +64,7 @@ Which of the following are tautologies? Verify by truth table.
 
 **(a)** (p → q) → (¬q → ¬p)
 
-**(b)** ((p → q) ∧ (q → r)) → (p → r) *(This is the **hypothetical syllogism** — modus ponens chained)*
-
-**(c)** (p ∧ (p → q)) → q *(This is **modus ponens** — the most fundamental inference rule)*
-
-**(d)** ((p ∨ q) ∧ ¬p) → q *(This is **disjunctive syllogism**)*
+**(b)** (p ∧ (p → q)) → q *(This is **modus ponens** — the most fundamental inference rule)*
 
 Write the name and a brief English description of the inference rule each tautology represents.
 
@@ -100,14 +94,6 @@ Variables: p = "connected", q = "authenticated"
 Simplify the condition. The simplified form might surprise you.
 
 **(c)**
-```python
-# A function's precondition check
-if not (isinstance(x, int) and x >= 0 and x < len(arr)):
-    raise ValueError("Index out of bounds")
-```
-Variables: p = "x is an integer", q = "x ≥ 0", r = "x < len(arr)"
-
-**(d)**
 ```java
 if (!(a == b) || !(b == c)) {
     // not all equal
@@ -119,26 +105,7 @@ Apply De Morgan's to simplify. What is the simplified condition?
 
 ---
 
-### Exercise 2.2. Database Queries as Logic
-
-SQL WHERE clauses are propositional formulas. Rewrite each SQL condition in propositional logic, then find a logically equivalent but simpler form.
-
-**(a)**
-```sql
-WHERE NOT (age >= 18 AND country = 'US')
-```
-
-**(b)**
-```sql
-WHERE (status = 'active' OR status = 'pending') AND NOT (status = 'active' AND verified = false)
-```
-Variables: p = "status = 'active'", q = "status = 'pending'", r = "verified = false"
-
-Simplify completely. What does the resulting condition mean?
-
----
-
-### Exercise 2.3. Logic Gates as Connectives
+### Exercise 2.2. Logic Gates as Connectives
 
 The following is a **logic circuit diagram** represented textually. Trace the output.
 
@@ -157,253 +124,49 @@ Gate 4: Output = Z AND (NOT C)
 
 **(c)** Simplify the formula using logical laws. What is the simplest equivalent expression?
 
-**(d)** Build the full truth table (8 rows for A, B, C) for the output formula. Under what conditions is the output 1?
 
 ---
 
-## Section 3 Python Programming (50 min)
+## Section 3 Truth Tables in the Python REPL (30 min)
 
-You will build a **truth table generator and formula classifier** in Python. This cements the connection between propositional logic and computation.
+Python's `and`, `or` and `not` **are** ∧, ∨ and ¬ (CS 101 Lecture 03 §4). That is all the Python this
+section needs: no loops, no functions — those come later in CS 101. Open the REPL with `python3`.
 
-### Setup
+Python has no → operator, but you know p → q ≡ ¬p ∨ q, so type `(not p) or q`.
 
-Create a file called `logic_tools.py`. You will build it incrementally.
-
----
-
-### Exercise 3.1. Truth Table Generator
+### Exercise 3.1. One Row at a Time
 
 ```python
-from itertools import product
-
-def evaluate_formula(formula_func, variable_names):
-    """
-    Generates and prints the truth table for a propositional formula.
-    
-    Args:
-        formula_func: A Python function (dict -> bool)
-                      Takes a dict mapping variable names to bool values.
-        variable_names: List of variable name strings.
-    
-    Returns:
-        list of (assignment_dict, result) tuples
-    """
-    n = len(variable_names)
-    results = []
-    
-    # Print header
-    header = " | ".join(variable_names) + " || Result"
-    print(header)
-    print("-" * len(header))
-    
-    # Enumerate all 2^n assignments
-    for values in product([True, False], repeat=n):
-        assignment = dict(zip(variable_names, values))
-        result = formula_func(assignment)
-        
-        # Format row
-        var_cols = " | ".join("T" if assignment[v] else "F" for v in variable_names)
-        result_str = "T" if result else "F"
-        print(f"{var_cols} || {result_str}")
-        
-        results.append((assignment, result))
-    
-    return results
+>>> p = True
+>>> q = False
+>>> (not p) or q
+False
 ```
 
-**Task:** Copy this function into `logic_tools.py`. Test it by evaluating these formulas:
+That is one row of the truth table of p → q. Change `p` and `q` (use the up arrow to recall lines) and
+evaluate `(not p) or q` for all four rows. Write the table down and check it against the one from lecture.
+
+### Exercise 3.2. Checking an Equivalence
+
+De Morgan's law says ¬(p ∧ q) ≡ ¬p ∨ ¬q. Two formulas are equivalent exactly when `==` between them is
+`True` in **every** row. For each of the four rows, set `p` and `q` and evaluate:
 
 ```python
-# Test 1: p AND q
-f1 = lambda e: e['p'] and e['q']
-evaluate_formula(f1, ['p', 'q'])
-
-# Test 2: p OR (NOT q)
-f2 = lambda e: e['p'] or not e['q']
-evaluate_formula(f2, ['p', 'q'])
-
-# Test 3: (p AND q) OR (NOT p AND NOT q)  [this is p IFF q]
-f3 = lambda e: (e['p'] and e['q']) or (not e['p'] and not e['q'])
-evaluate_formula(f3, ['p', 'q'])
+>>> (not (p and q)) == ((not p) or (not q))
 ```
 
-Verify that Test 3's output matches the truth table for p ↔ q from lecture.
+Record the four results. What does "all four are `True`" tell you, in the language of Lecture 2?
 
----
+### Exercise 3.3. Finding a Counterexample
 
-### Exercise 3.2. Formula Classifier
+Is p → q equivalent to its converse q → p? Evaluate, for each row:
 
 ```python
-def classify_formula(formula_func, variable_names):
-    """
-    Classifies a propositional formula as tautology, contradiction, or contingency.
-    
-    Returns: 'tautology', 'contradiction', or 'contingency'
-    """
-    results = []
-    for values in product([True, False], repeat=len(variable_names)):
-        assignment = dict(zip(variable_names, values))
-        results.append(formula_func(assignment))
-    
-    if all(results):
-        return 'tautology'
-    elif not any(results):
-        return 'contradiction'
-    else:
-        return 'contingency'
+>>> ((not p) or q) == ((not q) or p)
 ```
 
-**Task:** Add this to `logic_tools.py`. Use it to classify the following formulas. For each, also predict the classification *before* running the code.
-
-```python
-vars2 = ['p', 'q']
-vars3 = ['p', 'q', 'r']
-
-# Classify these:
-formulas = [
-    ("p OR NOT p",           lambda e: e['p'] or not e['p'],                              ['p']),
-    ("p AND NOT p",          lambda e: e['p'] and not e['p'],                              ['p']),
-    ("(p→q)→((q→r)→(p→r))", lambda e: (not e['p'] or e['q']) and               # messy but correct
-                                        (not e['q'] or e['r']) and 
-                                        (e['p']) and not e['r'],                            vars3),
-    # Actually: the formula (p→q)→((q→r)→(p→r)) 
-    # = not(not p or q) or not(not q or r) or not p or r  
-    # Let's write it cleanly:
-    ("hyp syllogism",        lambda e: not ((not e['p'] or e['q']) and 
-                                            (not e['q'] or e['r'])) or 
-                                            (not e['p'] or e['r']),                        vars3),
-    ("p AND q",              lambda e: e['p'] and e['q'],                                  vars2),
-]
-
-for name, f, vs in formulas:
-    result = classify_formula(f, vs)
-    print(f"{name}: {result}")
-```
-
-**Note:** Writing lambdas for complex formulas is awkward. In Exercise 3.3, you will build a better approach.
-
----
-
-### Exercise 3.3. Equivalence Checker
-
-```python
-def are_equivalent(formula1, formula2, variable_names):
-    """
-    Determines if two propositional formulas are logically equivalent.
-    Returns True if they have the same truth table.
-    """
-    for values in product([True, False], repeat=len(variable_names)):
-        assignment = dict(zip(variable_names, values))
-        if formula1(assignment) != formula2(assignment):
-            return False
-    return True
-```
-
-**Task:** Add to `logic_tools.py`. Use it to verify:
-
-```python
-vars2 = ['p', 'q']
-vars3 = ['p', 'q', 'r']
-
-# Verify these equivalences programmatically
-tests = [
-    # (description, formula1, formula2, variables)
-    ("p→q vs ¬p∨q",
-     lambda e: not e['p'] or e['q'],
-     lambda e: (not e['p']) or e['q'],
-     vars2),
-    
-    ("De Morgan 1: ¬(p∧q) vs ¬p∨¬q",
-     lambda e: not (e['p'] and e['q']),
-     lambda e: (not e['p']) or (not e['q']),
-     vars2),
-    
-    ("Converse: is p→q equiv to q→p?",
-     lambda e: not e['p'] or e['q'],
-     lambda e: not e['q'] or e['p'],
-     vars2),
-    
-    ("Exportation: p→(q→r) vs (p∧q)→r",
-     lambda e: not e['p'] or (not e['q'] or e['r']),
-     lambda e: not (e['p'] and e['q']) or e['r'],
-     vars3),
-]
-
-for desc, f1, f2, vs in tests:
-    result = are_equivalent(f1, f2, vs)
-    print(f"{desc}: {'EQUIVALENT' if result else 'NOT EQUIVALENT'}")
-```
-
----
-
-### Exercise 3.4. Counterexample Finder
-
-A useful tool: given two formulas, find an assignment where they differ (a counterexample to their equivalence).
-
-```python
-def find_counterexample(formula1, formula2, variable_names):
-    """
-    If formula1 and formula2 are NOT equivalent, returns an assignment
-    dict where they differ. Returns None if they are equivalent.
-    """
-    for values in product([True, False], repeat=len(variable_names)):
-        assignment = dict(zip(variable_names, values))
-        if formula1(assignment) != formula2(assignment):
-            return assignment
-    return None
-```
-
-**Task:** Add to `logic_tools.py`. Use it to find a counterexample showing that the converse (q → p) is not equivalent to the original (p → q).
-
-Print the counterexample and explain it in English using the example:
-- p = "It is raining"
-- q = "The ground is wet"
-
----
-
-### Exercise 3.5. Bringing It Together
-
-Write a function that takes a formula and:
-1. Prints its full truth table
-2. Classifies it (tautology / contradiction / contingency)
-3. If contingency, reports how many assignments make it true vs false
-
-```python
-def analyze_formula(formula_func, variable_names, formula_name="φ"):
-    """Complete formula analysis."""
-    print(f"\n{'='*50}")
-    print(f"Analysis of: {formula_name}")
-    print(f"{'='*50}")
-    
-    results = evaluate_formula(formula_func, variable_names)
-    
-    classification = classify_formula(formula_func, variable_names)
-    print(f"\nClassification: {classification.upper()}")
-    
-    true_count = sum(1 for _, r in results if r)
-    false_count = len(results) - true_count
-    
-    if classification == 'contingency':
-        print(f"True in {true_count}/{len(results)} assignments")
-        print(f"False in {false_count}/{len(results)} assignments")
-    
-    return classification
-```
-
-**Test it on:**
-```python
-analyze_formula(
-    lambda e: not (e['p'] and e['q']) == (not e['p'] or not e['q']),
-    ['p', 'q'],
-    "De Morgan's Law 1 (as biconditional)"
-)
-
-analyze_formula(
-    lambda e: e['p'] and not e['p'],
-    ['p'],
-    "p AND NOT p"
-)
-```
+Find a row where the result is `False`. That row is a **counterexample** to the equivalence. Explain it in
+English with p = "It is raining" and q = "The ground is wet".
 
 ---
 
@@ -415,7 +178,7 @@ Answer these briefly in your lab notebook:
 
 2. Describe in one sentence how propositional logic and Python's boolean operations relate.
 
-3. The `classify_formula` function requires checking 2ⁿ rows. For n = 32 (32-variable formula), how many rows is that? Is this feasible on a modern computer at 10⁹ operations/second?
+3. Checking a formula by truth table takes 2ⁿ rows. For n = 32, type `2 ** 32` into the REPL. At 10⁹ rows per second, how many seconds is that (`2 ** 32 / 10 ** 9`)? And for n = 64?
 
 ---
 
@@ -425,9 +188,7 @@ Show your TA:
 
 - [ ] Completed hand truth tables for Section 1 (at minimum 1.1 and 1.2)
 - [ ] Section 2.1 with simplified conditions
-- [ ] `logic_tools.py` running — demonstrate `analyze_formula` on a tautology and a contradiction
-- [ ] Exercise 3.4 counterexample printed and explained
+- [ ] Exercise 3.2's four `True` results, and Exercise 3.3's counterexample explained
 
 ---
 
-*Bring `logic_tools.py` to next lab — we will extend it in Lab 1.*

@@ -4,6 +4,10 @@
 
 ---
 
+> *Revised 2026-09-26: the lab no longer asks 1.1(c)–(d), 1.2(c), 1.3(b) and (d), 2.1(c), the SQL exercise or 2.3(d);
+> their answers below can be ignored. Lab 1.3(b) is old 1.3(c), lab 2.1(c) is old 2.1(d), lab 2.2 is old 2.3. Section 3 is
+> now a REPL exercise (below).*
+
 ## Section 1 Solutions
 
 ### Exercise 1.1
@@ -213,72 +217,17 @@ True rows: (0,0,0), (0,1,0), (1,0,0). That's 3 of 8 rows.
 
 ---
 
-## Section 3: Python Expected Outputs
+## Section 3: Truth Tables in the REPL
 
-### Exercise 3.1. Expected output for Test 3 (p ↔ q):
+**3.1.** `(not p) or q` gives, for (p, q) = (T, T), (T, F), (F, T), (F, F): `True`, `False`, `True`, `True` — the
+table for p → q.
 
-```
-p | q || Result
------------
-T | T || T
-T | F || F
-F | T || F
-F | F || T
-```
+**3.2.** All four rows print `True`. A biconditional that is true in every row is a **tautology**, so
+¬(p ∧ q) ≡ ¬p ∨ ¬q: the two formulas are logically equivalent.
 
-Matches p↔q truth table. ✓
-
-### Exercise 3.2. Expected classifications:
-
-```
-p OR NOT p:     tautology
-p AND NOT p:    contradiction
-hyp syllogism:  tautology
-p AND q:        contingency
-```
-
-### Exercise 3.3. Expected equivalence results:
-
-```
-p→q vs ¬p∨q:          EQUIVALENT
-De Morgan 1:            EQUIVALENT
-Converse: is p→q equiv to q→p?: NOT EQUIVALENT
-Exportation:            EQUIVALENT
-```
-
-### Exercise 3.4. Counterexample for converse:
-
-Expected output: `{'p': True, 'q': False}` (or `{'p': False, 'q': True}`)
-
-English explanation: Let p = "It is raining", q = "The ground is wet."
-Assignment p=True, q=False: "It is raining" (TRUE) but "The ground is wet" (FALSE).
-- p→q evaluates to: T→F = **False**
-- q→p evaluates to: F→T = **True**
-
-They differ. This is a case where rain exists but the ground is (somehow) dry — the original conditional is violated, but the converse is vacuously satisfied (wet ground isn't needed to make q→p true when q is false).
-
-### Exercise 3.5. Expected output for De Morgan test:
-
-```
-==================================================
-Analysis of: De Morgan's Law 1 (as biconditional)
-==================================================
-p | q || Result
------------
-T | T || T
-T | F || T
-F | T || T
-F | F || T
-
-Classification: TAUTOLOGY
-```
-
-For `p AND NOT p`:
-```
-Classification: CONTRADICTION
-True in 0/2 assignments
-False in 2/2 assignments
-```
+**3.3.** Rows (T, T) and (F, F) print `True`; rows (T, F) and (F, T) print `False`. Either `False` row is a
+counterexample. With p = raining, q = ground wet, take p = F, q = T: "if it rains the ground is wet" holds
+(vacuously), but "if the ground is wet it rained" fails — the ground can be wet from a sprinkler.
 
 ---
 
