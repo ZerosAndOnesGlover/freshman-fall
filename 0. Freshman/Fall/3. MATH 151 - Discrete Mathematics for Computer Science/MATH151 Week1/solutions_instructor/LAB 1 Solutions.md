@@ -126,73 +126,19 @@ Alternative English: "Every test that passes on any implementation, that impleme
 
 ---
 
-## Section 2 — Python Expected Outputs
+## Section 2 — Quantifiers in the REPL
 
-### Exercise 2.1
+**2.1.** (a) `True`: x² ≥ x for every positive integer. (b) `1**2 == 9 or 2**2 == 9 or 3**2 == 9 or 4**2 == 9 or 5**2 == 9`
+is `True` (x = 3). (c) `1 % 2 == 1 and 2 % 2 == 1 and ...` is `False`; evaluation stops at x = 2, the counterexample.
 
-```
-∀x x²≥0: TRUE over domain of size 21
-∀x x²>0: FALSE. Counterexample: x = 0
-∃x x²=4: TRUE. Witness: x = -2   (or 2, depending on iteration order)
-∃x x²=3: FALSE. No witness found in domain.
-```
+**2.2.** (a) `True`: x = 1 takes y = 3, x = 2 takes y = 2, x = 3 takes y = 1. (b)
+`(1+1 == 4 and 2+1 == 4 and 3+1 == 4) or (1+2 == 4 and 2+2 == 4 and 3+2 == 4) or (1+3 == 4 and 2+3 == 4 and 3+3 == 4)`
+is `False`: no single y works for every x. (c) In ∀x ∃y the y may be chosen **after** x, so it may depend on x; in
+∃y ∀x one y must be fixed first and work for all x.
 
-### Exercise 2.2 — Divisibility over D = range(1,11)
+**2.3.** Both print `True`. De Morgan's law ¬(A ∧ B ∧ C) ≡ ¬A ∨ ¬B ∨ ¬C (Lecture 02) is exactly ¬∀ ≡ ∃¬ written out.
 
-```
-∀x ∀y D(x,y): FALSE  (evidence: first (x,y) where x doesn't divide y, e.g., (2,1))
-∀x ∃y D(x,y): TRUE   (each x divides itself)
-∃x ∀y D(x,y): TRUE   (evidence: x=1, since 1 divides everything)
-∃x ∃y D(x,y): TRUE   (evidence: e.g., (1,1))
-```
+*(Revised 2026-09-26: Section 2 is now a REPL exercise. The lab no longer asks Exercise 1.1(b), (d), (g), (h),
+1.2(d)–(e), 1.3(b), (d), or 1.4(a)–(b); their answers above can be ignored. Lab 1.1(a)–(d) are old (a), (c), (e), (f);
+lab 1.3(b) is old (c); lab 1.4(a)–(c) are old (c)–(e).)*
 
-Interpretations:
-- ∀x ∀y: Not every integer divides every other. (2 does not divide 1.)
-- ∀x ∃y: Every integer divides at least one element of {1..10} — namely itself.
-- ∃x ∀y: x=1 divides every integer. 1 is the universal divisor.
-- ∃x ∃y: Trivially, some divisibility holds (1|1).
-
-### Exercise 2.3 — Quantifier comparison
-
-**P(x,y) = "x < y" over D = {1..7}:**
-- ∀x ∀y: FALSE (e.g., x=3, y=2: 3<2 false)
-- ∀x ∃y: **FALSE**. The natural choice y = x+1 works for every x **except x = 7**, where no
-  y ∈ {1..7} satisfies 7 < y. Counterexample: **x = 7**. (The statement would be true over an
-  unbounded domain such as ℕ — the failure is caused by D having a largest element.)
-- ∃x ∀y: FALSE (no x smaller than all y in D including itself)
-- ∃x ∃y: TRUE (e.g., x=1, y=2)
-
-**P(x,y) = "x + y = 7" over D = {1..7}:**
-- ∀x ∀y: FALSE (1+1=2≠7)
-- ∀x ∃y: TRUE for x∈{1..6} (y=7−x∈D). But x=7: need y=0∉D. **FALSE.**
-- ∃x ∀y: FALSE (no fixed x makes x+y=7 for all y)
-- ∃x ∃y: TRUE (x=3, y=4)
-
-**P(x,y) = "x*y = x" over D = {1..7}:**
-x*y=x iff x(y−1)=0 iff x=0 (not in D) or y=1.
-- ∀x ∀y: FALSE (x=2, y=2: 4≠2)
-- ∀x ∃y: TRUE — for every x, take y=1: x·1=x ✓. **TRUE.**
-- ∃x ∀y: FALSE — would need x·y=x for all y, i.e., x=0 for all y≠1. Not possible with x∈{1..7}.
-- ∃x ∃y: TRUE (x=3, y=1)
-
-Pattern: ∃∀ being False while ∀∃ is True confirms the expected implication holds in the correct direction only.
-
-### Exercise 2.4 — Negation verifier
-
-All 5 predicates should produce:
-```
-Law 1 [¬∀ ≡ ∃¬]: HOLDS
-Law 2 [¬∃ ≡ ∀¬]: HOLDS
-```
-If any FAIL, there is a bug in the forall/exists implementation.
-
-### Exercise 2.5 — Empty domain
-
-`forall_as_and([], pred)` returns `True` (vacuous universal — the reduce starts with True and never updates it).
-`exists_as_or([], pred)` returns `False` (no witness exists — reduce starts with False and never updates it).
-
-These match the expected vacuous truth values:
-- ∀x∈∅, P(x) = TRUE (vacuously)
-- ∃x∈∅, P(x) = FALSE (no witness possible)
-
-This is a feature, not a bug. Python's `all([])` and `any([])` exhibit the same behavior for the same mathematical reason.
