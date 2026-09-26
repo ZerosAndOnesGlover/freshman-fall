@@ -1,29 +1,20 @@
 # MATH 141 · Lab 02 Solutions (Instructor)
 ## Continuity, Discontinuity, and Bisection
 
-All figures verified by computation.
+All figures verified by computation. *(Revised 2026-09-26 to match the 7-question version of the lab.)*
 
 ---
 
-## Part 1: Seeing the Four Types (6 pts)
+## Part 1: Seeing the Types (5 pts)
 
-**1A — removable.** $\dfrac{x^2-1}{x-1}$ at $x=1$:
+**Q1 (2).**
+- **1A — removable.** The graph is the line $y = x + 1$ with a hole at $(1, 2)$. The limit is $2$ but
+  $f(1)$ is undefined, so **part (i)** fails.
+- **1B — infinite.** The graph shoots to $+\infty$ from the right and $-\infty$ from the left. No finite
+  limit, so **part (ii)** fails.
+- **1C — jump.** One-sided limits $0$ and $1$ differ, so **part (ii)** fails.
 
-| $x$ | $f(x)$ | | $x$ | $f(x)$ |
-|---|---|---|---|---|
-| $0.9$ | $1.900000$ | | $1.001$ | $2.001000$ |
-| $0.99$ | $1.990000$ | | $1.01$ | $2.010000$ |
-| $0.999$ | $1.999000$ | | $1.1$ | $2.100000$ |
-
-Limit $2$; $f(1)$ undefined. **Part (i)** of the definition fails.
-
-**1B — infinite.** $\pm10^4$ at $x=\pm10^{-4}$; $\pm10^8$ at $\pm10^{-8}$. Limits $+\infty$ and
-$-\infty$. **Part (ii)** fails.
-
-**1C — jump.** $f(-10^{-6})=-0.000001$, $f(+10^{-6})=+1.000001$. One-sided limits $0$ and $1$.
-**Part (ii)** fails.
-
-**1D — essential.** At $x=\dfrac{1}{k\pi/2}$:
+**Q2 (3).**
 
 | $x$ | $\sin(1/x)$ |
 |---|---|
@@ -34,85 +25,61 @@ $-\infty$. **Part (ii)** fails.
 | $0.0707355303$ | $+1$ |
 | $0.0578745248$ | $-1$ |
 
-**Exactly alternating $\pm1$**, with the points crowding toward $0$. No one-sided limit exists —
-**part (ii)** fails, but for a different reason than 1B or 1C: the values do not settle *and* do not
-diverge.
+$x$ shrinks toward $0$ while the values **alternate exactly $\pm1$**. No one-sided limit exists, so part
+(ii) fails, but for a different reason than 1B or 1C: the values neither settle nor diverge. **Essential
+(oscillatory).**
 
-*Marking: 1 pt for the table, 0.5 for the correct classification, each part. The 1D table must show
-the alternation; students who sample at arbitrary points see noise and conclude nothing.*
+*Marking: 1 for the table, 1 for the alternation, 1 for the classification.*
 
 ---
 
-## Part 2: Repairing a Discontinuity (4 pts)
+## Part 2: Repairing a Discontinuity (5 pts)
 
-**2A.** Values approach $12$ from both sides ($11.940100$ at $x=1.99$, $12.006001$ at $x=2.001$).
+**Q3 (2).** Values approach $12$ from both sides: $11.41, 11.9401, 11.994001$ from the left and
+$12.006001, 12.0601, 12.61$ from the right.
 
-**2B.** $\dfrac{x^3-8}{x-2}=\dfrac{(x-2)(x^2+2x+4)}{x-2}=x^2+2x+4$, which at $x=2$ gives
-$4+4+4=\mathbf{12}$ ✓
+**Q4 (3).** $\dfrac{x^3-8}{x-2}=\dfrac{(x-2)(x^2+2x+4)}{x-2}=x^2+2x+4$, which at $x=2$ gives $\mathbf{12}$ ✓
 
-**2C.**
 $$\tilde f(x)=\begin{cases}\dfrac{x^3-8}{x-2},& x\ne2\\[4pt] 12,& x=2\end{cases}$$
 
-**2D — the marking point.** A limit as $x\to2$ is computed over values with $0<\lvert x-2\rvert$ —
-the definition **explicitly excludes** $x=2$. Since $x\ne2$ throughout, dividing by $x-2$ is dividing
-by a nonzero quantity and is valid.
+**The marking point.** A limit as $x\to2$ only uses $x$ with $0<\lvert x-2\rvert$: the definition
+**explicitly excludes** $x=2$. So dividing by $x-2$ is dividing by a nonzero number, and is valid.
 
-The cancelled expression $x^2+2x+4$ agrees with $f$ at every point where the limit "looks", so their
-limits coincide. That $x^2+2x+4$ is *also* defined at $2$ is a bonus — it is what makes the
-extension continuous.
-
-*Students who say "we cancel because $x\ne2$" without connecting it to the $0<\lvert x-a\rvert$ in
-the definition get 0.5 of the 1.*
+*Students who say "we cancel because $x\ne2$" without connecting it to the $0<\lvert x-a\rvert$ in the
+definition get 2 of 3.*
 
 ---
 
-## Part 3: Bisection (7 pts)
+## Part 3: Bisection in Code (10 pts)
 
-**3A/3B — verified trace** on $x^3-x-2$ over $[1,2]$:
+**Q5 (4).** The condition is `fa * fm < 0` (or `<= 0`). If $f(a)$ and $f(m)$ have opposite signs, $f$ is
+continuous on $[a, m]$ and changes sign there, so by the IVT a root lies in $[a, m]$.
 
-| Step | Bracket | Midpoint | $f(\text{mid})$ |
-|---|---|---|---|
-| 1 | $[1.000000,2.000000]$ | $1.500000$ | $-0.125000$ |
-| 2 | $[1.500000,2.000000]$ | $1.750000$ | $+1.609375$ |
-| 3 | $[1.500000,1.750000]$ | $1.625000$ | $+0.666016$ |
-| 4 | $[1.500000,1.625000]$ | $1.562500$ | $+0.252197$ |
-| 5 | $[1.500000,1.562500]$ | $1.531250$ | $+0.059113$ |
-| 6 | $[1.500000,1.531250]$ | $1.515625$ | $-0.034054$ |
-| 7 | $[1.515625,1.531250]$ | $1.523438$ | $+0.012250$ |
-| 8 | $[1.515625,1.523438]$ | $1.519531$ | $-0.010971$ |
+| Step | a | b | m | f(m) |
+|---|---|---|---|---|
+| 1 | 2.0 | 3.0 | 2.5 | 5.625 |
+| 2 | 2.0 | 2.5 | 2.25 | 1.890625 |
+| 3 | 2.0 | 2.25 | 2.125 | 0.345703125 |
+| 4 | 2.0 | 2.125 | 2.0625 | −0.351318359375 |
+| 5 | 2.0625 | 2.125 | 2.09375 | −0.008941650390625 |
+| 6 | 2.09375 | 2.125 | 2.109375 | 0.166835784912 |
+| 7 | 2.09375 | 2.109375 | 2.1015625 | 0.078562259674 |
+| 8 | 2.09375 | 2.1015625 | 2.09765625 | 0.034714281559 |
 
-**3C.** Root $=\mathbf{1.521379706805}$, with $f(\text{root})=1.33\times10^{-15}$.
+*Marking: 2 for a correct condition with the IVT reason, 2 for the output.*
 
-**3D.** Predicted versus actual step counts:
+**Q6 (3).** **20 steps.** The root is $2.094552$ to six places; the true root is $2.0945514815\ldots$, so
+accept $2.094551$ or $2.094552$ depending on whether the student printed `m` or `(a + b) / 2`.
 
-| $\varepsilon$ | $\lceil\log_2(1/\varepsilon)\rceil$ |
-|---|---|
-| $10^{-4}$ | $14$ |
-| $10^{-6}$ | $20$ |
-| $10^{-10}$ | $34$ |
+**Q7 (3).**
 
-*Students whose code uses `while (b-a) > eps` should get exactly these. A common off-by-one comes
-from testing `>=` instead of `>`; accept either with a note.*
+| $\varepsilon$ | steps | $\lceil\log_2(1/\varepsilon)\rceil$ |
+|---|---|---|
+| $10^{-4}$ | 14 | 14 |
+| $10^{-6}$ | 20 | 20 |
+| $10^{-10}$ | 34 | 34 |
 
----
-
-## Part 4: The IVT Over the Rationals (3 pts)
-
-**4A.** By hand, the midpoints are $\tfrac32,\tfrac54,\tfrac{11}{8},\tfrac{23}{16},\dots$ —
-**every one rational**, with denominators doubling.
-
-**4B — the expected explanation.**
-
-Every midpoint bisection produces is rational, and the brackets shrink without bound toward a point
-where $f$ changes sign. But that point is $\sqrt2$, which is **not rational** — so within
-$\mathbb{Q}$ the process converges to nothing. There is a "hole" exactly where the root should be.
-
-Over $\mathbb{R}$ the nested brackets **do** converge to a point, because the reals are **complete**:
-every nested sequence of closed intervals with shrinking width contains a real number. That
-completeness is precisely what the IVT's proof requires, and precisely what $\mathbb{Q}$ lacks.
-
-*Full marks require the word **completeness** (or an accurate description of it). "Because $\sqrt2$
-isn't rational" alone is the observation, not the explanation — award 1 of 2.*
+They match exactly. *A loop that tests `>=` instead of `>` can be one step off; accept it with a note.*
 
 ---
 
@@ -120,10 +87,10 @@ isn't rational" alone is the observation, not the explanation — award 1 of 2.*
 
 | Symptom | Cause | Action |
 |---|---|---|
-| 1D sampled at arbitrary $x$ | Missed the instruction | −1; the alternation is only visible at the specified points |
-| 2D says only "$x\ne2$" | No link to the definition | −0.5 |
-| 3D off by one | `>=` vs `>` in the loop | No deduction if noted |
-| 4B stops at "$\sqrt2$ is irrational" | Observation, not explanation | −1 |
+| Q2 sampled at arbitrary $x$ | Missed the instruction | −1; the alternation is only visible at the given points |
+| Q4 says only "$x\ne2$" | No link to the definition | −1 |
+| Q5 condition `fm < 0` alone | Ignores the sign of $f(a)$ | −1; it happens to work here only because $f(a) < 0$ throughout |
+| Q7 off by one | `>=` vs `>` in the loop | No deduction if noted |
 
 ---
 

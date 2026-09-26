@@ -3,76 +3,126 @@
 
 **Duration:** 2 hours · **20 points**
 **Date:** Friday 9 October 2026 · 15:00–16:50 · Lab Section (Week 2) — covers Week 2 (Lectures 01–03)
+**Tools:** Desmos, and Python using only CS 101 Weeks 0–2: arithmetic, `math`, `if`/`else`, `while`
+(CS 101 Lecture 08) and `for` over a list (Lecture 09, this morning). No functions are needed.
+**Expected time:** the session itself (7 questions), plus at most 30 minutes to tidy your answers.
 
 ---
 
-## Part 1: Seeing the Four Types (6 pts)
+## Python for Today
 
-For each function, tabulate values approaching the point from both sides, then classify the
-discontinuity and state which part of the three-part definition fails.
+Programs longer than one line are easier in a file. Save the code as `lab02.py` and run it from the
+terminal with `python3 lab02.py` (CS 101 Lecture 02). Start the file with `import math` if it uses `math`.
+
+A `for` loop over a list, as in CS 101 Lecture 09, prints a table in three lines:
+
+```python
+for x in [0.9, 0.99, 0.999, 1.001, 1.01, 1.1]:
+    print(x, (x**2 - 1) / (x - 1))
+```
+
+---
+
+## Part 1: Seeing the Types (5 pts)
+
+### Question 1 (2 points)
+
+Graph each function in Desmos near the given point and classify the discontinuity (removable, jump,
+infinite or essential). Say which part of the three-part definition fails.
 
 | | Function | Point |
 |---|---|---|
 | 1A | $\dfrac{x^2-1}{x-1}$ | $x=1$ |
 | 1B | $\dfrac1x$ | $x=0$ |
-| 1C | $f(x)=x$ for $x<0$, $x+1$ for $x\ge0$ | $x=0$ |
-| 1D | $\sin(1/x)$ | $x=0$ |
+| 1C | $f(x)=x$ for $x<0$, $x+1$ for $x\ge0$ (type `y = x {x < 0}` and `y = x + 1 {x >= 0}`) | $x=0$ |
 
-For 1D, evaluate at $x=\dfrac{1}{k\pi/2}$ for $k=1,3,5,7,9,11$ and record what you see. *(1.5 pts each)*
+### Question 2 (3 points)
 
----
+For $\sin(1/x)$ at $x = 0$, evaluate at $x=\dfrac{2}{k\pi}$ for $k=1,3,5,7,9,11$:
 
-## Part 2: Repairing a Discontinuity (4 pts)
+```python
+for k in [1, 3, 5, 7, 9, 11]:
+    x = 2 / (k * math.pi)
+    print(x, math.sin(1 / x))
+```
 
-**2A.** For $f(x)=\dfrac{x^3-8}{x-2}$, tabulate values near $x=2$ and conjecture the limit. *(1 pt)*
-
-**2B.** Factor and confirm your conjecture algebraically. *(1 pt)*
-
-**2C.** Write the continuous extension explicitly. *(1 pt)*
-
-**2D.** Explain why the cancellation $\dfrac{(x-2)q(x)}{x-2}=q(x)$ is legitimate inside a limit even
-though it is invalid at $x=2$. *(1 pt)*
+Record the table. What happens to $x$, what happens to $\sin(1/x)$, and what type of discontinuity is this?
 
 ---
 
-## Part 3: Bisection (7 pts)
+## Part 2: Repairing a Discontinuity (5 pts)
 
-**3A.** Implement bisection for $f(x)=x^3-x-2$ on $[1,2]$. Print the bracket, midpoint and
-$f(\text{mid})$ at each step. Run 8 steps. *(3 pts)*
+### Question 3 (2 points)
 
-**3B.** Verify your step 1–4 output against the problem set's table. *(1 pt)*
+For $f(x)=\dfrac{x^3-8}{x-2}$, adapt the `for` loop above to tabulate values at
+$x = 1.9, 1.99, 1.999, 2.001, 2.01, 2.1$, and conjecture the limit as $x \to 2$.
 
-**3C.** Run to convergence and report the root to 12 decimal places, together with $f$ at that root.
-*(1 pt)*
+### Question 4 (3 points)
 
-**3D.** Modify the code to take a tolerance and report the number of steps used. Check it against
-$n\ge\log_2\!\big((b-a)/\varepsilon\big)$ for $\varepsilon=10^{-4},10^{-6},10^{-10}$. *(2 pts)*
+Factor $x^3 - 8$ to confirm your conjecture, and write the continuous extension of $f$ explicitly. Then
+explain why cancelling $x - 2$ is legitimate inside the limit even though it is invalid at $x=2$.
 
 ---
 
-## Part 4: The IVT Over the Rationals (3 pts)
+## Part 3: Bisection in Code (10 pts)
 
-**4A.** Run your bisection on $f(x)=x^2-2$ over $[1,2]$, printing each midpoint as an exact fraction
-**by hand** for the first five steps (3/2, 5/4, …), then with Python to 15 decimal places. *(1 pt)*
+Lecture 03 §4 describes bisection. Here you run it on $f(x) = x^3 - 2x - 5$ over $[2, 3]$, a different
+function from the problem set's.
 
-**4B.** Every midpoint is rational, and the brackets shrink toward $\sqrt2$. Explain in three
-sentences what this demonstrates about the IVT over $\mathbb{Q}$ versus over $\mathbb{R}$. *(2 pts)*
+### Question 5 (4 points)
+
+Copy this program, fill in the blank, and run it. It performs 8 bisection steps.
+
+```python
+a = 2.0
+b = 3.0
+step = 0
+while step < 8:
+    m = (a + b) / 2
+    fa = a**3 - 2*a - 5
+    fm = m**3 - 2*m - 5
+    print(step + 1, a, b, m, fm)
+    if ________________:        # the root is in [a, m] when ...
+        b = m
+    else:
+        a = m
+    step = step + 1
+```
+
+Explain your condition using the IVT, and record the eight lines of output.
+
+### Question 6 (3 points)
+
+Change the loop so it runs `while b - a > 1e-6` instead of 8 times, keeping the `step` counter. Report
+the root (the final midpoint) to 6 decimal places and the number of steps it took.
+
+### Question 7 (3 points)
+
+Lecture 03 says bisection on an interval of width 1 needs $n \geq \log_2(1/\varepsilon)$ steps. Run your
+Question 6 program with tolerances `1e-4`, `1e-6` and `1e-10`. Do the step counts match the formula?
 
 ---
 
 ## Deliverables
 
-Your tables, code, output, and written answers to 1D, 2D and 4B.
+Your tables, program, output, and written answers to Questions 1–7.
 
 ## Grading
 
 | Part | Points |
 |---|---|
-| 1 — four types classified with evidence | 6 |
-| 2 — repair, with the cancellation justified | 4 |
-| 3 — working bisection, verified, with step counts | 7 |
-| 4 — the rationals experiment and its interpretation | 3 |
+| 1 — types classified with evidence | 5 |
+| 2 — repair, with the cancellation justified | 5 |
+| 3 — working bisection, with step counts checked | 10 |
 | **Total** | **20** |
+
+---
+
+*Revised 2026-09-26: the lab now uses only Week 0–2 Python (the bisection is a `while` loop with no
+function definitions, which are CS 101 Week 3). It was cut from 16 items to 7 questions: the four
+hand-made tables are now one Desmos question and one loop, and Part 4 (the IVT over the rationals) is
+covered by Problem Set 2, Problem 8. The bisection function differs from the problem set's, so the lab
+no longer repeats it.*
 
 ---
 
