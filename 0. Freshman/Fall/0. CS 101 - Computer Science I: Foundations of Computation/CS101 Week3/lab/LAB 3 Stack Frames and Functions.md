@@ -34,7 +34,11 @@ Keep it open in a browser tab throughout the lab. Every exercise says "Python Tu
 
 ---
 
-## Part 1: Stack Frame Visualization (35 minutes)
+## Part 1: Stack Frame Visualization (20 minutes)
+
+*(Revised 2026-09-26: Part 3 asked for seven documented, tested functions in 35 minutes. `shortest_word`
+and `is_pangram` were removed and Part 3 given 45 minutes; Part 1 lost the LEGB and global-vs-local
+exercises, which Problem Set 3 A2 covers. Numbering is unchanged, so Part 1 runs 1.1, 1.3, 1.5.)*
 
 For each exercise: paste the code into Python Tutor, step through it **completely**, then answer the questions in `LAB 3 Stack Frames and Functions.md`.
 
@@ -63,31 +67,6 @@ Step through every line in Python Tutor. At the moment `square(3)` is executing,
 4. Does `x` in `square(3)` interfere with anything in `sum_of_squares`?
 5. After `sum_of_squares` returns, what happens to `sq_a` and `sq_b`?
 
-### Exercise 1.2: The LEGB Rule in Action
-
-```python
-x = "global"
-
-def outer():
-    x = "outer"
-
-    def inner():
-        print(x)   # Which x?
-
-    inner()
-    print(x)       # Which x?
-
-outer()
-print(x)           # Which x?
-```
-
-Before running: **predict each `print` output.** Then step through Python Tutor.
-
-**Answer:**
-1. What does each `print` output and why?
-2. At the moment `inner()` is executing, how many frames are on the stack?
-3. Modify the code so `inner()` prints `"global"` instead of `"outer"`. What changes?
-
 ### Exercise 1.3: The Mutable Default Trap
 
 ```python
@@ -108,29 +87,6 @@ Step through in Python Tutor. Watch what happens to the default list object acro
 2. At what point in execution is the default `[]` created?
 3. How many times is the default `[]` created total?
 4. Rewrite `add_item` correctly (using `None` as default). Paste the corrected version.
-
-### Exercise 1.4: Global vs. Local
-
-```python
-total = 0
-
-def add_to_total(n):
-    total = total + n   # Is this the global total or a new local?
-    return total
-
-add_to_total(5)
-```
-
-**Before running:** predict what happens.
-
-Then run it and observe the `UnboundLocalError`.
-
-**Answer:**
-1. Why does `UnboundLocalError` occur here? Explain precisely using what you know about how Python determines scope.
-2. Write two corrected versions:
-   - Version A: use `global total`
-   - Version B: remove the global, take `total` as a parameter and return the new total
-3. Which version is better design and why?
 
 ### Exercise 1.5: Return Values vs. Print
 
@@ -222,7 +178,7 @@ def analyze(data):
 
 ---
 
-## Part 3: Function Design Workshop (35 minutes)
+## Part 3: Function Design Workshop (45 minutes)
 
 Design and implement a complete, well-decomposed program. This is the main exercise.
 
@@ -237,8 +193,6 @@ word_count(text)        → int
 sentence_count(text)    → int
 average_word_length(text) → float
 longest_word(text)      → str
-shortest_word(text)     → str
-is_pangram(text)        → bool
 reading_level(text)     → str  # "Elementary", "Middle", "High School", or "College"
 ```
 
@@ -355,32 +309,6 @@ def longest_word(text):
     pass
 
 
-def shortest_word(text):
-    """
-    Return the shortest word in text (first one if there's a tie).
-    Return "" if text has no words.
-
-    >>> shortest_word("the quick brown fox")
-    'the'
-    """
-    # TODO
-    pass
-
-
-def is_pangram(text):
-    """
-    Return True if text contains every letter a-z at least once.
-    Case-insensitive.
-
-    >>> is_pangram("The quick brown fox jumps over the lazy dog")
-    True
-    >>> is_pangram("Hello world")
-    False
-    """
-    # TODO
-    pass
-
-
 def reading_level(text):
     """
     Estimate reading level based on average words per sentence.
@@ -412,8 +340,6 @@ def display_report(text):
     print(f"  Sentence count:      {sentence_count(text)}")
     print(f"  Avg word length:     {average_word_length(text):.2f}")
     print(f"  Longest word:        {longest_word(text)}")
-    print(f"  Shortest word:       {shortest_word(text)}")
-    print(f"  Is pangram:          {is_pangram(text)}")
     print(f"  Reading level:       {reading_level(text)}")
     print("=" * 50)
 
@@ -441,16 +367,6 @@ def run_tests():
     assert longest_word("the quick brown fox") == "quick"
     assert longest_word("") == ""
     print("✓ longest_word")
-
-    # shortest_word
-    assert shortest_word("the quick brown fox") == "the"
-    assert shortest_word("") == ""
-    print("✓ shortest_word")
-
-    # is_pangram
-    assert is_pangram("The quick brown fox jumps over the lazy dog") == True
-    assert is_pangram("Hello world") == False
-    print("✓ is_pangram")
 
     # reading_level
     assert reading_level("I am. You are. He is.") == "Elementary"
@@ -566,11 +482,9 @@ git push
 
 **Q1.** In Exercise 1.3 (mutable default trap), the bug occurs because the default `[]` is evaluated once at function definition time. Why does Python work this way? (Hint: think about what `def` actually does — it's a statement that creates a function object. When is that statement executed?)
 
-**Q2.** In Exercise 1.4, you wrote two corrected versions of `add_to_total` — one using `global`, one using a parameter. For what kind of situation might the `global` version actually be appropriate? For what kind of situation is the parameter version strictly better?
+**Q2.** In the `text_statistics.py` design, `display_report` is the only function that prints. Why is this a good design principle? What would be harder if every function printed its own output?
 
-**Q3.** In the `text_statistics.py` design, `display_report` is the only function that prints. Why is this a good design principle? What would be harder if every function printed its own output?
-
-**Q4.** You implemented `factorial` recursively and previously implemented it with a `while` loop. Both are correct. What is one situation where the recursive version is *preferable*? What is one situation where the iterative version is preferable?
+**Q3.** You implemented `factorial` recursively and previously implemented it with a `while` loop. Both are correct. What is one situation where the recursive version is *preferable*? What is one situation where the iterative version is preferable?
 
 ---
 
@@ -578,7 +492,7 @@ git push
 
 | Part | Points | Show your TA |
 |---|---|---|
-| 1 | 30 | Python Tutor answers for Exercises 1.1–1.5 (6 each) |
+| 1 | 30 | Python Tutor answers for Exercises 1.1, 1.3 and 1.5 (10 each) |
 | 2 | 20 | All 4 cases in `scope_bugs.py` explained; the 3 bugs fixed (5 each) |
 | 3 | 35 | `text_statistics.py`: every function implemented, `run_tests()` passes, report prints |
 | 4 | 15 | `recursion_intro.py`: `power` and `sum_digits` pass their tests |

@@ -5,6 +5,10 @@
 
 ---
 
+*(Revised 2026-09-26: the lab no longer asks Exercises 1.2 and 1.4, `shortest_word`, `is_pangram`, or the
+old reflection Q2. Their answers below can be ignored; the reference solution still passes the reduced
+tests.)*
+
 ## Part 1, Exercise 1.1 — The Fundamental Call Stack
 
 1. **Three frames** while `square(3)` runs.
