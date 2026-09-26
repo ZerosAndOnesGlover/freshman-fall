@@ -2,6 +2,9 @@
 ## LAB 1 Solutions: INSTRUCTOR ONLY
 
 > Lab sat Tuesday 6 October 2026. **All code below was executed and all stated outputs are real.**
+>
+> *Revised 2026-09-26: the lab now asks a subset of the Part 2 predictions and no reflection Q3. Answers
+> below that the lab no longer asks can be ignored.*
 
 ---
 

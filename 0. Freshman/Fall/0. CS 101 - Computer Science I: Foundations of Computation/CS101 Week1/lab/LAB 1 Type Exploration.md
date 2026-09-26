@@ -18,6 +18,9 @@ By the end of this lab, you will:
 **Tools used:** only Weeks 0–1 — expressions, `input()`, conversions, `try`/`except ValueError`,
 slicing, f-strings, `math`. No `if` statements, loops or `def` are needed; they begin in Week 2.
 
+*(Revised 2026-09-26: the parts added up to 120 minutes for a 110-minute session. Part 2 is cut from
+about 36 predictions to 14, and reflection Q3 was removed.)*
+
 ---
 
 ## Setup
@@ -86,7 +89,7 @@ print(b)
 
 ---
 
-## Part 2: Predict, Then Run (35 minutes) — 30 points
+## Part 2: Predict, Then Run (25 minutes) — 30 points
 
 For each file: **write your prediction as a comment first**, then run it. In `lab1_notes.md`, write one
 sentence for every prediction you got wrong.
@@ -94,42 +97,23 @@ sentence for every prediction you got wrong.
 ### Exercise 2.1: Conversions and Truthiness — `type_experiments.py`
 
 ```python
-import math
-
-print(int(3.9))          # Predict:
 print(int(-3.9))         # Predict:
-print(int(True))         # Predict:
 print(int("  42  "))     # Predict: (note the spaces)
-
 print(round(2.5), round(3.5), round(-2.5))       # Predict:
-print(math.floor(-2.5), math.ceil(-2.5), int(-2.5))  # Predict:
-
 print(bool("False"))     # Predict:
 print(bool("0"))         # Predict:
 print(bool([False]))     # Predict:
-print(bool(0.0000001))   # Predict:
-print(bool(""))          # Predict:
-print(bool(None))        # Predict:
-
-print(isinstance(True, int))   # Predict:
-print(isinstance(42, bool))    # Predict:
-print(True == 1)               # Predict:
 print(True + True + True)      # Predict:
 ```
 
 ### Exercise 2.2: Precedence Gauntlet — `precedence_test.py`
 
 ```python
-print(2 + 3 * 4)            # Predict:
 print(2 ** 3 ** 2)          # Predict: (right-associative!)
 print(-2 ** 2)              # Predict: (is it (-2)**2 or -(2**2)?)
-print(10 // 3 + 10 % 3)     # Predict:
-print(1 < 2 < 3)            # Predict:
 print(1 < 2 > 3)            # Predict: (chained comparison)
 print(not True or False)    # Predict:
-print(not (True or False))  # Predict:
 print(1 and 2 and 3)        # Predict: (not just True/False!)
-print(0 and 2 and 3)        # Predict:
 print(0 or "" or [] or 42)  # Predict:
 print(0 or "" or [])        # Predict:
 ```
@@ -223,7 +207,7 @@ abc    -> 'abc' is not a number.
 
 ---
 
-## Part 5: Commit and Reflection (10 minutes)
+## Part 5: Commit and Reflection (5 minutes)
 
 ```bash
 cd "$CS101/week1"
@@ -237,8 +221,6 @@ In `lab1_notes.md`, answer each in 2–3 sentences:
 **Q1.** Why did changing `y` affect `x`, but changing `b` did not affect `a`?
 
 **Q2.** Python refuses `"5" + 3` but accepts `1 + 1.0`. Is that a contradiction?
-
-**Q3.** Give one example where short-circuit evaluation prevents a runtime error (L05 §4).
 
 ---
 
