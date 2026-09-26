@@ -3,7 +3,9 @@
 ### Riemann Sums, Convergence, and Sample-Point Independence
 
 **Date:** Friday 20 November 2026 · 15:00–16:50 · Lab Section (Week 8) — covers Week 8 (Lectures 01–03)  
-**Duration:** 2 hours | **Tools:** Desmos, Python
+**Duration:** 2 hours | **Tools:** Python using CS 101 Weeks 0–3 (`def`, `for`, `range`, `if`/`elif`, `math`),
+plus one call from the `random` module explained below
+**Expected time:** the session itself (6 questions), plus at most 30 minutes to tidy your answers
 **Submission:** Written report due Monday 23 November 2026, 17:00 (Week 9)
 **Total: 100 points**
 
@@ -11,158 +13,110 @@
 > here comes from a Riemann-sum limit or from geometry, because the point of this lab is to see what
 > the definite integral *is* before you learn the shortcut for computing it.
 
+> *Revised 2026-09-26:* cut from four parts and 25 questions to 6 questions. The hand derivations of $L_n$
+> and $M_n$, the bounding part (Problem Set 8, Problem 5 does it) and the adaptive-integrator pseudocode
+> were removed. The Desmos rectangle sketch is now a hand sketch: Desmos has no simple way to draw
+> Riemann rectangles.
+
 ---
 
 ## Lab Objectives
 
-1. Visualise Riemann sums as rectangles and watch them converge
-2. Compare the convergence rates of left, right, and midpoint sums numerically
-3. Establish experimentally that the limit does not depend on the sample points
-4. Use the comparison property to bracket an integral you cannot evaluate
-5. Build a numerical integrator and measure its accuracy against its cost
+1. See Riemann sums converge, and measure how fast
+2. Establish experimentally that the limit does not depend on the sample points
+3. Use a numerical integrator on a function with no elementary antiderivative
 
 ---
 
-## Part 1 — Watching Riemann Sums Converge (25 pts)
+## Part 1 — Watching Riemann Sums Converge (30 min)
 
-### Exercise 1.1 — Visualising Rectangles
+For $f(x) = x^2$ on $[0,1]$, whose exact area is $\tfrac13$ (Monday's lecture), the right-endpoint sum is
+$R_n = \dfrac{(n+1)(2n+1)}{6n^2}$.
 
-For $f(x) = x^2$ on $[0,1]$, whose exact area is $\tfrac13$ (derived in Monday's lecture).
+### Question 1 (15 points)
 
-**1a.** *(3)* Sketch the right-endpoint rectangles for $n=4$ and shade the region. Does the
-approximation overestimate or underestimate? Justify from the fact that $f$ is increasing.
+Sketch $y = x^2$ on $[0, 1]$ by hand, with the four right-endpoint rectangles for $n = 4$. Does $R_4$
+overestimate or underestimate the area? Justify it from the fact that $f$ is increasing.
 
-**1b.** *(2)* Increase to $n=10$, then $n=50$. Describe how the fit improves.
+### Question 2 (15 points)
 
-**1c.** *(6)* Complete the table using $R_n = \dfrac{(n+1)(2n+1)}{6n^2}$:
-
-| $n$ | $R_n$ | Error ($R_n - 1/3$) |
-|-----|-------|---------------------|
-| 4 | | |
-| 10 | | |
-| 50 | | |
-| 100 | | |
-| 1000 | | |
-
-**1d.** *(4)* As $n$ **doubles**, by what factor does the error fall? What order of convergence does
-that indicate? Compare with the forward-vs-central difference finding from Lab 3.
+Use a `for` loop over `[4, 10, 100, 1000]` to print $n$, $R_n$ and the error $R_n - \tfrac13$. When $n$ is
+multiplied by 10, by what factor does the error fall? Compare it with the forward and central differences
+of Lab 03: which one does $R_n$ resemble?
 
 ---
 
-### Exercise 1.2 — Comparing Left, Right, and Midpoint
+## Part 2 — Sample-Point Independence (45 min)
 
-**1e.** *(3)* Derive the closed form for $L_n$ on this same function and interval.
-*(It differs from $R_n$ in one predictable way.)*
+The definition of $\int_a^b f$ allows the sample point $x_i^*$ to be **anywhere** in its subinterval. This
+part tests that claim.
 
-**1f.** *(4)* Derive the closed form for $M_n$. The midpoints are
-$\bar x_i = \dfrac{2i-1}{2n}$, and you will need $\sum_{i=1}^{n}(2i-1)^2 = \dfrac{n(4n^2-1)}{3}$.
+**One new call.** `random.uniform(lo, hi)` returns a random number between `lo` and `hi`. Put
+`import random` at the top of the file. (CS 101 Lecture 17 used `random.randint` the same way to build test
+data.)
 
-**1g.** *(3)* Complete the comparison at $n=10$:
+### Question 3 (15 points)
 
-| Method | Value | Error |
-|--------|-------|-------|
-| $L_{10}$ | | |
-| $R_{10}$ | | |
-| $M_{10}$ | | |
-
----
-
-## Part 2 — Sample-Point Independence (25 pts)
-
-The definition of $\int_a^b f$ allows the sample point $x_i^*$ to be **anywhere** in its subinterval.
-This part tests that claim experimentally.
-
-**2a.** *(6)* Write a function `riemann(f, a, b, n, rule)` where `rule` selects `"left"`, `"right"`,
-`"mid"`, or `"random"` (a uniformly random point in each subinterval).
-
-**2b.** *(6)* For $f(x)=x^2$ on $[0,1]$, tabulate all four rules at $n = 10, 100, 10^4, 10^6$.
-Run the random rule three times at each $n$ and report all three values.
-
-**2c.** *(5)* At $n=10$ the four rules disagree substantially. At $n=10^6$ they agree to how many
-decimal places? State the number.
-
-**2d.** *(4)* The random rule gives a *different* answer every run. Does it still converge? What
-does your table show happening to the spread between runs as $n$ grows?
-
-**2e.** *(4)* Explain what your data demonstrates about the **definition** of the definite integral —
-specifically, why the definition would be broken if these four sequences had different limits.
-
----
-
-## Part 3 — Bounding an Integral You Cannot Evaluate (20 pts)
-
-Consider $\displaystyle\int_0^2 \frac{dx}{1+x^3}$, which has no elementary antiderivative you can
-write down at this stage.
-
-**3a.** *(4)* Find the maximum and minimum of the integrand on $[0,2]$, showing that it is monotone
-there. Apply the comparison property to bracket the integral.
-
-**3b.** *(5)* Use your `riemann` function with $n=10^6$ to estimate the true value. Where does it sit
-inside your bracket?
-
-**3c.** *(6)* Split $[0,2]$ into 2, then 4, then 8 equal subintervals, and apply the comparison
-property **on each piece separately**, summing the bounds. Tabulate how the bracket width shrinks.
-
-**3d.** *(5)* Your Part 3c procedure is doing something you have already seen. Identify it, and
-explain the connection in three sentences.
-
----
-
-## Part 4 — Building a Numerical Integrator (25 pts)
-
-### Exercise 4.1 — Midpoint Rule
+Complete this function. `rule` is one of `"left"`, `"right"`, `"mid"` or `"random"`.
 
 ```python
-def midpoint_rule(f, a, b, n):
-    """Approximate the integral of f from a to b with n midpoint rectangles."""
-    delta_x = (b - a) / n
+def riemann(f, a, b, n, rule):
+    dx = (b - a) / n
     total = 0.0
     for i in range(n):
-        midpoint = a + (i + 0.5) * delta_x
-        total += f(midpoint) * delta_x
+        left = a + i * dx
+        if rule == "left":
+            x = left
+        elif rule == "right":
+            x = ____________
+        elif rule == "mid":
+            x = ____________
+        else:
+            x = random.uniform(left, left + dx)
+        total = total + f(x) * dx
     return total
 ```
 
-**4a.** *(4)* Trace this by hand for $f(x)=x^2$, $a=0$, $b=1$, $n=2$. Check against your $M_n$ formula
-from 1f.
+Check it: `riemann(f, 0, 1, 1000, "right")` must equal your $R_{1000}$ from Question 2.
 
-**4b.** *(5)* Run it for $f(x) = e^{-x^2}$ on $[-2,2]$ with $n=1000$. The true value is
-approximately $1.7642$ — report your error.
+### Question 4 (15 points)
 
-**4c.** *(6)* Tabulate the error for $n = 10, 10^2, 10^3, 10^4, 10^5$. Confirm the $O(1/n^2)$ rate
-you found in Part 1, and note the $n$ beyond which floating-point noise stops the improvement.
+For $f(x)=x^2$ on $[0,1]$, tabulate all four rules at $n = 10$, $100$ and $10{,}000$. Run the random rule
+twice at each $n$. Which fixed rule is most accurate? How far apart are the four rules at $n = 10$, and at
+$n = 10{,}000$?
 
-**4d.** *(5)* Write pseudocode for an **adaptive** version: double $n$ until consecutive estimates
-differ by less than a tolerance $\varepsilon$. What goes wrong if $\varepsilon$ is set below the
-noise floor you found in 4c?
+### Question 5 (15 points)
 
-**4e.** *(5)* $e^{-x^2}$ has no elementary antiderivative, so no amount of Week 9 technique will give
-you an exact answer for 4b. Discuss what that means for the relationship between the exact and the
-numerical approach — and which problems each one owns.
+The random rule gives a different answer each run. Does it still converge? Explain what your table shows
+about the **definition** of the definite integral, and why the definition would be broken if the four
+rules had different limits.
+
+---
+
+## Part 3 — An Integral You Cannot Do by Hand (25 min)
+
+### Question 6 (25 points)
+
+$e^{-x^2}$ has no elementary antiderivative, so even the Week 9 techniques cannot give $\int_{-2}^{2} e^{-x^2}dx$
+exactly. Its value is $1.764162781524843$ to 16 digits. Use `riemann` with the midpoint rule
+(`math.exp(-x**2)`) at $n = 10$, $100$ and $1000$, and tabulate the errors. How does the error shrink as $n$
+grows by 10? What does this say about which problems belong to exact methods and which to numerical ones?
 
 ---
 
 ## Lab Report Requirements
 
-1. All completed tables (Parts 1–4)
-2. A Desmos screenshot of the rectangles from 1a
-3. Your `riemann` implementation and its output
-4. Answers to all written questions
-
-**Reflection (5 pts, 6–8 sentences):** Before this lab the definite integral may have felt like a
-definition to memorise. After watching four different sampling rules converge to the same number,
-what do you now think the definition is actually asserting? Where would you reach for a numerical
-integrator in practice, and where would you not?
+1. The Question 1 sketch and the tables from Questions 2, 4 and 6
+2. Your `riemann` implementation and its output
+3. Answers to Questions 1–6
 
 **Grading:**
 
 | Section | Points |
 |---------|--------|
-| Part 1 — Riemann sum convergence | 25 |
-| Part 2 — Sample-point independence | 25 |
-| Part 3 — Bounding by comparison | 20 |
-| Part 4 — Numerical integrator | 25 |
-| Reflection | 5 |
+| Part 1 — Riemann sum convergence | 30 |
+| Part 2 — Sample-point independence | 45 |
+| Part 3 — A numerical integral | 25 |
 | **Total** | **100** |
 
 ---
