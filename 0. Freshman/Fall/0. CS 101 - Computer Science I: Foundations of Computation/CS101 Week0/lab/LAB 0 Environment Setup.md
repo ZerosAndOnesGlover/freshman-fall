@@ -18,6 +18,9 @@ By the end of this lab, you will have:
 - [ ] Successfully experimented with the REPL
 - [ ] Completed 3 warm-up exercises
 
+*(Revised 2026-09-26: the calculator used `if`/`else`, which is CS 101 Week 2, and the REPL list used
+`round()`, which is Week 1 (Lecture 04). Everything here now uses Week 0 only: Lectures 01–03.)*
+
 If you get stuck on any step, raise your hand. The TA will help. Everyone hits installation problems, it is normal and expected.
 
 ---
@@ -212,7 +215,6 @@ type(None)
 # Float behavior
 0.1 + 0.2          # Notice anything?
 0.1 + 0.2 == 0.3   # What do you expect?
-round(0.1 + 0.2, 10)
 
 # String operations
 "hello" + " " + "world"
@@ -313,21 +315,17 @@ print(f"  Sum:          {a} + {b} = {a + b}")
 print(f"  Difference:   {a} - {b} = {a - b}")
 print(f"  Product:      {a} × {b} = {a * b}")
 
-# Division: handle division by zero
-if b != 0:
-    print(f"  Quotient:     {a} / {b} = {a / b:.6f}")
-    print(f"  Floor div:    {a} // {b} = {a // b}")
-    print(f"  Remainder:    {a} % {b} = {a % b}")
-else:
-    print("  Division by zero is undefined.")
-
 print(f"  Power:        {a} ** {b} = {a ** b}")
+print(f"  Quotient:     {a} / {b} = {a / b:.6f}")
+print(f"  Floor div:    {a} // {b} = {a // b}")
+print(f"  Remainder:    {a} % {b} = {a % b}")
 ```
 
 **Task:** Run this with several inputs:
 - `a=17, b=5`; what are the floor division and remainder results?
 - `a=0, b=5`; what happens?
-- `a=5, b=0`; does it handle this gracefully?
+- `a=5, b=0`; what happens? Copy the last line Python prints. (The program stops with an error, because
+  it divides by zero. CS 101 Week 2 teaches `if`, which lets a program check `b` before dividing.)
 - `a=-7, b=3`; does modulo behave as you expect?
 
 ---

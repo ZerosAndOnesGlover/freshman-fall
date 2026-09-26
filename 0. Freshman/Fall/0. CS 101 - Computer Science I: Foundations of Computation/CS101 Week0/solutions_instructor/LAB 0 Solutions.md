@@ -87,7 +87,7 @@ float addition is **not associative** — the two differ in the last bits.
 |---|---|
 | `a=17, b=5` | `Floor div: 3.0`, `Remainder: 2.0` — both **floats**, because `a` and `b` came from `float(input(...))`. `17.0 // 5.0` is `3.0`, not `3`. |
 | `a=0, b=5` | Everything works. `0/5 = 0.000000`, `0 // 5 = 0.0`, `0 % 5 = 0.0`, `0 ** 5 = 0.0`. No special case needed. |
-| `a=5, b=0` | The guard fires and prints "Division by zero is undefined." **But `5.0 ** 0.0` still evaluates, to `1.0`** — the power line sits outside the `if`, so it runs regardless. That is correct mathematically and worth pointing out: the guard protects three operations, not four. |
+| `a=5, b=0` | Sum, difference, product and power print (`5.0 ** 0.0` is `1.0`), then the quotient line stops the program with `ZeroDivisionError: float division by zero`. The student should copy that last line. *(Revised 2026-09-26: the program no longer has an `if` guard, since conditionals are Week 2.)* |
 | `a=-7, b=3` | `Floor div: -3.0` and `Remainder: 2.0`. Students who expected `-2` and `-1` (the C answer) have met Python's flooring modulo. |
 
 **The `a=-7, b=3` case is the one to discuss at checkoff.** `-7 // 3` is `-3` because floor division

@@ -23,9 +23,8 @@ print(f"\nResults for {a} and {b}:")
 # print(f"  Difference:   {a} - {b} = {???}")
 # print(f"  Product:      {a} × {b} = {???}")
 
-# TODO: Handle division — check if b is 0 first
-#       If b != 0: print quotient, floor division, remainder
-#       If b == 0: print "Division by zero is undefined."
+# TODO: Print the quotient (a / b), the floor division (a // b) and the remainder (a % b)
+#       (Try b = 0 afterwards and note what happens. Checking for it needs `if`, from Week 2.)
 
 
 # TODO: Print the power: a raised to the power b
