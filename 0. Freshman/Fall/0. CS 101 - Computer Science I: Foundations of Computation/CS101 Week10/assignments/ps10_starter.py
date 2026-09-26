@@ -55,7 +55,7 @@ def read_config(path):
     raise NotImplementedError
 
 
-# ─────────────────────────── B3: atomic write ────────────────────────────────
+# ─────────────────────── from Lab 10: paste your atomic_write ─────────────────
 
 def atomic_write(path, data, encoding="utf-8"):
     """Write data to path so path is never left partially written.
@@ -63,11 +63,11 @@ def atomic_write(path, data, encoding="utf-8"):
     Requirements: temp file in the TARGET's directory; fsync before rename;
     os.replace (not os.rename); cleanup under BaseException.
     """
-    # TODO
+    # TODO: paste your Lab 10 version
     raise NotImplementedError
 
 
-# ─────────────────────────── B4: defensive CSV ───────────────────────────────
+# ─────────────────────── from Lab 10: paste your load_records ──────────────── ───────────────────────────────
 
 def load_records(path):
     """Return (good, bad).
@@ -83,7 +83,7 @@ def load_records(path):
     raise NotImplementedError
 
 
-# ─────────────────────────── B5: writing and summarising ─────────────────────
+# ─────────────────────────── B3: writing and summarising ─────────────────────
 
 def save_records(path, records):
     """Write records to CSV with a header, atomically, with correct quoting."""
