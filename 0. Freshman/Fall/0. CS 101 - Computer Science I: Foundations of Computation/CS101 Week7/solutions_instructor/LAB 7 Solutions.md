@@ -109,6 +109,9 @@ constants. That is the point: same complexity class, 17× different cost.
 
 ---
 
+*(Revised 2026-09-26: Parts 4 and 5 are no longer in the lab. Their notes below can be ignored; checkoff is
+now Part 1 20, Part 2 45, Part 3 35.)*
+
 ## Part 4 — Operation Benchmarks
 
 | Operation | Ops | Time |

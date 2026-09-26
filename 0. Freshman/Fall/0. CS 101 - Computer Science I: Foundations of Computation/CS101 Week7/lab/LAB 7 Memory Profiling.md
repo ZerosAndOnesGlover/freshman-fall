@@ -14,11 +14,8 @@ own modules is not something this course has taught.
 
 By the end of this lab, you will:
 - [ ] Measure actual memory usage of Python lists vs. hand-rolled linked lists
-- [ ] Empirically verify the O(1) vs O(n) complexity claims from Wednesday/Thursday's lectures
 - [ ] Implement a complete singly linked list, doubly linked list, stack, and queue
 - [ ] Use `sys.getsizeof()` to measure memory
-- [ ] Benchmark front/back/random-access operations across all structures
-- [ ] Build and test a bracket-matching stack application
 
 ---
 
@@ -30,6 +27,10 @@ mkdir -p week7 && cd week7
 ```
 
 ---
+
+*(Revised 2026-09-26: the parts added up to about 155 minutes. Part 4 (benchmarking — Problem Set 7 B4
+times queues) and Part 5 (bracket matching, which Lecture 24 works, and the undo/redo editor) were
+removed, with the reflection questions about them. Part numbers are unchanged.)*
 
 ## Part 1: Memory Profiling Basics (25 minutes)
 
@@ -400,176 +401,6 @@ Run it: `python3 data_structures.py`
 
 ---
 
-## Part 4: Benchmarking Operation Complexity (30 minutes)
-
-Add this section to the **bottom** of `data_structures.py` (it replaces a separate `benchmark_operations.py`):
-
-```python
-#!/usr/bin/env python3
-"""
-benchmark_operations.py
-CS 101 — Week 7, Lab 7
-
-Empirically verify the complexity claims:
-  - Python list: O(1) append/pop-end, O(n) insert(0)/pop(0)
-  - LinkedList:  O(1) prepend/append (with tail), O(n) get(i) for large i
-"""
-
-import timeit
-
-
-def time_op(func, repeats=100):
-    """Average time of a zero-argument callable over `repeats` runs, using timeit as L24 does."""
-    return timeit.timeit(func, number=repeats) / repeats
-
-
-print("=" * 70)
-print("PART A: Python list — front vs. back operations")
-print("=" * 70)
-print(f"{'n':>10} {'append (μs)':>15} {'insert(0,x) (μs)':>18} {'ratio':>8}")
-
-for n in [1000, 10000, 100000]:
-    base = list(range(n))
-
-    # Use fresh copies to avoid growing unboundedly across iterations:
-    def do_append():
-        base.append(0)
-        base.pop()   # undo, so list size stays constant across repeats
-    def do_insert():
-        base.insert(0, 0)
-        base.pop(0)  # undo
-
-    t_append = time_op(do_append) * 1e6
-    t_insert = time_op(do_insert) * 1e6
-
-    print(f"{n:10} {t_append:15.3f} {t_insert:18.3f} {t_insert/t_append:8.1f}x")
-
-
-print("\n" + "=" * 70)
-print("PART B: LinkedList — get(0) vs. get(n-1)")
-print("=" * 70)
-print(f"{'n':>10} {'get(0) (μs)':>15} {'get(n-1) (μs)':>18} {'ratio':>8}")
-
-for n in [1000, 5000, 20000]:
-    ll = LinkedList()
-    for i in range(n):
-        ll.append(i)
-
-    t_get_first = time_op(lambda: ll.get(0)) * 1e6
-    t_get_last  = time_op(lambda: ll.get(n - 1)) * 1e6
-
-    print(f"{n:10} {t_get_first:15.3f} {t_get_last:18.3f} {t_get_last/t_get_first:8.1f}x")
-```
-
-Run it: `python3 data_structures.py`
-
-**Record in `LAB 7 Memory Profiling.md`:**
-1. For Part A, does the ratio (`insert(0,x)` time / `append` time) grow as n grows? Is this consistent with O(n) vs O(1)?
-2. For Part B, does the ratio (`get(n-1)` time / `get(0)` time) grow as n grows? Explain why `get(0)` stays fast while `get(n-1)` gets progressively slower.
-3. Extrapolate: if `insert(0,x)` on a list of 100,000 elements takes X microseconds, roughly how long would it take on 10,000,000 elements? (Use the O(n) relationship, not just guessing.)
-
----
-
-## Part 5: Application — Bracket Matching and Undo/Redo (15 minutes)
-
-Add this section to the **bottom** of `data_structures.py` (it replaces a separate `applications.py`):
-
-```python
-#!/usr/bin/env python3
-"""
-applications.py
-CS 101 — Week 7, Lab 7
-
-Real applications of Stack and Queue.
-"""
-
-
-
-def is_balanced(expression):
-    """
-    Return True if all brackets ()[]{}  are balanced and properly nested.
-    See Friday's lecture for the full algorithm description.
-    """
-    pairs = {')': '(', ']': '[', '}': '{'}
-    openers = set(pairs.values())
-    stack = Stack()
-
-    # TODO: implement using the Stack class above
-    pass
-
-
-assert is_balanced("(a + b) * [c - d]") == True
-assert is_balanced("(a + [b)")          == False
-assert is_balanced("((a)")              == False
-assert is_balanced("a)")                == False
-assert is_balanced("{[()()]}")          == True
-print("✓ is_balanced")
-
-
-class UndoRedoEditor:
-    """
-    A simple text editor with undo/redo, backed by two Stacks.
-
-    Design: every edit pushes the PREVIOUS state onto undo_stack.
-    Undo pops from undo_stack, pushes current state onto redo_stack.
-    Redo pops from redo_stack, pushes current state onto undo_stack.
-    Making a NEW edit after undoing clears the redo_stack (standard editor behavior).
-    """
-
-    def __init__(self):
-        self.text = ""
-        self.undo_stack = Stack()
-        self.redo_stack = Stack()
-
-    def type(self, new_text):
-        """Append new_text to the current text, recording history."""
-        self.undo_stack.push(self.text)
-        self.text += new_text
-        # TODO: clear the redo stack (a fresh Stack()) since we took a new action
-        pass
-
-    def undo(self):
-        """Revert to the previous state, if any."""
-        if self.undo_stack.is_empty():
-            return
-        # TODO: push current text to redo_stack, pop from undo_stack into self.text
-        pass
-
-    def redo(self):
-        """Reapply an undone state, if any."""
-        if self.redo_stack.is_empty():
-            return
-        # TODO: push current text to undo_stack, pop from redo_stack into self.text
-        pass
-
-
-editor = UndoRedoEditor()
-editor.type("Hello")
-editor.type(", World")
-editor.type("!")
-assert editor.text == "Hello, World!"
-
-editor.undo()
-assert editor.text == "Hello, World"
-
-editor.undo()
-assert editor.text == "Hello"
-
-editor.redo()
-assert editor.text == "Hello, World"
-
-editor.type("???")   # new edit after undo — should clear redo history
-assert editor.text == "Hello, World???"
-
-editor.redo()   # nothing to redo now
-assert editor.text == "Hello, World???"   # unchanged
-
-print("✓ UndoRedoEditor")
-print("\n🎉 All application tests passed!")
-```
-
----
-
 ## Part 6: Commit and Reflection (10 minutes)
 
 ```bash
@@ -583,11 +414,7 @@ git push
 
 **Q1.** Your memory measurements showed linked lists use more memory per element than Python lists. Given this, why would anyone ever choose a linked list over a Python list in real code? Name one specific, valid reason from this week's lectures.
 
-**Q2.** You measured that `list.insert(0, x)` gets progressively slower (relative to `append`) as the list grows. If you needed a queue that would hold millions of items with frequent enqueue/dequeue, would you use a Python list with `insert(0,x)`/`pop()`, a Python list with `append()`/`pop(0)`, or `collections.deque`? Justify using your empirical data.
-
-**Q3.** The `UndoRedoEditor` uses TWO stacks. Why not just one? What specific behavior would break if you tried to implement redo using only the undo_stack?
-
-**Q4.** In `measure_linked_list_memory`, we called `sys.getsizeof()` on the LinkedList object, each Node, AND each data value separately, then summed them. Why isn't `sys.getsizeof(ll)` alone (where `ll` is the LinkedList) sufficient to capture the true memory usage?
+**Q2.** In `measure_linked_list_memory`, we called `sys.getsizeof()` on the LinkedList object, each Node, AND each data value separately, then summed them. Why isn't `sys.getsizeof(ll)` alone (where `ll` is the LinkedList) sufficient to capture the true memory usage?
 
 ---
 
@@ -595,11 +422,9 @@ git push
 
 | Part | Points | Show your TA |
 |---|---|---|
-| 1 | 15 | `getsizeof` results and the two recorded answers |
-| 2 | 35 | All four classes implemented; `run_tests()` passes |
-| 3 | 15 | Memory table with the ratio analysis |
-| 4 | 15 | Both timing tables with the ratio analyses |
-| 5 | 20 | `is_balanced` and `UndoRedoEditor` pass their asserts |
+| 1 | 20 | `getsizeof` results and the two recorded answers |
+| 2 | 45 | All four classes implemented; `run_tests()` passes |
+| 3 | 35 | Memory table with the ratio analysis |
 | **Total** | **100** | Reflection answered and work committed (required) |
 
 ---
