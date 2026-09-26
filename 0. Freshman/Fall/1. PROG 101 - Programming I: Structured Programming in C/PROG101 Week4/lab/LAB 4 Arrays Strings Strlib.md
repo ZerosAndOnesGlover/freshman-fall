@@ -65,7 +65,9 @@ Write a loop that writes `a[i] = i` for `i` from 0 to 10 **inclusive** — delib
 
 ## Part 2: String Processing Library (10 pts)
 
-Build `strlib.h` and `strlib.c` — fifteen string functions written from scratch. Every "find" returns an
+Build `strlib.h` and `strlib.c` — ten string functions written from scratch.
+*(Revised 2026-09-26: cut from fifteen functions, and `word_stats` from seven counters to four, so the lab
+fits its session.)* Every "find" returns an
 **index** (or `-1`), not a pointer: pointers into strings are Week 5.
 
 ### `strlib.h`
@@ -81,17 +83,12 @@ size_t str_len(const char *s);
 int    str_copy(char *dest, size_t dest_size, const char *src);     /* 0, or -1 if it did not fit (dest still terminated) */
 int    str_append(char *dest, size_t dest_size, const char *src);   /* same contract */
 int    str_compare(const char *s1, const char *s2);                 /* <0, 0, >0 like strcmp */
-int    str_compare_nocase(const char *s1, const char *s2);
 int    str_find_char(const char *s, char c);                        /* index of first c, or -1 */
 int    str_find(const char *haystack, const char *needle);          /* index of first match, or -1; "" matches at 0 */
-int    str_starts_with(const char *s, const char *prefix);          /* 1 or 0 */
-int    str_ends_with(const char *s, const char *suffix);            /* 1 or 0 */
 void   str_to_upper(char *s);
 void   str_reverse(char *s);
 void   str_trim(char *s);                                           /* leading and trailing whitespace, in place */
-int    str_count_char(const char *s, char c);
 int    str_word_count(const char *s);
-int    str_is_palindrome(const char *s);                            /* exact characters */
 
 #endif
 ```
@@ -156,12 +153,9 @@ Create `word_stats.c` — a program that reads text from stdin and prints statis
 $ echo "The quick brown fox jumps over the lazy dog" | ./word_stats
 === Text Statistics ===
 Characters (total):     44
-Characters (no spaces): 35
 Words:                  9
 Lines:                  1
 Longest word:           'quick' (5 chars)
-Vowels:                 11
-Digits:                 0
 ```
 
 (The total is 44 because `echo` adds a newline. On a tie for longest, keep the **first** word.)
@@ -172,12 +166,9 @@ One job per function, each short enough to read at a glance:
 
 ```c
 int count_chars(const char *text);
-int count_non_space(const char *text);
 int count_words(const char *text);
 int count_lines(const char *text);      /* '\n' count, plus 1 if the text ends without one */
 int find_longest_word(const char *text, char *result, size_t result_size);  /* copies the word; returns its length */
-int count_vowels(const char *text);
-int count_digits(const char *text);
 ```
 
 ### Reading All of Stdin

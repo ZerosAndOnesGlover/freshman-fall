@@ -1,6 +1,10 @@
 # PROG 101 · Lab 4 Solutions (Instructor)
 ## Arrays, Strings, and a String Library
 
+*(Revised 2026-09-26: the lab now asks for ten `strlib` functions (not `str_compare_nocase`, `str_starts_with`,
+`str_ends_with`, `str_count_char` or `str_is_palindrome`) and four `word_stats` counters (not non-space, vowels
+or digits). Answers for those below can be ignored.)*
+
 > Lab sat Monday 26 October 2026. Revised 2026-09-21: pointer arithmetic removed from Part 1 (Week 5),
 > `strlib` cut to fifteen functions that return indices rather than pointers, test macros replaced by
 > functions (macros are Week 10), Part 3 trimmed. Everything below was built with gcc 13.3 under
