@@ -8,6 +8,7 @@ session.
 
 ## Running Part 1 (45 min)
 
+Each student works **one Part** of Problem Set 12 (their weakest), not the whole three-hour paper.
 Enforce exam conditions genuinely — notes away, timed, no phones. Students who "just check one
 thing" get no diagnostic value from the session, and the whole point is the cold start.
 

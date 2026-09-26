@@ -18,7 +18,12 @@ draft at the end.
 
 ## Part 1: The Cold Start (45 minutes)
 
-Work **Problem Set 12** under exam conditions. Timed, notes closed, no calculator beyond arithmetic.
+Problem Set 12 is a three-hour paper, too long for one session. Pick the **one Part** of it you feel least
+sure of and work it under exam conditions: timed, notes closed, no calculator beyond arithmetic. Work the
+other Parts at home, before the final.
+
+*(Revised 2026-09-26: this used to say "work Problem Set 12" in 45 minutes, against the set's own
+suggested three hours.)*
 
 Do not look at the solutions. Do not look anything up. If you are stuck, write down what you *would*
 need to know and move on — that note is the most valuable thing you will produce today.
