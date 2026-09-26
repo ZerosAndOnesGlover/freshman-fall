@@ -4,6 +4,22 @@
 
 ---
 
+> *Revised 2026-09-26: the set was cut to 7 problems. Map from the new numbering to the sections below:*
+>
+> | New | Old | Marks |
+> |---|---|---|
+> | 1 (a)–(c) | A1 (a), (c), (f) | 3 each |
+> | 2 (a)–(c) | A2 (a)–(c) | 4 each |
+> | 3 (a)–(c) | B1 (a), (c), (d) | 4 each |
+> | 3 (d) | B2 (a)–(b), for those three formulas | 6 |
+> | 4 (a)–(b) | C1 (a), (c) | 6 each |
+> | 5 (a)–(c) | D1 (a)–(c) | 7 each |
+> | 6 (a)–(b) | D2 (a)–(b) | 4, 6 |
+> | 6 (c) | D3 (a) | 6 |
+> | 7 (a)–(b) | D4 (a)–(b) | 6 each |
+>
+> *Everything else below is no longer asked.*
+
 ## Part A Solutions
 
 ### A1.

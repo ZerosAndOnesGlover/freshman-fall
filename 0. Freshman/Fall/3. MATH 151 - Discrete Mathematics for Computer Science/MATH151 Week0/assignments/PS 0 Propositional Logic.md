@@ -6,6 +6,11 @@
 
 > *Revised 2026-09-21.* The optional bonus section was removed to keep the set to 100 points of
 > this week's material.
+>
+> *Revised 2026-09-26.* Cut from 14 problems and about 50 parts to 7 problems and 20 short parts, to fit
+> about three hours. Kept: one or two items of each skill. Removed: the assignment-evaluation drill, the
+> truth-table row-count questions, vacuous truth, the material-implication essay, the resolution tautology
+> and the {∧, ∨} completeness question.
 
 **Instructions:**
 - Show all work. Answers without justification receive no credit.
@@ -14,35 +19,33 @@
 - Work must be submitted individually. Collaboration on approach is allowed; write-up must be your own.
 - Submission: handwritten or typed PDF. LaTeX is encouraged but not required.
 
-**Scoring:** 100 points total. Point values marked per problem.
+**Expected time:** about 3 hours. **Scoring:** 100 points total. Point values marked per problem.
 
 ---
 
-## Part A: Propositions and Translation (20 points)
+## Problem 1: Propositions (9 points)
 
-**A1.** (6 pts) For each sentence, state whether it is a proposition. If it is, give its truth value (or state that it is unknown).
+For each sentence, state whether it is a proposition. If it is, give its truth value (or state that it is
+unknown). *(3 pts each)*
 
 (a) "Every prime number greater than 2 is odd."
 
-(b) "This problem set is difficult or easy."
+(b) "x² − 4 = 0"
 
-(c) "x² − 4 = 0"
-
-(d) "There are infinitely many prime numbers." *(Hint: this was proved by Euclid.)*
-
-(e) "The program in Listing A halts on all inputs." *(No listing is provided — this is about the nature of the claim.)*
-
-(f) "Prove that 1 + 1 = 2."
+(c) "Prove that 1 + 1 = 2."
 
 ---
 
-**A2.** (8 pts) Let:
+## Problem 2: Translation and Negation (12 points)
+
+Let:
 - p = "The network is connected."
 - q = "The server is running."
 - r = "The database is reachable."
 - s = "The user can log in."
 
-Translate each English statement into a logical formula. Then write the *negation* of the formula (in simplified form — push negations inward using De Morgan's Laws, not just "¬(...)").
+Translate each English statement into a logical formula. Then write the *negation* of the formula (in
+simplified form — push negations inward using De Morgan's Laws, not just "¬(...)"). *(4 pts each)*
 
 (a) "The user can log in if and only if the network is connected and the server is running."
 
@@ -50,103 +53,38 @@ Translate each English statement into a logical formula. Then write the *negatio
 
 (c) "The user cannot log in unless the network is connected."
 
-(d) "It is not the case that both the server is running and the database is unreachable."
-
 ---
 
-**A3.** (6 pts) Translate each logical formula into a clear English sentence (using the variables from A2), then determine its truth value assuming: p = T, q = T, r = F, s = F.
+## Problem 3: Truth Tables (18 points)
 
-(a) (p ∧ q) → s
-
-(b) ¬r → ¬s
-
-(c) (p ↔ q) ∧ (r ↔ s)
-
----
-
-## Part B: Truth Tables (28 points)
-
-**B1.** (8 pts) Construct a complete truth table for each formula. Clearly label every intermediate column.
+Construct a complete truth table for each formula. Clearly label every intermediate column. *(4 pts each)*
 
 (a) (p → q) ∧ (q → p)
 
-(b) ¬p ∨ (p ∧ q)
+(b) (p ∨ q) → (p ∧ q)
 
-(c) (p ∨ q) → (p ∧ q)
+(c) (p → q) → ((p → ¬q) → ¬p)
 
-(d) (p → q) → ((p → ¬q) → ¬p)
-
----
-
-**B2.** (8 pts) Use your truth tables from B1 to answer:
-
-(a) Which formulas in B1 are tautologies? Contradictions? Contingencies?
-
-(b) Formula B1(a) is a well-known connective — which one?
-
-(c) Formula B1(b) has a simple equivalent — which one? Prove the equivalence using laws (not truth tables).
+(d) Which of the three are tautologies, contradictions, or contingencies? Which well-known connective is
+(a)? *(6 pts)*
 
 ---
 
-**B3.** (6 pts) Without building a full truth table, determine the truth value of each formula under the given assignment. Show intermediate steps.
+## Problem 4: Converse, Inverse, Contrapositive (12 points)
 
-Assignment: p = T, q = F, r = T, s = F
-
-(a) (p ∧ ¬q) → (r ∨ s)
-
-(b) ¬(p ↔ r) ∨ (q ∧ ¬s)
-
-(c) ((p → q) → r) ∧ (¬s ∨ q)
-
----
-
-**B4.** (6 pts) How many rows does a truth table for a formula with variables p₁, p₂, ..., pₙ have? Given a formula with 5 variables:
-
-(a) How many rows?
-
-(b) In how many rows is the formula true if it is a tautology? A contradiction?
-
-(c) If a 5-variable formula has exactly 1 row where it is true, is it a tautology, contradiction, or contingency? Give an example of such a formula.
-
----
-
-## Part C: The Conditional (20 points)
-
-**C1.** (8 pts) For each conditional, write (i) the converse, (ii) the inverse, (iii) the contrapositive. State which are logically equivalent to the original.
+For each conditional, write (i) the converse, (ii) the inverse, (iii) the contrapositive. State which are
+logically equivalent to the original. *(6 pts each)*
 
 (a) "If a number is divisible by 4, then it is divisible by 2."
 
-(b) "If the algorithm runs in O(n log n), then it is efficient enough for production."
-
-(c) p → (q ∧ r)
-
-(d) ¬p → ¬(q ∨ r)
+(b) p → (q ∧ r)
 
 ---
 
-**C2.** (6 pts) A conditional statement can be vacuously true. For each situation, explain whether the conditional is vacuously true, substantively true, or false.
+## Problem 5: Proofs by Laws (21 points)
 
-(a) "If 2 is odd, then the moon is made of cheese." (Evaluate: p = F)
-
-(b) "If you score 100 on every problem set, you will pass the course." (Evaluate: you scored 80 on PS0)
-
-(c) "If x > 100, then x > 50." (Evaluate when x = 3; when x = 200)
-
----
-
-**C3.** (6 pts) This problem explores the *paradoxes of material implication* — cases where the truth-table definition of → produces results that feel counterintuitive.
-
-(a) Show that (p → q) ∨ (q → p) is a tautology. (Use a truth table or algebraic proof.) This means: for any two propositions p and q, either "p implies q" or "q implies p" — or both. Does this seem intuitively correct? Explain the tension between the logical result and our everyday understanding of "implies."
-
-(b) Show that p → (q → p) is a tautology. This means: any true proposition is implied by any proposition. Explain what this means and why it is "paradoxical" from an everyday standpoint.
-
-(c) In formal logic, these "paradoxes" are not actually problems — they arise from taking → to mean *material implication* (defined purely by truth values) rather than *causal* or *meaningful* implication. In 2–3 sentences, explain why the material conditional is still the right choice for formal mathematics, despite these counterintuitive results.
-
----
-
-## Part D: Equivalence Laws and Normal Forms (32 points)
-
-**D1.** (12 pts) Prove each equivalence using *only* the laws from Lecture 2 (L02, Friday) (no truth tables). Cite the law at each step.
+Prove each equivalence using *only* the laws from Lecture 2 (L02, Friday) — no truth tables. Cite the law
+at each step. *(7 pts each)*
 
 (a) (p ∧ q) ∨ (p ∧ ¬q) ≡ p
 
@@ -154,37 +92,24 @@ Assignment: p = T, q = F, r = T, s = F
 
 (c) ¬(p ↔ q) ≡ (p ∧ ¬q) ∨ (¬p ∧ q)
 
-(d) (p ∨ q) ∧ (¬p ∨ r) → (q ∨ r) is a tautology.
-*(Hint: Show the formula ≡ T. This is the resolution rule — foundational to automated theorem proving.)*
+---
+
+## Problem 6: Normal Forms (16 points)
+
+(a) Convert p → q to Conjunctive Normal Form (CNF). *(4 pts)*
+
+(b) Convert p ↔ q to CNF. Show all steps. *(6 pts)*
+
+(c) Convert p ∧ (q ∨ ¬r) to Disjunctive Normal Form (DNF) using the truth table method. *(6 pts)*
 
 ---
 
-**D2.** (8 pts) Convert each formula to Conjunctive Normal Form (CNF). Show all steps.
+## Problem 7: Functional Completeness (12 points)
 
-(a) p → q
+(a) Show that {¬, ∨} is functionally complete: express p ∧ q using only ¬ and ∨. *(6 pts)*
 
-(b) p ↔ q
-
-(c) ¬(p ∨ ¬q) → r
-
----
-
-**D3.** (6 pts) Convert each formula to Disjunctive Normal Form (DNF) using the truth table method.
-
-(a) p ∧ (q ∨ ¬r)
-
-(b) (p ↔ q) — verify that your DNF matches your answer from D2(b) (they should give the same truth table).
-
----
-
-**D4.** (6 pts) **Functional completeness.**
-
-(a) Show that {¬, ∨} is functionally complete: express p ∧ q using only ¬ and ∨.
-
-(b) Show that {¬, →} is functionally complete: express p ∨ q using only ¬ and →.
+(b) Show that {¬, →} is functionally complete: express p ∨ q using only ¬ and →. *(6 pts)*
 *(Hint: use the equivalence p → q ≡ ¬p ∨ q.)*
-
-(c) The set {∧, ∨} is NOT functionally complete. What connective does it fail to express, and why?
 
 ---
 
