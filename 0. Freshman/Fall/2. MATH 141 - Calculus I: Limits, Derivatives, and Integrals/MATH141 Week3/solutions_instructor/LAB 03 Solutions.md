@@ -1,118 +1,103 @@
 # MATH 141 · Week 3
 ## LAB 03 Solutions — INSTRUCTOR ONLY
 
-> **Every numerical value below was computed, not estimated.** Students working in Desmos rather
-> than Python will see the same behaviour but fewer digits — grade the *reasoning and the observed
-> trend*, not agreement to the last decimal place.
+> **Every numerical value below was computed in Python, not estimated.** Grade the *reasoning and the
+> observed trend*, not agreement to the last decimal place.
+
+*(Revised 2026-09-26 to match the 9-question version of the lab.)*
 
 ---
 
-> Lab sat Friday 16 October 2026. Revised 2026-09-21: 2b is now done from the definition, giving f′(x) = 3x² − 3
-> (zeros at x = ±1); the f″/concavity question and the product-rule check were removed.
-
 ## Part 1 — Secant Lines Converging to the Tangent
 
-For f(x) = x² at x = 3 the secant slope is exactly **6 + h**, converging to 6 = f′(3). See Lab 0
-Part 3 for the full table; the point here is that the *symbolic* cancellation and the *numerical*
-trend are the same fact.
+**Q1 (10).**
 
-**1.2** Computing the slope at many x-values and plotting produces the graph of f′ — the derivative
-as a **function**, not a number. This is the conceptual step of the week: f′(a) is a number, f′(x)
-is a function, and confusing them is the commonest error in tangent-line problems.
+| h | slope |
+|---|---|
+| 1 | 5.0 |
+| 0.1 | 4.100000000000001 |
+| 0.01 | 4.009999999999891 |
+| −0.01 | 3.9899999999999824 |
+
+The slopes approach **4**. $\dfrac{(2+h)^2-4}{h} = \dfrac{4h + h^2}{h} = 4 + h \to 4$. The symbolic
+cancellation and the numerical trend are the same fact.
+
+**Q2 (10).** From both sides the secant line turns into the **tangent line** at $(2, 4)$, with slope 4:
+$y = 4 + 4(x - 2)$, or $y = 4x - 4$.
 
 ---
 
 ## Part 2 — Reading the Derivative from a Graph
 
-The correspondences students must state:
+**Q3 (8).** Increasing for $x < -1$ and $x > 1$; decreasing on $(-1, 1)$; horizontal tangents at about
+$x = \pm 1$.
+
+**Q4 (12).** $\dfrac{(x+h)^3 - 3(x+h) - x^3 + 3x}{h} = 3x^2 + 3xh + h^2 - 3 \to 3x^2 - 3$. Then
+$f'(x) = 0 \iff x = \pm 1$. The zeros of $f'$ are exactly the turning points of $f$, and $f' > 0$ exactly
+where $f$ rises.
 
 | On f | On f′ |
 |---|---|
 | increasing | f′ > 0 (above the axis) |
 | decreasing | f′ < 0 |
-| local max or min | f′ **crosses** zero |
-| horizontal inflection | f′ **touches** zero without crossing |
-| steepest ascent | f′ at a local maximum |
-
-The distinction between *crossing* and *touching* zero is what separates an extremum from a
-saddle — and is exactly why the first-derivative **sign** test works where "f′ = 0" alone does not.
+| turning point | f′ **crosses** zero |
 
 ---
 
 ## Part 3 — Non-Differentiable Points
 
-| Case | Example | Why differentiability fails |
-|---|---|---|
-| **Corner** | \|x\| at 0 | One-sided slopes −1 and +1; both exist, they differ |
-| **Cusp** | x^(2/3) at 0 | Slopes → −∞ and +∞ |
-| **Vertical tangent** | x^(1/3) at 0 | Slope → +∞ from both sides |
-| **Discontinuity** | any jump | Differentiability implies continuity, so this fails first |
+**Q5 (10).** $\frac{|h|}{h} = -1$ for $h < 0$ and $+1$ for $h > 0$. Both one-sided limits exist but
+differ, so the two-sided limit does not exist and $|x|$ is **not differentiable at 0**. The secant line
+flips between slopes $-1$ and $+1$ as $h$ crosses zero. This is a **corner**.
 
-The subtler case is **x² sin(1/x)** (with f(0) = 0), which *is* differentiable at 0 with f′(0) = 0
-— the x² factor squeezes the oscillation — yet f′ is **not continuous** at 0. This shows
-"differentiable" does not imply "continuously differentiable", and is worth showing to strong
-students.
+**Q6 (10).** $h^{-1/3} \to +\infty$ as $h \to 0^+$ and $\to -\infty$ as $h \to 0^-$. The graph has a sharp
+point with a vertical tangent, a **cusp**, so $x^{2/3}$ is **not differentiable at 0**.
+
+**Q7 (10).** Continuous: $\lim_{x\to1^-} x^2 = 1$, $\lim_{x\to1^+}(2x-1) = 1$, and $f(1) = 1$.
+
+Left: $\dfrac{(1+h)^2 - 1}{h} = 2 + h \to 2$. Right: $\dfrac{2(1+h) - 1 - 1}{h} = 2$.
+
+Both equal $2$, so $f$ **is differentiable at 1**, with $f'(1) = 2$. The line $y = 2x - 1$ is the tangent to
+the parabola at $(1, 1)$, so the two pieces join smoothly with no corner.
+
+*This is the "subtler case": students expecting every piecewise join to be a corner lose it. Full marks need
+both one-sided limits computed, not just the pictures.*
 
 ---
 
 ## Part 4 — Numerical Differentiation and Its Limits
 
-f = sin at x = 1, exact f′ = cos(1) = 0.540302305868140.
+$f = \sqrt{x}$ at $a = 4$, exact $f'(4) = 0.25$.
 
-| h | Forward error | Central error | Fwd ratio | Ctr ratio |
+| h | Forward | Error | Central | Error |
 |---|---|---|---|---|
-| 10⁻¹ | 4.294 × 10⁻² | 9.001 × 10⁻⁴ | — | — |
-| 10⁻² | 4.216 × 10⁻³ | 9.005 × 10⁻⁶ | 10.2 | **100.0** |
-| 10⁻³ | 4.208 × 10⁻⁴ | 9.005 × 10⁻⁸ | 10.0 | **100.0** |
-| 10⁻⁴ | 4.207 × 10⁻⁵ | 9.004 × 10⁻¹⁰ | 10.0 | **100.0** |
-| 10⁻⁵ | 4.207 × 10⁻⁶ | 1.114 × 10⁻¹¹ | 10.0 | 80.8 |
-| 10⁻⁶ | 4.207 × 10⁻⁷ | 2.772 × 10⁻¹¹ | 10.0 | **0.4** |
-| 10⁻⁸ | 2.970 × 10⁻⁹ | 2.581 × 10⁻⁹ | 141.7 | 0.0 |
-| 10⁻¹⁰ | 5.848 × 10⁻⁸ | 5.848 × 10⁻⁸ | 0.1 | 0.0 |
+| 0.1 | 0.2484567313 | 1.543 × 10⁻³ | 0.2500195366 | 1.954 × 10⁻⁵ |
+| 0.01 | 0.2498439450 | 1.561 × 10⁻⁴ | 0.2500001953 | 1.953 × 10⁻⁷ |
+| 0.001 | 0.2499843770 | 1.562 × 10⁻⁵ | 0.2500000020 | 1.953 × 10⁻⁹ |
 
-**Two findings, both required in the report:**
+**Q8 (15).** The central difference is far more accurate: about 80 times at $h = 0.1$ and 8000 times at
+$h = 0.001$. Dividing $h$ by 10 divides the forward error by **10** and the central error by **100**. The
+forward error is proportional to $h$ and the central error to $h^2$.
 
-1. **Forward difference is O(h); central difference is O(h²).** Dividing h by 10 divides the forward
-   error by 10 and the central error by **100** — visible in the ratio columns, and exactly what
-   Taylor expansion predicts. The central formula's O(h) term cancels by symmetry.
-
-2. **Smaller h stops helping and starts hurting.** The central error bottoms out near
-   **h = 10⁻⁵** at about 1.1 × 10⁻¹¹, then *rises*. Below that, round-off in the numerator
-   f(1+h) − f(1−h) — subtracting nearly equal quantities again — dominates the shrinking truncation
-   error. The optimum trades the two off and sits near ε^(1/3) ≈ 6 × 10⁻⁶ for the central formula,
-   ε^(1/2) ≈ 10⁻⁸ for the forward one.
-
-By h = 10⁻¹⁰ both methods have the *same* error, because both are pure noise.
-
-> **The lesson: "take h as small as possible" is wrong.** There is an optimal step size, and it is
-> nowhere near machine epsilon. Students who report only that "smaller h is more accurate" have
-> stopped measuring too early — insist on the full range down to 10⁻¹⁰.
-
-
----
-
-## Part 5 — The Derivative of eˣ
-
-lim(h→0)(eʰ − 1)/h = **1**, so (eˣ)′ = eˣ. For contrast, the same limit for 2ˣ gives
-ln 2 ≈ 0.6931 and for 3ˣ gives ln 3 ≈ 1.0986 — so the base whose limit is exactly 1 lies between 2
-and 3. **That base is the definition of e.**
+**Q9 (15).** At $h = 10^{-15}$ the forward difference gives **0.0** and the central gives **0.111**, both
+badly wrong. `math.sqrt(4 + 1e-15)` rounds to exactly `2.0`, so the numerator is a difference of nearly
+equal numbers — catastrophic cancellation, as in Lab 01 — and dividing by the tiny $h$ magnifies the
+round-off. So "make $h$ as small as possible" is wrong. Below some $h$, round-off grows faster than the
+formula's own error shrinks, so there is a best $h$ in between.
 
 ---
 
 ## Marking Scheme
 
-- **Method (≈60%).** Correct technique named, hypotheses checked where a theorem requires them,
-  symbolic setup before numerical evaluation, and a stated reason for each observed behaviour.
-- **Execution (≈40%).** Correct arithmetic, sensible precision, correct plot or table, and a
-  conclusion that actually follows from the data.
+- **Method (≈60%).** Derivatives from the definition where asked, and a stated reason for each observed
+  behaviour.
+- **Execution (≈40%).** Correct values, sensible precision, and a conclusion that follows from the data.
 
 **Carry-through.** Penalise a wrong value once; award downstream marks if the student reasons
 correctly from their own error.
 
-**The specific failure to watch for in a computational lab:** reporting *what* the computer printed
-without explaining *why*. "The table approaches 0.5" is an observation; "the table approaches 0.5
-because the conjugate cancels the removable factor" is the answer. A lab report that is a
-transcript earns the execution marks only.
+**The failure to watch for:** reporting *what* the computer printed without explaining *why*. A report
+that is a transcript earns the execution marks only.
 
 ---
 

@@ -6,7 +6,9 @@ Everything is done from the definition of the derivative; the rules arrive in We
 *(Revised 2026-09-21: the f'' / concavity question — Week 7 — and the product-rule check — Week 4 — were removed.)*
 ### The Derivative: Numerical Exploration and Graphical Interpretation
 
-**Duration:** 2 hours | **Tools:** Desmos, Python (optional)
+**Duration:** 2 hours | **Tools:** Desmos, and Python using only CS 101 Weeks 0–3: `def` and `return`
+(CS 101 Lecture 10), `for` over a list, and the `math` module
+**Expected time:** the session itself (9 questions), plus at most 30 minutes to tidy your answers
 **Submission:** Written report due Monday 19 October 2026, 17:00 (Week 4)
 
 ---
@@ -14,218 +16,135 @@ Everything is done from the definition of the derivative; the rules arrive in We
 ## Lab Objectives
 
 1. Experience the derivative as a limit of slopes of secant lines
-2. Understand graphically what differentiability looks like (and what failure looks like)
-3. Compare forward and central difference quotients numerically
-4. Build intuition for the relationship between a function's graph and its derivative's graph
-5. Apply numerical differentiation and understand its limitations
+2. Read a derivative's sign from a graph
+3. Recognise what failure of differentiability looks like
+4. Compare forward and central difference quotients, and see where round-off takes over
 
 ---
 
-## Part 1 — Secant Lines Converging to the Tangent (25 min)
+## Python for Today
 
-### Exercise 1.1 — Watching the Limit Happen
+This week CS 101 introduced functions. A difference quotient is a natural one:
 
-Consider $f(x) = x^2$ and the point $a = 2$.
+```python
+def f(x):
+    return x**2
 
-The slope of the secant through $(2, f(2))$ and $(2+h, f(2+h))$ is:
+def forward(a, h):
+    return (f(a + h) - f(a)) / h
 
-$$m(h) = \frac{f(2+h)-f(2)}{h} = \frac{(2+h)^2 - 4}{h}$$
+for h in [1, 0.1, 0.01, -0.01]:
+    print(h, forward(2, h))
+```
 
-**Step 1:** Fill in the table:
-
-| $h$ | $f(2+h)$ | $m(h)$ |
-|-----|----------|--------|
-| $1$ | | |
-| $0.5$ | | |
-| $0.1$ | | |
-| $0.01$ | | |
-| $0.001$ | | |
-| $-0.1$ | | |
-| $-0.01$ | | |
-| $-0.001$ | | |
-
-**Question 1a:** What value does $m(h)$ approach? This is $f'(2)$. Confirm with the formula $f'(x)=2x$.
-
-**Step 2:** In Desmos, graph:
-- $f(x) = x^2$
-- The secant line: $y = f(2) + m(h)(x-2)$ where $h$ is a slider from $-2$ to $2$
-- The tangent line: $y = 4 + 4(x-2)$
-
-**Question 1b:** Drag the $h$ slider toward 0. Describe what happens to the secant line geometrically.
-
-**Question 1c:** At what value of $h$ does the secant line become indistinguishable (visually) from the tangent line on the screen? What does this tell you about the numerical meaning of "close enough"?
+Save it as `lab03.py` and run `python3 lab03.py`. To study another function, change only the body of `f`.
 
 ---
 
-### Exercise 1.2 — The Derivative Function from Slopes
+## Part 1 — Secant Lines Converging to the Tangent (20 min)
 
-Still using $f(x) = x^2$.
+### Question 1 (10 points)
 
-**Question 1d:** Compute the slope of the tangent line at each point:
+Run the program above for $f(x) = x^2$ at $a = 2$ and record the table. What value do the slopes
+approach? Confirm it from the definition: simplify $\dfrac{(2+h)^2 - 4}{h}$ and let $h \to 0$.
 
-| $a$ | Tangent slope $f'(a) = 2a$ |
-|-----|--------------------------|
-| $-2$ | |
-| $-1$ | |
-| $0$ | |
-| $1$ | |
-| $2$ | |
-| $3$ | |
+### Question 2 (10 points)
 
-**Question 1e:** Plot these points $(a, f'(a))$ on a separate graph. What function do they trace out?
-
-**Question 1f:** In Desmos, graph $f(x)=x^2$ and $f'(x)=2x$ on the same axes. Describe the relationship:
-- Where is $f$ increasing? What sign does $f'$ have there?
-- Where is $f$ decreasing? What sign does $f'$ have there?
-- Where is $f$ at its minimum? What is $f'$ there?
+In Desmos, graph $f(x) = x^2$, a slider $h$ from $-2$ to $2$, and the secant line
+`y = f(2) + (f(2 + h) - f(2))/h * (x - 2)`. Drag $h$ toward $0$ from both sides. What does the secant
+line become, and what is the equation of that line?
 
 ---
 
-## Part 2 — Reading the Derivative from a Graph (20 min)
+## Part 2 — Reading the Derivative from a Graph (25 min)
 
 In Desmos, graph $f(x) = x^3 - 3x$.
 
-**Question 2a:** Without computing, identify visually the approximate $x$-values where:
-- $f'(x) > 0$ (function increasing)
-- $f'(x) < 0$ (function decreasing)
-- $f'(x) = 0$ (function has horizontal tangent)
+### Question 3 (8 points)
 
-**Question 2b:** Now compute $f'(x)$ **from the definition** (expand $(x+h)^3$). Solve $f'(x)=0$ exactly.
+Without computing, read off the approximate $x$-values where $f$ is increasing ($f' > 0$), decreasing
+($f' < 0$), and has a horizontal tangent ($f' = 0$).
 
-**Question 2c:** Graph both $f(x)$ and $f'(x)$ in Desmos. Do the zero crossings of $f'$ correspond to the turning points of $f$? Verify.
+### Question 4 (12 points)
 
-**Question 2d:** Sketch (by hand) what the graph of $f'$ would look like for the function shown below, given only its graph. You should be able to identify:
-- Where $f' = 0$
-- Where $f' > 0$ vs $f' < 0$
-- Roughly how steep $f'$ is
-
-```
-        f(x)
-   *
-  / \
- /   \       /
-/     \     /
-        \ /
-         *
-```
-*(A curve that rises, peaks, falls to a valley, then rises again)*
+Compute $f'(x)$ **from the definition** (expand $(x+h)^3$) and solve $f'(x)=0$ exactly. Graph $f'$ in
+Desmos alongside $f$. Do the zeros of $f'$ line up with the turning points of $f$, and does the sign of
+$f'$ match your answers to Question 3?
 
 ---
 
-## Part 3 — Non-Differentiable Points (20 min)
+## Part 3 — Non-Differentiable Points (30 min)
 
-### Exercise 3.1 — Corners
+### Question 5 (10 points)
 
-Graph $f(x) = |x|$ in Desmos.
+**A corner.** For $f(x) = |x|$, compute the one-sided limits of the difference quotient at $0$:
+$\displaystyle\lim_{h\to0^-}\frac{|h|}{h}$ and $\displaystyle\lim_{h\to0^+}\frac{|h|}{h}$. What do they tell
+you about differentiability at $0$? Check with the secant slider from Question 2, using `f(x) = abs(x)`
+and the point $0$ instead of $2$.
 
-**Question 3a:** Compute the left-hand and right-hand limits of the difference quotient at $x=0$:
+### Question 6 (10 points)
 
-$$\lim_{h\to0^-}\frac{|h|-0}{h} \qquad \text{and} \qquad \lim_{h\to0^+}\frac{|h|-0}{h}$$
+**A cusp.** For $f(x) = x^{2/3}$, the difference quotient at $0$ is $\dfrac{h^{2/3}}{h} = h^{-1/3}$. What
+happens to it as $h \to 0^+$ and as $h \to 0^-$? Graph $f$ in Desmos and describe what you see at $0$.
 
-**Question 3b:** What do these two limits tell you about differentiability at $x=0$?
+### Question 7 (10 points)
 
-**Question 3c:** Graph $f(x)=|x|$ in Desmos and add the secant-line slider from Exercise 1.1. What happens visually as $h\to0^-$ versus $h\to0^+$?
-
-### Exercise 3.2 — Cusps
-
-Graph $f(x) = x^{2/3}$ in Desmos.
-
-**Question 3d:** Compute $\displaystyle\lim_{h\to0}\frac{(0+h)^{2/3}-0}{h} = \lim_{h\to0}h^{-1/3}$. What is this limit?
-
-**Question 3e:** What does the graph look like at $x=0$? Is this consistent with your limit calculation?
-
-### Exercise 3.3 — A Subtler Case
-
-Consider:
-$$f(x) = \begin{cases} x^2 & x\leq 1 \\ 2x-1 & x>1 \end{cases}$$
-
-**Question 3f:** Is $f$ continuous at $x=1$? Check the three conditions.
-
-**Question 3g:** Compute the left and right derivatives at $x=1$:
-$$\lim_{h\to0^-}\frac{f(1+h)-f(1)}{h} \qquad \lim_{h\to0^+}\frac{f(1+h)-f(1)}{h}$$
-
-**Question 3h:** Is $f$ differentiable at $x=1$? Graph $f$ and describe the geometric feature at $x=1$.
+**A join.** Let $f(x) = x^2$ for $x \le 1$ and $f(x) = 2x - 1$ for $x > 1$. Is $f$ continuous at $1$?
+Compute the left and right limits of $\dfrac{f(1+h)-f(1)}{h}$. Is $f$ differentiable at $1$? Graph it and
+describe what happens at $x = 1$.
 
 ---
 
-## Part 4 — Numerical Differentiation and Its Limits (25 min)
+## Part 4 — Numerical Differentiation and Its Limits (30 min)
 
-Computers can't take limits symbolically (unless using CAS tools). They approximate derivatives using finite differences.
+The **forward difference** is $\dfrac{f(a+h)-f(a)}{h}$ and the **central difference** is
+$\dfrac{f(a+h)-f(a-h)}{2h}$. Add a `central(a, h)` function to your program, and change `f` to
+`math.sqrt(x)` (put `import math` at the top).
 
-### Exercise 4.1 — Forward vs Central Differences
+At $a = 4$ the exact derivative is $\dfrac{1}{2\sqrt{4}} = 0.25$ (Problem Set 0, Problem 5 found
+$\dfrac{1}{2\sqrt{x}}$).
 
-The **forward difference** approximation: $f'(x) \approx \dfrac{f(x+h)-f(x)}{h}$
-
-The **central difference** approximation: $f'(x) \approx \dfrac{f(x+h)-f(x-h)}{2h}$
-
-Use $f(x) = \sin(x)$ and approximate $f'(\pi/4) = \cos(\pi/4) = \dfrac{\sqrt{2}}{2} \approx 0.70711$.
-
-Fill in the table (use a calculator):
-
-| $h$ | Forward diff. | Error (forward) | Central diff. | Error (central) |
-|-----|--------------|----------------|--------------|----------------|
+| $h$ | Forward | Error | Central | Error |
+|-----|---------|-------|---------|-------|
 | $0.1$ | | | | |
 | $0.01$ | | | | |
 | $0.001$ | | | | |
-| $0.0001$ | | | | |
-| $0.00001$ | | | | |
 
-**Question 4a:** Which approximation is more accurate for the same $h$? By roughly what factor?
+Compute each error as `abs(forward(4, h) - 0.25)`.
 
-**Question 4b:** For the forward difference, as $h$ decreases by a factor of 10, the error decreases by a factor of approximately ___. For the central difference, by a factor of approximately ___. What does this tell you about the order of accuracy of each method?
+### Question 8 (15 points)
 
-**Question 4c:** At very small $h$ (e.g., $h = 10^{-15}$), what happens to the accuracy? Why? (Think about the catastrophic cancellation issue from Lab 1.)
+Which formula is more accurate for the same $h$? Each time $h$ shrinks by a factor of 10, by what factor
+does each error shrink?
 
-**Question 4d:** What is the optimal $h$ to use in practice for the forward difference? (There is a tradeoff between truncation error which decreases with $h$, and round-off error which increases with small $h$.)
+### Question 9 (15 points)
 
-> **CS Connection:** The central difference formula has error $O(h^2)$ — it's a second-order method. The forward difference has error $O(h)$ — first order. In numerical computing, higher-order methods are almost always preferred because they achieve the same accuracy with less computational work. The same principle drives the difference between Euler's method (first-order) and Runge-Kutta (fourth-order) for solving differential equations.
-
----
-
----
-
-## Part 5 — The Derivative of $e^x$ (15 min)
-
-The number $e$ is defined so that $\dfrac{d}{dx}[e^x] = e^x$. Let's see this numerically.
-
-**Question 5a:** The derivative of $a^x$ at $x=0$ is:
-$$\lim_{h\to0}\frac{a^h-1}{h}$$
-
-Fill in this table for $a = 2$, $a = e \approx 2.71828$, $a = 3$:
-
-| $h$ | $\dfrac{2^h-1}{h}$ | $\dfrac{e^h-1}{h}$ | $\dfrac{3^h-1}{h}$ |
-|-----|-------------------|-------------------|-------------------|
-| $0.1$ | | | |
-| $0.01$ | | | |
-| $0.001$ | | | |
-| $0.0001$ | | | |
-
-**Question 5b:** What value does each column approach? For which base does $\lim_{h\to0}\frac{a^h-1}{h} = 1$?
-
-**Question 5c:** This means $\dfrac{d}{dx}[e^x]\big|_{x=0} = 1$. Using the limit definition, show that $\dfrac{d}{dx}[e^x] = e^x$ everywhere by computing $\dfrac{d}{dx}[e^x]$ via the limit definition:
-
-$$\frac{d}{dx}[e^x] = \lim_{h\to0}\frac{e^{x+h}-e^x}{h} = e^x\lim_{h\to0}\frac{e^h-1}{h}$$
-
-What does your table tell you about the remaining limit?
+Now try $h = 10^{-15}$ (`1e-15`). What do the two formulas give? Explain what went wrong, using the
+catastrophic cancellation you met in Lab 01. Is "make $h$ as small as possible" good advice?
 
 ---
 
 ## Lab Report Requirements
 
 Include:
-1. All completed tables
-2. Answers to all questions (labeled)
-3. Desmos screenshots for Parts 1 and 2
-4. Reflection (5–8 sentences): Before this lab, how did you think about the derivative? How has your understanding of it as a limit of slopes changed? What was most surprising?
+1. Your program, and the two tables
+2. Answers to Questions 1–9
+3. Desmos screenshots or links for Questions 2 and 4
 
 **Grading:**
 
 | Section | Points |
 |---------|--------|
-| Part 1 — Secant convergence | 25 |
+| Part 1 — Secant convergence | 20 |
 | Part 2 — Reading derivatives from graphs | 20 |
-| Part 3 — Non-differentiable points | 20 |
-| Part 4 — Numerical differentiation | 20 |
-| Part 5 — The number $e$ | 10 |
-| Reflection | 5 |
+| Part 3 — Non-differentiable points | 30 |
+| Part 4 — Numerical differentiation | 30 |
 | **Total** | **100** |
+
+---
+
+*Revised 2026-09-26: cut from five parts and about 25 questions, with five long tables and a
+reflection, to 9 questions and two short tables, so it fits the session. The Python is Week 3 CS 101
+(`def`). Removed: the tangent-slope table and hand-plotted $f'$, the hand-sketched derivative, and
+Part 5 on $e^x$. The numerical part now uses $\sqrt{x}$ instead of $\sin x$, whose derivative is not
+taught until Week 4.*
