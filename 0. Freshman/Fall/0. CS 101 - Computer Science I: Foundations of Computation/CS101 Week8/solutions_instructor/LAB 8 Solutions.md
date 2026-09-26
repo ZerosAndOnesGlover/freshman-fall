@@ -96,6 +96,9 @@ contiguous probes are cache-friendly where chain-walking is pointer chasing.
 
 ---
 
+*(Revised 2026-09-26: Part 3, `first_unique_char`, `group_anagrams` and reflection Q3–Q4 are no longer in the
+lab; their notes below can be ignored. Checkoff: Part 1 40, Part 2 25, Part 4 15, Part 5 20.)*
+
 ## Part 3 — Amortised O(1) Insertion
 
 Insert n keys into a table that doubles at α = 0.75 and plot cumulative work.

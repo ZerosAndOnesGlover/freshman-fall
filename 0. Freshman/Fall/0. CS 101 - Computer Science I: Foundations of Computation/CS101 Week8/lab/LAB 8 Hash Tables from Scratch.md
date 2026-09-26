@@ -16,8 +16,7 @@ By the end of this lab, you will:
 - [ ] Implement a complete hash table using chaining, from scratch
 - [ ] Implement a complete hash table using open addressing (linear probing), from scratch
 - [ ] Measure load factor's effect on performance
-- [ ] Verify amortized O(1) insertion via resizing, directly
-- [ ] Apply dict/set patterns to solve 3 real algorithmic problems
+- [ ] Apply the dict lookup pattern to two-sum
 - [ ] Investigate the `__hash__`/`__eq__` contract with a custom class
 
 ---
@@ -30,6 +29,10 @@ cd "$CS101/week8"
 ```
 
 ---
+
+*(Revised 2026-09-26: the parts added up to about 130 minutes. Part 3 (amortized insertion timing — Problem
+Set 6 B2 simulated the same thing) was removed; Part 4 keeps only `two_sum`; reflection Q3–Q4 went. Part
+numbers are unchanged.)*
 
 ## Part 1: Build Both Hash Table Variants (40 minutes)
 
@@ -393,58 +396,7 @@ Run it: `python3 load_factor_experiment.py`
 
 ---
 
-## Part 3: Verifying Amortized O(1) Insertion (20 minutes)
-
-Add this section to the **bottom** of `hash_table.py` (instead of a separate `amortized_insertion_test.py`):
-
-```python
-#!/usr/bin/env python3
-"""
-amortized_insertion_test.py
-CS 101 — Week 8, Lab 8
-
-Verify that hash table insertion is O(1) amortized, despite occasional
-O(n) resize operations — the same pattern as PS6's DynamicArray.
-"""
-
-import time
-
-
-def measure_insertion_times(n):
-    """Insert n items one at a time, recording the time for EACH insertion."""
-    ht = ChainedHashTable(initial_size=8)
-    times = []
-
-    for i in range(n):
-        start = time.perf_counter()
-        ht.put(f"key{i}", i)
-        times.append(time.perf_counter() - start)
-
-    return times, ht.resize_count
-
-
-n = 10000
-times, resize_count = measure_insertion_times(n)
-
-avg_time = sum(times) / len(times)
-max_time = max(times)
-total_time = sum(times)
-
-print(f"Total insertions: {n}")
-print(f"Resize events: {resize_count}")
-print(f"Average time per insertion: {avg_time*1e6:.3f} μs")
-print(f"MAXIMUM single insertion time: {max_time*1e6:.3f} μs  (this was a resize event)")
-print(f"Ratio (max/avg): {max_time/avg_time:.1f}x")
-print(f"\nTotal time for all {n} insertions: {total_time*1000:.2f} ms")
-print(f"This confirms O(1) AMORTIZED cost: {total_time/n*1e6:.3f} μs per insertion on average,")
-print(f"even though {resize_count} individual insertions were much more expensive (the resizes).")
-```
-
-**Record in `LAB 8 Hash Tables from Scratch.md`:** How does the max-to-average ratio connect to PS 6's `simulate_appends` with doubling? Is the underlying reason the same?
-
----
-
-## Part 4: Apply the Patterns — Three Real Problems (20 minutes)
+## Part 4: Apply the Patterns — Two-Sum (10 minutes)
 
 Add this section to the **bottom** of `hash_table.py` (instead of a separate `dict_patterns.py`):
 
@@ -454,7 +406,7 @@ Add this section to the **bottom** of `hash_table.py` (instead of a separate `di
 dict_patterns.py
 CS 101 — Week 8, Lab 8
 
-Apply this week's patterns to solve three problems, each in O(n).
+Apply this week's lookup pattern to two-sum in O(n).
 """
 
 
@@ -473,51 +425,7 @@ assert two_sum([1, 2, 3], 100)     == None
 print("✓ two_sum")
 
 
-def first_unique_char(s):
-    """
-    Return the first character in s that appears exactly once, or None.
-    O(n), two-pass (count, then scan in order).
-    """
-    # TODO: implement
-    pass
-
-
-assert first_unique_char("swiss")      == 'w'
-assert first_unique_char("aabbcc")     == None
-assert first_unique_char("statistics") == 'a'
-print("✓ first_unique_char")
-
-
-def group_anagrams(words):
-    """
-    Group words that are anagrams of each other.
-
-    Key insight: two words are anagrams iff their SORTED character
-    sequences are identical. Use the sorted string as a dict key.
-
-    Returns a list of lists (each inner list is a group of anagrams).
-    Order of groups and order within groups should follow first appearance.
-
-    Examples:
-        group_anagrams(["eat","tea","tan","ate","nat","bat"])
-        → [["eat","tea","ate"], ["tan","nat"], ["bat"]]
-    """
-    groups = {}   # maps sorted-tuple -> list of original words
-    order = []    # track first-appearance order of each group's key
-
-    # TODO: for each word, compute its sorted-character key,
-    # append to the appropriate group (creating it if new)
-
-    return [groups[key] for key in order]
-
-
-result = group_anagrams(["eat","tea","tan","ate","nat","bat"])
-assert sorted(result[0]) == sorted(["eat","tea","ate"])
-assert sorted(result[1]) == sorted(["tan","nat"])
-assert result[2] == ["bat"]
-print("✓ group_anagrams")
-
-print("\n🎉 All pattern applications passed!")
+print("\n🎉 two_sum passed!")
 ```
 
 ---
@@ -614,21 +522,16 @@ git push
 
 **Q2.** In `_resize()` for `ChainedHashTable`, why is it WRONG to simply copy the old `_buckets` list into a bigger array (e.g., `self._buckets = old_buckets + [[] for _ in range(extra)]`)? What specifically breaks?
 
-**Q3.** L25's timing demo showed dramatic speedups for `set` over `list` membership. Given this, why doesn't Python just make ALL lists behave like sets internally? What would be lost?
-
-**Q4.** The `OpenAddressingHashTable` uses a lower max load factor (0.5) than `ChainedHashTable` (0.75). Using your Part 2 data, justify why this different threshold makes engineering sense.
-
 ---
 
 ## TA Checkoff Criteria
 
 | Part | Points | Show your TA |
 |---|---|---|
-| 1 | 35 | Both hash tables implemented; `run_tests()` passes including resize integrity |
-| 2 | 20 | Load-factor table with the recorded analysis |
-| 3 | 15 | Insertion-timing output with the comparison to PS 6 |
-| 4 | 20 | `two_sum`, `first_unique_char`, `group_anagrams` pass their asserts |
-| 5 | 10 | Contract investigation output with both questions answered |
+| 1 | 40 | Both hash tables implemented; `run_tests()` passes including resize integrity |
+| 2 | 25 | Load-factor table with the recorded analysis |
+| 4 | 15 | `two_sum` passes its asserts |
+| 5 | 20 | Contract investigation output with both questions answered |
 | **Total** | **100** | Reflection answered and work committed (required) |
 
 ---
