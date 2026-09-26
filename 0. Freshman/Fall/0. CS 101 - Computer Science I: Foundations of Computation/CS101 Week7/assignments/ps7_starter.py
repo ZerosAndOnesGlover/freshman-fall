@@ -6,20 +6,14 @@ Due Friday 20 November 2026, 17:00
 
 Student: ____________________________
 
-State each method's cost in a comment. pop/peek/dequeue raise IndexError when empty.
+State each method's cost in a comment. dequeue raises IndexError when empty.
+Where a stack is needed, use your Lab 7 Stack class or a plain list (append/pop).
 """
 from collections import deque
 import timeit
 
 
-# --- B1: List-based -----------------------------------------------------------
-class ArrayStack:
-    """TODO: which end of the list is the top, and why?"""
-    def __init__(self):
-        self._items = []
-    # TODO: push, pop, peek, is_empty, __len__
-
-
+# --- B1: Two array queues ----------------------------------------------------
 class ArrayQueue:
     """Queue on collections.deque."""
     def __init__(self):
@@ -34,16 +28,11 @@ class NaiveArrayQueue:
     # TODO: enqueue, dequeue, is_empty, __len__
 
 
-# --- B2: Linked ---------------------------------------------------------------
+# --- B2: Linked queue ---------------------------------------------------------
 class _Node:
     def __init__(self, data, next=None):
         self.data = data
         self.next = next
-
-
-class LinkedStack:
-    """Top = head."""
-    # TODO
 
 
 class LinkedQueue:
@@ -53,7 +42,8 @@ class LinkedQueue:
 
 # --- B3: LinkedList -----------------------------------------------------------
 class LinkedList:
-    # TODO: __init__(items=()), append, to_list, count, reverse, remove_duplicates
+    # Start from your Lab 7 LinkedList (append, to_list), then add:
+    # TODO: count, reverse, remove_duplicates
     pass
 
 

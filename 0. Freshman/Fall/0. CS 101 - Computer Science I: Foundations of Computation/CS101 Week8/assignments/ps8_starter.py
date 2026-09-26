@@ -8,7 +8,7 @@ Student: ____________________________
 
 State each function's cost in its docstring; at least two asserts per function.
 """
-from collections import defaultdict
+from collections import defaultdict   # optional
 
 
 # --- B1: paste ChainedHashTable from L26 here, then add keys, values, items, update ---
@@ -31,21 +31,9 @@ def longest_consecutive(nums):
     """TODO — start counting only at a value whose predecessor is absent"""
     pass
 
-def group_by_first_letter(words):
-    """TODO — defaultdict(list), return a plain dict"""
-    pass
-
 
 # --- B3 ---------------------------------------------------------------------------
-def two_sum(nums, target):
-    """TODO"""
-    pass
-
 def two_sum_all_pairs(nums, target):
-    """TODO"""
-    pass
-
-def four_sum_count(A, B, C, D):
     """TODO"""
     pass
 
@@ -62,9 +50,5 @@ def jaccard(a, b):
     pass
 
 def common_words(text1, text2):
-    """TODO"""
-    pass
-
-def difference_report(a, b, name_a="A", name_b="B"):
     """TODO"""
     pass

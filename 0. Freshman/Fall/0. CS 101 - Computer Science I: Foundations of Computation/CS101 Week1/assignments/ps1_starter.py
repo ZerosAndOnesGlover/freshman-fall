@@ -23,7 +23,7 @@ print(f"Input:      {s!r}")
 
 # --- B2: Expression Evaluator --------------------------------------------------
 print(f"{'2 ** 32':<30} {2 ** 32}")
-# TODO: items 2-8, one print each, same layout
+# TODO: items 2-5, one print each, same layout
 
 
 # --- B3: Integer Dissector -----------------------------------------------------

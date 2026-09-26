@@ -7,7 +7,6 @@ Due Friday 6 November 2026, 17:00
 Student: ____________________________
 
 Every function: docstring with its invariant (or base/recursive case) and at least three asserts.
-B3 ends with a loop that prints the comparison table for n = 100, 200, 400.
 """
 
 # --- B1: Search variants ---
@@ -60,15 +59,3 @@ def top_k(lst, k):
     # TODO
     pass
 
-
-# --- B3: Counting comparisons ---
-def selection_sort_count(lst):
-    """(sorted copy, number of element comparisons)."""
-    # TODO
-    pass
-
-
-def insertion_sort_count(lst):
-    """(sorted copy, number of element comparisons)."""
-    # TODO
-    pass

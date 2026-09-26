@@ -29,11 +29,6 @@ def flatten(lst):
     pass
 
 
-def deep_sum(lst):
-    """Sum of every number in an arbitrarily nested list."""
-    # TODO
-    pass
-
 
 # --- B2: Recursive string operations ---
 def count_vowels(s):
@@ -47,11 +42,6 @@ def is_balanced(s, depth=0):
     # TODO
     pass
 
-
-def interleave(s1, s2):
-    """Alternate characters of s1 and s2; append the rest of the longer one."""
-    # TODO
-    pass
 
 
 # --- B3: Divide and conquer ---
@@ -73,33 +63,11 @@ def merge_sort(lst):
     pass
 
 
-def binary_search(lst, target, lo=0, hi=None):
-    """Index of target in sorted lst, or -1 (L13 §8)."""
-    # TODO
-    pass
 
-
-# --- B4: Choose-explore-unchoose ---
+# --- B4: Subsets ---
 def subsets(lst):
     """All subsets of lst: those without the first element, then those with it."""
     # TODO
     pass
 
 
-def combinations(lst, k):
-    """All k-element subsets of lst, keeping lst's order: C(n,k) = C(n-1,k-1) + C(n-1,k)."""
-    # TODO
-    pass
-
-
-# --- B5: Recursion to iteration ---
-def factorial_iterative(n):
-    """TODO"""
-    # TODO
-    pass
-
-
-def binary_search_iter(lst, target):
-    """TODO"""
-    # TODO
-    pass

@@ -23,10 +23,6 @@ def normalize(value, src_min, src_max, dst_min=0.0, dst_max=1.0):
     """TODO — must call lerp"""
     pass
 
-def smooth_step(t):
-    """TODO"""
-    pass
-
 
 # --- B2: Strings ----------------------------------------------------------------
 def title_case(text):
@@ -37,10 +33,6 @@ def count_substring(text, sub):
     """TODO — non-overlapping, while loop + slicing, no .count()"""
     pass
 
-def is_palindrome_phrase(text):
-    """TODO"""
-    pass
-
 
 # --- B3: Functions as Values ------------------------------------------------------
 def apply_to_all(func, lst):
@@ -49,10 +41,6 @@ def apply_to_all(func, lst):
 
 def keep_if(predicate, lst):
     """TODO"""
-    pass
-
-def compose(f, g):
-    """TODO — return a function computing f(g(x))"""
     pass
 
 
@@ -66,12 +54,3 @@ assignments = [
 ]
 # TODO: percentage, contribution, weighted_average, letter_grade, print_report
 
-
-# --- B5: Recursion Preview ----------------------------------------------------------
-def power(base, exp):
-    """TODO — recursive; comment the base case and the recursive step"""
-    pass
-
-def gcd(a, b):
-    """TODO — recursive Euclid"""
-    pass
