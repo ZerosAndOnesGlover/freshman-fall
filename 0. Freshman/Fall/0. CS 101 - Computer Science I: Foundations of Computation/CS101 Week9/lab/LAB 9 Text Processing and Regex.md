@@ -158,7 +158,8 @@ Write a verbose, anchored, named-group pattern for lines like:
 ```
 
 It must extract `date`, `time`, `level`, `message`, and **skip** malformed lines rather than
-raising. Test against a file containing at least two malformed lines.
+raising. Test it on a Python list of lines that includes at least two malformed ones (reading files is
+Week 10). *(Revised 2026-09-26: this used to say "a file".)*
 
 ### Exercise 3.3 — Validation, done correctly
 

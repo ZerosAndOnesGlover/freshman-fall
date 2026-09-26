@@ -55,41 +55,16 @@ def is_palindrome(s):
     raise NotImplementedError
 
 
-# ─────────────────────────── B3: naive search ────────────────────────────────
+# ─────────────────────────── Part C helper: your Lab 9 log pattern ───────────
 
-def naive_search(haystack, needle):
-    """Return (index, comparisons).  index is the first match or -1.
-    An empty needle matches at index 0 with 0 comparisons.
-
-    >>> naive_search("hello world", "world")
-    (6, 11)
-    """
-    # TODO: try every alignment; count each character comparison
-    raise NotImplementedError
-
-
-# ─────────────────────────── B4: log parsing ─────────────────────────────────
-
-# TODO: build a verbose, anchored pattern with named groups
-#       date, time, level, message
+# Paste the verbose, anchored, named-group pattern from Lab 9 Exercise 3.2 here
+# (named groups: date, time, level, message).
 LOG = re.compile(r"""
     # your pattern here
 """, re.VERBOSE)
 
 
-def parse_logs(lines):
-    """List of dicts (date, time, level, message). Malformed lines are SKIPPED."""
-    # TODO: match each line; append m.groupdict() only when m is not None
-    raise NotImplementedError
-
-
-# ─────────────────────────── B5: validation and splitting ────────────────────
-
-def valid_email(s):
-    """Loose structural check: local@domain.tld.  Use fullmatch, not search."""
-    # TODO
-    raise NotImplementedError
-
+# ─────────────────────────── B3: splitting and doubled words ─────────────────
 
 def split_fields(line):
     """Split one comma-separated line, honouring quoted fields.
@@ -159,13 +134,6 @@ def main():
         ("palindrome punctuation",    lambda: is_palindrome("!!!"), True),
         ("palindrome classic",        lambda: is_palindrome("A man, a plan, a canal: Panama"), True),
         ("palindrome negative",       lambda: is_palindrome("ab"), False),
-        ("naive_search hit",          lambda: naive_search("hello world", "world"), (6, 11)),
-        ("naive_search miss",         lambda: naive_search("aaaa", "aab")[0], -1),
-        ("naive_search empty needle", lambda: naive_search("abc", ""), (0, 0)),
-        ("naive worst case (8,3)",    lambda: naive_search("a" * 8, "aaab"), (-1, 20)),
-        ("parse_logs skips bad",      lambda: len(parse_logs(["2026-07-26 11:02:33 ERROR disk full", "junk"])), 1),
-        ("valid_email good",          lambda: valid_email("bob@example.com"), True),
-        ("valid_email no tld",        lambda: valid_email("a@b"), False),
         ("split_fields quoted",       lambda: split_fields('name,"Smith, John",42'), ['name', 'Smith, John', '42']),
         ("collapse_whitespace",       lambda: collapse_whitespace("  a   b \t\n c  "), "a b c"),
         ("find_doubled_words",        lambda: find_doubled_words("the the quick Fox fox fox"), ['the', 'fox']),
