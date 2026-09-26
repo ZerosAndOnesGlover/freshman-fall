@@ -30,31 +30,14 @@ Copy `debug_exercise.py` from this week's `lab/` folder into `"$CS101/week2"`.
 
 ---
 
-## Part 1: Tracing by Hand (35 minutes) — 30 points
+## Part 1: Tracing by Hand (20 minutes) — 20 points
+
+*(Revised 2026-09-26: the parts added up to over 120 minutes. The Collatz trace that repeated Problem
+Set 2 A1, and FizzBuzz, which Lecture 07 §7 works in full, were removed.)*
 
 Work on paper. Do not run anything in this part.
 
-### Exercise 1.1 (12 points)
-
-```python
-x = 100
-result = 0
-count = 0
-while x > 1:
-    if x % 2 == 0:
-        x = x // 2
-    else:
-        x = 3 * x + 1
-    result += x
-    count += 1
-```
-
-Build the state table for the first 8 iterations — columns: iteration, `x` at the start, even?,
-`x` at the end, `result`, `count`. Then:
-1. What does `result` accumulate?
-2. State the loop invariant: what is true about `result` and `count` at the start of each iteration?
-
-### Exercise 1.2 (8 points)
+### Exercise 1.1 (10 points)
 
 This is meant to print `5! = 120`. Trace three iterations, find the bug, and use the invariant
 `result == (i - 1)!` to say what the starting value must be.
@@ -69,7 +52,7 @@ while i <= n:
 print(result)
 ```
 
-### Exercise 1.3 (10 points)
+### Exercise 1.2 (10 points)
 
 ```python
 total = 0
@@ -87,7 +70,7 @@ Trace it with one row per inner-loop step. What is printed? What is being added 
 
 ---
 
-## Part 2: Print-Debugging (30 minutes) — 25 points
+## Part 2: Print-Debugging (30 minutes) — 30 points
 
 `debug_exercise.py` holds five short programs, each with one bug:
 
@@ -112,11 +95,11 @@ and say what the programmer meant, (4) fix it, (5) remove the debug print. Recor
 
 ---
 
-## Part 3: Loops to Write (40 minutes) — 35 points
+## Part 3: Loops to Write (30 minutes) — 35 points
 
 Create `loops.py`. Each exercise is a short script section.
 
-### Exercise 3.1: Collatz (10 points)
+### Exercise 3.1: Collatz (15 points)
 
 **(a)** Read `n` and print how many steps the Collatz rule (even → `n // 2`, odd → `3n + 1`) takes to
 reach 1. Check: `1` → 0, `6` → 8, `27` → 111.
@@ -124,7 +107,7 @@ reach 1. Check: `1` → 0, `6` → 8, `27` → 111.
 **(b)** With a `for` loop over 1..20 around a `while` loop, print the starting number that takes the
 most steps, and how many. Check: `18 20`.
 
-### Exercise 3.2: Sieve of Eratosthenes (15 points)
+### Exercise 3.2: Sieve of Eratosthenes (20 points)
 
 Following L09 §8: read `n`, make `is_prime = [True] * (n + 1)`, mark 0 and 1 as not prime, and for
 each `p` with `p * p <= n` that is still marked prime, cross out `p*p, p*p + p, …`. Then:
@@ -133,15 +116,9 @@ each `p` with `p * p <= n` that is still marked prime, cross out `p*p, p*p + p, 
 - print how many there are — for 100: `25`
 - print the gaps between consecutive primes — for 30: `[1, 2, 2, 4, 2, 4, 2, 4, 6]`
 
-### Exercise 3.3: FizzBuzz (10 points)
-
-For 1..30, print `Fizz` for multiples of 3, `Buzz` for multiples of 5, `FizzBuzz` for multiples of
-both, and the number otherwise. Then change your program so multiples of 7 also add `Bazz`
-(21 → `FizzBazz`, 35 would be `BuzzBazz`) — build the word up with `+=`, don't list every combination.
-
 ---
 
-## Part 4: Invariant Comments (15 minutes) — 10 points
+## Part 4: Invariant Comments (15 minutes) — 15 points
 
 Above two of your loops (3.1(a) and 3.2 are good choices), write:
 
@@ -176,10 +153,10 @@ wrong accumulation.
 
 | Part | Points | Show your TA |
 |---|---|---|
-| 1 | 30 | Three traced tables on paper, with the answers |
-| 2 | 25 | Five bugs fixed and explained (5 each) |
+| 1 | 20 | Two traced tables on paper, with the answers |
+| 2 | 30 | Five bugs fixed and explained (6 each) |
 | 3 | 35 | `loops.py` gives every check value above |
-| 4 | 10 | Two complete invariant comments |
+| 4 | 15 | Two complete invariant comments |
 | **Total** | **100** | Reflection answered and work committed (required) |
 
 ---

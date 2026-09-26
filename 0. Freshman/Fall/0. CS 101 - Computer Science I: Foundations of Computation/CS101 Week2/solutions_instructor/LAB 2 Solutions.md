@@ -5,38 +5,24 @@
 
 ---
 
-## Part 1 — Tracing (30)
+## Part 1 — Tracing (20)
 
-### 1.1 (12)
+*(Revised 2026-09-26: the old 1.1 Collatz trace and 3.3 FizzBuzz were removed from the lab; 1.2 and 1.3
+are now 1.1 and 1.2. Answers for 3.3 below can be ignored.)*
 
-| Iter | `x` start | even? | `x` end | `result` | `count` |
-|---|---|---|---|---|---|
-| 1 | 100 | T | 50 | 50 | 1 |
-| 2 | 50 | T | 25 | 75 | 2 |
-| 3 | 25 | F | 76 | 151 | 3 |
-| 4 | 76 | T | 38 | 189 | 4 |
-| 5 | 38 | T | 19 | 208 | 5 |
-| 6 | 19 | F | 58 | 266 | 6 |
-| 7 | 58 | T | 29 | 295 | 7 |
-| 8 | 29 | F | 88 | 383 | 8 |
-
-`result` is the sum of every value in the Collatz trajectory of 100 after the seed (the full run is
-25 steps; `result` ends at **708**). Invariant: *`count` is the number of Collatz steps taken so far,
-and `result` is the sum of the `count` values reached after 100.* *(8 table, 4 answers.)*
-
-### 1.2 (8)
+### 1.1 (10)
 
 `result` starts at `0`, so every product is `0` and it prints `0`. The invariant `result == (i - 1)!`
 at `i = 1` needs `result == 0! == 1`. Fix: `result = 1` → prints `120`.
 
-### 1.3 (10)
+### 1.2 (10)
 
 For `i = 1..4` the inner loop adds `1 + … + i`: 1, 3, 6, 10. Printed: **20** — the sum of the
 first four triangular numbers.
 
 ---
 
-## Part 2 — Print-Debugging (25, 5 each)
+## Part 2 — Print-Debugging (30, 6 each)
 
 | Bug | Buggy output | Wrong line | Fix | Class |
 |---|---|---|---|---|
@@ -126,7 +112,7 @@ with 21 → `FizzBazz` and 15, 30 → `FizzBuzz`.
 
 *10 / 15 / 10. In 3.3, a solution that lists `FizzBuzzBazz` etc. as separate cases works but loses 3.*
 
-## Part 4 — Invariants (10)
+## Part 4 — Invariants (15)
 
 5 each: all four lines present and true. The comments in the reference code above are acceptable
 invariants; initialisation/preservation/termination must be argued, not restated.
