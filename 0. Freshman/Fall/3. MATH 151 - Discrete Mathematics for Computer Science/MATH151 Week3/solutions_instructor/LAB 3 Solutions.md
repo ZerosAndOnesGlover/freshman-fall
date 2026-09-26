@@ -1,6 +1,10 @@
 # MATH 151 · Week 3
 ## LAB3 Solutions — INSTRUCTOR ONLY
 
+*(Revised 2026-09-26: the lab no longer asks Exercises 2.2 and 2.4 or Bug 3.4. Section 4's `check_induction` now returns a
+tuple `(base_ok, step_ok, first_failure)`: Gauss → `(True, True, None)`; 2ⁿ > n² from 1 → `(True, False, 1)` (P(1) true,
+P(2) false); from 5 → `(True, True, None)`; n² + n odd → `(False, None, 1)`.)*
+
 ---
 
 ## Section 1 Solutions

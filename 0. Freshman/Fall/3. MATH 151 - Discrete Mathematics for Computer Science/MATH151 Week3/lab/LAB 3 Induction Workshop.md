@@ -115,6 +115,10 @@ For claim_b, explain: can a claim be true for all large n even when the inductiv
 
 ## Section 2 — Writing Proofs from Scratch (45 min)
 
+*(Revised 2026-09-26: cut from five proofs to three, and from four broken proofs to three, to fit the session.
+Section 4 used to return a dict (dictionaries are CS 101 Week 8) and extend `predicate_tools.py`, which Lab 1 no
+longer builds; it now returns a tuple. Exercise numbers are unchanged.)*
+
 Write complete proofs. Use the template from the resources folder. Label every section.
 
 ---
@@ -129,16 +133,6 @@ Show every line of algebra in the inductive step. Identify exactly where the IH 
 
 ---
 
-### Exercise 2.2 — Inequality
-
-Prove by weak induction:
-
-$$2^n \geq n + 1 \quad \text{for all } n \geq 1$$
-
-*After the proof:* Check whether your IH statement is of the form "for some fixed k" (correct) or "for all n" (wrong). See PS3 Problem E2.
-
----
-
 ### Exercise 2.3 — Divisibility
 
 Prove by weak induction:
@@ -146,18 +140,6 @@ Prove by weak induction:
 $$6 \mid (n^3 + 5n) \quad \text{for all } n \geq 0$$
 
 *Hint:* $n^3 + 5n = n^3 - n + 6n = (n-1)n(n+1) + 6n$. The product of three consecutive integers is divisible by 6.
-
----
-
-### Exercise 2.4 — Recursive Sequence
-
-The sequence $\{b_n\}$ is defined by $b_1 = 2$, $b_n = 2b_{n-1} + 3$ for $n \geq 2$.
-
-**(a)** Compute $b_1$ through $b_5$.
-
-**(b)** Conjecture a closed form. *(Hint: compute $b_n + c$ for some constant $c$ to make the recurrence homogeneous.)*
-
-**(c)** Prove your conjecture by weak induction.
 
 ---
 
@@ -236,104 +218,39 @@ So the inductive step works! Therefore by induction, $n^2 + n$ is odd for all $n
 
 ---
 
-### Bug 3.4
+## Section 4 — Python: An Induction Checker (15 min)
 
-**Claim:** For all $n \geq 1$, $5 \mid (4^n + 6^n)$.
-
-**"Proof":**
-*Base case* ($n = 1$): $4 + 6 = 10 = 5 \cdot 2$. ✓
-
-*Inductive step:* Assume $5 \mid (4^k + 6^k)$.
-
-$$4^{k+1} + 6^{k+1} = 4 \cdot 4^k + 6 \cdot 6^k$$
-
-Hmm, I want to use the fact that $4^k + 6^k \equiv 0 \pmod{5}$, i.e., $6^k \equiv -4^k \pmod{5}$.
-
-$$= 4 \cdot 4^k + 6 \cdot 6^k = 4 \cdot 4^k + 6(-4^k) + 6 \cdot 4^k \cdot \text{[something]}$$
-
-I can't make this work. Let me try differently:
-
-$$4^{k+1} + 6^{k+1} = 4(4^k + 6^k) + (6-4) \cdot 6^k = 4(4^k + 6^k) + 2 \cdot 6^k$$
-
-By IH, $5 \mid 4(4^k + 6^k)$. But $5 \mid 2 \cdot 6^k$? Not obviously. The proof is stuck. ✓(?)
-
-**The student got stuck. Is the claim true or false? If true, find and write a correct proof. If false, find a counterexample.**
-
----
-
-## Section 4 — Python: Induction Verifier Extension (15 min)
-
-Extend `predicate_tools.py` with an induction checker.
+Add this function to the same file as Exercise 1.1. It returns a **tuple**, as CS 101 Lecture 10 §4.2 does
+for multiple return values: `(base_ok, step_ok, first_failure)`.
 
 ```python
-def check_induction(base_cases, predicate, n_max):
-    """
-    Verifies:
-    1. All base cases hold.
-    2. For each k from max(base_cases) to n_max-1:
-       if predicate(k) then predicate(k+1).
-    3. Reports the first failure at either stage.
-    
-    Args:
-        base_cases: list of integers (e.g. [0] or [1, 2])
-        predicate: function int -> bool
-        n_max: check up to this value
-    
-    Returns: dict with keys 'base_ok', 'step_ok', 'first_failure', 'message'
-    """
-    # Check base cases
-    for b in base_cases:
-        if not predicate(b):
-            return {
-                'base_ok': False,
-                'step_ok': None,
-                'first_failure': b,
-                'message': f"BASE CASE FAILS at n={b}"
-            }
-    
-    # Check inductive step
-    start = max(base_cases)
-    for k in range(start, n_max):
+def check_induction(base, predicate, n_max):
+    """Check the base case, then 'P(k) implies P(k+1)' for k = base .. n_max - 1.
+    Returns (base_ok, step_ok, first_failure); first_failure is None if nothing failed."""
+    if not predicate(base):
+        return False, None, base
+    for k in range(base, n_max):
         if predicate(k) and not predicate(k + 1):
-            return {
-                'base_ok': True,
-                'step_ok': False,
-                'first_failure': k,
-                'message': f"INDUCTIVE STEP FAILS: P({k}) is True but P({k+1}) is False"
-            }
-    
-    return {
-        'base_ok': True,
-        'step_ok': True,
-        'first_failure': None,
-        'message': f"Both base case(s) and inductive step verified for n up to {n_max}"
-    }
+            return True, False, k
+    return True, True, None
 ```
 
-**Task:** Add to `predicate_tools.py`. Test on:
+Test it:
 
 ```python
-# Test 1: Gauss's formula (should pass)
-gauss = lambda n: sum(range(1, n+1)) == n*(n+1)//2
-print(check_induction([1], gauss, 100))
+gauss = lambda n: sum(range(1, n + 1)) == n * (n + 1) // 2
+print(check_induction(1, gauss, 100))
 
-# Test 2: 2^n > n^2 with base n=1 (should fail inductive step early)
 exp_gt_sq = lambda n: 2**n > n**2
-print(check_induction([1], exp_gt_sq, 20))
+print(check_induction(1, exp_gt_sq, 20))
+print(check_induction(5, exp_gt_sq, 50))
 
-# Test 3: 2^n > n^2 with base n=5 (should pass from n=5 onward)
-print(check_induction([5], exp_gt_sq, 50))
-
-# Test 4: False claim n^2+n is odd (base case should fail)
 odd_claim = lambda n: (n**2 + n) % 2 == 1
-print(check_induction([1], odd_claim, 20))
-
-# Test 5: 7 | (8^n - 1)
-div7 = lambda n: (8**n - 1) % 7 == 0
-print(check_induction([0], div7, 30))
+print(check_induction(1, odd_claim, 20))
 ```
 
-For each test, interpret the output: what does the tool tell you about the claim?
+For each test, say what the tuple tells you about the claim. Why can a finite check like this support an
+induction proof but never replace it?
 
 ---
 
@@ -351,4 +268,3 @@ Show your TA:
 
 ---
 
-*Save `predicate_tools.py` with the new function — it will be extended in Lab 4.*
