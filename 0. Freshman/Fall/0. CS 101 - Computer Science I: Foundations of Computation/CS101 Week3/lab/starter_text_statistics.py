@@ -83,32 +83,6 @@ def longest_word(text):
     pass
 
 
-def shortest_word(text):
-    """
-    Return the shortest word in text (first one if there's a tie).
-    Return "" if text has no words.
-
-    >>> shortest_word("the quick brown fox")
-    'the'
-    """
-    # TODO
-    pass
-
-
-def is_pangram(text):
-    """
-    Return True if text contains every letter a-z at least once.
-    Case-insensitive.
-
-    >>> is_pangram("The quick brown fox jumps over the lazy dog")
-    True
-    >>> is_pangram("Hello world")
-    False
-    """
-    # TODO
-    pass
-
-
 def reading_level(text):
     """
     Estimate reading level based on average words per sentence.
@@ -140,8 +114,6 @@ def display_report(text):
     print(f"  Sentence count:      {sentence_count(text)}")
     print(f"  Avg word length:     {average_word_length(text):.2f}")
     print(f"  Longest word:        {longest_word(text)}")
-    print(f"  Shortest word:       {shortest_word(text)}")
-    print(f"  Is pangram:          {is_pangram(text)}")
     print(f"  Reading level:       {reading_level(text)}")
     print("=" * 50)
 
@@ -169,16 +141,6 @@ def run_tests():
     assert longest_word("the quick brown fox") == "quick"
     assert longest_word("") == ""
     print("✓ longest_word")
-
-    # shortest_word
-    assert shortest_word("the quick brown fox") == "the"
-    assert shortest_word("") == ""
-    print("✓ shortest_word")
-
-    # is_pangram
-    assert is_pangram("The quick brown fox jumps over the lazy dog") == True
-    assert is_pangram("Hello world") == False
-    print("✓ is_pangram")
 
     # reading_level
     assert reading_level("I am. You are. He is.") == "Elementary"
