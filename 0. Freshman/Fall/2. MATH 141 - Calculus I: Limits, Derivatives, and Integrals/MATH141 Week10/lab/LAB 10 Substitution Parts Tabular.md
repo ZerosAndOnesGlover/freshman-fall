@@ -3,27 +3,34 @@
 ### Substitution Pattern Recognition, Symmetry, and the Tabular Method for Integration by Parts
 
 **Date:** Friday 4 December 2026 · 15:00–16:50 · Lab Section (Week 10) — covers Week 10 (Lectures 01–03)  
-**Duration:** 2 hours | **Tools:** Desmos, Python (optional)
+**Duration:** 2 hours | **Tools:** Desmos (its integral tool: type `int`), and the Lab 09 `midpoint_rule` in Python
+**Expected time:** the session itself (6 questions), plus at most 30 minutes to tidy your answers
 **Submission:** Written report due Monday 7 December 2026, 17:00 (Week 11)
+
+> *Revised 2026-09-26.* Cut from five parts, about 20 questions and a reflection to 6 questions, in the week
+> that also holds Midterm 2. Part 4 pointed to "Problem Set Part E2" for $\int x^2e^{-x}dx$, but PS 10 never
+> asked that integral; the question is now self-contained. The "solve for $I$" check (Part 5) was removed.
 
 ---
 
 ## Lab Objectives
 
-1. Build fluency in recognizing substitution patterns quickly
-2. Verify substitution results numerically and graphically
-3. Confirm symmetry shortcuts using Desmos visualizations
-4. Learn and apply the tabular method for repeated integration by parts
-5. Explore the "solve for $I$" technique with a numerical sanity check
+1. Spot the substitution in an integral quickly
+2. Check a substitution result numerically and in Desmos
+3. See symmetry cancel and double areas
+4. Learn the tabular method for repeated integration by parts
 
 ---
 
-## Part 1 — Substitution Pattern Recognition Drill (25 min)
+## Part 1 — Substitution Pattern Recognition (15 min)
 
-For each integral, do NOT fully solve it — just identify the substitution $u=g(x)$ you would use, and verify that $du$ (up to a constant) appears elsewhere in the integrand. This drill builds the pattern-recognition speed that makes substitution feel automatic rather than laborious.
+### Question 1 (15 points)
 
-| # | Integral | Your choice of $u$ | Does $du$ appear (up to constant)? |
-|---|----------|---------------------|--------------------------------------|
+For each integral, **do not** solve it — just name the substitution $u=g(x)$ and check that $du$ (up to a
+constant) appears in the integrand. Then fully solve any **two** of them.
+
+| # | Integral | Your $u$ | Does $du$ appear? |
+|---|----------|----------|-------------------|
 | 1 | $\int x^4\sin(x^5)\,dx$ | | |
 | 2 | $\int \dfrac{e^{\sqrt x}}{\sqrt x}\,dx$ | | |
 | 3 | $\int \tan^5x\sec^2x\,dx$ | | |
@@ -33,69 +40,47 @@ For each integral, do NOT fully solve it — just identify the substitution $u=g
 | 7 | $\int \sqrt{\tan x}\sec^2x\,dx$ | | |
 | 8 | $\int \dfrac{\arctan x}{1+x^2}\,dx$ | | |
 
-**Question 1a:** After completing the table, pick THREE of these and fully solve them (indefinite integral).
+---
 
-**Question 1b:** For entries where you struggled to identify $u$, what made the pattern harder to spot? Was it a "hidden" derivative relationship, or a less common function combination?
+## Part 2 — Checking a Substitution (20 min)
+
+### Question 2 (20 points)
+
+Evaluate $\displaystyle\int_0^2 x(x^2+1)^2\,dx$ by substitution, converting the limits. Then check it two ways:
+`midpoint_rule(lambda x: x * (x**2 + 1)**2, 0, 2, 1000)` in Python, and Desmos's integral tool (type `int`,
+then fill in the limits and integrand). Do all three agree to at least 3 decimal places?
 
 ---
 
-## Part 2 — Verifying Substitution Numerically (25 min)
+## Part 3 — Symmetry (20 min)
 
-### Exercise 2.1
+### Question 3 (20 points)
 
-Consider $\displaystyle\int_0^2 x(x^2+1)^2\,dx$ (Problem Set B1).
+**(a)** $f(x) = x^3 - 4x$. Show algebraically that $f$ is odd. In Desmos, compute $\int_{-3}^{0} f$ and $\int_{0}^{3} f$.
+What is $\int_{-3}^{3} f$, and why could you have said so at once?
 
-**Question 2a:** Solve this using substitution (limit-conversion method).
-
-**Question 2b:** Verify numerically using a midpoint Riemann sum with $n=1000$ subintervals (you may estimate mentally using the formula, or use Python/a calculator if available):
-
-$$M_{1000} = \Delta x \sum_{i=1}^{1000} f(\bar x_i), \quad f(x) = x(x^2+1)^2$$
-
-Do the exact (substitution-based) and numerical (Riemann sum) answers agree to at least 3 decimal places?
-
-### Exercise 2.2 — Graphical Verification
-
-**Question 2c:** In Desmos, graph $f(x) = x(x^2+1)^2$ on $[0,2]$ and shade the region under the curve (Desmos supports this via an inequality or the built-in integral tool `\int_0^2 x(x^2+1)^2 dx`).
-
-**Question 2d:** Does Desmos's computed value match your hand computation from Question 2a?
+**(b)** $g(x) = x^4 - 5x^2 + 4$. Show that $g$ is even. In Desmos, compute $\int_0^{2.5} g$ and $\int_{-2.5}^{2.5} g$,
+and check the second is exactly double the first.
 
 ---
 
-## Part 3 — Symmetry Visualization (25 min)
+## Part 4 — The Tabular Method (50 min)
 
-### Exercise 3.1 — Seeing Odd Symmetry Cancel
-
-In Desmos, graph $f(x) = x^3 - 4x$ on $[-3,3]$.
-
-**Question 3a:** Is this function even, odd, or neither? Verify algebraically.
-
-**Question 3b:** Using Desmos's shading/area tools, visually confirm that the signed area from $-3$ to $0$ is the exact negative of the signed area from $0$ to $3$. Take a screenshot showing both shaded regions.
-
-**Question 3c:** What is $\displaystyle\int_{-3}^3(x^3-4x)\,dx$? State the answer immediately using symmetry, then confirm with Desmos's integral tool.
-
-### Exercise 3.2 — Seeing Even Symmetry Double
-
-Graph $g(x) = x^4 - 5x^2 + 4$ on $[-2.5, 2.5]$.
-
-**Question 3d:** Confirm this is even. Using Desmos, compute $\displaystyle\int_0^{2.5}g(x)\,dx$ and $\displaystyle\int_{-2.5}^{2.5}g(x)\,dx$ — verify the second is exactly double the first.
-
-**Question 3e:** Find all $x$-intercepts of $g(x)$ (factor if possible: this is a quadratic in $x^2$). Does the symmetry of the ROOTS match the symmetry of the function?
-
----
-
-## Part 4 — The Tabular Method for Repeated Integration by Parts (30 min)
-
-When integration by parts must be applied multiple times (as in $\int x^3e^x\,dx$ or $\int x^2\cos x\,dx$), the **tabular method** organizes the work far more efficiently than repeated formula application.
+When integration by parts must be applied several times, as in $\int x^3e^x\,dx$ or $\int x^2\cos x\,dx$, the
+**tabular method** organizes the work. It is taught here, in the lab (Lecture 03 defers it to today).
 
 ### The Method
 
-To integrate $\displaystyle\int P(x)\cdot f(x)\,dx$ where $P(x)$ is a polynomial (eventually reaches zero after repeated differentiation) and $f(x)$ is easy to integrate repeatedly:
+To integrate $\displaystyle\int P(x)\cdot f(x)\,dx$, where $P$ is a polynomial and $f$ is easy to integrate
+repeatedly:
 
-1. Make a two-column table. Left column: $P(x)$ and its successive derivatives (down to 0). Right column: $f(x)$ and its successive antiderivatives (same number of rows).
-2. Alternate signs starting with $+$: $+,-,+,-,\ldots$
-3. Multiply diagonally (each left entry times the NEXT row's right entry), applying the alternating signs, and sum all products.
+1. Make a two-column table. Left: $P(x)$ and its successive derivatives, down to $0$. Right: $f(x)$ and its
+   successive antiderivatives, the same number of rows.
+2. Give the rows alternating signs, starting with $+$: $+,-,+,-,\ldots$
+3. Multiply diagonally (each row's left entry times the **next** row's right entry), apply that row's sign,
+   and add up the products.
 
-### Worked Example — Tabular Method for $\int x^3e^x\,dx$
+### Worked Example — $\int x^3e^x\,dx$
 
 | Sign | $P(x)$ and derivatives | $f(x)$ and antiderivatives |
 |------|--------------------------|------------------------------|
@@ -105,54 +90,35 @@ To integrate $\displaystyle\int P(x)\cdot f(x)\,dx$ where $P(x)$ is a polynomial
 | $-$ | $6$ | $e^x$ |
 | $+$ | $0$ | $e^x$ |
 
-Multiply diagonally (each row's LEFT entry times the NEXT row's RIGHT entry), with alternating signs:
+$$\int x^3e^x\,dx = x^3e^x - 3x^2e^x+6xe^x-6e^x+C = e^x(x^3-3x^2+6x-6)+C$$
 
-$$\int x^3e^x\,dx = +x^3e^x - 3x^2e^x+6xe^x-6e^x+C$$
+### Question 4 (10 points)
 
-$$= e^x(x^3-3x^2+6x-6)+C$$
+Differentiate the worked example's answer and confirm you get $x^3e^x$ back.
 
-**Question 4a:** Verify this by differentiating the answer and confirming you recover $x^3e^x$.
+### Question 5 (15 points)
 
-**Question 4b:** Use the tabular method to evaluate $\displaystyle\int x^2\cos x\,dx$. Build the full table (note: derivatives of $\cos x$ cycle through $\cos x\to-\sin x\to-\cos x\to\sin x\to\cos x\ldots$, but you only need to go until the polynomial column reaches 0).
+Use the tabular method to find $\displaystyle\int x^2\cos x\,dx$. Check your answer by differentiating.
 
-**Question 4c:** Use the tabular method to redo $\displaystyle\int x^2e^{-x}\,dx$ from the problem set. Confirm your tabular-method answer matches your by-hand-formula answer from Problem Set Part E2.
+### Question 6 (20 points)
 
-**Question 4d:** Why does the tabular method work? *(Hint: each row of the table represents one application of integration by parts; the alternating signs come from the "$-\int v\,du$" term flipping sign each time. Try to explicitly connect one or two rows of the table to the formula $\int u\,dv=uv-\int v\,du$.)*
-
----
-
-## Part 5 — Numerical Sanity Check for the "Solve for I" Technique (15 min)
-
-### Exercise 5.1
-
-Recall the result from Wednesday's lecture: $\displaystyle\int e^x\sin x\,dx = \dfrac{e^x(\sin x-\cos x)}{2}+C$.
-
-**Question 5a:** Differentiate the right-hand side and confirm it equals $e^x\sin x$ (this checks the algebra of the "solve for $I$" derivation independent of any numerical evaluation).
-
-**Question 5b:** Now evaluate the definite integral $\displaystyle\int_0^{\pi} e^x\sin x\,dx$ using the antiderivative formula.
-
-**Question 5c:** Estimate the same definite integral using a midpoint Riemann sum with $n=8$ subintervals (by hand or with a calculator). Does it approximately match your exact answer from 5b?
+Use the tabular method to find $\displaystyle\int x^2e^{-x}\,dx$, and check it by differentiating. Then explain why
+the method works: connect the first two rows of your table to one use of $\int u\,dv = uv - \int v\,du$, and
+say where the alternating signs come from.
 
 ---
 
 ## Lab Report Requirements
 
-Include:
-1. Completed pattern-recognition table from Part 1, plus 3 fully worked solutions
-2. Numerical and graphical verification from Part 2, with Desmos screenshots
-3. Symmetry visualizations from Part 3, with Desmos screenshots and written justification
-4. All tabular method computations from Part 4
-5. The verification and numerical check from Part 5
-6. **Reflection** (6–8 sentences): Compare the mental process of solving an integral via substitution vs. via integration by parts. How do you now decide, when first looking at an unfamiliar integral, which technique (or combination) to try first? What visual or structural cues do you look for?
+Include the Question 1 table with two worked integrals, your Python and Desmos checks for Question 2, the
+Desmos values for Question 3, your three tables for Part 4, and answers to Questions 1–6.
 
 **Grading:**
 
 | Section | Points |
 |---------|--------|
-| Part 1 — Pattern recognition | 20 |
-| Part 2 — Substitution verification | 20 |
-| Part 3 — Symmetry visualization | 20 |
-| Part 4 — Tabular method | 25 |
-| Part 5 — Solve-for-I check | 10 |
-| Reflection | 5 |
+| Part 1 — Pattern recognition | 15 |
+| Part 2 — Substitution checked | 20 |
+| Part 3 — Symmetry | 20 |
+| Part 4 — Tabular method | 45 |
 | **Total** | **100** |

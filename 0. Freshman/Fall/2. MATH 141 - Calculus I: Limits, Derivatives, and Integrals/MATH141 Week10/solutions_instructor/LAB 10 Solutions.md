@@ -1,135 +1,99 @@
 # MATH 141 · Week 10
 ## LAB 10 Solutions — INSTRUCTOR ONLY
 
-> **Every numerical value below was computed, not estimated.** Students working in Desmos rather
-> than Python will see the same behaviour but fewer digits — grade the *reasoning and the observed
-> trend*, not agreement to the last decimal place.
+> **Every numerical value below was computed, not estimated.** Grade the *reasoning*, not agreement to the
+> last decimal place.
+
+*(Revised 2026-09-26 to match the 6-question version of the lab.)*
 
 ---
 
 ## Part 1 — Substitution Pattern Recognition
 
-The pattern to teach: look for a composite f(g(x)) whose **inner derivative g′(x) is present as a
-factor** (up to a constant).
+**Q1 (15).** Every row has its $du$ present up to a constant:
 
-| Integral | u | du |
-|---|---|---|
-| ∫ 2x·e^(x²) dx | x² | 2x dx |
-| ∫ x/(1+x²) dx | 1+x² | 2x dx — supply the 1/2 |
-| ∫ sin(x)cos(x) dx | sin x | cos x dx (or u = cos x; both work) |
-| ∫ (ln x)/x dx | ln x | dx/x |
-| ∫ tan x dx | cos x | −sin x dx |
+| # | $u$ | $du$ | Antiderivative |
+|---|---|---|---|
+| 1 | $x^5$ | $5x^4dx$ | $-\tfrac15\cos(x^5)+C$ |
+| 2 | $\sqrt x$ | $\frac{dx}{2\sqrt x}$ | $2e^{\sqrt x}+C$ |
+| 3 | $\tan x$ | $\sec^2x\,dx$ | $\tfrac16\tan^6x+C$ |
+| 4 | $x^3+1$ | $3x^2dx$ | $-\dfrac{1}{12(x^3+1)^4}+C$ |
+| 5 | $\sin x$ | $\cos x\,dx$ | $e^{\sin x}+C$ |
+| 6 | $\ln x$ | $\frac{dx}{x}$ | $-\dfrac{1}{2(\ln x)^2}+C$ |
+| 7 | $\tan x$ | $\sec^2x\,dx$ | $\tfrac23\tan^{3/2}x+C$ |
+| 8 | $\arctan x$ | $\frac{dx}{1+x^2}$ | $\tfrac12(\arctan x)^2+C$ |
 
-**The diagnostic for a bad choice:** the substitution leaves an x that cannot be eliminated. That
-means the derivative factor was not really present, and a different u — or a different technique —
-is needed.
+*Marking: 1 per row (8), plus 3.5 per fully worked integral. Rows 2, 6 and 8 are the ones students most often
+miss: the derivative is hidden as a quotient.*
 
 ---
 
-## Part 2 — Verifying Substitution Numerically
+## Part 2 — Checking a Substitution
 
-The two required checks:
+**Q2 (20).** $u = x^2+1$, $du = 2x\,dx$, and the limits become $u = 1$ to $u = 5$:
+$$\int_0^2 x(x^2+1)^2dx = \frac12\int_1^5 u^2du = \frac16\big[u^3\big]_1^5 = \frac{124}{6} = \frac{62}{3} \approx 20.6667.$$
+`midpoint_rule` with $n = 1000$ gives $20.66664933$, and Desmos gives $20.6666666667$. All three agree to
+4 decimal places.
 
-1. **Change the limits.** For a definite integral, either convert the limits to u, or convert back
-   to x before evaluating. **Substituting x-limits into a u-expression is the single most common
-   substitution error** and produces a plausible wrong number.
-2. **Differentiate the answer.** The fastest verification of any antiderivative is to differentiate
-   it and compare with the integrand — numerically if not symbolically.
+*The commonest error is substituting the $x$-limits $0$ and $2$ into $\frac16u^3$, giving $\frac{8}{6}$. Deduct 6.*
 
 ---
 
 ## Part 3 — Symmetry
 
-Verified by numerical integration (midpoint, n = 200,000):
+**Q3 (20).** **(a)** $f(-x) = -x^3 + 4x = -f(x)$: **odd**. $\int_{-3}^0 f = -2.25$ and $\int_0^3 f = 2.25$, so
+$\int_{-3}^3 f = 0$. An odd function on an interval symmetric about $0$ always integrates to $0$: the two
+halves are mirror images with opposite signs.
 
-| Integral | Computed | Rule |
-|---|---|---|
-| ∫₋₂² x³ dx | **0.0000000000** | odd ⇒ 0 |
-| ∫₋₁¹ x·cos x dx | **0.0000000000** | odd × even = odd ⇒ 0 |
-| ∫₋₂² x² dx | 5.3333333332 | even ⇒ 2∫₀² = 5.3333333333 |
+**(b)** $g(-x) = g(x)$ (even powers only): **even**. $\int_0^{2.5} g = 3.4895833$ and
+$\int_{-2.5}^{2.5} g = 6.9791667$, exactly double.
 
-**The rules require the interval to be symmetric about 0**, and the student must *state which
-symmetry applies and why*:
-
-- f odd (f(−x) = −f(x)) ⇒ ∫₋ₐᵃ f = 0
-- f even (f(−x) = f(x)) ⇒ ∫₋ₐᵃ f = 2∫₀ᵃ f
-
-Asserting symmetry without checking f(−x) earns no method marks. Note **odd × even = odd** and
-**odd × odd = even** — the parity algebra is worth tabulating, since x·cos x being odd is not
-obvious at a glance.
+*Asserting the symmetry without checking $f(-x)$ earns no method marks.*
 
 ---
 
 ## Part 4 — The Tabular Method
 
-For ∫ x³eˣ dx, differentiate the polynomial column to zero and integrate the exponential column,
-alternating signs:
+**Q4 (10).** $\frac{d}{dx}\left[e^x(x^3-3x^2+6x-6)\right] = e^x(x^3-3x^2+6x-6) + e^x(3x^2-6x+6) = x^3e^x$ ✓
 
-| Sign | u (differentiate) | dv (integrate) |
+**Q5 (15).**
+
+| Sign | $P$ | $f$ |
 |---|---|---|
-| + | x³ | eˣ |
-| − | 3x² | eˣ |
-| + | 6x | eˣ |
-| − | 6 | eˣ |
-| + | 0 | eˣ |
+| + | $x^2$ | $\cos x$ |
+| − | $2x$ | $\sin x$ |
+| + | $2$ | $-\cos x$ |
+| − | $0$ | $-\sin x$ |
 
-Reading down the diagonals:
+$\int x^2\cos x\,dx = x^2\sin x + 2x\cos x - 2\sin x + C$. Differentiating:
+$2x\sin x + x^2\cos x + 2\cos x - 2x\sin x - 2\cos x = x^2\cos x$ ✓
 
-$$\int x^3 e^x\,dx = e^x\left(x^3 - 3x^2 + 6x - 6\right) + C$$
+**Q6 (20).**
 
-**Verified numerically on [0,1]:**
+| Sign | $P$ | $f$ |
+|---|---|---|
+| + | $x^2$ | $e^{-x}$ |
+| − | $2x$ | $-e^{-x}$ |
+| + | $2$ | $e^{-x}$ |
+| − | $0$ | $-e^{-x}$ |
 
-```
-antiderivative  F(1) - F(0) = 0.5634363431
-midpoint sum                = 0.5634363431
-```
+$\int x^2e^{-x}\,dx = -x^2e^{-x} - 2xe^{-x} - 2e^{-x} + C = -e^{-x}(x^2+2x+2) + C$. Differentiating:
+$e^{-x}(x^2+2x+2) - e^{-x}(2x+2) = x^2e^{-x}$ ✓
 
-Exact agreement to 10 decimal places. ✓
+**Why it works.** Row 1 against row 2 is one application of parts with $u = x^2$, $dv = e^{-x}dx$: the diagonal
+product $x^2\cdot(-e^{-x})$ is the $uv$ term. The remaining $-\int v\,du = -\int(-e^{-x})(2x)\,dx$ is a new
+integral of the same shape, which the next rows handle. Its leading minus sign is why the signs alternate.
+The table stops when the polynomial column reaches $0$, because the leftover integral is then $0$.
 
-The tabular method works when **one factor differentiates to zero in finitely many steps** — a
-polynomial — and the other integrates indefinitely. It is not a new theorem, just repeated
-integration by parts with the bookkeeping made visible.
-
----
-
-## Part 5 — The "Solve for I" Technique
-
-For ∫ eˣ sin x dx, two applications of integration by parts return the original integral:
-
-$$I = e^x\sin x - e^x\cos x - I \quad\Longrightarrow\quad 2I = e^x(\sin x - \cos x)$$
-
-$$\int e^x \sin x\,dx = \frac{e^x(\sin x - \cos x)}{2} + C$$
-
-**Verified on [0, π]:**
-
-```
-closed form  = 12.0703463164
-numeric      = 12.0703463166
-```
-
-✓ (The 10th-digit difference is the numerical integrator's truncation error, not an algebra error.)
-
-The technique is worth naming explicitly: when the integral **reappears** after repeated parts, do
-not despair and do not keep going — treat it as an algebraic unknown and solve. Students who apply
-parts a third time and loop forever have missed the move, and it is the only place in the course
-where the answer comes from algebra rather than from calculus.
+*Full marks need the $uv$ term identified and the source of the sign alternation.*
 
 ---
 
 ## Marking Scheme
 
-- **Method (≈60%).** Correct technique named, hypotheses checked where a theorem requires them,
-  symbolic setup before numerical evaluation, and a stated reason for each observed behaviour.
-- **Execution (≈40%).** Correct arithmetic, sensible precision, correct plot or table, and a
-  conclusion that actually follows from the data.
-
-**Carry-through.** Penalise a wrong value once; award downstream marks if the student reasons
-correctly from their own error.
-
-**The specific failure to watch for in a computational lab:** reporting *what* the computer printed
-without explaining *why*. "The table approaches 0.5" is an observation; "the table approaches 0.5
-because the conjugate cancels the removable factor" is the answer. A lab report that is a
-transcript earns the execution marks only.
+- **Method (≈60%).** Substitutions and tables set up correctly, symmetry checked, and every antiderivative
+  verified by differentiating.
+- **Execution (≈40%).** Correct antiderivatives and values.
 
 ---
 
