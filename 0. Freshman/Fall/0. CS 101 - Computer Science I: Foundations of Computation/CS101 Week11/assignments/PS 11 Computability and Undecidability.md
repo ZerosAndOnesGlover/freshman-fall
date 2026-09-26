@@ -4,7 +4,11 @@
 **Released:** Friday 11 December 2026, 10:00 (after L36) · Week 11
 **Due:** Friday 18 December 2026, 17:00 · Week 12 — late penalty from 17:01
 **Submission:** `ps11.py` and your answer sheet in `"$CS101/week11"`, committed to the Freshman Fall repo.
-**Total:** 100 points · **Expected time:** about 4 hours
+**Total:** 100 points · **Expected time:** about 3 hours
+
+*(Revised 2026-09-26: cut from about four hours to three. Lab 11, on Tuesday 15 December, writes the
+doubling-budget recogniser (Exercise 5.3), so A3(b) and B3 left this set. The 7-tuple recall A1(a) and
+the binary-increment machine were removed too.)*
 
 ---
 
@@ -24,68 +28,62 @@ Missing either direction is missing half the proof, and is marked accordingly.
 
 ---
 
-## Part A: Written Questions (52 points)
+## Part A: Written Questions (62 points)
 
-### A1: Models and Their Limits (10 points)
+### A1: Models and Their Limits (8 points)
 
-(a) State the formal definition of a Turing machine as a 7-tuple, and say in one sentence what each
-component does. *(4 pts)*
+(a) A student proposes a "Turing machine with two heads on one tape" and claims it is strictly more
+powerful. Explain why the claim is wrong, and state what such a machine *does* buy you. *(4 pts)*
 
-(b) A student proposes a "Turing machine with two heads on one tape" and claims it is strictly more
-powerful. Explain why the claim is wrong, and state what such a machine *does* buy you. *(3 pts)*
-
-(c) Give one language that a finite automaton can recognise and one it cannot, and state the single
-structural property that separates them. *(3 pts)*
+(b) Give one language that a finite automaton can recognise and one it cannot, and state the single
+structural property that separates them. *(4 pts)*
 
 &nbsp;
 
-### A2: The Church–Turing Thesis (8 points)
+### A2: The Church–Turing Thesis (10 points)
 
 (a) State the thesis. *(2 pts)*
 
-(b) Explain why it is not a theorem and cannot be proved. *(3 pts)*
+(b) Explain why it is not a theorem and cannot be proved. *(4 pts)*
 
 (c) Your colleague says: "Quantum computers can solve problems classical computers can't, so the
 Church–Turing thesis is dead." Identify the specific confusion, and state what a genuine refutation
-would have to look like. *(3 pts)*
+would have to look like. *(4 pts)*
 
 &nbsp;
 
 ### A3: Decidable, Recognisable, Neither (10 points)
 
-(a) Define **decidable** and **recognisable**, making the difference between them explicit. *(3 pts)*
+(a) Define **decidable** and **recognisable**, making the difference between them explicit. *(4 pts)*
 
-(b) HALT is recognisable but not decidable. Give the recogniser in three lines of Python and state
-precisely which property it lacks. *(3 pts)*
+(b) A language L is decidable **iff** both L and its complement are recognisable. Explain the
+intuition behind this in your own words — you do not need a formal proof. *(6 pts)*
 
-(c) A language L is decidable **iff** both L and its complement are recognisable. Explain the
-intuition behind this in your own words — you do not need a formal proof. *(4 pts)*
-
-*Hint for (c): if you had a recogniser for each, what could you do with both of them at once?*
+*Hint for (b): if you had a recogniser for each, what could you do with both of them at once?*
 
 &nbsp;
 
-### A4: The Halting Problem (12 points)
+### A4: The Halting Problem (16 points)
 
 (a) Reproduce the proof that HALT is undecidable. Give the `paradox` construction and argue both
-cases. *(6 pts)*
+cases. *(8 pts)*
 
 (b) Explain why the proof requires running `paradox` on **itself**, and what fails if you run it on
-some other function instead. *(3 pts)*
+some other function instead. *(4 pts)*
 
 (c) Explain the connection to Cantor's diagonalization: what plays the role of the table, what plays
-the role of the diagonal, and what plays the role of the flipped element? *(3 pts)*
+the role of the diagonal, and what plays the role of the flipped element? *(4 pts)*
 
 &nbsp;
 
-### A5: Reduction (12 points)
+### A5: Reduction (18 points)
 
 For each, give a **full reduction proof** from HALT. State the assumption, give the construction,
 argue both directions, conclude.
 
-(a) **ALWAYS-CRASHES** = { ⟨M, w⟩ : M raises an exception when run on w }. *(6 pts)*
+(a) **ALWAYS-CRASHES** = { ⟨M, w⟩ : M raises an exception when run on w }. *(9 pts)*
 
-(b) **EMPTY** = { ⟨M⟩ : M accepts no input at all }. *(6 pts)*
+(b) **EMPTY** = { ⟨M⟩ : M accepts no input at all }. *(9 pts)*
 
 *For (b), be careful about direction — you must build a halting decider out of an `is_empty`
 decider, not the other way round.*
@@ -94,12 +92,12 @@ decider, not the other way round.*
 
 ---
 
-## Part B: Code (48 points)
+## Part B: Code (38 points)
 
 Implement in `ps11.py`, scaffolded by `ps11_starter.py`. Run `python3 ps11_starter.py` to check.
-**11 automated tests.**
+**7 automated tests.**
 
-### B1: A Non-Regular Language (12 points)
+### B1: A Non-Regular Language (18 points)
 
 Implement `equal_zeros_ones()`: a TM accepting strings over `{0,1}` with an **equal number** of `0`s
 and `1`s, **in any order**. So `"0011"`, `"0101"`, `"1100"`, `"011010"` and `""` are accepted;
@@ -114,34 +112,9 @@ you must handle two problems:
 - When you cross off a `0`, the matching `1` may be anywhere to the right. Argue to yourself why it
   can never be to the *left*.
 
-*(2 pts of the 12 are for a comment in your code stating the sentinel invariant.)*
+*(3 pts of the 18 are for a comment in your code stating the sentinel invariant.)*
 
-### B2: Binary Increment (14 points)
-
-Implement `binary_increment()`: add 1 to a binary number written most-significant-bit first.
-`"0"` → `"1"`, `"1"` → `"10"`, `"1011"` → `"1100"`, `"111"` → `"1000"`.
-
-The carry is the easy part. The hard part is **overflow**: when the carry propagates off the left
-end, the answer is one digit longer than the input, and there is no cell to the left of position 0
-to put it in.
-
-You will need to **shift the entire tape right by one cell**. The standard technique is a pair of
-states that "carry" a digit: the machine writes the digit it is carrying into the current cell,
-picks up the digit that was there, and moves right. Work out on paper what `"111"` should do at each
-step before coding.
-
-*Tested on all of n = 0..31.*
-
-### B3: The Recogniser (8 points)
-
-Implement `recognise_halt(machine, tape_input, start_budget=1)` using a **doubling budget**.
-
-It must be **sound**: never return `True` for a machine that does not halt, never return `False` for
-one that does. It is permitted not to terminate — that is the point.
-
-In your written answers, state which of sound/complete/total it lacks and on which inputs.
-
-### B4: A Reduction, as Code (8 points)
+### B2: A Reduction, as Code (12 points)
 
 Implement `build_prints_hello_wrapper(f, x, log)`, returning a zero-argument `wrapper` such that
 calling `wrapper()` appends `"hello"` to `log` **if and only if** `f(x)` halts.
@@ -152,11 +125,11 @@ In your written answers, explain in two sentences why this construction shows PR
 undecidable — and be explicit about which problem is assumed solvable and which is concluded
 impossible.
 
-### B5: Classification (6 points)
+### B3: Classification (8 points)
 
 Fill in `CLASSIFICATIONS` with `"decidable"` or `"undecidable"` for all six questions. Then, **in
 this file**, justify each in one sentence, naming either Rice's theorem, a resource bound, or
-"syntactic". *(The dict is 3 pts; the justifications are 3 pts.)*
+"syntactic". *(The dict is 4 pts; the justifications are 4 pts.)*
 
 &nbsp;
 
@@ -166,15 +139,15 @@ this file**, justify each in one sentence, naming either Rice's theorem, a resou
 
 Submit:
 
-- This file with Part A and the B3/B4/B5 written justifications completed
-- `ps11.py` with all five functions implemented
+- This file with Part A and the B2/B3 written justifications completed
+- `ps11.py` with all three parts implemented
 
 **Checklist:**
 
-- [ ] `python3 ps11_starter.py` reports **11/11**
+- [ ] `python3 ps11_starter.py` reports **7/7**
 - [ ] Both reduction proofs in A5 argue **both directions**
 - [ ] B1's sentinel invariant is stated in a code comment
-- [ ] B5's six justifications each name a specific reason
+- [ ] B3's six justifications each name a specific reason
 - [ ] No `__pycache__` in your submission
 
 **Marking note:** in Part A, a correct conclusion reached by a wrong or incomplete argument earns at

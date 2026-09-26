@@ -58,35 +58,7 @@ def equal_zeros_ones():
     raise NotImplementedError("equal_zeros_ones")
 
 
-# ---- B2: binary increment -------------------------------------------------
-
-def binary_increment():
-    """TM that adds 1 to a binary number written most-significant-bit first.
-    "0" -> "1", "1" -> "10", "1011" -> "1100", "111" -> "1000".
-
-    Hint: walk right to the end, then process leftward handling the carry.
-    You may need to shift or prepend when the carry propagates off the left.
-
-    TODO: return a TuringMachine.
-    """
-    raise NotImplementedError("binary_increment")
-
-
-# ---- B3: the recogniser ---------------------------------------------------
-
-def recognise_halt(machine, tape_input, start_budget=1):
-    """Return True iff `machine` halts on `tape_input`.
-
-    Must be SOUND: never return True for a machine that does not halt, and
-    never return False for one that does. It is allowed not to terminate.
-    Use a doubling budget.
-
-    TODO: implement.
-    """
-    raise NotImplementedError("recognise_halt")
-
-
-# ---- B4: the reduction, as code -------------------------------------------
+# ---- B2: the reduction, as code -------------------------------------------
 
 def build_prints_hello_wrapper(f, x, log):
     """Return a zero-argument function `wrapper` such that
@@ -99,10 +71,10 @@ def build_prints_hello_wrapper(f, x, log):
     raise NotImplementedError("build_prints_hello_wrapper")
 
 
-# ---- B5: classify ---------------------------------------------------------
+# ---- B3: classify ---------------------------------------------------------
 
 # For each question, set the value to "decidable" or "undecidable".
-# See PS 11 Part B5 for the accompanying written justification.
+# See PS 11 Part B3 for the accompanying written justification.
 CLASSIFICATIONS = {
     "does the source contain the substring 'while'":      None,  # TODO
     "does the program ever execute a 'while' loop":       None,  # TODO
@@ -139,42 +111,7 @@ def run_tests():
         t("accepts equal counts", False, "not implemented")
         t("rejects unequal counts", False, "not implemented")
 
-    print("\nB2 -- binary_increment()")
-    try:
-        m = binary_increment()
-        ok, wrong = True, []
-        for n in range(0, 32):
-            src = bin(n)[2:]
-            want = bin(n + 1)[2:]
-            outcome, tape, _ = m.run(src)
-            got = tape.lstrip("_")
-            if outcome != "accept" or got != want:
-                ok = False
-                wrong.append((src, got, want))
-        t("increments 0..31 correctly", ok, str(wrong[:4]))
-    except NotImplementedError:
-        t("increments 0..31 correctly", False, "not implemented")
-
-    print("\nB3 -- recognise_halt()")
-    try:
-        halter = TuringMachine({("q0", "1"): ("q0", "1", "R"),
-                                ("q0", BLANK): ("qa", "1", "S")}, "q0", "qa")
-        t("True for a halting machine", recognise_halt(halter, "111") is True)
-        t("True even past the initial budget", recognise_halt(halter, "1" * 5000) is True)
-        looper = TuringMachine({("q0", BLANK): ("q0", BLANK, "S")}, "q0", "qa")
-        # must not return a wrong answer; we cap the test so it terminates
-        import threading
-        result = []
-        th = threading.Thread(target=lambda: result.append(recognise_halt(looper, "")), daemon=True)
-        th.start(); th.join(timeout=2.0)
-        t("never returns False for a looping machine", result == [] or result == [None],
-          f"returned {result}")
-    except NotImplementedError:
-        for n in ("True for a halting machine", "True even past the initial budget",
-                  "never returns False for a looping machine"):
-            t(n, False, "not implemented")
-
-    print("\nB4 -- build_prints_hello_wrapper()")
+    print("\nB2 -- build_prints_hello_wrapper()")
     try:
         log = []
         build_prints_hello_wrapper(lambda n: sum(range(n)), 10, log)()
@@ -188,7 +125,7 @@ def run_tests():
                   "log stays empty until wrapper runs"):
             t(n, False, "not implemented")
 
-    print("\nB5 -- CLASSIFICATIONS")
+    print("\nB3 -- CLASSIFICATIONS")
     expected = {
         "does the source contain the substring 'while'": "decidable",
         "does the program ever execute a 'while' loop": "undecidable",

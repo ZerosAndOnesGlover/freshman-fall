@@ -6,7 +6,11 @@
 
 ---
 
-## Part A: Written Questions (52 points)
+*(Revised 2026-09-26: the set no longer asks A1(a), A3(b), B2 or B3 — Lab 11 writes the recogniser — so
+those answers below can be ignored. Renumbered: A1(b)–(c) → A1(a)–(b), A3(c) → A3(b), B4 → B2, B5 → B3.
+Marks: A1 4/4, A2 2/4/4, A3 4/6, A4 8/4/4, A5 9/9, B1 18, B2 12, B3 4 + 4.)*
+
+## Part A: Written Questions (62 points)
 
 ### A1: Models and Their Limits (10 points)
 
