@@ -1,92 +1,86 @@
 # MATH 141 · Week 0
 ## LAB 00 Solutions — INSTRUCTOR ONLY
 
-> **Every numerical value below was computed, not estimated.** Students working in Desmos rather
-> than Python will see the same behaviour but fewer digits — grade the *reasoning and the observed
-> trend*, not agreement to the last decimal place.
+> **Every numerical value below was computed, not estimated.** Grade the *reasoning and the observed
+> trend*, not agreement to the last decimal place. Desmos shows fewer digits than the REPL.
+
+*(Revised 2026-09-26 to match the Desmos-and-REPL version of the lab: 12 questions, Q1–Q12.)*
 
 ---
 
 ## Part 1 — Function Families
 
-**1.1 Power functions.** Expected observations: even powers are symmetric about the *y*-axis and
-non-negative; odd powers are symmetric about the origin. All pass through (1,1) and (0,0). On
-(0,1) *higher* powers lie **below** lower ones; on (1,∞) the order reverses. That crossover at
-x = 1 is the point students should articulate.
+**Q1.** Even powers are symmetric about the *y*-axis ($(-x)^n = x^n$) and never negative. Odd powers are
+symmetric about the origin ($(-x)^n = -x^n$).
 
-**1.2 Exponential vs. polynomial.** For x below roughly 1.0 and again between about 2 and 4,
-`x**2` exceeds `2**x` — but beyond the final crossing the exponential wins permanently and by an
-unbounded margin. At x = 50, `x²/eˣ ≈ 4.8 × 10⁻¹⁹`.
+**Q2.** $(0,0)$ and $(1,1)$ for all five, since $0^n = 0$ and $1^n = 1$. The even powers also pass through
+$(-1, 1)$ and the odd powers through $(-1,-1)$, since $(-1)^n = \pm 1$.
 
-The point is not that exponentials are "bigger" but that **eventually** they dominate every
-polynomial. A student who tests only x ≤ 3 will draw the opposite conclusion, which is exactly why
-the activity specifies a wide window.
+**Q3.** On $(0,1)$ the **lowest** power, $x$, is largest: multiplying by a number less than 1 makes it
+smaller, so $x > x^2 > \dots > x^5$. On $(1,\infty)$ the order reverses and $x^5$ is largest. At $x = 1$ all
+are equal, which is where the order flips.
 
-**1.3 Logarithms.** `ln x` grows without bound but *slower than any positive power of x*:
-x/ln x rises 4.34 → 21.7 → 145 → 1086 as x goes 10 → 10⁴. Domain is x > 0, vertical asymptote at
-x = 0, and ln x is negative on (0,1).
+**Q4.** The curves cross at $x \approx 1.37$ and $x \approx 9.94$. After $9.94$ the exponential stays above
+for good. REPL check: `2**9` is 512 < `9**3` = 729, and `2**10` is 1024 > `10**3` = 1000.
+
+**Q5.** $\ln 100 \approx 4.61$ against $\sqrt{100} = 10$; $\ln 10000 \approx 9.21$ against $\sqrt{10000} = 100$.
+$\sqrt{x}$ grows much faster. Multiplying $x$ by 100 only **adds** about $4.6$ to $\ln x$, but multiplies
+$\sqrt{x}$ by 10.
 
 ---
 
 ## Part 2 — Transformations
 
-The standard results, and the one that reverses intuition:
+**Q6.** It moves **right** by 2. The vertex is where the squared term is zero, and $x - 2 = 0$ happens at
+$x = 2$. So the graph reaches its old $x = 0$ behaviour two units later. **Inside the parentheses,
+everything is backwards.**
 
-| Change | Effect |
-|---|---|
-| f(x) + c | shift **up** by c |
-| f(x + c) | shift **left** by c — *opposite* to the sign |
-| c·f(x) | vertical stretch by c |
-| f(cx) | horizontal **compression** by c — again inverted |
-| −f(x) | reflect in the x-axis |
-| f(−x) | reflect in the y-axis |
+**Q7.** Vertex $(4, 1)$. Starting from $y = x^2$: a vertical stretch by 3, a shift right by 4, and a shift up by 1.
 
-**Inside the parentheses, everything is backwards.** The reason is worth stating: f(x + 3) at
-x = −3 gives f(0), so the graph reaches its old x = 0 behaviour three units *earlier*.
-
-`|f(x)|` reflects everything below the axis upward; `f(|x|)` discards the left half and mirrors
-the right half. These are different operations and students routinely conflate them.
+**Q8.** Where $x^2 - 4 \ge 0$ (that is, $|x| \ge 2$) the graph is unchanged. Where $x^2 - 4 < 0$ (on
+$(-2, 2)$) it is reflected in the $x$-axis, because $|y| = -y$ for negative $y$. The dip to $-4$ becomes a
+bump to $+4$.
 
 ---
 
 ## Part 3 — Secant Lines and the Approach to Calculus
 
-**3.1** For f(x) = x² at x = 3, secant slope = (f(3+h) − f(3))/h:
+**Q9.**
 
-| h | Secant slope |
-|---|---|
-| 1 | 7.0000000000 |
-| 0.1 | 6.1000000000 |
-| 0.01 | 6.0100000000 |
-| 0.001 | 6.0010000000 |
-| 10⁻⁶ | 6.0000010009 |
+| $h$ | $f(1+h)$ | slope |
+|---|---|---|
+| 1 | 4 | 3 |
+| 0.5 | 2.25 | 2.5 |
+| 0.1 | 1.21 | 2.1 |
+| 0.01 | 1.0201 | 2.01 |
+| 0.001 | 1.002001 | 2.001 |
 
-Algebraically the slope is exactly **6 + h**, which is why the digits march so cleanly. The limit is
-**6**, and f′(x) = 2x gives 2(3) = 6 ✓. Ask students to derive 6 + h symbolically — that
-cancellation *is* the derivative computation, done before they have the word for it.
+The REPL prints `2.100000000000002` and `2.0009999999996975`. Accept these rounded.
 
-The h = 10⁻⁶ row shows 6.0000010009 rather than 6.000001 exactly: floating-point error is already
-visible, and Lab 1 pursues it.
+**Q10.** The slope approaches **2**.
+$$\frac{(1+h)^2 - 1}{h} = \frac{2h + h^2}{h} = 2 + h,$$
+which equals $2$ at $h = 0$. That cancellation *is* the derivative computation, done before the students
+have the word for it.
 
-*(2026-09-21: Activity 3.3 on eˣ and Part 4 on |x| were removed from the handout — they go past Lecture 03's
-one worked secant example.)*
+**Q11.** It turns into the **tangent line** at $(1, 1)$: the line that touches the parabola there and has
+slope 2.
+
+**Q12.** The slopes are $15.25$, $12.61$ and $12.0601$, approaching **12**.
+$$(2+h)^3 = 8 + 12h + 6h^2 + h^3, \qquad \frac{(2+h)^3 - 8}{h} = 12 + 6h + h^2,$$
+which equals $12$ at $h = 0$.
 
 ---
 
 ## Marking Scheme
 
-- **Method (≈60%).** Correct technique named, hypotheses checked where a theorem requires them,
-  symbolic setup before numerical evaluation, and a stated reason for each observed behaviour.
-- **Execution (≈40%).** Correct arithmetic, sensible precision, correct plot or table, and a
-  conclusion that actually follows from the data.
+- **Method (≈60%).** A stated reason for each observed behaviour, and the hand algebra in Q7, Q10 and Q12.
+- **Execution (≈40%).** Correct values, a correct table, and a conclusion that follows from the data.
 
-**Carry-through.** Penalise a wrong value once; award downstream marks if the student reasons
+**Carry-through.** Penalise a wrong value once. Award the downstream marks if the student reasons
 correctly from their own error.
 
-**The specific failure to watch for in a computational lab:** reporting *what* the computer printed
-without explaining *why*. "The table approaches 0.5" is an observation; "the table approaches 0.5
-because the conjugate cancels the removable factor" is the answer. A lab report that is a
-transcript earns the execution marks only.
+**The failure to watch for:** reporting *what* Desmos or the REPL showed without explaining *why*. "The
+slope approaches 2" is an observation; "the slope is $2 + h$, so it approaches 2" is the answer.
 
 ---
 

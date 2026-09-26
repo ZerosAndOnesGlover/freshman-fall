@@ -96,23 +96,23 @@ By the end of this week, you will be able to:
 | ----------------- | -------------------------------------------------------------- | ------ |
 | Sunday / Monday AM | Read Lecture 0; do all six Checks **aloud**; Stewart Appendix A | 60 min |
 | Monday            | Read Lecture 1; Stewart §1.1–1.2                                | 90 min |
-| Monday evening    | Attempt Problems 1–3 of PS0                                     | 60 min |
-| Tuesday           | Complete Diagnostic Quiz honestly; review any missed topics     | 60 min |
+| Monday evening    | Attempt Problems 1–2 of PS0                                     | 30 min |
+| Tuesday           | Complete Diagnostic Quiz honestly; review any missed topics     | 30 min |
 | Tuesday           | Read Lecture 2 §1–6 (algebra); Stewart §1.3–1.4                 | 90 min |
-| Tuesday evening   | Attempt Problems 4–6 of PS0                                     | 60 min |
+| Tuesday evening   | Attempt Problems 3–5 of PS0                                     | 60 min |
 | Wednesday         | Read Lecture 2 §7 (trigonometry deep dive)                      | 90 min |
-| Wednesday evening | Complete PS0 — trigonometry section (Problems 10–12)            | 60 min |
+| Wednesday evening | PS0 Problem 8 (trigonometry)                                    | 30 min |
 | Thursday          | Read Lecture 3; Stewart §1.5–1.6                                | 90 min |
-| Thursday evening  | Attempt Problems 7–9 of PS0                                     | 60 min |
-| Friday morning    | Final review, polish, submit PS0 by 17:00                       | 45 min |
+| Thursday evening  | Attempt Problems 6–7 of PS0                                     | 45 min |
+| Friday morning    | Final review, polish, submit PS0 by 17:00                       | 15 min |
 | Friday 15:00      | Lab 00 session — graphical exploration                          | 2 hr   |
 
-**Total: ≈ 12.5 hours.** Budget accordingly — this is a full week of work, not a warm-up.
+**Total: ≈ 12.5 hours**, of which PS0 is about 3. Most of the week is reading the four lectures.
 
 Two notes on the schedule:
 
 - **Lecture 2 is split across two days on purpose.** It is by far the densest item in the package (intervals, absolute value, five equation types, four inequality types, coordinate geometry, four calculus-specific manipulation techniques, *and* a full trigonometry review). Ninety minutes was never realistic for all of it. §1–6 is the algebra; §7 is trigonometry and stands alone.
-- **Every problem set section now follows its lecture.** PS0 was previously due Wednesday, which put Problems 7–9 (exponentials and logarithms, Lecture 3 material) ahead of the lecture that teaches them. The deadline is now **Friday 25 September 2026, 17:00**, so the order is: read the lecture, then attempt the problems, then do a final pass. Nothing on the sheet is answerable before it has been taught.
+- **Every problem set section now follows its lecture.** PS0 was previously due Wednesday, which put the exponential and logarithm problems (now Problems 6–7, Lecture 3 material) ahead of the lecture that teaches them. The deadline is now **Friday 25 September 2026, 17:00**, so the order is: read the lecture, then attempt the problems, then do a final pass. Nothing on the sheet is answerable before it has been taught.
 - **PS0 is a documented exception to the standard cadence.** Every other problem set is released Wednesday and due the *following* Wednesday — a full seven days (see the syllabus). PS0 is released Monday of Week 0 and due that Friday, which is five. Week 0 is compressed by design so the course can start Week 1 on schedule.
 
 ---
@@ -138,11 +138,11 @@ If any of these feel shaky after this week: visit the Math Help Center before Mo
 
 **On Lecture 0.** It teaches no mathematical content — only the notation the other three lectures assume: set-builder, interval notation, $\cup$/$\cap$, $\Rightarrow$/$\iff$, and the quantifiers. It exists because notation was previously introduced *after* first use (Lecture 1 used interval and set-builder notation in §1 and §3; interval notation was not defined until Lecture 2 §1, and set-builder never was). Students who cannot decode a statement spend their attention decoding instead of learning, which is the most common cause of avoidable failure in a first calculus course. Lecture 0 is short and should not be skipped by confident students — the ε-δ decoding table in §7.2 is what Week 1 depends on.
 
-The diagnostic quiz (ungraded) is critical for early identification of at-risk students. Encourage TAs to flag students scoring below 25/50 for early office hour outreach.
+The diagnostic quiz (ungraded) is critical for early identification of at-risk students. Encourage TAs to flag students scoring below 5/12 for early office hour outreach.
 
-The lab (ungraded) establishes the Python/Desmos toolchain that will be used in graded labs from Week 1 onward. Students who skip Lab 00 typically struggle with Lab 1's submission format.
+The lab (ungraded) establishes the toolchain the graded labs use from Week 1 onward: Desmos for graphs, and the Python REPL for arithmetic. Later labs use only the Python CS 101 has taught by their date. Students who skip Lab 00 typically struggle with Lab 1's submission format.
 
-The Problem Set is deliberately broad — 100 points across all precalculus topics — to surface any weaknesses before the semester's graded content begins in earnest (Week 1 PS is where performance counts toward the final grade in a way that reflects Week 0 preparation).
+The Problem Set is deliberately broad — 8 problems across all precalculus topics — to surface any weaknesses before the semester's graded content begins in earnest (Week 1 PS is where performance counts toward the final grade in a way that reflects Week 0 preparation).
 
 ---
 
