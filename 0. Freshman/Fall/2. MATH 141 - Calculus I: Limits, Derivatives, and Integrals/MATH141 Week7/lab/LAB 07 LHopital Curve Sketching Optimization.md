@@ -1,170 +1,117 @@
 # MATH 141 · Calculus I
 ## Lab 07
-### L'Hôpital's Rule Verification, Curve Sketching Practice, and Optimization Design
+### Growth Rates, Curve Sketching Practice, and Optimization
 
 **Date:** Friday 13 November 2026 · 15:00–16:50 · Lab Section (Week 7) — covers Weeks 6–7  
-**Duration:** 2 hours | **Tools:** Desmos, Python (optional)
+**Duration:** 2 hours | **Tools:** Desmos, and Python using only CS 101 Weeks 0–3 (`def`, `for`, `range`, `math`)
+**Expected time:** the session itself (6 questions), plus at most 30 minutes to tidy your answers
 **Submission:** Written report due Monday 16 November 2026, 17:00 (Week 8)
 
 > *Revised 2026-09-21.* Part 4 (design your own optimization problem) removed to fit the two hours.
+>
+> *Revised 2026-09-26.* Cut from about 20 questions, three full curve sketches and a reflection to 6
+> questions and one sketch. The $(1+1/x)^x$ table and two of the sketches were removed. The grid-search
+> code is now run rather than "run mentally", using `def` and `for` from CS 101 Weeks 2–3.
 
 ---
 
 ## Lab Objectives
 
-1. Verify L'Hôpital's Rule numerically and understand growth rate hierarchies visually
-2. Practice the complete curve sketching checklist on unfamiliar functions
-3. Solve a real optimization problem and visualize why the critical point is optimal
-4. Build a numerical optimizer and compare it against calculus-based exact solutions
+1. See the growth-rate hierarchy that L'Hôpital's Rule proves
+2. Sketch one unfamiliar function by hand and check it in Desmos
+3. Solve an optimization problem exactly, then by brute-force search, and compare
 
 ---
 
-## Part 1 — Growth Rate Hierarchies (25 min)
+## Part 1 — Growth Rate Hierarchies (20 min)
 
-### Exercise 1.1 — Racing Functions to Infinity
+### Question 1 (20 points)
 
-In Desmos, graph the following four functions together on the same axes for $x \in [0, 20]$:
-- $f_1(x) = \ln x$
-- $f_2(x) = x$
-- $f_3(x) = x^2$
-- $f_4(x) = e^x$ (you may need to restrict the $y$-range to see the others!)
-
-**Question 1a:** Rank these four functions from slowest-growing to fastest-growing based on the graph.
-
-**Question 1b:** Now compute the ratios and confirm using L'Hôpital's Rule (on paper):
-
-$$\lim_{x\to\infty}\frac{\ln x}{x} = ? \qquad \lim_{x\to\infty}\frac{x}{x^2} = ? \qquad \lim_{x\to\infty}\frac{x^2}{e^x} = ?$$
-
-**Question 1c:** Numerically evaluate $\dfrac{\ln x}{x}$, $\dfrac{x}{x^2}$, and $\dfrac{x^2}{e^x}$ at $x = 10, 100, 1000, 10000$. Do the ratios approach the values predicted by L'Hôpital's Rule?
-
-| $x$ | $\ln x / x$ | $x/x^2$ | $x^2/e^x$ |
-|-----|------------|---------|-----------|
-| 10 | | | |
-| 100 | | | |
-| 1000 | | | |
-| 10000 | | | |
-
-**Question 1d:** This ranking is exactly the algorithm complexity hierarchy. Match each function to a familiar algorithm:
-- $O(\log n)$: ___________________
-- $O(n)$: ___________________
-- $O(n^2)$: ___________________
-- $O(2^n)$ (or similar exponential): ___________________
-
----
-
-### Exercise 1.2 — Verifying $1^\infty$ Numerically
-
-We proved $\displaystyle\lim_{x\to\infty}\left(1+\frac1x\right)^x = e$ using L'Hôpital's Rule.
-
-**Question 1e:** Fill in the table:
-
-| $x$ | $(1+1/x)^x$ |
-|-----|-------------|
-| 10 | |
-| 100 | |
-| 1000 | |
-| 100000 | |
-| 10000000 | |
-
-**Question 1f:** How many correct decimal digits of $e \approx 2.718281828...$ do you get at $x = 10^7$? What does this suggest about the *rate* of convergence of this particular limit (fast or slow)?
-
-**Question 1g:** In Desmos, graph $y = (1+1/x)^x$ for $x > 0$ and confirm it approaches $e$ as $x \to \infty$. Also observe: is the function monotonically increasing toward $e$, or does it overshoot?
-
----
-
-## Part 2 — Curve Sketching Practice with Instant Feedback (40 min)
-
-For each function below: **first** perform the calculus analysis by hand (domain, asymptotes, increase/decrease, concavity), predict what the graph looks like, **then** check in Desmos. Note any discrepancies and figure out what went wrong in your analysis if there is a mismatch.
-
-### Exercise 2.1
-
-$$f(x) = \frac{x}{x^2+1}$$
-
-**Question 2a:** Complete the analysis. Predict: is this function bounded? What is its range?
-
-**Question 2b:** Check in Desmos. Find the exact maximum and minimum values (these should be local AND absolute, since the function has no other extrema).
-
-### Exercise 2.2
-
-$$g(x) = x\ln x$$
-
-**Question 2c:** What is the domain? (Careful — this is not all of $\mathbb{R}$.)
-
-**Question 2d:** Complete the analysis: find $g'(x)$, critical numbers, concavity. Predict behavior as $x \to 0^+$ (this requires the $0\cdot\infty$ technique from Lecture 1!).
-
-**Question 2e:** Check in Desmos. Is there a genuine minimum? What is it?
-
-### Exercise 2.3
-
-$$h(x) = \frac{e^x}{x}$$
-
-**Question 2f:** Domain? Vertical asymptote behavior — compute both one-sided limits at the excluded point.
-
-**Question 2g:** Find critical numbers and classify. Complete the full analysis.
-
-**Question 2h:** Check in Desmos. This function has an interesting "valley" shape on the positive side — does your calculus prediction match?
-
----
-
-## Part 3 — Optimization: Design and Verify (35 min)
-
-### Exercise 3.1 — The Minimum Cost Pipeline
-
-An underwater cable must connect a station on shore to a platform 5 km offshore (perpendicular distance). The nearest point on shore to the platform is point $P$. The station is 10 km down the shore from $P$. Laying cable underwater costs $\$5000$/km; laying cable on land costs $\$3000$/km.
-
-**Question 3a:** Let $x$ = distance from $P$ to the point where the cable comes ashore. Set up the total cost function $C(x)$.
-
-**Question 3b:** Differentiate, find the critical number, and verify it's a minimum.
-
-**Question 3c:** In Desmos, graph $C(x)$ for $x \in [0, 10]$. Visually confirm the minimum occurs where your calculus predicts.
-
-**Question 3d:** What is the minimum total cost?
-
-### Exercise 3.2 — Numerical Optimization Comparison
-
-**Question 3e:** For the box problem from Lecture 3 ($V(x) = x(12-2x)^2$, domain $(0,6)$), write Python pseudocode (or actual Python if available) implementing a simple numerical optimizer:
+Graph $\ln x$, $x$, $x^2$ and $e^x$ on $0 \le x \le 20$ in Desmos (restrict the $y$-range to see all four). Rank
+them from slowest- to fastest-growing. Then print a table of $\dfrac{\ln x}{x}$ and $\dfrac{x^2}{e^x}$:
 
 ```python
-def find_max_numerically(f, a, b, n_points=10000):
-    """
-    Evaluate f at n_points evenly spaced points in [a,b].
-    Return the x-value giving the maximum f(x).
-    """
-    best_x = a
-    best_val = f(a)
-    step = (b - a) / n_points
-    for i in range(n_points + 1):
-        x = a + i * step
-        val = f(x)
-        if val > best_val:
-            best_val = val
-            best_x = x
-    return best_x, best_val
+import math
+for x in [10, 20, 50]:
+    print(x, math.log(x) / x, x**2 / math.exp(x))
 ```
 
-**Question 3f:** Run this (mentally, or in Python if available) on $V(x) = x(12-2x)^2$ over $(0,6)$. Does it converge to $x=2$ (the exact calculus answer)? How does the accuracy depend on `n_points`?
+Confirm both limits as $x \to \infty$ with L'Hôpital's Rule. CS 101 Week 6 met the same ranking as Big-O
+classes: name an algorithm from CS 101 that runs in $O(\log n)$ time and one that runs in $O(n^2)$.
 
-**Question 3g:** What are the tradeoffs between this "brute force" numerical approach and the calculus-based exact approach? When would you prefer one over the other in a real engineering context?
+---
 
-> **CS Connection:** This is a **grid search** — the simplest possible optimization algorithm, and the direct numerical analog of everything you did by hand this week. It is also extremely inefficient compared to calculus-informed methods (gradient descent, Newton's method) which use derivative information to converge far faster. This is the core motivation behind why ML training uses gradients rather than brute-force search over parameter space.
+## Part 2 — Curve Sketching with Instant Feedback (35 min)
+
+Let $g(x) = x\ln x$. Do the analysis **by hand first**, predict the graph, **then** check it in Desmos.
+
+### Question 2 (10 points)
+
+What is the domain of $g$? Find $\lim_{x\to0^+} x\ln x$ (a $0\cdot\infty$ form) and $\lim_{x\to\infty} x\ln x$.
+
+### Question 3 (20 points)
+
+Find $g'(x)$ and $g''(x)$, the critical number, the intervals of increase and decrease, and the concavity.
+Classify the critical number. Now graph $g$ in Desmos: does it match your prediction? What is the minimum
+value?
+
+---
+
+## Part 3 — Optimization: Exact and Brute Force (45 min)
+
+### Question 4 (25 points)
+
+An underwater cable must connect a platform 5 km offshore to a station on the shore. The nearest point on
+shore to the platform is $P$, and the station is 10 km along the shore from $P$. Underwater cable costs
+\$5000/km and cable on land \$3000/km. The cable runs underwater to a point $x$ km from $P$, then along the
+shore to the station.
+
+Write the total cost $C(x)$ for $0 \le x \le 10$. Find the critical number, show it gives the minimum
+(compare with the endpoints), and give the minimum cost. Graph $C$ in Desmos to confirm.
+
+### Question 5 (15 points)
+
+A **grid search** tries many points and keeps the best. Run it on Lecture 03's box, $V(x) = x(12-2x)^2$ on
+$[0, 6]$, whose exact maximum is at $x = 2$:
+
+```python
+def V(x):
+    return x * (12 - 2*x)**2
+
+def grid_max(f, a, b, n):
+    best_x = a
+    best_val = f(a)
+    step = (b - a) / n
+    for i in range(n + 1):
+        x = a + i * step
+        if f(x) > best_val:
+            best_val = f(x)
+            best_x = x
+    return best_x, best_val
+
+for n in [10, 100, 10000]:
+    print(n, grid_max(V, 0, 6, n))
+```
+
+How close does it get to $x = 2$ for each $n$? Why does it never land on exactly $2.0$ for $n = 10000$?
+
+### Question 6 (10 points)
+
+Compare the two approaches. What does calculus give you that grid search does not? When might grid search
+still be the practical choice?
 
 ---
 
 ## Lab Report Requirements
 
-Include:
-1. Completed tables from Part 1
-2. Full written analysis for all three functions in Part 2, with Desmos screenshots
-3. Complete solution to Exercise 3.1 with Desmos screenshot
-4. Your Python/pseudocode results from Exercise 3.2, with discussion of tradeoffs
-5. **Reflection** (6–8 sentences): Compare the "exact" calculus approach to optimization with the "numerical/brute-force" approach from Exercise 3.2. What does calculus give you that brute-force search does not? In what situations might brute-force still be preferable?
+Include your programs and output, your hand analysis for Questions 2–4, Desmos screenshots or links for
+Questions 1, 3 and 4, and answers to Questions 1–6.
 
 **Grading:**
 
 | Section | Points |
 |---------|--------|
 | Part 1 — Growth rate hierarchies | 20 |
-| Part 2 — Curve sketching practice | 35 |
-| Part 3 — Optimization design/verify | 40 |
-| Reflection | 5 |
+| Part 2 — Curve sketching | 30 |
+| Part 3 — Optimization, exact and brute force | 50 |
 | **Total** | **100** |

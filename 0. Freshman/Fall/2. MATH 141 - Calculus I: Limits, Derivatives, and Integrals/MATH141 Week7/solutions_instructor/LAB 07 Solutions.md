@@ -1,117 +1,77 @@
 # MATH 141 · Week 7
 ## LAB 07 Solutions — INSTRUCTOR ONLY
 
-> **Every numerical value below was computed, not estimated.** Students working in Desmos rather
-> than Python will see the same behaviour but fewer digits — grade the *reasoning and the observed
-> trend*, not agreement to the last decimal place.
+> **Every numerical value below was computed, not estimated.** Grade the *reasoning*, not agreement to the
+> last decimal place.
+
+*(Revised 2026-09-26 to match the 6-question version of the lab.)*
 
 ---
 
 ## Part 1 — Growth Rate Hierarchies
 
-The hierarchy, slowest to fastest:
+**Q1 (20).** Slowest to fastest: $\ln x$, $x$, $x^2$, $e^x$.
 
-$$\ln x \;\ll\; x^{0.5} \;\ll\; x \;\ll\; x^2 \;\ll\; e^x \;\ll\; x!$$
+| x | ln x / x | x² / eˣ |
+|---|---|---|
+| 10 | 0.2302585 | 4.54 × 10⁻³ |
+| 20 | 0.1497866 | 8.24 × 10⁻⁷ |
+| 50 | 0.0782405 | 4.82 × 10⁻¹⁹ |
 
-| x | ln x | x^0.5 | x/ln x |
-|---|---|---|---|
-| 10 | 2.303 | 3.162 | 4.343 |
-| 100 | 4.605 | 10.000 | 21.715 |
-| 1,000 | 6.908 | 31.623 | 144.765 |
-| 10,000 | 9.210 | 100.000 | 1085.736 |
+L'Hôpital: $\frac{\ln x}{x} \to \frac{1/x}{1} \to 0$; $\frac{x^2}{e^x} \to \frac{2x}{e^x} \to \frac{2}{e^x} \to 0$ (twice).
+$O(\log n)$: binary search (CS 101 Lecture 16). $O(n^2)$: selection or insertion sort (Lecture 17).
 
-x/ln x diverging confirms **ln x grows slower than any positive power of x**.
-
-Exponential dominance, via x²/eˣ:
-
-| x | x²/eˣ |
-|---|---|
-| 5 | 1.68 × 10⁻¹ |
-| 10 | 4.54 × 10⁻³ |
-| 20 | 8.24 × 10⁻⁷ |
-| 50 | **4.82 × 10⁻¹⁹** |
-
-Each ratio is an ∞/∞ form; L'Hôpital applied twice gives 2/eˣ → 0.
-
-> **L'Hôpital's Rule applies only to 0/0 and ∞/∞.** Using it on 2/0 or 0/5 produces nonsense. Other
-> indeterminate forms (0·∞, ∞−∞, 1^∞) must be **algebraically converted first** — and each
-> application requires rechecking that the new limit is still indeterminate.
->
-> It is **not** the quotient rule: L'Hôpital replaces f/g with f′/g′, differentiating numerator and
-> denominator *separately*.
-
-**1.2 The 1^∞ form.** (1 + 1/n)ⁿ:
-
-| n | value |
-|---|---|
-| 10 | 2.5937424601 |
-| 100 | 2.7048138294 |
-| 10⁴ | 2.7181459268 |
-| 10⁷ | 2.7182816941 |
-
-→ **e = 2.7182818285**. The standard technique is to take logs: ln y = n·ln(1 + 1/n), which is an
-∞·0 form, rewritten as ln(1+1/n)/(1/n) — now 0/0, so L'Hôpital applies and gives 1, hence y → e¹.
-
-`1^∞` is indeterminate precisely because the base approaches 1 *from above* while the exponent
-grows; which effect wins depends on the rates.
+*A student who extends the loop to $x = 1000$ gets `OverflowError` from `math.exp(1000)`. Accept a remark
+on it; don't require it.*
 
 ---
 
 ## Part 2 — Curve Sketching
 
-The required checklist, in order:
+**Q2 (10).** Domain $(0, \infty)$. $x\ln x = \dfrac{\ln x}{1/x}$, form $-\infty/\infty$; L'Hôpital gives
+$\dfrac{1/x}{-1/x^2} = -x \to 0$. So $\lim_{x\to0^+} x\ln x = 0$. As $x \to \infty$, $x\ln x \to \infty$.
 
-1. **Domain** and any excluded points
-2. **Intercepts**
-3. **Symmetry** — even, odd, or neither
-4. **Asymptotes** — vertical (denominator zeros), horizontal (limit at ±∞), oblique (when the
-   numerator's degree exceeds the denominator's by exactly 1)
-5. **f′**: critical points, increasing/decreasing intervals
-6. **f″**: concavity, inflection points
-7. Assemble, then **check against a plot**
-
-The plot is the *verification*, not the method. A student who plots first and annotates afterwards
-has done the exercise backwards and should be told so — the point is to predict, then confirm.
+**Q3 (20).** $g'(x) = \ln x + 1$, zero at $x = 1/e \approx 0.368$. Decreasing on $(0, 1/e)$, increasing on
+$(1/e, \infty)$. $g''(x) = 1/x > 0$, so concave up everywhere, with no inflection points. By either test,
+$x = 1/e$ is a local minimum, and the absolute minimum is $g(1/e) = -1/e \approx -0.3679$.
 
 ---
 
 ## Part 3 — Optimization
 
-**3.1 Minimum-cost pipeline.** The standard setup: minimise a cost function over a feasible domain,
-here C(x) = 5000√(x²+25) + 3000(10 − x) on 0 ≤ x ≤ 10.
-C′(x) = 5000x/√(x²+25) − 3000 = 0 ⇒ x/√(x²+25) = 3/5 ⇒ **x = 3.75 km**. C(3.75) = 5000(6.25) + 3000(6.25)
-= **$50,000**, against C(0) = $55,000 and C(10) ≈ $55,902 at the endpoints. (Checked by a 100,001-point grid
-in Python.) The box problem in 3.2: V(2) = 128, the maximum on (0, 6).
+**Q4 (25).** $C(x) = 5000\sqrt{x^2 + 25} + 3000(10 - x)$.
 
-**Three things a complete answer must include:**
+$C'(x) = \dfrac{5000x}{\sqrt{x^2+25}} - 3000 = 0 \Rightarrow 5x = 3\sqrt{x^2+25} \Rightarrow 16x^2 = 225
+\Rightarrow x = 3.75$ km.
 
-1. The **feasible domain** stated explicitly (here 0 ≤ x ≤ L) — a physical problem has bounds.
-2. **Endpoint evaluation.** The optimum may sit at an endpoint, and a single interior critical point
-   is not automatically the answer.
-3. A **justification of max vs. min** — first-derivative sign test or the second-derivative test —
-   not merely "I set the derivative to zero".
+$C(0) = \$55{,}000$, $C(3.75) = \$50{,}000$, $C(10) = \$55{,}902$. The minimum is **\$50,000**, with the cable
+coming ashore 3.75 km from $P$.
 
-**3.2 Numerical comparison.** Golden-section search or ternary search converges to the same optimum
-without derivatives. The comparison worth drawing: the analytic method gives an **exact** answer and
-requires a differentiable closed form; the numerical method needs only evaluations and works on
-functions with no closed form at all. Neither dominates.
+**Q5 (15).**
+
+| n | best x | V(best x) |
+|---|---|---|
+| 10 | 1.8 | 127.008 |
+| 100 | 1.98 | 127.990368 |
+| 10000 | 1.9998 | 127.99999904 |
+
+The error in $x$ is at most one step, $6/n$. For $n = 10000$ the step is $0.0006$, and $2$ is not a whole
+number of steps from $0$ ($2/0.0006 = 3333.3\ldots$), so the grid has no point at $2$. Rounding in
+`a + i * step` also means the printed $x$ is not always exactly a grid multiple.
+
+**Q6 (10).** Calculus gives the **exact** optimum, a proof that it is optimal, and a formula that works for
+every version of the problem. Grid search needs many evaluations for a few digits: each extra digit costs
+10 times the work. It also cannot prove it has found the best point, and can miss a narrow peak between
+grid points. Grid search is still practical when $f$ has no formula (a simulation or a measurement), when
+$f'$ is hard to find or solve, or when a rough answer is enough.
 
 ---
 
 ## Marking Scheme
 
-- **Method (≈60%).** Correct technique named, hypotheses checked where a theorem requires them,
-  symbolic setup before numerical evaluation, and a stated reason for each observed behaviour.
-- **Execution (≈40%).** Correct arithmetic, sensible precision, correct plot or table, and a
-  conclusion that actually follows from the data.
-
-**Carry-through.** Penalise a wrong value once; award downstream marks if the student reasons
-correctly from their own error.
-
-**The specific failure to watch for in a computational lab:** reporting *what* the computer printed
-without explaining *why*. "The table approaches 0.5" is an observation; "the table approaches 0.5
-because the conjugate cancels the removable factor" is the answer. A lab report that is a
-transcript earns the execution marks only.
+- **Method (≈60%).** Hand analysis before the Desmos check, endpoint comparison in Q4, and a reason for
+  each observation.
+- **Execution (≈40%).** Correct values, and conclusions that follow from them.
 
 ---
 
