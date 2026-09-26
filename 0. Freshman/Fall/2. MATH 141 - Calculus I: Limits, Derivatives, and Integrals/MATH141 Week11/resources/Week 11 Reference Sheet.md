@@ -90,7 +90,7 @@ For a base bounded above and below, the side spans the **full** chord.
 2. **Sanity-check the sign.** Areas and volumes are positive.
 3. **Compute it the other way** where possible — shells against washers. Two independent set-ups
    agreeing is the strongest check available.
-4. **Verify numerically.** Simpson's rule in ten lines will confirm any integral in this course.
+4. **Verify numerically.** The Lab 09 midpoint rule will confirm any integral in this course.
 
 ---
 

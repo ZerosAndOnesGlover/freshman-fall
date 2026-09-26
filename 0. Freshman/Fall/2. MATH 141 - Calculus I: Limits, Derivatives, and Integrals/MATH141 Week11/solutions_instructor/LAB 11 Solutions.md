@@ -1,7 +1,8 @@
 # MATH 141 · Lab 11 Solutions (Instructor)
 ## Areas, Volumes, and Numerical Checks
 
-All values verified by Simpson's rule at $n=40\,000$.
+All values verified by the Lab 09 midpoint rule at $n=100\,000$. *(Revised 2026-09-26: 2B was removed from
+the lab, and the checks use the midpoint rule, since Simpson's rule is never taught.)*
 
 ---
 
@@ -35,15 +36,12 @@ correct area.
 
 ## Part 2: Set Up, Evaluate, Verify (7 pts)
 
-**2A** *(2 pts)* $\displaystyle\int_0^1(x^2-x^3)dx=\tfrac13-\tfrac14=\tfrac{1}{12}\approx0.0833$.
+**2A** *(3 pts)* $\displaystyle\int_0^1(x^2-x^3)dx=\tfrac13-\tfrac14=\tfrac{1}{12}\approx0.0833$.
 Verified $0.0833333333$.
 
 *Watch for $x^3-x^2$, from assuming the higher power is larger. It is not on $(0,1)$.*
 
-**2B** *(2 pts)* $\displaystyle V=\pi\int_0^4(\sqrt x)^2dx=\pi\int_0^4x\,dx=8\pi\approx25.13$.
-Verified $25.1327412287$.
-
-**2C** *(3 pts)* $\sqrt x$ is the outer radius on $(0,1)$:
+**2C** *(4 pts)* $\sqrt x$ is the outer radius on $(0,1)$:
 
 $$V=\pi\int_0^1\big[x-x^2\big]dx=\frac{\pi}{6}\approx\mathbf{0.5236}$$
 
@@ -56,7 +54,7 @@ Students should record both and note the factor. The point is that squaring the 
 the area of a circle whose radius is the *gap* between the two radii — a geometrically meaningless
 quantity — rather than the difference of the two disc areas.
 
-*1 of the 3 marks is for producing the wrong value and identifying the factor.*
+*1 of the 4 marks is for producing the wrong value and identifying the factor.*
 
 ---
 

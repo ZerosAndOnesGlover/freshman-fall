@@ -3,6 +3,12 @@
 
 **Duration:** 2 hours · **20 points**
 **Date:** Friday 11 December 2026 · 15:00–16:50 · Lab Section (Week 11) — covers Week 11 (Lectures 01–03)
+**Tools:** the Lab 09 `midpoint_rule` in Python (with `lambda` and `math`), and pen and paper for sketches
+**Expected time:** the session itself (8 items), plus at most 30 minutes to tidy your answers
+
+> *Revised 2026-09-26.* The overview said "Simpson's rule in ten lines of Python", but Simpson's rule is never
+> taught; the checks now use the Lab 09 midpoint rule. 2B was removed to fit the session. Problem Set 11 no
+> longer repeats this lab's problems.
 
 ---
 
@@ -12,7 +18,8 @@ Every formula this week can be checked numerically, and this lab builds the habi
 set up, evaluate by hand, and then confirm with a numerical integral — catching your own set-up
 errors before they reach a problem set.
 
-Bring a laptop. Simpson's rule in ten lines of Python is enough.
+Bring a laptop and your Lab 09 `midpoint_rule`. A volume check is one line, for example
+`math.pi * midpoint_rule(lambda x: x - x**2, 0, 1, 100000)`.
 
 ---
 
@@ -31,12 +38,10 @@ two sentences, what the first number actually measures. *(3 pts)*
 
 For each region: sketch it, set up the integral, evaluate by hand, then check numerically.
 
-**2A.** Area between $y=x^2$ and $y=x^3$ on $[0,1]$. *(2 pts)*
-
-**2B.** Volume from revolving $y=\sqrt x$ on $[0,4]$ about the $x$-axis. *(2 pts)*
+**2A.** Area between $y=x^2$ and $y=x^3$ on $[0,1]$. *(3 pts)*
 
 **2C.** Volume from revolving the region between $y=\sqrt x$ and $y=x$ on $[0,1]$ about the
-$x$-axis. *(3 pts)*
+$x$-axis. *(4 pts)*
 
 For 2C, **also** compute the incorrect $\pi\int_0^1(\sqrt x-x)^2dx$ and record how far off it is. You
 should find a factor of exactly 5.
@@ -76,7 +81,7 @@ One document with sketches, set-ups, hand evaluations, numerical checks, and the
 | Part | Points |
 |---|---|
 | 1 — the crossing trap, with explanation | 5 |
-| 2 — three set-ups verified, including the factor-of-5 error | 7 |
+| 2 — two set-ups verified, including the factor-of-5 error | 7 |
 | 3 — both methods agreeing, with justification | 5 |
 | 4 — a self-designed solid, verified | 3 |
 | **Total** | **20** |
