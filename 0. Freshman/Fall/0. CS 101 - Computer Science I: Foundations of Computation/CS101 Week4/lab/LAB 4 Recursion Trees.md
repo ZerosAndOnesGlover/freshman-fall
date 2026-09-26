@@ -120,7 +120,11 @@ def tree_sum(node):
 
 ---
 
-## Part 2: Recursive Implementation (50 minutes)
+## Part 2: Recursive Implementation (35 minutes)
+
+*(Revised 2026-09-26: this part printed finished `fast_power` and `merge_sort` — the answers to Problem
+Set 4 B3, due three days later. Both were removed, which also brings the lab inside its session.
+Reflection Q3 was removed too. Exercise numbers are unchanged, so Part 2 starts at 2.3.)*
 
 Create `recursion_lab.py`. Implement each function with:
 - A complete docstring (base case, recursive case, example)
@@ -138,121 +142,6 @@ Recursive function implementations with correctness proofs.
 Student: ____________________________
 Date: ______________________________
 """
-
-
-# ─── Exercise 2.1: Power with fast exponentiation ────────────────────────────
-
-def fast_power(base, exp):
-    """
-    Compute base**exp using O(log exp) multiplications.
-
-    Key insight: base^exp = (base^(exp//2))^2 if exp is even
-                          = base * base^(exp-1)  if exp is odd
-
-    This halves the problem when exp is even → O(log exp) depth.
-
-    Base case:    fast_power(base, 0) = 1
-    Recursive cases:
-        exp even: fast_power(base, exp) = half * half
-                  where half = fast_power(base, exp//2)
-        exp odd:  fast_power(base, exp) = base * fast_power(base, exp-1)
-
-    Correctness:
-        Base: base^0 = 1 ✓
-        Even: (base^(n/2))^2 = base^n ✓
-        Odd:  base * base^(n-1) = base^n ✓
-
-    Args:
-        base (int or float): the base
-        exp  (int):          non-negative exponent
-
-    Examples:
-        fast_power(2, 10)  → 1024
-        fast_power(2, 0)   → 1
-        fast_power(3, 4)   → 81
-    """
-    assert isinstance(exp, int) and exp >= 0
-
-    if exp == 0:
-        return 1
-    if exp % 2 == 0:
-        half = fast_power(base, exp // 2)
-        return half * half
-    return base * fast_power(base, exp - 1)
-
-
-assert fast_power(2, 0)   == 1
-assert fast_power(2, 10)  == 1024
-assert fast_power(3, 4)   == 81
-assert fast_power(2, 1)   == 2
-assert fast_power(10, 3)  == 1000
-print("✓ fast_power")
-
-
-# ─── Exercise 2.2: Merge Sort ────────────────────────────────────────────────
-
-def merge(left, right):
-    """
-    Merge two sorted lists into one sorted list.
-    Time complexity: O(len(left) + len(right)).
-
-    Base case: either list is empty → return the other.
-    Recursive case: compare front elements, take the smaller.
-
-    Loop invariant: result contains all elements from left[:i] and right[:j]
-                    in sorted order.
-    """
-    result = []
-    i = j = 0
-
-    while i < len(left) and j < len(right):
-        if left[i] <= right[j]:
-            result.append(left[i])
-            i += 1
-        else:
-            result.append(right[j])
-            j += 1
-
-    result.extend(left[i:])
-    result.extend(right[j:])
-    return result
-
-
-def merge_sort(lst):
-    """
-    Return a new sorted list using the merge sort algorithm.
-    Time complexity: O(n log n).  Space complexity: O(n).
-
-    Base case: a list of 0 or 1 elements is sorted.
-    Recursive case: sort each half, then merge.
-
-    Correctness:
-        Base: [] and [x] are trivially sorted. ✓
-        Step: assume merge_sort correctly sorts any list of size < n.
-              Both halves have size < n, so they are correctly sorted (IH).
-              merge() of two sorted lists is sorted.
-              Therefore merge_sort(lst) is sorted. ✓
-
-    Examples:
-        merge_sort([3, 1, 4, 1, 5, 9]) → [1, 1, 3, 4, 5, 9]
-        merge_sort([])                  → []
-        merge_sort([1])                 → [1]
-    """
-    if len(lst) <= 1:
-        return lst[:]
-
-    mid   = len(lst) // 2
-    left  = merge_sort(lst[:mid])
-    right = merge_sort(lst[mid:])
-    return merge(left, right)
-
-
-assert merge_sort([])          == []
-assert merge_sort([1])         == [1]
-assert merge_sort([3, 1, 2])   == [1, 2, 3]
-assert merge_sort([5,4,3,2,1]) == [1, 2, 3, 4, 5]
-assert merge_sort([3,3,1,1,2]) == [1, 1, 2, 3, 3]
-print("✓ merge_sort")
 
 
 # ─── Exercise 2.3: Binary Search (recursive, index-based) ─────────────────────
@@ -478,12 +367,6 @@ git push
 
 **Q2.** The Tower of Hanoi takes 2^n - 1 moves. This is provably optimal — you cannot solve it in fewer moves. Using the recurrence T(n) = 2·T(n-1) + 1, prove by induction that T(n) = 2^n - 1.
 
-**Q3.** For which of the following problems is recursion the *clearest* solution, and for which is iteration clearer? Justify each.
-- (a) Computing the sum of integers from 1 to n
-- (b) Traversing a binary tree in sorted order
-- (c) Finding whether a string is a palindrome
-- (d) Solving a maze
-
 ---
 
 ## TA Checkoff Criteria
@@ -493,7 +376,7 @@ git push
 | 1 | 30 | Four recursion trees drawn with the counts answered (Exercises 1.1–1.4) |
 | 2 | 45 | `recursion_lab.py`: all tests pass; the `fib_counted` table recorded |
 | 3 | 15 | `slicing_fix.py` runs; `count_occurrences` implemented |
-| Reflection | 10 | Q1–Q3 answered in the notes |
+| Reflection | 10 | Q1–Q2 answered in the notes |
 | **Total** | **100** | Work committed (required) |
 
 ---

@@ -83,6 +83,9 @@ are empty.
 
 ## Part 2 — Reference Implementations
 
+*(Revised 2026-09-26: Exercises 2.1 `fast_power` and 2.2 `merge_sort` are no longer in the lab — they are
+Problem Set 4 B3 — and neither is reflection Q3. Their notes below now apply to marking PS 4.)*
+
 All verified against the docstring examples.
 
 ```python
