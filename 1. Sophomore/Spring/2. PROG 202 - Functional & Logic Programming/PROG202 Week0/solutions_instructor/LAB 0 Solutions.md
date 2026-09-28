@@ -133,25 +133,51 @@ it was*, so `-Wall` doubles as a way to ask "what type did I just write?".
 
 ### (c) — the exercise
 
-**With the signature**, changing `snd` to `fst`:
+**With the signature**, changing `snd` to `fst` — measured, GHC 9.4.7:
 
 ```
-Shape.hs:18:12: error:
+Shape.hs:19:35: error:
     • Couldn't match type ‘Int’ with ‘[Char]’
-      Expected: (Int, String) -> String
-        Actual: (Int, String) -> Int
+      Expected: (String, Int) -> (String, String)
+        Actual: (String, Int) -> (Int, String)
+    • In the first argument of ‘map’, namely ‘swap’
+   |
+19 | busiest = fst . last . sort . map swap
 ```
 
-— blamed on line 18, the composition, which is where the mistake is.
+— **line 19, the composition, which is where the mistake is.**
 
-**Without the signature**, the error moves to `main`, several lines away, and complains that
-`putStrLn` was given an `Int`. **That is the whole lesson.** Type inference is global: with no
-signature to stop it, the wrong type propagates until it meets something that disagrees, and the
-line it is reported on is the *victim*, not the *culprit*.
+**Now delete the signature as well.** The error moves to **line 23**, inside `main`'s `where` clause,
+four lines away and in a different function — and this is the part to put on the board:
+
+```
+Shape.hs:23:29: error:
+    • No instance for (Num String) arising from the literal ‘150’
+    • In the expression: 150
+   |
+23 |   where table = [("CS 202", 150), ("PROG 202", 260), ("CS 290", 50)]
+   |                             ^^^
+```
+
+**GHC blames the number 150.** There is nothing wrong with 150. With no signature to stop it, the
+wrong type propagated out of `busiest`, through `main`, and into the data, and the first thing that
+could not be reconciled was a literal in a list that is entirely correct.
+
+**That is the whole lesson**, and it is worth two minutes at the board: type inference is *global*.
+The line an error is reported on is where the contradiction became unavoidable, not where the mistake
+was made — the reported line is the **victim**, not the culprit.
+
+> **Fair warning, because a student will try it:** inference is usually *better* than this. Put the
+> mistake somewhere whose wrong type contradicts something inside the same function — `totalMinutes
+> xs / length xs` where `div` was meant — and GHC lands on the exact character with or without the
+> signature. The failure mode above needs a wrong type that is **self-consistent within the
+> function** and only contradicts the outside world. Say so; over-claiming here is the kind of thing
+> Week 11 is about.
 
 > **Say this out loud, it is the reason for the course's style rule:** a type signature is not
 > documentation that the compiler happens to check. It is a **firewall** that stops an error
-> travelling. Write one on every top-level binding.
+> travelling four lines and one function away and landing on an innocent literal. Write one on every
+> top-level binding. Week 1 L03 §6 returns to this with the inference algorithm that causes it.
 
 ---
 
