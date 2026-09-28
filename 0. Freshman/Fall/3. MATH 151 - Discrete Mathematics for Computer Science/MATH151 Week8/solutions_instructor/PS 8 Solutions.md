@@ -5,6 +5,17 @@
 
 ---
 
+> *Revised 2026-09-28: cut from 16 problems (about 24 parts) to 8 problems with 10 parts. New → old: A1 (a, b, c) = A1 (b, c, d), 18 · B1 = B3, 14 · B2 = B4, 16 · C1 = C1, 8 · C2 = C2, 10 · C3 = C3, 10 · D1 = D2, 12 · D2 = D3, 12. The point values in the headings and marking lines below are the old ones; scale each marking line in proportion.*
+>
+> *Why items were dropped:*
+> - *Old B1, B2 and C4 are Lab 8 Exercises 2.2, 2.1 and 4.2, and D1 (a, b, c, e) is Lab 8 Section 3.*
+> - *A1(e) and D1(d) are the worked example in L24 Section 8.*
+> - *A1(a) repeats Lab 8 Exercise 1.1.*
+> - *A1(f) needs no pigeonhole: wins + losses = 16.*
+>
+> *Other changes: A1(c)'s hint no longer says the sum must avoid a contiguous block; the key's contiguous-block proof is correct.*
+
+
 ## Part A — Pigeonhole Principle
 
 ### A1(a): 32 people, 12 months, share birth month ×3
