@@ -5,6 +5,15 @@
 
 ---
 
+> *Revised 2026-09-28: cut from 17 problems to 8 problems with 11 parts. New → old: A1 = A4, 12 · B1 = B1, 12 · B2 = B2, 12 · C1 = C3, 12 · C2 = C5, 16 · D1 = D1, 8 · D2 = D2, 16 · D3 = D5, 12. The point values in the headings and marking lines below are the old ones; scale each marking line in proportion.*
+>
+> *Why items were dropped:*
+> - *A1, A2 and A3 are Lab 9 Exercises 1.1, 1.4 and 1.2.*
+> - *B3, C1 and C2 are Lab 9 Exercises 2.3, 2.1 and 2.2.*
+> - *C4 is Lab 9 Exercise 3.2.*
+> - *D3 and D4 are Lab 9 Exercises 4.1 and 4.2.*
+
+
 ## Part A — Modelling with Recurrences
 
 ### A1. *(6 pts)* No two consecutive 1s
@@ -212,7 +221,7 @@ $$G(x)-2-7x = x\big(G(x)-2\big)+2x^2G(x)$$
 $$G(x)\left(1-x-2x^2\right) = 2+5x$$
 $$\boxed{G(x)=\frac{2+5x}{1-x-2x^2}}$$
 
-**Verified:** coefficients $2, 7, 11, 25, 47, 97, 191, 385$ — matching C3 exactly.
+**Verified:** coefficients $2, 7, 11, 25, 47, 97, 191, 385$ — matching C3 (new C1) exactly.
 
 *Marking: 4 for the derivation, 2 for the coefficient check. The commonest error is dropping the
 $-2$ inside $x(G(x)-2)$ — the shifted sum starts at $n=2$, so $a_0$ must be removed.*
