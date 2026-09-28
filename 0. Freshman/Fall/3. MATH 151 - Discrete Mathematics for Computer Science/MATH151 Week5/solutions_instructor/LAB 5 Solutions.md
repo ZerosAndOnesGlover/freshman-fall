@@ -1,6 +1,11 @@
 # MATH 151 · Week 5
 ## LAB5 Solutions — INSTRUCTOR ONLY
 
+*(Revised 2026-09-28: the Python section is now Section 3 and uses lists and loops, not `set()`, comprehensions or a dict
+comprehension (CS 101 Weeks 7–8). Expected: x² NEITHER, x+5 onto its image BIJECTIVE, |x| SURJECTIVE ONLY onto {0..10};
+the inverse of perm sends y = 1..5 to 2, 4, 1, 3, 5; the composition returns every y unchanged. `is_injective` makes
+n(n−1)/2 comparisons. Old Section 4 → 3, old 5 → 4.)*
+
 ---
 
 ## Section 1 Solutions

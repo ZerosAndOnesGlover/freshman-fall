@@ -77,90 +77,81 @@ Let $f(x)=2x$, $g(x)=x+1$, $h(x)=x^2$, all $\mathbb{Z}\to\mathbb{Z}$.
 
 ---
 
-## Section 4 — Python: Function Property Checker (25 min)
+## Section 3 — Python: Function Property Checker (25 min)
 
-Create `function_tools.py`.
+Create `function_tools.py`. Everything here uses lists, loops and `def` (CS 101 Weeks 2–3); a function is passed
+in as a value (CS 101 Lecture 10 §9), often written as a `lambda` (Lecture 11).
 
-### Exercise 4.1 — Injective/Surjective Checker for Finite Domains
+### Exercise 3.1 — Injective and Surjective, by Brute Force
 
 ```python
+def outputs_of(f, domain):
+    """The list [f(x) for each x in domain], built with a loop."""
+    result = []
+    for x in domain:
+        result.append(f(x))
+    return result
+
 def is_injective(f, domain):
-    """Check if f: domain -> anything is injective, by brute force."""
-    outputs = [f(x) for x in domain]
-    return len(outputs) == len(set(outputs))
+    """No two different inputs share an output."""
+    out = outputs_of(f, domain)
+    for i in range(len(out)):
+        for j in range(i + 1, len(out)):
+            if out[i] == out[j]:
+                return False
+    return True
 
 def is_surjective(f, domain, codomain):
-    """Check if f: domain -> codomain is surjective, by brute force."""
-    outputs = set(f(x) for x in domain)
-    return set(codomain) == outputs
-
-def is_bijective(f, domain, codomain):
-    return is_injective(f, domain) and is_surjective(f, domain, codomain)
-
-def classify_function(f, domain, codomain, name="f"):
-    inj = is_injective(f, domain)
-    sur = is_surjective(f, domain, codomain)
-    if inj and sur:
-        result = "BIJECTIVE"
-    elif inj:
-        result = "INJECTIVE ONLY (not surjective)"
-    elif sur:
-        result = "SURJECTIVE ONLY (not injective)"
-    else:
-        result = "NEITHER"
-    print(f"{name}: {result}")
-    return inj, sur
+    """Every element of the codomain is hit."""
+    out = outputs_of(f, domain)
+    for y in codomain:
+        if y not in out:
+            return False
+    return True
 ```
 
-**Task:** Add to `function_tools.py`. Test on:
+**Task:** Write `classify_function(f, domain, codomain, name)` that prints BIJECTIVE, INJECTIVE ONLY,
+SURJECTIVE ONLY or NEITHER. Test it with `domain = list(range(-10, 11))`:
 
 ```python
-domain = list(range(-10, 11))  # -10 to 10
-
 classify_function(lambda x: x**2, domain, domain, "x^2")
-classify_function(lambda x: x+5, domain, [x+5 for x in domain], "x+5 (correct codomain)")
-classify_function(lambda x: abs(x), domain, list(range(0,11)), "|x|")
-classify_function(lambda x: x**3, domain, [x**3 for x in domain], "x^3 (correct codomain)")
+classify_function(lambda x: x + 5, domain, outputs_of(lambda x: x + 5, domain), "x+5 onto its image")
+classify_function(lambda x: abs(x), domain, list(range(0, 11)), "|x|")
 ```
 
-For each, compare the program's classification to your hand-derived answer from Section 1 (where applicable — note the domains here are finite truncations, so behavior may differ from the infinite-domain case; discuss any discrepancies).
+Compare each with your hand answer from Section 1. The domains here are finite truncations, so the answers may
+differ from the infinite case: where they do, say why.
 
----
-
-### Exercise 4.2 — Composition and Inverse Finder (Finite Domains)
+### Exercise 3.2 — Composition and Inverse
 
 ```python
 def compose(g, f):
-    """Returns g∘f as a new function."""
+    """g ∘ f as a new function."""
     return lambda x: g(f(x))
 
-def find_inverse(f, domain, codomain):
-    """
-    For a bijective f: domain -> codomain, find and return
-    the inverse as a dictionary mapping codomain -> domain.
-    Returns None if f is not bijective.
-    """
-    if not is_bijective(f, domain, codomain):
-        return None
-    return {f(x): x for x in domain}
-
-# Example
-domain = list(range(1, 6))
-f = lambda x: 6 - x   # a bijection on {1,...,5}
-inv = find_inverse(f, domain, domain)
-print(inv)  # should map each f(x) back to x
+def inverse_at(f, domain, y):
+    """For a bijection f on domain, the x with f(x) == y."""
+    for x in domain:
+        if f(x) == y:
+            return x
+    return None
 ```
 
-**Task:** Use `find_inverse` to compute the inverse of the permutation from Exercise 1.1(d). Verify it matches your hand computation.
+**Task:** Store the permutation from Exercise 1.1(d) in a list, so that `perm[x]` is f(x):
+`perm = [0, 3, 1, 4, 2, 5]` (position 0 is unused), and `f = lambda x: perm[x]`. For each y in 1..5, print
+`inverse_at(f, [1, 2, 3, 4, 5], y)`, and check against your hand computation. Then check that
+`compose(f, lambda y: inverse_at(f, [1, 2, 3, 4, 5], y))` sends every y back to itself.
 
 ---
 
-## Section 5 — Reflection (5 min)
+## Section 4 — Reflection (5 min)
 
-1. In Exercise 4.1, did any function change classification between the "hand" analysis (infinite domain) and the "Python" analysis (finite truncated domain)? Explain why domain restriction can change injectivity/surjectivity.
+1. In Exercise 3.1, did any function change classification between the "hand" analysis (infinite domain) and the
+Python analysis (finite truncated domain)? Explain why restricting the domain can change injectivity or
+surjectivity.
 
-2. Why does `is_injective` in the Python code use `len(set(outputs)) == len(outputs)` as the test? Connect this to the formal definition of injectivity.
-
+2. `is_injective` compares every pair of outputs. Connect this to the formal definition of injectivity. How many
+comparisons does it make for a domain of size n?
 
 ---
 
@@ -170,8 +161,7 @@ Show your TA:
 
 - [ ] Section 1: at least 4 of 6 functions correctly classified with proof
 - [ ] Exercise 2.2: at least 2 complete inverse derivations with verification
-- [ ] `function_tools.py` running: demonstrate `classify_function` and `find_inverse`
+- [ ] `function_tools.py` running: demonstrate `classify_function` and `inverse_at`
 
 ---
 
-*Bring `set_tools.py`, `predicate_tools.py`, and `function_tools.py` to Lab 6 — relations build directly on functions.*
