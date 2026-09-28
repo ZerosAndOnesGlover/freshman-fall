@@ -3,6 +3,10 @@
 
 ---
 
+> *Revised 2026-09-28: cut from 13 problems (about 27 parts) to 8 problems with 16 parts. New → old: A1 = A1 (a–c), 9 · A2 = A2 (b, d), 12 ·
+> B1 = B1 (a, b, e, g), 20 · C1 = C1 (a, b), 10 · C2 = C2, 12 · C3 = C3 (b, c), 12 · C4 = C4, 13 · D1 = D1, 12. D2–D5 are no longer asked.*
+
+
 ## Part A
 
 ### A1.
