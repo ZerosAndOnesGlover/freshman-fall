@@ -3,6 +3,9 @@
 
 ---
 
+> *Revised 2026-09-28: cut from 13 problems (about 25 parts) to 9 problems with 15 parts. New → old: A1 (a, b, c) = A1 (b, c, d), 12 · B1 (a–e) = B1 (b, c, e, f, h), 20 · C1 = C1, 10 · C2 = C2, 10 · C3 = C4, 10 · D1 = D1, 8 · D2 = D2, 8 · D3 = D3, 12 · E1 = E1, 10. Lab 7 already asks for A1(e) (Exercise 2.3), B1(d) (2.4), B1(g) (2.1), D4 (3.3) and E2(b) (2.2), so those are gone. E2(a) was also cut: BANANA is not one of the four cases the question asks students to choose from. A1(a), B1(a) and C3 were cut for length.*
+
+
 ## Part A
 
 ### A1(a): 4-course meals
@@ -158,7 +161,7 @@ $256 = 2^8$ ✓
 
 ## Part E — The Four-Fold Way
 
-### E1. *(4 pts)* The classification table, $n=5$, $r=3$
+### E1. *(10 pts)* The classification table, $n=5$, $r=3$
 
 | | No repetition | Repetition allowed |
 |---|---|---|
@@ -167,7 +170,7 @@ $256 = 2^8$ ✓
 
 *All four verified: $5\cdot4\cdot3=60$; $5^3=125$; $\binom53=10$; $\binom73=35$.*
 
-*Marking: 0.5 per formula, 0.5 per value. The repetition-allowed unordered case
+*Marking: 1 per formula, 1.5 per value. The repetition-allowed unordered case
 $\binom{n+r-1}{r}$ (stars and bars) is the one most often missed.*
 
 ---
