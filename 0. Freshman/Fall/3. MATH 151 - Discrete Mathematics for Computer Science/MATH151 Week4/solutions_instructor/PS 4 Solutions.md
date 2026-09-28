@@ -3,6 +3,11 @@
 
 ---
 
+> *Revised 2026-09-28: cut from 13 problems (about 30 parts) to 8 problems with 17 parts. New → old: A1 = A1 (a, c, e, g), 12 ·
+> A2 = A2 (a, c, d), 12 · B1 = B1 (b, c), 16 · C1 = C1 (c, d), 12 · D1 = D1, 12 · D2 = D2, 12 · E1 = E1, 12 · E2 = E3, 12. D3, D4, E2
+> (multiples of 3 or 5 — Lab 4 counts it) and E4 are no longer asked. A1's handout also lost a drafting slip in its set definitions.*
+
+
 ## Part A
 
 ### A1. $U=\{1,\ldots,15\}$, $A=\{1,3,5,7,9,11,13,15\}$, $B=\{2,3,5,7,11,13\}$, $C=\{1,2,3,4,5,6,7\}$
