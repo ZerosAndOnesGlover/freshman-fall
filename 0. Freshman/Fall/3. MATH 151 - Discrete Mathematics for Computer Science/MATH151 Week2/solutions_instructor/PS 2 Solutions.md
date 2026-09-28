@@ -3,6 +3,12 @@
 
 ---
 
+> *Revised 2026-09-28: the set was cut from 12 problems (16 separate proofs plus 8 more problems) to 6 problems with 11 items. New → old:
+> A1 = A1 (a, c, f), 24 · A2 = A2, 12 (its handout text had a drafting slip — two flawed proofs; only the second remains) ·
+> B1 = B1 (a, c), 18 · C1 = C1 (a, e), 18 · C2 = C3, 14 · D1 = D5 (a, b), 14 — D5(c) (p prime) needs Euclid's lemma (Week 12) and
+> is no longer asked. Everything else below is no longer asked.*
+
+
 ## Part A — Direct Proof
 
 ### A1.
