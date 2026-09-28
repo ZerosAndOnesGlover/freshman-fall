@@ -8,7 +8,7 @@
 
 **Sat:** Thursday of Week 4, 11:00–12:15, TH 205 · **Reading:** Hutton §12.1, §14.1–14.4 · **Next:** Week 5 L11, monads
 
-**Coursework:** 📝 **PS 3** due Fri this week 17:00 · 🔬 **Lab 4** Wed of Week 5 13:00–14:50
+**Coursework:** 📝 **PS 3** due Fri this week 17:00 · 📊 **Quiz 5** Tue of Week 5 · 📝 **PS 5** released Wed of Week 5, due Fri of Week 6 17:00 · 🔬 **Lab 4** Wed of Week 5 13:00–14:50
 
 ---
 
