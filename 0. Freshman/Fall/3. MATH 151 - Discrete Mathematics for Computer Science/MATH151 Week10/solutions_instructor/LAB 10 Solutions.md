@@ -1,6 +1,9 @@
 # MATH 151 · Week 10
 ## LAB 10 Solutions — INSTRUCTOR ONLY
 
+*(Revised 2026-09-28: the lab listed 140 minutes of work. Exercise 4.4 (brute-force isomorphism timing) and Section 5
+(Euler and Hamilton) are no longer asked; the reflection is now two questions (20! = 2 432 902 008 176 640 000).)*
+
 All outputs below were produced by running the lab code. $G$ is $V=\{a,b,c,d,e\}$,
 $E=\{ab,ac,bc,bd,cd,de\}$.
 

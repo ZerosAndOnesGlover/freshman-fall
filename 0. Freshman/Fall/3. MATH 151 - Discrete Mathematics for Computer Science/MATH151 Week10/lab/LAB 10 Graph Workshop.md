@@ -105,7 +105,7 @@ $K_{3,3}$, and $G$. State which are bipartite and relate the results to the odd-
 
 ---
 
-## Section 4 — Invariants and Isomorphism (25 min)
+## Section 4 — Invariants and Isomorphism (15 min)
 
 **4.1** *(4 pts)* Write `invariants(V, E)` returning a tuple of: vertex count, edge count, sorted
 degree sequence, component count, triangle count, and whether bipartite.
@@ -116,34 +116,14 @@ separates them?
 **4.3** *(4 pts)* Compare $K_{3,3}$ against $C_6$, and $C_6$ against $Q_3$. Report the first
 distinguishing invariant in each case.
 
-**4.4** *(4 pts)* Write a brute-force `is_isomorphic(G1, G2)` trying all $n!$ bijections. Time it for
-$n = 6, 7, 8$ and state the growth. **Why is this approach hopeless at $n = 20$?** Compute $20!$ to
-support your answer.
-
 ---
 
-## Section 5 — Euler and Hamilton (15 min)
+## Section 5 — Reflection (5 min)
 
-**5.1** *(3 pts)* Write `has_euler(V, E)` returning `"circuit"`, `"trail"`, or `"neither"` from the
-degree criterion. Test on $C_6$, $K_4$, $K_5$, and $G$.
+1. Checking isomorphism directly means trying all $n!$ bijections; compute $20!$ in the REPL. What does that
+   tell you about using invariants first?
 
-**5.2** *(4 pts)* Write a brute-force Hamilton-cycle finder. Confirm $K_4$ has one and the **Petersen
-graph does not**. Report how long each search took.
-
-**5.3** *(3 pts)* Your two functions differ enormously in cost. Explain why in one paragraph,
-referring to Lecture 32.
-
----
-
-## Section 6 — Reflection (10 min)
-
-1. In 4.4 you measured factorial growth directly. What does this tell you about invariant-based
-   filtering as a practical strategy?
-
-2. Euler is decidable by counting degrees; Hamilton needs search. Both questions look alike. What is
-   the structural difference that makes one easy?
-
-3. You built the matrix and the list. For a graph with $10^6$ vertices and $5\times10^6$ edges, which
+2. You built the matrix and the list. For a graph with $10^6$ vertices and $5\times10^6$ edges, which
    would you use, and roughly how much memory would the other one need?
 
 ---
@@ -157,5 +137,3 @@ Show your TA:
 - [ ] 3.1–3.3: `reachable` explained, components correct on both tests, cut vertices matching Section 1
 - [ ] 3.4: bipartite results for all five graphs, related to the odd-cycle theorem
 - [ ] 4.2–4.3: distinguishing invariants identified in every pair
-- [ ] 4.4: timing reported, $20!$ computed
-- [ ] 5.2: Petersen confirmed non-Hamiltonian
