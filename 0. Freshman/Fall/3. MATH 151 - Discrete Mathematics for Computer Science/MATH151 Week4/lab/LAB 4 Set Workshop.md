@@ -8,7 +8,7 @@
 1. Practice element-chasing and algebraic proofs of set identities
 2. Use Venn diagrams as an intuition-building (not proof-providing) tool
 3. Verify set identities computationally before proving them
-4. Compute power sets and Cartesian products programmatically
+4. Compute power sets recursively and check identities element by element
 5. Apply Inclusion-Exclusion to real counting problems
 
 **Materials:** Pencil, paper, laptop with Python 3.
@@ -71,24 +71,6 @@ Prove: $A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$
 
 ### Exercise 2.2
 
-Prove: $A - (B \cap C) = (A - B) \cup (A - C)$
-
-(Confirms Exercise 1.1(b).)
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
----
-
-### Exercise 2.3
-
 **Disprove** (find a counterexample): $(A \cup B) \cap C = A \cup (B \cap C)$
 
 (This should NOT match in your Venn diagram from 1.1(c) in general — find specific sets that break it.)
@@ -103,23 +85,7 @@ Prove: $A - (B \cap C) = (A - B) \cup (A - C)$
 
 ---
 
-### Exercise 2.4
-
-Prove: $\overline{A} - \overline{B} = B - A$
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
-&nbsp;
-
----
-
-### Exercise 2.5
+### Exercise 2.3
 
 Prove: $A \subseteq B \iff A \cup B = B$
 
@@ -139,150 +105,68 @@ Prove: $A \subseteq B \iff A \cup B = B$
 
 ---
 
-## Section 3 — Python: Set Operations and Verification (35 min)
+## Section 3 — Python: Membership Tables (35 min)
 
-Create `set_tools.py`. Python's built-in `set` type implements exactly the mathematical set abstraction.
+A set identity holds exactly when, for **every** element x, "x is in the left side" and "x is in the right side"
+have the same truth value. So a set identity is a propositional equivalence checked element by element —
+Lab 0 again. Here the sets are Python **lists**, and `x in A` tests membership (CS 101 Lecture 05 §6). A loop
+over the universe (CS 101 Week 2) does the checking.
 
-### Exercise 3.1 — Basic Operations Verification
+Create `set_check.py`.
 
-```python
-def verify_identity(A, B, C, lhs_func, rhs_func, name="identity"):
-    """
-    Verifies a set identity for specific sets A, B, C.
-    lhs_func and rhs_func are functions taking (A,B,C) and returning a set.
-    """
-    lhs = lhs_func(A, B, C)
-    rhs = rhs_func(A, B, C)
-    matches = (lhs == rhs)
-    print(f"{name}: {'HOLDS' if matches else 'FAILS'}")
-    print(f"  LHS = {lhs}")
-    print(f"  RHS = {rhs}")
-    return matches
-```
-
-**Task:** Verify each identity from Exercise 2.1–2.4 using THREE different random-ish sets. If it holds for all three trials, this supports (does not prove) your hand-written proof.
+### Exercise 3.1 — Checking an Identity Element by Element
 
 ```python
-# Test sets — use several different combinations
-test_cases = [
-    ({1,2,3,4,5}, {3,4,5,6,7}, {5,6,7,8,9}),
-    ({1,2}, {2,3}, {3,4}),
-    ({1,2,3,4,5,6,7,8}, {2,4,6,8}, {1,3,5,7}),
-]
+U = list(range(1, 11))
+A = [1, 2, 3, 4, 5]
+B = [3, 4, 5, 6, 7]
+C = [5, 6, 7, 8, 9]
 
-for A, B, C in test_cases:
-    verify_identity(A, B, C,
-        lambda A,B,C: A & (B | C),
-        lambda A,B,C: (A & B) | (A & C),
-        "A∩(B∪C) = (A∩B)∪(A∩C)")
+# A ∩ (B ∪ C)  versus  (A ∩ B) ∪ (A ∩ C)
+for x in U:
+    lhs = (x in A) and ((x in B) or (x in C))
+    rhs = ((x in A) and (x in B)) or ((x in A) and (x in C))
+    if lhs != rhs:
+        print("differs at", x)
+print("checked", len(U), "elements")
 ```
 
-Run this for all identities from Exercise 2.1, 2.2, 2.4. Report whether all hold.
+Run it. Then change the two lines to check Exercise 1.1(b)'s identity, A − (B ∩ C) = (A − B) ∪ (A − C). (x ∈ A − B
+is `(x in A) and not (x in B)`.) Try a second choice of A, B, C for each. Why does "no line printed" support your
+Section 2 proof (and the Venn diagram) without proving the identity?
 
----
+### Exercise 3.2 — The False Claim
 
-### Exercise 3.2 — Counterexample Search
+Now check Exercise 2.2's claim, (A ∪ B) ∩ C = A ∪ (B ∩ C), with the same lists. Which x does the program print?
+Use it to state a counterexample, and compare it with the one you found by hand.
 
-Write a function that randomly searches for a counterexample to a claimed identity:
+### Exercise 3.3 — Power Set, Recursively
+
+CS 101 Lecture 15 §5 builds the subsets of a list recursively: the subsets of the rest, plus each of those with the
+first element added. Write
 
 ```python
-import random
-import itertools
-
-def find_counterexample(lhs_func, rhs_func, universe, num_trials=1000, subset_size_max=5):
-    """
-    Randomly generates sets A, B, C from the given universe and checks
-    if lhs_func(A,B,C) == rhs_func(A,B,C). Returns first counterexample found.
-    """
-    universe = list(universe)
-    for _ in range(num_trials):
-        A = set(random.sample(universe, random.randint(0, min(subset_size_max, len(universe)))))
-        B = set(random.sample(universe, random.randint(0, min(subset_size_max, len(universe)))))
-        C = set(random.sample(universe, random.randint(0, min(subset_size_max, len(universe)))))
-        
-        lhs = lhs_func(A, B, C)
-        rhs = rhs_func(A, B, C)
-        
-        if lhs != rhs:
-            return (A, B, C, lhs, rhs)
-    return None  # no counterexample found in num_trials
+def power_set(lst):
+    """All subsets of lst, as a list of lists."""
 ```
 
-**Task:** Use this to find a counterexample to the FALSE claim from Exercise 2.3:
-$(A \cup B) \cap C = A \cup (B \cap C)$
+and check that `len(power_set([1, 2, 3]))` is `8` and `len(power_set([1, 2, 3, 4, 5]))` is `32`. Print the eight
+subsets of `[1, 2, 3]` and compare with your hand computation.
+
+### Exercise 3.4 — Inclusion–Exclusion, Counted
+
+How many integers from 1 to 300 are divisible by 3 or 5? First compute it by hand with |A ∪ B| = |A| + |B| − |A ∩ B|.
+Then count it with a loop:
 
 ```python
-universe = range(1, 11)
-result = find_counterexample(
-    lambda A,B,C: (A|B)&C,
-    lambda A,B,C: A|(B&C),
-    universe
-)
-if result:
-    A,B,C,lhs,rhs = result
-    print(f"Counterexample found: A={A}, B={B}, C={C}")
-    print(f"LHS = {lhs}, RHS = {rhs}")
-else:
-    print("No counterexample found — identity may hold (or trials too few)")
+count = 0
+for x in range(1, 301):
+    if x % 3 == 0 or x % 5 == 0:
+        count += 1
+print(count)
 ```
 
-Compare the counterexample found by the program to the one you found by hand in Exercise 2.3.
-
----
-
-### Exercise 3.3 — Power Set Generator
-
-```python
-def power_set(s):
-    """Generate the power set of s as a set of frozensets."""
-    s = list(s)
-    n = len(s)
-    result = set()
-    for mask in range(2**n):
-        subset = frozenset(s[i] for i in range(n) if (mask >> i) & 1)
-        result.add(subset)
-    return result
-
-A = {1, 2, 3}
-pA = power_set(A)
-print(f"P(A) has {len(pA)} elements:")
-for s in sorted(pA, key=len):
-    print(f"  {set(s)}")
-```
-
-**Task:** Run this for $A = \{1,2,3\}$ and verify against your hand computation from PS4 D1. Then run for $A = \{1,2,3,4,5\}$ and verify $|\mathcal{P}(A)| = 32$.
-
----
-
-### Exercise 3.4 — Cartesian Product and Inclusion-Exclusion
-
-```python
-def cartesian_product(A, B):
-    return {(a, b) for a in A for b in B}
-
-def inclusion_exclusion_2(A, B):
-    """Verify |A∪B| = |A|+|B|-|A∩B|"""
-    lhs = len(A | B)
-    rhs = len(A) + len(B) - len(A & B)
-    return lhs, rhs, lhs == rhs
-
-def inclusion_exclusion_3(A, B, C):
-    """Verify |A∪B∪C| formula"""
-    lhs = len(A | B | C)
-    rhs = len(A)+len(B)+len(C) - len(A&B)-len(A&C)-len(B&C) + len(A&B&C)
-    return lhs, rhs, lhs == rhs
-```
-
-**Task:**
-1. Compute $A \times B$ for $A=\{1,2\}$, $B=\{'x','y','z'\}$. Verify $|A\times B| = |A|\cdot|B|$.
-2. Verify inclusion_exclusion_2 and inclusion_exclusion_3 on at least 3 different set triples each.
-3. Solve PS4 E2 (multiples of 3 or 5 up to 300) computationally, then compare to your hand calculation.
-
-```python
-multiples_of_3 = set(range(3, 301, 3))
-multiples_of_5 = set(range(5, 301, 5))
-print(f"Divisible by 3 or 5: {len(multiples_of_3 | multiples_of_5)}")
-```
+Do they agree? Which term of the formula corrects for the numbers counted twice?
 
 ---
 
@@ -290,9 +174,9 @@ print(f"Divisible by 3 or 5: {len(multiples_of_3 | multiples_of_5)}")
 
 1. Why can't a Venn diagram serve as a rigorous proof for an identity involving 4 or more sets?
 
-2. In Exercise 3.2, the counterexample search is probabilistic — it might miss a counterexample if it exists but is rare. Why does a *single* explicit counterexample (found by hand or by search) suffice to disprove a universal claim, even though *no* number of successful verifications proves a universal claim?
+2. Why does a *single* explicit counterexample suffice to disprove a universal claim, even though *no* number of successful checks like Exercise 3.1 proves one?
 
-3. Compare `power_set` (bitmask-based) to a recursive definition of power set (e.g., $\mathcal{P}(\{a\}\cup S) = \mathcal{P}(S) \cup \{s\cup\{a\} : s\in\mathcal{P}(S)\}$). Which resembles the inductive proof from Friday's lecture more closely?
+3. Your `power_set` follows $\mathcal{P}(\{a\}\cup S) = \mathcal{P}(S) \cup \{s\cup\{a\} : s\in\mathcal{P}(S)\}$. How does it mirror the inductive proof that $|\mathcal{P}(A)| = 2^{|A|}$ from Friday's lecture?
 
 ---
 
@@ -301,12 +185,11 @@ print(f"Divisible by 3 or 5: {len(multiples_of_3 | multiples_of_5)}")
 Show your TA:
 
 - [ ] Exercise 1.2: Venn diagram fully labeled with correct region counts (sum should equal 100)
-- [ ] Exercise 2.1 and 2.2: complete element-chasing proofs
-- [ ] Exercise 2.3: correct counterexample with computation shown
-- [ ] Exercise 2.5: both directions of the biconditional proven
-- [ ] `set_tools.py` running: demonstrate power_set on a 3-element set and cartesian_product
-- [ ] Section 3.2: counterexample found programmatically, matches hand-found counterexample
+- [ ] Exercise 2.1: complete element-chasing proof
+- [ ] Exercise 2.2: correct counterexample with computation shown
+- [ ] Exercise 2.3: both directions of the biconditional proven
+- [ ] `set_check.py` running: Exercise 3.1 on both identities, and `power_set([1, 2, 3])`
+- [ ] Exercise 3.2: the program's counterexample matches the hand-found one
 
 ---
 
-*Bring `set_tools.py` and `predicate_tools.py` to Lab 5 — we build functions and relations on top of these next.*

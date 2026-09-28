@@ -1,6 +1,11 @@
 # MATH 151 · Week 4
 ## LAB4 Solutions — INSTRUCTOR ONLY
 
+*(Revised 2026-09-26: lab Exercise 2.2 is old 2.3, lab 2.3 is old 2.5; old 2.2 and 2.4 are no longer asked. Section 3 now uses
+lists and membership tests instead of Python sets (CS 101 Week 8). Expected: 3.1 prints no "differs" line for either identity
+with the given lists; 3.2 prints 1, 2, 3, 4 — e.g. x = 1 is in A ∪ (B ∩ C) but not in (A ∪ B) ∩ C since 1 ∉ C; 3.3 gives 8 and 32
+subsets; 3.4 counts 140 = 100 + 60 − 20, the −|A ∩ B| term removing the 20 multiples of 15.)*
+
 ---
 
 ## Section 1 Solutions
