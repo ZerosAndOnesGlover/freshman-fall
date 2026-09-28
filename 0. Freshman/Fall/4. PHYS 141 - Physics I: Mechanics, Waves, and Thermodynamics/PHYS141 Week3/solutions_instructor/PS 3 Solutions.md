@@ -3,6 +3,14 @@
 
 ---
 
+> *Revised 2026-09-28: sub-parts cut from 42 to 20, two per problem; the ten problems and their points are unchanged. The answers below keep the old letters. New → old: 1 (a, b) = (c, d) · 2 (a, b) = (b, e) · 3 (a, b) = (c, d) · 4 (a, b) = (c, d) · 5 (a, b) = (a, b) · 6 (a, b) = (a, c) · 7 (a, b) = (b, d) · 8 (a, b) = (d, e) · 9 (a, b) = (a, c) · 10 (a, b) = (b, c).*
+>
+> *Other changes:*
+> - *Problem 7 (b) (old (d)) used to say "a horizontal force"; it now says "a force parallel to the incline", which is what the 35.0 N answer below solves. A horizontal push would need 61.1 N.*
+> - *Problem 7 (a) now also asks students to show that the block slides.*
+> - *Problem 8 dropped the Atwood acceleration and tension, which Lab 3 derives and measures.*
+
+
 *Revised 2026-09-21 to match the 10-problem set; problems are numbered as in the new set.*
 
 ## Marking Scheme
