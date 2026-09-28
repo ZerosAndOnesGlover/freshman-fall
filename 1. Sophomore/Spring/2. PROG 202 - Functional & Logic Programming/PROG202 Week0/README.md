@@ -96,7 +96,7 @@ previous item; further left ends the block. Tabs are a mistake and `-Wall` says 
 | [[L02 GHCi Types and Evaluation by Substitution]] | The shape of a program; substitution by hand; `:t` `:i` `:sprint` `:set +s`; **`runghc` 57× slower than `-O2`**; **44 KB against 273 MB**, and the difference between retention and fusion |
 | [[LAB 0 GHCi and the Shape of a Haskell Program]] | GHCi as a laboratory, `<<loop>>`, and `sched`. **Friday of Week 0, 13:00–14:50** |
 | `lab/Shape.hs`, `lab/Sched.hs`, `lab/Makefile` | Fifteen lines of program anatomy, the term's running example, and the build |
-| [[PROG202 Week0/assignments/Problem Set 0\|Problem Set 0]] | Five questions, 100 points, due **Friday of Week 1** |
+| [[PROG202 Week0/assignments/Problem Set 0\|Problem Set 0]] | Five questions, fifteen parts, 100 points, about three hours, due **Friday of Week 1** |
 | [[PROG202 Week0/resources/Course Overview Syllabus\|Course Overview Syllabus]] | **Read this in full in Week 0** — assessment, the lab lag, and ten deviations including the one about QuickCheck |
 | [[PROG202 Week0/resources/Haskell Syntax and Symbols\|Haskell Syntax and Symbols]] | **The punctuation reference for the whole course.** Keep it open for three weeks |
 | [[PROG202 Week0/resources/Reading Guide Week 0\|Reading Guide Week 0]] | Which of Hutton 1–5 is this week, and the three places *Real World Haskell* disagrees with GHC 9.4.7 |

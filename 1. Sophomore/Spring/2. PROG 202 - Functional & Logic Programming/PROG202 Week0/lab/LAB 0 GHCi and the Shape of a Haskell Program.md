@@ -40,29 +40,26 @@ swipl --version                # not needed until Week 8.  Check it now anyway
 **`ghc` and `ghci` must be the same version.** If `ghci` is 8.x and `ghc` is 9.x you have two
 installations and you will spend Week 3 debugging the wrong one.
 
-**Where you work.** Not your home directory — your coursework for this course goes in the Academic
-Registry, alongside its answer sheets, at
-`5. Academic Registry/4. Submissions/Year2 Sophomore/Spring/2. PROG 202/`. Name that path once, in
-`~/.bashrc` (the registry's [[4. Submissions/README|README]] has the block for every course):
+**Where you work.** Not your home directory. Submitted work for this course lives in the semester
+submissions repository, at
+`5. Academic Registry/4. Submissions/Year2 Sophomore/Spring/2. PROG 202/week0/`. **The repository is
+the semester, not the course** — one repo for all six Spring courses — and it is kept out of the
+vault's own git repo deliberately.
+
+Name the path once in `~/.bashrc`:
 
 ```bash
 export ACADEMICS=~/"Documents/1. Academics/0. Computer Science and Engineering (B.Sc)"
 export PROG202="$ACADEMICS/5. Academic Registry/4. Submissions/Year2 Sophomore/Spring/2. PROG 202"
 ```
 
-Create the directory and, like every other course, make it a repository of its own — it is kept out
-of the vault's git repo deliberately, so you commit PROG 202 from inside `$PROG202`:
+**Each `weekN/` has a `practice/` folder, and today's work goes there.** `practice/` is git-ignored
+in every week of every course: it is for classwork, experiments and things you break on purpose, and
+it is never submitted. Anything meant for grading goes in `weekN/` itself.
 
 ```bash
-mkdir -p "$PROG202/week0/lab0"
-cd "$PROG202"
-git init
-```
-
-Now get this lab's files:
-
-```bash
-cd "$PROG202/week0/lab0"
+mkdir -p "$PROG202/week0/practice"
+cd "$PROG202/week0/practice"
 cp "$ACADEMICS/1. Sophomore/Spring/2. PROG 202 - Functional & Logic Programming/PROG202 Week0/lab/"{Shape.hs,Sched.hs,Makefile} .
 make                           # builds `shape` and `sched`, both warning-clean
 ./shape                        # prints one course code
@@ -70,9 +67,16 @@ make                           # builds `shape` and `sched`, both warning-clean
 
 **Quote every `"$PROG202"`.** The path contains spaces; unquoted it splits into six arguments.
 
+**Check that `practice/` really is ignored** before you rely on it:
+
+```bash
+cd "$PROG202"
+git check-ignore -v week0/practice/Shape.hs      # should name the .gitignore rule
+```
+
 ---
 
-## 1. GHCi Is the Laboratory (25 minutes)
+## 1. GHCi Is the Laboratory (20 minutes)
 
 Start `ghci` with no arguments and work through this. **Type it, do not read it** — the point of the
 session is that your fingers learn `:t`.
@@ -149,7 +153,7 @@ used to the number being large; get used to reading it.
 
 ---
 
-## 2. The Shape of a Program (15 minutes)
+## 2. The Shape of a Program (12 minutes)
 
 Open `Shape.hs`. It is fifteen lines and L02 §1 walks through every one of them.
 
@@ -293,7 +297,7 @@ adjacent; only the end time gives it away, and the end time is in a different fi
 
 ---
 
-## 5. `+RTS -s`, and the Number That Should Bother You (15 minutes)
+## 5. `+RTS -s`, and the Number That Should Bother You (12 minutes)
 
 `make stats` runs `./sched +RTS -s`. Read the report; find `bytes allocated in the heap`, `maximum
 residency`, and `%GC time`.
@@ -319,16 +323,10 @@ ghc -O2 -rtsopts -o a A.hs && ./a +RTS -s
 **(a)** Try a third version: `let xs = [1..10000000] in print (sum xs)` — named, but used **once**.
 Predict the residency before you run it, then run it. **Most people predict wrong.**
 
-**(b)** Now build all three at `-O0` as well, and fill in the eight-number table:
+**(b)** Rebuild the *written-twice* version at `-O0` and report its **allocated** figure. It is not
+53 KB. That one extra number is the whole of §5.
 
-| | `-O0` allocated | `-O0` residency | `-O2` allocated | `-O2` residency |
-|---|---|---|---|---|
-| written twice | | | | |
-| named once | | | | |
-| named, used once | | | | |
-
-**Two of the columns tell different stories.** One gap is present at *both* optimisation levels; the
-other only appears at `-O2`. Say which is which.
+*(PS 0 Q4(b) fills in the full nine-cell table for marks. Do not do it now — do it there.)*
 
 **(c)** In one sentence each, and without looking anything up:
 
@@ -352,15 +350,12 @@ Show the TA:
 - [ ] `./sched` printing **1070 contact minutes, no clashes, and the two PROG 202 lunch
       collisions** (§4d)
 - [ ] Your answer to §4d question 3 — timetable bug or claim bug — in one sentence each way
-- [ ] The eight-number table from §5b, measured on your own machine, and your two hypotheses from §5c
+- [ ] Both residency figures from §5 and the `-O0` allocation figure from §5b, measured on your
+      own machine, and your two hypotheses from §5c
 
-**Commit before you leave:**
-
-```bash
-cd "$PROG202"
-git add week0/lab0
-git commit -m "Lab 0: GHCi, Shape, sched; found two lunch collisions in the Spring timetable"
-```
+**Nothing to commit today.** Everything you wrote is in `week0/practice/`, which is git-ignored on
+purpose. **PS 0 is the submitted work for Week 0**, and its answer sheet and code go in `week0/`
+itself — see the course README in the submissions repo.
 
 ---
 

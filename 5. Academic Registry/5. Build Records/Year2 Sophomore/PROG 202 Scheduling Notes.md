@@ -241,4 +241,49 @@ applies to every future language course here.
 
 ---
 
+## 13. Week 0 brought into line with the conventions settled after it was written
+
+Week 0 was written on 2026-09-17. Several vault-wide conventions were settled between then and
+2026-09-28, and Week 0 was reworked to them rather than left as the one week that does not follow
+them.
+
+| Convention | What changed in Week 0 |
+|---|---|
+| **Lecture opening block** — title, verified quote, exact `**Reading:**`, generated `**Coursework:**` | L01 and L02 gained a quote and a generated coursework line. `Y2_DAYS` in `tools/make_lecture_notices.py` already carried `"PROG 202": "TR"`; `--check` now reports 0 changes |
+| **Problem-set volume: about three hours, roughly 8 problems / 15 answer parts, still 100 points** | PS 0 went from 20 parts to **15**, and from 236 lines to 207. Cut: the `length xs / 2` argument (Q1d), the five-item transparency list trimmed to three, the nested-`:sprint` session (old Q3c), `freeSlots` (old Q5b). Merged: old Q2c+Q2d, old Q4b+Q4c. Points still sum to exactly 100 |
+| **Lab finishes inside its 110-minute session, ≤30 min write-up** | Timings were 120 minutes. Now §0 10 · §1 20 · §2 12 · §3 10 · §4 40 · §5 12 · checkoff 5 = **109**. §5's eight-number table moved to PS 0 Q4(b), where it has marks; the lab keeps one extra number |
+| **Submissions are one repo per semester, with a git-ignored `practice/` in every week** | Lab 0 §0 no longer tells students to `git init` a per-course repo. Work goes in `week0/practice/`, nothing from the session is submitted, and the sheet has them run `git check-ignore -v` to see the rule named |
+| **No Claude attribution in commits** | Week 0's own commit `6524661` carries a `Co-Authored-By` trailer, because it predates the rule by five days. **96 commits sit on top of it, so it has not been rewritten.** No later PROG 202 commit has one |
+| **No revision notes in handouts** | Checked: the lectures, the lab sheet, the problem set and the syllabus carry none. The one "this replaces an earlier version" note is in **Lab 0 Solutions §5**, which is a key, where the convention puts change history |
+
+**The course's submission folder** was created to the checklist at the same time:
+`4. Submissions/Year2 Sophomore/Spring/2. PROG 202/` with `week0`–`week12`, a `practice/` in each, a
+course README, and a shape-based `.gitignore` whose allow-list is `*.hs *.lhs *.pl *.plt Makefile
+*.cabal *.sh *.md *.csv *.txt .gitignore` with `practice/` last. Verified in a scratch repo: sources
+and answer sheets are tracked; GHC's `.hi`, `.o`, extensionless executables and `.prof` dumps are
+ignored; everything under `practice/` is ignored including `.hs` and `.md`.
+
+**Still outstanding, and not this course's to do alone:** `Year2 Sophomore/Spring` is not yet a git
+repo and has no GitHub remote, and CS 202, CS 212, MATH 251, ECE 211 and CS 290 have no submission
+folders. That is a semester-level job needing the other five courses and a repository the user
+creates.
+
+### One measurement added while reworking PS 0 Q2(b)
+
+The question now asks students to *try to win back* the optimisation `calls++` cost. Measured, so the
+key can mark the attempts:
+
+| `impure_sum`, *n* = 10⁹ | once | twice |
+|---|---:|---:|
+| as written | 0.44 s | 0.88 s |
+| `static long calls` | 0.44 s | **0.89 s** — no help |
+| `gcc -O2 -flto` | 0.45 s | **0.89 s** — no help |
+| `__attribute__((noinline,const))` | 0.44 s | **0.44 s** — restored |
+
+The last row is the punchline and it is why the question is worth asking: `const` is the programmer
+*promising* what GCC could not prove, **with no check that the promise is true**. A type system gives
+the same guarantee and does check it.
+
+---
+
 *Written while building Week 0. Sections are added as later weeks raise new decisions.*

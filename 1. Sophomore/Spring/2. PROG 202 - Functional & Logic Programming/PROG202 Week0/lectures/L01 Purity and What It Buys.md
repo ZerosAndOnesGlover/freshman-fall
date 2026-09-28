@@ -2,9 +2,13 @@
 ## Week 0 · Lecture 1 of 2
 ### Purity, Referential Transparency, and What Forbidding Assignment Buys
 
+*“Functional programs contain no assignment statements, so variables, once given a value, never change. More generally, functional programs contain no side-effects at all. A function call can have no effect other than to compute its result.”* — John Hughes, "Why Functional Programming Matters" (1989)
+
 ---
 
 **Reading:** Hutton §1.1–1.5, §2.1–2.4 · **Next:** L02, GHCi and how evaluation actually proceeds
+
+**Coursework:** 📝 **PS 0** released Wed this week, due Fri of Week 1 17:00 · 🔬 **Lab 0** Fri this week 13:00–14:50
 
 ---
 

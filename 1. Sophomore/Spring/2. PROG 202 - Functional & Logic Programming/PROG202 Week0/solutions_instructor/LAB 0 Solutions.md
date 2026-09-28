@@ -11,13 +11,19 @@ installing three habits that the next twelve weeks assume: **`:t` before you gue
 when you are confused about evaluation**, and **`+RTS -s` before you believe a performance claim.**
 Students who leave without those spend Week 3 lost.
 
-**Timing that works.** §0 ten minutes, §1 twenty-five, §2 fifteen, §3 ten, §4 forty, §5 fifteen,
-checkoff five. §4 is the one that overruns; §5 is the one to cut if you are behind, because PS 0 Q4
-repeats it with marks attached.
+**Timing that works.** §0 ten minutes, §1 twenty, §2 twelve, §3 ten, §4 forty, §5 twelve, checkoff
+five — **109 of the session's 110 minutes**, and the sheet is written to finish inside it with no
+write-up to take away. §4 is the one that overruns; §5 is the one to cut if you are behind, because
+PS 0 Q4(b) does its full table with marks attached.
 
 ---
 
 ## §0 — Toolchain
+
+**Where they work.** `week0/practice/` in the semester submissions repo, which is git-ignored in
+every week of every course. **Nothing from today is submitted** — PS 0 is Week 0's submitted work.
+Check one student's `git check-ignore -v week0/practice/Shape.hs` out loud so the whole room sees the
+rule named.
 
 **The two failures you will actually see:**
 

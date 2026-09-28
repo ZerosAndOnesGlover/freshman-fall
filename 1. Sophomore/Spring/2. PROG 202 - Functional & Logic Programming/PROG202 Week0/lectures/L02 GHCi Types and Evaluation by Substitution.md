@@ -2,9 +2,13 @@
 ## Week 0 · Lecture 2 of 2
 ### GHCi as a Laboratory: Types, Substitution, and Looking at What Has Not Happened Yet
 
+*“To apply a compound procedure to arguments, evaluate the body of the procedure with each formal parameter replaced by the corresponding argument.”* — Harold Abelson & Gerald Jay Sussman, *Structure and Interpretation of Computer Programs* (1985), §1.1.5, "The Substitution Model"
+
 ---
 
 **Reading:** Hutton §2.5–2.7, §3, §4.1–4.4 · **Next:** Week 1 L03, algebraic data types and inference
+
+**Coursework:** 📝 **PS 0** released Wed this week, due Fri of Week 1 17:00 · 🔬 **Lab 0** Fri this week 13:00–14:50
 
 ---
 
