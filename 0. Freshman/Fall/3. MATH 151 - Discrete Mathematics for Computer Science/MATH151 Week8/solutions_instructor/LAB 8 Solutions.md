@@ -1,6 +1,10 @@
 # MATH 151 · Week 8
 ## LAB 8 Solutions — INSTRUCTOR ONLY
 
+*(Revised 2026-09-28: Exercise 4.2 now enumerates with CS 101 Lecture 15's recursive `permutations` and a loop instead of
+`itertools` and `all(...)`; the table is unchanged (D₁…D₈ = 0, 1, 2, 9, 44, 265, 1854, 14833). Exercise 4.3 and reflection Q3 are
+no longer asked.)*
+
 All numeric results verified by computation.
 
 ---

@@ -136,12 +136,12 @@ multiplication rule, or derangements — and give a one-sentence justification. 
 
 ---
 
-## Section 4 — Python: Verify by Brute Force (30 min)
-
+## Section 4 — Python: Verify by Brute Force (25 min)
 
 ### Exercise 4.1 — Pigeonhole Simulator
 
 ```python
+import math
 import random
 
 def simulate_pigeonhole(n_items, n_containers, trials=10):
@@ -149,7 +149,6 @@ def simulate_pigeonhole(n_items, n_containers, trials=10):
     Randomly distributes n_items into n_containers and reports
     the maximum container load, over several trials.
     """
-    import math
     guaranteed_min = math.ceil(n_items / n_containers)
     print(f"Generalized Pigeonhole guarantees: some container has >= {guaranteed_min} items")
     
@@ -168,43 +167,44 @@ def simulate_pigeonhole(n_items, n_containers, trials=10):
 
 ### Exercise 4.2 — Derangements by Enumeration
 
+Use the recursive `permutations(lst)` from CS 101 Lecture 15 (copy it into your file). A permutation `p` of
+`[0, 1, …, n−1]` is a **derangement** when no `p[i] == i`.
+
 ```python
-from itertools import permutations
-from math import factorial
+import math
+
+def is_derangement(p):
+    for i in range(len(p)):
+        if p[i] == i:
+            return False
+    return True
 
 def derangements_brute(n):
-    return sum(1 for p in permutations(range(n)) if all(p[i] != i for i in range(n)))
+    count = 0
+    for p in permutations(list(range(n))):
+        if is_derangement(p):
+            count += 1
+    return count
 
 def derangements_formula(n):
-    return round(factorial(n) * sum((-1)**k / factorial(k) for k in range(n + 1)))
+    total = 0
+    for k in range(n + 1):
+        total += (-1)**k / math.factorial(k)
+    return round(math.factorial(n) * total)
 ```
 
-**Task:** Tabulate both for $n = 0,\ldots,8$ and confirm they agree. Then compute $D_n/n!$ for each
-$n$ and observe what it converges to. State the limit and the value of $n$ beyond which the ratio is
-stable to three decimal places.
+**Task:** Tabulate both for $n = 1,\ldots,8$ and confirm they agree. Then compute $D_n/n!$ for each $n$ and observe
+what it converges to. State the limit and the $n$ beyond which the ratio is stable to three decimal places.
 
 ---
 
-### Exercise 4.3 — Inclusion–Exclusion vs Enumeration
-
-Write `count_union(sets)` implementing the full inclusion–exclusion formula over an arbitrary list of
-Python sets, and check it against `len(set().union(*sets))` for several random inputs.
-
-Then time both as the number of sets grows from 3 to 15. **Plot or tabulate the result** and state
-what the growth curve is — this is the $2^n$ cost from Lecture 25 made visible.
-
----
-
-## Section 5 — Reflection (10 min)
+## Section 5 — Reflection (5 min)
 
 1. Section 3 asked you to classify without solving. Which two problems did you find hardest to
    classify, and what feature of the wording misled you?
 
 2. The subset-sum argument in Lecture 26 proves two subsets share a sum but gives no way to find
    them. Describe, in your own words, why an existence proof can be easy while the search is hard.
-
-3. Your Exercise 4.3 timing shows inclusion–exclusion becoming unusable somewhere between 15 and 25
-   sets. What would you do in practice if you needed the count for 100 sets?
 
 ---
 
@@ -215,5 +215,4 @@ what the growth curve is — this is the $2^n$ cost from Lecture 25 made visible
 - [ ] Section 2.3: both methods attempted, complement shown to be faster
 - [ ] Section 3: all six classified with justification
 - [ ] Section 4.2: table matches for all $n \le 8$; limit identified as $1/e$
-- [ ] Section 4.3: implementation agrees with `set.union`; growth curve reported
-- [ ] Section 5: all three reflection questions answered
+- [ ] Section 5: both reflection questions answered
