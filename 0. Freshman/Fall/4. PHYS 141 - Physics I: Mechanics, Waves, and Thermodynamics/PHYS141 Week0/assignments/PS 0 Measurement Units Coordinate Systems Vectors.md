@@ -3,7 +3,7 @@
 
 **Released:** Friday 25 September 2026, 15:00 (after the Friday lecture) · Week 0 | **Due:** Friday 2 October 2026, 17:00 (Week 1)
 **Instructions:** Show all work. Report all numerical answers with correct units and appropriate significant figures. Partial credit requires legible reasoning, not just a final number.
-**Points:** 5 per problem · **100 total**
+**Points:** 10 per problem · **100 total** · **Expected time:** about 3 hours
 
 ---
 

@@ -3,7 +3,7 @@
 
 **Released:** Friday 13 November 2026, 15:00 (after the Friday lecture) · Week 7 | **Due:** Friday 20 November 2026, 17:00 (Week 8)
 **Instructions:** For equilibrium problems, draw a complete free body diagram and state your choice of pivot point explicitly. Show all steps. Report answers with correct units and significant figures.
-**Points:** 5 per problem · **100 total**
+**Points:** 10 per problem · **100 total** · **Expected time:** about 3 hours
 
 ---
 
