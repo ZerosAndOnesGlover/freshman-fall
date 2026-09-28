@@ -3,6 +3,9 @@
 
 ---
 
+> *Revised 2026-09-28: sub-parts cut from 41 to 20, two per problem; the ten problems and their points are unchanged. The answers below keep the old letters. New → old: 1 (a, b) = (c, d) · 2 (a, b) = (c, d) · 3 (a, b) = (a, b) · 4 (a, b) = (a, b) · 5 (a, b) = (b, c) · 6 (a, b) = (a, b) · 7 (a, b) = (a, b) · 8 (a, b) = (a, c) · 9 (a, b) = (b, c) · 10 (a, b) = (a, c).*
+
+
 *Revised 2026-09-21 to match the 10-problem set; problems are numbered as in the new set.*
 
 ## Marking Scheme
