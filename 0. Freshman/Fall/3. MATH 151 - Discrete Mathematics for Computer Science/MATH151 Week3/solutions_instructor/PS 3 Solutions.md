@@ -3,6 +3,11 @@
 
 ---
 
+> *Revised 2026-09-28: cut from 12 problems (about 22 induction proofs) to 7 problems with 11 items. New → old:
+> A1 = A1 (a, c), 14 · B1 = B1 (b, d), 16 · C1 = C1, 14 · D1 = D1, 12 · D2 = D3, 14 · E1 = E1, 14 · E2 = E2, 16. C2, C3 (Hanoi — CS 101
+> Lab 4 proves it), D2, D4 and E3 (n² − n + 41 — MATH 151 Lab 3 tests it) are no longer asked.*
+
+
 ## Part A — Summation Formulas
 
 ### A1(a): $\sum_{i=1}^{n} i(i+1) = \frac{n(n+1)(n+2)}{3}$
