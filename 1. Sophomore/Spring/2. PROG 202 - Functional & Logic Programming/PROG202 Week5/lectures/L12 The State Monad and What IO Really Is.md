@@ -8,7 +8,7 @@
 
 **Sat:** Thursday of Week 5, 11:00–12:15, TH 205 · **Reading:** Wadler §4–§5 · Hutton §12.3 · **Next:** Week 6 L13, applicatives and monad transformers · **⚠️ Midterm Thursday of Week 6, covers Weeks 0–5**
 
-**Coursework:** 📝 **PS 4** due Fri this week 17:00 · 🔬 **Lab 5** Wed of Week 6 13:00–14:50
+**Coursework:** 📝 **PS 4** due Fri this week 17:00 · 📊 **Quiz 6** Tue of Week 6 · 📝 **PS 6** released Wed of Week 6, due Fri of Week 7 17:00 · 🔬 **Lab 5** Wed of Week 6 13:00–14:50 · 📘 **Midterm** Thu of Week 6 18:00–19:15
 
 ---
 

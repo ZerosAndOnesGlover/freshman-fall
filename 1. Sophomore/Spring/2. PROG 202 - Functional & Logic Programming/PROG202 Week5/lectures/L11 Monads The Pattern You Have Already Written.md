@@ -8,7 +8,7 @@
 
 **Sat:** Tuesday of Week 5, 11:00–12:15, TH 205 · **⚠️ Quiz 5 in the first ten minutes** — covers Week 4 · **Reading:** Wadler, *Monads for Functional Programming* (1992), §1–§3 · Hutton §12.2–12.3 · **Next:** L12, the `State` monad
 
-**Coursework:** 📊 **Quiz 5** today · 📝 **PS 5** released Wed this week, due Fri of Week 6 17:00 · 🔬 **Lab 4** Wed this week 13:00–14:50 · 📝 **PS 4** due Fri this week 17:00
+**Coursework:** 📊 **Quiz 5** today · 📝 **PS 5** released Wed this week, due Fri of Week 6 17:00 · 🔬 **Lab 4** Wed this week 13:00–14:50 · 📝 **PS 4** due Fri this week 17:00 · 📘 **Midterm** Thu of Week 6 18:00–19:15
 
 ---
 
