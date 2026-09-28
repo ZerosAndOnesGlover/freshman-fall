@@ -4,88 +4,50 @@
 
 ---
 
-> *Revised 2026-09-21.* The optional bonus section was removed to keep the set to 100 points of
-> this week's material.
-
 **Instructions:**
 - Draw every tree you construct and label the vertices.
-- For every algorithm trace, tabulate the state at each step — not just the final answer.
 - Show all work. Submit as a single PDF.
 
-**Scoring:** 100 points total.
+**Expected time:** about 3 hours. **Scoring:** 100 points total.
 
 ---
 
-## Part A — Tree Properties (26 points)
+## Part A — Tree Properties (38 points)
 
-**A1.** *(6 pts)* A tree has 15 vertices. How many edges? What is the sum of the degrees? Justify
-both from the theorem, not by drawing.
-
-**A2.** *(6 pts)* A tree has 10 vertices, of which 6 are leaves. The remaining vertices all have the
+**A1.** *(10 pts)* A tree has 10 vertices, of which 6 are leaves. The remaining vertices all have the
 same degree. What is it? Show your working.
 
-**A3.** *(6 pts)* Draw all non-isomorphic trees on 5 vertices, and explain how you know your list is
+**A2.** *(14 pts)* Draw all non-isomorphic trees on 5 vertices, and explain how you know your list is
 complete.
 
-**A4.** *(8 pts)* Prove that every tree with $n\ge2$ vertices has at least two leaves. *(Hint: use
+**A3.** *(14 pts)* Prove that every tree with $n\ge2$ vertices has at least two leaves. *(Hint: use
 the degree sum.)* Then give a tree where exactly two leaves occur, for every $n$.
 
 ---
 
-## Part B — Rooted and Binary Trees (22 points)
+## Part B — Binary Trees (22 points)
 
-**B1.** *(6 pts)* Root the tree $V=\{a,\ldots,g\}$, $E=\{ab,ac,bd,be,cf,cg\}$ at $a$. Give every
-vertex's depth, the height, the leaves, and the internal vertices.
-
-**B2.** *(6 pts)* Root the same tree at $d$. Give the new depths and height, and explain in one
-sentence why they differ from B1.
-
-**B3.** *(5 pts)* State the maximum and minimum number of nodes in a binary tree of height $h$.
+**B1.** *(10 pts)* State the maximum and minimum number of nodes in a binary tree of height $h$.
 Verify both for $h = 0, 1, 2, 3$.
 
-**B4.** *(5 pts)* What is the minimum possible height of a binary tree with 1000 nodes? With
+**B2.** *(12 pts)* What is the minimum possible height of a binary tree with 1000 nodes? With
 $10^6$? State the general formula and explain its relevance to binary search trees.
 
 ---
 
-## Part C — Spanning Trees and MSTs (30 points)
+## Part C — Spanning Trees and MSTs (24 points)
 
-Use this weighted graph throughout Part C:
-
-$$V=\{A,B,C,D,E,F\}$$
-
-| Edge | $AB$ | $AC$ | $BC$ | $BD$ | $CD$ | $CE$ | $DE$ | $DF$ | $EF$ |
-|---|---|---|---|---|---|---|---|---|---|
-| Weight | 4 | 3 | 1 | 2 | 4 | 5 | 7 | 3 | 2 |
-
-**C1.** *(8 pts)* Run **Kruskal's algorithm**. Tabulate every edge considered, in order, with your
-accept/reject decision and the reason. State the final tree and its total weight.
-
-**C2.** *(8 pts)* Run **Prim's algorithm from $A$**. Tabulate the tree vertices and the edge added at
-each step. State the total weight.
-
-**C3.** *(4 pts)* Your answers to C1 and C2 should have the same total. Do they have the same edge
-set? Explain what determines whether an MST is unique.
-
-**C4.** *(5 pts)* How many labelled spanning trees does $K_7$ have? $K_{10}$? State the theorem you
+**C1.** *(10 pts)* How many labelled spanning trees does $K_7$ have? $K_{10}$? State the theorem you
 are using.
 
-**C5.** *(5 pts)* Explain why an MST can never contain the unique heaviest edge of a cycle.
+**C2.** *(14 pts)* Explain why an MST can never contain the unique heaviest edge of a cycle.
 
 ---
 
-## Part D — Traversal (22 points)
+## Part D — Traversal (16 points)
 
-**D1.** *(6 pts)* For the tree of B1 with neighbours in alphabetical order, give the BFS and DFS
-orders starting from $a$, and again starting from $b$.
-
-**D2.** *(5 pts)* Explain why BFS computes shortest paths in an unweighted graph but DFS does not.
+**D1.** *(16 pts)* Explain why BFS computes shortest paths in an unweighted graph but DFS does not.
 Then state precisely what changes when edges are weighted.
-
-**D3.** *(6 pts)* Find **all** topological orders of the DAG $a\to b$, $a\to c$, $b\to d$,
-$c\to d$, $d\to e$. Explain why there is more than one.
-
-**D4.** *(5 pts)* Describe how to test bipartiteness with a single BFS, and state the running time.
 
 ---
 
@@ -93,8 +55,8 @@ $c\to d$, $d\to e$. Explain why there is more than one.
 
 | Part | Topic | Points |
 |---|---|---|
-| A | Tree properties | 26 |
-| B | Rooted and binary trees | 22 |
-| C | Spanning trees and MSTs | 30 |
-| D | Traversal | 22 |
+| A | Tree properties | 38 |
+| B | Binary trees | 22 |
+| C | Spanning trees and MSTs | 24 |
+| D | Traversal | 16 |
 | **Total** | | **100** |

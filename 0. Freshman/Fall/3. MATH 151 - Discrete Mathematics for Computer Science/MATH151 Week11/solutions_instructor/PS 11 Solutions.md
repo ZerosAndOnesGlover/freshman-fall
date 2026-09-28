@@ -7,6 +7,16 @@ $T$ denotes $V=\{a,\ldots,g\}$, $E=\{ab,ac,bd,be,cf,cg\}$.
 
 ---
 
+> *Revised 2026-09-28: cut from 17 problems to 8. New → old: A1 = A2, 10 · A2 = A3, 14 · A3 = A4, 14 · B1 = B3, 10 · B2 = B4, 12 · C1 = C4, 10 · C2 = C5, 14 · D1 = D2, 16. The point values in the headings and marking lines below are the old ones; scale each marking line in proportion.*
+>
+> *Why items were dropped:*
+> - *B1 and B2 are Lab 11 Exercise 1.2.*
+> - *C1 and C2 are Lab 11 Exercises 1.3 and 1.4, on the same graph; C3 is Lab 11 Exercise 3.2.*
+> - *D1 is Lab 11 Exercise 4.1.*
+> - *D3 is the verified example in L35 and Lab 11 Exercise 4.3.*
+> - *A1 and D4 were cut for length.*
+
+
 ## Part A — Tree Properties
 
 ### A1. *(6 pts)*
