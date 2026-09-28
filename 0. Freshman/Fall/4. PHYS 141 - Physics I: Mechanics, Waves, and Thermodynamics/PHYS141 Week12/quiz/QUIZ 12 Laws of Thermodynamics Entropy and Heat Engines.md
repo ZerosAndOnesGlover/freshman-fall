@@ -23,7 +23,7 @@ sentence.
 
 &nbsp;
 
-**4.** (3 pts) A gas expands adiabatically. Does its temperature rise or fall? Justify using the
+**4.** (2 pts) A gas expands adiabatically. Does its temperature rise or fall? Justify using the
 First Law.
 
 &nbsp;

@@ -43,7 +43,7 @@ $20.0°$C. Write the calorimetry equation. You need not solve it.
 
 &nbsp;
 
-**8.** (3 pts) An object at 300 K has its absolute temperature doubled. By what factor does its
+**8.** (2 pts) An object at 300 K has its absolute temperature doubled. By what factor does its
 radiated power increase?
 
 &nbsp;
