@@ -1,6 +1,9 @@
 # MATH 151 · Week 12
 ## LAB 12 Solutions — INSTRUCTOR ONLY
 
+*(Revised 2026-09-28: the lab listed 130 minutes. Exercise 2.4, the "Checking Your Work" section and reflection Q3 are no
+longer asked; the reflection is now Section 5.)*
+
 All outputs produced by running the lab code.
 
 ---

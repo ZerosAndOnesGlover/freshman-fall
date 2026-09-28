@@ -29,7 +29,7 @@ Solve $x\equiv1\pmod4$, $x\equiv2\pmod5$, $x\equiv3\pmod7$ by hand. State the mo
 
 ---
 
-## Section 2 — Euclid and Bézout (30 min)
+## Section 2 — Euclid and Bézout (25 min)
 
 **2.1** *(4 pts)* Implement `my_gcd(a, b)` iteratively, and `gcd_trace(a, b)` returning the list of
 $(a, b, q, r)$ steps. Print the trace for $(1071,462)$ and $(252,198)$ and check both against your
@@ -50,8 +50,6 @@ Verify $ax+by=g$ for at least six pairs, including one where $a<b$ and one with 
 **2.3** *(4 pts)* Count the number of division steps for $\gcd(F_{k+1}, F_k)$ using Fibonacci numbers
 $k=5,\ldots,20$. **Fibonacci pairs are the worst case for Euclid** — tabulate the step count against
 $k$ and describe the relationship.
-
-**2.4** *(3 pts)* Verify $\gcd(a,b)\cdot\operatorname{lcm}(a,b)=ab$ for ten random pairs.
 
 ---
 
@@ -117,19 +115,7 @@ for $n = 143$, then for a semiprime built from two 6-digit primes. **Extrapolate
 
 ---
 
-## Section 5 — Checking Your Work (10 min)
-
-Now compare against Python's built-ins:
-
-- `math.gcd(a, b)` against `my_gcd`
-- `pow(a, -1, m)` against `mod_inverse`
-- `pow(base, exp, m)` against `mod_pow`
-
-Report any discrepancies. **If there are none, you have implemented RSA correctly from scratch.**
-
----
-
-## Section 6 — Reflection (10 min)
+## Section 5 — Reflection (5 min)
 
 1. Section 2.3 showed Fibonacci pairs are Euclid's worst case, and it is still fast. Section 4.4
    showed factoring is not. Both operate on the same numbers — what makes one easy and the other hard?
@@ -137,9 +123,6 @@ Report any discrepancies. **If there are none, you have implemented RSA correctl
 2. RSA's correctness is Euler's theorem, proved in the 1760s. Its security rests on factoring being
    hard, which is **not** proved. What would change if someone found a polynomial factoring
    algorithm tomorrow?
-
-3. You implemented every piece of RSA in under 60 lines. Why, then, is "don't roll your own crypto"
-   standard advice?
 
 ---
 
@@ -157,4 +140,3 @@ Show your TA:
 - [ ] 4.2: **zero** round-trip failures for both key pairs
 - [ ] 4.3: `None` explained
 - [ ] 4.4: extrapolation attempted
-- [ ] Section 5: all three comparisons clean
