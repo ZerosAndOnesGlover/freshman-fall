@@ -3,6 +3,9 @@
 
 ---
 
+> *Revised 2026-09-28: sub-parts cut from 29 to 18; the ten problems and their points are unchanged. The answers below keep the old letters. New → old: 1 (a, b) = (b, c) · 2 (a, b) = (b, c) · 3 unchanged · 4 (a, b) = (a, b), with (b) reworded to state φ = 50° directly · 5 (a, b) = (b, c) · 6 (a, b) = (a, b) · 7 (a, b) = (a, c) · 8 (a, b) = (b, c) · 9 (a, b) = (a, b) · 10 (a, b) = (b, d).*
+
+
 *Revised 2026-09-21 to match the 10-problem set; problems are numbered as in the new set.*
 
 ## Marking Scheme
