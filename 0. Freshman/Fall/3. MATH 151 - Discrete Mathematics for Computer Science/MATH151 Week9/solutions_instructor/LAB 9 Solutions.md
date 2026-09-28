@@ -1,6 +1,11 @@
 # MATH 151 · Week 9
 ## LAB 9 Solutions — INSTRUCTOR ONLY
 
+*(Revised 2026-09-28: old Exercise 3.3 (naive vs memoised Fibonacci — CS 101 PS 8 B4 and Lab 4 already measure it) and
+reflection Q2 are no longer asked; old 3.4 is 3.3. `series` now uses integers and `//` instead of `Fraction` (never taught in
+CS 101); since every denominator starts with 1 the results are identical. Expected answer to the float question: integer
+arithmetic is exact, while floats round, which is how Binet's formula fails in 3.2.)*
+
 All numeric results below were produced by running the lab code.
 
 ---

@@ -12,7 +12,7 @@ sign errors that no amount of re-reading will.
 
 ---
 
-## Section 1 — Modelling (30 min)
+## Section 1 — Modelling (25 min)
 
 For each scenario, write the recurrence **and** its initial conditions, then compute the first six
 values by hand.
@@ -50,7 +50,7 @@ $a_n = 3a_{n-1}+2$, $a_0=4$. Solve twice — once by iteration, once by characte
 
 ---
 
-## Section 3 — Python: Iterate, Solve, Compare (40 min)
+## Section 3 — Python: Iterate, Solve, Compare (35 min)
 
 ### Exercise 3.1 — A Verification Harness
 
@@ -86,31 +86,18 @@ binet = lambda n: (phi**n - psi**n) / sqrt(5)
 3. Verify that for $n \geq 1$, $F_n$ is the nearest integer to $\varphi^n/\sqrt5$ — that is, that
    dropping the $\psi^n$ term entirely still rounds correctly.
 
-### Exercise 3.3 — Naive vs Memoised Fibonacci
+### Exercise 3.3 — Power Series by Formal Division
 
 ```python
-def fib_naive(n):
-    return n if n < 2 else fib_naive(n-1) + fib_naive(n-2)
-```
-
-1. Instrument it to count calls. Tabulate the count for $n = 5, 10, 15, 20, 25, 30$.
-2. Confirm the call count itself satisfies a recurrence, and identify it.
-3. Write a memoised version and compare both time and call count at $n=30$.
-4. State the complexity of each and connect it to Lecture 28's $\Theta(\varphi^n)$.
-
-### Exercise 3.4 — Power Series by Formal Division
-
-```python
-from fractions import Fraction as Fr
-
 def series(num, den, N):
-    """Coefficients of num/den as a formal power series. Lists are coefficient lists."""
+    """Coefficients of num/den as a formal power series.
+    num and den are coefficient lists; every den here starts with 1."""
     a = []
     for n in range(N):
-        s = num[n] if n < len(num) else Fr(0)
-        for k in range(1, min(n, len(den)-1) + 1):
-            s -= den[k] * a[n-k]
-        a.append(s / den[0])
+        s = num[n] if n < len(num) else 0
+        for k in range(1, min(n, len(den) - 1) + 1):
+            s -= den[k] * a[n - k]
+        a.append(s // den[0])
     return a
 ```
 
@@ -124,7 +111,8 @@ Use it to confirm:
 | $x/(1-x-x^2)$ | Fibonacci |
 | $(1-x)/(1-5x+6x^2)$ | your C-part answer |
 
-**Why `Fraction` and not `float`?** Answer this in one sentence in your write-up.
+Every denominator here starts with 1, so `// den[0]` is exact and all the arithmetic stays in integers. **Why is that
+better than using `float` and `/`?** Answer in one sentence, with Exercise 3.2 in mind.
 
 ---
 
@@ -132,7 +120,7 @@ Use it to confirm:
 
 ### Exercise 4.1
 Write the generating function for making $n$ cents from 1¢, 2¢, and 5¢ coins. Compute the
-coefficient of $x^{10}$ with your Exercise 3.4 code, then **verify by listing every combination**.
+coefficient of $x^{10}$ with your Exercise 3.3 code, then **verify by listing every combination**.
 
 ### Exercise 4.2
 Write the generating function for choosing $n$ objects from four types with at most 3 of each, and
@@ -145,10 +133,7 @@ find the coefficient of $x^5$. Verify by brute-force enumeration.
 1. In Exercise 3.2 the mathematics is exact but the computation fails at some point. What does this
    tell you about using closed forms numerically?
 
-2. Exercise 3.3's naive Fibonacci recomputes the same subproblems. Estimate how many times $F_5$ is
-   computed during `fib_naive(30)`, and say what memoisation actually changes.
-
-3. Generating functions and the characteristic equation solve the same recurrences. Give one reason
+2. Generating functions and the characteristic equation solve the same recurrences. Give one reason
    you might prefer each.
 
 ---
@@ -161,6 +146,5 @@ Show your TA:
 - [ ] Section 2: all three solved and verified against iteration
 - [ ] Exercise 3.1: harness working, all three Section 2 answers reported OK
 - [ ] Exercise 3.2: the breakdown point of Binet's formula found and explained
-- [ ] Exercise 3.3: call counts tabulated, recurrence identified, memoised version compared
-- [ ] Exercise 3.4: all five series confirmed
+- [ ] Exercise 3.3: all five series confirmed
 - [ ] Section 4: both coefficients verified two ways
