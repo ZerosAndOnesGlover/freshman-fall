@@ -3,12 +3,9 @@
 
 **Released:** Friday 30 October 2026, 15:00 (after the Friday lecture) · Week 5 | **Due:** Friday 6 November 2026, 17:00 (Week 6)
 **Instructions:** State clearly which conservation law(s) you are applying. Show all steps. Report answers with correct units, signs, and significant figures.
-**Points:** 5 per problem · **100 total**
+**Points:** 10 per problem · **100 total** · **Expected time:** about 3 hours
 
 ---
-
-> *Revised 2026-09-21.* Cut from 20 problems to 10 (each now 10 points) to keep the weekly load in line with
-> the other Fall courses. Removed (old numbering): 2, 5, 6, 8, 10, 12, 13, 15, 18, 19.
 
 ### Part A: Momentum and Impulse (Problems 1–3) — 30 pts
 
@@ -16,24 +13,20 @@
 
 (a) Find the change in momentum of the ball.
 (b) If the bat is in contact with the ball for 1.5 ms, find the average force exerted on the ball.
-(c) Compare this force to the weight of the ball.
 
 ---
 
 **2.** A 60 kg person jumps from a height of 1.2 m and lands stiff-legged, stopping in 0.05 s.
 
-(a) Find the person's speed just before landing.
-(b) Find the impulse delivered to the person during landing.
-(c) Find the average force exerted by the ground on the person during landing.
-(d) If the person instead bends their knees, extending the stopping time to 0.4 s, find the new average force. Compute the ratio of forces between the two landing styles.
+(a) Find the average force exerted by the ground on the person during landing.
+(b) If the person instead bends their knees, extending the stopping time to 0.4 s, find the new average force. Compute the ratio of forces between the two landing styles.
 
 ---
 
 **3.** A time-varying force acts on a 5.0 kg object initially at rest: F(t) = 30 − 5t (N, t in seconds), valid for 0 ≤ t ≤ 6 s.
 
-(a) Find the impulse delivered from t=0 to t=6 s (integrate).
-(b) Find the object's velocity at t=6 s.
-(c) At what time does the force become zero? What is the object's velocity at that time — is it the same as at t=6 s? Explain physically.
+(a) Find the object's velocity at t=6 s.
+(b) At what time does the force become zero? What is the object's velocity at that time — is it the same as at t=6 s? Explain physically.
 
 ---
 
@@ -42,8 +35,7 @@
 **4.** A 1500 kg car moving at 12 m/s collides with a stationary 1000 kg car, and they lock together (perfectly inelastic).
 
 (a) Find the common velocity immediately after collision.
-(b) Find the kinetic energy before and after the collision.
-(c) What fraction of the initial kinetic energy is lost?
+(b) What fraction of the initial kinetic energy is lost?
 
 ---
 
@@ -57,16 +49,14 @@
 **6.** A 3.0 kg ball moving at 8.0 m/s collides elastically with a stationary 5.0 kg ball.
 
 (a) Use the general elastic collision formulas to find both final velocities.
-(b) Verify momentum conservation.
-(c) Verify kinetic energy conservation.
+(b) Verify kinetic energy conservation.
 
 ---
 
 **7. (Ballistic pendulum — classic synthesis)** A 0.010 kg bullet is fired into a 2.0 kg wooden block hanging from a string (a ballistic pendulum), initially at rest. The block+bullet swings up to a maximum height of 0.12 m.
 
-(a) Use energy conservation (Week 4 methods) to find the speed of the block+bullet system immediately after the bullet embeds.
-(b) Use momentum conservation (perfectly inelastic collision) to find the speed of the bullet before impact.
-(c) Find the kinetic energy lost in the collision (this energy is "used up" deforming the wood and bullet, generating heat — it does NOT appear in the pendulum's swing height, which is governed by the post-collision KE only).
+(a) Use momentum conservation (perfectly inelastic collision) to find the speed of the bullet before impact.
+(b) Find the kinetic energy lost in the collision (this energy is "used up" deforming the wood and bullet, generating heat — it does NOT appear in the pendulum's swing height, which is governed by the post-collision KE only).
 
 ---
 
@@ -80,7 +70,6 @@
 
 (a) Find the center of mass position.
 (b) If the 4.0 kg object moves at (3.0, 0) m/s and the 6.0 kg object moves at (−1.0, 2.0) m/s, find the velocity of the center of mass.
-(c) Find the total momentum of the system using $\vec p_{total} = M\vec v_{cm}$, and verify it matches the sum of individual momenta.
 
 ---
 
@@ -88,8 +77,6 @@
 
 (a) Using the fact that the center of mass of the person+boat system cannot move (no external horizontal forces, frictionless water), find how far the boat moves relative to the water.
 (b) Find how far the person moves relative to the water.
-(c) Verify that the person's displacement relative to the boat is indeed 4.0 m (the length of the boat), consistent with your answers to (a) and (b).
-(d) If the person then walks back to the original end, where does the boat end up relative to its starting position?
 
 ---
 ## Points Breakdown

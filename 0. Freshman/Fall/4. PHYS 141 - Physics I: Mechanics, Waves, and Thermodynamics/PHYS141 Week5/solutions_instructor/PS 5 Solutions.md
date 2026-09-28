@@ -3,6 +3,9 @@
 
 ---
 
+> *Revised 2026-09-28: sub-parts cut from 28 to 18; the ten problems and their points are unchanged. The answers below keep the old letters. New → old: 1 (a, b) = (a, b) · 2 (a, b) = (c, d) · 3 (a, b) = (b, c) · 4 (a, b) = (a, c) · 5 unchanged · 6 (a, b) = (a, c) · 7 (a, b) = (b, c) · 8 unchanged · 9 (a, b) = (a, b) · 10 (a, b) = (a, b). Problem 2's answers now include the weight; see the note there.*
+
+
 *Revised 2026-09-21 to match the 10-problem set; problems are numbered as in the new set.*
 
 ## Marking Scheme
@@ -56,9 +59,15 @@ Taking pitch direction as positive: v_i=+38 m/s, v_f=−45 m/s (opposite directi
 **(b)** Taking up as positive: v_i=−4.85 m/s, v_f=0 (stops).
 Δp = m(0−(−4.85)) = 60×4.85 = **291 kg·m/s** (upward)
 
-**(c)** F̄_net = Δp/Δt = 291/0.05 = 5820 N. This is the NET impulse (ground force − gravity). Since gravity's contribution over such a short time is small but let's be precise: actually the problem intends the ground's average force minus weight gives net upward force producing the deceleration. For a quick estimate treating gravity as negligible over 0.05s: **F_ground ≈ 5820 N** (plus weight ≈588 N if included exactly, but standard treatment uses net impulse ≈ ground force for short collision times). Accept **F_ground ≈ 5820 N** as primary answer.
+**(c)** The impulse above is the **net** impulse. Two forces act during landing: the ground pushes up with $\bar F$ and gravity pulls down with $mg = 60 \times 9.81 = 589$ N. So
 
-**(d)** F̄' = 291/0.4 = **728 N**. Ratio = 5820/728 = **8.0×** — bending knees reduces the force by a factor of 8, dramatically reducing injury risk.
+$$\bar F - mg = \frac{\Delta p}{\Delta t} = \frac{291}{0.05} = 5820\ \text{N} \quad\Rightarrow\quad \bar F = 5820 + 589 = \mathbf{6.41\ kN}$$
+
+**(d)** $\bar F' = 291/0.4 + 589 = 728 + 589 = \mathbf{1.32\ kN}$. Ratio = 6410/1317 = **4.9** — bending the knees cuts the ground force roughly five-fold.
+
+*Marking: accept 5.82 kN, 728 N and a ratio of 8.0 only when the student says that gravity is neglected. That is a fair approximation for the 0.05 s stop (10% error) but not for the 0.4 s one, where the weight is almost half the force.*
+
+*(Before 2026-09-28 this answer neglected gravity without saying so, and gave 5.82 kN, 728 N and 8.0.)*
 
 ---
 
