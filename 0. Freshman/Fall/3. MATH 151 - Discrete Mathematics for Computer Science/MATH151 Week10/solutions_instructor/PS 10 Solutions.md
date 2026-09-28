@@ -7,6 +7,16 @@ Throughout, $G$ denotes $V=\{a,b,c,d,e\}$, $E=\{ab,ac,bc,bd,cd,de\}$.
 
 ---
 
+> *Revised 2026-09-28: cut from 16 problems to 8 problems with 9 parts. New → old: A1 = A1, 10 · A2 = A2, 12 · A3 = A4, 14 · B1 = B1, 12 · C1 = C2, 14 · D1 = D2, 12 · D2 = D4, 12 · D3 = D5, 14. The point values in the headings and marking lines below are the old ones; scale each marking line in proportion.*
+>
+> *Why items were dropped:*
+> - *B2 is Lab 10 Exercise 2.2.*
+> - *D1 is Lab 10 Exercise 1.3.*
+> - *C1 and C4 are Lab 10 Exercises 4.3 and 4.2.*
+> - *B3 is Lab 10 Reflection question 2.*
+> - *A3, C3 and D3 were cut for length.*
+
+
 ## Part A — Terminology and Handshake
 
 ### A1. *(6 pts)*
