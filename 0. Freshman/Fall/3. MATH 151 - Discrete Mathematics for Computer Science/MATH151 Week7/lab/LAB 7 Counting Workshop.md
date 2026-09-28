@@ -37,7 +37,7 @@ For each scenario, quickly identify: order matters (Y/N)? repetition allowed (Y/
 
 ---
 
-## Section 2 — Full Worked Problems (45 min)
+## Section 2 — Full Worked Problems (40 min)
 
 Solve each completely, showing classification, formula, and arithmetic.
 
@@ -53,16 +53,6 @@ A pizza place offers 12 toppings. How many pizzas can be made with exactly 4 dif
 
 ### Exercise 2.2
 
-How many ways can a president, vice-president, and secretary be chosen from a club of 20 members (no one holds two positions)?
-
-&nbsp;
-
-&nbsp;
-
----
-
-### Exercise 2.3
-
 A coin is flipped 10 times. How many outcome sequences have exactly 6 heads?
 
 *(Hint: think of this as choosing WHICH 6 of the 10 flips are heads.)*
@@ -73,17 +63,7 @@ A coin is flipped 10 times. How many outcome sequences have exactly 6 heads?
 
 ---
 
-### Exercise 2.4
-
-How many 6-letter strings (from the 26-letter alphabet) contain no repeated letters?
-
-&nbsp;
-
-&nbsp;
-
----
-
-### Exercise 2.5 — Complementary Counting
+### Exercise 2.3 — Complementary Counting
 
 How many 4-digit PIN codes (0000 to 9999, leading zeros allowed) have **at least one** digit equal to 0?
 
@@ -93,17 +73,7 @@ How many 4-digit PIN codes (0000 to 9999, leading zeros allowed) have **at least
 
 ---
 
-### Exercise 2.6 — Multi-Step
-
-A class has 12 students: 7 CS majors and 5 MATH majors. A team of 4 students is chosen for a project. How many teams have **exactly 2 CS majors and 2 MATH majors**?
-
-&nbsp;
-
-&nbsp;
-
----
-
-### Exercise 2.7 — Stars and Bars
+### Exercise 2.4 — Stars and Bars
 
 A vending machine stocks 5 types of candy bars. How many ways can it be restocked with 20 candy bars total (repetition of type allowed, order doesn't matter, machine tracks only counts per type)?
 
@@ -113,79 +83,38 @@ A vending machine stocks 5 types of candy bars. How many ways can it be restocke
 
 ---
 
-## Section 3 — Verification via Brute Force (30 min)
+## Section 3 — Verification via Brute Force (40 min)
 
-For small cases, we can verify counting formulas by literally enumerating all outcomes with Python. This builds trust in the formulas and catches classification errors.
+Counting formulas can be checked by **listing** every case with nested loops and counting them (CS 101 Week 2).
 
 ### Exercise 3.1 — Permutations vs Combinations
 
 ```python
-from itertools import permutations, combinations
+import math
 
-items = ['A', 'B', 'C', 'D', 'E']
-
-# Permutations of 3 items from 5
-perms = list(permutations(items, 3))
-print(f"P(5,3) by formula: {5*4*3}")
-print(f"P(5,3) by enumeration: {len(perms)}")
-
-# Combinations of 3 items from 5
-combs = list(combinations(items, 3))
-print(f"C(5,3) by formula: {5*4*3//(3*2*1)}")
-print(f"C(5,3) by enumeration: {len(combs)}")
+ordered = 0
+unordered = 0
+for a in range(1, 6):
+    for b in range(1, 6):
+        for c in range(1, 6):
+            if a != b and b != c and a != c:
+                ordered += 1          # an ordered choice of 3 distinct items
+            if a < b < c:
+                unordered += 1        # each 3-element subset, counted once
+print("P(5,3):", ordered, "formula", 5 * 4 * 3)
+print("C(5,3):", unordered, "formula", math.comb(5, 3))
 ```
 
-**Task:** Run this and confirm both match. Then print out the first 5 permutations and first 5 combinations to see the structural difference (order preserved vs not).
+**Task:** Run it. Why does the condition `a < b < c` count each subset exactly once, and by what factor does
+`ordered` exceed `unordered`?
 
----
+### Exercise 3.2 — "At Least One" via Complementary Counting
 
-### Exercise 3.2 — Combinations with Repetition
+How many 3-digit strings over {0, 1, 2, 3, 4} contain at least one 0? Count them directly with three nested loops
+(digits `a`, `b`, `c` in `range(5)`, and the test `a == 0 or b == 0 or c == 0`), and compare with the complement
+count 5³ − 4³.
 
-```python
-from itertools import combinations_with_replacement
-
-flavors = ['choc', 'van', 'straw']
-
-# Choosing 4 scoops from 3 flavors, repetition allowed, order doesn't matter
-selections = list(combinations_with_replacement(flavors, 4))
-print(f"Formula C(n+r-1,r) = C(3+4-1,4) = C(6,4): {6*5//2}")
-print(f"Enumeration count: {len(selections)}")
-for s in selections[:10]:
-    print(s)
-```
-
-**Task:** Verify the formula matches. This confirms the stars-and-bars derivation from Thursday's lecture.
-
----
-
-### Exercise 3.3 — Verifying "At Least One" via Complementary Counting
-
-```python
-from itertools import product
-
-# 3-digit strings from {0,1,2,3,4}, how many have at least one '0'?
-digits = ['0','1','2','3','4']
-all_strings = list(product(digits, repeat=3))
-total = len(all_strings)
-
-no_zero = [s for s in all_strings if '0' not in s]
-at_least_one_zero = total - len(no_zero)
-
-print(f"Total strings: {total}")
-print(f"No zero: {len(no_zero)} (should be 4^3 = {4**3})")
-print(f"At least one zero: {at_least_one_zero}")
-
-# Direct count for verification
-direct_count = len([s for s in all_strings if '0' in s])
-print(f"Direct enumeration count: {direct_count}")
-print(f"Match: {at_least_one_zero == direct_count}")
-```
-
-**Task:** Run and confirm the complementary counting method matches direct enumeration.
-
----
-
-### Exercise 3.4 — Pascal's Triangle via Dynamic Programming
+### Exercise 3.3 — Pascal's Triangle via Dynamic Programming
 
 ```python
 def pascals_triangle(n_rows):
@@ -210,19 +139,24 @@ for i, row in enumerate(triangle):
 
 ```python
 row10 = triangle[10]
-alt_sum = sum((-1)**k * row10[k] for k in range(len(row10)))
+alt_sum = 0
+for k in range(len(row10)):
+    alt_sum += (-1)**k * row10[k]
 print(f"Alternating sum of row 10: {alt_sum}")
 ```
 
 ---
 
-### Exercise 3.5 — Verify the Hockey Stick Identity
+### Exercise 3.4 — Verify the Hockey Stick Identity
 
 ```python
 from math import comb
 
 def hockey_stick_lhs(n, r):
-    return sum(comb(i, r) for i in range(r, n+1))
+    total = 0
+    for i in range(r, n + 1):
+        total += comb(i, r)
+    return total
 
 def hockey_stick_rhs(n, r):
     return comb(n+1, r+1)
@@ -241,11 +175,11 @@ for n in range(3, 10):
 
 ## Section 4 — Reflection (5 min)
 
-1. In Exercise 3.3, why is it easier to count "no zero" than "at least one zero" directly? Connect this to the logic/set theory parallel discussed in Monday's lecture (De Morgan's Laws).
+1. In Exercise 3.2, why is it easier to count "no zero" than "at least one zero" directly? Connect this to the logic/set theory parallel discussed in Monday's lecture (De Morgan's Laws).
 
-2. The brute-force enumeration approach (Exercise 3.1–3.3) works fine for small $n$, but why would it become computationally infeasible for, say, choosing 10 items from 50 with combinations? Compute $\binom{50}{10}$ to see how large it gets.
+2. The brute-force enumeration approach (Exercises 3.1–3.2) works fine for small $n$, but why would it become computationally infeasible for, say, choosing 10 items from 50 with combinations? Compute $\binom{50}{10}$ to see how large it gets.
 
-3. Why does Pascal's Rule (used in the DP table construction, Exercise 3.4) avoid the numerical issues that arise from directly computing large factorials like $50!$?
+3. Why does Pascal's Rule (used in the DP table construction, Exercise 3.3) avoid the numerical issues that arise from directly computing large factorials like $50!$?
 
 ---
 
@@ -254,10 +188,10 @@ for n in range(3, 10):
 Show your TA:
 
 - [ ] Section 1: at least 6 of 7 scenarios correctly classified
-- [ ] Section 2: at least 5 of 7 problems solved completely and correctly
-- [ ] Exercise 3.1 and 3.2: Python enumeration matching hand formulas
-- [ ] Exercise 3.4: Pascal's Triangle DP table generated, row sums verified
-- [ ] Exercise 3.5: Hockey Stick Identity verified computationally across all tested cases
+- [ ] Section 2: all four problems solved completely and correctly
+- [ ] Exercises 3.1 and 3.2: loop counts matching the formulas
+- [ ] Exercise 3.3: Pascal's Triangle generated, row sums verified
+- [ ] Exercise 3.4: Hockey Stick Identity verified across all tested cases
 
 ---
 

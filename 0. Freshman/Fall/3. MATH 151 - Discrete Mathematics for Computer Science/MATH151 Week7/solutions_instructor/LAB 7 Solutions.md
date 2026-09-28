@@ -1,6 +1,11 @@
 # MATH 151 · Week 7
 ## LAB7 Solutions — INSTRUCTOR ONLY
 
+*(Revised 2026-09-28: Section 2 now asks old 2.1, 2.3, 2.5, 2.7 as 2.1–2.4; old 2.2, 2.4, 2.6 are no longer asked. Section 3
+uses nested loops instead of `itertools` (never taught): 3.1 prints P(5,3) = 60 and C(5,3) = 10 (each subset appears 3! = 6
+times among the ordered triples); 3.2 counts 61 = 125 − 64. Old 3.2 (combinations with repetition) is no longer asked; old
+3.4–3.5 are now 3.3–3.4 with the generator expressions written as loops.)*
+
 ---
 
 ## Section 1 Solutions
