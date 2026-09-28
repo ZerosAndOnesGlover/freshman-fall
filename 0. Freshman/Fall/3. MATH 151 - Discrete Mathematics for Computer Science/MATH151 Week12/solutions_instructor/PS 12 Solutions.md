@@ -5,6 +5,15 @@
 
 ---
 
+> *Revised 2026-09-28: cut from 16 problems to 8 with 10 parts, which also suits a set due in finals week. New → old: A1 = A1, 10 · A2 = A2, 12 · A3 = A4, 12 · B1 = B4, 14 · C1 = C1 with 7 in place of 11, 12 · C2 = C2, 12 · C3 = C4, 14 · D1 = D3, 14. The point values in the headings and marking lines below are the old ones; scale each marking line in proportion.*
+>
+> *Why items were dropped:*
+> - *B1, B2, the old C1 inverse and C3 are Lab 12 Exercises 1.1–1.4.*
+> - *B3's pair (252, 198) is traced in Lab 12 Exercise 2.1.*
+> - *D1 is Lab 12 Exercise 4.1's first key; D2 and D4 are Exercises 4.2 and 4.4.*
+> - *A3 was cut for length.*
+
+
 ## Part A — Divisibility and Primes
 
 ### A1. *(6 pts)*
@@ -124,15 +133,19 @@ A 2048-bit modulus has about 617 digits; trial division would need roughly $10^{
 ## Part C — Modular Arithmetic
 
 ### C1. *(6 pts)*
-$\gcd(11,26)=1$, so the inverse exists. Extended Euclid gives $11(19) = 209 = 8(26)+1$, so
+$\gcd(7,26)=1$, so the inverse exists. Extended Euclid: $26 = 3\cdot7+5$, $7=1\cdot5+2$, $5=2\cdot2+1$;
+back-substituting, $1 = 5-2\cdot2 = 3\cdot5-2\cdot7 = 3\cdot26-11\cdot7$, so $7(-11)\equiv1$ and
+$-11\equiv15$. Check: $7(15)=105=4(26)+1$.
 
-$$11^{-1} \equiv \mathbf{19} \pmod{26}$$
+$$7^{-1} \equiv \mathbf{15} \pmod{26}$$
+
+*(Before 2026-09-28 this asked for $11^{-1}\bmod26 = 19$, which is Lab 12 Exercise 1.3.)*
 
 $4^{-1}\bmod6$ **does not exist**: $\gcd(4,6)=2\ne1$.
 
 **Criterion:** $a^{-1}\bmod m$ exists **iff** $\gcd(a,m)=1$.
 
-*Marking: 3 for 19 with verification, 2 for the non-existence, 1 for the criterion.*
+*Marking: 3 for 15 with verification, 2 for the non-existence, 1 for the criterion.*
 
 ---
 
