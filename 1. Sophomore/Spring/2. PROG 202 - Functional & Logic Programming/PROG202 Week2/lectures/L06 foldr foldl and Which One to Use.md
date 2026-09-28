@@ -8,7 +8,7 @@
 
 **Sat:** Thursday of Week 2, 11:00–12:15, TH 205 · **Reading:** Hutton §7.4–7.6 · **Next:** Week 3 L07, lazy evaluation and where these numbers come from
 
-**Coursework:** 📝 **PS 1** due Fri this week 17:00 · 🔬 **Lab 2** Wed of Week 3 13:00–14:50
+**Coursework:** 📝 **PS 1** due Fri this week 17:00 · 📊 **Quiz 3** Tue of Week 3 · 📝 **PS 3** released Wed of Week 3, due Fri of Week 4 17:00 · 🔬 **Lab 2** Wed of Week 3 13:00–14:50
 
 ---
 
