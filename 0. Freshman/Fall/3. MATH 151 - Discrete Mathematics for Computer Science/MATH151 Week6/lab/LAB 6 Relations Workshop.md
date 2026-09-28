@@ -65,19 +65,7 @@ On the set of all people, define $a\sim b \iff a$ and $b$ have the same birthday
 
 ---
 
-### Exercise 2.3 — Building a Relation FROM a Partition
-
-Let $A=\{a,b,c,d,e,f\}$ and consider the partition $\{\{a,c\},\{b,d,e\},\{f\}\}$.
-
-**(a)** Write out the full equivalence relation $R$ (all ordered pairs) corresponding to this partition.
-
-**(b)** How many ordered pairs does $R$ contain in total? *(Hint: for a part of size $k$, how many ordered pairs does it contribute?)*
-
-**(c)** Verify: is $R$ reflexive? Symmetric? Transitive? (Spot-check, don't need to check every pair if you can argue generally.)
-
----
-
-### Exercise 2.4 — A Relation That's NOT an Equivalence Relation
+### Exercise 2.3 — A Relation That's NOT an Equivalence Relation
 
 Consider $R = \{(a,b)\in\mathbb{Z}\times\mathbb{Z} : |a-b|\leq 2\}$.
 
@@ -121,148 +109,85 @@ Consider the poset $(\mathcal{P}(\{1,2,3\}), \subseteq)$.
 
 ---
 
-### Exercise 3.3 — Topological Sort by Hand
-
-A software project has these module dependencies (must-build-before):
-
-$$\text{core}\preceq\text{network}, \quad \text{core}\preceq\text{ui}, \quad \text{network}\preceq\text{client}, \quad \text{ui}\preceq\text{client}, \quad \text{core}\preceq\text{logging}$$
-
-**(a)** Draw the Hasse diagram.
-
-**(b)** Perform a topological sort by hand: repeatedly select a minimal remaining element.
-
-**(c)** List at least 2 different valid topological orderings.
-
----
-
 ## Section 4 — Python: Relation Property Checker (25 min)
 
-Create `relation_tools.py`.
+Create `relation_tools.py`. A relation is a **list of pairs**, written as tuples like `(1, 2)`, and
+`(a, b) in R` tests membership (CS 101 Lecture 05 §6). Loops and `def` do the rest.
 
 ### Exercise 4.1
 
 ```python
 def is_reflexive(R, A):
-    return all((a,a) in R for a in A)
-
-def is_symmetric(R, A):
-    return all((b,a) in R for (a,b) in R)
-
-def is_antisymmetric(R, A):
-    return all(a == b for (a,b) in R if (b,a) in R)
-
-def is_transitive(R, A):
-    for (a,b) in R:
-        for (c,d) in R:
-            if b == c and (a,d) not in R:
-                return False
+    for a in A:
+        if (a, a) not in R:
+            return False
     return True
 
-def classify_relation(R, A, name="R"):
-    props = []
-    if is_reflexive(R, A): props.append("Reflexive")
-    if is_symmetric(R, A): props.append("Symmetric")
-    if is_antisymmetric(R, A): props.append("Antisymmetric")
-    if is_transitive(R, A): props.append("Transitive")
-    
-    print(f"{name}: {', '.join(props) if props else 'None of the four properties'}")
-    
-    if is_reflexive(R,A) and is_symmetric(R,A) and is_transitive(R,A):
-        print(f"  --> {name} IS an equivalence relation")
-    if is_reflexive(R,A) and is_antisymmetric(R,A) and is_transitive(R,A):
-        print(f"  --> {name} IS a partial order")
-    
-    return props
+def is_symmetric(R):
+    for (a, b) in R:
+        if (b, a) not in R:
+            return False
+    return True
+
+def is_antisymmetric(R):
+    for (a, b) in R:
+        if a != b and (b, a) in R:
+            return False
+    return True
+
+def is_transitive(R):
+    for (a, b) in R:
+        for (c, d) in R:
+            if b == c and (a, d) not in R:
+                return False
+    return True
 ```
 
-**Task:** Add to `relation_tools.py`. Test on all relations from Exercise 1.1 (represent each as a set of tuples over an appropriate finite domain).
+**Task:** Write `classify_relation(R, A, name)` that prints which of the four properties hold, and whether R is
+an equivalence relation or a partial order. Test it on Exercise 1.1(a) and 1.1(e):
 
 ```python
-A = {1,2,3,4}
-R = {(1,1),(2,2),(3,3),(4,4),(1,2),(2,3),(1,3)}
+A = [1, 2, 3, 4]
+R = [(1, 1), (2, 2), (3, 3), (4, 4), (1, 2), (2, 3), (1, 3)]
 classify_relation(R, A, "Exercise 1.1(a)")
 ```
 
----
+### Exercise 4.2 — Equivalence Classes
 
-### Exercise 4.2 — Equivalence Class Computer
-
-```python
-def equivalence_classes(R, A):
-    """
-    Given an equivalence relation R on set A, compute all equivalence classes.
-    Returns a list of sets (the classes).
-    """
-    A = list(A)
-    seen = set()
-    classes = []
-    for a in A:
-        if a in seen:
-            continue
-        cls = {b for b in A if (a,b) in R}
-        classes.append(cls)
-        seen |= cls
-    return classes
-
-# Test with "same remainder mod 4" on {0,...,15}
-A = set(range(16))
-R = {(a,b) for a in A for b in A if (a-b) % 4 == 0}
-classes = equivalence_classes(R, A)
-for c in classes:
-    print(sorted(c))
-```
-
-**Task:** Run this and verify it matches your hand computation from Exercise 2.1 (restricted to the finite set {0,...,15}).
-
----
-
-### Exercise 4.3 — Union-Find (Disjoint Set) — Computational Equivalence Classes
+Build "same remainder mod 4" on {0, …, 15} with two loops, then list the classes:
 
 ```python
-class UnionFind:
-    """Efficiently tracks equivalence classes (connected components)."""
-    def __init__(self, elements):
-        self.parent = {e: e for e in elements}
-    
-    def find(self, x):
-        """Find canonical representative of x's class."""
-        while self.parent[x] != x:
-            x = self.parent[x]
-        return x
-    
-    def union(self, x, y):
-        """Merge the classes containing x and y."""
-        rx, ry = self.find(x), self.find(y)
-        if rx != ry:
-            self.parent[rx] = ry
-    
-    def classes(self):
-        """Return the current partition as a list of sets."""
-        groups = {}
-        for e in self.parent:
-            r = self.find(e)
-            groups.setdefault(r, set()).add(e)
-        return list(groups.values())
+A = list(range(16))
+R = []
+for a in A:
+    for b in A:
+        if (a - b) % 4 == 0:
+            R.append((a, b))
 
-# Test: build classes matching Exercise 2.3's partition
-uf = UnionFind(['a','b','c','d','e','f'])
-uf.union('a','c')
-uf.union('b','d')
-uf.union('d','e')
-print(uf.classes())
+def equivalence_class(R, A, a):
+    """[a] = all b related to a."""
+    cls = []
+    for b in A:
+        if (a, b) in R:
+            cls.append(b)
+    return cls
+
+for a in [0, 1, 2, 3]:
+    print(a, equivalence_class(R, A, a))
 ```
 
-**Task:** Run this and verify the resulting partition matches Exercise 2.3(a). This is exactly how compilers, Kruskal's MST algorithm, and network connectivity checkers implement equivalence classes efficiently — `union` merges classes as new equivalences are discovered, and `find` answers "are these two things equivalent?" in near-constant time.
+**Task:** Check the four classes against Exercise 2.1 (restricted to {0, …, 15}). Why is it enough to print the
+classes of 0, 1, 2 and 3?
 
 ---
 
 ## Section 5 — Reflection (5 min)
 
-1. In Exercise 2.4, the relation $|a-b|\leq2$ fails transitivity. In everyday language, describe a real-world "closeness" relation that has this same flaw (reflexive, symmetric, but not transitive) — why does "close to" not behave like "equal to"?
+1. In Exercise 2.3, the relation $|a-b|\leq2$ fails transitivity. In everyday language, describe a real-world
+"closeness" relation that has the same flaw (reflexive, symmetric, but not transitive). Why does "close to" not
+behave like "equal to"?
 
-2. Compare the Union-Find data structure to the Fundamental Theorem of Equivalence Relations from Thursday. What does `find(x)` correspond to, in the language of equivalence classes?
-
-3. Why must a topological sort always succeed on a finite poset, but might fail (be impossible) if the underlying relation has a cycle (e.g., $a\preceq b\preceq c\preceq a$ with $a\neq b\neq c$)?
+2. `is_transitive` checks every pair of pairs. For a relation with m pairs, how many checks is that?
 
 ---
 
@@ -272,11 +197,9 @@ Show your TA:
 
 - [ ] Section 1: at least 4 of 5 relations correctly classified
 - [ ] Exercise 2.1: complete equivalence relation proof with classes listed
-- [ ] Exercise 2.4: correct identification of transitivity failure with explicit counterexample
+- [ ] Exercise 2.3: correct identification of transitivity failure with explicit counterexample
 - [ ] Exercise 3.1: Hasse diagram sketched with max/min/longest chain/antichain identified
-- [ ] `relation_tools.py` running: demonstrate `classify_relation` and `equivalence_classes`
-- [ ] Exercise 4.3: Union-Find demonstrated matching Exercise 2.3
+- [ ] `relation_tools.py` running: demonstrate `classify_relation` and the four equivalence classes
 
 ---
 
-*Bring all Python tools built so far (`logic_tools.py`, `predicate_tools.py`, `set_tools.py`, `function_tools.py`, `relation_tools.py`) to Lab 7 — counting builds on all of these.*

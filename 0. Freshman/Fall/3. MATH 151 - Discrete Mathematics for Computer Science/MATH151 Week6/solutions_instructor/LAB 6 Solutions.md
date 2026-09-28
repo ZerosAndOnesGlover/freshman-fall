@@ -1,6 +1,12 @@
 # MATH 151 · Week 6
 ## LAB6 Solutions — INSTRUCTOR ONLY
 
+*(Revised 2026-09-28: old Exercises 2.3 (relation from a partition), 3.3 (topological sort) and 4.3 (union-find), and reflection
+questions 2–3, are no longer asked; lab 2.3 is old 2.4. Section 4 now uses lists of tuples and loops instead of `all(...)`,
+set comprehensions and a dict-based class (CS 101 Week 8). Expected: 1.1(a) is reflexive, antisymmetric and transitive — a
+partial order; 1.1(e) is symmetric only; the mod-4 classes are [0,4,8,12], [1,5,9,13], [2,6,10,14], [3,7,11,15], and the
+classes of 0–3 suffice because every b in 0..15 is congruent to exactly one of them. `is_transitive` makes m² checks.)*
+
 ---
 
 ## Section 1 Solutions
