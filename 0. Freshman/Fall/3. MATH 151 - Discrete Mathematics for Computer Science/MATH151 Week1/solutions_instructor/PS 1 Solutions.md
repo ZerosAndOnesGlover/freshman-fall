@@ -3,6 +3,11 @@
 
 ---
 
+> *Revised 2026-09-28: the set was cut from 15 problems and about 60 parts to 8 problems and 22 short parts. New → old:
+> A1 = A1 (a–c), 9 · A2 = A2 (a, b, d), 9 · B1 = B1 (c, d, f), 12 · B2 = B2 (a, c), 10 · C1 = C1 (c, d, e), 15 ·
+> C2 = C3 (b, c), 10 · D1 = D1 (a, b, f, g), 20 · E1 = E2 (a, b), 15. Everything else below is no longer asked.*
+
+
 ## Part A Solutions
 
 ### A1.
