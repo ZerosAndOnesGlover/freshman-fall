@@ -1,0 +1,25 @@
+-- pretty --
+  MATH 251 lecture, Monday 08:00-08:50
+  MATH 251 lecture, Tuesday 08:00-08:50
+  MATH 251 lecture, Thursday 08:00-08:50
+  CS 202 lecture, Monday 09:00-09:50
+days           : Monday Tuesday Wednesday Thursday Friday
+kinds          : lecture lab recitation seminar
+-- stats --
+whole term     : Stats {nSessions = 17, nMinutes = 1070, longest = 110}
+mempty         : Stats {nSessions = 0, nMinutes = 0, longest = 0}
+-- tree --
+in order       : [50,75,110]
+sum/len/max    : (235,3,110)
+doubled        : [100,150,220]
+-- laws --
+  ok   Semigroup Stats: associative (one case)
+  ok   Monoid Stats: left identity (one case)
+  ok   Monoid Stats: right identity (one case)
+  ok   Monoid Stats: mconcat agrees with foldMap
+  ok   Functor Tree: fmap id == id (one case)
+  ok   Functor Tree: composition (one case)
+  ok   Foldable Tree: toList is sorted
+  ok   Foldable Tree: length agrees with the distinct durations
+  ok   Foldable Tree: sum agrees with the distinct durations
+  ok   Foldable Tree: toList is exactly the distinct durations, in order

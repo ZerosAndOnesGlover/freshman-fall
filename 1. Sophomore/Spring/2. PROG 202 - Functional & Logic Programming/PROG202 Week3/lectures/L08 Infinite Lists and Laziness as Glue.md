@@ -8,7 +8,7 @@
 
 **Sat:** Thursday of Week 3, 11:00–12:15, TH 205 · **Reading:** Hughes, *Why Functional Programming Matters* (1989) — **all 23 pages, this week** · Hutton §15.6–15.8 · **Next:** Week 4 L09, type classes
 
-**Coursework:** 📝 **PS 2** due Fri this week 17:00 · 🔬 **Lab 3** Wed of Week 4 13:00–14:50
+**Coursework:** 📝 **PS 2** due Fri this week 17:00 · 📊 **Quiz 4** Tue of Week 4 · 📋 **Project 1** released Wed of Week 4, due Fri of Week 7 17:00 · 📝 **PS 4** released Wed of Week 4, due Fri of Week 5 17:00 · 🔬 **Lab 3** Wed of Week 4 13:00–14:50
 
 ---
 
