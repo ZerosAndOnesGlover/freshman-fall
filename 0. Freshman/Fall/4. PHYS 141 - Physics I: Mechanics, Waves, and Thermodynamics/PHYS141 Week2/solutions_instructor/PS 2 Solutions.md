@@ -3,6 +3,9 @@
 
 ---
 
+> *Revised 2026-09-28: sub-parts cut from 40 to 20, two per problem; the ten problems and their points are unchanged. The answers below keep the old letters. New → old: 1 (a, b) = (a, b) · 2 (a, b) = (b, d) · 3 (a, b) = (b, d) · 4 (a, b) = (a, c) · 5 (a, b) = (a, d) · 6 (a, b) = (b, d) · 7 (a, b) = (b, c) · 8 (a, b) = (b, c) · 9 (a, b) = (b, d), for the point at 0.20 m · 10 (a, b) = (b, c), with a_c computed first.*
+
+
 *Revised 2026-09-21 to match the 10-problem set; problems are numbered as in the new set.*
 
 ## Marking Scheme
@@ -107,10 +110,14 @@ v₀ = 35 m/s, R = 80 m
 **(c)** H₁ = (v₀sinθ₁)²/(2g) = (35×0.342)²/19.62 = (11.97)²/19.62 = **7.30 m**;
 H₂ = (35×0.940)²/19.62 = (32.9)²/19.62 = **55.2 m**
 
-**(d)** At 40 m horizontal, height of θ₁ trajectory: y = 80tan20°·(40/80) − g(40)²/(2×1225×cos²20°) ... use trajectory eqn with x=40:
-y₁(40) = 40tan20° − (9.81×1600)/(2×1225×cos²20°) = 14.56 − 15680/(2300.5×0.883) = 14.56−7.71 = 6.85 m > 5 m ✓
-y₂(40) similarly = 40tan70° − ... = 109.9 − 7.71/cos²70°×correction ... Full calculation gives y₂(40) >> 5 m ✓
-Both trajectories clear 5 m. The **low-angle (20°) trajectory** is preferred — shorter time in air, harder to intercept, less wind effect.
+**(d)** The wall stands at 40 m, **half** the 80 m range, so each trajectory is at its peak there
+and its height is its maximum height $H = (v_0\sin\theta)^2/(2g)$:
+- θ₁ = 19.9°: H₁ = (35 sin 19.9°)²/19.62 = **7.25 m** > 5 m ✓ *(7.30 m if θ₁ is rounded to 20°, as in (c))*
+- θ₂ = 70.1°: H₂ = (35 sin 70.1°)²/19.62 = **55.2 m** > 5 m ✓
+
+Both trajectories clear the wall. The **low-angle trajectory** is preferred: about 2.4 s in the air against 6.7 s, so it is less exposed to wind and harder to intercept.
+
+*(Before 2026-09-28 this answer evaluated the trajectory equation at x = 40 m with an arithmetic slip, giving 6.85 m.)*
 
 ---
 

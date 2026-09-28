@@ -3,12 +3,9 @@
 
 **Released:** Friday 9 October 2026, 15:00 (after the Friday lecture) · Week 2 | **Due:** Friday 16 October 2026, 17:00 (Week 3)
 **Instructions:** Establish your coordinate system explicitly. Show all work. Report answers with correct units and significant figures.
-**Points:** 5 per problem · **100 total**
+**Points:** 10 per problem · **100 total** · **Expected time:** about 3 hours
 
 ---
-
-> *Revised 2026-09-21.* Cut from 20 problems to 10 (each now 10 points) to keep the weekly load in line with
-> the other Fall courses. Removed (old numbering): 2, 3, 5, 7, 10, 11, 13, 14, 17, 20.
 
 ### Part A: 2D Kinematics — Vectors and Components (Problems 1–2) — 20 pts
 
@@ -16,17 +13,13 @@
 
 (a) Find v⃗(t) and a⃗(t).
 (b) At t = 2 s, find the speed and the direction of velocity (angle from +x axis).
-(c) At t = 2 s, find |a⃗| and its direction.
-(d) Is this constant-acceleration motion? Justify.
 
 ---
 
 **2.** A river is 120 m wide. A boat can travel at 4.0 m/s relative to the water. The river current flows at 2.5 m/s downstream.
 
-(a) If the boat aims directly perpendicular to the bank, find the actual velocity relative to the ground, its magnitude, and direction.
-(b) How far downstream does the boat land?
-(c) How long does the crossing take?
-(d) At what upstream angle must the boat aim in order to travel straight across (perpendicular to bank, zero downstream drift)? Is this possible given the speeds? Show your reasoning.
+(a) How far downstream does the boat land?
+(b) At what upstream angle must the boat aim in order to travel straight across (perpendicular to bank, zero downstream drift)? Is this possible given the speeds? Show your reasoning.
 
 ---
 
@@ -34,38 +27,29 @@
 
 **3.** A ball is launched at 20 m/s at 60° above horizontal from ground level.
 
-(a) Find the initial x and y components of velocity.
-(b) Find the time of flight.
-(c) Find the maximum height.
-(d) Find the horizontal range.
-(e) Find the velocity vector (magnitude and direction) at t = 1.5 s.
+(a) Find the time of flight.
+(b) Find the horizontal range.
 
 ---
 
 **4.** A stone is thrown horizontally from the top of a 45 m cliff at 15 m/s.
 
 (a) How long until it hits the ground?
-(b) How far from the base of the cliff does it land?
-(c) What is the velocity vector at impact (magnitude and direction below horizontal)?
-(d) At what point along the trajectory is the speed equal to twice the launch speed?
+(b) What is the velocity vector at impact (magnitude and direction below horizontal)?
 
 ---
 
 **5.** A projectile is launched at 35 m/s. You want it to hit a target 80 m away at the same height.
 
 (a) Find both launch angles that achieve this.
-(b) Find the time of flight for each angle.
-(c) For each trajectory, find the maximum height reached.
-(d) Which trajectory would be preferred in a real-world situation where the target is behind a 5 m wall located 40 m away? Justify geometrically.
+(b) Which trajectory would be preferred in a real-world situation where the target is behind a 5 m wall located 40 m away? Justify geometrically.
 
 ---
 
 **6.** A ball is thrown from the edge of a building of height 20 m at 15 m/s at 30° **below** horizontal. Taking the ground as y = 0 and the launch point as the origin (so the ground is at y = −20 m):
 
-(a) Write x(t) and y(t) with correct signs for this downward-angled launch.
-(b) Find when the ball hits the ground.
-(c) Find the range (horizontal distance traveled).
-(d) Find the speed on impact.
+(a) Find when the ball hits the ground.
+(b) Find the speed on impact.
 
 ---
 
@@ -73,27 +57,22 @@
 
 **7.** A wheel of radius 0.40 m spins at 300 rpm.
 
-(a) Convert 300 rpm to rad/s.
-(b) Find the tangential speed of a point on the rim.
-(c) Find the centripetal acceleration of a point on the rim.
-(d) Express the centripetal acceleration as a multiple of g.
+(a) Find the tangential speed of a point on the rim.
+(b) Find the centripetal acceleration of a point on the rim.
 
 ---
 
 **8.** The Moon orbits Earth with a period of 27.3 days at a mean distance of 3.84 × 10⁸ m.
 
-(a) Find the Moon's orbital speed.
-(b) Find its centripetal acceleration.
-(c) Compare this to g = 9.81 m/s² — the ratio should be approximately (R_Earth/R_Moon_orbit)². Check this and explain why Newton found this significant. *(R_Earth = 6.37 × 10⁶ m)*
+(a) Find its centripetal acceleration.
+(b) Compare this to g = 9.81 m/s² — the ratio should be approximately (R_Earth/R_Moon_orbit)². Check this and explain why Newton found this significant. *(R_Earth = 6.37 × 10⁶ m)*
 
 ---
 
 **9.** A point on a rotating disk starts from rest and reaches ω = 25 rad/s in 10 s with constant angular acceleration.
 
-(a) Find the angular acceleration α.
-(b) How many revolutions does it make during those 10 s?
-(c) At t = 10 s, a point 0.20 m from the center has what tangential speed, centripetal acceleration, and tangential acceleration?
-(d) What is the magnitude and direction of the total acceleration of that point at t = 10 s?
+(a) How many revolutions does it make during those 10 s?
+(b) For a point 0.20 m from the center, find the magnitude and direction of the total acceleration at t = 10 s.
 
 ---
 
@@ -101,10 +80,8 @@
 
 At altitude h, gravity gives centripetal acceleration a_c = g_surface × (R_E/(R_E + h))².
 
-(a) Compute a_c at 400 km altitude.
-(b) Using a_c = v²/r, find the orbital speed.
-(c) Find the orbital period. Compare to 90 minutes (the well-known approximate ISS period).
-(d) Find the centripetal acceleration due to Earth's rotation for someone on the equatorial surface. What fraction of g is this? (This explains why the effective g at the equator is slightly less than at the poles.)
+(a) Compute a_c at 400 km altitude, then use a_c = v²/r to find the orbital speed.
+(b) Find the orbital period. Compare to 90 minutes (the well-known approximate ISS period).
 
 ---
 
