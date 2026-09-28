@@ -33,7 +33,7 @@ For each relation, determine reflexive/symmetric/antisymmetric/transitive. Work 
 
 ---
 
-## Section 2 — Equivalence Relations and Classes (35 min)
+## Section 2 — Equivalence Relations and Classes (30 min)
 
 ### Exercise 2.1
 
@@ -79,7 +79,7 @@ Consider $R = \{(a,b)\in\mathbb{Z}\times\mathbb{Z} : |a-b|\leq 2\}$.
 
 ---
 
-## Section 3 — Hasse Diagrams and Posets (30 min)
+## Section 3 — Hasse Diagrams and Posets (25 min)
 
 ### Exercise 3.1
 
