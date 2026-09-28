@@ -8,7 +8,7 @@
 
 **Sat:** Thursday of Week 1, 11:00–12:15, TH 205 · **Reading:** Hutton §4.1–4.4, §8.5–8.6 · **Next:** Week 2 L05, higher-order functions and folds
 
-**Coursework:** 📝 **PS 0** due Fri this week 17:00 · 🔬 **Lab 1** Wed of Week 2 13:00–14:50
+**Coursework:** 📝 **PS 0** due Fri this week 17:00 · 📊 **Quiz 2** Tue of Week 2 · 📝 **PS 2** released Wed of Week 2, due Fri of Week 3 17:00 · 🔬 **Lab 1** Wed of Week 2 13:00–14:50
 
 ---
 
