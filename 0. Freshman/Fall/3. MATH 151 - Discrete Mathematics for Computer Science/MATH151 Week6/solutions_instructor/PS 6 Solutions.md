@@ -3,6 +3,9 @@
 
 ---
 
+> *Revised 2026-09-28: cut from 9 problems (about 23 parts) to 7 problems with 14 parts. New → old: A1 (a, b, c) = A1 (a, c, d), 18 · B1 (a, b) = B1 (b, c), 20 · C1 = C1, 12 · C2 = C2, 14 · D1 (a, b, c) = D1 (b, c, d), 18 · E1 = E1, 10 · E2 = E2, 8. B1(a), B2 and D2 are no longer asked: Lab 6 Exercises 2.1 and 3.1 cover them. B1(d) is worked in L19. A1(b) and D1(a) were cut for length.*
+
+
 ## Part A
 
 ### A1(a): $R=\{(a,b)\in\mathbb{Z}\times\mathbb{Z} : a\geq b\}$
