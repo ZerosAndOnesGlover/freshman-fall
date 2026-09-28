@@ -98,10 +98,12 @@ disjoint triangles (expect 2).
 **3.3** *(5 pts)* Write `cut_vertices(V, E)` by brute force: remove each vertex and count components.
 Confirm your Exercise 1.3 answer.
 
-**3.4** *(5 pts)* Write `is_bipartite(V, E)` by brute force: use `product([0, 1], repeat=len(V))` (Lab 7)
-to try every 2-colouring and check whether some colouring gives every edge two different colours. How
-many colourings does a graph with $n$ vertices need in the worst case? Test on $C_4$, $C_5$, $C_6$,
-$K_{3,3}$, and $G$. State which are bipartite and relate the results to the odd-cycle theorem.
+**3.4** *(5 pts)* Write `is_bipartite(V, E)` by brute force: try every 2-colouring and check whether
+some colouring gives every edge two different colours. To list the colourings, loop `k` over `range(2 **
+len(V))` and give the vertex at position `i` in `V` the colour `(k // 2 ** i) % 2`, which is the `i`-th
+binary digit of `k`. How many colourings does a graph with $n$ vertices need in the worst case? Test on
+$C_4$, $C_5$, $C_6$, $K_{3,3}$, and $G$. State which are bipartite and relate the results to the
+odd-cycle theorem.
 
 ---
 
