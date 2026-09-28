@@ -1,6 +1,9 @@
 # MATH 151 · Week 11
 ## LAB 11 Solutions — INSTRUCTOR ONLY
 
+*(Revised 2026-09-28: the lab listed 120 minutes. Exercises 3.2 (Prim from every start), 3.4 (Cayley enumeration) and 4.4
+(bipartite BFS — Lab 10 already tests bipartiteness) and reflection Q1 are no longer asked; old 3.3 is 3.2.)*
+
 All outputs produced by running the lab code. $T = (\{a..g\},\ \{ab,ac,bd,be,cf,cg\})$.
 
 ---

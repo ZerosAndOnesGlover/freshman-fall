@@ -49,7 +49,7 @@ Run for **every** choice of root in $T$ and tabulate the heights. Which root min
 
 ---
 
-## Section 3 — Spanning Trees and MSTs (35 min)
+## Section 3 — Spanning Trees and MSTs (20 min)
 
 **3.1** *(6 pts)* Implement Kruskal's algorithm with union–find:
 
@@ -73,22 +73,12 @@ def kruskal(V, W):
 
 Run it on the Section 1 graph. Confirm the total is **11** and that the tree has $n-1$ edges.
 
-**3.2** *(6 pts)* Implement Prim's algorithm with a heap. Run it from **every** starting vertex and
-tabulate the resulting edge sets and totals.
-
-**Do all six runs give the same total? Do they give the same edge set?** Answer both explicitly.
-
-**3.3** *(5 pts)* Modify the graph so two edges tie for a critical weight, and exhibit **two distinct
+**3.2** *(5 pts)* Modify the graph so two edges tie for a critical weight, and exhibit **two distinct
 MSTs** with equal total. Then make all weights distinct and argue the MST is now unique.
-
-**3.4** *(4 pts)* Verify Cayley's formula computationally for $n=4$ and $n=5$: enumerate all subsets
-of $\binom n2$ edges of size $n-1$, count how many are trees, and compare with $n^{n-2}$.
-
-*(Expect 16 and 125.)* Then compute — **do not run** — how many subsets the same brute force would test at $n=7$, $n=9$, and $n=11$, using $\binom{\binom n2}{n-1}$. State the largest $n$ you would be willing to run, and why.
 
 ---
 
-## Section 4 — Traversal (25 min)
+## Section 4 — Traversal (20 min)
 
 **4.1** *(5 pts)* Implement `bfs(adj, start)` and `dfs(adj, start)`. Run both on $T$ from $a$ and
 from $b$. Tabulate all four orders.
@@ -119,20 +109,14 @@ def toposort(D):
 Test on $a\to b$, $a\to c$, $b\to d$, $c\to d$, $d\to e$ (expect a valid order) and on
 $a\to b\to c\to a$ (expect `None`). **Explain what `None` means to a build system.**
 
-**4.4** *(4 pts)* Write `is_bipartite(adj)` using a single BFS with 2-colouring. Test on $C_4$, $C_5$,
-and $T$. Why is every tree bipartite?
-
 ---
 
-## Section 5 — Reflection (10 min)
+## Section 5 — Reflection (5 min)
 
-1. Section 3.2 ran Prim from six different starts. What varied, what did not, and what does that tell
-   you about MSTs?
-
-2. Every algorithm in this lab runs in near-linear time, while Week 10's Hamilton search was
+1. Every algorithm in this lab runs in near-linear time, while Week 10's Hamilton search was
    factorial. What structural property of trees is responsible?
 
-3. In 4.3, `toposort` returned `None` on the cyclic graph. Explain why this is not a failure of the
+2. In 4.3, `toposort` returned `None` on the cyclic graph. Explain why this is not a failure of the
    algorithm.
 
 ---
@@ -145,7 +129,5 @@ Show your TA:
 - [ ] 2.1: all three test cases explained
 - [ ] 2.3: height table for all seven roots, minimising root identified
 - [ ] 3.1: Kruskal returning total 11 with 5 edges
-- [ ] 3.2: all six Prim runs tabulated, both questions answered explicitly
-- [ ] 3.3: two distinct MSTs exhibited with equal totals
-- [ ] 3.4: Cayley verified for $n=4,5$, with the $n=7$ infeasibility explained
-- [ ] 4.1–4.4: all four traversal functions working, `None` case explained
+- [ ] 3.2: two distinct MSTs exhibited with equal totals
+- [ ] 4.1–4.3: all three traversal functions working, `None` case explained
