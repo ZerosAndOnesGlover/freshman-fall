@@ -37,7 +37,7 @@ Every tool meets the minimum version, so no problems came up here.
 
 ### Step 1: Source
 
-`hello.c` is in `$PROG101/week0/` and matches the handout exactly:
+`hello.c` is in `$PROG101/week0/lab0/` and matches the handout exactly:
 
 ```c
 /* hello.c — Week 0, Lab 0 */
@@ -269,7 +269,7 @@ $ wc -l hello_O0.s hello_O2.s
 
 ## Part 4: My First Makefile
 
-`Makefile` in `$PROG101/week0/`. `cat -A` confirms the recipe lines start with a real TAB (`^I`):
+`Makefile` in `$PROG101/week0/lab0/`. `cat -A` confirms the recipe lines start with a real TAB (`^I`):
 
 ```makefile
 CC = gcc
@@ -435,7 +435,7 @@ Enter temperature in Celsius:
 
 ## Part 6: My First GDB Session
 
-I copied `buggy.c` from the lab's `starter/` folder into `$PROG101/week0/`.
+I copied `buggy.c` from the lab's `starter/` folder into `$PROG101/week0/lab0/`.
 
 My first copy didn't compile. The linker reported `undefined reference to 'add_three'`, because the
 copy was missing the last three lines: the *definition* of `add_three`. The prototype on line 16 was
