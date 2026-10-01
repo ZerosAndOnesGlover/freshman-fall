@@ -3,10 +3,11 @@ assessment: Lab 0
 course: CS 101
 component: Labs
 possible: 100
-score:
-status: submitted
+score: 99
+status: graded
 started: 2026-10-01
 submitted: 2026-10-01
+graded: 2026-10-01
 source: "LAB 0 Environment Setup.md"
 ---
 
@@ -235,7 +236,7 @@ My answers to the four reflection questions are in `week0/lab0/reflection.md`. I
 - [x] All files committed to Git
 - [ ] TA has checked me off *(done in person at the lab)*
 
-*Marks: ___ / 100*
+*Marks: 99 / 100*
 
 ---
 
@@ -245,9 +246,9 @@ My answers to the four reflection questions are in `week0/lab0/reflection.md`. I
 
 | | |
 |---|---|
-| **Score** | ___ / 100 |
-| **Percent** | ___ |
-| **Graded** | ___ |
+| **Score** | 99 / 100 |
+| **Percent** | 99% |
+| **Graded** | 2026-10-01 |
 
 **Feedback:**
 
