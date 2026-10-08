@@ -86,7 +86,7 @@ component.*
 
 | Item | Topic | Possible | Earned |
 |---|---|---|---|
-| Quiz 0 | Week 0 | 25 | |
+| Quiz 0 | Week 0 | 25 | 25 |
 | Quiz 1 | Week 1 | 25 | |
 | Quiz 2 | Week 2 | 25 | |
 | Quiz 3 | Week 3 | 25 | |
@@ -127,13 +127,13 @@ component.*
 |---|---|---|---|
 | Problem Sets | 30% | 0/13 | -- |
 | Laboratory | 25% | 1/13 | 98.00% |
-| Quizzes | 10% | 0/13 | -- |
+| Quizzes | 10% | 1/13 | 100.00% |
 | Midterm Exam | 15% | 0/1 | -- |
 | Final Exam | 20% | 0/1 | -- |
 
-**Course percentage:** 98.00%
+**Course percentage:** 98.57%
 **Letter grade:** A+
 **GPA points:** 4.0
 **Credits:** 4
-**Status:** partial (25% of weight graded)
+**Status:** partial (35% of weight graded)
 <!-- END COMPUTED -->
