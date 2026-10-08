@@ -65,7 +65,7 @@ component.*
 | Item | Topic | Possible | Earned |
 |---|---|---|---|
 | Lab 0 | Measurement and uncertainty | 100 | 98 |
-| Lab 1 | Constant acceleration | 100 | |
+| Lab 1 | Constant acceleration | 100 | 97 |
 | Lab 2 | Projectile motion | 100 | |
 | Lab 3 | Newton's second law | 100 | |
 | Lab 4 | Conservation of energy | 100 | |
@@ -126,12 +126,12 @@ component.*
 | Component | Weight | Graded | Percent |
 |---|---|---|---|
 | Problem Sets | 30% | 1/13 | 99.00% |
-| Laboratory | 25% | 1/13 | 98.00% |
+| Laboratory | 25% | 2/13 | 97.50% |
 | Quizzes | 10% | 1/13 | 100.00% |
 | Midterm Exam | 15% | 0/1 | -- |
 | Final Exam | 20% | 0/1 | -- |
 
-**Course percentage:** 98.77%
+**Course percentage:** 98.58%
 **Letter grade:** A+
 **GPA points:** 4.0
 **Credits:** 4
