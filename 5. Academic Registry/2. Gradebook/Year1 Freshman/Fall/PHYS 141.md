@@ -41,7 +41,7 @@ status: in-progress
 
 | Item | Topic | Possible | Earned |
 |---|---|---|---|
-| PS 0 | Measurement, units, coordinate systems, vectors | 100 | |
+| PS 0 | Measurement, units, coordinate systems, vectors | 100 | 99 |
 | PS 1 | Kinematics in 1D | 100 | |
 | PS 2 | Kinematics in 2D — projectile and circular | 100 | |
 | PS 3 | Newton's three laws | 100 | |
@@ -125,15 +125,15 @@ component.*
 
 | Component | Weight | Graded | Percent |
 |---|---|---|---|
-| Problem Sets | 30% | 0/13 | -- |
+| Problem Sets | 30% | 1/13 | 99.00% |
 | Laboratory | 25% | 1/13 | 98.00% |
 | Quizzes | 10% | 1/13 | 100.00% |
 | Midterm Exam | 15% | 0/1 | -- |
 | Final Exam | 20% | 0/1 | -- |
 
-**Course percentage:** 98.57%
+**Course percentage:** 98.77%
 **Letter grade:** A+
 **GPA points:** 4.0
 **Credits:** 4
-**Status:** partial (35% of weight graded)
+**Status:** partial (65% of weight graded)
 <!-- END COMPUTED -->
