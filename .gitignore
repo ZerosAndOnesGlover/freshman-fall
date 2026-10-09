@@ -49,3 +49,6 @@ Thumbs.db
 # stray gitlink pointing at commits this repo does not contain. Commit
 # and push it from inside "6. Portal" instead.
 /6. Portal/
+
+# ─── Practice ───────────────────────────────────────────────────────
+*practice/
