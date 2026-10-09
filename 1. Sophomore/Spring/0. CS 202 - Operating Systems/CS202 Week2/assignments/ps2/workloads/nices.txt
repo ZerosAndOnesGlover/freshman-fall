@@ -1,4 +1,0 @@
-# three CPU jobs of equal length at different nice values
-n0  0 300 0
-n5  0 300 5
-n10 0 300 10

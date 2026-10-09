@@ -1,7 +1,0 @@
-# CS 201 · Week 10 · Summary
-
-**Topic —** Multi-core: cache coherence, memory consistency, false sharing, NUMA, and the GPU.
-**Lectures —** L31 Cache Coherence and the MESI Protocol; L32 False Sharing, NUMA and Writing Code That Scales; L33 The GPU and the SIMT Model.
-**Work —** **MIDTERM 2 Monday 18:00, Weeks 5–9, 100 points, 12.5%.** PS 10 (100, due Week 11), Lab 10 (unmarked, sat Tuesday of Week 11), Quiz 10 Monday covering Week 9 (unmarked, key in the paper).
-**Takeaway —** On a multi-core machine the bottleneck is a cache line moving between cores, not the arithmetic. A single shared atomic counter did 64 M ops/s on one thread and ~20 M on two — adding a core made it 3× slower, because MESI requires the line be the sole copy to write it, so it bounces on every increment. Four separate per-thread counters cost 1.45× when they shared a 64-byte line (false sharing — contention with no shared variable), fixed by 56 bytes of padding. An embarrassingly parallel sqrt reduction scaled 3.90× on 4 cores and fell to 3.59× at 8 threads, because there are only 4 physical cores and hyperthreads share execution units. None of it shows in the source or Big-O; the scaling design is always partition → private partials → combine once. The GPU is the throughput answer — thousands of weak SIMT cores winning on high-arithmetic-intensity, regular-access work like matrix multiply and losing on anything serial or divergent — taught conceptually, since the machines have no GPU.
-**Next —** Week 11 — performance engineering, where profiling makes all of this a method.

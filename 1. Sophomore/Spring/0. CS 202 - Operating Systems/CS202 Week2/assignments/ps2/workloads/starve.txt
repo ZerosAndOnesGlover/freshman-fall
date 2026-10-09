@@ -1,4 +1,0 @@
-# a long job, and two interactive jobs that between them never leave the CPU idle
-long 0 100
-i1 0 400 1 1
-i2 0 400 1 1

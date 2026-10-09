@@ -1,7 +1,0 @@
-# CS 201 · Week 7 · Summary
-
-**Topic —** I/O and storage: the device path, disks and flash, and what performance actually means down here.
-**Lectures —** L22 The I/O Path — Controllers, Interrupts and DMA; L23 Disks and SSDs; L24 Storage Performance and I/O Scheduling.
-**Work —** **PROJECT 1 assigned (10%, mini-CPU simulator, due Week 9).** PS 7 (100, due Week 8), Lab 7 (unmarked, sat Tuesday of Week 8), Quiz 7 Monday covering Week 6 (unmarked, key in the paper).
-**Takeaway —** Always know whether you measured the device or the page cache: cached 4 KiB random reads ran at 2.51 μs against 157.6 μs through `O_DIRECT`, a 63× gap whose only cause is whether the data was already in DRAM. And `fsync` costs 3876 μs against a 6 μs write — 645× — which is why a system promising 10 000 durable transactions per second, on a 100 μs budget each, cannot call it once per transaction and uses group commit instead. The device curve itself is instructive: sequential throughput rises 18× from 4 KiB to 1 MiB because per-request software overhead, not the drive, limits small blocks, and at 1 MiB random is only 1.06× worse than sequential — a ratio that is ~1000× on a rotating disk and is why Linux schedules this NVMe with `none`. The lab machines have no spinning disk, so every SSD number this week is measured and every HDD number is cited.
-**Next —** Week 8 — computer networks, the other direction data travels.
