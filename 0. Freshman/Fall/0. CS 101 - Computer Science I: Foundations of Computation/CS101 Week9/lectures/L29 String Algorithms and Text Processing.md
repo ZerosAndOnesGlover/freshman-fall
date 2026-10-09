@@ -1,7 +1,13 @@
 # CS 101 · Lecture 29 (Week 9, Lecture 2)
 ## String Algorithms: Searching, Tokenising, and Text Processing
 
+*“It's difficult to extract sense from strings, but they're the only communication coin we can count on.”* — Alan Perlis, "Epigrams on Programming" (1982), #106
+
 **Date:** Thursday 26 November 2026 · 09:00–09:50 · Week 9
+
+**Reading:** Guttag, Ch. 5 · CLRS, Ch. 32.1 · Python docs — `csv` module *(details at the end of the lecture)*
+
+**Coursework:** 📋 **Project 1** due Fri 27 Nov 17:00 · 📝 **PS 8** due Fri 27 Nov 17:00 · 📝 **PS 9** released Fri 27 Nov 10:00, due Fri 4 Dec 17:00 · 📘 **Midterm 2** Mon 30 Nov 18:00–19:15 · 🔬 **Lab 9** Tue 1 Dec 15:00–16:50 · 📊 **Quiz 10** Wed 2 Dec 09:00–09:10
 
 ---
 
@@ -352,7 +358,7 @@ tool is `Counter`, which compares the multisets themselves in Θ(k).
 
 ## Reading
 
-- **Guttag, Ch. 4** — string methods (review)
+- **Guttag, Ch. 5** — strings as sequences (review)
 - **CLRS, Ch. 32.1** — the naive string-matching algorithm and its analysis (optional; §32.4 covers
   KMP for the ambitious)
 - **Python docs — `csv` module** — read the introduction, especially the dialect discussion

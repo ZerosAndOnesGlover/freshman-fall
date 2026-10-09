@@ -1,7 +1,13 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 3 · Lecture 1: Functions and Pass-by-Value
 
+*“If you have a procedure with 10 parameters, you probably missed some.”* — Alan Perlis, "Epigrams on Programming" (1982), #11
+
 **Date:** Tuesday 13 October 2026 · 10:00–10:50 · Week 3
+
+**Reading:** K&R Chapter 4 · King Ch. 9 · CS:APP §3.7 *(details at the end of the lecture)*
+
+**Coursework:** 📊 **Quiz 2** today 10:00–10:10 · 📝 **PS 2** due Fri 16 Oct 17:00 · 📝 **PS 3** released Fri 16 Oct 10:00, due Fri 23 Oct 17:00 · 🔬 **Lab 3** Mon 19 Oct 15:00–16:50
 
 ---
 

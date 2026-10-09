@@ -1,7 +1,13 @@
 # PHYS 141 · Physics I: Mechanics, Waves & Thermodynamics
 ## Lecture 26 — Pendulums and Physical Oscillators
 
+*“...the power of this line [the cycloid] to measure time.”* — Christiaan Huygens, *Horologium Oscillatorium* (1673)
+
 **Date:** Tuesday 17 November 2026 · 14:00–14:50 · Week 8
+
+**Reading:** Serway & Jewett §15.5 · HRK Ch. 17
+
+**Coursework:** 🔬 **Lab 8** Thu 19 Nov 14:00–17:00 · 📝 **PS 7** due Fri 20 Nov 17:00 · 📝 **PS 8** released Fri 20 Nov 15:00, due Fri 27 Nov 17:00 · 📊 **Quiz 8** Mon 23 Nov 14:00
 
 ---
 

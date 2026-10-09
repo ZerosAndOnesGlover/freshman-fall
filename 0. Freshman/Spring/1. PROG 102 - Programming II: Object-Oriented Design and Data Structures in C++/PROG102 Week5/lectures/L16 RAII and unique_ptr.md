@@ -1,11 +1,15 @@
 # PROG 102 · Lecture 16
 ## RAII and `unique_ptr`
 
+*“Don't have good ideas if you aren't willing to be responsible for them.”* — Alan Perlis, "Epigrams on Programming" (1982), #95
+
 **Week 5 · Tuesday · 50 minutes**
 **Reading:** *C++ Primer* §12.1.1–12.1.5 · **Reference:** Meyers, *Effective Modern C++* Items 18, 21
 **Assumes:** L02 (destructors), Week 1 (Rule of Three), Week 4 (virtual destructors)
 
 **Date:** Tuesday 23 February 2027 · 10:00–10:50 · Week 5
+
+**Coursework:** 📊 **Quiz 5** today 10:00–10:15 · 📝 **PS 4** due Fri 26 Feb 17:00 · 📝 **PS 5** released Fri 26 Feb 10:00, due Fri 5 Mar 17:00 · 🔬 **Lab 5** Mon 1 Mar 15:00–16:50 · 📘 **Midterm 1** Tue 2 Mar 18:00–19:30
 
 ---
 

@@ -1,10 +1,14 @@
 # PROG 102 · Lecture 30
 ## `noexcept`, Assertions, and Contracts
 
+*“The most important property of a program is whether it accomplishes the intentions of its user.”* — C. A. R. Hoare, "An Axiomatic Basis for Computer Programming" (1969)
+
 **Week 9 · Thursday · 50 minutes**
 **Reading:** Meyers, *Effective Modern C++* Item 14 · **Assumes:** L28, L29
 
 **Date:** Thursday 25 March 2027 · 10:00–10:50 · Week 9
+
+**Coursework:** 📋 **Project 1** due Fri 26 Mar 17:00 · 📝 **PS 8** due Fri 26 Mar 17:00 · 📝 **PS 9** released Fri 26 Mar 10:00, due Fri 2 Apr 17:00 · 🔬 **Lab 9** Mon 29 Mar 15:00–16:50 · 📊 **Quiz 10** Tue 30 Mar 10:00–10:15 · 📘 **Midterm 2** Tue 30 Mar 18:00–19:30
 
 ---
 

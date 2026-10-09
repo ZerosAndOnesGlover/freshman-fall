@@ -1,6 +1,10 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Appendix · Lecture 1: Hash Functions and the Hashing Problem
 
+*“Associative arrays are very very useful things and if you are only going to have one data structure that's the one to have. Because you could build everything else with it if you want.”* — Brian Kernighan, "Coffee with Brian Kernighan", Computerphile (2018)
+
+**Reading:** CLRS Ch. 11 · Sedgewick & Wayne, Algorithms 4th ed. *(details at the end of the lecture)*
+
 ---
 
 ## Lecture Goals

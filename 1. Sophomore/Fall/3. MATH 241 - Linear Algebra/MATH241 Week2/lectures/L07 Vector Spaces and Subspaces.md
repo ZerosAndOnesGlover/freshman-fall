@@ -2,9 +2,13 @@
 ## Week 2 · Lecture 1 of 3 · **Monday**
 ### Vector Spaces and Subspaces
 
+*“Geometry can in no way be viewed... as a branch of mathematics; instead, geometry relates to something already given in nature, namely, space. I... realized that there must be a branch of mathematics which yields in a purely abstract way laws similar to geometry.”* — Hermann Grassmann, *Die lineale Ausdehnungslehre* (1844), Foreword, as quoted in Mario Livio, *Is God a Mathematician?* (2009)
+
 ---
 
 **Reading:** Strang §3.1 · **Previous:** Week 1's L06, $A = LU$ · **Next:** L08, the column space
+
+**Coursework:** 📊 **Quiz 2** today · 📝 **PS 2** released Wed this week, due Fri of Week 3 17:00 · 💬 **Recitation 1** Thu this week 15:00–15:50 · 📝 **PS 1** due Fri this week 17:00
 
 > **Quiz 2 is the first ten minutes of this lecture** and covers Week 1.
 

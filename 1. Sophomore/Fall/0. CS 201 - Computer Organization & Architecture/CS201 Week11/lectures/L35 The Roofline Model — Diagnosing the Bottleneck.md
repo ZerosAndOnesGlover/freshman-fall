@@ -2,9 +2,13 @@
 ## Week 11 · Lecture 2 of 3
 ### The Roofline Model — Diagnosing the Bottleneck
 
+*“Modeling Principle: Models are not right or wrong; they are more or less useful.”* — Martin Fowler, *Analysis Patterns* (1997), p. 2
+
 ---
 
 **Reading:** CS:APP §5.5–5.9, §6.6 · **Previous:** L34, measure first
+
+**Coursework:** 📝 **PS 11** released today, due Fri of Week 12 17:00 · 📝 **PS 10** due Fri this week 17:00 · 🔬 **Lab 11** Tue of Week 12 15:00–16:50
 
 ---
 

@@ -2,7 +2,13 @@
 ## Lecture 21 (L21) — The Multiplication Rule and Addition Rule
 ### Monday, Week 7
 
+*“Number, place, and combination . . . the three intersecting but distinct spheres of thought to which all mathematical ideas admit of being referred.”* — James Joseph Sylvester, *Collected Mathematical Papers*, Vol. 1
+
 **Date:** Monday 9 November 2026 · 13:00–13:50 · Week 7
+
+**Reading:** Rosen, 8e §6.1 · Epp, 5e §9.2–9.3 · Levin, 3e §1.1 *(details at the end of the lecture)*
+
+**Coursework:** 📊 **Quiz 7** today 13:00–13:15 · 🔬 **Lab 6** Wed 11 Nov 15:00–16:50 · 📝 **PS 6** due Fri 13 Nov 17:00 · 📝 **PS 7** released Fri 13 Nov 14:00, due Fri 20 Nov 17:00
 
 ---
 
@@ -199,5 +205,11 @@ Bijection Principle:
 7. Prove, using a bijective argument, that the number of ways to distribute $n$ distinguishable balls into 2 distinguishable boxes equals $2^n$. *(Connect this to Exercise 6's binary string bijection.)*
 
 ---
+
+## Reading
+
+- **Rosen, 8e §6.1** — The basics of counting
+- **Epp, 5e §9.2–9.3** — The multiplication rule; the addition rule
+- **Levin, 3e §1.1** — Additive and multiplicative principles
 
 *Next: Lecture 22 — Permutations and Combinations*

@@ -1,10 +1,14 @@
 # PROG 102 · Lecture 35
 ## `std::function` and Type Erasure
 
+*“Any problem in computer science can be solved with another level of indirection.”* — David Wheeler, as quoted by Butler Lampson in his Turing Award Lecture (1993)
+
 **Week 11 · Wednesday · 50 minutes**
 **Reading:** Meyers Item 34; cppreference `std::function` · **Assumes:** L34, Week 8
 
 **Date:** Wednesday 7 April 2027 · 10:00–10:50 · Week 11
+
+**Coursework:** 📝 **PS 10** due Fri 9 Apr 17:00 · 📝 **PS 11** released Fri 9 Apr 10:00, due Fri 16 Apr 17:00 · 🔬 **Lab 11** Mon 12 Apr 15:00–16:50 · 📕 **Final exam** Thu 22 Apr 14:00–16:30
 
 ---
 

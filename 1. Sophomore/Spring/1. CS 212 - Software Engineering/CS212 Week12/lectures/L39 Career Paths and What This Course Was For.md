@@ -2,9 +2,13 @@
 ## Week 12 · Lecture 3 of 3
 ### Career Paths, and What This Course Was For
 
+*“Study after study shows that the very best designers produce structures that are faster, smaller, simpler, clearer, and produced with less effort. The differences between the great and the average approach an order of magnitude.”* — Fred Brooks, "No Silver Bullet" (1986)
+
 ---
 
-**Sat:** Thursday of Week 12, 10:00–10:50, TH 200 · **The last lecture.** · **Next:** Demo Day, Tuesday 28 April · report and code, Friday 1 May 17:00 · **Final exam, Friday 8 May, 09:00–11:30**
+**Sat:** Thursday of Week 12, 10:00–10:50, TH 200 · **The last lecture.** · **Reading:** Sommerville Ch. 1, re-read; Brooks, "No Silver Bullet" (1986) · **Next:** Demo Day, Tuesday 28 April · report and code, Friday 1 May 17:00 · **Final exam, Friday 8 May, 09:00–11:30**
+
+**Coursework:** 📝 **Assignment 11** due Fri this week 17:00 · 📝 **Assignment 12** due Fri this week 17:00 · 🎤 **Demo Day** Tue of the completion period, report due Fri of the completion period 17:00 · 📕 **Final exam** Fri of finals week 09:00–11:30
 
 ---
 

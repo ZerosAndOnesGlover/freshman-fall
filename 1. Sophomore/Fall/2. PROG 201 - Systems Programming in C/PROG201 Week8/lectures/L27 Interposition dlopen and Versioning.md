@@ -2,9 +2,13 @@
 ## Week 8 · Lecture 3 of 3
 ### Interposition, `dlopen`, and Versioning
 
+*“Compatibility means deliberately repeating other people's mistakes.”* — David Wheeler
+
 ---
 
 **Reading:** TLPI Ch. 42 · CS:APP §7.13 · `man 3 dlopen`, `man 8 ld.so`, `man 1 gcc` (visibility) · **Previous:** L26 · **Next:** Lab 8 — a plugin system, **Monday of Week 9**
+
+**Coursework:** 📝 **PS 7** due Fri this week 17:00 · 🔬 **Lab 8** Mon of Week 9 15:00–16:50 · 📊 **Quiz 9** Tue of Week 9 · 📝 **PS 9** released Wed of Week 9, due Fri of Week 10 17:00
 
 ---
 

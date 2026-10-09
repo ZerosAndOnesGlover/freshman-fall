@@ -2,7 +2,11 @@
 ## Week 6 · Lecture 3 (Wednesday)
 ### L'Hôpital's Rule: Resolving Indeterminate Forms
 
+*“In plausible reasoning the principal thing is to distinguish... a more reasonable guess from a less reasonable guess.”* — George Pólya, *Induction and Analogy in Mathematics* (1954)
+
 **Date:** Wednesday 4 November 2026 · 11:00–11:50 · Week 6
+
+**Coursework:** 📝 **PS 5** due today 11:00 · 📝 **PS 6** released today 12:00, due Wed 11 Nov 11:00 · 📘 **Midterm 1** Thu 5 Nov 18:00–19:15 · 🔬 **Lab 6** Fri 6 Nov 15:00–16:50, report due Mon 9 Nov 17:00 · 📊 **Quiz 7** Mon 9 Nov 11:00–11:15
 
 ---
 

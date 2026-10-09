@@ -1,7 +1,13 @@
 # CS 101 · Lecture 36 (Week 11, Lecture 3)
 ## Reduction and the Landscape of Undecidability
 
+*“Beware of the Turing tar-pit in which everything is possible but nothing of interest is easy.”* — Alan Perlis, "Epigrams on Programming" (1982), #54
+
 **Date:** Friday 11 December 2026 · 09:00–09:50 · Week 11
+
+**Reading:** Sipser, Ch. 5.1, 5.3 · Sipser, Problem 5.28 · Regehr, "Undefined Behavior" series *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 10** due today 17:00 · 📝 **PS 11** released today 10:00, due Fri 18 Dec 17:00 · 🔬 **Lab 11** Tue 15 Dec 15:00–16:50 · 📕 **Final exam** Tue 22 Dec 09:00–11:30
 
 ---
 
@@ -304,7 +310,7 @@ professional skill this week is really teaching.
 ## Reading
 
 - **Sipser, Ch. 5.1, 5.3** — reducibility and mapping reductions (primary)
-- **Sipser, Ch. 6.3** — Rice's theorem
+- **Sipser, Problem 5.28** — Rice's theorem
 - **Regehr, "Undefined Behavior" series** — optional; undecidability's fingerprints in real compilers
 
 ---

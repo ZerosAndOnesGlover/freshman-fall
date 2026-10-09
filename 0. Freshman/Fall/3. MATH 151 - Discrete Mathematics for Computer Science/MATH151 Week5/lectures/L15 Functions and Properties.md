@@ -2,7 +2,13 @@
 ## Lecture 15 (L15) — Functions: Definitions and Fundamental Properties
 ### Monday, Week 5
 
+*“A function of a variable quantity is an analytic expression composed in any way whatsoever of the variable quantity and numbers or constant quantities.”* — Leonhard Euler, *Introductio in analysin infinitorum* (1748), §4
+
 **Date:** Monday 26 October 2026 · 13:00–13:50 · Week 5
+
+**Reading:** Rosen, 8e §2.3 · Epp, 5e §7.1–7.2 · Levin, 3e §0.4 *(details at the end of the lecture)*
+
+**Coursework:** 📊 **Quiz 5** today 13:00–13:15 · 🔬 **Lab 4** Wed 28 Oct 15:00–16:50 · 📝 **PS 4** due Fri 30 Oct 17:00 · 📝 **PS 5** released Fri 30 Oct 14:00, due Fri 6 Nov 17:00 · 📘 **Midterm 1** Fri 6 Nov 18:00–19:15
 
 ---
 
@@ -231,5 +237,11 @@ For each function, determine domain/codomain given, and classify as injective, s
 8. **Challenge:** Many people expect $\mathbb{Z}\times\mathbb{Z}$ to be "bigger" than $\mathbb{Z}$, and so expect no surjection $\mathbb{Z}\to\mathbb{Z}\times\mathbb{Z}$ to exist. Argue informally for why that expectation is reasonable, then say what evidence would settle it. *(Friday's lecture resolves this: a bijection does exist, and the finite-counting intuition simply does not transfer to infinite sets.)*
 
 ---
+
+## Reading
+
+- **Rosen, 8e §2.3** — Functions: one-to-one, onto, bijections
+- **Epp, 5e §7.1–7.2** — Functions on general sets; one-to-one, onto and inverse functions
+- **Levin, 3e §0.4** — Functions
 
 *Next: Lecture 16 — Composition of Functions and Inverse Functions*

@@ -2,7 +2,13 @@
 ## Lecture · Week 7: Intellectual Property in Computing
 ### Copyright, Patents, Trade Secrets, and the DMCA
 
+*“Law and technology produce, together, a kind of regulation of creativity we've not seen before.”* — Lawrence Lessig, "Free Culture" keynote, OSCON (2002)
+
 **Date:** Wednesday 11 November 2026 · 13:00–13:50 · Week 7
+
+**Reading:** *Google v. Oracle* (2021), majority opinion · *Alice Corp. v. CLS Bank* (2014), majority opinion · Samuelson, "Freedom to Tinker" (2016), the DMCA §1201 excerpt — [[CS190 Week7/resources/Reading Guide|Reading Guide]]
+
+**Coursework:** 📝 **Position Paper 2** due today 12:00 · 📝 **Prep 7** due today 12:00
 
 ---
 

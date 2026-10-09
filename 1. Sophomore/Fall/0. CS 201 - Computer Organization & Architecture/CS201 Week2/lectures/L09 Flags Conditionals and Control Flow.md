@@ -2,9 +2,13 @@
 ## Week 2 · Lecture 3 of 3
 ### Flags, Conditionals, and Control Flow
 
+*“...our intellectual powers are rather geared to master static relations and... our powers to visualize processes evolving in time are relatively poorly developed.”* — Edsger W. Dijkstra, "Go To Statement Considered Harmful" (1968)
+
 ---
 
 **Reading:** CS:APP §3.6 · **Previous:** L08, arithmetic
+
+**Coursework:** 📝 **PS 1** due today 17:00 · 📊 **Quiz 3** Mon of Week 3 · 🔬 **Lab 2** Tue of Week 3 15:00–16:50 · 📝 **PS 3** released Wed of Week 3, due Fri of Week 4 17:00
 
 ---
 

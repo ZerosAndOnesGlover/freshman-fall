@@ -2,7 +2,13 @@
 ## Lecture 4 (L04) — Negating Quantified Statements and Logical Equivalences
 ### Thursday, Week 1
 
+*“The two eyes of exact science are mathematics and logic: the mathematical sect puts out the logical eye, the logical sect puts out the mathematical eye; each believing that it can see better with one eye than with two.”* — Augustus De Morgan, as quoted in Florian Cajori, *A History of Mathematics* (1894)
+
 **Date:** Thursday 1 October 2026 · 13:00–13:50 · Week 1
+
+**Reading:** Rosen, 8e §1.4 · Epp, 5e §3.2 · Levin, 3e §0.2 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 0** due Fri 2 Oct 17:00 · 📝 **PS 1** released Fri 2 Oct 14:00, due Fri 9 Oct 17:00 · 📊 **Quiz 2** Mon 5 Oct 13:00–13:15 · 🔬 **Lab 1** Wed 7 Oct 15:00–16:50
 
 ---
 
@@ -328,5 +334,11 @@ Let Alloc(b, t) = "block b is allocated at time t", Free(b, t) = "block b is fre
 5. Express "at most two integers satisfy P(x)" in predicate logic without using ∃!.
 
 ---
+
+## Reading
+
+- **Rosen, 8e §1.4** — Negating quantified expressions; logical equivalences with quantifiers
+- **Epp, 5e §3.2** — Predicates and quantified statements II
+- **Levin, 3e §0.2** — Mathematical statements
 
 *Next: Lecture 5 — Nested Quantifiers: When Order Matters*

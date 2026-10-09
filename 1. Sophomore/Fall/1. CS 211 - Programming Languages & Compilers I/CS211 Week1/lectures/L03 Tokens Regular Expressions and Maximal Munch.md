@@ -2,9 +2,13 @@
 ## Week 1 · Lecture 1 of 2
 ### Tokens, Regular Expressions, and Maximal Munch
 
+*“Some people, when confronted with a problem, think "I know, I'll use regular expressions." Now they have two problems.”* — Jamie Zawinski, alt.religion.emacs (1997)
+
 ---
 
 **Reading:** Dragon §3.1–3.3 · **Next:** L04, finite automata and the subset construction
+
+**Coursework:** 📊 **Quiz 1** today · 📝 **PS 1** released Wed this week, due Fri of Week 2 17:00 · 📝 **PS 0** due Fri this week 17:00 · 🔬 **Lab 1** Fri this week 14:00–15:50
 
 ---
 

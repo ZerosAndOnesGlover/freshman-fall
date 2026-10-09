@@ -2,9 +2,13 @@
 ## Week 8 · Lecture 1 of 3
 ### Layers, and the Latency Ladder Completed
 
+*“Never underestimate the bandwidth of a station wagon full of tapes hurtling down the highway.”* — Andrew S. Tanenbaum, *Computer Networks*, 3rd ed. (1996), paraphrasing Warren Jackson
+
 ---
 
 **Reading:** CS:APP §11.1–11.3 · **Previous:** L24, storage performance
+
+**Coursework:** 📊 **Quiz 8** today · 🔬 **Lab 7** Tue this week 15:00–16:50 · 📝 **PS 8** released Wed this week, due Fri of Week 9 17:00 · 📝 **PS 7** due Fri this week 17:00
 
 ---
 

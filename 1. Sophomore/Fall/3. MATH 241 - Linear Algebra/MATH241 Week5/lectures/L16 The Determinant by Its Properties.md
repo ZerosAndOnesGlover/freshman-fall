@@ -2,9 +2,13 @@
 ## Week 5 · Lecture 1 of 3 · **Monday**
 ### The Determinant, by Its Properties
 
+*“Less depends upon the choice of words than upon this, that their introduction shall be justified by pregnant theorems.”* — Carl Friedrich Gauss, abstract of *Disquisitiones generales circa superficies curvas* (1827)
+
 ---
 
 **Reading:** Strang §5.1 · **Previous:** Week 4's L15, change of basis · **Next:** L17, cofactors and what they cost
+
+**Coursework:** 📊 **Quiz 5** today · 📝 **PS 5** released Wed this week, due Fri of Week 6 17:00 · 💬 **Recitation 4** Thu this week 15:00–15:50 · 📝 **PS 4** due Fri this week 17:00
 
 > **Quiz 5 is the first ten minutes of this lecture** and covers Week 4.
 >

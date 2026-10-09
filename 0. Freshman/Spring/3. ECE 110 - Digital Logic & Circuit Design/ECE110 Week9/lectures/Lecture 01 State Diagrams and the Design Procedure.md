@@ -2,7 +2,11 @@
 ## Week 9 · Lecture 1 (Wednesday)
 ### State Diagrams and the Design Procedure
 
+*“We may compare a man in the process of computing a real number to a machine which is only capable of a finite number of conditions q1, q2, ..., qK which will be called "m-configurations".”* — Alan Turing, "On Computable Numbers" (1936), §1
+
 **Date:** Wednesday 24 March 2027 · 13:00–14:15 · Week 9
+
+**Coursework:** 📊 **Quiz 8** today 13:00–13:10 · 📝 **PS 8** due Thu 25 Mar 13:00 · 📝 **PS 9** released Thu 25 Mar 14:30, due Thu 1 Apr 13:00 · 🔬 **Lab 9** Fri 26 Mar 14:00–15:50
 
 ---
 

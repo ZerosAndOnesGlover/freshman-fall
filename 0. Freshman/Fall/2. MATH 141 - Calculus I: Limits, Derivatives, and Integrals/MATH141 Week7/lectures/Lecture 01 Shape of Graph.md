@@ -2,7 +2,11 @@
 ## Week 7 · Lecture 1 (Monday)
 ### Derivatives and the Shape of a Graph: Increasing/Decreasing, Concavity, and the First & Second Derivative Tests
 
+*“Geometrical Speculations have just as much Elegancy as Simplicity, and deserve just so much praise as they can promise Use.”* — Isaac Newton, *Arithmetica Universalis* (1707)
+
 **Date:** Monday 9 November 2026 · 11:00–11:50 · Week 7
+
+**Coursework:** 📊 **Quiz 7** today 11:00–11:15 · 🔬 **Lab 6** due today 17:00 · 📝 **PS 6** due Wed 11 Nov 11:00 · 📝 **PS 7** released Wed 11 Nov 12:00, due Wed 18 Nov 11:00 · 🔬 **Lab 7** Fri 13 Nov 15:00–16:50, report due Mon 16 Nov 17:00
 
 ---
 

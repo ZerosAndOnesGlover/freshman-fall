@@ -1,7 +1,13 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 2 · Lecture 1: Operators, Expressions, and Bit Manipulation
 
+*“[C has] the power of assembly language and the convenience of … assembly language.”* — Dennis Ritchie, as quoted by Cade Metz, *Wired* (2011)
+
 **Date:** Tuesday 6 October 2026 · 10:00–10:50 · Week 2
+
+**Reading:** K&R §2.5–2.12 · King Ch. 4 *(details at the end of the lecture)*
+
+**Coursework:** 📊 **Quiz 1** today 10:00–10:10 · 📝 **PS 1** due Fri 9 Oct 17:00 · 📝 **PS 2** released Fri 9 Oct 10:00, due Fri 16 Oct 17:00 · 🔬 **Lab 2** Mon 12 Oct 15:00–16:50
 
 ---
 
@@ -506,6 +512,13 @@ Outside `for` headers and a few macro idioms, the comma operator is best avoided
 | **Shift** | `<<` and `>>`: multiply/divide by powers of 2 |
 | **Ternary** | `cond ? a : b`: expression-level if-else |
 | **UB** | Undefined behavior: the compiler may do anything |
+
+---
+
+## Reading
+
+- **K&R §2.5–2.12** — every operator, type conversions, precedence and order of evaluation
+- **King Ch. 4** — Expressions; **§20.1** — bitwise operators
 
 ---
 

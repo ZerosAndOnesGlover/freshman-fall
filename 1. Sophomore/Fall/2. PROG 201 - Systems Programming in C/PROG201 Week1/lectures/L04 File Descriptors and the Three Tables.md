@@ -2,9 +2,13 @@
 ## Week 1 · Lecture 1 of 3
 ### File Descriptors and the Three Tables
 
+*“I think the major good idea in Unix was its clean and simple interface: open, close, read, and write.”* — Ken Thompson, "Unix and Beyond: An Interview with Ken Thompson", *IEEE Computer* (1999)
+
 ---
 
 **Reading:** APUE §3.1–3.4, §3.10–3.12 · **Previous:** W0 L03, signals · **Next:** L05, what `read` and `write` cost
+
+**Coursework:** 📊 **Quiz 1** today · 📝 **PS 1** released Wed this week, due Fri of Week 2 17:00 · 📝 **PS 0** due Fri this week 17:00 · 🔬 **Lab 1** Mon of Week 2 15:00–16:50
 
 > **Quiz 1 is at the start of today's lecture.** Ten minutes, covering **Week 0**. The answer key is
 > printed in the paper.

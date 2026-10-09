@@ -2,9 +2,13 @@
 ## Week 12 · Lecture 1 of 3 · **Monday**
 ### Regression and PCA: Two Ways to Fit
 
+*“Given any organ in a parent and the same or any other organ in its offspring, the mathematical measure of heredity is the correlation of these organs for pairs of parent and offspring.”* — Karl Pearson, "Regression, Heredity and Panmixia", *Philosophical Transactions of the Royal Society A* 187 (1896)
+
 ---
 
 **Reading:** Strang §7.3 (PCA) and §4.3 revisited · **Previous:** Week 11's L35, low-rank approximation · **Next:** L37, PageRank
+
+**Coursework:** 📝 **PS 12** released Wed this week, due Fri this week 17:00 · 💬 **Recitation 11** Thu this week 15:00–15:50 · 📝 **PS 11** due Fri this week 17:00 · 📕 **Final exam** Mon of finals week 09:00–11:30
 
 > **The last teaching week. There is no quiz** — Quiz 11 was the last.
 >

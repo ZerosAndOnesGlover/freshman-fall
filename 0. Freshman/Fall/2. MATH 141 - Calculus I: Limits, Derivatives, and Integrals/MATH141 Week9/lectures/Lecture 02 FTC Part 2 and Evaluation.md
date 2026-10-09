@@ -2,7 +2,11 @@
 ## Week 9 · Lecture 2 (Tuesday)
 ### The Fundamental Theorem, Part 2 — Evaluation
 
+*“In the long run, the methods are the important part of the course. It is not enough to know the theory; you should be able to apply it.”* — Richard Hamming, *Methods of Mathematics Applied to Calculus, Probability, and Statistics* (1985)
+
 **Date:** Tuesday 24 November 2026 · 11:00–11:50 · Week 9
+
+**Coursework:** 📝 **PS 8** due Wed 25 Nov 11:00 · 📝 **PS 9** released Wed 25 Nov 12:00, due Wed 2 Dec 11:00 · 🔬 **Lab 9** Fri 27 Nov 15:00–16:50 · 📊 **Quiz 10** Mon 30 Nov 11:00–11:15 · 📘 **Midterm 2** Wed 2 Dec 18:00–19:15
 
 ---
 

@@ -2,9 +2,13 @@
 ## Week 0 · Lecture 3 of 3
 ### The Agile Manifesto, Read Critically
 
+*“The business changes. The technology changes. The team changes. The team members change. The problem isn't change, per se, because change is going to happen; the problem, rather, is the inability to cope with change when it comes.”* — Kent Beck, *Extreme Programming Explained* (2000)
+
 ---
 
 **Sat:** second Tuesday of Week 0, 10:00–10:50, TH 200 · **Reading:** agilemanifesto.org (both pages — it takes four minutes) · **Next:** Week 1, requirements
+
+**Coursework:** 📝 **Assignment 0** released Wed this week 17:00, due Fri of Week 1 17:00 · 📋 **Team formation workshop** Thu this week 10:00–10:50
 **A 0 is released after this lecture**, Wednesday 17:00.
 
 ---

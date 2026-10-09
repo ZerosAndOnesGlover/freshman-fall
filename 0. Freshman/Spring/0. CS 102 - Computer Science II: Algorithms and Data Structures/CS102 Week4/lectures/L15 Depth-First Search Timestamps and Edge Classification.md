@@ -1,7 +1,13 @@
 # CS 102 · Computer Science II
 ## Lecture 15: Depth-First Search — Timestamps and Edge Classification
 
+*“For systems, the analogue of a face-lift is to add to the control graph an edge that creates a cycle, not just an additional node.”* — Alan Perlis, "Epigrams on Programming" (1982), #29
+
 **Date:** Friday 19 February 2027 · 09:00–09:50 · Week 4
+
+**Reading:** CLRS §20.3 (all four subsections)
+
+**Coursework:** 📝 **PS 3** due today 17:00 · 📝 **PS 4** released today 10:00, due Fri 26 Feb 17:00 · 📊 **Quiz 5** Mon 22 Feb 09:00–09:15 · 🔬 **Lab 4** Tue 23 Feb 15:00–16:50 · 📘 **Midterm 1** Mon 1 Mar 18:00–19:15
 
 ---
 

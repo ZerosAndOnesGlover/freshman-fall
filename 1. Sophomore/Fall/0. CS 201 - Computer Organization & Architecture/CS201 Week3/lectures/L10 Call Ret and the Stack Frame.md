@@ -2,9 +2,13 @@
 ## Week 3 · Lecture 1 of 3
 ### `call`, `ret`, and the Stack Frame
 
+*“To understand a program you must become both the machine and the program.”* — Alan Perlis, "Epigrams on Programming" (1982), #23
+
 ---
 
 **Reading:** CS:APP §3.7.1–3.7.3 · **Previous:** L09, flags and control flow
+
+**Coursework:** 📊 **Quiz 3** today · 🔬 **Lab 2** Tue this week 15:00–16:50 · 📝 **PS 3** released Wed this week, due Fri of Week 4 17:00 · 📝 **PS 2** due Fri this week 17:00
 
 ---
 

@@ -2,7 +2,11 @@
 ## Week 9 · Lecture 3 (Friday)
 ### Functions as Power Series
 
+*“When a theory is sufficiently general to cover many fields of application, it acquires some "truth" from each of them.”* — Richard Hamming, *Methods of Mathematics Applied to Calculus, Probability, and Statistics* (1985)
+
 **Date:** Friday 26 March 2027 · 11:00–11:50 · Week 9
+
+**Coursework:** 📝 **PS 8** due today 17:00 · 📝 **PS 9** released today 12:00, due Fri 2 Apr 17:00 · 📊 **Quiz 10** Mon 29 Mar 11:00–11:15 · 📘 **Midterm 2** Wed 31 Mar 18:00–19:15 · 🔬 **Lab 9** Wed 31 Mar 15:00–16:50
 
 ---
 

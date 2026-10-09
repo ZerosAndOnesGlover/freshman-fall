@@ -2,9 +2,13 @@
 ## Week 4 · Lecture 1 of 3
 ### The Memory Hierarchy, Measured
 
+*“We are therefore forced to recognize the possibility of constructing a hierarchy of memories, each of which has greater capacity than the preceding but which is less quickly accessible.”* — Arthur Burks, Herman Goldstine & John von Neumann, *Preliminary Discussion of the Logical Design of an Electronic Computing Instrument* (1946)
+
 ---
 
 **Reading:** CS:APP §6.1–6.3 · **Previous:** L12, alignment and recursion
+
+**Coursework:** 📊 **Quiz 4** today · 🔬 **Lab 3** Tue this week 15:00–16:50 · 📝 **PS 4** released Wed this week, due Fri of Week 5 17:00 · 📝 **PS 3** due Fri this week 17:00 · 📘 **Midterm 1** Mon of Week 5 18:00–19:15
 
 ---
 

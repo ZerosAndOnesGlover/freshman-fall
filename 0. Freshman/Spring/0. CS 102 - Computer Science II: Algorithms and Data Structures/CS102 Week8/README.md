@@ -54,7 +54,7 @@ By the end of Week 8, you should be able to:
 | [[PS 8 Dynamic Programming II]] | 100 points, due Fri 26 Mar 17:00 |
 | [[CS102 Week8/assignments/QUIZ 8 Week 8 Monday\|QUIZ 8 Week 8 Monday]] | 20 points, formative — **covers Week 7** |
 | [[LAB 8 Implementing Floyd-Warshall]] | Five lines, and four ways to get them wrong |
-| [[CS102 Week8/resources/Reading Guide Week 8\|Reading Guide Week 8]] | CLRS §14.2, §15.5, §23.1–23.2 |
+| [[CS102 Week8/resources/Reading Guide Week 8\|Reading Guide Week 8]] | CLRS §14.2, §14.5, §23.2 |
 | `solutions_instructor/` | PS 8 and Lab 8 solutions — instructor only |
 
 ### The Three Ideas Most Likely to Be Missed

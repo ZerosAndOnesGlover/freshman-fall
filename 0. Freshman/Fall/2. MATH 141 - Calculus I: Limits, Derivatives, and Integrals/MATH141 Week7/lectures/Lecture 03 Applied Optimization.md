@@ -2,7 +2,11 @@
 ## Week 7 · Lecture 3 (Wednesday)
 ### Applied Optimization: Maximum and Minimum Problems
 
+*“Useful Things, though Mechanical, are justly preferable to useless Speculations in Geometry, as we learn from Pappus.”* — Isaac Newton, *Arithmetica Universalis* (1707)
+
 **Date:** Wednesday 11 November 2026 · 11:00–11:50 · Week 7
+
+**Coursework:** 📝 **PS 6** due today 11:00 · 📝 **PS 7** released today 12:00, due Wed 18 Nov 11:00 · 🔬 **Lab 7** Fri 13 Nov 15:00–16:50, report due Mon 16 Nov 17:00 · 📊 **Quiz 8** Mon 16 Nov 11:00–11:15
 
 ---
 

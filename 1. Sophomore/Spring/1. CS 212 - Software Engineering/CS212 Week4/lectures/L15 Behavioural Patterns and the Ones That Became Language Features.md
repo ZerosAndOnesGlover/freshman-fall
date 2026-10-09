@@ -2,9 +2,13 @@
 ## Week 4 · Lecture 3 of 3
 ### Behavioural Patterns, and the Ones That Became Language Features
 
+*“In English every word can be verbed. Would that it were so in our programming languages.”* — Alan Perlis, "Epigrams on Programming" (1982), #59
+
 ---
 
 **Sat:** Thursday of Week 4, 10:00–10:50, TH 200 · **Reading:** GoF Ch. 5, selectively; Norvig, *"Design Patterns in Dynamic Languages"* (1996) · **Next:** Week 5, testing
+
+**Coursework:** 📝 **Assignment 3** due Fri this week 17:00 · 📊 **Quiz 5** Tue of Week 5 · 📝 **Assignment 5** released Wed of Week 5 17:00, due Fri of Week 6 17:00 · 📘 **Midterm** Wed of Week 6 18:00–19:15
 
 ---
 

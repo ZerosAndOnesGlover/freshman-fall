@@ -2,7 +2,13 @@
 ## Lecture 37 (L37) — Modular Arithmetic, the GCD, and RSA
 ### Thursday, Week 12
 
+*“The problem of distinguishing prime numbers from composite numbers and of resolving the latter into their prime factors is known to be one of the most important and useful in arithmetic.”* — Carl Friedrich Gauss, *Disquisitiones Arithmeticae* (1801), Art. 329
+
 **Date:** Thursday 17 December 2026 · 13:00–13:50 · Week 12
+
+**Reading:** Rosen, 8e §4.1–4.6 · Epp, 5e §8.4 · Levin, 3e §5.2 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 11** due Fri 18 Dec 17:00 · 📝 **PS 12** released Fri 18 Dec 14:00, due Wed 23 Dec 17:00 · 📕 **Final exam** Mon 21 Dec 08:00–10:00 · 🔬 **Lab 12** Wed 23 Dec 15:00–16:50
 
 ---
 
@@ -204,6 +210,6 @@ would break RSA on a sufficiently large quantum computer.
 
 - **Rosen, 8e §4.1–4.6** — Number theory and cryptography
 - **Epp, 5e §8.4** — Modular arithmetic and applications
-- **Levin, 3e §3.1** — Number theory
+- **Levin, 3e §5.2** — Introduction to number theory
 
 *Next: Lecture 38 — Review and the Road Ahead*

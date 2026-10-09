@@ -1,7 +1,13 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 8 · Lecture 1: File I/O Basics (`fopen`, `fread`, `fwrite`, and Text Processing)
 
+*“Write programs that do one thing and do it well. Write programs to work together. Write programs to handle text streams, because that is a universal interface.”* — Doug McIlroy, as quoted in Eric S. Raymond, *The Art of Unix Programming* (2003)
+
 **Date:** Tuesday 17 November 2026 · 10:00–10:50 · Week 8
+
+**Reading:** K&R Chapter 7 · King Ch. 22 · man pages *(details at the end of the lecture)*
+
+**Coursework:** 📊 **Quiz 7** today 10:00–10:10 · 📝 **PS 7** due today 10:00 · 📝 **PS 8** released Thu 19 Nov 11:00, due Tue 24 Nov 10:00 · 🔬 **Lab 8** Mon 23 Nov 15:00–16:50
 
 ---
 

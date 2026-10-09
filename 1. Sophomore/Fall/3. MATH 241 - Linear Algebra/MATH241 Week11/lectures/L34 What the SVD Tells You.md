@@ -2,9 +2,13 @@
 ## Week 11 · Lecture 2 of 3 · **Tuesday**
 ### What the SVD Tells You
 
+*“The applications of knowledge, especially mathematics, reveal the unity of all knowledge. In a new situation almost anything and everything you ever learned might be applicable, and the artificial divisions seem to vanish.”* — Richard Hamming, *Methods of Mathematics Applied to Calculus, Probability, and Statistics* (1985)
+
 ---
 
 **Reading:** Strang §7.2, §4.4's pseudoinverse remarks · **Previous:** L33, the SVD · **Next:** L35, low-rank approximation
+
+**Coursework:** 📝 **PS 11** released Wed this week, due Fri of Week 12 17:00 · 💬 **Recitation 10** Thu this week 15:00–15:50 · 📝 **PS 10** due Fri this week 17:00 · 📕 **Final exam** Mon of finals week 09:00–11:30
 
 > **Recitation 10 is Thursday**, and Midterm 2 papers are returned there. **PS 10 is due Friday.**
 >

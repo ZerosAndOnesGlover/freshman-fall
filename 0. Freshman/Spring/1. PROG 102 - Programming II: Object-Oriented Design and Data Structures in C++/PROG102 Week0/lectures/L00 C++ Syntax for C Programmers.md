@@ -1,10 +1,14 @@
 # PROG 102 · Lecture 00
 ## C++ Syntax for C Programmers
 
+*“C makes it easy to shoot yourself in the foot; C++ makes it harder, but when you do it blows your whole leg off.”* — Bjarne Stroustrup, from his FAQ
+
 **Week 0 · Orientation session · 50 minutes**
 **Reading:** *C++ Primer* Ch. 1, §2.3, §2.5, §6.2 · **Reference:** [cppreference.com](https://en.cppreference.com)
 
 **Date:** Tuesday 19 January 2027 · 10:00–10:50 · Week 0
+
+**Coursework:** 📝 **PS 0** released Fri 22 Jan 11:00, due Fri 29 Jan 17:00 · 🔬 **Lab 0** Mon 25 Jan 15:00–16:50
 
 ---
 

@@ -1,7 +1,13 @@
 # CS 102 · Computer Science II
 ## Lecture 17: Dijkstra's Algorithm
 
+*“What is the shortest way to travel from Rotterdam to Groningen, in general: from given city to given city. It is the algorithm for the shortest path, which I designed in about twenty minutes.”* — Edsger W. Dijkstra, interview with Philip L. Frana (2001), *Communications of the ACM* 53(8) (2010)
+
 **Date:** Wednesday 24 February 2027 · 09:00–09:50 · Week 5
+
+**Reading:** CLRS §22.3
+
+**Coursework:** 📝 **PS 4** due Fri 26 Feb 17:00 · 📝 **PS 5** released Fri 26 Feb 10:00, due Fri 5 Mar 17:00 · 📊 **Quiz 6** Mon 1 Mar 09:00–09:15 · 📘 **Midterm 1** Mon 1 Mar 18:00–19:15 · 🔬 **Lab 5** Tue 2 Mar 15:00–16:50
 
 ---
 

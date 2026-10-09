@@ -2,9 +2,13 @@
 ## Week 3 · Lecture 2 of 3
 ### Sleeping Locks, Futexes, and When to Spin
 
+*“We postulate, that inspecting the present value of such a common variable and assigning a new value to such a common variable are to be regarded as indivisible, non-interfering actions.”* — Edsger W. Dijkstra, "Cooperating Sequential Processes" (EWD123, 1965)
+
 ---
 
 **Sat:** Wednesday of Week 3, 09:00–09:50, VNC 101 · **Reading:** OSTEP Ch. 28 §28.11–28.15; Drepper, "Futexes Are Tricky" §1–§6 · **Next:** L12, condition variables, semaphores and the classic problems
+
+**Coursework:** 📝 **PS 3** released today, due Fri of Week 4 17:00 · 📝 **PS 2** due Fri this week 17:00 · 📊 **Quiz 4** Mon of Week 4 · 📘 **Midterm 1** Mon of Week 4 18:00–19:15 · 🔬 **Lab 3** Tue of Week 4 15:00–16:50
 
 ---
 

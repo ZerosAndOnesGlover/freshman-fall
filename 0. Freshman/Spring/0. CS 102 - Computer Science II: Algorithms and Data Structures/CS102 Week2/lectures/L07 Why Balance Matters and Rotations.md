@@ -1,7 +1,13 @@
 # CS 102 · Computer Science II
 ## Lecture 07: Why Balance Matters, and the Rotation
 
+*“Symmetry is a complexity-reducing concept (co-routines include subroutines); seek it everywhere.”* — Alan Perlis, "Epigrams on Programming" (1982), #6
+
 **Date:** Monday 1 February 2027 · 09:00–09:50 · Week 2
+
+**Reading:** CLRS §13.2 (rotations) · Sedgewick & Wayne §3.3
+
+**Coursework:** 📊 **Quiz 2** today 09:00–09:15 · 🔬 **Lab 1** Tue 2 Feb 15:00–16:50 · 📝 **PS 1** due Fri 5 Feb 17:00 · 📝 **PS 2** released Fri 5 Feb 10:00, due Fri 12 Feb 17:00
 
 ---
 

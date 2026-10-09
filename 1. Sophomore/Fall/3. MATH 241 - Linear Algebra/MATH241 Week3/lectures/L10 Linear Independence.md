@@ -2,9 +2,13 @@
 ## Week 3 · Lecture 1 of 3 · **Monday**
 ### Linear Independence
 
+*“I feel entitled to hope that I have found in this new analysis the only natural method according to which mathematics should be applied to nature, and according to which geometry may also be treated, whenever it leads to general and to fruitful results.”* — Hermann Grassmann, *Die lineale Ausdehnungslehre* (1844)
+
 ---
 
 **Reading:** Strang §3.5, first half · **Previous:** Week 2's L09, the null space · **Next:** L11, basis and dimension
+
+**Coursework:** 📊 **Quiz 3** today · 📝 **PS 3** released Wed this week, due Fri of Week 4 17:00 · 💬 **Recitation 2** Thu this week 15:00–15:50 · 📝 **PS 2** due Fri this week 17:00
 
 > **Quiz 3 is the first ten minutes of this lecture** and covers Week 2.
 

@@ -2,7 +2,13 @@
 ## Lecture 13 (L13) — Set Identities and Proof Techniques
 ### Thursday, Week 4
 
+*“There is not only a close analogy between the operations of the mind in general reasoning and its operations in the particular science of Algebra, but there is to a considerable extent an exact agreement in the laws by which the two classes of operations are conducted.”* — George Boole, *An Investigation of the Laws of Thought* (1854)
+
 **Date:** Thursday 22 October 2026 · 13:00–13:50 · Week 4
+
+**Reading:** Rosen, 8e §2.2 · Epp, 5e §6.2–6.3 · Levin, 3e §0.3 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 3** due Fri 23 Oct 17:00 · 📝 **PS 4** released Fri 23 Oct 14:00, due Fri 30 Oct 17:00 · 📊 **Quiz 5** Mon 26 Oct 13:00–13:15 · 🔬 **Lab 4** Wed 28 Oct 15:00–16:50
 
 ---
 
@@ -289,5 +295,11 @@ $x \in A$ means $x$ is an element of $A$. $X \subseteq A$ means every element of
 5. Prove: $A - (B - C) = (A - B) \cup (A \cap C)$.
 
 ---
+
+## Reading
+
+- **Rosen, 8e §2.2** — Set identities and their proofs
+- **Epp, 5e §6.2–6.3** — Properties of sets; disproofs and algebraic proofs
+- **Levin, 3e §0.3** — Sets
 
 *Next: Lecture 14 — Power Sets, Cartesian Products, and Inclusion-Exclusion*

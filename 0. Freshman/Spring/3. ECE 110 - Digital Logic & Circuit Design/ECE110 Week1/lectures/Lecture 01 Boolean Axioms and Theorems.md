@@ -2,7 +2,11 @@
 ## Week 1 · Lecture 1 (Wednesday)
 ### Boolean Axioms and Theorems
 
+*“To deduce the laws of the symbols of Logic from a consideration of those operations of the mind which are implied in the strict use of language as an instrument of reasoning.”* — George Boole, *An Investigation of the Laws of Thought* (1854), stating his aim
+
 **Date:** Wednesday 27 January 2027 · 13:00–14:15 · Week 1
+
+**Coursework:** 📝 **PS 0** due Thu 28 Jan 13:00 · 📝 **PS 1** released Thu 28 Jan 14:30, due Thu 4 Feb 13:00 · 🔬 **Lab 1** Fri 29 Jan 14:00–15:50
 
 ---
 

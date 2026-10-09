@@ -1,7 +1,13 @@
 # PHYS 141 · Physics I: Mechanics, Waves & Thermodynamics
 ## Lecture 37 — The First Law of Thermodynamics
 
+*“Motive power is, in quantity, invariable in nature; that it is, correctly speaking, never either produced or destroyed. It is true that it changes form, that is, it produces sometimes one sort of motion, sometimes another, but it is never annihilated.”* — Sadi Carnot, notes on physics, published posthumously (1878)
+
 **Date:** Monday 14 December 2026 · 14:00–14:50 · Week 12
+
+**Reading:** Serway & Jewett §19.4–19.5, §20.4 (adiabatic processes) · HRK Ch. 23
+
+**Coursework:** 📊 **Quiz 11** today 14:00 · 🔬 **Lab 12** Thu 17 Dec 14:00–17:00 · 📝 **PS 11** due Fri 18 Dec 17:00 · 📝 **PS 12** released Fri 18 Dec 15:00, due Wed 23 Dec 17:00
 
 ---
 

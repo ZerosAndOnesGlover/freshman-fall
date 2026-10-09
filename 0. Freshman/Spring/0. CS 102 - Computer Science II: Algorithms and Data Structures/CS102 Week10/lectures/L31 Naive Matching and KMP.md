@@ -1,7 +1,13 @@
 # CS 102 · Computer Science II
 ## Lecture 31: Naive Matching and the Knuth–Morris–Pratt Algorithm
 
+*“Computer programming is an art, because it applies accumulated knowledge to the world, because it requires skill and ingenuity, and especially because it produces objects of beauty.”* — Donald Knuth, "Computer Programming as an Art" (Turing Award lecture, 1974)
+
 **Date:** Monday 29 March 2027 · 09:00–09:50 · Week 10
+
+**Reading:** CLRS §32.1, §32.4 · §32.3 optional
+
+**Coursework:** 📊 **Quiz 10** today 09:00–09:15 · 📋 **Project 2** released today 09:00, due Fri 16 Apr 17:00 · 📘 **Midterm 2** today 18:00–19:15 · 🔬 **Lab 9** Tue 30 Mar 15:00–16:50 · 📝 **PS 10** released Fri 2 Apr 10:00, due Fri 9 Apr 17:00 · 📝 **PS 9** due Fri 2 Apr 17:00
 
 ---
 

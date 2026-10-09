@@ -2,8 +2,8 @@
 
 ## Required Textbook Reading
 
-- **HRK:** Halliday, Resnick & Krane — Chapter 2: Motion in One Dimension (all sections)
-- **Serway:** Chapter 2: Motion in One Dimension (all sections)
+- **HRK:** Halliday, Resnick & Krane, *Physics*, 5th ed. — Ch. 2 (Motion in One Dimension)
+- **Serway:** Serway & Jewett, *Physics for Scientists and Engineers*, 10th ed. — Ch. 2 (Motion in One Dimension) §2.1–2.9
 
 Read both treatments of the same material. They complement each other: HRK is more mathematically demanding; Serway provides more worked examples.
 

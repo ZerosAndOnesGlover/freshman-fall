@@ -1,7 +1,13 @@
 # CS 102 · Computer Science II
 ## Lecture 12: Priority Queues, `heapq`, and What Heaps Are For
 
+*“In software systems, it is often the early bird that makes the worm.”* — Alan Perlis, "Epigrams on Programming" (1982), #43
+
 **Date:** Friday 12 February 2027 · 09:00–09:50 · Week 3
+
+**Reading:** CLRS §6.5 · Sedgewick & Wayne §2.4
+
+**Coursework:** 📝 **PS 2** due today 17:00 · 📝 **PS 3** released today 10:00, due Fri 19 Feb 17:00 · 📊 **Quiz 4** Mon 15 Feb 09:00–09:15 · 🔬 **Lab 3** Tue 16 Feb 15:00–16:50
 
 ---
 

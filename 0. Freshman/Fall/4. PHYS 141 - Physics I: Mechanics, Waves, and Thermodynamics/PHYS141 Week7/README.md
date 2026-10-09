@@ -51,5 +51,5 @@ By the end of Week 7, you will be able to:
 
 ## Textbooks
 
-- **HRK:** Halliday, Resnick & Krane — Ch. 12 (Angular Momentum), Ch. 13 (Equilibrium of Rigid Bodies)
-- **Serway:** Ch. 11 (Angular Momentum), Ch. 12 (Static Equilibrium and Elasticity)
+- **HRK:** Halliday, Resnick & Krane — Ch. 10 (Angular Momentum)
+- **Serway:** Ch. 11 (Angular Momentum) §11.1–11.5; Ch. 12 (Static Equilibrium and Elasticity) §12.1–12.3

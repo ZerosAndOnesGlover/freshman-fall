@@ -1,11 +1,15 @@
 # PROG 102 · Lecture 14
 ## Virtual Functions and the vtable
 
+*“Actually I made up the term "object-oriented", and I can tell you I did not have C++ in mind.”* — Alan Kay, "The Computer Revolution Hasn't Happened Yet", OOPSLA keynote (1997)
+
 **Week 4 · Wednesday · 50 minutes**
 **Reading:** *C++ Primer* §15.3, §15.5 · **Reference:** Stroustrup §20.3
 **Assumes:** L13, and L01 (`this`)
 
 **Date:** Wednesday 17 February 2027 · 10:00–10:50 · Week 4
+
+**Coursework:** 📝 **PS 3** due Fri 19 Feb 17:00 · 📝 **PS 4** released Fri 19 Feb 10:00, due Fri 26 Feb 17:00 · 🔬 **Lab 4** Mon 22 Feb 15:00–16:50 · 📊 **Quiz 5** Tue 23 Feb 10:00–10:15 · 📘 **Midterm 1** Tue 2 Mar 18:00–19:30
 
 ---
 

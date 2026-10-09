@@ -2,7 +2,13 @@
 ## Lecture 28 (L28) — Solving Linear Recurrences: The Characteristic Equation
 ### Thursday, Week 9
 
+*“Number, place, and combination... the three intersecting but distinct spheres of thought to which all mathematical ideas admit of being referred.”* — James Joseph Sylvester, *Collected Mathematical Papers*, Vol. 1 (1904), p. 91
+
 **Date:** Thursday 26 November 2026 · 13:00–13:50 · Week 9
+
+**Reading:** Rosen, 8e §8.2 · Epp, 5e §5.8 · Levin, 3e §2.4 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 8** due Fri 27 Nov 17:00 · 📝 **PS 9** released Fri 27 Nov 14:00, due Fri 4 Dec 17:00 · 📊 **Quiz 10** Mon 30 Nov 13:00–13:15 · 🔬 **Lab 9** Wed 2 Dec 15:00–16:50
 
 ---
 

@@ -1,7 +1,13 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 7 · Lecture 3: Linked Lists — Structs and Pointers Combined
 
+*“If a program manipulates a large amount of data, it does so in a small number of ways.”* — Alan Perlis, "Epigrams on Programming" (1982), #5
+
 **Date:** Thursday 12 November 2026 · 10:00–10:50 · Week 7
+
+**Reading:** K&R §6.5 · King Ch. 17 · CLRS Ch. 10 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 7** released today 11:00, due Tue 17 Nov 10:00 · 📝 **PS 6** due Fri 13 Nov 17:00 · 🔬 **Lab 7** Mon 16 Nov 15:00–16:50 · 📊 **Quiz 7** Tue 17 Nov 10:00–10:10
 
 ---
 

@@ -1,7 +1,13 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 6 · Lecture 1: The Process Memory Map and `malloc`
 
+*“... we do not consider it as good engineering practice to consume a resource lavishly just because it happens to be cheap.”* — Niklaus Wirth, *Project Oberon* (2013), §2.3
+
 **Date:** Tuesday 3 November 2026 · 10:00–10:50 · Week 6
+
+**Reading:** K&R, §5.4, §7.8.5 · `man 3 malloc` · `man 3 calloc` · CWE-190, CWE-680 *(details at the end of the lecture)*
+
+**Coursework:** 📊 **Quiz 5** today 10:00–10:10 · 📘 **Midterm 1** Wed 4 Nov 18:00–19:30 · 📝 **PS 5** due Fri 6 Nov 17:00 · 📝 **PS 6** released Fri 6 Nov 10:00, due Fri 13 Nov 17:00 · 🔬 **Lab 6** Mon 9 Nov 15:00–16:50
 
 ---
 

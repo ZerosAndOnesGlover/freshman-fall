@@ -1,7 +1,13 @@
 # CS 102 · Computer Science II
 ## Lecture 08: AVL Trees — Insertion, the Height Bound, and Deletion
 
+*“Programmers are not to be measured by their ingenuity and their logic but by the completeness of their case analysis.”* — Alan Perlis, "Epigrams on Programming" (1982), #32
+
 **Date:** Wednesday 3 February 2027 · 09:00–09:50 · Week 2
+
+**Reading:** CLRS Problem 13-3 (AVL trees) · Weiss, *Data Structures and Algorithm Analysis*, §4.4
+
+**Coursework:** 📝 **PS 1** due Fri 5 Feb 17:00 · 📝 **PS 2** released Fri 5 Feb 10:00, due Fri 12 Feb 17:00 · 📊 **Quiz 3** Mon 8 Feb 09:00–09:15 · 🔬 **Lab 2** Tue 9 Feb 15:00–16:50
 
 ---
 

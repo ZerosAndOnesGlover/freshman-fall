@@ -50,8 +50,8 @@ By the end of Week 0, you will be able to:
 
 ## Textbooks
 
-- **Primary:** Halliday, Resnick & Krane — *Physics*, 5th ed. (Wiley) — Ch. 1–3
-- **Secondary:** Serway & Jewett — *Physics for Scientists and Engineers*, 10th ed. — Ch. 1–3
+- **Primary:** Halliday, Resnick & Krane — *Physics*, 5th ed. (Wiley) — Ch. 1
+- **Secondary:** Serway & Jewett — *Physics for Scientists and Engineers*, 10th ed. — Ch. 1, Ch. 3, §7.3, §11.1
 
 ---
 

@@ -2,9 +2,13 @@
 ## Week 5 · Lecture 1 of 3
 ### The Test Pyramid, and What Each Level Buys
 
+*“"How to test?" is a question that cannot be answered in general. "When to test?" however, does have a general answer: as early and as often as possible.”* — Bjarne Stroustrup, *The C++ Programming Language*
+
 ---
 
 **Sat:** Tuesday of Week 5, 10:00–10:50, TH 200 · **⚠️ Quiz 5 in the first ten minutes** — covers Week 4 · **Reading:** Beck, *TDD by Example*, Part I — **read it in one sitting this week** · **Next:** L17, TDD
+
+**Coursework:** 📊 **Quiz 5** today · 📝 **Assignment 5** released Wed this week 17:00, due Fri of Week 6 17:00 · 📝 **Assignment 4** due Fri this week 17:00 · 📘 **Midterm** Wed of Week 6 18:00–19:15
 
 ---
 

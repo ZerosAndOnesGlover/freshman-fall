@@ -2,9 +2,13 @@
 ## Week 10 · Lecture 2 of 3 · **Tuesday**
 ### Positive Definite Matrices and Quadratic Forms
 
+*“As the prerogative of Natural Science is to cultivate a taste for observation, so that of Mathematics is, almost from the starting point, to stimulate the faculty of invention.”* — James Joseph Sylvester, "A Plea for the Mathematician", *Nature* 1 (1869)
+
 ---
 
 **Reading:** Strang §6.5 · **Previous:** L30, the spectral theorem · **Next:** L32, what positive definiteness is for
+
+**Coursework:** 📝 **PS 10** released Wed this week, due Fri of Week 11 17:00 · 💬 **Recitation 9** Thu this week 15:00–15:50 · 📝 **PS 9** due Fri this week 17:00 · 📊 **Quiz 11** Mon of Week 11
 
 > **Midterm 2 is tomorrow**, Nov 12, **18:00–19:15, SSB 110**, covering **Weeks 6–9**. **Nothing
 > from this week is on it**, and the last hour of revision is better spent on Week 7's

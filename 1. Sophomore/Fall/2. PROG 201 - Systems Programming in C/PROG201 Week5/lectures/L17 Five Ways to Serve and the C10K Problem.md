@@ -2,9 +2,13 @@
 ## Week 5 · Lecture 2 of 3
 ### Five Ways to Serve, and the C10K Problem
 
+*“To our dismay, users who had been enduring several hour waits between jobs run under batch processing were suddenly restless when response times were more than a second.”* — Fernando J. Corbató, "On Building Systems That Will Fail", Turing Award Lecture (1991)
+
 ---
 
 **Reading:** APUE §16.4–16.5 · TLPI Ch. 60 · Kegel, *The C10K Problem* (1999, updated to 2014) · **Previous:** L16 · **Next:** L18 — `epoll` and non-blocking sockets
+
+**Coursework:** 📝 **PS 5** released today, due Fri of Week 6 17:00 · 📝 **PS 4** due Fri this week 17:00 · 📊 **Quiz 6** Tue of Week 6
 
 ---
 

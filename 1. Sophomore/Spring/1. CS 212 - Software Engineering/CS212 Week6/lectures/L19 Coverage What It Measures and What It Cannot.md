@@ -2,9 +2,13 @@
 ## Week 6 · Lecture 1 of 3
 ### Coverage: What It Measures, and What It Cannot
 
+*“The key is to test the areas that you are most worried about going wrong. That way you get the most benefit for your testing effort. It is better to write and run incomplete tests than not to run complete tests”* — Martin Fowler, *Refactoring* (1999)
+
 ---
 
 **Sat:** Tuesday of Week 6, 10:00–10:50, TH 200 · **⚠️ Quiz 6 in the first ten minutes** — covers Week 5 · **Reading:** coverage.py docs, "Branch coverage" · **Next:** L20, property-based testing
+
+**Coursework:** 📊 **Quiz 6** today · 📋 **Phase 1 presentation** today · 📘 **Midterm** Wed this week 18:00–19:15 · 📝 **Assignment 6** released Wed this week 17:00, due Fri of Week 7 17:00 · 📝 **Assignment 5** due Fri this week 17:00
 **⚠️ Phase 1 presentations follow this lecture. Midterm is tomorrow, Wednesday 4 March, 18:00–19:15, Weeks 0–5.**
 
 ---

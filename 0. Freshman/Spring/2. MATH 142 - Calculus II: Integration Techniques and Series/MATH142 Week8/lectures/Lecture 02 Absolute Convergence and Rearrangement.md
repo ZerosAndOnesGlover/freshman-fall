@@ -2,7 +2,11 @@
 ## Week 8 · Lecture 2 (Tuesday)
 ### Absolute Convergence, and a Theorem That Should Disturb You
 
+*“Les séries divergentes sont en général quelque chose de bien fatal et c'est une honte qu'on ose y fonder aucune démonstration. On peut démontrer tout ce qu'on veut en les employant. [Divergent series are, in general, something deadly, and it is a disgrace to base any proof on them. One can prove anything one wants by using them.]”* — Niels Henrik Abel, letter to Bernt Holmboe (January 1826)
+
 **Date:** Tuesday 16 March 2027 · 11:00–11:50 · Week 8
+
+**Coursework:** 🔬 **Lab 7** Wed 17 Mar 15:00–16:50 · 📝 **PS 7** due Fri 19 Mar 17:00 · 📝 **PS 8** released Fri 19 Mar 12:00, due Fri 26 Mar 17:00 · 📊 **Quiz 9** Mon 22 Mar 11:00–11:15
 
 ---
 

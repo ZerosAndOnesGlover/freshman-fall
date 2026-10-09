@@ -2,9 +2,13 @@
 ## Week 2 · Lecture 2 of 2
 ### Bottom-Up Parsing, and What Bison Is Telling You
 
+*“There will always be things we wish to say in our programs that in all known languages can only be said poorly.”* — Alan Perlis, "Epigrams on Programming" (1982), #26
+
 ---
 
 **Reading:** Dragon §4.5–4.7 · **Next:** Week 3, L07 — the symbol table and what a name means
+
+**Coursework:** 📝 **PS 1** due Fri this week 17:00 · 🔬 **Lab 2** Fri this week 14:00–15:50 · 📊 **Quiz 3** Tue of Week 3 · 📝 **PS 3** released Wed of Week 3, due Fri of Week 4 17:00 · 📘 **Midterm 1** Wed of Week 4 20:00–21:15
 
 ---
 

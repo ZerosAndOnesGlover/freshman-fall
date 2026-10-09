@@ -1,10 +1,15 @@
 # CS 101 · Lecture 21 (Week 6, Lecture 3)
 ## Algorithm Analysis III: Complexity Classes in Depth, and Theory Meets Practice
 
+*“Fools ignore complexity. Pragmatists suffer it. Some can avoid it. Geniuses remove it.”* — Alan Perlis, "Epigrams on Programming" (1982), #58
+
 **Week 6 · Friday**
-*"An O(n²) algorithm on n = 1,000,000 inputs would require 10¹² operations — roughly 11 days at 10⁹ operations/second. An O(n log n) algorithm needs only 20,000,000 operations — under a second." — CS 101*
 
 **Date:** Friday 6 November 2026 · 09:00–09:50 · Week 6
+
+**Reading:** CLRS, Ch. 3.1 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 5** due today 17:00 · 📝 **PS 6** released today 10:00, due Fri 13 Nov 17:00 · 🔬 **Lab 6** Tue 10 Nov 15:00–16:50 · 📊 **Quiz 7** Wed 11 Nov 09:00–09:10
 
 ---
 

@@ -2,9 +2,13 @@
 ## Week 8 · Lecture 2 of 3
 ### TCP — Reliability, Flow, and Congestion
 
+*“TCP implementations will follow a general principle of robustness: be conservative in what you do, be liberal in what you accept from others.”* — Jon Postel, RFC 793, *Transmission Control Protocol* (1981), §2.10
+
 ---
 
 **Reading:** CS:APP §11.4 · **Previous:** L25, layers and the latency ladder
+
+**Coursework:** 📝 **PS 8** released today, due Fri of Week 9 17:00 · 📝 **PS 7** due Fri this week 17:00 · 📊 **Quiz 9** Mon of Week 9 · 🔬 **Lab 8** Tue of Week 9 15:00–16:50 · 📘 **Midterm 2** Mon of Week 10 18:00–19:15
 
 ---
 

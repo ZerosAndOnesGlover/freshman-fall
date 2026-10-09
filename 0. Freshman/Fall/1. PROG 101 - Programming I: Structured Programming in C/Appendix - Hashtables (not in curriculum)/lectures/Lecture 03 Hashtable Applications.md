@@ -1,6 +1,10 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Appendix · Lecture 3: Building a Complete Hash Table and Its Applications
 
+*“We will never run out of things to program as long as there is a single program around.”* — Alan Perlis, "Epigrams on Programming" (1982), #100
+
+**Reading:** CLRS Ch. 11 · Sedgewick & Wayne §3.5 *(details at the end of the lecture)*
+
 ---
 
 ## Lecture Goals

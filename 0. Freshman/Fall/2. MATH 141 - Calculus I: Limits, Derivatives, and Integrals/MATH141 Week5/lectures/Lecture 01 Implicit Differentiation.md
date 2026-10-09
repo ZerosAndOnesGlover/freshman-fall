@@ -2,7 +2,11 @@
 ## Week 5 · Lecture 1 (Monday)
 ### Implicit Differentiation
 
+*“But in our opinion truths of this kind should be drawn from notions rather than from notations.”* — Carl Friedrich Gauss, *Disquisitiones Arithmeticae* (1801), Art. 76
+
 **Date:** Monday 26 October 2026 · 11:00–11:50 · Week 5
+
+**Coursework:** 📊 **Quiz 5** today 11:00–11:15 · 📝 **PS 4** due Wed 28 Oct 11:00 · 📝 **PS 5** released Wed 28 Oct 12:00, due Wed 4 Nov 11:00 · 🔬 **Lab 5** Fri 30 Oct 15:00–16:50, report due Mon 2 Nov 17:00 · 📘 **Midterm 1** Thu 5 Nov 18:00–19:15
 
 ---
 

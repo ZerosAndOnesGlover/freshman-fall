@@ -2,9 +2,14 @@
 ## Control Flow III: `for` Loops, `range`, and Tracing Execution
 
 **Week 2 · Friday**
-*"The for loop is not syntactic sugar — it is a contract between the programmer and the data structure." — David Beazley*
+
+*“Adhering to convention a) yields, when starting with subscript 1, the subscript range 1 ≤ i < N+1; starting with 0, however, gives the nicer range 0 ≤ i < N.”* — Edsger W. Dijkstra, "Why numbering should start at zero" (EWD831, 1982)
 
 **Date:** Friday 9 October 2026 · 09:00–09:50 · Week 2
+
+**Reading:** Guttag, Ch. 2 · Guttag, Ch. 3 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 1** due today 17:00 · 📝 **PS 2** released today 10:00, due Fri 16 Oct 17:00 · 🔬 **Lab 2** Tue 13 Oct 15:00–16:50 · 📊 **Quiz 3** Wed 14 Oct 09:00–09:10
 
 ---
 
@@ -482,7 +487,7 @@ For general `n`, the inner body runs `0 + 1 + 2 + ... + (n-1) = n(n-1)/2` times 
 
 ## Reading
 
-- **Guttag, Ch. 2.4** — `for` loops and `range`
+- **Guttag, Ch. 2** — `for` loops and `range`
 - **Guttag, Ch. 3** — Numerical programs (applies `while` and `for` to real problems)
 
 ---

@@ -1,11 +1,15 @@
 # PROG 102 · Lecture 07
 ## Function Templates and Type Deduction
 
+*“In programming, everything we do is a special case of something more general -- and often we know it too quickly.”* — Alan Perlis, "Epigrams on Programming" (1982), #30
+
 **Week 2 · Tuesday · 50 minutes**
 **Reading:** *C++ Primer* §16.1.1, §16.2 · **Reference:** Stroustrup Ch. 23
 **Assumes:** L03 §4 (`inline`, weak symbols), Week 1 entire
 
 **Date:** Tuesday 2 February 2027 · 10:00–10:50 · Week 2
+
+**Coursework:** 📊 **Quiz 2** today 10:00–10:15 · 📝 **PS 1** due Fri 5 Feb 17:00 · 📝 **PS 2** released Fri 5 Feb 10:00, due Fri 12 Feb 17:00 · 🔬 **Lab 2** Mon 8 Feb 15:00–16:50
 
 ---
 

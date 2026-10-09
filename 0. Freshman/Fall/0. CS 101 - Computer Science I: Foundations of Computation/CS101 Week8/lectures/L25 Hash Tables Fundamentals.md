@@ -1,10 +1,15 @@
 # CS 101 · Lecture 25 (Week 8, Lecture 1)
 ## Hash Tables Fundamentals: The Idea Behind O(1) Lookup
 
+*“Random numbers should not be generated with a method chosen at random.”* — Donald Knuth, *The Art of Computer Programming*, Vol. 2 (1969), §3.1
+
 **Week 8 · Wednesday**
-*"A hash table doesn't search for your data — it computes where your data must be." — CS 101*
 
 **Date:** Wednesday 18 November 2026 · 09:00–09:50 · Week 8
+
+**Reading:** Guttag, Ch. 5 · Python docs — Data Model *(details at the end of the lecture)*
+
+**Coursework:** 📊 **Quiz 8** today 09:00–09:10 · 📝 **PS 7** due Fri 20 Nov 17:00 · 📝 **PS 8** released Fri 20 Nov 10:00, due Fri 27 Nov 17:00 · 🔬 **Lab 8** Tue 24 Nov 15:00–16:50 · 📘 **Midterm 2** Mon 30 Nov 18:00–19:15
 
 ---
 
@@ -435,7 +440,7 @@ One cost: deletion leaves a tombstone in `entries`, so a dict that is heavily ad
 
 ## Reading
 
-- **Guttag, Ch. 5.4–5.5** — Dictionaries (if covered) or supplementary handout
+- **Guttag, Ch. 5** — dictionaries; **Ch. 12** — hash tables
 - **Python docs — Data Model:** https://docs.python.org/3/reference/datamodel.html#object.__hash__ (the official `__hash__`/`__eq__` contract)
 
 ---

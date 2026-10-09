@@ -2,9 +2,15 @@
 """
 Static site generator for the CSE degree vault.
 
-    python3 site/build.py                  # build once into _site/
-    python3 site/build.py --serve          # build, then serve on :8000
-    python3 site/build.py --watch --serve  # serve, rebuild on change
+    python3 site/build.py                     # build once into _site/
+    python3 site/build.py --serve             # build, then serve on :8000
+    python3 site/build.py --watch --serve     # serve, rebuild on change
+    python3 site/build.py --serve --port 9000 # serve somewhere else
+    python3 site/build.py --serve --port 0    # let the OS pick a free port
+
+--host HOST and --port PORT (or --host=HOST, --port=PORT) override the default
+bind address of 127.0.0.1:8000. Port 0 asks the OS for any free port; either
+way the address actually bound is what gets printed.
 
 No third-party dependencies. KaTeX is vendored under site/vendor/katex, so the
 generated site renders maths with no network access.
@@ -549,10 +555,30 @@ def snapshot():
     return seen
 
 
-def serve_background(port=8000):
+DEFAULT_HOST = "127.0.0.1"
+DEFAULT_PORT = 8000
+
+
+def arg_value(name, default, cast=str):
+    """Read `--name VALUE` or `--name=VALUE` out of argv, else return default."""
+    raw = None
+    for i, a in enumerate(sys.argv):
+        if a == name and i + 1 < len(sys.argv):
+            raw = sys.argv[i + 1]
+        elif a.startswith(name + "="):
+            raw = a.split("=", 1)[1]
+    if raw is None:
+        return default
+    try:
+        return cast(raw)
+    except ValueError:
+        sys.exit("%s: not a valid value for %s" % (raw, name))
+
+
+def make_server(port=DEFAULT_PORT, host=DEFAULT_HOST):
+    """Bind a server for _site/ without serving yet. Port 0 means any free port."""
     import http.server
     import socketserver
-    import threading
 
     class Handler(http.server.SimpleHTTPRequestHandler):
         def __init__(self, *a, **kw):
@@ -567,16 +593,29 @@ def serve_background(port=8000):
             super().end_headers()
 
     socketserver.TCPServer.allow_reuse_address = True
-    httpd = socketserver.TCPServer(("127.0.0.1", port), Handler)
+    try:
+        return socketserver.TCPServer((host, port), Handler)
+    except OSError as e:
+        sys.exit("cannot serve on %s:%d — %s\n"
+                 "try --port 0 to let the OS pick a free port" % (host, port, e))
+
+
+def server_url(httpd):
+    host, port = httpd.server_address[:2]
+    return "http://%s:%d" % (host, port)
+
+
+def serve_background(port=DEFAULT_PORT, host=DEFAULT_HOST):
+    import threading
+    httpd = make_server(port, host)
     threading.Thread(target=httpd.serve_forever, daemon=True).start()
     return httpd
 
 
-def watch(serve=False, port=8000):
+def watch(serve=False, port=DEFAULT_PORT, host=DEFAULT_HOST):
     import time
     if serve:
-        serve_background(port)
-        print("serving http://127.0.0.1:%d" % port, flush=True)
+        print("serving %s" % server_url(serve_background(port, host)), flush=True)
     print("watching for changes — ctrl-c to stop", flush=True)
     prev = snapshot()
     try:
@@ -694,14 +733,16 @@ def self_test():
 if __name__ == "__main__":
     if "--self-test" in sys.argv:
         sys.exit(self_test())
+    # Parsed before the build so a bad --port fails now, not minutes from now.
+    host = arg_value("--host", DEFAULT_HOST)
+    port = arg_value("--port", DEFAULT_PORT, int)
     main()
     if "--watch" in sys.argv:
-        watch(serve="--serve" in sys.argv)
+        watch(serve="--serve" in sys.argv, port=port, host=host)
     elif "--serve" in sys.argv:
-        import http.server
-        import socketserver
-        os.chdir(OUT)
-        with socketserver.TCPServer(("127.0.0.1", 8000),
-                                    http.server.SimpleHTTPRequestHandler) as httpd:
-            print("serving http://127.0.0.1:8000  (ctrl-c to stop)")
-            httpd.serve_forever()
+        with make_server(port, host) as httpd:
+            print("serving %s  (ctrl-c to stop)" % server_url(httpd), flush=True)
+            try:
+                httpd.serve_forever()
+            except KeyboardInterrupt:
+                print("\nstopped")

@@ -2,7 +2,13 @@
 ## Lecture 5 (L05) — Nested Quantifiers
 ### Friday, Week 1
 
+*“Thus mathematics may be defined as the subject in which we never know what we are talking about, nor whether what we are saying is true.”* — Bertrand Russell, *Mysticism and Logic* (1918), ch. 5
+
 **Date:** Friday 2 October 2026 · 13:00–13:50 · Week 1
+
+**Reading:** Rosen, 8e §1.5 · Epp, 5e §3.3 · Levin, 3e §0.2 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 0** due today 17:00 · 📝 **PS 1** released today 14:00, due Fri 9 Oct 17:00 · 📊 **Quiz 2** Mon 5 Oct 13:00–13:15 · 🔬 **Lab 1** Wed 7 Oct 15:00–16:50
 
 ---
 
@@ -346,5 +352,11 @@ Domain: ℤ unless stated.
    - ∃y ∀x P(x, y)
 
 ---
+
+## Reading
+
+- **Rosen, 8e §1.5** — Nested quantifiers
+- **Epp, 5e §3.3** — Statements with multiple quantifiers
+- **Levin, 3e §0.2** — Mathematical statements
 
 *Week 1 complete. Week 2: Proof Techniques — Direct Proof, Proof by Contradiction, Proof by Contrapositive.*

@@ -2,9 +2,13 @@
 ## Week 0 · Lecture 2 of 3
 ### Process Models, and What They Were Reacting To
 
+*“The management question, therefore, is not whether to build a pilot system and throw it away. You will do that. [...] Hence plan to throw one away; you will, anyhow.”* — Fred Brooks, *The Mythical Man-Month* (1975), ch. 11
+
 ---
 
 **Sat:** first Thursday of Week 0, 10:00–10:50, TH 200 · **Reading:** Sommerville Ch. 2 · **Next:** L03, the Agile Manifesto read critically
+
+**Coursework:** 📝 **Assignment 0** released Wed this week 17:00, due Fri of Week 1 17:00 · 📋 **Team formation workshop** Thu this week 10:00–10:50
 
 ---
 

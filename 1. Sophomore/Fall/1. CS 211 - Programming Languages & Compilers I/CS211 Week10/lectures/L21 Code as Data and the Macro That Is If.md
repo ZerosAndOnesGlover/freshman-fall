@@ -2,9 +2,13 @@
 ## Week 10 · Lecture 1 of 2
 ### Code as Data, and the Macro That Is `if`
 
+*“One can even conjecture that Lisp owes its survival specifically to the fact that its programs are lists, which everyone, including me, has regarded as a disadvantage.”* — John McCarthy, "History of Lisp" (1979)
+
 ---
 
 **Reading:** SICP §4.1 · Graham, *On Lisp* ch. 7–8 · Kohlbecker et al. (1986) on hygiene · **Next:** L22, DSLs, combinators, and what they cost
+
+**Coursework:** 📊 **Quiz 10** today · 📝 **PS 10** released Wed this week, due Fri of Week 11 17:00 · 📝 **PS 9** due Fri this week 17:00 · 🔬 **Lab 10** Fri this week 14:00–15:50
 
 ---
 

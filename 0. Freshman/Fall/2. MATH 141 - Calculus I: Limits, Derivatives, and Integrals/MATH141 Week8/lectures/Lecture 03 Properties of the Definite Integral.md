@@ -2,7 +2,11 @@
 ## Week 8 · Lecture 3 (Wednesday)
 ### Properties of the Definite Integral
 
+*“When a theory is sufficiently general to cover many fields of application, it acquires some "truth" from each of them.”* — Richard Hamming, *Methods of Mathematics Applied to Calculus, Probability, and Statistics* (1985)
+
 **Date:** Wednesday 18 November 2026 · 11:00–11:50 · Week 8
+
+**Coursework:** 📝 **PS 7** due today 11:00 · 📝 **PS 8** released today 12:00, due Wed 25 Nov 11:00 · 🔬 **Lab 8** Fri 20 Nov 15:00–16:50, report due Mon 23 Nov 17:00 · 📊 **Quiz 9** Mon 23 Nov 11:00–11:15
 
 ---
 

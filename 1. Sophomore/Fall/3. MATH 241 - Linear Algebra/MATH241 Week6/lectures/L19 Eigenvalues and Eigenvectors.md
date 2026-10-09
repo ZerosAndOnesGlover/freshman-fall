@@ -2,9 +2,13 @@
 ## Week 6 · Lecture 1 of **2** · **Tuesday**
 ### Eigenvalues and Eigenvectors
 
+*“The art of doing mathematics consists in finding that special case which contains all the germs of generality.”* — David Hilbert, as quoted in Constance Reid, *Hilbert* (1970)
+
 ---
 
 **Reading:** Strang §6.1 · **Previous:** Week 5's L18, volume and the product rule · **Next:** L20, the characteristic polynomial
+
+**Coursework:** 📊 **Quiz 6** today · 📝 **PS 6** released Wed this week, due Fri of Week 7 17:00 · 💬 **Recitation 5** Thu this week 15:00–15:50 · 📝 **PS 5** due Fri this week 17:00 · 📊 **Quiz 7** Mon of Week 7
 
 > **Week 6 has two lectures, not three.** Its Monday is **Fall Break** and this course lectures on
 > Mondays, so the week runs **Tuesday and Friday only**. Nothing is dropped — Week 7 takes

@@ -1,9 +1,15 @@
 # PHYS 141 · Lecture 18
 # Center of Mass
 
+*“In any triangle the centre of gravity lies on the straight line joining any angle to the middle point of the opposite side.”* — Archimedes, *On the Equilibrium of Planes*, Book I, Proposition 13
+
 > **Core Principle:** Every extended object or system of particles has a single point — the center of mass — that behaves, for the purposes of translational motion, exactly like a single point particle carrying the system's entire mass. This is why we can treat complicated, extended, even rotating or exploding objects as point masses when analyzing their overall trajectory.
 
 **Date:** Friday 30 October 2026 · 14:00–14:50 · Week 5
+
+**Reading:** Serway & Jewett §9.6–9.7 · HRK Ch. 7
+
+**Coursework:** 📝 **PS 4** due today 17:00 · 📝 **PS 5** released today 15:00, due Fri 6 Nov 17:00 · 📊 **Quiz 5** Mon 2 Nov 14:00 · 🔬 **Lab 6** Thu 5 Nov 14:00–17:00
 
 ---
 

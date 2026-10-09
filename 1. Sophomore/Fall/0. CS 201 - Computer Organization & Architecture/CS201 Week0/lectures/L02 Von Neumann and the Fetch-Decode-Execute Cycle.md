@@ -2,9 +2,13 @@
 ## Week 0 · Lecture 2 of 3
 ### The Von Neumann Machine and the Fetch-Decode-Execute Cycle
 
+*“Sometimes I think the only universal in the computing field is the fetch-execute cycle.”* — Alan Perlis, "Epigrams on Programming" (1982), #44
+
 ---
 
 **Reading:** CS:APP §1.4, §4.1 · **Previous:** L01, the abstraction hierarchy
+
+**Coursework:** 📝 **PS 0** released Wed this week, due Fri this week 17:00 · 🔬 **Lab 0** Fri this week 15:00–16:50
 
 ---
 

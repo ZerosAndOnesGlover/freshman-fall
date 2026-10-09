@@ -2,7 +2,13 @@
 ## Lecture · Week 2: How Software Gets Built
 ### Agile, Open Source, and Research Labs
 
+*“Given enough eyeballs, all bugs are shallow.”* — Eric S. Raymond, *The Cathedral and the Bazaar* (1997), naming it "Linus's Law"
+
 **Date:** Wednesday 7 October 2026 · 13:00–13:50 · Week 2
+
+**Reading:** The Agile Manifesto and its Twelve Principles · Raymond, "The Cathedral and the Bazaar" · Eghbal, *Working in Public*, Ch. 1 — [[CS190 Week2/resources/Reading Guide|Reading Guide]]
+
+**Coursework:** 📝 **Prep 2** due today 12:00
 
 ---
 

@@ -2,9 +2,13 @@
 ## Week 4 · Lecture 2 of 3
 ### Where Memory Comes From: `brk`, `mmap`, and `malloc`
 
+*“... we do not consider it as good engineering practice to consume a resource lavishly just because it happens to be cheap.”* — Niklaus Wirth, *Project Oberon* (2013), §2.3
+
 ---
 
 **Reading:** APUE §7.8 · TLPI Ch. 7 · CS:APP §9.9 · `man 2 brk`, `man 3 mallopt`, `man 3 mallinfo2` · **Previous:** L13 · **Next:** L15 — `mprotect` and JIT
+
+**Coursework:** 📝 **PS 4** released today, due Fri of Week 5 17:00 · 📝 **PS 3** due Fri this week 17:00 · 🔬 **Lab 4** Mon of Week 5 15:00–16:50 · 📊 **Quiz 5** Tue of Week 5
 
 ---
 

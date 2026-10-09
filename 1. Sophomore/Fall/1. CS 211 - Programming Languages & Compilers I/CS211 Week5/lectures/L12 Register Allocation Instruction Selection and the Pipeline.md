@@ -2,9 +2,13 @@
 ## Week 5 · Lecture 2 of 2
 ### Register Allocation, Instruction Selection, and the Pipeline
 
+*“Instruction tables will have to be made up by mathematicians with computing experience and perhaps a certain puzzle-solving ability.”* — Alan Turing, "Proposed Electronic Calculator" (1946)
+
 ---
 
 **Reading:** Dragon §8.8, §8.9, §9.7 · Appel ch. 11 · **Next:** Week 6, runtime systems and garbage collection
+
+**Coursework:** 📝 **PS 4** due Fri this week 17:00 · 🔬 **Lab 5** Fri this week 14:00–15:50 · 📊 **Quiz 6** Tue of Week 6 · 📝 **PS 6** released Wed of Week 6, due Fri of Week 7 17:00
 
 ---
 

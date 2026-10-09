@@ -2,7 +2,13 @@
 ## Lecture 16 (L16) — Composition of Functions and Inverse Functions
 ### Thursday, Week 5
 
+*“It is by logic that we prove, but by intuition that we discover. To know how to criticize is good, to know how to create is better.”* — Henri Poincaré, *Science and Method* (1908)
+
 **Date:** Thursday 29 October 2026 · 13:00–13:50 · Week 5
+
+**Reading:** Rosen, 8e §2.3 · Epp, 5e §7.2–7.3 · Levin, 3e §0.4 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 4** due Fri 30 Oct 17:00 · 📝 **PS 5** released Fri 30 Oct 14:00, due Fri 6 Nov 17:00 · 📊 **Quiz 6** Mon 2 Nov 13:00–13:15 · 🔬 **Lab 5** Wed 4 Nov 15:00–16:50 · 📘 **Midterm 1** Fri 6 Nov 18:00–19:15
 
 ---
 
@@ -263,5 +269,11 @@ Inverse:
 5. Prove: $\text{id}_A \circ f = f$ for any $f: B \to A$.
 
 ---
+
+## Reading
+
+- **Rosen, 8e §2.3** — Composition and inverse functions
+- **Epp, 5e §7.2–7.3** — Inverse functions; composition of functions
+- **Levin, 3e §0.4** — Functions
 
 *Next: Lecture 17 — Bijections and Cardinality*

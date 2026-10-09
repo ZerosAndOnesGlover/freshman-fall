@@ -2,9 +2,13 @@
 ## Week 7 · Lecture 2 of 2
 ### Encodings, Recursion, and Why Y Hangs in Python
 
+*“Although my own previous enthusiasm has been for syntactically rich languages like the Algol family, I now see clearly and concretely the force of Minsky's 1970 Turing lecture, in which he argued that Lisp's uniformity of structure and power of self reference gave the programmer capabilities whose content was well worth the sacrifice of visual form.”* — Robert W. Floyd, "The Paradigms of Programming" (Turing Award lecture, 1978)
+
 ---
 
 **Reading:** Pierce, *TAPL* ch. 5.2 · Barendregt ch. 6 · SICP §1.3, §3.5 · **Next:** L17, types
+
+**Coursework:** 📝 **PS 6** due Fri this week 17:00 · 🔬 **Lab 7** Fri this week 14:00–15:50 · 📊 **Quiz 8** Tue of Week 8 · 📘 **Midterm 2** Tue of Week 8 20:00–21:15 · 📝 **PS 8** released Wed of Week 8, due Fri of Week 9 17:00
 
 ---
 

@@ -2,9 +2,13 @@
 ## Week 9 · Lecture 1 of 3
 ### Measure First, and What a Profiler Costs
 
+*“The real problem is that programmers have spent far too much time worrying about efficiency in the wrong places and at the wrong times; premature optimization is the root of all evil (or at least most of it) in programming.”* — Donald Knuth, "Computer Programming as an Art", Turing Award Lecture (1974)
+
 ---
 
 **Reading:** CS:APP §5.14 · *Systems Performance* (Gregg) Ch. 1–2 · `man 1 valgrind`, `man 2 setitimer`, `man 3 dladdr` · **Previous:** L27 · **Next:** L29 — caches, bandwidth and the roofline
+
+**Coursework:** 📊 **Quiz 9** today · 📝 **PS 9** released Wed this week, due Fri of Week 10 17:00 · 📋 **Project 1** due Fri this week 17:00 · 📝 **PS 8** due Fri this week 17:00 · 🔬 **Lab 9** Mon of Week 10 15:00–16:50
 
 ---
 

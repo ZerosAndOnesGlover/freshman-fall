@@ -1,11 +1,15 @@
 # PROG 102 · Lecture 20
 ## Implementing Iterators
 
+*“Every program is a part of some other program and rarely fits.”* — Alan Perlis, "Epigrams on Programming" (1982), #4
+
 **Week 6 · Wednesday · 50 minutes**
 **Reading:** *C++ Primer* §9.2.1, §10.5 · **Reference:** cppreference, *iterator_traits*
 **Assumes:** L10 (iterator categories), L19, Week 2 (templates)
 
 **Date:** Wednesday 3 March 2027 · 10:00–10:50 · Week 6
+
+**Coursework:** 📝 **PS 5** due Fri 5 Mar 17:00 · 📝 **PS 6** released Fri 5 Mar 10:00, due Fri 12 Mar 17:00 · 🔬 **Lab 6** Mon 8 Mar 15:00–16:50 · 📊 **Quiz 7** Tue 9 Mar 10:00–10:15
 
 ---
 

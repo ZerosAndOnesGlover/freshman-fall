@@ -2,9 +2,13 @@
 ## Week 11 · Lecture 3 of 3
 ### Documentation That Survives
 
+*“When you feel the need to write a comment, first try to refactor the code so that any comment becomes superfluous.”* — Martin Fowler, *Refactoring* (1999)
+
 ---
 
 **Sat:** Thursday of Week 11, 10:00–10:50, TH 200 · **Reading:** Procida, *Diátaxis*; Nygard on ADRs (re-read) · **Next:** Week 12, presentations, management and career paths
+
+**Coursework:** 📝 **Assignment 10** due Fri this week 17:00 · 📝 **Assignment 12** released Wed of Week 12 17:00, due Fri of Week 12 17:00
 
 ---
 

@@ -2,9 +2,13 @@
 ## Week 3 · Lecture 1 of 3
 ### Races, and the Hardware That Makes Locks Possible
 
+*“We shall occupy ourselves much more with the logical problems which arise, for example, when speed ratios are unknown, communication possibilities restricted etc.”* — Edsger W. Dijkstra, "Cooperating Sequential Processes" (EWD123, 1965)
+
 ---
 
 **Sat:** Monday of Week 3, 09:00–09:50, VNC 101, **after Quiz 3** · **Reading:** OSTEP Ch. 26 and 28 · **Next:** L11, sleeping locks, futexes, and when to spin
+
+**Coursework:** 📊 **Quiz 3** today · 🔬 **Lab 2** Tue this week 15:00–16:50 · 📝 **PS 3** released Wed this week, due Fri of Week 4 17:00 · 📝 **PS 2** due Fri this week 17:00 · 📘 **Midterm 1** Mon of Week 4 18:00–19:15
 
 ---
 

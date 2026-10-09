@@ -2,7 +2,11 @@
 ## Week 3 · Lecture 2 (Tuesday)
 ### The Derivative as a Function
 
+*“What Mathematicians Chiefly consider in Motion is the Mode of Lation or Manner of bearing, and the Quantity of the motive Force.”* — Isaac Barrow, *Geometrical Lectures* (1735 translation)
+
 **Date:** Tuesday 13 October 2026 · 11:00–11:50 · Week 3
+
+**Coursework:** 📝 **PS 2** due Wed 14 Oct 11:00 · 📝 **PS 3** released Wed 14 Oct 12:00, due Wed 21 Oct 11:00 · 🔬 **Lab 3** Fri 16 Oct 15:00–16:50, report due Mon 19 Oct 17:00 · 📊 **Quiz 4** Mon 19 Oct 11:00–11:15
 
 ---
 

@@ -2,7 +2,11 @@
 ## Week 8 · Lecture 1 (Wednesday)
 ### Registers and Shift Registers
 
+*“Making something variable is easy. Controlling duration of constancy is the trick.”* — Alan Perlis, "Epigrams on Programming" (1982), #66
+
 **Date:** Wednesday 17 March 2027 · 13:00–14:15 · Week 8
+
+**Coursework:** 📊 **Quiz 7** today 13:00–13:10 · 📝 **PS 7** due Thu 18 Mar 13:00 · 📝 **PS 8** released Thu 18 Mar 14:30, due Thu 25 Mar 13:00 · 🔬 **Lab 8** Fri 19 Mar 14:00–15:50
 
 ---
 

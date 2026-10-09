@@ -2,9 +2,13 @@
 ## Week 10 · Lecture 3 of 3 · **Friday**
 ### What Positive Definiteness Is For
 
+*“In the long run, the methods are the important part of the course. It is not enough to know the theory; you should be able to apply it.”* — Richard Hamming, *Methods of Mathematics Applied to Calculus, Probability, and Statistics* (1985)
+
 ---
 
 **Reading:** Strang §6.5, §11.1 · **Previous:** L31, positive definite matrices · **Next:** Week 11's L33, the singular value decomposition
+
+**Coursework:** 📝 **PS 9** due today 17:00 · 📊 **Quiz 11** Mon of Week 11 · 📝 **PS 11** released Wed of Week 11, due Fri of Week 12 17:00 · 💬 **Recitation 10** Thu of Week 11 15:00–15:50
 
 > **Midterm 2 was Wednesday.** Marks and the post-mortem come in Recitation 10, the Thursday of
 > Week 11. **The paper is not discussed today**, and today's material was not on it.

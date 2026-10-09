@@ -2,7 +2,11 @@
 ## Week 1 · Lecture 1 (Monday)
 ### Integration by Parts
 
+*“If you cannot solve the proposed problem, try to solve first a simpler related problem.”* — George Pólya, *Mathematical Methods in Science* (1977)
+
 **Date:** Monday 25 January 2027 · 11:00–11:50 · Week 1
+
+**Coursework:** 📊 **Quiz 1** today 11:00–11:15 · 🔬 **Lab 0** Wed 27 Jan 15:00–16:50 · 📝 **PS 1** released Fri 29 Jan 12:00, due Fri 5 Feb 17:00
 
 ---
 

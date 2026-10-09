@@ -78,7 +78,7 @@ MATH151_Week0/
 |---|---|
 | Rosen — *Discrete Mathematics and Its Applications*, 8e | §1.1, §1.3 |
 | Epp — *Discrete Mathematics with Applications*, 5e | §2.1, §2.2 |
-| Levin — *Discrete Mathematics: An Open Introduction*, 3e | §0.2 (free at discrete.openmathbooks.org) |
+| Levin — *Discrete Mathematics: An Open Introduction*, 3e | §0.2, §3.1 (free at discrete.openmathbooks.org) |
 
 ---
 

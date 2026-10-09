@@ -1,10 +1,14 @@
 # PROG 102 · Lecture 33
 ## Atomics and Thread-Safe Data Structures
 
+*“We postulate, that inspecting the present value of such a common variable and assigning a new value to such a common variable are to be regarded as indivisible, non-interfering actions.”* — Edsger W. Dijkstra, "Cooperating Sequential Processes" (EWD123, 1965)
+
 **Week 10 · Thursday · 50 minutes**
 **Reading:** Williams Ch. 5, Ch. 6.1–6.2 · **Assumes:** L31, L32, Week 5
 
 **Date:** Thursday 1 April 2027 · 10:00–10:50 · Week 10
+
+**Coursework:** 📝 **PS 10** released Fri 2 Apr 10:00, due Fri 9 Apr 17:00 · 📝 **PS 9** due Fri 2 Apr 17:00 · 🔬 **Lab 10** Mon 5 Apr 15:00–16:50 · 📊 **Quiz 11** Tue 6 Apr 10:00–10:15 · 📋 **Project 2** released Tue 6 Apr 10:00, due Fri 16 Apr 17:00
 
 ---
 

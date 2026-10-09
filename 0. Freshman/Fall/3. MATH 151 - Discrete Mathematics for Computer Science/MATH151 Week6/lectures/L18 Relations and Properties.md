@@ -2,7 +2,13 @@
 ## Lecture 18 (L18) Relations and Their Fundamental Properties
 ### Monday, Week 6
 
+*“Mathematicians do not study objects, but the relations between objects; to them it is a matter of indifference if these objects are replaced by others, provided that the relations do not change.”* — Henri Poincaré, *Science and Hypothesis* (1902)
+
 **Date:** Monday 2 November 2026 · 13:00–13:50 · Week 6
+
+**Reading:** Rosen, 8e §9.1, §9.3 · Epp, 5e §8.1–8.2 *(details at the end of the lecture)*
+
+**Coursework:** 📊 **Quiz 6** today 13:00–13:15 · 🔬 **Lab 5** Wed 4 Nov 15:00–16:50 · 📘 **Midterm 1** Fri 6 Nov 18:00–19:15 · 📝 **PS 5** due Fri 6 Nov 17:00 · 📝 **PS 6** released Fri 6 Nov 14:00, due Fri 13 Nov 17:00
 
 ---
 
@@ -239,5 +245,10 @@ For each relation, determine which of reflexive/symmetric/antisymmetric/transiti
 7. Represent the relation from Exercise 3 as a Boolean matrix. Verify transitivity via matrix inspection.
 
 ---
+
+## Reading
+
+- **Rosen, 8e §9.1, §9.3** — Relations and their properties; representing relations
+- **Epp, 5e §8.1–8.2** — Relations on sets; reflexivity, symmetry and transitivity
 
 *Next: Lecture 19 — Equivalence Relations and Equivalence Classes*

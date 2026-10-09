@@ -2,7 +2,13 @@
 ## Lecture · Week 6: AI and Society
 ### Autonomous Weapons, Deepfakes, and LLMs
 
+*“The experience of the scientists who have worked on the atomic bomb has indicated that in any investigation of this kind the scientist ends by putting unlimited powers in the hands of the people whom he is least inclined to trust with their use.”* — Norbert Wiener, "A Scientist Rebels", *The Atlantic Monthly* (1946)
+
 **Date:** Wednesday 4 November 2026 · 13:00–13:50 · Week 6
+
+**Reading:** Asaro, "On Banning Autonomous Weapon Systems" (2012) · Chesney & Citron, "Deep Fakes" (2019), introduction, the liar's dividend, policy responses · Bender, Gebru et al., "On the Dangers of Stochastic Parrots" (2021) — [[CS190 Week6/resources/Reading Guide|Reading Guide]]
+
+**Coursework:** 📝 **Position Paper 2** released today, due Wed 11 Nov 12:00 · 📝 **Prep 6** due today 12:00
 
 ---
 

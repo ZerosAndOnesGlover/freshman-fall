@@ -2,9 +2,13 @@
 ## Week 1 · Lecture 3 of 3
 ### Use Cases, and the Domain Model
 
+*“A use case is a complete course of events in the system, seen from a user's perspective.”* — Ivar Jacobson, *Object-Oriented Software Engineering* (1992)
+
 ---
 
 **Sat:** Thursday of Week 1, 10:00–10:50, TH 200 · **Reading:** Evans, *Domain-Driven Design*, Ch. 2 (or Sommerville §5.1–5.2) · **Next:** Week 2, design principles
+
+**Coursework:** 📋 **Walking skeleton** due Fri this week 17:00 · 📝 **Assignment 0** due Fri this week 17:00 · 📊 **Quiz 2** Tue of Week 2 · 📝 **Assignment 2** released Wed of Week 2 17:00, due Fri of Week 3 17:00
 
 ---
 

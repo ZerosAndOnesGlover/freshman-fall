@@ -2,9 +2,14 @@
 ## Python's Type System, Conversions, and the REPL as a Thinking Tool
 
 **Week 1 · Friday**
-*"Strong typing: the language enforces type contracts. Dynamic typing: types are checked at runtime, not compile time. Python is both." — Guido van Rossum*
+
+*“Well-typed programs cannot "go wrong".”* — Robin Milner, "A Theory of Type Polymorphism in Programming" (1978)
 
 **Date:** Friday 2 October 2026 · 09:00–09:50 · Week 1
+
+**Reading:** Guttag, Ch. 2 · Guttag, Ch. 3 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 1** released today 10:00, due Fri 9 Oct 17:00 · 🔬 **Lab 1** Tue 6 Oct 15:00–16:50 · 📊 **Quiz 2** Wed 7 Oct 09:00–09:10
 
 ---
 
@@ -581,8 +586,8 @@ got None and None
 
 ## Reading
 
-- **Guttag, Ch. 2.3–2.4** — strings and user input
-- **Guttag, Ch. 3.1** — simple programs (good end-of-week synthesis)
+- **Guttag, Ch. 2** — strings and input
+- **Guttag, Ch. 3** — exhaustive enumeration, the first simple numerical program (good end-of-week synthesis)
 
 ---
 

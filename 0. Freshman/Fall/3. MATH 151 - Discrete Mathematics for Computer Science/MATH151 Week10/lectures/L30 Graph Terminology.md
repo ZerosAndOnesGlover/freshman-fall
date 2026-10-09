@@ -2,7 +2,13 @@
 ## Lecture 30 (L30) — Graphs: Terminology and Basic Results
 ### Monday, Week 10
 
+*“Mathematics in general is fundamentally the science of self-evident things.”* — Felix Klein, *Anwendung der Differential- und Integralrechnung auf Geometrie* (1920)
+
 **Date:** Monday 30 November 2026 · 13:00–13:50 · Week 10
+
+**Reading:** Rosen, 8e §10.1–10.2 · Epp, 5e §1.4, §4.9 · Levin, 3e §4.1 *(details at the end of the lecture)*
+
+**Coursework:** 📊 **Quiz 10** today 13:00–13:15 · 🔬 **Lab 9** Wed 2 Dec 15:00–16:50 · 📝 **PS 10** released Fri 4 Dec 14:00, due Fri 11 Dec 17:00 · 📝 **PS 9** due Fri 4 Dec 17:00
 
 ---
 
@@ -176,7 +182,7 @@ build order exist, and the algorithm that finds one — topological sort — is 
 ## Reading
 
 - **Rosen, 8e §10.1–10.2** — Graphs and graph terminology
-- **Epp, 5e §10.1** — Graphs: definitions and basic properties
+- **Epp, 5e §1.4, §4.9** — The language of graphs; the handshake theorem
 - **Levin, 3e §4.1** — Introduction to graph theory
 
 *Next: Lecture 31 — Representations and Isomorphism*

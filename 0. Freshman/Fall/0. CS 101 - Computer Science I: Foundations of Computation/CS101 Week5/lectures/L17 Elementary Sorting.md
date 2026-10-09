@@ -2,9 +2,14 @@
 ## Elementary Sorting: Selection, Insertion, and Bubble Sort
 
 **Week 5 · Thursday**
-*"Sorting is the process by which chaos is transformed into structure — and that structure is what makes efficient search, deduplication, and analysis possible." — CS 101*
+
+*“Any inaccuracies in this index may be explained by the fact that it has been sorted with the help of a computer.”* — Donald Knuth, *The Art of Computer Programming*, Vol. 3, *Sorting and Searching* (1973), end of the index
 
 **Date:** Thursday 29 October 2026 · 09:00–09:50 · Week 5
+
+**Reading:** Guttag, Ch. 12 · CLRS, Ch. 2.1–2.2 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 4** due Fri 30 Oct 17:00 · 📝 **PS 5** released Fri 30 Oct 10:00, due Fri 6 Nov 17:00 · 📘 **Midterm 1** Mon 2 Nov 18:00–19:15 · 🔬 **Lab 5** Tue 3 Nov 15:00–16:50 · 📊 **Quiz 6** Wed 4 Nov 09:00–09:10
 
 ---
 
@@ -403,7 +408,7 @@ Timsort exploits both properties at once: it scans for existing sorted runs, ext
 
 ## Reading
 
-- **Guttag, Ch. 12.1–12.2** (or equivalent sorting chapter) — bubble sort, selection sort
+- **Guttag, Ch. 12** — sorting algorithms
 - **CLRS, Ch. 2.1–2.2** — insertion sort with formal analysis (optional, recommended for the rigorous)
 
 ---

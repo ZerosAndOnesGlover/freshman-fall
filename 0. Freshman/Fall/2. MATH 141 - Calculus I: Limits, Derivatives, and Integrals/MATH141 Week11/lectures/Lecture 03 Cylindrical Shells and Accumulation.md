@@ -2,7 +2,11 @@
 ## Week 11 · Lecture 3 (Wednesday)
 ### Cylindrical Shells, and Accumulation Revisited
 
+*“The applications of knowledge, especially mathematics, reveal the unity of all knowledge. In a new situation almost anything and everything you ever learned might be applicable, and the artificial divisions seem to vanish.”* — Richard Hamming, *Methods of Mathematics Applied to Calculus, Probability, and Statistics* (1985)
+
 **Date:** Wednesday 9 December 2026 · 11:00–11:50 · Week 11
+
+**Coursework:** 📝 **PS 10** due today 11:00 · 📝 **PS 11** released today 12:00, due Wed 16 Dec 11:00 · 🔬 **Lab 11** Fri 11 Dec 15:00–16:50 · 📊 **Quiz 12** Mon 14 Dec 11:00–11:15 · 📝 **PS 12** released Mon 14 Dec 12:00 · 📕 **Final exam** Wed 23 Dec 09:00–11:30
 
 ---
 

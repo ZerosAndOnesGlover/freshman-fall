@@ -2,9 +2,13 @@
 ## Week 12 · Lecture 1 of 3
 ### Architecture Frontiers
 
+*“The best way to predict the future is to invent it.”* — Alan Kay, at a meeting at Xerox PARC (1971)
+
 ---
 
 **Reading:** CS:APP §5.1 (revisited), Patterson & Hennessy §6.7–6.11 · **Previous:** L36, benchmarking honestly
+
+**Coursework:** 🔬 **Lab 11** Tue this week 15:00–16:50 · 📝 **PS 12** released Wed this week, due Fri this week 17:00 · 📋 **Project 2** due Fri this week 17:00 · 📝 **PS 11** due Fri this week 17:00
 
 ---
 

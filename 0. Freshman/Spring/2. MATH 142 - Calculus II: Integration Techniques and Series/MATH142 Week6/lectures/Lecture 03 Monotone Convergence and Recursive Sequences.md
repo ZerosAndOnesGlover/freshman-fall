@@ -2,7 +2,11 @@
 ## Week 6 · Lecture 3 (Friday)
 ### Monotone Convergence, and Sequences That Define Themselves
 
+*“If all points of the straight line fall into two classes such that every point of the first class lies to the left of every point of the second class, then there exists one and only one point which produces this division of all points into two classes.”* — Richard Dedekind, *Stetigkeit und irrationale Zahlen* (1872)
+
 **Date:** Friday 5 March 2027 · 11:00–11:50 · Week 6
+
+**Coursework:** 📝 **PS 5** due today 17:00 · 📝 **PS 6** released today 12:00, due Fri 12 Mar 17:00 · 📊 **Quiz 7** Mon 8 Mar 11:00–11:15 · 🔬 **Lab 6** Wed 10 Mar 15:00–16:50
 
 ---
 

@@ -2,9 +2,13 @@
 ## Week 10 · Lecture 1 of 3
 ### Interfaces as Contracts, and REST Properly Understood
 
+*“In general, an implementation must be conservative in its sending behavior, and liberal in its receiving behavior.”* — Jon Postel, RFC 791, *Internet Protocol* (1981)
+
 ---
 
 **Sat:** Tuesday of Week 10, 10:00–10:50, TH 200 · **⚠️ Quiz 10 in the first ten minutes** — covers Week 9 · **Reading:** Fielding (2000), Ch. 5; Richardson & Ruby, *RESTful Web Services*, Ch. 4 · **Next:** L32, GraphQL and gRPC
+
+**Coursework:** 📊 **Quiz 10** today · 📝 **Assignment 10** released Wed this week 17:00, due Fri of Week 11 17:00 · 📝 **Assignment 9** due Fri this week 17:00
 
 ---
 

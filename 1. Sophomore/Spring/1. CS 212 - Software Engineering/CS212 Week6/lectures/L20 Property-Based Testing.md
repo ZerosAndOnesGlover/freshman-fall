@@ -2,9 +2,13 @@
 ## Week 6 · Lecture 2 of 3
 ### Property-Based Testing
 
+*“The real value of tests is not that they detect bugs in the code, but that they detect inadequacies in the methods, concentration, and skills of those who design and produce the code.”* — C. A. R. Hoare, "How Did Software Get So Reliable Without Proof?" (1996)
+
 ---
 
 **Sat:** Wednesday of Week 6, 10:00–10:50, TH 200 · **Reading:** Hypothesis docs, "Quick start" and "What you can generate" · **Next:** L21, mutation testing
+
+**Coursework:** 📘 **Midterm** today 18:00–19:15 · 📝 **Assignment 6** released today 17:00, due Fri of Week 7 17:00 · 📝 **Assignment 5** due Fri this week 17:00 · 📊 **Quiz 7** Tue of Week 7
 **A 6 is released after this lecture**, Wednesday 17:00. **⚠️ Midterm this evening, 18:00–19:15, Weeks 0–5.**
 
 ---

@@ -2,7 +2,11 @@
 ## Week 4 · Lecture 1 (Wednesday)
 ### Karnaugh Maps
 
+*“Simplicity is prerequisite for reliability.”* — Edsger W. Dijkstra, "How do we tell truths that might hurt?" (EWD498, 1975)
+
 **Date:** Wednesday 17 February 2027 · 13:00–14:15 · Week 4
+
+**Coursework:** 📊 **Quiz 3** today 13:00–13:10 · 📝 **PS 3** due Thu 18 Feb 13:00 · 📝 **PS 4** released Thu 18 Feb 14:30, due Thu 25 Feb 13:00 · 🔬 **Lab 4** Fri 19 Feb 14:00–15:50
 
 ---
 

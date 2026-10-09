@@ -2,9 +2,13 @@
 ## Week 2 · Lecture 2 of 3
 ### Arithmetic, and What the Compiler Does Instead of Dividing
 
+*“The whole of arithmetic now appeared within the grasp of mechanism.”* — Charles Babbage, *Passages from the Life of a Philosopher* (1864), ch. 8
+
 ---
 
 **Reading:** CS:APP §3.5 · **Previous:** L07, registers and operands
+
+**Coursework:** 📝 **PS 2** released today, due Fri of Week 3 17:00 · 📝 **PS 1** due Fri this week 17:00 · 📊 **Quiz 3** Mon of Week 3 · 🔬 **Lab 2** Tue of Week 3 15:00–16:50
 
 ---
 

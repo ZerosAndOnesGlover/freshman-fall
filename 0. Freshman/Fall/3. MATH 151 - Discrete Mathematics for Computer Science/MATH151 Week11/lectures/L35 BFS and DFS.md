@@ -2,7 +2,13 @@
 ## Lecture 35 (L35) — Breadth-First and Depth-First Search
 ### Friday, Week 11
 
+*“A mathematical problem should be difficult in order to entice us, yet not completely inaccessible, lest it mock at our efforts. It should be to us a guide post on the mazy paths to hidden truths.”* — David Hilbert, "Mathematical Problems" (1900)
+
 **Date:** Friday 11 December 2026 · 13:00–13:50 · Week 11
+
+**Reading:** Rosen, 8e §11.4 · Epp, 5e §10.6 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 10** due today 17:00 · 📝 **PS 11** released today 14:00, due Fri 18 Dec 17:00 · 📊 **Quiz 12** Mon 14 Dec 13:00–13:15 · 🔬 **Lab 11** Wed 16 Dec 15:00–16:50 · 📕 **Final exam** Mon 21 Dec 08:00–10:00
 
 ---
 
@@ -168,7 +174,6 @@ minimum-weight, since neither consults the weights.
 ## Reading
 
 - **Rosen, 8e §11.4** — Spanning trees, BFS and DFS
-- **Epp, 5e §10.6** — Traversals
-- **Levin, 3e §4.5** — Graph traversal
+- **Epp, 5e §10.6** — Spanning trees and a shortest path algorithm
 
 *Next: Week 12 — Number Theory: Divisibility, Primes, Modular Arithmetic*

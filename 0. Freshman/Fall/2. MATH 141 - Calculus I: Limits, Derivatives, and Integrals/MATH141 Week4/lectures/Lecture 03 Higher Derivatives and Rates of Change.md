@@ -2,7 +2,11 @@
 ## Week 4 · Lecture 3 (Wednesday)
 ### Higher Derivatives and Rates of Change
 
+*“A large quantity of examples is indispensable.”* — Augustus De Morgan, *The Differential and Integral Calculus* (1836)
+
 **Date:** Wednesday 21 October 2026 · 11:00–11:50 · Week 4
+
+**Coursework:** 📝 **PS 3** due today 11:00 · 📝 **PS 4** released today 12:00, due Wed 28 Oct 11:00 · 🔬 **Lab 4** Fri 23 Oct 15:00–16:50 · 📊 **Quiz 5** Mon 26 Oct 11:00–11:15
 
 ---
 

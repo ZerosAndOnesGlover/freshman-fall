@@ -1,10 +1,15 @@
 # CS 101 · Lecture 20 (Week 6, Lecture 2)
 ## Algorithm Analysis II: Recurrence Relations and the Master Theorem
 
+*“Simplicity does not precede complexity, but follows it.”* — Alan Perlis, "Epigrams on Programming" (1982), #31
+
 **Week 6 · Thursday**
-*"A recurrence relation is a mathematical sentence describing an algorithm's own structure — solve the sentence, and you know the algorithm's complexity." — CS 101*
 
 **Date:** Thursday 5 November 2026 · 09:00–09:50 · Week 6
+
+**Reading:** CLRS, Ch. 4 · CLRS, Ch. 16 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 5** due Fri 6 Nov 17:00 · 📝 **PS 6** released Fri 6 Nov 10:00, due Fri 13 Nov 17:00 · 🔬 **Lab 6** Tue 10 Nov 15:00–16:50 · 📊 **Quiz 7** Wed 11 Nov 09:00–09:10
 
 ---
 
@@ -339,7 +344,7 @@ All three share one root cause: **an operation assumed to be O(1) that is not.**
 ## Reading
 
 - **CLRS, Ch. 4** — Divide-and-Conquer (the Master Method, formally — 4.3–4.5)
-- **CLRS, Ch. 17** — Amortized Analysis (optional, for the ambitious — aggregate method, accounting method)
+- **CLRS, Ch. 16** — Amortized Analysis (optional, for the ambitious — aggregate method, accounting method)
 
 ---
 

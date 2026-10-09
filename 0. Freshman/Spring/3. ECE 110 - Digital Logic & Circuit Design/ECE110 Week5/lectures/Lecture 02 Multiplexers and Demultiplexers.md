@@ -2,7 +2,11 @@
 ## Week 5 · Lecture 2 (Thursday)
 ### Multiplexers and Demultiplexers
 
+*“The computer reminds one of Lon Chaney -- it is the machine of a thousand faces.”* — Alan Perlis, "Epigrams on Programming" (1982), #91
+
 **Date:** Thursday 25 February 2027 · 13:00–14:15 · Week 5
+
+**Coursework:** 📝 **PS 4** due today 13:00 · 📝 **PS 5** released today 14:30, due Thu 4 Mar 13:00 · 🔬 **Lab 5** Fri 26 Feb 14:00–15:50 · 📊 **Quiz 5** Wed 3 Mar 13:00–13:10 · 📘 **Midterm** Thu 4 Mar 18:00–19:15
 
 ---
 

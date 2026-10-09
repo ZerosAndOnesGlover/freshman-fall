@@ -1,7 +1,13 @@
 # CS 102 · Computer Science II
 ## Lecture 38: Reductions and NP-Completeness
 
+*“Beware of the Turing tar-pit in which everything is possible but nothing of interest is easy.”* — Alan Perlis, "Epigrams on Programming" (1982), #54
+
 **Date:** Wednesday 14 April 2027 · 09:00–09:50 · Week 12
+
+**Reading:** CLRS §34.3–34.5 (in §34.5, at least vertex cover)
+
+**Coursework:** 📋 **Project 2** due Fri 16 Apr 17:00 · 📝 **PS 11** due Fri 16 Apr 17:00 · 📕 **Final exam** Wed 21 Apr 09:00–11:30
 
 ---
 

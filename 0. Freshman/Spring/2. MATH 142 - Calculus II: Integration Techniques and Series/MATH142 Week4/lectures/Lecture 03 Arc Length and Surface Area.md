@@ -2,7 +2,11 @@
 ## Week 4 · Lecture 3 (Friday)
 ### Arc Length and Surface Area — Where Closed Forms Run Out
 
+*“Arc, amplitude, and curvature sustain a similar relation to each other as time, motion, and velocity, or as volume, mass, and density.”* — Carl Friedrich Gauss, abstract of *Disquisitiones generales circa superficies curvas* (1827)
+
 **Date:** Friday 19 February 2027 · 11:00–11:50 · Week 4
+
+**Coursework:** 📝 **PS 3** due today 17:00 · 📝 **PS 4** released today 12:00, due Fri 26 Feb 17:00 · 📊 **Quiz 5** Mon 22 Feb 11:00–11:15 · 🔬 **Lab 4** Wed 24 Feb 15:00–16:50 · 📘 **Midterm 1** Wed 3 Mar 18:00–19:15
 
 ---
 

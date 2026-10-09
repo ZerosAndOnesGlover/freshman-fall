@@ -1,7 +1,13 @@
 # PHYS 141 · Physics I: Mechanics, Waves & Thermodynamics
 ## Lecture 25 — Simple Harmonic Motion: Kinematics and Dynamics
 
+*“Ut tensio, sic vis. [As the extension, so the force.] The power of any spring is in the same proportion with the tension thereof.”* — Robert Hooke, *Lectures de Potentia Restitutiva, or of Spring* (1678)
+
 **Date:** Monday 16 November 2026 · 14:00–14:50 · Week 8
+
+**Reading:** Serway & Jewett §15.1–15.4 · HRK Ch. 17
+
+**Coursework:** 📊 **Quiz 7** today 14:00 · 🔬 **Lab 8** Thu 19 Nov 14:00–17:00 · 📝 **PS 7** due Fri 20 Nov 17:00 · 📝 **PS 8** released Fri 20 Nov 15:00, due Fri 27 Nov 17:00
 
 ---
 

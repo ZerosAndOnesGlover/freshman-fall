@@ -2,9 +2,13 @@
 ## Week 4 · Lecture 1 of 2
 ### Three-Address Code and the Control-Flow Graph
 
+*“For systems, the analogue of a face-lift is to add to the control graph an edge that creates a cycle, not just an additional node.”* — Alan Perlis, "Epigrams on Programming" (1982), #29
+
 ---
 
 **Reading:** Dragon §6.1–6.4, §8.4 · **Next:** L10, SSA and dataflow analysis
+
+**Coursework:** 📊 **Quiz 4** today · 📘 **Midterm 1** Wed this week 20:00–21:15 · 📝 **PS 4** released Wed this week, due Fri of Week 5 17:00 · 📝 **PS 3** due Fri this week 17:00 · 🔬 **Lab 4** Fri this week 14:00–15:50
 
 ---
 

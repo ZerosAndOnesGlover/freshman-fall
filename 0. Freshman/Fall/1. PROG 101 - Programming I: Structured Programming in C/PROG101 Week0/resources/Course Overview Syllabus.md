@@ -17,17 +17,11 @@
 
 ## Course Description
 
-PROG 101 teaches programming in C — a language close enough to the hardware to teach you what a
-computer actually does, yet abstract enough to write real programs. C is the language in which Unix,
-Linux, the Python interpreter, most databases, and much of the firmware in your devices is written.
+PROG 101 teaches programming in C — a language close enough to the hardware to teach you what a computer actually does, yet abstract enough to write real programs. C is the language in which Unix, Linux, the Python interpreter, most databases, and much of the firmware in your devices is written.
 
-Learning C first is a deliberate pedagogical choice: it forces you to confront memory, pointers, and
-the machine model directly — knowledge that makes you a better programmer in every language you learn
-afterward.
+Learning C first is a deliberate pedagogical choice: it forces you to confront memory, pointers, and the machine model directly — knowledge that makes you a better programmer in every language you learn afterward.
 
-This course takes a **structured programming** approach. Structured programming is not just a style;
-it is a methodology for writing programs whose correctness can be reasoned about. Every construct you
-learn — sequence, selection, iteration, functions — corresponds to a formal verification technique.
+This course takes a **structured programming** approach. Structured programming is not just a style; it is a methodology for writing programs whose correctness can be reasoned about. Every construct you learn — sequence, selection, iteration, functions — corresponds to a formal verification technique.
 
 ### Why C before Python or Java?
 

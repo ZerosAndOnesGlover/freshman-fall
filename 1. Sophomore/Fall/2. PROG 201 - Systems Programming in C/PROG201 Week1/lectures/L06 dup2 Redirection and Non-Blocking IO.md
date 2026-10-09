@@ -2,9 +2,13 @@
 ## Week 1 · Lecture 3 of 3
 ### `dup2`, Redirection, and Non-Blocking I/O
 
+*“In Unix, one tries to design programs to operate not specifically with each other, but with programs as yet unthought of.”* — Doug McIlroy, as quoted in Eric S. Raymond, *The Art of Unix Programming* (2003)
+
 ---
 
 **Reading:** APUE §3.12, §14.6, §14.7 · TLPI Ch. 5, §63.5 · **Previous:** L05 · **Next:** Lab 1 — build `ls | grep | wc` in C
+
+**Coursework:** 📝 **PS 0** due Fri this week 17:00 · 🔬 **Lab 1** Mon of Week 2 15:00–16:50 · 📊 **Quiz 2** Tue of Week 2 · 📝 **PS 2** released Wed of Week 2, due Fri of Week 3 17:00
 
 ---
 

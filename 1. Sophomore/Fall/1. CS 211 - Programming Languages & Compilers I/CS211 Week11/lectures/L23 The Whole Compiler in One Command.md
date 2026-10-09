@@ -2,9 +2,13 @@
 ## Week 11 · Lecture 1 of 2
 ### The Whole Compiler, in One Command
 
+*“Much of my work has come from being lazy. I didn't like writing programs, and so, when I was working on the IBM 701 (an early computer), writing programs for computing missile trajectories, I started work on a programming system to make it easier to write programs.”* — John Backus, on the origin of FORTRAN, IBM *Think* (1979)
+
 ---
 
 **Reading:** Dragon §1.2–1.3 (revisit) · LLVM Language Reference, "Introduction" and "Instruction Reference" · **Next:** L24, JIT compilation and what LLVM is
+
+**Coursework:** 📊 **Quiz 11** today · 📝 **PS 11** released Wed this week, due Fri of Week 12 17:00 · 📋 **Project 1** due Fri this week 17:00 · 📝 **PS 10** due Fri this week 17:00 · 🔬 **Lab 11** Fri this week 14:00–15:50
 
 ---
 

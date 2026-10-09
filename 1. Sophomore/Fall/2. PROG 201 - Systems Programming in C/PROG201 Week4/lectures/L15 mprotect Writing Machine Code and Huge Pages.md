@@ -2,9 +2,13 @@
 ## Week 4 · Lecture 3 of 3
 ### `mprotect`, Writing Machine Code, and Huge Pages
 
+*“The machine may also change the square which is being scanned, but only by shifting it one place to right or left.”* — Alan Turing, "On Computable Numbers" (1936)
+
 ---
 
 **Reading:** TLPI §50.2 · CS:APP §3.7 (for the calling convention) · `man 2 mprotect`, `man 2 madvise`, `man 7 sigaction` · **Previous:** L14 · **Next:** Lab 4 — write a JIT, on the Monday of Week 5
+
+**Coursework:** 📝 **PS 3** due Fri this week 17:00 · 🔬 **Lab 4** Mon of Week 5 15:00–16:50 · 📊 **Quiz 5** Tue of Week 5 · 📝 **PS 5** released Wed of Week 5, due Fri of Week 6 17:00
 
 ---
 

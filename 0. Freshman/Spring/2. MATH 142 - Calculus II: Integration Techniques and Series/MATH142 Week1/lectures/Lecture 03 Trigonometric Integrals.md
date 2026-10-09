@@ -2,7 +2,11 @@
 ## Week 1 · Lecture 3 (Friday)
 ### Trigonometric Integrals, and the Identity Behind Fourier Analysis
 
+*“Mathematics is the queen of the sciences and number theory is the queen of mathematics.”* — Carl Friedrich Gauss, as quoted in Wolfgang Sartorius von Waltershausen, *Gauss zum Gedächtniss* (1856)
+
 **Date:** Friday 29 January 2027 · 11:00–11:50 · Week 1
+
+**Coursework:** 📝 **PS 1** released today 12:00, due Fri 5 Feb 17:00 · 📊 **Quiz 2** Mon 1 Feb 11:00–11:15 · 🔬 **Lab 1** Wed 3 Feb 15:00–16:50
 
 ---
 

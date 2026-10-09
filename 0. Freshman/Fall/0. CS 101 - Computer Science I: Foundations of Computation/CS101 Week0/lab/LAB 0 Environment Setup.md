@@ -150,7 +150,7 @@ git log          # See your commit history
 ### 2.4 Connect to GitHub (if using GitHub)
 
 1. Go to [github.com](https://github.com) and create an account if you don't have one
-2. Create a new repository called `freshman-fall` (make it private)
+2. Create a new repository called `freshman-fall`
 3. Follow GitHub's instructions to connect your local repo:
 
 ```bash

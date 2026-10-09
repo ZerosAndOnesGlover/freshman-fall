@@ -2,9 +2,13 @@
 ## Week 7 · Lecture 3 of 3
 ### Automated Review, and Its Limits
 
+*“Mechanical rules are never a substitute for clarity of thought.”* — Brian Kernighan & P. J. Plauger, *Software Tools* (1976)
+
 ---
 
 **Sat:** Thursday of Week 7, 10:00–10:50, TH 200 · **Reading:** ruff and mypy documentation — the rule selection pages · **Next:** Week 8, CI/CD
+
+**Coursework:** 📝 **Assignment 6** due Fri this week 17:00 · 📊 **Quiz 8** Tue of Week 8 · 📝 **Assignment 8** released Wed of Week 8 17:00, due Fri of Week 9 17:00
 **⚠️ Spring Break follows this week. A 7 is due Friday 27 March**, after the break.
 
 ---

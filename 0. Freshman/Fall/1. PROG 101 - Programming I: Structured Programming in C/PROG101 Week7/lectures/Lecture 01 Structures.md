@@ -1,7 +1,13 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 7 · Lecture 1: Structures Composite Types and Memory Layout
 
+*“Show me your flowcharts and conceal your tables, and I shall continue to be mystified. Show me your tables, and I won't usually need your flowcharts; they'll be obvious.”* — Fred Brooks, *The Mythical Man-Month* (1975), ch. 9
+
 **Date:** Tuesday 10 November 2026 · 10:00–10:50 · Week 7
+
+**Reading:** K&R Chapter 6 · King Ch. 16 · CS:APP §3.9.3 *(details at the end of the lecture)*
+
+**Coursework:** 📊 **Quiz 6** today 10:00–10:10 · 📝 **PS 7** released Thu 12 Nov 11:00, due Tue 17 Nov 10:00 · 📝 **PS 6** due Fri 13 Nov 17:00 · 🔬 **Lab 7** Mon 16 Nov 15:00–16:50
 
 ---
 

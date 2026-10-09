@@ -2,9 +2,13 @@
 ## Week 11 · Lecture 1 of 3 · **Monday**
 ### The Singular Value Decomposition
 
+*“[M]y axiom runs as follows: "The whole is not identical with a part." This axiom leads us at once to a problem. What relation has the part to the whole?”* — Karl Pearson, *The Ethic of Freethought* (1883)
+
 ---
 
 **Reading:** Strang Ch. 7, §7.1–§7.2 · **Previous:** Week 10's L32, what positive definiteness is for · **Next:** L34, what the SVD tells you
+
+**Coursework:** 📊 **Quiz 11** today · 📝 **PS 11** released Wed this week, due Fri of Week 12 17:00 · 💬 **Recitation 10** Thu this week 15:00–15:50 · 📝 **PS 10** due Fri this week 17:00
 
 > **Quiz 11 is the first ten minutes of this lecture**, covers Week 10, and is **the last quiz of
 > the term.**

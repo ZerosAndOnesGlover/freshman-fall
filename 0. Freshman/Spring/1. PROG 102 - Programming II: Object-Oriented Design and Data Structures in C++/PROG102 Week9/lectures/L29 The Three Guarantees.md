@@ -1,11 +1,15 @@
 # PROG 102 · Lecture 29
 ## The Three Guarantees
 
+*“There are two ways of constructing a software design: One way is to make it so simple that there are obviously no deficiencies, and the other way is to make it so complicated that there are no obvious deficiencies. The first method is far more difficult.”* — C. A. R. Hoare, "The Emperor's Old Clothes" (Turing Award lecture, 1980)
+
 **Week 9 · Wednesday · 50 minutes**
 **Reading:** Meyers, *Effective C++* Item 29 · **Reference:** Sutter, *Exceptional C++*
 **Assumes:** L28, Week 1 (copy-and-swap), Week 5 (RAII)
 
 **Date:** Wednesday 24 March 2027 · 10:00–10:50 · Week 9
+
+**Coursework:** 📋 **Project 1** due Fri 26 Mar 17:00 · 📝 **PS 8** due Fri 26 Mar 17:00 · 📝 **PS 9** released Fri 26 Mar 10:00, due Fri 2 Apr 17:00 · 🔬 **Lab 9** Mon 29 Mar 15:00–16:50 · 📊 **Quiz 10** Tue 30 Mar 10:00–10:15 · 📘 **Midterm 2** Tue 30 Mar 18:00–19:30
 
 ---
 

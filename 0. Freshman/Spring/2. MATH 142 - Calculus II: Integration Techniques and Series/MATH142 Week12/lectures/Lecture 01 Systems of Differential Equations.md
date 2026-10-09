@@ -2,7 +2,11 @@
 ## Week 12 · Lecture 1 (Monday)
 ### Systems of Differential Equations
 
+*“Any progress in the theory of partial differential equations must also bring about a progress in Mechanics.”* — Carl Gustav Jacob Jacobi, *Vorlesungen über Dynamik* (1842–43)
+
 **Date:** Monday 12 April 2027 · 11:00–11:50 · Week 12
+
+**Coursework:** 📊 **Quiz 12** today 11:00–11:15 · 🔬 **Lab 11** Wed 14 Apr 15:00–16:50 · 🔬 **Lab 12** Thu 15 Apr 15:00–16:50 · 📝 **PS 11** due Fri 16 Apr 17:00 · 📝 **PS 12** released Fri 16 Apr 12:00 · 📕 **Final exam** Tue 20 Apr 09:00–11:30
 
 ---
 

@@ -2,9 +2,13 @@
 ## Week 4 · Lecture 2 of 3 · **Tuesday**
 ### The Matrix of a Transformation
 
+*“If one has really technically penetrated a subject, things that previously seemed in complete contrast, might be purely mathematical transformations of each other.”* — John von Neumann, as quoted in András Bródy, *Proportions, Prices, and Planning* (1970)
+
 ---
 
 **Reading:** Strang §8.2 · **Previous:** L13, what a linear transformation is · **Next:** L15, change of basis
+
+**Coursework:** 📝 **PS 4** released Wed this week, due Fri of Week 5 17:00 · 💬 **Recitation 3** Thu this week 15:00–15:50 · 📝 **PS 3** due Fri this week 17:00 · 📊 **Quiz 5** Mon of Week 5
 
 > **Every number in this lecture is reproduced by `resources/transformations.py`.**
 

@@ -2,7 +2,11 @@
 ## Week 8 · Lecture 1 (Monday)
 ### Areas, Distances, and Riemann Sums
 
+*“This method of mine takes its beginnings where Cavalieri ends his Method of indivisibles. ...for as his was the Geometry of indivisibles, so I have chosen to call my method the Arithmetic of infinitesimals.”* — John Wallis, *Arithmetica Infinitorum* (1656)
+
 **Date:** Monday 16 November 2026 · 11:00–11:50 · Week 8
+
+**Coursework:** 📊 **Quiz 8** today 11:00–11:15 · 🔬 **Lab 7** due today 17:00 · 📝 **PS 7** due Wed 18 Nov 11:00 · 📝 **PS 8** released Wed 18 Nov 12:00, due Wed 25 Nov 11:00 · 🔬 **Lab 8** Fri 20 Nov 15:00–16:50, report due Mon 23 Nov 17:00
 
 ---
 

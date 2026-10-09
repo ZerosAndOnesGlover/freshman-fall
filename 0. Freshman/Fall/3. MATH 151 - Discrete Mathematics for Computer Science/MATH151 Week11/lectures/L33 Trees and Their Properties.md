@@ -2,7 +2,13 @@
 ## Lecture 33 (L33) — Trees and Their Properties
 ### Monday, Week 11
 
+*“Trees sprout up just about everywhere in computer science...”* — Donald Knuth, *The Art of Computer Programming*, Vol. 4A (2011)
+
 **Date:** Monday 7 December 2026 · 13:00–13:50 · Week 11
+
+**Reading:** Rosen, 8e §11.1 · Epp, 5e §10.4–10.5 · Levin, 3e §4.2 *(details at the end of the lecture)*
+
+**Coursework:** 📊 **Quiz 11** today 13:00–13:15 · 🔬 **Lab 10** Wed 9 Dec 15:00–16:50 · 📝 **PS 10** due Fri 11 Dec 17:00 · 📝 **PS 11** released Fri 11 Dec 14:00, due Fri 18 Dec 17:00 · 📕 **Final exam** Mon 21 Dec 08:00–10:00
 
 ---
 
@@ -182,7 +188,7 @@ path per file; a prefix-free code has exactly one decoding.
 ## Reading
 
 - **Rosen, 8e §11.1** — Introduction to trees
-- **Epp, 5e §10.5** — Trees: definitions and properties
-- **Levin, 3e §4.3** — Trees
+- **Epp, 5e §10.4–10.5** — Trees: examples and basic properties; rooted trees
+- **Levin, 3e §4.2** — Trees
 
 *Next: Lecture 34 — Spanning Trees and Minimum Spanning Trees*

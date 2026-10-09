@@ -1,7 +1,13 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 12 · Lecture 1: Style, Readability, and Structure
 
+*“Any fool can write code that a computer can understand. Good programmers write code that humans can understand.”* — Martin Fowler, *Refactoring* (1999)
+
 **Date:** Tuesday 15 December 2026 · 10:00–10:50 · Week 12
+
+**Reading:** Kernighan & Pike, *The Practice of Programming*, Ch. 1 · Linux kernel `Documentation/process/coding-style.rst` · Ousterhout, *A Philosophy of Software Design* *(details at the end of the lecture)*
+
+**Coursework:** 📊 **Quiz 11** today 10:00–10:10 · 📝 **PS 11** due Fri 18 Dec 17:00 · 📝 **PS 12** released Fri 18 Dec 10:00, due Fri 25 Dec 17:00 · 🔬 **Lab 12** Mon 21 Dec 15:00–16:50 · 📕 **Final exam** Thu 24 Dec 14:00
 
 ---
 

@@ -2,9 +2,14 @@
 ## Functions, Parameters, Return Values, and Encapsulation
 
 **Week 3 · Wednesday**
-*"A function is not just a named block of code — it is a contract between the caller and the implementation." — Barbara Liskov*
+
+*“The purpose of abstracting is not to be vague, but to create a new semantic level in which one can be absolutely precise.”* — Edsger W. Dijkstra, "The Humble Programmer" (EWD340, 1972)
 
 **Date:** Wednesday 14 October 2026 · 09:00–09:50 · Week 3
+
+**Reading:** Guttag, Ch. 4 *(details at the end of the lecture)*
+
+**Coursework:** 📊 **Quiz 3** today 09:00–09:10 · 📝 **PS 2** due Fri 16 Oct 17:00 · 📝 **PS 3** released Fri 16 Oct 10:00, due Fri 23 Oct 17:00 · 🔬 **Lab 3** Tue 20 Oct 15:00–16:50
 
 ---
 

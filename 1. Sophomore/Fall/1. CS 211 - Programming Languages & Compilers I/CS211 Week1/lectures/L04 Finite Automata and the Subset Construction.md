@@ -2,9 +2,13 @@
 ## Week 1 · Lecture 2 of 2
 ### Finite Automata and the Subset Construction
 
+*“The machine is supplied with a "tape"... running through it, and divided into sections (called "squares") each capable of bearing a "symbol".”* — Alan Turing, "On Computable Numbers" (1936)
+
 ---
 
 **Reading:** Dragon §3.6–3.9 · **Next:** Week 2, L05 — recursive descent, and grammars that fight back
+
+**Coursework:** 📝 **PS 0** due Fri this week 17:00 · 🔬 **Lab 1** Fri this week 14:00–15:50 · 📊 **Quiz 2** Tue of Week 2 · 📝 **PS 2** released Wed of Week 2, due Fri of Week 3 17:00
 
 ---
 

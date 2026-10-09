@@ -2,7 +2,11 @@
 ## Week 0 · Lecture 2 of 4
 ### Algebra Review: Equations, Inequalities & the Coordinate Plane
 
+*“As long as algebra and geometry proceeded along separate paths, their advance was slow and their applications limited. But when these sciences joined company, they drew from each other fresh vitality and thenceforward marched on at a rapid pace toward perfection.”* — Joseph-Louis Lagrange, *Leçons élémentaires sur les mathématiques* (1795)
+
 **Date:** Wednesday 23 September 2026 · 11:00–11:50 · Week 0
+
+**Coursework:** 📝 **PS 0** due Fri 25 Sep 17:00 · 🔬 **Lab 0** Fri 25 Sep 15:00–16:50 · 📊 **Quiz 1** Mon 28 Sep 11:00–11:15
 
 ---
 

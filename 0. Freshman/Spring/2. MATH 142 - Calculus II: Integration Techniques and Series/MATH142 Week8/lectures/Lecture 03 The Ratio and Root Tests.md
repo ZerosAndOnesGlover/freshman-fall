@@ -2,7 +2,11 @@
 ## Week 8 · Lecture 3 (Friday)
 ### The Ratio and Root Tests
 
+*“There is no let up! No end to it! Accursed problems! Innumerable calculations. Endless fighting. Signs. Formulas. Theorems besetting me from dawn to dusk!”* — Augustin-Louis Cauchy, "La Chandeleur" (1843)
+
 **Date:** Friday 19 March 2027 · 11:00–11:50 · Week 8
+
+**Coursework:** 📝 **PS 7** due today 17:00 · 📝 **PS 8** released today 12:00, due Fri 26 Mar 17:00 · 📊 **Quiz 9** Mon 22 Mar 11:00–11:15 · 🔬 **Lab 8** Wed 24 Mar 15:00–16:50 · 📘 **Midterm 2** Wed 31 Mar 18:00–19:15
 
 ---
 

@@ -2,9 +2,13 @@
 ## Week 10 · Lecture 2 of 2
 ### Little Languages, and What They Cost
 
+*“The utility of a language as a tool of thought increases with the range of topics it can treat, but decreases with the amount of vocabulary and the complexity of grammatical rules which the user must keep in mind. Economy of notation is therefore important.”* — Kenneth E. Iverson, "Notation as a Tool of Thought", Turing Award Lecture (1979), §1.4
+
 ---
 
 **Reading:** Fowler, *Domain-Specific Languages* ch. 1–4 · Hudak (1996), "Building DSLs" · Bentley (1986), "Little Languages" · **Next:** L23, the complete mini-compiler
+
+**Coursework:** 📝 **PS 9** due Fri this week 17:00 · 🔬 **Lab 10** Fri this week 14:00–15:50 · 📊 **Quiz 11** Tue of Week 11 · 📝 **PS 11** released Wed of Week 11, due Fri of Week 12 17:00
 
 ---
 

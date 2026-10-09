@@ -1,7 +1,13 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 8 · Lecture 3: Binary Files and Struct Serialization
 
+*“Transmission through space (typically signaling) is the same as transmission through time (storage).”* — Richard Hamming, *The Art of Doing Science and Engineering* (1991)
+
 **Date:** Thursday 19 November 2026 · 10:00–10:50 · Week 8
+
+**Reading:** K&R §7.5 · King Ch. 22 · CS:APP §10.1 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 8** released today 11:00, due Tue 24 Nov 10:00 · 🔬 **Lab 8** Mon 23 Nov 15:00–16:50 · 📊 **Quiz 8** Tue 24 Nov 10:00–10:10 · 📘 **Midterm 2** Tue 1 Dec 18:00–19:30
 
 ---
 

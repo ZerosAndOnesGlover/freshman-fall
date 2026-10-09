@@ -2,9 +2,13 @@
 ## Week 0 · Lecture 2 of 3 · **Tuesday** of Week 0
 ### Gaussian Elimination: Pivots, Row Operations, and Echelon Form
 
+*“But in our opinion truths of this kind should be drawn from notions rather than from notations.”* — Carl Friedrich Gauss, *Disquisitiones Arithmeticae* (1801), Art. 76
+
 ---
 
 **Reading:** Strang §2.2, §2.3 (skim §2.3 — the matrix form of what we do here is Week 1's L06) · **Previous:** L01, the two pictures · **Next:** L03, cost and failure
+
+**Coursework:** 📝 **PS 0** released Wed this week, due Fri of Week 1 17:00
 
 ---
 

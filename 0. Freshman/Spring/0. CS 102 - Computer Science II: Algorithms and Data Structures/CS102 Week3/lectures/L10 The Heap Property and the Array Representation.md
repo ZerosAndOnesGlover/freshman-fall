@@ -1,7 +1,13 @@
 # CS 102 · Computer Science II
 ## Lecture 10: The Heap Property and the Array Representation
 
+*“In computing, invariants are ephemeral.”* — Alan Perlis, "Epigrams on Programming" (1982), #62
+
 **Date:** Monday 8 February 2027 · 09:00–09:50 · Week 3
+
+**Reading:** CLRS §6.1–6.2
+
+**Coursework:** 📊 **Quiz 3** today 09:00–09:15 · 🔬 **Lab 2** Tue 9 Feb 15:00–16:50 · 📝 **PS 2** due Fri 12 Feb 17:00 · 📝 **PS 3** released Fri 12 Feb 10:00, due Fri 19 Feb 17:00
 
 ---
 

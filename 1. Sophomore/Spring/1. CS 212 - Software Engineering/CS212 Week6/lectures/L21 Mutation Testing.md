@@ -2,9 +2,13 @@
 ## Week 6 · Lecture 3 of 3
 ### Mutation Testing — Testing the Tests
 
+*“There are two ways to write error-free programs; only the third one works.”* — Alan Perlis, "Epigrams on Programming" (1982), #40
+
 ---
 
 **Sat:** Thursday of Week 6, 10:00–10:50, TH 200 · **Reading:** Papadakis et al., *"Mutation Testing Advances"* (2019), §1–3 · **Next:** Week 7, code review
+
+**Coursework:** 📝 **Assignment 5** due Fri this week 17:00 · 📊 **Quiz 7** Tue of Week 7 · 📝 **Assignment 7** released Wed of Week 7 17:00, due Fri of Week 8 17:00
 
 ---
 

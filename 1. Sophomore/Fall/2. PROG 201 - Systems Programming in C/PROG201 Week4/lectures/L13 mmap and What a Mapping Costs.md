@@ -2,9 +2,13 @@
 ## Week 4 · Lecture 1 of 3
 ### `mmap`, and What a Mapping Costs
 
+*“Controlling complexity is the essence of computer programming.”* — Brian Kernighan, *Software Tools* (1976)
+
 ---
 
 **Reading:** APUE §14.8 · TLPI Ch. 49 · `man 2 mmap`, `man 2 madvise`, `man 5 proc` (the `maps` and `smaps` sections) · **Previous:** L12 · **Next:** L14 — where memory comes from
+
+**Coursework:** 📊 **Quiz 4** today · 📝 **PS 4** released Wed this week, due Fri of Week 5 17:00 · 📝 **PS 3** due Fri this week 17:00 · 🔬 **Lab 4** Mon of Week 5 15:00–16:50
 
 ---
 

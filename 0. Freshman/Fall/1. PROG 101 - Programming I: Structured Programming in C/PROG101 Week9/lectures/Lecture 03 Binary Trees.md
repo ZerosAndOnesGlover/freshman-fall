@@ -1,7 +1,13 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 9 · Lecture 3: Recursive Data Structures — Binary Trees
 
+*“Trees sprout up just about everywhere in computer science...”* — Donald Knuth, *The Art of Computer Programming*, Vol. 4A (2011)
+
 **Date:** Thursday 26 November 2026 · 10:00–10:50 · Week 9
+
+**Reading:** King §9.6 · CLRS Ch. 12 · Sedgewick & Wayne, Algorithms 4th ed. *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 9** released today 11:00, due Tue 1 Dec 10:00 · 🔬 **Lab 9** Mon 30 Nov 15:00–16:50 · 📊 **Quiz 9** Tue 1 Dec 10:00–10:10 · 📘 **Midterm 2** Tue 1 Dec 18:00–19:30
 
 ---
 
@@ -442,7 +448,7 @@ The general lesson recurs throughout the course: an average-case bound assumes a
 
 ## Reading
 
-- **King Ch. 18** — Recursion (tree recursion sections)
+- **King §9.6** — Recursion (King has no tree chapter; CLRS Ch. 12 below covers the trees themselves)
 - **CLRS Ch. 12** — Binary Search Trees (the full formal treatment, including deletion proof)
 - **Sedgewick & Wayne, Algorithms 4th ed.** — Ch. 3.2 (Binary Search Trees) — excellent visualizations
 

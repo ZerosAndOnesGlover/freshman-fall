@@ -1,9 +1,15 @@
 # PHYS 141 · Lecture 1
 # Measurement, Units & Dimensional Analysis
 
+*“I often say that when you can measure what you are speaking about, and express it in numbers, you know something about it; but when you cannot measure it, when you cannot express it in numbers, your knowledge is of a meagre and unsatisfactory kind.”* — Lord Kelvin, lecture "Electrical Units of Measurement" (1883)
+
 > **Core Principle:** Physics is an experimental science. Every quantity we discuss must be measurable — and the measurement must be reported with its units and its uncertainty. A number without units is not a physical quantity; it is a mathematical abstraction.
 
 **Date:** Monday 21 September 2026 · 14:00–14:50 · Week 0
+
+**Reading:** Serway & Jewett §1.1–1.6 · HRK Ch. 1
+
+**Coursework:** 🔬 **Lab 0** Thu 24 Sep 14:00–17:00 · 📝 **PS 0** released Fri 25 Sep 15:00, due Fri 2 Oct 17:00
 
 ---
 

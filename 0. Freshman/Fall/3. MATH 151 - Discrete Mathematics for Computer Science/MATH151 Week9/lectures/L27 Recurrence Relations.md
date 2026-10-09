@@ -2,7 +2,13 @@
 ## Lecture 27 (L27) — Recurrence Relations: Modelling and Iteration
 ### Monday, Week 9
 
+*“Great fleas have little fleas upon their backs to bite 'em, And little fleas have lesser fleas, and so ad infinitum.”* — Augustus De Morgan, *A Budget of Paradoxes* (1872)
+
 **Date:** Monday 23 November 2026 · 13:00–13:50 · Week 9
+
+**Reading:** Rosen, 8e §8.1 · Epp, 5e §5.6 · Levin, 3e §2.4 *(details at the end of the lecture)*
+
+**Coursework:** 📊 **Quiz 9** today 13:00–13:15 · 🔬 **Lab 8** Wed 25 Nov 15:00–16:50 · 📝 **PS 8** due Fri 27 Nov 17:00 · 📝 **PS 9** released Fri 27 Nov 14:00, due Fri 4 Dec 17:00
 
 ---
 

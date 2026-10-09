@@ -2,9 +2,13 @@
 ## Week 11 · Lecture 3 of 3 · **Friday**
 ### Low-Rank Approximation
 
+*“It is better to be content with the fraction of a right solution than to beguile ourselves with the whole of a wrong solution.”* — Karl Pearson, *The Grammar of Science* (1892), Introductory
+
 ---
 
 **Reading:** Strang §7.1 (image processing) · **Previous:** L34, what the SVD tells you · **Next:** Week 12's L36, PCA
+
+**Coursework:** 📝 **PS 10** due today 17:00 · 📝 **PS 12** released Wed of Week 12, due Fri of Week 12 17:00 · 💬 **Recitation 11** Thu of Week 12 15:00–15:50 · 📕 **Final exam** Mon of finals week 09:00–11:30
 
 > **PS 10 is due at 17:00 today**, alongside **CS 211's Project 1**. **PS 11 was released
 > Wednesday** and is due **Friday of Week 12** — with Thanksgiving recess in between, and **PS 12

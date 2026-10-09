@@ -2,9 +2,13 @@
 ## Week 3 · Lecture 3 of 3
 ### Alignment, the Red Zone, and Recursion in Assembly
 
+*“Recursion is the root of computation since it trades description for time.”* — Alan Perlis, "Epigrams on Programming" (1982), #12
+
 ---
 
 **Reading:** CS:APP §3.7.5–3.7.6 · **Previous:** L11, the System V ABI
+
+**Coursework:** 📝 **PS 2** due today 17:00 · 📊 **Quiz 4** Mon of Week 4 · 🔬 **Lab 3** Tue of Week 4 15:00–16:50 · 📝 **PS 4** released Wed of Week 4, due Fri of Week 5 17:00 · 📘 **Midterm 1** Mon of Week 5 18:00–19:15
 
 ---
 

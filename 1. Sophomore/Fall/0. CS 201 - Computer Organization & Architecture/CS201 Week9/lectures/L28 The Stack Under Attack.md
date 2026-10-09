@@ -2,9 +2,13 @@
 ## Week 9 · Lecture 1 of 3
 ### The Stack Under Attack — Buffer Overflows
 
+*“In any respectable branch of engineering, failure to observe such elementary precautions would have long been against the law.”* — C. A. R. Hoare, on array bounds checking, "The Emperor's Old Clothes", Turing Award Lecture (1980)
+
 ---
 
 **Reading:** CS:APP §3.10.3–3.10.4 · **Previous:** L27, the application layer
+
+**Coursework:** 📊 **Quiz 9** today · 🔬 **Lab 8** Tue this week 15:00–16:50 · 📝 **PS 9** released Wed this week, due Fri of Week 10 17:00 · 📋 **Project 1** due Fri this week 17:00 · 📝 **PS 8** due Fri this week 17:00 · 📘 **Midterm 2** Mon of Week 10 18:00–19:15
 
 ---
 

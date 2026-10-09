@@ -2,7 +2,11 @@
 ## Week 0 · Lecture 0 of 4
 ### The Language of Mathematics: Sets, Notation & Logic
 
+*“Philosophy is written in this grand book, which stands continually open before our eyes (I say the 'Universe'), but can not be understood without first learning to comprehend the language and know the characters as it is written. It is written in mathematical language.”* — Galileo Galilei, *The Assayer* (1623)
+
 **Date:** Monday 21 September 2026 · 11:00–11:50 · Week 0
+
+**Coursework:** 📝 **PS 0** released today 12:00, due Fri 25 Sep 17:00 · 🔬 **Lab 0** Fri 25 Sep 15:00–16:50
 
 ---
 

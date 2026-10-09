@@ -2,9 +2,13 @@
 ## Week 7 · Lecture 3 of 3
 ### Real File Systems on Disk
 
+*“Design bugs are often subtle and occur by evolution with early assumptions being forgotten as new features or uses are added to systems.”* — Fernando J. Corbató, "On Building Systems That Will Fail" (Turing Award lecture, 1991)
+
 ---
 
 **Sat:** Friday of Week 7, 09:00–09:50, VNC 101 · **Reading:** OSTEP Ch. 41; Silberschatz §11.4 · **Next:** Spring Break, then Week 8 — crash consistency
+
+**Coursework:** 📝 **PS 6** due today 17:00 · 📊 **Quiz 8** Mon of Week 8 · 📘 **Midterm 2** Mon of Week 8 18:00–19:15 · 🔬 **Lab 7** Tue of Week 8 15:00–16:50 · 📝 **PS 8** released Wed of Week 8, due Fri of Week 9 17:00
 
 ---
 

@@ -2,9 +2,14 @@
 ## Efficient Sorting: Merge Sort, Quicksort, and the Sorting Landscape
 
 **Week 5 · Friday**
-*"The asymptotic class of an algorithm is not an academic abstraction; it is often the difference between a system that works and one that does not." — CS 101*
+
+*“Due credit must be paid to the genius of the designers of ALGOL 60 who included recursion in their language and enabled me to describe my invention [Quicksort] so elegantly to the world.”* — C. A. R. Hoare, "The Emperor's Old Clothes", Turing Award Lecture (1980)
 
 **Date:** Friday 30 October 2026 · 09:00–09:50 · Week 5
+
+**Reading:** CLRS, Ch. 2.3 · CLRS, Ch. 7 · Python docs, "Sorting Techniques" HOWTO *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 4** due today 17:00 · 📝 **PS 5** released today 10:00, due Fri 6 Nov 17:00 · 📘 **Midterm 1** Mon 2 Nov 18:00–19:15 · 🔬 **Lab 5** Tue 3 Nov 15:00–16:50 · 📊 **Quiz 6** Wed 4 Nov 09:00–09:10
 
 ---
 
@@ -396,7 +401,7 @@ This is the general shape of beating a lower bound: you never break the theorem,
 
 - **CLRS, Ch. 2.3** — Merge sort with formal recurrence analysis
 - **CLRS, Ch. 7** — Quicksort (optional — deeper than needed for CS 101, but excellent)
-- **Python docs:** https://docs.python.org/3/howto/sorting.html — the official sorting HOWTO
+- **Python docs, "Sorting Techniques" HOWTO** — https://docs.python.org/3/howto/sorting.html
 
 ---
 

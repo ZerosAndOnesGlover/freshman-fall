@@ -1,11 +1,15 @@
 # PROG 102 · Lecture 09
 ## Instantiation, Specialization, and What Templates Cost
 
+*“Optimization hinders evolution.”* — Alan Perlis, "Epigrams on Programming" (1982), #21
+
 **Week 2 · Thursday · 50 minutes**
 **Reading:** *C++ Primer* §16.3, §16.5 · **Reference:** Stroustrup §23.5, Ch. 25
 **Assumes:** L07, L08
 
 **Date:** Thursday 4 February 2027 · 10:00–10:50 · Week 2
+
+**Coursework:** 📝 **PS 1** due Fri 5 Feb 17:00 · 📝 **PS 2** released Fri 5 Feb 10:00, due Fri 12 Feb 17:00 · 🔬 **Lab 2** Mon 8 Feb 15:00–16:50 · 📊 **Quiz 3** Tue 9 Feb 10:00–10:15
 
 ---
 

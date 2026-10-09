@@ -1,7 +1,13 @@
 # CS 102 · Computer Science II
 ## Lecture 26: Sequences, Trees, and Bitmasks
 
+*“Recursion is the root of computation since it trades description for time.”* — Alan Perlis, "Epigrams on Programming" (1982), #12
+
 **Date:** Wednesday 17 March 2027 · 09:00–09:50 · Week 8
+
+**Reading:** Dasgupta, Papadimitriou & Vazirani §6.2 (LIS), §6.7 (DP on trees) · Laaksonen, *Competitive Programmer's Handbook*, Ch. 7 (coin change) and Ch. 10 (bitmasks)
+
+**Coursework:** 📝 **PS 7** due Fri 19 Mar 17:00 · 📝 **PS 8** released Fri 19 Mar 10:00, due Fri 26 Mar 17:00 · 📊 **Quiz 9** Mon 22 Mar 09:00–09:15 · 🔬 **Lab 8** Tue 23 Mar 15:00–16:50 · 📘 **Midterm 2** Mon 29 Mar 18:00–19:15
 
 ---
 
@@ -210,7 +216,7 @@ you use when $n$ is large.
 
 ## 6. What to Do
 
-- Read CLRS §14.3 again with these examples in mind, and §15.5 for the tree case.
+- Read CLRS §14.3 again with these examples in mind, and §14.5 for the tree case.
 - **PS 8** implements LIS both ways, coin change with a canonicality test, and tree DP.
 - **Lab 8** is Floyd–Warshall, which is next lecture.
 - **PROJECT 1 is due Friday of Week 9.**

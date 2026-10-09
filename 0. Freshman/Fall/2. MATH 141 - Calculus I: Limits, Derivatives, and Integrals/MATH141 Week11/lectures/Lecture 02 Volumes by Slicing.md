@@ -2,7 +2,11 @@
 ## Week 11 · Lecture 2 (Tuesday)
 ### Volumes by Slicing: Disks and Washers
 
+*“I am persuaded that it [the method] will be of no little service to mathematics; for I apprehend that some, either of my contemporaries or of my successors, will, by means of the method when once established, be able to discover other theorems in addition, which have not yet occurred to me.”* — Archimedes, *The Method of Mechanical Theorems*
+
 **Date:** Tuesday 8 December 2026 · 11:00–11:50 · Week 11
+
+**Coursework:** 📝 **PS 10** due Wed 9 Dec 11:00 · 📝 **PS 11** released Wed 9 Dec 12:00, due Wed 16 Dec 11:00 · 🔬 **Lab 11** Fri 11 Dec 15:00–16:50 · 📊 **Quiz 12** Mon 14 Dec 11:00–11:15 · 📝 **PS 12** released Mon 14 Dec 12:00 · 📕 **Final exam** Wed 23 Dec 09:00–11:30
 
 ---
 

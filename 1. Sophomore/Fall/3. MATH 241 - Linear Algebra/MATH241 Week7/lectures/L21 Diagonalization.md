@@ -2,9 +2,13 @@
 ## Week 7 · Lecture 1 of 3 · **Monday**
 ### Diagonalization
 
+*“We are mainly interested in the processes... not... in presenting mathematics in its most abstract form. ...we will often begin with concrete forms and then exhibit the process of abstraction.”* — Richard Hamming, *Methods of Mathematics Applied to Calculus, Probability, and Statistics* (1985)
+
 ---
 
 **Reading:** Strang §6.2 · **Previous:** Week 6's L20, the characteristic polynomial · **Next:** L22, when it fails
+
+**Coursework:** 📊 **Quiz 7** today · 📝 **PS 7** released Wed this week, due Fri of Week 8 17:00 · 💬 **Recitation 6** Thu this week 15:00–15:50 · 📝 **PS 6** due Fri this week 17:00
 
 > **Quiz 7 is the first ten minutes of this lecture** and covers Week 6. **Back to Monday** — last
 > week's Tuesday quiz was the Fall Break exception.

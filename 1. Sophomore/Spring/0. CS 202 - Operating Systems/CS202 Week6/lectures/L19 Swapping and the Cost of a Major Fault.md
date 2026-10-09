@@ -2,9 +2,13 @@
 ## Week 6 · Lecture 1 of 3
 ### Swapping, and the Cost of a Major Fault
 
+*“Around computers it is difficult to find the correct unit of time to measure progress. Some cathedrals took a century to complete. Can you imagine the grandeur and scope of a program that would take as long?”* — Alan Perlis, "Epigrams on Programming" (1982), #28
+
 ---
 
 **Sat:** Monday of Week 6, 09:00–09:50, VNC 101, **after Quiz 6** · **Reading:** OSTEP Ch. 21 · **Next:** L20, choosing a victim
+
+**Coursework:** 📊 **Quiz 6** today · 🔬 **Lab 5** Tue this week 15:00–16:50 · 📝 **PS 6** released Wed this week, due Fri of Week 7 17:00 · 📝 **PS 5** due Fri this week 17:00
 
 ---
 

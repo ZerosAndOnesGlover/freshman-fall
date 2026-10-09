@@ -2,9 +2,13 @@
 ## Week 11 · Lecture 1 of 3
 ### Measure First — Profiling and Amdahl in Practice
 
+*“The real problem is that programmers have spent far too much time worrying about efficiency in the wrong places and at the wrong times; premature optimization is the root of all evil (or at least most of it) in programming.”* — Donald Knuth, "Computer Programming as an Art", Turing Award Lecture (1974)
+
 ---
 
 **Reading:** CS:APP §5.1–5.4 · **Previous:** L33, the GPU
+
+**Coursework:** 📊 **Quiz 11** today · 🔬 **Lab 10** Tue this week 15:00–16:50 · 📝 **PS 11** released Wed this week, due Fri of Week 12 17:00 · 📝 **PS 10** due Fri this week 17:00
 
 ---
 

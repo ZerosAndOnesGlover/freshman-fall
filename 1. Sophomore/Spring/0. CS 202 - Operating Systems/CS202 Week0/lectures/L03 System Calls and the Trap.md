@@ -2,9 +2,13 @@
 ## Week 0 · Lecture 3 of 3
 ### System Calls: the Trap, What It Costs, and What the Numbers Mean
 
+*“I think the major good idea in Unix was its clean and simple interface: open, close, read, and write.”* — Ken Thompson, "Unix and Beyond: An Interview with Ken Thompson" (1999)
+
 ---
 
 **Sat:** second Wednesday of Week 0, 09:00–09:50, VNC 101 · **Reading:** OSTEP Ch. 6 in full; xv6 book Ch. 3 on system calls · **Next:** Week 1, the process
+
+**Coursework:** 📝 **PS 0** released Wed this week, due Fri of Week 1 17:00 · 🔬 **Lab 0** Fri this week 10:00–11:50
 
 ---
 

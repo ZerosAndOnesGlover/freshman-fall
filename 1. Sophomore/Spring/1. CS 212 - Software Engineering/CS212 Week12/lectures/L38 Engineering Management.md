@@ -2,9 +2,13 @@
 ## Week 12 · Lecture 2 of 3
 ### Engineering Management
 
+*“Brooks's Law: Adding manpower to a late software project makes it later.”* — Fred Brooks, *The Mythical Man-Month* (1975), ch. 2
+
 ---
 
 **Sat:** Wednesday of Week 12, 10:00–10:50, TH 200 · **Reading:** *Accelerate*, Ch. 2 and 11; Rozovsky on Project Aristotle · **Next:** L39, career paths
+
+**Coursework:** 📝 **Assignment 12** released today 17:00, due Fri this week 17:00 · 📝 **Assignment 11** due Fri this week 17:00 · 🎤 **Demo Day** Tue of the completion period, report due Fri of the completion period 17:00 · 📕 **Final exam** Fri of finals week 09:00–11:30
 **A 12 is released after this lecture**, Wednesday 17:00. **A 11 and A 12 are both due Friday 24 April.**
 
 ---

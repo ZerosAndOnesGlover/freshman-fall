@@ -1,11 +1,15 @@
 # PROG 102 · Lecture 19
 ## Implementing a Doubly Linked List
 
+*“One can even conjecture that Lisp owes its survival specifically to the fact that its programs are lists, which everyone, including me, has regarded as a disadvantage.”* — John McCarthy, "History of Lisp" (1979)
+
 **Week 6 · Tuesday · 50 minutes**
 **Reading:** *C++ Primer* §9.2 (revisit), Ch. 13 · **Reference:** Stroustrup §31.4
 **Assumes:** Weeks 1, 2 and 5 — Rule of Five, templates, `unique_ptr`
 
 **Date:** Tuesday 2 March 2027 · 10:00–10:50 · Week 6
+
+**Coursework:** 📊 **Quiz 6** today 10:00–10:15 · 📋 **Project 1** released today 10:00, due Fri 26 Mar 17:00 · 📘 **Midterm 1** today 18:00–19:30 · 📝 **PS 5** due Fri 5 Mar 17:00 · 📝 **PS 6** released Fri 5 Mar 10:00, due Fri 12 Mar 17:00 · 🔬 **Lab 6** Mon 8 Mar 15:00–16:50
 
 ---
 

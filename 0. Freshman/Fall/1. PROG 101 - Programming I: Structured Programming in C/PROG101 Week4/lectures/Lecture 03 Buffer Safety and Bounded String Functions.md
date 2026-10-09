@@ -1,7 +1,13 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 4 · Lecture 3: Buffer Safety and the Bounded String Functions
 
+*“In any respectable branch of engineering, failure to observe such elementary precautions would have long been against the law.”* — C. A. R. Hoare, on array bounds checking, "The Emperor's Old Clothes", Turing Award Lecture (1980)
+
 **Date:** Thursday 22 October 2026 · 10:00–10:50 · Week 4
+
+**Reading:** `man 3 strncpy` · `man 3 snprintf` · `man 3 strlcpy` · CWE-120, CWE-787 · C11 §7.24 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 3** due Fri 23 Oct 17:00 · 📝 **PS 4** released Fri 23 Oct 10:00, due Fri 30 Oct 17:00 · 🔬 **Lab 4** Mon 26 Oct 15:00–16:50 · 📊 **Quiz 4** Tue 27 Oct 10:00–10:10 · 📘 **Midterm 1** Wed 4 Nov 18:00–19:30
 
 ---
 

@@ -1,12 +1,16 @@
 # PROG 102 · Lecture 01
 ## From C to C++: The Class as a Struct With Functions
 
+*“Within C++, there is a much smaller and cleaner language struggling to get out.”* — Bjarne Stroustrup, *The Design and Evolution of C++* (1994)
+
 **Week 0 · Wednesday · 50 minutes**
 **Reading:** *C++ Primer* Ch. 1, §7.1–7.2 · **Reference:** Stroustrup Ch. 16.2
 **Assumes:** **Lecture 00** — this lecture uses `::`, `std::`, `explicit`, references and
 `new`/`delete` without explaining them.
 
 **Date:** Wednesday 20 January 2027 · 10:00–10:50 · Week 0
+
+**Coursework:** 📝 **PS 0** released Fri 22 Jan 11:00, due Fri 29 Jan 17:00 · 🔬 **Lab 0** Mon 25 Jan 15:00–16:50 · 📊 **Quiz 1** Tue 26 Jan 10:00–10:15
 
 ---
 

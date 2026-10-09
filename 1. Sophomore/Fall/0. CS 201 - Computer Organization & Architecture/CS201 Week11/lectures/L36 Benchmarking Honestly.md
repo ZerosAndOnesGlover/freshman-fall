@@ -2,9 +2,13 @@
 ## Week 11 · Lecture 3 of 3
 ### Benchmarking Honestly
 
+*“The first principle is that you must not fool yourself — and you are the easiest person to fool.”* — Richard Feynman, "Cargo Cult Science", Caltech commencement address (1974)
+
 ---
 
 **Reading:** CS:APP §5.13 · **Previous:** L35, the roofline
+
+**Coursework:** 📝 **PS 10** due today 17:00 · 🔬 **Lab 11** Tue of Week 12 15:00–16:50 · 📝 **PS 12** released Wed of Week 12, due Fri of Week 12 17:00
 
 ---
 

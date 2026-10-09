@@ -1,7 +1,13 @@
 # CS 102 · Computer Science II
 ## Lecture 19: Spanning Trees and the Cut Property
 
+*“Simplicity is a great virtue but it requires hard work to achieve it and education to appreciate it. And to make matters worse: complexity sells better.”* — Edsger W. Dijkstra, "On the nature and role of computing science" (EWD896, 1984)
+
 **Date:** Monday 1 March 2027 · 09:00–09:50 · Week 6
+
+**Reading:** CLRS §21.1
+
+**Coursework:** 📊 **Quiz 6** today 09:00–09:15 · 📘 **Midterm 1** today 18:00–19:15 · 🔬 **Lab 5** Tue 2 Mar 15:00–16:50 · 📝 **PS 5** due Fri 5 Mar 17:00 · 📝 **PS 6** released Fri 5 Mar 10:00, due Fri 12 Mar 17:00
 
 ---
 

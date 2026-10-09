@@ -2,9 +2,13 @@
 ## Week 10 · Lecture 2 of 3
 ### Memory and Devices in a Virtual Machine
 
+*“Write a paper promising salvation, make it a 'structured' something or a 'virtual' something, or 'abstract', 'distributed' or 'higher-order' or 'applicative' and you can almost be certain of having started a new cult.”* — Edsger W. Dijkstra, "My hopes of computing science" (EWD709, 1979)
+
 ---
 
 **Sat:** Wednesday of Week 10, 09:00–09:50, VNC 101 · **Reading:** the KVM API documentation, `KVM_SET_USER_MEMORY_REGION` and `KVM_EXIT_MMIO`; OSTEP Ch. B · **Next:** L33, what it costs
+
+**Coursework:** 📝 **PS 10** released today, due Fri of Week 11 17:00 · 📝 **PS 9** due Fri this week 17:00 · 📊 **Quiz 11** Mon of Week 11 · 🔬 **Lab 10** Tue of Week 11 15:00–16:50
 
 ---
 

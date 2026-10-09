@@ -1,7 +1,13 @@
 # CS 102 · Computer Science II
 ## Lecture 11: Building a Heap in Linear Time, and Heap Sort
 
+*“If a program manipulates a large amount of data, it does so in a small number of ways.”* — Alan Perlis, "Epigrams on Programming" (1982), #5
+
 **Date:** Wednesday 10 February 2027 · 09:00–09:50 · Week 3
+
+**Reading:** CLRS §6.3–6.4
+
+**Coursework:** 📝 **PS 2** due Fri 12 Feb 17:00 · 📝 **PS 3** released Fri 12 Feb 10:00, due Fri 19 Feb 17:00 · 📊 **Quiz 4** Mon 15 Feb 09:00–09:15 · 🔬 **Lab 3** Tue 16 Feb 15:00–16:50
 
 ---
 

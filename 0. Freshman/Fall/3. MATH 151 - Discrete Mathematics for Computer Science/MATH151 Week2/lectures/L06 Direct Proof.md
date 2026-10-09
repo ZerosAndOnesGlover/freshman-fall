@@ -2,7 +2,13 @@
 ## Lecture 6 (L06) — Direct Proof
 ### Monday, Week 2
 
+*“I mean the word proof not in the sense of the lawyers, who set two half proofs equal to a whole one, but in the sense of a mathematician, where ½ proof = 0, and it is demanded for proof that every doubt becomes impossible.”* — Carl Friedrich Gauss, letter to Heinrich Olbers (14 May 1826)
+
 **Date:** Monday 5 October 2026 · 13:00–13:50 · Week 2
+
+**Reading:** Rosen, 8e §1.7 · Epp, 5e §4.1–4.2 · Levin, 3e §3.2 *(details at the end of the lecture)*
+
+**Coursework:** 📊 **Quiz 2** today 13:00–13:15 · 🔬 **Lab 1** Wed 7 Oct 15:00–16:50 · 📝 **PS 1** due Fri 9 Oct 17:00 · 📝 **PS 2** released Fri 9 Oct 14:00, due Fri 16 Oct 17:00
 
 ---
 
@@ -334,5 +340,11 @@ Proof.
    "n odd → n=2k+1 → n+1=2k+2=2(k+1) → k+1 ∈ ℤ → n+1 even ✓"
 
 ---
+
+## Reading
+
+- **Rosen, 8e §1.7** — Introduction to proofs; direct proof
+- **Epp, 5e §4.1–4.2** — Direct proof and counterexample I–II
+- **Levin, 3e §3.2** — Proofs
 
 *Next: Lecture 7 — Proof by Contrapositive*

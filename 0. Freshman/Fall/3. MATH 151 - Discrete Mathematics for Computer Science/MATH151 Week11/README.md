@@ -98,8 +98,8 @@ By the end of Week 11 you should be able to:
 | Text | Sections |
 |---|---|
 | Rosen, 8e | §11.1 (Trees), §11.4 (Spanning trees, BFS/DFS), §11.5 (Minimum spanning trees) |
-| Epp, 5e | §10.5 (Trees), §10.6 (Spanning trees, shortest paths) |
-| Levin, 3e | §4.3 (Trees), §4.5 (Traversal) |
+| Epp, 5e | §10.4–10.5 (Trees, rooted trees), §10.6 (Spanning trees, shortest paths) |
+| Levin, 3e | §4.2 (Trees) |
 
 ---
 

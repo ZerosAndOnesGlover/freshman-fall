@@ -2,9 +2,13 @@
 ## Week 9 · Lecture 1 of 2
 ### What Concurrent Code Even Means
 
+*“In particular we disallow any assumption about the relative speeds of the different processes.”* — Edsger W. Dijkstra, "Cooperating Sequential Processes" (EWD123, 1965)
+
 ---
 
 **Reading:** Adve & Boehm (2010) · Sewell et al., "x86-TSO" (2010) · Boehm, "Threads Cannot Be Implemented as a Library" (2005) · **Next:** L20, the models that take the problem away
+
+**Coursework:** 📊 **Quiz 9** today · 📝 **PS 9** released Wed this week, due Fri of Week 10 17:00 · 📝 **PS 8** due Fri this week 17:00 · 🔬 **Lab 9** Fri this week 14:00–15:50
 
 ---
 

@@ -2,8 +2,8 @@
 
 ## Required Textbook Reading
 
-- **HRK:** Ch. 18 (Wave Motion) — §18.1–18.8; Ch. 19 (Sound Waves) §19.1 for the transition to Week 10
-- **Serway:** Ch. 16 (Wave Motion) — all sections; Ch. 18 (Superposition and Standing Waves) §18.1–18.5
+- **HRK:** Halliday, Resnick & Krane, *Physics*, 5th ed. — Ch. 18 (Wave Motion)
+- **Serway:** Serway & Jewett, *Physics for Scientists and Engineers*, 10th ed. — Ch. 16 (Wave Motion) §16.1–16.5; Ch. 17 (Superposition and Sound Waves) §17.1–17.5, §17.7
 
 ## Simulations
 

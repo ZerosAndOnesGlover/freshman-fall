@@ -2,9 +2,13 @@
 ## Week 0 · Lecture 3 of 3
 ### Signals: `sigaction`, Masks, and Async-Signal-Safe Code
 
+*“Thinking doesn't guarantee that we won't make mistakes. But not thinking guarantees that we will.”* — Leslie Lamport, as quoted in *Wired* (2013)
+
 ---
 
 **Reading:** APUE §10.1–10.15 · **Previous:** L02, waiting · **Next:** Lab 0, the process supervisor
+
+**Coursework:** 📝 **PS 0** released Wed this week, due Fri of Week 1 17:00 · 🔬 **Lab 0** Fri this week 17:00–18:50
 
 ---
 

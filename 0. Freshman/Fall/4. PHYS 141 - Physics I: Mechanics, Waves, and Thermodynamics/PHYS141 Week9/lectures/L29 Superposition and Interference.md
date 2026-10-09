@@ -1,7 +1,13 @@
 # PHYS 141 · Physics I: Mechanics, Waves & Thermodynamics
 ## Lecture 29 — Superposition and Interference
 
+*“[T]his rule explains several of the ordinary phenomena... such as angle of incidence equals angle of reflection, and refraction, that light bends... from air to water, and travels in straight lines... It's all hidden in that one rule.”* — Richard Feynman, Douglas Robb Memorial Lectures, University of Auckland (1979)
+
 **Date:** Tuesday 24 November 2026 · 14:00–14:50 · Week 9
+
+**Reading:** Serway & Jewett §17.1, §17.3, §17.7 (beats) · HRK Ch. 18
+
+**Coursework:** 🔬 **Lab 9** Thu 26 Nov 14:00–17:00 · 📝 **PS 8** due Fri 27 Nov 17:00 · 📝 **PS 9** released Fri 27 Nov 15:00, due Fri 4 Dec 17:00 · 📊 **Quiz 9** Mon 30 Nov 14:00
 
 ---
 

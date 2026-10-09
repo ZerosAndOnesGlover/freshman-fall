@@ -2,7 +2,13 @@
 ## Lecture 32 (L32) — Paths, Connectivity, Euler and Hamilton
 ### Friday, Week 10
 
+*“The study of Euler's works will remain the best school for the different fields of mathematics and nothing else can replace it.”* — Carl Friedrich Gauss, as quoted in *Encyclopedia of Mathematics Education*
+
 **Date:** Friday 4 December 2026 · 13:00–13:50 · Week 10
+
+**Reading:** Rosen, 8e §10.4–10.5 · Epp, 5e §10.1 · Levin, 3e §4.5 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 10** released today 14:00, due Fri 11 Dec 17:00 · 📝 **PS 9** due today 17:00 · 📊 **Quiz 11** Mon 7 Dec 13:00–13:15 · 🔬 **Lab 10** Wed 9 Dec 15:00–16:50 · 📕 **Final exam** Mon 21 Dec 08:00–10:00
 
 ---
 
@@ -163,7 +169,7 @@ complete graph is a Hamilton path.
 ## Reading
 
 - **Rosen, 8e §10.4–10.5** — Connectivity; Euler and Hamilton paths
-- **Epp, 5e §10.2** — Trails, paths, and circuits
-- **Levin, 3e §4.4** — Euler paths and circuits
+- **Epp, 5e §10.1** — Trails, paths, and circuits
+- **Levin, 3e §4.5** — Euler paths and circuits
 
 *Next: Week 11 — Trees, Spanning Trees, and Graph Algorithms (BFS/DFS)*

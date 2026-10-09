@@ -2,9 +2,13 @@
 ## Week 5 · Lecture 1 of 3
 ### The Pipeline and Its Hazards
 
+*“Optimism is an occupational hazard of programming: feedback is the treatment.”* — Kent Beck, *Extreme Programming Explained* (2000), p. 31
+
 ---
 
 **Reading:** CS:APP §4.4–4.5 · **Previous:** L15, locality as leverage
+
+**Coursework:** 📊 **Quiz 5** today · 📘 **Midterm 1** today 18:00–19:15 · 🔬 **Lab 4** Tue this week 15:00–16:50 · 📝 **PS 5** released Wed this week, due Fri of Week 6 17:00 · 📝 **PS 4** due Fri this week 17:00
 
 ---
 

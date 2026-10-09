@@ -2,9 +2,13 @@
 ## Week 4 · Lecture 2 of 3
 ### Preventing Deadlock, and Avoiding It with the Banker's Algorithm
 
+*“An algorithm must be seen to be believed.”* — Donald Knuth, *The Art of Computer Programming*, Vol. 1 (1968), §1.1
+
 ---
 
 **Sat:** Wednesday of Week 4, 09:00–09:50, VNC 101 · **Reading:** OSTEP Ch. 32 §32.3; Silberschatz §8.5–8.6 · **Next:** L15, detection, recovery, livelock — and ignoring the problem
+
+**Coursework:** 📝 **PS 4** released today, due Fri of Week 5 17:00 · 📝 **PS 3** due Fri this week 17:00 · 📊 **Quiz 5** Mon of Week 5 · 🔬 **Lab 4** Tue of Week 5 15:00–16:50
 
 ---
 

@@ -1,7 +1,13 @@
 # CS 102 · Computer Science II
 ## Lecture 35: Segment Intersection and the Closest Pair
 
+*“It is easier to write an incorrect program than understand a correct one.”* — Alan Perlis, "Epigrams on Programming" (1982), #7
+
 **Date:** Wednesday 7 April 2027 · 09:00–09:50 · Week 11
+
+**Reading:** de Berg et al. §2.1 · Kleinberg & Tardos §5.4 (closest pair) · Laaksonen Ch. 30 (sweep line) · *(CLRS 3rd ed. §33.2, §33.4)*
+
+**Coursework:** 📝 **PS 10** due Fri 9 Apr 17:00 · 📝 **PS 11** released Fri 9 Apr 10:00, due Fri 16 Apr 17:00 · 🔬 **Lab 11** Tue 13 Apr 15:00–16:50 · 📕 **Final exam** Wed 21 Apr 09:00–11:30
 
 ---
 
@@ -145,8 +151,8 @@ That is the transferable idea of the week, and it is worth more than any of the 
 
 ## 5. What to Do
 
-- Read CLRS §33.1 (segment intersection predicates), §33.2 (the sweep line, for the idea), and §33.4
-  (closest pair).
+- Read de Berg et al. §2.1 (the sweep line, for the idea) and Kleinberg & Tardos §5.4 (closest pair).
+  With the 3rd edition of CLRS: §33.1 (intersection predicates), §33.2 and §33.4.
 - **PS 11** implements the intersection predicate against all seven degenerate cases and the closest
   pair against brute force.
 - **Lab 11** builds a nearest-neighbour searcher, which is the closest-pair problem's query version.

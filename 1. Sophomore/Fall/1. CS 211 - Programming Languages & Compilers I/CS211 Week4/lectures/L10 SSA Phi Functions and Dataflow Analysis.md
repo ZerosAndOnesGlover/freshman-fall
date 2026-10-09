@@ -2,9 +2,13 @@
 ## Week 4 · Lecture 2 of 2
 ### SSA, φ-Functions, and Dataflow Analysis
 
+*“Making something variable is easy. Controlling duration of constancy is the trick.”* — Alan Perlis, "Epigrams on Programming" (1982), #66
+
 ---
 
 **Reading:** Dragon §6.2.4, §9.2–9.3 · LLVM Language Reference, *"Instruction Reference"* · **Next:** Week 5, L11 — loop optimisation and register allocation
+
+**Coursework:** 📝 **PS 3** due Fri this week 17:00 · 🔬 **Lab 4** Fri this week 14:00–15:50 · 📊 **Quiz 5** Tue of Week 5 · 📝 **PS 5** released Wed of Week 5, due Fri of Week 6 17:00
 
 ---
 

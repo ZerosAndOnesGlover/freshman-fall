@@ -51,5 +51,5 @@ By the end of Week 2, you will be able to:
 
 ## Textbooks
 
-- **HRK:** Halliday, Resnick & Krane — Ch. 4 (Motion in Two and Three Dimensions)
-- **Serway:** Ch. 4 (Motion in Two Dimensions)
+- **HRK:** Halliday, Resnick & Krane — Ch. 4 (Motion in Two and Three Dimensions); Ch. 8 (Rotational Kinematics) for angular quantities
+- **Serway:** Ch. 4 (Motion in Two Dimensions) §4.1–4.5; §10.1–10.2 for angular kinematics

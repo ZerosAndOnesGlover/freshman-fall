@@ -2,7 +2,13 @@
 ## Lecture 38 (L38) — Review and the Road Ahead
 ### Friday, Week 12
 
+*“[This] science is the work of the human mind, which is destined rather to study than to know, to seek the truth rather than to find it.”* — Évariste Galois, as quoted in Morris Kline, *Mathematics: The Loss of Certainty* (1980)
+
 **Date:** Friday 18 December 2026 · 13:00–13:50 · Week 12
+
+**Reading:** Rosen, 8e · Your own summaries *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 11** due today 17:00 · 📝 **PS 12** released today 14:00, due Wed 23 Dec 17:00 · 📕 **Final exam** Mon 21 Dec 08:00–10:00 · 🔬 **Lab 12** Wed 23 Dec 15:00–16:50
 
 ---
 
@@ -184,6 +190,11 @@ lcm rule, the tree facts ($n-1$ edges, degree sum $2(n-1)$), and Euler's criteri
 items open more questions than anything else on the syllabus.
 
 ---
+
+## Reading
+
+- **Rosen, 8e** — the Review Questions at the end of Chapters 1, 2, 5, 6, 8, 9, 10 and 11, and §4.1–4.6
+- **Your own summaries** — one per week, Weeks 0–12
 
 *MATH 151 · Week 12 · Lecture 38 · © CSE Department*
 

@@ -2,9 +2,13 @@
 ## Week 1 · Lecture 1 of 3
 ### The Process, and What the Kernel Keeps About It
 
+*“We may compare a man in the process of computing a real number to a machine which is only capable of a finite number of conditions q1, q2, ..., qR which will be called "m-configurations".”* — Alan Turing, "On Computable Numbers" (1936)
+
 ---
 
 **Sat:** Monday of Week 1, 09:00–09:50, VNC 101, **after Quiz 1** · **Reading:** OSTEP Ch. 4; Love Ch. 3 · **Next:** L05, states and the context switch
+
+**Coursework:** 📊 **Quiz 1** today · 📝 **PS 1** released Wed this week, due Fri of Week 2 17:00 · 📝 **PS 0** due Fri this week 17:00
 
 ---
 

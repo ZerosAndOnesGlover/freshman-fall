@@ -2,9 +2,13 @@
 ## Week 5 · Lecture 3 of 3
 ### Test Doubles, BDD, and End-to-End
 
+*“Program testing can be used to show the presence of bugs, but never to show their absence!”* — Edsger W. Dijkstra, "Notes on Structured Programming" (EWD249, 1970)
+
 ---
 
 **Sat:** Thursday of Week 5, 10:00–10:50, TH 200 · **Reading:** Fowler, *"Mocks Aren't Stubs"* (2007) · **Next:** Week 6 — coverage, property-based and mutation testing · **⚠️ Week 6 holds Phase 1 (Tue) and the midterm (Wed)**
+
+**Coursework:** 📝 **Assignment 4** due Fri this week 17:00 · 📊 **Quiz 6** Tue of Week 6 · 📋 **Phase 1 presentation** Tue of Week 6 · 📘 **Midterm** Wed of Week 6 18:00–19:15 · 📝 **Assignment 6** released Wed of Week 6 17:00, due Fri of Week 7 17:00
 
 ---
 

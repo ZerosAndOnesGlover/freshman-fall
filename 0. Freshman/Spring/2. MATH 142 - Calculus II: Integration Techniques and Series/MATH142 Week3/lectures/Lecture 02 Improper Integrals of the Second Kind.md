@@ -2,7 +2,11 @@
 ## Week 3 · Lecture 2 (Tuesday)
 ### Improper Integrals of the Second Kind — and Singularities That Hide
 
+*“The potential infinite means nothing other than an undetermined, variable quantity, always remaining finite, which has to assume values that either become smaller than any finite limit no matter how small, or greater than any finite limit no matter how great.”* — Georg Cantor, "Mitteilungen zur Lehre vom Transfiniten" (1887–88)
+
 **Date:** Tuesday 9 February 2027 · 11:00–11:50 · Week 3
+
+**Coursework:** 🔬 **Lab 2** Wed 10 Feb 15:00–16:50 · 📝 **PS 2** due Fri 12 Feb 17:00 · 📝 **PS 3** released Fri 12 Feb 12:00, due Fri 19 Feb 17:00 · 📊 **Quiz 4** Mon 15 Feb 11:00–11:15
 
 ---
 

@@ -2,9 +2,13 @@
 ## Week 7 · Lecture 3 of 3
 ### Storage Performance and I/O Scheduling
 
+*“Around computers it is difficult to find the correct unit of time to measure progress. Some cathedrals took a century to complete. Can you imagine the grandeur and scope of a program that would take as long?”* — Alan Perlis, "Epigrams on Programming" (1982), #28
+
 ---
 
 **Reading:** CS:APP §6.1.5, §10.6 · **Previous:** L23, disks and SSDs
+
+**Coursework:** 📝 **PS 6** due today 17:00 · 📊 **Quiz 8** Mon of Week 8 · 🔬 **Lab 7** Tue of Week 8 15:00–16:50 · 📝 **PS 8** released Wed of Week 8, due Fri of Week 9 17:00
 
 ---
 

@@ -2,9 +2,13 @@
 ## Week 10 · Lecture 2 of 3
 ### Return-Oriented Programming
 
+*“Beware of the Turing tar-pit in which everything is possible but nothing of interest is easy.”* — Alan Perlis, "Epigrams on Programming" (1982), #54
+
 ---
 
 **Reading:** Shacham, *The Geometry of Innocent Flesh on the Bone* (CCS 2007) · Roemer et al., *Return-Oriented Programming* (2012) · `man 1 objdump` · **Previous:** L31 · **Next:** L33 — format strings, heap bugs, and the tooling that finds them
+
+**Coursework:** 📝 **PS 10** released today, due Fri of Week 11 17:00 · 📋 **Project 2** released Fri this week, due Fri of Week 12 17:00 · 📝 **PS 9** due Fri this week 17:00 · 🔬 **Lab 10** Mon of Week 11 15:00–16:50 · 📊 **Quiz 11** Tue of Week 11
 
 ---
 

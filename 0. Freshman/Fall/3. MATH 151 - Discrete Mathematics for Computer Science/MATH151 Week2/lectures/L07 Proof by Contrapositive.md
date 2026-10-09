@@ -2,7 +2,13 @@
 ## Lecture 7 (L07) — Proof by Contrapositive
 ### Thursday, Week 2
 
+*“Don't just read it; fight it! Ask your own question, look for your own examples, discover your own proofs. Is the hypothesis necessary? Is the converse true?”* — Paul Halmos, *I Want to Be a Mathematician* (1985)
+
 **Date:** Thursday 8 October 2026 · 13:00–13:50 · Week 2
+
+**Reading:** Rosen, 8e §1.7 · Epp, 5e §4.7 · Levin, 3e §3.2 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 1** due Fri 9 Oct 17:00 · 📝 **PS 2** released Fri 9 Oct 14:00, due Fri 16 Oct 17:00 · 📊 **Quiz 3** Mon 12 Oct 13:00–13:15 · 🔬 **Lab 2** Wed 14 Oct 15:00–16:50
 
 ---
 
@@ -227,5 +233,11 @@ When forming the contrapositive, you must negate BOTH the hypothesis and conclus
 4. **True or False?** "To prove P → Q, proving Q → P is sufficient." Explain precisely why or why not using the truth table for the conditional.
 
 ---
+
+## Reading
+
+- **Rosen, 8e §1.7** — Proof by contraposition
+- **Epp, 5e §4.7** — Indirect argument: contradiction and contraposition
+- **Levin, 3e §3.2** — Proofs
 
 *Next: Lecture 8 — Proof by Contradiction*

@@ -1,7 +1,13 @@
 # CS 102 · Computer Science II
 ## Lecture 28: The Greedy Paradigm and Exchange Arguments
 
+*“Dealing with failure is easy: Work hard to improve. Success is also easy to handle: You've solved the wrong problem. Work hard to improve.”* — Alan Perlis, "Epigrams on Programming" (1982), #101
+
 **Date:** Monday 22 March 2027 · 09:00–09:50 · Week 9
+
+**Reading:** CLRS §15.1–15.2 · Kleinberg & Tardos §4.1
+
+**Coursework:** 📊 **Quiz 9** today 09:00–09:15 · 🔬 **Lab 8** Tue 23 Mar 15:00–16:50 · 📋 **Project 1** due Fri 26 Mar 17:00 · 📝 **PS 8** due Fri 26 Mar 17:00 · 📝 **PS 9** released Fri 26 Mar 10:00, due Fri 2 Apr 17:00 · 📘 **Midterm 2** Mon 29 Mar 18:00–19:15
 
 ---
 

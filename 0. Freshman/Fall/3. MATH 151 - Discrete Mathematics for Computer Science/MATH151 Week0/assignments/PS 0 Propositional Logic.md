@@ -4,14 +4,6 @@
 
 ---
 
-> *Revised 2026-09-21.* The optional bonus section was removed to keep the set to 100 points of
-> this week's material.
->
-> *Revised 2026-09-26.* Cut from 14 problems and about 50 parts to 7 problems and 20 short parts, to fit
-> about three hours. Kept: one or two items of each skill. Removed: the assignment-evaluation drill, the
-> truth-table row-count questions, vacuous truth, the material-implication essay, the resolution tautology
-> and the {∧, ∨} completeness question.
-
 **Instructions:**
 - Show all work. Answers without justification receive no credit.
 - For truth tables, use the systematic column-by-column method shown in lecture.

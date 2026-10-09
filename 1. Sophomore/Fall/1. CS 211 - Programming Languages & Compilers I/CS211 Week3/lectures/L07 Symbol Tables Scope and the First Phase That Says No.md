@@ -2,9 +2,13 @@
 ## Week 3 · Lecture 1 of 2
 ### Symbol Tables, Scope, and the First Phase That Says No
 
+*“As Will Rogers would have said, "There is no such thing as a free variable."”* — Alan Perlis, "Epigrams on Programming" (1982), #47
+
 ---
 
 **Reading:** Dragon §2.7, §6.5, §5.1–5.2 · **Next:** L08, type inference and unification
+
+**Coursework:** 📊 **Quiz 3** today · 📝 **PS 3** released Wed this week, due Fri of Week 4 17:00 · 📝 **PS 2** due Fri this week 17:00 · 🔬 **Lab 3** Fri this week 14:00–15:50 · 📘 **Midterm 1** Wed of Week 4 20:00–21:15
 
 ---
 

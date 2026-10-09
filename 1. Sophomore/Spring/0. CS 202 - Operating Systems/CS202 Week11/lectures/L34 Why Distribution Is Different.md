@@ -2,9 +2,13 @@
 ## Week 11 · Lecture 1 of 3
 ### Why Distribution Is Different
 
+*“A distributed system is one in which the failure of a computer you didn't even know existed can render your own computer unusable.”* — Leslie Lamport, email (28 May 1987)
+
 ---
 
 **Sat:** Monday of Week 11, 09:00–09:50, VNC 101, **after Quiz 11** · **Reading:** OSTEP Ch. 48; Lamport (1978) · **Next:** L35, agreement
+
+**Coursework:** 📊 **Quiz 11** today · 🔬 **Lab 10** Tue this week 15:00–16:50 · 📝 **PS 11** released Wed this week, due Fri of Week 12 17:00 · 📋 **Project 1** due Fri this week 17:00 · 📝 **PS 10** due Fri this week 17:00
 
 > **Project 1 is due this Friday at 17:00.**
 

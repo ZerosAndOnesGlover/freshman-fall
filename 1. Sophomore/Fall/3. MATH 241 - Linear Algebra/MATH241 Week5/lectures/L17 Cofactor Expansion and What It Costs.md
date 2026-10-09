@@ -2,9 +2,13 @@
 ## Week 5 · Lecture 2 of 3 · **Tuesday**
 ### Cofactor Expansion, and What It Costs
 
+*“There is no let up! No end to it! Accursed problems! Innumerable calculations. Endless fighting. Signs. Formulas. Theorems besetting me from dawn to dusk!”* — Augustin-Louis Cauchy, "La Chandeleur" (1843)
+
 ---
 
 **Reading:** Strang §5.2, §5.3 · **Previous:** L16, the three properties · **Next:** L18, volume and the product rule
+
+**Coursework:** 📝 **PS 5** released Wed this week, due Fri of Week 6 17:00 · 💬 **Recitation 4** Thu this week 15:00–15:50 · 📝 **PS 4** due Fri this week 17:00
 
 > **Every number in this lecture is reproduced by `resources/determinants.py`.**
 

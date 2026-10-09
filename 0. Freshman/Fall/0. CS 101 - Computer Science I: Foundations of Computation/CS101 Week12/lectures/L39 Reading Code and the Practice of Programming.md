@@ -1,7 +1,13 @@
 # CS 101 · Lecture 39 (Week 12, Lecture 3)
 ## Reading Code, and the Practice of Programming
 
+*“Let us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do.”* — Donald Knuth, "Literate Programming", *The Computer Journal* 27 (1984)
+
 **Date:** Friday 18 December 2026 · 09:00–09:50 · Week 12
+
+**Reading:** Kernighan & Pike, *The Practice of Programming* (1999), Ch. 1 "Style" · Ousterhout, *A Philosophy of Software Design*, 2nd ed., Ch. 2 "The Nature of Complexity" · Hunt & Thomas, *The Pragmatic Programmer*, 20th anniv. ed., Ch. 1 "A Pragmatic Philosophy" · Any codebase you use. *(details at the end of the lecture)*
+
+**Coursework:** 📋 **Project 2** due today 17:00 · 📝 **PS 11** due today 17:00 · 📕 **Final exam** Tue 22 Dec 09:00–11:30
 
 ---
 
@@ -220,10 +226,12 @@ That is enough to build almost anything. The rest is practice.
 
 ## Reading
 
-- **Kernighan & Pike, *The Practice of Programming*** — the best book on this material; short
-- **Ousterhout, *A Philosophy of Software Design*** — on complexity and interfaces; opinionated and
-  worth arguing with
-- **Hunt & Thomas, *The Pragmatic Programmer*** — optional; broad, uneven, several ideas that stick
+- **Kernighan & Pike, *The Practice of Programming* (1999), Ch. 1 "Style"** — names, expressions,
+  consistency and comments, i.e. §4 of this lecture; the best book on this material, and short
+- **Ousterhout, *A Philosophy of Software Design*, 2nd ed., Ch. 2 "The Nature of Complexity"** —
+  what makes code hard to read, which is §1–§3's subject; opinionated and worth arguing with
+- **Hunt & Thomas, *The Pragmatic Programmer*, 20th anniv. ed., Ch. 1 "A Pragmatic Philosophy"**
+  — optional; the habits of §6
 - **Any codebase you use.** Pick a small tool you rely on and read its source this holiday. That is
   the actual assignment, and nobody will grade it.
 

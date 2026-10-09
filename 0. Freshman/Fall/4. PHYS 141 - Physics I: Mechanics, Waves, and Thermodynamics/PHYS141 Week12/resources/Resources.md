@@ -2,10 +2,8 @@
 
 ## Required Textbook Reading
 
-- **HRK:** Ch. 22 (Heat and the First Law) §22.7–22.9; Ch. 24 (Entropy and the Second Law) — all
-  sections
-- **Serway:** Ch. 20 (First Law) §20.5–20.7; Ch. 22 (Heat Engines, Entropy, and the Second Law) — all
-  sections
+- **HRK:** Halliday, Resnick & Krane, *Physics*, 5th ed. — Ch. 23 (The First Law of Thermodynamics); Ch. 24 (Entropy and the Second Law of Thermodynamics)
+- **Serway:** Serway & Jewett, *Physics for Scientists and Engineers*, 10th ed. — Ch. 19 §19.4–19.5; Ch. 20 §20.4; Ch. 21 (Heat Engines, Entropy, and the Second Law of Thermodynamics) §21.1–21.8
 
 ## Simulations
 

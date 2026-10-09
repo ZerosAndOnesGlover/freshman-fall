@@ -2,7 +2,11 @@
 ## Week 11 · Lecture 1 (Wednesday)
 ### SRAM and DRAM
 
+*“We are therefore forced to recognize the possibility of constructing a hierarchy of memories, each of which has greater capacity than the preceding but which is less quickly accessible.”* — Arthur Burks, Herman Goldstine & John von Neumann, *Preliminary Discussion of the Logical Design of an Electronic Computing Instrument* (1946)
+
 **Date:** Wednesday 7 April 2027 · 13:00–14:15 · Week 11
+
+**Coursework:** 📊 **Quiz 10** today 13:00–13:10 · 📝 **PS 10** due Thu 8 Apr 13:00 · 📝 **PS 11** released Thu 8 Apr 14:30, due Thu 15 Apr 13:00 · 🔬 **Lab 11** Fri 9 Apr 14:00–15:50 · 📕 **Final exam** Mon 19 Apr 08:00–10:00
 
 ---
 

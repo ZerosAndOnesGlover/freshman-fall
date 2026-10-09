@@ -2,9 +2,13 @@
 ## Week 11 · Lecture 2 of 3
 ### Cgroups and Resource Control
 
+*“The more complex the designed system the more field maintenance must be central to the final design. Only when field maintenance is part of the original design can it be safely controlled...”* — Richard Hamming, *The Art of Doing Science and Engineering* (1991)
+
 ---
 
 **Reading:** `man 7 cgroups` · kernel docs `Documentation/admin-guide/cgroup-v2.rst` · `man 1 systemd-run`, `man 5 systemd.resource-control` · **Previous:** L34 — namespaces · **Next:** L36 — images, OverlayFS, and the security boundary
+
+**Coursework:** 📝 **PS 11** released today, due Fri of Week 12 17:00 · 📝 **PS 10** due Fri this week 17:00 · 🔬 **Lab 11** Mon of Week 12 15:00–16:50
 
 ---
 

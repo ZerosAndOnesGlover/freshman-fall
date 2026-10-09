@@ -1,9 +1,15 @@
 # PHYS 141 · Lecture 19
 # Rigid Body Rotation & Rotational Kinematics
 
+*“The mathematical difficulties of the theory of rotation arise chiefly from the want of geometrical illustrations and sensible images, by which we might fix the results of analysis in our minds.”* — James Clerk Maxwell, "On a Dynamical Top" (1857)
+
 > **Core Principle:** A rigid body is an idealized object whose particles maintain fixed distances from one another — it can translate and rotate, but not deform. Every particle in a rotating rigid body shares the same angular velocity and angular acceleration, even though different particles have different linear speeds. This shared angular description is what makes rotational mechanics tractable.
 
 **Date:** Monday 2 November 2026 · 14:00–14:50 · Week 6
+
+**Reading:** Serway & Jewett §10.1–10.3 · HRK Ch. 8
+
+**Coursework:** 📊 **Quiz 5** today 14:00 · 🔬 **Lab 6** Thu 5 Nov 14:00–17:00 · 📝 **PS 5** due Fri 6 Nov 17:00 · 📝 **PS 6** released Fri 6 Nov 15:00, due Fri 13 Nov 17:00
 
 ---
 

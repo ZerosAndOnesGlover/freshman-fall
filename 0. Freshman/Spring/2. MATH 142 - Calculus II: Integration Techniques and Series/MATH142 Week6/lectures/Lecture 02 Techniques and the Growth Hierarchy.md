@@ -2,7 +2,11 @@
 ## Week 6 · Lecture 2 (Tuesday)
 ### Techniques, and the Growth Hierarchy
 
+*“If any philosopher had been asked for a definition of infinity, he might have produced some unintelligible rigmarole, but he would certainly not have been able to give a definition that had any meaning at all.”* — Bertrand Russell, *Mysticism and Logic* (1918), ch. 5
+
 **Date:** Tuesday 2 March 2027 · 11:00–11:50 · Week 6
+
+**Coursework:** 📘 **Midterm 1** Wed 3 Mar 18:00–19:15 · 🔬 **Lab 5** Wed 3 Mar 15:00–16:50 · 📝 **PS 5** due Fri 5 Mar 17:00 · 📝 **PS 6** released Fri 5 Mar 12:00, due Fri 12 Mar 17:00 · 📊 **Quiz 7** Mon 8 Mar 11:00–11:15
 
 ---
 

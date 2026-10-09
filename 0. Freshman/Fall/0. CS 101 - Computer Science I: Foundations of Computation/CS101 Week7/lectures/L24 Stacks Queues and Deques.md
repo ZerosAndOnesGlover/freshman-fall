@@ -1,10 +1,15 @@
 # CS 101 · Lecture 24 (Week 7, Lecture 3)
 ## Stack and Queue ADTs, Deques, and Choosing the Right Structure
 
+*“Symmetry is a complexity-reducing concept (co-routines include subroutines); seek it everywhere.”* — Alan Perlis, "Epigrams on Programming" (1982), #6
+
 **Week 7 · Friday**
-*"A stack is defined by two operations: push and pop, with LIFO semantics. This is the ADT. You can implement it with an array or a linked list — both satisfy the specification." — CS 101*
 
 **Date:** Friday 13 November 2026 · 09:00–09:50 · Week 7
+
+**Reading:** Python docs — collections.deque · CLRS, Ch. 10.1 *(details at the end of the lecture)*
+
+**Coursework:** 📋 **Project 1** released today 10:00, due Fri 27 Nov 17:00 · 📝 **PS 6** due today 17:00 · 📝 **PS 7** released today 10:00, due Fri 20 Nov 17:00 · 🔬 **Lab 7** Tue 17 Nov 15:00–16:50 · 📊 **Quiz 8** Wed 18 Nov 09:00–09:10
 
 ---
 
@@ -521,7 +526,7 @@ The general principle: converting recursion to iteration is mechanical, but **th
 
 ## Reading
 
-- **Guttag** — supplementary stack/queue material if covered in your edition
+- Guttag has no stack or queue section; CLRS §10.1 below is the reading
 - **Python docs — collections.deque:** https://docs.python.org/3/library/collections.html#collections.deque
 - **CLRS, Ch. 10.1** — Stacks and Queues (formal pseudocode treatment)
 

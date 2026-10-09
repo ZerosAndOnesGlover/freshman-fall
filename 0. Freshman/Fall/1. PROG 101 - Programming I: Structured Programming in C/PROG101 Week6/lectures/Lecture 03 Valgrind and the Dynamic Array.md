@@ -1,7 +1,13 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 6 · Lecture 3: Valgrind and Building a Dynamic Array
 
+*“Program testing can be used to show the presence of bugs, but never to show their absence!”* — Edsger W. Dijkstra, "Notes on Structured Programming" (EWD249, 1970)
+
 **Date:** Thursday 5 November 2026 · 10:00–10:50 · Week 6
+
+**Reading:** Valgrind Quick Start Guide · `man 3 memmove` · K&R, §8.7 · CLRS, §17.4 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 5** due Fri 6 Nov 17:00 · 📝 **PS 6** released Fri 6 Nov 10:00, due Fri 13 Nov 17:00 · 🔬 **Lab 6** Mon 9 Nov 15:00–16:50 · 📊 **Quiz 6** Tue 10 Nov 10:00–10:10
 
 ---
 

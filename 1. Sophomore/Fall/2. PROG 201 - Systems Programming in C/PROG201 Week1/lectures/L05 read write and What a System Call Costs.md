@@ -2,9 +2,13 @@
 ## Week 1 · Lecture 2 of 3
 ### `read`, `write`, and What a System Call Costs
 
+*“A programming language is low level when its programs require attention to the irrelevant.”* — Alan Perlis, "Epigrams on Programming" (1982), #8
+
 ---
 
 **Reading:** APUE §3.5–3.9, §5.4 · **Previous:** L04, the three tables · **Next:** L06, `dup2` and non-blocking I/O
+
+**Coursework:** 📝 **PS 1** released today, due Fri of Week 2 17:00 · 📝 **PS 0** due Fri this week 17:00 · 🔬 **Lab 1** Mon of Week 2 15:00–16:50 · 📊 **Quiz 2** Tue of Week 2
 
 ---
 

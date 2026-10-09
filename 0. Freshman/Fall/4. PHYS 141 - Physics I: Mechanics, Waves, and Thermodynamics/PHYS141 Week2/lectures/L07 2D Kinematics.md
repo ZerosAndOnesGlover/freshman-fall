@@ -1,9 +1,15 @@
 # PHYS 141 · Lecture 7
 # Kinematics in Two Dimensions
 
+*“A body by two forces conjoined will describe the diagonal of a parallelogram, in the same time that it would describe the sides, by those forces apart.”* — Isaac Newton, *Principia* (1687), Corollary I, tr. Motte
+
 > **Core Principle:** Motion in two dimensions is not a new subject — it is two simultaneous applications of one-dimensional kinematics, one along each perpendicular axis. The key insight is that perpendicular components of motion are completely independent of each other. This independence is not a convenience; it is a deep consequence of the structure of Euclidean space and Newton's laws.
 
 **Date:** Monday 5 October 2026 · 14:00–14:50 · Week 2
+
+**Reading:** Serway & Jewett §4.1–4.2 · HRK Ch. 4
+
+**Coursework:** 📊 **Quiz 1** today 14:00 · 🔬 **Lab 2** Thu 8 Oct 14:00–17:00 · 📝 **PS 1** due Fri 9 Oct 17:00 · 📝 **PS 2** released Fri 9 Oct 15:00, due Fri 16 Oct 17:00
 
 ---
 

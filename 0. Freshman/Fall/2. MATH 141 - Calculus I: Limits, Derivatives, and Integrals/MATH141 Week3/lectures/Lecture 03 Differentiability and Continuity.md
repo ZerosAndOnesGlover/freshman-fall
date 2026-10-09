@@ -2,7 +2,11 @@
 ## Week 3 · Lecture 3 (Wednesday)
 ### Differentiability and Continuity
 
+*“I recoil with dismay and horror at this lamentable plague of functions which do not have derivatives.”* — Charles Hermite, letter to Thomas Stieltjes (1893)
+
 **Date:** Wednesday 14 October 2026 · 11:00–11:50 · Week 3
+
+**Coursework:** 📝 **PS 2** due today 11:00 · 📝 **PS 3** released today 12:00, due Wed 21 Oct 11:00 · 🔬 **Lab 3** Fri 16 Oct 15:00–16:50, report due Mon 19 Oct 17:00 · 📊 **Quiz 4** Mon 19 Oct 11:00–11:15
 
 ---
 

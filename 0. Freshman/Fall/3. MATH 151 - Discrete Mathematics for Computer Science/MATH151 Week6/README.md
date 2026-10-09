@@ -87,8 +87,8 @@ MATH151_Week6/
 | Text | Sections |
 |---|---|
 | Rosen, 8e | §9.1, §9.5, §9.6 |
-| Epp, 5e | §8.2, §8.3, §8.4 |
-| Levin, 3e | §5.1, §5.2, §5.3 |
+| Epp, 5e | §8.1, §8.2, §8.3, §8.5 |
+| Levin, 3e | — (no section on relations; use Rosen or Epp) |
 
 ---
 

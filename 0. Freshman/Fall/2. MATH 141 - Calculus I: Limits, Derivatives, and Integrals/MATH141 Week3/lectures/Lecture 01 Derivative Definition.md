@@ -2,7 +2,11 @@
 ## Week 3 · Lecture 1 (Monday)
 ### The Derivative: Definition, Geometric Meaning, and the Difference Quotient
 
+*“Calculus is the mathematics of change. ...Change is characteristic of the world.”* — Richard Hamming, *Methods of Mathematics Applied to Calculus, Probability, and Statistics* (1985)
+
 **Date:** Monday 12 October 2026 · 11:00–11:50 · Week 3
+
+**Coursework:** 📊 **Quiz 3** today 11:00–11:15 · 📝 **PS 2** due Wed 14 Oct 11:00 · 📝 **PS 3** released Wed 14 Oct 12:00, due Wed 21 Oct 11:00 · 🔬 **Lab 3** Fri 16 Oct 15:00–16:50, report due Mon 19 Oct 17:00
 
 ---
 

@@ -2,9 +2,8 @@
 
 ## Required Textbook Reading
 
-- **HRK:** Ch. 19 (Sound Waves) — §19.1–19.8, covering intensity, the decibel scale, resonance in
-  pipes, and the Doppler effect
-- **Serway:** Ch. 17 (Sound Waves) — all sections; Ch. 18 §18.6–18.8 for standing waves in air columns
+- **HRK:** Halliday, Resnick & Krane, *Physics*, 5th ed. — Ch. 19 (Sound Waves)
+- **Serway:** Serway & Jewett, *Physics for Scientists and Engineers*, 10th ed. — Ch. 16 §16.6–16.9 (sound, intensity, Doppler); Ch. 17 §17.5–17.6 (resonance, air columns)
 
 ## Simulations
 

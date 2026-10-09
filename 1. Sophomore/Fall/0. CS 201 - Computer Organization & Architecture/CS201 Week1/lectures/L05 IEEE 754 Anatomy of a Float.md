@@ -2,9 +2,13 @@
 ## Week 1 · Lecture 2 of 3
 ### IEEE 754 — Anatomy of a Float
 
+*“The purpose of computing is insight, not numbers.”* — Richard Hamming, *Numerical Methods for Scientists and Engineers* (1962), Preface
+
 ---
 
 **Reading:** CS:APP §2.4 · **Previous:** L04, integers and undefined behaviour
+
+**Coursework:** 📝 **PS 1** released today, due Fri of Week 2 17:00 · 📊 **Quiz 2** Mon of Week 2 · 🔬 **Lab 1** Tue of Week 2 15:00–16:50
 
 ---
 

@@ -1,7 +1,13 @@
 # PHYS 141 · Physics I: Mechanics, Waves & Thermodynamics
 ## Lecture 36 — Heat Transfer and the Ideal Gas
 
+*“Profound study of nature is the most fertile source of mathematical discoveries.”* — Joseph Fourier, *The Analytical Theory of Heat* (1822), ch. 1
+
 **Date:** Friday 11 December 2026 · 14:00–14:50 · Week 11
+
+**Reading:** Serway & Jewett §19.6 (heat transfer), §18.5 (ideal gas), §20.1 (kinetic theory) · HRK Ch. 22
+
+**Coursework:** 📝 **PS 10** due today 17:00 · 📝 **PS 11** released today 15:00, due Fri 18 Dec 17:00 · 📊 **Quiz 11** Mon 14 Dec 14:00 · 🔬 **Lab 12** Thu 17 Dec 14:00–17:00
 
 ---
 

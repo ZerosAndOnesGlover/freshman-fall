@@ -1,11 +1,15 @@
 # PROG 102 · Lecture 12
 ## The Algorithms
 
+*“It is better to have 100 functions operate on one data structure than 10 functions on 10 data structures.”* — Alan Perlis, "Epigrams on Programming" (1982), #9
+
 **Week 3 · Thursday · 50 minutes**
 **Reading:** *C++ Primer* Ch. 10, §10.3 · **Reference:** Stroustrup Ch. 32
 **Assumes:** L10, L11
 
 **Date:** Thursday 11 February 2027 · 10:00–10:50 · Week 3
+
+**Coursework:** 📝 **PS 2** due Fri 12 Feb 17:00 · 📝 **PS 3** released Fri 12 Feb 10:00, due Fri 19 Feb 17:00 · 🔬 **Lab 3** Mon 15 Feb 15:00–16:50 · 📊 **Quiz 4** Tue 16 Feb 10:00–10:15
 
 ---
 

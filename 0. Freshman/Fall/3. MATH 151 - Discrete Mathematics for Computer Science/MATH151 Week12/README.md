@@ -100,8 +100,8 @@ By the end of Week 12 you should be able to:
 | Text | Sections |
 |---|---|
 | Rosen, 8e | §4.1–4.6 (Number theory and cryptography) |
-| Epp, 5e | §4.3–4.4 (Divisibility), §8.4 (Modular arithmetic) |
-| Levin, 3e | §3.1 (Number theory) |
+| Epp, 5e | §4.4–4.5 (Divisibility, quotient–remainder), §8.4 (Modular arithmetic) |
+| Levin, 3e | §5.2 (Number theory) |
 
 ---
 

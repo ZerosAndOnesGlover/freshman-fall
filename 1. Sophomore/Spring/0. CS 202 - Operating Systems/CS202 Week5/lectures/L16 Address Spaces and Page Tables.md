@@ -2,9 +2,13 @@
 ## Week 5 · Lecture 1 of 3
 ### Address Spaces and Page Tables
 
+*“All problems in computer science can be solved by another level of indirection.”* — David Wheeler, as quoted in Butler Lampson, "Principles for Computer System Design" (Turing Award lecture, 1993)
+
 ---
 
 **Sat:** Monday of Week 5, 09:00–09:50, VNC 101, **after Quiz 5** · **Reading:** OSTEP Ch. 13, 18, 20; xv6 book Ch. 2 · **Next:** L17, the TLB
+
+**Coursework:** 📊 **Quiz 5** today · 🔬 **Lab 4** Tue this week 15:00–16:50 · 📝 **PS 5** released Wed this week, due Fri of Week 6 17:00 · 📝 **PS 4** due Fri this week 17:00
 
 ---
 

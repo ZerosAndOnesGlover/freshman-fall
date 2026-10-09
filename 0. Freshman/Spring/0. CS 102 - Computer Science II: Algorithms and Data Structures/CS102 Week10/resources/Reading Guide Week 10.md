@@ -5,14 +5,14 @@
 
 ## Required
 
-**CLRS, 4th ed. — Chapter 32, §32.1–32.4** (String Matching), about 25 pages.
+**CLRS, 4th ed. — Chapter 32, §32.1–32.5** (String Matching; §32.5 is suffix arrays).
 
 - §32.1 the naive algorithm
 - §32.2 Rabin–Karp
 - §32.3 matching with finite automata — **optional**, but it is the cleanest way to see *why* KMP works
 - §32.4 the Knuth–Morris–Pratt algorithm
 
-**Boyer–Moore and suffix arrays are not in CLRS.** Use:
+**Boyer–Moore is not in CLRS. Suffix arrays are §32.5, new in the 4th edition.** Also use:
 
 - **Sedgewick & Wayne §5.3** — substring search, with the best treatment of Boyer–Moore available at
   this level;

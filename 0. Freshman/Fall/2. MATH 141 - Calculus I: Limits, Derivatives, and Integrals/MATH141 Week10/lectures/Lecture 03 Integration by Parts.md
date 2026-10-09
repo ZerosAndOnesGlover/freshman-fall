@@ -2,7 +2,11 @@
 ## Week 10 · Lecture 3 (Wednesday)
 ### Integration by Parts
 
+*“Mathematics, being very different from the natural languages, has its corresponding patterns of thought. Learning these patterns is much more important than any particular result.”* — Richard Hamming, *Methods of Mathematics Applied to Calculus, Probability, and Statistics* (1985)
+
 **Date:** Wednesday 2 December 2026 · 11:00–11:50 · Week 10
+
+**Coursework:** 📘 **Midterm 2** today 18:00–19:15 · 📝 **PS 10** released today 12:00, due Wed 9 Dec 11:00 · 📝 **PS 9** due today 11:00 · 🔬 **Lab 10** Fri 4 Dec 15:00–16:50, report due Mon 7 Dec 17:00 · 📊 **Quiz 11** Mon 7 Dec 11:00–11:15
 
 ---
 

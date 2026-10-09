@@ -2,9 +2,13 @@
 ## Week 8 · Lecture 1 of 3
 ### Static and Dynamic Linking
 
+*“Every program is a part of some other program and rarely fits.”* — Alan Perlis, "Epigrams on Programming" (1982), #4
+
 ---
 
 **Reading:** CS:APP Ch. 7 · TLPI Ch. 41–42 · `man 8 ld.so`, `man 1 ld`, `man 1 readelf` · **Previous:** L24 · **Next:** L26 — the GOT, the PLT and PIC
+
+**Coursework:** 📊 **Quiz 8** today · 📝 **PS 8** released Wed this week, due Fri of Week 9 17:00 · 📝 **PS 7** due Fri this week 17:00 · 🔬 **Lab 8** Mon of Week 9 15:00–16:50
 
 ---
 

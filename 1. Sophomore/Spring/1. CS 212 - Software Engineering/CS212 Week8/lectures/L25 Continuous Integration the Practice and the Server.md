@@ -2,9 +2,13 @@
 ## Week 8 · Lecture 1 of 3
 ### Continuous Integration — the Practice, and the Server
 
+*“Optimism is an occupational hazard of programming: feedback is the treatment.”* — Kent Beck, *Extreme Programming Explained* (2000)
+
 ---
 
 **Sat:** Tuesday of Week 8, 10:00–10:50, TH 200 · **⚠️ Quiz 8 in the first ten minutes** — covers Week 7 · **Reading:** Fowler, *"Continuous Integration"* (2006) · **Next:** L26, Docker
+
+**Coursework:** 📊 **Quiz 8** today · 📝 **Assignment 8** released Wed this week 17:00, due Fri of Week 9 17:00 · 📝 **Assignment 7** due Fri this week 17:00
 **First week back from Spring Break.** A 7 is due Friday 27 March.
 
 ---

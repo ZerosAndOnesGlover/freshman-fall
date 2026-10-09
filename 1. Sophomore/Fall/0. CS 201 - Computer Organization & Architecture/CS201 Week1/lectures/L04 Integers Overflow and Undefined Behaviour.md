@@ -2,9 +2,13 @@
 ## Week 1 · Lecture 1 of 3
 ### Integers, Overflow, and Undefined Behaviour
 
+*“Make no mistake about it: Computers process numbers - not symbols. We measure our understanding (and control) by the extent to which we can arithmetize an activity.”* — Alan Perlis, "Epigrams on Programming" (1982), #65
+
 ---
 
 **Reading:** CS:APP §2.2–2.3 · **Previous:** L03, the shape of x86-64
+
+**Coursework:** 📊 **Quiz 1** today · 📝 **PS 1** released Wed this week, due Fri of Week 2 17:00
 
 ---
 

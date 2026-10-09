@@ -2,9 +2,13 @@
 ## Week 0 · Lecture 2 of 2
 ### Grammars, Derivations, and Ambiguity
 
+*“Syntactic investigation of a given language has as its goal the construction of a grammar that can be viewed as a device of some sort for producing the sentences of the language under analysis.”* — Noam Chomsky, *Syntactic Structures* (1957), ch. 1
+
 ---
 
 **Reading:** Dragon §2.2, §4.2–4.3 · **Next:** Week 1, L03 — from grammar to a working lexer
+
+**Coursework:** 📝 **PS 0** released Wed this week, due Fri of Week 1 17:00 · 🔬 **Lab 0** Fri this week 14:00–15:50
 
 ---
 

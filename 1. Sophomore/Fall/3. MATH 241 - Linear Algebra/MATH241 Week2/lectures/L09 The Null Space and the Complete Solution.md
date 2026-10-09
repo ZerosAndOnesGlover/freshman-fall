@@ -2,9 +2,13 @@
 ## Week 2 · Lecture 3 of 3 · **Friday**
 ### The Null Space, and the Complete Solution
 
+*“A mathematical problem should be difficult in order to entice us, yet not completely inaccessible, lest it mock at our efforts. It should be to us a guide post on the mazy paths to hidden truths.”* — David Hilbert, "Mathematical Problems" (1900)
+
 ---
 
 **Reading:** Strang §3.2, §3.3 · **Previous:** L08, the column space · **Next:** Week 3, independence and dimension
+
+**Coursework:** 📝 **PS 1** due today 17:00 · 📊 **Quiz 3** Mon of Week 3 · 📝 **PS 3** released Wed of Week 3, due Fri of Week 4 17:00 · 💬 **Recitation 2** Thu of Week 3 15:00–15:50
 
 > **PS 1 is due at 17:00 today.** PS 2 was released Wednesday and is due the Friday of Week 3.
 

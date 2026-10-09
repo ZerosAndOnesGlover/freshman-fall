@@ -1,7 +1,13 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 1 · Lecture 1: Types, Variables, and the Memory Model
 
+*“People who are more than casually interested in computers should have at least some idea of what the underlying hardware is like. Otherwise the programs they write will be pretty weird.”* — Donald Knuth, *The Art of Computer Programming*, Vol. 1, Fascicle 1, "MMIX" (2005)
+
 **Date:** Tuesday 29 September 2026 · 10:00–10:50 · Week 1
+
+**Reading:** K&R §2.1–2.4 · King Ch. 7 · CS:APP §2.1 *(details at the end of the lecture)*
+
+**Coursework:** 📊 **Quiz 0** today 10:00–10:10 · 📝 **PS 0** due today 10:00 · 📝 **PS 1** released Thu 1 Oct 11:00, due Fri 9 Oct 17:00 · 🔬 **Lab 1** Mon 5 Oct 15:00–16:50
 
 ---
 
@@ -352,6 +358,14 @@ and the guard `if (len - 1 >= 0)`, which is always true for unsigned `len` and i
 2. What does `printf("%d\n", 'A' + 1)` print? Why?
 3. What happens to `unsigned int x = 0; x = x - 1;`? Is this defined or undefined behavior?
 4. Why might `sizeof(long)` give different results on different systems, and how do you write code that's portable?
+
+---
+
+## Reading
+
+- **K&R §2.1–2.4** — variable names, data types and sizes, constants, declarations
+- **King Ch. 7** — Basic Types; **§18.2–18.3** — storage classes and type qualifiers (`const`)
+- **CS:APP §2.1** — Information storage: bytes, words, and byte ordering
 
 ---
 

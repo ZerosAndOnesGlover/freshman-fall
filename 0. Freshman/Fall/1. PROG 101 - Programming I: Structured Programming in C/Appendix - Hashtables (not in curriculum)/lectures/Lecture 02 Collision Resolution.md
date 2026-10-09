@@ -1,6 +1,10 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Appendix · Lecture 2: Collision Resolution — Chaining and Open Addressing
 
+*“The cybernetic exchange between man, computer and algorithm is like a game of musical chairs: The frantic search for balance always leaves one of the three standing ill at ease.”* — Alan Perlis, "Epigrams on Programming" (1982), #77
+
+**Reading:** CLRS Ch. 11.4 · Sedgewick & Wayne §3.4 *(details at the end of the lecture)*
+
 ---
 
 ## Lecture Goals

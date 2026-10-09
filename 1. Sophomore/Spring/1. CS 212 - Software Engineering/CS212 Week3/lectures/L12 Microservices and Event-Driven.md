@@ -2,9 +2,13 @@
 ## Week 3 · Lecture 3 of 3
 ### Microservices and Event-Driven — What They Buy, and the Bill
 
+*“Transparency is valuable, but while many things can be made transparent in distributed objects, performance isn't usually one of them.”* — Martin Fowler, *Software Development* 11 (2003)
+
 ---
 
 **Sat:** Thursday of Week 3, 10:00–10:50, TH 200 · **Reading:** Fowler & Lewis, *"Microservices"* (2014); Fowler, *"MicroservicePremium"* (2015) · **Next:** Week 4, design patterns
+
+**Coursework:** 📝 **Assignment 2** due Fri this week 17:00 · 📊 **Quiz 4** Tue of Week 4 · 📝 **Assignment 4** released Wed of Week 4 17:00, due Fri of Week 5 17:00
 
 ---
 

@@ -1,7 +1,13 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 0 · Lecture 1: What Is a Compiler? The C Compilation Model
 
+*“I had a running compiler and nobody would touch it. ... they carefully told me, computers could only do arithmetic; they could not do programs.”* — Grace Hopper, as quoted in Charlene W. Billings, *Grace Hopper: Navy Admiral and Computer Pioneer* (1989)
+
 **Date:** Tuesday 22 September 2026 · 10:00–10:50 · Week 0
+
+**Reading:** K&R §1.1 · King §2.1 · CS:APP §1.2 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 0** released Fri 25 Sep 17:00, due Tue 29 Sep 10:00 · 🔬 **Lab 0** Mon 28 Sep 15:00–16:50
 
 ---
 
@@ -394,6 +400,14 @@ The letters name the **section** a symbol lives in (uppercase = external/global,
 1. If `#include` just pastes file contents, what happens if you `#include` a file that `#include`s the same file again? (Hint: `#include` guards)
 2. Why does the linker need to exist as a separate step? Why not combine all code into one object file?
 3. What is the difference between a *declaration* and a *definition* in C? (This distinction is fundamental and we will return to it.)
+
+---
+
+## Reading
+
+- **K&R §1.1** — Getting Started: compiling and running the first program
+- **King §2.1** — Writing a simple program: preprocessing, compiling and linking
+- **CS:APP §1.2** — Programs are translated by other programs; **§7.1–7.2** — compiler drivers and static linking
 
 ---
 

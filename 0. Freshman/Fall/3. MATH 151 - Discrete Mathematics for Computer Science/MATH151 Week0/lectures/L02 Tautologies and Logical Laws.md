@@ -2,7 +2,13 @@
 ## Lecture 2. Tautologies, Contradictions, Logical Equivalence, and the Laws of Logic
 ### Friday, Week 0
 
+*“That axiom of Metaphysicians which is termed the principle of contradiction and which affirms that it is impossible for anything to possess a quality, and in the same time not to possess it, is a consequence of the fundamental law of thought, whose expression is x²=x.”* — George Boole, *An Investigation of the Laws of Thought* (1854)
+
 **Date:** Friday 25 September 2026 · 13:00–13:50 · Week 0
+
+**Reading:** Rosen, 8e §1.3 · Epp, 5e §2.1 · Levin, 3e §3.1 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 0** released today 14:00, due Fri 2 Oct 17:00 · 📊 **Quiz 1** Mon 28 Sep 13:00–13:15 · 🔬 **Lab 0** Wed 30 Sep 15:00–16:50
 
 ---
 
@@ -389,5 +395,11 @@ Every proof technique you learn in this course — direct proof, contradiction, 
 6. **Coding exercise:** Write a Python function `is_tautology(formula, n_vars)` that takes a formula as a Python function and the number of variables, and returns True iff the formula is a tautology. Use `itertools.product`. Test it on p ∨ ¬p and p ∧ ¬p.
 
 ---
+
+## Reading
+
+- **Rosen, 8e §1.3** — Propositional equivalences, normal forms, satisfiability
+- **Epp, 5e §2.1** — Logical equivalence and the laws of logic
+- **Levin, 3e §3.1** — Propositional logic
 
 *Week 0 complete. Week 1 begins: Predicate Logic, Quantifiers, and Logical Equivalences with Quantifiers.*

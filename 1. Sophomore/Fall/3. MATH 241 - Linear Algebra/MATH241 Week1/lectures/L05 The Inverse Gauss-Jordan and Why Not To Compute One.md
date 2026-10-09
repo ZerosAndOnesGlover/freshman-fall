@@ -2,9 +2,13 @@
 ## Week 1 · Lecture 2 of 3 · **Tuesday**
 ### The Inverse: Gauss–Jordan, and Why You Should Almost Never Compute One
 
+*“If you cannot solve the proposed problem, try to solve first a simpler related problem.”* — George Pólya, *Mathematical Methods in Science* (1977)
+
 ---
 
 **Reading:** Strang §2.5 · **Previous:** L04, matrix multiplication · **Next:** L06, transposes and $A = LU$
+
+**Coursework:** 📝 **PS 1** released Wed this week, due Fri of Week 2 17:00 · 💬 **Recitation 0** Thu this week 15:00–15:50 · 📝 **PS 0** due Fri this week 17:00 · 📊 **Quiz 2** Mon of Week 2
 
 ---
 

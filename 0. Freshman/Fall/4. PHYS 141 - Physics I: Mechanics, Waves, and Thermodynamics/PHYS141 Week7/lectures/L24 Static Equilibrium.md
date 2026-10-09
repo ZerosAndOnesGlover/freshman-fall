@@ -1,9 +1,15 @@
 # PHYS 141 · Lecture 24
 # Static Equilibrium
 
+*“Equal weights at equal distances are in equilibrium and equal weights at unequal distances are not in equilibrium but incline towards the weight which is at the greater distance.”* — Archimedes, *On the Equilibrium of Planes*, Book I, Postulate 1
+
 > **Core Principle:** An object is in static equilibrium when it has zero linear acceleration AND zero angular acceleration — both the net force and the net torque must vanish. These are two genuinely independent conditions: a system can have zero net force but still spin up (if torques don't balance), or zero net torque but still accelerate linearly (if forces don't balance). Solving equilibrium problems requires satisfying both simultaneously.
 
 **Date:** Friday 13 November 2026 · 14:00–14:50 · Week 7
+
+**Reading:** Serway & Jewett §12.1–12.3
+
+**Coursework:** 📝 **PS 6** due today 17:00 · 📝 **PS 7** released today 15:00, due Fri 20 Nov 17:00 · 📊 **Quiz 7** Mon 16 Nov 14:00 · 🔬 **Lab 8** Thu 19 Nov 14:00–17:00
 
 ---
 

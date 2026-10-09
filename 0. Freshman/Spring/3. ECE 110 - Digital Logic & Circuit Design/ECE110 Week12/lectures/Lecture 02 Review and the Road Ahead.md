@@ -2,11 +2,15 @@
 ## Week 12 · Lecture 2 (Thursday)
 ### Review and the Road Ahead
 
+*“The technology at the leading edge changes so rapidly that you have to keep current after you get out of school. I think probably the most important thing is having good fundamentals.”* — Gordon Moore, interview in *Ingenuity* 5(2) (2000)
+
 **Date:** Thursday 15 April 2027 · 13:00–14:15 · Week 12
+
+**Coursework:** 📝 **PS 11** due today 13:00 · 📝 **PS 12** released today 14:30 · 🔬 **Lab 12** Fri 16 Apr 14:00–15:50 · 📕 **Final exam** Mon 19 Apr 08:00–10:00
 
 ---
 
-**Reading:** none — this lecture is a retrospective
+**Reading:** Harris & Harris, the Summary at the end of Chapters 1–5 | Mano & Ciletti — none
 **The FINAL EXAM** is comprehensive, Weeks 0–12, 120 minutes, two handwritten pages. **The revision guide is in `resources/`.**
 
 ---

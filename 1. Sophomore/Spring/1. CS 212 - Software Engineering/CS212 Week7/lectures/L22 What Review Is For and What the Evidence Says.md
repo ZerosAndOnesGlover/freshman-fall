@@ -2,9 +2,13 @@
 ## Week 7 · Lecture 1 of 3
 ### What Review Is For, and What the Evidence Actually Says
 
+*“Given enough eyeballs, all bugs are shallow.”* — Eric S. Raymond, *The Cathedral and the Bazaar* (1997), naming it "Linus's Law"
+
 ---
 
 **Sat:** Tuesday of Week 7, 10:00–10:50, TH 200 · **⚠️ Quiz 7 in the first ten minutes** — covers Week 6 · **Reading:** Bacchelli & Bird (2013) · **Next:** L23, the checklist
+
+**Coursework:** 📊 **Quiz 7** today · 📝 **Assignment 7** released Wed this week 17:00, due Fri of Week 8 17:00 · 📝 **Assignment 6** due Fri this week 17:00
 
 ---
 

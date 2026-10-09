@@ -2,9 +2,13 @@
 ## Week 9 · Lecture 1 of 3
 ### One Interface for Every Device
 
+*“UNIX does not allow path names to be prefixed by a drive name or number; that would be precisely the kind of device dependence that operating systems ought to eliminate.”* — Andrew S. Tanenbaum, *Modern Operating Systems*, 3rd ed.
+
 ---
 
 **Sat:** Monday of Week 9, 09:00–09:50, VNC 101, **after Quiz 9** · **Reading:** OSTEP Ch. 36; xv6 book Ch. 3 §3.5 · **Next:** L29, interrupts and the block layer
+
+**Coursework:** 📊 **Quiz 9** today · 🔬 **Lab 8** Tue this week 15:00–16:50 · 📋 **Project 2** released Wed this week, due Fri of the completion period 17:00 · 📝 **PS 9** released Wed this week, due Fri of Week 10 17:00 · 📝 **PS 8** due Fri this week 17:00
 
 ---
 

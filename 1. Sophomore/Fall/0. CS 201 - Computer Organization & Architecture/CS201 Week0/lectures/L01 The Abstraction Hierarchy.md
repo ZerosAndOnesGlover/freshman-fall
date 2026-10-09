@@ -2,9 +2,13 @@
 ## Week 0 · Lecture 1 of 3
 ### The Abstraction Hierarchy — Transistors to Programs
 
+*“Fundamentally, computer science is a science of abstraction — creating the right model for thinking about a problem and devising the appropriate mechanizable techniques to solve it.”* — Alfred Aho & Jeffrey Ullman, *Foundations of Computer Science* (1992), ch. 1
+
 ---
 
 **Reading:** CS:APP §1.1–1.4 · **Next:** L02, the von Neumann machine
+
+**Coursework:** 📝 **PS 0** released Wed this week, due Fri this week 17:00 · 🔬 **Lab 0** Fri this week 15:00–16:50
 
 ---
 

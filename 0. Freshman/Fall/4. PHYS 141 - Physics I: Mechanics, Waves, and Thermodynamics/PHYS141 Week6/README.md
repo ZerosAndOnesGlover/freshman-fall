@@ -51,5 +51,5 @@ By the end of Week 6, you will be able to:
 
 ## Textbooks
 
-- **HRK:** Halliday, Resnick & Krane — Ch. 10 (Rotational Kinematics), Ch. 11 (Rotational Dynamics)
-- **Serway:** Ch. 10 (Rotation of a Rigid Object About a Fixed Axis)
+- **HRK:** Halliday, Resnick & Krane — Ch. 8 (Rotational Kinematics); Ch. 9 (Rotational Dynamics)
+- **Serway:** Ch. 10 (Rotation of a Rigid Object About a Fixed Axis) §10.1–10.9

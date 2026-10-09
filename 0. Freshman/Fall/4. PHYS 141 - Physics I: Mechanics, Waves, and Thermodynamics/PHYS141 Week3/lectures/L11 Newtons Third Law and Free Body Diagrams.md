@@ -1,9 +1,15 @@
 # PHYS 141 · Lecture 11
 # Newton's Third Law & Free Body Diagrams
 
+*“To every action there is always opposed an equal reaction: or the mutual actions of two bodies upon each other are always equal, and directed to contrary parts.”* — Isaac Newton, *Principia* (1687), Law III, tr. Motte
+
 > **Core Principle:** Forces never exist in isolation — they always come in pairs. Newton's Third Law says that whenever object A exerts a force on object B, object B simultaneously exerts an equal and opposite force on object A. These paired forces act on *different* objects, which is why they never cancel. The free body diagram is the tool that keeps this straight.
 
 **Date:** Tuesday 13 October 2026 · 14:00–14:50 · Week 3
+
+**Reading:** Serway & Jewett §5.6–5.7 · HRK Ch. 3
+
+**Coursework:** 🔬 **Lab 3** Thu 15 Oct 14:00–17:00 · 📝 **PS 2** due Fri 16 Oct 17:00 · 📝 **PS 3** released Fri 16 Oct 15:00, due Fri 23 Oct 17:00 · 📊 **Quiz 3** Mon 19 Oct 14:00
 
 ---
 

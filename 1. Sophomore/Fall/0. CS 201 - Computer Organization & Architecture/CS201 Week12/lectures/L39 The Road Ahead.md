@@ -2,9 +2,13 @@
 ## Week 12 · Lecture 3 of 3
 ### The Road Ahead
 
+*“I've always been more interested in the future than in the past.”* — Grace Hopper, as quoted in *Reader's Digest* (October 1994)
+
 ---
 
-**Reading:** none · **Previous:** L38, synthesis
+**Reading:** Hennessy & Patterson, "A New Golden Age for Computer Architecture", *Communications of the ACM* 62(2), 2019 · **Previous:** L38, synthesis
+
+**Coursework:** 📋 **Project 2** due today 17:00 · 📝 **PS 11** due today 17:00 · 📝 **PS 12** due today 17:00
 
 ---
 

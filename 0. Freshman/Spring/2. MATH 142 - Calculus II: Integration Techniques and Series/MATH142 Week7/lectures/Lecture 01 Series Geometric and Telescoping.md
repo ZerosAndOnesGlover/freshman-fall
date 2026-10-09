@@ -2,7 +2,11 @@
 ## Week 7 · Lecture 1 (Monday)
 ### Series, Geometric and Telescoping
 
+*“It appears to me that if one wants to make progress in mathematics, one should study the masters and not the pupils.”* — Niels Henrik Abel, as quoted in Oystein Ore, *Niels Henrik Abel: Mathematician Extraordinary* (1957)
+
 **Date:** Monday 8 March 2027 · 11:00–11:50 · Week 7
+
+**Coursework:** 📊 **Quiz 7** today 11:00–11:15 · 🔬 **Lab 6** Wed 10 Mar 15:00–16:50 · 📝 **PS 6** due Fri 12 Mar 17:00 · 📝 **PS 7** released Fri 12 Mar 12:00, due Fri 19 Mar 17:00
 
 ---
 

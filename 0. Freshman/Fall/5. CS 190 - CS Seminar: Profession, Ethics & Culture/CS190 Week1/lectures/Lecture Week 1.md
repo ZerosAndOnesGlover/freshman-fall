@@ -2,7 +2,13 @@
 ## Lecture · Week 1: The History of Computing
 ### From Babbage to Turing to Silicon Valley
 
+*“We may say most aptly that the Analytical Engine weaves algebraical patterns just as the Jacquard-loom weaves flowers and leaves.”* — Ada Lovelace, "Notes" on Menabrea's *Sketch of the Analytical Engine* (1843)
+
 **Date:** Wednesday 30 September 2026 · 13:00–13:50 · Week 1
+
+**Reading:** Turing, "Computing Machinery and Intelligence" (*Mind*, 1950) · Abbate, *Inventing the Internet*, Ch. 1 · Isaacson, *The Innovators*, Ch. 1 ("Ada Lovelace") — [[CS190 Week1/resources/Reading Guide|Reading Guide]]
+
+**Coursework:** 📝 **Prep 1** due today 12:00
 
 ---
 

@@ -65,7 +65,7 @@ After Week 9, you will be able to:
 
 | Lecture | Reference |
 |---------|-----------|
-| L1: Recursion Fundamentals | King Ch. 18 (full chapter); SICP §1.2 |
+| L1: Recursion Fundamentals | King §9.6; SICP §1.2 |
 | L2: Divide-and-Conquer/Backtracking | CLRS Ch. 2, Ch. 7; Skiena Ch. 7 |
 | L3: Binary Trees | CLRS Ch. 12; Sedgewick & Wayne §3.2 |
 

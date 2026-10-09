@@ -2,9 +2,13 @@
 ## Week 0 · Lecture 3 of 3 · **Friday** of Week 0
 ### What Elimination Costs, and When It Lies
 
+*“Good approximations often lead to better ones.”* — George Pólya, *Mathematical Methods in Science* (1977)
+
 ---
 
 **Reading:** Strang §2.2 (the cost paragraph), §9.1–§9.3 · **Previous:** L02, the algorithm · **Next:** Week 1, matrices as objects
+
+**Coursework:** 📝 **PS 0** released Wed this week, due Fri of Week 1 17:00
 
 > **Every number in this lecture was computed by `resources/elimination.py`**, which ships with this
 > week. Exact results were computed in Python's `Fraction`; floating-point results in `float`, on

@@ -1,11 +1,15 @@
 # PROG 102 · Lecture 23
 ## Creational Patterns
 
+*“One begins to think with that new building block, rather than with littler pieces. And finally, the things which seem like elements dissolve, and leave a fabric of relationships behind, which is the stuff that actually repeats itself...”* — Christopher Alexander, *The Timeless Way of Building* (1979)
+
 **Week 7 · Wednesday · 50 minutes**
 **Reading:** Gang of Four Ch. 3 (Singleton, Factory Method, Abstract Factory, Builder)
 **Assumes:** L22, Week 4 (abstract classes), Week 5 (`unique_ptr`)
 
 **Date:** Wednesday 10 March 2027 · 10:00–10:50 · Week 7
+
+**Coursework:** 📝 **PS 6** due Fri 12 Mar 17:00 · 📝 **PS 7** released Fri 12 Mar 10:00, due Fri 19 Mar 17:00 · 🔬 **Lab 7** Mon 15 Mar 15:00–16:50 · 📊 **Quiz 8** Tue 16 Mar 10:00–10:15
 
 ---
 

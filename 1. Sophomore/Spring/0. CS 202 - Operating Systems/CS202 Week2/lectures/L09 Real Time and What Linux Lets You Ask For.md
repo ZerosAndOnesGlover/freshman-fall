@@ -2,9 +2,13 @@
 ## Week 2 · Lecture 3 of 3
 ### Real Time, and What Linux Lets You Ask For
 
+*“At the end of about a week, I called back and said, "I need something to compare this to. Could I please have a microsecond?"”* — Grace Hopper, interview on *60 Minutes* (24 August 1986)
+
 ---
 
 **Sat:** Friday of Week 2, 09:00–09:50, VNC 101 · **Reading:** Silberschatz §5.6; `man 7 sched` · **Next:** Week 3, locks
+
+**Coursework:** 📝 **PS 1** due today 17:00 · 📊 **Quiz 3** Mon of Week 3 · 🔬 **Lab 2** Tue of Week 3 15:00–16:50 · 📝 **PS 3** released Wed of Week 3, due Fri of Week 4 17:00 · 📘 **Midterm 1** Mon of Week 4 18:00–19:15
 
 ---
 

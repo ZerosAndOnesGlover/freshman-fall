@@ -2,9 +2,14 @@
 ## Expressions, Operators, and Python's Evaluation Model
 
 **Week 1 · Thursday**
-*"An expression is a phrase of a programming language that describes a computation and evaluates to a value." — SICP*
+
+*“A picture may be worth a thousand words, a formula is worth a thousand pictures.”* — Edsger W. Dijkstra, "A first exploration of effective reasoning" (EWD1239, 1996)
 
 **Date:** Thursday 1 October 2026 · 09:00–09:50 · Week 1
+
+**Reading:** Guttag, Ch. 2 · Python Language Reference, §6 "Expressions" *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 1** released Fri 2 Oct 10:00, due Fri 9 Oct 17:00 · 🔬 **Lab 1** Tue 6 Oct 15:00–16:50 · 📊 **Quiz 2** Wed 7 Oct 09:00–09:10
 
 ---
 
@@ -509,8 +514,8 @@ The connecting pattern is that Python's integers behave like **infinite-width tw
 
 ## Reading
 
-- **Guttag, Ch. 2.2** — Branching Programs (includes expression evaluation)
-- **Python Docs:** https://docs.python.org/3/reference/expressions.html (bookmark this — the authoritative reference)
+- **Guttag, Ch. 2** — expressions, then branching programs
+- **Python Language Reference, §6 "Expressions"** — https://docs.python.org/3/reference/expressions.html (bookmark this — the authoritative reference)
 
 ---
 

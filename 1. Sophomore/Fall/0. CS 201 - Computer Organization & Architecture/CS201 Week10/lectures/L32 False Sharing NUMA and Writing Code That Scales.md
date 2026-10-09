@@ -2,9 +2,13 @@
 ## Week 10 · Lecture 2 of 3
 ### False Sharing, NUMA, and Writing Code That Scales
 
+*“Fools ignore complexity. Pragmatists suffer it. Some can avoid it. Geniuses remove it.”* — Alan Perlis, "Epigrams on Programming" (1982), #58
+
 ---
 
 **Reading:** CS:APP §6.6, Patterson & Hennessy §5.10, §6.5 · **Previous:** L31, MESI
+
+**Coursework:** 📝 **PS 10** released today, due Fri of Week 11 17:00 · 📝 **PS 9** due Fri this week 17:00 · 📊 **Quiz 11** Mon of Week 11 · 🔬 **Lab 10** Tue of Week 11 15:00–16:50
 
 ---
 

@@ -2,7 +2,13 @@
 ## Lecture 14 (L14) — Power Sets, Cartesian Products, and Inclusion-Exclusion
 ### Friday, Week 4
 
+*“Every transfinite consistent multiplicity, that is, every transfinite set, must have a definite aleph as its cardinal number.”* — Georg Cantor, letter to Richard Dedekind (1899)
+
 **Date:** Friday 23 October 2026 · 13:00–13:50 · Week 4
+
+**Reading:** Rosen, 8e §2.1–2.2 · Epp, 5e §6.1 · Levin, 3e §0.3 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 3** due today 17:00 · 📝 **PS 4** released today 14:00, due Fri 30 Oct 17:00 · 📊 **Quiz 5** Mon 26 Oct 13:00–13:15 · 🔬 **Lab 4** Wed 28 Oct 15:00–16:50
 
 ---
 
@@ -238,5 +244,11 @@ Inclusion-Exclusion:
    *(Hint: use De Morgan's Law — $\overline{A}\cap\overline{B} = \overline{A\cup B}$.)*
 
 ---
+
+## Reading
+
+- **Rosen, 8e §2.1–2.2** — Power sets and Cartesian products; the size of a union
+- **Epp, 5e §6.1** — Power sets and Cartesian products
+- **Levin, 3e §0.3** — Sets
 
 *Week 4 complete. Week 5: Functions — Injective, Surjective, Bijective; Composition and Inverses.*

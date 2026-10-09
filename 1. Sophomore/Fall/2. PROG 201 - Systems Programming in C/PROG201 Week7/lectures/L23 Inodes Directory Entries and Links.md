@@ -2,9 +2,13 @@
 ## Week 7 · Lecture 2 of 3
 ### Inodes, Directory Entries, and Links
 
+*“We have persistent objects, they're called files.”* — Ken Thompson, Plan 9 fortune file (1992)
+
 ---
 
 **Reading:** APUE §4.14–4.17 · TLPI Ch. 18 · CS:APP §10.2 · `man 2 link`, `man 7 symlink`, `man 8 debugfs` · **Previous:** L22 · **Next:** L24 — on-disk layout, journalling and durability
+
+**Coursework:** 📝 **PS 7** released today, due Fri of Week 8 17:00 · 📝 **PS 6** due Fri this week 17:00 · 🔬 **Lab 7** Mon of Week 8 15:00–16:50 · 📊 **Quiz 8** Tue of Week 8
 
 ---
 

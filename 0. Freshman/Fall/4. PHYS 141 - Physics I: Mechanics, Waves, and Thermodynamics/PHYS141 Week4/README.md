@@ -51,5 +51,5 @@ By the end of Week 4, you will be able to:
 
 ## Textbooks
 
-- **HRK:** Halliday, Resnick & Krane — Ch. 7 (Work and Energy), Ch. 8 (Conservation of Energy)
-- **Serway:** Ch. 7 (Energy and Energy Transfer), Ch. 8 (Conservation of Energy)
+- **HRK:** Halliday, Resnick & Krane — Ch. 11 (Work and Kinetic Energy); Ch. 12 (Potential Energy); Ch. 13 (Conservation of Energy)
+- **Serway:** Ch. 7 (Energy of a System) §7.1–7.9; Ch. 8 (Conservation of Energy) §8.1–8.5

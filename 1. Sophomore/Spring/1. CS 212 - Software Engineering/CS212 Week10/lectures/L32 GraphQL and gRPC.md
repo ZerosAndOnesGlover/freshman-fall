@@ -2,9 +2,13 @@
 ## Week 10 · Lecture 2 of 3
 ### GraphQL and gRPC — What Each Buys, and What Each Costs
 
+*“The nice thing about standards is that you have so many to choose from.”* — Andrew S. Tanenbaum, *Computer Networks*, 2nd ed. (1988)
+
 ---
 
 **Sat:** Wednesday of Week 10, 10:00–10:50, TH 200 · **Reading:** GraphQL spec overview; gRPC "Introduction"; Protobuf "Proto3 language guide" §Updating **Next:** L33, versioning
+
+**Coursework:** 📝 **Assignment 10** released today 17:00, due Fri of Week 11 17:00 · 📝 **Assignment 9** due Fri this week 17:00 · 📊 **Quiz 11** Tue of Week 11
 **A 10 is released after this lecture**, Wednesday 17:00.
 
 ---

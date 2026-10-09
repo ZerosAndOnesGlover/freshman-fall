@@ -2,9 +2,13 @@
 ## Week 10 · Lecture 1 of 3
 ### The Stack, the Overflow, and the Defences
 
+*“It's certainly easier to implement bad security and make it illegal for anyone to notice than it is to implement good security.”* — Bruce Schneier, *Secrets and Lies* (2000)
+
 ---
 
 **Reading:** CS:APP §3.10.3–3.10.4 · Aleph One, *Smashing the Stack for Fun and Profit* (1996) · `man 1 setarch`, `man 5 proc` (`randomize_va_space`) · **Previous:** L30 · **Next:** L32 — return-oriented programming
+
+**Coursework:** 📊 **Quiz 10** today · 📝 **PS 10** released Wed this week, due Fri of Week 11 17:00 · 📋 **Project 2** released Fri this week, due Fri of Week 12 17:00 · 📝 **PS 9** due Fri this week 17:00 · 🔬 **Lab 10** Mon of Week 11 15:00–16:50
 
 ---
 

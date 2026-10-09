@@ -1,9 +1,15 @@
 # PHYS 141 · Lecture 13
 # Work and Kinetic Energy
 
+*“It is important to realize that in physics today, we have no knowledge what energy is.”* — Richard Feynman, *The Feynman Lectures on Physics*, Vol. I, §4-1 (1963)
+
 > **Core Principle:** Work is the mechanism by which force transfers energy to or from an object. The work-energy theorem — derivable directly from Newton's second law — states that the net work done on an object equals its change in kinetic energy. This single theorem lets us solve many problems without ever computing acceleration or time explicitly.
 
 **Date:** Monday 19 October 2026 · 14:00–14:50 · Week 4
+
+**Reading:** Serway & Jewett §7.1–7.5 · HRK Ch. 11
+
+**Coursework:** 📊 **Quiz 3** today 14:00 · 🔬 **Lab 4** Thu 22 Oct 14:00–17:00 · 📝 **PS 3** due Fri 23 Oct 17:00 · 📝 **PS 4** released Fri 23 Oct 15:00, due Fri 30 Oct 17:00
 
 ---
 

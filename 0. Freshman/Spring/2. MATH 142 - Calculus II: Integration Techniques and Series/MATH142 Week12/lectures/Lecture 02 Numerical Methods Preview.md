@@ -2,11 +2,15 @@
 ## Week 12 · Lecture 2 (Tuesday)
 ### Numerical Methods, Named
 
+*“The purpose of computing is insight, not numbers.”* — Richard Hamming, *Numerical Methods for Scientists and Engineers* (1962), Preface
+
 **Date:** Tuesday 13 April 2027 · 11:00–11:50 · Week 12
+
+**Coursework:** 🔬 **Lab 11** Wed 14 Apr 15:00–16:50 · 🔬 **Lab 12** Thu 15 Apr 15:00–16:50 · 📝 **PS 11** due Fri 16 Apr 17:00 · 📝 **PS 12** released Fri 16 Apr 12:00 · 📕 **Final exam** Tue 20 Apr 09:00–11:30
 
 ---
 
-**Reading:** none — this lecture is a retrospective
+**Reading:** Stewart §7.7 (approximate integration and its error bounds), §9.2 (Euler's method), §11.11 (Taylor polynomial error) | Apostol — none
 **Lab 12** is a self-diagnostic under exam conditions. **Do it before you revise, not after.**
 
 ---

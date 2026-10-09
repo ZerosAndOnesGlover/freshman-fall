@@ -2,9 +2,13 @@
 ## Week 5 · Lecture 1 of 3
 ### Sockets, TCP, and the Calls
 
+*“In general, an implementation must be conservative in its sending behavior, and liberal in its receiving behavior.”* — Jon Postel, RFC 791, *Internet Protocol* (1981)
+
 ---
 
 **Reading:** APUE Ch. 16 · TLPI Ch. 56–59 · `man 2 socket`, `man 2 listen`, `man 3 getaddrinfo`, `man 7 tcp` · **Previous:** L15 · **Next:** L17 — five ways to serve
+
+**Coursework:** 📊 **Quiz 5** today · 📝 **PS 5** released Wed this week, due Fri of Week 6 17:00 · 📝 **PS 4** due Fri this week 17:00
 
 ---
 

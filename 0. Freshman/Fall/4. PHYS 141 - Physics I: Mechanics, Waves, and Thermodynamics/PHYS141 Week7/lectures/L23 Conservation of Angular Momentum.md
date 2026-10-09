@@ -1,9 +1,15 @@
 # PHYS 141 · Lecture 23
 # Conservation of Angular Momentum
 
+*“The most beautiful fate of a physical theory is to point the way to the establishment of a more inclusive theory, in which it lives on as a limiting case.”* — Albert Einstein (1917), as quoted by Gerald Holton
+
 > **Core Principle:** When the net external torque on a system is zero, its total angular momentum is exactly conserved. This single principle explains the spinning skater speeding up as they pull in their arms, the stability of gyroscopes and bicycle wheels, and the way orbiting bodies sweep out equal areas in equal times. It is as fundamental to rotational mechanics as linear momentum conservation is to translational mechanics.
 
 **Date:** Tuesday 10 November 2026 · 14:00–14:50 · Week 7
+
+**Reading:** Serway & Jewett §11.4–11.5 · HRK Ch. 10
+
+**Coursework:** 🔬 **Lab 7** Thu 12 Nov 14:00–17:00 · 📝 **PS 6** due Fri 13 Nov 17:00 · 📝 **PS 7** released Fri 13 Nov 15:00, due Fri 20 Nov 17:00 · 📊 **Quiz 7** Mon 16 Nov 14:00
 
 ---
 

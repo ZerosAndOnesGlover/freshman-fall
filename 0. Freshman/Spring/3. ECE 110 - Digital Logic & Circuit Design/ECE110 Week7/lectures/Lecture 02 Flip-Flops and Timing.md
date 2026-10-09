@@ -2,7 +2,11 @@
 ## Week 7 · Lecture 2 (Thursday)
 ### Flip-Flops and Timing
 
+*“By a clock we understand anything characterized by a phenomenon passing periodically through identical phases so that we must assume, by the principle of sufficient reason, that all that happens in a given period is identical with all that happens in an arbitrary period.”* — Albert Einstein, "Principles of Theoretical Physics" (1914)
+
 **Date:** Thursday 11 March 2027 · 13:00–14:15 · Week 7
+
+**Coursework:** 📝 **PS 6** due today 13:00 · 📝 **PS 7** released today 14:30, due Thu 18 Mar 13:00 · 🔬 **Lab 7** Fri 12 Mar 14:00–15:50 · 📊 **Quiz 7** Wed 17 Mar 13:00–13:10
 
 ---
 

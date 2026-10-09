@@ -2,7 +2,13 @@
 ## Week 12 · Lecture 3 (Wednesday)
 ### Final Preparation and the Road Ahead
 
+*“If you expect to continue learning all your life, you will be teaching yourself much of the time. You must learn to learn, especially the difficult topic of mathematics.”* — Richard Hamming, *Methods of Mathematics Applied to Calculus, Probability, and Statistics* (1985)
+
 **Date:** Wednesday 16 December 2026 · 11:00–11:50 · Week 12
+
+**Reading:** Stewart, the Review exercises at the end of Chapters 2–6; Problems Plus after Chapters 3 and 4 (optional) | Spivak — none
+
+**Coursework:** 📝 **PS 11** due today 11:00 · 🔬 **Lab 12** Fri 18 Dec 15:00–16:50 · 📕 **Final exam** Wed 23 Dec 09:00–11:30
 
 ---
 

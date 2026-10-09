@@ -1,7 +1,13 @@
 # PHYS 141 · Physics I: Mechanics, Waves & Thermodynamics
 ## Lecture 28 — Wave Properties and the Wave Equation
 
+*“The scale of light can be described by numbers — called the frequency — and as the numbers get higher, the light goes from red to blue to ultraviolet.”* — Richard Feynman, *QED: The Strange Theory of Light and Matter* (1985)
+
 **Date:** Monday 23 November 2026 · 14:00–14:50 · Week 9
+
+**Reading:** Serway & Jewett §16.1–16.5 · HRK Ch. 18
+
+**Coursework:** 📊 **Quiz 8** today 14:00 · 🔬 **Lab 9** Thu 26 Nov 14:00–17:00 · 📝 **PS 8** due Fri 27 Nov 17:00 · 📝 **PS 9** released Fri 27 Nov 15:00, due Fri 4 Dec 17:00
 
 ---
 

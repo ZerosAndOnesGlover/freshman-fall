@@ -2,7 +2,13 @@
 ## Lecture 9 (L09) — Mathematical Induction: The Principle and Basic Applications
 ### Monday, Week 3
 
+*“I may as well say at once that I do not distinguish between inference and deduction. What is called induction appears to me to be either disguised deduction or a mere method of making plausible guesses.”* — Bertrand Russell, *The Principles of Mathematics* (1903), ch. II
+
 **Date:** Monday 12 October 2026 · 13:00–13:50 · Week 3
+
+**Reading:** Rosen, 8e §5.1 · Epp, 5e §5.2 · Levin, 3e §2.5 *(details at the end of the lecture)*
+
+**Coursework:** 📊 **Quiz 3** today 13:00–13:15 · 🔬 **Lab 2** Wed 14 Oct 15:00–16:50 · 📝 **PS 2** due Fri 16 Oct 17:00 · 📝 **PS 3** released Fri 16 Oct 14:00, due Fri 23 Oct 17:00
 
 ---
 
@@ -277,5 +283,11 @@ By the Principle of Mathematical Induction, P(n) holds for all n ≥ n₀. ∎
    *Hint:* Partial fractions — $\frac{1}{i(i+1)} = \frac{1}{i} - \frac{1}{i+1}$.
 
 ---
+
+## Reading
+
+- **Rosen, 8e §5.1** — Mathematical induction
+- **Epp, 5e §5.2** — Mathematical induction I: proving formulas
+- **Levin, 3e §2.5** — Induction
 
 *Next: Lecture 10 — Induction Applications: Inequalities, Recursion, and Algorithm Correctness*

@@ -1,7 +1,13 @@
 # CS 102 · Computer Science II
 ## Lecture 29: Scheduling and Fractional Knapsack
 
+*“In seeking the unattainable, simplicity only gets in the way.”* — Alan Perlis, "Epigrams on Programming" (1982), #60
+
 **Date:** Wednesday 24 March 2027 · 09:00–09:50 · Week 9
+
+**Reading:** Kleinberg & Tardos §4.2 (exchange argument, maximum lateness) · CLRS §15.2 (fractional against 0/1 knapsack)
+
+**Coursework:** 📋 **Project 1** due Fri 26 Mar 17:00 · 📝 **PS 8** due Fri 26 Mar 17:00 · 📝 **PS 9** released Fri 26 Mar 10:00, due Fri 2 Apr 17:00 · 📊 **Quiz 10** Mon 29 Mar 09:00–09:15 · 📋 **Project 2** released Mon 29 Mar 09:00, due Fri 16 Apr 17:00 · 📘 **Midterm 2** Mon 29 Mar 18:00–19:15 · 🔬 **Lab 9** Tue 30 Mar 15:00–16:50
 
 ---
 

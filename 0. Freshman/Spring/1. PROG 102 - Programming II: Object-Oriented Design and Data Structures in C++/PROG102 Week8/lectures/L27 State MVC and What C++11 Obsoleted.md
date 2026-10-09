@@ -1,10 +1,14 @@
 # PROG 102 · Lecture 27
 ## State, MVC, and What C++11 Obsoleted
 
+*“Some programming languages manage to absorb change, but withstand progress.”* — Alan Perlis, "Epigrams on Programming" (1982), #41
+
 **Week 8 · Thursday · 50 minutes**
 **Reading:** Gang of Four Ch. 5 — State · **Assumes:** L25, L26
 
 **Date:** Thursday 18 March 2027 · 10:00–10:50 · Week 8
+
+**Coursework:** 📝 **PS 7** due Fri 19 Mar 17:00 · 📝 **PS 8** released Fri 19 Mar 10:00, due Fri 26 Mar 17:00 · 🔬 **Lab 8** Mon 22 Mar 15:00–16:50 · 📊 **Quiz 9** Tue 23 Mar 10:00–10:15 · 📘 **Midterm 2** Tue 30 Mar 18:00–19:30
 
 ---
 

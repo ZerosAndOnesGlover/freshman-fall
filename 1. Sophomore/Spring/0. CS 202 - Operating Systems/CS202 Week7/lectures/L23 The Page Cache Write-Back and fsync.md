@@ -2,9 +2,13 @@
 ## Week 7 · Lecture 2 of 3
 ### The Page Cache, Write-Back, and `fsync`
 
+*“It is easier to change the specification to fit the program than vice versa.”* — Alan Perlis, "Epigrams on Programming" (1982), #57
+
 ---
 
 **Sat:** Wednesday of Week 7, 09:00–09:50, VNC 101 · **Reading:** OSTEP Ch. 39 §39.14–§39.18; Love Ch. 16 · **Next:** L24, how real file systems lay out a disk
+
+**Coursework:** 📋 **Project 1** released today, due Fri of Week 11 17:00 · 📝 **PS 7** released today, due Fri of Week 8 17:00 · 📝 **PS 6** due Fri this week 17:00 · 📊 **Quiz 8** Mon of Week 8 · 📘 **Midterm 2** Mon of Week 8 18:00–19:15 · 🔬 **Lab 7** Tue of Week 8 15:00–16:50
 
 ---
 

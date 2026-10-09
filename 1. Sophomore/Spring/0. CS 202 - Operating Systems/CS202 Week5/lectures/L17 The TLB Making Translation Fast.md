@@ -2,9 +2,13 @@
 ## Week 5 · Lecture 2 of 3
 ### The TLB: Making Translation Fast
 
+*“So many good ideas are never heard from again once they embark in a voyage on the semantic gulf.”* — Alan Perlis, "Epigrams on Programming" (1982), #53
+
 ---
 
 **Sat:** Wednesday of Week 5, 09:00–09:50, VNC 101 · **Reading:** OSTEP Ch. 19; Ch. 23, Linux half · **Next:** L18, demand paging and physical memory
+
+**Coursework:** 📝 **PS 5** released today, due Fri of Week 6 17:00 · 📝 **PS 4** due Fri this week 17:00 · 📊 **Quiz 6** Mon of Week 6 · 🔬 **Lab 5** Tue of Week 6 15:00–16:50
 
 ---
 

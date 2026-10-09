@@ -1,7 +1,13 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 6 · Lecture 2: `realloc`, `free`, and Ownership
 
+*“Don't have good ideas if you aren't willing to be responsible for them.”* — Alan Perlis, "Epigrams on Programming" (1982), #95
+
 **Date:** Wednesday 4 November 2026 · 10:00–10:50 · Week 6
+
+**Reading:** `man 3 realloc` · `man 3 free` · K&R, §8.7 · Valgrind manual, "Memory leak detection" *(details at the end of the lecture)*
+
+**Coursework:** 📘 **Midterm 1** today 18:00–19:30 · 📝 **PS 5** due Fri 6 Nov 17:00 · 📝 **PS 6** released Fri 6 Nov 10:00, due Fri 13 Nov 17:00 · 🔬 **Lab 6** Mon 9 Nov 15:00–16:50 · 📊 **Quiz 6** Tue 10 Nov 10:00–10:10
 
 ---
 

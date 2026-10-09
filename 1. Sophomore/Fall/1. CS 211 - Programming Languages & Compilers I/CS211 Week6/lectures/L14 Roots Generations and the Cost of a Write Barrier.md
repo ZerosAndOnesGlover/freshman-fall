@@ -2,9 +2,13 @@
 ## Week 6 · Lecture 2 of 2
 ### Roots, Generations, and the Cost of a Write Barrier
 
+*“At any sufficient scale, those who do not have automatic memory management in their language are condemned to reinvent it, poorly.”* — Eric S. Raymond, "C, Python, Go, and the Generalized Greenspun Law" (2017)
+
 ---
 
 **Reading:** Dragon §7.6–7.8 · Appel ch. 13.3–13.7 · Jones, Hosking & Moss, *The Garbage Collection Handbook*, ch. 9, 11 and 15 · Ungar (1984) · **Next:** L15, the lambda calculus
+
+**Coursework:** 📝 **PS 5** due Fri this week 17:00 · 🔬 **Lab 6** Fri this week 14:00–15:50 · 📊 **Quiz 7** Tue of Week 7 · 📝 **PS 7** released Wed of Week 7, due Fri of Week 8 17:00 · 📘 **Midterm 2** Tue of Week 8 20:00–21:15
 
 ---
 

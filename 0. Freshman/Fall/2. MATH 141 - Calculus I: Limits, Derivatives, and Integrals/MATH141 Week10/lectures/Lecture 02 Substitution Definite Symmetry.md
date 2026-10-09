@@ -2,7 +2,11 @@
 ## Week 10 · Lecture 2 (Tuesday)
 ### The Substitution Rule for Definite Integrals, and Symmetry
 
+*“Symmetry is a vast subject, significant in art and nature. Mathematics lies at its root, and it would be hard to find a better one on which to demonstrate the working of the mathematical intellect.”* — Hermann Weyl, *Symmetry* (1952)
+
 **Date:** Tuesday 1 December 2026 · 11:00–11:50 · Week 10
+
+**Coursework:** 📘 **Midterm 2** Wed 2 Dec 18:00–19:15 · 📝 **PS 10** released Wed 2 Dec 12:00, due Wed 9 Dec 11:00 · 📝 **PS 9** due Wed 2 Dec 11:00 · 🔬 **Lab 10** Fri 4 Dec 15:00–16:50, report due Mon 7 Dec 17:00 · 📊 **Quiz 11** Mon 7 Dec 11:00–11:15
 
 ---
 

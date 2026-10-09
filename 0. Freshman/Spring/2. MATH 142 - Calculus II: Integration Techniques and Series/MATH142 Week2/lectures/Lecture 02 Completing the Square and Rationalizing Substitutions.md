@@ -2,7 +2,11 @@
 ## Week 2 · Lecture 2 (Tuesday)
 ### Completing the Square, and Making an Integral Fit a Pattern
 
+*“The Simplicity of Figures depend upon the Simplicity of their Genesis and Ideas, and an Æquation is nothing else than a Description (either Geometrical or Mechanical) by which a Figure is generated and rendered more easy to the Conception.”* — Isaac Newton, *Arithmetica Universalis* (1707)
+
 **Date:** Tuesday 2 February 2027 · 11:00–11:50 · Week 2
+
+**Coursework:** 🔬 **Lab 1** Wed 3 Feb 15:00–16:50 · 📝 **PS 1** due Fri 5 Feb 17:00 · 📝 **PS 2** released Fri 5 Feb 12:00, due Fri 12 Feb 17:00 · 📊 **Quiz 3** Mon 8 Feb 11:00–11:15
 
 ---
 

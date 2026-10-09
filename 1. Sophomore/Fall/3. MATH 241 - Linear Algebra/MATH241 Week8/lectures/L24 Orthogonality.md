@@ -2,9 +2,13 @@
 ## Week 8 · Lecture 1 of 3 · **Monday**
 ### Orthogonality
 
+*“Geometry has two great treasures: one is the Theorem of Pythagoras, the other the division of a line in extreme and mean ratio. The first we can compare to a mass of gold; the other we may call a precious jewel.”* — Johannes Kepler, *Mysterium Cosmographicum* (1596)
+
 ---
 
 **Reading:** Strang §4.1 · **Previous:** Week 7's L23, complex eigenvalues · **Next:** L25, projections
+
+**Coursework:** 📊 **Quiz 8** today · 📝 **PS 8** released Wed this week, due Fri of Week 9 17:00 · 💬 **Recitation 7** Thu this week 15:00–15:50 · 📝 **PS 7** due Fri this week 17:00
 
 > **Quiz 8 is the first ten minutes of this lecture** and covers Week 7.
 >

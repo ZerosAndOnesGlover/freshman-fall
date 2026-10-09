@@ -1,7 +1,13 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 12 · Lecture 2: Testing in C
 
+*“A program that has not been tested does not work.”* — Bjarne Stroustrup, *The C++ Programming Language*
+
 **Date:** Wednesday 16 December 2026 · 10:00–10:50 · Week 12
+
+**Reading:** `man gcov` · Kernighan & Pike, Ch. 6 · Dijkstra, "Notes on Structured Programming" (1970), §3 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 11** due Fri 18 Dec 17:00 · 📝 **PS 12** released Fri 18 Dec 10:00, due Fri 25 Dec 17:00 · 🔬 **Lab 12** Mon 21 Dec 15:00–16:50 · 📕 **Final exam** Thu 24 Dec 14:00
 
 ---
 

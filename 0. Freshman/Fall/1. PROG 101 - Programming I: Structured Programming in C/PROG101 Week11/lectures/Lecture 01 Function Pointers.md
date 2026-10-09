@@ -1,7 +1,13 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 11 · Lecture 1: Function Pointers — Code as Data
 
+*“Functions delay binding; data structures induce binding. Moral: Structure data late in the programming process.”* — Alan Perlis, "Epigrams on Programming" (1982), #2
+
 **Date:** Tuesday 8 December 2026 · 10:00–10:50 · Week 11
+
+**Reading:** K&R, §5.11 · C11 standard §6.3.2.3 · `man 3 qsort` *(details at the end of the lecture)*
+
+**Coursework:** 📊 **Quiz 10** today 10:00–10:10 · 📝 **PS 10** due Fri 11 Dec 17:00 · 📝 **PS 11** released Fri 11 Dec 10:00, due Fri 18 Dec 17:00 · 🔬 **Lab 11** Mon 14 Dec 15:00–16:50 · 📕 **Final exam** Thu 24 Dec 14:00
 
 ---
 

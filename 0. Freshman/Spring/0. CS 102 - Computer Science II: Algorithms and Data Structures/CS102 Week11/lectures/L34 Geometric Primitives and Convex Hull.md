@@ -1,7 +1,13 @@
 # CS 102 · Computer Science II
 ## Lecture 34: Geometric Primitives and the Convex Hull
 
+*“A formula is worth a thousand pictures.”* — Edsger W. Dijkstra, as quoted in Leslie Lamport, *Specifying Systems* (2002)
+
 **Date:** Monday 5 April 2027 · 09:00–09:50 · Week 11
+
+**Reading:** de Berg et al., *Computational Geometry*, §1.1 · Laaksonen, *Competitive Programmer's Handbook*, Ch. 29 · *(the CLRS 4th ed. has no geometry chapter; in the 3rd ed. it is §33.1, §33.3)*
+
+**Coursework:** 📊 **Quiz 11** today 09:00–09:15 · 🔬 **Lab 10** Tue 6 Apr 15:00–16:50 · 📝 **PS 10** due Fri 9 Apr 17:00 · 📝 **PS 11** released Fri 9 Apr 10:00, due Fri 16 Apr 17:00 · 📕 **Final exam** Wed 21 Apr 09:00–11:30
 
 ---
 
@@ -183,8 +189,9 @@ hull vertices only**, which is often a handful out of millions.
 
 ## 6. What to Do
 
-- Read CLRS §33.1 (segment properties) and §33.3 (convex hull). CLRS gives Graham scan and Jarvis
-  march; monotone chain is Problem 33-2 and is what you should implement.
+- The CLRS 4th edition has no geometry chapter. Read de Berg et al. §1.1 (convex hulls) and the
+  *Competitive Programmer's Handbook* Ch. 29. With the 3rd edition of CLRS, §33.1 and §33.3 cover the
+  same ground; they give Graham scan and Jarvis march, and monotone chain is what you should implement.
 - **PS 11** implements the hull with **integer** coordinates, handles both collinear conventions, and
   reproduces §4's float measurements.
 - **Quiz 11 covers Week 10** — string matching. Not this material.

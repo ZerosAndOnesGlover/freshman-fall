@@ -2,9 +2,13 @@
 ## Week 8 · Lecture 3 of 3
 ### Deployment, and How to Fail Safely
 
+*“When you get in situations where you cannot afford to make a mistake, it's very hard to do the right thing. So if you're trying to do the right thing, the right thing might be to eliminate the cost of making a mistake rather than try to guess what's right.”* — Ward Cunningham, "A Conversation with Ward Cunningham", Artima (2003)
+
 ---
 
 **Sat:** Thursday of Week 8, 10:00–10:50, TH 200 · **Reading:** SEC, *Administrative Proceeding 3-15570* (Knight Capital) — 12 pages · **Next:** Week 9, refactoring
+
+**Coursework:** 📝 **Assignment 7** due Fri this week 17:00 · 📊 **Quiz 9** Tue of Week 9 · 📝 **Assignment 9** released Wed of Week 9 17:00, due Fri of Week 10 17:00
 
 ---
 

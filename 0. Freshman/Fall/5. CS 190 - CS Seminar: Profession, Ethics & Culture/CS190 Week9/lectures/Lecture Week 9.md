@@ -2,7 +2,13 @@
 ## Lecture · Week 9: Tech Industry Culture
 ### Diversity, Work Culture, and Mental Health
 
+*“It's just like planning a dinner. You have to plan ahead and schedule everything so it's ready when you need it. Programming requires patience and the ability to handle detail. Women are 'naturals' at computer programming.”* — Grace Hopper, as quoted in Lois Mandel, "The Computer Girls", *Cosmopolitan* (April 1967)
+
 **Date:** Wednesday 25 November 2026 · 13:00–13:50 · Week 9
+
+**Reading:** Abbate, *Recoding Gender*, Introduction and Ch. 1 · WHO ICD-11 entry QD85, burn-out · Clance & Imes, "The Imposter Phenomenon in High Achieving Women" (1978) — [[CS190 Week9/resources/Reading Guide|Reading Guide]]
+
+**Coursework:** 📝 **Position Paper 3** released today, due Wed 9 Dec 12:00 · 📝 **Prep 9** due today 12:00
 
 ---
 

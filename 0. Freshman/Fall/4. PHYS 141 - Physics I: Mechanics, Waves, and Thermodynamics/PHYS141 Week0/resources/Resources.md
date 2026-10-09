@@ -2,8 +2,8 @@
 
 ## Required Textbook Reading
 
-- **Halliday, Resnick & Krane**, *Physics*, 5th ed. — Chapter 1 (Measurement), Chapter 3 (Vectors)
-- **Serway & Jewett**, *Physics for Scientists and Engineers*, 10th ed. — Chapter 1 (Physics and Measurement), Chapter 3 (Vectors)
+- **HRK:** Halliday, Resnick & Krane, *Physics*, 5th ed. — Ch. 1 (Measurement). HRK 5e has no vectors chapter; use Serway for Lectures 2–3
+- **Serway:** Serway & Jewett, *Physics for Scientists and Engineers*, 10th ed. — Ch. 1 (Physics and Measurement) §1.1–1.6; Ch. 3 (Vectors) §3.1–3.4; §7.3 (scalar product); §11.1 (vector product)
 
 ## Supplementary / Enrichment Reading
 

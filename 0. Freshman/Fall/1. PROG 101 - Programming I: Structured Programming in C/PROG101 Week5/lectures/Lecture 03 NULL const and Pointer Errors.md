@@ -1,7 +1,13 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 5 · Lecture 3: NULL, `const`, and the Classic Pointer Errors
 
+*“I call it my billion-dollar mistake. It was the invention of the null reference in 1965.”* — C. A. R. Hoare, "Null References: The Billion Dollar Mistake", QCon London (2009)
+
 **Date:** Thursday 29 October 2026 · 10:00–10:50 · Week 5
+
+**Reading:** K&R, §5.4–5.5 · `man valgrind` · C11 §6.7.3 · Regehr, "A Guide to Undefined Behavior in C and C++" *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 4** due Fri 30 Oct 17:00 · 📝 **PS 5** released Fri 30 Oct 10:00, due Fri 6 Nov 17:00 · 🔬 **Lab 5** Mon 2 Nov 15:00–16:50 · 📊 **Quiz 5** Tue 3 Nov 10:00–10:10 · 📘 **Midterm 1** Wed 4 Nov 18:00–19:30
 
 ---
 

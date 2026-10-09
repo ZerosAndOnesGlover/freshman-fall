@@ -2,9 +2,13 @@
 ## Week 9 · Lecture 3 of 3
 ### Large Refactorings — Branch by Abstraction, and the Strangler Fig
 
+*“In the long run every program becomes rococo - then rubble.”* — Alan Perlis, "Epigrams on Programming" (1982), #14
+
 ---
 
 **Sat:** Thursday of Week 9, 10:00–10:50, TH 200 · **Reading:** Fowler, *"BranchByAbstraction"* and *"StranglerFigApplication"* · **Next:** Week 10, API design
+
+**Coursework:** 📝 **Assignment 8** due Fri this week 17:00 · 📊 **Quiz 10** Tue of Week 10 · 📝 **Assignment 10** released Wed of Week 10 17:00, due Fri of Week 11 17:00
 
 ---
 

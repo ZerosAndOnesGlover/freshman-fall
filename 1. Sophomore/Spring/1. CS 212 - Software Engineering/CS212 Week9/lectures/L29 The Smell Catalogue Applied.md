@@ -2,9 +2,13 @@
 ## Week 9 · Lecture 2 of 3
 ### The Smell Catalogue, Applied — and the Fix
 
+*“There is a programming smell here… which is kind of like the smell in your refrigerator, you know. There's a sign that there's something wrong, but you can't quite put your finger on it. But you know if you leave it there, its only going to get worse.”* — Ward Cunningham, Geek Noise podcast (2004)
+
 ---
 
 **Sat:** Wednesday of Week 9, 10:00–10:50, TH 200 · **Reading:** Fowler, *Refactoring*, 2nd ed., Ch. 3 (the smells) · **Next:** L30, large refactorings
+
+**Coursework:** 📝 **Assignment 9** released today 17:00, due Fri of Week 10 17:00 · 📝 **Assignment 8** due Fri this week 17:00 · 📊 **Quiz 10** Tue of Week 10
 **A 9 is released after this lecture**, Wednesday 17:00.
 
 ---

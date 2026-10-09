@@ -1,7 +1,13 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 5 · Lecture 2: Pass-by-Pointer and Pointer Arithmetic
 
+*“References are like jumps, leading wildly from one part of a data structure to another. Their introduction into high level languages has been a step backward from which we may never recover.”* — C. A. R. Hoare, "Hints on Programming Language Design" (1973)
+
 **Date:** Wednesday 28 October 2026 · 10:00–10:50 · Week 5
+
+**Reading:** K&R, §5.3–5.5 · C11 §6.5.6 ¶8 · C11 §6.3.2.1 ¶3 · `gdb`: `p a`, `p &a`, `p a+1`, `p &a+1` *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 4** due Fri 30 Oct 17:00 · 📝 **PS 5** released Fri 30 Oct 10:00, due Fri 6 Nov 17:00 · 🔬 **Lab 5** Mon 2 Nov 15:00–16:50 · 📊 **Quiz 5** Tue 3 Nov 10:00–10:10 · 📘 **Midterm 1** Wed 4 Nov 18:00–19:30
 
 ---
 

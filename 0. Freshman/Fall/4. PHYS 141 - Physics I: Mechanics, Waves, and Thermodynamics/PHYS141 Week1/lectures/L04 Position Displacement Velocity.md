@@ -1,9 +1,15 @@
 # PHYS 141 · Lecture 4
 # Position, Displacement & Velocity
 
+*“By steady or uniform motion, I mean one in which the distances traversed by the moving particle during any equal intervals of time, are themselves equal.”* — Galileo Galilei, *Dialogues Concerning Two New Sciences* (1638), Third Day, tr. Crew & de Salvio
+
 > **Core Principle:** Motion is the change of position over time. To describe motion precisely, you need a reference point, a direction convention, and a clock. Everything else in kinematics follows from these three choices — and from calculus.
 
 **Date:** Monday 28 September 2026 · 14:00–14:50 · Week 1
+
+**Reading:** Serway & Jewett §2.1–2.3 · HRK Ch. 2
+
+**Coursework:** 📊 **Quiz 0** today 14:00 · 🔬 **Lab 1** Thu 1 Oct 14:00–17:00 · 📝 **PS 0** due Fri 2 Oct 17:00 · 📝 **PS 1** released Fri 2 Oct 15:00, due Fri 9 Oct 17:00
 
 ---
 
@@ -193,8 +199,7 @@ Since differentiating drops the exponent by one, antidifferentiating must raise 
 $$\int t^{n}\,dt = \frac{t^{\,n+1}}{n+1} + C \qquad (n \neq -1)$$
 
 The `+ C` is not decoration — in kinematics it *is* the initial position. That is precisely why
-`x(t) = x₀ + ∫v dt` carries an `x₀`: integration recovers the shape of the motion but cannot know
-where it started. You must be told.
+`x(t) = x₀ + ∫v dt` carries an `x₀`: integration recovers the shape of the motion but cannot know where it started. You must be told.
 
 **Worked, at the level the problem sets use.** Given `v(t) = 9t² − 2t` with the object at
 `x = 5 m` when `t = 0`:

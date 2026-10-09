@@ -2,7 +2,11 @@
 ## Week 10 · Lecture 1 (Monday)
 ### Taylor and Maclaurin Series
 
+*“I have endeavour'd to make every thing so plain, that a very little Skill in Geometry may be sufficient to enable one to read this Book by himself.”* — Brook Taylor, *New Principles of Linear Perspective* (1719)
+
 **Date:** Monday 29 March 2027 · 11:00–11:50 · Week 10
+
+**Coursework:** 📊 **Quiz 10** today 11:00–11:15 · 📘 **Midterm 2** Wed 31 Mar 18:00–19:15 · 🔬 **Lab 9** Wed 31 Mar 15:00–16:50 · 📝 **PS 10** released Fri 2 Apr 12:00, due Fri 9 Apr 17:00 · 📝 **PS 9** due Fri 2 Apr 17:00
 
 ---
 

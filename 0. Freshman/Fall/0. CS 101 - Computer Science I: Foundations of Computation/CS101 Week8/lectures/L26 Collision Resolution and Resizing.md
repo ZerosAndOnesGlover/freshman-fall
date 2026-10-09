@@ -1,10 +1,15 @@
 # CS 101 · Lecture 26 (Week 8, Lecture 2)
 ## Collision Resolution, Load Factor, and Building a Hash Table From Scratch
 
+*“Simplicity is prerequisite for reliability.”* — Edsger W. Dijkstra, "How do we tell truths that might hurt?" (EWD498, 1975)
+
 **Week 8 · Thursday**
-*"No hash function is perfect — collisions are not a bug, they are a mathematical certainty (pigeonhole principle). The engineering question is how gracefully you handle them." — CS 101*
 
 **Date:** Thursday 19 November 2026 · 09:00–09:50 · Week 8
+
+**Reading:** CLRS, Ch. 11 · Python docs — PEP 456 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 7** due Fri 20 Nov 17:00 · 📝 **PS 8** released Fri 20 Nov 10:00, due Fri 27 Nov 17:00 · 🔬 **Lab 8** Tue 24 Nov 15:00–16:50 · 📊 **Quiz 9** Wed 25 Nov 09:00–09:10 · 📘 **Midterm 2** Mon 30 Nov 18:00–19:15
 
 ---
 

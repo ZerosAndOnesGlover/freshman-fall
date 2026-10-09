@@ -2,9 +2,14 @@
 ## What Is Computer Science?
 
 **Week 0 · Lecture 1 of 3**
-*"The question of whether a machine can think is no more interesting than the question of whether a submarine can swim." — Edsger Dijkstra*
+
+*“The question of whether Machines Can Think... is about as relevant as the question of whether Submarines Can Swim.”* — Edsger W. Dijkstra, "The threats to computing science" (EWD898, 1984)
 
 **Date:** Wednesday 23 September 2026 · 09:00–09:50 · Week 0
+
+**Reading:** Guttag, Ch. 1 · Turing (1936), "On Computable Numbers", pp. 230–240 *(details at the end of the lecture)*
+
+**Coursework:** 🔬 **Lab 0** Tue 29 Sep 15:00–16:50
 
 ---
 
@@ -51,12 +56,12 @@ How do we build real, working, large-scale systems? This gives us operating syst
 
 These three are related but distinct.
 
-| | **Computer Science** | **Software Engineering** | **Computer Engineering** |
-|---|---|---|---|
-| **Core Question** | What can be computed? How? | How do we build reliable software? | How do we build computing hardware? |
-| **Primary Output** | Algorithms, proofs, theory | Systems, applications, processes | Chips, circuits, embedded systems |
-| **Mathematical Core** | Discrete math, logic, complexity | Probability, statistics, formal methods | Electronics, signal processing |
-| **Examples** | Designing a new sorting algorithm | Building a web application at scale | Designing a CPU pipeline |
+|                       | **Computer Science**              | **Software Engineering**                | **Computer Engineering**            |
+| --------------------- | --------------------------------- | --------------------------------------- | ----------------------------------- |
+| **Core Question**     | What can be computed? How?        | How do we build reliable software?      | How do we build computing hardware? |
+| **Primary Output**    | Algorithms, proofs, theory        | Systems, applications, processes        | Chips, circuits, embedded systems   |
+| **Mathematical Core** | Discrete math, logic, complexity  | Probability, statistics, formal methods | Electronics, signal processing      |
+| **Examples**          | Designing a new sorting algorithm | Building a web application at scale     | Designing a CPU pipeline            |
 
 In a CSE (Computer Science & Engineering) degree, you get **all three**. They reinforce each other deeply.
 
@@ -257,8 +262,8 @@ Start in q_even. On `1011`: q_even→(1)→q_odd→(0)→q_odd→(1)→q_even→
 
 ## Reading Assignments
 
-- **`Guttag`, Ch. 1**: "Getting Started" (read tonight before Lab 0)
-- **Optional but rewarding:** Alan Turing's original 1936 paper *"On Computable Numbers"* — the first 10 pages are accessible and historically stunning
+- **Guttag, Ch. 1**: "Getting Started" (read tonight before Lab 0)
+- **Turing (1936), "On Computable Numbers", pp. 230–240** — optional but rewarding: the first 10 pages of the original paper are accessible and historically stunning
 
 ---
 

@@ -2,9 +2,13 @@
 ## Week 2 · Lecture 2 of 3 · **Tuesday**
 ### The Column Space, and When $Ax = b$ Is Solvable
 
+*“This conviction of the solvability of every mathematical problem is a powerful incentive to the worker. We hear within us the perpetual call: There is the problem. Seek its solution. You can find it by pure reason, for in mathematics there is no ignorabimus.”* — David Hilbert, "Mathematical Problems" (1900)
+
 ---
 
 **Reading:** Strang §3.1 (second half), §3.2 · **Previous:** L07, subspaces · **Next:** L09, the null space
+
+**Coursework:** 📝 **PS 2** released Wed this week, due Fri of Week 3 17:00 · 💬 **Recitation 1** Thu this week 15:00–15:50 · 📝 **PS 1** due Fri this week 17:00 · 📊 **Quiz 3** Mon of Week 3
 
 > **Every number in this lecture is reproduced by `resources/spaces.py`**, which ships with this week.
 

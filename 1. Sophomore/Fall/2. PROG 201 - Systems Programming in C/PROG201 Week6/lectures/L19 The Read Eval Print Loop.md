@@ -2,9 +2,13 @@
 ## Week 6 · Lecture 1 of 3
 ### The Shell's Read-Eval-Print Loop
 
+*“A good system can't have a weak command language.”* — Alan Perlis, "Epigrams on Programming" (1982), #22
+
 ---
 
 **Reading:** APUE §8.10, §9.1–9.3 · CS:APP §8.4 · TLPI Ch. 27 · `man 1 dash`, `man 3 execvp` · **Previous:** L18 · **Next:** L20 — process groups and the terminal
+
+**Coursework:** 📊 **Quiz 6** today · 📝 **PS 6** released Wed this week, due Fri of Week 7 17:00 · 📋 **Project 1** released Fri this week, due Fri of Week 9 17:00 · 📝 **PS 5** due Fri this week 17:00 · 🔬 **Lab 5** Fri this week 16:00–17:50 · 🔬 **Lab 6** Mon of Week 7 15:00–16:50
 
 ---
 

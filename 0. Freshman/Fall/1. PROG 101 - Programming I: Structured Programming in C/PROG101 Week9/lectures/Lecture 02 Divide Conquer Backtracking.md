@@ -1,7 +1,13 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 9 · Lecture 2: Recursive Algorithms — Divide-and-Conquer and Backtracking
 
+*“Everything should be built top-down, except the first time.”* — Alan Perlis, "Epigrams on Programming" (1982), #15
+
 **Date:** Wednesday 25 November 2026 · 10:00–10:50 · Week 9
+
+**Reading:** CLRS Ch. 2 · King §9.6 · Skiena, The Algorithm Design Manual *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 9** released Thu 26 Nov 11:00, due Tue 1 Dec 10:00 · 🔬 **Lab 9** Mon 30 Nov 15:00–16:50 · 📊 **Quiz 9** Tue 1 Dec 10:00–10:10 · 📘 **Midterm 2** Tue 1 Dec 18:00–19:30
 
 ---
 
@@ -435,7 +441,7 @@ Here `safe()` is the pruning step, and it is what makes N-Queens tractable: the 
 ## Reading
 
 - **CLRS Ch. 2** — Getting Started (insertion sort baseline) and **Ch. 7** — Quicksort
-- **King Ch. 18** — Recursion (backtracking examples)
+- **King §9.6** — Recursion (its quicksort example is divide-and-conquer)
 - **Skiena, The Algorithm Design Manual** — Ch. 7 (Backtracking) — the "war stories" framing is excellent motivation
 
 ---

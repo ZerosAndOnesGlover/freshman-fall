@@ -1,7 +1,13 @@
 # CS 102 · Computer Science II
 ## Lecture 36: Segment Trees and k-d Trees
 
+*“Systems have sub-systems and sub-systems have sub-systems and so on ad infinitum - which is why we're always starting over.”* — Alan Perlis, "Epigrams on Programming" (1982), #52
+
 **Date:** Friday 9 April 2027 · 09:00–09:50 · Week 11
+
+**Reading:** Laaksonen, *Competitive Programmer's Handbook*, Ch. 9 (segment trees) · de Berg et al. §5.2 (kd-trees)
+
+**Coursework:** 📝 **PS 10** due today 17:00 · 📝 **PS 11** released today 10:00, due Fri 16 Apr 17:00 · 🔬 **Lab 11** Tue 13 Apr 15:00–16:50 · 📕 **Final exam** Wed 21 Apr 09:00–11:30
 
 ---
 
@@ -212,7 +218,7 @@ finding a good algorithm and Week 12 is about knowing when to stop looking.
 
 ## 7. What to Do
 
-- Segment trees and k-d trees are not in CLRS. **Sedgewick §3.5** covers geometric search; the
+- Segment trees and k-d trees are not in CLRS. de Berg et al. §5.2 covers kd-trees; the
   *Competitive Programmer's Handbook* Chapter 9 is the best short treatment of segment trees.
 - **PS 11** implements the segment tree.
 - **Lab 11** builds a nearest-neighbour searcher and finds the dimension where it stops paying.

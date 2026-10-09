@@ -1,11 +1,15 @@
 # PROG 102 · Lecture 03
 ## Encapsulation, `const`, and Namespaces
 
+*“Maybe "just one little global variable" isn't too unmanageable, but that style leads to code that is useless except to its original programmer.”* — Bjarne Stroustrup, *The C++ Programming Language*
+
 **Week 0 · Friday · 50 minutes**
 **Reading:** *C++ Primer* §7.2–7.3, §18.2 · **Reference:** Stroustrup §16.2.3, Ch. 14
 **Assumes:** **Lecture 00** §12 (`static_cast`, `reinterpret_cast`), §15 (`static_assert`, `decltype`)
 
 **Date:** Friday 22 January 2027 · 10:00–10:50 · Week 0  <!-- 4th lecture in a 3-day week; see Calendar Reconciliation -->
+
+**Coursework:** 📝 **PS 0** released today 11:00, due Fri 29 Jan 17:00 · 🔬 **Lab 0** Mon 25 Jan 15:00–16:50 · 📊 **Quiz 1** Tue 26 Jan 10:00–10:15
 
 ---
 

@@ -1,7 +1,13 @@
 # CS 101 · Lecture 37 (Week 12, Lecture 1)
 ## Synthesis: The Whole Stack
 
+*“People who are really serious about software should make their own hardware.”* — Alan Kay, talk at the Creative Think seminar (1982)
+
 **Date:** Wednesday 16 December 2026 · 09:00–09:50 · Week 12
+
+**Reading:** Brooks, "No Silver Bullet" · Petzold, *Code* *(details at the end of the lecture)*
+
+**Coursework:** 📋 **Project 2** due Fri 18 Dec 17:00 · 📝 **PS 11** due Fri 18 Dec 17:00 · 📕 **Final exam** Tue 22 Dec 09:00–11:30
 
 ---
 

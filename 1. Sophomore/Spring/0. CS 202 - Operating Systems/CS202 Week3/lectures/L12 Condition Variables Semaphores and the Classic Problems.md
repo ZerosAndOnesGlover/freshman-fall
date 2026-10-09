@@ -2,9 +2,13 @@
 ## Week 3 · Lecture 3 of 3
 ### Condition Variables, Semaphores, and the Classic Problems
 
+*“Such an alternative is given by introducing a) among the common variables special purpose integers, which we shall call "semaphores". b) among the repertoire of actions, from which the individual processes have to be constructed, two new primitives, which we call the "P-operation" and the "V-operation" respectively.”* — Edsger W. Dijkstra, "Cooperating Sequential Processes" (EWD123, 1965)
+
 ---
 
 **Sat:** Friday of Week 3, 09:00–09:50, VNC 101 · **Reading:** OSTEP Ch. 30 and 31; xv6 book Ch. 5 on sleep and wakeup · **Next:** Week 4, deadlock — and Midterm 1 on Monday evening
+
+**Coursework:** 📝 **PS 2** due today 17:00 · 📊 **Quiz 4** Mon of Week 4 · 📘 **Midterm 1** Mon of Week 4 18:00–19:15 · 🔬 **Lab 3** Tue of Week 4 15:00–16:50 · 📝 **PS 4** released Wed of Week 4, due Fri of Week 5 17:00
 
 ---
 

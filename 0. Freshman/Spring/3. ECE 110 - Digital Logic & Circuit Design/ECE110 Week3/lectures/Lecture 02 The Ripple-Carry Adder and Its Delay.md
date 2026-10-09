@@ -2,7 +2,11 @@
 ## Week 3 · Lecture 2 (Thursday)
 ### The Ripple-Carry Adder and Its Delay
 
+*“In total desperation, I called over to the engineering building, and I said, "Please cut off a nanosecond and send it over to me."”* — Grace Hopper, interview on *60 Minutes* (24 August 1986)
+
 **Date:** Thursday 11 February 2027 · 13:00–14:15 · Week 3
+
+**Coursework:** 📝 **PS 2** due today 13:00 · 📝 **PS 3** released today 14:30, due Thu 18 Feb 13:00 · 🔬 **Lab 3** Fri 12 Feb 14:00–15:50 · 📊 **Quiz 3** Wed 17 Feb 13:00–13:10
 
 ---
 

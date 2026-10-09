@@ -2,7 +2,11 @@
 ## Week 4 · Lecture 1 (Monday)
 ### Volumes by Discs and Washers
 
+*“Any segment of a right-angled conoid (i.e., a paraboloid of revolution) cut off by a plane at right angles to the axis is 1½ times the cone which has the same base and the same axis as the segment”* — Archimedes, *The Method of Mechanical Theorems*, Proposition 4
+
 **Date:** Monday 15 February 2027 · 11:00–11:50 · Week 4
+
+**Coursework:** 📊 **Quiz 4** today 11:00–11:15 · 🔬 **Lab 3** Wed 17 Feb 15:00–16:50 · 📝 **PS 3** due Fri 19 Feb 17:00 · 📝 **PS 4** released Fri 19 Feb 12:00, due Fri 26 Feb 17:00
 
 ---
 

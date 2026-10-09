@@ -1,7 +1,13 @@
 # CS 102 · Computer Science II
 ## Lecture 05: Binary Search Trees
 
+*“Computation has made the tree flower.”* — Alan Perlis, "Epigrams on Programming" (1982), #90
+
 **Date:** Wednesday 27 January 2027 · 09:00–09:50 · Week 1
+
+**Reading:** CLRS §12.1–12.3
+
+**Coursework:** 📝 **PS 1** released Fri 29 Jan 10:00, due Fri 5 Feb 17:00 · 📊 **Quiz 2** Mon 1 Feb 09:00–09:15 · 🔬 **Lab 1** Tue 2 Feb 15:00–16:50
 
 ---
 

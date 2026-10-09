@@ -1,11 +1,15 @@
 # PROG 102 · Lecture 02
 ## Constructors, Destructors, and Object Lifetime
 
+*“In the long run every program becomes rococo - then rubble.”* — Alan Perlis, "Epigrams on Programming" (1982), #14
+
 **Week 0 · Thursday · 50 minutes**
 **Reading:** *C++ Primer* §7.1.4, §7.5 · **Reference:** Stroustrup Ch. 17
 **Assumes:** **Lecture 00** §5 (references), §8 (`new`/`delete`), §14 (`= default`)
 
 **Date:** Thursday 21 January 2027 · 10:00–10:50 · Week 0
+
+**Coursework:** 📝 **PS 0** released Fri 22 Jan 11:00, due Fri 29 Jan 17:00 · 🔬 **Lab 0** Mon 25 Jan 15:00–16:50 · 📊 **Quiz 1** Tue 26 Jan 10:00–10:15
 
 ---
 

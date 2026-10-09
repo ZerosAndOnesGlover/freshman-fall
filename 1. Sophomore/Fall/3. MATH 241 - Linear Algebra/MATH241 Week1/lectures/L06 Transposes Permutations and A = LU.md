@@ -2,9 +2,13 @@
 ## Week 1 · Lecture 3 of 3 · **Friday**
 ### Transposes, Permutations, and $A = LU$
 
+*“Number, place, and combination... the three intersecting but distinct spheres of thought to which all mathematical ideas admit of being referred.”* — James Joseph Sylvester, *Collected Mathematical Papers*, Vol. 1 (1904), p. 91
+
 ---
 
 **Reading:** Strang §2.6, §2.7 — and §2.3 for real now · **Previous:** L05, the inverse · **Next:** Week 2, vector spaces
+
+**Coursework:** 📝 **PS 0** due today 17:00 · 📊 **Quiz 2** Mon of Week 2 · 📝 **PS 2** released Wed of Week 2, due Fri of Week 3 17:00 · 💬 **Recitation 1** Thu of Week 2 15:00–15:50
 
 > **PS 0 is due at 17:00 today.** PS 1 was released on Wednesday and is due the Friday of Week 2.
 

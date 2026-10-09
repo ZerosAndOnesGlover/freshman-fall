@@ -2,9 +2,13 @@
 ## Week 8 · Lecture 1 of 3
 ### Crash Consistency: What Tears
 
+*“In computing, the mean time to failure keeps getting shorter.”* — Alan Perlis, "Epigrams on Programming" (1982), #98
+
 ---
 
 **Sat:** Monday of Week 8, 09:00–09:50, VNC 101, **after Quiz 8** — and **Midterm 2 is this evening**, 18:00–19:15, VNC 100, on Weeks 4–7 · **Reading:** OSTEP Ch. 42 · **Next:** L26, journaling
+
+**Coursework:** 📊 **Quiz 8** today · 📘 **Midterm 2** today 18:00–19:15 · 🔬 **Lab 7** Tue this week 15:00–16:50 · 📝 **PS 8** released Wed this week, due Fri of Week 9 17:00 · 📝 **PS 7** due Fri this week 17:00
 
 > **Nothing in this week is on tonight's paper.** It covers Weeks 4–7. **PS 7 is due Friday**, and
 > this lecture is the reason PS 8 exists.

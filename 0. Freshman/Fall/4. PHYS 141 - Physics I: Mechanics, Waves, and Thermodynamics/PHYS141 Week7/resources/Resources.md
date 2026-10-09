@@ -2,8 +2,8 @@
 
 ## Required Textbook Reading
 
-- **HRK:** Ch. 12 (Angular Momentum) — all sections; Ch. 13 (Equilibrium of Rigid Bodies) — all sections
-- **Serway:** Ch. 11 (Angular Momentum) — all sections; Ch. 12 (Static Equilibrium and Elasticity) — §12.1–12.3
+- **HRK:** Halliday, Resnick & Krane, *Physics*, 5th ed. — Ch. 10 (Angular Momentum)
+- **Serway:** Serway & Jewett, *Physics for Scientists and Engineers*, 10th ed. — Ch. 11 (Angular Momentum) §11.1–11.5; Ch. 12 (Static Equilibrium and Elasticity) §12.1–12.3
 
 ## Simulations
 

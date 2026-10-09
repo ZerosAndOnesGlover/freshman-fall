@@ -51,4 +51,4 @@ By the end of Week 1, you will be able to:
 ## Textbooks
 
 - **HRK:** Halliday, Resnick & Krane — Ch. 2 (Motion in One Dimension)
-- **Serway:** Ch. 2 (Motion in One Dimension)
+- **Serway:** Ch. 2 (Motion in One Dimension) §2.1–2.9

@@ -2,9 +2,13 @@
 ## Week 12 · Lecture 1 of 3
 ### Presenting Engineering Work
 
+*“If a listener nods his head when you're explaining your program, wake him up.”* — Alan Perlis, "Epigrams on Programming" (1982), #17
+
 ---
 
-**Sat:** Tuesday of Week 12, 10:00–10:50, TH 200 · **No quiz — Quiz 11 was the last.** · **Reading:** none. Rehearse instead. · **Next:** L38, engineering management
+**Sat:** Tuesday of Week 12, 10:00–10:50, TH 200 · **No quiz — Quiz 11 was the last.** · **Reading:** the [[CS212 Week12/project/DEMO DAY|Demo Day brief]] and the [[CS212 Week12/project/FINAL REPORT GUIDE|Final Report Guide]] — then rehearse · **Next:** L38, engineering management
+
+**Coursework:** 📝 **Assignment 12** released Wed this week 17:00, due Fri this week 17:00 · 📝 **Assignment 11** due Fri this week 17:00 · 📕 **Final exam** Fri of finals week 09:00–11:30
 
 ---
 

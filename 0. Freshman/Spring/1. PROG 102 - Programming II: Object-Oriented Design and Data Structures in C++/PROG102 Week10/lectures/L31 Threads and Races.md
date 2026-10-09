@@ -1,10 +1,14 @@
 # PROG 102 · Lecture 31
 ## Threads and Races
 
+*“We shall occupy ourselves much more with the logical problems which arise, for example, when speed ratios are unknown, communication possibilities restricted etc.”* — Edsger W. Dijkstra, "Cooperating Sequential Processes" (EWD123, 1965)
+
 **Week 10 · Tuesday · 50 minutes**
 **Reading:** Williams, *C++ Concurrency in Action*, Ch. 1–2 · **Assumes:** Week 5, Week 9
 
 **Date:** Tuesday 30 March 2027 · 10:00–10:50 · Week 10
+
+**Coursework:** 📊 **Quiz 10** today 10:00–10:15 · 📘 **Midterm 2** today 18:00–19:30 · 📝 **PS 10** released Fri 2 Apr 10:00, due Fri 9 Apr 17:00 · 📝 **PS 9** due Fri 2 Apr 17:00 · 🔬 **Lab 10** Mon 5 Apr 15:00–16:50
 
 ---
 

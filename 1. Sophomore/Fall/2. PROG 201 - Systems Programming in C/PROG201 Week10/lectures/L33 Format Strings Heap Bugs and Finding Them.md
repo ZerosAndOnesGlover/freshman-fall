@@ -2,9 +2,13 @@
 ## Week 10 · Lecture 3 of 3
 ### Format Strings, Heap Bugs, and the Tools That Find Them
 
+*“Program testing can be used to show the presence of bugs, but never to show their absence!”* — Edsger W. Dijkstra, "Notes on Structured Programming" (EWD249, 1970)
+
 ---
 
 **Reading:** *The Art of Software Security Assessment* Ch. 8 · `man 3 printf` (the `%n` note) · the AddressSanitizer and libFuzzer docs · **Previous:** L32 · **Next:** Lab 10 — fuzzing, **Monday of Week 11**
+
+**Coursework:** 📋 **Project 2** released Fri this week, due Fri of Week 12 17:00 · 📝 **PS 9** due Fri this week 17:00 · 🔬 **Lab 10** Mon of Week 11 15:00–16:50 · 📊 **Quiz 11** Tue of Week 11 · 📝 **PS 11** released Wed of Week 11, due Fri of Week 12 17:00
 
 ---
 

@@ -2,10 +2,14 @@
 ## Recursion: Thinking in Self-Reference
 
 **Week 4 · Wednesday**
-*"To understand recursion, you must first understand recursion." — anonymous*
-*"Recursion is not a trick. It is a mathematical concept." — CS 101*
+
+*“The power of recursion evidently lies in the possibility of defining an infinite set of objects by a finite statement.”* — Niklaus Wirth, *Algorithms and Data Structures* (1985), §3.1
 
 **Date:** Wednesday 21 October 2026 · 09:00–09:50 · Week 4
+
+**Reading:** Guttag, Ch. 6 · Guttag, Ch. 12 *(details at the end of the lecture)*
+
+**Coursework:** 📊 **Quiz 4** today 09:00–09:10 · 📝 **PS 3** due Fri 23 Oct 17:00 · 📝 **PS 4** released Fri 23 Oct 10:00, due Fri 30 Oct 17:00 · 🔬 **Lab 4** Tue 27 Oct 15:00–16:50 · 📘 **Midterm 1** Mon 2 Nov 18:00–19:15
 
 ---
 
@@ -539,8 +543,8 @@ Note the version above is also **O(n²)** in Python regardless of TCO, because `
 
 ## Reading
 
-- **Guttag, Ch. 4.3** — Recursion (primary — read carefully)
-- **Guttag, Ch. 3.4** — Binary Search (connects recursion to search)
+- **Guttag, Ch. 6** — Recursion and Global Variables (primary — read carefully)
+- **Guttag, Ch. 12** — search algorithms, binary search (connects recursion to search)
 
 ---
 

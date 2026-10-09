@@ -2,9 +2,14 @@
 ## Practical Dictionary and Set Mastery
 
 **Week 8 · Friday**
-*"Knowing that dict lookup is O(1) is theory. Knowing WHEN to reach for a dict instead of a list is engineering." — CS 101*
+
+*“Associative arrays are very very useful things and if you are only going to have one data structure that's the one to have. Because you could build everything else with it if you want.”* — Brian Kernighan, interview with Computerphile
 
 **Date:** Friday 20 November 2026 · 09:00–09:50 · Week 8
+
+**Reading:** Guttag, Ch. 5 · Python docs — collections module · Python docs — functools.lru_cache *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 7** due today 17:00 · 📝 **PS 8** released today 10:00, due Fri 27 Nov 17:00 · 🔬 **Lab 8** Tue 24 Nov 15:00–16:50 · 📊 **Quiz 9** Wed 25 Nov 09:00–09:10 · 📘 **Midterm 2** Mon 30 Nov 18:00–19:15
 
 ---
 
@@ -463,7 +468,7 @@ The unifying principle: hashing buys **O(1) exact-match lookup** and pays for it
 
 ## Reading
 
-- **Guttag, Ch. 5.4–5.5** — Dictionaries and sets (continued)
+- **Guttag, Ch. 5** — dictionaries (continued)
 - **Python docs — collections module:** https://docs.python.org/3/library/collections.html (Counter, defaultdict, OrderedDict)
 - **Python docs — functools.lru_cache:** https://docs.python.org/3/library/functools.html#functools.lru_cache
 

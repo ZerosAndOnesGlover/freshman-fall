@@ -2,9 +2,13 @@
 ## Week 4 · Lecture 2 of 3
 ### Creational and Structural Patterns, in Production Code
 
+*“The definition I use for a pattern is an idea that has been useful in one practical context and will probably be useful in others”* — Martin Fowler, *Analysis Patterns* (1997)
+
 ---
 
 **Sat:** Wednesday of Week 4, 10:00–10:50, TH 200 · **Reading:** GoF Ch. 3–4, selectively · **Next:** L15, behavioural patterns
+
+**Coursework:** 📝 **Assignment 4** released today 17:00, due Fri of Week 5 17:00 · 📝 **Assignment 3** due Fri this week 17:00 · 📊 **Quiz 5** Tue of Week 5
 **A 4 is released after this lecture**, Wednesday 17:00.
 
 ---

@@ -1,7 +1,13 @@
 # CS 102 · Computer Science II
 ## Lecture 32: Rabin–Karp and Boyer–Moore
 
+*“It's difficult to extract sense from strings, but they're the only communication coin we can count on.”* — Alan Perlis, "Epigrams on Programming" (1982), #106
+
 **Date:** Wednesday 31 March 2027 · 09:00–09:50 · Week 10
+
+**Reading:** CLRS §32.2 · Sedgewick & Wayne §5.3 (Boyer–Moore)
+
+**Coursework:** 📝 **PS 10** released Fri 2 Apr 10:00, due Fri 9 Apr 17:00 · 📝 **PS 9** due Fri 2 Apr 17:00 · 📊 **Quiz 11** Mon 5 Apr 09:00–09:15 · 🔬 **Lab 10** Tue 6 Apr 15:00–16:50
 
 ---
 

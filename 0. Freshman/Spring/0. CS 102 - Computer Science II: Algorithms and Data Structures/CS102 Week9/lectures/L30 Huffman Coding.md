@@ -1,7 +1,13 @@
 # CS 102 · Computer Science II
 ## Lecture 30: Huffman Coding
 
+*“Transmission through space (typically signaling) is the same as transmission through time (storage).”* — Richard Hamming, *The Art of Doing Science and Engineering* (1991)
+
 **Date:** Friday 26 March 2027 · 09:00–09:50 · Week 9
+
+**Reading:** CLRS §15.3 · Dasgupta, Papadimitriou & Vazirani §5.2
+
+**Coursework:** 📋 **Project 1** due today 17:00 · 📝 **PS 8** due today 17:00 · 📝 **PS 9** released today 10:00, due Fri 2 Apr 17:00 · 📊 **Quiz 10** Mon 29 Mar 09:00–09:15 · 📋 **Project 2** released Mon 29 Mar 09:00, due Fri 16 Apr 17:00 · 📘 **Midterm 2** Mon 29 Mar 18:00–19:15 · 🔬 **Lab 9** Tue 30 Mar 15:00–16:50
 
 ---
 

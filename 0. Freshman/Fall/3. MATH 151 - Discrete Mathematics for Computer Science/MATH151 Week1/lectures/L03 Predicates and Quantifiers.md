@@ -2,7 +2,13 @@
 ## Lecture 3 (L03) — Predicates, Domains, and Quantifiers
 ### Monday, Week 1
 
+*“Mathematics ought properly to be a model of logical clarity. In actual fact there are perhaps no scientific works where you will find more wrong expressions, and consequently wrong thoughts, than in mathematical ones.”* — Gottlob Frege, "What is a Function?" (1904)
+
 **Date:** Monday 28 September 2026 · 13:00–13:50 · Week 1
+
+**Reading:** Rosen, 8e §1.4 · Epp, 5e §3.1 · Levin, 3e §0.2 *(details at the end of the lecture)*
+
+**Coursework:** 📊 **Quiz 1** today 13:00–13:15 · 🔬 **Lab 0** Wed 30 Sep 15:00–16:50 · 📝 **PS 0** due Fri 2 Oct 17:00 · 📝 **PS 1** released Fri 2 Oct 14:00, due Fri 9 Oct 17:00
 
 ---
 
@@ -347,5 +353,11 @@ Domain for all problems: ℤ (integers) unless stated.
    - (c) ∀x ∃y (x + y = z)
 
 ---
+
+## Reading
+
+- **Rosen, 8e §1.4** — Predicates and quantifiers
+- **Epp, 5e §3.1** — Predicates and quantified statements I
+- **Levin, 3e §0.2** — Mathematical statements (quantifiers)
 
 *Next: Lecture 4 — Negating Quantified Statements, Quantifier Equivalence Laws*

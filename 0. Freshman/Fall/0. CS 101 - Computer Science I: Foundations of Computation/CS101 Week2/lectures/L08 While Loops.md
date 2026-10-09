@@ -2,10 +2,16 @@
 ## Control Flow II: `while` Loops and Loop Invariants
 
 **Week 2 · Thursday**
-*"To iterate is human, to recurse divine." — L. Peter Deutsch*
+
+*“A program without a loop and a structured variable isn't worth writing.”* — Alan Perlis, "Epigrams on Programming" (1982), #18
+
 *(We'll cover recursion in Week 4. For now, let's be human.)*
 
 **Date:** Thursday 8 October 2026 · 09:00–09:50 · Week 2
+
+**Reading:** Guttag, Ch. 2 · Guttag, Ch. 3 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 1** due Fri 9 Oct 17:00 · 📝 **PS 2** released Fri 9 Oct 10:00, due Fri 16 Oct 17:00 · 🔬 **Lab 2** Tue 13 Oct 15:00–16:50 · 📊 **Quiz 3** Wed 14 Oct 09:00–09:10
 
 ---
 
@@ -497,8 +503,8 @@ The honest summary is that you can prove a loop terminates when you can exhibit 
 
 ## Reading
 
-- **Guttag, Ch. 2.3** — `while` Loops (primary)
-- **Guttag, Ch. 3.2–3.3** — Loop examples (exhaustive enumeration, approximation)
+- **Guttag, Ch. 2** — `while` loops (primary)
+- **Guttag, Ch. 3** — loop examples: exhaustive enumeration, approximate solutions and bisection search
 
 ---
 

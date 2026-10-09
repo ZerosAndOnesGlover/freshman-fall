@@ -2,7 +2,11 @@
 ## Week 5 · Lecture 3 (Friday)
 ### Polar Coordinates
 
+*“Eadem mutata resurgo [Changed and yet the same, I rise again]”* — Jacob Bernoulli, the epitaph he chose for his gravestone (1705), beside a logarithmic spiral
+
 **Date:** Friday 26 February 2027 · 11:00–11:50 · Week 5
+
+**Coursework:** 📝 **PS 4** due today 17:00 · 📝 **PS 5** released today 12:00, due Fri 5 Mar 17:00 · 📊 **Quiz 6** Mon 1 Mar 11:00–11:15 · 📘 **Midterm 1** Wed 3 Mar 18:00–19:15 · 🔬 **Lab 5** Wed 3 Mar 15:00–16:50
 
 ---
 

@@ -2,7 +2,13 @@
 ## Lecture 26 (L26) — Advanced Counting: Choosing the Right Tool
 ### Friday, Week 8
 
+*“The theory of probabilities is basically only common sense reduced to a calculus.”* — Pierre-Simon Laplace, *Philosophical Essay on Probabilities* (1814)
+
 **Date:** Friday 20 November 2026 · 13:00–13:50 · Week 8
+
+**Reading:** Rosen, 8e §6.2, §8.5, §8.6 · Epp, 5e §9.4, §9.3 · Levin, 3e §1.6 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 7** due today 17:00 · 📝 **PS 8** released today 14:00, due Fri 27 Nov 17:00 · 📊 **Quiz 9** Mon 23 Nov 13:00–13:15 · 🔬 **Lab 8** Wed 25 Nov 15:00–16:50
 
 ---
 

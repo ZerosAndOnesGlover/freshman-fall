@@ -1,9 +1,15 @@
 # PHYS 141 · Lecture 6
 # Free Fall & Graphical Analysis of Motion
 
+*“The spaces described by a body falling from rest with a uniformly accelerated motion are to each other as the squares of the time-intervals employed in traversing these distances.”* — Galileo Galilei, *Dialogues Concerning Two New Sciences* (1638), Third Day, Theorem II
+
 > **Core Principle:** Free fall is constant-acceleration motion with a = −g, where g = 9.81 m/s² is determined by the Earth's mass and radius alone — completely independent of the mass, size, or composition of the falling object. Reading motion graphs fluently is as important as solving equations; graphs reveal structure that algebra alone can hide.
 
 **Date:** Friday 2 October 2026 · 14:00–14:50 · Week 1
+
+**Reading:** Serway & Jewett §2.6 (motion diagrams), §2.8 (free fall) · HRK Ch. 2
+
+**Coursework:** 📝 **PS 0** due today 17:00 · 📝 **PS 1** released today 15:00, due Fri 9 Oct 17:00 · 📊 **Quiz 1** Mon 5 Oct 14:00 · 🔬 **Lab 2** Thu 8 Oct 14:00–17:00
 
 ---
 

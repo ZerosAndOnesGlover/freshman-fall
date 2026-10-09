@@ -2,9 +2,13 @@
 ## Week 10 · Lecture 1 of 3 · **Monday**
 ### Symmetric Matrices and the Spectral Theorem
 
+*“Symmetry is a vast subject, significant in art and nature. Mathematics lies at its root, and it would be hard to find a better one on which to demonstrate the working of the mathematical intellect.”* — Hermann Weyl, *Symmetry* (1952)
+
 ---
 
 **Reading:** Strang §6.4 · **Previous:** Week 9's L29, what least squares assumes · **Next:** L31, positive definite matrices
+
+**Coursework:** 📊 **Quiz 10** today · 📝 **PS 10** released Wed this week, due Fri of Week 11 17:00 · 💬 **Recitation 9** Thu this week 15:00–15:50 · 📝 **PS 9** due Fri this week 17:00
 
 > **Quiz 10 is the first ten minutes of this lecture** and covers Week 9.
 >

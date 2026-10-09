@@ -2,7 +2,11 @@
 ## Week 5 · Lecture 2 (Tuesday)
 ### Derivatives of Logarithms, Logarithmic Differentiation, and Inverse Trig Functions
 
+*“And if any number of equals to a first sine be multiplied together producing a second, just so many equals to the Logarithm of the first added together produce the Logarithm of the second.”* — John Napier, *The Construction of the Wonderful Canon of Logarithms* (1619), tr. Macdonald
+
 **Date:** Tuesday 27 October 2026 · 11:00–11:50 · Week 5
+
+**Coursework:** 📝 **PS 4** due Wed 28 Oct 11:00 · 📝 **PS 5** released Wed 28 Oct 12:00, due Wed 4 Nov 11:00 · 🔬 **Lab 5** Fri 30 Oct 15:00–16:50, report due Mon 2 Nov 17:00 · 📊 **Quiz 6** Mon 2 Nov 11:00–11:15 · 📘 **Midterm 1** Thu 5 Nov 18:00–19:15
 
 ---
 

@@ -2,7 +2,11 @@
 ## Week 9 · Lecture 1 (Monday)
 ### The Fundamental Theorem of Calculus
 
+*“Calculus systematically evades a great deal of numerical calculation.”* — Richard Hamming, *Methods of Mathematics Applied to Calculus, Probability, and Statistics* (1985)
+
 **Date:** Monday 23 November 2026 · 11:00–11:50 · Week 9
+
+**Coursework:** 📊 **Quiz 9** today 11:00–11:15 · 🔬 **Lab 8** due today 17:00 · 📝 **PS 8** due Wed 25 Nov 11:00 · 📝 **PS 9** released Wed 25 Nov 12:00, due Wed 2 Dec 11:00 · 🔬 **Lab 9** Fri 27 Nov 15:00–16:50 · 📘 **Midterm 2** Wed 2 Dec 18:00–19:15
 
 ---
 

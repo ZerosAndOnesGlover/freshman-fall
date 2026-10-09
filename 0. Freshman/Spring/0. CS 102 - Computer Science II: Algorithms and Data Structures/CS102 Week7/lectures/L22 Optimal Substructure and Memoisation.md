@@ -1,7 +1,13 @@
 # CS 102 · Computer Science II
 ## Lecture 22: Optimal Substructure, Overlapping Subproblems, and Memoisation
 
+*“An optimal policy has the property that whatever the initial state and initial decision are, the remaining decisions must constitute an optimal policy with regard to the state resulting from the first decision.”* — Richard Bellman, *Dynamic Programming* (1957), ch. III — the Principle of Optimality
+
 **Date:** Monday 8 March 2027 · 09:00–09:50 · Week 7
+
+**Reading:** CLRS §14.1, §14.3
+
+**Coursework:** 📊 **Quiz 7** today 09:00–09:15 · 📋 **Project 1** released today 09:00, due Fri 26 Mar 17:00 · 🔬 **Lab 6** Tue 9 Mar 15:00–16:50 · 📝 **PS 6** due Fri 12 Mar 17:00 · 📝 **PS 7** released Fri 12 Mar 10:00, due Fri 19 Mar 17:00
 
 ---
 

@@ -2,7 +2,11 @@
 ## Week 0 · Lecture 3 of 4
 ### Exponentials, Logarithms & the Bridge to Calculus
 
+*“If a first sine be multiplied into a second producing a third, the Logarithm of the first added to the Logarithm of the second produces the Logarithm of the third.”* — John Napier, *The Construction of the Wonderful Canon of Logarithms* (1619), tr. Macdonald
+
 **Date:** Thursday 24 September 2026 · 11:00–11:50 · Week 0  <!-- 4th lecture in a 3-day week; see Calendar Reconciliation -->
+
+**Coursework:** 📝 **PS 0** due Fri 25 Sep 17:00 · 🔬 **Lab 0** Fri 25 Sep 15:00–16:50 · 📊 **Quiz 1** Mon 28 Sep 11:00–11:15 · 📝 **PS 1** released Wed 30 Sep 12:00, due Wed 7 Oct 11:00
 
 ---
 

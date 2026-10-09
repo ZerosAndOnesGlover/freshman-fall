@@ -11,7 +11,7 @@
 - §15.2 **elements of the greedy strategy** — the section that matters
 - §15.3 Huffman codes
 
-§15.4 (matroids) is optional, hard, and genuinely illuminating if you have the time; see below.
+Matroids (CLRS 3rd ed. §16.4; the 4th edition replaced that section with §15.4, offline caching) are optional, hard, and genuinely illuminating if you have the time; see below.
 
 Also useful:
 
@@ -119,7 +119,7 @@ paradigm itself**; guarantees for the failing case come from approximation analy
 
 ## If You Have Extra Time
 
-**Matroids (§15.4).** The abstract structure that explains *why* greedy works when it does. A matroid
+**Matroids (CLRS 3rd ed. §16.4).** The abstract structure that explains *why* greedy works when it does. A matroid
 is a set system closed downwards with an exchange property, and **greedy is optimal on a weighted
 matroid** — full stop. Kruskal's algorithm is the greedy algorithm on the graphic matroid, which is
 why Week 6 worked. It is the closest thing to a general theory of greedy correctness and it is

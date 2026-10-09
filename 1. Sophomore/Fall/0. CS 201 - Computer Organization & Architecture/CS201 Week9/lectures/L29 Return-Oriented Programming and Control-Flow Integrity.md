@@ -2,9 +2,13 @@
 ## Week 9 · Lecture 2 of 3
 ### Return-Oriented Programming, and Control-Flow Integrity
 
+*“If you think technology can solve your security problems, then you don't understand the problems and you don't understand the technology.”* — Bruce Schneier, *Secrets and Lies*, preface to the 2015 edition
+
 ---
 
 **Reading:** CS:APP §3.10.4 · **Previous:** L28, buffer overflows
+
+**Coursework:** 📝 **PS 9** released today, due Fri of Week 10 17:00 · 📋 **Project 1** due Fri this week 17:00 · 📝 **PS 8** due Fri this week 17:00 · 📊 **Quiz 10** Mon of Week 10 · 📘 **Midterm 2** Mon of Week 10 18:00–19:15 · 🔬 **Lab 9** Tue of Week 10 15:00–16:50
 
 ---
 

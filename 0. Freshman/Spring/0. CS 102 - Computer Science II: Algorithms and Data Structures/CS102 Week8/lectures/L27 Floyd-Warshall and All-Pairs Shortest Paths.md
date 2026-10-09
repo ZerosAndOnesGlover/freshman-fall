@@ -1,7 +1,13 @@
 # CS 102 · Computer Science II
 ## Lecture 27: Floyd–Warshall and All-Pairs Shortest Paths
 
+*“If the advancement of the general art of programming requires the continuing invention and elaboration of paradigms, advancement of the art of the individual programmer requires that he expand his repertory of paradigms.”* — Robert W. Floyd, "The Paradigms of Programming" (Turing Award lecture, 1978)
+
 **Date:** Friday 19 March 2027 · 09:00–09:50 · Week 8
+
+**Reading:** CLRS §23.2 (Floyd–Warshall and transitive closure) · §23.3 optional
+
+**Coursework:** 📝 **PS 7** due today 17:00 · 📝 **PS 8** released today 10:00, due Fri 26 Mar 17:00 · 📊 **Quiz 9** Mon 22 Mar 09:00–09:15 · 🔬 **Lab 8** Tue 23 Mar 15:00–16:50 · 📘 **Midterm 2** Mon 29 Mar 18:00–19:15
 
 ---
 
@@ -224,7 +230,7 @@ targets, and nothing in the code says so.
 
 ## 9. What to Do
 
-- Read CLRS §23.1–23.2 (Floyd–Warshall and transitive closure). §23.3 (Johnson's) is optional and
+- Read CLRS §23.2 (Floyd–Warshall and transitive closure). §23.3 (Johnson's) is optional and
   excellent — it uses Bellman–Ford once to reweight, then Dijkstra $V$ times.
 - **Lab 8** implements Floyd–Warshall, reproduces the loop-order experiment, and adds path
   reconstruction.

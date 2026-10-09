@@ -2,9 +2,13 @@
 ## Week 3 · Lecture 2 of 2
 ### Hindley-Milner, and the Algorithm That Guesses Right
 
+*“Well-typed programs cannot "go wrong".”* — Robin Milner, "A Theory of Type Polymorphism in Programming" (1978)
+
 ---
 
 **Reading:** TAPL Ch. 22 · Dragon §6.5 · **Next:** Week 4, L09 — the IR, and what a compiler thinks a program *is*
+
+**Coursework:** 📝 **PS 2** due Fri this week 17:00 · 🔬 **Lab 3** Fri this week 14:00–15:50 · 📊 **Quiz 4** Tue of Week 4 · 📘 **Midterm 1** Wed of Week 4 20:00–21:15 · 📝 **PS 4** released Wed of Week 4, due Fri of Week 5 17:00
 
 ---
 

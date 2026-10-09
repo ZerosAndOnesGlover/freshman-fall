@@ -2,9 +2,13 @@
 ## Week 8 · Lecture 2 of 3
 ### The GOT, the PLT, and Position-Independent Code
 
+*“Any problem in computer science can be solved with another level of indirection.”* — David Wheeler, as quoted by Butler Lampson in his Turing Award Lecture (1993)
+
 ---
 
 **Reading:** CS:APP §7.11–7.12 · TLPI §41.3, §41.13 · Drepper, *How To Write Shared Libraries* · **Previous:** L25 · **Next:** L27 — interposition, `dlopen` and versioning
+
+**Coursework:** 📝 **PS 8** released today, due Fri of Week 9 17:00 · 📝 **PS 7** due Fri this week 17:00 · 🔬 **Lab 8** Mon of Week 9 15:00–16:50 · 📊 **Quiz 9** Tue of Week 9
 
 ---
 

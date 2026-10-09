@@ -1,7 +1,13 @@
 # CS 190 · Week 12
 ## Guest Speaker Session: A CS Professional
 
+*“Once you get your courage up and believe that you can do important problems, then you can. If you think you can't, almost surely you are not going to.”* — Richard Hamming, "You and Your Research" (1986)
+
 **Date:** Wednesday 16 December 2026 · 13:00–13:50 · Week 12
+
+**Reading:** No new reading. Re-read Section 2 (Professional Responsibilities) of the ACM Code of Ethics (2018) from Week 3 before writing your Question Preparation
+
+**Coursework:** 📝 **Question Prep** due today 12:00 · 📝 **Reflection** due Fri 18 Dec 17:00
 
 **Format:** 60-minute seminar. Roughly 20 minutes of remarks, 40 minutes of questions.
 **Assessment:** Participation. **Preparation is required** — see [[Question Preparation]].

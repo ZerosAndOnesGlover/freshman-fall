@@ -1,7 +1,13 @@
 # CS 102 · Computer Science II
 ## Lecture 20: Prim's and Kruskal's Algorithms
 
+*“Science is what we understand well enough to explain to a computer. Art is everything else we do.”* — Donald Knuth, foreword to *A=B* (1996)
+
 **Date:** Wednesday 3 March 2027 · 09:00–09:50 · Week 6
+
+**Reading:** CLRS §21.2
+
+**Coursework:** 📝 **PS 5** due Fri 5 Mar 17:00 · 📝 **PS 6** released Fri 5 Mar 10:00, due Fri 12 Mar 17:00 · 📊 **Quiz 7** Mon 8 Mar 09:00–09:15 · 📋 **Project 1** released Mon 8 Mar 09:00, due Fri 26 Mar 17:00 · 🔬 **Lab 6** Tue 9 Mar 15:00–16:50
 
 ---
 

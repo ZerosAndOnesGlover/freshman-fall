@@ -1,9 +1,15 @@
 # PHYS 141 · Lecture 9
 # Circular Motion: Uniform and Non-Uniform
 
+*“By a clock we understand anything characterized by a phenomenon passing periodically through identical phases so that we must assume, by the principle of sufficient reason, that all that happens in a given period is identical with all that happens in an arbitrary period.”* — Albert Einstein, "Principles of Theoretical Physics" (1914)
+
 > **Core Principle:** An object moving in a circle at constant speed is still accelerating — because its velocity direction is changing. This centripetal acceleration always points toward the center of the circle. It requires a centripetal force (Week 3) and is the reason planets orbit, cars corner, and electrons (classically) circle nuclei.
 
 **Date:** Friday 9 October 2026 · 14:00–14:50 · Week 2
+
+**Reading:** Serway & Jewett §4.4–4.5, §10.1–10.2 (angular kinematics) · HRK Ch. 4, Ch. 8
+
+**Coursework:** 📝 **PS 1** due today 17:00 · 📝 **PS 2** released today 15:00, due Fri 16 Oct 17:00 · 📊 **Quiz 2** Mon 12 Oct 14:00 · 🔬 **Lab 3** Thu 15 Oct 14:00–17:00
 
 ---
 

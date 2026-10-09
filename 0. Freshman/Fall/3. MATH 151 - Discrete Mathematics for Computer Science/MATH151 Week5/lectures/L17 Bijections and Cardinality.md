@@ -2,7 +2,13 @@
 ## Lecture 17 (L17) — Bijections and Cardinality
 ### Friday, Week 5
 
+*“No one shall expel us from the paradise that Cantor has created for us.”* — David Hilbert, "Über das Unendliche", *Mathematische Annalen* 95 (1925)
+
 **Date:** Friday 30 October 2026 · 13:00–13:50 · Week 5
+
+**Reading:** Rosen, 8e §2.5 · Epp, 5e §7.4 · Levin, 3e §0.4 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 4** due today 17:00 · 📝 **PS 5** released today 14:00, due Fri 6 Nov 17:00 · 📊 **Quiz 6** Mon 2 Nov 13:00–13:15 · 🔬 **Lab 5** Wed 4 Nov 15:00–16:50 · 📘 **Midterm 1** Fri 6 Nov 18:00–19:15
 
 ---
 
@@ -214,6 +220,6 @@ that survives contact with infinity.
 
 - **Rosen, 8e §2.5** — Cardinality of sets
 - **Epp, 5e §7.4** — Cardinality and countability
-- **Levin, 3e §1.9** — Counting and bijections
+- **Levin, 3e §0.4** — Functions (bijections)
 
 *Next: Week 6 — Relations: reflexive, symmetric, transitive; equivalence classes*

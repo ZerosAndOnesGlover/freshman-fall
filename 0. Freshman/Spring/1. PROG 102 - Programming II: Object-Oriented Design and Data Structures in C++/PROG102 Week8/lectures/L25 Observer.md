@@ -1,10 +1,14 @@
 # PROG 102 · Lecture 25
 ## Observer
 
+*“Wherever there is modularity there is the potential for misunderstanding: Hiding information implies a need to check communication.”* — Alan Perlis, "Epigrams on Programming" (1982), #20
+
 **Week 8 · Tuesday · 50 minutes**
 **Reading:** Gang of Four Ch. 5, *Observer* · **Assumes:** Week 4, Week 5 (`weak_ptr`), Week 7
 
 **Date:** Tuesday 16 March 2027 · 10:00–10:50 · Week 8
+
+**Coursework:** 📊 **Quiz 8** today 10:00–10:15 · 📝 **PS 7** due Fri 19 Mar 17:00 · 📝 **PS 8** released Fri 19 Mar 10:00, due Fri 26 Mar 17:00 · 🔬 **Lab 8** Mon 22 Mar 15:00–16:50
 
 ---
 

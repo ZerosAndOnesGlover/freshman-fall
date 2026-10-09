@@ -2,7 +2,11 @@
 ## Week 2 · Lecture 2 (Thursday)
 ### Functional Completeness and Gate-Level Design
 
+*“There is not only a close analogy between the operations of the mind in general reasoning and its operations in the particular science of Algebra, but there is to a considerable extent an exact agreement in the laws by which the two classes of operations are conducted.”* — George Boole, *An Investigation of the Laws of Thought* (1854)
+
 **Date:** Thursday 4 February 2027 · 13:00–14:15 · Week 2
+
+**Coursework:** 📝 **PS 1** due today 13:00 · 📝 **PS 2** released today 14:30, due Thu 11 Feb 13:00 · 🔬 **Lab 2** Fri 5 Feb 14:00–15:50 · 📊 **Quiz 2** Wed 10 Feb 13:00–13:10
 
 ---
 

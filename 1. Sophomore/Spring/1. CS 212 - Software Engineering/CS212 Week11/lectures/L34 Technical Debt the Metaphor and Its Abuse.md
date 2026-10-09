@@ -2,9 +2,13 @@
 ## Week 11 · Lecture 1 of 3
 ### Technical Debt — the Metaphor, and Its Abuse
 
+*“Shipping first time code is like going into debt. A little debt speeds development so long as it is paid back promptly with a rewrite.”* — Ward Cunningham, "The WyCash Portfolio Management System", OOPSLA (1992)
+
 ---
 
 **Sat:** Tuesday of Week 11, 10:00–10:50, TH 200 · **⚠️ Quiz 11 in the first ten minutes** — covers Week 10. **This is the last quiz.** · **Reading:** Cunningham (1992); Fowler, *"TechnicalDebtQuadrant"* · **Next:** L35, metrics
+
+**Coursework:** 📊 **Quiz 11** today · 📝 **Assignment 11** released Wed this week 17:00, due Fri of Week 12 17:00 · 📝 **Assignment 10** due Fri this week 17:00
 
 ---
 

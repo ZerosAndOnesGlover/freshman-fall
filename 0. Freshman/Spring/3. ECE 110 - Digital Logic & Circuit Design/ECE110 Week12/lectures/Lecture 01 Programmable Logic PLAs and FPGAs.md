@@ -2,7 +2,11 @@
 ## Week 12 · Lecture 1 (Wednesday)
 ### Programmable Logic — PLAs, PALs and FPGAs
 
+*“With unit cost falling as the number of components per circuit rises, by 1975 economics may dictate squeezing as many as 65,000 components on a single silicon chip.”* — Gordon Moore, "Cramming more components onto integrated circuits" (1965)
+
 **Date:** Wednesday 14 April 2027 · 13:00–14:15 · Week 12
+
+**Coursework:** 📊 **Quiz 11** today 13:00–13:10 · 📝 **PS 11** due Thu 15 Apr 13:00 · 📝 **PS 12** released Thu 15 Apr 14:30 · 🔬 **Lab 12** Fri 16 Apr 14:00–15:50 · 📕 **Final exam** Mon 19 Apr 08:00–10:00
 
 ---
 

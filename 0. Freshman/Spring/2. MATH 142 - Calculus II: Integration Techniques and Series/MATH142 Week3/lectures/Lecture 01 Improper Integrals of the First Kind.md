@@ -2,7 +2,11 @@
 ## Week 3 · Lecture 1 (Monday)
 ### Improper Integrals of the First Kind — Infinite Intervals
 
+*“I fear what I have said of Infinities, will seem obscure to you; but it is enough if you understand, that Infinities when considered absolutely without any Restriction or Limitation, are neither equal nor unequal, nor have any Proportion one to another.”* — Isaac Newton, letter to Richard Bentley (1693)
+
 **Date:** Monday 8 February 2027 · 11:00–11:50 · Week 3
+
+**Coursework:** 📊 **Quiz 3** today 11:00–11:15 · 🔬 **Lab 2** Wed 10 Feb 15:00–16:50 · 📝 **PS 2** due Fri 12 Feb 17:00 · 📝 **PS 3** released Fri 12 Feb 12:00, due Fri 19 Feb 17:00
 
 ---
 

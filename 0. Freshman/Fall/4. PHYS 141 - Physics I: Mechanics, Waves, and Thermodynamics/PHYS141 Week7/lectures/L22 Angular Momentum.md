@@ -1,9 +1,15 @@
 # PHYS 141 · Lecture 22
 # Angular Momentum
 
+*“The areas, which revolving bodies describe by radii drawn to an immovable centre of force do lie in the same immovable planes, and are proportional to the times in which they are described.”* — Isaac Newton, *Principia* (1687), Book I, Proposition I, tr. Motte
+
 > **Core Principle:** Angular momentum is to rotation what linear momentum is to translation — a conserved quantity in isolated systems, arising directly from Newton's laws applied to rotational motion. Just as net external force changes linear momentum, net external torque changes angular momentum. This single relationship explains phenomena from spinning skaters to planetary orbits to gyroscopic stability.
 
 **Date:** Monday 9 November 2026 · 14:00–14:50 · Week 7
+
+**Reading:** Serway & Jewett §11.1–11.3 · HRK Ch. 10
+
+**Coursework:** 📊 **Quiz 6** today 14:00 · 🔬 **Lab 7** Thu 12 Nov 14:00–17:00 · 📝 **PS 6** due Fri 13 Nov 17:00 · 📝 **PS 7** released Fri 13 Nov 15:00, due Fri 20 Nov 17:00
 
 ---
 

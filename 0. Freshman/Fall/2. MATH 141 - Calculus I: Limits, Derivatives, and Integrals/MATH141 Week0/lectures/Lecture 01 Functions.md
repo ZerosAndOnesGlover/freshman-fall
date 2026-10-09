@@ -2,7 +2,13 @@
 ## Week 0 · Lecture 1 of 4
 ### Functions: The Engine of Mathematics
 
+*“A function of a variable quantity is an analytic expression composed in any way whatsoever of the variable quantity and numbers or constant quantities.”* — Leonhard Euler, *Introductio in analysin infinitorum* (1748), §4
+
 **Date:** Tuesday 22 September 2026 · 11:00–11:50 · Week 0
+
+**Reading:** Stewart §1.1–1.2 | Spivak Ch. 1
+
+**Coursework:** 📝 **PS 0** due Fri 25 Sep 17:00 · 🔬 **Lab 0** Fri 25 Sep 15:00–16:50 · 📊 **Quiz 1** Mon 28 Sep 11:00–11:15
 
 ---
 

@@ -1,11 +1,15 @@
 # PROG 102 · Lecture 15
 ## Abstract Classes, Virtual Destructors, and Casting
 
+*“Data abstractions provide the same benefits as procedures, but for data. Recall that the main idea is to separate what an abstraction is from how it is implemented so that implementations of the same abstraction can be substituted freely.”* — Barbara Liskov, keynote address, OOPSLA (1987)
+
 **Week 4 · Thursday · 50 minutes**
 **Reading:** *C++ Primer* §15.4, §15.7, §19.2 · **Reference:** Stroustrup §20.4, §22.2
 **Assumes:** L13, L14
 
 **Date:** Thursday 18 February 2027 · 10:00–10:50 · Week 4
+
+**Coursework:** 📝 **PS 3** due Fri 19 Feb 17:00 · 📝 **PS 4** released Fri 19 Feb 10:00, due Fri 26 Feb 17:00 · 🔬 **Lab 4** Mon 22 Feb 15:00–16:50 · 📊 **Quiz 5** Tue 23 Feb 10:00–10:15 · 📘 **Midterm 1** Tue 2 Mar 18:00–19:30
 
 ---
 

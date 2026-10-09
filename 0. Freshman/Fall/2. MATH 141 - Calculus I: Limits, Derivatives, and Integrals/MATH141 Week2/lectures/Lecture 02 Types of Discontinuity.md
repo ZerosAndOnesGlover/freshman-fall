@@ -2,7 +2,11 @@
 ## Week 2 · Lecture 2 (Tuesday)
 ### Classifying Discontinuities
 
+*“I. Thesis. Finite elements of Space and Time. Antithesis. Continuity.”* — Bernhard Riemann, "Antinomies", *Gesammelte Mathematische Werke* (1876)
+
 **Date:** Tuesday 6 October 2026 · 11:00–11:50 · Week 2
+
+**Coursework:** 📝 **PS 1** due Wed 7 Oct 11:00 · 📝 **PS 2** released Wed 7 Oct 12:00, due Wed 14 Oct 11:00 · 🔬 **Lab 2** Fri 9 Oct 15:00–16:50 · 📊 **Quiz 3** Mon 12 Oct 11:00–11:15
 
 ---
 

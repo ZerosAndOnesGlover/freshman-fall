@@ -2,7 +2,11 @@
 ## Week 5 · Lecture 3 (Wednesday)
 ### Related Rates
 
+*“If you cannot solve the proposed problem, try to solve first a simpler related problem.”* — George Pólya, *Mathematical Methods in Science* (1977)
+
 **Date:** Wednesday 28 October 2026 · 11:00–11:50 · Week 5
+
+**Coursework:** 📝 **PS 4** due today 11:00 · 📝 **PS 5** released today 12:00, due Wed 4 Nov 11:00 · 🔬 **Lab 5** Fri 30 Oct 15:00–16:50, report due Mon 2 Nov 17:00 · 📊 **Quiz 6** Mon 2 Nov 11:00–11:15 · 📘 **Midterm 1** Thu 5 Nov 18:00–19:15
 
 ---
 

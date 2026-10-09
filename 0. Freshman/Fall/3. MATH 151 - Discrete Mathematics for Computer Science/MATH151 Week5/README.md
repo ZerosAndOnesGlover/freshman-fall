@@ -89,7 +89,7 @@ MATH151_Week5/
 |---|---|
 | Rosen, 8e | §2.3, §2.5 (Cardinality) |
 | Epp, 5e | §7.1, §7.2, §7.3, §7.4 (Cardinality) |
-| Levin, 3e | §1.8, §1.9 |
+| Levin, 3e | §0.4 |
 
 ---
 

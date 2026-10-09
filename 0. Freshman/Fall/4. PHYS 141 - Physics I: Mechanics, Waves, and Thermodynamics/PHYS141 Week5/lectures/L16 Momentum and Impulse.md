@@ -1,9 +1,15 @@
 # PHYS 141 · Lecture 16
 # Momentum & Impulse
 
+*“The quantity of motion is the measure of the same, arising from the velocity and quantity of matter conjunctly.”* — Isaac Newton, *Principia* (1687), Definition II, tr. Motte
+
 > **Core Principle:** Momentum is a measure of "quantity of motion" — mass in motion. The impulse-momentum theorem, derived directly from Newton's second law, tells us that a force applied over time changes momentum by exactly the integral of that force. This is the time-integrated counterpart to the work-energy theorem's position-integrated relationship.
 
 **Date:** Monday 26 October 2026 · 14:00–14:50 · Week 5
+
+**Reading:** Serway & Jewett §9.1, §9.3 · HRK Ch. 6
+
+**Coursework:** 📊 **Quiz 4** today 14:00 · 🔬 **Lab 5** Thu 29 Oct 14:00–17:00 · 📝 **PS 4** due Fri 30 Oct 17:00 · 📝 **PS 5** released Fri 30 Oct 15:00, due Fri 6 Nov 17:00
 
 ---
 

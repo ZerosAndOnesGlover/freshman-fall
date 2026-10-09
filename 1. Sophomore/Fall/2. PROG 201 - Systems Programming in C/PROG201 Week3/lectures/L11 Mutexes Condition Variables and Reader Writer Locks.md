@@ -2,9 +2,13 @@
 ## Week 3 · Lecture 2 of 3
 ### Mutexes, Condition Variables, and Reader-Writer Locks
 
+*“In each cycle a so-called "critical section" occurs, critical in the sense that the processes have to be constructed in such a way, that at any moment at most one of the two is engaged in its critical section.”* — Edsger W. Dijkstra, "Cooperating Sequential Processes" (EWD123, 1965)
+
 ---
 
 **Reading:** APUE §11.6, §12.4 · TLPI Ch. 30 · `man 3 pthread_cond_wait`, `man 3 pthread_rwlock_rdlock` · **Previous:** L10 · **Next:** L12 — priority inversion and thread pools
+
+**Coursework:** 📝 **PS 3** released today, due Fri of Week 4 17:00 · 📝 **PS 2** due Fri this week 17:00 · 🔬 **Lab 3** Mon of Week 4 15:00–16:50 · 📊 **Quiz 4** Tue of Week 4
 
 ---
 

@@ -2,9 +2,13 @@
 ## Week 2 · Lecture 1 of 3
 ### Registers, Operands, and the Two Syntaxes
 
+*“The term architecture is used here to describe the attributes of a system as seen by the programmer, i.e., the conceptual structure and functional behavior, as distinct from the organization of the data flow and controls, the logical design, and the physical implementation.”* — Gene Amdahl, Gerrit Blaauw & Fred Brooks, "Architecture of the IBM System/360" (1964)
+
 ---
 
 **Reading:** CS:APP §3.1–3.4 · **Previous:** L06, floating-point non-associativity
+
+**Coursework:** 📊 **Quiz 2** today · 🔬 **Lab 1** Tue this week 15:00–16:50 · 📝 **PS 2** released Wed this week, due Fri of Week 3 17:00 · 📝 **PS 1** due Fri this week 17:00
 
 ---
 

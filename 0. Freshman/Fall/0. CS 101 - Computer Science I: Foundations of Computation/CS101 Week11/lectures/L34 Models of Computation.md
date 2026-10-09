@@ -1,7 +1,13 @@
 # CS 101 · Lecture 34 (Week 11, Lecture 1)
 ## Models of Computation: What a Computer Fundamentally Is
 
+*“A man provided with paper, pencil, and rubber, and subject to strict discipline, is in effect a universal machine.”* — Alan Turing, "Intelligent Machinery" (1948)
+
 **Date:** Wednesday 9 December 2026 · 09:00–09:50 · Week 11
+
+**Reading:** Sipser, *Introduction to the Theory of Computation*, Ch. 3.1–3.3 · Sipser, Ch. 1.1 · Turing (1936), "On Computable Numbers" · Petzold, *The Annotated Turing* *(details at the end of the lecture)*
+
+**Coursework:** 📊 **Quiz 11** today 09:00–09:10 · 📝 **PS 10** due Fri 11 Dec 17:00 · 📝 **PS 11** released Fri 11 Dec 10:00, due Fri 18 Dec 17:00 · 🔬 **Lab 11** Tue 15 Dec 15:00–16:50 · 📕 **Final exam** Tue 22 Dec 09:00–11:30
 
 ---
 

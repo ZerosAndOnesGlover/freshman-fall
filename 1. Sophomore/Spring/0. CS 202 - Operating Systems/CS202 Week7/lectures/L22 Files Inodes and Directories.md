@@ -2,9 +2,13 @@
 ## Week 7 · Lecture 1 of 3
 ### Files, Inodes, and Directories
 
+*“We have persistent objects, they're called files.”* — Ken Thompson, Plan 9 fortune file (1992)
+
 ---
 
 **Sat:** Monday of Week 7, 09:00–09:50, VNC 101, **after Quiz 7** · **Reading:** OSTEP Ch. 39–40; xv6 book Ch. 6 · **Next:** L23, the page cache
+
+**Coursework:** 📊 **Quiz 7** today · 🔬 **Lab 6** Tue this week 15:00–16:50 · 📋 **Project 1** released Wed this week, due Fri of Week 11 17:00 · 📝 **PS 7** released Wed this week, due Fri of Week 8 17:00 · 📝 **PS 6** due Fri this week 17:00 · 📘 **Midterm 2** Mon of Week 8 18:00–19:15
 
 ---
 

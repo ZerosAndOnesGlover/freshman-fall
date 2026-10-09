@@ -2,11 +2,15 @@
 ## Week 12 · Lecture 3 (Friday)
 ### The Road Ahead
 
+*“Profound study of nature is the most fertile source of mathematical discoveries.”* — Joseph Fourier, *The Analytical Theory of Heat* (1822), ch. 1
+
 **Date:** Friday 16 April 2027 · 11:00–11:50 · Week 12
+
+**Coursework:** 📝 **PS 11** due today 17:00 · 📝 **PS 12** released today 12:00 · 📕 **Final exam** Tue 20 Apr 09:00–11:30
 
 ---
 
-**Reading:** none
+**Reading:** Stewart, the Review at the end of Chapters 7–11 | Apostol — none
 **The final exam** is comprehensive — Weeks 0–12, 150 minutes, two-page sheet. **The revision guide is in `resources/`.**
 
 ---

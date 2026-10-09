@@ -1,7 +1,13 @@
 # CS 101 · Lecture 38 (Week 12, Lecture 2)
 ## What Comes Next: The Map of the Field
 
+*“We can only see a short distance ahead, but we can see plenty there that needs to be done.”* — Alan Turing, "Computing Machinery and Intelligence" (1950)
+
 **Date:** Thursday 17 December 2026 · 09:00–09:50 · Week 12
+
+**Reading:** Anderson & Dahlin, *Operating Systems: Principles and Practice*, Ch. 4–5 · Ulrich Drepper, "What Every Programmer Should Know About Memory" · Julia Evans's zines *(details at the end of the lecture)*
+
+**Coursework:** 📋 **Project 2** due Fri 18 Dec 17:00 · 📝 **PS 11** due Fri 18 Dec 17:00 · 📕 **Final exam** Tue 22 Dec 09:00–11:30
 
 ---
 

@@ -1,7 +1,13 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 3 · Lecture 2: The Call Stack and Scope
 
+*“Maybe "just one little global variable" isn't too unmanageable, but that style leads to code that is useless except to its original programmer.”* — Bjarne Stroustrup, *The C++ Programming Language*
+
 **Date:** Wednesday 14 October 2026 · 10:00–10:50 · Week 3
+
+**Reading:** K&R, §1.10, §4.3–4.6 · `ulimit -s` · `gdb`: `bt`, `frame`, `info locals` · C11 §6.2.1 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 2** due Fri 16 Oct 17:00 · 📝 **PS 3** released Fri 16 Oct 10:00, due Fri 23 Oct 17:00 · 🔬 **Lab 3** Mon 19 Oct 15:00–16:50 · 📊 **Quiz 3** Tue 20 Oct 10:00–10:10
 
 ---
 

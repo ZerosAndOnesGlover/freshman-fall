@@ -2,7 +2,11 @@
 ## Week 6 · Lecture 2 (Tuesday)
 ### Rolle's Theorem and the Mean Value Theorem
 
+*“The art of doing mathematics consists in finding that special case which contains all the germs of generality.”* — David Hilbert, as quoted in Constance Reid, *Hilbert* (1970)
+
 **Date:** Tuesday 3 November 2026 · 11:00–11:50 · Week 6
+
+**Coursework:** 📝 **PS 5** due Wed 4 Nov 11:00 · 📝 **PS 6** released Wed 4 Nov 12:00, due Wed 11 Nov 11:00 · 📘 **Midterm 1** Thu 5 Nov 18:00–19:15 · 🔬 **Lab 6** Fri 6 Nov 15:00–16:50, report due Mon 9 Nov 17:00 · 📊 **Quiz 7** Mon 9 Nov 11:00–11:15
 
 ---
 

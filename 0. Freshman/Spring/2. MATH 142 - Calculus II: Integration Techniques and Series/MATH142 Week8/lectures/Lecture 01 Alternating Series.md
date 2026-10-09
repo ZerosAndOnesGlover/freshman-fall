@@ -2,7 +2,11 @@
 ## Week 8 · Lecture 1 (Monday)
 ### Alternating Series
 
+*“If others would but reflect on mathematical truths as deeply and as continuously as I have, they would make my discoveries.”* — Carl Friedrich Gauss, as quoted in E. T. Bell, *Men of Mathematics* (1937)
+
 **Date:** Monday 15 March 2027 · 11:00–11:50 · Week 8
+
+**Coursework:** 📊 **Quiz 8** today 11:00–11:15 · 🔬 **Lab 7** Wed 17 Mar 15:00–16:50 · 📝 **PS 7** due Fri 19 Mar 17:00 · 📝 **PS 8** released Fri 19 Mar 12:00, due Fri 26 Mar 17:00
 
 ---
 

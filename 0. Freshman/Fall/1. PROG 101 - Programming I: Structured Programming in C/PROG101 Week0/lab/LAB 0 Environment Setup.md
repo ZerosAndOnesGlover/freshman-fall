@@ -406,13 +406,13 @@ nm /usr/lib/libc.dylib | grep printf
 
 By end of lab, you should have:
 
-- [ ] All tools installed and verified (`gcc`, `gdb`, `make`, `git`)
-- [ ] `hello.c` compiles and runs correctly
-- [ ] `temperature.c` passes all three test cases
-- [ ] `buggy.c` bug found, fixed, and documented with a comment
-- [ ] `Makefile` working (builds and cleans)
-- [ ] Git repository initialized with first commit
-- [ ] Answers to all Checkpoint Questions in your lab notebook
+- [x] All tools installed and verified (`gcc`, `gdb`, `make`, `git`)
+- [x] `hello.c` compiles and runs correctly
+- [x] `temperature.c` passes all three test cases
+- [x] `buggy.c` bug found, fixed, and documented with a comment
+- [x] `Makefile` working (builds and cleans)
+- [x] Git repository initialized with first commit
+- [x] Answers to all Checkpoint Questions in your lab notebook
 
 **Show your TA:** Run `make clean && make && ./hello && ./temperature <<< "100"` and show the output.
 

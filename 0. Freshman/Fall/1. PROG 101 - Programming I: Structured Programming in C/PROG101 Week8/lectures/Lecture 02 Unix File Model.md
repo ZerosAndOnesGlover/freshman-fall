@@ -1,7 +1,13 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 8 · Lecture 2: The UNIX File Model — File Descriptors and Low-Level I/O
 
+*“I think the major good idea in Unix was its clean and simple interface: open, close, read, and write.”* — Ken Thompson, "Unix and Beyond: An Interview with Ken Thompson", *IEEE Computer* (1999)
+
 **Date:** Wednesday 18 November 2026 · 10:00–10:50 · Week 8
+
+**Reading:** CS:APP §10.1–10.6 · The Linux Programming Interface, Ch. 4–5 · man pages *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 8** released Thu 19 Nov 11:00, due Tue 24 Nov 10:00 · 🔬 **Lab 8** Mon 23 Nov 15:00–16:50 · 📊 **Quiz 8** Tue 24 Nov 10:00–10:10 · 📘 **Midterm 2** Tue 1 Dec 18:00–19:30
 
 ---
 

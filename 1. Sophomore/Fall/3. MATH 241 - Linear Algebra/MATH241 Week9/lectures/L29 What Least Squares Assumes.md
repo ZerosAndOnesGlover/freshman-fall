@@ -2,9 +2,13 @@
 ## Week 9 · Lecture 3 of 3 · **Friday**
 ### What Least Squares Assumes
 
+*“Far better an approximate answer to the right question, which is often vague, than an exact answer to the wrong question, which can always be made precise.”* — John Tukey, "The Future of Data Analysis", *Annals of Mathematical Statistics* 33(1) (1962)
+
 ---
 
 **Reading:** Strang §4.3 (the applications), §8.6 · **Previous:** L28, least squares in practice · **Next:** Week 10, symmetric matrices
+
+**Coursework:** 📝 **PS 8** due today 17:00 · 📊 **Quiz 10** Mon of Week 10 · 📝 **PS 10** released Wed of Week 10, due Fri of Week 11 17:00 · 💬 **Recitation 9** Thu of Week 10 15:00–15:50
 
 > **PS 8 is due at 17:00 today**, alongside CS 201's and PROG 201's Project 1. **PS 9 was released
 > Wednesday and is due the Friday of Week 10.**

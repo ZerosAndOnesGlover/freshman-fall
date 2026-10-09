@@ -2,9 +2,13 @@
 ## Week 7 · Lecture 1 of 2
 ### Three Constructs, and the One That Is Hard
 
+*“Scheme programming language demonstrates that a very small number of rules for forming expressions, with few restrictions on how they are composed, suffice to form a practical and efficient programming language that is flexible enough to support most of the major programming paradigms in use today.”* — Gerald Jay Sussman, on receiving the Taylor L. Booth Education Award
+
 ---
 
 **Reading:** Pierce, *TAPL* ch. 5 · Barendregt ch. 2–3 · SICP §1.3 · **Next:** L16, encodings, recursion, and evaluation order
+
+**Coursework:** 📊 **Quiz 7** today · 📝 **PS 7** released Wed this week, due Fri of Week 8 17:00 · 📝 **PS 6** due Fri this week 17:00 · 🔬 **Lab 7** Fri this week 14:00–15:50 · 📘 **Midterm 2** Tue of Week 8 20:00–21:15
 
 ---
 

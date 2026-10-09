@@ -2,9 +2,13 @@
 ## Week 11 · Lecture 2 of 2
 ### LLVM, and the Compiler You Did Not Write
 
+*“Adapting old programs to fit new machines usually means adapting new machines to behave like old ones.”* — Alan Perlis, "Epigrams on Programming" (1982), #120
+
 ---
 
 **Reading:** Lattner & Adve (2004), "LLVM: A Compilation Framework" · Lattner, *The Architecture of Open Source Applications* ch. 11 · LLVM's Kaleidoscope tutorial, ch. 1–4 · **Next:** L25, the landscape of programming languages
+
+**Coursework:** 📋 **Project 1** due Fri this week 17:00 · 📝 **PS 10** due Fri this week 17:00 · 🔬 **Lab 11** Fri this week 14:00–15:50 · 📝 **PS 12** released Wed of Week 12, due Fri of Week 12 17:00 · 📕 **Final exam** Tue of finals week 09:00–11:30
 
 ---
 

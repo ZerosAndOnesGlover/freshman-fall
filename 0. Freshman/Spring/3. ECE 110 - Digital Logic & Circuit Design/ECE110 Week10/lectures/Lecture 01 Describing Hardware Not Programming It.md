@@ -2,7 +2,11 @@
 ## Week 10 · Lecture 1 (Wednesday)
 ### Describing Hardware, Not Programming It
 
+*“People who are really serious about software should make their own hardware.”* — Alan Kay, "Creative Think" seminar (1982)
+
 **Date:** Wednesday 31 March 2027 · 13:00–14:15 · Week 10
+
+**Coursework:** 📊 **Quiz 9** today 13:00–13:10 · 📝 **PS 10** released Thu 1 Apr 14:30, due Thu 8 Apr 13:00 · 📝 **PS 9** due Thu 1 Apr 13:00 · 🔬 **Lab 10** Fri 2 Apr 14:00–15:50 · 📕 **Final exam** Mon 19 Apr 08:00–10:00
 
 ---
 

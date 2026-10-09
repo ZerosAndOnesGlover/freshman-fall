@@ -1,9 +1,15 @@
 # PHYS 141 · Lecture 14
 # Potential Energy & Conservative Forces
 
+*“The speeds acquired by one and the same body moving down planes of different inclinations are equal when the heights of these planes are equal.”* — Galileo Galilei, *Dialogues Concerning Two New Sciences* (1638), Third Day
+
 > **Core Principle:** Some forces allow energy to be perfectly recovered — stored as "potential" energy and later converted back into kinetic energy without loss. These are conservative forces. Others (friction, air resistance) irreversibly convert mechanical energy into heat. The distinction between these two categories is not a labeling convenience — it reflects a deep property of the force itself: path-independence of work.
 
 **Date:** Tuesday 20 October 2026 · 14:00–14:50 · Week 4
+
+**Reading:** Serway & Jewett §7.6–7.9 · HRK Ch. 12
+
+**Coursework:** 🔬 **Lab 4** Thu 22 Oct 14:00–17:00 · 📝 **PS 3** due Fri 23 Oct 17:00 · 📝 **PS 4** released Fri 23 Oct 15:00, due Fri 30 Oct 17:00 · 📊 **Quiz 4** Mon 26 Oct 14:00
 
 ---
 

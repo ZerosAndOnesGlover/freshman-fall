@@ -2,9 +2,13 @@
 ## Week 6 · Lecture 2 of 3
 ### Process Groups, Sessions, and the Controlling Terminal
 
+*“I've seen [visual] editors like that, but I don't feel a need for them. I don't want to see the state of the file when I'm editing.”* — Ken Thompson, as summarized in Peter Salus, *A Quarter Century of UNIX* (1994)
+
 ---
 
 **Reading:** APUE Ch. 9 · TLPI Ch. 34 · `man 2 setpgid`, `man 2 setsid`, `man 3 tcsetpgrp`, `man 7 credentials` · **Previous:** L19 · **Next:** L21 — job control
+
+**Coursework:** 📝 **PS 6** released today, due Fri of Week 7 17:00 · 📋 **Project 1** released Fri this week, due Fri of Week 9 17:00 · 📝 **PS 5** due Fri this week 17:00 · 🔬 **Lab 5** Fri this week 16:00–17:50 · 🔬 **Lab 6** Mon of Week 7 15:00–16:50 · 📊 **Quiz 7** Tue of Week 7
 
 ---
 

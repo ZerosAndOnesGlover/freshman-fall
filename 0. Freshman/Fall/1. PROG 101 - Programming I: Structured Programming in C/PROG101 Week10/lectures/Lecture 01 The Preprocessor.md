@@ -1,7 +1,13 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 10 · Lecture 1: The Preprocessor
 
+*“A programming language is low level when its programs require attention to the irrelevant.”* — Alan Perlis, "Epigrams on Programming" (1982), #8
+
 **Date:** Tuesday 1 December 2026 · 10:00–10:50 · Week 10
+
+**Reading:** K&R, §4.11 · C11 §5.1.1.2 · C11 §6.10 · `gcc -E`, `gcc -dM -E` *(details at the end of the lecture)*
+
+**Coursework:** 📊 **Quiz 9** today 10:00–10:10 · 📘 **Midterm 2** today 18:00–19:30 · 📝 **PS 9** due today 10:00 · 📝 **PS 10** released Fri 4 Dec 10:00, due Fri 11 Dec 17:00 · 🔬 **Lab 10** Mon 7 Dec 15:00–16:50
 
 ---
 

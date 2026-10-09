@@ -2,7 +2,11 @@
 ## Week 8 · Lecture 2 (Tuesday)
 ### The Definite Integral: Formal Definition, Notation, and Properties
 
+*“It seems to be expected of every pilgrim up the slopes of the mathematical Parnassus, that he will at some point or other of his journey sit down and invent a definite integral or two towards the increase of the common stock.”* — James Joseph Sylvester, *Collected Mathematical Papers*, Vol. 2
+
 **Date:** Tuesday 17 November 2026 · 11:00–11:50 · Week 8
+
+**Coursework:** 📝 **PS 7** due Wed 18 Nov 11:00 · 📝 **PS 8** released Wed 18 Nov 12:00, due Wed 25 Nov 11:00 · 🔬 **Lab 8** Fri 20 Nov 15:00–16:50, report due Mon 23 Nov 17:00 · 📊 **Quiz 9** Mon 23 Nov 11:00–11:15
 
 ---
 

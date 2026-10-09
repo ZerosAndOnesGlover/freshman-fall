@@ -1,7 +1,13 @@
 # CS 102 · Computer Science II
 ## Lecture 09: Red-Black Trees, B-Trees, and What Practice Actually Uses
 
+*“If you find that you're spending almost all your time on theory, start turning some attention to practical things; it will improve your theories. If you find that you're spending almost all your time on practice, start turning some attention to theoretical things; it will improve your practice.”* — Donald Knuth, as quoted in Arturo Gonzalez-Gutierrez, *Minimum-length Corridors* (2007)
+
 **Date:** Friday 5 February 2027 · 09:00–09:50 · Week 2
+
+**Reading:** CLRS §13.1, §13.3–13.4 (read for the idea), §18.1 (B-tree definition and height)
+
+**Coursework:** 📝 **PS 1** due today 17:00 · 📝 **PS 2** released today 10:00, due Fri 12 Feb 17:00 · 📊 **Quiz 3** Mon 8 Feb 09:00–09:15 · 🔬 **Lab 2** Tue 9 Feb 15:00–16:50
 
 ---
 

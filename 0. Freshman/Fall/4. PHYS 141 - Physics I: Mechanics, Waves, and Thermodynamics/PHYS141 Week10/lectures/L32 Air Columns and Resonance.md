@@ -1,7 +1,13 @@
 # PHYS 141 · Physics I: Mechanics, Waves & Thermodynamics
 ## Lecture 32 — Standing Waves in Air Columns and Resonance
 
+*“The formation of scales and of the web of harmony is a product of artistic invention, and is in no way given by the natural structure or by the natural behaviour of our hearing.”* — Hermann von Helmholtz, *On the Sensations of Tone* (1862)
+
 **Date:** Tuesday 1 December 2026 · 14:00–14:50 · Week 10
+
+**Reading:** Serway & Jewett §17.5–17.6 · HRK Ch. 19
+
+**Coursework:** 🔬 **Lab 10** Thu 3 Dec 14:00–17:00 · 📝 **PS 10** released Fri 4 Dec 15:00, due Fri 11 Dec 17:00 · 📝 **PS 9** due Fri 4 Dec 17:00 · 📊 **Quiz 10** Mon 7 Dec 14:00
 
 ---
 

@@ -2,9 +2,13 @@
 ## Week 0 · Lecture 2 of 3
 ### Two Modes, and the Wall Between Them
 
+*“Wherever there is modularity there is the potential for misunderstanding: Hiding information implies a need to check communication.”* — Alan Perlis, "Epigrams on Programming" (1982), #20
+
 ---
 
 **Sat:** first Friday of Week 0, 09:00–09:50, VNC 101 · **Reading:** OSTEP Ch. 6 §6.1–6.2 · **Next:** L03, system calls and the trap
+
+**Coursework:** 📝 **PS 0** released Wed this week, due Fri of Week 1 17:00 · 🔬 **Lab 0** Fri this week 10:00–11:50
 
 ---
 

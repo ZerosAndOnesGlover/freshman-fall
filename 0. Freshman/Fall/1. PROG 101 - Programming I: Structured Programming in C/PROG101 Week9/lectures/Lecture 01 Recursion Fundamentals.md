@@ -1,7 +1,13 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 9 · Lecture 1: Recursion Fundamentals
 
+*“Recursion is the root of computation since it trades description for time.”* — Alan Perlis, "Epigrams on Programming" (1982), #12
+
 **Date:** Tuesday 24 November 2026 · 10:00–10:50 · Week 9
+
+**Reading:** King §9.6 · CLRS Ch. 4 · SICP §1.2 *(details at the end of the lecture)*
+
+**Coursework:** 📊 **Quiz 8** today 10:00–10:10 · 📝 **PS 8** due today 10:00 · 📝 **PS 9** released Thu 26 Nov 11:00, due Tue 1 Dec 10:00 · 🔬 **Lab 9** Mon 30 Nov 15:00–16:50 · 📘 **Midterm 2** Tue 1 Dec 18:00–19:30
 
 ---
 
@@ -461,7 +467,7 @@ For this particular function there is a third answer: `n * (n + 1) / 2`, in O(1)
 
 ## Reading
 
-- **K&R** does not cover recursion extensively — refer to **King Ch. 18** — Recursion (full chapter)
+- **King §9.6** — Recursion, including the quicksort example (K&R covers recursion only briefly, in §4.10)
 - **CLRS Ch. 4** — Divide-and-Conquer (mathematical treatment of recursive algorithm analysis)
 - **SICP §1.2** — Procedures and the Processes They Generate (recursive vs iterative processes — a classic exposition)
 

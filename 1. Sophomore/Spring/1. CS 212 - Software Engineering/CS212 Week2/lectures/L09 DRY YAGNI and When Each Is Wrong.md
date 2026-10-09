@@ -2,9 +2,13 @@
 ## Week 2 · Lecture 3 of 3
 ### DRY, YAGNI, Separation of Concerns — and When Each Is Wrong
 
+*“One of the things I've been trying to do is look for simpler or rules underpinning good or bad design. I think one of the most valuable rules is to avoid duplication. "Once and only once" is the Extreme Programming phrase.”* — Martin Fowler, as cited in Shore & Warden, *The Art of Agile Development* (2007)
+
 ---
 
 **Sat:** Thursday of Week 2, 10:00–10:50, TH 200 · **Reading:** Hunt & Thomas, *The Pragmatic Programmer*, §7 · **Next:** Week 3, architectural patterns
+
+**Coursework:** 📝 **Assignment 1** due Fri this week 17:00 · 📊 **Quiz 3** Tue of Week 3 · 📝 **Assignment 3** released Wed of Week 3 17:00, due Fri of Week 4 17:00
 
 ---
 

@@ -1,7 +1,13 @@
 # CS 190 · CS Seminar: Profession, Ethics & Culture
 ## Lecture · Week 10: The Future of Work — Automation, Jobs, and Universal Basic Income
 
+*“We are being afflicted with a new disease of which some readers may not yet have heard the name, but of which they will hear a great deal in the years to come--namely, technological unemployment.”* — John Maynard Keynes, "Economic Possibilities for our Grandchildren" (1930)
+
 **Date:** Wednesday 2 December 2026 · 13:00–13:50 · Week 10
+
+**Reading:** Autor, "Why Are There Still So Many Jobs?" (*JEP*, 2015), pp. 3–30 · Frey & Osborne, "The Future of Employment" (2017), introduction, methodology and conclusion · Kela, *Results of Finland's Basic Income Experiment* — [[CS190 Week10/resources/Reading Guide|Reading Guide]]
+
+**Coursework:** 📝 **Prep 10** due today 12:00
 
 ---
 

@@ -2,9 +2,13 @@
 ## Week 1 · Lecture 1 of 3
 ### What a Requirement Is, and Why Yours Are Wrong
 
+*“The hardest single part of building a software system is deciding precisely what to build.”* — Fred Brooks, "No Silver Bullet" (1986)
+
 ---
 
 **Sat:** Tuesday of Week 1, 10:00–10:50, TH 200 · **⚠️ Quiz 1 in the first ten minutes** — covers Week 0 · **Reading:** Sommerville Ch. 4 §4.1–4.3 · **Next:** L05, user stories
+
+**Coursework:** 📊 **Quiz 1** today · 📝 **Assignment 1** released Wed this week 17:00, due Fri of Week 2 17:00 · 📋 **Walking skeleton** due Fri this week 17:00 · 📝 **Assignment 0** due Fri this week 17:00
 
 ---
 

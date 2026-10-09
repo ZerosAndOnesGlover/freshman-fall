@@ -2,9 +2,13 @@
 ## Week 8 · Lecture 2 of 3
 ### Docker, and the Image You Ship
 
+*“Every program is a part of some other program and rarely fits.”* — Alan Perlis, "Epigrams on Programming" (1982), #4
+
 ---
 
 **Sat:** Wednesday of Week 8, 10:00–10:50, TH 200 · **Reading:** Docker docs, "Best practices for writing Dockerfiles"; the Twelve-Factor App, factors III, V and X · **Next:** L27, deployment
+
+**Coursework:** 📝 **Assignment 8** released today 17:00, due Fri of Week 9 17:00 · 📝 **Assignment 7** due Fri this week 17:00 · 📊 **Quiz 9** Tue of Week 9
 **A 8 is released after this lecture**, Wednesday 17:00.
 
 ---

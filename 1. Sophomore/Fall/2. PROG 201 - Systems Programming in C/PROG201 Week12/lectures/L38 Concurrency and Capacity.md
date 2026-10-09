@@ -2,9 +2,13 @@
 ## Week 12 · Lecture 2 of 3
 ### Concurrency and Capacity
 
+*“Often designers do complicated things that improve the capacity on a particular hardware platform when it might actually be cheaper to buy more hardware.”* — Martin Fowler, *Patterns of Enterprise Application Architecture* (2002)
+
 ---
 
 **Reading:** TLPI Ch. 29–30 (threads), Ch. 60 (concurrent servers) · CS:APP §12.3–12.5 · `man 7 pthreads`, `man 2 accept`, `man 3 pthread_cond_wait` · **Previous:** L37 — signals and shutdown · **Next:** L39 — running unattended
+
+**Coursework:** 📋 **Project 2** due Fri this week 17:00 · 📝 **PS 11** due Fri this week 17:00 · 🔬 **Lab 12** Mon of the completion period
 
 ---
 

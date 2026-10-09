@@ -2,9 +2,13 @@
 ## Week 0 · Lecture 1 of 3
 ### What a Process Is, and What `fork()` Copies
 
+*“If two people write exactly the same program, each should be put into microcode and then they certainly won't be the same.”* — Alan Perlis, "Epigrams on Programming" (1982), #13
+
 ---
 
 **Reading:** APUE §1.6, §7.3, §8.1–8.3 · **Next:** L02, waiting and the process table
+
+**Coursework:** 📝 **PS 0** released Wed this week, due Fri of Week 1 17:00 · 🔬 **Lab 0** Fri this week 17:00–18:50
 
 ---
 

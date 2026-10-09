@@ -2,9 +2,14 @@
 ## Algorithm Analysis I: Big-O, Big-Ω, and Big-Θ — Formal Definitions
 
 **Week 6 · Wednesday**
-*"Big-O notation captures the essential shape of how an algorithm scales, discarding constants and lower-order terms." — CS 101*
+
+*“As soon as an Analytical Engine exists, it will necessarily guide the future course of the science. Whenever any result is sought by its aid, the question will then arise — by what course of calculation can these results be arrived at by the machine in the shortest time?”* — Charles Babbage, *Passages from the Life of a Philosopher* (1864), ch. 8
 
 **Date:** Wednesday 4 November 2026 · 09:00–09:50 · Week 6
+
+**Reading:** CLRS, Ch. 3 · Guttag, Ch. 11 *(details at the end of the lecture)*
+
+**Coursework:** 📊 **Quiz 6** today 09:00–09:10 · 📝 **PS 5** due Fri 6 Nov 17:00 · 📝 **PS 6** released Fri 6 Nov 10:00, due Fri 13 Nov 17:00 · 🔬 **Lab 6** Tue 10 Nov 15:00–16:50
 
 ---
 
@@ -421,8 +426,8 @@ The general facts worth memorising: any power of log beats any positive power of
 
 ## Reading
 
-- **CLRS, Ch. 3** — Growth of Functions (the definitive formal treatment; read 3.1–3.2)
-- **Guttag, Ch. 6.1–6.2** — Complexity introduction (if covered in your edition)
+- **CLRS, Ch. 3** — Characterizing Running Times (the definitive formal treatment; read §3.1–3.2)
+- **Guttag, Ch. 11** — A Simplistic Introduction to Algorithmic Complexity
 
 ---
 

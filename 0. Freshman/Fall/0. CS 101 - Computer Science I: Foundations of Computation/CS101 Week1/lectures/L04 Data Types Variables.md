@@ -2,9 +2,14 @@
 ## Data, Types, and Variables (The Full Picture)
 
 **Week 1 · Wednesday**
-*"A type is not just a label — it specifies what operations are legal on a value and how the bits representing it should be interpreted." — Barbara Liskov*
+
+*“One man's constant is another man's variable.”* — Alan Perlis, "Epigrams on Programming" (1982), #1
 
 **Date:** Wednesday 30 September 2026 · 09:00–09:50 · Week 1
+
+**Reading:** Guttag, Ch. 2 *(details at the end of the lecture)*
+
+**Coursework:** 📊 **Quiz 1** today 09:00–09:10 · 📝 **PS 1** released Fri 2 Oct 10:00, due Fri 9 Oct 17:00 · 🔬 **Lab 1** Tue 6 Oct 15:00–16:50
 
 ---
 
@@ -547,8 +552,8 @@ Cryptography needs **arbitrary precision**. RSA operates on integers of 2048 bit
 
 ## Reading
 
-- **Guttag, Ch. 2** — sections 2.1 and 2.3 (types, variables, expressions)
-- **Guttag, Ch. 3.1** — strings in depth
+- **Guttag, Ch. 2** — the basic elements of Python: objects, types, expressions, variables
+- **Guttag, Ch. 2** — strings and input
 
 ---
 

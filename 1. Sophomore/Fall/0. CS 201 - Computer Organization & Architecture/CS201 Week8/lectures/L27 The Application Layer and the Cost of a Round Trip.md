@@ -2,9 +2,13 @@
 ## Week 8 · Lecture 3 of 3
 ### The Application Layer, and the Cost of a Round Trip
 
+*“I just had to take the hypertext idea and connect it to the TCP and DNS ideas and — ta-da!— the World Wide Web.”* — Tim Berners-Lee, "Answers for Young People"
+
 ---
 
 **Reading:** CS:APP §11.5–11.6 · **Previous:** L26, TCP
+
+**Coursework:** 📝 **PS 7** due today 17:00 · 📊 **Quiz 9** Mon of Week 9 · 🔬 **Lab 8** Tue of Week 9 15:00–16:50 · 📝 **PS 9** released Wed of Week 9, due Fri of Week 10 17:00 · 📘 **Midterm 2** Mon of Week 10 18:00–19:15
 
 ---
 

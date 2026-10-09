@@ -2,9 +2,13 @@
 ## Week 5 · Lecture 3 of 3
 ### SIMD, and the Law That Limits Everything
 
+*“The first characteristic of interest is the fraction of the computational load which is associated with data management housekeeping. This fraction has been very nearly constant for about ten years, and accounts for 40% of the executed instructions in production runs.”* — Gene Amdahl, "Validity of the Single Processor Approach to Achieving Large Scale Computing Capabilities" (1967) — the paper behind Amdahl's law
+
 ---
 
 **Reading:** CS:APP §5.9–5.10, §1.9.1 · **Previous:** L17, prediction and out-of-order execution
+
+**Coursework:** 📝 **PS 4** due today 17:00 · 📊 **Quiz 6** Mon of Week 6 · 🔬 **Lab 5** Tue of Week 6 15:00–16:50 · 📝 **PS 6** released Wed of Week 6, due Fri of Week 7 17:00
 
 ---
 

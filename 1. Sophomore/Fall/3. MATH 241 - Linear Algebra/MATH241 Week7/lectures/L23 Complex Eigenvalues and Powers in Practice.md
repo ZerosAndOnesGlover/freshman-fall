@@ -2,9 +2,13 @@
 ## Week 7 · Lecture 3 of 3 · **Friday**
 ### Complex Eigenvalues, and Powers in Practice
 
+*“Every kind of science, if it has only reached a certain degree of maturity, automatically becomes a part of mathematics.”* — David Hilbert, "Axiomatic Thought" (1918)
+
 ---
 
 **Reading:** Strang §6.2 (the complex examples), §6.4 opening, §10.3 · **Previous:** L22, when it fails · **Next:** Week 8, orthogonality
+
+**Coursework:** 📝 **PS 6** due today 17:00 · 📊 **Quiz 8** Mon of Week 8 · 📝 **PS 8** released Wed of Week 8, due Fri of Week 9 17:00 · 💬 **Recitation 7** Thu of Week 8 15:00–15:50
 
 > **PS 6 is due at 17:00 today.** PS 7 was released Wednesday and is due the Friday of Week 8.
 

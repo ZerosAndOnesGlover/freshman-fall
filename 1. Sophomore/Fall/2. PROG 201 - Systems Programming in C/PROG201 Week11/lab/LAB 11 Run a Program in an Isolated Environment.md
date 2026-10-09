@@ -1,6 +1,7 @@
 # LAB 11 · Run a Program in an Isolated Environment
 
 **PROG 201 · Week 11 · Containers and Virtualization**
+**Covers:** Week 11 · sat **Monday of Week 12**, 15:00–16:50, BH 215 · **unmarked, checked off in the session**
 **Time:** one lab session · **Submit:** `minic.c` completed, plus `lab11.md` with your measurements
 
 ---

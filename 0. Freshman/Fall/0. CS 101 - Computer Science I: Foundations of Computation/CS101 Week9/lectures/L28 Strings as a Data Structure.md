@@ -1,7 +1,13 @@
 # CS 101 · Lecture 28 (Week 9, Lecture 1)
 ## Strings as a Data Structure: Immutability, Encoding, and Cost
 
+*“The string is a stark data structure and everywhere it is passed there is much duplication of process. It is a perfect vehicle for hiding information.”* — Alan Perlis, "Epigrams on Programming" (1982), #34
+
 **Date:** Wednesday 25 November 2026 · 09:00–09:50 · Week 9
+
+**Reading:** Guttag, Ch. 2 and Ch. 5 · Python docs — Unicode HOWTO · Joel Spolsky, "The Absolute Minimum Every Software Developer Must Know About Unicode" *(details at the end of the lecture)*
+
+**Coursework:** 📊 **Quiz 9** today 09:00–09:10 · 📋 **Project 1** due Fri 27 Nov 17:00 · 📝 **PS 8** due Fri 27 Nov 17:00 · 📝 **PS 9** released Fri 27 Nov 10:00, due Fri 4 Dec 17:00 · 📘 **Midterm 2** Mon 30 Nov 18:00–19:15 · 🔬 **Lab 9** Tue 1 Dec 15:00–16:50
 
 ---
 
@@ -392,7 +398,7 @@ push impurity outward, applied to encoding.
 
 ## Reading
 
-- **Guttag, Ch. 4** — strings and string methods (primary)
+- **Guttag, Ch. 2 and Ch. 5** — strings, and strings as sequences alongside tuples, ranges and lists (primary)
 - **Python docs — Unicode HOWTO** — the authoritative treatment of §3 and §4 (strongly recommended)
 - **Joel Spolsky, "The Absolute Minimum Every Software Developer Must Know About Unicode"** — the
   classic essay; dated in places but still the best motivation for why §3 matters

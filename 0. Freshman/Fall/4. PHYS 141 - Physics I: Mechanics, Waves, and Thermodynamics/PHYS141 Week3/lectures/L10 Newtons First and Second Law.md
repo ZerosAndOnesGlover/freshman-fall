@@ -1,9 +1,15 @@
 # PHYS 141 · Lecture 10
 # Newton's First and Second Laws
 
+*“Every body perseveres in its state of rest, or of uniform motion in a right line, unless it is compelled to change that state by forces impressed thereon.”* — Isaac Newton, *Principia* (1687), Law I, tr. Motte
+
 > **Core Principle:** Force is not what keeps objects moving — it is what changes their motion. Newton's first law destroys the ancient Aristotelian notion that sustained force is needed to sustain motion. Newton's second law makes this quantitative: the net force on an object equals its mass times its acceleration. These two laws, together with the third, form the complete foundation of classical mechanics.
 
 **Date:** Monday 12 October 2026 · 14:00–14:50 · Week 3
+
+**Reading:** Serway & Jewett §5.1–5.5 · HRK Ch. 3
+
+**Coursework:** 📊 **Quiz 2** today 14:00 · 🔬 **Lab 3** Thu 15 Oct 14:00–17:00 · 📝 **PS 2** due Fri 16 Oct 17:00 · 📝 **PS 3** released Fri 16 Oct 15:00, due Fri 23 Oct 17:00
 
 ---
 

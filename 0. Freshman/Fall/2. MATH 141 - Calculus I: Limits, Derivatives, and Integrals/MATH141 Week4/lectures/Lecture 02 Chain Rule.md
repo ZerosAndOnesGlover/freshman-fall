@@ -2,7 +2,11 @@
 ## Week 4 · Lecture 2 (Tuesday)
 ### The Chain Rule: Differentiating Composite Functions
 
+*“Faced with almost an infinity of details you cannot afford to deal constantly with the specific; you must learn to embrace more and more detail under the cover of generality.”* — Richard Hamming, *Methods of Mathematics Applied to Calculus, Probability, and Statistics* (1985)
+
 **Date:** Tuesday 20 October 2026 · 11:00–11:50 · Week 4
+
+**Coursework:** 📝 **PS 3** due Wed 21 Oct 11:00 · 📝 **PS 4** released Wed 21 Oct 12:00, due Wed 28 Oct 11:00 · 🔬 **Lab 4** Fri 23 Oct 15:00–16:50 · 📊 **Quiz 5** Mon 26 Oct 11:00–11:15
 
 ---
 

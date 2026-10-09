@@ -1,10 +1,15 @@
 # CS 101 · Lecture 23 (Week 7, Lecture 2)
 ## Linked Lists: Singly and Doubly Linked
 
+*“One can even conjecture that Lisp owes its survival specifically to the fact that its programs are lists, which everyone, including me, has regarded as a disadvantage.”* — John McCarthy, "History of Lisp" (1979)
+
 **Week 7 · Thursday**
-*"Building your own linked list forces you to confront every design decision the underlying array-based structures made for you invisibly." — CS 101*
 
 **Date:** Thursday 12 November 2026 · 09:00–09:50 · Week 7
+
+**Reading:** CLRS, Ch. 10.2 *(details at the end of the lecture)*
+
+**Coursework:** 📋 **Project 1** released Fri 13 Nov 10:00, due Fri 27 Nov 17:00 · 📝 **PS 6** due Fri 13 Nov 17:00 · 📝 **PS 7** released Fri 13 Nov 10:00, due Fri 20 Nov 17:00 · 🔬 **Lab 7** Tue 17 Nov 15:00–16:50 · 📊 **Quiz 8** Wed 18 Nov 09:00–09:10
 
 ---
 
@@ -499,7 +504,7 @@ The dict supplies the reference the list cannot find on its own. Neither structu
 
 ## Reading
 
-- **Guttag, Ch. 5** (if linked structures are covered) or supplementary handout
+- Guttag has no linked-list section; CLRS §10.2 below is the reading
 - **CLRS, Ch. 10.2** — Linked Lists (formal treatment with pseudocode)
 
 ---

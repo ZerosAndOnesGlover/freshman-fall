@@ -2,8 +2,8 @@
 
 ## Required Textbook Reading
 
-- **HRK:** Ch. 10 (Rotational Kinematics) — all sections; Ch. 11 (Rotational Dynamics) — §11.1–11.5
-- **Serway:** Ch. 10 (Rotation of a Rigid Object About a Fixed Axis) — all sections
+- **HRK:** Halliday, Resnick & Krane, *Physics*, 5th ed. — Ch. 8 (Rotational Kinematics); Ch. 9 (Rotational Dynamics)
+- **Serway:** Serway & Jewett, *Physics for Scientists and Engineers*, 10th ed. — Ch. 10 (Rotation of a Rigid Object About a Fixed Axis) §10.1–10.9
 
 ## Simulations
 

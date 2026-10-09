@@ -2,9 +2,13 @@
 ## Week 2 · Lecture 1 of 3
 ### Pipes as a Ring of Pages, and FIFOs
 
+*“We should have some ways of connecting programs like garden hose--screw in another segment when it becomes necessary to massage data in another way. This is the way of IO also.”* — Doug McIlroy, internal Bell Labs memo (1964), the idea that became the Unix pipe
+
 ---
 
 **Reading:** APUE §15.1–15.5 · TLPI Ch. 44 · `man 7 pipe`, `man 7 fifo`, `man 3 mkfifo` · **Previous:** L06 · **Next:** L08 — message queues and shared memory
+
+**Coursework:** 📊 **Quiz 2** today · 📝 **PS 2** released Wed this week, due Fri of Week 3 17:00 · 📝 **PS 1** due Fri this week 17:00 · 🔬 **Lab 2** Mon of Week 3 15:00–16:50
 
 ---
 

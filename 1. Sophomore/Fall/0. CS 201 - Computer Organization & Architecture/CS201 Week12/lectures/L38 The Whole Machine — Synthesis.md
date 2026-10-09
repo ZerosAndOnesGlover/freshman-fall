@@ -2,9 +2,13 @@
 ## Week 12 · Lecture 2 of 3
 ### The Whole Machine — Synthesis
 
+*“People who are really serious about software should make their own hardware.”* — Alan Kay, talk at the Creative Think seminar (1982)
+
 ---
 
-**Reading:** none — re-read your own [[CS201 Week12/summary|summary]] files · **Previous:** L37, frontiers
+**Reading:** CS:APP Ch. 1, *A Tour of Computer Systems*, re-read in full — then your own [[CS201 Week12/summary|summary]] files · **Previous:** L37, frontiers
+
+**Coursework:** 📝 **PS 12** released today, due Fri this week 17:00 · 📋 **Project 2** due Fri this week 17:00 · 📝 **PS 11** due Fri this week 17:00
 
 ---
 

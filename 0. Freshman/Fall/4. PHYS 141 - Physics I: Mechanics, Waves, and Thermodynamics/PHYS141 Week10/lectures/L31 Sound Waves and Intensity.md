@@ -1,7 +1,13 @@
 # PHYS 141 · Physics I: Mechanics, Waves & Thermodynamics
 ## Lecture 31 — Sound Waves, Intensity, and the Decibel Scale
 
+*“The well known elevation of the pitch of wind instruments, in the course of playing, sometimes amounting to half a note, is not, as is commonly supposed, owing to any expansion of the instrument, for this should produce a contrary effect, but to the increased warmth of the air in the tube.”* — Thomas Young, "Outlines of Experiments and Inquiries Respecting Sound and Light" (1800)
+
 **Date:** Monday 30 November 2026 · 14:00–14:50 · Week 10
+
+**Reading:** Serway & Jewett §16.6–16.8 · HRK Ch. 19
+
+**Coursework:** 📊 **Quiz 9** today 14:00 · 🔬 **Lab 10** Thu 3 Dec 14:00–17:00 · 📝 **PS 10** released Fri 4 Dec 15:00, due Fri 11 Dec 17:00 · 📝 **PS 9** due Fri 4 Dec 17:00
 
 ---
 

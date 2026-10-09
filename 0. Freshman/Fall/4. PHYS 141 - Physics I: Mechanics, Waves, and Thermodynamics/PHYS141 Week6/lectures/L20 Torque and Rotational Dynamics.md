@@ -1,9 +1,15 @@
 # PHYS 141 · Lecture 20
 # Torque & Rotational Dynamics
 
+*“Two magnitudes whether commensurable or incommensurable, balance at distances reciprocally proportional to the magnitudes.”* — Archimedes, *On the Equilibrium of Planes*, Book I, Propositions 6–7 (the law of the lever)
+
 > **Core Principle:** Torque is the rotational analog of force — it is what causes angular acceleration. Just as F = ma governs linear motion, τ = Iα governs rotational motion, where the moment of inertia I plays the role of "rotational mass," quantifying how the mass of an object is distributed relative to the rotation axis.
 
 **Date:** Tuesday 3 November 2026 · 14:00–14:50 · Week 6
+
+**Reading:** Serway & Jewett §10.4–10.6 · HRK Ch. 9
+
+**Coursework:** 🔬 **Lab 6** Thu 5 Nov 14:00–17:00 · 📝 **PS 5** due Fri 6 Nov 17:00 · 📝 **PS 6** released Fri 6 Nov 15:00, due Fri 13 Nov 17:00 · 📊 **Quiz 6** Mon 9 Nov 14:00
 
 ---
 

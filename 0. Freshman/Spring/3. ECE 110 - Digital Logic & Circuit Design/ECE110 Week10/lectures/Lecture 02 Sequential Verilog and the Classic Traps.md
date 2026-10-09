@@ -2,7 +2,11 @@
 ## Week 10 · Lecture 2 (Thursday)
 ### Sequential Verilog and the Classic Traps
 
+*“...our intellectual powers are rather geared to master static relations and... our powers to visualize processes evolving in time are relatively poorly developed.”* — Edsger W. Dijkstra, "Go To Statement Considered Harmful" (1968)
+
 **Date:** Thursday 1 April 2027 · 13:00–14:15 · Week 10
+
+**Coursework:** 📝 **PS 10** released today 14:30, due Thu 8 Apr 13:00 · 📝 **PS 9** due today 13:00 · 🔬 **Lab 10** Fri 2 Apr 14:00–15:50 · 📊 **Quiz 10** Wed 7 Apr 13:00–13:10 · 📕 **Final exam** Mon 19 Apr 08:00–10:00
 
 ---
 

@@ -53,7 +53,7 @@ By the end of Week 10, you should be able to:
 | [[CS102 Week10/assignments/QUIZ 10 Week 10 Monday\|QUIZ 10 Week 10 Monday]] | 20 points, formative — **covers Week 9** |
 | [[PROJECT 2 A Search Engine]] | **10% of the course**, due Fri 16 Apr 17:00 |
 | [[LAB 10 Building a Plagiarism Detector]] | Fingerprinting, and why the parameter is the system |
-| [[CS102 Week10/resources/Reading Guide Week 10\|Reading Guide Week 10]] | CLRS §32.1–32.4, plus Sedgewick for what CLRS omits |
+| [[CS102 Week10/resources/Reading Guide Week 10\|Reading Guide Week 10]] | CLRS §32.1–32.5, plus Sedgewick for Boyer–Moore |
 | [[CS102 Week10/resources/MIDTERM 2 Revision Guide\|MIDTERM 2 Revision Guide]] | Format, examinable material, fifteen reproducible proofs |
 | `solutions_instructor/` | PS 10 and Lab 10 solutions — instructor only |
 

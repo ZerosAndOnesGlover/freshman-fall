@@ -2,7 +2,11 @@
 ## Week 9 · Lecture 2 (Thursday)
 ### Mealy vs Moore
 
+*“The machine is supplied with a "tape"... running through it, and divided into sections (called "squares") each capable of bearing a "symbol".”* — Alan Turing, "On Computable Numbers" (1936)
+
 **Date:** Thursday 25 March 2027 · 13:00–14:15 · Week 9
+
+**Coursework:** 📝 **PS 8** due today 13:00 · 📝 **PS 9** released today 14:30, due Thu 1 Apr 13:00 · 🔬 **Lab 9** Fri 26 Mar 14:00–15:50 · 📊 **Quiz 9** Wed 31 Mar 13:00–13:10
 
 ---
 

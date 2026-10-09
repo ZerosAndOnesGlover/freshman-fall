@@ -1,7 +1,13 @@
 # CS 102 · Computer Science II
 ## Lecture 24: Knapsack, and How to Choose the State
 
+*“If you have a procedure with ten parameters, you probably missed some.”* — Alan Perlis, "Epigrams on Programming" (1982), #11
+
 **Date:** Friday 12 March 2027 · 09:00–09:50 · Week 7
+
+**Reading:** Dasgupta, Papadimitriou & Vazirani §6.4 · Kleinberg & Tardos §6.4
+
+**Coursework:** 📝 **PS 6** due today 17:00 · 📝 **PS 7** released today 10:00, due Fri 19 Mar 17:00 · 📊 **Quiz 8** Mon 15 Mar 09:00–09:15 · 🔬 **Lab 7** Tue 16 Mar 15:00–16:50
 
 ---
 
@@ -213,7 +219,8 @@ Lecture 23, then makes it fast enough to use. Ten percent of the course; read th
 
 ## 8. What to Do
 
-- Read CLRS §14.1–14.3 again, then §14.4. Knapsack is Problem 14-2 and §15.2 covers the fractional
+- Read CLRS §14.1–14.3 again, then §14.4. CLRS has no 0/1-knapsack section (Dasgupta, Papadimitriou & Vazirani §6.4 is the
+  reading), and §15.2 covers the fractional
   variant, which is Week 9's material because it is **greedy**.
 - **PS 7** implements knapsack, both loop directions, the traceback, and the pseudo-polynomial
   measurement.

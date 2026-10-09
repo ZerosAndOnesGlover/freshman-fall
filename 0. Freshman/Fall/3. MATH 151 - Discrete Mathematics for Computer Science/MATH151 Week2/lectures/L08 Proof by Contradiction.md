@@ -2,7 +2,13 @@
 ## Lecture 8 (L08) — Proof by Contradiction
 ### Friday, Week 2
 
+*“Reductio ad absurdum, which Euclid loved so much, is one of a mathematician's finest weapons. It is a far finer gambit than any chess gambit: a chess player may offer the sacrifice of a pawn or even a piece, but a mathematician offers the game.”* — G. H. Hardy, *A Mathematician's Apology* (1940)
+
 **Date:** Friday 9 October 2026 · 13:00–13:50 · Week 2
+
+**Reading:** Rosen, 8e §1.7–1.8 · Epp, 5e §4.7–4.8 · Levin, 3e §3.2 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 1** due today 17:00 · 📝 **PS 2** released today 14:00, due Fri 16 Oct 17:00 · 📊 **Quiz 3** Mon 12 Oct 13:00–13:15 · 🔬 **Lab 2** Wed 14 Oct 15:00–16:50
 
 ---
 
@@ -271,5 +277,11 @@ This is essentially induction in disguise. We will revisit it in Week 3.
 5. **Open-ended:** The proof that √2 is irrational uses the fact that 2 is prime (specifically, that 2 | p² implies 2 | p). Which step of the proof would fail if we replaced 2 with 4 (attempting to show √4 is irrational)? Why does the proof correctly *fail* for √4?
 
 ---
+
+## Reading
+
+- **Rosen, 8e §1.7–1.8** — Proof by contradiction; proof methods and strategy
+- **Epp, 5e §4.7–4.8** — Indirect argument; two famous theorems (√2, infinitely many primes)
+- **Levin, 3e §3.2** — Proofs
 
 *Week 2 complete. Week 3: Proof by Mathematical Induction — weak and strong.*

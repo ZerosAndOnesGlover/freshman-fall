@@ -2,9 +2,13 @@
 ## Week 1 · Lecture 1 of 3 · **Monday**
 ### Matrix Multiplication, Four Ways
 
+*“Theorems... record more complex patterns of thinking that once shown to be valid need not be repeated every time they are needed.”* — Richard Hamming, *Methods of Mathematics Applied to Calculus, Probability, and Statistics* (1985)
+
 ---
 
 **Reading:** Strang §2.4, and §2.3 properly this time · **Previous:** Week 0's L03, cost and conditioning · **Next:** L05, the inverse
+
+**Coursework:** 📊 **Quiz 1** today · 📝 **PS 1** released Wed this week, due Fri of Week 2 17:00 · 💬 **Recitation 0** Thu this week 15:00–15:50 · 📝 **PS 0** due Fri this week 17:00
 
 > **Quiz 1 is the first ten minutes of this lecture** and covers Week 0. Answer key printed in the
 > paper; mark it yourself before you leave.

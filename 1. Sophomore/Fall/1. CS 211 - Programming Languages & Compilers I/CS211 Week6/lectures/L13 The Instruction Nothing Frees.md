@@ -2,9 +2,13 @@
 ## Week 6 · Lecture 1 of 2
 ### The Instruction Nothing Frees
 
+*“A LISP programmer knows the value of everything, but the cost of nothing.”* — Alan Perlis, "Epigrams on Programming" (1982), #55
+
 ---
 
 **Reading:** Dragon §7.4–7.6 · Appel ch. 13.1–13.3 · Jones, Hosking & Moss, *The Garbage Collection Handbook*, ch. 2 and 5 · **Next:** L14, roots, generations, and barriers
+
+**Coursework:** 📊 **Quiz 6** today · 📝 **PS 6** released Wed this week, due Fri of Week 7 17:00 · 📝 **PS 5** due Fri this week 17:00 · 🔬 **Lab 6** Fri this week 14:00–15:50
 
 ---
 

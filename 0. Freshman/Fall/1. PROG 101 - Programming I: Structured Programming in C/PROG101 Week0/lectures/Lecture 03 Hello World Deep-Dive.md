@@ -1,7 +1,13 @@
 # PROG 101 · Programming I - Structured Programming in C
 ## Week 0 · Lecture 3: Hello World Deep Dive & Your First C Program
 
+*“The first program to write is the same for all languages: Print the words hello, world”* — Brian Kernighan & Dennis Ritchie, *The C Programming Language* (1978), §1.1
+
 **Date:** Thursday 24 September 2026 · 10:00–10:50 · Week 0
+
+**Reading:** K&R Chapter 1 · King, Ch. 1-2 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 0** released Fri 25 Sep 17:00, due Tue 29 Sep 10:00 · 🔬 **Lab 0** Mon 28 Sep 15:00–16:50 · 📊 **Quiz 0** Tue 29 Sep 10:00–10:10
 
 ---
 
@@ -172,22 +178,26 @@ printf(format_string, arg1, arg2, ...);
 
 ### Format Specifiers
 
-| Specifier | Type | Example | Output |
-|-----------|------|---------|--------|
-| `%d` | `int` | `printf("%d", 42)` | `42` |
-| `%i` | `int` | Same as `%d` | `42` |
-| `%u` | `unsigned int` | `printf("%u", 42u)` | `42` |
-| `%ld` | `long` | `printf("%ld", 1000000L)` | `1000000` |
-| `%f` | `double` | `printf("%f", 3.14)` | `3.140000` |
-| `%e` | `double` (scientific) | `printf("%e", 3.14)` | `3.140000e+00` |
-| `%g` | `double` (shorter of %f/%e) | `printf("%g", 3.14)` | `3.14` |
-| `%c` | `char` | `printf("%c", 'A')` | `A` |
-| `%s` | `char *` (string) | `printf("%s", "hi")` | `hi` |
-| `%p` | pointer | `printf("%p", ptr)` | `0x7fff...` |
-| `%%` | literal `%` | `printf("100%%")` | `100%` |
-| `%x` | `unsigned int` (hex) | `printf("%x", 255)` | `ff` |
-| `%X` | `unsigned int` (hex upper) | `printf("%X", 255)` | `FF` |
-| `%o` | `unsigned int` (octal) | `printf("%o", 8)` | `10` |
+| Specifier    | Type                        | Example                                    | Output         |
+| ------------ | --------------------------- | ------------------------------------------ | -------------- |
+| `%d`         | `int`                       | `printf("%d", 42)`                         | `42`           |
+| `%i`         | `int`                       | Same as `%d`                               | `42`           |
+| `%u`         | `unsigned int`              | `printf("%u", 42u)`                        | `42`           |
+| `%li or %ld` | `long int`                  | `printf("%ld or %li", 1000000L, 1000000L)` | `1000000`      |
+| `%f`         | `float or double`           | `printf("%f", 3.14)`                       | `3.140000`     |
+| `%e`         | `double` (scientific)       | `printf("%e", 3.14)`                       | `3.140000e+00` |
+| `%g`         | `double` (shorter of %f/%e) | `printf("%g", 3.14)`                       | `3.14`         |
+| `%c`         | `char`                      | `printf("%c", 'A')`                        | `A`            |
+| `%s`         | `char *` (string)           | `printf("%s", "hi")`                       | `hi`           |
+| `%p`         | pointer                     | `printf("%p", ptr)`                        | `0x7fff...`    |
+| `%%`         | literal `%`                 | `printf("100%%")`                          | `100%`         |
+| `%x`         | `unsigned int` (hex)        | `printf("%x", 255)`                        | `ff`           |
+| `%X`         | `unsigned int` (hex upper)  | `printf("%X", 255)`                        | `FF`           |
+| `%o`         | `unsigned int` (octal)      | `printf("%o", 8)`                          | `10`           |
+
+**Note:** When reading integers with `scanf`, the `%i` format specifier automatically detects the number's base from its prefix: `0` means octal, `0x` or `0X` means hexadecimal, while no prefix means decimal. Standard `scanf` does not provide a binary (`0b`) integer conversion. In contrast, `%d` always interprets the input as a decimal integer.
+
+For `printf`, `%f` is used to print both `float` and `double`. A `float` is automatically promoted to `double` when passed to `printf`.
 
 ### Width and Precision
 

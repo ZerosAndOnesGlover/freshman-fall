@@ -2,7 +2,11 @@
 ## Week 12 · Lecture 2 (Tuesday)
 ### Taylor Polynomials: A Preview
 
+*“Good approximations often lead to better ones.”* — George Pólya, *Mathematical Methods in Science* (1977)
+
 **Date:** Tuesday 15 December 2026 · 11:00–11:50 · Week 12
+
+**Coursework:** 📝 **PS 11** due Wed 16 Dec 11:00 · 🔬 **Lab 12** Fri 18 Dec 15:00–16:50 · 📕 **Final exam** Wed 23 Dec 09:00–11:30
 
 ---
 

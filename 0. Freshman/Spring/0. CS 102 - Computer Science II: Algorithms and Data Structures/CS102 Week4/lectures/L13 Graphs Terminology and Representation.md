@@ -1,7 +1,13 @@
 # CS 102 · Computer Science II
 ## Lecture 13: Graphs — Terminology and Representation
 
+*“Re graphics: A picture is worth 10K words - but only those to describe the picture. Hardly any sets of 10K words can be adequately described with pictures.”* — Alan Perlis, "Epigrams on Programming" (1982), #39
+
 **Date:** Monday 15 February 2027 · 09:00–09:50 · Week 4
+
+**Reading:** CLRS §20.1, Appendix B.4 (graphs)
+
+**Coursework:** 📊 **Quiz 4** today 09:00–09:15 · 🔬 **Lab 3** Tue 16 Feb 15:00–16:50 · 📝 **PS 3** due Fri 19 Feb 17:00 · 📝 **PS 4** released Fri 19 Feb 10:00, due Fri 26 Feb 17:00
 
 ---
 

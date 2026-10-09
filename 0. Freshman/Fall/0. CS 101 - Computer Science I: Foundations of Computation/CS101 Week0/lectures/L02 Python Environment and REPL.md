@@ -1,10 +1,15 @@
 # CS 101 · Lecture 2
 ## The Python Environment & Your First Programs
 
+*“The only way to learn a new programming language is by writing programs in it.”* — Brian Kernighan & Dennis Ritchie, *The C Programming Language* (1978), §1.1
+
 **Week 0 · Lecture 2 of 3**
-*"The best way to learn to program is to write programs." — Brian Kernighan*
 
 **Date:** Thursday 24 September 2026 · 09:00–09:50 · Week 0
+
+**Reading:** Guttag, Ch. 2 · Chacon & Straub, *Pro Git*, 2nd ed., Ch. 1–2 *(details at the end of the lecture)*
+
+**Coursework:** 🔬 **Lab 0** Tue 29 Sep 15:00–16:50 · 📊 **Quiz 1** Wed 30 Sep 09:00–09:10
 
 ---
 
@@ -464,7 +469,12 @@ Under the box model these look inconsistent — why did changing `b` affect `a` 
 
 The rule is: **mutation is visible through every label; rebinding is visible through one.** Everything confusing about Python's assignment semantics follows from that sentence, and L04 §6 makes it formal.
 
+---
 
+## Reading
+
+- **Guttag, Ch. 2** — Introduction to Python: installing Python and an IDE, and the basic elements (objects, expressions, numerical types, variables)
+- **Chacon & Straub, *Pro Git*, 2nd ed., Ch. 1–2** — what version control is, and the everyday commands of §8 (free at git-scm.com/book)
 
 ---
 

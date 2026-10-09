@@ -2,7 +2,11 @@
 ## Week 2 · Lecture 1 (Wednesday)
 ### Logic Gates and CMOS Reality
 
+*“It is not of the essence of mathematics to be conversant with the ideas of number and quantity.”* — George Boole, *An Investigation of the Laws of Thought* (1854)
+
 **Date:** Wednesday 3 February 2027 · 13:00–14:15 · Week 2
+
+**Coursework:** 📊 **Quiz 1** today 13:00–13:10 · 📝 **PS 1** due Thu 4 Feb 13:00 · 📝 **PS 2** released Thu 4 Feb 14:30, due Thu 11 Feb 13:00 · 🔬 **Lab 2** Fri 5 Feb 14:00–15:50
 
 ---
 

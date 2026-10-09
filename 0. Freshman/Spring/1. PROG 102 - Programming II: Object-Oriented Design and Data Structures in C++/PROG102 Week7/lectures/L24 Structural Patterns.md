@@ -1,11 +1,15 @@
 # PROG 102 · Lecture 24
 ## Structural Patterns
 
+*“We propose instead that one begins with a list of difficult design decisions or design decisions which are likely to change. Each module is then designed to hide such a decision from the others.”* — David Parnas, "On the Criteria To Be Used in Decomposing Systems into Modules" (1972)
+
 **Week 7 · Thursday · 50 minutes**
 **Reading:** Gang of Four Ch. 4 (Adapter, Composite, Decorator, Facade)
 **Assumes:** L22, L23, Week 5 (`unique_ptr`)
 
 **Date:** Thursday 11 March 2027 · 10:00–10:50 · Week 7
+
+**Coursework:** 📝 **PS 6** due Fri 12 Mar 17:00 · 📝 **PS 7** released Fri 12 Mar 10:00, due Fri 19 Mar 17:00 · 🔬 **Lab 7** Mon 15 Mar 15:00–16:50 · 📊 **Quiz 8** Tue 16 Mar 10:00–10:15
 
 ---
 

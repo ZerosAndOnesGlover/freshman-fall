@@ -2,7 +2,11 @@
 ## Week 11 · Lecture 2 (Tuesday)
 ### First-Order Linear Equations
 
+*“Mathematics succeeds in dealing with tangible reality by being conceptual. We cannot cope with the full physical complexity; we must idealize.”* — George Pólya, *Mathematical Methods in Science* (1977)
+
 **Date:** Tuesday 6 April 2027 · 11:00–11:50 · Week 11
+
+**Coursework:** 🔬 **Lab 10** Wed 7 Apr 15:00–16:50 · 📝 **PS 10** due Fri 9 Apr 17:00 · 📝 **PS 11** released Fri 9 Apr 12:00, due Fri 16 Apr 17:00 · 📊 **Quiz 12** Mon 12 Apr 11:00–11:15 · 📕 **Final exam** Tue 20 Apr 09:00–11:30
 
 ---
 

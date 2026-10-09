@@ -2,9 +2,13 @@
 ## Week 1 · Lecture 2 of 3
 ### States, and the Context Switch
 
+*“...our intellectual powers are rather geared to master static relations and... our powers to visualize processes evolving in time are relatively poorly developed.”* — Edsger W. Dijkstra, "Go To Statement Considered Harmful" (1968)
+
 ---
 
 **Sat:** Wednesday of Week 1, 09:00–09:50, VNC 101 · **Reading:** OSTEP Ch. 6 §6.3; xv6 book Ch. 5 on context switching; `swtch.S` · **Next:** L06, address spaces and a process from `fork` to `wait`
+
+**Coursework:** 📝 **PS 1** released today, due Fri of Week 2 17:00 · 📝 **PS 0** due Fri this week 17:00 · 📊 **Quiz 2** Mon of Week 2 · 🔬 **Lab 1** Tue of Week 2 15:00–16:50
 
 ---
 

@@ -2,7 +2,11 @@
 ## Week 3 · Lecture 3 (Friday)
 ### Comparison Tests — Answering Without Evaluating
 
+*“Though there can be no comparison made betwixt the extent or usefulness of the antient and modern Discoveries in Geometry, yet it seems to be generally allowed that the Antients took greater care, and were more successfull in preserving the Character of its Evidence entire.”* — Colin Maclaurin, *A Treatise of Fluxions* (1742), Preface
+
 **Date:** Friday 12 February 2027 · 11:00–11:50 · Week 3
+
+**Coursework:** 📝 **PS 2** due today 17:00 · 📝 **PS 3** released today 12:00, due Fri 19 Feb 17:00 · 📊 **Quiz 4** Mon 15 Feb 11:00–11:15 · 🔬 **Lab 3** Wed 17 Feb 15:00–16:50
 
 ---
 

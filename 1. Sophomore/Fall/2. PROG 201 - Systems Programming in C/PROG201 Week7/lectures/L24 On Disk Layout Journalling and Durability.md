@@ -2,9 +2,13 @@
 ## Week 7 · Lecture 3 of 3
 ### On-Disk Layout, Journalling, and Durability
 
+*“Design bugs are often subtle and occur by evolution with early assumptions being forgotten as new features or uses are added to systems.”* — Fernando J. Corbató, "On Building Systems That Will Fail" (Turing Award lecture, 1991)
+
 ---
 
 **Reading:** TLPI §14.3–14.5, §13.3 · APUE §4.24 · `man 5 ext4`, `man 8 e2fsck`, `man 2 fsync` · **Previous:** L23 · **Next:** Lab 7 — corrupt and recover a filesystem, **Monday of Week 8**
+
+**Coursework:** 📝 **PS 6** due Fri this week 17:00 · 🔬 **Lab 7** Mon of Week 8 15:00–16:50 · 📊 **Quiz 8** Tue of Week 8 · 📝 **PS 8** released Wed of Week 8, due Fri of Week 9 17:00
 
 ---
 

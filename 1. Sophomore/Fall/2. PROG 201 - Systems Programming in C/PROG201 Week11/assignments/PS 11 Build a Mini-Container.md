@@ -1,6 +1,7 @@
 # PS 11 · Build a Mini-Container
 
 **PROG 201 · Week 11 · Containers and Virtualization**
+**Released:** Week 11, Wednesday · **Due:** Week 12, Friday 17:00
 **Weight:** 8% of course grade · **Submit:** `container.c`, `Makefile`, `report.md`
 **Reference machine:** all figures measured on the lab reference machine (`uname -r` = `7.0.0-30-generic`, Ubuntu 24.04, cgroup v2, `apparmor_restrict_unprivileged_userns=1`). State yours if different.
 

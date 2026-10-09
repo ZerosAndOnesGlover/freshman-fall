@@ -2,9 +2,13 @@
 ## Week 5 · Lecture 3 of 3 · **Friday**
 ### The Determinant as Volume, and the Product Rule
 
+*“We must admit with humility that, while number is purely a product of our minds, space has a reality outside our minds, so that we cannot completely prescribe its properties a priori.”* — Carl Friedrich Gauss, letter to Friedrich Wilhelm Bessel (1830)
+
 ---
 
 **Reading:** Strang §5.1 (the area discussion), §5.3 · **Previous:** L17, cofactors · **Next:** Week 6, eigenvalues
+
+**Coursework:** 📝 **PS 4** due today 17:00 · 📊 **Quiz 6** Tue of Week 6 · 📝 **PS 6** released Wed of Week 6, due Fri of Week 7 17:00 · 💬 **Recitation 5** Thu of Week 6 15:00–15:50
 
 > **PS 4 is due at 17:00 today.** PS 5 was released Wednesday and is due the Friday of Week 6.
 >

@@ -2,7 +2,13 @@
 ## Lecture 20 (L20) Partial Orders and Hasse Diagrams
 ### Friday, Week 6
 
+*“If one proves the equality of two numbers a and b by showing first that a ≤ b and then that a ≥ b, it is unfair; one should instead show that they are really equal by disclosing the inner ground for their equality.”* — Emmy Noether, as quoted by Hermann Weyl, "Emmy Noether" (1935)
+
 **Date:** Friday 6 November 2026 · 13:00–13:50 · Week 6
+
+**Reading:** Rosen, 8e §9.6 · Epp, 5e §8.5 *(details at the end of the lecture)*
+
+**Coursework:** 📘 **Midterm 1** today 18:00–19:15 · 📝 **PS 5** due today 17:00 · 📝 **PS 6** released today 14:00, due Fri 13 Nov 17:00 · 📊 **Quiz 7** Mon 9 Nov 13:00–13:15 · 🔬 **Lab 6** Wed 11 Nov 15:00–16:50
 
 ---
 
@@ -245,5 +251,10 @@ Topological Sort: extends any finite poset to a compatible total order
 5. Prove: in any finite poset, every chain and every antichain has size at most $|A|$ (trivial), but more importantly — prove that if $(A,\preceq)$ has NO chain of length $>k$, and you want to prove something about antichains... *(This references Dilworth's theorem territory — just prove the following simpler fact instead)*: prove that a finite poset with $n$ elements and no antichain of size $>1$ (i.e., every pair comparable) must be a total order, and conclude it has exactly one maximum and one minimum element.
 
 ---
+
+## Reading
+
+- **Rosen, 8e §9.6** — Partial orderings
+- **Epp, 5e §8.5** — Partial order relations
 
 *Week 6 complete. Week 7: Counting — Permutations, Combinations, the Multiplication and Addition Rules.*

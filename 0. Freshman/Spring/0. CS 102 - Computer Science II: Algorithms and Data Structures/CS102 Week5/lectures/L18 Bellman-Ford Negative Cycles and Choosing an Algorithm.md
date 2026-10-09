@@ -1,7 +1,13 @@
 # CS 102 · Computer Science II
 ## Lecture 18: Bellman–Ford, Negative Cycles, and Choosing an Algorithm
 
+*“The problems of the real world are primarily those you are left with when you refuse to apply their effective solutions.”* — Edsger W. Dijkstra, "Mathematicians and computing scientists: the cultural gap" (EWD1036)
+
 **Date:** Friday 26 February 2027 · 09:00–09:50 · Week 5
+
+**Reading:** CLRS §22.1 · §22.4 optional
+
+**Coursework:** 📝 **PS 4** due today 17:00 · 📝 **PS 5** released today 10:00, due Fri 5 Mar 17:00 · 📊 **Quiz 6** Mon 1 Mar 09:00–09:15 · 📘 **Midterm 1** Mon 1 Mar 18:00–19:15 · 🔬 **Lab 5** Tue 2 Mar 15:00–16:50
 
 ---
 

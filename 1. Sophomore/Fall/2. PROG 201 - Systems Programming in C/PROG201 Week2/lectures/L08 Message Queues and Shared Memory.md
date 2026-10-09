@@ -2,9 +2,13 @@
 ## Week 2 · Lecture 2 of 3
 ### POSIX Message Queues and Shared Memory
 
+*“Wherever there is modularity there is the potential for misunderstanding: Hiding information implies a need to check communication.”* — Alan Perlis, "Epigrams on Programming" (1982), #20
+
 ---
 
 **Reading:** APUE §15.7–15.9 · TLPI Ch. 48, 52, 54 · `man 7 mq_overview`, `man 7 shm_overview`, `man 2 mmap` · **Previous:** L07 · **Next:** L09 — semaphores, and choosing a mechanism
+
+**Coursework:** 📝 **PS 2** released today, due Fri of Week 3 17:00 · 📝 **PS 1** due Fri this week 17:00 · 🔬 **Lab 2** Mon of Week 3 15:00–16:50 · 📊 **Quiz 3** Tue of Week 3
 
 ---
 

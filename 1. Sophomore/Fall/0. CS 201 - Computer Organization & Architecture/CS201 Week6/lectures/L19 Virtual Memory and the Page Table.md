@@ -2,9 +2,13 @@
 ## Week 6 · Lecture 1 of 3
 ### Virtual Memory and the Page Table
 
+*“All problems in computer science can be solved by another level of indirection.”* — David Wheeler, as quoted in Butler Lampson, "Principles for Computer System Design" (Turing Award lecture, 1993)
+
 ---
 
 **Reading:** CS:APP §9.1–9.6 · **Previous:** L18, SIMD and Amdahl's Law
+
+**Coursework:** 📊 **Quiz 6** today · 🔬 **Lab 5** Tue this week 15:00–16:50 · 📝 **PS 6** released Wed this week, due Fri of Week 7 17:00 · 📝 **PS 5** due Fri this week 17:00
 
 ---
 

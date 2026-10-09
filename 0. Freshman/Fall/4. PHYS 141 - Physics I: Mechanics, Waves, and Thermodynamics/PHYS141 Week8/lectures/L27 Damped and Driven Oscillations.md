@@ -1,7 +1,13 @@
 # PHYS 141 · Physics I: Mechanics, Waves & Thermodynamics
 ## Lecture 27 — Damped and Driven Oscillations, and Resonance
 
+*“The initial state in most cases is bound to be highly improbable and from it the system will always rapidly approach a more probable state until it finally reaches the most probable state, i.e., that of the heat equilibrium.”* — Ludwig Boltzmann (1877)
+
 **Date:** Friday 20 November 2026 · 14:00–14:50 · Week 8
+
+**Reading:** Serway & Jewett §15.6–15.7 · HRK Ch. 17
+
+**Coursework:** 📝 **PS 7** due today 17:00 · 📝 **PS 8** released today 15:00, due Fri 27 Nov 17:00 · 📊 **Quiz 8** Mon 23 Nov 14:00 · 🔬 **Lab 9** Thu 26 Nov 14:00–17:00
 
 ---
 

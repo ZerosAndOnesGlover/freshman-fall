@@ -2,9 +2,13 @@
 ## Week 6 · Lecture 3 of 3
 ### Demand Paging, Copy-on-Write, and Replacement
 
+*“Once you understand how to write a program get someone else to write it.”* — Alan Perlis, "Epigrams on Programming" (1982), #27
+
 ---
 
 **Reading:** CS:APP §9.5, §9.7–9.8 · **Previous:** L20, the TLB
+
+**Coursework:** 📝 **PS 5** due today 17:00 · 📊 **Quiz 7** Mon of Week 7 · 🔬 **Lab 6** Tue of Week 7 15:00–16:50 · 📝 **PS 7** released Wed of Week 7, due Fri of Week 8 17:00
 
 ---
 

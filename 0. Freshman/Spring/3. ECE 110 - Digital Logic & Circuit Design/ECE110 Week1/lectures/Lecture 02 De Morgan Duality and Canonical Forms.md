@@ -2,7 +2,11 @@
 ## Week 1 · Lecture 2 (Thursday)
 ### De Morgan's Laws and Canonical Forms
 
+*“The two eyes of exact science are mathematics and logic: the mathematical sect puts out the logical eye, the logical sect puts out the mathematical eye; each believing that it can see better with one eye than with two.”* — Augustus De Morgan, as quoted in Florian Cajori, *A History of Mathematics* (1894)
+
 **Date:** Thursday 28 January 2027 · 13:00–14:15 · Week 1
+
+**Coursework:** 📝 **PS 0** due today 13:00 · 📝 **PS 1** released today 14:30, due Thu 4 Feb 13:00 · 🔬 **Lab 1** Fri 29 Jan 14:00–15:50 · 📊 **Quiz 1** Wed 3 Feb 13:00–13:10
 
 ---
 

@@ -1,7 +1,13 @@
 # CS 102 · Computer Science II
 ## Lecture 14: Breadth-First Search
 
+*“A change in perspective is worth 80 IQ points.”* — Alan Kay, as quoted in *Computer Science: The Hardware, Software and Heart of It* (2011)
+
 **Date:** Wednesday 17 February 2027 · 09:00–09:50 · Week 4
+
+**Reading:** CLRS §20.2
+
+**Coursework:** 📝 **PS 3** due Fri 19 Feb 17:00 · 📝 **PS 4** released Fri 19 Feb 10:00, due Fri 26 Feb 17:00 · 📊 **Quiz 5** Mon 22 Feb 09:00–09:15 · 🔬 **Lab 4** Tue 23 Feb 15:00–16:50 · 📘 **Midterm 1** Mon 1 Mar 18:00–19:15
 
 ---
 

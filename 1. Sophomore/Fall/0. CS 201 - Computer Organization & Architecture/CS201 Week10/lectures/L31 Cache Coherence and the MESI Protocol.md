@@ -2,9 +2,13 @@
 ## Week 10 · Lecture 1 of 3
 ### Cache Coherence and the MESI Protocol
 
+*“A distributed system is one in which the failure of a computer you didn't even know existed can render your own computer unusable.”* — Leslie Lamport, email message (1987)
+
 ---
 
 **Reading:** CS:APP §6.6 (revisited), Patterson & Hennessy §5.10 · **Previous:** L30, the security mindset
+
+**Coursework:** 📊 **Quiz 10** today · 📘 **Midterm 2** today 18:00–19:15 · 🔬 **Lab 9** Tue this week 15:00–16:50 · 📝 **PS 10** released Wed this week, due Fri of Week 11 17:00 · 📝 **PS 9** due Fri this week 17:00
 
 ---
 

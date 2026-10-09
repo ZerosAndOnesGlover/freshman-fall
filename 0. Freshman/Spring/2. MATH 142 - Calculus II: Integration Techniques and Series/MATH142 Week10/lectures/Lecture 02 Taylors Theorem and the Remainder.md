@@ -2,7 +2,11 @@
 ## Week 10 · Lecture 2 (Tuesday)
 ### Taylor's Theorem, and Whether the Series Is Really $f$
 
+*“Good approximations often lead to better ones.”* — George Pólya, *Mathematical Methods in Science* (1977)
+
 **Date:** Tuesday 30 March 2027 · 11:00–11:50 · Week 10
+
+**Coursework:** 📘 **Midterm 2** Wed 31 Mar 18:00–19:15 · 🔬 **Lab 9** Wed 31 Mar 15:00–16:50 · 📝 **PS 10** released Fri 2 Apr 12:00, due Fri 9 Apr 17:00 · 📝 **PS 9** due Fri 2 Apr 17:00 · 📊 **Quiz 11** Mon 5 Apr 11:00–11:15
 
 ---
 

@@ -1,11 +1,15 @@
 # PROG 102 · Lecture 17
 ## `shared_ptr`, `weak_ptr`, and the Cost of Sharing
 
+*“A LISP programmer knows the value of everything, but the cost of nothing.”* — Alan Perlis, "Epigrams on Programming" (1982), #55
+
 **Week 5 · Wednesday · 50 minutes**
 **Reading:** *C++ Primer* §12.1.1, §12.1.4–12.1.6 · **Reference:** Meyers Items 19–21
 **Assumes:** L16
 
 **Date:** Wednesday 24 February 2027 · 10:00–10:50 · Week 5
+
+**Coursework:** 📝 **PS 4** due Fri 26 Feb 17:00 · 📝 **PS 5** released Fri 26 Feb 10:00, due Fri 5 Mar 17:00 · 🔬 **Lab 5** Mon 1 Mar 15:00–16:50 · 📊 **Quiz 6** Tue 2 Mar 10:00–10:15 · 📋 **Project 1** released Tue 2 Mar 10:00, due Fri 26 Mar 17:00 · 📘 **Midterm 1** Tue 2 Mar 18:00–19:30
 
 ---
 

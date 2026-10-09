@@ -1,9 +1,15 @@
 # PHYS 141 · Lecture 8
 # Projectile Motion
 
+*“When a projectile is carried in motion compounded from equable horizontal and from naturally accelerated downward [motions], it describes a semiparabolic line in its movement.”* — Galileo Galilei, *Two New Sciences* (1638), Fourth Day, Proposition I, tr. Drake
+
 > **Core Principle:** A projectile is any object moving only under the influence of gravity (no air resistance, no thrust). Its horizontal motion is uniform (constant velocity); its vertical motion is free fall (constant downward acceleration g). These two motions are completely independent and share only one variable: time.
 
 **Date:** Tuesday 6 October 2026 · 14:00–14:50 · Week 2
+
+**Reading:** Serway & Jewett §4.3 · HRK Ch. 4
+
+**Coursework:** 🔬 **Lab 2** Thu 8 Oct 14:00–17:00 · 📝 **PS 1** due Fri 9 Oct 17:00 · 📝 **PS 2** released Fri 9 Oct 15:00, due Fri 16 Oct 17:00 · 📊 **Quiz 2** Mon 12 Oct 14:00
 
 ---
 

@@ -2,9 +2,13 @@
 ## Week 7 · Lecture 1 of 3
 ### The VFS, and the POSIX Filesystem API
 
+*“Ken Thompson was once asked what he would do differently if he were redesigning the UNIX system. His reply: "I'd spell creat with an e."”* — Brian Kernighan & Rob Pike, *The UNIX Programming Environment* (1984)
+
 ---
 
 **Reading:** APUE Ch. 4 · TLPI Ch. 14–15 · `man 2 statfs`, `man 2 openat`, `man 7 path_resolution` · **Previous:** L21 · **Next:** L23 — inodes, directory entries and links
+
+**Coursework:** 📊 **Quiz 7** today · 📝 **PS 7** released Wed this week, due Fri of Week 8 17:00 · 📝 **PS 6** due Fri this week 17:00 · 🔬 **Lab 7** Mon of Week 8 15:00–16:50
 
 ---
 

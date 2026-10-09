@@ -2,9 +2,13 @@
 ## Week 10 · Lecture 3 of 3
 ### What Virtualization Costs — and the Other Kind of Isolation
 
+*“Adapting old programs to fit new machines usually means adapting new machines to behave like old ones.”* — Alan Perlis, "Epigrams on Programming" (1982), #120
+
 ---
 
 **Sat:** Friday of Week 10, 09:00–09:50, VNC 101 · **Reading:** `man 7 namespaces`, `man 7 cgroups`; the virtio paper · **Next:** Week 11, distributed systems
+
+**Coursework:** 📝 **PS 9** due today 17:00 · 📊 **Quiz 11** Mon of Week 11 · 🔬 **Lab 10** Tue of Week 11 15:00–16:50 · 📝 **PS 11** released Wed of Week 11, due Fri of Week 12 17:00
 
 ---
 

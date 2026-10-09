@@ -2,9 +2,13 @@
 ## Week 4 · Lecture 3 of 3 · **Friday**
 ### Change of Basis, and the Search for a Good One
 
+*“One of the principal objects of theoretical research is to find the point of view from which the subject appears in the greatest simplicity.”* — J. Willard Gibbs, letter accepting the Rumford Medal (1881)
+
 ---
 
 **Reading:** Strang §8.3 · **Previous:** L14, the matrix of a transformation · **Next:** Week 5, determinants
+
+**Coursework:** 📝 **PS 3** due today 17:00 · 📊 **Quiz 5** Mon of Week 5 · 📝 **PS 5** released Wed of Week 5, due Fri of Week 6 17:00 · 💬 **Recitation 4** Thu of Week 5 15:00–15:50
 
 > **PS 3 is due at 17:00 today.** PS 4 was released Wednesday and is due the Friday of Week 5.
 

@@ -2,9 +2,13 @@
 ## Week 6 · Lecture 2 of 3
 ### The TLB and the Cost of Translation
 
+*“People who are more than casually interested in computers should have at least some idea of what the underlying hardware is like. Otherwise the programs they write will be pretty weird.”* — Donald Knuth, *The Art of Computer Programming*, Vol. 1, Fascicle 1: MMIX (2005)
+
 ---
 
 **Reading:** CS:APP §9.6.2–9.6.4 · **Previous:** L19, virtual memory and the page table
+
+**Coursework:** 📝 **PS 6** released today, due Fri of Week 7 17:00 · 📝 **PS 5** due Fri this week 17:00 · 📊 **Quiz 7** Mon of Week 7 · 🔬 **Lab 6** Tue of Week 7 15:00–16:50
 
 ---
 

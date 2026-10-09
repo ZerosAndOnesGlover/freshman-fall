@@ -1,7 +1,13 @@
 # PHYS 141 · Physics I: Mechanics, Waves & Thermodynamics
 ## Lecture 33 — The Doppler Effect
 
+*“I have come to believe that the motion of the Earth cannot be detected by any optical experiment.”* — Albert Einstein, "How I Created the Theory of Relativity", Kyoto (1922)
+
 **Date:** Friday 4 December 2026 · 14:00–14:50 · Week 10
+
+**Reading:** Serway & Jewett §16.9 · HRK Ch. 19
+
+**Coursework:** 📝 **PS 10** released today 15:00, due Fri 11 Dec 17:00 · 📝 **PS 9** due today 17:00 · 📊 **Quiz 10** Mon 7 Dec 14:00 · 🔬 **Lab 11** Thu 10 Dec 14:00–17:00
 
 ---
 

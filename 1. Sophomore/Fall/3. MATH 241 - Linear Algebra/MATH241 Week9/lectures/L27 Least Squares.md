@@ -2,9 +2,13 @@
 ## Week 9 · Lecture 1 of 3 · **Monday**
 ### Least Squares
 
+*“The theory of probabilities is basically only common sense reduced to a calculus.”* — Pierre-Simon Laplace, *Philosophical Essay on Probabilities* (1814)
+
 ---
 
 **Reading:** Strang §4.3 · **Previous:** Week 8's L26, Gram–Schmidt · **Next:** L28, least squares in practice
+
+**Coursework:** 📊 **Quiz 9** today · 📝 **PS 9** released Wed this week, due Fri of Week 10 17:00 · 💬 **Recitation 8** Thu this week 15:00–15:50 · 📝 **PS 8** due Fri this week 17:00
 
 > **Quiz 9 is the first ten minutes of this lecture** and covers Week 8.
 >

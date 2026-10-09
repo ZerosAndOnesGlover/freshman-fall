@@ -51,5 +51,5 @@ By the end of Week 3, you will be able to:
 
 ## Textbooks
 
-- **HRK:** Halliday, Resnick & Krane — Ch. 5 (Force and Newton's Laws), Ch. 6 (Friction)
-- **Serway:** Ch. 5 (The Laws of Motion), Ch. 6 (Circular Motion and Other Applications)
+- **HRK:** Halliday, Resnick & Krane — Ch. 3 (Force and Newton's Laws); Ch. 5 (Applications of Newton's Laws), including friction
+- **Serway:** Ch. 5 (The Laws of Motion) §5.1–5.8, with friction in §5.8; §6.1

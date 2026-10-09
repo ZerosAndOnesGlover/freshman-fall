@@ -1,7 +1,13 @@
 # PHYS 141 · Physics I: Mechanics, Waves & Thermodynamics
 ## Lecture 38 — The Second Law, Entropy, and Heat Engines
 
+*“The 2nd law of thermodynamics has the same degree of truth as the statement that if you throw a tumblerful of water into the sea, you cannot get the same tumblerful of water out again.”* — James Clerk Maxwell, letter to Lord Rayleigh (1870)
+
 **Date:** Tuesday 15 December 2026 · 14:00–14:50 · Week 12
+
+**Reading:** Serway & Jewett §21.1–21.4, §21.6–21.8 · HRK Ch. 24
+
+**Coursework:** 🔬 **Lab 12** Thu 17 Dec 14:00–17:00 · 📝 **PS 11** due Fri 18 Dec 17:00 · 📝 **PS 12** released Fri 18 Dec 15:00, due Wed 23 Dec 17:00 · 📊 **Quiz 12** Mon 21 Dec 14:00
 
 ---
 

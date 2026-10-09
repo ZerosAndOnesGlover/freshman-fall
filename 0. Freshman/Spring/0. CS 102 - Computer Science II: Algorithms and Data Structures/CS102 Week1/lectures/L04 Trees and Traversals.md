@@ -1,7 +1,13 @@
 # CS 102 · Computer Science II
 ## Lecture 04: Trees and Traversals
 
+*“Trees sprout up just about everywhere in computer science...”* — Donald Knuth, *The Art of Computer Programming*, Vol. 4A (2011)
+
 **Date:** Monday 25 January 2027 · 09:00–09:50 · Week 1
+
+**Reading:** CLRS §10.3 (representing rooted trees), Appendix B.5 (trees), §12.1 (tree walks)
+
+**Coursework:** 📊 **Quiz 1** today 09:00–09:15 · 🔬 **Lab 0** Tue 26 Jan 15:00–16:50 · 📝 **PS 1** released Fri 29 Jan 10:00, due Fri 5 Feb 17:00
 
 ---
 

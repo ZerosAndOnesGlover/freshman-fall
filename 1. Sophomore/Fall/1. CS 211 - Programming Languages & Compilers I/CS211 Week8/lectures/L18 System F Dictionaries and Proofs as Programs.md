@@ -2,9 +2,13 @@
 ## Week 8 · Lecture 2 of 2
 ### System F, Dictionaries, and Proofs as Programs
 
+*“One can't proceed from the informal to the formal by formal means.”* — Alan Perlis, "Epigrams on Programming" (1982), #102
+
 ---
 
 **Reading:** Pierce, *TAPL* ch. 23, 9.4 · Wadler & Blott (1989) · Wadler, "Propositions as Types" (2015) · **Next:** L19, concurrency
+
+**Coursework:** 📝 **PS 7** due Fri this week 17:00 · 🔬 **Lab 8** Fri this week 14:00–15:50 · 📊 **Quiz 9** Tue of Week 9 · 📝 **PS 9** released Wed of Week 9, due Fri of Week 10 17:00
 
 ---
 

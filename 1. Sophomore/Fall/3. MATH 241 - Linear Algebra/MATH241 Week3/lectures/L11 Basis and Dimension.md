@@ -2,9 +2,13 @@
 ## Week 3 · Lecture 2 of 3 · **Tuesday**
 ### Basis and Dimension
 
+*“Whoever maintains the contrary must undertake to derive the dimensions of space from the pure laws of thought—a problem which is at once seen to be impossible of solution.”* — Hermann Grassmann, *Die lineale Ausdehnungslehre* (1844), Introduction
+
 ---
 
 **Reading:** Strang §3.5, second half · **Previous:** L10, independence · **Next:** L12, the four subspaces
+
+**Coursework:** 📝 **PS 3** released Wed this week, due Fri of Week 4 17:00 · 💬 **Recitation 2** Thu this week 15:00–15:50 · 📝 **PS 2** due Fri this week 17:00 · 📊 **Quiz 4** Mon of Week 4
 
 ---
 

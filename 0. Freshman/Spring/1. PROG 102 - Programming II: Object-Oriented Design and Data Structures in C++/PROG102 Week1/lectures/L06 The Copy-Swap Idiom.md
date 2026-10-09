@@ -1,11 +1,15 @@
 # PROG 102 · Lecture 06
 ## The Copy-Swap Idiom, and Counting Copies
 
+*“One man's constant is another man's variable.”* — Alan Perlis, "Epigrams on Programming" (1982), #1
+
 **Week 1 · Thursday · 50 minutes**
 **Reading:** *C++ Primer* §13.3 · **Reference:** Meyers, *Effective C++* Item 11
 **Assumes:** L05 (Rule of Three, self-assignment)
 
 **Date:** Thursday 28 January 2027 · 10:00–10:50 · Week 1
+
+**Coursework:** 📝 **PS 0** due Fri 29 Jan 17:00 · 📝 **PS 1** released Fri 29 Jan 10:00, due Fri 5 Feb 17:00 · 🔬 **Lab 1** Mon 1 Feb 15:00–16:50 · 📊 **Quiz 2** Tue 2 Feb 10:00–10:15
 
 ---
 

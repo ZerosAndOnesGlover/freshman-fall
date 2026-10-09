@@ -2,9 +2,13 @@
 ## Week 4 · Lecture 2 of 3
 ### Cache Organisation — Lines, Sets and Ways
 
+*“The programmer's primary weapon in the never-ending battle against slow system is to change the intramodular structure. Our first response should be to reorganize the modules' data structures.”* — Fred Brooks, *The Mythical Man-Month* (1975), ch. 9
+
 ---
 
 **Reading:** CS:APP §6.4 · **Previous:** L13, the hierarchy measured
+
+**Coursework:** 📝 **PS 4** released today, due Fri of Week 5 17:00 · 📝 **PS 3** due Fri this week 17:00 · 📊 **Quiz 5** Mon of Week 5 · 📘 **Midterm 1** Mon of Week 5 18:00–19:15 · 🔬 **Lab 4** Tue of Week 5 15:00–16:50
 
 ---
 

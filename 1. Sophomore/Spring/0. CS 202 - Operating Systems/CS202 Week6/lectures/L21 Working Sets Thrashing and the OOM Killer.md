@@ -2,9 +2,13 @@
 ## Week 6 · Lecture 3 of 3
 ### Working Sets, Thrashing, and the OOM Killer
 
+*“If a program manipulates a large amount of data, it does so in a small number of ways.”* — Alan Perlis, "Epigrams on Programming" (1982), #5
+
 ---
 
 **Sat:** Friday of Week 6, 09:00–09:50, VNC 101 · **Reading:** OSTEP Ch. 22 §22.10–§22.11; Denning (1968) · **Next:** Week 7, file systems
+
+**Coursework:** 📝 **PS 5** due today 17:00 · 📊 **Quiz 7** Mon of Week 7 · 🔬 **Lab 6** Tue of Week 7 15:00–16:50 · 📋 **Project 1** released Wed of Week 7, due Fri of Week 11 17:00 · 📝 **PS 7** released Wed of Week 7, due Fri of Week 8 17:00 · 📘 **Midterm 2** Mon of Week 8 18:00–19:15
 
 ---
 

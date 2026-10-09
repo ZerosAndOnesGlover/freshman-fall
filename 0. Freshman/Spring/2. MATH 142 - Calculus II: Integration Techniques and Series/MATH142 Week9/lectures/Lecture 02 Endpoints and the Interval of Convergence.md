@@ -2,7 +2,11 @@
 ## Week 9 · Lecture 2 (Tuesday)
 ### Endpoints, and the Interval of Convergence
 
+*“There is no doubt that we cannot do without variable quantities in the sense of the potential infinite. But from this very fact the necessity of the actual infinite can be demonstrated.”* — Georg Cantor, "Über die verschiedenen Ansichten in Bezug auf die actualunendlichen Zahlen" (1886)
+
 **Date:** Tuesday 23 March 2027 · 11:00–11:50 · Week 9
+
+**Coursework:** 🔬 **Lab 8** Wed 24 Mar 15:00–16:50 · 📝 **PS 8** due Fri 26 Mar 17:00 · 📝 **PS 9** released Fri 26 Mar 12:00, due Fri 2 Apr 17:00 · 📊 **Quiz 10** Mon 29 Mar 11:00–11:15 · 📘 **Midterm 2** Wed 31 Mar 18:00–19:15
 
 ---
 

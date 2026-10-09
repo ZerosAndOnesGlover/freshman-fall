@@ -1,7 +1,13 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 10 · Lecture 3: Conditional Compilation and Macro Idioms
 
+*“Every program has (at least) two purposes: the one for which it was written, and another for which it wasn't.”* — Alan Perlis, "Epigrams on Programming" (1982), #16
+
 **Date:** Thursday 3 December 2026 · 10:00–10:50 · Week 10
+
+**Reading:** C11 §6.10.1 · C11 §7.2 · `man 3 assert` · `gcc -dM -E - < /dev/null` *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 10** released Fri 4 Dec 10:00, due Fri 11 Dec 17:00 · 🔬 **Lab 10** Mon 7 Dec 15:00–16:50 · 📊 **Quiz 10** Tue 8 Dec 10:00–10:10
 
 ---
 

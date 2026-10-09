@@ -2,9 +2,13 @@
 ## Week 0 · Lecture 1 of 2
 ### What a Language Is — and Why There Are So Many
 
+*“A language that doesn't affect the way you think about programming, is not worth knowing.”* — Alan Perlis, "Epigrams on Programming" (1982), #19
+
 ---
 
 **Reading:** SICP §1.1 · Dragon §1.1–1.2 · **Next:** L02, grammars and the shape of a program
+
+**Coursework:** 📝 **PS 0** released Wed this week, due Fri of Week 1 17:00 · 🔬 **Lab 0** Fri this week 14:00–15:50
 
 ---
 

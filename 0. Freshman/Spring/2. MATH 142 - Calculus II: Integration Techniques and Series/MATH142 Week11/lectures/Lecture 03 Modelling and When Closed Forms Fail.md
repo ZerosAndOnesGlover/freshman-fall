@@ -2,7 +2,11 @@
 ## Week 11 · Lecture 3 (Friday)
 ### Modelling, and When Closed Forms Fail
 
+*“Whence a geometrically moving point approaching a fixed one has its velocities proportionate to its distances from the fixed one.”* — John Napier, *The Construction of the Wonderful Canon of Logarithms* (1619), tr. Macdonald — exponential decay, stated as a rate
+
 **Date:** Friday 9 April 2027 · 11:00–11:50 · Week 11
+
+**Coursework:** 📝 **PS 10** due today 17:00 · 📝 **PS 11** released today 12:00, due Fri 16 Apr 17:00 · 📊 **Quiz 12** Mon 12 Apr 11:00–11:15 · 🔬 **Lab 11** Wed 14 Apr 15:00–16:50 · 🔬 **Lab 12** Thu 15 Apr 15:00–16:50 · 📕 **Final exam** Tue 20 Apr 09:00–11:30
 
 ---
 

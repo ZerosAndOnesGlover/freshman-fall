@@ -2,7 +2,13 @@
 ## Lecture 22 (L22) — Permutations and Combinations
 ### Thursday, Week 7
 
+*“Musica est exercitium arithmeticae occultum nescientis se numerare animi. [Music is a hidden arithmetic exercise of the soul, which does not know that it is counting.]”* — Gottfried Wilhelm Leibniz, letter to Christian Goldbach (1712)
+
 **Date:** Thursday 12 November 2026 · 13:00–13:50 · Week 7
+
+**Reading:** Rosen, 8e §6.3, §6.5 · Epp, 5e §9.2, §9.5–9.6 · Levin, 3e §1.2–1.3, §1.5 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 6** due Fri 13 Nov 17:00 · 📝 **PS 7** released Fri 13 Nov 14:00, due Fri 20 Nov 17:00 · 📊 **Quiz 8** Mon 16 Nov 13:00–13:15 · 🔬 **Lab 7** Wed 18 Nov 15:00–16:50
 
 ---
 
@@ -247,5 +253,11 @@ Indistinguishable objects:
    - (b) each bucket holds at most 1 key?
 
 ---
+
+## Reading
+
+- **Rosen, 8e §6.3, §6.5** — Permutations and combinations; with repetition
+- **Epp, 5e §9.2, §9.5–9.6** — Permutations; combinations; r-combinations with repetition
+- **Levin, 3e §1.2–1.3, §1.5** — Binomial coefficients; combinations and permutations; stars and bars
 
 *Next: Lecture 23 — The Binomial Theorem and Pascal's Triangle*

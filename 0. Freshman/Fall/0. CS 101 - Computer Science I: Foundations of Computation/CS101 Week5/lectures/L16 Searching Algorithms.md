@@ -1,10 +1,15 @@
 # CS 101 · Lecture 16 (Week 5, Lecture 1)
 ## Searching Algorithms: Linear and Binary Search
 
+*“Although the basic idea of binary search is comparatively straightforward, the details can be surprisingly tricky.”* — Donald Knuth, *The Art of Computer Programming*, Vol. 3, *Sorting and Searching*, §6.2.1
+
 **Week 5 · Wednesday**
-*"Why does binary search work on sorted arrays? Because sorting imposes order — a global structure — on data, and binary search exploits that structure to eliminate half the search space with each comparison." — CS 101*
 
 **Date:** Wednesday 28 October 2026 · 09:00–09:50 · Week 5
+
+**Reading:** Guttag, Ch. 12 · CLRS, Ch. 2 *(details at the end of the lecture)*
+
+**Coursework:** 📊 **Quiz 5** today 09:00–09:10 · 📝 **PS 4** due Fri 30 Oct 17:00 · 📝 **PS 5** released Fri 30 Oct 10:00, due Fri 6 Nov 17:00 · 📘 **Midterm 1** Mon 2 Nov 18:00–19:15 · 🔬 **Lab 5** Tue 3 Nov 15:00–16:50
 
 ---
 
@@ -392,7 +397,7 @@ Python is immune because its integers are **arbitrary precision** — `lo + hi` 
 
 ## Reading
 
-- **Guttag, Ch. 3.4** — Bisection Search (primary)
+- **Guttag, Ch. 12** — search algorithms (primary); Ch. 3 for bisection search on numbers
 - **CLRS, Ch. 2** — brief mention of search as a warm-up to sorting (optional, for the ambitious)
 
 ---

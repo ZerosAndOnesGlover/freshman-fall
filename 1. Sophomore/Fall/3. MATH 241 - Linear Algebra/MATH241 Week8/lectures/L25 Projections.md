@@ -2,9 +2,13 @@
 ## Week 8 · Lecture 2 of 3 · **Tuesday**
 ### Projections
 
+*“Mathematics succeeds in dealing with tangible reality by being conceptual. We cannot cope with the full physical complexity; we must idealize.”* — George Pólya, *Mathematical Methods in Science* (1977)
+
 ---
 
 **Reading:** Strang §4.2 · **Previous:** L24, orthogonality · **Next:** L26, orthonormal bases and Gram–Schmidt
+
+**Coursework:** 📝 **PS 8** released Wed this week, due Fri of Week 9 17:00 · 💬 **Recitation 7** Thu this week 15:00–15:50 · 📝 **PS 7** due Fri this week 17:00 · 📊 **Quiz 9** Mon of Week 9
 
 > **Every number in this lecture is reproduced by `resources/orthogonal.py`.**
 

@@ -2,7 +2,13 @@
 ## Lecture 19 (L19) — Equivalence Relations and Equivalence Classes
 ### Thursday, Week 6
 
+*“A mathematician, like a painter or a poet, is a maker of patterns. If his patterns are more permanent than theirs, it is because they are made with ideas.”* — G. H. Hardy, *A Mathematician's Apology* (1940)
+
 **Date:** Thursday 5 November 2026 · 13:00–13:50 · Week 6
+
+**Reading:** Rosen, 8e §9.5 · Epp, 5e §8.3 *(details at the end of the lecture)*
+
+**Coursework:** 📘 **Midterm 1** Fri 6 Nov 18:00–19:15 · 📝 **PS 5** due Fri 6 Nov 17:00 · 📝 **PS 6** released Fri 6 Nov 14:00, due Fri 13 Nov 17:00 · 📊 **Quiz 7** Mon 9 Nov 13:00–13:15 · 🔬 **Lab 6** Wed 11 Nov 15:00–16:50
 
 ---
 
@@ -222,5 +228,10 @@ Fundamental Theorem:
 5. On the set of all triangles in the plane, define $T_1\sim T_2 \iff T_1$ is similar to $T_2$ (same shape, possibly different size). Argue informally that this is an equivalence relation, and describe what an equivalence class looks like.
 
 ---
+
+## Reading
+
+- **Rosen, 8e §9.5** — Equivalence relations
+- **Epp, 5e §8.3** — Equivalence relations
 
 *Next: Lecture 20 — Partial Orders and Hasse Diagrams*

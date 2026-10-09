@@ -1,10 +1,14 @@
 # PROG 102 · Lecture 32
 ## Mutexes, Deadlock, and Condition Variables
 
+*“In each cycle a so-called "critical section" occurs, critical in the sense that the processes have to be constructed in such a way, that at any moment at most one of the two is engaged in its critical section.”* — Edsger W. Dijkstra, "Cooperating Sequential Processes" (EWD123, 1965)
+
 **Week 10 · Wednesday · 50 minutes**
 **Reading:** Williams Ch. 3–4 · **Assumes:** L31, Week 5 (RAII)
 
 **Date:** Wednesday 31 March 2027 · 10:00–10:50 · Week 10
+
+**Coursework:** 📝 **PS 10** released Fri 2 Apr 10:00, due Fri 9 Apr 17:00 · 📝 **PS 9** due Fri 2 Apr 17:00 · 🔬 **Lab 10** Mon 5 Apr 15:00–16:50 · 📊 **Quiz 11** Tue 6 Apr 10:00–10:15 · 📋 **Project 2** released Tue 6 Apr 10:00, due Fri 16 Apr 17:00
 
 ---
 

@@ -2,7 +2,11 @@
 ## Week 7 · Lecture 1 (Wednesday)
 ### Latches and the Forbidden State
 
+*“Structured Programming supports the law of the excluded middle.”* — Alan Perlis, "Epigrams on Programming" (1982), #38
+
 **Date:** Wednesday 10 March 2027 · 13:00–14:15 · Week 7
+
+**Coursework:** 📊 **Quiz 6** today 13:00–13:10 · 📝 **PS 6** due Thu 11 Mar 13:00 · 📝 **PS 7** released Thu 11 Mar 14:30, due Thu 18 Mar 13:00 · 🔬 **Lab 7** Fri 12 Mar 14:00–15:50
 
 ---
 

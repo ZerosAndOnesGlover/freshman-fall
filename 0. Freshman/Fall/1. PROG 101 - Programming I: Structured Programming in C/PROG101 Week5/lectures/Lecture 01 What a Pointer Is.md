@@ -1,7 +1,13 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 5 · Lecture 1: What a Pointer Is
 
+*“Any problem in computer science can be solved with another level of indirection.”* — David Wheeler, as quoted by Butler Lampson in his Turing Award Lecture (1993)
+
 **Date:** Tuesday 27 October 2026 · 10:00–10:50 · Week 5
+
+**Reading:** K&R, §5.1–5.2 · C11 §6.3.2.3 · `gdb`: `p &x`, `p p`, `p *p`, `x/4xb &x` *(details at the end of the lecture)*
+
+**Coursework:** 📊 **Quiz 4** today 10:00–10:10 · 📝 **PS 4** due Fri 30 Oct 17:00 · 📝 **PS 5** released Fri 30 Oct 10:00, due Fri 6 Nov 17:00 · 🔬 **Lab 5** Mon 2 Nov 15:00–16:50 · 📘 **Midterm 1** Wed 4 Nov 18:00–19:30
 
 ---
 

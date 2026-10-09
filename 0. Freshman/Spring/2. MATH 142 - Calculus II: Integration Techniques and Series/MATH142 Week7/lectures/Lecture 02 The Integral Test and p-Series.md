@@ -2,7 +2,11 @@
 ## Week 7 · Lecture 2 (Tuesday)
 ### The Integral Test, and $p$-Series
 
+*“To those who ask what the infinitely small quantity in mathematics is, we answer that it is actually zero. Hence there are not so many mysteries hidden in this concept as they are usually believed to be.”* — Leonhard Euler, *Institutiones calculi differentialis* (1755)
+
 **Date:** Tuesday 9 March 2027 · 11:00–11:50 · Week 7
+
+**Coursework:** 🔬 **Lab 6** Wed 10 Mar 15:00–16:50 · 📝 **PS 6** due Fri 12 Mar 17:00 · 📝 **PS 7** released Fri 12 Mar 12:00, due Fri 19 Mar 17:00 · 📊 **Quiz 8** Mon 15 Mar 11:00–11:15
 
 ---
 

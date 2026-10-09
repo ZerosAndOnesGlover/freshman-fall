@@ -2,8 +2,8 @@
 
 ## Required Textbook Reading
 
-- **HRK:** Ch. 17 (Oscillations) — §17.1–17.7 for SHM, the pendulum, and damped/forced oscillations
-- **Serway:** Ch. 15 (Oscillatory Motion) — all sections
+- **HRK:** Halliday, Resnick & Krane, *Physics*, 5th ed. — Ch. 17 (Oscillations)
+- **Serway:** Serway & Jewett, *Physics for Scientists and Engineers*, 10th ed. — Ch. 15 (Oscillatory Motion) §15.1–15.7
 
 ## Simulations
 

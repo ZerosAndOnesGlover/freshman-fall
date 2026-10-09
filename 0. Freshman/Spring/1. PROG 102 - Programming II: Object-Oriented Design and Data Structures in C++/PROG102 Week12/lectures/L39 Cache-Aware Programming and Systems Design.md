@@ -1,10 +1,14 @@
 # PROG 102 · Lecture 39
 ## Cache-Aware Programming and Systems Design
 
+*“...we do not consider it as good engineering practice to consume a resource lavishly just because it happens to be cheap.”* — Niklaus Wirth, *Project Oberon* (2013), §2.3
+
 **Week 12 · Thursday · 50 minutes · The last lecture**
 **Reading:** Drepper, *What Every Programmer Should Know About Memory* · **Assumes:** Weeks 3, 6, 10, 11
 
 **Date:** Thursday 15 April 2027 · 10:00–10:50 · Week 12
+
+**Coursework:** 📋 **Project 2** due Fri 16 Apr 17:00 · 📝 **PS 11** due Fri 16 Apr 17:00 · 🔬 **Lab 12** Mon 19 Apr 15:00–16:50 · 📕 **Final exam** Thu 22 Apr 14:00–16:30
 
 ---
 

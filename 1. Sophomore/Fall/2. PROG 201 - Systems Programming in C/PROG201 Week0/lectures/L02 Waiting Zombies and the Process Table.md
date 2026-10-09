@@ -2,9 +2,13 @@
 ## Week 0 · Lecture 2 of 3
 ### Waiting: Zombies, Orphans, and the Process Table
 
+*“Is it possible that software is not like anything else, that it is meant to be discarded: that the whole point is to see it as a soap bubble?”* — Alan Perlis, "Epigrams on Programming" (1982), #74
+
 ---
 
 **Reading:** APUE §8.5–8.6, §9.2–9.5 · **Previous:** L01, `fork` and `exec` · **Next:** L03, signals
+
+**Coursework:** 📝 **PS 0** released Wed this week, due Fri of Week 1 17:00 · 🔬 **Lab 0** Fri this week 17:00–18:50
 
 ---
 

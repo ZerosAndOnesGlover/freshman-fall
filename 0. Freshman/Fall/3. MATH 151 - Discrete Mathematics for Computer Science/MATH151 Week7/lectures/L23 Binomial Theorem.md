@@ -2,7 +2,13 @@
 ## Lecture 23 (L23) — The Binomial Theorem and Pascal's Triangle
 ### Friday, Week 7
 
+*“The absolute requisites for the study of this work... are a knowledge of algebra to the binomial at least, plane and solid geometry, plane trigonometry, and the most simple part of the usual applications of algebra to geometry.”* — Augustus De Morgan, *The Differential and Integral Calculus* (1836)
+
 **Date:** Friday 13 November 2026 · 13:00–13:50 · Week 7
+
+**Reading:** Rosen, 8e §6.4 · Epp, 5e §9.7 · Levin, 3e §1.2, §1.4 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 6** due today 17:00 · 📝 **PS 7** released today 14:00, due Fri 20 Nov 17:00 · 📊 **Quiz 8** Mon 16 Nov 13:00–13:15 · 🔬 **Lab 7** Wed 18 Nov 15:00–16:50
 
 ---
 
@@ -200,5 +206,11 @@ Multinomial Theorem: generalizes to sums of m terms
 8. **Challenge:** Use the Hockey Stick Identity to compute $\binom{3}{3}+\binom{4}{3}+\binom{5}{3}+\binom{6}{3}+\binom{7}{3}$ without adding the five terms directly — verify your shortcut answer by also computing the direct sum.
 
 ---
+
+## Reading
+
+- **Rosen, 8e §6.4** — Binomial coefficients and identities
+- **Epp, 5e §9.7** — Pascal's formula and the binomial theorem
+- **Levin, 3e §1.2, §1.4** — Binomial coefficients; combinatorial proofs
 
 *Week 7 complete. Week 8: Advanced Counting — the Pigeonhole Principle and Inclusion–Exclusion. The identity $\sum_k(-1)^k\binom nk = 0$ proved above is exactly what makes inclusion–exclusion's alternating signs work.*

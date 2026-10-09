@@ -1,7 +1,13 @@
 # CS 102 · Computer Science II
 ## Lecture 37: P, NP, and Verification
 
+*“It would obviously mean that in spite of the undecidability of the Entscheidungsproblem, the mental work of a mathematician concerning Yes-or-No questions could be completely replaced by a machine.”* — Kurt Gödel, letter to John von Neumann (20 March 1956) — the first statement of what became P vs NP
+
 **Date:** Monday 12 April 2027 · 09:00–09:50 · Week 12
+
+**Reading:** CLRS §34.1–34.2
+
+**Coursework:** 🔬 **Lab 11** Tue 13 Apr 15:00–16:50 · 📋 **Project 2** due Fri 16 Apr 17:00 · 📝 **PS 11** due Fri 16 Apr 17:00 · 📕 **Final exam** Wed 21 Apr 09:00–11:30
 
 ---
 

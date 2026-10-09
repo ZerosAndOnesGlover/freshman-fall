@@ -2,9 +2,13 @@
 ## Week 9 · Lecture 3 of 3
 ### Integer Overflows, Format Strings, and the Security Mindset
 
+*“Anyone, from the most clueless amateur to the best cryptographer, can create an algorithm that he himself can't break.”* — Bruce Schneier ("Schneier's Law")
+
 ---
 
 **Reading:** CS:APP §2.3 (revisited), §3.10 · **Previous:** L29, ROP and CFI
+
+**Coursework:** 📋 **Project 1** due today 17:00 · 📝 **PS 8** due today 17:00 · 📊 **Quiz 10** Mon of Week 10 · 📘 **Midterm 2** Mon of Week 10 18:00–19:15 · 🔬 **Lab 9** Tue of Week 10 15:00–16:50 · 📝 **PS 10** released Wed of Week 10, due Fri of Week 11 17:00
 
 ---
 

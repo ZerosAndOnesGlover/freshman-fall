@@ -2,9 +2,13 @@
 ## Week 2 · Lecture 3 of 3
 ### Semaphores, and Choosing a Mechanism
 
+*“Such an alternative is given by introducing a) among the common variables special purpose integers, which we shall call "semaphores". b) among the repertoire of actions, from which the individual processes have to be constructed, two new primitives, which we call the "P-operation" and the "V-operation" respectively.”* — Edsger W. Dijkstra, "Cooperating Sequential Processes" (EWD123, 1965)
+
 ---
 
 **Reading:** APUE §15.8, §15.10 · TLPI Ch. 53 · `man 7 sem_overview`, `man 3 sem_wait` · **Previous:** L08 · **Next:** Lab 2 — benchmark all four, on the Monday of Week 3
+
+**Coursework:** 📝 **PS 1** due Fri this week 17:00 · 🔬 **Lab 2** Mon of Week 3 15:00–16:50 · 📊 **Quiz 3** Tue of Week 3 · 📝 **PS 3** released Wed of Week 3, due Fri of Week 4 17:00
 
 ---
 

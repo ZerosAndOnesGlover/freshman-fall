@@ -2,9 +2,13 @@
 ## Week 1 · Lecture 3 of 3
 ### Address Spaces, and a Process from `fork` to `wait`
 
+*“An adequate bootstrap is a contradiction in terms.”* — Alan Perlis, "Epigrams on Programming" (1982), #72
+
 ---
 
 **Sat:** Friday of Week 1, 09:00–09:50, VNC 101 · **Reading:** OSTEP Ch. 5; xv6 book Ch. 1 and `exec.c` · **Next:** Week 2, scheduling
+
+**Coursework:** 📝 **PS 0** due today 17:00 · 📊 **Quiz 2** Mon of Week 2 · 🔬 **Lab 1** Tue of Week 2 15:00–16:50 · 📝 **PS 2** released Wed of Week 2, due Fri of Week 3 17:00
 
 ---
 

@@ -2,9 +2,13 @@
 ## Week 6 · Lecture 2 of **2** · **Friday**
 ### The Characteristic Polynomial
 
+*“A ring of polynomials in any number of variables over a ring of coefficients that has an identity element and a finite basis, itself has a finite basis.”* — Emmy Noether, as quoted in Morris Kline, *Mathematical Thought from Ancient to Modern Times* (1972), p. 1153
+
 ---
 
 **Reading:** Strang §6.1 (second half), §6.2 opening · **Previous:** L19, eigenvalues and eigenvectors · **Next:** Week 7, diagonalisation
+
+**Coursework:** 📝 **PS 5** due today 17:00 · 📊 **Quiz 7** Mon of Week 7 · 📝 **PS 7** released Wed of Week 7, due Fri of Week 8 17:00 · 💬 **Recitation 6** Thu of Week 7 15:00–15:50
 
 > **PS 5 is due at 17:00 today.** PS 6 was released Wednesday and is due the Friday of Week 7.
 >

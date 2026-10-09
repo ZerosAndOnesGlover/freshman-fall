@@ -2,7 +2,11 @@
 ## Week 10 · Lecture 3 (Friday)
 ### Applications — and Week 0's Debt
 
+*“In the long run, the methods are the important part of the course. It is not enough to know the theory; you should be able to apply it.”* — Richard Hamming, *Methods of Mathematics Applied to Calculus, Probability, and Statistics* (1985)
+
 **Date:** Friday 2 April 2027 · 11:00–11:50 · Week 10
+
+**Coursework:** 📝 **PS 10** released today 12:00, due Fri 9 Apr 17:00 · 📝 **PS 9** due today 17:00 · 📊 **Quiz 11** Mon 5 Apr 11:00–11:15 · 🔬 **Lab 10** Wed 7 Apr 15:00–16:50 · 📕 **Final exam** Tue 20 Apr 09:00–11:30
 
 ---
 

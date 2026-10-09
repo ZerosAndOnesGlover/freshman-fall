@@ -1,7 +1,13 @@
 # PHYS 141 · Physics I: Mechanics, Waves & Thermodynamics
 ## Lecture 39 — Review and the Road Ahead
 
+*“If I have seen further it is by standing on ye sholders of Giants.”* — Isaac Newton, letter to Robert Hooke (1676)
+
 **Date:** Friday 18 December 2026 · 14:00–14:50 · Week 12
+
+**Reading:** Serway & Jewett, the Summary at the end of Chapters 2–12 and 15–21 · your own weekly summaries
+
+**Coursework:** 📝 **PS 11** due today 17:00 · 📝 **PS 12** released today 15:00, due Wed 23 Dec 17:00 · 📊 **Quiz 12** Mon 21 Dec 14:00
 
 ---
 

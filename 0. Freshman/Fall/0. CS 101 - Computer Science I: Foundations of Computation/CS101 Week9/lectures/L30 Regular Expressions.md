@@ -1,7 +1,13 @@
 # CS 101 · Lecture 30 (Week 9, Lecture 3)
 ## Regular Expressions: A Language for Patterns
 
+*“I define UNIX as 30 definitions of regular expressions living under one roof.”* — Donald Knuth, *Digital Typography* (1999), ch. 33
+
 **Date:** Friday 27 November 2026 · 09:00–09:50 · Week 9
+
+**Reading:** Python docs — Regular Expression HOWTO · Python docs — `re` module reference · Friedl, *Mastering Regular Expressions*, Ch. 4–6 *(details at the end of the lecture)*
+
+**Coursework:** 📋 **Project 1** due today 17:00 · 📝 **PS 8** due today 17:00 · 📝 **PS 9** released today 10:00, due Fri 4 Dec 17:00 · 📘 **Midterm 2** Mon 30 Nov 18:00–19:15 · 🔬 **Lab 9** Tue 1 Dec 15:00–16:50 · 📊 **Quiz 10** Wed 2 Dec 09:00–09:10
 
 ---
 

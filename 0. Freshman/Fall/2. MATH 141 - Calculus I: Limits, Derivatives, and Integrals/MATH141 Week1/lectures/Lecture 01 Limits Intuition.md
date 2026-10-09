@@ -2,7 +2,11 @@
 ## Week 1 · Lecture 1 (Monday)
 ### Limits: Intuition, Informal Definition, and the One-Sided Limit
 
+*“We shall not consider any part of space or time as indivisible, or infinitely little; but we shall consider a point as a term or limit of a line, and a moment as a term or limit of time.”* — Colin Maclaurin, *A Treatise of Fluxions* (1742), Introduction
+
 **Date:** Monday 28 September 2026 · 11:00–11:50 · Week 1
+
+**Coursework:** 📊 **Quiz 1** today 11:00–11:15 · 📝 **PS 1** released Wed 30 Sep 12:00, due Wed 7 Oct 11:00 · 🔬 **Lab 1** Fri 2 Oct 15:00–16:50, report due Mon 5 Oct 11:00
 
 ---
 
@@ -22,7 +26,7 @@ $$v_{\text{avg}} = \frac{\text{distance}}{\text{time}} = \frac{s(t+h) - s(t)}{h}
 
 But instantaneous velocity — the reading on a speedometer at a single instant — requires dividing distance by time over an *infinitely short* interval. That means $h \to 0$. But you cannot set $h = 0$ directly (you get $0/0$, which is meaningless).
 
-The **limit** is the mathematical tool invented to resolve this. Every concept in calculus — the derivative, the integral, continuity — is defined using limits.
+The **limit** is the mathematical tool invented to resolve this. Every concept in calculus, the derivative, the integral, continuity; is defined using limits.
 
 ---
 
@@ -60,7 +64,7 @@ The function has a *hole* at $x = 1$ but the limit exists and equals $2$.
 | 1.01 | 2.01 |
 | 1.1 | 2.1 |
 
-The table suggests — but does not prove — the limit is 2. Algebra confirmed it.
+The table suggests, but does not prove, the limit is 2. Algebra confirmed it.
 
 > ⚠️ **Warning:** Numerical tables can be misleading. They suggest limits but don't prove them. The limit of $f(x) = \sin(\pi/x)$ as $x \to 0$ cannot be found from a table — the function oscillates infinitely. Algebra and formal proofs are the only reliable tools.
 

@@ -1,11 +1,15 @@
 # PROG 102 · Lecture 28
 ## Exceptions and Stack Unwinding
 
+*“Some people found error messages they couldn't ignore more annoying than wrong results, and, when judging the relative merits of programming languages, some still seem to equate "the ease of programming" with the ease of making undetected mistakes.”* — Edsger W. Dijkstra, "On the foolishness of 'natural language programming'" (EWD667, 1978)
+
 **Week 9 · Tuesday · 50 minutes**
 **Reading:** *C++ Primer* §5.6, Ch. 18.1 · **Reference:** Meyers Item 8 (destructors and exceptions)
 **Assumes:** Week 5 (RAII), Week 1 (copy-and-swap)
 
 **Date:** Tuesday 23 March 2027 · 10:00–10:50 · Week 9
+
+**Coursework:** 📊 **Quiz 9** today 10:00–10:15 · 📋 **Project 1** due Fri 26 Mar 17:00 · 📝 **PS 8** due Fri 26 Mar 17:00 · 📝 **PS 9** released Fri 26 Mar 10:00, due Fri 2 Apr 17:00 · 🔬 **Lab 9** Mon 29 Mar 15:00–16:50 · 📘 **Midterm 2** Tue 30 Mar 18:00–19:30
 
 ---
 

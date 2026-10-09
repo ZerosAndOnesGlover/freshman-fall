@@ -1,11 +1,15 @@
 # PROG 102 · Lecture 08
 ## Class Templates and Generic Containers
 
+*“Interfaces keep things tidy, but don't accelerate growth: Functions do.”* — Alan Perlis, "Epigrams on Programming" (1982), #94
+
 **Week 2 · Wednesday · 50 minutes**
 **Reading:** *C++ Primer* §16.1.2, §16.1.3 · **Reference:** Stroustrup Ch. 23
 **Assumes:** L07, and Week 1's Rule of Three
 
 **Date:** Wednesday 3 February 2027 · 10:00–10:50 · Week 2
+
+**Coursework:** 📝 **PS 1** due Fri 5 Feb 17:00 · 📝 **PS 2** released Fri 5 Feb 10:00, due Fri 12 Feb 17:00 · 🔬 **Lab 2** Mon 8 Feb 15:00–16:50 · 📊 **Quiz 3** Tue 9 Feb 10:00–10:15
 
 ---
 

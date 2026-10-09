@@ -1,9 +1,15 @@
 # PHYS 141 · Lecture 3
 # Vectors: Algebra, Dot Product, Cross Product
 
+*“Symmetrical equations are good in their place, but 'vector' is a useless survival, or offshoot from quaternions, and has never been of the slightest use to any creature.”* — Lord Kelvin, letter to G. F. FitzGerald (1896) — history did not agree with him
+
 > **Core Principle:** A vector is a quantity with both magnitude and direction, obeying specific addition rules (the parallelogram rule). Scalars (mass, temperature, energy) have magnitude only. The distinction is not pedantic — it determines what operations are physically meaningful.
 
 **Date:** Friday 25 September 2026 · 14:00–14:50 · Week 0
+
+**Reading:** Serway & Jewett §3.2–3.4, §7.3 (scalar product), §11.1 (vector product)
+
+**Coursework:** 📝 **PS 0** released today 15:00, due Fri 2 Oct 17:00 · 📊 **Quiz 0** Mon 28 Sep 14:00 · 🔬 **Lab 1** Thu 1 Oct 14:00–17:00
 
 ---
 

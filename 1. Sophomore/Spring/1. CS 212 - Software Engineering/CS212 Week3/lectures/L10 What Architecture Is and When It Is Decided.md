@@ -2,9 +2,13 @@
 ## Week 3 · Lecture 1 of 3
 ### What Architecture Is, and When It Is Decided
 
+*“The essence of a software entity is a construct of interlocking concepts: data sets, relationships among data items, algorithms, and invocations of functions.”* — Fred Brooks, "No Silver Bullet" (1986)
+
 ---
 
 **Sat:** Tuesday of Week 3, 10:00–10:50, TH 200 · **⚠️ Quiz 3 in the first ten minutes** — covers Week 2 · **Reading:** Sommerville Ch. 6 §6.1–6.2 · **Next:** L11, layered and hexagonal
+
+**Coursework:** 📊 **Quiz 3** today · 📝 **Assignment 3** released Wed this week 17:00, due Fri of Week 4 17:00 · 📝 **Assignment 2** due Fri this week 17:00
 
 ---
 

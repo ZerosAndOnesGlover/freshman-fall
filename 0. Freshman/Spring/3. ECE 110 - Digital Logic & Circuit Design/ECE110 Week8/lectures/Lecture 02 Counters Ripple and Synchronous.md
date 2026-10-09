@@ -2,7 +2,11 @@
 ## Week 8 · Lecture 2 (Thursday)
 ### Counters — Ripple and Synchronous
 
+*“Musica est exercitium arithmeticae occultum nescientis se numerare animi. [Music is a hidden arithmetic exercise of the soul, which does not know that it is counting.]”* — Gottfried Wilhelm Leibniz, letter to Christian Goldbach (1712)
+
 **Date:** Thursday 18 March 2027 · 13:00–14:15 · Week 8
+
+**Coursework:** 📝 **PS 7** due today 13:00 · 📝 **PS 8** released today 14:30, due Thu 25 Mar 13:00 · 🔬 **Lab 8** Fri 19 Mar 14:00–15:50 · 📊 **Quiz 8** Wed 24 Mar 13:00–13:10
 
 ---
 

@@ -2,7 +2,13 @@
 ## Lecture 12 (L12) — Sets and Set Operations
 ### Monday, Week 4
 
+*“The essence of mathematics lies entirely in its freedom.”* — Georg Cantor, *Grundlagen einer allgemeinen Mannigfaltigkeitslehre* (1883)
+
 **Date:** Monday 19 October 2026 · 13:00–13:50 · Week 4
+
+**Reading:** Rosen, 8e §2.1–2.2 · Epp, 5e §6.1 · Levin, 3e §0.3 *(details at the end of the lecture)*
+
+**Coursework:** 📊 **Quiz 4** today 13:00–13:15 · 🔬 **Lab 3** Wed 21 Oct 15:00–16:50 · 📝 **PS 3** due Fri 23 Oct 17:00 · 📝 **PS 4** released Fri 23 Oct 14:00, due Fri 30 Oct 17:00
 
 ---
 
@@ -270,5 +276,11 @@ Let $U = \{1,2,\ldots,12\}$, $A = \{1,2,3,4,5,6\}$, $B = \{2,4,6,8,10,12\}$, $C 
 5. Prove: $A \subseteq B$ if and only if $A \cap B = A$.
 
 ---
+
+## Reading
+
+- **Rosen, 8e §2.1–2.2** — Sets; set operations
+- **Epp, 5e §6.1** — Definitions and the element method of proof
+- **Levin, 3e §0.3** — Sets
 
 *Next: Lecture 13 — Set Identities and Proof Techniques*

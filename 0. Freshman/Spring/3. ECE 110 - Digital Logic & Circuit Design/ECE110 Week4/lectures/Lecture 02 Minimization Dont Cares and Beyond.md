@@ -2,7 +2,11 @@
 ## Week 4 · Lecture 2 (Thursday)
 ### Minimization, Don't-Cares, and Beyond
 
+*“Fools ignore complexity. Pragmatists suffer it. Some can avoid it. Geniuses remove it.”* — Alan Perlis, "Epigrams on Programming" (1982), #58
+
 **Date:** Thursday 18 February 2027 · 13:00–14:15 · Week 4
+
+**Coursework:** 📝 **PS 3** due today 13:00 · 📝 **PS 4** released today 14:30, due Thu 25 Feb 13:00 · 🔬 **Lab 4** Fri 19 Feb 14:00–15:50 · 📊 **Quiz 4** Wed 24 Feb 13:00–13:10
 
 ---
 

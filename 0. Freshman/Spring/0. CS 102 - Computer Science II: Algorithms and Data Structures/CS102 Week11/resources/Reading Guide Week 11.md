@@ -5,7 +5,10 @@
 
 ## Required
 
-**CLRS, 4th ed. — Chapter 33, §33.1–33.4** (Computational Geometry), about 25 pages.
+**The CLRS 4th edition has no computational geometry chapter** (its Chapter 33 is machine learning).
+The sections below are **Chapter 33 of the CLRS 3rd edition**, §33.1–33.4, about 25 pages. With only
+the 4th edition, read de Berg et al. §1.1 (convex hulls) and §2.1 (segment intersection), Kleinberg &
+Tardos §5.4 (closest pair), and the *Competitive Programmer's Handbook* Ch. 29–30 instead.
 
 - §33.1 line-segment properties — **the section that matters**
 - §33.2 determining whether any pair of segments intersects (the sweep line)
@@ -14,7 +17,7 @@
 
 **Segment trees and k-d trees are not in CLRS.** Use:
 
-- **Sedgewick & Wayne §3.5** — geometric search, k-d trees, interval search;
+- **de Berg et al. §5.2** — kd-trees;
 - **Competitive Programmer's Handbook (Laaksonen), Ch. 9** — the clearest short treatment of segment
   trees anywhere, and free;
 - **de Berg, Cheong, van Kreveld & Overmars, *Computational Geometry***, Ch. 1–5 — the standard

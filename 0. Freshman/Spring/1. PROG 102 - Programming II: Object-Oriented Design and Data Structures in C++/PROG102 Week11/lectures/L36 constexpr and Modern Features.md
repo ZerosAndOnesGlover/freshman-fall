@@ -1,11 +1,15 @@
 # PROG 102 · Lecture 36
 ## `constexpr` and Modern Features
 
+*“Anybody who comes to you and says he has a perfect language is either naïve or a salesman.”* — Bjarne Stroustrup, "C++0x — An Overview", University of Waterloo (2007)
+
 **Week 11 · Thursday · 50 minutes**
 **Reading:** *C++ Primer* §2.4.4, §6.5.2; cppreference on `constexpr` and structured bindings
 **Assumes:** L34, L35, Week 2
 
 **Date:** Thursday 8 April 2027 · 10:00–10:50 · Week 11
+
+**Coursework:** 📝 **PS 10** due Fri 9 Apr 17:00 · 📝 **PS 11** released Fri 9 Apr 10:00, due Fri 16 Apr 17:00 · 🔬 **Lab 11** Mon 12 Apr 15:00–16:50 · 📕 **Final exam** Thu 22 Apr 14:00–16:30
 
 ---
 

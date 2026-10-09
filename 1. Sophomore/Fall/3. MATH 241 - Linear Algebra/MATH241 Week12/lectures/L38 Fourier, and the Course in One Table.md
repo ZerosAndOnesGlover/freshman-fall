@@ -2,9 +2,13 @@
 ## Week 12 · Lecture 3 of 3 · **Friday**
 ### Fourier, and the Course in One Table
 
+*“Profound study of nature is the most fertile source of mathematical discoveries.”* — Joseph Fourier, *The Analytical Theory of Heat* (1822), ch. 1
+
 ---
 
 **Reading:** Strang §10.5, *Fourier Series: Linear Algebra for Functions* · **Previous:** L37, PageRank · **Next:** the final, Monday Dec 15
+
+**Coursework:** 📝 **PS 11** due today 17:00 · 📝 **PS 12** due today 17:00 · 💬 **Recitation 12** Thu of the completion period 15:00–15:50 · 📕 **Final exam** Mon of finals week 09:00–11:30
 
 > **The last lecture of the course.**
 >

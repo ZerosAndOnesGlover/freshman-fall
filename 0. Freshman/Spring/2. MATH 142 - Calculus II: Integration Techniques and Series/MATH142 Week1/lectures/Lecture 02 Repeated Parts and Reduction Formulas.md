@@ -2,7 +2,11 @@
 ## Week 1 · Lecture 2 (Tuesday)
 ### Repeated Parts, Reduction Formulas, and the Integral That Comes Back
 
+*“Faced with almost an infinity of details you cannot afford to deal constantly with the specific; you must learn to embrace more and more detail under the cover of generality.”* — Richard Hamming, *Methods of Mathematics Applied to Calculus, Probability, and Statistics* (1985)
+
 **Date:** Tuesday 26 January 2027 · 11:00–11:50 · Week 1
+
+**Coursework:** 🔬 **Lab 0** Wed 27 Jan 15:00–16:50 · 📝 **PS 1** released Fri 29 Jan 12:00, due Fri 5 Feb 17:00 · 📊 **Quiz 2** Mon 1 Feb 11:00–11:15
 
 ---
 

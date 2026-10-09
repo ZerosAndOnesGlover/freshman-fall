@@ -1,7 +1,13 @@
 # CS 102 · Computer Science II
 ## Lecture 16: Weighted Shortest Paths — Relaxation, Ordering, and DAGs
 
+*“Simplicity is the shortest path to a solution.”* — Ward Cunningham, as quoted in *Simplicity* (WikiWikiWeb)
+
 **Date:** Monday 22 February 2027 · 09:00–09:50 · Week 5
+
+**Reading:** CLRS Ch. 22 introduction (optimal substructure, relaxation), §20.4, §22.2, §20.5
+
+**Coursework:** 📊 **Quiz 5** today 09:00–09:15 · 🔬 **Lab 4** Tue 23 Feb 15:00–16:50 · 📝 **PS 4** due Fri 26 Feb 17:00 · 📝 **PS 5** released Fri 26 Feb 10:00, due Fri 5 Mar 17:00 · 📘 **Midterm 1** Mon 1 Mar 18:00–19:15
 
 ---
 
@@ -235,7 +241,7 @@ a confusing list of edges.
 
 ## 7. What to Do
 
-- Read CLRS §20.4 (topological sort), §20.5 (SCC), and §22.1 (DAG shortest paths).
+- Read CLRS §20.4 (topological sort), §20.5 (SCC), and §22.2 (DAG shortest paths).
 - **PS 5** implements both topological sorts and DAG shortest paths before touching Dijkstra.
 - **Quiz 5 covers Week 4** — representations, BFS, DFS, timestamps. Not this material.
 - **MIDTERM 1 is Monday 1 March** (Week 6) and covers Weeks 0–4. This lecture is *not* on it.

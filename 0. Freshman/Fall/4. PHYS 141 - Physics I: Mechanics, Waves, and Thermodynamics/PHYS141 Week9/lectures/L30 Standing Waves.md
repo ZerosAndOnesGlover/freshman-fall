@@ -1,7 +1,13 @@
 # PHYS 141 · Physics I: Mechanics, Waves & Thermodynamics
 ## Lecture 30 — Standing Waves and Resonance on Strings
 
+*“Just as the eye was made to see colours, and the ear to hear sounds, so the human mind was made to understand, not whatever you please, but quantity.”* — Johannes Kepler, letter (1599)
+
 **Date:** Friday 27 November 2026 · 14:00–14:50 · Week 9
+
+**Reading:** Serway & Jewett §17.2, §17.4–17.5 · HRK Ch. 18
+
+**Coursework:** 📝 **PS 8** due today 17:00 · 📝 **PS 9** released today 15:00, due Fri 4 Dec 17:00 · 📊 **Quiz 9** Mon 30 Nov 14:00 · 🔬 **Lab 10** Thu 3 Dec 14:00–17:00
 
 ---
 

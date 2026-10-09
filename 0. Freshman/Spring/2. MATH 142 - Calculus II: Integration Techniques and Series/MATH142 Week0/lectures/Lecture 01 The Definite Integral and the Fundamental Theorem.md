@@ -2,7 +2,11 @@
 ## Week 0 · Lecture 1 (Tuesday)
 ### The Definite Integral and the Fundamental Theorem
 
+*“Calculus systematically evades a great deal of numerical calculation.”* — Richard Hamming, *Methods of Mathematics Applied to Calculus, Probability, and Statistics* (1985)
+
 **Date:** Tuesday 19 January 2027 · 11:00–11:50 · Week 0 — moved from Monday 18 January (Martin Luther King Day, no classes)
+
+**Coursework:** 📝 **PS 0** released today 12:00, due Fri 22 Jan 17:00 · 📊 **Quiz 0** Thu 21 Jan 15:00–15:25 · 📊 **Quiz 1** Mon 25 Jan 11:00–11:15
 
 ---
 

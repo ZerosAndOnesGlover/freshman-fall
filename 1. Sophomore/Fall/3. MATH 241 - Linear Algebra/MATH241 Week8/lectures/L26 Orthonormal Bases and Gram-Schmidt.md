@@ -2,9 +2,13 @@
 ## Week 8 · Lecture 3 of 3 · **Friday**
 ### Orthonormal Bases and Gram–Schmidt
 
+*“Beauty is the first test: there is no permanent place in the world for ugly mathematics.”* — G. H. Hardy, *A Mathematician's Apology* (1940)
+
 ---
 
 **Reading:** Strang §4.4 · **Previous:** L25, projections · **Next:** Week 9, least squares
+
+**Coursework:** 📝 **PS 7** due today 17:00 · 📊 **Quiz 9** Mon of Week 9 · 📝 **PS 9** released Wed of Week 9, due Fri of Week 10 17:00 · 💬 **Recitation 8** Thu of Week 9 15:00–15:50
 
 > **PS 7 is due at 17:00 today.** PS 8 was released Wednesday and is due the Friday of Week 9.
 

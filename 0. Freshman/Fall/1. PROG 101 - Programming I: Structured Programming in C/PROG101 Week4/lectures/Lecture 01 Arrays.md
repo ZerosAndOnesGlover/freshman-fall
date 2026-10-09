@@ -1,7 +1,13 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 4 · Lecture 1: Arrays — The First Data Structure
 
+*“Adhering to convention a) yields, when starting with subscript 1, the subscript range 1 ≤ i < N+1; starting with 0, however, gives the nicer range 0 ≤ i < N.”* — Edsger W. Dijkstra, "Why numbering should start at zero" (EWD831, 1982)
+
 **Date:** Tuesday 20 October 2026 · 10:00–10:50 · Week 4
+
+**Reading:** K&R Chapter 5 · K&R Chapter 6 · King Ch. 8 · King Ch. 13 *(details at the end of the lecture)*
+
+**Coursework:** 📊 **Quiz 3** today 10:00–10:10 · 📝 **PS 3** due Fri 23 Oct 17:00 · 📝 **PS 4** released Fri 23 Oct 10:00, due Fri 30 Oct 17:00 · 🔬 **Lab 4** Mon 26 Oct 15:00–16:50
 
 ---
 

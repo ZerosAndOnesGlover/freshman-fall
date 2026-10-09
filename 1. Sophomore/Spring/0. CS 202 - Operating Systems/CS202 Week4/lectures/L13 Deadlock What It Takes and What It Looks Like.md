@@ -2,9 +2,13 @@
 ## Week 4 · Lecture 1 of 3
 ### Deadlock: What It Takes, and What It Looks Like
 
+*“The cybernetic exchange between man, computer and algorithm is like a game of musical chairs: The frantic search for balance always leaves one of the three standing ill at ease.”* — Alan Perlis, "Epigrams on Programming" (1982), #77
+
 ---
 
 **Sat:** Monday of Week 4, 09:00–09:50, VNC 101, **after Quiz 4** — and **Midterm 1 is this evening**, 18:00–19:15, VNC 100, on Weeks 0–3 · **Reading:** OSTEP Ch. 32 · **Next:** L14, prevention and the Banker's algorithm
+
+**Coursework:** 📊 **Quiz 4** today · 📘 **Midterm 1** today 18:00–19:15 · 🔬 **Lab 3** Tue this week 15:00–16:50 · 📝 **PS 4** released Wed this week, due Fri of Week 5 17:00 · 📝 **PS 3** due Fri this week 17:00
 
 > **Nothing in this week is on tonight's paper.** It covers Weeks 0–3. This lecture builds directly
 > on Week 3, so it doubles as revision of locks — but if you are choosing between this and sleep,

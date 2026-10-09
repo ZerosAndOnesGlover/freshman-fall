@@ -1,7 +1,13 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 1 · Lecture 2: Integer Representation
 
+*“Make no mistake about it: Computers process numbers - not symbols. We measure our understanding (and control) by the extent to which we can arithmetize an activity.”* — Alan Perlis, "Epigrams on Programming" (1982), #65
+
 **Date:** Wednesday 30 September 2026 · 10:00–10:50 · Week 1
+
+**Reading:** K&R, §2.2, §2.9 · `<limits.h>` · C11 §6.3.1.1 · Regehr, "A Guide to Undefined Behavior in C and C++" *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 1** released Thu 1 Oct 11:00, due Fri 9 Oct 17:00 · 🔬 **Lab 1** Mon 5 Oct 15:00–16:50 · 📊 **Quiz 1** Tue 6 Oct 10:00–10:10
 
 ---
 
@@ -138,8 +144,7 @@ printf("%u\n", u + 1u);      /* verified: prints 0 */
 ```
 
 Unsigned arithmetic is **modular**: results are reduced mod 2ⁿ. This is guaranteed by the standard,
-completely portable, and safe to rely on. It is how hash functions, checksums, and pseudo-random
-generators are written.
+completely portable, and safe to rely on. It is how hash functions, checksums, and pseudo-random generators are written.
 
 ### Signed overflow is undefined behaviour
 

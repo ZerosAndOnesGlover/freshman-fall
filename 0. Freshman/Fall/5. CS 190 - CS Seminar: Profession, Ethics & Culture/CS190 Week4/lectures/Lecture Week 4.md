@@ -2,7 +2,13 @@
 ## Lecture · Week 4: Algorithmic Bias
 ### Case Studies in Hiring, Lending, and Facial Recognition
 
+*“If you have a face, you have a place in the conversation about AI.”* — Joy Buolamwini, interview with NPR on *Unmasking AI* (2023)
+
 **Date:** Wednesday 21 October 2026 · 13:00–13:50 · Week 4
+
+**Reading:** Buolamwini & Gebru, "Gender Shades" (*PMLR* 81, 2018) · Dastin, "Amazon scraps secret AI recruiting tool…" (Reuters, 2018) · Kleinberg, Mullainathan & Raghavan, "Inherent Trade-Offs in the Fair Determination of Risk Scores" (2016) — [[CS190 Week4/resources/Reading Guide|Reading Guide]]
+
+**Coursework:** 📝 **Position Paper 1** due today 12:00 · 📝 **Prep 4** due today 12:00
 
 ---
 

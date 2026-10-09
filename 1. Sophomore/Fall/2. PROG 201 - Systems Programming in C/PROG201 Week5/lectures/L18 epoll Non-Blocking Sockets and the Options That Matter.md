@@ -2,9 +2,13 @@
 ## Week 5 · Lecture 3 of 3
 ### `epoll`, Non-Blocking Sockets, and the Options That Matter
 
+*“One can only display complex information in the mind. Like seeing, movement or flow or alteration of view is more important than the static picture, no matter how lovely.”* — Alan Perlis, "Epigrams on Programming" (1982), #25
+
 ---
 
 **Reading:** TLPI Ch. 63 · APUE §14.4–14.5 · `man 7 epoll`, `man 7 tcp`, `man 7 socket`, `man 2 sendfile` · **Previous:** L17 · **Next:** Lab 5 — build a load generator and stress your server, **Friday of Week 6**
+
+**Coursework:** 📝 **PS 4** due Fri this week 17:00 · 📊 **Quiz 6** Tue of Week 6 · 📝 **PS 6** released Wed of Week 6, due Fri of Week 7 17:00
 
 ---
 

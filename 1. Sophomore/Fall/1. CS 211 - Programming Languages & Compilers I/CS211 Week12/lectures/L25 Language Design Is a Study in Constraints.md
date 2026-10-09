@@ -2,9 +2,13 @@
 ## Week 12 · Lecture 1 of 2
 ### Language Design Is a Study in Constraints
 
+*“Programming languages should be designed not by piling feature on top of feature, but by removing the weaknesses and restrictions that make additional features appear necessary.”* — *Revised Report on the Algorithmic Language Scheme*, Introduction
+
 ---
 
 **Reading:** Hoare (1980), "The Emperor's Old Clothes" · Wirth (1995), "A Plea for Lean Software" · Gabriel (1991), "Worse Is Better" · **Next:** L26, the landscape and what comes after
+
+**Coursework:** 📝 **PS 12** released Wed this week, due Fri this week 17:00 · 📋 **Project 2** due Fri this week 17:00 · 📝 **PS 11** due Fri this week 17:00 · 🔬 **Lab 12** Fri this week 14:00–15:50 · 📕 **Final exam** Tue of finals week 09:00–11:30
 
 ---
 

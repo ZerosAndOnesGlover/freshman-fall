@@ -2,9 +2,14 @@
 ## Function Design, Decomposition, and Recursion Preview
 
 **Week 3 · Friday**
-*"The art of programming is the art of organizing complexity." — Edsger Dijkstra*
+
+*“The art of programming is the art of organizing complexity, of mastering multitude and avoiding its bastard chaos as effectively as possible.”* — Edsger W. Dijkstra, "Notes on Structured Programming" (EWD249, 1970)
 
 **Date:** Friday 16 October 2026 · 09:00–09:50 · Week 3
+
+**Reading:** Guttag, Ch. 4 · Guttag, Ch. 7 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 2** due today 17:00 · 📝 **PS 3** released today 10:00, due Fri 23 Oct 17:00 · 🔬 **Lab 3** Tue 20 Oct 15:00–16:50 · 📊 **Quiz 4** Wed 21 Oct 09:00–09:10
 
 ---
 
@@ -564,8 +569,8 @@ The general lesson: **the base case must catch every value the recursion can rea
 
 ## Reading
 
-- **Guttag, Ch. 4.4** — Functions as Objects
-- **Guttag, Ch. 4.5** — Modules (connecting to Friday's PS3)
+- **Guttag, Ch. 4** — functions as objects
+- **Guttag, Ch. 7** — Modules and Files, the modules half (connecting to Friday's PS3)
 
 ---
 

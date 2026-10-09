@@ -1,9 +1,15 @@
 # PHYS 141 · Lecture 15
 # Conservation of Energy & Power
 
+*“The quantity of force which can be brought into action in the whole of Nature is unchangeable, and can neither be increased nor diminished.”* — Hermann von Helmholtz, "On the Conservation of Force" (1862)
+
 > **Core Principle:** Total mechanical energy — kinetic plus potential — is conserved when only conservative forces do work. When non-conservative forces (friction, drag) are present, mechanical energy is not conserved, but it is not lost either — it is transformed into other forms (primarily heat). The universal law of conservation of energy, of which mechanical energy conservation is a special case, is one of the deepest principles in all of physics.
 
 **Date:** Friday 23 October 2026 · 14:00–14:50 · Week 4
+
+**Reading:** Serway & Jewett §8.1–8.5 · HRK Ch. 13
+
+**Coursework:** 📝 **PS 3** due today 17:00 · 📝 **PS 4** released today 15:00, due Fri 30 Oct 17:00 · 📊 **Quiz 4** Mon 26 Oct 14:00 · 🔬 **Lab 5** Thu 29 Oct 14:00–17:00
 
 ---
 

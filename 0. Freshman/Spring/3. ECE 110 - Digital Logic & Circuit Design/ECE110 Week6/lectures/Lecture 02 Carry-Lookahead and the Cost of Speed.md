@@ -2,7 +2,11 @@
 ## Week 6 · Lecture 2 (Thursday)
 ### Carry-Lookahead and the Cost of Speed
 
+*“... we do not consider it as good engineering practice to consume a resource lavishly just because it happens to be cheap.”* — Niklaus Wirth, *Project Oberon* (2013), §2.3
+
 **Date:** Thursday 4 March 2027 · 13:00–14:15 · Week 6
+
+**Coursework:** 📘 **Midterm** today 18:00–19:15 · 📝 **PS 5** due today 13:00 · 📝 **PS 6** released today 14:30, due Thu 11 Mar 13:00 · 🔬 **Lab 6** Fri 5 Mar 14:00–15:50 · 📊 **Quiz 6** Wed 10 Mar 13:00–13:10
 
 ---
 

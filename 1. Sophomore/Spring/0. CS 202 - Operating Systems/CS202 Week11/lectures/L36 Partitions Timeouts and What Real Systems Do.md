@@ -2,9 +2,13 @@
 ## Week 11 · Lecture 3 of 3
 ### Partitions, Timeouts, and What Real Systems Do
 
+*“Thinking doesn't guarantee that we won't make mistakes. But not thinking guarantees that we will.”* — Leslie Lamport, as quoted in *Wired* (2013)
+
 ---
 
 **Sat:** Friday of Week 11, 09:00–09:50, VNC 101 · **Reading:** Ongaro & Ousterhout §§6–8; Gilbert & Lynch on CAP · **Next:** Week 12, security and synthesis
+
+**Coursework:** 📋 **Project 1** due today 17:00 · 📝 **PS 10** due today 17:00 · 🔬 **Lab 11** Tue of Week 12 15:00–16:50 · 📝 **PS 12** released Wed of Week 12, due Fri of the completion period 17:00 · 📕 **Final exam** Wed of finals week 09:00–11:30
 
 > **Project 1 is due today at 17:00.**
 

@@ -2,9 +2,13 @@
 ## Week 7 · Lecture 2 of 3 · **Tuesday**
 ### When Diagonalization Fails
 
+*“The way I have taken seems not to lead to the goal, but much rather to make the truth of geometry doubtful.”* — Carl Friedrich Gauss, letter to Farkas Bolyai (1799)
+
 ---
 
 **Reading:** Strang §6.2 (the "not diagonalizable" discussion), §8.3 · **Previous:** L21, diagonalisation · **Next:** L23, complex eigenvalues
+
+**Coursework:** 📝 **PS 7** released Wed this week, due Fri of Week 8 17:00 · 💬 **Recitation 6** Thu this week 15:00–15:50 · 📝 **PS 6** due Fri this week 17:00 · 📊 **Quiz 8** Mon of Week 8
 
 ---
 

@@ -2,9 +2,13 @@
 ## Week 3 · Lecture 2 of 3
 ### The System V AMD64 Calling Convention
 
+*“The nice thing about standards is that you have so many to choose from.”* — Andrew S. Tanenbaum, *Computer Networks*, 2nd ed. (1988)
+
 ---
 
 **Reading:** CS:APP §3.7.3–3.7.5 · **Previous:** L10, `call`, `ret` and the frame
+
+**Coursework:** 📝 **PS 3** released today, due Fri of Week 4 17:00 · 📝 **PS 2** due Fri this week 17:00 · 📊 **Quiz 4** Mon of Week 4 · 🔬 **Lab 3** Tue of Week 4 15:00–16:50 · 📘 **Midterm 1** Mon of Week 5 18:00–19:15
 
 ---
 

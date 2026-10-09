@@ -1,9 +1,15 @@
 # PHYS 141 · Lecture 2
 # Coordinate Systems
 
+*“One of the principal objects of theoretical research is to find the point of view from which the subject appears in the greatest simplicity.”* — J. Willard Gibbs, letter accepting the Rumford Medal (1881)
+
 > **Core Principle:** A coordinate system is a labeling scheme for points in space — a human convention, not a physical truth. Physics must be independent of which coordinate system you choose. Choosing the *right* coordinate system for a problem's symmetry is one of the most powerful problem-solving techniques in physics.
 
 **Date:** Tuesday 22 September 2026 · 14:00–14:50 · Week 0
+
+**Reading:** Serway & Jewett §3.1
+
+**Coursework:** 🔬 **Lab 0** Thu 24 Sep 14:00–17:00 · 📝 **PS 0** released Fri 25 Sep 15:00, due Fri 2 Oct 17:00 · 📊 **Quiz 0** Mon 28 Sep 14:00
 
 ---
 

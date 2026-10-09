@@ -1,7 +1,13 @@
 # CS 102 · Computer Science II
 ## Lecture 03: Correctness — Loop Invariants and Induction
 
+*“Beware of bugs in the above code; I have only proved it correct, not tried it.”* — Donald Knuth, memo on the van Emde Boas construction (1977)
+
 **Date:** Friday 22 January 2027 · 09:00–09:50 · Week 0
+
+**Reading:** CLRS §2.1 (loop invariants, insertion sort), §2.3 (merge sort and its correctness)
+
+**Coursework:** 📊 **Quiz 1** Mon 25 Jan 09:00–09:15 · 🔬 **Lab 0** Tue 26 Jan 15:00–16:50
 
 ---
 

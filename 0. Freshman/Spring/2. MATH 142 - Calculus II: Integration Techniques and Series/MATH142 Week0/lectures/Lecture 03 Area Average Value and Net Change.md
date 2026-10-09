@@ -2,7 +2,11 @@
 ## Week 0 · Lecture 3 (Friday)
 ### Area, Average Value, and Net Change
 
+*“Calculus is the mathematics of change.”* — Richard Hamming, *Methods of Mathematics Applied to Calculus, Probability, and Statistics* (1985)
+
 **Date:** Friday 22 January 2027 · 11:00–11:50 · Week 0
+
+**Coursework:** 📝 **PS 0** due today 17:00 · 📊 **Quiz 1** Mon 25 Jan 11:00–11:15 · 🔬 **Lab 0** Wed 27 Jan 15:00–16:50
 
 ---
 

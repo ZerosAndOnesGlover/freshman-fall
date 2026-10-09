@@ -1,11 +1,15 @@
 # PROG 102 · Lecture 11
 ## The Containers
 
+*“Associative arrays are very very useful things and if you are only going to have one data structure that's the one to have. Because you could build everything else with it if you want.”* — Brian Kernighan, "Coffee with Brian Kernighan", Computerphile (2018)
+
 **Week 3 · Wednesday · 50 minutes**
 **Reading:** *C++ Primer* Ch. 9, §11.1–11.3 · **Reference:** Stroustrup Ch. 31
 **Assumes:** L10 (iterators and categories)
 
 **Date:** Wednesday 10 February 2027 · 10:00–10:50 · Week 3
+
+**Coursework:** 📝 **PS 2** due Fri 12 Feb 17:00 · 📝 **PS 3** released Fri 12 Feb 10:00, due Fri 19 Feb 17:00 · 🔬 **Lab 3** Mon 15 Feb 15:00–16:50 · 📊 **Quiz 4** Tue 16 Feb 10:00–10:15
 
 ---
 

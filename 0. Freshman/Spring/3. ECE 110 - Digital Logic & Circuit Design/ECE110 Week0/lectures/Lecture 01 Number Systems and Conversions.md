@@ -2,7 +2,11 @@
 ## Week 0 · Lecture 1 (Wednesday)
 ### Number Systems and Conversions
 
+*“Make no mistake about it: Computers process numbers - not symbols. We measure our understanding (and control) by the extent to which we can arithmetize an activity.”* — Alan Perlis, "Epigrams on Programming" (1982), #65
+
 **Date:** Wednesday 20 January 2027 · 13:00–14:15 · Week 0
+
+**Coursework:** 📝 **PS 0** released Thu 21 Jan 14:30, due Thu 28 Jan 13:00 · 🔬 **Lab 0** Fri 22 Jan 14:00–15:50
 
 ---
 

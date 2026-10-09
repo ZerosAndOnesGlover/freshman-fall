@@ -2,7 +2,11 @@
 ## Week 4 · Lecture 2 (Tuesday)
 ### Cylindrical Shells, and Choosing a Method
 
+*“...certain things first became clear to me by a mechanical method, although they had to be demonstrated by geometry afterwards...”* — Archimedes, *The Method of Mechanical Theorems*
+
 **Date:** Tuesday 16 February 2027 · 11:00–11:50 · Week 4
+
+**Coursework:** 🔬 **Lab 3** Wed 17 Feb 15:00–16:50 · 📝 **PS 3** due Fri 19 Feb 17:00 · 📝 **PS 4** released Fri 19 Feb 12:00, due Fri 26 Feb 17:00 · 📊 **Quiz 5** Mon 22 Feb 11:00–11:15
 
 ---
 

@@ -2,7 +2,13 @@
 ## Lecture · Week 0: What is Computer Science?
 ### Careers in CS, Software, and Hardware Engineering
 
+*“[The Computer] was the first machine man built that assisted the power of his brain instead of the strength of his arm.”* — Grace Hopper, on the Harvard Mark I, Space Coast (1987)
+
 **Date:** Wednesday 23 September 2026 · 13:00–13:50 · Week 0
+
+**Reading:** Dijkstra, "On the Cruelty of Really Teaching Computing Science" (EWD1036) · ACM/IEEE Computing Curricula, the "Computer Science as a Profession" excerpt · Russell & Norvig, *AIMA* 4th ed., §1.1 — guiding questions in [[CS190 Week0/resources/Reading Guide|Reading Guide]]
+
+**Coursework:** 📝 **Prep 0** due today 12:00
 
 ---
 

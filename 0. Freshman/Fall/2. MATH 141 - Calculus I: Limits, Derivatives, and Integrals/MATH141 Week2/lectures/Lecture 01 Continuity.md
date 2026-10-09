@@ -2,7 +2,11 @@
 ## Week 2 · Lecture 1 (Monday)
 ### Continuity: Definition, Types of Discontinuity, and the Intermediate Value Theorem
 
+*“The Calculus required continuity, and continuity was supposed to require the infinitely little; but nobody could discover what the infinitely little might be.”* — Bertrand Russell, *Mysticism and Logic* (1918), ch. 5
+
 **Date:** Monday 5 October 2026 · 11:00–11:50 · Week 2
+
+**Coursework:** 📊 **Quiz 2** today 11:00–11:15 · 🔬 **Lab 1** due today 11:00 · 📝 **PS 1** due Wed 7 Oct 11:00 · 📝 **PS 2** released Wed 7 Oct 12:00, due Wed 14 Oct 11:00 · 🔬 **Lab 2** Fri 9 Oct 15:00–16:50
 
 ---
 

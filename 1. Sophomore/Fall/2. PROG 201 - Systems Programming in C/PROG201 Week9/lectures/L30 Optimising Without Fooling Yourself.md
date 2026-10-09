@@ -2,9 +2,13 @@
 ## Week 9 · Lecture 3 of 3
 ### Optimising: What Works, What the Compiler Does, and How Not to Fool Yourself
 
+*“The first principle is that you must not fool yourself — and you are the easiest person to fool.”* — Richard Feynman, "Cargo Cult Science", Caltech commencement address (1974)
+
 ---
 
 **Reading:** CS:APP Ch. 5 · `man 1 gcc` (the optimisation options) · Gregg, *Systems Performance* Ch. 12 · **Previous:** L29 · **Next:** Lab 9 — roofline analysis, **Monday of Week 10**
+
+**Coursework:** 📋 **Project 1** due Fri this week 17:00 · 📝 **PS 8** due Fri this week 17:00 · 🔬 **Lab 9** Mon of Week 10 15:00–16:50 · 📊 **Quiz 10** Tue of Week 10 · 📝 **PS 10** released Wed of Week 10, due Fri of Week 11 17:00
 
 ---
 

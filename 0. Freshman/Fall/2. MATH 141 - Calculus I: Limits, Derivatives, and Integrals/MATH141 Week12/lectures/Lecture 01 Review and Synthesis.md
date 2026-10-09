@@ -2,7 +2,13 @@
 ## Week 12 · Lecture 1 (Monday)
 ### Review and Synthesis
 
+*“The calculus is probably the most useful single branch of mathematics. ...I have found the ability to do simple calculus, easily and reliably, was the most valuable part of mathematics I ever learned.”* — Richard Hamming, *Methods of Mathematics Applied to Calculus, Probability, and Statistics* (1985)
+
 **Date:** Monday 14 December 2026 · 11:00–11:50 · Week 12
+
+**Reading:** Stewart, the Review at the end of Chapters 2–6 (Concept Check and True-False Quiz) | Spivak — none
+
+**Coursework:** 📊 **Quiz 12** today 11:00–11:15 · 📝 **PS 12** released today 12:00 · 📝 **PS 11** due Wed 16 Dec 11:00 · 🔬 **Lab 12** Fri 18 Dec 15:00–16:50 · 📕 **Final exam** Wed 23 Dec 09:00–11:30
 
 ---
 

@@ -1,7 +1,13 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 12 · Lecture 3: Debugging
 
+*“The most effective debugging tool is still careful thought, coupled with judiciously placed print statements.”* — Brian Kernighan, "Unix for Beginners" (1979)
+
 **Date:** Thursday 17 December 2026 · 10:00–10:50 · Week 12
+
+**Reading:** GDB Tutorial · Kernighan & Pike, Ch. 5 · `man valgrind` · Zeller, *Why Programs Fail* *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 11** due Fri 18 Dec 17:00 · 📝 **PS 12** released Fri 18 Dec 10:00, due Fri 25 Dec 17:00 · 🔬 **Lab 12** Mon 21 Dec 15:00–16:50 · 📕 **Final exam** Thu 24 Dec 14:00
 
 ---
 

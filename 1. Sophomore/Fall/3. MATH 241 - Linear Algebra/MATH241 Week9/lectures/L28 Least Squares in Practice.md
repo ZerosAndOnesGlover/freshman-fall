@@ -2,9 +2,13 @@
 ## Week 9 · Lecture 2 of 3 · **Tuesday**
 ### Least Squares in Practice
 
+*“The combination of some data and an aching desire for an answer does not ensure that a reasonable answer can be extracted from a given body of data.”* — John Tukey, "Sunset Salvo", *The American Statistician* 40(1) (1986)
+
 ---
 
 **Reading:** Strang §4.3 (the QR remarks), §11.2 · **Previous:** L27, least squares · **Next:** L29, what least squares assumes
+
+**Coursework:** 📝 **PS 9** released Wed this week, due Fri of Week 10 17:00 · 💬 **Recitation 8** Thu this week 15:00–15:50 · 📝 **PS 8** due Fri this week 17:00 · 📊 **Quiz 10** Mon of Week 10
 
 > **Every number in this lecture is reproduced by `resources/leastsquares.py`.**
 

@@ -2,9 +2,13 @@
 ## Week 4 · Lecture 3 of 3
 ### Detection, Recovery, Livelock — and Ignoring the Problem
 
+*“In programming, as in everything else, to be in error is to be reborn.”* — Alan Perlis, "Epigrams on Programming" (1982), #61
+
 ---
 
 **Sat:** Friday of Week 4, 09:00–09:50, VNC 101 · **Reading:** Silberschatz §8.7–8.8; OSTEP Ch. 32 §32.3 on livelock · **Next:** Week 5, memory management
+
+**Coursework:** 📝 **PS 3** due today 17:00 · 📊 **Quiz 5** Mon of Week 5 · 🔬 **Lab 4** Tue of Week 5 15:00–16:50 · 📝 **PS 5** released Wed of Week 5, due Fri of Week 6 17:00
 
 ---
 

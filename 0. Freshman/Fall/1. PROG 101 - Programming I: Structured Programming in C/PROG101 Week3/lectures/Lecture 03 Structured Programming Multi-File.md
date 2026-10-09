@@ -1,7 +1,13 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 3 · Lecture 3: Functions and Structured Programming
 
+*“We propose instead that one begins with a list of difficult design decisions or design decisions which are likely to change. Each module is then designed to hide such a decision from the others.”* — David Parnas, "On the Criteria To Be Used in Decomposing Systems into Modules" (1972)
+
 **Date:** Thursday 15 October 2026 · 10:00–10:50 · Week 3
+
+**Reading:** K&R §4.3–4.6 · King §15.1–15.3 · King §18.2 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 2** due Fri 16 Oct 17:00 · 📝 **PS 3** released Fri 16 Oct 10:00, due Fri 23 Oct 17:00 · 🔬 **Lab 3** Mon 19 Oct 15:00–16:50 · 📊 **Quiz 3** Tue 20 Oct 10:00–10:10
 
 ---
 
@@ -362,6 +368,14 @@ Note `inline` is a *hint*; the compiler inlines on its own cost model regardless
 | **`assert`** | Aborts if condition is false; documents and enforces invariants |
 | **Precondition** | What must be true at function entry |
 | **Postcondition** | What will be true at function exit |
+
+---
+
+## Reading
+
+- **K&R §4.3–4.6** — external variables, scope rules, header files, static variables
+- **King §15.1–15.3** — source files, header files, dividing a program into files
+- **King §18.2** — storage classes (`static`, `extern`)
 
 ---
 

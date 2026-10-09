@@ -2,9 +2,13 @@
 ## Week 10 · Lecture 3 of 3
 ### The GPU and the SIMT Model
 
+*“Think of it! With VLSI we can pack 100 ENIACS in 1 sq. cm.”* — Alan Perlis, "Epigrams on Programming" (1982), #109
+
 ---
 
 **Reading:** Patterson & Hennessy §6.6, CUDA C Programming Guide §1–3 · **Previous:** L32, false sharing and NUMA
+
+**Coursework:** 📝 **PS 9** due today 17:00 · 📊 **Quiz 11** Mon of Week 11 · 🔬 **Lab 10** Tue of Week 11 15:00–16:50 · 📝 **PS 11** released Wed of Week 11, due Fri of Week 12 17:00
 
 ---
 

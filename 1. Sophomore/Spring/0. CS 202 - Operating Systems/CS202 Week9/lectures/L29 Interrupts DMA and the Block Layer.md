@@ -2,9 +2,13 @@
 ## Week 9 · Lecture 2 of 3
 ### Interrupts, DMA, and the Block Layer
 
+*“Computers don't introduce order anywhere as much as they expose opportunities.”* — Alan Perlis, "Epigrams on Programming" (1982), #96
+
 ---
 
 **Sat:** Wednesday of Week 9, 09:00–09:50, VNC 101 · **Reading:** OSTEP Ch. 36 §36.4–§36.6, Ch. 37; xv6 book Ch. 3 §3.5 · **Next:** L30, writing a driver
+
+**Coursework:** 📋 **Project 2** released today, due Fri of the completion period 17:00 · 📝 **PS 9** released today, due Fri of Week 10 17:00 · 📝 **PS 8** due Fri this week 17:00 · 📊 **Quiz 10** Mon of Week 10 · 🔬 **Lab 9** Tue of Week 10 15:00–16:50
 
 ---
 

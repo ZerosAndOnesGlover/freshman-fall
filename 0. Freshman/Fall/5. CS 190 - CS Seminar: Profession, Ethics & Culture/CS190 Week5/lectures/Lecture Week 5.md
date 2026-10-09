@@ -2,7 +2,13 @@
 ## Lecture · Week 5: Privacy and Surveillance
 ### Data Collection, GDPR, and the Fourth Amendment
 
+*“They conferred, as against the government, the right to be let alone -- the most comprehensive of rights and the right most valued by civilized men.”* — Louis Brandeis, dissenting, *Olmstead v. United States*, 277 U.S. 438 (1928)
+
 **Date:** Wednesday 28 October 2026 · 13:00–13:50 · Week 5
+
+**Reading:** Solove, "A Taxonomy of Privacy" (2006), introduction and taxonomy overview · Zuboff, *The Age of Surveillance Capitalism*, Introduction · *Carpenter v. United States* (2018), majority opinion — [[CS190 Week5/resources/Reading Guide|Reading Guide]]
+
+**Coursework:** 📝 **Prep 5** due today 12:00
 
 ---
 

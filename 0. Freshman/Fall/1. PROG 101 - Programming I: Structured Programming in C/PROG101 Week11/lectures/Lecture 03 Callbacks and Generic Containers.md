@@ -1,7 +1,13 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 11 · Lecture 3: Callbacks and Generic Containers
 
+*“It is the user who should parameterize procedures, not their creators.”* — Alan Perlis, "Epigrams on Programming" (1982), #76
+
 **Date:** Thursday 10 December 2026 · 10:00–10:50 · Week 11
+
+**Reading:** K&R, §5.11, §6.5 · `man 3 realloc` · `man 3 qsort_r` *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 10** due Fri 11 Dec 17:00 · 📝 **PS 11** released Fri 11 Dec 10:00, due Fri 18 Dec 17:00 · 🔬 **Lab 11** Mon 14 Dec 15:00–16:50 · 📊 **Quiz 11** Tue 15 Dec 10:00–10:10 · 📕 **Final exam** Thu 24 Dec 14:00
 
 ---
 

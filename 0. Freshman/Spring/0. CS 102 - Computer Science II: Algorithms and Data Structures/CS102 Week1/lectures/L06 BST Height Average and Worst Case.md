@@ -1,7 +1,13 @@
 # CS 102 · Computer Science II
 ## Lecture 06: BST Height — Average and Worst Case
 
+*“Random numbers should not be generated with a method chosen at random.”* — Donald Knuth, *The Art of Computer Programming*, Vol. 2 (1969), §3.1
+
 **Date:** Friday 29 January 2027 · 09:00–09:50 · Week 1
+
+**Reading:** CLRS §12.3 · Sedgewick & Wayne §3.2 (the analysis of BST search and insert)
+
+**Coursework:** 📝 **PS 1** released today 10:00, due Fri 5 Feb 17:00 · 📊 **Quiz 2** Mon 1 Feb 09:00–09:15 · 🔬 **Lab 1** Tue 2 Feb 15:00–16:50
 
 ---
 

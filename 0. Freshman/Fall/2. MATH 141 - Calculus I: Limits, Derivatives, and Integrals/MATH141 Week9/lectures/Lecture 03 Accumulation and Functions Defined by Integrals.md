@@ -2,7 +2,11 @@
 ## Week 9 · Lecture 3 (Wednesday)
 ### Accumulation and Functions Defined by Integrals
 
+*“Less depends upon the choice of words than upon this, that their introduction shall be justified by pregnant theorems.”* — Carl Friedrich Gauss, abstract of *Disquisitiones generales circa superficies curvas* (1827)
+
 **Date:** Wednesday 25 November 2026 · 11:00–11:50 · Week 9
+
+**Coursework:** 📝 **PS 8** due today 11:00 · 📝 **PS 9** released today 12:00, due Wed 2 Dec 11:00 · 🔬 **Lab 9** Fri 27 Nov 15:00–16:50 · 📊 **Quiz 10** Mon 30 Nov 11:00–11:15 · 📘 **Midterm 2** Wed 2 Dec 18:00–19:15
 
 ---
 

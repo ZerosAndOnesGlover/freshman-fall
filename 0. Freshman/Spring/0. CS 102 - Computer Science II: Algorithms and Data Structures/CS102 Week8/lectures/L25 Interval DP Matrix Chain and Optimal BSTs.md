@@ -1,7 +1,13 @@
 # CS 102 · Computer Science II
 ## Lecture 25: Interval DP — Matrix Chain Multiplication and Optimal BSTs
 
+*“During the process of stepwise refinement, a notation which is natural to the problem in hand should be used as long as possible.”* — Niklaus Wirth, "Program Development by Stepwise Refinement" (1971)
+
 **Date:** Monday 15 March 2027 · 09:00–09:50 · Week 8
+
+**Reading:** CLRS §14.2, §14.5 · Dasgupta, Papadimitriou & Vazirani §6.5
+
+**Coursework:** 📊 **Quiz 8** today 09:00–09:15 · 🔬 **Lab 7** Tue 16 Mar 15:00–16:50 · 📝 **PS 7** due Fri 19 Mar 17:00 · 📝 **PS 8** released Fri 19 Mar 10:00, due Fri 26 Mar 17:00
 
 ---
 
@@ -196,7 +202,7 @@ balloon burst in the interval makes the two sides independent, and the problem b
 
 ## 5. What to Do
 
-- Read CLRS §14.2 (matrix chain) properly this week — you skimmed it in Week 7 — and §15.5 (optimal
+- Read CLRS §14.2 (matrix chain) properly this week — you skimmed it in Week 7 — and §14.5 (optimal
   BSTs).
 - **PS 8** implements both, reconstructs the parenthesisation, and measures the naive-versus-optimal
   gap.

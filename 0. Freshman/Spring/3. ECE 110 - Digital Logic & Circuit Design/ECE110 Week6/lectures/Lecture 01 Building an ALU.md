@@ -2,7 +2,11 @@
 ## Week 6 · Lecture 1 (Wednesday)
 ### Building an ALU
 
+*“We may say most aptly that the Analytical Engine weaves algebraical patterns just as the Jacquard-loom weaves flowers and leaves.”* — Ada Lovelace, Notes on Menabrea's "Sketch of the Analytical Engine" (1843), Note A
+
 **Date:** Wednesday 3 March 2027 · 13:00–14:15 · Week 6
+
+**Coursework:** 📊 **Quiz 5** today 13:00–13:10 · 📘 **Midterm** Thu 4 Mar 18:00–19:15 · 📝 **PS 5** due Thu 4 Mar 13:00 · 📝 **PS 6** released Thu 4 Mar 14:30, due Thu 11 Mar 13:00 · 🔬 **Lab 6** Fri 5 Mar 14:00–15:50
 
 ---
 

@@ -2,9 +2,13 @@
 ## Week 6 · Lecture 2 of 3
 ### Choosing a Victim: Page Replacement
 
+*“Random numbers should not be generated with a method chosen at random.”* — Donald Knuth, *The Art of Computer Programming*, Vol. 2 (1969), §3.1
+
 ---
 
 **Sat:** Wednesday of Week 6, 09:00–09:50, VNC 101 · **Reading:** OSTEP Ch. 22; Silberschatz §10.4 · **Next:** L21, working sets, thrashing and the OOM killer
+
+**Coursework:** 📝 **PS 6** released today, due Fri of Week 7 17:00 · 📝 **PS 5** due Fri this week 17:00 · 📊 **Quiz 7** Mon of Week 7 · 🔬 **Lab 6** Tue of Week 7 15:00–16:50 · 📘 **Midterm 2** Mon of Week 8 18:00–19:15
 
 ---
 

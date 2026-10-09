@@ -2,7 +2,11 @@
 ## Week 5 · Lecture 1 (Monday)
 ### Parametric Curves — A Curve Is a Path, Not a Graph
 
+*“What I have given in the second book on the nature and properties of curved lines, and the method of examining them, is, it seems to me, as far beyond the treatment in the ordinary geometry, as the rhetoric of Cicero is beyond the a, b, c of children.”* — René Descartes, letter to Marin Mersenne (1637), on *La Géométrie*
+
 **Date:** Monday 22 February 2027 · 11:00–11:50 · Week 5
+
+**Coursework:** 📊 **Quiz 5** today 11:00–11:15 · 🔬 **Lab 4** Wed 24 Feb 15:00–16:50 · 📝 **PS 4** due Fri 26 Feb 17:00 · 📝 **PS 5** released Fri 26 Feb 12:00, due Fri 5 Mar 17:00 · 📘 **Midterm 1** Wed 3 Mar 18:00–19:15
 
 ---
 

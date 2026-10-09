@@ -2,9 +2,13 @@
 ## Week 2 · Lecture 2 of 3
 ### SOLID, One Letter at a Time, in Code That Exists
 
+*“Data abstractions provide the same benefits as procedures, but for data. Recall that the main idea is to separate what an abstraction is from how it is implemented so that implementations of the same abstraction can be substituted freely.”* — Barbara Liskov, keynote address, OOPSLA (1987)
+
 ---
 
 **Sat:** Wednesday of Week 2, 10:00–10:50, TH 200 · **Reading:** Martin, *Clean Architecture*, Ch. 7–11 — **critically** · **Next:** L09, DRY, YAGNI, and when each is wrong
+
+**Coursework:** 📝 **Assignment 2** released today 17:00, due Fri of Week 3 17:00 · 📝 **Assignment 1** due Fri this week 17:00 · 📊 **Quiz 3** Tue of Week 3
 **A 2 is released after this lecture**, Wednesday 17:00.
 
 ---

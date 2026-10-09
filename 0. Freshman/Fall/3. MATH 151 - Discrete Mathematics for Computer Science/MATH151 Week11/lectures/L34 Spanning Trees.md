@@ -2,7 +2,13 @@
 ## Lecture 34 (L34) — Spanning Trees and Minimum Spanning Trees
 ### Thursday, Week 11
 
+*“If I compare arithmetic with a tree that unfolds upward into a multitude of techniques and theorems while its root drives into the depths...”* — Gottlob Frege, *The Basic Laws of Arithmetic* (1893)
+
 **Date:** Thursday 10 December 2026 · 13:00–13:50 · Week 11
+
+**Reading:** Rosen, 8e §11.4–11.5 · Epp, 5e §10.6 · Levin, 3e §4.2 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 10** due Fri 11 Dec 17:00 · 📝 **PS 11** released Fri 11 Dec 14:00, due Fri 18 Dec 17:00 · 📊 **Quiz 12** Mon 14 Dec 13:00–13:15 · 🔬 **Lab 11** Wed 16 Dec 15:00–16:50 · 📕 **Final exam** Mon 21 Dec 08:00–10:00
 
 ---
 
@@ -191,6 +197,6 @@ them for failover.
 
 - **Rosen, 8e §11.4–11.5** — Spanning trees and minimum spanning trees
 - **Epp, 5e §10.6** — Spanning trees and shortest paths
-- **Levin, 3e §4.3** — Trees and spanning trees
+- **Levin, 3e §4.2** — Trees and spanning trees
 
 *Next: Lecture 35 — Breadth-First and Depth-First Search*

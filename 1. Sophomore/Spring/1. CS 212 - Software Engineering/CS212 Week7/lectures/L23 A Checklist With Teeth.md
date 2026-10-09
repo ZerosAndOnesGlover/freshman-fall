@@ -2,9 +2,13 @@
 ## Week 7 · Lecture 2 of 3
 ### A Checklist With Teeth
 
+*“Whenever two programmers meet to criticize their programs, both are silent.”* — Alan Perlis, "Epigrams on Programming" (1982), #108
+
 ---
 
 **Sat:** Wednesday of Week 7, 10:00–10:50, TH 200 · **Reading:** *Google Engineering Practices* — "The Standard of Code Review" and "What to Look For" · **Next:** L24, automated review
+
+**Coursework:** 📝 **Assignment 7** released today 17:00, due Fri of Week 8 17:00 · 📝 **Assignment 6** due Fri this week 17:00 · 📊 **Quiz 8** Tue of Week 8
 **A 7 is released after this lecture**, Wednesday 17:00.
 
 ---

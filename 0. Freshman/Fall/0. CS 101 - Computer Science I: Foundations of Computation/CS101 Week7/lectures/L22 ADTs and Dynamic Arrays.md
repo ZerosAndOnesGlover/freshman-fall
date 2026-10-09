@@ -2,9 +2,14 @@
 ## Abstract Data Types and Python Lists as Dynamic Arrays
 
 **Week 7 · Wednesday**
-*"An Abstract Data Type is a mathematical specification of a data structure — it defines what operations are possible and what they mean, without specifying how they are implemented." — CS 101*
+
+*“Data abstractions provide the same benefits as procedures, but for data. Recall that the main idea is to separate what an abstraction is from how it is implemented so that implementations of the same abstraction can be substituted freely.”* — Barbara Liskov, keynote address, OOPSLA (1987)
 
 **Date:** Wednesday 11 November 2026 · 09:00–09:50 · Week 7
+
+**Reading:** Guttag, Ch. 5 · Python docs — Time Complexity *(details at the end of the lecture)*
+
+**Coursework:** 📊 **Quiz 7** today 09:00–09:10 · 📋 **Project 1** released Fri 13 Nov 10:00, due Fri 27 Nov 17:00 · 📝 **PS 6** due Fri 13 Nov 17:00 · 📝 **PS 7** released Fri 13 Nov 10:00, due Fri 20 Nov 17:00 · 🔬 **Lab 7** Tue 17 Nov 15:00–16:50
 
 ---
 
@@ -348,7 +353,7 @@ What is **not** a difference: element access. `t[i]` and `xs[i]` are both Θ(1) 
 
 ## Reading
 
-- **Guttag, Ch. 5.1–5.2** — Lists and mutability
+- **Guttag, Ch. 5** — lists and mutability
 - **Python docs — Time Complexity:** https://wiki.python.org/moin/TimeComplexity (bookmark this — you will reference it for the rest of your CS career)
 
 ---

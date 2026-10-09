@@ -2,9 +2,13 @@
 ## Week 4 · Lecture 1 of 3 · **Monday**
 ### What a Linear Transformation Is
 
+*“Mathematicians do not study objects, but the relations between objects; to them it is a matter of indifference if these objects are replaced by others, provided that the relations do not change.”* — Henri Poincaré, *Science and Hypothesis* (1902)
+
 ---
 
 **Reading:** Strang §8.1 · **Previous:** Week 3's L12, the four subspaces · **Next:** L14, the matrix of a transformation
+
+**Coursework:** 📊 **Quiz 4** today · 📝 **PS 4** released Wed this week, due Fri of Week 5 17:00 · 💬 **Recitation 3** Thu this week 15:00–15:50 · 📝 **PS 3** due Fri this week 17:00
 
 > **Quiz 4 is the first ten minutes of this lecture** and covers Week 3.
 >

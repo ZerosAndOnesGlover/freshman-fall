@@ -5,8 +5,8 @@
 
 ## Required
 
-**CLRS, 4th ed. — §14.2** (matrix chain, properly this time) and **§15.5** (optimal BSTs).
-**CLRS, 4th ed. — §23.1–23.2** (Floyd–Warshall, transitive closure).
+**CLRS, 4th ed. — §14.2** (matrix chain, properly this time) and **§14.5** (optimal BSTs).
+**CLRS, 4th ed. — §23.2** (Floyd–Warshall and transitive closure). §23.1 (APSP by matrix multiplication) is optional.
 
 §23.3 (Johnson's algorithm) is optional and worth the hour if you have it.
 
@@ -20,7 +20,7 @@ Also useful:
   DP anywhere, and it is free.
 
 **This is a heavy week and PS 8 collides with Project 1's deadline.** If reading must be cut, read
-§23.1 and §14.2 and leave §15.5 until after the project.
+§23.2 and §14.2 and leave §14.5 until after the project.
 
 ---
 
@@ -50,16 +50,16 @@ know at a decision point**", and these seven are a catalogue of answers that hav
 by increasing chain **length**, not by $i$ and $j$ — and to Figure 14.5, which shows which cells depend
 on which. That dependency picture is why the loops are ordered as they are.
 
-**§15.5 (optimal BSTs, 10 pages).** Read for the extra term $\sum p_t$ and where it comes from. CLRS
+**§14.5 (optimal BSTs).** Read for the extra term $\sum p_t$ and where it comes from. CLRS
 also handles *unsuccessful* searches (the "dummy keys" $d_i$), which the lectures omit; the idea is
 identical and the bookkeeping is heavier.
 
-**§23.1 (Floyd–Warshall, 8 pages).** Short. The whole content is the meaning of $d^{(k)}$, and the
+**§23.2, first part (Floyd–Warshall).** Short. The whole content is the meaning of $d^{(k)}$, and the
 argument that a shortest path through $k$ has two halves that avoid $k$. **Read that argument until it
 is obvious**, because everything else — the loop order, the in-place version, the negative-cycle test —
 follows from it.
 
-**§23.2 (transitive closure, 3 pages).** The same triple loop with $(\vee, \wedge)$ replacing
+**§23.2, last part (transitive closure).** The same triple loop with $(\vee, \wedge)$ replacing
 $(\min, +)$. Read it and notice the substitution.
 
 ---
@@ -74,13 +74,13 @@ Three of these are on MIDTERM 2 and one is on the final.
 2. Interval DP fills by increasing length. What exactly goes wrong if you loop `for i: for j:` in the
    natural order, and would you notice?
 
-3. §15.5: the recurrence adds $\sum_{t=i}^{j} p_t$ regardless of which root is chosen. What is that
+3. §14.5: the recurrence adds $\sum_{t=i}^{j} p_t$ regardless of which root is chosen. What is that
    term paying for, and why does it not depend on the root?
 
-4. Week 2 built balanced BSTs; §15.5 builds unbalanced ones. **What does each algorithm know that the
+4. Week 2 built balanced BSTs; §14.5 builds unbalanced ones. **What does each algorithm know that the
    other does not?**
 
-5. §23.1: state precisely what $d^{(k)}[i][j]$ means. Then explain why `k` must be the outermost loop
+5. §23.2: state precisely what $d^{(k)}[i][j]$ means. Then explain why `k` must be the outermost loop
    using only that statement.
 
 6. The in-place Floyd–Warshall overwrites entries it is still reading. Prove this is safe. (One line:
@@ -123,7 +123,7 @@ practical limit from about 13 to about 20. Both are exponential and TSP remains 
 
 **Knuth's optimisation.** Optimal BST drops from $\Theta(n^3)$ to $\Theta(n^2)$ once you prove the
 optimal root of $[i,j]$ lies between those of $[i,j-1]$ and $[i+1,j]$. It generalises to a family of
-interval DPs satisfying the quadrangle inequality, and it is the natural next thing after §15.5.
+interval DPs satisfying the quadrangle inequality, and it is the natural next thing after §14.5.
 
 **Johnson's algorithm** (CLRS §23.3). All-pairs shortest paths on a **sparse** graph with negative
 edges, in $O(V^2\log V + VE)$ — better than $\Theta(V^3)$ when $E \ll V^2$. It runs Bellman–Ford once

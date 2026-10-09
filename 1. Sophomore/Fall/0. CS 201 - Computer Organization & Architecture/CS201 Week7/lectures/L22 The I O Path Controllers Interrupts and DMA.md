@@ -2,9 +2,13 @@
 ## Week 7 · Lecture 1 of 3
 ### The I/O Path — Controllers, Interrupts and DMA
 
+*“In total desperation, I called over to the engineering building, and I said, "Please cut off a nanosecond and send it over to me."”* — Grace Hopper, interview on *60 Minutes* (24 August 1986)
+
 ---
 
 **Reading:** CS:APP §6.1.2–6.1.5, §10.1–10.5 · **Previous:** L21, demand paging and COW
+
+**Coursework:** 📊 **Quiz 7** today · 🔬 **Lab 6** Tue this week 15:00–16:50 · 📝 **PS 7** released Wed this week, due Fri of Week 8 17:00 · 📝 **PS 6** due Fri this week 17:00
 
 ---
 

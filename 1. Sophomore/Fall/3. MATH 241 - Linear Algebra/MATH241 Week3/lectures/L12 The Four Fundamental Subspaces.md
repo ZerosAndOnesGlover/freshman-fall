@@ -2,9 +2,13 @@
 ## Week 3 · Lecture 3 of 3 · **Friday**
 ### The Four Fundamental Subspaces
 
+*“There is no agreed upon definition of mathematics, but there is widespread agreement that the essence of mathematics is extension, generalization, and abstraction...”* — Richard Hamming, *Methods of Mathematics Applied to Calculus, Probability, and Statistics* (1985)
+
 ---
 
 **Reading:** Strang §3.6 · **Previous:** L11, basis and dimension · **Next:** Week 4, linear transformations
+
+**Coursework:** 📝 **PS 2** due today 17:00 · 📊 **Quiz 4** Mon of Week 4 · 📝 **PS 4** released Wed of Week 4, due Fri of Week 5 17:00 · 💬 **Recitation 3** Thu of Week 4 15:00–15:50
 
 > **PS 2 is due at 17:00 today.** PS 3 was released Wednesday and is due the Friday of Week 4.
 >

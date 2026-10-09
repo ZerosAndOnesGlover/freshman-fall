@@ -2,7 +2,13 @@
 ## Lecture · Week 3: Ethics in Computing
 ### The ACM Code of Ethics and Professional Responsibility
 
+*“Computing professionals' actions change the world. To act responsibly, they should reflect upon the wider impacts of their work, consistently supporting the public good.”* — ACM Code of Ethics and Professional Conduct (2018), Preamble
+
 **Date:** Wednesday 14 October 2026 · 13:00–13:50 · Week 3
+
+**Reading:** ACM Code of Ethics and Professional Conduct (2018), all four sections · Gotterbarn, Miller & Rogerson, "Software Engineering Code of Ethics" (*CACM*, 1997) · Vallor, *Technology and the Virtues*, Ch. 1 — [[CS190 Week3/resources/Reading Guide|Reading Guide]]
+
+**Coursework:** 📝 **Position Paper 1** released today, due Wed 21 Oct 12:00 · 📝 **Prep 3** due today 12:00
 
 ---
 

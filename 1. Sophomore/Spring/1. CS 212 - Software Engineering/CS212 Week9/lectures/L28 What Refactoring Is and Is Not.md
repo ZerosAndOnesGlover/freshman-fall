@@ -2,9 +2,13 @@
 ## Week 9 · Lecture 1 of 3
 ### What Refactoring Is, and What It Is Not
 
+*“When you find you have to add a feature to a program, and the program's code is not structured in a convenient way to add the feature, first refactor the program to make it easy to add the feature, then add the feature.”* — Martin Fowler, *Refactoring* (1999)
+
 ---
 
 **Sat:** Tuesday of Week 9, 10:00–10:50, TH 200 · **⚠️ Quiz 9 in the first ten minutes** — covers Week 8 · **Reading:** Fowler, *Refactoring*, 2nd ed., Ch. 1–2 · **Next:** L29, the catalogue
+
+**Coursework:** 📊 **Quiz 9** today · 📝 **Assignment 9** released Wed this week 17:00, due Fri of Week 10 17:00 · 📝 **Assignment 8** due Fri this week 17:00
 
 ---
 

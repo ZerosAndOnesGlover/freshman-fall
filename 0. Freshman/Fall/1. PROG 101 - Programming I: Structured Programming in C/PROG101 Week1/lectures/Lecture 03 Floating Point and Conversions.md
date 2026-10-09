@@ -1,7 +1,13 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 1 · Lecture 3: Floating-Point and Type Conversions
 
+*“The purpose of computing is insight, not numbers.”* — Richard Hamming, *Numerical Methods for Scientists and Engineers* (1962), Preface
+
 **Date:** Thursday 1 October 2026 · 10:00–10:50 · Week 1
+
+**Reading:** K&R, §2.7 · `<float.h>` · Goldberg, "What Every Computer Scientist Should Know About Floating-Point Arithmetic" · C11 §6.3.1.8 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 1** released today 11:00, due Fri 9 Oct 17:00 · 🔬 **Lab 1** Mon 5 Oct 15:00–16:50 · 📊 **Quiz 1** Tue 6 Oct 10:00–10:10
 
 ---
 

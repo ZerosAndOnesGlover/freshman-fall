@@ -2,7 +2,11 @@
 ## Week 1 · Lecture 2 (Tuesday)
 ### The Formal ε-δ Definition of a Limit
 
+*“And what are these same evanescent Increments? They are neither finite Quantities nor Quantities infinitely small, nor yet nothing. May we not call them the Ghosts of departed Quantities?”* — George Berkeley, *The Analyst* (1734), §35 — the objection that ε–δ finally answered
+
 **Date:** Tuesday 29 September 2026 · 11:00–11:50 · Week 1
+
+**Coursework:** 📝 **PS 1** released Wed 30 Sep 12:00, due Wed 7 Oct 11:00 · 🔬 **Lab 1** Fri 2 Oct 15:00–16:50, report due Mon 5 Oct 11:00 · 📊 **Quiz 2** Mon 5 Oct 11:00–11:15
 
 ---
 

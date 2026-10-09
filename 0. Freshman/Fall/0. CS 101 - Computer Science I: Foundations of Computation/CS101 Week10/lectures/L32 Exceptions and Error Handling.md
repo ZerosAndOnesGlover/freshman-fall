@@ -1,7 +1,13 @@
 # CS 101 · Lecture 32 (Week 10, Lecture 2)
 ## Exceptions: Error Handling as Control Flow
 
+*“Some people found error messages they couldn't ignore more annoying than wrong results, and, when judging the relative merits of programming languages, some still seem to equate "the ease of programming" with the ease of making undetected mistakes.”* — Edsger W. Dijkstra, "On the foolishness of 'natural language programming'" (EWD667, 1978)
+
 **Date:** Thursday 3 December 2026 · 09:00–09:50 · Week 10
+
+**Reading:** Guttag, Ch. 9 · Python docs — Errors and Exceptions tutorial · Python docs — Built-in Exceptions *(details at the end of the lecture)*
+
+**Coursework:** 📋 **Project 2** released Fri 4 Dec 10:00, due Fri 18 Dec 17:00 · 📝 **PS 10** released Fri 4 Dec 10:00, due Fri 11 Dec 17:00 · 📝 **PS 9** due Fri 4 Dec 17:00 · 🔬 **Lab 10** Tue 8 Dec 15:00–16:50 · 📊 **Quiz 11** Wed 9 Dec 09:00–09:10 · 📕 **Final exam** Tue 22 Dec 09:00–11:30
 
 ---
 
@@ -464,7 +470,7 @@ rate.
 
 ## Reading
 
-- **Guttag, Ch. 7** — exceptions and assertions (primary)
+- **Guttag, Ch. 9** — Exceptions and Assertions (primary)
 - **Python docs — Errors and Exceptions tutorial** — read §8.3 through §8.6
 - **Python docs — Built-in Exceptions** — skim the hierarchy diagram; know where `OSError` sits
 

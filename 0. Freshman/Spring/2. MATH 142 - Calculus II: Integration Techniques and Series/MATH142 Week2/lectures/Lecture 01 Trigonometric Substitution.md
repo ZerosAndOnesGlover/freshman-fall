@@ -2,7 +2,11 @@
 ## Week 2 · Lecture 1 (Monday)
 ### Trigonometric Substitution
 
+*“In my Judgment no Lines ought to be admitted into plain Geometry besides the right Line and the Circle.”* — Isaac Newton, *Arithmetica Universalis* (1707)
+
 **Date:** Monday 1 February 2027 · 11:00–11:50 · Week 2
+
+**Coursework:** 📊 **Quiz 2** today 11:00–11:15 · 🔬 **Lab 1** Wed 3 Feb 15:00–16:50 · 📝 **PS 1** due Fri 5 Feb 17:00 · 📝 **PS 2** released Fri 5 Feb 12:00, due Fri 12 Feb 17:00
 
 ---
 

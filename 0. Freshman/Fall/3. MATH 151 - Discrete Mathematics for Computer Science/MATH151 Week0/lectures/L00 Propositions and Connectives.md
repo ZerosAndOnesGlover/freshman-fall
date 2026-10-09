@@ -2,7 +2,13 @@
 ## Lecture 0. Propositions and Logical Connectives
 ### Monday, Week 0
 
+*“A successful attempt to express logical propositions by symbols, the laws of whose combinations should be founded upon the laws of the mental processes which they represent, would, so far, be a step towards a philosophical language.”* — George Boole, *An Investigation of the Laws of Thought* (1854)
+
 **Date:** Monday 21 September 2026 · 13:00–13:50 · Week 0
+
+**Reading:** Rosen, 8e §1.1 · Epp, 5e §2.1 · Levin, 3e §0.2, §3.1 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 0** released Fri 25 Sep 14:00, due Fri 2 Oct 17:00
 
 ---
 
@@ -342,5 +348,11 @@ Work these before Thursday's lecture:
    - (d) ¬(p ∧ ¬q) → (r ∨ q)
 
 ---
+
+## Reading
+
+- **Rosen, 8e §1.1** — Propositional logic
+- **Epp, 5e §2.1** — Logical form and logical equivalence
+- **Levin, 3e §0.2, §3.1** — Mathematical statements; propositional logic
 
 *Next: Lecture 1 — [[L01 Truth Tables]]*

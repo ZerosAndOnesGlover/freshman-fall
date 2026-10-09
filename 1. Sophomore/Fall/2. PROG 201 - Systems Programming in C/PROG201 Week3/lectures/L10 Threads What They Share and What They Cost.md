@@ -2,9 +2,13 @@
 ## Week 3 · Lecture 1 of 3
 ### Threads: What They Share, and What They Cost
 
+*“If we believe in data structures, we must believe in independent (hence simultaneous) processing. For why else would we collect items within a structure? Why do we tolerate languages that give us the one without the other?”* — Alan Perlis, "Epigrams on Programming" (1982), #68
+
 ---
 
 **Reading:** APUE Ch. 11 · TLPI Ch. 29–31 · `man 7 pthreads`, `man 3 pthread_create` · **Previous:** L09 · **Next:** L11 — mutexes and condition variables
+
+**Coursework:** 📊 **Quiz 3** today · 📝 **PS 3** released Wed this week, due Fri of Week 4 17:00 · 📝 **PS 2** due Fri this week 17:00 · 🔬 **Lab 3** Mon of Week 4 15:00–16:50
 
 ---
 

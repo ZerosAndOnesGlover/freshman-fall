@@ -2,7 +2,11 @@
 ## Week 0 · Lecture 2 (Wednesday)
 ### Substitution and the Antiderivative Catalogue
 
+*“A large quantity of examples is indispensable.”* — Augustus De Morgan, *The Differential and Integral Calculus* (1836)
+
 **Date:** Wednesday 20 January 2027 · 11:00–11:50 · Week 0 — moved from Tuesday to follow Lecture 1
+
+**Coursework:** 📊 **Quiz 0** Thu 21 Jan 15:00–15:25 · 📝 **PS 0** due Fri 22 Jan 17:00 · 📊 **Quiz 1** Mon 25 Jan 11:00–11:15
 
 ---
 

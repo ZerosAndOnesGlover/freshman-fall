@@ -1,7 +1,13 @@
 # PROG 101 · Programming I - Structured Programming in C
 ## Week 0 · Lecture 2: The Command Line, Make, and GDB
 
+*“The successful construction of all machinery depends on the perfection of the tools employed; and whoever is a master in the arts of tool-making possesses the key to the construction of all machines.”* — Charles Babbage, as quoted in Samuel Smiles, *Industrial Biography* (1864)
+
 **Date:** Wednesday 23 September 2026 · 10:00–10:50 · Week 0
+
+**Reading:** King §15.4 · GNU Make manual, Ch. 2 · GDB manual, Ch. 1 · Chacon & Straub, *Pro Git*, 2nd ed., Ch. 1–2 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 0** released Fri 25 Sep 17:00, due Tue 29 Sep 10:00 · 🔬 **Lab 0** Mon 28 Sep 15:00–16:50 · 📊 **Quiz 0** Tue 29 Sep 10:00–10:10
 
 ---
 
@@ -88,6 +94,7 @@ Tab       # Autocomplete filenames and commands
 !!        # Repeat last command
 !gcc      # Repeat last command starting with 'gcc'
 ```
+Note: The `!` command is placed before any command to execute the last command starting with that command, it is not particular to `!!` and `!gcc` alone. For example, `!git` will execute the last git command you did on your terminal, if that command is `git log`, it gets executed again.
 
 ---
 
@@ -522,6 +529,15 @@ Also worth knowing: `-Wshadow` (a local hiding an outer variable), `-Wconversion
 | **Breakpoint** | A pause point in your program where GDB stops execution |
 | **Call stack** | The sequence of function calls that led to the current point |
 | **Stack frame** | The memory region holding one function call's local variables and return address |
+
+---
+
+## Reading
+
+- **King §15.4** — Building a multiple-file program: makefiles
+- **GNU Make manual, Ch. 2** — An Introduction to Makefiles
+- **GDB manual, Ch. 1** — A Sample GDB Session
+- **Chacon & Straub, *Pro Git*, 2nd ed., Ch. 1–2** — for §6 (free at git-scm.com/book)
 
 ---
 

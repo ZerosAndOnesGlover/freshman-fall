@@ -1,9 +1,15 @@
 # PHYS 141 · Lecture 12
 # Applications of Newton's Laws: Friction, Inclines, and Connected Systems
 
+*“The alteration of motion is ever proportional to the motive force impressed; and is made in the direction of the right line in which that force is impressed.”* — Isaac Newton, *Principia* (1687), Law II, tr. Motte
+
 > **Core Principle:** Newton's second law is one equation — ΣF⃗ = ma⃗ — applied over and over to different systems with different forces. Mastery of this week's material comes from methodical FBD construction and disciplined component decomposition, not from memorizing special cases.
 
 **Date:** Friday 16 October 2026 · 14:00–14:50 · Week 3
+
+**Reading:** Serway & Jewett §5.7–5.8 (friction), §6.1 (the force behind circular motion) · HRK Ch. 5
+
+**Coursework:** 📝 **PS 2** due today 17:00 · 📝 **PS 3** released today 15:00, due Fri 23 Oct 17:00 · 📊 **Quiz 3** Mon 19 Oct 14:00 · 🔬 **Lab 4** Thu 22 Oct 14:00–17:00
 
 ---
 

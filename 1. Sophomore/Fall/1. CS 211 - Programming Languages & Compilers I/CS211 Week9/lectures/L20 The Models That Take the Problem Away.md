@@ -2,9 +2,13 @@
 ## Week 9 · Lecture 2 of 2
 ### The Models That Take the Problem Away
 
+*“There are two ways of constructing a software design: One way is to make it so simple that there are obviously no deficiencies, and the other way is to make it so complicated that there are no obvious deficiencies. The first method is far more difficult.”* — C. A. R. Hoare, "The Emperor's Old Clothes" (Turing Award lecture, 1980)
+
 ---
 
 **Reading:** Manson, Pugh & Adve, "The Java Memory Model" (2005) · Batty et al. (2011) · Armstrong, "Making Reliable Distributed Systems" ch. 2 · **Next:** L21, domain-specific languages
+
+**Coursework:** 📝 **PS 8** due Fri this week 17:00 · 🔬 **Lab 9** Fri this week 14:00–15:50 · 📊 **Quiz 10** Tue of Week 10 · 📝 **PS 10** released Wed of Week 10, due Fri of Week 11 17:00
 
 ---
 

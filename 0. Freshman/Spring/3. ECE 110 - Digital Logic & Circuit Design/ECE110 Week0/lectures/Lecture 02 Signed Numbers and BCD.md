@@ -2,7 +2,11 @@
 ## Week 0 · Lecture 2 (Thursday)
 ### Signed Numbers and BCD
 
+*“One does not learn computing by using a hand calculator, but one can forget arithmetic.”* — Alan Perlis, "Epigrams on Programming" (1982), #89
+
 **Date:** Thursday 21 January 2027 · 13:00–14:15 · Week 0
+
+**Coursework:** 📝 **PS 0** released today 14:30, due Thu 28 Jan 13:00 · 🔬 **Lab 0** Fri 22 Jan 14:00–15:50
 
 ---
 

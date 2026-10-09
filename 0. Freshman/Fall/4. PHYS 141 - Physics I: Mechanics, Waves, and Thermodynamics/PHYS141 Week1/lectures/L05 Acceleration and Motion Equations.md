@@ -1,9 +1,15 @@
 # PHYS 141 · Lecture 5
 # Acceleration & The Kinematic Equations
 
+*“A motion is said to be uniformly accelerated, when starting from rest, it acquires, during equal time-intervals, equal increments of speed.”* — Galileo Galilei, *Dialogues Concerning Two New Sciences* (1638), Third Day, tr. Crew & de Salvio
+
 > **Core Principle:** Acceleration is the rate of change of velocity. Under constant acceleration — the most important special case — the five kinematic equations can be derived rigorously from calculus. Memorizing them without this derivation is fragile; understanding the derivation makes them unforgettable and tells you exactly when they apply.
 
 **Date:** Tuesday 29 September 2026 · 14:00–14:50 · Week 1
+
+**Reading:** Serway & Jewett §2.5, §2.7, §2.9 · HRK Ch. 2
+
+**Coursework:** 🔬 **Lab 1** Thu 1 Oct 14:00–17:00 · 📝 **PS 0** due Fri 2 Oct 17:00 · 📝 **PS 1** released Fri 2 Oct 15:00, due Fri 9 Oct 17:00 · 📊 **Quiz 1** Mon 5 Oct 14:00
 
 ---
 

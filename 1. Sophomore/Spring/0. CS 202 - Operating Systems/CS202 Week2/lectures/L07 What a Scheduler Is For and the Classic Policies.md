@@ -2,9 +2,13 @@
 ## Week 2 · Lecture 1 of 3
 ### What a Scheduler Is For, and the Classic Policies
 
+*“System designers who do not allow users to type far ahead ought to be tarred and feathered, or worse yet, be forced to use their own system.”* — Andrew S. Tanenbaum, *Operating Systems: Design and Implementation*, 3rd ed.
+
 ---
 
 **Sat:** Monday of Week 2, 09:00–09:50, VNC 101, **after Quiz 2** · **Reading:** OSTEP Ch. 7 · **Next:** L08, MLFQ and fair share
+
+**Coursework:** 📊 **Quiz 2** today · 🔬 **Lab 1** Tue this week 15:00–16:50 · 📝 **PS 2** released Wed this week, due Fri of Week 3 17:00 · 📝 **PS 1** due Fri this week 17:00
 
 ---
 

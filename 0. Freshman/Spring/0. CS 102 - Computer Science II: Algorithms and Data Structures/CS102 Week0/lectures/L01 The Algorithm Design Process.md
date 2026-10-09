@@ -1,7 +1,13 @@
 # CS 102 · Computer Science II
 ## Lecture 01: The Algorithm Design Process
 
+*“An algorithm must be seen to be believed.”* — Donald Knuth, *The Art of Computer Programming*, Vol. 1 (1968), §1.1
+
 **Date:** Tuesday 19 January 2027 · 09:00–09:50 · Week 0 — moved from Monday 18 January (Martin Luther King Day, no classes)
+
+**Reading:** CLRS 4th ed. Ch. 1 (§1.1–1.2) · Skiena, *Algorithm Design Manual*, Ch. 1
+
+**Coursework:** 📊 **Quiz 1** Mon 25 Jan 09:00–09:15
 
 ---
 

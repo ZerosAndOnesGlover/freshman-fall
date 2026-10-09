@@ -2,7 +2,11 @@
 ## Week 1 · Lecture 3 (Wednesday)
 ### Infinite Limits and Limits at Infinity
 
+*“The potential infinite means nothing other than an undetermined, variable quantity, always remaining finite, which has to assume values that either become smaller than any finite limit no matter how small, or greater than any finite limit no matter how great.”* — Georg Cantor, "Mitteilungen zur Lehre vom Transfiniten" (1887–88)
+
 **Date:** Wednesday 30 September 2026 · 11:00–11:50 · Week 1
+
+**Coursework:** 📝 **PS 1** released today 12:00, due Wed 7 Oct 11:00 · 🔬 **Lab 1** Fri 2 Oct 15:00–16:50, report due Mon 5 Oct 11:00 · 📊 **Quiz 2** Mon 5 Oct 11:00–11:15
 
 ---
 

@@ -2,8 +2,8 @@
 
 ## Required Textbook Reading
 
-- **HRK:** Ch. 5 (Force and Newton's Laws) — all sections; Ch. 6 (Friction) — §6.1–6.3
-- **Serway:** Ch. 5 (The Laws of Motion) — all sections; Ch. 6 §6.1–6.2 (friction)
+- **HRK:** Halliday, Resnick & Krane, *Physics*, 5th ed. — Ch. 3 (Force and Newton's Laws); Ch. 5 (Applications of Newton's Laws), including friction
+- **Serway:** Serway & Jewett, *Physics for Scientists and Engineers*, 10th ed. — Ch. 5 (The Laws of Motion) §5.1–5.8, with friction in §5.8; §6.1
 
 Work through all Sample Problems in both texts — they use slightly different notation and that variation solidifies understanding.
 

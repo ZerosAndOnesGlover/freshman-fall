@@ -2,9 +2,13 @@
 ## Week 4 · Lecture 1 of 3
 ### Patterns as a Vocabulary
 
+*“...every pattern we define must be formulated in the form of a rule which establishes a relationship between a context, a system of forces which arises in that context, and a configuration which allows these forces to resolve themselves in that context.”* — Christopher Alexander, *The Timeless Way of Building* (1979)
+
 ---
 
 **Sat:** Tuesday of Week 4, 10:00–10:50, TH 200 · **⚠️ Quiz 4 in the first ten minutes** — covers Week 3 · **Reading:** Gamma et al., *Design Patterns*, Ch. 1 · **Next:** L14, creational and structural
+
+**Coursework:** 📊 **Quiz 4** today · 📝 **Assignment 4** released Wed this week 17:00, due Fri of Week 5 17:00 · 📝 **Assignment 3** due Fri this week 17:00
 **A 2 was due Friday. A 3 is due Friday of this week.**
 
 ---

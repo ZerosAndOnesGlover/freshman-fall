@@ -2,7 +2,11 @@
 ## Week 4 · Lecture 1 (Monday)
 ### Differentiation Rules: Power, Sum, Product, Quotient
 
+*“Theorems... record more complex patterns of thinking that once shown to be valid need not be repeated every time they are needed.”* — Richard Hamming, *Methods of Mathematics Applied to Calculus, Probability, and Statistics* (1985)
+
 **Date:** Monday 19 October 2026 · 11:00–11:50 · Week 4
+
+**Coursework:** 📊 **Quiz 4** today 11:00–11:15 · 🔬 **Lab 3** due today 17:00 · 📝 **PS 3** due Wed 21 Oct 11:00 · 📝 **PS 4** released Wed 21 Oct 12:00, due Wed 28 Oct 11:00 · 🔬 **Lab 4** Fri 23 Oct 15:00–16:50
 
 ---
 

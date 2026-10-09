@@ -2,9 +2,13 @@
 ## Week 10 · Lecture 3 of 3
 ### Versioning, and Backward Compatibility
 
+*“Compatibility means deliberately repeating other people's mistakes.”* — David Wheeler
+
 ---
 
 **Sat:** Thursday of Week 10, 10:00–10:50, TH 200 · **Reading:** Stripe's API versioning post; SemVer 2.0.0 · **Next:** Week 11, technical debt and metrics
+
+**Coursework:** 📝 **Assignment 9** due Fri this week 17:00 · 📊 **Quiz 11** Tue of Week 11 · 📝 **Assignment 11** released Wed of Week 11 17:00, due Fri of Week 12 17:00
 
 ---
 

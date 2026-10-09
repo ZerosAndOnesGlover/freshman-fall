@@ -1,7 +1,13 @@
 # PHYS 141 · Physics I: Mechanics, Waves & Thermodynamics
 ## Lecture 35 — Heat, Specific Heat Capacity, and Calorimetry
 
+*“Many facts have lately transpired which tend to overthrow the hypothesis that heat is itself a body, and to prove that it consists in a motion of the ultimate particles of bodies.”* — Rudolf Clausius, "On the Moving Force of Heat" (1850)
+
 **Date:** Tuesday 8 December 2026 · 14:00–14:50 · Week 11
+
+**Reading:** Serway & Jewett §19.1–19.3 · HRK Ch. 23
+
+**Coursework:** 🔬 **Lab 11** Thu 10 Dec 14:00–17:00 · 📝 **PS 10** due Fri 11 Dec 17:00 · 📝 **PS 11** released Fri 11 Dec 15:00, due Fri 18 Dec 17:00 · 📊 **Quiz 11** Mon 14 Dec 14:00
 
 ---
 

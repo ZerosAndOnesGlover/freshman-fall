@@ -1,7 +1,13 @@
 # CS 102 · Computer Science II
 ## Lecture 33: Suffix Arrays and Applications
 
+*“The string is a stark data structure and everywhere it is passed there is much duplication of process. It is a perfect vehicle for hiding information.”* — Alan Perlis, "Epigrams on Programming" (1982), #34
+
 **Date:** Friday 2 April 2027 · 09:00–09:50 · Week 10
+
+**Reading:** CLRS §32.5 · Sedgewick & Wayne §6.3
+
+**Coursework:** 📝 **PS 10** released today 10:00, due Fri 9 Apr 17:00 · 📝 **PS 9** due today 17:00 · 📊 **Quiz 11** Mon 5 Apr 09:00–09:15 · 🔬 **Lab 10** Tue 6 Apr 15:00–16:50 · 📕 **Final exam** Wed 21 Apr 09:00–11:30
 
 ---
 
@@ -190,8 +196,8 @@ meet are about strings.
 
 ## 8. What to Do
 
-- Read CLRS §32.3 (finite automata) for a different view of KMP. Suffix arrays are not in CLRS;
-  **Sedgewick §6.3** is the standard undergraduate treatment.
+- Read CLRS §32.3 (finite automata) for a different view of KMP. Suffix arrays are CLRS §32.5, new in
+  the 4th edition; **Sedgewick §6.3** covers them with the LCP array.
 - **PS 10** builds a suffix array, an LCP array, and finds the longest repeated substring.
 - **Lab 10** is the plagiarism detector.
 - **Quiz 10 covers Week 9.**

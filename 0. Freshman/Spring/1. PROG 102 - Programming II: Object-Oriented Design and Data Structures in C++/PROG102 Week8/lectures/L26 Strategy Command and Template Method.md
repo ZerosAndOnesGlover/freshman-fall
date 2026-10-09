@@ -1,11 +1,15 @@
 # PROG 102 · Lecture 26
 ## Strategy, Command, and Template Method
 
+*“It is the user who should parameterize procedures, not their creators.”* — Alan Perlis, "Epigrams on Programming" (1982), #76
+
 **Week 8 · Wednesday · 50 minutes**
 **Reading:** Gang of Four Ch. 5 — Strategy, Command, Template Method
 **Assumes:** L25, Week 4, Week 7
 
 **Date:** Wednesday 17 March 2027 · 10:00–10:50 · Week 8
+
+**Coursework:** 📝 **PS 7** due Fri 19 Mar 17:00 · 📝 **PS 8** released Fri 19 Mar 10:00, due Fri 26 Mar 17:00 · 🔬 **Lab 8** Mon 22 Mar 15:00–16:50 · 📊 **Quiz 9** Tue 23 Mar 10:00–10:15 · 📘 **Midterm 2** Tue 30 Mar 18:00–19:30
 
 ---
 

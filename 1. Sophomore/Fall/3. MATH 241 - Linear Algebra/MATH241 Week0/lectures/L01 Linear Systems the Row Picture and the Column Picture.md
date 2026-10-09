@@ -2,9 +2,13 @@
 ## Week 0 · Lecture 1 of 3 · **Friday** of Week 0
 ### Linear Systems: the Row Picture and the Column Picture
 
+*“As long as algebra and geometry proceeded along separate paths, their advance was slow and their applications limited. But when these sciences joined company, they drew from each other fresh vitality and thenceforward marched on at a rapid pace toward perfection.”* — Joseph-Louis Lagrange, *Leçons élémentaires sur les mathématiques* (1795)
+
 ---
 
 **Reading:** Strang §1.1–§1.3, §2.1 · **Next:** L02, elimination
+
+**Coursework:** 📝 **PS 0** released Wed this week, due Fri of Week 1 17:00
 
 > **Week 0's Monday is Labor Day**, so this course's three Week 0 lectures are sat on **Friday,
 > Tuesday and Friday**. From Week 1 the pattern is the ordinary Monday / Tuesday / Friday.

@@ -2,9 +2,13 @@
 ## Week 1 · Lecture 2 of 3
 ### User Stories, and What Makes One Worth Writing
 
+*“The business of software building isn't really high-tech at all. It's most of all a business of talking to each other and writing things down.”* — Tom DeMarco, *Why Does Software Cost So Much?* (1995)
+
 ---
 
 **Sat:** Wednesday of Week 1, 10:00–10:50, TH 200 · **Reading:** Cohn, *User Stories Applied*, Ch. 1–2 (or Sommerville §4.4) · **Next:** L06, use cases and the domain model
+
+**Coursework:** 📝 **Assignment 1** released today 17:00, due Fri of Week 2 17:00 · 📋 **Walking skeleton** due Fri this week 17:00 · 📝 **Assignment 0** due Fri this week 17:00 · 📊 **Quiz 2** Tue of Week 2
 **A 1 is released after this lecture**, Wednesday 17:00.
 
 ---

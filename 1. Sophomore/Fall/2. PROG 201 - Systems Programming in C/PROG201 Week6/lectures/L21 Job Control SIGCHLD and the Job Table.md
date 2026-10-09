@@ -2,9 +2,13 @@
 ## Week 6 · Lecture 3 of 3
 ### Job Control: `SIGCHLD`, the Job Table, and `fg`/`bg`/`jobs`
 
+*“In man-machine symbiosis, it is man who must adjust: The machines can't.”* — Alan Perlis, "Epigrams on Programming" (1982), #99
+
 ---
 
 **Reading:** APUE §9.8, §10.7 · CS:APP §8.5.5–8.5.6 · TLPI §34.7 · `man 2 waitpid`, `man 3 tcsetpgrp` · **Previous:** L20 · **Next:** Lab 6 — add job control, **Monday of Week 7**
+
+**Coursework:** 📋 **Project 1** released Fri this week, due Fri of Week 9 17:00 · 📝 **PS 5** due Fri this week 17:00 · 🔬 **Lab 5** Fri this week 16:00–17:50 · 🔬 **Lab 6** Mon of Week 7 15:00–16:50 · 📊 **Quiz 7** Tue of Week 7 · 📝 **PS 7** released Wed of Week 7, due Fri of Week 8 17:00
 
 ---
 

@@ -2,7 +2,11 @@
 ## Week 11 · Lecture 2 (Thursday)
 ### ROM and Memory Organisation
 
+*“Presumably the child-brain is something like a note-book as one buys it from the stationer's. Rather little mechanism, and lots of blank sheets.”* — Alan Turing, "Computing Machinery and Intelligence" (1950)
+
 **Date:** Thursday 8 April 2027 · 13:00–14:15 · Week 11
+
+**Coursework:** 📝 **PS 10** due today 13:00 · 📝 **PS 11** released today 14:30, due Thu 15 Apr 13:00 · 🔬 **Lab 11** Fri 9 Apr 14:00–15:50 · 📊 **Quiz 11** Wed 14 Apr 13:00–13:10 · 📕 **Final exam** Mon 19 Apr 08:00–10:00
 
 ---
 

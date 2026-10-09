@@ -2,9 +2,13 @@
 ## Week 8 · Lecture 3 of 3
 ### Copy-on-Write, Snapshots, and Checksums
 
+*“Simplicity is prerequisite for reliability.”* — Edsger W. Dijkstra, "How do we tell truths that might hurt?" (EWD498, 1975)
+
 ---
 
 **Sat:** Friday of Week 8, 09:00–09:50, VNC 101 · **Reading:** OSTEP Ch. 43 §43.1–§43.4; Bonwick & Ahrens on ZFS · **Next:** Week 9, I/O and device drivers
+
+**Coursework:** 📝 **PS 7** due today 17:00 · 📊 **Quiz 9** Mon of Week 9 · 🔬 **Lab 8** Tue of Week 9 15:00–16:50 · 📋 **Project 2** released Wed of Week 9, due Fri of the completion period 17:00 · 📝 **PS 9** released Wed of Week 9, due Fri of Week 10 17:00
 
 ---
 

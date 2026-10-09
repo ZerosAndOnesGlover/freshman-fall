@@ -2,9 +2,13 @@
 ## Week 11 · Lecture 2 of 3
 ### Agreement: Raft's Leader Election
 
+*“Either you will be a leader, or a follower, and my goal is for you to be a leader.”* — Richard Hamming, *The Art of Doing Science and Engineering* (1991)
+
 ---
 
 **Sat:** Wednesday of Week 11, 09:00–09:50, VNC 101 · **Reading:** Ongaro & Ousterhout, "In Search of an Understandable Consensus Algorithm" §§1–5 · **Next:** L36, partitions and what real systems do
+
+**Coursework:** 📝 **PS 11** released today, due Fri of Week 12 17:00 · 📋 **Project 1** due Fri this week 17:00 · 📝 **PS 10** due Fri this week 17:00 · 🔬 **Lab 11** Tue of Week 12 15:00–16:50
 
 > **Project 1 is due Friday at 17:00.**
 

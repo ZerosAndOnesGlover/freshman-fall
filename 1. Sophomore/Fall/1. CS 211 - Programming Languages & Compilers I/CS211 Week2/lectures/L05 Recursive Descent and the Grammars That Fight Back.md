@@ -2,9 +2,13 @@
 ## Week 2 · Lecture 1 of 2
 ### Recursive Descent, and the Grammars That Fight Back
 
+*“Everything should be built top-down, except the first time.”* — Alan Perlis, "Epigrams on Programming" (1982), #15
+
 ---
 
 **Reading:** Dragon §4.4 · **Next:** L06, bottom-up parsing and what bison is telling you
+
+**Coursework:** 📊 **Quiz 2** today · 📝 **PS 2** released Wed this week, due Fri of Week 3 17:00 · 📝 **PS 1** due Fri this week 17:00 · 🔬 **Lab 2** Fri this week 14:00–15:50
 
 ---
 

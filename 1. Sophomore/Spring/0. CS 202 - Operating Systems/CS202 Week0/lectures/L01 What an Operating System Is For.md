@@ -2,9 +2,13 @@
 ## Week 0 · Lecture 1 of 3
 ### What an Operating System Is For
 
+*“If you just want to use the system, instead of hacking on its internals, you don't need source code.”* — Andrew S. Tanenbaum, Usenet post in the "Linux is obsolete" debate (5 February 1992)
+
 ---
 
 **Sat:** first Wednesday of Week 0, 09:00–09:50, VNC 101 · **Reading:** OSTEP Ch. 1–2 · **Next:** L02, the two modes and the wall between them
+
+**Coursework:** 📝 **PS 0** released Wed this week, due Fri of Week 1 17:00 · 🔬 **Lab 0** Fri this week 10:00–11:50
 
 ---
 

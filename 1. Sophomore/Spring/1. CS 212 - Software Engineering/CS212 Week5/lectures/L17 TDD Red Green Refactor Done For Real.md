@@ -2,9 +2,13 @@
 ## Week 5 · Lecture 2 of 3
 ### TDD: Red, Green, Refactor — Done for Real
 
+*“I'm not a great programmer; I'm just a good programmer with great habits.”* — Kent Beck, as quoted in Martin Fowler et al., *Refactoring* (1999)
+
 ---
 
 **Sat:** Wednesday of Week 5, 10:00–10:50, TH 200 · **Reading:** Beck, *TDD by Example*, Part I, in one sitting · **Next:** L18, test doubles and BDD
+
+**Coursework:** 📝 **Assignment 5** released today 17:00, due Fri of Week 6 17:00 · 📝 **Assignment 4** due Fri this week 17:00 · 📊 **Quiz 6** Tue of Week 6 · 📋 **Phase 1 presentation** Tue of Week 6 · 📘 **Midterm** Wed of Week 6 18:00–19:15
 **A 5 is released after this lecture**, Wednesday 17:00.
 
 ---

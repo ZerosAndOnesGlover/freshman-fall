@@ -1,11 +1,15 @@
 # PROG 102 · Lecture 22
 ## What Patterns Are
 
+*“...every pattern we define must be formulated in the form of a rule which establishes a relationship between a context, a system of forces which arises in that context, and a configuration which allows these forces to resolve themselves in that context.”* — Christopher Alexander, *The Timeless Way of Building* (1979)
+
 **Week 7 · Tuesday · 50 minutes**
 **Reading:** Gang of Four, Ch. 1 · **Reference:** Meyers Items 32–36 (inheritance design)
 **Assumes:** Week 4 (inheritance, abstract classes), Week 6 (you have implemented one already)
 
 **Date:** Tuesday 9 March 2027 · 10:00–10:50 · Week 7
+
+**Coursework:** 📊 **Quiz 7** today 10:00–10:15 · 📝 **PS 6** due Fri 12 Mar 17:00 · 📝 **PS 7** released Fri 12 Mar 10:00, due Fri 19 Mar 17:00 · 🔬 **Lab 7** Mon 15 Mar 15:00–16:50
 
 ---
 

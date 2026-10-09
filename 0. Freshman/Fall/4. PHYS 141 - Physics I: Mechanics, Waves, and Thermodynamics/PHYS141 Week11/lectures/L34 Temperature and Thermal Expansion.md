@@ -1,7 +1,13 @@
 # PHYS 141 · Physics I: Mechanics, Waves & Thermodynamics
 ## Lecture 34 — Temperature, the Zeroth Law, and Thermal Expansion
 
+*“Heat can evidently be a cause of motion only by virtue of the changes of volume or of form which it produces in bodies.”* — Sadi Carnot, *Reflections on the Motive Power of Fire* (1824)
+
 **Date:** Monday 7 December 2026 · 14:00–14:50 · Week 11
+
+**Reading:** Serway & Jewett §18.1–18.4 · HRK Ch. 21
+
+**Coursework:** 📊 **Quiz 10** today 14:00 · 🔬 **Lab 11** Thu 10 Dec 14:00–17:00 · 📝 **PS 10** due Fri 11 Dec 17:00 · 📝 **PS 11** released Fri 11 Dec 15:00, due Fri 18 Dec 17:00
 
 ---
 

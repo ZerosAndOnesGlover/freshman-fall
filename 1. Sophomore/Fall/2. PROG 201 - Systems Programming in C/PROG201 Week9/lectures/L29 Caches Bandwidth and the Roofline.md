@@ -2,9 +2,13 @@
 ## Week 9 · Lecture 2 of 3
 ### Caches, Bandwidth, and the Roofline
 
+*“We are therefore forced to recognize the possibility of constructing a hierarchy of memories, each of which has greater capacity than the preceding but which is less quickly accessible.”* — Arthur Burks, Herman Goldstine & John von Neumann, *Preliminary Discussion of the Logical Design of an Electronic Computing Instrument* (1946)
+
 ---
 
 **Reading:** CS:APP Ch. 6 · Williams, Waterman & Patterson, *Roofline: An Insightful Visual Performance Model* (CACM 2009) · Drepper, *What Every Programmer Should Know About Memory* §3 · **Previous:** L28 · **Next:** L30 — optimising without fooling yourself
+
+**Coursework:** 📝 **PS 9** released today, due Fri of Week 10 17:00 · 📋 **Project 1** due Fri this week 17:00 · 📝 **PS 8** due Fri this week 17:00 · 🔬 **Lab 9** Mon of Week 10 15:00–16:50 · 📊 **Quiz 10** Tue of Week 10
 
 ---
 

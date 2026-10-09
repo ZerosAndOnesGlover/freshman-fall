@@ -2,7 +2,11 @@
 ## Week 11 · Lecture 1 (Monday)
 ### Area Between Curves
 
+*“Any segment of a section of a right angled cone (i.e., a parabola) is four-thirds of the triangle which has the same base and equal height.”* — Archimedes, *The Method of Mechanical Theorems*
+
 **Date:** Monday 7 December 2026 · 11:00–11:50 · Week 11
+
+**Coursework:** 📊 **Quiz 11** today 11:00–11:15 · 🔬 **Lab 10** due today 17:00 · 📝 **PS 10** due Wed 9 Dec 11:00 · 📝 **PS 11** released Wed 9 Dec 12:00, due Wed 16 Dec 11:00 · 🔬 **Lab 11** Fri 11 Dec 15:00–16:50 · 📕 **Final exam** Wed 23 Dec 09:00–11:30
 
 ---
 

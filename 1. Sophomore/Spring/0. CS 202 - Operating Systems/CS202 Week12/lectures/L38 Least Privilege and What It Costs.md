@@ -2,9 +2,13 @@
 ## Week 12 · Lecture 2 of 3
 ### Least Privilege, and What It Costs
 
+*“Least privilege: Every program and every user of the system should operate using the least set of privileges necessary to complete the job.”* — Jerome Saltzer & Michael Schroeder, "The Protection of Information in Computer Systems" (1975)
+
 ---
 
 **Sat:** Wednesday of Week 12, 09:00–09:50, VNC 101 · **Reading:** Saltzer & Schroeder §I.A; `man 2 seccomp`, `man 7 capabilities` · **Next:** L39, what this course was about
+
+**Coursework:** 📝 **PS 12** released today, due Fri of the completion period 17:00 · 📝 **PS 11** due Fri this week 17:00 · 🔬 **Lab 12** Tue of the completion period 15:00–16:50 · 📕 **Final exam** Wed of finals week 09:00–11:30
 
 ---
 

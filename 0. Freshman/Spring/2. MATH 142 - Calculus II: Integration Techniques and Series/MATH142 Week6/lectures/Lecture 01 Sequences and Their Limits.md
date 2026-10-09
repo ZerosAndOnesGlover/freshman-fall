@@ -2,7 +2,11 @@
 ## Week 6 · Lecture 1 (Monday)
 ### Sequences and Their Limits
 
+*“The infinite! No other question has ever moved so profoundly the spirit of man; no other idea has so fruitfully stimulated his intellect; yet no other concept stands in greater need of clarification than that of the infinite.”* — David Hilbert, "On the Infinite" (1925)
+
 **Date:** Monday 1 March 2027 · 11:00–11:50 · Week 6
+
+**Coursework:** 📊 **Quiz 6** today 11:00–11:15 · 📘 **Midterm 1** Wed 3 Mar 18:00–19:15 · 🔬 **Lab 5** Wed 3 Mar 15:00–16:50 · 📝 **PS 5** due Fri 5 Mar 17:00 · 📝 **PS 6** released Fri 5 Mar 12:00, due Fri 12 Mar 17:00
 
 ---
 

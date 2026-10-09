@@ -1,7 +1,13 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 2 · Lecture 3: Control Flow — if, switch, while, for
 
+*“The go to statement as it stands is just too primitive, it is too much an invitation to make a mess of one's program.”* — Edsger W. Dijkstra, "Go To Statement Considered Harmful" (EWD215, 1968)
+
 **Date:** Thursday 8 October 2026 · 10:00–10:50 · Week 2
+
+**Reading:** K&R §2.6–2.9 · K&R §3.1–3.8 · King Ch. 5–6 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 1** due Fri 9 Oct 17:00 · 📝 **PS 2** released Fri 9 Oct 10:00, due Fri 16 Oct 17:00 · 🔬 **Lab 2** Mon 12 Oct 15:00–16:50 · 📊 **Quiz 2** Tue 13 Oct 10:00–10:10
 
 ---
 
@@ -689,9 +695,9 @@ All three share a theme: **the loop's termination depends on something the autho
 
 ## Reading
 
-- K&R §2.6–2.9 (Relational and Logical Operators, Increment/Decrement)
-- K&R §3.1–3.8 (Control Flow — the entire chapter)
-- King Ch. 5 (Selection), Ch. 6 (Loops)
+- **K&R §2.6–2.9** — relational and logical operators, increment/decrement
+- **K&R §3.1–3.8** — control flow, the entire chapter
+- **King Ch. 5–6** — selection statements and loops
 
 ---
 

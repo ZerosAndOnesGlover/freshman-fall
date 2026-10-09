@@ -2,10 +2,8 @@
 
 ## Required Textbook Reading
 
-- **HRK:** Ch. 21 (Temperature) — all sections; Ch. 22 (Heat and the First Law) §22.1–22.6 for heat,
-  specific heat, and transfer mechanisms; Ch. 23 (Kinetic Theory) §23.1–23.4
-- **Serway:** Ch. 19 (Temperature) — all sections; Ch. 20 (First Law of Thermodynamics) §20.1–20.4 and
-  §20.7 for heat transfer; Ch. 21 (Kinetic Theory of Gases) §21.1–21.2
+- **HRK:** Halliday, Resnick & Krane, *Physics*, 5th ed. — Ch. 21 (Temperature); Ch. 22 (Molecular Properties of Gases); Ch. 23 (The First Law of Thermodynamics) for heat
+- **Serway:** Serway & Jewett, *Physics for Scientists and Engineers*, 10th ed. — Ch. 18 (Temperature) §18.1–18.5; Ch. 19 (The First Law of Thermodynamics) §19.1–19.3, §19.6; Ch. 20 §20.1
 
 ## Simulations
 

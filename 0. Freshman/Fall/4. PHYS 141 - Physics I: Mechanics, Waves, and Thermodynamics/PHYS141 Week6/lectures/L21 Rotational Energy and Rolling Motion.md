@@ -1,9 +1,15 @@
 # PHYS 141 · Lecture 21
 # Rotational Kinetic Energy & Rolling Motion
 
+*“Energy is a very subtle concept. It is very, very difficult to get right.”* — Richard Feynman, "What is Science?" (1966)
+
 > **Core Principle:** A rotating object stores kinetic energy in its rotation, exactly analogous to translational kinetic energy but with moment of inertia replacing mass and angular velocity replacing linear velocity. An object that both rotates AND translates (like a rolling ball) carries both forms of kinetic energy simultaneously — and the split between them, governed by the rolling-without-slipping condition, determines everything about how such objects accelerate down inclines.
 
 **Date:** Friday 6 November 2026 · 14:00–14:50 · Week 6
+
+**Reading:** Serway & Jewett §10.7–10.9 · HRK Ch. 9
+
+**Coursework:** 📝 **PS 5** due today 17:00 · 📝 **PS 6** released today 15:00, due Fri 13 Nov 17:00 · 📊 **Quiz 6** Mon 9 Nov 14:00 · 🔬 **Lab 7** Thu 12 Nov 14:00–17:00
 
 ---
 

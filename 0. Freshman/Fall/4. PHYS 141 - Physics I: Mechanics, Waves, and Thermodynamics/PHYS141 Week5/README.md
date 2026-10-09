@@ -51,5 +51,5 @@ By the end of Week 5, you will be able to:
 
 ## Textbooks
 
-- **HRK:** Halliday, Resnick & Krane — Ch. 9 (Center of Mass and Linear Momentum)
-- **Serway:** Ch. 9 (Linear Momentum and Collisions)
+- **HRK:** Halliday, Resnick & Krane — Ch. 6 (Momentum); Ch. 7 (Systems of Particles)
+- **Serway:** Ch. 9 (Linear Momentum and Collisions) §9.1–9.7

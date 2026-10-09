@@ -2,9 +2,13 @@
 ## Week 0 · Lecture 1 of 3
 ### Why Software Engineering Was Invented
 
+*“As long as there were no machines, programming was no problem at all; when we had a few weak computers, programming became a mild problem, and now we have gigantic computers, programming had become an equally gigantic problem.”* — Edsger W. Dijkstra, "The Humble Programmer" (EWD340, 1972)
+
 ---
 
 **Sat:** first Wednesday of Week 0, 10:00–10:50, TH 200 · **Reading:** Sommerville Ch. 1 · **Next:** L02, process models and what they were reacting to
+
+**Coursework:** 📝 **Assignment 0** released Wed this week 17:00, due Fri of Week 1 17:00 · 📋 **Team formation workshop** Thu this week 10:00–10:50
 
 ---
 

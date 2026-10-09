@@ -2,7 +2,13 @@
 ## Lecture 31 (L31) — Representations and Isomorphism
 ### Thursday, Week 10
 
+*“If one has really technically penetrated a subject, things that previously seemed in complete contrast, might be purely mathematical transformations of each other.”* — John von Neumann, as quoted in András Bródy, *Proportions, Prices, and Planning* (1970)
+
 **Date:** Thursday 3 December 2026 · 13:00–13:50 · Week 10
+
+**Reading:** Rosen, 8e §10.3 · Epp, 5e §10.2–10.3 · Levin, 3e §4.1 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 10** released Fri 4 Dec 14:00, due Fri 11 Dec 17:00 · 📝 **PS 9** due Fri 4 Dec 17:00 · 📊 **Quiz 11** Mon 7 Dec 13:00–13:15 · 🔬 **Lab 10** Wed 9 Dec 15:00–16:50 · 📕 **Final exam** Mon 21 Dec 08:00–10:00
 
 ---
 
@@ -179,7 +185,7 @@ A small change in the question produces a large change in difficulty, which is w
 ## Reading
 
 - **Rosen, 8e §10.3** — Representing graphs and graph isomorphism
-- **Epp, 5e §10.3** — Matrix representations
-- **Levin, 3e §4.2** — Isomorphism
+- **Epp, 5e §10.2–10.3** — Matrix representations; isomorphisms of graphs
+- **Levin, 3e §4.1** — Definitions (isomorphism)
 
 *Next: Lecture 32 — Paths, Connectivity, Euler and Hamilton*

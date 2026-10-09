@@ -1,7 +1,13 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 4 · Lecture 2: Strings in Depth — Processing, Searching, Building
 
+*“The string is a stark data structure and everywhere it is passed there is much duplication of process. It is a perfect vehicle for hiding information.”* — Alan Perlis, "Epigrams on Programming" (1982), #34
+
 **Date:** Wednesday 21 October 2026 · 10:00–10:50 · Week 4
+
+**Reading:** K&R §5.5 · King Ch. 13 · Man pages *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 3** due Fri 23 Oct 17:00 · 📝 **PS 4** released Fri 23 Oct 10:00, due Fri 30 Oct 17:00 · 🔬 **Lab 4** Mon 26 Oct 15:00–16:50 · 📊 **Quiz 4** Tue 27 Oct 10:00–10:10
 
 ---
 

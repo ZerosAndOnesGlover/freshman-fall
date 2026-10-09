@@ -2,7 +2,11 @@
 ## Week 7 · Lecture 3 (Friday)
 ### Comparison Tests for Series
 
+*“In plausible reasoning the principal thing is to distinguish... a more reasonable guess from a less reasonable guess.”* — George Pólya, *Induction and Analogy in Mathematics* (1954)
+
 **Date:** Friday 12 March 2027 · 11:00–11:50 · Week 7
+
+**Coursework:** 📝 **PS 6** due today 17:00 · 📝 **PS 7** released today 12:00, due Fri 19 Mar 17:00 · 📊 **Quiz 8** Mon 15 Mar 11:00–11:15 · 🔬 **Lab 7** Wed 17 Mar 15:00–16:50
 
 ---
 

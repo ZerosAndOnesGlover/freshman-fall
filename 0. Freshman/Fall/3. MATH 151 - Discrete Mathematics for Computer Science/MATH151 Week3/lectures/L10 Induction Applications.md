@@ -2,7 +2,13 @@
 ## Lecture 10 (L10) — Induction Applications: Inequalities, Divisibility, and Recursion
 ### Thursday, Week 3
 
+*“We need heuristic reasoning when we construct a strict proof as we need scaffolding when we erect a building.”* — George Pólya, *Mathematics and Plausible Reasoning* (1954)
+
 **Date:** Thursday 15 October 2026 · 13:00–13:50 · Week 3
+
+**Reading:** Rosen, 8e §5.1, §5.3, §5.5 · Epp, 5e §5.3, §5.5 · Levin, 3e §2.5 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 2** due Fri 16 Oct 17:00 · 📝 **PS 3** released Fri 16 Oct 14:00, due Fri 23 Oct 17:00 · 📊 **Quiz 4** Mon 19 Oct 13:00–13:15 · 🔬 **Lab 3** Wed 21 Oct 15:00–16:50
 
 ---
 
@@ -283,5 +289,11 @@ def array_sum(arr, n):
 5. Find the error: "Proof that all integers are equal: P(n) = 'in any set of n integers, all are equal.' Base: P(1) trivially true. Inductive step: given n+1 integers $a_1,\ldots,a_{n+1}$, by P(n) applied to $\{a_1,\ldots,a_n\}$: $a_1=\ldots=a_n$. By P(n) applied to $\{a_2,\ldots,a_{n+1}\}$: $a_2=\ldots=a_{n+1}$. Since $a_2$ is in both groups, all are equal." *(Same error as the horses — find it.)*
 
 ---
+
+## Reading
+
+- **Rosen, 8e §5.1, §5.3, §5.5** — Induction for inequalities and divisibility; recursive definitions; program correctness
+- **Epp, 5e §5.3, §5.5** — Induction II: applications; correctness of algorithms
+- **Levin, 3e §2.5** — Induction
 
 *Next: Lecture 11 — Strong Induction and the Well-Ordering Principle*

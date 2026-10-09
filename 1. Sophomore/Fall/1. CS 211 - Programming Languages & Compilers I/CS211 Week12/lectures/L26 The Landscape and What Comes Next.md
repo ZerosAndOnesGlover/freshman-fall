@@ -2,9 +2,13 @@
 ## Week 12 · Lecture 2 of 2
 ### The Landscape, and What Comes Next
 
+*“Here is a language so far ahead of its time, that it was not only an improvement on its predecessors, but also on nearly all its successors.”* — C. A. R. Hoare, on ALGOL 60, "Hints on Programming Language Design" (1973)
+
 ---
 
 **Reading:** Haas et al. (2017), "Bringing the Web up to Speed with WebAssembly" · Steele (1998), "Growing a Language" · **Next:** the final exam, and then whatever you build
+
+**Coursework:** 📋 **Project 2** due Fri this week 17:00 · 📝 **PS 11** due Fri this week 17:00 · 📝 **PS 12** due Fri this week 17:00 · 🔬 **Lab 12** Fri this week 14:00–15:50 · 📕 **Final exam** Tue of finals week 09:00–11:30
 
 ---
 

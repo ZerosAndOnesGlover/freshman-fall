@@ -1,7 +1,13 @@
 # CS 101 · Lecture 31 (Week 10, Lecture 1)
 ## Files and the I/O Boundary
 
+*“We have persistent objects, they're called files.”* — Ken Thompson, Plan 9 fortune file (1992)
+
 **Date:** Wednesday 2 December 2026 · 09:00–09:50 · Week 10
+
+**Reading:** Guttag, Ch. 7 · Python docs — `io` module, "Text I/O" · Python docs — Built-in Functions: `open` *(details at the end of the lecture)*
+
+**Coursework:** 📊 **Quiz 10** today 09:00–09:10 · 📋 **Project 2** released Fri 4 Dec 10:00, due Fri 18 Dec 17:00 · 📝 **PS 10** released Fri 4 Dec 10:00, due Fri 11 Dec 17:00 · 📝 **PS 9** due Fri 4 Dec 17:00 · 🔬 **Lab 10** Tue 8 Dec 15:00–16:50 · 📕 **Final exam** Tue 22 Dec 09:00–11:30
 
 ---
 
@@ -456,7 +462,7 @@ power failure rather than merely a process crash.
 
 ## Reading
 
-- **Guttag, Ch. 4.6** — files (primary)
+- **Guttag, Ch. 7** — Modules and Files, the files half (primary)
 - **Python docs — `io` module, "Text I/O"** — the encoding and newline discussion of §4
 - **Python docs — Built-in Functions: `open`** — read the full mode and `errors` tables
 

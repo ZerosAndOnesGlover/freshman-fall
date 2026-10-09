@@ -2,7 +2,11 @@
 ## Week 10 · Lecture 1 (Monday)
 ### Indefinite Integrals, the Net Change Theorem, and the Substitution Rule
 
+*“We now come to a decisive step of mathematical abstraction: we forget about what the symbols stand for... [The mathematician] need not be idle; there are many operations which he may carry out with these symbols, without ever having to look at the things they stand for.”* — Hermann Weyl, "The Mathematical Way of Thinking" (1940)
+
 **Date:** Monday 30 November 2026 · 11:00–11:50 · Week 10
+
+**Coursework:** 📊 **Quiz 10** today 11:00–11:15 · 📘 **Midterm 2** Wed 2 Dec 18:00–19:15 · 📝 **PS 10** released Wed 2 Dec 12:00, due Wed 9 Dec 11:00 · 📝 **PS 9** due Wed 2 Dec 11:00 · 🔬 **Lab 10** Fri 4 Dec 15:00–16:50, report due Mon 7 Dec 17:00
 
 ---
 

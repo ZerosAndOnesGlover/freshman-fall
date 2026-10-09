@@ -1,7 +1,13 @@
 # CS 102 · Computer Science II
 ## Lecture 23: Longest Common Subsequence and Edit Distance
 
+*“Editing is a rewording activity.”* — Alan Perlis, "Epigrams on Programming" (1982), #110
+
 **Date:** Wednesday 10 March 2027 · 09:00–09:50 · Week 7
+
+**Reading:** CLRS §14.4 · Dasgupta, Papadimitriou & Vazirani §6.3 (edit distance)
+
+**Coursework:** 📝 **PS 6** due Fri 12 Mar 17:00 · 📝 **PS 7** released Fri 12 Mar 10:00, due Fri 19 Mar 17:00 · 📊 **Quiz 8** Mon 15 Mar 09:00–09:15 · 🔬 **Lab 7** Tue 16 Mar 15:00–16:50
 
 ---
 

@@ -1,7 +1,13 @@
 # CS 102 · Computer Science II
 ## Lecture 21: Union-Find, and What MSTs Are For
 
+*“The applications of knowledge, especially mathematics, reveal the unity of all knowledge. In a new situation almost anything and everything you ever learned might be applicable, and the artificial divisions seem to vanish.”* — Richard Hamming, *Methods of Mathematics Applied to Calculus, Probability, and Statistics* (1985)
+
 **Date:** Friday 5 March 2027 · 09:00–09:50 · Week 6
+
+**Reading:** CLRS §19.1–19.3 (§19.4: the statement of the bound only)
+
+**Coursework:** 📝 **PS 5** due today 17:00 · 📝 **PS 6** released today 10:00, due Fri 12 Mar 17:00 · 📊 **Quiz 7** Mon 8 Mar 09:00–09:15 · 📋 **Project 1** released Mon 8 Mar 09:00, due Fri 26 Mar 17:00 · 🔬 **Lab 6** Tue 9 Mar 15:00–16:50
 
 ---
 

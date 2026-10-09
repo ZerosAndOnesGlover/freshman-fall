@@ -2,8 +2,8 @@
 
 ## Required Textbook Reading
 
-- **HRK:** Ch. 9 (Center of Mass and Linear Momentum) — all sections
-- **Serway:** Ch. 9 (Linear Momentum and Collisions) — all sections
+- **HRK:** Halliday, Resnick & Krane, *Physics*, 5th ed. — Ch. 6 (Momentum); Ch. 7 (Systems of Particles)
+- **Serway:** Serway & Jewett, *Physics for Scientists and Engineers*, 10th ed. — Ch. 9 (Linear Momentum and Collisions) §9.1–9.7
 
 ## Simulations
 

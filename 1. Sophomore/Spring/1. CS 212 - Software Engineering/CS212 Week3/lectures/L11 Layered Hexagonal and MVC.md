@@ -2,9 +2,13 @@
 ## Week 3 · Lecture 2 of 3
 ### Layered, Hexagonal, and MVC
 
+*“Any problem in computer science can be solved with another level of indirection.”* — David Wheeler, as quoted by Butler Lampson in his Turing Award Lecture (1993)
+
 ---
 
 **Sat:** Wednesday of Week 3, 10:00–10:50, TH 200 · **Reading:** Cockburn, *"Hexagonal Architecture"* (2005) — 6 pages · **Next:** L12, microservices and event-driven
+
+**Coursework:** 📝 **Assignment 3** released today 17:00, due Fri of Week 4 17:00 · 📝 **Assignment 2** due Fri this week 17:00 · 📊 **Quiz 4** Tue of Week 4
 **A 3 is released after this lecture**, Wednesday 17:00.
 
 ---

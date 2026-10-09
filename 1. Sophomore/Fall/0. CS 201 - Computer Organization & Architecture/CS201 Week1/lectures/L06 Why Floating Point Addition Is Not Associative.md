@@ -2,9 +2,13 @@
 ## Week 1 · Lecture 3 of 3
 ### Why Floating-Point Addition Is Not Associative
 
+*“Thank goodness we don't have only serious problems, but ridiculous ones as well.”* — Edsger W. Dijkstra, "A Letter to My Old Friend Jonathan" (EWD475, 1975)
+
 ---
 
 **Reading:** CS:APP §2.4.4–2.4.6 · **Previous:** L05, the anatomy of a float
+
+**Coursework:** 📊 **Quiz 2** Mon of Week 2 · 🔬 **Lab 1** Tue of Week 2 15:00–16:50 · 📝 **PS 2** released Wed of Week 2, due Fri of Week 3 17:00
 
 ---
 

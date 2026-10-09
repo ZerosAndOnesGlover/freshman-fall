@@ -2,7 +2,11 @@
 ## Week 5 · Lecture 1 (Wednesday)
 ### Decoders and Encoders
 
+*“Like punning, programming is a play on words.”* — Alan Perlis, "Epigrams on Programming" (1982), #46
+
 **Date:** Wednesday 24 February 2027 · 13:00–14:15 · Week 5
+
+**Coursework:** 📊 **Quiz 4** today 13:00–13:10 · 📝 **PS 4** due Thu 25 Feb 13:00 · 📝 **PS 5** released Thu 25 Feb 14:30, due Thu 4 Mar 13:00 · 🔬 **Lab 5** Fri 26 Feb 14:00–15:50 · 📘 **Midterm** Thu 4 Mar 18:00–19:15
 
 ---
 

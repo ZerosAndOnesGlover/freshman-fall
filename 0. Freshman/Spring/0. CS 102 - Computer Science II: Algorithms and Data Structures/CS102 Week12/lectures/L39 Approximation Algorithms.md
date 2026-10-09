@@ -1,7 +1,13 @@
 # CS 102 · Computer Science II
 ## Lecture 39: Approximation Algorithms
 
+*“Far better an approximate answer to the right question, which is often vague, than an exact answer to the wrong question, which can always be made precise.”* — John Tukey, "The future of data analysis" (1962)
+
 **Date:** Friday 16 April 2027 · 09:00–09:50 · Week 12
+
+**Reading:** CLRS §35.1–35.2 · §35.3 and §35.5 optional
+
+**Coursework:** 📋 **Project 2** due today 17:00 · 📝 **PS 11** due today 17:00 · 📕 **Final exam** Wed 21 Apr 09:00–11:30
 
 ---
 

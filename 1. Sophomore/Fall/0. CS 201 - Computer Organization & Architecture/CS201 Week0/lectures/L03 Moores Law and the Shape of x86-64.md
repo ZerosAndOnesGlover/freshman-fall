@@ -2,9 +2,13 @@
 ## Week 0 · Lecture 3 of 3
 ### Moore's Law, Its End, and the Shape of x86-64
 
+*“The complexity for minimum component costs has increased at a rate of roughly a factor of two per year. Certainly over the short term this rate can be expected to continue, if not to increase.”* — Gordon Moore, "Cramming more components onto integrated circuits", *Electronics* (1965)
+
 ---
 
 **Reading:** CS:APP §1.9, §3.2 · **Previous:** L02, the von Neumann machine
+
+**Coursework:** 📝 **PS 0** released Wed this week, due Fri this week 17:00 · 🔬 **Lab 0** Fri this week 15:00–16:50
 
 ---
 

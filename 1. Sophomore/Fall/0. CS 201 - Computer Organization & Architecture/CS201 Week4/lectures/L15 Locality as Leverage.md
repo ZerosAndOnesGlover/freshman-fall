@@ -2,9 +2,13 @@
 ## Week 4 · Lecture 3 of 3
 ### Locality as Leverage — Blocking a Real Kernel
 
+*“If a program manipulates a large amount of data, it does so in a small number of ways.”* — Alan Perlis, "Epigrams on Programming" (1982), #5
+
 ---
 
 **Reading:** CS:APP §6.5–6.6 · **Previous:** L14, cache organisation
+
+**Coursework:** 📝 **PS 3** due today 17:00 · 📊 **Quiz 5** Mon of Week 5 · 📘 **Midterm 1** Mon of Week 5 18:00–19:15 · 🔬 **Lab 4** Tue of Week 5 15:00–16:50 · 📝 **PS 5** released Wed of Week 5, due Fri of Week 6 17:00
 
 ---
 

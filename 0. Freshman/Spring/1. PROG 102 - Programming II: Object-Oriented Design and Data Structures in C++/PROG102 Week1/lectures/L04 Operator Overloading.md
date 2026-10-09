@@ -1,11 +1,15 @@
 # PROG 102 · Lecture 04
 ## Operator Overloading
 
+*“Syntactic sugar causes cancer of the semi-colons.”* — Alan Perlis, "Epigrams on Programming" (1982), #3
+
 **Week 1 · Tuesday · 50 minutes**
 **Reading:** *C++ Primer* Ch. 14 · **Reference:** Stroustrup Ch. 18
 **Assumes:** Week 0 entire — especially L01 (`this`), L03 (`const` member functions)
 
 **Date:** Tuesday 26 January 2027 · 10:00–10:50 · Week 1
+
+**Coursework:** 📊 **Quiz 1** today 10:00–10:15 · 📝 **PS 0** due Fri 29 Jan 17:00 · 📝 **PS 1** released Fri 29 Jan 10:00, due Fri 5 Feb 17:00 · 🔬 **Lab 1** Mon 1 Feb 15:00–16:50
 
 ---
 

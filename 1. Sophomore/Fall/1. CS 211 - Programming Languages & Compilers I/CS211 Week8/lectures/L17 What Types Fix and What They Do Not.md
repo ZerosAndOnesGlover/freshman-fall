@@ -2,9 +2,13 @@
 ## Week 8 · Lecture 1 of 2
 ### What Types Fix, and What They Do Not
 
+*“The connection between the language in which we think/program and the problems and solutions we can imagine is very close. For this reason restricting language features with the intent of eliminating programmer errors is at best dangerous.”* — Bjarne Stroustrup, *The C++ Programming Language*, Special Edition (2000), Notes to the Reader
+
 ---
 
 **Reading:** Pierce, *TAPL* ch. 8–9, 22 · Cardelli & Wegner (1985) · **Next:** L18, System F, classes, and Curry-Howard
+
+**Coursework:** 📊 **Quiz 8** today · 📘 **Midterm 2** today 20:00–21:15 · 📝 **PS 8** released Wed this week, due Fri of Week 9 17:00 · 📝 **PS 7** due Fri this week 17:00 · 🔬 **Lab 8** Fri this week 14:00–15:50
 
 ---
 

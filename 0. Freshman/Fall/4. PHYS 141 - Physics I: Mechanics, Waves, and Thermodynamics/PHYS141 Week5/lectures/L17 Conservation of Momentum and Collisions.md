@@ -1,9 +1,15 @@
 # PHYS 141 · Lecture 17
 # Conservation of Momentum & Collisions
 
+*“In the collision of bodies there is always expenditure of motive power. Perfectly elastic bodies only form an exception, and none such are found in nature.”* — Sadi Carnot, notes on physics, published posthumously (1878)
+
 > **Core Principle:** For an isolated system (no external forces), total momentum is exactly conserved — a direct consequence of Newton's Third Law. This is true regardless of what happens internally: elastic bounces, sticky collisions, explosions. Momentum conservation is the single most powerful tool for analyzing collisions, because it holds even when we know nothing about the complicated forces during impact.
 
 **Date:** Tuesday 27 October 2026 · 14:00–14:50 · Week 5
+
+**Reading:** Serway & Jewett §9.2, §9.4–9.5 · HRK Ch. 6
+
+**Coursework:** 🔬 **Lab 5** Thu 29 Oct 14:00–17:00 · 📝 **PS 4** due Fri 30 Oct 17:00 · 📝 **PS 5** released Fri 30 Oct 15:00, due Fri 6 Nov 17:00 · 📊 **Quiz 5** Mon 2 Nov 14:00
 
 ---
 

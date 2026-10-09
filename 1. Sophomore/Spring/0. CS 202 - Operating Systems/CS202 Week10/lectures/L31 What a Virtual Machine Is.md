@@ -2,9 +2,13 @@
 ## Week 10 · Lecture 1 of 3
 ### What a Virtual Machine Is
 
+*“A man provided with paper, pencil, and rubber, and subject to strict discipline, is in effect a universal machine.”* — Alan Turing, "Intelligent Machinery" (1948)
+
 ---
 
 **Sat:** Monday of Week 10, 09:00–09:50, VNC 101, **after Quiz 10** · **Reading:** OSTEP Ch. B (VMM); the KVM API documentation · **Next:** L32, memory and devices
+
+**Coursework:** 📊 **Quiz 10** today · 🔬 **Lab 9** Tue this week 15:00–16:50 · 📝 **PS 10** released Wed this week, due Fri of Week 11 17:00 · 📝 **PS 9** due Fri this week 17:00
 
 ---
 

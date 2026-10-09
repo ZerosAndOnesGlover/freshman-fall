@@ -2,9 +2,13 @@
 ## Week 12 · Lecture 3 of 3
 ### Running Unattended, and the Synthesis
 
+*“The notion of "intricate and beautiful complexities" is almost an oxymoron. Unix programmers vie with each other for "simple and beautiful" honors — a point that's implicit in these rules, but is well worth making overt.”* — Doug McIlroy, as quoted in Eric S. Raymond, *The Art of Unix Programming* (2003)
+
 ---
 
 **Reading:** TLPI Ch. 37 (daemons), Ch. 38 (setuid) · `man 2 setuid`, `man 2 setgroups`, `man 5 systemd.service`, `man 7 capabilities` · **Previous:** L38 — concurrency and capacity · **Next:** Lab 12 (demo day), Project 2
+
+**Coursework:** 📋 **Project 2** due Fri this week 17:00 · 📝 **PS 11** due Fri this week 17:00 · 🔬 **Lab 12** Mon of the completion period
 
 ---
 

@@ -2,7 +2,11 @@
 ## Week 9 · Lecture 1 (Monday)
 ### Power Series and the Radius of Convergence
 
+*“I. Thesis. Finite elements of Space and Time. Antithesis. Continuity.”* — Bernhard Riemann, "Antinomies", *Gesammelte Mathematische Werke* (1876)
+
 **Date:** Monday 22 March 2027 · 11:00–11:50 · Week 9
+
+**Coursework:** 📊 **Quiz 9** today 11:00–11:15 · 🔬 **Lab 8** Wed 24 Mar 15:00–16:50 · 📝 **PS 8** due Fri 26 Mar 17:00 · 📝 **PS 9** released Fri 26 Mar 12:00, due Fri 2 Apr 17:00 · 📘 **Midterm 2** Wed 31 Mar 18:00–19:15
 
 ---
 

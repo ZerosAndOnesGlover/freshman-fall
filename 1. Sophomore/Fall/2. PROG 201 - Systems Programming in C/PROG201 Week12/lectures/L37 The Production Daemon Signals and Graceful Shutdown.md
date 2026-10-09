@@ -2,9 +2,13 @@
 ## Week 12 · Lecture 1 of 3
 ### The Production Daemon — Signals and Graceful Shutdown
 
+*“...the right thing might be to eliminate the cost of making a mistake rather than try to guess what's right.”* — Ward Cunningham, "Collective Ownership of Code and Text", Artima interview (2003)
+
 ---
 
 **Reading:** TLPI Ch. 20–22 (signals), Ch. 37 (daemons) · `man 7 signal`, `man 7 signal-safety`, `man 2 sigaction`, `man 2 poll` · **Previous:** Week 11 L36 · **Next:** L38 — concurrency and capacity
+
+**Coursework:** 📋 **Project 2** due Fri this week 17:00 · 📝 **PS 11** due Fri this week 17:00 · 🔬 **Lab 12** Mon of the completion period
 
 ---
 

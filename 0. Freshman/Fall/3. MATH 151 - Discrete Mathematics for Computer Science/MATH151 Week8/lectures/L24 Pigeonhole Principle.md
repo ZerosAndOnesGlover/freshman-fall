@@ -2,7 +2,13 @@
 ## Lecture 24 (L24) — The Pigeonhole Principle
 ### Monday, Week 8
 
+*“If numbers aren't beautiful, I don't know what is.”* — Paul Erdős, as quoted in *My Brain Is Open* (1998)
+
 **Date:** Monday 16 November 2026 · 13:00–13:50 · Week 8
+
+**Reading:** Rosen, 8e §6.2 · Epp, 5e §9.4 *(details at the end of the lecture)*
+
+**Coursework:** 📊 **Quiz 8** today 13:00–13:15 · 🔬 **Lab 7** Wed 18 Nov 15:00–16:50 · 📝 **PS 7** due Fri 20 Nov 17:00 · 📝 **PS 8** released Fri 20 Nov 14:00, due Fri 27 Nov 17:00
 
 ---
 
@@ -207,5 +213,10 @@ Applications:
    *Hint:* Consider the partial sums $S_0 = 0, S_1 = a_1, S_2 = a_1+a_2, \ldots, S_n = a_1+\cdots+a_n$ — that's $n+1$ partial sums. Apply Pigeonhole to their remainders mod $n$.
 
 ---
+
+## Reading
+
+- **Rosen, 8e §6.2** — The pigeonhole principle
+- **Epp, 5e §9.4** — The pigeonhole principle
 
 *Week 5 complete. Week 6: Relations — Reflexive, Symmetric, Transitive; Equivalence Relations and Partial Orders.*

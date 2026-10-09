@@ -2,9 +2,13 @@
 ## Week 11 · Lecture 1 of 3
 ### Namespaces, and Building a Container from Them
 
+*“Systems have sub-systems and sub-systems have sub-systems and so on ad infinitum - which is why we're always starting over.”* — Alan Perlis, "Epigrams on Programming" (1982), #52
+
 ---
 
 **Reading:** TLPI Ch. 28 (`clone`), Ch. 30 · `man 7 namespaces`, `man 7 user_namespaces`, `man 2 clone`, `man 2 unshare`, `man 2 setns` · **Previous:** L33 · **Next:** L35 — cgroups and resource control
+
+**Coursework:** 📊 **Quiz 11** today · 📝 **PS 11** released Wed this week, due Fri of Week 12 17:00 · 📝 **PS 10** due Fri this week 17:00 · 🔬 **Lab 11** Mon of Week 12 15:00–16:50
 
 ---
 

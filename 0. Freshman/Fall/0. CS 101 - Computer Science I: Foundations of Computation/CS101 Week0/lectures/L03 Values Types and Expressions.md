@@ -2,9 +2,14 @@
 ## Values, Types, and Expressions
 
 **Week 0 · Lecture 3 of 3**
-*"A type is a set of values together with a set of operations on those values." — Barbara Liskov*
+
+*“Every powerful language has three mechanisms for accomplishing this: primitive expressions, which represent the simplest entities the language is concerned with, means of combination, by which compound elements are built from simpler ones, and means of abstraction, by which compound elements can be named and manipulated as units.”* — Harold Abelson & Gerald Jay Sussman, *Structure and Interpretation of Computer Programs* (1985), §1.1
 
 **Date:** Friday 25 September 2026 · 09:00–09:50 · Week 0
+
+**Reading:** Guttag, Ch. 2 *(details at the end of the lecture)*
+
+**Coursework:** 🔬 **Lab 0** Tue 29 Sep 15:00–16:50 · 📊 **Quiz 1** Wed 30 Sep 09:00–09:10
 
 ---
 

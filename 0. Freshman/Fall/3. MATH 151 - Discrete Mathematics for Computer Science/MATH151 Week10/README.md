@@ -99,8 +99,8 @@ By the end of Week 10 you should be able to:
 | Text | Sections |
 |---|---|
 | Rosen, 8e | §10.1–10.2 (Terminology), §10.3 (Representation, isomorphism), §10.4–10.5 (Connectivity, Euler, Hamilton) |
-| Epp, 5e | §10.1 (Definitions), §10.2 (Trails and circuits), §10.3 (Matrix representations) |
-| Levin, 3e | §4.1–4.2, §4.4 |
+| Epp, 5e | §1.4 and §4.9 (Definitions, handshake), §10.1 (Trails, paths, circuits), §10.2 (Matrix representations), §10.3 (Isomorphism) |
+| Levin, 3e | §4.1, §4.5 |
 
 ---
 

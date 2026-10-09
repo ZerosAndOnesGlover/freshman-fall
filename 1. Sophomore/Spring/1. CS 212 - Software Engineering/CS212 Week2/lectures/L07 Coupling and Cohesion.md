@@ -2,9 +2,13 @@
 ## Week 2 · Lecture 1 of 3
 ### Coupling and Cohesion — the Two Ideas the Rest Are About
 
+*“We propose instead that one begins with a list of difficult design decisions or design decisions which are likely to change. Each module is then designed to hide such a decision from the others.”* — David Parnas, "On the Criteria To Be Used in Decomposing Systems into Modules" (1972)
+
 ---
 
 **Sat:** Tuesday of Week 2, 10:00–10:50, TH 200 · **⚠️ Quiz 2 in the first ten minutes** — covers Week 1 · **Reading:** Sommerville §7.1; Parnas (1972) · **Next:** L08, SOLID in `roomsvc`
+
+**Coursework:** 📊 **Quiz 2** today · 📝 **Assignment 2** released Wed this week 17:00, due Fri of Week 3 17:00 · 📝 **Assignment 1** due Fri this week 17:00
 
 ---
 

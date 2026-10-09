@@ -2,9 +2,13 @@
 ## Week 5 · Lecture 1 of 2
 ### Liveness, Loops, and Loop-Invariant Code Motion
 
+*“Optimization hinders evolution.”* — Alan Perlis, "Epigrams on Programming" (1982), #21
+
 ---
 
 **Reading:** Dragon §9.2 (revisit), §9.5, §9.6.1–9.6.4 · **Next:** L12, register allocation and the pipeline
+
+**Coursework:** 📊 **Quiz 5** today · 📝 **PS 5** released Wed this week, due Fri of Week 6 17:00 · 📝 **PS 4** due Fri this week 17:00 · 🔬 **Lab 5** Fri this week 14:00–15:50
 
 ---
 

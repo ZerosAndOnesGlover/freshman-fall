@@ -2,9 +2,13 @@
 ## Week 5 · Lecture 2 of 3
 ### Branch Prediction and Out-of-Order Execution
 
+*“Motto for a research laboratory: What we work on today, others will first think of tomorrow.”* — Alan Perlis, "Epigrams on Programming" (1982), #84
+
 ---
 
 **Reading:** CS:APP §4.5.5–4.5.8, §5.7 · **Previous:** L16, the pipeline and its hazards
+
+**Coursework:** 📝 **PS 5** released today, due Fri of Week 6 17:00 · 📝 **PS 4** due Fri this week 17:00 · 📊 **Quiz 6** Mon of Week 6 · 🔬 **Lab 5** Tue of Week 6 15:00–16:50
 
 ---
 

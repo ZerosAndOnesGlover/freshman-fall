@@ -1,10 +1,15 @@
 # CS 101 · Lecture 15 (Week 4, Lecture 3)
 ## Recursion: Stack Depth, Tail Calls, and Design Mastery
 
+*“Systems have sub-systems and sub-systems have sub-systems and so on ad infinitum - which is why we're always starting over.”* — Alan Perlis, "Epigrams on Programming" (1982), #52
+
 **Week 4 · Friday**
-*"Recursion requires trusting the inductive hypothesis — and that trust is earned by proof, not intuition." — CS 101*
 
 **Date:** Friday 23 October 2026 · 09:00–09:50 · Week 4
+
+**Reading:** Guttag, Ch. 6 · Guttag, Ch. 3 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 3** due today 17:00 · 📝 **PS 4** released today 10:00, due Fri 30 Oct 17:00 · 🔬 **Lab 4** Tue 27 Oct 15:00–16:50 · 📊 **Quiz 5** Wed 28 Oct 09:00–09:10 · 📘 **Midterm 1** Mon 2 Nov 18:00–19:15
 
 ---
 
@@ -531,8 +536,8 @@ which is the real lesson of §6 — the best fix for a badly written recursion i
 
 ## Reading
 
-- **Guttag, Ch. 4.3** — Recursion (finish)
-- **Guttag, Ch. 3.3** — Bisection search (connects recursion to approximation)
+- **Guttag, Ch. 6** — Recursion (finish)
+- **Guttag, Ch. 3** — bisection search (connects recursion to approximation)
 
 ---
 

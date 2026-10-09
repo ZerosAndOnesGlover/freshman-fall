@@ -2,9 +2,13 @@
 ## Week 3 · Lecture 3 of 3
 ### Priority Inversion, Thread Pools, and Choosing
 
+*“In software systems, it is often the early bird that makes the worm.”* — Alan Perlis, "Epigrams on Programming" (1982), #43
+
 ---
 
 **Reading:** APUE §11.6.5 · TLPI §35.3 · `man 7 sched`, `man 3 pthread_mutexattr_setprotocol` · **Previous:** L11 · **Next:** Lab 3 — reproduce the inversion, on the Monday of Week 4
+
+**Coursework:** 📝 **PS 2** due Fri this week 17:00 · 🔬 **Lab 3** Mon of Week 4 15:00–16:50 · 📊 **Quiz 4** Tue of Week 4 · 📝 **PS 4** released Wed of Week 4, due Fri of Week 5 17:00
 
 ---
 

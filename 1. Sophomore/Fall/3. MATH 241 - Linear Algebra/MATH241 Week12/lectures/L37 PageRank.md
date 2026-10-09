@@ -2,9 +2,13 @@
 ## Week 12 · Lecture 2 of 3 · **Tuesday**
 ### PageRank: An Eigenvector Too Large to Factor
 
+*“We came up with the notion that not all web pages are created equal. People are – but not web pages.”* — Sergey Brin, guest lecture at UC Berkeley (2005)
+
 ---
 
 **Reading:** Strang's Markov matrices section (§6.4 or §10.3, depending on printing), revisited · **Previous:** L36, regression and PCA · **Next:** L38, Fourier and the course in one table
+
+**Coursework:** 📝 **PS 12** released Wed this week, due Fri this week 17:00 · 💬 **Recitation 11** Thu this week 15:00–15:50 · 📝 **PS 11** due Fri this week 17:00 · 📕 **Final exam** Mon of finals week 09:00–11:30
 
 > **PS 11 and PS 12 are due Friday.** PS 12 is released tomorrow. **Recitation 11 is Thursday.**
 >

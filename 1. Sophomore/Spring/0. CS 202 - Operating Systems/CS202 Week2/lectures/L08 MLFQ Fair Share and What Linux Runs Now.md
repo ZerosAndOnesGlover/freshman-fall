@@ -2,9 +2,13 @@
 ## Week 2 · Lecture 2 of 3
 ### MLFQ, Fair Share, and What Linux Runs Now
 
+*“To our dismay, users who had been enduring several hour waits between jobs run under batch processing were suddenly restless when response times were more than a second.”* — Fernando J. Corbató, on CTSS, "On Building Systems That Will Fail", Turing Award Lecture (1991)
+
 ---
 
 **Sat:** Wednesday of Week 2, 09:00–09:50, VNC 101 · **Reading:** OSTEP Ch. 8 and 9 · **Next:** L09, real time and what Linux lets you ask for
+
+**Coursework:** 📝 **PS 2** released today, due Fri of Week 3 17:00 · 📝 **PS 1** due Fri this week 17:00 · 📊 **Quiz 3** Mon of Week 3 · 🔬 **Lab 2** Tue of Week 3 15:00–16:50 · 📘 **Midterm 1** Mon of Week 4 18:00–19:15
 
 ---
 

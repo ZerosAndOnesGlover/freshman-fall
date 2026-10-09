@@ -1,11 +1,15 @@
 # PROG 102 · Lecture 05
 ## Copy Semantics and the Rule of Three
 
+*“If two people write exactly the same program, each should be put into microcode and then they certainly won't be the same.”* — Alan Perlis, "Epigrams on Programming" (1982), #13
+
 **Week 1 · Wednesday · 50 minutes**
 **Reading:** *C++ Primer* §13.1–13.2 · **Reference:** Meyers, *Effective C++* Item 5–6
 **Assumes:** L02 (destructors, lifetime), L03 (`const` members), **PS 0 Part E**
 
 **Date:** Wednesday 27 January 2027 · 10:00–10:50 · Week 1
+
+**Coursework:** 📝 **PS 0** due Fri 29 Jan 17:00 · 📝 **PS 1** released Fri 29 Jan 10:00, due Fri 5 Feb 17:00 · 🔬 **Lab 1** Mon 1 Feb 15:00–16:50 · 📊 **Quiz 2** Tue 2 Feb 10:00–10:15
 
 ---
 

@@ -1,7 +1,13 @@
 # CS 101 · Lecture 35 (Week 11, Lecture 2)
 ## Decidability and the Halting Problem
 
+*“To each computable sequence there corresponds at least one description number, while to no description number does there correspond more than one computable sequence. The computable sequences and numbers are therefore enumerable.”* — Alan Turing, "On Computable Numbers, with an Application to the Entscheidungsproblem" (1936), §5
+
 **Date:** Thursday 10 December 2026 · 09:00–09:50 · Week 11
+
+**Reading:** Sipser, Ch. 4.2 · Sipser, Ch. 4.1 · Turing (1936), §8 · Hofstadter, *Gödel, Escher, Bach*, Ch. XIII *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 10** due Fri 11 Dec 17:00 · 📝 **PS 11** released Fri 11 Dec 10:00, due Fri 18 Dec 17:00 · 🔬 **Lab 11** Tue 15 Dec 15:00–16:50 · 📕 **Final exam** Tue 22 Dec 09:00–11:30
 
 ---
 

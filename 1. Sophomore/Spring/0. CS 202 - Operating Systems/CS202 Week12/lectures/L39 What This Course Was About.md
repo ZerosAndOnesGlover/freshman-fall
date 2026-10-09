@@ -2,9 +2,13 @@
 ## Week 12 · Lecture 3 of 3
 ### What This Course Was About
 
+*“It is important to emphasize the value of simplicity and elegance, for complexity has a way of compounding difficulties and as we have seen, creating mistakes. My definition of elegance is the achievement of a given functionality with a minimum of mechanism and a maximum of clarity.”* — Fernando J. Corbató, "On Building Systems That Will Fail", Turing Award Lecture (1991)
+
 ---
 
-**Sat:** Friday of Week 12, 09:00–09:50, VNC 101 · **Reading:** none — re-read your own measurements · **Next:** the final, Wednesday of finals week, 09:00–11:30, VNC 100
+**Sat:** Friday of Week 12, 09:00–09:50, VNC 101 · **Reading:** OSTEP Ch. 2, *Introduction to Operating Systems*, re-read — then your own measurements · **Next:** the final, Wednesday of finals week, 09:00–11:30, VNC 100
+
+**Coursework:** 📝 **PS 11** due today 17:00 · 🔬 **Lab 12** Tue of the completion period 15:00–16:50 · 📕 **Final exam** Wed of finals week 09:00–11:30
 
 ---
 

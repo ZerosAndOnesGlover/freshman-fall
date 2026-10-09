@@ -1,7 +1,13 @@
 # CS 102 · Computer Science II
 ## Lecture 02: Complexity Analysis, Reviewed and Sharpened
 
+*“As soon as an Analytical Engine exists, it will necessarily guide the future course of the science. Whenever any result is sought by its aid, the question will then arise — by what course of calculation can these results be arrived at by the machine in the shortest time?”* — Charles Babbage, *Passages from the Life of a Philosopher* (1864), ch. 8
+
 **Date:** Wednesday 20 January 2027 · 09:00–09:50 · Week 0
+
+**Reading:** CLRS §3.1–3.3 (asymptotic notation), §4.3–4.5 (substitution, recursion trees, master method)
+
+**Coursework:** 📊 **Quiz 1** Mon 25 Jan 09:00–09:15 · 🔬 **Lab 0** Tue 26 Jan 15:00–16:50
 
 ---
 

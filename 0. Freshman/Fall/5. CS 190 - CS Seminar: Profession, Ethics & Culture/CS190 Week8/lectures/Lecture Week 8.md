@@ -2,7 +2,13 @@
 ## Lecture · Week 8: Cybersecurity Ethics
 ### Responsible Disclosure, Hacktivism, and the Law That Governs Both
 
+*“The act of breaking into a computer system has to have the same social stigma as breaking into a neighbor's house. It should not matter that the neighbor's door is unlocked.”* — Ken Thompson, "Reflections on Trusting Trust", Turing Award Lecture (1984)
+
 **Date:** Wednesday 18 November 2026 · 13:00–13:50 · Week 8
+
+**Reading:** *Van Buren v. United States* (2021), majority opinion · ISO/IEC 29147, overview sections · Google Project Zero, "Policy and Disclosure" — [[CS190 Week8/resources/Reading Guide|Reading Guide]]
+
+**Coursework:** 📝 **Prep 8** due today 12:00
 
 ---
 

@@ -2,7 +2,13 @@
 ## Lecture 29 (L29) — Generating Functions
 ### Friday, Week 9
 
+*“A generating function is a device somewhat similar to a bag. Instead of carrying many little objects detachedly, which could be embarrassing, we put them all in a bag, and then we have only one object to carry, the bag.”* — George Pólya, *Mathematics and Plausible Reasoning*, Vol. 1 (1954)
+
 **Date:** Friday 27 November 2026 · 13:00–13:50 · Week 9
+
+**Reading:** Rosen, 8e §8.4 · Levin, 3e §5.1 · Graham, Knuth & Patashnik, *Concrete Mathematics* ch. 7 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 8** due today 17:00 · 📝 **PS 9** released today 14:00, due Fri 4 Dec 17:00 · 📊 **Quiz 10** Mon 30 Nov 13:00–13:15 · 🔬 **Lab 9** Wed 2 Dec 15:00–16:50
 
 ---
 

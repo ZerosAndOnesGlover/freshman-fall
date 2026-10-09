@@ -1,11 +1,15 @@
 # PROG 102 · Lecture 13
 ## Inheritance
 
+*“Object-oriented programming is a method of implementation in which programs are organized as cooperative collections of objects, each of which represents an instance of some class, and whose classes are all members of a hierarchy of classes united via inheritance relationships.”* — Grady Booch, *Object-Oriented Design with Applications* (1991)
+
 **Week 4 · Tuesday · 50 minutes**
 **Reading:** *C++ Primer* §15.1–15.3 · **Reference:** Stroustrup Ch. 20
 **Assumes:** Week 0 (classes, access control, construction order)
 
 **Date:** Tuesday 16 February 2027 · 10:00–10:50 · Week 4
+
+**Coursework:** 📊 **Quiz 4** today 10:00–10:15 · 📝 **PS 3** due Fri 19 Feb 17:00 · 📝 **PS 4** released Fri 19 Feb 10:00, due Fri 26 Feb 17:00 · 🔬 **Lab 4** Mon 22 Feb 15:00–16:50
 
 ---
 

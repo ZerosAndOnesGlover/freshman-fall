@@ -1,7 +1,13 @@
 # CS 101 · Lecture 33 (Week 10, Lecture 3)
 ## Structured Formats and Robust I/O
 
+*“TCP implementations will follow a general principle of robustness: be conservative in what you do, be liberal in what you accept from others.”* — Jon Postel, RFC 793, *Transmission Control Protocol* (1981), §2.10
+
 **Date:** Friday 4 December 2026 · 09:00–09:50 · Week 10
+
+**Reading:** Python docs — `csv` module · Python docs — `json` module · Python docs — `pathlib` · Guttag, Ch. 7 *(details at the end of the lecture)*
+
+**Coursework:** 📋 **Project 2** released today 10:00, due Fri 18 Dec 17:00 · 📝 **PS 10** released today 10:00, due Fri 11 Dec 17:00 · 📝 **PS 9** due today 17:00 · 🔬 **Lab 10** Tue 8 Dec 15:00–16:50 · 📊 **Quiz 11** Wed 9 Dec 09:00–09:10 · 📕 **Final exam** Tue 22 Dec 09:00–11:30
 
 ---
 
@@ -409,7 +415,7 @@ re-deriving.
 - **Python docs — `csv` module** — read the introduction and the `Dialect` discussion
 - **Python docs — `json` module** — the conversion tables in particular
 - **Python docs — `pathlib`** — skim the whole page; it is short and replaces most of `os.path`
-- **Guttag, Ch. 4.6** — files (review)
+- **Guttag, Ch. 7** — files (review)
 
 ---
 

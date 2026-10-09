@@ -2,9 +2,13 @@
 ## Week 11 · Lecture 2 of 3
 ### Metrics That Mislead, and Metrics That Help
 
+*“If we wish to count lines of code, we should not regard them as "lines produced" but as "lines spent": the current conventional wisdom is so foolish as to book that count on the wrong side of the ledger.”* — Edsger W. Dijkstra, "On the cruelty of really teaching computing science" (EWD1036, 1988)
+
 ---
 
 **Sat:** Wednesday of Week 11, 10:00–10:50, TH 200 · **Reading:** Tornhill, *Your Code as a Crime Scene*, Ch. 3–4 · **Next:** L36, documentation
+
+**Coursework:** 📝 **Assignment 11** released today 17:00, due Fri of Week 12 17:00 · 📝 **Assignment 10** due Fri this week 17:00
 **A 11 is released after this lecture**, Wednesday 17:00.
 
 ---

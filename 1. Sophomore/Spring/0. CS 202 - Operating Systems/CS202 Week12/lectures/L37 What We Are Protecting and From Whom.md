@@ -2,9 +2,13 @@
 ## Week 12 · Lecture 1 of 3
 ### What We Are Protecting, and From Whom
 
+*“If you think technology can solve your security problems, then you don't understand the problems and you don't understand the technology.”* — Bruce Schneier, *Secrets and Lies*, preface to the 2015 edition
+
 ---
 
 **Sat:** Monday of Week 12, 09:00–09:50, VNC 101 · **Reading:** OSTEP 53–54; Saltzer & Schroeder §I · **Next:** L38, least privilege and what it costs
+
+**Coursework:** 🔬 **Lab 11** Tue this week 15:00–16:50 · 📝 **PS 12** released Wed this week, due Fri of the completion period 17:00 · 📝 **PS 11** due Fri this week 17:00 · 📕 **Final exam** Wed of finals week 09:00–11:30
 
 ---
 

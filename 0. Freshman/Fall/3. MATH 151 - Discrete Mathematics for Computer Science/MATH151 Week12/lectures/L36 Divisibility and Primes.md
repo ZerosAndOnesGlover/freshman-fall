@@ -2,7 +2,13 @@
 ## Lecture 36 (L36) — Divisibility and Primes
 ### Monday, Week 12
 
+*“317 is a prime, not because we think so, or because our minds are shaped in one way rather than another, but because it is so, because mathematical reality is built that way.”* — G. H. Hardy, *A Mathematician's Apology* (1940)
+
 **Date:** Monday 14 December 2026 · 13:00–13:50 · Week 12
+
+**Reading:** Rosen, 8e §4.1, §4.3 · Epp, 5e §4.4–4.5 · Levin, 3e §5.2 *(details at the end of the lecture)*
+
+**Coursework:** 📊 **Quiz 12** today 13:00–13:15 · 🔬 **Lab 11** Wed 16 Dec 15:00–16:50 · 📝 **PS 11** due Fri 18 Dec 17:00 · 📝 **PS 12** released Fri 18 Dec 14:00, due Wed 23 Dec 17:00 · 📕 **Final exam** Mon 21 Dec 08:00–10:00
 
 ---
 
@@ -187,7 +193,7 @@ time *on a quantum computer*, which is why post-quantum cryptography is an activ
 ## Reading
 
 - **Rosen, 8e §4.1, §4.3** — Divisibility, primes, greatest common divisors
-- **Epp, 5e §4.3–4.4** — Divisibility and the division algorithm
-- **Levin, 3e §3.1** — Number theory basics
+- **Epp, 5e §4.4–4.5** — Divisibility; the quotient–remainder theorem
+- **Levin, 3e §5.2** — Introduction to number theory
 
 *Next: Lecture 37 — Modular Arithmetic, the GCD, and RSA*

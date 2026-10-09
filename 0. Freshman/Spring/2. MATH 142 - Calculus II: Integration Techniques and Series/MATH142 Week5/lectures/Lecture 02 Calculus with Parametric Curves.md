@@ -2,7 +2,11 @@
 ## Week 5 · Lecture 2 (Tuesday)
 ### Calculus with Parametric Curves
 
+*“What Mathematicians Chiefly consider in Motion is the Mode of Lation or Manner of bearing, and the Quantity of the motive Force.”* — Isaac Barrow, *Geometrical Lectures* (1735 translation)
+
 **Date:** Tuesday 23 February 2027 · 11:00–11:50 · Week 5
+
+**Coursework:** 🔬 **Lab 4** Wed 24 Feb 15:00–16:50 · 📝 **PS 4** due Fri 26 Feb 17:00 · 📝 **PS 5** released Fri 26 Feb 12:00, due Fri 5 Mar 17:00 · 📊 **Quiz 6** Mon 1 Mar 11:00–11:15 · 📘 **Midterm 1** Wed 3 Mar 18:00–19:15
 
 ---
 

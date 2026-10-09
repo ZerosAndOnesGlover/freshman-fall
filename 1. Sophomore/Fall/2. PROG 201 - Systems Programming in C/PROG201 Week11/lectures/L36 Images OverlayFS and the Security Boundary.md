@@ -2,9 +2,13 @@
 ## Week 11 · Lecture 3 of 3
 ### Images, OverlayFS, and the Security Boundary
 
+*“You can't trust code that you did not totally create yourself. (Especially code from companies that employ people like me.) No amount of source-level verification or scrutiny will protect you from using untrusted code.”* — Ken Thompson, "Reflections on Trusting Trust", Turing Award Lecture (1984)
+
 ---
 
 **Reading:** `man 8 mount` (overlay) · kernel docs `Documentation/filesystems/overlayfs.rst` · `man 2 seccomp`, `man 2 pivot_root` · `man 7 capabilities` · **Previous:** L35 — cgroups · **Next:** Lab 11, PS 11
+
+**Coursework:** 📝 **PS 10** due Fri this week 17:00 · 🔬 **Lab 11** Mon of Week 12 15:00–16:50
 
 ---
 

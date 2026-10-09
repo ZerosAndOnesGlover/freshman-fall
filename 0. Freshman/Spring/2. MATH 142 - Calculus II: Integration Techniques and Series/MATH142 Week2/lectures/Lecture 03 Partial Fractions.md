@@ -2,7 +2,11 @@
 ## Week 2 · Lecture 3 (Friday)
 ### Partial Fractions, and a Theorem About Which Integrals Can Be Done
 
+*“Residues arise... naturally in several branches of analysis... Their consideration provides simple and easy-to-use methods, which are applicable to a large number of diverse questions...”* — Augustin-Louis Cauchy, *Sur un nouveau genre de calcul* (1826)
+
 **Date:** Friday 5 February 2027 · 11:00–11:50 · Week 2
+
+**Coursework:** 📝 **PS 1** due today 17:00 · 📝 **PS 2** released today 12:00, due Fri 12 Feb 17:00 · 📊 **Quiz 3** Mon 8 Feb 11:00–11:15 · 🔬 **Lab 2** Wed 10 Feb 15:00–16:50
 
 ---
 

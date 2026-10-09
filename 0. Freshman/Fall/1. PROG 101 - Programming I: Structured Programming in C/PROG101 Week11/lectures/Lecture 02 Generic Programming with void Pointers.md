@@ -1,7 +1,13 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 11 · Lecture 2: Generic Programming with `void *`
 
+*“In programming, everything we do is a special case of something more general -- and often we know it too quickly.”* — Alan Perlis, "Epigrams on Programming" (1982), #30
+
 **Date:** Wednesday 9 December 2026 · 10:00–10:50 · Week 11
+
+**Reading:** `man 3 qsort` · K&R, §5.11 · C11 §6.3.2.3 · C11 §7.22.5 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 10** due Fri 11 Dec 17:00 · 📝 **PS 11** released Fri 11 Dec 10:00, due Fri 18 Dec 17:00 · 🔬 **Lab 11** Mon 14 Dec 15:00–16:50 · 📊 **Quiz 11** Tue 15 Dec 10:00–10:10 · 📕 **Final exam** Thu 24 Dec 14:00
 
 ---
 

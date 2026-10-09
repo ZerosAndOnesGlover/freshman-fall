@@ -2,9 +2,13 @@
 ## Week 8 · Lecture 2 of 3
 ### Journaling: Write It Down First
 
+*“Documentation is like term insurance: It satisfies because almost no one who subscribes to it depends on its benefits.”* — Alan Perlis, "Epigrams on Programming" (1982), #71
+
 ---
 
 **Sat:** Wednesday of Week 8, 09:00–09:50, VNC 101 · **Reading:** OSTEP Ch. 42 §42.3; xv6 book Ch. 8 · **Next:** L27, copy-on-write
+
+**Coursework:** 📝 **PS 8** released today, due Fri of Week 9 17:00 · 📝 **PS 7** due Fri this week 17:00 · 📊 **Quiz 9** Mon of Week 9 · 🔬 **Lab 8** Tue of Week 9 15:00–16:50
 
 ---
 

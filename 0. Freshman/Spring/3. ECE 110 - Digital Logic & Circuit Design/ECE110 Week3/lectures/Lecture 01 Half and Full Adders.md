@@ -2,7 +2,11 @@
 ## Week 3 · Lecture 1 (Wednesday)
 ### Half and Full Adders
 
+*“The whole of arithmetic now appeared within the grasp of mechanism.”* — Charles Babbage, *Passages from the Life of a Philosopher* (1864), ch. 8
+
 **Date:** Wednesday 10 February 2027 · 13:00–14:15 · Week 3
+
+**Coursework:** 📊 **Quiz 2** today 13:00–13:10 · 📝 **PS 2** due Thu 11 Feb 13:00 · 📝 **PS 3** released Thu 11 Feb 14:30, due Thu 18 Feb 13:00 · 🔬 **Lab 3** Fri 12 Feb 14:00–15:50
 
 ---
 

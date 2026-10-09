@@ -2,7 +2,13 @@
 ## Lecture 1. Truth Tables: Systematic Evaluation of Compound Propositions
 ### Thursday, Week 0
 
+*“That logic, as a science, is susceptible of very wide applications is admitted; but it is equally certain that its ultimate forms and processes are mathematical.”* — George Boole, *An Investigation of the Laws of Thought* (1854)
+
 **Date:** Thursday 24 September 2026 · 13:00–13:50 · Week 0
+
+**Reading:** Rosen, 8e §1.1 · Epp, 5e §2.1–2.2 · Levin, 3e §3.1 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 0** released Fri 25 Sep 14:00, due Fri 2 Oct 17:00 · 📊 **Quiz 1** Mon 28 Sep 13:00–13:15 · 🔬 **Lab 0** Wed 30 Sep 15:00–16:50
 
 ---
 
@@ -312,5 +318,11 @@ This is not just a convenience, writing a truth table evaluator teaches you that
 5. A function f: {T,F}ⁿ → {T,F} is a **boolean function**. How many distinct boolean functions of 1 variable exist? Of 2 variables? Of n variables? (Hint: think about how many possible truth tables there are.)
 
 ---
+
+## Reading
+
+- **Rosen, 8e §1.1** — Truth tables of compound propositions
+- **Epp, 5e §2.1–2.2** — Truth tables; conditional statements
+- **Levin, 3e §3.1** — Propositional logic
 
 *Next: Lecture 2 — [[L02 Tautologies and Logical Laws]]*

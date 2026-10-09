@@ -1,11 +1,15 @@
 # PROG 102 · Lecture 21
 ## Implementing a Binary Search Tree
 
+*“A program without a loop and a structured variable isn't worth writing.”* — Alan Perlis, "Epigrams on Programming" (1982), #18
+
 **Week 6 · Thursday · 50 minutes**
 **Reading:** *C++ Primer* Ch. 12 (revisit) · **Cross-course:** CS 102 Weeks 1–2
 **Assumes:** L19, L20, Week 5 (`unique_ptr`)
 
 **Date:** Thursday 4 March 2027 · 10:00–10:50 · Week 6
+
+**Coursework:** 📝 **PS 5** due Fri 5 Mar 17:00 · 📝 **PS 6** released Fri 5 Mar 10:00, due Fri 12 Mar 17:00 · 🔬 **Lab 6** Mon 8 Mar 15:00–16:50 · 📊 **Quiz 7** Tue 9 Mar 10:00–10:15
 
 ---
 

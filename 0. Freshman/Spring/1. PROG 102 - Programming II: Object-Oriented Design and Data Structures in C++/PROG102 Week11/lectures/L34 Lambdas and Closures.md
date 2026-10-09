@@ -1,10 +1,14 @@
 # PROG 102 · Lecture 34
 ## Lambdas and Closures
 
+*“Functions delay binding; data structures induce binding. Moral: Structure data late in the programming process.”* — Alan Perlis, "Epigrams on Programming" (1982), #2
+
 **Week 11 · Tuesday · 50 minutes**
 **Reading:** Meyers, *Effective Modern C++* Items 31–33 · **Assumes:** Week 1 (`operator()`), Week 2
 
 **Date:** Tuesday 6 April 2027 · 10:00–10:50 · Week 11
+
+**Coursework:** 📊 **Quiz 11** today 10:00–10:15 · 📋 **Project 2** released today 10:00, due Fri 16 Apr 17:00 · 📝 **PS 10** due Fri 9 Apr 17:00 · 📝 **PS 11** released Fri 9 Apr 10:00, due Fri 16 Apr 17:00 · 🔬 **Lab 11** Mon 12 Apr 15:00–16:50 · 📕 **Final exam** Thu 22 Apr 14:00–16:30
 
 ---
 

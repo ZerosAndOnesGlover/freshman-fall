@@ -1,7 +1,13 @@
 # PROG 101 · Programming I: Structured Programming in C
 ## Week 10 · Lecture 2: Macros and Their Traps
 
+*“The competent programmer is fully aware of the strictly limited size of his own skull; therefore he approaches the programming task in full humility, and among other things he avoids clever tricks like the plague.”* — Edsger W. Dijkstra, "The Humble Programmer" (EWD340, 1972)
+
 **Date:** Wednesday 2 December 2026 · 10:00–10:50 · Week 10
+
+**Reading:** K&R, §4.11.2 · C11 §6.10.3 · `gcc -E` · `-Wmultistatement-macros` *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 10** released Fri 4 Dec 10:00, due Fri 11 Dec 17:00 · 🔬 **Lab 10** Mon 7 Dec 15:00–16:50 · 📊 **Quiz 10** Tue 8 Dec 10:00–10:10
 
 ---
 

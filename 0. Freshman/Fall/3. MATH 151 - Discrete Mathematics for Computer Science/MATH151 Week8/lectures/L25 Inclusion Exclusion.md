@@ -2,7 +2,13 @@
 ## Lecture 25 (L25) — The Principle of Inclusion–Exclusion
 ### Thursday, Week 8
 
+*“As the prerogative of Natural Science is to cultivate a taste for observation, so that of Mathematics is, almost from the starting point, to stimulate the faculty of invention.”* — James Joseph Sylvester, "A Plea for the Mathematician", *Nature* 1 (1869)
+
 **Date:** Thursday 19 November 2026 · 13:00–13:50 · Week 8
+
+**Reading:** Rosen, 8e §8.5, §8.6 · Epp, 5e §9.3 · Levin, 3e §1.6 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 7** due Fri 20 Nov 17:00 · 📝 **PS 8** released Fri 20 Nov 14:00, due Fri 27 Nov 17:00 · 📊 **Quiz 9** Mon 23 Nov 13:00–13:15 · 🔬 **Lab 8** Wed 25 Nov 15:00–16:50
 
 ---
 

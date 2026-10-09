@@ -2,9 +2,13 @@
 ## Week 9 · Lecture 3 of 3
 ### Writing a Driver — and the Module That Will Not Load
 
+*“Everyone knows that debugging is twice as hard as writing a program in the first place. So if you're as clever as you can be when you write it, how will you ever debug it?”* — Brian Kernighan & P. J. Plauger, *The Elements of Programming Style*, 2nd ed. (1978), ch. 2
+
 ---
 
 **Sat:** Friday of Week 9, 09:00–09:50, VNC 101 · **Reading:** LDD3 Ch. 2–3; Love Ch. 17 · **Next:** Week 10, virtualization
+
+**Coursework:** 📝 **PS 8** due today 17:00 · 📊 **Quiz 10** Mon of Week 10 · 🔬 **Lab 9** Tue of Week 10 15:00–16:50 · 📝 **PS 10** released Wed of Week 10, due Fri of Week 11 17:00
 
 ---
 

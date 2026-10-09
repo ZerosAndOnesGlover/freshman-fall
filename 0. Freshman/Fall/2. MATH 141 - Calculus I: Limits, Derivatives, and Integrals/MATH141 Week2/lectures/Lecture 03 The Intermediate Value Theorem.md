@@ -2,7 +2,11 @@
 ## Week 2 · Lecture 3 (Wednesday)
 ### The Intermediate Value Theorem
 
+*“If a, c are two different numbers, there are infinitely many different numbers lying between a, c.”* — Richard Dedekind, *Stetigkeit und irrationale Zahlen* (1872)
+
 **Date:** Wednesday 7 October 2026 · 11:00–11:50 · Week 2
+
+**Coursework:** 📝 **PS 1** due today 11:00 · 📝 **PS 2** released today 12:00, due Wed 14 Oct 11:00 · 🔬 **Lab 2** Fri 9 Oct 15:00–16:50 · 📊 **Quiz 3** Mon 12 Oct 11:00–11:15
 
 ---
 

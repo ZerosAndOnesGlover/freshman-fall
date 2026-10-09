@@ -2,8 +2,8 @@
 
 ## Required Textbook Reading
 
-- **HRK:** Ch. 4 — Motion in Two and Three Dimensions (all sections)
-- **Serway:** Ch. 4 — Motion in Two Dimensions (all sections)
+- **HRK:** Halliday, Resnick & Krane, *Physics*, 5th ed. — Ch. 4 (Motion in Two and Three Dimensions); Ch. 8 (Rotational Kinematics) for angular quantities
+- **Serway:** Serway & Jewett, *Physics for Scientists and Engineers*, 10th ed. — Ch. 4 (Motion in Two Dimensions) §4.1–4.5; §10.1–10.2 for angular kinematics
 
 ## Simulations
 

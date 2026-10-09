@@ -2,7 +2,11 @@
 ## Week 11 · Lecture 1 (Monday)
 ### Differential Equations and Separable Equations
 
+*“Science is a differential equation. Religion is a boundary condition.”* — Alan Turing, epigram to Robin Gandy (1954)
+
 **Date:** Monday 5 April 2027 · 11:00–11:50 · Week 11
+
+**Coursework:** 📊 **Quiz 11** today 11:00–11:15 · 🔬 **Lab 10** Wed 7 Apr 15:00–16:50 · 📝 **PS 10** due Fri 9 Apr 17:00 · 📝 **PS 11** released Fri 9 Apr 12:00, due Fri 16 Apr 17:00 · 📕 **Final exam** Tue 20 Apr 09:00–11:30
 
 ---
 

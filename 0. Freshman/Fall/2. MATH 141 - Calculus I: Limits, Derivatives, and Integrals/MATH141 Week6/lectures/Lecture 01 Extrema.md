@@ -2,7 +2,11 @@
 ## Week 6 · Lecture 1 (Monday)
 ### Maximum and Minimum Values: Extrema, Critical Points, and the Extreme Value Theorem
 
+*“Only geometry can hand us the thread [which will lead us through] the labyrinth of the continuum's composition, the maximum and the minimum, the infinitesimal and the infinite.”* — Gottfried Wilhelm Leibniz, *Dissertatio exoterica de statu praesenti … geometriae*
+
 **Date:** Monday 2 November 2026 · 11:00–11:50 · Week 6
+
+**Coursework:** 📊 **Quiz 6** today 11:00–11:15 · 🔬 **Lab 5** due today 17:00 · 📝 **PS 5** due Wed 4 Nov 11:00 · 📝 **PS 6** released Wed 4 Nov 12:00, due Wed 11 Nov 11:00 · 📘 **Midterm 1** Thu 5 Nov 18:00–19:15 · 🔬 **Lab 6** Fri 6 Nov 15:00–16:50, report due Mon 9 Nov 17:00
 
 ---
 

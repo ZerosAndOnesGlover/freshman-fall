@@ -1,10 +1,14 @@
 # PROG 102 · Lecture 37
 ## Testing and Test-Driven Development
 
+*“A program that has not been tested does not work.”* — Bjarne Stroustrup, *The C++ Programming Language*
+
 **Week 12 · Tuesday · 50 minutes**
 **Reading:** cppreference on assertions; Catch2 documentation · **Assumes:** Week 9 (Lab 9)
 
 **Date:** Tuesday 13 April 2027 · 10:00–10:50 · Week 12
+
+**Coursework:** 📋 **Project 2** due Fri 16 Apr 17:00 · 📝 **PS 11** due Fri 16 Apr 17:00 · 🔬 **Lab 12** Mon 19 Apr 15:00–16:50 · 📕 **Final exam** Thu 22 Apr 14:00–16:30
 
 ---
 

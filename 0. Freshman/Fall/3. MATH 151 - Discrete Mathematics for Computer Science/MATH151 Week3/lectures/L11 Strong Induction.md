@@ -2,7 +2,13 @@
 ## Lecture 11 (L11) — Strong Induction and the Well-Ordering Principle
 ### Friday, Week 3
 
+*“This conviction of the solvability of every mathematical problem is a powerful incentive to the worker. We hear within us the perpetual call: There is the problem. Seek its solution. You can find it by pure reason, for in mathematics there is no ignorabimus.”* — David Hilbert, "Mathematical Problems" (1900)
+
 **Date:** Friday 16 October 2026 · 13:00–13:50 · Week 3
+
+**Reading:** Rosen, 8e §5.2 · Epp, 5e §5.4 · Levin, 3e §2.5 *(details at the end of the lecture)*
+
+**Coursework:** 📝 **PS 2** due today 17:00 · 📝 **PS 3** released today 14:00, due Fri 23 Oct 17:00 · 📊 **Quiz 4** Mon 19 Oct 13:00–13:15 · 🔬 **Lab 3** Wed 21 Oct 15:00–16:50
 
 ---
 
@@ -268,5 +274,11 @@ By the Principle of Strong Induction, P(n) holds for all n ≥ n₀. ∎
 5. Use the Well-Ordering Principle to prove: there is no infinite strictly decreasing sequence of natural numbers $n_1 > n_2 > n_3 > \ldots$
 
 ---
+
+## Reading
+
+- **Rosen, 8e §5.2** — Strong induction and well-ordering
+- **Epp, 5e §5.4** — Strong induction and the well-ordering principle
+- **Levin, 3e §2.5** — Induction (strong induction)
 
 *Week 3 complete. Week 4: Sets — Operations, Power Sets, Cartesian Products, and Set Proofs.*

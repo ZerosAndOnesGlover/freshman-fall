@@ -2,8 +2,8 @@
 
 ## Required Textbook Reading
 
-- **HRK:** Ch. 7 (Work and Energy) — all sections; Ch. 8 (Conservation of Energy) — all sections
-- **Serway:** Ch. 7 (Energy and Energy Transfer) — all sections; Ch. 8 (Conservation of Energy) — all sections
+- **HRK:** Halliday, Resnick & Krane, *Physics*, 5th ed. — Ch. 11 (Work and Kinetic Energy); Ch. 12 (Potential Energy); Ch. 13 (Conservation of Energy)
+- **Serway:** Serway & Jewett, *Physics for Scientists and Engineers*, 10th ed. — Ch. 7 (Energy of a System) §7.1–7.9; Ch. 8 (Conservation of Energy) §8.1–8.5
 
 ## Simulations
 

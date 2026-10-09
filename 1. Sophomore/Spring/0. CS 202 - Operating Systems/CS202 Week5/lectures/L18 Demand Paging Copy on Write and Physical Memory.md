@@ -2,9 +2,13 @@
 ## Week 5 · Lecture 3 of 3
 ### Demand Paging, Copy-on-Write, and Physical Memory
 
+*“... we do not consider it as good engineering practice to consume a resource lavishly just because it happens to be cheap.”* — Niklaus Wirth, *Project Oberon* (2013), §2.3
+
 ---
 
 **Sat:** Friday of Week 5, 09:00–09:50, VNC 101 · **Reading:** OSTEP Ch. 23, Linux half; Love Ch. 12 and 15 · **Next:** Week 6, page replacement and swapping
+
+**Coursework:** 📝 **PS 4** due today 17:00 · 📊 **Quiz 6** Mon of Week 6 · 🔬 **Lab 5** Tue of Week 6 15:00–16:50 · 📝 **PS 6** released Wed of Week 6, due Fri of Week 7 17:00
 
 ---
 
