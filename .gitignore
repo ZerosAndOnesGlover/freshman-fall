@@ -1,10 +1,8 @@
 # ─── Obsidian ────────────────────────────────────────────────────────
-# Volatile UI state: rewritten every time a pane moves, so it would add
-# noise to every commit. appearance.json, app.json and core-plugins.json
-# are deliberately NOT ignored — those keep the vault reproducible.
-.obsidian/workspace.json
-.obsidian/workspace-mobile.json
-.obsidian/cache
+# Editor state, settings and downloaded themes. The notes are the
+# content; nothing under .obsidian/ is needed to read them, so the whole
+# directory stays out of version control.
+.obsidian/
 .trash/
 
 # ─── Claude Code ─────────────────────────────────────────────────────
@@ -14,15 +12,28 @@
 # ─── Python ──────────────────────────────────────────────────────────
 __pycache__/
 *.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
 
 # ─── Compiled C artifacts from lab starters ──────────────────────────
 *.o
 *.out
 *.exe
 a.out
-# extensionless ELF binaries built by the PROG 101 Week 0 starter and PS 0
-0. Freshman/Fall/1. PROG 101 - Programming I: Structured Programming in C/PROG101 Week0/lab/starter/hello
-0. Freshman/Fall/1. PROG 101 - Programming I: Structured Programming in C/PROG101 Week0/assignments/fixed
+# Preprocessor / assembler intermediates from `gcc -E` and `gcc -S`.
+*.i
+*.s
+# Extensionless ELF binaries left in the PROG 101 week 0 folders (build
+# output with no tracked sources).
+/1. PROG 101/week0/lab0/buggy
+/1. PROG 101/week0/lab0/hello
+/1. PROG 101/week0/lab0/hello_full
+/1. PROG 101/week0/lab0/temperature
+/1. PROG 101/week0/ps0/fixed
+/1. PROG 101/week0/ps0/greet
+/1. PROG 101/week0/ps0/hello
+/1. PROG 101/week0/ps0/info
 
 # ─── Generated study site ────────────────────────────────────────────
 # Rebuilt from the markdown by `python3 site/build.py` in a couple of
