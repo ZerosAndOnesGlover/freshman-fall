@@ -111,7 +111,7 @@ normalised to 100 points on 2026-09-21 when the sets were cut back to what had b
 | Item | Topic | Possible | Earned |
 |---|---|---|---|
 | Quiz 01 | Week 0 — functions, algebra, trig, exp/log | 20 | 20 |
-| Quiz 02 | Week 1 — limits, ε-δ, limits at infinity | 20 | |
+| Quiz 02 | Week 1 — limits, ε-δ, limits at infinity | 20 | 20 |
 | Quiz 03 | Week 2 — continuity, discontinuity, the IVT | 20 | |
 | Quiz 04 | Week 3 — the derivative and differentiability | 20 | |
 | Quiz 05 | Week 4 — differentiation rules, chain rule | 20 | |
