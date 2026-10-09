@@ -137,7 +137,7 @@ normalised to 100 points on 2026-09-21 when the sets were cut back to what had b
 | Midterm Exam 2 | 15% | 0/1 | -- |
 | Final Exam | 20% | 0/1 | -- |
 | Labs | 10% | 1/13 | 10.00% |
-| Quizzes | 10% | 1/12 | 100.00% |
+| Quizzes | 10% | 2/12 | 100.00% |
 
 **Course percentage:** 55.00%
 **Letter grade:** F
