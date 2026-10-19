@@ -39,6 +39,9 @@ a.out
 /1. PROG 101/week1/ps1/predictions
 /1. PROG 101/week1/ps1/floats
 /1. PROG 101/week1/ps1/overflow
+# Extensionless binaries from the week 1 Lab 1 Makefile.
+/1. PROG 101/week1/lab1/explore
+/1. PROG 101/week1/lab1/sizes
 
 # ─── Generated study site ────────────────────────────────────────────
 # Rebuilt from the markdown by `python3 site/build.py` in a couple of
