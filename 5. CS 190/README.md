@@ -36,17 +36,27 @@ Each course folder has `week0/` … `week12/`, one per teaching week, and each `
 
 ## Assessment
 
-CS 190 is assessed by written and spoken work rather than weekly sheets:
+CS 190 is assessed by written and spoken work rather than weekly sheets. The headline split is
+Participation 40%, Position Papers 60%:
 
 | Component | Weight | Form |
 |---|---|---|
-| Weekly prep assignments | 12% (lowest dropped) | credit/no-credit, one page |
-| Position papers | 60% | three 750–1,000-word essays |
-| Seminar presentation | 10% | a five-minute talk with Q&A |
+| Seminar preparation (11 prep assignments) | 12% (lowest dropped) | credit/no-credit, one page, due Wednesdays |
+| Seminar contribution | 10% | instructor assessment, Weeks 0–12 |
+| Week 11 presentation | 10% | five-minute talk with Q&A, marked against the rubric |
+| Peer feedback & question preparation | 4% | Weeks 11 and 12 |
+| Course reflection | 4% | Week 12 |
+| **Participation subtotal** | **40%** | |
+| Position Paper #1 | 20% | 750–1,000 words, due Wed 21 Oct 2026 |
+| Position Paper #2 | 20% | 750–1,000 words, due Wed 11 Nov 2026 |
+| Position Paper #3 | 20% | 750–1,000 words, due Wed 9 Dec 2026 |
+| **Position papers subtotal** | **60%** | |
 
 The position papers escalate deliberately: the first applies an existing code of ethics, the
 second asks for an original framework, and the third argues whether a professional obligation is
-binding. Any answer sheets are filed under `weekN/` as the course requires them.
+binding. Answer sheets are filed under `weekN/` in the week the assessment was set: `Prep N.md` for
+each week's prep, `Position Paper 1–3.md` in weeks 3, 6 and 9, `Presentation.md` and
+`Peer Feedback.md` in week 11, and `Question Preparation.md` and `Course Reflection.md` in week 12.
 
 ---
 
