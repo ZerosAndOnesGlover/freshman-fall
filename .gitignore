@@ -52,6 +52,17 @@ a.out
 /1. PROG 101/week2/lab2/collatz
 /1. PROG 101/week2/lab2/dowhile
 /1. PROG 101/week2/lab2/wordcount
+# Extensionless binaries from the week 3 Problem Set 3 / Lab 3 Makefiles.
+/1. PROG 101/week3/ps3/stats
+/1. PROG 101/week3/lab3/stack
+/1. PROG 101/week3/lab3/pbv
+/1. PROG 101/week3/lab3/duration
+/1. PROG 101/week3/lab3/prog
+/1. PROG 101/week3/lab3/asrt
+/1. PROG 101/week3/lab3/asrt_ndebug
+/1. PROG 101/week3/lab3/dangling
+/1. PROG 101/week3/lab3/dangling2
+/1. PROG 101/week3/lab3/badprog
 
 # ─── Generated study site ────────────────────────────────────────────
 # Rebuilt from the markdown by `python3 site/build.py` in a couple of
