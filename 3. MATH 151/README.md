@@ -1,45 +1,64 @@
 # MATH 151 · Discrete Mathematics for Computer Science
 
-Answer sheets for MATH 151, filed by teaching week. Repository-level conventions (submission
-lifecycle, frontmatter, what git ignores) live in the Fall root `README.md`; this file covers
-only this course.
+**Course:** MATH 151 — Discrete Mathematics for Computer Science
+**Programme:** B.Sc. Computer Science and Engineering, Year 1 (Freshman)
+**Semester:** Fall 2026: Monday 21 September to Friday 18 December 2026 (finals 21–25 December)
+**Source materials:** `3. MATH 151 - Discrete Mathematics for Computer Science`
 
-**Source:** `3. MATH 151 - Discrete Mathematics for Computer Science`
-
-## Layout
-
-Each teaching week `week0/` … `week12/` holds that week's answer sheet. A sheet sits in the week
-its assessment was **set**.
-
-| Pattern | What it is |
-|---|---|
-| `weekN/PS N.md` | Problem-set answer sheet |
-
-MATH 151 is assessed by **problem sets only** — it has no labs and no quizzes. Its first
-assessment, PS 2, is in `week2/`.
-
-## Components
-
-| Component | Points | Sheets | Naming |
-|---|---|---|---|
-| Problem Sets | 100 | PS 2 – PS 12 | `weekN/PS N.md` |
-
-## Progress
-
-| | |
-|---|---|
-| Sheets | 11 |
-| Graded | 0 |
-| Not started | 11 — PS 2 – PS 12 |
-
-## Conventions
-
-- Frontmatter drives the lifecycle: `status: not-started` → `submitted` → `graded`, with
-  `possible:`, `score:`, `started:`, `submitted:` and `graded:` filled in as work progresses.
-- Every sheet carries **Marks** lines and a **Grading Summary** table filled in during marking;
-  leave them alone until then.
-- `weekN/practice/` is ignored by git and never submitted — anything meant for grading goes in
-  `weekN/` itself.
+MATH 151 covers the discrete mathematics that underpins computer science: logic and proof, sets,
+functions and relations, counting, recurrences, graphs, trees and number theory. It is assessed
+by problem sets only.
 
 ---
-*Year 1 · Fall 2026 · Adebayo Glover*
+
+## Topics
+
+| Week | Topic |
+|---|---|
+| 0 | Propositional logic |
+| 1 | Predicates and quantifiers |
+| 2 | Proof techniques |
+| 3 | Induction |
+| 4 | Sets |
+| 5 | Functions |
+| 6 | Relations |
+| 7 | Counting |
+| 8 | Advanced counting |
+| 9 | Recurrences |
+| 10 | Graphs |
+| 11 | Trees |
+| 12 | Number theory |
+
+Each course folder has `week0/` … `week12/`, one per teaching week, and each `weekN/` also has a
+`practice/` folder for classwork, test code and experiments that is never submitted.
+
+---
+
+## Assessment
+
+| Component | Points | Naming |
+|---|---|---|
+| Problem Sets | 100 | `weekN/PS N.md` |
+
+MATH 151's assessed submissions are problem sets; its first set, PS 2, lives in `week2/`. The
+labs and quizzes that run in the course are not filed here.
+
+---
+
+## How each assessment is submitted
+
+1. The answer is written under each heading of the answer sheet.
+2. The sheet's frontmatter is set to `status: submitted`.
+3. The work is committed and pushed.
+4. After grading, the sheet's `score:` is filled in and its status set to `graded`.
+
+---
+
+## What is ignored
+
+- `.gitignore` at the repo root applies to every course: OS files, editor files, Python bytecode
+  and Obsidian workspace state.
+- The final rule, `practice/`, ignores every week's practice folder, so classwork, test code and
+  experiments stay local. Anything meant for grading goes in `weekN/` itself.
+
+---

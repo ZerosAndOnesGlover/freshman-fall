@@ -1,34 +1,69 @@
 # CS 190 · CS Seminar: Profession, Ethics & Culture
 
-Answer sheets for CS 190. Repository-level conventions (submission lifecycle, frontmatter, what
-git ignores) live in the Fall root `README.md`; this file covers only this course.
+**Course:** CS 190 — CS Seminar: Profession, Ethics & Culture
+**Programme:** B.Sc. Computer Science and Engineering, Year 1 (Freshman)
+**Semester:** Fall 2026: Monday 21 September to Friday 18 December 2026 (finals 21–25 December)
+**Source materials:** `5. CS 190 - CS Seminar: Profession, Ethics & Culture`
 
-**Source:** `5. CS 190 - CS Seminar: Profession, Ethics & Culture`
-
-## Layout
-
-The week folders `week0/` … `week12/` are scaffolded but **no answer sheets have been written
-yet**, so no components, point values or naming patterns are fixed. They will be added here as
-the assessments are issued.
-
-| Pattern | What it is |
-|---|---|
-| `weekN/` | One folder per teaching week (currently empty of sheets) |
-
-## Progress
-
-| | |
-|---|---|
-| Sheets | 0 |
-| Graded | 0 |
-
-## Conventions
-
-- Sheets will follow the repository lifecycle: `status: not-started` → `submitted` → `graded`,
-  with `possible:`, `score:`, `started:`, `submitted:` and `graded:` filled in as work
-  progresses.
-- `weekN/practice/` is ignored by git and never submitted — anything meant for grading goes in
-  `weekN/` itself.
+CS 190 is a seminar on the profession, ethics and culture of computing: the discipline's history,
+how software is built, ethics and the ACM Code, bias, privacy, AI and society, intellectual
+property, cybersecurity, industry culture and the future of work.
 
 ---
-*Year 1 · Fall 2026 · Adebayo Glover*
+
+## Topics
+
+| Week | Topic |
+|---|---|
+| 0 | What is computer science? Careers; CS, software engineering and computer engineering |
+| 1 | The history of computing |
+| 2 | How software gets built: Agile, open source and research labs |
+| 3 | Ethics in computing: the ACM Code |
+| 4 | Algorithmic bias |
+| 5 | Privacy and surveillance (GDPR and the Fourth Amendment) |
+| 6 | AI and society (LAWS, deepfakes and large language models) |
+| 7 | Intellectual property |
+| 8 | Cybersecurity ethics |
+| 9 | Technology industry culture |
+| 10 | The future of work (automation, jobs and UBI) |
+| 11 | Student presentations |
+| 12 | Guest speaker and course reflection |
+
+Each course folder has `week0/` … `week12/`, one per teaching week, and each `weekN/` also has a
+`practice/` folder for classwork, test code and experiments that is never submitted.
+
+---
+
+## Assessment
+
+CS 190 is assessed by written and spoken work rather than weekly sheets:
+
+| Component | Weight | Form |
+|---|---|---|
+| Weekly prep assignments | 12% (lowest dropped) | credit/no-credit, one page |
+| Position papers | 60% | three 750–1,000-word essays |
+| Seminar presentation | 10% | a five-minute talk with Q&A |
+
+The position papers escalate deliberately: the first applies an existing code of ethics, the
+second asks for an original framework, and the third argues whether a professional obligation is
+binding. Any answer sheets are filed under `weekN/` as the course requires them.
+
+---
+
+## How each assessment is submitted
+
+1. The answer is written under each heading of the answer sheet.
+2. The sheet's frontmatter is set to `status: submitted`.
+3. The work is committed and pushed.
+4. After grading, the sheet's `score:` is filled in and its status set to `graded`.
+
+---
+
+## What is ignored
+
+- `.gitignore` at the repo root applies to every course: OS files, editor files, Python bytecode
+  and Obsidian workspace state.
+- The final rule, `practice/`, ignores every week's practice folder, so classwork, test code and
+  experiments stay local. Anything meant for grading goes in `weekN/` itself.
+
+---

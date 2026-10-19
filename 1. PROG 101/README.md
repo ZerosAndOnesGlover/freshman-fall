@@ -1,58 +1,72 @@
 # PROG 101 · Programming I: Structured Programming in C
 
-Answer sheets and C source for PROG 101, filed by teaching week. Repository-level conventions
-(submission lifecycle, frontmatter, what git ignores) live in the Fall root `README.md`; this
-file covers only this course.
+**Course:** PROG 101 — Programming I: Structured Programming in C
+**Programme:** B.Sc. Computer Science and Engineering, Year 1 (Freshman)
+**Semester:** Fall 2026: Monday 21 September to Friday 18 December 2026 (finals 21–25 December)
+**Source materials:** `1. PROG 101 - Programming I: Structured Programming in C`
 
-**Source:** `1. PROG 101 - Programming I: Structured Programming in C`
-
-## Layout
-
-Each teaching week `week0/` … `week12/` holds that week's answer sheet, its code sub-folder, and
-any quiz. A sheet sits in the week its assessment was **set**.
-
-| Pattern | What it is |
-|---|---|
-| `weekN/PS N.md` | Problem-set answer sheet |
-| `weekN/Lab N.md` | Lab answer sheet |
-| `weekN/Quiz N.md` | Quiz answer sheet |
-| `weekN/psN/` | Problem-set code, `Makefile` and write-up |
-| `weekN/labN/` | Lab code and notes |
-
-**Quiz placement quirk:** PROG 101 quizzes are filed in the week *after* the material is
-covered, so Quiz 0 sits in `week0/` but Quiz 1 and Quiz 2 sit in `week2/` and `week3/`.
-
-## Components
-
-| Component | Points | Sheets | Naming |
-|---|---|---|---|
-| Problem Sets | 100 | PS 0 – PS 12 | `weekN/PS N.md` |
-| Labs | 100 | Lab 0 – Lab 3 | `weekN/Lab N.md` |
-| Quizzes | 20 | Quiz 0 – Quiz 2 | `weekN/Quiz N.md` (see quirk) |
-
-## Code
-
-Every program is plain C11 and builds with `make`. Default flags are
-`-Wall -Wextra -g -std=c11` (later weeks add `-Werror -pedantic`). Compiled artifacts
-(`*.o`, `*.out`, `a.out`, and the extensionless binaries `make` produces) are gitignored — only
-the `.c`, `.h`, `Makefile` and write-up `.md` are tracked.
-
-## Progress
-
-| | |
-|---|---|
-| Sheets | 20 |
-| Graded | 11 — PS 0–3, Lab 0–3, Quiz 0–2 (Weeks 0–3) |
-| Not started | 9 — PS 4 – PS 12 |
-
-## Conventions
-
-- Frontmatter drives the lifecycle: `status: not-started` → `submitted` → `graded`, with
-  `possible:`, `score:`, `started:`, `submitted:` and `graded:` filled in as work progresses.
-- Every sheet carries **Marks** lines and a **Grading Summary** table filled in during marking;
-  leave them alone until then.
-- `weekN/practice/` is ignored by git and never submitted — anything meant for grading goes in
-  `weekN/` itself.
+PROG 101 covers structured programming in C, from the compilation model and types through
+pointers, dynamic memory and data structures, the preprocessor and generic programming, ending
+with engineering practice. Assessment is by problem set, lab and quiz; each week's C source and
+`Makefile` sit alongside that week's answer sheets.
 
 ---
-*Year 1 · Fall 2026 · Adebayo Glover*
+
+## Topics
+
+| Week | Topic |
+|---|---|
+| 0 | The compilation model, tool-chain (gcc, make, GDB) and a first C program |
+| 1 | Types, variables, memory and number representation |
+| 2 | Operators, expressions, evaluation order and control flow |
+| 3 | Functions, pass-by-value, the call stack and multi-file programs |
+| 4 | Arrays, strings and bounded string functions |
+| 5 | Pointers: pass-by-pointer, arithmetic, `NULL` and `const` |
+| 6 | The process memory map, dynamic memory and ownership |
+| 7 | Structures, unions, enums, bitfields and linked lists |
+| 8 | File I/O, the Unix file model and binary serialisation |
+| 9 | Recursion, divide-and-conquer and binary trees |
+| 10 | The C preprocessor and macros |
+| 11 | Function pointers, generic programming with `void *` and callbacks |
+| 12 | Style, testing and debugging |
+
+Each course folder has `week0/` … `week12/`, one per teaching week, and each `weekN/` also has a
+`practice/` folder for classwork, test code and experiments that is never submitted.
+
+---
+
+## Assessment
+
+| Component | Points | Naming |
+|---|---|---|
+| Problem Sets | 100 | `weekN/PS N.md` |
+| Labs | 100 | `weekN/Lab N.md` |
+| Quizzes | 20 | `weekN/Quiz N.md` |
+
+Every program is plain C11 and builds with `make`; default flags are `-Wall -Wextra -g -std=c11`,
+with later weeks adding `-Werror -pedantic`. Lab N meets in the week after its material is
+covered. Quizzes are filed in the week *after* the material, so Quiz 0 is in `week0/` but Quiz 1
+and Quiz 2 are in `week2/` and `week3/`.
+
+---
+
+## How each assessment is submitted
+
+1. The answer is written under each heading of the answer sheet; the code goes in the week's
+   `weekN/psN/` or `weekN/labN/` folder with a `Makefile`.
+2. The sheet's frontmatter is set to `status: submitted`.
+3. The work is committed and pushed.
+4. After grading, the sheet's `score:` is filled in and its status set to `graded`.
+
+---
+
+## What is ignored
+
+- `.gitignore` at the repo root applies to every course: OS files, editor files, Python bytecode,
+  Obsidian workspace state and compiled C output.
+- The final rule, `practice/`, ignores every week's practice folder, so classwork, test code and
+  experiments stay local. Anything meant for grading goes in `weekN/` itself.
+- Compiled C artifacts (`*.o`, `*.out`, `*.exe`, `a.out`) and the extensionless binaries built by
+  the labs are ignored; only the `.c`, `.h`, `Makefile` and write-up `.md` are tracked.
+
+---
