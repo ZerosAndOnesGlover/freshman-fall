@@ -3,10 +3,11 @@ assessment: PS 0
 course: MATH 141
 component: Problem Sets
 possible: 100
-score:
-status: submitted
+score: 8
+status: graded
 started: 2026-09-28
 submitted: 2026-10-09
+graded: 2026-10-12
 source: Problem Set 0.md
 ---
 
@@ -40,7 +41,7 @@ Examples:
 - $f(x)=\ln(x+2)$ has domain $(-2,\infty)$.
 - $f(x)=\frac{\sqrt{x^2-9}}{x-5}$ requires $x^2-9\ge 0$ and $x\ne 5$, so the domain is $(-\infty,-3]\cup[3,\infty)$ with $x\ne 5$.
 
-_Marks: \_\_\_ / 12_
+_Marks: 1 / 12_
 
 ---
 
@@ -58,7 +59,7 @@ Examples:
 
 So a function can undo itself when applying it twice returns the original input.
 
-_Marks: \_\_\_ / 12_
+_Marks: 1 / 12_
 
 ---
 
@@ -76,7 +77,7 @@ Examples:
 
 The key is to use inverse operations and verify the result.
 
-_Marks: \_\_\_ / 12_
+_Marks: 1 / 12_
 
 ---
 
@@ -94,7 +95,7 @@ Examples:
 
 The solution set must be checked against sign changes on the number line.
 
-_Marks: \_\_\_ / 12_
+_Marks: 1 / 12_
 
 ---
 
@@ -112,7 +113,7 @@ Examples:
 
 This keeps the expression equivalent while making it easier to simplify or evaluate.
 
-_Marks: \_\_\_ / 10_
+_Marks: 1 / 10_
 
 ---
 
@@ -131,7 +132,7 @@ Examples:
 
 The key idea is that exponentials and logs are inverse operations.
 
-_Marks: \_\_\_ / 12_
+_Marks: 1 / 12_
 
 ---
 
@@ -154,7 +155,7 @@ In general, solving for time gives:
 
 $$t=h\log_2\left(\frac{A_0}{A}\right).$$
 
-_Marks: \_\_\_ / 12_
+_Marks: 1 / 12_
 
 ---
 
@@ -179,7 +180,7 @@ Examples:
 
 Trigonometric equations are solved using the unit circle and periodicity.
 
-_Marks: \_\_\_ / 18_
+_Marks: 1 / 18_
 
 ---
 
@@ -189,8 +190,35 @@ _Filled in by the grader._
 
 |             |              |
 | ----------- | ------------ |
-| **Score**   | \_\_\_ / 100 |
-| **Percent** | \_\_\_       |
-| **Graded**  | \_\_\_       |
+| **Score**   | 8 / 100      |
+| **Percent** | 8%           |
+| **Graded**  | 2026-10-12   |
 
 **Feedback:**
+This sheet does **not** answer the assigned problems. Each heading is met with a general method
+summary and worked examples for *different* questions, so no execution marks can be earned on the
+set as it stands. Token method credit (1 per problem) is given where the general technique named is
+correct and relevant.
+
+What was required and what was supplied instead:
+
+- **P1 — Domains (12).** Required the domains of $\frac{\sqrt{3-x}}{x^2-4}$ and $\ln(x^2-5x+6)$.
+  Supplied general domain rules and *other* examples. The two answers
+  ($(-\infty,-2)\cup(-2,2)\cup(2,3]$ and $(-\infty,2)\cup(3,\infty)$) are absent. **1/12.**
+- **P2 — Undoes itself (12).** Required $f(f(x))$ and $f^{-1}$ for $f(x)=\frac{x}{x-1}$ and the
+  observation that $f=f^{-1}$. Supplied generic involutions. **1/12.**
+- **P3 — Equations (12).** Required $\sqrt{x+5}-\sqrt{x-3}=2$ and $x^4-5x^2+4=0$ with the checks.
+  Supplied unrelated linear/quadratic/exponential examples. **1/12.**
+- **P4 — Inequalities (12).** Required $\frac{x^2-1}{x^2-4}\ge0$ and $|x^2-2x-3|<5$ with a sign chart.
+  Supplied different one-off examples, no sign chart for the given expressions. **1/12.**
+- **P5 — Rationalizing (10).** Required $\frac{\sqrt{x+h}-\sqrt{x}}{h}$ rationalised to
+  $\frac{1}{\sqrt{x+h}+\sqrt{x}}$ and evaluated at $h=0$. Supplied denominator-rationalising examples. **1/10.**
+- **P6 — Exp/log equations (12).** Required $e^{2x}-4e^x+3=0$ and $\ln(x+1)-\ln(x-1)=1$. Supplied
+  different equations. **1/12.**
+- **P7 — Half-Life (12).** Required $k=\ln 2/4$ and $t=4\log_2 10\approx13.29$ h for the medication
+  model. Supplied the general half-life model but no computation for this problem. **1/12.**
+- **P8 — Trigonometry (18).** Required $\sin(17\pi/3)$, $\cos(\arcsin(3/5))$ and the solutions of
+  $\sin 2\theta=\cos\theta$ on $[0,2\pi)$. Supplied identities and unrelated examples. **1/18.**
+
+The general material shown is correct, but answer sheets must address the specific problems set.
+Please resubmit the actual solutions to receive full credit.
