@@ -173,7 +173,7 @@ $$15 \times 60 \times 24 \times 365 \times 80 \approx \mathbf{6.3\times10^{8}}\ 
 
 **2. Total length of all blood vessels.** Capillaries dominate by count. Estimating
 $\sim10^{10}$ capillaries each $\sim1$ mm $= 10^{-3}$ m gives $\sim10^{7}$ m $= 10^{4}$ km; adding the
-larger (but far fewer) arteries and veins leaves the same order: $\mathbf{\sim10^{4}\text{–}10^{5}}$ km.
+larger (but far fewer) arteries and veins leaves the same order: $\mathbf{\sim10^{4}\text{--}10^{5}}$ km.
 This is the hardest of the three to pin down, because the capillary count is genuinely uncertain.
 
 **3. Mass of air in the classroom.** Volume $\approx 10 \times 8 \times 3 = 240$ m³; air density

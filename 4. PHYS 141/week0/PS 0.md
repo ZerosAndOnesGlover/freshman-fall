@@ -27,18 +27,18 @@ source: "PS 0 Measurement Units Coordinate Systems Vectors.md"
 dimensions of its operands:
 
 $$[\vec{L}] = [\vec{r}]\,[\vec{p}] = (\mathrm{L})(\mathrm{M}\,\mathrm{L}\,\mathrm{T}^{-1}) = \mathrm{M}\,\mathrm{L}^2\,\mathrm{T}^{-1}
-\;\Rightarrow\; \boxed{\text{kg·m}^2/\text{s}}$$
+\;\Rightarrow\; \boxed{\mathrm{kg\,m^2\,s^{-1}}}$$
 
 **(b) Electric field, from $\vec{F} = q\vec{E}$**, so $\vec{E} = \vec{F}/q$ with $[F] = \mathrm{M}\,\mathrm{L}\,\mathrm{T}^{-2}$
 and charge $[q] = \mathrm{I}\,\mathrm{T}$:
 
 $$[E] = \frac{\mathrm{M}\,\mathrm{L}\,\mathrm{T}^{-2}}{\mathrm{I}\,\mathrm{T}} = \mathrm{M}\,\mathrm{L}\,\mathrm{T}^{-3}\,\mathrm{I}^{-1}
-\;\Rightarrow\; \boxed{\text{kg·m·s}^{-3}\text{·A}^{-1}}$$
+\;\Rightarrow\; \boxed{\mathrm{kg\,m\,s^{-3}\,A^{-1}}}$$
 
 **(c) Gravitational constant, from $F = Gm_1m_2/r^2$**, so $G = Fr^2/(m_1m_2)$:
 
 $$[G] = \frac{(\mathrm{M}\,\mathrm{L}\,\mathrm{T}^{-2})(\mathrm{L}^2)}{\mathrm{M}^2} = \mathrm{M}^{-1}\,\mathrm{L}^3\,\mathrm{T}^{-2}
-\;\Rightarrow\; \boxed{\text{m}^3\text{·kg}^{-1}\text{·s}^{-2}}$$
+\;\Rightarrow\; \boxed{\mathrm{m^3\,kg^{-1}\,s^{-2}}}$$
 
 *Marks: 10 / 10*
 
@@ -46,7 +46,7 @@ $$[G] = \frac{(\mathrm{M}\,\mathrm{L}\,\mathrm{T}^{-2})(\mathrm{L}^2)}{\mathrm{M
 
 ### Problem 2 — Dimensional analysis of $T = 2\pi\sqrt{m/k}$  (10 points)
 
-$k$ is a spring constant with units $\mathrm{N/m} = (\mathrm{kg·m/s}^2)/\mathrm{m} = \mathrm{kg\,s}^{-2}$.
+$k$ is a spring constant with units $\mathrm{N/m} = (\mathrm{kg\,m/s^2})/\mathrm{m} = \mathrm{kg\,s^{-2}}$.
 The argument of the square root is
 
 $$\left[\frac{m}{k}\right] = \frac{\mathrm{kg}}{\mathrm{kg\,s}^{-2}} = \mathrm{s}^2
@@ -231,9 +231,9 @@ $$\vec\tau =
 \end{vmatrix}
 = \big(0\cdot0 - 0\cdot(-20)\big)\hat x - \big(0.3\cdot0 - 0\cdot0\big)\hat y
 + \big(0.3\cdot(-20) - 0\cdot0\big)\hat z
-= \boxed{(0,0,-6)\ \text{N·m}.}$$
+= \boxed{(0,0,-6)\ \text{N}\cdot\text{m}.}$$
 
-**(b) Magnitude:** $|\vec\tau| = \sqrt{0^2+0^2+(-6)^2} = \boxed{6\ \text{N·m}}$.
+**(b) Magnitude:** $|\vec\tau| = \sqrt{0^2+0^2+(-6)^2} = \boxed{6\ \text{N}\cdot\text{m}}$.
 
 **(c) Force moved to $\vec r = (0,0.3,0)$:**
 
