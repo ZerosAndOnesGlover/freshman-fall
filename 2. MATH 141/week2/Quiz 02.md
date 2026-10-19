@@ -33,7 +33,7 @@ $$0 < |x-a| < \delta \implies |f(x)-L| < \varepsilon.$$
 
 **A5.** Three indeterminate forms: $\frac{0}{0}$, $\frac{\infty}{\infty}$, $\infty-\infty$ (also acceptable: $0\cdot\infty$, $1^\infty$, $0^0$, $\infty^0$). "Indeterminate" means the form alone does **not** determine the limit — functions with the same indeterminate form can have different limits.
 
-*Marks: ___ / 10*
+*Marks: 10 / 10*
 
 ---
 
@@ -47,7 +47,7 @@ As $x\to+\infty$, $\sqrt{x^2+1}\sim x$ so denominator $\sim 2x\to+\infty$; thus 
 
 **Answer:** $0$
 
-*Marks: ___ / 5*
+*Marks: 5 / 5*
 
 **B2.** Find all horizontal and vertical asymptotes of $f(x)=\dfrac{3x^2+2x}{x^2-5}$.
 
@@ -57,7 +57,7 @@ As $x\to+\infty$, $\sqrt{x^2+1}\sim x$ so denominator $\sim 2x\to+\infty$; thus 
 
 **Answer:** HA: $y=3$; VA: $x=\pm\sqrt{5}$
 
-*Marks: ___ / 5*
+*Marks: 5 / 5*
 
 ---
 
