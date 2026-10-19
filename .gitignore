@@ -42,6 +42,16 @@ a.out
 # Extensionless binaries from the week 1 Lab 1 Makefile.
 /1. PROG 101/week1/lab1/explore
 /1. PROG 101/week1/lab1/sizes
+# Extensionless binaries from the week 2 Problem Set 2 / Lab 2 Makefiles.
+/1. PROG 101/week2/ps2/flags
+/1. PROG 101/week2/lab2/precedence
+/1. PROG 101/week2/lab2/ub
+/1. PROG 101/week2/lab2/overflow
+/1. PROG 101/week2/lab2/shift
+/1. PROG 101/week2/lab2/fallthrough
+/1. PROG 101/week2/lab2/collatz
+/1. PROG 101/week2/lab2/dowhile
+/1. PROG 101/week2/lab2/wordcount
 
 # ─── Generated study site ────────────────────────────────────────────
 # Rebuilt from the markdown by `python3 site/build.py` in a couple of
