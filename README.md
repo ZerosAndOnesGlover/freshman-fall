@@ -18,7 +18,7 @@ and the code written for each lab and problem set.
 | `2. MATH 141/` | Calculus I: Limits, Derivatives, and Integrals | 24 |
 | `3. MATH 151/` | Discrete Mathematics for Computer Science | 11 |
 | `4. PHYS 141/` | Physics I: Mechanics, Waves & Thermodynamics | 12 |
-| `5. CS 190/` | CS Seminar: Profession, Ethics & Culture | 1 |
+| `5. CS 190/` | CS Seminar: Profession, Ethics & Culture | 2 |
 
 Each course folder has `week0/` … `week12/`, one per teaching week. A sheet sits in the week its
 assessment was **set**, so a quiz on Week 10 material given on the Monday of Week 11 lives in
