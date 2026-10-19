@@ -15,7 +15,7 @@ and the code written for each lab and problem set.
 |---|---|---|
 | `0. CS 101/` | Computer Science I: Foundations of Computation | 17 |
 | `1. PROG 101/` | Programming I: Structured Programming in C | 20 |
-| `2. MATH 141/` | Calculus I: Limits, Derivatives, and Integrals | 24 |
+| `2. MATH 141/` | Calculus I: Limits, Derivatives, and Integrals | 26 |
 | `3. MATH 151/` | Discrete Mathematics for Computer Science | 11 |
 | `4. PHYS 141/` | Physics I: Mechanics, Waves & Thermodynamics | 12 |
 | `5. CS 190/` | CS Seminar: Profession, Ethics & Culture | 5 |
