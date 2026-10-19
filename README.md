@@ -14,7 +14,7 @@ and the code written for each lab and problem set.
 | Folder | Course | Sheets |
 |---|---|---|
 | `0. CS 101/` | Computer Science I: Foundations of Computation | 17 |
-| `1. PROG 101/` | Programming I: Structured Programming in C | 16 |
+| `1. PROG 101/` | Programming I: Structured Programming in C | 18 |
 | `2. MATH 141/` | Calculus I: Limits, Derivatives, and Integrals | 24 |
 | `3. MATH 151/` | Discrete Mathematics for Computer Science | 11 |
 | `4. PHYS 141/` | Physics I: Mechanics, Waves & Thermodynamics | — |
