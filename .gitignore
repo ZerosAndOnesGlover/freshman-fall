@@ -62,6 +62,7 @@ a.out
 /1. PROG 101/week3/lab3/asrt_ndebug
 /1. PROG 101/week3/lab3/dangling
 /1. PROG 101/week3/lab3/dangling2
+/1. PROG 101/week3/lab3/dangling2_asan
 /1. PROG 101/week3/lab3/badprog
 
 # ─── Generated study site ────────────────────────────────────────────
