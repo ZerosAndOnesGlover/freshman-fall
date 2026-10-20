@@ -7,7 +7,7 @@
 
 MATH 151 covers the discrete mathematics that underpins computer science: logic and proof, sets,
 functions and relations, counting, recurrences, graphs, trees and number theory. It is assessed
-by problem sets only.
+by problem sets, weekly quizzes and completion-checked labs.
 
 ---
 
@@ -39,9 +39,14 @@ Each course folder has `week0/` … `week12/`, one per teaching week, and each `
 | Component | Points | Naming |
 |---|---|---|
 | Problem Sets | 100 | `weekN/PS N.md` |
+| Labs | completion | `weekN/Lab N.md` |
+| Quizzes | 20 | `weekN/Quiz N.md` |
 
-MATH 151's assessed submissions are problem sets; its first set, PS 2, lives in `week2/`. The
-labs and quizzes that run in the course are not filed here.
+MATH 151 has thirteen problem sets (PS 0–12, lowest one dropped), twelve weekly quizzes (Quiz 1–12,
+lowest one dropped) and thirteen labs (Lab 0–12, graded on completion). A quiz is filed in the week
+it is administered, so Quiz *N* (which covers Week *N−1*) lives in `weekN/`. Each lab meets the
+Wednesday after its material but is filed with that material, so Lab *N* lives in `weekN/`.
+Problem sets, labs and quizzes are all answer sheets in the same layout.
 
 ---
 
