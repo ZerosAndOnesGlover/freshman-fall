@@ -2,8 +2,8 @@
 assessment: Prep 2
 course: CS 190
 component: Seminar Prep
-possible: 100
-score: 100
+possible: 10
+score: 10
 status: graded
 started: 2026-10-05
 submitted: 2026-10-07
@@ -91,7 +91,7 @@ retrospective, not because the rituals are inherently good but because we had no
 
 | | |
 |---|---|
-| **Score** | 100 / 100 |
+| **Score** | 10 / 10 |
 | **Percent** | 100% |
 | **Graded** | 2026-10-08 |
 
@@ -100,7 +100,7 @@ retrospective, not because the rituals are inherently good but because we had no
 | A — Raymond vs. Eghbal | Credit |
 | B — Licence question | Credit |
 | C — Process observation | Credit |
-| **Total** | **Credit (100 / 100)** |
+| **Total** | **Credit (10 / 10)** |
 
 **Feedback:** Full participation credit. Part A synthesises rather than summarises, which is what the
 prompt asked for: the key move — that Raymond asked how open source gets built while Eghbal asked who

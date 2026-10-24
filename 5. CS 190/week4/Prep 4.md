@@ -2,8 +2,8 @@
 assessment: Prep 4
 course: CS 190
 component: Seminar Prep
-possible: 100
-score: 100
+possible: 10
+score: 10
 status: graded
 started: 2026-10-22
 submitted: 2026-10-22
@@ -110,7 +110,7 @@ inherited by accident from whichever threshold the engineering team happened to 
 
 | | |
 |---|---|
-| **Score** | 100 / 100 |
+| **Score** | 10 / 10 |
 | **Percent** | 100% |
 | **Graded** | 2026-10-22 |
 
@@ -119,7 +119,7 @@ inherited by accident from whichever threshold the engineering team happened to 
 | A — Mechanism diagnosis (three cases) | Credit |
 | B — Proxy variable construction | Credit |
 | C — Numerical impossibility example | Credit |
-| **Total** | **Credit (100 / 100)** |
+| **Total** | **Credit (10 / 10)** |
 
 **Feedback:** Full participation credit. Part A identifies the *primary* mechanism in each case and
 distinguishes the root cause from its symptom — notably separating Amazon's biased training signal from

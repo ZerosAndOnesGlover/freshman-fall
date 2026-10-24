@@ -2,8 +2,8 @@
 assessment: Prep 3
 course: CS 190
 component: Seminar Prep
-possible: 100
-score: 100
+possible: 10
+score: 10
 status: graded
 started: 2026-10-12
 submitted: 2026-10-14
@@ -90,7 +90,7 @@ claim than the one printed above.
 
 | | |
 |---|---|
-| **Score** | 100 / 100 |
+| **Score** | 10 / 10 |
 | **Percent** | 100% |
 | **Graded** | 2026-10-15 |
 
@@ -99,7 +99,7 @@ claim than the one printed above.
 | A — Code mapping (Scenarios A and B) | Credit |
 | B — Position-paper sketch | Credit |
 | C — Strongest objection | Credit |
-| **Total** | **Credit (100 / 100)** |
+| **Total** | **Credit (10 / 10)** |
 
 **Feedback:** Full participation credit. Part A maps principles to scenarios rather than merely
 listing them, and the annotations distinguish the *reason* each principle bites (1.2's

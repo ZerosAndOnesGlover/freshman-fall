@@ -2,8 +2,8 @@
 assessment: Prep 0
 course: CS 190
 component: Seminar Prep
-possible: 100
-score: 100
+possible: 10
+score: 10
 status: graded
 started: 2026-09-21
 submitted: 2026-09-23
@@ -94,7 +94,7 @@ overtaken?
 
 | | |
 |---|---|
-| **Score** | 100 / 100 |
+| **Score** | 10 / 10 |
 | **Percent** | 100% |
 | **Graded** | 2026-09-24 |
 
@@ -103,7 +103,7 @@ overtaken?
 | A — Reading notes (3 readings × 4 questions) | Credit |
 | B — Discussion question answer | Credit |
 | C — Question for the class | Credit |
-| **Total** | **Credit (100 / 100)** |
+| **Total** | **Credit (10 / 10)** |
 
 **Feedback:** Full participation credit. All three readings are covered with the required four
 questions each, and the notes distinguish the authors' claims rather than summarising the topic.

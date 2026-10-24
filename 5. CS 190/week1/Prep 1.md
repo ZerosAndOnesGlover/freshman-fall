@@ -2,8 +2,8 @@
 assessment: Prep 1
 course: CS 190
 component: Seminar Prep
-possible: 100
-score: 100
+possible: 10
+score: 10
 status: graded
 started: 2026-09-28
 submitted: 2026-09-30
@@ -89,7 +89,7 @@ count that as within her claim's spirit even as it strains its letter.
 
 | | |
 |---|---|
-| **Score** | 100 / 100 |
+| **Score** | 10 / 10 |
 | **Percent** | 100% |
 | **Graded** | 2026-10-01 |
 
@@ -98,7 +98,7 @@ count that as within her claim's spirit even as it strains its letter.
 | A — Turing reading response | Credit |
 | B — Historical turning point | Credit |
 | C — Lovelace's claim | Credit |
-| **Total** | **Credit (100 / 100)** |
+| **Total** | **Credit (10 / 10)** |
 
 **Feedback:** Full participation credit. Part A names two genuinely different objections (one
 formal, one empirical) and states Turing's response in each case without padding it into agreement
