@@ -65,31 +65,9 @@ a.out
 /1. PROG 101/week3/lab3/dangling2_asan
 /1. PROG 101/week3/lab3/badprog
 
-# ─── Generated study site ────────────────────────────────────────────
-# Rebuilt from the markdown by `python3 site/build.py` in a couple of
-# seconds, so the output is not worth versioning. The generator itself,
-# and the vendored KaTeX it needs to work offline, ARE tracked.
-/_site/
-
 # ─── OS noise ────────────────────────────────────────────────────────
 .DS_Store
 Thumbs.db
-
-# ─── Submissions ─────────────────────────────────────────────────────
-# Each course under here gets its own git repo with its own remote
-# (e.g. CS 101 -> ZerosAndOnesGlover/cs101). Tracking them from the
-# vault repo would leave stray gitlinks pointing at commits this repo
-# does not contain. Commit and push each course from inside its own
-# directory instead.
-/5. Academic Registry/4. Submissions/
-
-# ─── Portal ──────────────────────────────────────────────────────────
-# The student portal is its own project with its own git repo and its
-# own remote (ZerosAndOnesGlover/portal). It reads the vault at runtime
-# but is not vault content, and tracking it from here would leave a
-# stray gitlink pointing at commits this repo does not contain. Commit
-# and push it from inside "6. Portal" instead.
-/6. Portal/
 
 # ─── Practice ───────────────────────────────────────────────────────
 practice/
