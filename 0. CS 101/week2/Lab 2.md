@@ -17,8 +17,7 @@ source: "LAB 2 Debugging and Loops.md"
 **Assessment:** `LAB 2 Debugging and Loops.md`
 **Points available:** 100
 
-Work in this folder: `debug_exercise.py` (Part 2, fixed), `loops.py` (Parts 3–4), and the detailed
-debugging write-up in `lab2_notes.md`.
+Work in this folder: `debug_exercise.py` (Part 2, fixed) and `loops.py` (Parts 3–4).
 
 ---
 
@@ -26,9 +25,15 @@ debugging write-up in `lab2_notes.md`.
 
 ### Exercise 1.1 (10)
 
+| iteration | `i` before | `result` before | `result *= i` | `i` after |
+|-----------|-----------|-----------------|---------------|-----------|
+| 1 | 1 | 0 | 0 | 2 |
+| 2 | 2 | 0 | 0 | 3 |
+| 3 | 3 | 0 | 0 | 4 |
+
 `result` starts at `0`, so `result *= i` stays `0` forever and the program prints `0`, not `120`.
-Trace of the first three iterations: `(i=1) 0*1=0`, `(i=2) 0*2=0`, `(i=3) 0*3=0`. The invariant
-`result == (i - 1)!` at `i = 1` requires `result == 0! == 1`. **Fix:** `result = 1` → prints `120`.
+The invariant `result == (i - 1)!` at `i = 1` requires `result == 0! == 1`. **Fix:** `result = 1` →
+prints `120`.
 
 ### Exercise 1.2 (10)
 
@@ -49,15 +54,15 @@ _Marks: 20 / 20_
 ## Part 2 — Print-Debugging (30)
 
 A `print` was added inside each loop, the run read, the wrong line named, the fix applied, and the
-debug print removed. Full write-up in `lab2_notes.md`.
+debug print removed.
 
-| Bug | Wrong line | What was meant | Fix | Fixed output |
-|-----|-----------|----------------|-----|--------------|
-| 1 | `total = i` | add each odd number | `total += i` | `2500` |
-| 2 | `is_prime = True` (inside the divisor test) | a divisor means *not* prime | `is_prime = False` | `9 False` |
-| 3 | `count + 1` | increment `count` | `count += 1` | `3` |
-| 4 | `largest = 0` | start from a real value | `largest = values[0]` | `-1` |
-| 5 | `i = len(word)` | last index is `len - 1` | `i = len(word) - 1` | `olleh` |
+| Bug | Debug print showed | Wrong line | What was meant | Fix | Buggy → fixed |
+|-----|--------------------|------------|----------------|-----|----------------|
+| 1 | `total` jumping to each odd number (`1, 3, 5, …`) | `total = i` | add each odd number | `total += i` | `99` → `2500` |
+| 2 | `is_prime` becoming `True` at `d = 3` for `n = 9` | `is_prime = True` (inside the divisor test) | a divisor means *not* prime | `is_prime = False` | `9 True` → `9 False` |
+| 3 | `count` stuck at `0` although `ch == "a"` matched | `count + 1` | increment `count` | `count += 1` | `0` → `3` |
+| 4 | `largest` stuck at `0` (every `v` is negative) | `largest = 0` | start from a real value | `largest = values[0]` | `0` → `-1` |
+| 5 | `IndexError` on the first step (`word[5]`) | `i = len(word)` | last index is `len - 1` | `i = len(word) - 1` | `IndexError` → `olleh` |
 
 Final output of `debug_exercise.py`:
 
@@ -99,16 +104,18 @@ Complete invariant comments (initialisation / preservation / termination) are wr
 Collatz loop (3.1a) and the sieve loop (3.2) in `loops.py`, e.g.:
 
 ```python
-# Invariant: at the start of each iteration, n is the value reached from the start by `steps` moves.
-# Initialisation: true before the first iteration because 0 moves leaves n == start.
-# Preservation: each iteration applies one move and adds one to `steps`.
-# Termination: the sequence reaches 1 and each iteration shrinks the remaining distance by one.
+# Invariant: after `steps` iterations, n is the value reached from the start by `steps` Collatz moves.
+# Initialisation: 0 iterations in, n == start, which is reached by 0 moves.
+# Preservation: each iteration applies one Collatz move and adds one to `steps`.
+# Termination: for every value tested the sequence reaches 1 (still unproven in general),
+#              and each iteration shrinks the distance to that point by one, so it stops.
 ```
 
 ```python
 # Invariant: every composite number with a prime factor less than p has been crossed out.
-# Initialisation: p == 2, and no smaller prime factor exists yet.
-# Preservation: crossing out multiples of p removes every composite whose smallest factor is p.
+# Initialisation: p == 2, and no smaller prime factor exists, so nothing needs crossing out yet.
+# Preservation: crossing out the multiples of p removes every composite whose smallest prime
+#              factor is p; advancing p keeps the statement true for the next prime.
 # Termination: p grows by one each iteration and stops once p * p > n.
 ```
 

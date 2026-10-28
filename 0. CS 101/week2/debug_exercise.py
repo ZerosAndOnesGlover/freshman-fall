@@ -1,6 +1,6 @@
 # debug_exercise.py — CS 101 Lab 2 (Tuesday 13 October 2026)
 # Five short programs, each with one bug. Find each with print-tracing, fix it, explain it.
-# The five bugs and their fixes are written up in lab2_notes.md (Part 2).
+# The five bugs and their fixes are written up in Lab 2.md (Part 2).
 
 # Bug 1 - should print the sum of the odd numbers 1..99 (expected 2500)
 total = 0
