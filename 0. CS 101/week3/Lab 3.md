@@ -39,7 +39,7 @@ Code in this folder: `scope_bugs.py` (Part 2), `text_statistics.py` (Part 3), `r
 
 *A frame is created per **call**, not per function.*
 
-### Exercise 1.3 — The mutable default trap
+### Exercise 1.2 — The mutable default trap
 
 1. It prints `['apple', 'banana', 'cherry']` **three times** — `r1 is r2 is r3` is `True`; all three
    names label the **same** list object.
@@ -61,7 +61,7 @@ def add_item(item, collection=None):
 (Use `is None`, not `if not collection` — the latter would wrongly replace a caller's *deliberately*
 empty list.)
 
-### Exercise 1.5 — Return values vs. print
+### Exercise 1.3 — Return values vs. print
 
 1. `TypeError: unsupported operand type(s) for +: 'NoneType' and 'int'`. `double_print` prints `10`
    and then falls off the end, returning `None`; `None + 1` is a type error. (Note the `10` **is**
