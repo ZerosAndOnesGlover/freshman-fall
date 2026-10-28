@@ -7,8 +7,8 @@
 
 CS 101 is the first programming course of the programme, taught in Python. It moves from
 expressions and control flow through functions and recursion, algorithms and data structures,
-and closes with models of computation. Assessment is by problem set, lab and quiz; the code
-written for a week sits alongside that week's answer sheets.
+and closes with models of computation. Assessment is by problem set, lab, two midterms, two
+projects and a final exam; the code written for a week sits alongside that week's answer sheets.
 
 ---
 
@@ -37,22 +37,29 @@ Each course folder has `week0/` … `week12/`, one per teaching week, and each `
 
 ## Assessment
 
-| Component | Points | Naming |
+| Component | Weight | Sheets |
 |---|---|---|
-| Problem Sets | 100 | `weekN/PS N.md` |
-| Labs | 100 | `weekN/Lab N.md` |
-| Quizzes | 10 | `weekN/Quiz N.md` |
+| Problem Sets (PS 1–11, lowest dropped) | 30% | `weekN/PS N.md` |
+| Midterm 1 (Weeks 0–5) | 15% | `week6/Midterm 1.md` |
+| Midterm 2 (Weeks 6–9) | 15% | `week10/Midterm 2.md` |
+| Final Exam (Weeks 0–11) | 20% | `week12/Final Exam.md` |
+| Labs (Lab 0–11) | 10% | `weekN/Lab N.md` |
+| Projects 1–2 | 10% | `week7/Project 1.md`, `week12/Project 2.md` |
+| Quizzes (Quiz 0–11) | formative, 0% | `weekN/Quiz N.md` |
 
-CS 101 has no Week 0 assessment; sheets begin in `week1/`. Every problem set and lab has a
-`weekN/psN/` or `weekN/labN/` folder holding the code and a short write-up. Sheets are written in
-Python; only what the lectures have taught by the work's date is used.
+Week 0 has the graded Lab 0 and the ungraded Quiz 0 self-assessment. Each sheet is filed in the
+same week as its handout: Lab N in `weekN/` although it meets on the Tuesday of week N + 1, Quiz N
+in `weekN/` although it covers week N − 1, the midterms in `week6/` and `week10/`, and the final in
+`week12/`. The code sits flat in `weekN/` beside the sheets,
+under the file names the handouts give (`ps1.py`, `scope_bugs.py`, …). All code is Python, and only
+what the lectures have taught by the work's date is used.
 
 ---
 
 ## How each assessment is submitted
 
-1. The answer is written under each heading of the answer sheet; any code goes in the week's
-   `weekN/psN/` or `weekN/labN/` folder.
+1. The answer is written under each heading of the answer sheet; any code goes in `weekN/`
+   beside it.
 2. The sheet's frontmatter is set to `status: submitted`.
 3. The work is committed and pushed.
 4. After grading, the sheet's `score:` is filled in and its status set to `graded`.
@@ -61,8 +68,8 @@ Python; only what the lectures have taught by the work's date is used.
 
 ## What is ignored
 
-- `.gitignore` at the repo root applies to every course: OS files, editor files, Python bytecode
-  and Obsidian workspace state.
+- `.gitignore` at the repo root applies to every course: OS files, editor files, Python bytecode,
+  compiled C output and Obsidian workspace state.
 - The final rule, `practice/`, ignores every week's practice folder, so classwork, test code and
   experiments stay local. Anything meant for grading goes in `weekN/` itself.
 
