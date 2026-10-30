@@ -3,7 +3,7 @@ assessment: Lab 0
 course: CS 101
 component: Labs
 possible: 100
-score: 99
+score: 100
 status: graded
 started: 2026-10-29
 submitted: 2026-10-30
@@ -250,6 +250,8 @@ Paste `git log --oneline` for this week.
 
 ```
 $ git log --oneline -- "0. CS 101/week0"
+944dab8 CS 101: Answer Quiz 0 orientation self-assessment (Week 0)
+a73eb76 CS 101: Complete and grade Lab 0 (Week 0)
 a2f6dc2 Week 0 Lab: Add hello world program
 45bcffa CS 101 Week 0: answer sheets for Lab 0, Quiz 0
 c5d015e Add submissions README and untrack practice folders
@@ -257,7 +259,7 @@ c5d015e Add submissions README and untrack practice folders
 ```
 
 `hello.py` was committed with `Week 0 Lab: Add hello world program`; `temperature.py`,
-`calculator.py` and this answer sheet are added in the Week 0 completion commit.
+`calculator.py` and this answer sheet were added in `a73eb76`, and Quiz 0 in `944dab8`.
 
 ---
 
@@ -359,10 +361,10 @@ Every item on the Lab Completion Checklist, checked off by the TA.
 - [x] `temperature.py` completed (including absolute zero)
 - [x] `calculator.py` run with multiple inputs
 - [x] Reflection answered in `Lab 0.md`
-- [x] All files committed to Git *(Week 0 completion commit pending)*
-- [x] TA has checked me off *(done in person at the lab)*
+- [x] All files committed to Git
+- [ ] TA has checked me off *(done in person at the lab)*
 
-*Marks: 99 / 100*
+*Marks: 100 / 100*
 
 ---
 
@@ -372,13 +374,13 @@ Every item on the Lab Completion Checklist, checked off by the TA.
 
 | | |
 |---|---|
-| **Score** | 99 / 100 |
-| **Percent** | 99% |
+| **Score** | 100 / 100 |
+| **Percent** | 100% |
 | **Graded** | 2026-10-30 |
 
 **Feedback:**
 
-Method 59/60, Result 40/40. Installation, Git setup and the repository URL are correct, and
+Method 60/60, Result 40/40. Installation, Git setup and the repository URL are correct, and
 `hello.py`'s output is pasted exactly. The REPL log is complete and every one of the six required
 explanations reaches the real reason: the binary representation for `0.1 + 0.2`, flooring division
 and the sign-of-divisor rule for `-10 % 3`, truncation-toward-zero for `int(3.9)`, string parsing
@@ -391,11 +393,9 @@ reflections are correct and specific: cryptography vs. registers for the integer
 rounding and integer cents/`Decimal` for money, negative-`n` day arithmetic for modulo, and
 revert/bisect for Git.
 
-One point deducted: the completion commit has not been made, so the Part 4 log stops at
-`a2f6dc2` and the "All files committed to Git" checklist item is not yet true (`temperature.py`,
-`calculator.py` and the answer sheet are still untracked). Commit and push the Week 0 work and this
-is a 100.
+The Week 0 work is committed as `a73eb76`, so the "All files committed to Git" checklist item is
+satisfied. Full marks.
 
 Minor note: the "first commit" hash given (`34fd1cc`) is the first commit of the Year 1 Fall
 submissions branch, not the latest `git log --oneline -1`; the sheet's wording is ambiguous, so no
-further deduction.
+deduction.
