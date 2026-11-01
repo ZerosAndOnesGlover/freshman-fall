@@ -37,11 +37,13 @@ Each course folder has `week0/` … `week12/`, one per teaching week, and each `
 
 ## Assessment
 
-| Component | Points | Naming |
+| Component | Points each | Naming |
 |---|---|---|
 | Problem Sets | 100 | `weekN/PS N.md` |
-| Labs | 100 | `weekN/Lab N.md` |
-| Quizzes | 20 | `weekN/Quiz N.md` |
+| Labs | 20 (Lab 0 is completion-only) | `weekN/Lab N.md` |
+| Quizzes | 20; Quizzes 4, 5, 10 and 11 are 10 (formative, no course weight) | `weekN/Quiz N.md` |
+| Midterms | 100 | `week6/Midterm 1.md`, `week10/Midterm 2.md` |
+| Final Exam | 100 | `week12/Final Exam.md` |
 
 Every program is plain C11 and builds with `make`; default flags are `-Wall -Wextra -g -std=c11`,
 with later weeks adding `-Werror -pedantic`. Lab N meets in the week after its material is
