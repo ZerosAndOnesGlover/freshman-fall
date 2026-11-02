@@ -36,15 +36,29 @@ Each course folder has `week0/` … `week12/`, one per teaching week, and each `
 
 ## Assessment
 
-| Component | Points | Naming |
-|---|---|---|
-| Problem Sets | 100 | `weekN/PS N.md` |
-| Labs | 100 | `weekN/Lab N.md` |
-| Quizzes | 20 | `weekN/Quiz NN.md` |
+| Component | Weight | Points each | Naming |
+|---|---|---|---|
+| Problem Sets | 30% | 100 | `weekN/PS N.md` |
+| Midterm 1 | 15% | 100 | `week6/Midterm 1.md` |
+| Midterm 2 | 15% | 100 | `week10/Midterm 2.md` |
+| Final Exam | 20% | 100 | `week12/Final Exam.md` |
+| Labs | 10% | 20 or 100 | `weekN/Lab N.md` |
+| Quizzes | 10% | 20 | `weekN/Quiz NN.md` |
 
-Quiz sheets are zero-padded (`Quiz 01.md`, `Quiz 02.md`). Labs are written for the Friday
-session, with computation in plain Python (Desmos for graphs) using only what CS 101 has taught
-by the lab's date.
+MATH 141 has twelve graded problem sets (PS 0–11, lowest one dropped; PS 12 is an ungraded revision
+set with no sheet), twelve graded quizzes (Quiz 01–12, lowest one dropped; the Week 0 diagnostic is
+ungraded and has no sheet) and graded labs 1–11. Lab 0 and Lab 12 are ungraded and their sheets stay blank. Lab points vary by
+lab (20 or 100), as the gradebook lists them. A quiz is filed in the week it is sat, so Quiz *NN*
+(which covers Week *N−1*) lives in `weekN/`; a lab meets on the Friday of its own week and lives in
+`weekN/`. Quiz sheets are zero-padded (`Quiz 01.md`, `Quiz 02.md`). Labs use plain Python (Desmos for
+graphs) and only what CS 101 has taught by the lab's date. Problem sets, labs, quizzes and exams are
+all answer sheets in the same layout.
+
+Midterm 1 is sat on Thursday 5 November 2026, 18:00–19:15 in VNC 200, and covers Weeks 0–5. Midterm 2
+is on Wednesday 2 December 2026, 18:00–19:15 in VNC 200, and covers Weeks 6–9. The Final Exam is on
+Wednesday 23 December 2026, 09:00–11:30 in VNC 200 (150 minutes, a 2-page cheat sheet allowed), and
+covers Weeks 0–12. No exam papers exist in the course materials yet, so each exam sheet has a single
+answer block.
 
 ---
 
