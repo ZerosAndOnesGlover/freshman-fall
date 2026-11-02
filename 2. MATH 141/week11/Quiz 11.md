@@ -43,7 +43,7 @@ source: "QUIZ 11 With Answer Key.md"
 
 ---
 
-### A3 — Evaluate $\displaystyle\int x\cos x\,dx$ by parts. State your $u$ and  (2 points)
+### A3 — Evaluate $\displaystyle\int xe^{3x}\,dx$ by parts. State your $u$ and  (2 points)
 
 **Your answer:**
 
@@ -85,7 +85,7 @@ source: "QUIZ 11 With Answer Key.md"
 
 ---
 
-### B2 — Evaluate $\displaystyle\int \ln x\,dx$.  (5 points)
+### B2 — Evaluate $\displaystyle\int \sqrt{x}\,\ln x\,dx$.  (5 points)
 
 **Your answer:**
 

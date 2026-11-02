@@ -31,7 +31,7 @@ source: "QUIZ 08 With Answer Key.md"
 
 ---
 
-### Q2 — For $f(x) = x^2e^{-x}$, find all critical numbers and classify each  (4 points)
+### Q2 — For $f(x) = x^2e^{-2x}$, find all critical numbers and classify each  (4 points)
 
 **Your answer:**
 

@@ -51,7 +51,7 @@ source: "QUIZ 10 With Answer Key.md"
 
 ---
 
-### Q4 — Use FTC Part 2 to evaluate $\displaystyle\int_0^{\pi/4}\sec^2x\,dx$.  (4 points)
+### Q4 — Use FTC Part 2 to evaluate $\displaystyle\int_0^{\pi/3}\sec^2x\,dx$.  (4 points)
 
 **Your answer:**
 

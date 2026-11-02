@@ -85,7 +85,7 @@ source: "QUIZ 09 With Answer Key.md"
 
 ---
 
-### B2 — Evaluate $\displaystyle\int_{-3}^{3}\sqrt{9-x^2}\,dx$ geometrically,  (5 points)
+### B2 — Evaluate $\displaystyle\int_{0}^{4}\sqrt{16-x^2}\,dx$ geometrically,  (5 points)
 
 **Your answer:**
 

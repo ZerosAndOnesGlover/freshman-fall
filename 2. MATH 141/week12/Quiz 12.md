@@ -33,7 +33,7 @@ source: "QUIZ 12 With Answer Key.md"
 
 ---
 
-### A2 — Find the area between $y=x$ and $y=x^2$ on $[0,1]$.  (2 points)
+### A2 — Find the area enclosed by $y=2x$ and $y=x^2$.  (2 points)
 
 **Your answer:**
 
@@ -75,7 +75,7 @@ source: "QUIZ 12 With Answer Key.md"
 
 ## Section B — Longer
 
-### B1 — Find the area between $y=\sin x$ and $y=\cos x$ on $[0,\pi/2]$. Show  (5 points)
+### B1 — Find the area between $y=x$ and $y=x^2$ on $[0,2]$. Show the split  (5 points)
 
 **Your answer:**
 
@@ -85,7 +85,7 @@ source: "QUIZ 12 With Answer Key.md"
 
 ---
 
-### B2 — The region under $y=x^2$ on $[0,2]$ is revolved about the $y$-axis.  (5 points)
+### B2 — The region under $y=4-x^2$ on $[0,2]$ is revolved about the $y$-axis.  (5 points)
 
 **Your answer:**
 

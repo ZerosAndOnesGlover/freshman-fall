@@ -23,7 +23,7 @@ source: "LAB 11 Areas Volumes and Numerical Checks.md"
 
 ## Part 1 — The Crossing Trap
 
-### 1A — Sketch $y=\sin x$ and $y=\cos x$ on $[0,\pi/2]$ and mark the crossing.  (1 point)
+### 1A — Sketch $y=\sin x$ and $y=\cos x$ on $[0,\pi]$ and mark the crossing.  (1 point)
 
 **Your answer:**
 
@@ -33,7 +33,7 @@ source: "LAB 11 Areas Volumes and Numerical Checks.md"
 
 ---
 
-### 1B — Compute $\int_0^{\pi/2}(\sin x-\cos x)\,dx$ **without** splitting.  (1 point)
+### 1B — Compute $\int_0^{\pi}(\sin x-\cos x)\,dx$ **without** splitting.  (1 point)
 
 **Your answer:**
 
@@ -55,7 +55,7 @@ source: "LAB 11 Areas Volumes and Numerical Checks.md"
 
 ## Part 2 — Set Up, Evaluate, Verify
 
-### 2A — Area between $y=x^2$ and $y=x^3$ on $[0,1]$.  (3 points)
+### 2A — Area between $y=x^2$ and $y=x^4$ on $[0,1]$.  (3 points)
 
 **Your answer:**
 
@@ -65,7 +65,7 @@ source: "LAB 11 Areas Volumes and Numerical Checks.md"
 
 ---
 
-### 2B — Volume from revolving the region between $y=\sqrt x$ and $y=x$ on  (4 points)
+### 2B — Volume from revolving the region between $y=\sqrt x$ and $y=x^2$ on  (4 points)
 
 **Your answer:**
 
@@ -87,7 +87,7 @@ source: "LAB 11 Areas Volumes and Numerical Checks.md"
 
 ---
 
-### 3B — Compute it by **washers in $y$**, inverting to $x=\sqrt y$.  (2 points)
+### 3B — Compute it by **washers in $y$**, inverting to $x=\sqrt[3]{y}$.  (2 points)
 
 **Your answer:**
 
