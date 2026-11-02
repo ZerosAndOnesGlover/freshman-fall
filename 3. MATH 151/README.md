@@ -36,17 +36,24 @@ Each course folder has `week0/` … `week12/`, one per teaching week, and each `
 
 ## Assessment
 
-| Component | Points | Naming |
-|---|---|---|
-| Problem Sets | 100 | `weekN/PS N.md` |
-| Labs | completion | `weekN/Lab N.md` |
-| Quizzes | 20 | `weekN/Quiz N.md` |
+| Component | Weight | Points each | Naming |
+|---|---|---|---|
+| Problem Sets | 40% | 100 | `weekN/PS N.md` |
+| Quizzes | 15% | 20 | `weekN/Quiz N.md` |
+| Labs | 15% | completion | `weekN/Lab N.md` |
+| Midterm 1 | 10% | 100 | `week6/Midterm 1.md` |
+| Final Exam | 20% | 100 | `week12/Final Exam.md` |
 
 MATH 151 has thirteen problem sets (PS 0–12, lowest one dropped), twelve weekly quizzes (Quiz 1–12,
 lowest one dropped) and thirteen labs (Lab 0–12, graded on completion). A quiz is filed in the week
 it is administered, so Quiz *N* (which covers Week *N−1*) lives in `weekN/`. Each lab meets the
 Wednesday after its material but is filed with that material, so Lab *N* lives in `weekN/`.
-Problem sets, labs and quizzes are all answer sheets in the same layout.
+Problem sets, labs, quizzes and exams are all answer sheets in the same layout.
+
+Midterm 1 is sat on Friday 6 November 2026, 18:00–19:15 in VNC 200, and covers Weeks 0–5. Its sheet
+follows the six problems of the review and practice paper in `MATH151 Week6/assignments/`. The
+Final Exam is on Monday 21 December 2026, 08:00–10:00 in VNC 200, and covers Weeks 0–12. No Final
+paper exists in the course materials yet, so its sheet has a single answer block.
 
 ---
 
