@@ -60,6 +60,7 @@ source: "LAB 8 The Simple Pendulum and SHM.md"
 *Marks: ___ / 25*
 
 ---
+
 ## Grading Summary
 
 *Filled in by the grader.*
