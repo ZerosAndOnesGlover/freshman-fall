@@ -36,15 +36,29 @@ Each course folder has `week0/` … `week12/`, one per teaching week, and each `
 
 ## Assessment
 
-| Component | Points | Naming |
-|---|---|---|
-| Problem Sets | 100 | `weekN/PS N.md` |
-| Labs | 100 | `weekN/Lab N.md` |
-| Quizzes | 25 | `weekN/Quiz N.md` |
+| Component | Weight | Points each | Naming |
+|---|---|---|---|
+| Problem Sets | 30% | 100 | `weekN/PS N.md` |
+| Labs | 25% | 75–100 | `weekN/Lab N.md` |
+| Quizzes | 10% | 25 | `weekN/Quiz N.md` |
+| Midterm | 15% | 100 | `week7/Midterm.md` |
+| Final Exam | 20% | 100 | `week12/Final Exam.md` |
+
+PHYS 141 has thirteen problem sets (PS 0–12, lowest one dropped), thirteen labs (no drops) and
+thirteen quizzes (lowest two dropped). Every problem set has ten problems of 10 points, and its sheet
+has one block per problem. Lab points vary as the gradebook lists them (85 for Lab 5, 75 for Lab 6,
+80 for Lab 8, 100 for the rest), and a lab sheet has one block per row of the handout's report
+table.
 
 Labs run as three-hour Thursday sessions and are graded on method, so a report carries its own
 representative measurements in tables; a plot is described where one is required (labels, fitted
-line, R²). Quizzes are filed in the week of their *material* (Quiz N in `weekN/`).
+line, R²). Quizzes are filed in the week of their *material* (Quiz N in `weekN/`), although each is
+sat on the following Monday.
+
+The Midterm is sat on Tuesday 10 November 2026, 18:00–19:30 in VNC 200 (90 minutes, Weeks 0–6). The
+Final Exam is on Tuesday 22 December 2026, 14:00–16:30 in VNC 200 (150 minutes, comprehensive, one
+double-sided A4 sheet of handwritten notes allowed). Both are written papers, and the course
+materials hold only their practice papers, so each exam sheet has a single answer block.
 
 ---
 
