@@ -56,7 +56,8 @@ The position papers escalate deliberately: the first applies an existing code of
 second asks for an original framework, and the third argues whether a professional obligation is
 binding. Answer sheets are filed under `weekN/` in the week the assessment was set: `Prep N.md` for
 each week's prep, `Position Paper 1–3.md` in weeks 3, 6 and 9, `Presentation.md` and
-`Peer Feedback.md` in week 11, and `Question Preparation.md` and `Course Reflection.md` in week 12.
+`Peer Feedback A–C.md` (one per presentation session) in week 11, and `Question Prep.md` and
+`Reflection.md` in week 12. Seminar contribution is assessed in the room and has no sheet.
 
 ---
 
